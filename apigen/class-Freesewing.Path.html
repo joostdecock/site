@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class Freesewing\Path | Freesewing</title>
+
+	<script type="text/javascript" src="resources/combined.js?117538352"></script>
+	<script type="text/javascript" src="elementlist.js?1869948836"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Freesewing.html">Freesewing<span></span></a>
+						<ul>
+				<li><a href="namespace-Freesewing.Channels.html">Channels</a>
+						</li>
+				<li><a href="namespace-Freesewing.Patterns.html">Patterns</a>
+						</li>
+				<li><a href="namespace-Freesewing.Services.html">Services</a>
+						</li>
+				<li><a href="namespace-Freesewing.Themes.html">Themes</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Freesewing.BezierToolbox.html">BezierToolbox</a></li>
+				<li><a href="class-Freesewing.Boundary.html">Boundary</a></li>
+				<li><a href="class-Freesewing.Context.html">Context</a></li>
+				<li><a href="class-Freesewing.Coords.html">Coords</a></li>
+				<li><a href="class-Freesewing.Dimension.html">Dimension</a></li>
+				<li><a href="class-Freesewing.GrowingPacker.html">GrowingPacker</a></li>
+				<li><a href="class-Freesewing.LayoutBlock.html">LayoutBlock</a></li>
+				<li><a href="class-Freesewing.MeasurementsSampler.html">MeasurementsSampler</a></li>
+				<li><a href="class-Freesewing.Model.html">Model</a></li>
+				<li><a href="class-Freesewing.Note.html">Note</a></li>
+				<li><a href="class-Freesewing.OptionsSampler.html">OptionsSampler</a></li>
+				<li><a href="class-Freesewing.Packer.html">Packer</a></li>
+				<li><a href="class-Freesewing.Part.html">Part</a></li>
+				<li class="active"><a href="class-Freesewing.Path.html">Path</a></li>
+				<li><a href="class-Freesewing.Point.html">Point</a></li>
+				<li><a href="class-Freesewing.Polynomial.html">Polynomial</a></li>
+				<li><a href="class-Freesewing.Request.html">Request</a></li>
+				<li><a href="class-Freesewing.Response.html">Response</a></li>
+				<li><a href="class-Freesewing.Sampler.html">Sampler</a></li>
+				<li><a href="class-Freesewing.Stack.html">Stack</a></li>
+				<li><a href="class-Freesewing.SvgAttributes.html">SvgAttributes</a></li>
+				<li><a href="class-Freesewing.SvgBlock.html">SvgBlock</a></li>
+				<li><a href="class-Freesewing.SvgComments.html">SvgComments</a></li>
+				<li><a href="class-Freesewing.SvgCss.html">SvgCss</a></li>
+				<li><a href="class-Freesewing.SvgDefs.html">SvgDefs</a></li>
+				<li><a href="class-Freesewing.SvgDocument.html">SvgDocument</a></li>
+				<li><a href="class-Freesewing.SvgInclude.html">SvgInclude</a></li>
+				<li><a href="class-Freesewing.SvgRenderbot.html">SvgRenderbot</a></li>
+				<li><a href="class-Freesewing.SvgScript.html">SvgScript</a></li>
+				<li><a href="class-Freesewing.SvgSnippet.html">SvgSnippet</a></li>
+				<li><a href="class-Freesewing.Text.html">Text</a></li>
+				<li><a href="class-Freesewing.TextOnPath.html">TextOnPath</a></li>
+				<li><a href="class-Freesewing.Transform.html">Transform</a></li>
+				<li><a href="class-Freesewing.Utils.html">Utils</a></li>
+				<li><a href="class-Freesewing.Vector.html">Vector</a></li>
+				<li><a href="class-Freesewing.Yamlr.html">Yamlr</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Freesewing.html" title="Summary of Freesewing"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="freesewing-api-documentation.zip" title="Download documentation as ZIP archive"><span>Download</span></a>
+			</li>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Path</h1>
+
+
+	<div class="description">
+	
+<p>Holds SVG paths</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Freesewing.html">Freesewing</a><br>
+		
+
+				<b>Copyright:</b>
+				2016 Joost De Cock<br>
+				<b>License:</b>
+				<a href="http://opensource.org/licenses/GPL-3.0">GNU General Public License, Version 3</a><br>
+				<b>Author:</b>
+				Joost De Cock &lt;<a
+href="mailto:joost&#64;decock.org">joost&#64;<!-- -->decock.org</a>&gt;<br>
+		<b>Located at</b> <a href="source-class-Freesewing.Path.html#5-348" title="Go to source code">Path/Path.php</a><br>
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="setSample" id="_setSample">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setSample">#</a>
+		<code><a href="source-class-Freesewing.Path.html#34-42" title="Go to source code">setSample</a>( <span>boolean <var>$bool</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Marks path to be sampled by the sample service</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Marks path to be sampled by the sample service</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$bool</var></dt>
+					<dd><code>boolean</code><br>$bool True to sample this path. False to not sample it.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSample" id="_getSample">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSample">#</a>
+		<code><a href="source-class-Freesewing.Path.html#44-52" title="Go to source code">getSample</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the sample property</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the sample property</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setBoundary" id="_setBoundary">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setBoundary">#</a>
+		<code><a href="source-class-Freesewing.Path.html#54-62" title="Go to source code">setBoundary</a>( <span><code><a href="class-Freesewing.Boundary.html">Freesewing\Boundary</a></code> <var>$boundary</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Stores path boundary</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Stores path boundary</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$boundary</var></dt>
+					<dd><code><code><a href="class-Freesewing.Boundary.html">Freesewing\Boundary</a></code></code><br>$boundary The path boundary object.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBoundary" id="_getBoundary">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Freesewing.Boundary.html">Freesewing\Boundary</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBoundary">#</a>
+		<code><a href="source-class-Freesewing.Path.html#64-72" title="Go to source code">getBoundary</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the boundary property</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the boundary property</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Freesewing.Boundary.html">Freesewing\Boundary</a></code></code><br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setRender" id="_setRender">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setRender">#</a>
+		<code><a href="source-class-Freesewing.Path.html#74-82" title="Go to source code">setRender</a>( <span>boolean <var>$bool</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Marks path to be rendered by the draft service</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Marks path to be rendered by the draft service</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$bool</var></dt>
+					<dd><code>boolean</code><br>$bool True to render this path. False to not render it.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRender" id="_getRender">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRender">#</a>
+		<code><a href="source-class-Freesewing.Path.html#84-92" title="Go to source code">getRender</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the render property</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the render property</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setPathstring" id="_setPathstring">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setPathstring">#</a>
+		<code><a href="source-class-Freesewing.Path.html#94-102" title="Go to source code">setPathstring</a>( <span>string <var>$path</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sanitizes input and sets the path property</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sanitizes input and sets the path property</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd><code>string</code><br>$path The pathstring</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPathstring" id="_getPathstring">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPathstring">#</a>
+		<code><a href="source-class-Freesewing.Path.html#104-112" title="Go to source code">getPathstring</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the pathstring property</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the pathstring property</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setAttributes" id="_setAttributes">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setAttributes">#</a>
+		<code><a href="source-class-Freesewing.Path.html#114-122" title="Go to source code">setAttributes</a>( <span>array <var>$attributes</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Stores path attributes</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Stores path attributes</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code><br>$attributes</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAttributes" id="_getAttributes">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAttributes">#</a>
+		<code><a href="source-class-Freesewing.Path.html#124-132" title="Go to source code">getAttributes</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the attributes property</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the attributes property</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setAttribute" id="_setAttribute">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setAttribute">#</a>
+		<code><a href="source-class-Freesewing.Path.html#134-143" title="Go to source code">setAttribute</a>( <span>string <var>$key</var></span>, <span>scalar <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets a path attribute</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets a path attribute</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>$key</dd>
+					<dt><var>$value</var></dt>
+					<dd><code>scalar</code><br>$value</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAttribute" id="_getAttribute">
+
+		<td class="attributes"><code>
+			 public 
+			scalar
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAttribute">#</a>
+		<code><a href="source-class-Freesewing.Path.html#145-155" title="Go to source code">getAttribute</a>( <span>string <var>$key</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns an attribute value</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns an attribute value</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>$key</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>scalar</code><br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="findBoundary" id="_findBoundary">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Freesewing.Boundary.html">Freesewing\Boundary</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_findBoundary">#</a>
+		<code><a href="source-class-Freesewing.Path.html#157-261" title="Go to source code">findBoundary</a>( <span><code><a href="class-Freesewing.Part.html">Freesewing\Part</a></code> <var>$part</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Calculates and returns bounding box of a path</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Calculates and returns bounding box of a path</p>
+
+<p>We need the bounding box of a path to figure out how large a pattern piece
+is. Something we need to know in order to lay them out in the pattern later.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$part</var></dt>
+					<dd><code><code><a href="class-Freesewing.Part.html">Freesewing\Part</a></code></code><br>$part The part that this path is defined in</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Freesewing.Boundary.html">Freesewing\Boundary</a></code></code><br>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code>InvalidArgumentException</code><br>When the path references a non-existing point<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isClosed" id="_isClosed">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isClosed">#</a>
+		<code><a href="source-class-Freesewing.Path.html#263-279" title="Go to source code">isClosed</a>( )</code>
+
+		<div class="description short">
+			
+<p>Determines whether a path is closed</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Determines whether a path is closed</p>
+
+<p>The SVG path command 'z' closes a path. So this simply checks to see if the
+last step in the pathstring is z or Z.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>True if it is. False if it is not closed.<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="breakUp" id="_breakUp">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_breakUp">#</a>
+		<code><a href="source-class-Freesewing.Path.html#281-320" title="Go to source code">breakUp</a>( )</code>
+
+		<div class="description short">
+			
+<p>Breaks up a path into an array of steps</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Breaks up a path into an array of steps</p>
+
+<p>A path can be made up of multiple draw operations. This breaks the path apart
+to a single operation (step) like a line or curve.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>Array of pathstrings for the individual steps.<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getStartPoint" id="_getStartPoint">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getStartPoint">#</a>
+		<code><a href="source-class-Freesewing.Path.html#322-332" title="Go to source code">getStartPoint</a>( )</code>
+
+		<div class="description short">
+			
+<p>Gets the start point of the path</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the start point of the path</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>ID of the path's start point<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEndPoint" id="_getEndPoint">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEndPoint">#</a>
+		<code><a href="source-class-Freesewing.Path.html#334-347" title="Go to source code">getEndPoint</a>( )</code>
+
+		<div class="description short">
+			
+<p>Gets the end point of the path</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the end point of the path</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>ID of the path's start point<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="boundary" id="$boundary">
+		<td class="attributes"><code>
+			public  
+			<code><a href="class-Freesewing.Boundary.html">Freesewing\Boundary</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Freesewing.Path.html#14-20" title="Go to source code"><var>$boundary</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">null</span></code></td>
+		<td class="description"><div>
+			<a href="#$boundary" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>$boundary The path boundary</p>
+
+<p>This is public so we can call the boundary methods from the path, like:
+$path-&gt;boundary-&gt;getX()</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>$boundary The path boundary</p>
+
+<p>This is public so we can call the boundary methods from the path, like:
+$path-&gt;boundary-&gt;getX()</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="sample" id="$sample">
+		<td class="attributes"><code>
+			private  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Freesewing.Path.html#22-23" title="Go to source code"><var>$sample</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">false</span></code></td>
+		<td class="description"><div>
+			<a href="#$sample" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>$sample To sample this path or not</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>$sample To sample this path or not</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="render" id="$render">
+		<td class="attributes"><code>
+			private  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Freesewing.Path.html#25-26" title="Go to source code"><var>$render</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">true</span></code></td>
+		<td class="description"><div>
+			<a href="#$render" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>$render To render this path or not</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>$render To render this path or not</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="attributes" id="$attributes">
+		<td class="attributes"><code>
+			private  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Freesewing.Path.html#28-29" title="Go to source code"><var>$attributes</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$attributes" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>$attributes The path attributest</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>$attributes The path attributest</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="pathstring" id="$pathstring">
+		<td class="attributes"><code>
+			private  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Freesewing.Path.html#31-32" title="Go to source code"><var>$pathstring</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">null</span></code></td>
+		<td class="description"><div>
+			<a href="#$pathstring" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>$pathstring The SVG pathstring</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>$pathstring The SVG pathstring</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Freesewing API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

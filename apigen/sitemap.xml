@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>http://api.freesewing.org/docs/index.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/namespace-Freesewing.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/namespace-Freesewing.Channels.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/namespace-Freesewing.Patterns.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/namespace-Freesewing.Services.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/namespace-Freesewing.Themes.html</loc>
+</url>
+
+
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.BezierToolbox.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Boundary.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Channels.Channel.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Channels.Docs.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Context.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Coords.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Dimension.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.GrowingPacker.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.LayoutBlock.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.MeasurementsSampler.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Model.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Note.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.OptionsSampler.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Packer.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Part.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Path.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Patterns.Pattern.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Patterns.PatternTemplate.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Point.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Polynomial.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Request.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Response.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Sampler.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Services.CompareService.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Services.DraftService.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Services.InfoService.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Services.SampleService.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Services.Service.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Stack.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.SvgAttributes.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.SvgBlock.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.SvgComments.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.SvgCss.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.SvgDefs.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.SvgDocument.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.SvgInclude.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.SvgRenderbot.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.SvgScript.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.SvgSnippet.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Text.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.TextOnPath.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Themes.Basic.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Themes.Compare.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Themes.Designer.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Themes.Developer.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Themes.Info.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Themes.Paperless.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Themes.Sampler.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Themes.Theme.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Transform.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Utils.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Vector.html</loc>
+</url>
+<url>
+	<loc>http://api.freesewing.org/docs/class-Freesewing.Yamlr.html</loc>
+</url>
+</urlset>

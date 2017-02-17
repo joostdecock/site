@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<header class="post-header fade-oc-right">
+    <div class="row">
+        <div class="col-xs-12 col-md-9 col-md-offset-3">
+            <h1 class="post-title"><small>Class {{ page.namespace }}\ </small>{{ page.title | escape }}</h1>
+            {% include tags.html %}
+        </div> 
+    </div> 
+</header>
+
+<div class="row">
+    <div class="col-lg-8 col-md-12 fade-oc-right">
+        <section id="content">
+            <article class="classdoc">
+                {{ content }}
+            </article>
+        </section>
+    </div>
+    <div class="col-lg-4 col-md-12">
+        <section id="toc" class="sticky">
+            <div id="oc-right" class="oc-panel" data-side="right">
+                <h2 id='toc-title'>Contents</h2>
+            </div>
+        </section>
+    </div>
+</div>

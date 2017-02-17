@@ -1,0 +1,6 @@
+<div class="tags">
+    <ul class="page-tags">
+        {% for tag in page.tags %}<li><a class="badge bg-primary-gradient" href="{{ site.url }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}">{{ tag }}</a></li>{% endfor %}
+    </ul>
+</div>
+

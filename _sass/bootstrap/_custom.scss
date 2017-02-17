@@ -1,0 +1,10 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+$purple: #653f95 !default;
+$brand-primary:             $purple !default;
+$enable-shadows:            true !default;
+$enable-gradients:          true !default;
+$gray-dark:                 #222222 !default;
+

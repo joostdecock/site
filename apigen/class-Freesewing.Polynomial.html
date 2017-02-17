@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class Freesewing\Polynomial | Freesewing</title>
+
+	<script type="text/javascript" src="resources/combined.js?117538352"></script>
+	<script type="text/javascript" src="elementlist.js?1869948836"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Freesewing.html">Freesewing<span></span></a>
+						<ul>
+				<li><a href="namespace-Freesewing.Channels.html">Channels</a>
+						</li>
+				<li><a href="namespace-Freesewing.Patterns.html">Patterns</a>
+						</li>
+				<li><a href="namespace-Freesewing.Services.html">Services</a>
+						</li>
+				<li><a href="namespace-Freesewing.Themes.html">Themes</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Freesewing.BezierToolbox.html">BezierToolbox</a></li>
+				<li><a href="class-Freesewing.Boundary.html">Boundary</a></li>
+				<li><a href="class-Freesewing.Context.html">Context</a></li>
+				<li><a href="class-Freesewing.Coords.html">Coords</a></li>
+				<li><a href="class-Freesewing.Dimension.html">Dimension</a></li>
+				<li><a href="class-Freesewing.GrowingPacker.html">GrowingPacker</a></li>
+				<li><a href="class-Freesewing.LayoutBlock.html">LayoutBlock</a></li>
+				<li><a href="class-Freesewing.MeasurementsSampler.html">MeasurementsSampler</a></li>
+				<li><a href="class-Freesewing.Model.html">Model</a></li>
+				<li><a href="class-Freesewing.Note.html">Note</a></li>
+				<li><a href="class-Freesewing.OptionsSampler.html">OptionsSampler</a></li>
+				<li><a href="class-Freesewing.Packer.html">Packer</a></li>
+				<li><a href="class-Freesewing.Part.html">Part</a></li>
+				<li><a href="class-Freesewing.Path.html">Path</a></li>
+				<li><a href="class-Freesewing.Point.html">Point</a></li>
+				<li class="active"><a href="class-Freesewing.Polynomial.html">Polynomial</a></li>
+				<li><a href="class-Freesewing.Request.html">Request</a></li>
+				<li><a href="class-Freesewing.Response.html">Response</a></li>
+				<li><a href="class-Freesewing.Sampler.html">Sampler</a></li>
+				<li><a href="class-Freesewing.Stack.html">Stack</a></li>
+				<li><a href="class-Freesewing.SvgAttributes.html">SvgAttributes</a></li>
+				<li><a href="class-Freesewing.SvgBlock.html">SvgBlock</a></li>
+				<li><a href="class-Freesewing.SvgComments.html">SvgComments</a></li>
+				<li><a href="class-Freesewing.SvgCss.html">SvgCss</a></li>
+				<li><a href="class-Freesewing.SvgDefs.html">SvgDefs</a></li>
+				<li><a href="class-Freesewing.SvgDocument.html">SvgDocument</a></li>
+				<li><a href="class-Freesewing.SvgInclude.html">SvgInclude</a></li>
+				<li><a href="class-Freesewing.SvgRenderbot.html">SvgRenderbot</a></li>
+				<li><a href="class-Freesewing.SvgScript.html">SvgScript</a></li>
+				<li><a href="class-Freesewing.SvgSnippet.html">SvgSnippet</a></li>
+				<li><a href="class-Freesewing.Text.html">Text</a></li>
+				<li><a href="class-Freesewing.TextOnPath.html">TextOnPath</a></li>
+				<li><a href="class-Freesewing.Transform.html">Transform</a></li>
+				<li><a href="class-Freesewing.Utils.html">Utils</a></li>
+				<li><a href="class-Freesewing.Vector.html">Vector</a></li>
+				<li><a href="class-Freesewing.Yamlr.html">Yamlr</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Freesewing.html" title="Summary of Freesewing"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="freesewing-api-documentation.zip" title="Download documentation as ZIP archive"><span>Download</span></a>
+			</li>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Polynomial</h1>
+
+
+	<div class="description">
+	
+<p>Polynomial operations.</p>
+
+<p>This class is only used to help us determine the intersections between two
+cubic Bezier curves.</p>
+
+<p>It is a port of the work by Kevin Lindsey</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Freesewing.html">Freesewing</a><br>
+		
+
+				<b>Copyright:</b>
+				2016 Joost De Cock<br>
+				<b>License:</b>
+				<a href="http://opensource.org/licenses/GPL-3.0">GNU General Public License, Version 3</a><br>
+				<b>Author:</b>
+				Joost De Cock &lt;<a
+href="mailto:joost&#64;decock.org">joost&#64;<!-- -->decock.org</a>&gt;<br>
+				<b>See:</b>
+				<a href="http://www.kevlindev.com/">http://www.kevlindev.com/</a> Kevin's
+original code is licensed under a BSD-3-clause license. We have reached a
+gentlemen's agreement to dual-license this port. So that can we include it here
+under a GPL license, and it is also be available under the original BSD-3-clause license for those
+who prefer that option.<br>
+				<b>See:</b>
+				FIXME: Add link to BSD-3-clause licensed repo here<br>
+		<b>Located at</b> <a href="source-class-Freesewing.Polynomial.html#5-458" title="Go to source code">Polynomial/Polynomial.php</a><br>
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Freesewing.Polynomial.html#38-50" title="Go to source code">__construct</a>( <span>array <var>$coefs</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Constructor</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Constructor</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$coefs</var></dt>
+					<dd><code>array</code><br>$coefs The coeficients</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addCoef" id="_addCoef">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addCoef">#</a>
+		<code><a href="source-class-Freesewing.Polynomial.html#52-60" title="Go to source code">addCoef</a>( <span>scalar <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Pushes a coeficient onto the coefs array</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Pushes a coeficient onto the coefs array</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>scalar</code><br>$value The coeficient to add</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCoef" id="_getCoef">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCoef">#</a>
+		<code><a href="source-class-Freesewing.Polynomial.html#62-70" title="Go to source code">getCoef</a>( <span>integer <var>$index</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns a coeficient from the coefs array</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns a coeficient from the coefs array</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$index</var></dt>
+					<dd><code>integer</code><br>$index The index in the coefs array</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDegree" id="_getDegree">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDegree">#</a>
+		<code><a href="source-class-Freesewing.Polynomial.html#72-81" title="Go to source code">getDegree</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the degree of a polynomial</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the degree of a polynomial</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>$degree The degree of the polynomial<br>
+				</div>
+
+
+				<h4>Todo</h4>
+				<div class="list">
+						Remove this, it's not used<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDerivative" id="_getDerivative">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Freesewing.Polynomial.html">Freesewing\Polynomial</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDerivative">#</a>
+		<code><a href="source-class-Freesewing.Polynomial.html#83-96" title="Go to source code">getDerivative</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the derivative of a polymomial</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the derivative of a polymomial</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Freesewing.Polynomial.html">Freesewing\Polynomial</a></code></code><br>$d The derivative<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="evalu" id="_evalu">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_evalu">#</a>
+		<code><a href="source-class-Freesewing.Polynomial.html#98-114" title="Go to source code">evalu</a>( <span>float <var>$x</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Evaluates a polynomial</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Evaluates a polynomial</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$x</var></dt>
+					<dd><code>float</code><br>$x The input</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="bisection" id="_bisection">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_bisection">#</a>
+		<code><a href="source-class-Freesewing.Polynomial.html#116-157" title="Go to source code">bisection</a>( <span>float <var>$min</var></span>, <span>float <var>$max</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Polynomial bisection</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Polynomial bisection</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$min</var></dt>
+					<dd><code>float</code><br>$min Lower edge of interval</dd>
+					<dt><var>$max</var></dt>
+					<dd><code>float</code><br>$max Upper edge of interval</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br>$result The result<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRootsInInterval" id="_getRootsInInterval">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRootsInInterval">#</a>
+		<code><a href="source-class-Freesewing.Polynomial.html#159-206" title="Go to source code">getRootsInInterval</a>( <span>float <var>$min</var> = <span class="php-num">0</span></span>, <span>float <var>$max</var> = <span class="php-num">1</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Finds polynomial roots within interval</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Finds polynomial roots within interval</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$min</var></dt>
+					<dd><code>float</code><br>$min Lower edge of interval</dd>
+					<dt><var>$max</var></dt>
+					<dd><code>float</code><br>$max Upper edge of interval</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRoots" id="_getRoots">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRoots">#</a>
+		<code><a href="source-class-Freesewing.Polynomial.html#208-235" title="Go to source code">getRoots</a>( )</code>
+
+		<div class="description short">
+			
+<p>Roots, bloody roots</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Roots, bloody roots</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="simplify" id="_simplify">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_simplify">#</a>
+		<code><a href="source-class-Freesewing.Polynomial.html#237-249" title="Go to source code">simplify</a>( )</code>
+
+		<div class="description short">
+			
+<p>Simplifies a polynomial, if possible</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Simplifies a polynomial, if possible</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getQuarticRoots" id="_getQuarticRoots">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getQuarticRoots">#</a>
+		<code><a href="source-class-Freesewing.Polynomial.html#251-324" title="Go to source code">getQuarticRoots</a>( )</code>
+
+		<div class="description short">
+			
+<p>Gets roots of a quartic polynomial</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets roots of a quartic polynomial</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>$results Array of roots<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCubicRoots" id="_getCubicRoots">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCubicRoots">#</a>
+		<code><a href="source-class-Freesewing.Polynomial.html#326-394" title="Go to source code">getCubicRoots</a>( )</code>
+
+		<div class="description short">
+			
+<p>Gets roots of a cubic polynomial</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets roots of a cubic polynomial</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>$results Array of roots<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getQuadraticRoots" id="_getQuadraticRoots">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getQuadraticRoots">#</a>
+		<code><a href="source-class-Freesewing.Polynomial.html#396-444" title="Go to source code">getQuadraticRoots</a>( )</code>
+
+		<div class="description short">
+			
+<p>Calculate Roots by using the pq-formular.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Calculate Roots by using the pq-formular.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getLinearRoot" id="_getLinearRoot">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getLinearRoot">#</a>
+		<code><a href="source-class-Freesewing.Polynomial.html#446-457" title="Go to source code">getLinearRoot</a>( )</code>
+
+		<div class="description short">
+			
+<p>Gets roots of a linear polynomial</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets roots of a linear polynomial</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>$results Array of roots<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="precision" id="$precision">
+		<td class="attributes"><code>
+			public  
+			float
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Freesewing.Polynomial.html#29-30" title="Go to source code"><var>$precision</var></a>
+		</td>
+		<td class="value"><code><span class="php-num">6</span></code></td>
+		<td class="description"><div>
+			<a href="#$precision" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>$precision Ploynomial precision</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>$precision Ploynomial precision</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="tolerance" id="$tolerance">
+		<td class="attributes"><code>
+			public  
+			float
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Freesewing.Polynomial.html#32-33" title="Go to source code"><var>$tolerance</var></a>
+		</td>
+		<td class="value"><code><span class="php-num">0.000001</span></code></td>
+		<td class="description"><div>
+			<a href="#$tolerance" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>$tolerance Ploynomial tolerance</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>$tolerance Ploynomial tolerance</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="coefs" id="$coefs">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Freesewing.Polynomial.html#35-36" title="Go to source code"><var>$coefs</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$coefs" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>$coefs Coeficients</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>$coefs Coeficients</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Freesewing API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class Freesewing\Patterns\PatternTemplate | Freesewing</title>
+
+	<script type="text/javascript" src="resources/combined.js?117538352"></script>
+	<script type="text/javascript" src="elementlist.js?1869948836"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Freesewing.html">Freesewing<span></span></a>
+						<ul>
+				<li><a href="namespace-Freesewing.Channels.html">Channels</a>
+						</li>
+				<li class="active"><a href="namespace-Freesewing.Patterns.html">Patterns</a>
+						</li>
+				<li><a href="namespace-Freesewing.Services.html">Services</a>
+						</li>
+				<li><a href="namespace-Freesewing.Themes.html">Themes</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Freesewing.Patterns.Pattern.html">Pattern</a></li>
+				<li class="active"><a href="class-Freesewing.Patterns.PatternTemplate.html">PatternTemplate</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Freesewing.Patterns.html" title="Summary of Freesewing\Patterns"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="freesewing-api-documentation.zip" title="Download documentation as ZIP archive"><span>Download</span></a>
+			</li>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class PatternTemplate</h1>
+
+
+	<div class="description">
+	
+<p>A pattern template</p>
+
+<p>If you'd like to add you own pattern, you can copy this class/directory. It's
+an empty skeleton for you to start working with</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Freesewing.Patterns.Pattern.html"><span>Freesewing\Patterns\Pattern</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Freesewing\Patterns\PatternTemplate</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Freesewing.html">Freesewing</a>\<a href="namespace-Freesewing.Patterns.html">Patterns</a><br>
+		
+
+				<b>Copyright:</b>
+				2017 Joost De Cock<br>
+				<b>License:</b>
+				<a href="http://opensource.org/licenses/GPL-3.0">GNU General Public License, Version 3</a><br>
+				<b>Author:</b>
+				Joost De Cock &lt;<a
+href="mailto:joost&#64;decock.org">joost&#64;<!-- -->decock.org</a>&gt;<br>
+		<b>Located at</b> <a href="source-class-Freesewing.Patterns.PatternTemplate.html#5-186" title="Go to source code">emplate/PatternTemplate.php</a><br>
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="initialize" id="_initialize">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_initialize">#</a>
+		<code><a href="source-class-Freesewing.Patterns.PatternTemplate.html#32-57" title="Go to source code">initialize</a>( <span><code><a href="class-Freesewing.Model.html">Freesewing\Model</a></code> <var>$model</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets up options and values for our draft</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets up options and values for our draft</p>
+
+<p>By branching this out of the sample/draft methods, we can set a bunch of
+options and values the influence the draft without having to touch the
+sample/draft methods When extending this pattern so we can just implement the
+initialize() method and re-use the other methods.</p>
+
+<p>Good to know: Options are typically provided by the user, but sometimes they
+are fixed Values are calculated for re-use later</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$model</var></dt>
+					<dd><code><code><a href="class-Freesewing.Model.html">Freesewing\Model</a></code></code><br>$model The model to sample for</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sample" id="_sample">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sample">#</a>
+		<code><a href="source-class-Freesewing.Patterns.PatternTemplate.html#69-88" title="Go to source code">sample</a>( <span><code><a href="class-Freesewing.Model.html">Freesewing\Model</a></code> <var>$model</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Generates a sample of the pattern</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Generates a sample of the pattern</p>
+
+<p>Here, you create a sample of the pattern for a given model and set of
+options. You should get a barebones pattern with only what it takes to
+illustrate the effect of changes in the sampled option or measurement.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$model</var></dt>
+					<dd><code><code><a href="class-Freesewing.Model.html">Freesewing\Model</a></code></code><br>$model The model to sample for</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="draft" id="_draft">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_draft">#</a>
+		<code><a href="source-class-Freesewing.Patterns.PatternTemplate.html#90-114" title="Go to source code">draft</a>( <span><code><a href="class-Freesewing.Model.html">Freesewing\Model</a></code> <var>$model</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Generates a draft of the pattern</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Generates a draft of the pattern</p>
+
+<p>Here, you create the full draft of this pattern for a given model and set of
+options. You get a complete pattern with all bels and whistles.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$model</var></dt>
+					<dd><code><code><a href="class-Freesewing.Model.html">Freesewing\Model</a></code></code><br>$model The model to draft for</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="draftExamplePart" id="_draftExamplePart">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_draftExamplePart">#</a>
+		<code><a href="source-class-Freesewing.Patterns.PatternTemplate.html#116-138" title="Go to source code">draftExamplePart</a>( <span><code><a href="class-Freesewing.Model.html">Freesewing\Model</a></code> <var>$model</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Drafts the examplePart</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Drafts the examplePart</p>
+
+<p>We are using a draft[part name] scheme here but don't let that think that
+this is something specific to the draft service.</p>
+
+<p>This draft method does the basic drafting and is called by both the draft AND
+sample methods.</p>
+
+<p>The difference starts after this method is done. For sample, this is all we
+need, but draft calls the finalize[part name] method after this.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$model</var></dt>
+					<dd><code><code><a href="class-Freesewing.Model.html">Freesewing\Model</a></code></code><br>$model The model to draft for</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="finalizeExamplePart" id="_finalizeExamplePart">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_finalizeExamplePart">#</a>
+		<code><a href="source-class-Freesewing.Patterns.PatternTemplate.html#150-161" title="Go to source code">finalizeExamplePart</a>( <span><code><a href="class-Freesewing.Model.html">Freesewing\Model</a></code> <var>$model</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Finalizes the example part</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Finalizes the example part</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$model</var></dt>
+					<dd><code><code><a href="class-Freesewing.Model.html">Freesewing\Model</a></code></code><br>$model The model to draft for</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="paperlessExamplePart" id="_paperlessExamplePart">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_paperlessExamplePart">#</a>
+		<code><a href="source-class-Freesewing.Patterns.PatternTemplate.html#174-185" title="Go to source code">paperlessExamplePart</a>( <span><code><a href="class-Freesewing.Model.html">Freesewing\Model</a></code> <var>$model</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Adds paperless info for the example part</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Adds paperless info for the example part</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$model</var></dt>
+					<dd><code><code><a href="class-Freesewing.Model.html">Freesewing\Model</a></code></code><br>$model The model to draft for</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Freesewing.Patterns.Pattern.html#methods">Freesewing\Patterns\Pattern</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Freesewing.Patterns.Pattern.html#___clone">__clone()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#___construct">__construct()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_addOptions">addOptions()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_cleanUp">cleanUp()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_clonePoints">clonePoints()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_dbg">dbg()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_getClassChain">getClassChain()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_getConfig">getConfig()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_getDebug">getDebug()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_getHeight">getHeight()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_getMessages">getMessages()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_getOption">getOption()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_getReplacements">getReplacements()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_getSamplerModelConfig">getSamplerModelConfig()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_getTranslationFiles">getTranslationFiles()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_getUnits">getUnits()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_getValue">getValue()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_getWidth">getWidth()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_layout">layout()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_loadParts">loadParts()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_msg">msg()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_newPart">newPart()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_o">o()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_replace">replace()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_setOption">setOption()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_setPaperless">setPaperless()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_setPartMargin">setPartMargin()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_setTranslator">setTranslator()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_setUnits">setUnits()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_setValue">setValue()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_t">t()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_unit">unit()</a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#_v">v()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="EXAMPLE_CONSTANT" id="EXAMPLE_CONSTANT">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-Freesewing.Patterns.PatternTemplate.html#27-30" title="Go to source code"><b>EXAMPLE_CONSTANT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">52</span></code></td>
+		<td class="description"><div>
+			<a href="#EXAMPLE_CONSTANT" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Set your constants here</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Set your constants here</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Constants inherited from <a href="class-Freesewing.Patterns.Pattern.html#constants">Freesewing\Patterns\Pattern</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Freesewing.Patterns.Pattern.html#PI"><b>PI</b></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Freesewing.Patterns.Pattern.html#properties">Freesewing\Patterns\Pattern</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Freesewing.Patterns.Pattern.html#$isPaperless"><var>$isPaperless</var></a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#$parts"><var>$parts</var></a>, 
+			<a href="class-Freesewing.Patterns.Pattern.html#$replacements"><var>$replacements</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Freesewing API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

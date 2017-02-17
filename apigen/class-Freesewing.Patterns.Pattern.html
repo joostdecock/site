@@ -1,0 +1,2280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class Freesewing\Patterns\Pattern | Freesewing</title>
+
+	<script type="text/javascript" src="resources/combined.js?117538352"></script>
+	<script type="text/javascript" src="elementlist.js?1869948836"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Freesewing.html">Freesewing<span></span></a>
+						<ul>
+				<li><a href="namespace-Freesewing.Channels.html">Channels</a>
+						</li>
+				<li class="active"><a href="namespace-Freesewing.Patterns.html">Patterns</a>
+						</li>
+				<li><a href="namespace-Freesewing.Services.html">Services</a>
+						</li>
+				<li><a href="namespace-Freesewing.Themes.html">Themes</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Freesewing.Patterns.Pattern.html">Pattern</a></li>
+				<li><a href="class-Freesewing.Patterns.PatternTemplate.html">PatternTemplate</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Freesewing.Patterns.html" title="Summary of Freesewing\Patterns"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="freesewing-api-documentation.zip" title="Download documentation as ZIP archive"><span>Download</span></a>
+			</li>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Pattern</h1>
+
+
+	<div class="description">
+	
+<p>Abstract class for patterns.</p>
+
+	</div>
+
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-Freesewing.Patterns.PatternTemplate.html">Freesewing\Patterns\PatternTemplate</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		<b>Abstract</b><br>
+		
+		<b>Namespace:</b> <a href="namespace-Freesewing.html">Freesewing</a>\<a href="namespace-Freesewing.Patterns.html">Patterns</a><br>
+		
+
+				<b>Copyright:</b>
+				2016 Joost De Cock<br>
+				<b>License:</b>
+				<a href="http://opensource.org/licenses/GPL-3.0">GNU General Public License, Version 3</a><br>
+				<b>Author:</b>
+				Joost De Cock &lt;<a
+href="mailto:joost&#64;decock.org">joost&#64;<!-- -->decock.org</a>&gt;<br>
+		<b>Located at</b> <a href="source-class-Freesewing.Patterns.Pattern.html#7-679" title="Go to source code">Pattern.php</a><br>
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#60-78" title="Go to source code">__construct</a>( )</code>
+
+		<div class="description short">
+			
+<p>Constructor stores Yaml config file in the config property</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Constructor stores Yaml config file in the config property</p>
+
+
+
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code>Symfony\Component\Yaml\Exception\ParseException</code><br>if the Yaml file is not valid<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__clone" id="___clone">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___clone">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#80-90" title="Go to source code">__clone</a>( )</code>
+
+		<div class="description short">
+			
+<p>Makes sure to unset the parts array when cloning a pattern</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Makes sure to unset the parts array when cloning a pattern</p>
+
+<p>This is used by the sample service</p>
+
+
+
+
+
+
+				<h4>See</h4>
+				<div class="list">
+						\Freesewing\MeasurementsSampler::samplerMeasurements()<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="draft" id="_draft">
+
+		<td class="attributes"><code>
+			abstract public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_draft">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#92-97" title="Go to source code">draft</a>( <span><code><a href="class-Freesewing.Context.html">Freesewing\Context</a></code> <var>$context</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Patterns must implement this method called by the DraftService</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Patterns must implement this method called by the DraftService</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$context</var></dt>
+					<dd><code><code><a href="class-Freesewing.Context.html">Freesewing\Context</a></code></code><br>$context The context</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sample" id="_sample">
+
+		<td class="attributes"><code>
+			abstract public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sample">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#99-104" title="Go to source code">sample</a>( <span><code><a href="class-Freesewing.Context.html">Freesewing\Context</a></code> <var>$context</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Patterns must implement this method called by the SampleService</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Patterns must implement this method called by the SampleService</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$context</var></dt>
+					<dd><code><code><a href="class-Freesewing.Context.html">Freesewing\Context</a></code></code><br>$context The context</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="loadParts" id="_loadParts">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_loadParts">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#106-122" title="Go to source code">loadParts</a>( )</code>
+
+		<div class="description short">
+			
+<p>Add parts in config file to pattern</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add parts in config file to pattern</p>
+
+<p>This prevents you from having to manually add all parts. Note that if there
+are parts you don't need (depending on options for example) you could override
+this function. Or, you can simple call setRender(false) on them to keep them
+from being rendered.</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTranslationsDir" id="_getTranslationsDir">
+
+		<td class="attributes"><code>
+			 private 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTranslationsDir">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#124-132" title="Go to source code">getTranslationsDir</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns directory that holds translation file</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns directory that holds translation file</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$dir The directory holding the transaltion files<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getConfigFile" id="_getConfigFile">
+
+		<td class="attributes"><code>
+			 private 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getConfigFile">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#134-142" title="Go to source code">getConfigFile</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the pattern config file</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the pattern config file</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$config The pattern config file<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getConfig" id="_getConfig">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getConfig">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#144-156" title="Go to source code">getConfig</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the pattern configuration</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the pattern configuration</p>
+
+<p>This loads the configation Yaml file and returns it as an array</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>The pattern configuration<br>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code>Symfony\Component\Yaml\Exception\ParseException</code><br>If the Yaml file is invalid<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="unit" id="_unit">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_unit">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#158-174" title="Go to source code">unit</a>( <span>string <var>$val</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Takes a value in mm and returns it as text in the chosen units</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Takes a value in mm and returns it as text in the chosen units</p>
+
+<p>For example, this returns 25.4 as either '2.54cm' or '1"'</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$val</var></dt>
+					<dd><code>string</code><br>$val The value to convert</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$text The converted text<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getUnits" id="_getUnits">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getUnits">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#176-184" title="Go to source code">getUnits</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the units property</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the units property</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>imperial|metric<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getOption" id="_getOption">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getOption">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#186-196" title="Go to source code">getOption</a>( <span>string <var>$key</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns a value from the options array</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns a value from the options array</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>$key The key in the options array for which to return the value</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$value The option value<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getValue" id="_getValue">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getValue">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#198-208" title="Go to source code">getValue</a>( <span>string <var>$key</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns a value from the values array</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns a value from the values array</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>$key The key in the values array for which to return the value</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$value The value<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="o" id="_o">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_o">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#210-220" title="Go to source code">o</a>( <span>string <var>$key</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Alias for getOption()</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Alias for getOption()</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>$key The key in the options array for which to return the value</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$value The option value<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="v" id="_v">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_v">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#222-232" title="Go to source code">v</a>( <span>string <var>$key</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Alias for getValue()</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Alias for getValue()</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>$key The key in the values array for which to return the value</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$value The value<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setOption" id="_setOption">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setOption">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#234-243" title="Go to source code">setOption</a>( <span>string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the key $key in the options array to value $value</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the key $key in the options array to value $value</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>$key The key in the options array</dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code><br>$value The option to set</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setValue" id="_setValue">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setValue">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#245-254" title="Go to source code">setValue</a>( <span>string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the key $key in the values array to value $value</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the key $key in the values array to value $value</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>$key The key in the values array</dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code><br>$value The value to set</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setWidth" id="_setWidth">
+
+		<td class="attributes"><code>
+			 private 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setWidth">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#256-264" title="Go to source code">setWidth</a>( <span>float <var>$width</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the width property</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the width property</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$width</var></dt>
+					<dd><code>float</code><br>$width The width of the pattern</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getWidth" id="_getWidth">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getWidth">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#266-274" title="Go to source code">getWidth</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the height property</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the height property</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br>$height The height of the pattern<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setHeight" id="_setHeight">
+
+		<td class="attributes"><code>
+			 private 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setHeight">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#276-284" title="Go to source code">setHeight</a>( <span>float <var>$height</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the height property</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the height property</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$height</var></dt>
+					<dd><code>float</code><br>$height The height of the pattern</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHeight" id="_getHeight">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHeight">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#286-294" title="Go to source code">getHeight</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the height property</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the height property</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br>$height The height of the pattern<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setPartMargin" id="_setPartMargin">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setPartMargin">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#296-304" title="Go to source code">setPartMargin</a>( <span>float <var>$margin</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the partMargin property</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the partMargin property</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$margin</var></dt>
+					<dd><code>float</code><br>$margin The margin between pattern parts</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="clonePoints" id="_clonePoints">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_clonePoints">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#306-317" title="Go to source code">clonePoints</a>( <span>string <var>$from</var></span>, <span>string <var>$into</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Clones points from one pattern part into another</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Clones points from one pattern part into another</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$from</var></dt>
+					<dd><code>string</code><br>$from The ID in the parts array of the source part</dd>
+					<dt><var>$into</var></dt>
+					<dd><code>string</code><br>$into The ID in the parts array of the destination part</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="pileParts" id="_pileParts">
+
+		<td class="attributes"><code>
+			 private 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_pileParts">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#319-339" title="Go to source code">pileParts</a>( )</code>
+
+		<div class="description short">
+			
+<p>Stacks all parts in the top left corner in preparation of layout</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Stacks all parts in the top left corner in preparation of layout</p>
+
+<p>When you draw a part, there's no reason it would have point (0,0) as its top
+left corner. This takes care of that by pushing everything to the top left (by
+adding a translate transform). We do this before we layout the pattern with our
+packer.</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="newPart" id="_newPart">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_newPart">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#341-352" title="Go to source code">newPart</a>( <span>string <var>$key</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Adds a part to the pattern by adding it to the parts array</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Adds a part to the pattern by adding it to the parts array</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>$key The ID in the parts array of the part to add</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addPartBoundaries" id="_addPartBoundaries">
+
+		<td class="attributes"><code>
+			 private 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addPartBoundaries">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#354-366" title="Go to source code">addPartBoundaries</a>( )</code>
+
+		<div class="description short">
+			
+<p>Calls $part-&gt;addBoundary() on all parts</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Calls $part-&gt;addBoundary() on all parts</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addOptions" id="_addOptions">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addOptions">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#368-384" title="Go to source code">addOptions</a>( <span>array <var>$array</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Adds an array of options to the options property</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Adds an array of options to the options property</p>
+
+<p>Each key in the array (along with its value) will be added to the options
+array, overwriting options if they pre-exist</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$array</var></dt>
+					<dd><code>array</code><br>$array Array of options to add</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="layout" id="_layout">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_layout">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#386-403" title="Go to source code">layout</a>( )</code>
+
+		<div class="description short">
+			
+<p>Lays out pattern parts on the page</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Lays out pattern parts on the page</p>
+
+<p>This uses a packer to automatically lay out the different pattern pieces on
+that page.</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="cleanUp" id="_cleanUp">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_cleanUp">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#405-410" title="Go to source code">cleanUp</a>( )</code>
+
+		<div class="description short">
+			
+<p>Clean up before exiting</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Clean up before exiting</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="msg" id="_msg">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_msg">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#412-427" title="Go to source code">msg</a>( <span>string <var>$msg</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add a message to the pattern</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a message to the pattern</p>
+
+<p>This is a helper function that pushes messages onto the messages property. In
+the default theme, these will be added to the footer comments in the SVG
+file.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$msg</var></dt>
+					<dd><code>string</code><br>$msg The message to add</dd>
+				</dl></div>
+
+
+
+				<h4>See</h4>
+				<div class="list">
+						\Freesewing\Theme::loadTemplates()<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="dbg" id="_dbg">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_dbg">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#429-445" title="Go to source code">dbg</a>( <span>string <var>$msg</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add a debug message to the pattern</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a debug message to the pattern</p>
+
+<p>This is a helper function that pushes messages onto the debug property. In
+the default theme, these will not be included. But in the designer theme, they
+will be added to the footer comments in the SVG file.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$msg</var></dt>
+					<dd><code>string</code><br>$msg The message to add</dd>
+				</dl></div>
+
+
+
+				<h4>See</h4>
+				<div class="list">
+						\Freesewing\Theme::loadTemplates()<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDebug" id="_getDebug">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDebug">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#447-459" title="Go to source code">getDebug</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns messages in the debug property as a text block</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns messages in the debug property as a text block</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$messages The debug messages stored in the pattern<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMessages" id="_getMessages">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMessages">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#461-473" title="Go to source code">getMessages</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns messages in the messages property as a text block</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns messages in the messages property as a text block</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$messages The messages stored in the pattern<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="replace" id="_replace">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_replace">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#475-486" title="Go to source code">replace</a>( <span>string <var>$search</var></span>, <span>string <var>$replace</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Adds a search/replace pair to the replacements property</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Adds a search/replace pair to the replacements property</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$search</var></dt>
+					<dd><code>string</code><br>$search The string to search for</dd>
+					<dt><var>$replace</var></dt>
+					<dd><code>string</code><br>$replace The string to replace it with</dd>
+				</dl></div>
+
+
+
+				<h4>See</h4>
+				<div class="list">
+						\Freesewing\Service\DraftService::run()<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getReplacements" id="_getReplacements">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getReplacements">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#488-496" title="Go to source code">getReplacements</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the replacements property</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the replacements property</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>$replancements The replacements<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setTranslator" id="_setTranslator">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setTranslator">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#498-506" title="Go to source code">setTranslator</a>( <span>Symfony\Component\Translation\Translator <var>$translator</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Stores a translator object in the translator property</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Stores a translator object in the translator property</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$translator</var></dt>
+					<dd><code>Symfony\Component\Translation\Translator</code><br>$translator The translator</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setUnits" id="_setUnits">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setUnits">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#508-516" title="Go to source code">setUnits</a>( <span>array <var>$units</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the units property</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the units property</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$units</var></dt>
+					<dd><code>array</code><br>$units An array of units like ['in' =&gt; 'metric', 'out' =&gt; 'imperial']</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="t" id="_t">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_t">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#518-528" title="Go to source code">t</a>( <span>string <var>$msg</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns a translated string</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns a translated string</p>
+
+<p>This is just a front for the trans method in the Symfony Translator</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$msg</var></dt>
+					<dd><code>string</code><br>$msg The string to translate</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="layoutTransforms" id="_layoutTransforms">
+
+		<td class="attributes"><code>
+			 private 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_layoutTransforms">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#530-547" title="Go to source code">layoutTransforms</a>( <span>array <var>$layoutBlocks</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add transforms to parts to implement layout calculated by the packer</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add transforms to parts to implement layout calculated by the packer</p>
+
+<p>The packer does not actually layout the pattern. It merely calculates it and
+returns an array of 'layoutblocks' that contain the needed information on how to
+layout the different parts. This takes that info and applies a tranform to the
+parts for it, thereby making implementing the calculated layout in the SVG
+document.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$layoutBlocks</var></dt>
+					<dd><code>array</code><br>$layoutBlocks Array of layoutblocks calculated by the packer</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="layoutPreSort" id="_layoutPreSort">
+
+		<td class="attributes"><code>
+			 private 
+			array|boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_layoutPreSort">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#549-578" title="Go to source code">layoutPreSort</a>( <span>array <var>$parts</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sorts parts by their largest side</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sorts parts by their largest side</p>
+
+<p>Our current packer (GrowingPacker) requires that we feed it a list of pattern
+parts that are sorted by their largest size (widht or height, whatever is
+highest). This takes care of that.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$parts</var></dt>
+					<dd><code>array</code><br>$parts Array of pattern parts</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array|boolean</code><br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getClassChain" id="_getClassChain">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getClassChain">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#580-604" title="Go to source code">getClassChain</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns an array of classes between this and the abstract pattern class</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns an array of classes between this and the abstract pattern class</p>
+
+<p>If your pattern extends another pattern (and another, and ...) this will
+construct the class chain up to the abstract pattern class. This is needed for
+the theme to load template files hierarchically In other words, when you extend
+a pattern, this makes sure the templates are extended too.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>$locations An array of class directories<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTranslationFiles" id="_getTranslationFiles">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTranslationFiles">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#606-630" title="Go to source code">getTranslationFiles</a>( <span>string <var>$locale</var></span>, <span>string <var>$altloc</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns list of translation files</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns list of translation files</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$locale</var></dt>
+					<dd><code>string</code><br>$locale The primary locale</dd>
+					<dt><var>$altloc</var></dt>
+					<dd><code>string</code><br>$altloc The fallback locale</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>$translations An array of translation files<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSamplerModelFiles" id="_getSamplerModelFiles">
+
+		<td class="attributes"><code>
+			 private 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSamplerModelFiles">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#632-649" title="Go to source code">getSamplerModelFiles</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns list of sampler files</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns list of sampler files</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>$files An array of sampler config files<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSamplerModelConfig" id="_getSamplerModelConfig">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSamplerModelConfig">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#651-665" title="Go to source code">getSamplerModelConfig</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns list of sampler files</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns list of sampler files</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>$files An array of sampler config files<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setPaperless" id="_setPaperless">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setPaperless">#</a>
+		<code><a href="source-class-Freesewing.Patterns.Pattern.html#667-678" title="Go to source code">setPaperless</a>( <span>boolean <var>$bool</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the paperless property</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the paperless property</p>
+
+<p>This is used to determine whether to include the papeless-specific stuff in
+the pattern.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$bool</var></dt>
+					<dd><code>boolean</code><br>$bool True or false</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="PI" id="PI">
+
+		<td class="attributes"><code>float</code></td>
+		<td class="name"><code>
+				<a href="source-class-Freesewing.Patterns.Pattern.html#16-19" title="Go to source code"><b>PI</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">3.1415</span></code></td>
+		<td class="description"><div>
+			<a href="#PI" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>PI with max needed precision</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>PI with max needed precision</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="parts" id="$parts">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Freesewing.Patterns.Pattern.html#21-22" title="Go to source code"><var>$parts</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$parts" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>$parts Holds the pattern parts</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>$parts Holds the pattern parts</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="replacements" id="$replacements">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Freesewing.Patterns.Pattern.html#24-25" title="Go to source code"><var>$replacements</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$replacements" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>$replacements Holds pattern string replacements</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>$replacements Holds pattern string replacements</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="isPaperless" id="$isPaperless">
+		<td class="attributes"><code>
+			public  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Freesewing.Patterns.Pattern.html#27-28" title="Go to source code"><var>$isPaperless</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$isPaperless" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>$isPaperless Add paperless info to pattern or not?</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>$isPaperless Add paperless info to pattern or not?</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="options" id="$options">
+		<td class="attributes"><code>
+			private  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Freesewing.Patterns.Pattern.html#30-31" title="Go to source code"><var>$options</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$options" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>$options Pattern options</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>$options Pattern options</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="values" id="$values">
+		<td class="attributes"><code>
+			private  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Freesewing.Patterns.Pattern.html#33-34" title="Go to source code"><var>$values</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$values" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>$values Pattern values</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>$values Pattern values</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="width" id="$width">
+		<td class="attributes"><code>
+			private  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Freesewing.Patterns.Pattern.html#36-37" title="Go to source code"><var>$width</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$width" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>$width Pattern width</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>$width Pattern width</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="height" id="$height">
+		<td class="attributes"><code>
+			private  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Freesewing.Patterns.Pattern.html#39-40" title="Go to source code"><var>$height</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$height" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>$height Pattern height</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>$height Pattern height</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="units" id="$units">
+		<td class="attributes"><code>
+			private  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Freesewing.Patterns.Pattern.html#42-43" title="Go to source code"><var>$units</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$units" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>$units Pattern units</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>$units Pattern units</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="messages" id="$messages">
+		<td class="attributes"><code>
+			private  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Freesewing.Patterns.Pattern.html#45-46" title="Go to source code"><var>$messages</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$messages" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>$messages Messages to include in SVG source</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>$messages Messages to include in SVG source</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="partMargin" id="$partMargin">
+		<td class="attributes"><code>
+			private  
+			float
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Freesewing.Patterns.Pattern.html#48-49" title="Go to source code"><var>$partMargin</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$partMargin" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>$partMargin Margin between pattern parts</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>$partMargin Margin between pattern parts</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="packer" id="$packer">
+		<td class="attributes"><code>
+			private  
+			<code><a href="class-Freesewing.GrowingPacker.html">Freesewing\GrowingPacker</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Freesewing.Patterns.Pattern.html#51-52" title="Go to source code"><var>$packer</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$packer" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>$packer</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>$packer</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="layoutBlocks" id="$layoutBlocks">
+		<td class="attributes"><code>
+			private  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Freesewing.Patterns.Pattern.html#54-55" title="Go to source code"><var>$layoutBlocks</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$layoutBlocks" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>$layoutBlocks</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>$layoutBlocks</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="debug" id="$debug">
+		<td class="attributes"><code>
+			private  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Freesewing.Patterns.Pattern.html#57-58" title="Go to source code"><var>$debug</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$debug" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>$debug collection of debug messages</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>$debug collection of debug messages</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Freesewing API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
