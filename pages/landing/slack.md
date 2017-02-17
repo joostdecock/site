@@ -19,6 +19,7 @@ is the best place to ask questions, meet other freesewers, or just hang out and 
 
 <script>
 $(document).on('click', '#submit', function() { 
+    $('#submit').html('<i class="fa fa-spinner fa-pulse fa-fw"></i>');
     var address = $('#email').val();
     $.ajax({
         type: "POST",
