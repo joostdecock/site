@@ -1,32 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
-    <title>{{ page.title }} - Freesewing Documentation</title>
-
-    <!-- Bootstrap core CSS 
-    ================================================== -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.css">
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
-    <!-- Sticky polyfill 
-    ================================================== -->
-    <link href="{{ site.baseurl }}/css/fixedsticky.css" rel="stylesheet">
-    <script src="{{ site.baseurl }}/js/stickyfill.min.js"></script>
-    
-    <!-- Font Awesome 
-    ================================================== -->
-    <link href="{{ site.baseurl }}/css/font-awesome.min.css" rel="stylesheet">
+    {% include head-core.html %}
     
     <!-- Custom styles 
     ================================================== -->
@@ -42,16 +17,13 @@
     </script>
 </head>
 
-<body>
+<body class="with-navbar">
    <span class="oc-overlay"></span>
-   <nav class="navbar navbar-inverse fixed-top bg-primary-gradient">
-       <a class="navbar-toggler-left oc-toggle left"><i class="fa fa-bars"></i> Menu</a>
-       <a class="navbar-toggler-right oc-toggle right"><i class="fa fa-align-left"></i> ToC</a>
-       <div class="mx-auto" id="nav-logo">Freesewing</div>
-  </nav>
+
+   {% include navbar.html %}
 
     <div id="oc-left" class="oc-panel" data-side="left">
-        {% include mainMenu.html %}
+        {% include main-menu.html %}
     </div>
 
 
@@ -61,39 +33,10 @@
 
     </div><!-- /.container -->
 
-    <div id="scroller"><a class='scroll-to-top' title="Back to top"><i class="fa fa-arrow-up" aria-hidden="true" aria-label="Back to top"></i></a></div>
+    {% include scroller.html %}
 
-    <footer class="footer bg-primary-gradient">
-        <div class="container">
-            <div class="row">
-                <div class="col text-right">
-                    <span class='text-uppercase'><b>freesewing</b></span>
-                    <ul class='social'>
-                        <li><a target="_BLANK" href="https://twitter.com/intent/follow?screen_name=freesewing_org">On Twitter <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a target="_BLANK" href="https://www.instagram.com/freesewing_org/">On Instagram <i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a target="_BLANK" href="https://github.com/freesewing">On GitHub <i class="fa fa-github" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <span class='text-uppercase'><b>joost</b></span>
-                    <ul class='social'>
-                        <li><a target="_BLANK" href="https://twitter.com/intent/follow?screen_name=j__st"><i class="fa fa-twitter" aria-hidden="true"></i> On Twitter</a></li>
-                        <li><a target="_BLANK" href="https://www.instagram.com/joostdecock/"><i class="fa fa-instagram" aria-hidden="true"></i> On Instagram</a></li>
-                        <li><a target="_BLANK" href="https://www.facebook.com/j00st"><i class="fa fa-facebook" aria-hidden="true"></i> On Facebook</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div id='copyright'>
-            Copyright 2017 Joost De Cock
-            <br>
-            <a href="/license">License info</a>
-        </div>
-    </footer>
+    {% include footer.html %}
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="{{ site.baseurl }}/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="{{ site.baseurl }}/js/jquery.finger.min.js"></script>
-    <script src="{{ site.baseurl }}/js/siobhan.js"></script>
+    {% include closing-core.html %}
   </body>
 </html>

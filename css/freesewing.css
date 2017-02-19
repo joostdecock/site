@@ -1,6 +1,10 @@
-body {
-    padding-top: 80px;
+/* NAVBAR */
+
+/* padding for navbar, only when present */
+body.with-navbar {
+    padding-top: 50px;
 }
+
 #nav-logo {
     width: 20rem;
     color: #fff;
@@ -16,6 +20,9 @@ nav.navbar a.oc-toggle {
         display: none;
     }
 }
+
+
+/* BRANDING */
 .bg-primary-gradient {
     background: rgba(92,53,102,0.9);
     background: -moz-linear-gradient(left, rgba(92,53,102,1) 0%, rgba(102,63,149,1) 100%);
@@ -26,12 +33,18 @@ nav.navbar a.oc-toggle {
     background: linear-gradient(to right, rgba(92,53,102,1) 0%, rgba(102,63,149,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c3566', endColorstr='#663f95', GradientType=1 );
 }
+
+
+/* UTILITY */
 img { max-width: 100%; }
 .drop-shadow { box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15); }
 
+/* LINKS */
 a { color: rgba(102,63,149,1); }
 a:hover {text-decoration: none; color: #5bc0de;}
 
+
+/* SCROLLER */
 #scroller {
   position: fixed;
   bottom: -50px;
@@ -47,14 +60,14 @@ body.scrolled #scroller {
   bottom: 5px;
 }
 
-figure.image figcaption { margin-top: 4px; margin-left: 1rem; margin-bottom: 1rem; font-size: 90%; }
 
+/* BLOCKQUOTES */
 blockquote { 
     font-size: 0.95rem;
     padding: 0.75rem;
-    border: 4px solid #666;
+    border: 4px solid rgba(92,53,102,0.8);
     margin: 1rem;
-    box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0.3rem 0.3rem 0.5rem rgba(0,0,0,0.25);
 }
 blockquote:before {
     content: "\f0eb";
@@ -72,34 +85,44 @@ blockquote:before {
     margin-top: -0.3rem;
     color: rgba(92,53,102,0.8);
 }
-blockquote.quote { border: 4px solid rgba(92,53,102,0.8); }
+blockquote.quote { border: 4px solid #666; }
 blockquote.quote:before {
     content: "\f10e";
     color: #666;
 }
+article blockquote { margin-top: 2rem; }
+
+/* TABS */
 div.tab-pane { padding-top: 1rem; }
 
+/* TOC */
 div.toc ul { padding-left: 25px; font-size: 1.5rem; }
-
 div.toc > ul { list-style-type: none; margin-left: 0; padding-left: 0; font-size: 1.8rem; }
 
+/* CODE */
 code.highlighter-rouge { color: #5c3566; }
-
 a code.highlighter-rouge { background: rgba(102,63,149,1); color: #fff; border: 0; padding: 0.1rem 0.4rem; border-radius: 0.25rem;}
 a code.highlighter-rouge:hover { background: #5bc0de;}
 
-article.classdoc { margin-top: -50px;}
-article.classdoc h2,
-article.classdoc h3 { margin-top: 0; padding-top: 50px; padding-bottom: 1rem; }
+/* HEADER */
+header {
+    margin-top: 0;
+    padding-top: 120px;
+    margin-bottom: 30px;    
+}
+/* Negative margin top to fix anchor links */
+body.with-navbar header {
+    margin-top: -50px;
+    padding-top: 70px;
+}
 
-article.classdoc h3 { border-bottom: 3px double #e4e4e4; }
-
-article.classdoc blockquote { margin-top: 2rem; }
-
-ul.page-tags { list-style-type: none; margin-left: 0; padding-left: 0; }
-
-ul.page-tags li { display: inline-block; margin-right: 0.4rem; }
-a.badge { font-weight: 600;}
+/* TITLES */
+article h2,
+article h3 { margin-top: 0; padding-top: 50px; padding-bottom: 1rem; }
+article h3 { border-bottom: 3px double #e4e4e4; }
+article > h2,
+article > h3 { padding-top: 0; }
+/* OC lists */
 .oc-panel ul {
     margin-left: 0;
     padding-left: 1rem;
@@ -111,15 +134,14 @@ a.badge { font-weight: 600;}
     font-size: 0.95rem;
 }
 
-h1 small {
-    color: #666;
-    font-weight: 300;
-}
+
+/* FOOTER */
 footer {
     min-height: 12rem;
     color: rgba(255, 255, 255, 0.6);
     font-size: 0.95rem;
     padding: 2rem 0 2.5rem;
+    margin-top: 4rem;
 }
 ul.social {
     list-style-type: none;
@@ -140,3 +162,63 @@ ul.social {
 .bg-primary-gradient a.btn:hover {
     color: white;
 }
+
+/* TODO LIST */
+ul.todo {
+    margin: 1rem 0;
+}
+ul.todo li {
+    list-style-type: none;
+}
+ul.todo li.done {
+    color: #aaa;
+    font-weight: 200;
+}
+ul.todo li.todo {
+    color: #ccc;
+    text 
+}
+ul.todo li.done:before {
+    content: '\f058';
+    color: #5cb85c;
+}
+ul.todo li.blocking:before {
+    content: '\f071';
+    color: #d9534f;
+}
+ul.todo li.wish:before {
+    content: '\f004';
+    color: #5bc0de;
+}
+ul.todo li:before {
+    content: "\f10c";
+    font-family: 'FontAwesome';
+    padding-right: 0.5rem;
+    color: #f0ad4e;
+}
+
+/* TAGS */
+ul.tags { 
+    list-style-type: none; 
+    margin-left: 0; 
+    padding-left: 0; 
+}
+
+ul.tags li { 
+    display: inline-block;
+    margin-right: 0.4rem; 
+}
+
+
+/* VARIOUS */
+a.badge { 
+font-weight: 600;
+}
+figure.image figcaption { margin-top: 4px; margin-left: 1rem; margin-bottom: 1rem; font-size: 90%; }
+
+h1 small {
+    color: #666;
+    font-weight: 300;
+}
+
+
