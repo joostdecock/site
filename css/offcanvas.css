@@ -8,16 +8,12 @@
   z-index: 888889;
   overflow: auto;
   overflow-y: auto;
-  margin-top: 40px;
   height: 100vh;
 }
 .oc-panel::after {
     content: ' ';
     height: 40px;
     display: block;
-}
-#content > article > h2 {
-    margin-top: 40px;
 }
 #oc-left {
   top: 0px;
