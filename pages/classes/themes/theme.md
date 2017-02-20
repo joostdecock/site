@@ -2,12 +2,12 @@
 layout: class
 title: Theme
 namespace: Freesewing\Themes
-tags: [internal, class, abstractClass]
-permalink: /class/Themes/Theme
+tags: [theme, abstract]
+permalink: /class/themes/theme
 ---
 ## Description 
 
-The [`Theme`](Theme) class is an abstract class to be extended by themes.
+The [`Theme`](theme) class is an abstract class to be extended by themes.
 
 ## Public methods
 
@@ -201,6 +201,13 @@ what parts to render.
 {:.no_toc}
 
 - [`Pattern`](../Patterns/Pattern) `$pattern` : The pattern object
+
+
+
+
+
+
+
 
 ## See also
 {% include classFooter.html %}
