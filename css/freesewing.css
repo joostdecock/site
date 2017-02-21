@@ -117,11 +117,21 @@ body.with-navbar header {
 }
 
 /* TITLES */
-article h2,
-article h3 { margin-top: 0; padding-top: 50px; padding-bottom: 1rem; }
-article h3 { border-bottom: 3px double #e4e4e4; }
+article.classdoc h3 { border-bottom: 3px double #e4e4e4; }
 article > h2,
 article > h3 { padding-top: 0; }
+
+/* FIX FOR ANCHOR LINKS OFFSET */
+h2:before,
+h3:before {
+    content: '';
+    display: block;
+    padding-top: 70px;
+}
+h2:before {margin-top: -40px;}
+h3:before {margin-top: -50px;}
+
+
 /* OC lists */
 .oc-panel ul {
     margin-left: 0;
@@ -208,7 +218,6 @@ ul.tags li {
     display: inline-block;
     margin-right: 0.4rem; 
 }
-
 
 /* VARIOUS */
 a.badge { 
