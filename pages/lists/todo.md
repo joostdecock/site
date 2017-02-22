@@ -25,13 +25,14 @@ Info on how to do so it included [at the bottom of this page](#updating-this-tod
 
 - How do units work
 - Theme documentation
-- Getting started guide
+- {:.done} Getting started guide
 - An about page that explains what this thing is
 - {:.wish} Documentation on how to update the documentation (so meta)
 - Explain request parameters
 - Explain configuration options
 - Explain the _embedFluid_ theme option
 - Document protected methods in abstract classes
+- Write about naming conventions
 {:.todo}
 
 ### Site issues

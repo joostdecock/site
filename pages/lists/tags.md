@@ -27,6 +27,7 @@ permalink: /tags
     <a href="#{{ tag }}" class="tag">#{{ tag }}</a>
     {% endfor %}
 </div>
+
 <div class="tagpage">
     {% for tag in tags %}
     <h2 id="{{ tag }}">{{ tag }}</h2>
