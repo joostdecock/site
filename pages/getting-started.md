@@ -24,13 +24,24 @@ custom sewing patterns](#freesewing-drafts-custom-sewing-patterns)
 Before I pick apart what that actually means, 
 let's make sure we are all on the same page regarding terminology.
 
-> <h5 class='notoc'>What is a freesewing pattern?</h5>
-> A **pattern** is a master plan 
-> &mdash; a recipe if you want &mdash; from which a pattern **draft** is generated.
->
 > <h5 class='notoc'>What is a freesewing draft?</h5>
+>
+> What you think of as a pattern, is called a **draft** in freesewing.
+>
+> A draft is a blueprint to make a garment that is to your 
+> exact specifications. You can download a draft as a PDF and print it.
+>
+> <h5 class='notoc'>What is a freesewing pattern?</h5>
 > 
-> A pattern drafted to your exact specifications is called a **draft**.
+> A **pattern** is a small
+> software module that plugs into the freesewing platform. 
+>
+> A pattern is like a master plan, a recipe if you will.
+> Its roles is to take your input, which is typically your
+> measurements and options, and turn it into a draft.
+>
+> You can download a pattern too. But you would just have a bunch
+> of software files.
 
 ### Freesewing is an online platform
 
@@ -44,18 +55,16 @@ perhaps [the Valentina project](http://valentina-project.org/) is a better match
 Freesewing does not have a collection of standard patterns for you to download, 
 as you might expect from an online pattern store.
 
-All freesewing patterns are drafted for you, on the fly, based on your input.
+We can do better: All freesewing patterns are drafted for you, on the fly, based on your input.
 
 ### Freesewing patterns are based on your measurements
 
 Freesewing does not use sizes. It takes your measurements (and options) as input,
 and out comes a custom pattern draft.
 
-## What does freesewing do?
+## What does freesewing (the project) do?
 
-Freesewing drafts custom sewing patterns, but you already knew that.
-
-As a project, our work is focussed on three main areas:
+Our work is focussed on three main areas:
 
 ### We design patterns
 
@@ -72,18 +81,18 @@ No graphical tools are used to generate your pattern draft.
 Both the drafting process, and the pattern your draft is based on, are implemented in code.
 
 It's an approach that is perhaps unusual (pattern designers are used to fire up Illustrator, 
-not an IDE) but fits particularly well with the engineering challenge that are sewing patterns.
+not an <abbr title="Integrated Development Environment">IDE</abbr>) but fits particularly well with the engineering challenge that are sewing patterns.
 
 Moving a line a bit right or left in a graphical program is subjective, and hard to reproduce.
 With code, you know what is going on and what you are changing to the very last detail.
 
 ### We provide documentation
 
-This is arguably the hardest &mdash; and most time-consuming &mdash; work we do.
+This is certainly the most time-consuming work we do.
 But we do it nevertheless because we believe it is important.
 
-Everything we do, we try to document. To the best of our abilities and, with your help, 
-even beyond that.
+We try to document everything. From the code we write to how to sew up our patterns.
+It's an ongoing process of tiny improvements that's never finished.
 
 ## What can freesewing do for me?
 
@@ -107,7 +116,8 @@ On the technical side, you have powerful tools at your disposal that take care o
 of things for you (no more grading, ever).
 
 You can host your patterns at freesewing.org (for free) or run your own
-instance, and sell them. Custom pattern drafts protect you from people copying and passing your
+instance, and sell them. Custom pattern drafts provide your customers 
+with a better experience, but also protect you from people copying and passing your
 patterns around. Which means you can sell more patterns at a lower price point.
 
 ### For developers
@@ -136,7 +146,7 @@ We'd love to host your designs on freesewing. If you need any help, [get in touc
 
 Do you have designs that you'd like to migrate to freesewing? We'd love to [help you with that](/contact).
 
-Do you want use freesewing to underpin your businnes? That's great, [reach out to us](/contact). 
+Do you want use freesewing to underpin your business? That's great, [reach out to us](/contact). 
 
 Just want to chat? There's a [Slack channel](/slack) for that.
 
