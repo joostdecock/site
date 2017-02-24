@@ -12,6 +12,9 @@ body.with-navbar {
     text-transform: uppercase;
     letter-spacing: -1px;
 }
+#nav-logo img {
+    max-height: 30px;
+}
 nav.navbar a.oc-toggle {
     color: #fff;
 }
@@ -32,6 +35,13 @@ nav.navbar a.oc-toggle {
     background: -ms-linear-gradient(left, rgba(92,53,102,1) 0%, rgba(102,63,149,1) 100%);
     background: linear-gradient(to right, rgba(92,53,102,1) 0%, rgba(102,63,149,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c3566', endColorstr='#663f95', GradientType=1 );
+    background-size: cover;
+    background-position: center;
+    
+    /* Uncomment this line for a celebration theme  */
+    /*
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Rainbow_flag_breeze.jpg/1280px-Rainbow_flag_breeze.jpg");
+    */
 }
 
 
@@ -192,7 +202,6 @@ h3:before {margin-top: -50px;}
 
 /* FOOTER */
 footer {
-    min-height: 12rem;
     color: rgba(255, 255, 255, 0.6);
     font-size: 0.95rem;
     padding: 2rem 0 2.5rem;
@@ -207,6 +216,11 @@ ul.social {
     margin-top: 1rem;
     text-align: center;
     font-size: 0.9rem;
+}
+#footer-logo {
+    text-align: center;
+    max-width: 69px;
+    margin: 0 auto 1rem;
 }
 .bg-primary-gradient a {
     color: white;

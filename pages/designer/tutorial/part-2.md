@@ -256,7 +256,7 @@ The last one is the point where the curve will end. The first one controls the c
 These are [Bézier curves](https://en.wikipedia.org/wiki/B%C3%A9zier_curve), they are the go-to way to represent curves in computers, and more intuitive than you might think.
 Below is an example you can play with to see how the different points influence the curve:
 
-{% include bezier_demo.html %}
+{% include bezier-demo.html %}
 
 #### A mixed example
 

@@ -33,6 +33,7 @@ Info on how to do so it included [at the bottom of this page](#updating-this-tod
 - Explain the _embedFluid_ theme option
 - Document protected methods in abstract classes
 - Write about naming conventions
+- Write about paths and pathstrings
 {:.todo}
 
 ### Site issues
