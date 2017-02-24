@@ -28,6 +28,7 @@ layout: default
     .jumbotron .container {
         max-width: 90%;
     }
+    h1 {font-size: 3rem;}
 }
 .album {
   padding-top: 3rem;
@@ -54,9 +55,50 @@ layout: default
 a.navbar-toggler-right {
     display: none;
 }
+#home-logo {
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+#home-logo-background {
+    position: absolute;
+    top: 14px;
+    left: 17px;
+    width: 156px;
+    height: 174px;
+    margin: auto;
+}
+#home-logo img {
+    max-height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#logo-message {
+    display: block;
+    position: absolute;
+    width: 200px;
+    bottom: 31px;
+    font-size: 75%;
+    -moz-animation: ;
+    line-height: 1.25;
+    /* remove line below for logo message */
+    display: none;
+}
+#logo-message a {
+    color: #292b2c;
+}
 </style>
     <div class="album text-muted">
       <div class="container">
+          <div id="home-logo">
+              <div id="home-logo-background" class="bg-primary-gradient"></div>
+              <img class="" src="/img/logo-cutout.svg">
+              <span id="logo-message"><a href="#">Happy pride!</a></span>
+          </div>
         <h1 class="text-center mb-5">Freesewing documentation</h1>
         <div class="row">
             <div class="col-md-4">
@@ -111,7 +153,7 @@ a.navbar-toggler-right {
         <div class="container">
             <div class="row">
             <div class='col-md-6 mb-5'>
-                <h2>Just not sure where to start?</h2>
+                <h3>Just not sure where to start?</h3>
                 <p>If you're new to freesewing, this is for you.</p>
                 <a href="/getting-started" class="btn btn-primary">Getting started</a>
             </div>
