@@ -1,0 +1,51 @@
+h1, .h1 {
+    font-size: 3rem;
+    font-weight: 200;
+}
+h2, .h2 {
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+h3, .h3 {
+    font-size: 2rem;
+    font-weight: 200;
+}
+h4, .h4 {
+    font-size: 2rem;
+    font-weight: 200;
+}
+h5, .h5 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+h6, .h6 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+article.classdoc h3 { border-bottom: 3px double #e4e4e4; }
+article > h2,
+article > h3 { padding-top: 0; }
+h1.page-title {
+    text-align: center;
+    letter-spacing: -0.01rem;
+}
+@media (max-width: 991px) {
+    h1, .h1 {
+        font-size: 2.5rem;
+    }
+    h2, .h2 {
+        font-size: 2.2rem;
+    }
+    h3, .h3 {
+        font-size: 1.9rem;
+    }
+    h4, .h4 {
+        font-size: 1.6rem;
+    }
+    h5, .h5 {
+        font-size: 1.3rem;
+    }
+    h6, .h6 {
+        font-size: 1rem;
+    }
+}

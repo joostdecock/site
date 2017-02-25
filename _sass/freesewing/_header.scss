@@ -1,0 +1,25 @@
+header {
+    margin: 0 0 1rem 0;
+}
+#stripe {
+    padding: 4rem 0.5rem;
+    margin-bottom: 2rem;
+    -webkit-box-shadow: inset 0px 2px 3px 0px rgba(0,0,0,0.25), inset 0px -2px 3px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: inset 0px 2px 3px 0px rgba(0,0,0,0.25), inset 0px -2px 3px 0px rgba(0,0,0,0.25);
+    box-shadow: inset 0px 2px 3px 0px rgba(0,0,0,0.25), inset 0px -2px 3px 0px rgba(0,0,0,0.25);
+}
+#stripe h1 {
+    color: white;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    
+}
+#stripe h1.dark {
+    color: $gray-dark;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.5);
+    
+}
+@media (max-width: 991px) {
+    #stripe {
+        padding: 2rem 0.5rem;
+    }
+}

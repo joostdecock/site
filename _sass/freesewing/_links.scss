@@ -1,0 +1,14 @@
+p a,
+a.text {
+    box-shadow: 0px -2px 0px rgba(102,63,149,0.3) inset;
+}
+p a:hover,
+a.text:hover {
+    box-shadow: 0px -3px 0px rgba(102,63,149,0.3) inset;
+    border-bottom: 1px solid rgba(102,63,149,0.3);
+    color: rgba(102,63,149,1);
+    text-decoration: none;
+}
+p a > code {
+    box-shadow: none;
+}

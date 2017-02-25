@@ -1,0 +1,68 @@
+/* TODO LIST */
+ul.todo {
+    margin: 1rem 0;
+}
+ul.todo li {
+    list-style-type: none;
+}
+ul.todo li:before {
+    content: "\f10c";
+    font-family: 'FontAwesome';
+    padding-right: 0.5rem;
+    color: #f0ad4e;
+    font-weight: normal;
+}
+ul.todo li.done {
+    color: #aaa;
+    font-weight: 200;
+}
+ul.todo li.todo {
+    color: #ccc;
+}
+ul.todo li.done:before {
+    content: '\f058';
+    color: #5cb85c;
+}
+ul.todo li.blocking:before {
+    content: '\f071';
+    color: #d9534f;
+}
+ul.todo li.wish:before {
+    content: '\f004';
+    color: #5bc0de;
+}
+
+/* FILE LIST */
+ul.files {
+    margin: 1rem 0;
+}
+ul.files li {
+    list-style-type: none;
+}
+ul.files li:before {
+    content: "\f0f6";
+    font-family: 'FontAwesome';
+    padding-right: 0.5rem;
+    color: rgba(102,63,149,1);
+    font-weight: normal;
+}
+ul.files li.folder,
+ul.files li.folder-open {
+    font-weight: bold;
+}
+ul.files li.folder:before { 
+    content: '\f114';
+}
+ul.files li.folder.open:before { 
+    content: '\f115';
+}
+ul.files li.folder:before { color: #5bc0de; }
+
+ul.files li.folder ul,
+ul.files li.folder-open ul {
+    font-weight: normal;
+}
+ul.files li.code:before {
+    content: '\f1c9';
+}
+

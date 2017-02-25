@@ -31,14 +31,14 @@
     function siobhanOcShow(side) {
       $('#oc-'+side).addClass('shown');
       $('.oc-overlay').addClass(side);
-      $('.fade-oc-'+side).addClass('faded');
+      $('.fade-oc').addClass('faded');
       $('body').addClass('oc-shown');
     }
 
     function siobhanOcHide(side) {
       $('.oc-overlay').removeClass(side);
       $('#oc-'+side).removeClass('shown');
-      $('.fade-oc-'+side).removeClass('faded');
+      $('.fade-oc').removeClass('faded');
       $('body').removeClass('oc-shown');
     }
 

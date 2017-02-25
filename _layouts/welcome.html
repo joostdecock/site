@@ -2,34 +2,6 @@
 layout: default
 ---
 <style>
-.jumbotron {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  margin-bottom: 0;
-  background-image: url('/img/slack.jpg');
-  background-size: cover;
-  background-position: center;
-}
-
-.jumbotron p:last-child {
-  margin-bottom: 0;
-}
-
-.jumbotron-heading {
-  font-weight: 300;
-}
-
-.jumbotron .container {
-  background: rgba(255,255,255,0.42);
-  padding: 2rem;
-  max-width: 38rem;
-}
-@media (max-width: 991px) {
-    .jumbotron .container {
-        max-width: 90%;
-    }
-    h1 {font-size: 3rem;}
-}
 .album {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -51,53 +23,16 @@ layout: default
 #extra {
     margin: 5rem 0;
 }
-#scroller,
-a.navbar-toggler-right {
+#tocburger {
     display: none;
 }
-#home-logo {
-    margin: auto;
-    padding: 0;
-    text-align: center;
-    width: 200px;
-    height: 200px;
-    position: relative;
-}
-#home-logo-background {
-    position: absolute;
-    top: 14px;
-    left: 17px;
-    width: 156px;
-    height: 174px;
-    margin: auto;
-}
-#home-logo img {
-    max-height: 200px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-#logo-message {
-    display: block;
-    position: absolute;
-    width: 200px;
-    bottom: 31px;
-    font-size: 75%;
-    -moz-animation: ;
-    line-height: 1.25;
-    /* remove line below for logo message */
-    display: none;
-}
-#logo-message a {
-    color: #292b2c;
 }
 </style>
-    <div class="album text-muted">
+    <div class="album">
       <div class="container">
           <div id="home-logo">
-              <div id="home-logo-background" class="bg-primary-gradient"></div>
+              <div id="home-logo-background" class="bg-thematic"></div>
               <img class="" src="/img/logo-cutout.svg">
-              <span id="logo-message"><a href="#">Happy pride!</a></span>
           </div>
         <h1 class="text-center mb-5">Freesewing documentation</h1>
         <div class="row">
@@ -136,8 +71,8 @@ a.navbar-toggler-right {
 
       </div>
     </div>
-    <section class="jumbotron text-center">
-      <div class="container">
+    <section class="cover-band bg-thematic">
+      <div class="cover-body">
         <h1 class="jumbotron-heading">Hey, are you on Slack yet?</h1>
         <p class="lead">
             We hope this documentation will answer all of your questions.

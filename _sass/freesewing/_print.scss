@@ -1,0 +1,5 @@
+@media only print
+{
+    body * { display: none !important; }
+    body:after { content: "Don't print web pages. If you have to print, we have PDFs"; }
+}
