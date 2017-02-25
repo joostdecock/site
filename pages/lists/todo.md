@@ -41,7 +41,7 @@ Info on how to do so it included [at the bottom of this page](#updating-this-tod
 - {:.done}Fix link to GitHub in footer
 - {:.done}Make footer an include
 - {:.done} Improve layout of regular pages to be more inline with class pages
-- {:.blocking} Convert all CSS to SASS
+- {:.done} Convert all CSS to SASS
 - {:.done} Fix anchor link offset on non-class pages
 {:.todo}
 
