@@ -3,6 +3,7 @@ layout: cover
 title: Join our Slack channel
 permalink: /slack/
 ---
+<div class="cover-body" markdown="1">
 <h1 class="cover-heading" id="title">Join our Slack channel</h1>
 The freesewing community on [Slack](http://slack.com) 
 is the best place to ask questions, meet other freesewers, or just hang out and share a laugh.
@@ -10,13 +11,11 @@ is the best place to ask questions, meet other freesewers, or just hang out and 
 
 <form class="form" id="form">
   <label class="sr-only" for="inlineFormInput">Email</label>
-  <input type="text" class="text-center form-control mb-2 mr-sm-2 mb-sm-0" id="email" placeholder="Your email address">
-  <a href='#' id="submit" class="btn btn-lg btn-success mt-4">Send me a Slack invite</a>
+  <input type="text" class="text-center form-control" id="email" placeholder="Your email address">
+  <a href='#' id="submit" class="btn btn-lg btn-primary mt-4">Send me a Slack invite</a>
 </form>
 
-[Or, return to the documentation](/)
-{:#cancel.mt-4}
-
+</div>
 <script>
 $(document).on('click', '#submit', function() { 
     $('#submit').html('<i class="fa fa-spinner fa-pulse fa-fw"></i>');

@@ -1,0 +1,24 @@
+.bg-thematic {
+    color: $white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    background: rgba(92,53,102,0.9);
+    background: -moz-linear-gradient(left, rgba(92,53,102,1) 0%, rgba(102,63,149,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(92,53,102,1)), color-stop(100%, rgba(102,63,149,1)));
+    background: -webkit-linear-gradient(left, rgba(92,53,102,1) 0%, rgba(102,63,149,1) 100%);
+    background: -o-linear-gradient(left, rgba(92,53,102,1) 0%, rgba(102,63,149,1) 100%);
+    background: -ms-linear-gradient(left, rgba(92,53,102,1) 0%, rgba(102,63,149,1) 100%);
+    background: linear-gradient(to right, rgba(92,53,102,1) 0%, rgba(102,63,149,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c3566', endColorstr='#663f95', GradientType=1 );
+    background-size: cover;
+    background-position: center;
+    background-image: $potw;
+}
+.bg-thematic a {
+    color: white;
+}
+.bg-thematic a:hover {
+    color: #5bc0de;
+}
+.bg-thematic a.btn:hover {
+    color: white;
+}

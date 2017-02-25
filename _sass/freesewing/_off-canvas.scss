@@ -9,6 +9,14 @@
   overflow: auto;
   overflow-y: auto;
   height: 100vh;
+  color: $black !important;
+  text-shadow: none !important;
+}
+.oc-panel a {
+  color: $link-color !important;
+}
+.oc-panel a:hover {
+  color: $link-hover-color !important;
 }
 .oc-panel::after {
     content: ' ';
@@ -22,7 +30,7 @@
   position: fixed;
   overflow: hidden;
   backface-visibility: hidden;
-  background: #fff;
+  background: $gray-lightest;
   transition: transform 300ms ease 0s;
   padding: 25px 10px;
   left: -300px;
@@ -39,7 +47,7 @@
   height: 100%;
   display: none;
   z-index: 888887;
-  top: 40px;
+  top: 0;
 }
 .oc-overlay.right {
     left: -300px;
@@ -53,6 +61,17 @@ body.oc-shown .oc-overlay {
 .faded {
     filter: grayscale(100%);
 }
+/* OC lists */
+.oc-panel ul {
+    margin-left: 0;
+    padding-left: 1rem;
+    list-style-type: none;
+    font-size: 1.05rem;
+}
+.oc-panel ul ul {
+    list-style-type: circle;
+    font-size: 0.95rem;
+}
 @media (max-width: 991px) {
 
     #oc-right {
@@ -63,7 +82,7 @@ body.oc-shown .oc-overlay {
       overflow: hidden;
       overflow-y: auto;
       backface-visibility: hidden;
-      background: #fff;
+      background: $gray-lightest;
       transition: transform 300ms ease 0s;
       padding: 45px 10px 25px 10px;
       right: -300px;

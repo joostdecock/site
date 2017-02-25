@@ -1,40 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="cover">
 <head>
     {% include head-core.html %}
-    
-    <!-- Custom styles 
-    ================================================== -->
-    <link href="{{ site.baseurl }}/css/cover.css" rel="stylesheet">
-    <link href="{{ site.baseurl }}/css/freesewing.css" rel="stylesheet">
-
 </head>
 
-<body class="cover bg-primary-gradient">
-    <div class="site-wrapper">
-        <div class="site-wrapper-inner">
-            <div class="cover-container">
-                <div class="masthead clearfix">
-            </div>
-
-            <div class="inner cover">
-            
-                {{ content }}
-            
-            </div>
-
-            <div class="mastfoot">
-                <div class="inner">
-                    <div id='copyright'>
-                        Copyright 2017 Joost De Cock
-                        <br>
-                        <a href="/license">License info</a>
-                    </div>
-                </div>
-            </div>
+<body class="bg-thematic">
+    <span class="oc-overlay"></span>
+    <a class="oc-toggle left burger" id="hamburger"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+    <div id="oc-left" class="oc-panel" data-side="left">
+        {% include main-menu.html %}
+    </div>
+    <div class="cover-wrap">
+        <div class="cover-top"> </div>
+        
+        {{ content }}
+        
+        <div class="cover-bottom">
+            {% include copyright.html %}
         </div>
     </div>
-
     {% include closing-core.html %}
   </body>
 </html>

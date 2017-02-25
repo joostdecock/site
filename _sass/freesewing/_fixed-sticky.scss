@@ -25,12 +25,8 @@
     position: sticky;
     top: 0;
 }
-body.with-navbar .sticky {
-    top: 50px;
-}
 .sticky:before,
 .sticky:after {
     content: '';
     display: table;
 }
-

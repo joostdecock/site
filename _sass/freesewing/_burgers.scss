@@ -1,0 +1,19 @@
+a.burger {
+    position: fixed;
+    top: 1rem;
+    color: $light-purple !important;
+}
+a.burger:hover {
+    color: $purple !important;
+}
+a.burger.white {
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+#hamburger { left: 1rem; }
+#tocburger { right: 1rem; }
+@media (min-width: 992px) {
+    #tocburger {
+        display: none;
+    }
+}
