@@ -22,12 +22,38 @@ h6, .h6 {
     font-size: 1rem;
     font-weight: bold;
 }
-article.classdoc h3 { border-bottom: 3px double #e4e4e4; }
-article > h2,
-article > h3 { padding-top: 0; }
+h2 {
+    padding: 2rem 0 0.2rem 0;
+}
+h3,h4,h5,h6 {
+    padding: 1rem 0 0.2rem 0;
+}
+article h2 { 
+    border-bottom: 6px solid $black; 
+    border-image: $potw 0 0 6 0 stretch;
+}
+article h3 { 
+    border-bottom: 4px solid $black; 
+    border-image: $potw 0 0 4 0 stretch;
+}
+article h4 { 
+    border-bottom: 2px solid $black; 
+    border-image: $potw 0 0 2 0 stretch;
+}
+article h5 { 
+    border-bottom: 1px solid $black; 
+    border-image: $potw 0 0 1 0 stretch;
+}
+article h6 { 
+    border-bottom: 0.5px solid $black; 
+    border-image: $potw 0 0 1 0 stretch;
+}
 h1.page-title {
     text-align: center;
     letter-spacing: -0.01rem;
+}
+h1.page-title small { 
+    font-size: 1.6rem;
 }
 @media (max-width: 991px) {
     h1, .h1 {

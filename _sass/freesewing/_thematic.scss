@@ -11,8 +11,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c3566', endColorstr='#663f95', GradientType=1 );
     background-size: cover;
     background-position: center;
-    // Set your background image here, or uncomment for the signature gradient
-    background-image: url("/img/potw.jpg");
+    background-image: $potw;
 }
 .bg-thematic a {
     color: white;

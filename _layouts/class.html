@@ -1,28 +1,37 @@
 ---
 layout: default
 ---
-<header class="class-header fade-oc-right">
-    <div class="row">
-        <div class="col-xs-12 col-md-9 col-md-offset-3">
-            <h1 class="class-title"><small>Class {{ page.namespace }}\ </small>{{ page.title | escape }}</h1>
-            {% include tags.html %}
-        </div> 
-    </div> 
-</header>
-
-<div class="row">
-    <div class="col-lg-8 col-md-12 fade-oc-right">
-        <section id="content">
-            <article class="classdoc">
-                {{ content }}
-            </article>
-        </section>
-    </div>
-    <div class="col-lg-4 col-md-12">
-        <section id="toc" class="sticky">
-            <div id="oc-right" class="oc-panel" data-side="right">
-                <h2 id='toc-title'>Contents</h2>
+    <header class="page-header fade-oc">
+        <div id="top-logo">
+            <a href="/" title="To the homepage" class="logo"><img src="/img/logo-black.svg"></a>
+        </div>
+        <div id="stripe" class="bg-thematic">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-10 offset-md-1">
+                        <h1 class="page-title"><small>Class {{ page.namespace }}\ </small>{{ page.title | escape }}</h1>
+                    </div> 
+                </div> 
             </div>
-        </section>
-    </div>
-</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-12 fade-oc">
+                <section id="content">
+                    <article class="classdoc">
+                        {{ content }}
+                    </article>
+                    {% include tags.html %}
+                </section>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <section id="toc" class="sticky">
+                    <div id="oc-right" class="oc-panel" data-side="right">
+                        <h2 id='toc-title'>Contents</h2>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div><!-- /.container -->

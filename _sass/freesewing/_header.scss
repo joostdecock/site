@@ -10,12 +10,12 @@ header {
 }
 #stripe h1 {
     color: white;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-    
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+    font-weight: 300;
 }
 #stripe h1.dark {
     color: $gray-dark;
-    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.5);
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.75);
     
 }
 @media (max-width: 991px) {
