@@ -1,7 +1,7 @@
 ---
 layout: page
 title: The big and terribly incomplete todo list
-tags: [todo]
+tags: [contributors, todo]
 permalink: /todo
 ---
 ## About
@@ -34,6 +34,9 @@ Info on how to do so it included [at the bottom of this page](#updating-this-tod
 - Document protected methods in abstract classes
 - Write about naming conventions
 - Write about paths and pathstrings
+- Write about isValidResponse and isValidRequest
+- Write about theme options, including fluidEmbed
+- Show how headers are sent in channel
 {:.todo}
 
 ### Site issues

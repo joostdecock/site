@@ -1,37 +1,23 @@
 ---
 layout: default
 ---
-    <header class="page-header fade-oc">
-        <div id="top-logo">
-            <a href="/" title="To the homepage" class="logo"><img src="/img/logo-black.svg"></a>
+{% include header-narrow.html %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-12 fade-oc">
+            <section id="content">
+                <article class="page">
+                    {{ content }}
+                </article>
+                {% include tags.html %}
+            </section>
         </div>
-        <div id="stripe" class="bg-thematic">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-md-10 offset-md-1">
-                        <h1 class="page-title">{{ page.title | escape }}</h1>
-                    </div> 
-                </div> 
-            </div>
+        <div class="col-lg-4 col-md-12">
+            <section id="toc" class="sticky">
+                <div id="oc-right" class="oc-panel" data-side="right">
+                    <h2 id='toc-title'>Contents</h2>
+                </div>
+            </section>
         </div>
-    </header>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-12 fade-oc">
-                <section id="content">
-                    <article class="page">
-                        {{ content }}
-                    </article>
-                    {% include tags.html %}
-                </section>
-            </div>
-            <div class="col-lg-4 col-md-12">
-                <section id="toc" class="sticky">
-                    <div id="oc-right" class="oc-panel" data-side="right">
-                        <h2 id='toc-title'>Contents</h2>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div><!-- /.container -->
+    </div>
+</div><!-- /.container -->

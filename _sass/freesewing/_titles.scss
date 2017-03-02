@@ -11,42 +11,32 @@ h3, .h3 {
     font-weight: 200;
 }
 h4, .h4 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 200;
 }
 h5, .h5 {
-    font-size: 1.5rem;
-    font-weight: normal;
+    font-size: 1.2rem;
+    font-weight: 200;
 }
 h6, .h6 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: bold;
 }
 h2 {
     padding: 2rem 0 0.2rem 0;
 }
-h3,h4,h5,h6 {
+h3 {
     padding: 1rem 0 0.2rem 0;
 }
-article h2 { 
-    border-bottom: 6px solid $black; 
-    border-image: $potw 0 0 6 0 stretch;
+h4 {
+    padding: 0.75rem 0 0.1rem 0;
 }
-article h3 { 
+h5,h6 {
+    padding: 0.5rem 0 0 0;
+}
+article.classdoc h3 { 
     border-bottom: 4px solid $black; 
     border-image: $potw 0 0 4 0 stretch;
-}
-article h4 { 
-    border-bottom: 2px solid $black; 
-    border-image: $potw 0 0 2 0 stretch;
-}
-article h5 { 
-    border-bottom: 1px solid $black; 
-    border-image: $potw 0 0 1 0 stretch;
-}
-article h6 { 
-    border-bottom: 0.5px solid $black; 
-    border-image: $potw 0 0 1 0 stretch;
 }
 h1.page-title {
     text-align: center;

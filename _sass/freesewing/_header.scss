@@ -8,6 +8,9 @@ header {
     -moz-box-shadow: inset 0px 2px 3px 0px rgba(0,0,0,0.25), inset 0px -2px 3px 0px rgba(0,0,0,0.25);
     box-shadow: inset 0px 2px 3px 0px rgba(0,0,0,0.25), inset 0px -2px 3px 0px rgba(0,0,0,0.25);
 }
+#stripe.narrow {
+    padding: 2rem 0.5rem;
+}
 #stripe h1 {
     color: white;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
