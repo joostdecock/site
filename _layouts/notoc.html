@@ -4,7 +4,6 @@
     {% include start-page.html %}
     <script type='text/javascript'>
         $(function() {
-            $('#markdown-toc').detach().appendTo('#oc-right'); 
             $('.sticky').Stickyfill();
         });
     </script>
@@ -12,7 +11,6 @@
 <body>
     <span class="oc-overlay"></span>
     <a class="oc-toggle left burger" id="hamburger"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
-    <a class="oc-toggle right burger" id="tocburger"><i class="fa fa-align-left fa-2x" aria-hidden="true"></i></a>
     <div id="oc-left" class="oc-panel" data-side="left">
         {% include main-menu.html %}
     </div>

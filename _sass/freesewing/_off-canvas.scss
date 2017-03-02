@@ -94,3 +94,9 @@ body.oc-shown .oc-overlay {
       box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
     }
 }
+@media (min-width: 992px) {
+    .on-oc-right {
+        display: none;
+    }
+}
+

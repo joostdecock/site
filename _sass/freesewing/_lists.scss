@@ -43,7 +43,7 @@ ul.files li:before {
     content: "\f0f6";
     font-family: 'FontAwesome';
     padding-right: 0.5rem;
-    color: rgba(102,63,149,1);
+    color: $light-purple;
     font-weight: normal;
 }
 ul.files li.folder,
@@ -52,11 +52,12 @@ ul.files li.folder-open {
 }
 ul.files li.folder:before { 
     content: '\f114';
+    color: $purple;
 }
 ul.files li.folder.open:before { 
     content: '\f115';
+    color: $purple;
 }
-ul.files li.folder:before { color: #5bc0de; }
 
 ul.files li.folder ul,
 ul.files li.folder-open ul {
@@ -64,5 +65,10 @@ ul.files li.folder-open ul {
 }
 ul.files li.code:before {
     content: '\f1c9';
+    color: $teal;
+}
+ul.files li.image:before {
+    content: '\f1c5';
+    color: $green;
 }
 
