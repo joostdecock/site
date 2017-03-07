@@ -58,6 +58,9 @@ ul.files li.folder.open:before {
     content: '\f115';
     color: $purple;
 }
+ul.files li.repo:before { 
+    content: '\f09b';
+}
 
 ul.files li.folder ul,
 ul.files li.folder-open ul {
