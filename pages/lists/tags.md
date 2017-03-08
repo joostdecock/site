@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Tags
+tags: [list]
 permalink: /tags
 ---
 {% assign rawtags = "" %}

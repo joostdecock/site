@@ -28,7 +28,7 @@ void setPattern(
     \Freesewing\Pattern $pattern 
 )
 ```
-Stores the [`Pattern`](pattern) object in the `pattern` property.
+Stores the [`Pattern`](/class/patterns/pattern) object in the `pattern` property.
 
 #### Typical use
 {:.no_toc}
@@ -39,7 +39,7 @@ Used by the [`Services/sampleservice`](services/sampleservice) and
 #### Parameters
 {:.no_toc}
 
-This expects a child class of [`Pattern`](pattern).
+This expects a child class of [`Pattern`](/class/patterns/pattern).
 
 ### loadPatternOptions
 
@@ -94,7 +94,7 @@ Protected function, so only available in [`OptionsSampler`](optionssampler) and
 
 - `int` `$step` : Which sampling step (out of a total `$steps`) is this?
 - `int` `$steps` : Number of sampling steps in total
-- [`Patterns/pattern`](patterns/pattern) `$pattern` : A [`Patterns/pattern`](patterns/pattern) object
+- [`Patterns/pattern`](/class/patterns/pattern) `$pattern` : A [`Patterns/pattern`](/class/patterns/pattern) object
 - [`Themes/theme`](themes/theme) `$theme` : A [`Themes/theme`](themes/theme) object
 - [`SvgRenderbot`] `$svgRenderbot` : An [`SvgRenderbot`] object
 - `string` `$mode` : Mode, either `sample` or `compare`. Defaults to `sample`

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Getting started with freesewing
-tags: [getting started]
+tags: [fundamentals]
 permalink: /getting-started
 ---
 ## Welcome
@@ -9,7 +9,7 @@ Hi there,
 
 This getting started guide will walk you through 
 [what freesewing is](#what-is-freesewing), 
-[what it does](#what-does-freesewing-do), 
+[what it does](#what-does-freesewing-the-project-do), 
 [what it can do for you](#what-can-freesewing-do-for-me), and 
 [how you can contribute to it](#how-can-i-contribute-to-freesewing).
 
@@ -161,7 +161,8 @@ to fix sewing patterns once and for all.
 
 If you're a maker, why don't you [check out our range of patterns](/fixme) and [make something](/fixme)?
 
-If you're a designer, I recommend the [pattern design tutorial](/designer/tutorial).
+If you're a designer, I recommend the pattern design tutorial, [part 1](/designer/tutorial/part-1) 
+and [part 2](/designer/tutorial/part-2).
 
 If you're a developer, head over to the [developer documentation](/developer).
 

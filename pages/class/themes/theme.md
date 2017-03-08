@@ -52,9 +52,9 @@ void themePattern(
 )
 ```
 
-This is where, as a theme designer, you theme the [`Pattern`](../patterns/pattern) object.
+This is where, as a theme designer, you theme the [`Pattern`](/class/patterns/pattern) object.
 
-By default, this pulls the (debug) messages to the pattern, so we can add it to the [`SvgDocument`](../patterns/pattern)
+By default, this pulls the (debug) messages to the pattern, so we can add it to the [`SvgDocument`](/class/svgdocument)
 later when [`Theme::themeSvg`](theme#themesvg) gets called.
 
 This also adds replacements for certain strings used in the theme templates.
@@ -66,7 +66,7 @@ Called by the service classes after the pattern is drafted/sampled, but before i
 #### Parameters
 {:.no_toc}
 
-- [`Pattern`](../patterns/pattern) `$pattern` : The pattern object to theme.
+- [`Pattern`](/class/patterns/pattern) `$pattern` : The pattern object to theme.
 
 ### themeSvg
 
@@ -76,7 +76,7 @@ void themeSvg(
 )
 ```
 
-This is where, as a theme designer, you theme the [`SvgDocument`](../patterns/pattern) object.
+This is where, as a theme designer, you theme the [`SvgDocument`](/class/svgdocument) object.
 
 By default, this loads the theme templates, and adds the (debug) messages from the pattern.
 
@@ -116,7 +116,7 @@ void cleanUp()
 
 Does nothing by default.
 
-The `cleanUp` method is called on the [`Theme`](../themes/theme), [`Pattern`](pattern), 
+The `cleanUp` method is called on the [`Theme`](../themes/theme), [`Pattern`](/class/patterns/pattern), 
 and [`Channel`](../channels/channel) object before terminating a request.
 It's a way to tie up any loose ends you may have, like open database connections and such things.
 
@@ -200,7 +200,7 @@ what parts to render.
 #### Parameters
 {:.no_toc}
 
-- [`Pattern`](../patterns/pattern) `$pattern` : The pattern object
+- [`Pattern`](/class/patterns/pattern) `$pattern` : The pattern object
 
 
 

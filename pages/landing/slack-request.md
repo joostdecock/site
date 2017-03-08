@@ -1,6 +1,7 @@
 ---
 layout: cover
 title: Join our Slack channel
+tags: [slack]
 permalink: /slack/
 ---
 <div class="cover-body" markdown="1">
@@ -12,7 +13,7 @@ is the best place to ask questions, meet other freesewers, or just hang out and 
 <form class="form" id="form">
   <label class="sr-only" for="inlineFormInput">Email</label>
   <input type="text" class="text-center form-control" id="email" placeholder="Your email address">
-  <a href='#' id="submit" class="btn btn-lg btn-primary mt-4">Send me a Slack invite</a>
+  <a href='#hamburger' id="submit" class="btn btn-lg btn-primary mt-4">Send me a Slack invite</a>
 </form>
 
 </div>

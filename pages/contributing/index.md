@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contributing
-tags: [getting started, contributing]
+tags: [fundamentals, contributing]
 permalink: /contributing
 ---
 ## Welcome
@@ -52,7 +52,7 @@ Describe what changes were made, why you made them, and what impact they will ha
 Many small changes can be made entirely through the github.com web interface.
 
 
-1. Navigate to the file within [a repository](/reposiroties) that you'd like to edit.
+1. Navigate to the file within [a repository](/repositories) that you'd like to edit.
 2. Click the pencil icon in the top right corner to edit the file
 3. Make your proposed changes
 4. Click _Propose file change_.

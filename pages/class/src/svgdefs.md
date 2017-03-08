@@ -2,7 +2,7 @@
 layout: class
 title: SvgDefs
 namespace: Freesewing
-tags: [class, extendsSvgBlock]
+tags: [class]
 permalink: /class/svgdefs
 ---
 ## Description 
@@ -29,7 +29,7 @@ string load()
 Load returns the data in the `data` property, and wraps as proper SVG defs.
 
 Note that this returns the `data` property as a string, 
-thereby triggering [`SvgBlock::__toString`](svgblock#__tostring).
+thereby triggering [`SvgBlock::__toString`](svgblock#tostring).
 
 #### Example
 {:.no_toc}
@@ -72,7 +72,7 @@ echo $svgBlock->load();
 #### Typical use
 {:.no_toc}
 
-Called from [`SvgDocument::__toString`](svgdocument#__tostring).
+Called from [`SvgDocument::__toString`](svgdocument#tostring).
 
 #### Return value
 {:.no_toc}

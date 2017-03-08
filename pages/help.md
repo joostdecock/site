@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Getting help
-tags: [slack, twitter]
+tags: [slack, twitter, github]
 permalink: /help
 ---
 

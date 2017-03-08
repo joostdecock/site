@@ -55,12 +55,11 @@ This is used through the methods in the [`Part`](part) class:
 
 - [`Part::newWidthDimension`](part#newwidthdimension)
 - [`Part::newHeightDimension`](part#newheightdimension)
-- [`Part::newLinearDimension`](part#newleneardimension)
+- [`Part::newLinearDimension`](part#newlineardimension)
 - [`Part::newCurvedDimension`](part#newcurveddimension)
 - [`Part::newWidthDimensionSm`](part#newwidthdimensionsm)
 - [`Part::newHeightDimensionSm`](part#newheightdimensionsm)
-- [`Part::newLinearDimensionSm`](part#newleneardimensionsm)
-- [`Part::newCurvedDimensionSm`](part#newcurveddimensionsm)
+- [`Part::newLinearDimensionSm`](part#newlineardimensionsm)
 
 
 ## Public methods

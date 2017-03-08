@@ -2,7 +2,7 @@
 layout: class
 title: CompareService
 namespace: Freesewing\Services
-tags: [class, extendsService, service]
+tags: [class, service]
 permalink: /class/services/compareservice
 ---
 ## Description 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Freesewing fundamentals
-tags: [fundamentals, getting started]
+tags: [fundamentals]
 permalink: /fundamentals
 ---
 ## Building blocks
@@ -93,7 +93,7 @@ In freesewing, wesupport the following operations in pathstrings:
 ## Further reading
 
 - [Getting started](/getting-started)
-- [Pattern lineage](/paterns/lineage)
+- [Pattern lineage](/patterns/lineage)
 - [Configuration files](/developer/config-files)
 - [Request parameters](/developer/request-parameters)
 

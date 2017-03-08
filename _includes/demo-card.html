@@ -1,5 +1,5 @@
 <div class="card h-100">
-    <a href='#' data-method='load-service' data-service='{{ include.service }}' class='demo-trigger'>
+    <a href='#demo' data-method='load-service' data-service='{{ include.service }}' class='demo-trigger'>
         <img src="/img/{{ include.service }}-service.jpg" alt="{{ include.service | capitalize }} service" class="not-on-smal drop-shadow">
     </a>
     <div class="card-block" style="padding: 0.25rem;">
@@ -7,6 +7,6 @@
         <p class="card-text">{{ include.text }} </p>
     </div>
     <div class="mt-1">
-        <a href="#" class="btn btn-block btn-primary demo-trigger" data-method="load-service" data-service="{{ include.service }}">{{ include.service | capitalize }} demo</a>
+        <a href="#demo" class="btn btn-block btn-primary demo-trigger" data-method="load-service" data-service="{{ include.service }}">{{ include.service | capitalize }} demo</a>
     </div>
 </div>

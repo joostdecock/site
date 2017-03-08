@@ -25,7 +25,7 @@ This way, we can include it here under a GPL license, yet it remains
 available under the original BSD-3-clause license
 for those who prefer that option.
 
-You can find the BSD-3-clause licensed version of this code [here](FIXME).
+You can find the BSD-3-clause licensed version of this code [here](/fixme).
 
 ## Typical use
 

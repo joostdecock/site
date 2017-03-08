@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Design tutorial part 2 - Beyond basics
-tags: [fundamentals, design, tutorial]
+tags: [fundamentals, designer, tutorial]
 permalink: /designer/tutorial/part-2
 ---
 In [the first part of this turorial](part-1), we created a basic pattern
@@ -496,7 +496,7 @@ $p->newSnippet('logo', 'logo', 'logoAnchor');
 </div>
 </div>
 
-The [`Part::addSnippet`](/class/part#addsnippet) method expects a name for our new snippet 
+The [`Part::newSnippet`](/class/part#newsnippet) method expects a name for our new snippet 
 (we just went with numbers), the name of the snippet defined in the theme, and the name of the 
 point to anchor it on.
 

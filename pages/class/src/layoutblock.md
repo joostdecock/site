@@ -7,7 +7,7 @@ permalink: /class/layoutblock
 ---
 ## Description 
 
-The [`Layoutblock`](Layoutblock) class holds information that describes 
+The [`Layoutblock`](layoutblock) class holds information that describes 
 a rectangle. An X and Y coordinate, along with width and height.
 
 It is used by the [`GrowingPacker`](growingpacker) class to describe
@@ -64,7 +64,7 @@ Takes a boolean and stores it in the
 #### Parameters
 {:.no_toc}
 
-A boolean to indicate whether the [`Layoutblock`](Layoutblock)
+A boolean to indicate whether the [`Layoutblock`](layoutblock)
 is in use or not.
 
 ### isUsed
@@ -75,7 +75,7 @@ bool isUsed()
 Returns the boolean and stored in the 
 `used` property.
 
-This indicates whether a [`Layoutblock`](Layoutblock) is in use or not.
+This indicates whether a [`Layoutblock`](layoutblock) is in use or not.
 In use means that there is a pattern part in it.
 Not in use means it's empty, and we can place a part in it if it fits.
 

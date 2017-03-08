@@ -43,7 +43,7 @@ permalink: "/developer/"
                 <li><a href="/developer/config-files">Configuration files</a></li>
                 <li><a href="/developer/request-parameters">Request parameters</a></li>
                 <li><a href="/developer/request-lifecycle">Request lifecycle</a></li>
-                <li><a href="/paterns/lineage">Pattern lineage</a></li>
+                <li><a href="/patterns/lineage">Pattern lineage</a></li>
             </ul>
         </div>
     </div> <!-- .row -->

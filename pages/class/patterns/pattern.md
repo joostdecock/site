@@ -2,7 +2,7 @@
 layout: class
 title: Pattern
 namespace: Freesewing\Patterns
-tags: [class, abstractClass, pattern]
+tags: [class, abstract, pattern]
 permalink: /class/patterns/pattern
 ---
 ## Description 
@@ -60,8 +60,8 @@ These are the methods a pattern designer should be familiar with:
 ### Internal public methods
 {:.no_toc}
 
-- [`Pattern::__construct`](pattern#__construct) : The constructor
-- [`Pattern::__clone`](pattern#__clone) : A PHP magic method called when cloning a pattern
+- [`Pattern::__construct`](pattern#construct) : The constructor
+- [`Pattern::__clone`](pattern#clone) : A PHP magic method called when cloning a pattern
 - [`Pattern::getConfig`](pattern#getconfig) : Returns the pattern configuration
 - [`Pattern::getUnits`](pattern#getunits) : Returns the pattern units
 - [`Pattern::getHeight`](pattern#getheight) : Returns the pattern height
@@ -71,7 +71,7 @@ These are the methods a pattern designer should be familiar with:
 - [`Pattern::getReplacements`](pattern#getreplacements) : Returns the pattern replacements
 - [`Pattern::getClassChain`](pattern#getclasschain) : Returns the pattern class chain
 - [`Pattern::getTranslationFiles`](pattern#gettranslationfiles) : Returns the pattern translation files
-- [`Pattern::getSampleModelConfig`](pattern#samplemodelconfig) : Returns the sampler model config
+- [`Pattern::getSamplerModelConfig`](pattern#getsamplermodelconfig) : Returns the sampler model config
 - [`Pattern::setPartMargin`](pattern#setpartmargin) : Sets the pattern part margin
 - [`Pattern::setTranslator`](pattern#settranslator) : Sets the pattern translator
 - [`Pattern::setUnits`](pattern#setunits) : Sets the pattern units
@@ -480,7 +480,7 @@ sleeve is tweaked (in this example).
 
 ## Internal methods
 
-### __construct (the constructor)
+### __construct
 
 ```php?start_inline=1
 string getServiceName() 
@@ -856,7 +856,7 @@ This will also auto-set the part title and units for you.
 #### Typical use
 {:.no_toc}
 
-Called from the [`Pattern::__contruct`](pattern#__construct), the pattern constructor.
+Called from the [`Pattern::__contruct`](pattern#construct), the pattern constructor.
 
 ### cleanUp
 

@@ -88,7 +88,7 @@ Themes the info on pattern `$pattern` according to format `$format`, which is on
 #### Parameters
 {:.no_toc}
 
-- [`Pattern`](../patterns/pattern) `$pattern` : The pattern object
+- [`Pattern`](/class/patterns/pattern) `$pattern` : The pattern object
 - `string` `$format` : The format to use
 
 #### Return value
@@ -104,8 +104,8 @@ void cleanUp()
 
 Does nothing by default.
 
-The `cleanUp` method is called on the [`Theme`](../themes/theme), [`Pattern`](pattern), 
-and [`Channel`](../channels/channel) object before terminating a request.
+The `cleanUp` method is called on the [`Theme`](../themes/theme), [`Pattern`](/class/patterns/pattern), 
+and [`Channel`](/class/channels/channel) object before terminating a request.
 It's a way to tie up any loose ends you may have, like open database connections and such things.
 
 By default, it does nothing though.

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Terminology
+tags: [list]
 permalink: /terminology/
 ---
 

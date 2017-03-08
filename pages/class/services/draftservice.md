@@ -2,7 +2,7 @@
 layout: class
 title: DraftService
 namespace: Freesewing\Services
-tags: [class, extendsService, service]
+tags: [class, service]
 permalink: /class/services/draftservice
 ---
 ## Description 

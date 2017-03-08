@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About Freesewing
-tags: [getting started]
+tags: [fundamentals]
 permalink: /about
 ---
 ## In a nutshell

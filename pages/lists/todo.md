@@ -1,7 +1,7 @@
 ---
 layout: page
 title: The big and terribly incomplete todo list
-tags: [contributing, todo]
+tags: [contributing, todo, list]
 permalink: /todo
 ---
 ## About
@@ -26,16 +26,16 @@ Info on how to do so it included [at the bottom of this page](#updating-this-tod
 - How do units work
 - Theme documentation
 - {:.done} Getting started guide
-- An about page that explains what this thing is
+- {:.done} An about page that explains what this thing is
 - {:.wish} Documentation on how to update the documentation (so meta)
-- Explain request parameters
-- Explain configuration options
-- Explain the _embedFluid_ theme option
+- {:.done} Explain request parameters
+- {:.done} Explain configuration options
+- {:.done} Explain the _embedFluid_ theme option
 - Document protected methods in abstract classes
 - Write about naming conventions
 - Write about paths and pathstrings
-- Write about isValidResponse and isValidRequest
-- Write about theme options, including fluidEmbed
+- {:.done} Write about isValidResponse and isValidRequest
+- {:.done} Write about theme options, including fluidEmbed
 - Show how headers are sent in channel
 {:.todo}
 
@@ -60,7 +60,7 @@ Info on how to do so it included [at the bottom of this page](#updating-this-tod
 #### Code
 
 - {:.blocking} Get unit tests up and running again after documentation changes
-- {:.blocking} Provide option to exclude patterns from the info service (make them hidden)
+- {:.done} Provide option to exclude patterns from the info service (make them hidden)
 {:.todo}
 
 #### Patterns
@@ -72,21 +72,21 @@ Info on how to do so it included [at the bottom of this page](#updating-this-tod
 
 #### DevOps
 
-- {:.wish} Figure out that Jenkins auto-build stuff and whether we'll use it
+- {:.done} Figure out that Jenkins auto-build stuff and whether we'll use it
 - {:.wish} Should we provide a docker image?
 {:.todo}
 
 #### Organisation
 
 - Figure out how we'll list contributions/honor contrbutors
-- Figure out who/what copyright should be attributed to
+- {:.done} Figure out who/what copyright should be attributed to
 - {:.wish} Should we have a launch party?
 {:.todo}
 
 
 ## Updating this todo page
 
-To update this todo list, edit the todo page, which is in `pages/todo.md`
+To update this todo list, edit the todo page, which is in `pages/lists/todo.md`
 
 If you add an extra list, make sure to give it the `todo` class, like this:
 

@@ -2,7 +2,7 @@
 layout: class
 title: GrowingPacker
 namespace: Freesewing
-tags: [class, ported, credits, extendsPacker]
+tags: [class, ported, credits]
 permalink: /class/growingpacker
 ---
 ## Description 
@@ -27,7 +27,7 @@ permission to distribute this port under GPLv3 (Thanks Jake!).
 
 ## Typical use
 
-Always called from [`Pattern:layout`](pattern#layout).
+Always called from [`Pattern:layout`](/class/patterns/pattern#layout).
 
 
 ## Public methods
@@ -37,7 +37,7 @@ Always called from [`Pattern:layout`](pattern#layout).
 ```php?start_inline=1
 void fit( &$array )
 ```
-Takes an array of [`Layoutblock`](Layoutblock) object and does its
+Takes an array of [`Layoutblock`](layoutblock) object and does its
 magic to lay them out in a space that's as small as possible, while
 aiming for a  1/sqrt(2) ratio (as in DIN paper sizes).
 
@@ -49,7 +49,7 @@ The array is passed by reference, there is no return value.
 The abstract class [`Packer`](packer)that [`GrowingPacker`](growingpacker)
 extends.
 
-The [`Layoutblock`](Layoutblock) class that this class uses to describe 
+The [`Layoutblock`](layoutblock) class that this class uses to describe 
 the pattern layout.
 
 Jake's original algorithm at [codeincomplete.com](http://codeincomplete.com/posts/bin-packing/).
