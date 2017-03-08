@@ -172,6 +172,30 @@ It must be one of:
 
 If it is not set, the `unitsOut` parameter defaults to `metric`.
 
+### cache
+
+The `cache` parameter controls the caching headers of the HTML response.
+
+If the `cache` request parameter is present, a caching header is added instructing the 
+browser to cache the response for 6 months.
+
+If the `cache` request parameter is not present, a caching header is added instructing 
+the browser not to cache the request.
+
+This is typically used for loading examples in the documentation, where there is no need
+to regenerate them on each request.
+
+Cache invalidation can be done by changing the value of the `cache` parameter. 
+For example, by stringing together the current year and month as the value of the 
+`cache` paramter, the cache will become invalid every month as the URL will change.
+
+It must be one of:
+
+- `metric`
+- `imperial`
+
+If it is not set, the `unitsOut` parameter defaults to `metric`.
+
 ### Theme options
 
 A theme can set options in its `config.yml` configuration file.

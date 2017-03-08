@@ -2,7 +2,7 @@
 layout: class
 title: Compare
 namespace: Freesewing\Themes
-tags: [theme, compare service]
+tags: [theme]
 permalink: /class/themes/compare
 ---
 ## Description 

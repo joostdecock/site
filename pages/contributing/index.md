@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contributing
-tags: [fundamentals, contributing]
+tags: [fundamentals, contributing, credits]
 permalink: /contributing
 ---
 ## Welcome
@@ -10,6 +10,12 @@ Hi there,
 
 Are you interested in contributing to freesewing? We'd love your help. 
 It's exactly why we made this thing open source in the first place.
+
+## Code of conduct
+
+We strive to be an open and inclusive community.
+To keep the trolls at bay, we have a [code of conduct](/code-of-conduct). 
+and we ask contributors to uphold it.
 
 ## Where to get help or report a problem
 
@@ -26,18 +32,39 @@ You'll need a GitHub account, but they are free.
 Whether you're a developer, a designer, a maker, or just a passer-by, 
 there are lots of ways to contribute. Here are few ideas:
 
+### For everyone
+
+- Read through the documentation, and any time you see something confusing, 
+or have a suggestion for something that could be improved, click the
+ _improve this page_ link that you find at the very bottom of every page. 
+- [Join our Slack channel](/slack) to talk to like-minded people with a love for sewing on a mission
+
+### For makers
+
+- Make our patterns, and provide us with your feedback
+- Improve the pattern instructions
+- Share your makes with the community, using the #freesewing hashtag
+- Spread the word about freesewing, because we don't have a marketing budget
+
+### For designers
+
+- Host your designs on freesewing.org
+- Let us help you port your existing designs to the freesewing platform
+- Use freesewing to build your pattern business on
+
+### For developers
+
 - Install freesewing on your computer and kick the tires. Does it work?
 Does it what you'd expect? If not, [open an issue](https://github.com/freesewing/freesewing.github.io/issues/new)
  and let us know.
 - Comment on some of our [open issues](https://github.com/freesewing/freesewing.github.io/issues). 
 Have you experienced the same problem? Know a work around? 
-- Read through the documentation, and click the _improve this page_ button, 
-any time you see something confusing, or have a suggestion for something that could be improved.
 - Hang out at [the freesewing Slack channel](/slack), and lend a hand answering questions. 
 There's a good chance you.ve already experienced what another user is experiencing.
 - Find an open issue (especially those labeled _help-wanted_), and submit a proposed fix. 
 If it's your first pull request, we promise we won't bite, and are glad to answer any questions.
 - Help evaluate open pull requests, by testing the changes locally and reviewing what's proposed.
+to fix sewing patterns once and for all.
 
 ## Submitting a pull request
 
@@ -106,10 +133,10 @@ We use PHPUnit for unit tests. The tests are located in the _tests_ folder.
 At the very least, you should run tests before and after your code changes to see
 the impact. Preferably, your pull request will contain new/updated unit tests to test your code.
 
-## Attribution
+## Credits
 
 This contributor documentation borrows heavily from 
-[the Jekkyl project](http://jekyllrb.com/docs/contributing/). Thanks guys.
+[the Jekyll project](http://jekyllrb.com/docs/contributing/). Thanks guys.
 
 
 

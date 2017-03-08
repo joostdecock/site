@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Install instructions
-tags: [getting started]
+tags: [fundamentals]
 permalink: /install
 ---
 

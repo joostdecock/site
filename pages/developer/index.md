@@ -38,7 +38,6 @@ permalink: "/developer/"
             <h2>Other useful links for designers</h2>
             <ul>
                 <li><a href="/getting-started">Getting started</a></li>
-                <li><a href="/fundamentals">Fundamentals</a></li>
                 <li>Pattern design tutorial <a href="/designer/tutorial/part-1">Part 1</a> and <a href="/designer/tutorial/part-2">Part 2</a></li>
                 <li><a href="/developer/config-files">Configuration files</a></li>
                 <li><a href="/developer/request-parameters">Request parameters</a></li>
