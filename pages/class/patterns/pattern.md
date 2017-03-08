@@ -2,7 +2,7 @@
 layout: class
 title: Pattern
 namespace: Freesewing\Patterns
-tags: [class, abstract, pattern]
+tags: [class, abstract]
 permalink: /class/patterns/pattern
 ---
 ## Description 

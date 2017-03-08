@@ -7,11 +7,11 @@ permalink: "/designer/"
     <div class="row">
         <div class="col-md-4 mt-5">
             {% include card.html 
-                title='Fundamentals'
+                title='Getting started'
                 text="Start reading here. It's short, but you might want to read this before skipping to the tutorial."
                 img='/img/fundamentals.jpg'
-                link='/fundamentals'
-                link-text='Freesewing fundamentals'
+                link='/getting-started'
+                link-text='Getting started'
             %}
         </div>
         <div class="col-md-4 mt-5">

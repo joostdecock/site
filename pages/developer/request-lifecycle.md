@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Request lifecycle
-tags: [developer, fundamentals]
+tags: [developer]
 permalink: /developer/request-lifecycle
 ---
 Below is a bird's eye overview of a request as it gets handled by freesewing
