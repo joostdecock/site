@@ -81,7 +81,7 @@ This returns the [`Path`](path) object in the `path` property, if any.
 #### Typical use
 {:.no_toc}
 
-Used in [`SvgRenderbot::renderNote`](svgrenderbot#rendernote).
+Used by [`SvgRenderbot`](svgrenderbot).
 
 #### Return value
 {:.no_toc}
@@ -93,7 +93,7 @@ This returns a [`Path`](path) object.
 
 The [`Part::newNote`](part#newnote) method is what you want to create notes.
 
-The [`SvgRenderbot::renderNote`](svgrenderbot#rendernote) method renders notes into SVG.
+The [`SvgRenderbot`](svgrenderbot) renders notes into SVG.
 
 {% include classFooter.html %}
 * TOC - Do not remove this line

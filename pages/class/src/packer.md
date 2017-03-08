@@ -2,7 +2,7 @@
 layout: class
 title: Packer
 namespace: Freesewing
-tags: [class, abstractClass]
+tags: [class, abstract]
 permalink: /class/packer
 ---
 ## Description 

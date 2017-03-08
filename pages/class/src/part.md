@@ -2,7 +2,7 @@
 layout: class
 title: Part
 namespace: Freesewing
-tags: [class, core]
+tags: [class]
 permalink: /class/part
 ---
 ## Description 
@@ -144,7 +144,7 @@ These are the methods to add all those other things to a [`Part`](part):
 - [`Part::newTextOnPath`](part#newtextonpath) : Creates & adds a new textOnPath
 - [`Part::newNote`](part#newnote) : Creates & adds a new note
 - [`Part::newSnippet`](part#newsnippet) : Creates & adds a new snippet
-- [`Part::newInclude`](part#include) : Creates & adds a new include
+- [`Part::newInclude`](part#newinclude) : Creates & adds a new include
 - [`Part::newWidthDimension`](part#newwidthdimension) : Creates & adds a new width dimension
 - [`Part::newHeightDimension`](part#newheightdimension) : Creates & adds a new height dimension
 - [`Part::newLinearDimension`](part#newlineardimension) : Creates & adds a new linear dimension
@@ -171,7 +171,7 @@ You'll use these methods to add everything but Points to your pattern part.
 >
 > Thes **add** methods are typically internal and nothing to worry about, 
 > but [`Part::addPoint`](part#addPoint) is a notable exception. As is 
-> [`Part::addTitle`](part#addTtile) which is named like that to reflect
+> [`Part::addTitle`](part#addtitle) which is named like that to reflect
 > that a [`Part`](part) can only have one title.
 
 ### Public methods for Path offset
@@ -191,7 +191,7 @@ These are methods that do a variety of other things that aren't covered
 in the other groups, but that are nonetheless important in pattern design:
 
 - [`Part::isPoint`](part#ispoint) : Does this point exist in the part?
-- [`Part::getTitle`](part#getitle) : Get the part title
+- [`Part::getTitle`](part#gettitle) : Get the part title
 - [`Part::setRender`](part#setrender) : Set the render flag on the part
 - [`Part::unit`](part#unit) : Convert a measure into units for the user
 - [`Part::newId`](part#newid) : Get an unused ID, with prefix
@@ -204,7 +204,7 @@ These are methods that, even though they are public, are mostly internal.
 
 In other words, you are unlikely to ever have to use these:
 
-- [`Part::addTransform`](part#addtransform) : Add an [`SvgTransform`](SvgTransform) to the part 
+- [`Part::addTransform`](part#addtransform) : Add a [`Transform`](transform) to the part 
 - [`Part::addBoundary`](part#addboundary) : Add a [`Boundary`](boundary) to the part
 - [`Part::setTitle`](part#settitle) : Set the part title
 - [`Part::setUnits`](part#setunits) : Set the part units
@@ -2088,7 +2088,7 @@ lifts your texts away from the path, even when it's upside-down
 #### Typical use
 {:.no_toc}
 
-When you think you need this, you probably want [`Part::newCurvedDimension`](part#newcurvedimension) instead.
+When you think you need this, you probably want [`Part::newCurvedDimension`](part#newcurveddimension) instead.
 
 #### Parameters
 {:.no_toc}
@@ -2189,11 +2189,11 @@ void newSnippet(
 ) 
 ```
 
-Creates a [`Snippet`](Snippet) object and adds it to the part.
+Creates a [`SvgSnippet`](/class/svgsnippet) object and adds it to the part.
 
-`$reference`, `$anchor`, `$attributes`, and an optional `$description` will be used to create the [`Snippet`](Snippet) object.
+`$reference`, `$anchor`, `$attributes`, and an optional `$description` will be used to create the [`SvgSnippet`](svgsnippet) object.
 
-The `$name` is so we can reference the [`Snippet`](Snippet) later (by its name).
+The `$name` is so we can reference the [`SvgSnippet`](svgsnippet) later (by its name).
 
 #### Example
 {:.no_toc}
@@ -2414,7 +2414,7 @@ In patterns when adding instructions for paperless themes.
 - `string` `$text`: The text to be the label of the [`Dimension`](dimension), or false to use the horizontal distance between `$from` and `$to`.
 - `array` `$pathAttributes`: An array of attributes to apply to the [`Path`](path) within the [`Dimension`](dimension).
 - `array` `$labelAttributes`: An array of attributes to apply to the [`Text`](text) within the [`Dimension`](dimension).
-- `array` `$leaderAttributes`: An array of attributes to apply to the [`Path`](paths) objects that form the leaders of the [`Dimension`](dimension).
+- `array` `$leaderAttributes`: An array of attributes to apply to the [`Path`](path) objects that form the leaders of the [`Dimension`](dimension).
 
 #### Return value
 {:.no_toc}
@@ -2508,7 +2508,7 @@ In patterns when adding instructions for paperless themes.
 - `string` `$text`: The text to be the label of the [`Dimension`](dimension), or false to use the vertical distance between `$from` and `$to`.
 - `array` `$pathAttributes`: An array of attributes to apply to the [`Path`](path) within the [`Dimension`](dimension).
 - `array` `$labelAttributes`: An array of attributes to apply to the [`Text`](text) within the [`Dimension`](dimension).
-- `array` `$leaderAttributes`: An array of attributes to apply to the [`Path`](paths) objects that form the leaders of the [`Dimension`](dimension).
+- `array` `$leaderAttributes`: An array of attributes to apply to the [`Path`](path) objects that form the leaders of the [`Dimension`](dimension).
 
 #### Return value
 {:.no_toc}
@@ -2602,7 +2602,7 @@ In patterns when adding instructions for paperless themes.
 - `string` `$text`: The text to be the label of the [`Dimension`](dimension), or false to use the distance between `$from` and `$to`.
 - `array` `$pathAttributes`: An array of attributes to apply to the [`Path`](path) within the [`Dimension`](dimension).
 - `array` `$labelAttributes`: An array of attributes to apply to the [`Text`](text) within the [`Dimension`](dimension).
-- `array` `$leaderAttributes`: An array of attributes to apply to the [`Path`](paths) objects that form the leaders of the [`Dimension`](dimension).
+- `array` `$leaderAttributes`: An array of attributes to apply to the [`Path`](path) objects that form the leaders of the [`Dimension`](dimension).
 
 #### Return value
 {:.no_toc}
@@ -2684,7 +2684,7 @@ In patterns when adding instructions for paperless themes.
 - `string` `$text`: The text to be the label of the [`Dimension`](dimension), or false to use the horizontal distance between `$from` and `$to`.
 - `array` `$pathAttributes`: An array of attributes to apply to the [`Path`](path) within the [`Dimension`](dimension).
 - `array` `$labelAttributes`: An array of attributes to apply to the [`Text`](text) within the [`Dimension`](dimension).
-- `array` `$leaderAttributes`: An array of attributes to apply to the [`Path`](paths) objects that form the leaders of the [`Dimension`](dimension).
+- `array` `$leaderAttributes`: An array of attributes to apply to the [`Path`](path) objects that form the leaders of the [`Dimension`](dimension).
 
 #### Return value
 {:.no_toc}
@@ -2766,7 +2766,7 @@ In patterns when adding instructions for paperless themes.
 - `string` `$text`: The text to be the label of the [`Dimension`](dimension), or false to use the vertical distance between `$from` and `$to`.
 - `array` `$pathAttributes`: An array of attributes to apply to the [`Path`](path) within the [`Dimension`](dimension).
 - `array` `$labelAttributes`: An array of attributes to apply to the [`Text`](text) within the [`Dimension`](dimension).
-- `array` `$leaderAttributes`: An array of attributes to apply to the [`Path`](paths) objects that form the leaders of the [`Dimension`](dimension).
+- `array` `$leaderAttributes`: An array of attributes to apply to the [`Path`](path) objects that form the leaders of the [`Dimension`](dimension).
 
 #### Return value
 {:.no_toc}
@@ -2798,7 +2798,7 @@ defaults for `$pathAttributes` and `$labelAttributes`, resulting in a smaller [`
 %}
 
 <div class="tab-content">
-<div role="tabpanel" class="tab-pane active" id="newLinearDimension-resultSm" markdown="1">
+<div role="tabpanel" class="tab-pane active" id="newLinearDimensionSm-result" markdown="1">
 
 {% include figure.html 
     description="Use newLinearDimensionSm() to add small linear dimensions to your part"
@@ -2849,7 +2849,7 @@ In patterns when adding instructions for paperless themes.
 - `string` `$text`: The text to be the label of the [`Dimension`](dimension), or false to use the distance between `$from` and `$to`.
 - `array` `$pathAttributes`: An array of attributes to apply to the [`Path`](path) within the [`Dimension`](dimension).
 - `array` `$labelAttributes`: An array of attributes to apply to the [`Text`](text) within the [`Dimension`](dimension).
-- `array` `$leaderAttributes`: An array of attributes to apply to the [`Path`](paths) objects that form the leaders of the [`Dimension`](dimension).
+- `array` `$leaderAttributes`: An array of attributes to apply to the [`Path`](path) objects that form the leaders of the [`Dimension`](dimension).
 
 #### Return value
 {:.no_toc}
@@ -2936,7 +2936,7 @@ In patterns when adding instructions for paperless themes.
 - `string` `$text`: The text to be the label of the [`Dimension`](dimension), or false to use the distance between `$from` and `$to`.
 - `array` `$pathAttributes`: An array of attributes to apply to the [`Path`](path) within the [`Dimension`](dimension).
 - `array` `$labelAttributes`: An array of attributes to apply to the [`Text`](text) within the [`Dimension`](dimension).
-- `array` `$leaderAttributes`: An array of attributes to apply to the [`Path`](paths) objects that form the leaders of the [`Dimension`](dimension).
+- `array` `$leaderAttributes`: An array of attributes to apply to the [`Path`](path) objects that form the leaders of the [`Dimension`](dimension).
 
 #### Return value
 {:.no_toc}
@@ -3029,11 +3029,11 @@ attributes set to display a cutonfold line.
 {:.no_toc}
 
 {% include classTabs.html
-    id="newCutonfold" 
+    id="newcutonfold" 
 %}
 
 <div class="tab-content">
-<div role="tabpanel" class="tab-pane active" id="newCutonfold-result" markdown="1">
+<div role="tabpanel" class="tab-pane active" id="newcutonfold-result" markdown="1">
 
 {% include figure.html 
     description="Adding a cutonfold line to your part is child's play with newCutonfold()"
@@ -3041,7 +3041,7 @@ attributes set to display a cutonfold line.
 %}
 
 </div>
-<div role="tabpanel" class="tab-pane" id="newGrainline-code" markdown="1">
+<div role="tabpanel" class="tab-pane" id="newcutonfold-code" markdown="1">
 
 ```php?start_inline=1
 /** @var \Freesewing\Part $p */
@@ -3323,7 +3323,7 @@ void offsetPathString(
 ) 
 ```
 
-Like [`Path::offsetPath`](path#offsetpath), but instead of passing it 
+Like [`Part::offsetPath`](part#offsetpath), but instead of passing it 
 the name of a [`Path`](path) object in the [`Part`](part), you can simply
 pass it a pathstring.
 
@@ -3646,7 +3646,7 @@ void addBoundary(
 ) 
 ```
 
-Calculates a bounding box and adds it as a [`Boundary`](Boudnary) 
+Calculates a bounding box and adds it as a [`Boundary`](boundary) 
 object to the `boundary` property of the part.
 
 #### Typical use

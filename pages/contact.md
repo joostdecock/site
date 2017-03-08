@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Contact
-tags: [slack, github]
+title: Contact info
+tags: [slack, github, twitter]
 permalink: /contact
 ---
 ## Freesewing contact info
@@ -46,7 +46,7 @@ You can also reach us on social media, not to mention follow us.
 <a href='https://www.instagram.com/freesewing_org/' class='btn btn-primary mb-2'>
     @freesewing_org on Instagram
 </a>
-<a href='https://twitter.com/intent/follow?screen_name=freesewing_org' class='btn btn-primary'>
+<a href='https://twitter.com/intent/follow?screen_name=freesewing_org' class='btn btn-primary mb-2'>
     @freesewing_org on Twitter
 </a>
 

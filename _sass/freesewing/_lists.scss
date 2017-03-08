@@ -46,10 +46,6 @@ ul.files li:before {
     color: $light-purple;
     font-weight: normal;
 }
-ul.files li.folder,
-ul.files li.folder-open {
-    font-weight: bold;
-}
 ul.files li.folder:before { 
     content: '\f114';
     color: $purple;
@@ -57,6 +53,9 @@ ul.files li.folder:before {
 ul.files li.folder.open:before { 
     content: '\f115';
     color: $purple;
+}
+ul.files li.repo:before { 
+    content: '\f09b';
 }
 
 ul.files li.folder ul,

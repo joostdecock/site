@@ -7,14 +7,14 @@ permalink: /class/stack
 ---
 ## Description 
 
-The [`Stack`](Class) class provides a stack-like data structure.
+The [`Stack`](/class/stack) class provides a stack-like data structure.
 
 It is used exclusively in the path offset code in the [`Part`](part)
 class, and you can safely ignore it.
 
 ## Typical use
 
-This [`Stack`](Class) class is used for offsetting paths. 
+This [`Stack`](/class/stack) class is used for offsetting paths. 
 
 When doing so, we split a path into individual steps. 
 Sometimes, we need to add steps in between those steps (to fill gaps for example).

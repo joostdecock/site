@@ -142,18 +142,18 @@ In addition to that, you can pass it an array of attributes to filter out.
 {:.no_toc}
 
 {% include classTabs.html
-    id="flattenAttributes" 
+    id="flattenattributes" 
 %}
 
 <div class="tab-content">
-<div role="tabpanel" class="tab-pane active" id="flattenAttributes-result" markdown="1">
+<div role="tabpanel" class="tab-pane active" id="flattenattributes-result" markdown="1">
 
 ```php?start_inline=1
 class="class1 class2" id="test-id" 
 class="class1 class2"
 ```
 </div>
-<div role="tabpanel" class="tab-pane" id="flattenAttributes" markdown="1">
+<div role="tabpanel" class="tab-pane" id="flattenattributes-code" markdown="1">
 
 ```php?start_inline=1
 $attributes = ['class' => 'class1 class2', 'id' => 'test-id'];
@@ -170,8 +170,9 @@ echo \Freesewing\Utils::flattenAttributes($attributes, ['id']);
 
 Typically used by [`SvgRenderbot`](svgrenderbot). 
 
-The [`SvgRenderbot::renderText`](svgrenderbot#rendertext) method filters out
-the `line-height` attribute which is not an SVG attribute, but something we 
+The [`SvgRenderbot`](svgrenderbot) filters out
+the `line-height` attribute when rendering text.
+`line-height` is not an SVG attribute, but something we 
 mimic the behavior of.
 
 #### Parameters

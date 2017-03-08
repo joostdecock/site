@@ -2,7 +2,7 @@
 layout: class
 title: Channel
 namespace: Freesewing\Channels
-tags: [class, abstractClass, channel]
+tags: [class, abstract, channel]
 permalink: /class/channels/channel
 ---
 ## Description 
@@ -50,6 +50,27 @@ You have the entire [`Context`](../context) object to make up your mind.
 {:.no_toc}
 
 Always called from the `run()` method of one of the services.
+
+### isValidResponse
+
+```php?start_inline=1
+bool isValidResponse(
+    \Freesewing\Context $context
+)
+```
+
+This allows the channel owner to double-check the response before sending it out.
+
+It is also the place to add headers to the reponse.
+
+Do you want to send out this reponse? Return `true` if so, or `false` if not.
+You have the entire [`Context`](../context) object to make up your mind.
+
+#### Typical use
+{:.no_toc}
+
+Always called from the `run()` method of one of the services. 
+Used to add headers to the response.
 
 ### standardizeModelMeasurements
 
@@ -132,6 +153,33 @@ In other words, you should either set the [`Response`](../response) object
 in the [`Context`](../context), or take over the request and redirect it for example.
 
 If you do the latter, it's recommended to call [`Channel::cleanUp`](channel#cleanup) before the redirect.
+
+By default, we call [`Channel::cleanUp`](channel#cleanup) and then redirect to the Freesewing documentation.
+
+#### Typical use
+{:.no_toc}
+
+Always called from the `run()` method of one of the services.
+
+#### Parameters
+{:.no_toc}
+
+- [`Context`](../context) `$context` : The Freesewing context
+
+### handleInvalidResponse
+
+```php?start_inline=1
+void handleInvalidResponse(
+    \Freesewing\Context $context
+) 
+```
+This method will get called if [`Channel::isValidResponse`](channel#isvalidresponse) returns `false`.
+
+This method determines what to do when a response is considered to be invalid.
+
+If you return false in [`Channel::isValidResponse`](channel#isvalidresponse)
+then we need to figure out what repsonse to send instead. 
+Since the channel decided it's no good, it gets to decide what to do next.
 
 By default, we call [`Channel::cleanUp`](channel#cleanup) and then redirect to the Freesewing documentation.
 

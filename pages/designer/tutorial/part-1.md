@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Design tutorial part 1 - Your first pattern
-tags: [fundamentals, design, tutorial]
+tags: [fundamentals, designer, tutorial]
 permalink: /designer/tutorial/part-1
 ---
 In part one of our tutorial for designers, we'll get you up and running 
@@ -186,11 +186,11 @@ It's default is `0`, but it accepts values between `-50` and `150` mm.
 
 > <h5 class='notoc'>mm inside</h5>
 >
-> Freesewing uses mm internally. See the [units documentation](/FIXME) for full details.
+> Freesewing uses mm internally. See the [units documentation](/fixme) for full details.
 
 > <h5 class='notoc'>Pattern configuration</h5>
 >
-> The [pattern configuration page](/config/pattern) has all the details on the
+> The [configuration files](/developer/config-files#pattern-configuration-file) has all the details on the
 > configuration files for patterns.
 
 With our config file updated, time to have a look at the class file.
@@ -750,11 +750,11 @@ $p->addPoint(3, $p->shift(1,0,$p->x(2)/2), 'Right control point for neckBottom')
 $p->addPoint(4, $p->shift(2,-90,$p->y(1)/2), 'Bottom control point for neckRight');
 ```
 
-We're adding two points with [`Point::newPoint`](/class/point#newpoint) and 
-two points with [`Point::addPoint`](/class/point#addpoint).
+We're adding two points with [`Part::newPoint`](/class/part#newpoint) and 
+two points with [`Part::addPoint`](/class/part#addpoint).
 
-The difference is that [`Point::newPoint`](/class/point#newpoint) expects and X and Y 
-coordinate, while [`Point::addPoint`](/class/point#addpoint) expects a [`Point`](/class/point) object.
+The difference is that [`Part::newPoint`](/class/part#newpoint) expects and X and Y 
+coordinate, while [`Part::addPoint`](/class/part#addpoint) expects a [`Point`](/class/point) object.
 
 Both of them taken an optional third parameter which is a description of the point.
 You can see that we used that to clarify things a bit.
@@ -770,7 +770,7 @@ $p->newPoint(
 );
 ```
 
-We passed 4 parameters to [`Point::newPoint`](/class/point#newpoint):
+We passed 4 parameters to [`Point::newPoint`](/class/part#newpoint):
 
 - A name for the point, we went with `1` because that's easy
 - The X-coordinate, which is `0`
@@ -808,7 +808,7 @@ $p->addPoint(
 );
 ```
 
-We're using [`Point::addPoint`](/class/point#addpoint) here. We still give it a name for the point (`3`)
+We're using [`Point::addPoint`](/class/part#addpoint) here. We still give it a name for the point (`3`)
 but instead of giving it an X and Y coordinate, we give it the result of `$p->shift(1,0,$p->x(2)/2)`.
 
 Remember, `$p` is our [`Part`](/class/part) object, so we are calling [`Part::shift`](/class/part#shift).
@@ -1041,7 +1041,7 @@ When adding points to our part, we need to give them a name. That's simple when 
 one at a time, but when we're adding them in a loop like here, we'd have to add some extra logic
 to make sure each point gets its own name.
 
-Rather than doing that, we'll simply let the [`Part::newId`](/class/par#/newid) method name them for us.
+Rather than doing that, we'll simply let the [`Part::newId`](/class/part#newid) method name them for us.
 
 It takes one parameter: a prefix that will be applied to the newly named points.
 
@@ -1062,7 +1062,7 @@ The [`Part::newPath`](/class/part#newpath) method creates a new path. We give it
 and then what we call  a `pathstring`.
 
 Pathstrings are a feature of the SVG format that we generate patterns in. You can read about
-them in detail on [the path page](/FIXME), but here's what this patthstring means:
+them in detail on [the path page](/fixme), but here's what this patthstring means:
 
 - <b>M</b>ove to point `1`
 - From there (point `1`), draw a Bezier <b>C</b>urve using points `3`, `4`, and `2`
@@ -1153,7 +1153,7 @@ $p->newPath(
 We've drawn lines before, but this time there's two differences:
 
 - The pathstring looks different because we're using **L** commands to indicate we want a straight line
-- We've added an extra parameter to [`Part::newPath`](/class/part/#newpath). It's
+- We've added an extra parameter to [`Part::newPath`](/class/part#newpath). It's
 and array of attributes to pass on to the [`Path`](/class/path) object.
 
 In doing this, we've set the `class` attribute of the path to `helpline`. 

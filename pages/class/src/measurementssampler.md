@@ -2,7 +2,7 @@
 layout: class
 title: MeasurementsSampler
 namespace: Freesewing
-tags: [class, extendsSampler]
+tags: [class]
 permalink: /class/measurementssampler
 ---
 ## Description 

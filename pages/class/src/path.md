@@ -2,7 +2,7 @@
 layout: class
 title: Path
 namespace: Freesewing
-tags: [internal, class, namespaceFreesewing]
+tags: [class]
 permalink: /class/path
 ---
 <div class="col-xs-12 col-md-3 toc" markdown="1">

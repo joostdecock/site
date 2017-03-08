@@ -54,7 +54,7 @@ like in the example below.
 )
 ```
 
-Creates a [`Repsonse`](../reponse) object with SVG and Kint debug embedded in JSON.
+Creates a [`Repsonse`](/class/response) object with SVG and Kint debug embedded in JSON.
 
 Also sets a `Access-Control-Allow-Origin:"*"` header.
 

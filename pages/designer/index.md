@@ -7,44 +7,38 @@ permalink: "/designer/"
     <div class="row">
         <div class="col-md-4 mt-5">
             {% include card.html 
+                title='Fundamentals'
+                text="Start reading here. It's short, but you might want to read this before skipping to the tutorial."
+                img='/img/fundamentals.jpg'
+                link='/fundamentals'
+                link-text='Freesewing fundamentals'
+            %}
+        </div>
+        <div class="col-md-4 mt-5">
+            {% include card.html 
                 title='Pattern design guide'
                 text='Design your first freesewing pattern, and learn a bunch of stuff along the way. Our pattern design guide is probably the best place to start if you want to learn designing patterns on/for freesewing.'
-                img='http://placehold.it/400x200'
+                img='/img/developers.jpg'
                 link='/designer/tutorial/part-1'
                 link-text='Design tutorial'
             %}
         </div>
         <div class="col-md-4 mt-5">
             {% include card.html 
-                title='Try the demo'
-                text='Want to kick the tires and see what happens? Our online demo lets you explore all the different aspects of the freesewing platform.'
-                img='http://placehold.it/400x200'
-                link='/demo'
-                link-text='Go to the demo'
-            %}
-        </div>
-        <div class="col-md-4 mt-5">
-            {% include card.html 
-                title='Designer reference'
-                text='We have bundled all the information you need as a designer on this handy page.'
-                img='http://placehold.it/400x200'
-                link='/designer/reference'
-                link-text='Designer reference'
+                title='Designer cheat sheet'
+                text="With out designer cheat sheet, you'll never wonder how to call a method again. Download the PDF, print it, and stick on the wall somewhere. Also available <a href=\"/img/svg/cheatsheet.svg\">as SVG</a>."
+                img='/img/cheatsheet.jpg'
+                link='/pdf/static/cheatsheet.pdf'
+                link-text='Dowload the cheat sheet'
             %}
         </div>
     </div> <!-- .row -->
+    <div class="row">
+        <div class="col mt-5">
+            <h2>Other useful links for designers</h2>
+            <ul>
+            <li><a href='/patterns/lineage'>Pattern lineage</a></li>
+            </ul>
+        </div>
+    </div> <!-- .row -->
 </div> <!-- .container -->
-<section class="cover-band bg-thematic mt-5" style="background-image: url('http://placehold.it/1000x250');">
-  <div class="cover-body">
-    <h1 class="jumbotron-heading">Psst, it's ok to cheat</h1>
-    <p class="lead">
-    With out designer cheat sheet, you'll never wonder how to call a method again.
-    <br>
-    Download the PDF, print it, and stick on the wall somewhere. 
-    </p>
-    <p>
-      <a href="/fixme" class="btn btn-lg btn-primary">Download the cheat sheet</a>
-    </p>
-  </div>
-</section>
-
