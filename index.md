@@ -39,7 +39,7 @@ permalink: /
                 title='Contribute to freesewing'
                 text='Join the loose-knit team of volunteers who build and run freesewing. Apart from enthusiasm, no special skills are required.'
                 img='/img/contributors.jpg'
-                link='/contributor'
+                link='/contributing'
                 link-text='Documentation for contributors'
             %}
         </div>

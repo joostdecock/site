@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Typography overview
-tags: [contributors, guide]
+tags: [contributing]
 permalink: /typography
 ---
 ## Headings - This is level 2
@@ -173,12 +173,13 @@ The todo list above is made like this:
 ### File lists
 Give your list the `files` class to make a file list.
 
-You can also give your list items the `folder`, `code`, or `image` class to
+You can also give your list items the `folder`, `repo`, `code`, or `image` class to
 style them accordingly.
 
 Give your `folder` items an additional `open` class to use an icon of an open folder.
 
 - {:.folder} vendor
+- {:.repo} repository
 - {:.code} index.php
 - config.yml
 - {:.folder.open} img
@@ -189,6 +190,7 @@ The file list above is made like this:
 
 ```md
 - {:.folder} vendor
+- {:.repo} repository
 - {:.code} index.php
 - config.yml
 - {:.folder.open} img

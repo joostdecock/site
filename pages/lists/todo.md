@@ -1,7 +1,7 @@
 ---
 layout: page
 title: The big and terribly incomplete todo list
-tags: [contributors, todo]
+tags: [contributing, todo]
 permalink: /todo
 ---
 ## About

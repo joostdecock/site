@@ -3,22 +3,22 @@ layout: class
 title: SvgSnippet
 namespace: Freesewing
 tags: [class]
-permalink: /class/SvgSnippet
+permalink: /class/svgsnippet
 ---
 ## Description 
 
-The [`SvgSnippet`](SvgSnippet) class holds information for an SVG snippet.
+The [`SvgSnippet`](svgsnippet) class holds information for an SVG snippet.
 
 SVG allows for reusable pieces of SVG code that are stored in the `defs` section
 of an SVG document.
 
-When we use one of these pre-made pieces of SVG code, we call that a [`SvgSnippet`](SvgSnippet).
+When we use one of these pre-made pieces of SVG code, we call that a [`SvgSnippet`](svgsnippet).
 
 ## Typical use
 
-While snippets are common in patterns, the [`SvgSnippet`](SvgSnippet) class is internal. 
+While snippets are common in patterns, the [`SvgSnippet`](svgsnippet) class is internal. 
 
-They are added with [`Part::newSnippet`](Part#newsnippet).
+They are added with [`Part::newSnippet`](part#newsnippet).
 
 ## Public methods
 
@@ -29,7 +29,7 @@ void setAnchor(
     \Freesewing\Point $anchor 
 )
 ```
-Stores the [`Point`](Point) that this [`SvgSnippet`](SvgSnippet) must be anchored on
+Stores the [`Point`](point) that this [`SvgSnippet`](svgsnippet) must be anchored on
 in the `anchor` property.
 
 ### setReference
@@ -39,7 +39,7 @@ void setReference(
     string $reference 
 )
 ```
-A [`SvgSnippet`](SvgSnippet) must reference a SVG object in the defs section of an 
+A [`SvgSnippet`](svgsnippet) must reference a SVG object in the defs section of an 
 SVG document by its ID.
 
 This stored the ID `$reference`, which is a `string`, in the `reference` property.
@@ -97,7 +97,7 @@ Returns the `attributes` property.
 
 ## See also
 
-The [`Part`](Part) class where you can add snippets to your pattern part.
+The [`Part`](part) class where you can add snippets to your pattern part.
 
 {% include classFooter.html %}
 * TOC - Do not remove this line

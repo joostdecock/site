@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Freesewing fundamentals
-tags: [fundamentals, getting-started]
+tags: [fundamentals, getting started]
 permalink: /fundamentals
 ---
 ## Building blocks
@@ -87,11 +87,16 @@ In freesewing, wesupport the following operations in pathstrings:
 - `C` : Curve. The curve operation expect 3 point names. Two points that control the curve (so-called control points) and point at the curve endpoint.
 - `Z` or `z` : Close path. This will close your path by drawing a line from wherever you are now to where your path started.
 
-## Conventions
-
-FIXME
-
-
 * TOC - Do not remove this line
 {:toc}
+
+## Further reading
+
+- [Getting started](/getting-started)
+- [Pattern lineage](/paterns/lineage)
+- [Configuration files](/developer/config-files)
+- [Request parameters](/developer/request-parameters)
+
+
+
 
