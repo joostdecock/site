@@ -6,12 +6,13 @@ permalink: /install
 ---
 Jump to the install instructions for:
 
-- [core](#freesewing-core)
-- [docs](#freesewing-docs)
+- [core](#core)
+- [docs](#docs)
+- [demo](#demo)
 
 Not sure what is what? Check the [repository overview](/repositories).
 
-## Freesewing core
+## core
 
 > <h5 class="notoc">These instructions are for the public version</h5>
 >
@@ -55,7 +56,7 @@ composer create-project freesewing/core freesewing
 
 #### Install from GitHub
 
-The ource code is hosted [on GitHub](https://github.com/freesewing/core).  
+The source code is hosted [on GitHub](https://github.com/freesewing/core).  
 Clone it like this:
 
 ```sh
@@ -109,7 +110,7 @@ phpunit
 
 in your freesewing directory.
 
-## Freesewing docs
+## docs
 
 Our documentation is available on [docs.freesewing.org](https://docs.freesewing.org/).
 
@@ -177,6 +178,42 @@ Run this command to do so:
 bundle exec htmlproofer _site --disable-external --assume-extension --file-ignore /apigen/
 ```
 
+## demo
+
+The [freesewing demo](/demo) is part of the documentation, and included in the docs repository. 
+But that is a Jekyll-based site which means that running your own instance is going to require some work.
+
+If you want your own demo without the hassle, follow these instructions.
+
+### Install from GitHub
+
+The source code is hosted [on GitHub](https://github.com/freesewing/demo).  
+Clone it like this:
+
+```sh
+git clone git@github.com:freesewing/demo.git
+```
+
+This will create a demo folder.
+
+### Configuring the demo
+
+You should only configure the `api` value in the demo.js. 
+The default value is:
+
+```
+var api = 'https://api.freesewing.org';
+```
+
+Update it with the link to your own freesewing instance (no trailing slash)
+or leave it as-is to connect to our API.
+
+Note that if you're connecting to our API, you could have just used 
+[the online demo](/demo).
+
+### Running the demo
+
+Open `demo.html` in the `demo` folder in your browser.
 
 * TOC - Do not remove this line
 {:toc}
