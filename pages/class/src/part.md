@@ -1670,7 +1670,7 @@ Addes the [`Point`](point)s at the intersection two curves to the
 
 {% include figure.html 
     description="Two cubic Bezier curves can intersect in up to nine points"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=i-1,i-2,i-3,i-4,i-5,i-6,i-7,i-8,i-9&class=BezierToolbox&method=bezierBezierIntersections"
+    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=i1,i2,i3,i4,i5,i6,i7,i8,i9&class=BezierToolbox&method=bezierBezierIntersections"
 %}
 
 </div>

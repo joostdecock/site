@@ -19,11 +19,6 @@
 var api = 'https://api.freesewing.org';
 
 
-
-
-
-
-
 ///////////////////////////////////////////////////////////////////////////
 // Don't change things below this line unless you know what you're doing //
 ///////////////////////////////////////////////////////////////////////////
@@ -128,17 +123,26 @@ function loadInfoService()
 
         $('#infotab-0').append( "<h3>Channels</h3><ul id='channels'></ul>");
         $.each( data['channels'], function( key, val ) {
-            $("#channels").append( "<li>" + val + "</li>" );
+            $("#channels").append( "<li>" + key + "<ul id='channels-"+key+"'></ul></li>" );
+            $.each( val, function( subkey, subval ) {
+                $("#channels-"+key).append( "<li>" + subval + "</li>" );
+            });
         });
 
         $('#infotab-0').append( "<h3>Themes</h3><ul id='themes'></ul>");
         $.each( data['themes'], function( key, val ) {
-            $("#themes").append( "<li>" + val + "</li>" );
+            $("#themes").append( "<li>" + key + "<ul id='themes-"+key+"'></ul></li>" );
+            $.each( val, function( subkey, subval ) {
+                $("#themes-"+key).append( "<li>" + subval + "</li>" );
+            });
         });
 
         $('#infotab-0').append( "<h3>Patterns</h3><p>Click on a pattern name to drill deeper.</p><ul id='patterns'></ul>");
         $.each( data['patterns'], function( key, val ) {
-            $("#patterns").append( "<li><a href='#' class='demo-trigger' data-method='pattern-info' data-pattern='" + key + "'>" + val + "</a></li>" );
+            $("#patterns").append( "<li>" + key + "<ul id='patterns-"+key+"'></ul></li>" );
+            $.each( val, function( subkey, subval ) {
+                $("#patterns-"+key).append( "<li><a href='#' class='demo-trigger' data-method='pattern-info' data-pattern='" + subkey + "'>" + subval + "</a></li>" );
+            });
         });
 
         $('#infotab-1').html("<pre class=\"highlight\"><code>"+JSON.stringify(data, null, '    ')+"</code></pre>");
@@ -171,7 +175,10 @@ function loadPatternList(service)
         $('#demo').html('<h2>Choose a pattern to ' + service +'</h2>');
         $('#demo').append( "<ul id='patterns'></ul>");
         $.each( data['patterns'], function( key, val ) {
-            $("#patterns").append( "<li><a href='#' class='demo-trigger' data-method='"+service+"-form' data-pattern='" + key + "'>" + val + "</a></li>" );
+            $("#patterns").append( "<li>" + key + "<ul id='patterns-"+key+"'></ul></li>" );
+            $.each( val, function( subkey, subval ) {
+                $("#patterns-"+key).append( "<li><a href='#' class='demo-trigger' data-method='"+service+"-form' data-pattern='" + subkey + "'>" + subval + "</a></li>" );
+            });
         });
         scrollTo('#demo');
     });
@@ -803,7 +810,9 @@ function chooseOneField(key, val)
 function chooseThemeField(themes, exclude) {
     var options;
     $.each( themes, function( key, val ) {
-        if($.inArray(val,exclude) == -1) options = options + "<option value=\"" + val + "\">" + val + "</option>\n";
+        $.each( val, function( subkey, subval ) {
+            if($.inArray(subval,exclude) == -1) options = options + "<option value=\"" + subval + "\">" + subval + "</option>\n";
+        });
     });
     return '\
                 <div class="input-group">\
