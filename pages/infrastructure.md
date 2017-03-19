@@ -8,11 +8,11 @@ permalink: /infrastructure
 
 ### master branch
 
-[https://api.freesewing.org](api.freesewing.org) runs the core master branch.
+[api.freesewing.org](https://api.freesewing.org/) runs the core master branch.
 
 ### develop branch
 
-[https://dev.api.freesewing.org](https://dev.api.freesewing.org) runs the core develop branch.
+[dev.api.freesewing.org](https://dev.api.freesewing.org) runs the core develop branch.
 
 ### Environment
 ![Linode](https://www.linode.com/media/images/logos/standard/light/linode-logo_standard_light_small.png)
