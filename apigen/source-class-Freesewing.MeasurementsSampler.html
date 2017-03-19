@@ -8,7 +8,7 @@
 	<title>File MeasurementsSampler/MeasurementsSampler.php | Freesewing</title>
 
 	<script type="text/javascript" src="resources/combined.js?117538352"></script>
-	<script type="text/javascript" src="elementlist.js?1869948836"></script>
+	<script type="text/javascript" src="elementlist.js?2380082071"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -24,15 +24,23 @@
 			<ul>
 				<li class="active"><a href="namespace-Freesewing.html">Freesewing<span></span></a>
 						<ul>
-				<li><a href="namespace-Freesewing.Channels.html">Channels</a>
-						</li>
-				<li><a href="namespace-Freesewing.Patterns.html">Patterns</a>
-						</li>
-				<li><a href="namespace-Freesewing.Services.html">Services</a>
-						</li>
-				<li><a href="namespace-Freesewing.Themes.html">Themes</a>
+				<li><a href="namespace-Freesewing.Channels.html">Channels<span></span></a>
+						<ul>
+				<li><a href="namespace-Freesewing.Channels.Core.html">Core</a>
 						</li>
 							</ul></li>
+				<li><a href="namespace-Freesewing.Patterns.html">Patterns<span></span></a>
+						<ul>
+				<li><a href="namespace-Freesewing.Patterns.Core.html">Core</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Freesewing.Services.html">Services</a>
+						</li>
+				<li><a href="namespace-Freesewing.Themes.html">Themes<span></span></a>
+						<ul>
+				<li><a href="namespace-Freesewing.Themes.Core.html">Core</a>
+						</li>
+							</ul></li></ul></li>
 			</ul>
 		</div>
 
@@ -197,9 +205,9 @@
 </span></span><span id="69" class="l"><a class="l" href="#69"> 69: </a><span class="php-comment">     * with the model as parameter.
 </span></span><span id="70" class="l"><a class="l" href="#70"> 70: </a><span class="php-comment">     * It then itterates over the parts and calls sampleParts() on them
 </span></span><span id="71" class="l"><a class="l" href="#71"> 71: </a><span class="php-comment">     *
-</span></span><span id="72" class="l"><a class="l" href="#72"> 72: </a><span class="php-comment">     * @param \Freesewing\Themes\Theme or similar
+</span></span><span id="72" class="l"><a class="l" href="#72"> 72: </a><span class="php-comment">     * @param \Freesewing\Themes\* $theme The theme object
 </span></span><span id="73" class="l"><a class="l" href="#73"> 73: </a><span class="php-comment">     *
-</span></span><span id="74" class="l"><a class="l" href="#74"> 74: </a><span class="php-comment">     * @return \Freesewing\Patterns\Pattern or similar
+</span></span><span id="74" class="l"><a class="l" href="#74"> 74: </a><span class="php-comment">     * @return \Freesewing\Patterns\* Pattern object
 </span></span><span id="75" class="l"><a class="l" href="#75"> 75: </a><span class="php-comment">     */</span>
 </span><span id="76" class="l"><a class="l" href="#76"> 76: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_sampleMeasurements" href="#_sampleMeasurements">sampleMeasurements</a>(<span class="php-var">$theme</span>)
 </span><span id="77" class="l"><a class="l" href="#77"> 77: </a>    {

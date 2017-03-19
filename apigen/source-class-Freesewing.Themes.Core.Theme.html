@@ -5,10 +5,10 @@
 	<meta name="generator" content="ApiGen 2.8.0">
 	<meta name="robots" content="noindex">
 
-	<title>File Theme/Theme.php | Freesewing</title>
+	<title>File Core/Theme/Theme.php | Freesewing</title>
 
 	<script type="text/javascript" src="resources/combined.js?117538352"></script>
-	<script type="text/javascript" src="elementlist.js?1869948836"></script>
+	<script type="text/javascript" src="elementlist.js?2380082071"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -24,15 +24,23 @@
 			<ul>
 				<li class="active"><a href="namespace-Freesewing.html">Freesewing<span></span></a>
 						<ul>
-				<li><a href="namespace-Freesewing.Channels.html">Channels</a>
-						</li>
-				<li><a href="namespace-Freesewing.Patterns.html">Patterns</a>
-						</li>
-				<li><a href="namespace-Freesewing.Services.html">Services</a>
-						</li>
-				<li class="active"><a href="namespace-Freesewing.Themes.html">Themes</a>
+				<li><a href="namespace-Freesewing.Channels.html">Channels<span></span></a>
+						<ul>
+				<li><a href="namespace-Freesewing.Channels.Core.html">Core</a>
 						</li>
 							</ul></li>
+				<li><a href="namespace-Freesewing.Patterns.html">Patterns<span></span></a>
+						<ul>
+				<li><a href="namespace-Freesewing.Patterns.Core.html">Core</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Freesewing.Services.html">Services</a>
+						</li>
+				<li class="active"><a href="namespace-Freesewing.Themes.html">Themes<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Freesewing.Themes.Core.html">Core</a>
+						</li>
+							</ul></li></ul></li>
 			</ul>
 		</div>
 
@@ -42,14 +50,14 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-Freesewing.Themes.Basic.html">Basic</a></li>
-				<li><a href="class-Freesewing.Themes.Compare.html">Compare</a></li>
-				<li><a href="class-Freesewing.Themes.Designer.html">Designer</a></li>
-				<li><a href="class-Freesewing.Themes.Developer.html">Developer</a></li>
-				<li><a href="class-Freesewing.Themes.Info.html">Info</a></li>
-				<li><a href="class-Freesewing.Themes.Paperless.html">Paperless</a></li>
-				<li><a href="class-Freesewing.Themes.Sampler.html">Sampler</a></li>
-				<li class="active"><a href="class-Freesewing.Themes.Theme.html">Theme</a></li>
+				<li><a href="class-Freesewing.Themes.Core.Basic.html">Basic</a></li>
+				<li><a href="class-Freesewing.Themes.Core.Compare.html">Compare</a></li>
+				<li><a href="class-Freesewing.Themes.Core.Designer.html">Designer</a></li>
+				<li><a href="class-Freesewing.Themes.Core.Developer.html">Developer</a></li>
+				<li><a href="class-Freesewing.Themes.Core.Info.html">Info</a></li>
+				<li><a href="class-Freesewing.Themes.Core.Paperless.html">Paperless</a></li>
+				<li><a href="class-Freesewing.Themes.Core.Sampler.html">Sampler</a></li>
+				<li class="active"><a href="class-Freesewing.Themes.Core.Theme.html">Theme</a></li>
 			</ul>
 
 
@@ -77,10 +85,10 @@
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
 			<li>
-				<a href="namespace-Freesewing.Themes.html" title="Summary of Freesewing\Themes"><span>Namespace</span></a>
+				<a href="namespace-Freesewing.Themes.Core.html" title="Summary of Freesewing\Themes\Core"><span>Namespace</span></a>
 			</li>
 			<li>
-				<a href="class-Freesewing.Themes.Theme.html" title="Summary of Freesewing\Themes\Theme"><span>Class</span></a>
+				<a href="class-Freesewing.Themes.Core.Theme.html" title="Summary of Freesewing\Themes\Core\Theme"><span>Class</span></a>
 			</li>
 		</ul>
 		<ul>
@@ -99,8 +107,8 @@
 	</div>
 
 <pre><code><span id="1" class="l"><a class="l" href="#1">  1: </a><span class="xlang">&lt;?php</span>
-</span><span id="2" class="l"><a class="l" href="#2">  2: </a><span class="php-comment">/** Freesewing\Themes\Sampler class */</span>
-</span><span id="3" class="l"><a class="l" href="#3">  3: </a><span class="php-keyword1">namespace</span> Freesewing\Themes;
+</span><span id="2" class="l"><a class="l" href="#2">  2: </a><span class="php-comment">/** Freesewing\Themes\Core\Theme class */</span>
+</span><span id="3" class="l"><a class="l" href="#3">  3: </a><span class="php-keyword1">namespace</span> Freesewing\Themes\Core;
 </span><span id="4" class="l"><a class="l" href="#4">  4: </a>
 </span><span id="5" class="l"><a class="l" href="#5">  5: </a><span class="php-keyword1">use</span> Freesewing\Context;
 </span><span id="6" class="l"><a class="l" href="#6">  6: </a><span class="php-keyword1">use</span> Freesewing\Patterns\<span class="php-keyword2">Pattern</span>;
@@ -144,7 +152,7 @@
 </span></span><span id="44" class="l"><a class="l" href="#44"> 44: </a><span class="php-comment">     *
 </span></span><span id="45" class="l"><a class="l" href="#45"> 45: </a><span class="php-comment">     * @return mixed The value of the option
 </span></span><span id="46" class="l"><a class="l" href="#46"> 46: </a><span class="php-comment">     */</span>
-</span><span id="47" class="l"><a class="l" href="#47"> 47: </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> <a id="_getOption" href="#_getOption">getOption</a>(<span class="php-var">$key</span>)
+</span><span id="47" class="l"><a class="l" href="#47"> 47: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_getOption" href="#_getOption">getOption</a>(<span class="php-var">$key</span>)
 </span><span id="48" class="l"><a class="l" href="#48"> 48: </a>    {
 </span><span id="49" class="l"><a class="l" href="#49"> 49: </a>        <span class="php-keyword1">if</span>(<span class="php-keyword1">isset</span>(<span class="php-var">$this</span>-&gt;options[<span class="php-var">$key</span>])) <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;options[<span class="php-var">$key</span>];
 </span><span id="50" class="l"><a class="l" href="#50"> 50: </a>        <span class="php-keyword1">else</span> <span class="php-keyword1">return</span> <span class="php-keyword1">null</span>;
@@ -181,7 +189,7 @@
 </span></span><span id="81" class="l"><a class="l" href="#81"> 81: </a><span class="php-comment">     *
 </span></span><span id="82" class="l"><a class="l" href="#82"> 82: </a><span class="php-comment">     * @param Pattern $pattern The pattern object
 </span></span><span id="83" class="l"><a class="l" href="#83"> 83: </a><span class="php-comment">     */</span>
-</span><span id="84" class="l"><a class="l" href="#84"> 84: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_themePattern" href="#_themePattern">themePattern</a>(<span class="php-keyword2">Pattern</span> <span class="php-var">$pattern</span>)
+</span><span id="84" class="l"><a class="l" href="#84"> 84: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_themePattern" href="#_themePattern">themePattern</a>(<span class="php-var">$pattern</span>)
 </span><span id="85" class="l"><a class="l" href="#85"> 85: </a>    {
 </span><span id="86" class="l"><a class="l" href="#86"> 86: </a>        <span class="php-var">$this</span>-&gt;messages = <span class="php-var">$pattern</span>-&gt;getMessages();
 </span><span id="87" class="l"><a class="l" href="#87"> 87: </a>        <span class="php-var">$this</span>-&gt;debug = <span class="php-var">$pattern</span>-&gt;getDebug();
@@ -329,7 +337,7 @@
 </span><span id="229" class="l"><a class="l" href="#229">229: </a>            <span class="php-var">$reflector</span> = <span class="php-keyword1">new</span> \ReflectionClass(<span class="php-var">$parent</span>-&gt;name);
 </span><span id="230" class="l"><a class="l" href="#230">230: </a>            <span class="php-var">$filename</span> = <span class="php-var">$reflector</span>-&gt;getFileName();
 </span><span id="231" class="l"><a class="l" href="#231">231: </a>            <span class="php-var">$locations</span>[] = <span class="php-keyword2">dirname</span>(<span class="php-var">$filename</span>);
-</span><span id="232" class="l"><a class="l" href="#232">232: </a>        } <span class="php-keyword1">while</span> (<span class="php-var">$parent</span>-&gt;name != <span class="php-quote">'Freesewing\Themes\Theme'</span>);
+</span><span id="232" class="l"><a class="l" href="#232">232: </a>        } <span class="php-keyword1">while</span> (<span class="php-var">$parent</span>-&gt;name != <span class="php-quote">'Freesewing\Themes\Core\Theme'</span>);
 </span><span id="233" class="l"><a class="l" href="#233">233: </a>
 </span><span id="234" class="l"><a class="l" href="#234">234: </a>        <span class="php-keyword1">return</span> <span class="php-var">$locations</span>;
 </span><span id="235" class="l"><a class="l" href="#235">235: </a>    }
@@ -390,9 +398,9 @@
 </span><span id="290" class="l"><a class="l" href="#290">290: </a>    <span class="php-comment">/**
 </span></span><span id="291" class="l"><a class="l" href="#291">291: </a><span class="php-comment">     * A way for a theme to ultimately decide what should be rendered
 </span></span><span id="292" class="l"><a class="l" href="#292">292: </a><span class="php-comment">     *
-</span></span><span id="293" class="l"><a class="l" href="#293">293: </a><span class="php-comment">     * @param \Freesewing\Patterns\Pattern $pattern The pattern object
+</span></span><span id="293" class="l"><a class="l" href="#293">293: </a><span class="php-comment">     * @param \Freesewing\Patterns\Core\Pattern $pattern The pattern object
 </span></span><span id="294" class="l"><a class="l" href="#294">294: </a><span class="php-comment">     */</span>
-</span><span id="295" class="l"><a class="l" href="#295">295: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_applyRenderMask" href="#_applyRenderMask">applyRenderMask</a>(<span class="php-keyword2">Pattern</span> <span class="php-var">$pattern</span>)
+</span><span id="295" class="l"><a class="l" href="#295">295: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_applyRenderMask" href="#_applyRenderMask">applyRenderMask</a>(<span class="php-var">$pattern</span>)
 </span><span id="296" class="l"><a class="l" href="#296">296: </a>    {
 </span><span id="297" class="l"><a class="l" href="#297">297: </a>        <span class="php-keyword1">if</span>(<span class="php-var">$this</span>-&gt;getOption(<span class="php-quote">'parts'</span>)) <span class="php-var">$this</span>-&gt;applyRenderMaskOnParts(<span class="php-var">$pattern</span>);
 </span><span id="298" class="l"><a class="l" href="#298">298: </a>    }
@@ -410,9 +418,9 @@
 </span></span><span id="310" class="l"><a class="l" href="#310">310: </a><span class="php-comment">     * The difference is that *forceParts* will force all parts in the *parts* array
 </span></span><span id="311" class="l"><a class="l" href="#311">311: </a><span class="php-comment">     * to be rendered. Even those that have their render property set to false.
 </span></span><span id="312" class="l"><a class="l" href="#312">312: </a><span class="php-comment">     *
-</span></span><span id="313" class="l"><a class="l" href="#313">313: </a><span class="php-comment">     * @param \Freesewing\Patterns\Pattern $pattern The pattern object
+</span></span><span id="313" class="l"><a class="l" href="#313">313: </a><span class="php-comment">     * @param \Freesewing\Patterns\* $pattern The pattern object
 </span></span><span id="314" class="l"><a class="l" href="#314">314: </a><span class="php-comment">     */</span>
-</span><span id="315" class="l"><a class="l" href="#315">315: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <a id="_applyRenderMaskOnParts" href="#_applyRenderMaskOnParts">applyRenderMaskOnParts</a>(<span class="php-keyword2">Pattern</span> <span class="php-var">$pattern</span>)
+</span><span id="315" class="l"><a class="l" href="#315">315: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <a id="_applyRenderMaskOnParts" href="#_applyRenderMaskOnParts">applyRenderMaskOnParts</a>(<span class="php-var">$pattern</span>)
 </span><span id="316" class="l"><a class="l" href="#316">316: </a>    {
 </span><span id="317" class="l"><a class="l" href="#317">317: </a>        <span class="php-var">$parts</span> = <span class="php-var">$this</span>-&gt;getOption(<span class="php-quote">'parts'</span>);
 </span><span id="318" class="l"><a class="l" href="#318">318: </a>        <span class="php-comment">// Force into array, even if it's just 1 part</span>

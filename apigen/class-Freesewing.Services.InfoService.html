@@ -7,7 +7,7 @@
 	<title>Class Freesewing\Services\InfoService | Freesewing</title>
 
 	<script type="text/javascript" src="resources/combined.js?117538352"></script>
-	<script type="text/javascript" src="elementlist.js?1869948836"></script>
+	<script type="text/javascript" src="elementlist.js?2380082071"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -23,15 +23,23 @@
 			<ul>
 				<li class="active"><a href="namespace-Freesewing.html">Freesewing<span></span></a>
 						<ul>
-				<li><a href="namespace-Freesewing.Channels.html">Channels</a>
-						</li>
-				<li><a href="namespace-Freesewing.Patterns.html">Patterns</a>
-						</li>
-				<li class="active"><a href="namespace-Freesewing.Services.html">Services</a>
-						</li>
-				<li><a href="namespace-Freesewing.Themes.html">Themes</a>
+				<li><a href="namespace-Freesewing.Channels.html">Channels<span></span></a>
+						<ul>
+				<li><a href="namespace-Freesewing.Channels.Core.html">Core</a>
 						</li>
 							</ul></li>
+				<li><a href="namespace-Freesewing.Patterns.html">Patterns<span></span></a>
+						<ul>
+				<li><a href="namespace-Freesewing.Patterns.Core.html">Core</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Freesewing.Services.html">Services</a>
+						</li>
+				<li><a href="namespace-Freesewing.Themes.html">Themes<span></span></a>
+						<ul>
+				<li><a href="namespace-Freesewing.Themes.Core.html">Core</a>
+						</li>
+							</ul></li></ul></li>
 			</ul>
 		</div>
 
@@ -144,7 +152,7 @@ href="mailto:joost&#64;decock.org">joost&#64;<!-- -->decock.org</a>&gt;<br>
 				<b>See:</b>
 				<a
 href="http://api.freesewing.org/docs/demo/">http://api.freesewing.org/docs/demo/</a><br>
-		<b>Located at</b> <a href="source-class-Freesewing.Services.InfoService.html#8-155" title="Go to source code">Services/InfoService.php</a><br>
+		<b>Located at</b> <a href="source-class-Freesewing.Services.InfoService.html#8-175" title="Go to source code">Services/InfoService.php</a><br>
 	</div>
 
 
@@ -206,7 +214,7 @@ specified</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_run">#</a>
-		<code><a href="source-class-Freesewing.Services.InfoService.html#37-63" title="Go to source code">run</a>( <span><code><a href="class-Freesewing.Context.html">Freesewing\Context</a></code> <var>$context</var></span> )</code>
+		<code><a href="source-class-Freesewing.Services.InfoService.html#37-73" title="Go to source code">run</a>( <span><code><a href="class-Freesewing.Context.html">Freesewing\Context</a></code> <var>$context</var></span> )</code>
 
 		<div class="description short">
 			
@@ -247,7 +255,7 @@ takes care of the entire remainder of the request</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPatternList">#</a>
-		<code><a href="source-class-Freesewing.Services.InfoService.html#65-83" title="Go to source code">getPatternList</a>( <span><code><a href="class-Freesewing.Context.html">Freesewing\Context</a></code> <var>$context</var></span> )</code>
+		<code><a href="source-class-Freesewing.Services.InfoService.html#75-96" title="Go to source code">getPatternList</a>( <span><code><a href="class-Freesewing.Context.html">Freesewing\Context</a></code> <var>$context</var></span> )</code>
 
 		<div class="description short">
 			
@@ -289,7 +297,7 @@ takes care of the entire remainder of the request</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_loadPatternConfig">#</a>
-		<code><a href="source-class-Freesewing.Services.InfoService.html#85-98" title="Go to source code">loadPatternConfig</a>( <span>string <var>$pattern</var></span> )</code>
+		<code><a href="source-class-Freesewing.Services.InfoService.html#98-114" title="Go to source code">loadPatternConfig</a>( <span>string <var>$pattern</var></span>, <span>mixed <var>$context</var></span> )</code>
 
 		<div class="description short">
 			
@@ -307,6 +315,8 @@ takes care of the entire remainder of the request</p>
 				<div class="list"><dl>
 					<dt><var>$pattern</var></dt>
 					<dd><code>string</code><br>pattern The name of the pattern</dd>
+					<dt><var>$context</var></dt>
+					<dd></dd>
 				</dl></div>
 
 				<h4>Returns</h4>
@@ -331,7 +341,7 @@ takes care of the entire remainder of the request</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getChannelList">#</a>
-		<code><a href="source-class-Freesewing.Services.InfoService.html#100-118" title="Go to source code">getChannelList</a>( <span><code><a href="class-Freesewing.Context.html">Freesewing\Context</a></code> <var>$context</var></span> )</code>
+		<code><a href="source-class-Freesewing.Services.InfoService.html#116-136" title="Go to source code">getChannelList</a>( <span><code><a href="class-Freesewing.Context.html">Freesewing\Context</a></code> <var>$context</var></span> )</code>
 
 		<div class="description short">
 			
@@ -373,7 +383,7 @@ takes care of the entire remainder of the request</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getThemeList">#</a>
-		<code><a href="source-class-Freesewing.Services.InfoService.html#120-138" title="Go to source code">getThemeList</a>( <span><code><a href="class-Freesewing.Context.html">Freesewing\Context</a></code> <var>$context</var></span> )</code>
+		<code><a href="source-class-Freesewing.Services.InfoService.html#138-158" title="Go to source code">getThemeList</a>( <span><code><a href="class-Freesewing.Context.html">Freesewing\Context</a></code> <var>$context</var></span> )</code>
 
 		<div class="description short">
 			
@@ -415,7 +425,7 @@ takes care of the entire remainder of the request</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPatternInfo">#</a>
-		<code><a href="source-class-Freesewing.Services.InfoService.html#140-154" title="Go to source code">getPatternInfo</a>( <span>string <var>$pattern</var></span> )</code>
+		<code><a href="source-class-Freesewing.Services.InfoService.html#160-174" title="Go to source code">getPatternInfo</a>( <span>string <var>$pattern</var></span> )</code>
 
 		<div class="description short">
 			

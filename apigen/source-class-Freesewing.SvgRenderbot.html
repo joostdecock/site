@@ -8,7 +8,7 @@
 	<title>File SvgRenderbot/SvgRenderbot.php | Freesewing</title>
 
 	<script type="text/javascript" src="resources/combined.js?117538352"></script>
-	<script type="text/javascript" src="elementlist.js?1869948836"></script>
+	<script type="text/javascript" src="elementlist.js?2380082071"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -24,15 +24,23 @@
 			<ul>
 				<li class="active"><a href="namespace-Freesewing.html">Freesewing<span></span></a>
 						<ul>
-				<li><a href="namespace-Freesewing.Channels.html">Channels</a>
-						</li>
-				<li><a href="namespace-Freesewing.Patterns.html">Patterns</a>
-						</li>
-				<li><a href="namespace-Freesewing.Services.html">Services</a>
-						</li>
-				<li><a href="namespace-Freesewing.Themes.html">Themes</a>
+				<li><a href="namespace-Freesewing.Channels.html">Channels<span></span></a>
+						<ul>
+				<li><a href="namespace-Freesewing.Channels.Core.html">Core</a>
 						</li>
 							</ul></li>
+				<li><a href="namespace-Freesewing.Patterns.html">Patterns<span></span></a>
+						<ul>
+				<li><a href="namespace-Freesewing.Patterns.Core.html">Core</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Freesewing.Services.html">Services</a>
+						</li>
+				<li><a href="namespace-Freesewing.Themes.html">Themes<span></span></a>
+						<ul>
+				<li><a href="namespace-Freesewing.Themes.Core.html">Core</a>
+						</li>
+							</ul></li></ul></li>
 			</ul>
 		</div>
 
@@ -207,7 +215,7 @@
 </span><span id="79" class="l"><a class="l" href="#79"> 79: </a>        }
 </span><span id="80" class="l"><a class="l" href="#80"> 80: </a>        <span class="php-var">$pathstring</span> = <span class="php-var">$path</span>-&gt;getPathstring();
 </span><span id="81" class="l"><a class="l" href="#81"> 81: </a>        <span class="php-var">$points</span> = <span class="php-var">$part</span>-&gt;points;
-</span><span id="82" class="l"><a class="l" href="#82"> 82: </a>        <span class="php-var">$patharray</span> = <span class="php-keyword2">explode</span>(<span class="php-quote">' '</span>, <span class="php-var">$pathstring</span>);
+</span><span id="82" class="l"><a class="l" href="#82"> 82: </a>        <span class="php-var">$patharray</span> = Utils::asScrubbedArray(<span class="php-var">$pathstring</span>);
 </span><span id="83" class="l"><a class="l" href="#83"> 83: </a>        <span class="php-var">$svg</span> = <span class="php-quote">''</span>;
 </span><span id="84" class="l"><a class="l" href="#84"> 84: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$patharray</span> <span class="php-keyword1">as</span> <span class="php-var">$p</span>) {
 </span><span id="85" class="l"><a class="l" href="#85"> 85: </a>            <span class="php-var">$p</span> = <span class="php-keyword2">rtrim</span>(<span class="php-var">$p</span>);
@@ -338,39 +346,39 @@
 </span><span id="210" class="l"><a class="l" href="#210">210: </a>    {
 </span><span id="211" class="l"><a class="l" href="#211">211: </a>        <span class="php-var">$svg</span> = <span class="php-var">$this</span>-&gt;nl();
 </span><span id="212" class="l"><a class="l" href="#212">212: </a>
-</span><span id="213" class="l"><a class="l" href="#213">213: </a>        <span class="php-keyword1">if</span> (@<span class="php-var">$part</span>-&gt;includes) {
-</span><span id="214" class="l"><a class="l" href="#214">214: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$part</span>-&gt;includes <span class="php-keyword1">as</span> <span class="php-var">$include</span>) {
-</span><span id="215" class="l"><a class="l" href="#215">215: </a>                <span class="php-var">$svg</span> .= <span class="php-var">$include</span>-&gt;get();
+</span><span id="213" class="l"><a class="l" href="#213">213: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$part</span>-&gt;paths) {
+</span><span id="214" class="l"><a class="l" href="#214">214: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$part</span>-&gt;paths <span class="php-keyword1">as</span> <span class="php-var">$path</span>) {
+</span><span id="215" class="l"><a class="l" href="#215">215: </a>                <span class="php-var">$svg</span> .= <span class="php-var">$this</span>-&gt;renderPath(<span class="php-var">$path</span>, <span class="php-var">$part</span>);
 </span><span id="216" class="l"><a class="l" href="#216">216: </a>            }
 </span><span id="217" class="l"><a class="l" href="#217">217: </a>        }
-</span><span id="218" class="l"><a class="l" href="#218">218: </a>        <span class="php-keyword1">if</span> (@<span class="php-var">$part</span>-&gt;paths) {
-</span><span id="219" class="l"><a class="l" href="#219">219: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$part</span>-&gt;paths <span class="php-keyword1">as</span> <span class="php-var">$path</span>) {
-</span><span id="220" class="l"><a class="l" href="#220">220: </a>                <span class="php-var">$svg</span> .= <span class="php-var">$this</span>-&gt;renderPath(<span class="php-var">$path</span>, <span class="php-var">$part</span>);
+</span><span id="218" class="l"><a class="l" href="#218">218: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$part</span>-&gt;includes) {
+</span><span id="219" class="l"><a class="l" href="#219">219: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$part</span>-&gt;includes <span class="php-keyword1">as</span> <span class="php-var">$include</span>) {
+</span><span id="220" class="l"><a class="l" href="#220">220: </a>                <span class="php-var">$svg</span> .= <span class="php-var">$include</span>-&gt;get();
 </span><span id="221" class="l"><a class="l" href="#221">221: </a>            }
 </span><span id="222" class="l"><a class="l" href="#222">222: </a>        }
-</span><span id="223" class="l"><a class="l" href="#223">223: </a>        <span class="php-keyword1">if</span> (@<span class="php-var">$part</span>-&gt;snippets) {
-</span><span id="224" class="l"><a class="l" href="#224">224: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$part</span>-&gt;snippets <span class="php-keyword1">as</span> <span class="php-var">$snippet</span>) {
-</span><span id="225" class="l"><a class="l" href="#225">225: </a>                <span class="php-var">$svg</span> .= <span class="php-var">$this</span>-&gt;renderSnippet(<span class="php-var">$snippet</span>, <span class="php-var">$part</span>);
+</span><span id="223" class="l"><a class="l" href="#223">223: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$part</span>-&gt;textsOnPath) {
+</span><span id="224" class="l"><a class="l" href="#224">224: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$part</span>-&gt;textsOnPath <span class="php-keyword1">as</span> <span class="php-var">$textOnPath</span>) {
+</span><span id="225" class="l"><a class="l" href="#225">225: </a>                <span class="php-var">$svg</span> .= <span class="php-var">$this</span>-&gt;renderTextOnPath(<span class="php-var">$textOnPath</span>, <span class="php-var">$part</span>);
 </span><span id="226" class="l"><a class="l" href="#226">226: </a>            }
 </span><span id="227" class="l"><a class="l" href="#227">227: </a>        }
-</span><span id="228" class="l"><a class="l" href="#228">228: </a>        <span class="php-keyword1">if</span> (@<span class="php-var">$part</span>-&gt;texts) {
-</span><span id="229" class="l"><a class="l" href="#229">229: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$part</span>-&gt;texts <span class="php-keyword1">as</span> <span class="php-var">$text</span>) {
-</span><span id="230" class="l"><a class="l" href="#230">230: </a>                <span class="php-var">$svg</span> .= <span class="php-var">$this</span>-&gt;renderText(<span class="php-var">$text</span>, <span class="php-var">$part</span>);
+</span><span id="228" class="l"><a class="l" href="#228">228: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$part</span>-&gt;notes) {
+</span><span id="229" class="l"><a class="l" href="#229">229: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$part</span>-&gt;notes <span class="php-keyword1">as</span> <span class="php-var">$note</span>) {
+</span><span id="230" class="l"><a class="l" href="#230">230: </a>                <span class="php-var">$svg</span> .= <span class="php-var">$this</span>-&gt;renderNote(<span class="php-var">$note</span>, <span class="php-var">$part</span>);
 </span><span id="231" class="l"><a class="l" href="#231">231: </a>            }
 </span><span id="232" class="l"><a class="l" href="#232">232: </a>        }
-</span><span id="233" class="l"><a class="l" href="#233">233: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$part</span>-&gt;textsOnPath) {
-</span><span id="234" class="l"><a class="l" href="#234">234: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$part</span>-&gt;textsOnPath <span class="php-keyword1">as</span> <span class="php-var">$textOnPath</span>) {
-</span><span id="235" class="l"><a class="l" href="#235">235: </a>                <span class="php-var">$svg</span> .= <span class="php-var">$this</span>-&gt;renderTextOnPath(<span class="php-var">$textOnPath</span>, <span class="php-var">$part</span>);
+</span><span id="233" class="l"><a class="l" href="#233">233: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$part</span>-&gt;dimensions) {
+</span><span id="234" class="l"><a class="l" href="#234">234: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$part</span>-&gt;dimensions <span class="php-keyword1">as</span> <span class="php-var">$dimension</span>) {
+</span><span id="235" class="l"><a class="l" href="#235">235: </a>                <span class="php-var">$svg</span> .= <span class="php-var">$this</span>-&gt;renderDimension(<span class="php-var">$dimension</span>, <span class="php-var">$part</span>);
 </span><span id="236" class="l"><a class="l" href="#236">236: </a>            }
 </span><span id="237" class="l"><a class="l" href="#237">237: </a>        }
-</span><span id="238" class="l"><a class="l" href="#238">238: </a>        <span class="php-keyword1">if</span> (@<span class="php-var">$part</span>-&gt;notes) {
-</span><span id="239" class="l"><a class="l" href="#239">239: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$part</span>-&gt;notes <span class="php-keyword1">as</span> <span class="php-var">$note</span>) {
-</span><span id="240" class="l"><a class="l" href="#240">240: </a>                <span class="php-var">$svg</span> .= <span class="php-var">$this</span>-&gt;renderNote(<span class="php-var">$note</span>, <span class="php-var">$part</span>);
+</span><span id="238" class="l"><a class="l" href="#238">238: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$part</span>-&gt;texts) {
+</span><span id="239" class="l"><a class="l" href="#239">239: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$part</span>-&gt;texts <span class="php-keyword1">as</span> <span class="php-var">$text</span>) {
+</span><span id="240" class="l"><a class="l" href="#240">240: </a>                <span class="php-var">$svg</span> .= <span class="php-var">$this</span>-&gt;renderText(<span class="php-var">$text</span>, <span class="php-var">$part</span>);
 </span><span id="241" class="l"><a class="l" href="#241">241: </a>            }
 </span><span id="242" class="l"><a class="l" href="#242">242: </a>        }
-</span><span id="243" class="l"><a class="l" href="#243">243: </a>        <span class="php-keyword1">if</span> (@<span class="php-var">$part</span>-&gt;dimensions) {
-</span><span id="244" class="l"><a class="l" href="#244">244: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$part</span>-&gt;dimensions <span class="php-keyword1">as</span> <span class="php-var">$dimension</span>) {
-</span><span id="245" class="l"><a class="l" href="#245">245: </a>                <span class="php-var">$svg</span> .= <span class="php-var">$this</span>-&gt;renderDimension(<span class="php-var">$dimension</span>, <span class="php-var">$part</span>);
+</span><span id="243" class="l"><a class="l" href="#243">243: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$part</span>-&gt;snippets) {
+</span><span id="244" class="l"><a class="l" href="#244">244: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$part</span>-&gt;snippets <span class="php-keyword1">as</span> <span class="php-var">$snippet</span>) {
+</span><span id="245" class="l"><a class="l" href="#245">245: </a>                <span class="php-var">$svg</span> .= <span class="php-var">$this</span>-&gt;renderSnippet(<span class="php-var">$snippet</span>, <span class="php-var">$part</span>);
 </span><span id="246" class="l"><a class="l" href="#246">246: </a>            }
 </span><span id="247" class="l"><a class="l" href="#247">247: </a>        }
 </span><span id="248" class="l"><a class="l" href="#248">248: </a>
@@ -402,7 +410,7 @@
 </span><span id="274" class="l"><a class="l" href="#274">274: </a>        <span class="php-var">$this</span>-&gt;outdent();
 </span><span id="275" class="l"><a class="l" href="#275">275: </a>        <span class="php-var">$svg</span> .= <span class="php-var">$this</span>-&gt;nl();
 </span><span id="276" class="l"><a class="l" href="#276">276: </a>        <span class="php-var">$svg</span> .= <span class="php-quote">'&lt;/use&gt;'</span>;
-</span><span id="277" class="l"><a class="l" href="#277">277: </a>
+</span><span id="277" class="l"><a class="l" href="#277">277: </a>        
 </span><span id="278" class="l"><a class="l" href="#278">278: </a>        <span class="php-keyword1">return</span> <span class="php-var">$svg</span>;
 </span><span id="279" class="l"><a class="l" href="#279">279: </a>    }
 </span><span id="280" class="l"><a class="l" href="#280">280: </a>
