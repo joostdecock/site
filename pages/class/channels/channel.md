@@ -1,9 +1,9 @@
 ---
 layout: class
 title: Channel
-namespace: Freesewing\Channels
+namespace: Freesewing\Channels\Core
 tags: [class, abstract, channel]
-permalink: /class/channels/channel
+permalink: /class/channels/core/channel
 ---
 ## Description 
 
@@ -44,7 +44,7 @@ bool isValidRequest(
 This allows the channel owner to implement access control. 
 
 Do you want to serve this request? Return `true` if so, or `false` if not.
-You have the entire [`Context`](../context) object to make up your mind.
+You have the entire [`Context`](/class/context) object to make up your mind.
 
 #### Typical use
 {:.no_toc}
@@ -64,7 +64,7 @@ This allows the channel owner to double-check the response before sending it out
 It is also the place to add headers to the reponse.
 
 Do you want to send out this reponse? Return `true` if so, or `false` if not.
-You have the entire [`Context`](../context) object to make up your mind.
+You have the entire [`Context`](/class/context) object to make up your mind.
 
 #### Typical use
 {:.no_toc}
@@ -93,8 +93,8 @@ Always called from the `run()` method of one of the services.
 #### Parameters
 {:.no_toc}
 
-- [`Request`](../request) : The [`Request`](../request) object that holds all user input
-- [`Pattern`](../patterns/pattern) : The [`Pattern`](../patterns/pattern) object that holds info on what measurements the pattern expects
+- [`Request`](/class/request) : The [`Request`](/class/request) object that holds all user input
+- [`Pattern`](/class/patterns/core/pattern) : The [`Pattern`](/class/patterns/core/pattern) object that holds info on what measurements the pattern expects
 
 #### Return value
 {:.no_toc}
@@ -122,8 +122,8 @@ Always called from the `run()` method of one of the services.
 #### Parameters
 {:.no_toc}
 
-- [`Request`](../request) : The [`Request`](../request) object that holds all user input
-- [`Pattern`](../patterns/pattern) : The [`Pattern`](../patterns/pattern) object that holds info on what options the pattern supports
+- [`Request`](/class/request) : The [`Request`](/class/request) object that holds all user input
+- [`Pattern`](/class/patterns/core/pattern) : The [`Pattern`](/class/patterns/core/pattern) object that holds info on what options the pattern supports
 
 #### Return value
 {:.no_toc}
@@ -146,11 +146,11 @@ If you return false in [`Channel::isValidRequest`](channel#isvalidrequest)
 then we need to do something with the ongoing request. 
 Since the channel decided it's no good, it gets to decide what to do next.
 
-Note that after this method, all we do is call [`Response::send`](../response#send)
+Note that after this method, all we do is call [`Response::send`](/class/response#send)
 and [`Channel::cleanUp`](channel#cleanup).
 
-In other words, you should either set the [`Response`](../response) object
-in the [`Context`](../context), or take over the request and redirect it for example.
+In other words, you should either set the [`Response`](/class/response) object
+in the [`Context`](/class/context), or take over the request and redirect it for example.
 
 If you do the latter, it's recommended to call [`Channel::cleanUp`](channel#cleanup) before the redirect.
 
@@ -164,7 +164,7 @@ Always called from the `run()` method of one of the services.
 #### Parameters
 {:.no_toc}
 
-- [`Context`](../context) `$context` : The Freesewing context
+- [`Context`](/class/context) `$context` : The Freesewing context
 
 ### handleInvalidResponse
 
@@ -191,7 +191,7 @@ Always called from the `run()` method of one of the services.
 #### Parameters
 {:.no_toc}
 
-- [`Context`](../context) `$context` : The Freesewing context
+- [`Context`](/class/context) `$context` : The Freesewing context
 
 ### cleanUp
 

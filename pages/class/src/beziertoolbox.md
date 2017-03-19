@@ -33,7 +33,7 @@ The [`BezierToolbox`](beziertoolbox) class is internal. Most of its methods are 
 ever called from the [`Path`](path) and [`Part`](part) classes. 
 
 An exception is the [`BezierToolbox::bezierCircle`](beziertoolbox#beziercircle) method
-which is commonly called from a [`Pattern`](patterns/pattern)
+which is commonly called from a [`Pattern`](patterns/core/pattern)
 
 ## Constants
 

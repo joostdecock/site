@@ -1,9 +1,9 @@
 ---
 layout: class
 title: Theme
-namespace: Freesewing\Themes
+namespace: Freesewing\Themes\Core
 tags: [theme, abstract]
-permalink: /class/themes/theme
+permalink: /class/themes/core/theme
 ---
 ## Description 
 
@@ -52,7 +52,7 @@ void themePattern(
 )
 ```
 
-This is where, as a theme designer, you theme the [`Pattern`](/class/patterns/pattern) object.
+This is where, as a theme designer, you theme the [`Pattern`](/class/patterns/core/pattern) object.
 
 By default, this pulls the (debug) messages to the pattern, so we can add it to the [`SvgDocument`](/class/svgdocument)
 later when [`Theme::themeSvg`](theme#themesvg) gets called.
@@ -66,7 +66,7 @@ Called by the service classes after the pattern is drafted/sampled, but before i
 #### Parameters
 {:.no_toc}
 
-- [`Pattern`](/class/patterns/pattern) `$pattern` : The pattern object to theme.
+- [`Pattern`](/class/patterns/core/pattern) `$pattern` : The pattern object to theme.
 
 ### themeSvg
 
@@ -87,7 +87,7 @@ Called by the service classes after the pattern is drafted/sampled, but before i
 #### Parameters
 {:.no_toc}
 
-- [`SvgDocument`](../svgdocument) `$svgDocument` : The [`SvgDocument`](../svgdocument) object to theme.
+- [`SvgDocument`](/class/svgdocument) `$svgDocument` : The [`SvgDocument`](/class/svgdocument) object to theme.
 
 ### themeResponse
 
@@ -97,7 +97,7 @@ void themeResponse(
 )
 ```
 
-This gets the entire [`Context`](../context) object, and should return a [`Response`](../response) object.
+This gets the entire [`Context`](/class/context) object, and should return a [`Response`](/class/response) object.
 
 #### Typical use
 {:.no_toc}
@@ -106,7 +106,7 @@ Called by the service classes after rendering the pattern.
 #### Parameters
 {:.no_toc}
 
-- [`Context`](../context) `$context` : The Freesewing context object
+- [`Context`](/class/context) `$context` : The Freesewing context object
 
 ### cleanUp
 
@@ -116,8 +116,8 @@ void cleanUp()
 
 Does nothing by default.
 
-The `cleanUp` method is called on the [`Theme`](../themes/theme), [`Pattern`](/class/patterns/pattern), 
-and [`Channel`](../channels/channel) object before terminating a request.
+The `cleanUp` method is called on the [`Theme`](/class/themes/core/theme), [`Pattern`](/class/patterns/core/pattern), 
+and [`Channel`](/class/channels/core/channel) object before terminating a request.
 It's a way to tie up any loose ends you may have, like open database connections and such things.
 
 By default, it does nothing though.
@@ -125,8 +125,8 @@ By default, it does nothing though.
 #### Typical use
 {:.no_toc}
 
-Called from [`DraftService::run`](../services/draftservice#run), [`SampleService::run`](../services/sampleservice#run),
-or [`CompareService::run`](../services/compareservice#run).
+Called from [`DraftService::run`](/class/services/draftservice#run), [`SampleService::run`](/class/services/sampleservice#run),
+or [`CompareService::run`](/class/services/compareservice#run).
 
 ### getTranslationFiles
 
@@ -142,7 +142,7 @@ Returns an `array` of translation files.
 #### Typical use
 {:.no_toc}
 
-Called from the [`Context`](../context) class to add all translation
+Called from the [`Context`](/class/context) class to add all translation
 files to the translator.
 
 #### Parameters
@@ -167,7 +167,7 @@ void setOptions(
 Allows the theme to set options based on the request data.
 
 By default, this will set all options listed in the theme config
-to their values in the [`Request`](../request) object.
+to their values in the [`Request`](/class/request) object.
          
 #### Typical use
 {:.no_toc}
@@ -179,7 +179,7 @@ This allows you to configure these options in one place.
 #### Parameters
 {:.no_toc}
 
-- [`Request`](../request) `$request` : The request object
+- [`Request`](/class/request) `$request` : The request object
 
 ### applyRenderMask
 
@@ -200,7 +200,7 @@ what parts to render.
 #### Parameters
 {:.no_toc}
 
-- [`Pattern`](/class/patterns/pattern) `$pattern` : The pattern object
+- [`Pattern`](/class/patterns/core/pattern) `$pattern` : The pattern object
 
 
 

@@ -42,7 +42,7 @@ to the `modelConfig` property.
 #### Parameters
 {:.no_toc}
 This expects a configuration array, obtained from
-[`Patterns\Pattern::getSamplerModelConfig`](patterns/pattern#getsamplermodelconfig).
+[`Patterns\Pattern::getSamplerModelConfig`](patterns/core/pattern#getsamplermodelconfig).
 
 ### loadPatternModels
 
@@ -111,7 +111,7 @@ array sampleMeasurements(
 This iterates over the [`Model`](model) objects in the `models` property.
 
 For each [`Model`](model) this clones the pattern and calls 
-[`Patterns\Pattern::sample`](patterns/pattern#sample) with the [`Model`](model)
+[`Patterns\Pattern::sample`](patterns/core/pattern#sample) with the [`Model`](model)
 as parameter.
 
 It then itterates over the parts and calls 
@@ -120,13 +120,13 @@ It then itterates over the parts and calls
 #### Parameters
 {:.no_toc}
 
-Expects a child of [`Themes\Theme`](themes/theme). We need this because the theme
+Expects a child of [`Themes\Theme`](themes/core/theme). We need this because the theme
 is needed to style the sampled parts.
 
 #### Return value
 {:.no_toc}
 
-Returns a (grand)child of [`Patterns\Pattern`](patterns/pattern)
+Returns a (grand)child of [`Patterns\Pattern`](patterns/core/pattern)
 
 ## See also
 {% include classFooter.html %}

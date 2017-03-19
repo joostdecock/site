@@ -554,7 +554,7 @@ And those are the parameters the [`Part::addTitle`](/class/part#addtitle) method
 We also didn't specify a title, but instead used the [`Part::getTitle`](/class/part#gettitle) method
 to get the title for the part as set in the patterns configuration file.
 
-And, we wrapped that in the [`Patterns\Pattern::t`](/class/patterns/pattern#t) method, 
+And, we wrapped that in the [`Patterns\Pattern::t`](/class/patterns/core/pattern#t) method, 
 which translates a string. This way, the title is set as in the config, and if we provided a
 translation in the language the user requested, we put in the translation instead.
 
@@ -897,7 +897,7 @@ So, to make sure your pattern will be translated to another language, you need t
 `messages.[language code].yml` file.
 
 But, you only need to add translations that are not covered by the pattern you extended.
-We extended the base [`Pattern`](/class/patterns/pattern) class, so all strings in 
+We extended the base [`Pattern`](/class/patterns/core/pattern) class, so all strings in 
 `patterns/Pattern/translations/messages.nl.yml` are already known.
 
 ### Providing translation files

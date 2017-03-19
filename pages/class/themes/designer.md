@@ -1,9 +1,9 @@
 ---
 layout: class
 title: Designer
-namespace: Freesewing\Themes
+namespace: Freesewing\Themes\Core
 tags: [theme, debug]
-permalink: /class/themes/designer
+permalink: /class/themes/core/designer
 ---
 ## Description 
 
@@ -32,7 +32,7 @@ void themePattern(
 )
 ```
 
-This is where, as a theme designer, you theme the [`Pattern`](../patterns/pattern) object.
+This is where, as a theme designer, you theme the [`Pattern`](/class/patterns/core/pattern) object.
 
 This [`Designer`](designer) theme overrides [`Theme::themePattern`](theme#themepattern) to
 add the extra debug info that is useful for pattern designers.
@@ -44,7 +44,7 @@ Called by the service classes after the pattern is drafted/sampled, but before i
 #### Parameters
 {:.no_toc}
 
-- [`Pattern`](../patterns/pattern) `$pattern` : The pattern object to theme.
+- [`Pattern`](/class/patterns/core/pattern) `$pattern` : The pattern object to theme.
 
 ## See also
 

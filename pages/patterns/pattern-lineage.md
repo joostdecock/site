@@ -9,7 +9,7 @@ permalink: /patterns/lineage
 Patterns can extend (be based on) other patterns, which leads 
 to the sort of pattern family tree shown below.
 
-Designers who extend the base [`Pattern`](/class/patterns/pattern) class
+Designers who extend the base [`Pattern`](/class/patterns/core/pattern) class
 need to implement everything themselves.
 
 If you extend an existing pattern, a bunch of the work has been done 
@@ -20,7 +20,7 @@ shirt style. But you can't (or shouldn't) turn it into trousers.
 
 ## Pattern family tree
 
-- {: .folder .open } [`Pattern`](/class/patterns/pattern)
+- {: .folder .open } [`Pattern`](/class/patterns/core/pattern)
   - BrianBodyBlock
     - AaronAshirt
     - HugoHoodie

@@ -1,9 +1,9 @@
 ---
 layout: class
 title: Paperless
-namespace: Freesewing\Themes
+namespace: Freesewing\Themes\Core
 tags: [theme]
-permalink: /class/themes/paperless
+permalink: /class/themes/core/paperless
 ---
 ## Description 
 
@@ -35,7 +35,7 @@ void themePattern(
 )
 ```
 
-This is where, as a theme designer, you theme the [`Pattern`](../patterns/pattern) object.
+This is where, as a theme designer, you theme the [`Pattern`](/class/patterns/core/pattern) object.
 
 This [`Paperless`](paperless) theme overrides [`Theme::themePattern`](theme#themepattern) to
 add the grid overlay.
@@ -47,7 +47,7 @@ Called by the service classes after the pattern is drafted/sampled, but before i
 #### Parameters
 {:.no_toc}
 
-- [`Pattern`](../patterns/pattern) `$pattern` : The pattern object to theme.
+- [`Pattern`](/class/patterns/core/pattern) `$pattern` : The pattern object to theme.
 
 ### themeSvg
 
@@ -57,7 +57,7 @@ void themeSvg(
 )
 ```
 
-This is where, as a theme designer, you theme the [`SvgDocument`](../patterns/pattern) object.
+This is where, as a theme designer, you theme the [`SvgDocument`](/class/patterns/core/pattern) object.
 
 By default, this loads the theme templates, and adds the (debug) messages from the pattern.
 
@@ -70,7 +70,7 @@ Called by the service classes after the pattern is drafted/sampled, but before i
 #### Parameters
 {:.no_toc}
 
-- [`SvgDocument`](../svgdocument) `$svgDocument` : The [`SvgDocument`](../svgdocument) object to theme.
+- [`SvgDocument`](/class/svgdocument) `$svgDocument` : The [`SvgDocument`](/class/svgdocument) object to theme.
 
 ## See also
 

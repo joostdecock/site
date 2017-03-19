@@ -1,9 +1,9 @@
 ---
 layout: class
 title: Basic
-namespace: Freesewing\Themes
+namespace: Freesewing\Themes\Core
 tags: [theme]
-permalink: /class/themes/basic
+permalink: /class/themes/core/basic
 ---
 ## Description 
 

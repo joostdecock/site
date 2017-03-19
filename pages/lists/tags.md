@@ -41,3 +41,7 @@ permalink: /tags
     </ul>
     {% endfor %}
 </div>
+
+* TOC - Do not remove this line
+{:toc}
+

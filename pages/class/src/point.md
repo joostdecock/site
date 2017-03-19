@@ -129,7 +129,7 @@ Sets the `description` property of the [`Point`](point) to value `$description`.
 #### Typical use
 {:.no_toc}
 
-Commonly used by [`Themes/designer`](themes/designer) to add the point description
+Commonly used by [`Themes/designer`](themes/core/designer) to add the point description
 to the pattern output.
 
 #### Return value

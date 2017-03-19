@@ -50,19 +50,22 @@ permalink: /classdocs
   - {: .code } [`Vector`](/class/vector)
   - {: .code } [`Yamlr`](/class/yamlr)
 - {: .folder .open} patterns
-  - {: .code } [`Pattern`](/class/patterns/pattern)
+  - {: .folder .open } Core
+    - {: .code } [`Pattern`](/class/patterns/core/pattern)
 - {: .folder .open} themes
-  - {: .code } [`Basic`](/class/themes/basic)
-  - {: .code } [`Compare`](/class/themes/compare)
-  - {: .code } [`Designer`](/class/themes/designer)
-  - {: .code } [`Developer`](/class/themes/developer)
-  - {: .code } [`Info`](/class/themes/info)
-  - {: .code } [`Paperless`](/class/themes/paperless)
-  - {: .code } [`Sampler`](/class/themes/sampler)
-  - {: .code } [`Theme`](/class/themes/theme)
+  - {: .folder .open } Core
+      - {: .code } [`Basic`](/class/themes/core/basic)
+      - {: .code } [`Compare`](/class/themes/core/compare)
+      - {: .code } [`Designer`](/class/themes/core/designer)
+      - {: .code } [`Developer`](/class/themes/core/developer)
+      - {: .code } [`Info`](/class/themes/core/info)
+      - {: .code } [`Paperless`](/class/themes/core/paperless)
+      - {: .code } [`Sampler`](/class/themes/core/sampler)
+      - {: .code } [`Theme`](/class/themes/core/theme)
 - {: .folder .open} channels
-  - {: .code } [`Channel`](/class/channels/channel)
-  - {: .code } [`Docs`](/class/channels/docs)
+  - {: .folder .open } Core
+      - {: .code } [`Channel`](/class/channels/core/channel)
+      - {: .code } [`Freesewing`](/class/channels/core/freesewing)
 {: .files }
 
 ## Auto-generated class documentation

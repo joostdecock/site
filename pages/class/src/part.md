@@ -2317,7 +2317,7 @@ $p->newInclude(1, '<image x="0" y="0" width="80" height="80" xlink:href="https:/
 #### Typical use
 {:.no_toc}
 
-Typically used by the [`Themes/paperless`](themes/paperless) theme to add a grid to the pattern parts.
+Typically used by the [`Themes/paperless`](themes/core/paperless) theme to add a grid to the pattern parts.
 
 Also used by the sample service to add pre-rendered parts to the pattern.
 
@@ -3652,7 +3652,7 @@ object to the `boundary` property of the part.
 #### Typical use
 {:.no_toc}
 
-This is part of the layout work, handled automatically by the [`Patterns/pattern`](patterns/pattern) class.
+This is part of the layout work, handled automatically by the [`Patterns/pattern`](patterns/core/pattern) class.
 
 Normally, you **never** use this directly.
 
@@ -3681,7 +3681,7 @@ $p->setTitle('This is the title');
 #### Typical use
 {:.no_toc}
 
-The [`Patterns/pattern::loadParts`](patterns/pattern#loadparts) method sets the title automatically
+The [`Patterns/pattern::loadParts`](patterns/core/pattern#loadparts) method sets the title automatically
 for parts listed in the pattern configuration file.
 
 #### Parameters
@@ -3715,7 +3715,7 @@ $p->setUnits('imperial');
 #### Typical use
 {:.no_toc}
 
-Units are set automatically in the [`Patterns/pattern::loadParts`](patterns/pattern#loadparts) method.
+Units are set automatically in the [`Patterns/pattern::loadParts`](patterns/core/pattern#loadparts) method.
 
 The reason units are stored in the [`Part`](part) method is to allow the [`Part::unit`](part#unit) 
 to do its work.
@@ -3773,7 +3773,7 @@ that shouldn't be rendered.
 That's because some parts have nothing to render (only points for example) and are thus
 empty and _invisible_. 
 
-That's why the [`Themes/paperless`](themes/paperless) theme calls this method before 
+That's why the [`Themes/paperless`](themes/core/paperless) theme calls this method before 
 adding a grid to the part. Because adding a grid to a empty part would make it
 visible.
 

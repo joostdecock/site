@@ -1,14 +1,14 @@
 ---
 layout: class
 title: Info
-namespace: Freesewing\Themes
+namespace: Freesewing\Themes\Core
 tags: [theme]
-permalink: /class/themes/info
+permalink: /class/themes/core/info
 ---
 ## Description 
 
 The [`Info`](info) theme is the default theme for, and only used by,
-the [`InfoService`](../services/infoservice).
+the [`InfoService`](/class/services/infoservice).
 
 It returns information about the API in one of three formats:
 
@@ -24,7 +24,7 @@ That's because the info service just returns information
 and doesn't create a pattern.
 
 The [`Info`](info) theme will also add a `Access-Control-Allow-Origin:"*"` header 
-to the [`Response`](../response) object, so you can call the infoservice in an AJAX request across 
+to the [`Response`](/class/response) object, so you can call the infoservice in an AJAX request across 
 domains.
 
 ## Example
@@ -88,7 +88,7 @@ Themes the info on pattern `$pattern` according to format `$format`, which is on
 #### Parameters
 {:.no_toc}
 
-- [`Pattern`](/class/patterns/pattern) `$pattern` : The pattern object
+- [`Pattern`](/class/patterns/core/pattern) `$pattern` : The pattern object
 - `string` `$format` : The format to use
 
 #### Return value
@@ -104,8 +104,8 @@ void cleanUp()
 
 Does nothing by default.
 
-The `cleanUp` method is called on the [`Theme`](../themes/theme), [`Pattern`](/class/patterns/pattern), 
-and [`Channel`](/class/channels/channel) object before terminating a request.
+The `cleanUp` method is called on the [`Theme`](/class/themes/core/theme), [`Pattern`](/class/patterns/core/pattern), 
+and [`Channel`](/class/channels/core/channel) object before terminating a request.
 It's a way to tie up any loose ends you may have, like open database connections and such things.
 
 By default, it does nothing though.
@@ -113,8 +113,8 @@ By default, it does nothing though.
 #### Typical use
 {:.no_toc}
 
-Called from [`DraftService::run`](../services/draftservice#run), [`SampleService::run`](../services/sampleservice#run),
-or [`CompareService::run`](../services/compareservice#run).
+Called from [`DraftService::run`](/class/services/draftservice#run), [`SampleService::run`](/class/services/sampleservice#run),
+or [`CompareService::run`](/class/services/compareservice#run).
 
 ### isPaperless
 
@@ -131,7 +131,7 @@ bust must be a callable method in all themes.
 Always `false`.
 
 ## See also
-The [`InfoService`](../services/infoservice) class.
+The [`InfoService`](/class/services/infoservice) class.
 
 {% include classFooter.html %}
 * TOC - Do not remove this line

@@ -1,13 +1,13 @@
 ---
 layout: class
 title: Sampler
-namespace: Freesewing\Themes
+namespace: Freesewing\Themes\Core
 tags: [theme]
-permalink: /class/themes/sampler
+permalink: /class/themes/core/sampler
 ---
 ## Description 
 
-The [`Sampler`](sampler) theme is the default theme for the [`SampleService`](../services/sampleservice).
+The [`Sampler`](sampler) theme is the default theme for the [`SampleService`](/class/services/sampleservice).
 
 ## Public methods
 
@@ -19,7 +19,7 @@ void themeSvg(
 )
 ```
 
-This is where, as a theme designer, you theme the [`SvgDocument`](../patterns/pattern) object.
+This is where, as a theme designer, you theme the [`SvgDocument`](/class/patterns/core/pattern) object.
 
 By default, this loads the theme templates, and adds the (debug) messages from the pattern.
 
@@ -32,7 +32,7 @@ Called by the service classes after the pattern is drafted/sampled, but before i
 #### Parameters
 {:.no_toc}
 
-- [`SvgDocument`](../svgdocument) `$svgDocument` : The [`SvgDocument`](../svgdocument) object to theme.
+- [`SvgDocument`](/class/svgdocument) `$svgDocument` : The [`SvgDocument`](/class/svgdocument) object to theme.
 
 ### samplerPathStyle
 
@@ -48,7 +48,7 @@ This method is reponsible for that rainbow effect in this theme.
 
 #### Typical use
 {:.no_toc}
-Called from the [`Sampler`](../sampler) class.
+Called from the [`Sampler`](/class/sampler) class.
 
 #### Parameters
 {:.no_toc}
