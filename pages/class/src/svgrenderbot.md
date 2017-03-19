@@ -36,7 +36,7 @@ Called from one of the services.
 #### Parameters
 {:.no_toc}
 
-This expects a child class of [`Patterns/pattern`](patterns/pattern) as that is an abstract class.
+This expects a child class of [`Patterns/pattern`](patterns/core/pattern) as that is an abstract class.
 
 #### Return value
 {:.no_toc}

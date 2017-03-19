@@ -54,9 +54,9 @@ Essentially, it takes care of the entire remainder of the request.
 
 While doing so, it takes care of a number of things:
 
-- It asks the [`Channel`](../channels/channel) wether this is a valid [`Request`](../request)
-- It asks the [`Channel`](../channels/channel) to standardize the [`Model`](../model) measurements and options
-- It adds units, a translator, [`Pattern`](../patterns/pattern), [`Model`](../model), 
+- It asks the [`Channel`](/class/channels/core/channel) wether this is a valid [`Request`](../request)
+- It asks the [`Channel`](/class/channels/core/channel) to standardize the [`Model`](../model) measurements and options
+- It adds units, a translator, [`Pattern`](../patterns/core/pattern), [`Model`](../model), 
 [`SvgDocument`](../svgdocument), [`SvgRenderbot`](../svgrenderbot), and a [`MeasurementsSampler`](../measurementssampler) or [`OptionsSampler`](../optionssampler) to the [`Context`](../context)
 - It calls [`MeasurementsSamplerPattern::sampleMeasurements`](../measurementssampler#samplemeasurements) or [`OptionsSampler::sampleOptions`](../optionssampler#sampleoptions)
 - It calls [`Response::send`](../response#send)

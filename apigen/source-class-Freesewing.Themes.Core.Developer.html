@@ -5,10 +5,10 @@
 	<meta name="generator" content="ApiGen 2.8.0">
 	<meta name="robots" content="noindex">
 
-	<title>File Developer/Developer.php | Freesewing</title>
+	<title>File Core/Developer/Developer.php | Freesewing</title>
 
 	<script type="text/javascript" src="resources/combined.js?117538352"></script>
-	<script type="text/javascript" src="elementlist.js?1869948836"></script>
+	<script type="text/javascript" src="elementlist.js?2380082071"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -24,15 +24,23 @@
 			<ul>
 				<li class="active"><a href="namespace-Freesewing.html">Freesewing<span></span></a>
 						<ul>
-				<li><a href="namespace-Freesewing.Channels.html">Channels</a>
-						</li>
-				<li><a href="namespace-Freesewing.Patterns.html">Patterns</a>
-						</li>
-				<li><a href="namespace-Freesewing.Services.html">Services</a>
-						</li>
-				<li class="active"><a href="namespace-Freesewing.Themes.html">Themes</a>
+				<li><a href="namespace-Freesewing.Channels.html">Channels<span></span></a>
+						<ul>
+				<li><a href="namespace-Freesewing.Channels.Core.html">Core</a>
 						</li>
 							</ul></li>
+				<li><a href="namespace-Freesewing.Patterns.html">Patterns<span></span></a>
+						<ul>
+				<li><a href="namespace-Freesewing.Patterns.Core.html">Core</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Freesewing.Services.html">Services</a>
+						</li>
+				<li class="active"><a href="namespace-Freesewing.Themes.html">Themes<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Freesewing.Themes.Core.html">Core</a>
+						</li>
+							</ul></li></ul></li>
 			</ul>
 		</div>
 
@@ -42,14 +50,14 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-Freesewing.Themes.Basic.html">Basic</a></li>
-				<li><a href="class-Freesewing.Themes.Compare.html">Compare</a></li>
-				<li><a href="class-Freesewing.Themes.Designer.html">Designer</a></li>
-				<li class="active"><a href="class-Freesewing.Themes.Developer.html">Developer</a></li>
-				<li><a href="class-Freesewing.Themes.Info.html">Info</a></li>
-				<li><a href="class-Freesewing.Themes.Paperless.html">Paperless</a></li>
-				<li><a href="class-Freesewing.Themes.Sampler.html">Sampler</a></li>
-				<li><a href="class-Freesewing.Themes.Theme.html">Theme</a></li>
+				<li><a href="class-Freesewing.Themes.Core.Basic.html">Basic</a></li>
+				<li><a href="class-Freesewing.Themes.Core.Compare.html">Compare</a></li>
+				<li><a href="class-Freesewing.Themes.Core.Designer.html">Designer</a></li>
+				<li class="active"><a href="class-Freesewing.Themes.Core.Developer.html">Developer</a></li>
+				<li><a href="class-Freesewing.Themes.Core.Info.html">Info</a></li>
+				<li><a href="class-Freesewing.Themes.Core.Paperless.html">Paperless</a></li>
+				<li><a href="class-Freesewing.Themes.Core.Sampler.html">Sampler</a></li>
+				<li><a href="class-Freesewing.Themes.Core.Theme.html">Theme</a></li>
 			</ul>
 
 
@@ -77,10 +85,10 @@
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
 			<li>
-				<a href="namespace-Freesewing.Themes.html" title="Summary of Freesewing\Themes"><span>Namespace</span></a>
+				<a href="namespace-Freesewing.Themes.Core.html" title="Summary of Freesewing\Themes\Core"><span>Namespace</span></a>
 			</li>
 			<li>
-				<a href="class-Freesewing.Themes.Developer.html" title="Summary of Freesewing\Themes\Developer"><span>Class</span></a>
+				<a href="class-Freesewing.Themes.Core.Developer.html" title="Summary of Freesewing\Themes\Core\Developer"><span>Class</span></a>
 			</li>
 		</ul>
 		<ul>
@@ -99,11 +107,11 @@
 	</div>
 
 <pre><code><span id="1" class="l"><a class="l" href="#1"> 1: </a><span class="xlang">&lt;?php</span>
-</span><span id="2" class="l"><a class="l" href="#2"> 2: </a><span class="php-comment">/** Freesewing\Themes\Designer class */</span>
-</span><span id="3" class="l"><a class="l" href="#3"> 3: </a><span class="php-keyword1">namespace</span> Freesewing\Themes;
+</span><span id="2" class="l"><a class="l" href="#2"> 2: </a><span class="php-comment">/** Freesewing\Themes\Core\Developer class */</span>
+</span><span id="3" class="l"><a class="l" href="#3"> 3: </a><span class="php-keyword1">namespace</span> Freesewing\Themes\Core;
 </span><span id="4" class="l"><a class="l" href="#4"> 4: </a>
 </span><span id="5" class="l"><a class="l" href="#5"> 5: </a><span class="php-keyword1">use</span> Freesewing\Context;
-</span><span id="6" class="l"><a class="l" href="#6"> 6: </a><span class="php-keyword1">use</span> Freesewing\Patterns\<span class="php-keyword2">Pattern</span>;
+</span><span id="6" class="l"><a class="l" href="#6"> 6: </a><span class="php-keyword1">use</span> Freesewing\Patterns\Core\<span class="php-keyword2">Pattern</span>;
 </span><span id="7" class="l"><a class="l" href="#7"> 7: </a>
 </span><span id="8" class="l"><a class="l" href="#8"> 8: </a><span class="php-comment">/**
 </span></span><span id="9" class="l"><a class="l" href="#9"> 9: </a><span class="php-comment"> * Freesewing\Themes\Developer class.
@@ -135,7 +143,7 @@
 </span><span id="35" class="l"><a class="l" href="#35">35: </a>            <span class="php-quote">'svg'</span>   =&gt; <span class="php-quote">&quot;</span><span class="php-var">{$context-&gt;getSvgDocument()}</span><span class="php-quote">&quot;</span>,
 </span><span id="36" class="l"><a class="l" href="#36">36: </a>            <span class="php-quote">'debug'</span> =&gt; <span class="php-var">$debug</span>,
 </span><span id="37" class="l"><a class="l" href="#37">37: </a>        ]);
-</span><span id="38" class="l"><a class="l" href="#38">38: </a>
+</span><span id="38" class="l"><a class="l" href="#38">38: </a>        
 </span><span id="39" class="l"><a class="l" href="#39">39: </a>        <span class="php-keyword1">return</span> <span class="php-var">$response</span>;
 </span><span id="40" class="l"><a class="l" href="#40">40: </a>    }
 </span><span id="41" class="l"><a class="l" href="#41">41: </a>}

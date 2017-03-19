@@ -34,7 +34,7 @@ If the `service` parameter is not present, the default service will be loaded fr
 ### channel
 
 The channel to load. This must be the name of a class extending the abstract 
-[`Channels/Channel`](/class/channels/channel) class.
+[`Channels/Channel`](/class/channels/core/channel) class.
 
 Example: `Docs`
 
@@ -44,7 +44,7 @@ If the `channel` parameter is not present, the default channel will be loaded fr
 ### theme
 
 The theme to load. This must be the name of a class extending the abstract 
-[`Themes/Theme`](/class/themes/theme) class.
+[`Themes/Theme`](/class/themes/core/theme) class.
 
 Example: `Paperless`
 
@@ -67,7 +67,7 @@ loaded from the `config.yml` configuration file.
 #### pattern
 
 If the `pattern` request parameter is set to the class name of a class 
-extending the abstract [`Patterns/Pattern`](/class/patterns/pattern) class, 
+extending the abstract [`Patterns/Pattern`](/class/patterns/core/pattern) class, 
 the info service will return information on this pattern.
 
 If it is not set, the info service will return general API info.
@@ -88,7 +88,7 @@ If the `format` parameter is not present, this defaults to `json`.
 #### pattern
 
 The `pattern` request parameter should be set to the class name of a class 
-extending the abstract [`Patterns/Pattern`](/class/patterns/pattern) class.
+extending the abstract [`Patterns/Pattern`](/class/patterns/core/pattern) class.
 
 If it's set, this is the pattern that will be drafted.
 If it is not set (or hasn't been set to a default) the draft service cannot function.
@@ -98,7 +98,7 @@ If it is not set (or hasn't been set to a default) the draft service cannot func
 #### pattern
 
 The `pattern` request parameter should be set to the class name of a class 
-extending the abstract [`Patterns/Pattern`](/class/patterns/pattern) class.
+extending the abstract [`Patterns/Pattern`](/class/patterns/core/pattern) class.
 
 If it's set, this is the pattern that will be sampled.
 If it is not set (or hasn't been set to a default) the sample service cannot function.
@@ -128,7 +128,7 @@ sampler configuration file.
 #### pattern
 
 The `pattern` request parameter should be set to the class name of a class 
-extending the abstract [`Patterns/Pattern`](/class/patterns/pattern) class.
+extending the abstract [`Patterns/Pattern`](/class/patterns/core/pattern) class.
 
 If it's set, this is the pattern that will be compared.
 If it is not set (or hasn't been set to a default) the compare service cannot function.

@@ -7,7 +7,7 @@
 	<title>Class Freesewing\OptionsSampler | Freesewing</title>
 
 	<script type="text/javascript" src="resources/combined.js?117538352"></script>
-	<script type="text/javascript" src="elementlist.js?1869948836"></script>
+	<script type="text/javascript" src="elementlist.js?2380082071"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -23,15 +23,23 @@
 			<ul>
 				<li class="active"><a href="namespace-Freesewing.html">Freesewing<span></span></a>
 						<ul>
-				<li><a href="namespace-Freesewing.Channels.html">Channels</a>
-						</li>
-				<li><a href="namespace-Freesewing.Patterns.html">Patterns</a>
-						</li>
-				<li><a href="namespace-Freesewing.Services.html">Services</a>
-						</li>
-				<li><a href="namespace-Freesewing.Themes.html">Themes</a>
+				<li><a href="namespace-Freesewing.Channels.html">Channels<span></span></a>
+						<ul>
+				<li><a href="namespace-Freesewing.Channels.Core.html">Core</a>
 						</li>
 							</ul></li>
+				<li><a href="namespace-Freesewing.Patterns.html">Patterns<span></span></a>
+						<ul>
+				<li><a href="namespace-Freesewing.Patterns.Core.html">Core</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Freesewing.Services.html">Services</a>
+						</li>
+				<li><a href="namespace-Freesewing.Themes.html">Themes<span></span></a>
+						<ul>
+				<li><a href="namespace-Freesewing.Themes.Core.html">Core</a>
+						</li>
+							</ul></li></ul></li>
 			</ul>
 		</div>
 
@@ -172,7 +180,7 @@ creates 11 steps between the minimum and maximum value of an option.</p>
 				<b>Author:</b>
 				Joost De Cock &lt;<a
 href="mailto:joost&#64;decock.org">joost&#64;<!-- -->decock.org</a>&gt;<br>
-		<b>Located at</b> <a href="source-class-Freesewing.OptionsSampler.html#5-108" title="Go to source code">OptionsSampler/OptionsSampler.php</a><br>
+		<b>Located at</b> <a href="source-class-Freesewing.OptionsSampler.html#5-111" title="Go to source code">OptionsSampler/OptionsSampler.php</a><br>
 	</div>
 
 
@@ -277,7 +285,7 @@ href="mailto:joost&#64;decock.org">joost&#64;<!-- -->decock.org</a>&gt;<br>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getSampleValue">#</a>
-		<code><a href="source-class-Freesewing.OptionsSampler.html#51-68" title="Go to source code">getSampleValue</a>( <span>integer <var>$step</var></span>, <span>integer <var>$steps</var></span>, <span>array <var>$option</var></span> )</code>
+		<code><a href="source-class-Freesewing.OptionsSampler.html#51-71" title="Go to source code">getSampleValue</a>( <span>integer <var>$step</var></span>, <span>integer <var>$steps</var></span>, <span>array <var>$option</var></span> )</code>
 
 		<div class="description short">
 			
@@ -316,14 +324,14 @@ href="mailto:joost&#64;decock.org">joost&#64;<!-- -->decock.org</a>&gt;<br>
 
 		<td class="attributes"><code>
 			 public 
-			<code><a href="class-Freesewing.Patterns.Pattern.html">Freesewing\Patterns\Pattern</a></code>
+			Freesewing\Patterns\*
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_sampleOptions">#</a>
-		<code><a href="source-class-Freesewing.OptionsSampler.html#70-107" title="Go to source code">sampleOptions</a>( <span><code><a href="class-Freesewing.Model.html">Freesewing\Model</a></code> <var>$model</var></span>, <span><code><a href="class-Freesewing.Themes.Theme.html">Freesewing\Themes\Theme</a></code> <var>$theme</var></span>, <span>string <var>$optionKey</var></span>, <span>integer <var>$steps</var> = <span class="php-num">11</span></span> )</code>
+		<code><a href="source-class-Freesewing.OptionsSampler.html#73-110" title="Go to source code">sampleOptions</a>( <span><code><a href="class-Freesewing.Model.html">Freesewing\Model</a></code> <var>$model</var></span>, <span>Freesewing\Themes\* <var>$theme</var></span>, <span>string <var>$optionKey</var></span>, <span>integer <var>$steps</var> = <span class="php-num">11</span></span> )</code>
 
 		<div class="description short">
 			
@@ -346,7 +354,7 @@ sampleParts() on them</p>
 					<dt><var>$model</var></dt>
 					<dd><code><code><a href="class-Freesewing.Model.html">Freesewing\Model</a></code></code><br>$model</dd>
 					<dt><var>$theme</var></dt>
-					<dd><code><code><a href="class-Freesewing.Themes.Theme.html">Freesewing\Themes\Theme</a></code></code><br>$theme or similar</dd>
+					<dd><code>Freesewing\Themes\*</code><br>$theme The theme object</dd>
 					<dt><var>$optionKey</var></dt>
 					<dd><code>string</code><br>$optionKey Name of the option</dd>
 					<dt><var>$steps</var></dt>
@@ -355,7 +363,7 @@ sampleParts() on them</p>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code><code><a href="class-Freesewing.Patterns.Pattern.html">Freesewing\Patterns\Pattern</a></code></code><br>or similar<br>
+					<code>Freesewing\Patterns\*</code><br>A pattern object<br>
 				</div>
 
 

@@ -1,9 +1,9 @@
 ---
 layout: class
 title: Compare
-namespace: Freesewing\Themes
+namespace: Freesewing\Themes\Core
 tags: [theme]
-permalink: /class/themes/compare
+permalink: /class/themes/core/compare
 ---
 ## Description 
 

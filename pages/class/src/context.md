@@ -44,7 +44,7 @@ FIXME: Moved to Utils
 ```php?start_inline=1
 \Freesewing\Channel getChannel() 
 ```
-Returns the [`Channel`](/class/channels/channel) stored in the `channel` property, if any.
+Returns the [`Channel`](/class/channels/core/channel) stored in the `channel` property, if any.
 
 ### getConfig
 
@@ -93,10 +93,10 @@ Returns the [`OptionsSampler`](optionssampler) object in the `optionsSampler` pr
 ```php?start_inline=1
 \Freesewing\Pattern getPattern() 
 ```
-Returns the [`Pattern`](patterns/pattern) object in the `pattern` property, if any.
+Returns the [`Pattern`](patterns/core/pattern) object in the `pattern` property, if any.
 
-> Given that [`Pattern`](patterns/pattern) is an abstract class, the actual object
-> will be a (grand)child of the [`Pattern`](patterns/pattern) class.
+> Given that [`Pattern`](patterns/core/pattern) is an abstract class, the actual object
+> will be a (grand)child of the [`Pattern`](patterns/core/pattern) class.
 
 ### getRenderbot
 
@@ -142,11 +142,11 @@ Returns the [`SvgDocument`](svgdocument) object in the `svgDocument` property, i
 ```php?start_inline=1
 \Freesewing\Themes\Theme getTheme() 
 ```
-Returns the [`Themes\Theme`](themes/theme) object in the `theme` property, if any.
+Returns the [`Themes\Theme`](themes/core/theme) object in the `theme` property, if any.
 
-> Given that [`Themes\Theme`](themes/theme) is an abstract class
+> Given that [`Themes\Theme`](themes/core/theme) is an abstract class
 > the actual object  will be a child of the 
-> [`Themes\Theme`](themes/theme) class.
+> [`Themes\Theme`](themes/core/theme) class.
 
 ### getTranslator
 
@@ -186,12 +186,12 @@ metrics for output (things printed on the pattern).
 void setChannel(\Freesewing\Channels\Channel) 
 ```
 
-Expects a [`Channels\Channel`](/class/channels/channel) object and stores it 
+Expects a [`Channels\Channel`](/class/channels/core/channel) object and stores it 
 in the `channel` property.
 
-> Given that [`Channels\Channel`](/class/channels/channel) is an
+> Given that [`Channels\Channel`](/class/channels/core/channel) is an
 > abstract class, the actual object will be a child of the 
-> [`Channels\Channel`](/class/channels/channel) class.
+> [`Channels\Channel`](/class/channels/core/channel) class.
 
 #### Typical use
 {:.no_toc}
@@ -201,7 +201,7 @@ Called only from the [`Context::configure`](context#configure) method.
 #### Parameters
 {:.no_toc}
 
-Expects a child of [`Channels\Channel`](/class/channels/channel).
+Expects a child of [`Channels\Channel`](/class/channels/core/channel).
 
 ### setConfig
 
@@ -299,10 +299,10 @@ Expects an instance of [`OptionsSampler`](optionssampler).
 ### setPattern
 
 ```php?start_inline=1
-void setPattern(\Freesewing\Patterns\Pattern) 
+void setPattern(\Freesewing\Patterns\Core\Pattern) 
 ```
 
-Expects a (grand)child of [`Patterns\Pattern`](patterns/pattern) and stores it 
+Expects a (grand)child of [`Patterns\Core\Pattern`](patterns/core/pattern) and stores it 
 in the `pattern` property.
 
 
@@ -316,7 +316,7 @@ to the [`Context`](context).
 #### Parameters
 {:.no_toc}
 
-Expects a (grand)child of [`Patterns\Pattern`](patterns/pattern).
+Expects a (grand)child of [`Patterns\Core\Pattern`](patterns/core/pattern).
 
 ### setRenderbot
 
@@ -430,7 +430,7 @@ Expects an instance of [`SvgDocument`](svgdocument).
 void setTheme(\Freesewing\Themes\Theme) 
 ```
 
-Expects a child of [`Themes\Theme`](themes/theme) 
+Expects a child of [`Themes\Theme`](themes/core/theme) 
 and stores it in the `theme` property.
 
 #### Typical use
@@ -441,7 +441,7 @@ Called by [`Context::configure`](context#configure).
 #### Parameters
 {:.no_toc}
 
-Expects a child of [`Themes\Theme`](themes/theme).
+Expects a child of [`Themes\Theme`](themes/core/theme).
 
 ### configure
 
@@ -454,8 +454,8 @@ The configure method sets up properties that are common to all requests.
 They are:
 - config: Holds the configuration file as an array
 - service: Holds a [`Service`](services/service) object 
-- channel: Holds a [`Channel`](/class/channels/channel) object 
-- theme: Holds a [`Themes\Theme`](themes/theme) object 
+- channel: Holds a [`Channel`](/class/channels/core/channel) object 
+- theme: Holds a [`Themes\Theme`](themes/core/theme) object 
 - locale: Holds a string with the locale
 
 #### Typical use
@@ -472,13 +472,13 @@ void addPattern()
 Loads pattern in the pattern property.
 
 Also lets the pattern know whether we are dealing with a paperless theme by feeding
-[`Theme::isPaperless`](/class/themes/theme#ispaperless) into [`Pattern::setPaperless`](/class/patterns/pattern#setpaperless)
+[`Theme::isPaperless`](/class/themes/core/theme#ispaperless) into [`Pattern::setPaperless`](/class/patterns/core/pattern#setpaperless)
 
 #### Typical use
 {:.no_toc}
 
 Used by the `run` method of all services 
-to attach a [`Pattern`](patterns/pattern) object to the [`Context`](context).
+to attach a [`Pattern`](patterns/core/pattern) object to the [`Context`](context).
 
 Specifically:
 
@@ -487,8 +487,8 @@ Specifically:
 - [`SampleService::run`](/class/services/sampleservice#run) 
 - [`CompareService::run`](/class/services/compareservice#run) 
 
-> Given that [`Pattern`](patterns/pattern) is an abstract class, the actual object is always
-> a (grand)child of the [`Pattern`](patterns/pattern) class.
+> Given that [`Pattern`](patterns/core/pattern) is an abstract class, the actual object is always
+> a (grand)child of the [`Pattern`](patterns/core/pattern) class.
 
 ### addModel
 
@@ -647,14 +647,14 @@ Called only from `index.php`, the code that handles all freesewing requests.
 void cleanUp()
 ```
 
-Calls [`Theme::cleanUp`](/class/themes/theme#cleanup) and [`Channel::cleanUp`](/class/channels/channel#cleanup).
+Calls [`Theme::cleanUp`](/class/themes/core/theme#cleanup) and [`Channel::cleanUp`](/class/channels/core/channel#cleanup).
 
 If a pattern is attached to the [`Context`](context), this also calls
-[`Pattern::cleanUp`](/class/patterns/pattern#cleanup).
+[`Pattern::cleanUp`](/class/patterns/core/pattern#cleanup).
 
 > <b>How do you mean, 'If a pattern is attached'?</b>
 > 
-> This check is needed because the infoservice does not always instantiate a [`Pattern`](patterns/pattern).
+> This check is needed because the infoservice does not always instantiate a [`Pattern`](patterns/core/pattern).
 
 This is a way to allow patterns, themes, and channels to clean up at the end of
 a request. For example, if you're logging to a database in your channel,

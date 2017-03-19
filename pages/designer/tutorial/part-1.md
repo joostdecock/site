@@ -283,7 +283,7 @@ index.php?service=draft&pattern=BabyBib&theme=Designer
 
 > <h5 class='notoc'>Use the Designer theme when designing</h5>
 >
-> That `theme=Designer` bit in the URL means we'll be using the [`Designer`](/class/themes/designer) theme.
+> That `theme=Designer` bit in the URL means we'll be using the [`Designer`](/class/themes/core/designer) theme.
 > It includes a lot of extra info in the output that will facilitate your design work.
 
 You will get an empty page, as our patttern doesn't do anything yet. But if you look at the source 
@@ -454,17 +454,17 @@ and behind the scenes, the `setValue` method of the `Pattern` class will be call
 Until we decide that we want to implement our own `setValue` method. What we define ourselves
 takes precedence over what our parent class provides.
 
-If you'd like to know all the methods the `Pattern` class offers, click here: [`Pattern`](/class/patterns/pattern).
+If you'd like to know all the methods the `Pattern` class offers, click here: [`Pattern`](/class/patterns/core/pattern).
 
 > <h5 class='notoc'>Recognising links to the class documentation</h5>
-> Anytime you see a link styled like this: [`Pattern`](/class/patterns/pattern), it is a link to the 
+> Anytime you see a link styled like this: [`Pattern`](/class/patterns/core/pattern), it is a link to the 
 class documentation.
 >
 > When we link to a specific method of a class, things will look like this: 
-[`Pattern::setValue`](/class/patterns/pattern#setvalue)
+[`Pattern::setValue`](/class/patterns/core/pattern#setvalue)
 
 ### Method parameters
-When we called the [`Pattern::setValue`](/class/patterns/pattern#setvalue) method, we gave it two parameters:
+When we called the [`Pattern::setValue`](/class/patterns/core/pattern#setvalue) method, we gave it two parameters:
 
 ```php?start_inline=1
 $this->setValue('headNeckRatio', 0.8);
@@ -487,7 +487,7 @@ Calling the `initialize` method is the first thing we'll do when we put our patt
 The next thing we'll tackle is the DRAFT section. 
 
 ### The sample method
-We'll start with the [`Pattern::sample`](/class/patterns/pattern#sample) method. 
+We'll start with the [`Pattern::sample`](/class/patterns/core/pattern#sample) method. 
 
 > <h5 class='notoc'>The sample method is mandatory</h5>
 >
@@ -732,12 +732,12 @@ Well, we'll be doing exactly that. Below is the code. Don't panic, we'll walk th
 Some methods are used so often that we've created a shorter to
 type alias for them, to save you time. In the example above:
 
-- `$this->v` is an alias for `$this->getValue`, see [`Pattern::getValue`](/class/patterns/pattern#getvalue)
+- `$this->v` is an alias for `$this->getValue`, see [`Pattern::getValue`](/class/patterns/core/pattern#getvalue)
 - `$model->m` is an alias for `$model->getMeasurement`, see [`Model::getmeasurement`](/class/model#getmeasurement)
 
 Another important alias method is:
 
-- `$this->o` which is an alias for `$this->getOption`, see [`Pattern::getOption`](/class/patterns/pattern#getoption)
+- `$this->o` which is an alias for `$this->getOption`, see [`Pattern::getOption`](/class/patterns/core/pattern#getoption)
 
 #### Adding points with Part::newPoint
 
@@ -953,7 +953,7 @@ There's one line we haven't touched upon, and it's this one:
 $this->msg("Neck opening is $delta mm off"); 
 ```
 
-This calls the [`Pattern::msg`](/class/patterns/pattern#msg) method which stores a 
+This calls the [`Pattern::msg`](/class/patterns/core/pattern#msg) method which stores a 
 message in the pattern.
 
 Those messages will be included at the bottom of your pattern source code. 

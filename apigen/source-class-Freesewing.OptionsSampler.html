@@ -8,7 +8,7 @@
 	<title>File OptionsSampler/OptionsSampler.php | Freesewing</title>
 
 	<script type="text/javascript" src="resources/combined.js?117538352"></script>
-	<script type="text/javascript" src="elementlist.js?1869948836"></script>
+	<script type="text/javascript" src="elementlist.js?2380082071"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -24,15 +24,23 @@
 			<ul>
 				<li class="active"><a href="namespace-Freesewing.html">Freesewing<span></span></a>
 						<ul>
-				<li><a href="namespace-Freesewing.Channels.html">Channels</a>
-						</li>
-				<li><a href="namespace-Freesewing.Patterns.html">Patterns</a>
-						</li>
-				<li><a href="namespace-Freesewing.Services.html">Services</a>
-						</li>
-				<li><a href="namespace-Freesewing.Themes.html">Themes</a>
+				<li><a href="namespace-Freesewing.Channels.html">Channels<span></span></a>
+						<ul>
+				<li><a href="namespace-Freesewing.Channels.Core.html">Core</a>
 						</li>
 							</ul></li>
+				<li><a href="namespace-Freesewing.Patterns.html">Patterns<span></span></a>
+						<ul>
+				<li><a href="namespace-Freesewing.Patterns.Core.html">Core</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Freesewing.Services.html">Services</a>
+						</li>
+				<li><a href="namespace-Freesewing.Themes.html">Themes<span></span></a>
+						<ul>
+				<li><a href="namespace-Freesewing.Themes.Core.html">Core</a>
+						</li>
+							</ul></li></ul></li>
 			</ul>
 		</div>
 
@@ -189,52 +197,55 @@
 </span><span id="61" class="l"><a class="l" href="#61"> 61: </a>    {
 </span><span id="62" class="l"><a class="l" href="#62"> 62: </a>        <span class="php-var">$gaps</span> = <span class="php-var">$steps</span> - <span class="php-num">1</span>;
 </span><span id="63" class="l"><a class="l" href="#63"> 63: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$option</span>[<span class="php-quote">'type'</span>] == <span class="php-quote">'percent'</span>) {
-</span><span id="64" class="l"><a class="l" href="#64"> 64: </a>            <span class="php-keyword1">return</span> (<span class="php-num">100</span> / <span class="php-var">$gaps</span>) * (<span class="php-var">$step</span> - <span class="php-num">1</span>) / <span class="php-num">100</span>;
-</span><span id="65" class="l"><a class="l" href="#65"> 65: </a>        } <span class="php-keyword1">else</span> {
-</span><span id="66" class="l"><a class="l" href="#66"> 66: </a>            <span class="php-keyword1">return</span> <span class="php-var">$option</span>[<span class="php-quote">'min'</span>] + (((<span class="php-var">$option</span>[<span class="php-quote">'max'</span>] - <span class="php-var">$option</span>[<span class="php-quote">'min'</span>]) / <span class="php-var">$gaps</span>) * (<span class="php-var">$step</span> - <span class="php-num">1</span>));
-</span><span id="67" class="l"><a class="l" href="#67"> 67: </a>        }
-</span><span id="68" class="l"><a class="l" href="#68"> 68: </a>    }
-</span><span id="69" class="l"><a class="l" href="#69"> 69: </a>
-</span><span id="70" class="l"><a class="l" href="#70"> 70: </a>    <span class="php-comment">/**
-</span></span><span id="71" class="l"><a class="l" href="#71"> 71: </a><span class="php-comment">     * Samples the pattern for an option
-</span></span><span id="72" class="l"><a class="l" href="#72"> 72: </a><span class="php-comment">     *
-</span></span><span id="73" class="l"><a class="l" href="#73"> 73: </a><span class="php-comment">     * For each option step, this clones the pattern and calls the sample() method
-</span></span><span id="74" class="l"><a class="l" href="#74"> 74: </a><span class="php-comment">     * with the model as parameter.
-</span></span><span id="75" class="l"><a class="l" href="#75"> 75: </a><span class="php-comment">     * It then itterates over the parts and calls sampleParts() on them
-</span></span><span id="76" class="l"><a class="l" href="#76"> 76: </a><span class="php-comment">     *
-</span></span><span id="77" class="l"><a class="l" href="#77"> 77: </a><span class="php-comment">     * @param \Freesewing\Model $model
-</span></span><span id="78" class="l"><a class="l" href="#78"> 78: </a><span class="php-comment">     * @param \Freesewing\Themes\Theme $theme or similar
-</span></span><span id="79" class="l"><a class="l" href="#79"> 79: </a><span class="php-comment">     * @param string $optionKey Name of the option
-</span></span><span id="80" class="l"><a class="l" href="#80"> 80: </a><span class="php-comment">     * @param int $steps Number of steps
-</span></span><span id="81" class="l"><a class="l" href="#81"> 81: </a><span class="php-comment">     *
-</span></span><span id="82" class="l"><a class="l" href="#82"> 82: </a><span class="php-comment">     * @return \Freesewing\Patterns\Pattern or similar
-</span></span><span id="83" class="l"><a class="l" href="#83"> 83: </a><span class="php-comment">     */</span>
-</span><span id="84" class="l"><a class="l" href="#84"> 84: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_sampleOptions" href="#_sampleOptions">sampleOptions</a>(<span class="php-var">$model</span>, <span class="php-var">$theme</span>, <span class="php-var">$optionKey</span>, <span class="php-var">$steps</span> = <span class="php-num">11</span>)
-</span><span id="85" class="l"><a class="l" href="#85"> 85: </a>    {
-</span><span id="86" class="l"><a class="l" href="#86"> 86: </a>        <span class="php-var">$option</span> = <span class="php-var">$this</span>-&gt;loadOptionToSample(<span class="php-var">$optionKey</span>);
-</span><span id="87" class="l"><a class="l" href="#87"> 87: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword2">is_int</span>(<span class="php-keyword2">intval</span>(<span class="php-var">$steps</span>)) <span class="php-keyword1">or</span> <span class="php-var">$steps</span> &lt;= <span class="php-num">1</span> <span class="php-keyword1">or</span> <span class="php-var">$steps</span> &gt; <span class="php-num">25</span>) {
-</span><span id="88" class="l"><a class="l" href="#88"> 88: </a>            <span class="php-var">$steps</span> = <span class="php-num">11</span>;
-</span><span id="89" class="l"><a class="l" href="#89"> 89: </a>        }
-</span><span id="90" class="l"><a class="l" href="#90"> 90: </a>        <span class="php-var">$renderBot</span> = <span class="php-keyword1">new</span> \Freesewing\SvgRenderbot();
-</span><span id="91" class="l"><a class="l" href="#91"> 91: </a>        <span class="php-keyword1">for</span> (<span class="php-var">$i</span> = <span class="php-num">1</span>; <span class="php-var">$i</span> &lt;= <span class="php-var">$steps</span>; ++<span class="php-var">$i</span>) {
-</span><span id="92" class="l"><a class="l" href="#92"> 92: </a>            <span class="php-comment">/** @var \Freesewing\Patterns\Pattern $p */</span>
-</span><span id="93" class="l"><a class="l" href="#93"> 93: </a>            <span class="php-var">$p</span> = <span class="php-keyword1">clone</span> <span class="php-var">$this</span>-&gt;<span class="php-keyword2">pattern</span>;
-</span><span id="94" class="l"><a class="l" href="#94"> 94: </a>            <span class="php-var">$sampleValue</span> = <span class="php-var">$this</span>-&gt;getSampleValue(<span class="php-var">$i</span>, <span class="php-var">$steps</span>, <span class="php-var">$option</span>);
-</span><span id="95" class="l"><a class="l" href="#95"> 95: </a>            <span class="php-var">$p</span>-&gt;setOption(<span class="php-var">$optionKey</span>, <span class="php-var">$sampleValue</span>);
-</span><span id="96" class="l"><a class="l" href="#96"> 96: </a>            <span class="php-var">$p</span>-&gt;loadParts();
-</span><span id="97" class="l"><a class="l" href="#97"> 97: </a>            <span class="php-var">$p</span>-&gt;sample(<span class="php-var">$model</span>);
-</span><span id="98" class="l"><a class="l" href="#98"> 98: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$p</span>-&gt;parts <span class="php-keyword1">as</span> <span class="php-var">$partKey</span> =&gt; <span class="php-var">$part</span>) {
-</span><span id="99" class="l"><a class="l" href="#99"> 99: </a>                <span class="php-var">$this</span>-&gt;sampleParts(<span class="php-var">$i</span>, <span class="php-var">$steps</span>, <span class="php-var">$p</span>, <span class="php-var">$theme</span>, <span class="php-var">$renderBot</span>);
-</span><span id="100" class="l"><a class="l" href="#100">100: </a>            }
-</span><span id="101" class="l"><a class="l" href="#101">101: </a>        }
-</span><span id="102" class="l"><a class="l" href="#102">102: </a>        <span class="php-var">$this</span>-&gt;addSampledPartsToPattern();
-</span><span id="103" class="l"><a class="l" href="#103">103: </a>        <span class="php-var">$theme</span>-&gt;applyRenderMask(<span class="php-var">$this</span>-&gt;<span class="php-keyword2">pattern</span>);
-</span><span id="104" class="l"><a class="l" href="#104">104: </a>        <span class="php-var">$this</span>-&gt;<span class="php-keyword2">pattern</span>-&gt;layout();
-</span><span id="105" class="l"><a class="l" href="#105">105: </a>
-</span><span id="106" class="l"><a class="l" href="#106">106: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;<span class="php-keyword2">pattern</span>;
-</span><span id="107" class="l"><a class="l" href="#107">107: </a>    }
-</span><span id="108" class="l"><a class="l" href="#108">108: </a>}
-</span><span id="109" class="l"><a class="l" href="#109">109: </a></span></code></pre>
+</span><span id="64" class="l"><a class="l" href="#64"> 64: </a>            (<span class="php-keyword1">isset</span>(<span class="php-var">$option</span>[<span class="php-quote">'min'</span>])) ? <span class="php-var">$min</span> = <span class="php-var">$option</span>[<span class="php-quote">'min'</span>] : <span class="php-var">$min</span> = <span class="php-num">0</span> ;
+</span><span id="65" class="l"><a class="l" href="#65"> 65: </a>            (<span class="php-keyword1">isset</span>(<span class="php-var">$option</span>[<span class="php-quote">'max'</span>])) ? <span class="php-var">$max</span> = <span class="php-var">$option</span>[<span class="php-quote">'max'</span>] : <span class="php-var">$max</span> = <span class="php-num">100</span> ;
+</span><span id="66" class="l"><a class="l" href="#66"> 66: </a>            <span class="php-var">$delta</span> = <span class="php-var">$max</span> - <span class="php-var">$min</span>;
+</span><span id="67" class="l"><a class="l" href="#67"> 67: </a>            <span class="php-keyword1">return</span> (<span class="php-var">$min</span> + ((<span class="php-var">$delta</span> / <span class="php-var">$gaps</span>) * (<span class="php-var">$step</span> - <span class="php-num">1</span>))) / <span class="php-num">100</span>;
+</span><span id="68" class="l"><a class="l" href="#68"> 68: </a>        } <span class="php-keyword1">else</span> {
+</span><span id="69" class="l"><a class="l" href="#69"> 69: </a>            <span class="php-keyword1">return</span> <span class="php-var">$option</span>[<span class="php-quote">'min'</span>] + (((<span class="php-var">$option</span>[<span class="php-quote">'max'</span>] - <span class="php-var">$option</span>[<span class="php-quote">'min'</span>]) / <span class="php-var">$gaps</span>) * (<span class="php-var">$step</span> - <span class="php-num">1</span>));
+</span><span id="70" class="l"><a class="l" href="#70"> 70: </a>        }
+</span><span id="71" class="l"><a class="l" href="#71"> 71: </a>    }
+</span><span id="72" class="l"><a class="l" href="#72"> 72: </a>
+</span><span id="73" class="l"><a class="l" href="#73"> 73: </a>    <span class="php-comment">/**
+</span></span><span id="74" class="l"><a class="l" href="#74"> 74: </a><span class="php-comment">     * Samples the pattern for an option
+</span></span><span id="75" class="l"><a class="l" href="#75"> 75: </a><span class="php-comment">     *
+</span></span><span id="76" class="l"><a class="l" href="#76"> 76: </a><span class="php-comment">     * For each option step, this clones the pattern and calls the sample() method
+</span></span><span id="77" class="l"><a class="l" href="#77"> 77: </a><span class="php-comment">     * with the model as parameter.
+</span></span><span id="78" class="l"><a class="l" href="#78"> 78: </a><span class="php-comment">     * It then itterates over the parts and calls sampleParts() on them
+</span></span><span id="79" class="l"><a class="l" href="#79"> 79: </a><span class="php-comment">     *
+</span></span><span id="80" class="l"><a class="l" href="#80"> 80: </a><span class="php-comment">     * @param \Freesewing\Model $model
+</span></span><span id="81" class="l"><a class="l" href="#81"> 81: </a><span class="php-comment">     * @param \Freesewing\Themes\* $theme The theme object
+</span></span><span id="82" class="l"><a class="l" href="#82"> 82: </a><span class="php-comment">     * @param string $optionKey Name of the option
+</span></span><span id="83" class="l"><a class="l" href="#83"> 83: </a><span class="php-comment">     * @param int $steps Number of steps
+</span></span><span id="84" class="l"><a class="l" href="#84"> 84: </a><span class="php-comment">     *
+</span></span><span id="85" class="l"><a class="l" href="#85"> 85: </a><span class="php-comment">     * @return \Freesewing\Patterns\* A pattern object
+</span></span><span id="86" class="l"><a class="l" href="#86"> 86: </a><span class="php-comment">     */</span>
+</span><span id="87" class="l"><a class="l" href="#87"> 87: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_sampleOptions" href="#_sampleOptions">sampleOptions</a>(<span class="php-var">$model</span>, <span class="php-var">$theme</span>, <span class="php-var">$optionKey</span>, <span class="php-var">$steps</span> = <span class="php-num">11</span>)
+</span><span id="88" class="l"><a class="l" href="#88"> 88: </a>    {
+</span><span id="89" class="l"><a class="l" href="#89"> 89: </a>        <span class="php-var">$option</span> = <span class="php-var">$this</span>-&gt;loadOptionToSample(<span class="php-var">$optionKey</span>);
+</span><span id="90" class="l"><a class="l" href="#90"> 90: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword2">is_int</span>(<span class="php-keyword2">intval</span>(<span class="php-var">$steps</span>)) <span class="php-keyword1">or</span> <span class="php-var">$steps</span> &lt;= <span class="php-num">1</span> <span class="php-keyword1">or</span> <span class="php-var">$steps</span> &gt; <span class="php-num">25</span>) {
+</span><span id="91" class="l"><a class="l" href="#91"> 91: </a>            <span class="php-var">$steps</span> = <span class="php-num">11</span>;
+</span><span id="92" class="l"><a class="l" href="#92"> 92: </a>        }
+</span><span id="93" class="l"><a class="l" href="#93"> 93: </a>        <span class="php-var">$renderBot</span> = <span class="php-keyword1">new</span> \Freesewing\SvgRenderbot();
+</span><span id="94" class="l"><a class="l" href="#94"> 94: </a>        <span class="php-keyword1">for</span> (<span class="php-var">$i</span> = <span class="php-num">1</span>; <span class="php-var">$i</span> &lt;= <span class="php-var">$steps</span>; ++<span class="php-var">$i</span>) {
+</span><span id="95" class="l"><a class="l" href="#95"> 95: </a>            <span class="php-comment">/** @var \Freesewing\Patterns\* $p */</span>
+</span><span id="96" class="l"><a class="l" href="#96"> 96: </a>            <span class="php-var">$p</span> = <span class="php-keyword1">clone</span> <span class="php-var">$this</span>-&gt;<span class="php-keyword2">pattern</span>;
+</span><span id="97" class="l"><a class="l" href="#97"> 97: </a>            <span class="php-var">$sampleValue</span> = <span class="php-var">$this</span>-&gt;getSampleValue(<span class="php-var">$i</span>, <span class="php-var">$steps</span>, <span class="php-var">$option</span>);
+</span><span id="98" class="l"><a class="l" href="#98"> 98: </a>            <span class="php-var">$p</span>-&gt;setOption(<span class="php-var">$optionKey</span>, <span class="php-var">$sampleValue</span>);
+</span><span id="99" class="l"><a class="l" href="#99"> 99: </a>            <span class="php-var">$p</span>-&gt;loadParts();
+</span><span id="100" class="l"><a class="l" href="#100">100: </a>            <span class="php-var">$p</span>-&gt;sample(<span class="php-var">$model</span>);
+</span><span id="101" class="l"><a class="l" href="#101">101: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$p</span>-&gt;parts <span class="php-keyword1">as</span> <span class="php-var">$partKey</span> =&gt; <span class="php-var">$part</span>) {
+</span><span id="102" class="l"><a class="l" href="#102">102: </a>                <span class="php-var">$this</span>-&gt;sampleParts(<span class="php-var">$i</span>, <span class="php-var">$steps</span>, <span class="php-var">$p</span>, <span class="php-var">$theme</span>, <span class="php-var">$renderBot</span>);
+</span><span id="103" class="l"><a class="l" href="#103">103: </a>            }
+</span><span id="104" class="l"><a class="l" href="#104">104: </a>        }
+</span><span id="105" class="l"><a class="l" href="#105">105: </a>        <span class="php-var">$this</span>-&gt;addSampledPartsToPattern();
+</span><span id="106" class="l"><a class="l" href="#106">106: </a>        <span class="php-var">$theme</span>-&gt;applyRenderMask(<span class="php-var">$this</span>-&gt;<span class="php-keyword2">pattern</span>);
+</span><span id="107" class="l"><a class="l" href="#107">107: </a>        <span class="php-var">$this</span>-&gt;<span class="php-keyword2">pattern</span>-&gt;layout();
+</span><span id="108" class="l"><a class="l" href="#108">108: </a>
+</span><span id="109" class="l"><a class="l" href="#109">109: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;<span class="php-keyword2">pattern</span>;
+</span><span id="110" class="l"><a class="l" href="#110">110: </a>    }
+</span><span id="111" class="l"><a class="l" href="#111">111: </a>}
+</span><span id="112" class="l"><a class="l" href="#112">112: </a></span></code></pre>
 
 	<div id="footer">
 		Freesewing API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>

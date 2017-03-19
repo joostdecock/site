@@ -60,25 +60,25 @@ array sampleMeasurements(
 
 This iterates over the [`Model`](model) objects in the `models` property.
 
-For the number of steps in `$steps`, this will clone the [`Pattern`](/class/patterns/pattern) `$pattern`
+For the number of steps in `$steps`, this will clone the [`Pattern`](/class/patterns/core/pattern) `$pattern`
 and sample it with a variation of the option `$option` that ranges from its minimum
 to its maximum.
 
-It will combine the parts of all those clones patterns into one [`Pattern`](/class/patterns/pattern)
+It will combine the parts of all those clones patterns into one [`Pattern`](/class/patterns/core/pattern)
 object and return it. 
 
 #### Parameters
 {:.no_toc}
 
 - [`Model`](model) `$model` : The model object, from the default measurement in the pattern config
-- [`Theme`](/class/themes/theme) `$theme` : The theme object, which themes the parts generated for each step
+- [`Theme`](/class/themes/core/theme) `$theme` : The theme object, which themes the parts generated for each step
 - string `$option` : The name of the option to sample
 - int `$steps` : The number of sampling steps, defaults to 11
 
 #### Return value
 {:.no_toc}
 
-Returns a (grand)child of [`Patterns\Pattern`](/class/patterns/pattern)
+Returns a (grand)child of [`Patterns\Pattern`](/class/patterns/core/pattern)
 
 ## See also
 
