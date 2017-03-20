@@ -78,37 +78,22 @@ Composer will do that for you with this command:
 composer dump-autoload -o
 ```
 
-### Your first request
-
-You now have core installed in the `freesewing` directory.
-For testing, you can use PHP's build in webserver. Start it like this:
+### Run it from the command line
 
 ```sh
-php -S localhost:8666 -t freesewing/
+./freesewing service=info format=text
 ```
 
-Then, connect your browser to 
-[http://localhost:8666?service=info&format=html](http://localhost:8666?service=info&format=html).
-You should see something like [this](https://api.freesewing.org/?service=info&format=html).
+If the command above outputs a nice list of API info, you have successfully install freesewing.
 
-### Production use
+### Run it in a browser
 
-PHP's built-in webserver is fine for testing, but if you want to really use freesewing, 
-you should setup a webserver.
+While freesewing comes with a command line interface, it is typically ran on a webserver
+so you can use it in your browser.
 
-Doing so is beyond the scope of this document, but all you need is a webserver supporting
-PHP. [Apache](https://httpd.apache.org/) and [Nginx](http://nginx.org/) are popular choices
-and come with plenty of documentation.
-
-### Running tests
-
-To run the unit tests, you should be able to simply run:
-
-```sh
-phpunit
-```
-
-in your freesewing directory.
+All you need is a webserver supporting PHP. 
+Setting one up is beyond the scope of this document, but [Apache](https://httpd.apache.org/) 
+and [Nginx](http://nginx.org/) are popular choices and come with plenty of documentation.
 
 ## docs
 
