@@ -8,9 +8,9 @@ permalink: /
         <div class="col-md-6 offset-md-3">
             <h2>Welcome</h2>
             <p class="lead">Freesewing is an open source platform for made-to-measure sewing patterns</p>
-            <p>This is our documentation site. It currently has documentation for the freesewing core platform
-            which is most relevant to developers and designers.</p>
-            <p>Documentation for makers, how to sew up our patterns and all that, is still hosted on 
+            <p>This documentation site currently holds documentation for the freesewing core platform.
+            Which means that it is most relevant to developers and designers.</p>
+            <p>Documentation for makers &mdash; how to sew up our patterns and all that &mdash; is still hosted on 
             <a href="https://makemypattern.com/">makemypattern.com</a>,
             the predecessor of this site.</p>
             <blockquote class="mt-4">
@@ -87,25 +87,29 @@ permalink: /
     <div class="row">
         <div class="col-md-6 offset-md-3" markdown="1">
 ## Shout-outs
-Freesewing is a project by [Joost De Cock](/about/joostdecock) with contributions from [@cabi](https://github.com/cabi) 
-and [@fightingrabbit](https://github.com/fightingrabbit). Shout-out to [@jakesgordon](https://github.com/jakesgordon)
-and [Kevin Lindsey](www.kevlindev.com) for allowing us to port some of their code.
+Freesewing is a project by [Joost De Cock](/about/joostdecock) and [contributors](/contributors).
+
+Shout-out to [@jakesgordon](https://github.com/jakesgordon)
+and [Kevin Lindsey](www.kevlindev.com) for allowing me to port some of their code.
 
 The early-stage enthusiasm and input of
+[@diggydev](https://github.com/diggydev),
+[@cabi](https://github.com/cabi),
 [@woutervdub](https://github.com/woutervdub),
 [@cloutiy](https://github.com/cloutiy),
 [@straytaoist](https://github.com/straytaoist),
 [@netpraxis](https://github.com/netpraxis),
 [@Stefan1960](https://github.com/Stefan1960), 
 [@brendare1](https://github.com/brendare1),
-[@JorisJoppe](https://github.com/JorisJoppe), and
-[@JamJenkins](https://github.com/JamJenkins)
-has greatly benefitted this project.
+[@JorisJoppe](https://github.com/JorisJoppe), 
+[@JamJenkins](https://github.com/JamJenkins), and
+[@fightingrabbit](https://github.com/fightingrabbit) 
+has been a great boon to this project.
 
 Moral support came from 
 [@scorchtorch](https://twitter.com/scorchtorch) and
 [@annekecaramin](https://twitter.com/annekecaramin).
-The latter also designed our logo.
+The latter also designed the freesewing logo.
 
 Freesewing runs on [Debian](http://www.debian.org/) 
 and we use use the free services of 
@@ -113,13 +117,21 @@ and we use use the free services of
 [TravisCI](https://travis-ci.org/), 
 [Netlify](https://www.netlify.com/), and
 [Let's Encrypt](https://letsencrypt.org/).
-Our documentation site is powered by 
+
+Our [PHP](http://php.net/) code depends on 
+[Composer](https://getcomposer.org/) and
+[Symfony](https://symfony.com/), and uses
+[PHPUnit](https://phpunit.de/) for tests.
+
+This documentation site is powered by 
 [Jekyll](https://jekyllrb.com/), 
 [Bootstrap](https://jekyllrb.com/), and 
 [jQuery](http://jquery.com/).
 
 Last but not least, this project would not exist without the users, supporters, and donors of 
 [makemypattern.com](https://makemypattern.com/).
+
+Thanks guys!
 </div>
 </div>
 </div> <!-- .container -->

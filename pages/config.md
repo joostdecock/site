@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Configuration files
-tags: [fundamentals, configuration]
-permalink: /developer/config-files
+tags: [configuration]
+permalink: /config
 ---
 Freesewing uses a number of different configuration files. 
 This page document them all.

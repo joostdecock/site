@@ -33,12 +33,4 @@ permalink: "/designer/"
             %}
         </div>
     </div> <!-- .row -->
-    <div class="row">
-        <div class="col mt-5">
-            <h2>Other useful links for designers</h2>
-            <ul>
-            <li><a href='/patterns/lineage'>Pattern lineage</a></li>
-            </ul>
-        </div>
-    </div> <!-- .row -->
 </div> <!-- .container -->

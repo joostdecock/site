@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Request parameters
-tags: [fundamentals]
-permalink: /developer/request-parameters
+tags: [usage]
+permalink: /request-parameters
 ---
 Freesewing needs your input to do what it does. And that input comes
 in the form or request parameters.
