@@ -2,7 +2,7 @@
 layout: page
 title: About Freesewing
 tags: [fundamentals]
-permalink: /about
+permalink: /about/
 ---
 ## In a nutshell
 Freesewing is an online platform to draft custom sewing patterns based on your measurements.
