@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Typography overview
-tags: [contributing]
+tags: [contributors, site documentation]
 permalink: /typography
 ---
 ## Headings - This is level 2

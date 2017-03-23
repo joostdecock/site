@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contact info
-tags: [slack, github, twitter]
+tags: [support]
 permalink: /contact
 ---
 ## Freesewing contact info

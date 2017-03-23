@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Freesewing donations pledge
-tags: [slack, github, twitter]
+tags: [donations]
 permalink: /donate/pledge
 ---
 ## The pledge

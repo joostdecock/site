@@ -2,7 +2,7 @@
 layout: class
 title: Utils
 namespace: Freesewing
-tags: [class]
+tags: [class documentation]
 permalink: /class/utils
 ---
 ## Description 

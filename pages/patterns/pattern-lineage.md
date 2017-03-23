@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Pattern lineage
-tags: [patterns]
+tags: [pattern documentation]
 permalink: /patterns/lineage
 ---
 ## Extending patterns

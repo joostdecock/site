@@ -2,7 +2,7 @@
 layout: class
 title: Freesewing
 namespace: Freesewing\Channels\Core
-tags: [class, channel]
+tags: [class documentation]
 permalink: /class/channels/core/freesewing
 ---
 ## Description 

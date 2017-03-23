@@ -2,7 +2,7 @@
 layout: class
 title: TextOnPath
 namespace: Freesewing
-tags: [class]
+tags: [class documentation]
 permalink: /class/textonpath
 ---
 ## Description 

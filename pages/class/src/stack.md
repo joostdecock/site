@@ -2,7 +2,7 @@
 layout: class
 title: Stack
 namespace: Freesewing
-tags: [class]
+tags: [class documentation]
 permalink: /class/stack
 ---
 ## Description 

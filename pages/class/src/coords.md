@@ -2,7 +2,7 @@
 layout: class
 title: Coords
 namespace: Freesewing
-tags: [class]
+tags: [class documentation]
 permalink: /class/coords
 ---
 ## Description 

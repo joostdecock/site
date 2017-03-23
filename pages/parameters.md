@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Request parameters
-tags: [usage]
-permalink: /request-parameters
+title: Parameters
+tags: [developer documentation, designer documentation, fundamentals, configuration]
+permalink: /parameters
 ---
 Freesewing needs your input to do what it does. And that input comes
 in the form or request parameters.
@@ -15,7 +15,7 @@ this is configurable in
 
 ## Context parameters
 
-A freesewing [`Context`](/class/context) is initialized (see [request lifecycle](request-lifecycle)) 
+A freesewing [`Context`](/class/context) is initialized 
 based on these request parameters:
 
 ### service

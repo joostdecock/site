@@ -2,7 +2,7 @@
 layout: class
 title: Theme
 namespace: Freesewing\Themes\Core
-tags: [theme, abstract]
+tags: [class documentation]
 permalink: /class/themes/core/theme
 ---
 ## Description 

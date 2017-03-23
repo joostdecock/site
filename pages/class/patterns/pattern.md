@@ -2,7 +2,7 @@
 layout: class
 title: Pattern
 namespace: Freesewing\Patterns\Core
-tags: [class, abstract]
+tags: [class documentation]
 permalink: /class/patterns/core/pattern
 ---
 ## Description 

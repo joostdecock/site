@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Contributing
-tags: [fundamentals, contributing, credits]
+title: Contribute to freesewing
+tags: [contributors]
 permalink: /contributing
 ---
 ## Welcome

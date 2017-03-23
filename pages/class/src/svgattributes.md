@@ -2,7 +2,7 @@
 layout: class
 title: SvgAttributes
 namespace: Freesewing
-tags: [class]
+tags: [class documentation]
 permalink: /class/svgattributes
 ---
 ## Description 

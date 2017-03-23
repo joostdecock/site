@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About joostdecock
-tags: [community]
+tags: [contributors]
 permalink: /about/joostdecock
 ---
 {% include figure.html 
@@ -20,7 +20,7 @@ I live in Antwerp, and work in Brussels, the heart of Europe.
 
 I am always happy to hear from people, so feel free to get in touch:
 
-- Email: [joost@decock.org](joost@decock.org)
+- Email: [joost@decock.org](mailto:joost@decock.org)
 - Twitter: [@j__st](https://twitter.com/j__st)
 - Facebook: [j00st](https://facebook.com/j00st)
 - Instagram: [joostdecock](http://instagram.com/joostdecock)

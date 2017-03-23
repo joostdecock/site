@@ -1,7 +1,7 @@
 ---
 layout: cover
 title: Join our Slack channel
-tags: [slack]
+tags: [support]
 permalink: /slack/success
 ---
 <div class="cover-body" markdown="1">

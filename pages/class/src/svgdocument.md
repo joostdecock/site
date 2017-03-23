@@ -2,7 +2,7 @@
 layout: class
 title: SvgDocument
 namespace: Freesewing
-tags: [class]
+tags: [class documentation]
 permalink: /class/svgdocument
 ---
 ## Description 

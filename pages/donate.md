@@ -1,7 +1,7 @@
 ---
 layout: cards
 title: Donate to freesewing
-tags: [community, charity, donations]
+tags: [donations]
 permalink: /donate/
 ---
 <div class="container">
@@ -22,7 +22,7 @@ permalink: /donate/
 <input type="hidden" name="no_note" value="0">
 <input type="hidden" name="bn" value="PP-DonationsBF:apple-icon.png:NonHostedGuest">
 <input type="submit" border="0" name="submit" alt="Donate!" class="btn btn-primary" value="Donate 5 euro">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" alt="pixel" width="1" height="1">
 </form>
                 </div>
             </div>
@@ -43,7 +43,7 @@ permalink: /donate/
 <input type="hidden" name="no_note" value="0">
 <input type="hidden" name="bn" value="PP-DonationsBF:apple-icon.png:NonHostedGuest">
 <input type="submit" border="0" name="submit" alt="Donate!" class="btn btn-primary" value="Donate 20 euro">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" alt="pixel">
 </form>
                 </div>
             </div>
@@ -58,7 +58,7 @@ permalink: /donate/
 <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
 ">
 <input type="submit" border="0" name="submit" alt="Donate!" class="btn btn-primary" value="Donate freely">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" alt="pixel">
 </form>
                 </div>
             </div>

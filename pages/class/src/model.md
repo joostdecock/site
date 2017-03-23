@@ -2,7 +2,7 @@
 layout: class
 title: Model
 namespace: Freesewing
-tags: [class]
+tags: [class documentation]
 permalink: /class/model
 ---
 ## Description 

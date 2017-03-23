@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contributors
-tags: [github, community]
+tags: [contributors]
 permalink: /contributors
 ---
 ## Core

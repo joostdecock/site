@@ -2,7 +2,7 @@
 layout: class
 title: Dimension
 namespace: Freesewing
-tags: [class]
+tags: [class documentation]
 permalink: /class/dimension
 ---
 ## Description 

@@ -2,7 +2,7 @@
 layout: class
 title: Service
 namespace: Freesewing\Services
-tags: [class, service, abstract]
+tags: [class documentation]
 permalink: /class/services/service
 ---
 ## Description 

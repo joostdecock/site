@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Freesewing repositories
-tags: [developer, github]
+tags: [developer documentation]
 permalink: /repositories
 ---
 * TOC - Do not remove this line

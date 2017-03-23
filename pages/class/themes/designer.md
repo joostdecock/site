@@ -2,7 +2,7 @@
 layout: class
 title: Designer
 namespace: Freesewing\Themes\Core
-tags: [theme, debug]
+tags: [class documentation]
 permalink: /class/themes/core/designer
 ---
 ## Description 

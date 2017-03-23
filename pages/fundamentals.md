@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Freesewing fundamentals
-tags: [fundamentals]
+tags: [fundamentals, designer documentation, developer documentation]
 permalink: /fundamentals
 ---
 ### Building blocks
@@ -161,7 +161,7 @@ knowing only this:
 ## Request parameters
 Freesewing needs your input to do what it does. And that input comes in the form or request parameters.
 
-The full details on all request parameters are available [here](request-parameters). 
+The full details on all request parameters are available [here](/parameters). 
 But you can get away with knowing only this:
 
 ### The basics

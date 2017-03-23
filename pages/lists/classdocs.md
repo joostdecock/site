@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Class documentation
-tags: [developer, list]
+tags: [developer documentation]
 permalink: /classdocs
 ---
 ## Hand-crafted class documentation

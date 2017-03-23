@@ -2,7 +2,7 @@
 layout: class
 title: Context
 namespace: Freesewing
-tags: [class]
+tags: [class documentation]
 permalink: /class/context
 ---
 ## Description 

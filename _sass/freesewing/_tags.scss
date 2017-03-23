@@ -36,3 +36,7 @@ a.tag:before{
     -moz-osx-font-smoothing: grayscale;
     padding: 0 0.25rem;
 }
+a.tag:hover {
+    color: #fff;
+    border: 0;
+}
