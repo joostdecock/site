@@ -1,5 +1,7 @@
 <div class="card">
-    <a href="{{ include.link }}"><img src="{{ include.img }}" alt="{{ include.title }}"></a>
+    <a href="{{ include.link }}" title="{% if include.alt == nil %}{{ include.title }}{% else %}{{ include.alt }}{% endif %}">
+        <img src="{{ include.img }}" alt="{% if include.alt == nil %}{{ include.title }}{% else %}{{ include.alt }}{% endif %}">
+    </a>
     <div class="card-block">
         <h4 class="card-title">{{ include.title }}</h4>
         <p class="card-text">{{ include.text }} </p>

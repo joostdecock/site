@@ -2,7 +2,7 @@
 layout: class
 title: Transform
 namespace: Freesewing
-tags: [class]
+tags: [class documentation]
 permalink: /class/transform
 ---
 ## Description 

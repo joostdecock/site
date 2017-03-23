@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Code of conduct
-tags: [contributing]
+tags: [contributors]
 permalink: /code-of-conduct
 ---
 ## Our pledge

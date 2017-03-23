@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Install instructions
-tags: [fundamentals]
+tags: [fundamentals, designer documentation, developer documentation]
 permalink: /install
 ---
 Jump to the install instructions for:

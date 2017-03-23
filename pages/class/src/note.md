@@ -2,7 +2,7 @@
 layout: class
 title: Note
 namespace: Freesewing
-tags: [class]
+tags: [class documentation]
 permalink: /class/note
 ---
 ## Description 

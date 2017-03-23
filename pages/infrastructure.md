@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Infrastructure
-tags: [github, linode, travis, netlify, devops]
+tags: [developer documentation, configuration]
 permalink: /infrastructure
 ---
 ## core

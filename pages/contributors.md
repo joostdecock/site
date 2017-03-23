@@ -1,25 +1,25 @@
 ---
 layout: page
 title: Contributors
-tags: [github, community]
+tags: [contributors]
 permalink: /contributors
 ---
 ## Core
 
 ### Maintainers
 
-- [joostdecock](https://github.com/joostdecock)
+- **joostdecock** : [About](/about/joostdecock) / [GitHub](https://github.com/joostdecock)
 
 ### Contributors
 
-- [cabi](https://github.com/cabi)
-- [fightingrabbit](https://github.com/fightingrabbit)
+- **cabi** : [GitHub](https://github.com/cabi)
+- **fightingrabbit** : [GitHub](https://github.com/fightingrabbit)
 
 ## Docs 
 
 ### Maintainers
 
-- [joostdecock](https://github.com/joostdecock)
+- **joostdecock** : [About](/about/joostdecock) / [GitHub](https://github.com/joostdecock)
 
 ### Contributors
 

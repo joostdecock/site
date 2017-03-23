@@ -5,6 +5,11 @@ permalink: "/developer/"
 ---
 <div class="container">
     <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <p>Below are some good starting points. Make sure to check the <a class="tag" href="/tags#developer%20documentation">developer documentation</a> tag for a full list of reading material.</p>
+        </div>
+    </div> <!-- .row -->
+    <div class="row">
         <div class="col-md-4 mt-5">
             {% include card.html 
                 title='Class documentation'
@@ -31,19 +36,6 @@ permalink: "/developer/"
                 link='/repositories'
                 link-text='Repository overview'
             %}
-        </div>
-    </div> <!-- .row -->
-    <div class="row">
-        <div class="col mt-5">
-            <h2>Other useful links for designers</h2>
-            <ul>
-                <li><a href="/getting-started">Getting started</a></li>
-                <li>Pattern design tutorial <a href="/designer/tutorial/part-1">Part 1</a> and <a href="/designer/tutorial/part-2">Part 2</a></li>
-                <li><a href="/developer/config-files">Configuration files</a></li>
-                <li><a href="/developer/request-parameters">Request parameters</a></li>
-                <li><a href="/developer/request-lifecycle">Request lifecycle</a></li>
-                <li><a href="/patterns/lineage">Pattern lineage</a></li>
-            </ul>
         </div>
     </div> <!-- .row -->
 </div> <!-- .container -->

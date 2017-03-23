@@ -2,7 +2,7 @@
 layout: class
 title: SvgComments
 namespace: Freesewing
-tags: [class]
+tags: [class documentation]
 permalink: /class/svgcomments
 ---
 ## Description 

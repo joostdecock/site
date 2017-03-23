@@ -2,7 +2,7 @@
 layout: class
 title: SvgCss
 namespace: Freesewing
-tags: [class]
+tags: [class documentation]
 permalink: /class/svgcss
 ---
 ## Description 

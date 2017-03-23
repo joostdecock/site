@@ -2,7 +2,7 @@
 layout: class
 title: Response
 namespace: Freesewing
-tags: [class]
+tags: [class documentation]
 permalink: /class/response
 ---
 ## Description 

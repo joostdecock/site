@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Design tutorial part 1 - Your first pattern
-tags: [fundamentals, designer, tutorial]
+tags: [fundamentals, designer documentation, tutorials]
 permalink: /designer/tutorial/part-1
 ---
 In part one of our tutorial for designers, we'll get you up and running 
@@ -12,8 +12,8 @@ with your own pattern based on our pattern template.
 ### Prerequisites 
 
 Before you start this tutorial, made sure to read the 
-[Getting started guide](/getting-started),
-specifically the [What is freesewing?](/getting-started#what-is-freesewing) section.
+[about freesewing](/about) and 
+[freesewing fundamentals](/fundamentals) pages.
 
 ### You'll be writing code
 
@@ -54,18 +54,69 @@ Now let's get to it, shall we?
 
 ## Creating the pattern
 
-### Copy the pattern template
+### Create your own pattern namespace
+The `patterns` directory holds all the patterns. They are grouped together in so-called
+_namespaces_ that are essentially just a folder.
 
-The `patterns` directory holds all the patterns. Each pattern is self-contained 
+Within each of those namespaces, every pattern is self-contained 
 in its own folder.
 
-One of the folders is called `PatternTemplate`. This is
+> <h5 class="notoc">Namespaces keep things organised</h5>
+> Namespaces are just a way to keep things organized. Think of them as families of patterns.
+
+You can name your namespace whatever you want, but let's assume we're a pattern business called 
+**Acme Pattern Co** and we'll name our namespace `Acme`.
+
+Add a `Acme` folder to the patterns directory like this:
+
+- {:.folder.open} patterns
+  - {:.folder} **Acme**
+  - {:.folder} Core
+  - {:.folder} Docs
+  - {:.folder} Templates
+  - {:.folder} Tests
+{:.files}
+
+From now on, all your patterns can go into Acme. 
+
+### Enable the pattern namespace
+You can add as many pattern namespaces as you want, until you tell freesewing
+that you want to use them, they don't count.
+
+> <h5 class='notoc'>Freesewing uses YAML for configuration files</h5> 
+>
+> All freesewing configuration files have a `.yml` extention. They are 
+> [YAML](https://en.wikipedia.org/wiki/YAML) files. 
+>
+> Yaml is a format that's easy
+> to write and read for both humans and computers.
+
+Open the main configuration file 
+&mdash; `config.yml` in the project's root directory &mdash;
+, and add `Acme` to the `patternNamespaces`:
+
+```yml
+patternNamespaces:
+    - Core
+    - Docs
+    - Templates
+    - Tests
+    - Acme
+```
+
+> <h5 class='notoc'>Pattern configuration</h5>
+>
+> The [configuration files](/config#pattern-configuration-file) page has all the details on the
+> different configuration files used in freesewing.
+
+### Copy the pattern template
+One of the namespace folders is called `Templates`. Within it, you'll find the 
+`PatternTemplate` folder. This is
 &mdash; you guessed it &mdash;
 the pattern template that we will use as a starting point.
 
-Copy the entire directory into a new directory 
-(on the same level in the `patterns` folder) 
-and name it `BabyBib`.
+Copy the entire `PatternTemplate` directory into the `Acme` folder we created.
+Then, rename the folder to `BabyBib`.
 
 > <h5 class='notoc'>Freesewing naming conventions</h5>
 >
@@ -79,9 +130,17 @@ and name it `BabyBib`.
 
 In your `BabyBib` folder, you'll have these files:
 
-- {:.folder} sample
-- {:.code} PatternTemplate.php
-- config.yml
+- {:.folder.open} patterns
+  - {:.folder.open} Acme
+    - {:.folder.open} **BabyBib**
+      - {:.folder} sample
+      - {:.code} PatternTemplate.php
+      - config.yml
+  - {:.folder} Core
+  - {:.folder} Docs
+  - {:.folder} Templates
+  - {:.folder} Tests
+{:.files}
 {:.files}
 
 We'll ignore the `sample` folder for now, and focus on the two other files.
@@ -93,14 +152,6 @@ so go ahead and rename it to `BabyBib.php`.
 ### Update the configuration file
 
 The other file is `config.yml`, this is your pattern configuration file.
-
-> <h5 class='notoc'>Freesewing uses YAML for configuration files</h5> 
->
-> All freesewing configuration files have a `.yml` extention. They are 
-> [YAML](https://en.wikipedia.org/wiki/YAML) files. 
->
-> Yaml is a format that's easy
-> to write and read for both humans and computers.
 
 Open the `config.yml` file, and edit it so it looks like this:
 
@@ -186,12 +237,7 @@ It's default is `0`, but it accepts values between `-50` and `150` mm.
 
 > <h5 class='notoc'>mm inside</h5>
 >
-> Freesewing uses mm internally. See the [units documentation](/fixme) for full details.
-
-> <h5 class='notoc'>Pattern configuration</h5>
->
-> The [configuration files](/developer/config-files#pattern-configuration-file) has all the details on the
-> configuration files for patterns.
+> Freesewing uses mm internally. For everything.
 
 With our config file updated, time to have a look at the class file.
 
@@ -209,8 +255,8 @@ Next, open the `BabyBib.php` file and edit just the start of it, to look like th
 
 ```php
 <?php
-/** Freesewing\Patterns\BabyBib class */
-namespace Freesewing\Patterns;
+/** Freesewing\Patterns\Acme\BabyBib class */
+namespace Freesewing\Patterns\Acme;
 
 use Freesewing\Utils;
 use Freesewing\BezierToolbox;
@@ -218,7 +264,7 @@ use Freesewing\BezierToolbox;
 /**
  * Making a baby bib pattern
  */
-class BabyBib extends Pattern
+class BabyBib extends \Freesewing\Patterns\Core\Pattern
 {
 ...
 ```
@@ -226,8 +272,8 @@ class BabyBib extends Pattern
 <div role="tabpanel" class="tab-pane" id="template-head" markdown="1">
 ```php
 <?php
-/** Freesewing\Patterns\PatternTemplate class */
-namespace Freesewing\Patterns;
+/** Freesewing\Patterns\Templates\PatternTemplate class */
+namespace Freesewing\Patterns\Templates;
 
 use Freesewing\Utils;
 use Freesewing\BezierToolbox;
@@ -242,7 +288,7 @@ use Freesewing\BezierToolbox;
  * @copyright 2017 Joost De Cock
  * @license http://opensource.org/licenses/GPL-3.0 GNU General Public License, Version 3
  */
-class PatternTemplate extends Pattern
+class PatternTemplate extends \Freesewing\Patterns\Core\Pattern
 {
 ...
 ```
@@ -253,9 +299,11 @@ class PatternTemplate extends Pattern
 Once again, let's look at what we've changed and what it means:
 
 - We have changed the class name from `PatternTemplate` to `BabyBib`
-in the comment block (line 2), 
-in the namespace declaration (line 3), and in the class declaration (line 8)
+- We've changed the pattern namespace from `Templates` to `Acme`
 - We have replaced the comments with our own comments that simply say `Making a baby bib pattern`
+
+
+
 
 ### Rebuild the autoload files
 
@@ -271,7 +319,7 @@ It should output a message like this:
 Generating optimized autoload files
 ```
 
-This will tell the autoloader about the new `Freesewing\patterns\BabyBib` class, which defines your pattern.
+This will tell the autoloader about the new `Freesewing\Patterns\Acme\BabyBib` class, which defines your pattern.
 
 ### Load the pattern in your browser
 
@@ -319,7 +367,7 @@ Update your class file to look like this:
 <div role="tabpanel" class="tab-pane active" id="our-initialize" markdown="1">
 
 ```php?start_inline=1
-class BabyBib extends Pattern
+class BabyBib extends \Freesewing\Patterns\Core\Pattern
 {
     /*
         ___       _ _   _       _ _
@@ -348,7 +396,7 @@ class BabyBib extends Pattern
 <div role="tabpanel" class="tab-pane" id="template-initialize" markdown="1">
 
 ```php?start_inline=1
-class PatternTemplate extends Pattern
+class PatternTemplate extends \Freesewing\Patterns\Templates\Pattern
 {
     /*
         ___       _ _   _       _ _
@@ -432,10 +480,11 @@ called `setValue`.
 But it still works because our class declaration looks like this:
 
 ```php?start_inline=1
-class BabyBib extends Pattern
+class BabyBib extends \Freesewing\Patterns\Core\Pattern
 ```
 
-Our `BabyBib` class _extends_ `Pattern` class. `Pattern` is our so-called _parent class_.
+Our `BabyBib` class _extends_ the `\Freesewing\Patterns\Core\Pattern` class. 
+`Pattern` in the `Core` pattern namespace is our so-called _parent class_.
 
 As a child of the `Pattern` class, we inherit (like, get for free) a bunch of it's functionality.
 
@@ -719,9 +768,9 @@ Well, we'll be doing exactly that. Below is the code. Don't panic, we'll walk th
 </div>
 <div role="tabpanel" class="tab-pane" id="neckopening-result" markdown="1">
 
-{% include figure.html 
+{% include api.html 
     description="The neckopening is exactly the size we want it to be"
-    url="https://api.freesewing.org/?service=draft&pattern=DesignTutorial&theme=Designer&figure=neckOpening"
+    url="?service=draft&pattern=DesignTutorial&theme=Designer&figure=neckOpening"
 %}
 
 </div>
@@ -852,9 +901,9 @@ and endpoint `2` with its control point `4`.
 
 If we draw a Bezier curve with these four points, it looks like this:
 
-{% include figure.html 
+{% include api.html 
     description="It's one quarter of our neck opening"
-    url="https://api.freesewing.org/?service=draft&pattern=DesignTutorial&theme=Designer&figure=quarterNeck"
+    url="?service=draft&pattern=DesignTutorial&theme=Designer&figure=quarterNeck"
 %}
 
 #### Calculating curve length with Part::curveLen
@@ -1062,7 +1111,7 @@ The [`Part::newPath`](/class/part#newpath) method creates a new path. We give it
 and then what we call  a `pathstring`.
 
 Pathstrings are a feature of the SVG format that we generate patterns in. You can read about
-them in detail on [the path page](/fixme), but here's what this patthstring means:
+them in detail online, but here's what this patthstring means:
 
 - <b>M</b>ove to point `1`
 - From there (point `1`), draw a Bezier <b>C</b>urve using points `3`, `4`, and `2`
@@ -1073,9 +1122,9 @@ them in detail on [the path page](/fixme), but here's what this patthstring mean
 
 Pathstrings will become second nature to you in no time. The result is this:
 
-{% include figure.html 
+{% include api.html 
     description="The neckopening is exactly the size we want it to be"
-    url="https://api.freesewing.org/?service=draft&pattern=DesignTutorial&theme=Designer&figure=neckOpening"
+    url="?service=draft&pattern=DesignTutorial&theme=Designer&figure=neckOpening"
 %}
 
 ### Designing the bib shape
@@ -1109,9 +1158,9 @@ $p->newPath('box', 'M bottomLeft L topLeft L topRight L bottomRight z', ['class'
 </div>
 <div role="tabpanel" class="tab-pane" id="shape-result" markdown="1">
 
-{% include figure.html 
+{% include api.html 
     description="Our basic bib outline"
-    url="https://api.freesewing.org/?service=draft&pattern=DesignTutorial&theme=Designer&figure=shape"
+    url="?service=draft&pattern=DesignTutorial&theme=Designer&figure=shape"
 %}
 
 </div>
@@ -1196,9 +1245,9 @@ $p->newPath('outline', 'M bottomLeftCornerEnd C bottomLeftCornerEndCp bottomLeft
 </div>
 <div role="tabpanel" class="tab-pane" id="beziercircle-result" markdown="1">
 
-{% include figure.html 
+{% include api.html 
     description="The bottom of our bib now has rounded corners"
-    url="https://api.freesewing.org/?service=draft&pattern=DesignTutorial&theme=Designer&figure=beziercircle"
+    url="?service=draft&pattern=DesignTutorial&theme=Designer&figure=beziercircle"
 %}
 
 </div>
@@ -1272,9 +1321,9 @@ $p->newPath(
 </div>
 <div role="tabpanel" class="tab-pane" id="pathstring-result" markdown="1">
 
-{% include figure.html 
+{% include api.html 
     description="Our strap is starting to take shape"
-    url="https://api.freesewing.org/?service=draft&pattern=DesignTutorial&theme=Designer&figure=strapbend"
+    url="?service=draft&pattern=DesignTutorial&theme=Designer&figure=strapbend"
 %}
 
 </div>
@@ -1325,9 +1374,9 @@ $p->newPath(
 </div>
 <div role="tabpanel" class="tab-pane" id="strapbend-result" markdown="1">
 
-{% include figure.html 
+{% include api.html 
     description="The bottom of our bib now has rounded corners"
-    url="https://api.freesewing.org/?service=draft&pattern=DesignTutorial&theme=Designer&figure=strapshape"
+    url="?service=draft&pattern=DesignTutorial&theme=Designer&figure=strapshape"
 %}
 
 </div>
@@ -1378,9 +1427,9 @@ do {
 </div>
 <div role="tabpanel" class="tab-pane" id="straprotate-result" markdown="1">
 
-{% include figure.html 
+{% include api.html 
     description="Rotating the strap so it doesn't overlap with the other side"
-    url="https://api.freesewing.org/?service=draft&pattern=DesignTutorial&theme=Designer&figure=straprotate"
+    url="?service=draft&pattern=DesignTutorial&theme=Designer&figure=straprotate"
 %}
 
 </div>
@@ -1460,9 +1509,9 @@ $p->paths['box']->setRender(false);
 </div>
 <div role="tabpanel" class="tab-pane" id="outline-result" markdown="1">
 
-{% include figure.html 
+{% include api.html 
     description="The basic outline of our bib is ready"
-    url="https://api.freesewing.org/?service=draft&pattern=DesignTutorial&theme=Designer&figure=outline"
+    url="?service=draft&pattern=DesignTutorial&theme=Designer&figure=outline"
 %}
 
 </div>
@@ -1528,13 +1577,13 @@ options:
 
 ```php
 <?php
-/** Freesewing\Patterns\BabyBib class */
-namespace Freesewing\Patterns;
+/** Freesewing\Patterns\Acme\BabyBib class */
+namespace Freesewing\Patterns\Acme;
 
 /**
  *  Making a baby bib pattern
  */
-class BabyBib extends Pattern
+class BabyBib extends Freesewing\Patterns\Core\Pattern
 {
     /*
         ___       _ _   _       _ _

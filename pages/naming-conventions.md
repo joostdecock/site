@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Naming conventions
-tags: [developer, fundamentals]
+tags: [developer documentation, fundamentals, designer documentation]
 permalink: /naming-conventions
 ---
 

@@ -2,7 +2,7 @@
 layout: class
 title: Sampler
 namespace: Freesewing\Themes\Core
-tags: [theme]
+tags: [class documentation]
 permalink: /class/themes/core/sampler
 ---
 ## Description 

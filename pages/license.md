@@ -1,7 +1,7 @@
 ---
 layout: page
 title: License info
-tags: [gpl, cc, license]
+tags: [license]
 permalink: /license
 ---
 ## Code license

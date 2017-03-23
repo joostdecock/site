@@ -2,7 +2,7 @@
 layout: class
 title: Point
 namespace: Freesewing
-tags: [class]
+tags: [class documentation]
 permalink: /class/point
 ---
 ## Description 

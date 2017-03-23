@@ -2,7 +2,7 @@
 layout: class
 title: Request
 namespace: Freesewing
-tags: [class]
+tags: [class documentation]
 permalink: /class/request
 ---
 ## Description 

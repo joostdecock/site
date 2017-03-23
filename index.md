@@ -5,16 +5,46 @@ permalink: /
 ---
 <div class="container">
     <div class="row">
-        <div class="col-md-4 mt-5">
+        <div class="col-md-6 offset-md-3">
+            <h2>Welcome</h2>
+            <p class="lead">Freesewing is an open source platform for made-to-measure sewing patterns</p>
+            <p>This documentation site currently holds documentation for the freesewing core platform.
+            Which means that it is most relevant to developers and designers.</p>
+            <p>Documentation for makers &mdash; how to sew up our patterns and all that &mdash; is still hosted on 
+            <a href="https://makemypattern.com/">makemypattern.com</a>,
+            the predecessor of this site.</p>
+            <blockquote class="mt-4">
+                <h5>Don't be shy to suggest changes</h5>
+                <p>Freesewing is open source, and so is our documentation. If you see something that needs improvement,
+                you can click the <b>Improve this page</b> button at the very bottom of every page.</p>
+            </blockquote>
+        </div>
+    </div>
+    <h2>Start here</h2>
+    <div class="row">
+        <div class="col-md-6 mb-3 mt-1">
             {% include card.html 
-                title='For makers'
-                text='Making something new? Need a little help? We\'ve got detailed instructions for for all our sewing patterns.'
-                img='/img/makers.jpg'
-                link='/maker'
-                link-text='Documentation for makers'
+                title='What is freesewing?'
+                text="Oh you're new here? No worries, we can explain what this is in just a few minutes. We even have a video."
+                img='/img/lamp.jpg'
+                link='/about'
+                link-text='What is freesewing?'
             %}
         </div>
-        <div class="col-md-4 mt-5">
+        <div class="col-md-6 mb-3 mt-1">
+            {% include card.html 
+                title='Try the freesewing demo'
+                text="Click around in our demo and see what happens. We promise you can't break anything."
+                img='/img/wocit.jpg'
+                alt='A Creative Commons picture from the Flickr stream of WOCinTech Chat'
+                link='/demo'
+                link-text='Try the freesewing demo'
+            %}
+        </div>
+    </div> <!-- .row -->
+    <h2>Our documentation</h2>
+    <div class="row">
+        <div class="col-md-6 mb-3 mt-1">
             {% include card.html 
                 title='For designers'
                 text='Curious about what freesewing can do for you as a designer? Learn how you can design your own patterns using our tools.'
@@ -23,7 +53,7 @@ permalink: /
                 link-text='Documentation for designers'
             %}
         </div>
-        <div class="col-md-4 mt-5">
+        <div class="col-md-6 mb-3 mt-1">
             {% include card.html 
                 title='For developers'
                 text='Do you care for code? Do you want to learn or help us out? Or are you merely curious about how the sausage gets made?'
@@ -33,8 +63,9 @@ permalink: /
             %}
         </div>
     </div> <!-- .row -->
+    <h2>Get involved</h2>
     <div class="row">
-        <div class="col-md-6 mt-5">
+        <div class="col-md-6 mb-3 mt-1">
             {% include card.html 
                 title='Contribute to freesewing'
                 text='Join the loose-knit team of volunteers who build and run freesewing. Apart from enthusiasm, no special skills are required.'
@@ -43,44 +74,14 @@ permalink: /
                 link-text='Documentation for contributors'
             %}
         </div>
-        <div class="col-md-6 mt-5">
+        <div class="col-md-6 mb-3 mt-1">
             {% include card.html 
-                title='Repository overview'
-                text='The freesewing code is organized in a number of different repositories. This overview lists them all with links to where to find them on GitHub.'
-                img='/img/repositories.jpg'
-                link='/repositories'
-                link-text='Repository overview'
+                title='Join us on Slack'
+                text="The freesewing community on Slack is the best place to ask questions, meet other freesewers, or just hang out and share a laugh."
+                img='/img/slack.png'
+                link='/slack'
+                link-text='Request an invite'
             %}
         </div>
     </div> <!-- .row -->
 </div> <!-- .container -->
-<section class="cover-band bg-thematic mt-5">
-  <div class="cover-body">
-    <h1 class="jumbotron-heading">Hey, are you on Slack yet?</h1>
-    <p class="lead">
-    We hope this documentation will answer all of your questions.
-    <br>
-    When it doesn't, there's people to talk to.
-    </p>
-    <p>
-      <a href="/slack" class="btn btn-lg btn-primary">Join our Slack channel</a>
-    </p>
-  </div>
-</section>
-<section id='extra' class="mb-5">
-    <div class="container">
-        <div class="row">
-        <div class='col-md-6 mt-5'>
-            <h3>Just not sure where to start?</h3>
-            <p>If you're new to freesewing, this is for you.</p>
-            <a href="/getting-started" class="btn btn-primary">Getting started</a>
-        </div>
-        <div class='col-md-6 mt-5'>
-            <h3>Still confused? That happens.</h3>
-            <p>Did you try <a class="oc-toggle left">the menu</a>? You can get to it on any page via the&nbsp;<a class="oc-toggle left noline"><i class="fa fa-bars" aria-hidden="true"></i></a>&nbsp;icon in the top left corner.</p>
-            <p>Still stuck? Than maybe you need help.</p>
-            <a href="/help" class="btn btn-primary">Get help</a>
-        </div>
-        </div>
-    </div>
-</section>

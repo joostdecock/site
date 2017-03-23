@@ -2,7 +2,7 @@
 layout: class
 title: GrowingPacker
 namespace: Freesewing
-tags: [class, ported, credits]
+tags: [class documentation, ported]
 permalink: /class/growingpacker
 ---
 ## Description 

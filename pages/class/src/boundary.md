@@ -2,7 +2,7 @@
 layout: class
 title: Boundary
 namespace: Freesewing
-tags: [class]
+tags: [class documentation]
 permalink: /class/boundary
 ---
 ## Description 

@@ -2,7 +2,7 @@
 layout: class
 title: Yamlr
 namespace: Freesewing
-tags: [class]
+tags: [class documentation]
 permalink: /class/yamlr
 ---
 ## Description 

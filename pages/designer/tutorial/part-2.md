@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Design tutorial part 2 - Beyond basics
-tags: [fundamentals, designer, tutorial]
+tags: [fundamentals, designer documentation, tutorials]
 permalink: /designer/tutorial/part-2
 ---
 In [the first part of this turorial](part-1), we created a basic pattern
@@ -441,9 +441,9 @@ $p->offsetPath('bias', 'outline', -3, true, ['class' => 'helpline']);
 ```
 </div>
 <div role="tabpanel" class="tab-pane" id="template-bias" markdown="1">
-{% include figure.html 
+{% include api.html 
     description="A line indicating where our bias binding should go"
-    url="https://api.freesewing.org/?service=draft&pattern=DesignTutorial&theme=Basic&figure=bias"
+    url="?service=draft&pattern=DesignTutorial&theme=Basic&figure=bias"
 %}
 
 </div>
@@ -489,9 +489,9 @@ $p->newSnippet('logo', 'logo', 'logoAnchor');
 ```
 </div>
 <div role="tabpanel" class="tab-pane" id="template-snap" markdown="1">
-{% include figure.html 
+{% include api.html 
     description="We added different snippets to our pattern"
-    url="https://api.freesewing.org/?service=draft&pattern=DesignTutorial&theme=Basic&figure=snap"
+    url="?service=draft&pattern=DesignTutorial&theme=Basic&figure=snap"
 %}
 </div>
 </div>
@@ -534,9 +534,9 @@ $p->addTitle('titleAnchor', 1, $this->t($p->getTitle()), '1x');
 ```
 </div>
 <div role="tabpanel" class="tab-pane" id="template-title" markdown="1">
-{% include figure.html 
+{% include api.html 
     description="Our bib now has a title"
-    url="https://api.freesewing.org/?service=draft&pattern=DesignTutorial&theme=Basic&figure=title"
+    url="?service=draft&pattern=DesignTutorial&theme=Basic&figure=title"
 %}
 </div>
 </div>
@@ -584,9 +584,9 @@ $p->newNote(2,'snap2Anchor',$this->t('Attach snap at the back'), 6, 25, 4);
 ```
 </div>
 <div role="tabpanel" class="tab-pane" id="template-note" markdown="1">
-{% include figure.html 
+{% include api.html 
     description="We've added two notes to our pattern"
-    url="https://api.freesewing.org/?service=draft&pattern=DesignTutorial&theme=Basic&figure=note"
+    url="?service=draft&pattern=DesignTutorial&theme=Basic&figure=note"
 %}
 </div>
 </div>
@@ -639,15 +639,15 @@ once in imperial.
 
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="our-grid" markdown="1">
-{% include figure.html 
+{% include api.html 
     description="Our pattern with a metric grid, thanks to the paperless pattern"
-    url="https://api.freesewing.org/?service=draft&pattern=DesignTutorial&theme=Basic&figure=note&theme=Paperless"
+    url="?service=draft&pattern=DesignTutorial&theme=Basic&figure=note&theme=Paperless"
 %}
 </div>
 <div role="tabpanel" class="tab-pane" id="template-grid" markdown="1">
-{% include figure.html 
+{% include api.html 
     description="Our pattern with an imperial grid, thanks to the paperless pattern"
-    url="https://api.freesewing.org/?service=draft&pattern=DesignTutorial&theme=Basic&figure=note&theme=Paperless&unitsOut=imperial"
+    url="?service=draft&pattern=DesignTutorial&theme=Basic&figure=note&theme=Paperless&unitsOut=imperial"
 %}
 </div>
 </div>
@@ -682,8 +682,8 @@ Our pattern template came with a `paperlessExamplePart` method that we are going
 into our `paperlessBib` method as such:
 
 <ul class="nav nav-tabs" role="tablist">
-    <li class="nav-item"><a class="nav-link active" href="#our-plb" role="tab" data-toggle="tab">Metric</a></li>
-    <li class="nav-item"><a class="nav-link" href="#template-plb" role="tab" data-toggle="tab">Imperial</a></li>
+    <li class="nav-item"><a class="nav-link active" href="#our-plb" role="tab" data-toggle="tab">BabyBib.php</a></li>
+    <li class="nav-item"><a class="nav-link" href="#template-plb" role="tab" data-toggle="tab">Template</a></li>
 </ul>
 
 <div class="tab-content">
@@ -775,17 +775,17 @@ $p->newCurvedDimension('M top12 C top4 top5 left1 C left3 left2 1 C 3 4 2 C top3
 </div>
 <div role="tabpanel" class="tab-pane" id="metric-dimensions" markdown="1">
 
-{% include figure.html 
+{% include api.html 
     description="Metric dimensions"
-    url="https://api.freesewing.org/?service=draft&pattern=DesignTutorial&figure=dimensions&theme=Paperless"
+    url="?service=draft&pattern=DesignTutorial&figure=dimensions&theme=Paperless"
 %}
 
 </div>
 <div role="tabpanel" class="tab-pane" id="imperial-dimensions" markdown="1">
 
-{% include figure.html 
+{% include api.html 
     description="Imperial dimensions"
-    url="https://api.freesewing.org/?service=draft&pattern=DesignTutorial&figure=dimensions&theme=Paperless&unitsOut=imperial"
+    url="?service=draft&pattern=DesignTutorial&figure=dimensions&theme=Paperless&unitsOut=imperial"
 %}
 
 </div>
@@ -958,9 +958,9 @@ languages:
 
 Congratulations, you have translated your pattern to Dutch. Don't take my word for it though:
 
-{% include figure.html 
-    description="Imperial dimensions"
-    url="https://api.freesewing.org/?service=draft&pattern=DesignTutorial&figure=dimensions&lang=nl&theme=Paperless"
+{% include api.html 
+    description="Our pattern is rendered in Dutch"
+    url="?service=draft&pattern=DesignTutorial&figure=dimensions&lang=nl&theme=Paperless"
 %}
 
 ## Conclusion and code
@@ -978,16 +978,17 @@ works, and how you can design patterns for it.
 For reference, I am including all the work we did during this tutorial below.
 
 ### Directory structure
-This is what our pattern directory looks like:
+This is what our Acme directory looks like:
 
-- {: .folder .open} BabyBib
-  - {: .folder .open} sampler
-    - models.yml
-  - {: .folder .open} translations
-    - messages.en.yml
-    - messages.nl.yml
-  - {: .code } BabyBip.php
-  - config.yml 
+- {: .folder .open} Acme
+  - {: .folder .open} BabyBib
+    - {: .folder .open} sampler
+      - models.yml
+    - {: .folder .open} translations
+      - messages.en.yml
+      - messages.nl.yml
+    - {: .code } BabyBip.php
+    - config.yml 
 {: .files}
 
 The content of all these files is included below: 
@@ -996,13 +997,13 @@ The content of all these files is included below:
 
 ```php?start_inline=1
 <?php
-/** Freesewing\Patterns\BabyBib class */
-namespace Freesewing\Patterns;
+/** Freesewing\Patterns\Acme\BabyBib class */
+namespace Freesewing\Patterns\Acme;
 
 /**
  *  Making a baby bib pattern
  */
-class BabyBib extends Pattern
+class BabyBib extends \Freesewing\Patterns\Core\Pattern
 {
     /*
         ___       _ _   _       _ _

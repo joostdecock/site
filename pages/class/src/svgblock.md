@@ -2,7 +2,7 @@
 layout: class
 title: SvgBlock
 namespace: Freesewing
-tags: [class]
+tags: [class documentation]
 permalink: /class/svgblock
 ---
 ## Description 

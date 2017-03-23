@@ -2,7 +2,7 @@
 layout: class
 title: OptionsSampler
 namespace: Freesewing
-tags: [class]
+tags: [class documentation]
 permalink: /class/optionssampler
 ---
 ## Description 

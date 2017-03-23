@@ -2,7 +2,7 @@
 layout: class
 title: SvgScript
 namespace: Freesewing
-tags: [class]
+tags: [class documentation]
 permalink: /class/svgscript
 ---
 ## Description 

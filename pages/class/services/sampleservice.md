@@ -2,7 +2,7 @@
 layout: class
 title: SampleService
 namespace: Freesewing\Services
-tags: [class, service]
+tags: [class documentation]
 permalink: /class/services/sampleservice
 ---
 ## Description 

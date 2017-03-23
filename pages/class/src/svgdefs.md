@@ -2,7 +2,7 @@
 layout: class
 title: SvgDefs
 namespace: Freesewing
-tags: [class]
+tags: [class documentation]
 permalink: /class/svgdefs
 ---
 ## Description 

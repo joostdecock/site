@@ -2,7 +2,7 @@
 layout: class
 title: SvgSnippet
 namespace: Freesewing
-tags: [class]
+tags: [class documentation]
 permalink: /class/svgsnippet
 ---
 ## Description 

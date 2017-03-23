@@ -80,7 +80,7 @@ To draft a pattern with the default options and measurements, set the
 
 
 > For an overview of options you can pass in the browser or on the command line
-> see the [Request parameters page](/developer/request-parameters).
+> see the [Parameters page](/parameters).
 
 
 * TOC - Do not remove this line
