@@ -97,7 +97,7 @@ And our info service makes integration with your front-end child's play.
 
 We welcome all contributions, and you might have more to offer than your realize.
 
-For all details, please refer to the [contributors documentation](/contributing).
+For all details, please refer to the [contributors documentation](/contribute).
 
 Or you can vote with your money and [make a donation](/donate).
 

@@ -9,6 +9,8 @@ permalink: /repositories
 
 ## core
 
+[![Build Status](https://travis-ci.org/freesewing/core.svg?branch=master)](https://travis-ci.org/freesewing/core)
+
 The core repository holds the freesewing platform.
 
 - [Source code](https://github.com/freesewing/core)
@@ -41,3 +43,37 @@ The demo repository holds a stand-alone version of the freesewing demo.
 >
 > If you want your own demo without the hassle, you can simply clone 
 > this and open demo.html in your browser.
+
+## nofront
+
+The nofront (as in, no frontend) repository holds the placeholder 
+freesewing website while we don't have a frontend.
+
+In other words, this repository holds what you see when 
+you visit [freesewing.org](https://freesewing.org/).
+
+- [Source code](https://github.com/freesewing/nofront)
+- [Issues](https://github.com/freesewing/nofront/issues)
+- [Infrastructure documentation](/infrastructure#nofront)
+
+## bsd
+
+The bsd repository holds a
+BSD-licensed copy of the portion of freesewing 
+that was ported from Kevin Lindsey's JavaScript code.
+
+Kevin's original code is licensed under a BSD-3-clause license.
+We have reached a gentlemen's agreement to dual-license the ported code.
+
+This way, we can include the code in the freesewing project under a GPL license, 
+yet it remains available under the original BSD-3-clause license for those 
+who prefer that option.
+
+- [Source code](https://github.com/freesewing/bsd)
+
+> <h5>This code is provided as-is</h5>
+>
+> This repository contains nothing that is not also
+> in core. It's just a different license. Please use
+> core for issues/pull requests.
+
