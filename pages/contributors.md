@@ -12,6 +12,7 @@ permalink: /contributors
 
 ### Contributors
 
+- **cabi** : [GitHub](https://github.com/cabi)
 - **fightingrabbit** : [GitHub](https://github.com/fightingrabbit)
 
 ## Docs 
