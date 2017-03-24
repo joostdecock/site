@@ -23,7 +23,7 @@ $(document).on('click', '#submit', function() {
     var address = $('#email').val();
     $.ajax({
         type: "POST",
-        url: 'http://bot.freesewing.org/slack/request/'+address,
+        url: 'https://bot.freesewing.org/slack/request/'+address,
         success: function(data) {
             $('#form').slideUp();
             $('#cancel').hide();
