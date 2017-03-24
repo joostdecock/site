@@ -25,7 +25,7 @@ permalink: /
         <div class="col-md-6 mb-3 mt-1">
             {% include card.html 
                 title='What is freesewing?'
-                text="Oh you're new here? No worries, we can explain what this is in just a few minutes. We even have a video."
+                text="Oh you're new here? No worries, we can explain what this is in just a few minutes. With bonus origin story."
                 img='/img/lamp.jpg'
                 link='/about'
                 link-text='What is freesewing?'
