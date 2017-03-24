@@ -20,6 +20,7 @@ This happens every year on 10 December.
 
 ## Caveat
 TL;DR: I will donate 100% of what I receive, but that is not 100% of what you give.
+{: .lead }
 
 When you donate, PayPal charges a fee. 
 The donations pledge only applies to the money received, and not to the fee charged.
@@ -33,19 +34,24 @@ give goes to charity.
 However, I cannot pledge this,because if this project becomes wildly successful,
 it would bankrupt me to pay the transaction fee on all donations.
 
-## History
+## Donations history
 
-### 2016
-
-- Donations received: 473.5 euro
-- Transferred to MSF: 473.5 euro
+### 2014
+I started accepting donations in November 2014. Donations of those
+first couple of weeks are lumped in with the 2015 donations below.
 
 ### 2015
 
 - Donations received: 256.65 euro
 - Transferred to MSF: 256.65 euro
 
+### 2016
+
+- Donations received: 473.5 euro
+- Transferred to MSF: 473.5 euro
+
 If you'd like to make a donation, you can do so [here](/donate).
+{: .lead }
 
 * TOC - Do not remove this line
 {:toc}
