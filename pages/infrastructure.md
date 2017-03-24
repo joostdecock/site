@@ -94,6 +94,26 @@ Hosting and deployment of demo is handled by Netlifly.
 Pushing changes to the master branch will automatically deploy the 
 new master to [https://demo.freesewing.org](https://demo.freesewing.org/).
 
+## nofront
+
+### master branch
+
+[https://freesewing.org](https://freesewing.org/) runs the nofront master branch.
+
+### develop branch
+
+There is none. Just master, this is a very simple repository.
+
+### Environment
+
+![Netlify](https://www.netlify.com/img/global/badges/netlify-color-bg.svg)
+{: .float-right }
+The nofront repository is static HTML hosted by 
+[Netlify](https://www.netlify.com/).
+
+Netlify is a <abbr title="Content Delivery Network">CDN</abbr> for static content.
+Their pro plan is free for open source projects, so we use that.
+
 * TOC - Do not remove this line
 {:toc}
 

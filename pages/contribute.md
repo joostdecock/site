@@ -2,7 +2,7 @@
 layout: page
 title: Contribute to freesewing
 tags: [contributors]
-permalink: /contributing
+permalink: /contribute
 ---
 ## Welcome
 
