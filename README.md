@@ -20,4 +20,4 @@ If you have jekyll setup, all you need to do is run this command in the root dir
 bundle exec jekyll serve
 ```
 
-More info is available in [the install instructions](https://docs.freesewing.org/install#freesewing-docs).
+More info is available in [the install instructions](https://docs.freesewing.org/install#docs).
