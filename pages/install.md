@@ -42,11 +42,15 @@ For instructions, see [the composer installation page](https://getcomposer.org/d
 Core is available on [packagist](https://packagist.org/)
  as [freesewing/core](https://packagist.org/packages/freesewing/core). 
 
-Install it like this:
+To install from packagist, run these commands:
 
 ```
 composer create-project freesewing/core freesewing
+composer dump-autoload -o
 ```
+
+The first command installs freesewing/core from packagist, with all dependencies.
+The second command updated the autoloader.
 
 > <h5 class='notoc'>Contributors should install from GitHub</h5>
 >
@@ -57,26 +61,17 @@ composer create-project freesewing/core freesewing
 #### Install from GitHub
 
 The source code is hosted [on GitHub](https://github.com/freesewing/core).  
-Clone it like this:
+
+To install from GitHub, run these commands:
 
 ```sh
 git clone git@github.com:freesewing/core.git freesewing
-```
-
-Then, let composer install the dependencies and update the autoloader:
-
-```sh
 composer install
-```
-
-### Update the autoloader
-
-Once core is installed, you'll need to update its autoloader.
-Composer will do that for you with this command:
-
-```sh
 composer dump-autoload -o
 ```
+
+The first command clones the repository. The second will make composer install
+all dependencies. Finally, we update the autoloader.
 
 ### Run it from the command line
 
