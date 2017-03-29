@@ -76,11 +76,11 @@ permalink: /
         </div>
         <div class="col-md-6 mb-3 mt-1">
             {% include card.html 
-                title='Join us on Slack'
-                text="The freesewing community on Slack is the best place to ask questions, meet other freesewers, or just hang out and share a laugh."
+                title='Join us on Gitter'
+                text="The freesewing community on Gitter is the best place to ask questions, meet other freesewers, or just hang out and share a laugh."
                 img='/img/slack.png'
-                link='/slack'
-                link-text='Request an invite'
+                link='https://gitter.im/freesewing/freesewing'
+                link-text='Go to Gitter'
             %}
         </div>
     </div> <!-- .row -->

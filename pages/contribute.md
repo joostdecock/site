@@ -19,9 +19,9 @@ and we ask contributors to uphold it.
 
 ## Where to get help or report a problem
 
-- The freesewing community on Slack is the best place to ask questions, 
-meet other freesewers, or just hang out and share a laugh. [Request an invite](/slack).
-- Can't wait for a Slack invite? The [@freesewing_org](https://twitter.com/freesewing_org) 
+- The freesewing community on Gitter is the best place to ask questions, 
+meet other freesewers, or just hang out and share a laugh. [Join the freesewing community on Gitter](https://gitter.im/freesewing/freesewing).
+- Chat not your thing? The [@freesewing_org](https://twitter.com/freesewing_org) 
 account on Twitter is the next best thing.
 - Did you spot a mistake? Have a suggestion for an improvement? 
 Please [file an issue on GitHub](https://github.com/freesewing/freesewing.github.io/issues/new). 
@@ -37,7 +37,7 @@ there are lots of ways to contribute. Here are few ideas:
 - Read through the documentation, and any time you see something confusing, 
 or have a suggestion for something that could be improved, click the
  _improve this page_ link that you find at the very bottom of every page. 
-- [Join our Slack channel](/slack) to talk to like-minded people with a love for sewing on a mission
+- [Join the freesewing community on Gitter](https://gitter.im/freesewing/freesewing) to talk to like-minded people with a love for sewing on a mission
 
 ### For makers
 
@@ -59,7 +59,7 @@ Does it what you'd expect? If not, [open an issue](https://github.com/freesewing
  and let us know.
 - Comment on some of our [open issues](https://github.com/freesewing/freesewing.github.io/issues). 
 Have you experienced the same problem? Know a work around? 
-- Hang out at [the freesewing Slack channel](/slack), and lend a hand answering questions. 
+- Hang out at [the freesewing community on Gitter](https://gitter.im/freesewing/freesewing), and lend a hand answering questions. 
 There's a good chance you.ve already experienced what another user is experiencing.
 - Find an open issue (especially those labeled _help-wanted_), and submit a proposed fix. 
 If it's your first pull request, we promise we won't bite, and are glad to answer any questions.

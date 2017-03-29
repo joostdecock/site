@@ -9,15 +9,13 @@ permalink: /contact
 You can contact us in more than one way. Here are the options, 
 ranked on how well they scale:
 
-### Join us on Slack
-The freesewing community on Slack is the best place to ask questions, 
+### Join us on Gitter
+The freesewing community on Gitter is the best place to ask questions, 
 meet other freesewers, or just hang out and share a laugh.
 
-To join, you need an invite. 
-
-<a href='/slack' class='btn btn-primary'>
-    <i class="fa fa-slack" aria-hidden="true"></i> 
-    Request a Slack invite
+<a href='https://gitter.im/freesewing/freesewing' class='btn btn-primary'>
+    <i class="fa fa-comments" aria-hidden="true"></i> 
+    Join the freesewing community on Gitter
 </a>
 
 ### Create an issue on GitHub
