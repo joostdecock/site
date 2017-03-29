@@ -78,7 +78,7 @@ permalink: /
             {% include card.html 
                 title='Join us on Gitter'
                 text="The freesewing community on Gitter is the best place to ask questions, meet other freesewers, or just hang out and share a laugh."
-                img='/img/slack.png'
+                img='/img/gitter.jpg'
                 link='https://gitter.im/freesewing/freesewing'
                 link-text='Go to Gitter'
             %}
