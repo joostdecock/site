@@ -4,6 +4,9 @@ title: Contributors
 tags: [contributors]
 permalink: /contributors
 ---
+* TOC - Do not remove this line
+{:toc}
+
 ## Core
 
 The core repository holds the freesewing platform.
@@ -37,8 +40,3 @@ and you can check that progress at [newsite.freesewing.org](https://newsite.free
 ### Contributors
 
 - **pathogen-nz** : [GitHub](https://github.com/pathogen-nz)
-
-
-* TOC - Do not remove this line
-{:toc}
-
