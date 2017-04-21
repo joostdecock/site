@@ -193,7 +193,7 @@ Note that if you're connecting to our API, you could have just used
 
 ### Running the demo
 
-Open `demo.html` in the `demo` folder in your browser.
+Open `index.html` in the `demo` folder in your browser.
 
 * TOC - Do not remove this line
 {:toc}
