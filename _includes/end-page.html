@@ -1,8 +1,12 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="{{ site.baseurl }}/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="{{ site.baseurl }}/js/vendor/ie10-viewport-bug-workaround.js"></script>
     <!-- Sticky polyfill -->
-    <script src="{{ site.baseurl }}/js/stickyfill.min.js"></script>
+    <script src="{{ site.baseurl }}/js/vendor/stickyfill.min.js"></script>
     <!-- jQuery finger plugin -->
-    <script src="{{ site.baseurl }}/js/jquery.finger.min.js"></script>
+    <script src="{{ site.baseurl }}/js/vendor/jquery.finger.min.js"></script>
     <!-- Our custom JS -->
-    <script src="{{ site.baseurl }}/js/siobhan.js"></script>
+    <script src="{{ site.baseurl }}/js/base.js"></script>
+    {% if page.action == 'login' %}
+    <script src="{{ site.baseurl }}/js/login.js"></script>
+    {% endif %}
+

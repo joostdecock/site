@@ -1,12 +1,9 @@
 .cover-body {
     background: rgba(0,0,0,0.5);
     max-width: 48rem;
+    min-width: 25rem;
     padding: 2rem;
     text-align: center;
-    margin: auto;
-}
-.cover-body input {
-    max-width: 30rem;
     margin: auto;
 }
 .cover-body a {
@@ -17,6 +14,11 @@
 }
 html.cover {
     height: 100%;
+    
+    #phenomic,
+    #phenomic > div {
+      height: 100%;
+    }
     
     body {
         height: 100%;
@@ -41,19 +43,19 @@ html.cover {
         align-self: flex-end;
      }
 
-    /* Links */
+    // Links 
     a,
     a:focus,
     a:hover {
       color: #fff;
     }
 
-    /* Custom default button */
+    // Custom default button 
     .btn-default,
     .btn-default:hover,
     .btn-default:focus {
       color: #333;
-      text-shadow: none; /* Prevent inheritance from `body` */
+      text-shadow: none; // Prevent inheritance from `body` 
       background-color: #fff;
       border: 1px solid #fff;
     }

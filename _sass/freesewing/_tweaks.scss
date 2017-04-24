@@ -2,20 +2,56 @@ img {
     max-width: 100%; 
 }
 .drop-shadow { 
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5); 
+    box-shadow: $shadow;
+}
+.hover-shadow {
+  box-shadow: $shadow-hover;
+  transition: $shadow-transition;
+  display: block;
+}
+.hover-shadow:hover {
+  box-shadow: $shadow-hovered
 }
 div.tab-pane { 
     padding-top: 1rem; 
 }
 figure.image figcaption { 
     margin-top: 4px; 
-    margin-left: 1rem; 
+    margin-left: 0; 
     margin-bottom: 1rem; 
     font-size: 90%; 
+}
+figure.image figcaption span.caption{ 
+  display: block;
+  line-height: 1.1;
+  padding-bottom: 4px;
+  text-align: center;  
+}
+figure.image a.credit,
+figure.image span.credit{ 
+  display: block;
+  line-height: 1.1;
+  text-align: right;  
+  font-size: 0.6rem;
+  color: $gray;
+  padding-bottom: 3px;
 }
 .h-100 { 
     height: 100%; 
 }
+
+// Latest pages
+.page-preview {
+  margin-bottom: 1rem;
+}
+.page-preview h3.card-title {
+  padding: 0 0 0.2rem 0;
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+
 @media (max-width: 991px) {
     .not-on-small {
         display: none;

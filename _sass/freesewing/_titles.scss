@@ -1,6 +1,6 @@
 h1, .h1 {
-    font-size: 3rem;
-    font-weight: 200;
+    font-size: 3.5rem;
+    font-weight: 100;
 }
 h2, .h2 {
     font-size: 2.5rem;
@@ -34,16 +34,17 @@ h4 {
 h5,h6 {
     padding: 0.5rem 0 0 0;
 }
-article.classdoc h3 { 
-    border-bottom: 4px solid $black; 
-    border-image: $potw 0 0 4 0 stretch;
-}
 h1.page-title {
-    text-align: center;
     letter-spacing: -0.01rem;
 }
 h1.page-title small { 
     font-size: 1.6rem;
+}
+.phenomic-HeadingAnchor {
+  display: none;
+}
+article h2 {
+    border-bottom: 1px solid $gray;
 }
 @media (max-width: 991px) {
     h1, .h1 {

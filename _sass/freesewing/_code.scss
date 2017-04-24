@@ -1,3 +1,16 @@
-code.highlighter-rouge { color: #5c3566; }
-a code.highlighter-rouge { background: rgba(102,63,149,1); color: #fff; border: 0; padding: 0.1rem 0.4rem;}
-a code.highlighter-rouge:hover { background: #5bc0de;}
+pre code.hljs {
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+code {
+  color: $blue;
+}
+// Hide opening tag on php code blocks
+pre code.hljs {
+  padding: 0 1rem 1rem;
+  }
+code.hljs.lang-php span.hljs-meta {
+  display: none;
+  line-height: 0;
+}

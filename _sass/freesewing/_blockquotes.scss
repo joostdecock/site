@@ -1,37 +1,43 @@
 blockquote { 
-    font-size: 0.95rem;
-    padding: 1.25rem;
-    border: 2px solid rgba(92,53,102,0.8);
-    margin: 1rem;
-    box-shadow: 0.3rem 0.3rem 0.5rem rgba(0,0,0,0.25);
+    padding: 1rem;
+    border: 1px solid $teal;
+    border-left: 1rem solid $teal;
+    margin: 0.5rem;
+    box-shadow: $shadow;
+    min-height: 4.5rem;
 }
 blockquote p:last-child {
     margin-bottom: 0;
 }
 blockquote:before {
-    content: "\f0eb";
-    font-family: "FontAwesome" !important;
-    font-style: normal !important;
-    font-weight: normal !important;
-    font-variant: normal !important;
-    text-transform: none !important;
+    content: "\1f4a1";
     speak: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     font-size: 3rem;
+    font-weight: bold;
+    line-height: 1;
     float: right;
-    margin-top: -0.3rem;
-    color: rgba(92,53,102,0.8);
+    margin-right: -0.5rem;
+    margin-top: -0.5rem;
+    color: $teal;
 }
-blockquote.quote { border-color: #666; }
+blockquote.quote { border-color: $gray; }
 blockquote.quote:before {
-    content: "\f10e";
-    color: #666;
+    content: "\1f4ac";
+    color: $gray;
 }
-blockquote.comment { border-color: #5bc0de; }
+blockquote.comment { border-color: $purple; }
 blockquote.comment:before {
-    content: "\f0e5";
-    color: #5bc0de;
+    content: "\1f4e2";
+    color: $purple;
+}
+blockquote.question { border-color: $green; }
+blockquote.question:before {
+    content: "?";
+    color: $green;
+}
+blockquote.warning { border-color: $red; }
+blockquote.warning:before {
+    content: "\26a0";
+    color: $red;
 }
 article blockquote { margin-top: 2rem; }

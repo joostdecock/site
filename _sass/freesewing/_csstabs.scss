@@ -1,0 +1,30 @@
+.css-tabs-wrapper .css-tabs-content > div {display: none; }
+.css-tabs-wrapper input {display: none;}
+.css-tabs-wrapper label {
+  display: inline-block; 
+  padding: 8px 16px; 
+  text-align: center;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid $gray-lighter;
+  color: $light-purple;
+  margin: 0;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.css-tabs-wrapper label:hover {
+  border-color: $gray-lightest;
+  border-bottom: 1px solid $gray-lighter;
+  cursor: pointer;
+}
+.css-tabs-wrapper input:checked + label {
+  color: $gray-dark;
+  border-color: $gray-lighter;
+  border-bottom: 1px solid #fff;
+}
+.css-tabs-content {
+  border-top: 1px solid $gray-lighter;
+  padding-top: 1rem;
+  margin-top: -1px;
+}

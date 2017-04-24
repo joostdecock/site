@@ -30,15 +30,16 @@
     line-height: 1.25;
 }
 #logo-message a {
-    color: #292b2c;
+  color: #292b2c;
+  text-shadow: 1px 1px 1px #000;
 }
-#top-logo {
-    text-align: center;
-    margin: auto;
+#top-logo svg {
+    fill: #ffffff;
+    width: 96px;
+    height: 96px;
 }
-#top-logo img {
-    max-height: 4rem;
-    display: block;
-    margin: auto;
-    padding: 0.5rem;
+#cover-bottom-logo svg {
+    fill: #ffffff;
+    width: 52px;
+    height: 52px;
 }

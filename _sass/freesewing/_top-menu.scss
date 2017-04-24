@@ -1,0 +1,30 @@
+nav#top-menu {
+    margin-top: 0.5rem;
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    .nav-link {
+        border: 1px solid RGBA(255,255,255,0);
+    }
+
+    .nav-link:hover {
+        border: 1px solid RGBA(255,255,255,1);
+    }
+
+    .nav-item.show .nav-link {
+        border: 1px solid RGBA(255,255,255,1);
+        background: RGBA(255,255,255,0.3);
+    }
+
+    .dropdown-item:hover {
+        text-shadow: none;
+    }
+}
+
+@media (max-width: 991px) {
+    nav#top-menu {
+        display: none;
+    }
+}

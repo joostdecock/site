@@ -1,7 +1,14 @@
 a.burger {
     position: fixed;
-    top: 1rem;
-    color: $light-purple !important;
+    bottom: 15px;
+    z-index: 888890;
+    outline: none;
+    padding: 13px;
+    border-radius: 50%;
+    background-color: $teal;
+    display: block;
+    width: 52px;
+    height: 52px;
 }
 a.burger:hover {
     color: $purple !important;
@@ -10,10 +17,14 @@ a.burger.white {
     color: #fff;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
-#hamburger { left: 1rem; }
-#tocburger { right: 1rem; }
+#hamburger { right: 15px; z-index: 2002;}
+#tocburger { right: 60px; z-index: 1002; background-color: $light-purple;}
 @media (min-width: 992px) {
-    #tocburger {
+    a.burger {
         display: none;
+    }
+
+    html.cover #hamburger {
+        display: block;
     }
 }

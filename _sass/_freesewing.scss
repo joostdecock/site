@@ -1,8 +1,8 @@
-/*!
- * Freesewing (https://freesewing.org)
- * Copyright 2017 Joost De Cock
- * Licensed GPL-3
- */
+// 
+// Freesewing (https://freesewing.org)
+// Copyright 2017 Joost De Cock
+// Licensed MIT
+// 
 
 // Variables
 @import "bootstrap/variables";
@@ -13,23 +13,28 @@
 // Bootstrap framework css
 @import "bootstrap";
 
-// Rouge syntax highlighting
-@import "rouge";
+// Highlightjs
+@import "highlightjs";
 
-// Font Awesome
-@import "font-awesome";
+// Fontello
+@import "fontello";
 
 // Our own css
+@import "freesewing/auth0";
 @import "freesewing/blockquotes";
+@import "freesewing/blog";
 @import "freesewing/burgers";
 @import "freesewing/cards";
 @import "freesewing/code";
 @import "freesewing/cover";
+@import "freesewing/csstabs";
 @import "freesewing/fixed-sticky";
 @import "freesewing/footer";
 @import "freesewing/header";
+@import "freesewing/icons";
 @import "freesewing/links";
 @import "freesewing/lists";
+@import "freesewing/login";
 @import "freesewing/logo";
 @import "freesewing/off-canvas";
 @import "freesewing/print";
@@ -39,4 +44,5 @@
 @import "freesewing/thematic";
 @import "freesewing/titles";
 @import "freesewing/toc";
+@import "freesewing/top-menu";
 @import "freesewing/tweaks";

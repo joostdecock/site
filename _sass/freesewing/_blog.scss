@@ -1,0 +1,16 @@
+ul.page-meta,
+ul.post-meta {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+ul.page-meta li,
+ul.post-meta li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 1.5rem;
+}
+div.post {
+  font-size: 110%;
+}

@@ -1,0 +1,18 @@
+svg.menu,
+svg.toc {
+    stroke: #ffffff;
+    stroke-linecap: round;
+    fill: none;
+    width: 26px;
+    height: 26px;
+}
+svg.menu { stroke-width: 8; }
+svg.toc,
+svg.right,
+svg.left,
+svg.up,
+svg.down{ 
+    stroke-width: 6; 
+}
+svg.close { stroke-width: 3;}
+

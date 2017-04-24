@@ -6,9 +6,9 @@
 
 <body class="bg-thematic">
     <span class="oc-overlay"></span>
-    <a class="oc-toggle left burger" id="hamburger"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
-    <div id="oc-left" class="oc-panel" data-side="left">
-        {% include main-menu.html %}
+    <a href='#' class="oc-toggle left burger hover-shadow bg-thematic" id="hamburger">{% include icons/menu.svg %}</a>
+    <div id="oc-left" class="oc-panel bg-thematic" data-side="left">
+        <div class="overlay-light">{% include main-menu.html %}</div>
     </div>
     <div class="cover-wrap">
         <div class="cover-top"> </div>
@@ -16,8 +16,7 @@
         {{ content }}
         
         <div class="cover-bottom">
-            {% include copyright.html %}
-            {% include improve-link.html %}
+            <a href="/" title="To the home page" id="cover-bottom-logo">{% include logo.svg %}</a>
         </div>
     </div>
     {% include end-page.html %}

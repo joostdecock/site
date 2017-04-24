@@ -21,7 +21,7 @@ permalink: /tags
         {% endunless %}
     {% endif %}
 {% endfor %}
-{% include header-narrow.html %}
+{% include header.html %}
 <div class="container">
     <div class="row">
         <div class="col-lg-8 col-md-12 fade-oc">

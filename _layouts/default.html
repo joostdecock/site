@@ -11,14 +11,12 @@
 </head>
 <body>
     <span class="oc-overlay"></span>
-    <a class="oc-toggle left burger" id="hamburger"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
-    <a class="oc-toggle right burger" id="tocburger"><i class="fa fa-align-left fa-2x" aria-hidden="true"></i></a>
-    <div id="oc-left" class="oc-panel" data-side="left">
-        {% include main-menu.html %}
+    <a href='#' class="oc-toggle left burger hover-shadow bg-thematic" id="hamburger">{% include icons/menu.svg %}</a>
+    <a href='#' class="oc-toggle right burger hover-shadow" id="tocburger">{% include icons/toc.svg %}</a>
+    <div id="oc-left" class="oc-panel bg-thematic" data-side="left">
+        <div class="overlay-light">{% include main-menu.html %}</div>
     </div>
-
     {{ content }}
-
     {% include scroller.html %}
     {% include footer.html %}
     {% include end-page.html %}

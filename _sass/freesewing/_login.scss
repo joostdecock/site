@@ -1,0 +1,88 @@
+#login div.field-container {
+  position: relative;
+}
+#login input.field {
+  display:block;
+  width:100%;
+  padding:15px 10px 0;
+  border: none;
+  border-bottom: 2px solid $purple;
+  background: transparent;
+  color: $black;
+  margin-top: 1rem;
+}
+#login input.field:focus {
+  outline: 0;
+  background: transparent;
+  color: $black;
+}
+#login .floating-label {
+  position:absolute;
+  pointer-events:none;
+  top: 0;
+  left: 0;
+  font-size: 0.8rem;
+  opacity:0;
+  background-color: transparent;
+  padding: 0 2px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+#login input.field:valid + .floating-label {
+  opacity:1;
+  top:-5px;
+  color: RGBA(0,0,0,0.7);
+}
+#login input.field:focus + .floating-label {
+  color: $black;
+}
+#login .tab-pane {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem 2rem 0.5rem 2rem;
+  text-align: center;
+}
+#login .nav-tabs .nav-link {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  border: none;
+  border-radius: 0;
+  border-bottom: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+#login .nav-tabs .nav-link:hover {
+    color: $black;
+}
+#login .nav-tabs .nav-link.active {
+    background: rgba(255, 255, 255, 0.8);
+    color: $black;
+    text-shadow: none;
+}
+#login {
+    padding: 0;
+    text-shadow: none;
+    max-width: 350px;
+}
+#login .tab-content {
+    padding: 0;
+}
+#login .nav-tabs {
+    border-bottom: none;
+}
+#login .nav-tabs .nav-item {
+    margin-bottom: 0;
+}
+#login p {
+    color: $black;
+}
+#login p a {
+    color: $black;
+    text-decoration: none;
+}
+#login p#also-this {
+    text-align: left;
+    color: $black;
+    font-size: 0.75rem;
+    margin-top: 0.75rem;
+}
