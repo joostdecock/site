@@ -2,18 +2,11 @@
 <html lang="en">
 <head>
     {% include start-page.html %}
-    <script type='text/javascript'>
-        $(function() {
-            $('.sticky').Stickyfill();
-        });
-    </script>
 </head>
 <body>
-    <span class="oc-overlay"></span>
-    <a class="oc-toggle left burger" id="hamburger"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
-    <div id="oc-left" class="oc-panel" data-side="left">
-        {% include main-menu.html %}
-    </div>
+    {% include oc-overlay.html %}
+    {% include hamburger.html %}
+    {% include side-menu.html %}
 
     {{ content }}
 

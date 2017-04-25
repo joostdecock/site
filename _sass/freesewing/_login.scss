@@ -28,18 +28,17 @@
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
-#login input.field:valid + .floating-label {
+#login input.field:valid + .floating-label, 
+#login input.field:focus + .floating-label {
   opacity:1;
   top:-5px;
-  color: RGBA(0,0,0,0.7);
-}
-#login input.field:focus + .floating-label {
   color: $black;
 }
 #login .tab-pane {
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 1rem 2rem 0.5rem 2rem;
+  padding: 15px 20px;
   text-align: center;
+  overflow: hidden;
 }
 #login .nav-tabs .nav-link {
   color: #fff;
@@ -85,4 +84,45 @@
     color: $black;
     font-size: 0.75rem;
     margin-top: 0.75rem;
+}
+
+.panel-holder {
+    width: 700px;
+    clear: both;
+}
+#login-tab,
+#signup-tab {
+    padding: 0;
+}
+#login-tab.tab-pane,
+#signup-tab.tab-pane {
+    padding: 0;
+}
+#login-panel,
+#reset-panel,
+#signup-panel,
+#migrate-panel{
+    width: 350px;
+    float: left;
+    position: relative;
+    padding: 15px 20px;
+}
+#login-panel,
+#signup-panel {
+    -webkit-transition: margin 0.3s ease-in-out;
+    -moz-transition: margin 0.3s ease-in-out;
+    -o-transition: margin 0.3s ease-in-out;
+    transition: margin 0.3s ease-in-out;
+}
+#login-panel.move,
+#signup-panel.move {
+    margin-left: -350px;
+}
+#reset-panel,
+#migrate-panel {
+    margin-top: 2rem;
+}
+#login h4 {
+    color: $black;
+    margin-bottom: 1rem;
 }

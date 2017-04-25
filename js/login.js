@@ -1,5 +1,12 @@
 (function ($) {
   $(document).ready(function () {
-      console.log('Hi there login page');
+    
+    $('a.toggle-password-reset').click(function() {
+      $('#login-panel').toggleClass('move');
+    });
+    
+    $('a.toggle-mmp-migrate').click(function() {
+      $('#signup-panel').toggleClass('move');
+    });
   });
 }(jQuery));

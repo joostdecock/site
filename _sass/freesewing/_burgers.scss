@@ -12,6 +12,7 @@ a.burger {
 }
 a.burger:hover {
     color: $purple !important;
+    cursor: pointer;
 }
 a.burger.white {
     color: #fff;

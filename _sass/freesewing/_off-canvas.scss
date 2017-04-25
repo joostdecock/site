@@ -31,7 +31,7 @@
 #oc-left > div {
   width: 100%;
   height: 100%;
-  padding: 25px 10px;
+  padding: 1rem 0;
 }
 
 .oc-overlay {
@@ -50,18 +50,6 @@
 body.oc-shown .oc-overlay {
   display: block;
 }
-// OC lists 
-.oc-panel ul {
-    margin-left: 0;
-    padding-left: 1rem;
-    list-style-type: none;
-    font-size: 1.05rem;
-}
-.oc-panel ul ul {
-    list-style-type: circle;
-    font-size: 0.95rem;
-}
-
 @media (max-width: 991px) {
 
     #oc-right {

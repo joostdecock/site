@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    {% include start-page.html %}
-    <script type='text/javascript'>
-        $(function() {
-            $('#markdown-toc').detach().appendTo('#oc-right'); 
-            $('.sticky').Stickyfill();
-        });
-    </script>
-</head>
-<body>
-    <span class="oc-overlay"></span>
-    <a href='#' class="oc-toggle left burger hover-shadow bg-thematic" id="hamburger">{% include icons/menu.svg %}</a>
-    <a href='#' class="oc-toggle right burger hover-shadow" id="tocburger">{% include icons/toc.svg %}</a>
-    <div id="oc-left" class="oc-panel bg-thematic" data-side="left">
-        <div class="overlay-light">{% include main-menu.html %}</div>
-    </div>
-    {{ content }}
-    {% include scroller.html %}
-    {% include footer.html %}
-    {% include end-page.html %}
-  </body>
+    <head>
+        {% include start-page.html %}
+    </head>
+    <body>
+        {% include oc-overlay.html %}
+        {% include hamburger.html %}
+        {% include tocburger.html %}
+        {% include side-menu.html %}
+        {{ content }}
+        {% include scroller.html %}
+        {% include footer.html %}
+        {% include end-page.html %}
+    </body>
 </html>

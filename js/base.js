@@ -1,5 +1,8 @@
 (function ($) {
   $(document).ready(function () {
+    $('#markdown-toc').detach().appendTo('#oc-right'); 
+    $('.sticky').Stickyfill();
+
     $(window).scroll(function() {
       if ($(document).scrollTop() > 200) $('body').addClass('scrolled');  
       else $('body').removeClass('scrolled');
@@ -15,7 +18,7 @@
 
     $('.oc-toggle.left').click(function () {
       $('#oc-left').css({ side : "inherit" });
-      if($('#oc-right').hasClass('shown')) siobhanOcHide('right');
+      if($('#oc-right-wrapper').hasClass('shown')) siobhanOcHide('right');
       siobhanOcToggle('left');
     });
     $('.oc-toggle.right').click(function () {
@@ -29,21 +32,31 @@
     });
 
     function siobhanOcShow(side) {
-      $('#oc-'+side).addClass('shown');
+      if(side === 'right') {
+          $('#oc-right-wrapper').addClass('shown');
+      } else {
+          $('#oc-left').addClass('shown');
+      }
       $('.oc-overlay').addClass(side);
       $('.fade-oc').addClass('faded');
-      $('body').addClass('oc-shown');
+      $('body').addClass('oc-shown '+side);
     }
 
     function siobhanOcHide(side) {
+      if(side === 'right') {
+          $('#oc-right-wrapper').removeClass('shown');
+      } else {
+          $('#oc-left').removeClass('shown');
+      }
       $('.oc-overlay').removeClass(side);
-      $('#oc-'+side).removeClass('shown');
       $('.fade-oc').removeClass('faded');
       $('body').removeClass('oc-shown');
     }
 
     function siobhanOcToggle(side) {
-      if($('#oc-'+side).hasClass('shown')) siobhanOcHide(side); 
+      if(side === 'left') var sidediv = '#oc-left';
+      else var sidediv = '#oc-right-wrapper';
+      if($(sidediv).hasClass('shown')) siobhanOcHide(side); 
       else siobhanOcShow(side); 
     }
 
