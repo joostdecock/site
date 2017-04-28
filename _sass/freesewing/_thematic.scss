@@ -29,3 +29,20 @@ a.on-bg:hover {
 .overlay-dark {
   background: rgba(0, 0, 0, 0.8);
 }
+.light-on-bg,
+.dark-on-bg {
+    text-shadow: none;
+    padding: 1rem;
+    margin: 0 1rem;
+}
+.light-on-bg {
+    background: rgba(255, 255, 255, 0.8);
+    color: $black;
+}
+.dark-on-bg {
+    background: rgba(0, 0, 0, 0.8);
+    color: $white;
+}
+.loader {
+    text-align: center;
+}

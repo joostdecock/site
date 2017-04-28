@@ -39,7 +39,9 @@ figure.image span.credit{
 .h-100 { 
     height: 100%; 
 }
-
+button.btn:hover{
+    cursor: pointer;
+}
 // Latest pages
 .page-preview {
   margin-bottom: 1rem;

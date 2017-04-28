@@ -1,9 +1,9 @@
 ---
 layout: cover
-title: Login
+title: Join
 action: login
-permalink: /login
+permalink: /join
 ---
-<div id="login">
+<div id="login" data-tab="signup">
     <img src="/img/logo/spinner.svg">
 </div>

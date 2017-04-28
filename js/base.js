@@ -80,5 +80,6 @@
         } else panel.css(side,"-300px");
       } else if(dist<-300) panel.css(side,dist+"px");
     });
+
   });
 }(jQuery));
