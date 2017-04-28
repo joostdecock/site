@@ -33,7 +33,7 @@
             // Show loader
             $('#login').load('/snippets/signup/loading');
 
-            $.post(api+'/user/signup', $('#signup-form').serialize(),function( data ) {
+            $.post(api+'/signup', $('#signup-form').serialize(),function( data ) {
                 if(typeof data.message !== 'undefined') {
                     $('#login').load('/snippets/'+data.message);
                 } else {

@@ -12,7 +12,7 @@
             var hash = window.location.hash.substring(1).split('.'); 
       
             // URL to connect to FIXME: Should be retrieved from config
-            var url = api+'/user/activate/'+hash[0]+'/'+hash[1];
+            var url = api+'/activate/'+hash[0]+'/'+hash[1];
             
             // AJAX API call
             $.getJSON(url, function( data ) {
