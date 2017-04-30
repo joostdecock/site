@@ -81,5 +81,24 @@
       } else if(dist<-300) panel.css(side,dist+"px");
     });
 
+
+    // Are we logged in?
+    var token = window.localStorage.getItem("jwt");
+    if(token === null) {
+        $('body').addClass('visitor');
+    } else {
+        // Set the location of the API you want to connect to.
+        var api = 'http://joost.freesewing.org:8081';
+
+        // AJAX API call
+        $.ajax({
+          url: api+'/auth',
+          method: 'GET',
+          dataType: 'json',
+          success: function() { $('body').addClass('user logged-in'); },
+          error: function() { $('body').addClass('user logged-out'); },
+          headers: {'Authorization': 'Bearer '+token},
+        }); 
+    }
   });
 }(jQuery));

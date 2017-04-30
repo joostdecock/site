@@ -1,5 +1,5 @@
 ---
-permalink: /snippets/activation/placeholder
+permalink: /snippets/activation/loader
 ---
 ## Activating your account
 This should just take a second...

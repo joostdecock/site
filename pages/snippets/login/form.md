@@ -9,29 +9,29 @@ permalink: /snippets/login/form
     <div role="tabpanel" class="tab-pane active" id="login-tab">
         <div class="panel-holder">
             <div class="panel" id="login-panel">
-                <p>Login with your email address and password</p>
+                <p id="login-msg">Login with your email address and password</p>
                 <form id="login-form">
                   <div class="form-group field-container">
-                    <input type="email" class="field" id="email" placeholder="Email address" required>
+                    <input type="email" name="login-email" class="field" id="email" placeholder="Email address" required>
                     <label class="floating-label">Email address</label> 
                   </div>
                   <div class="form-group field-container">
-                    <input type="password" class="field" id="password" placeholder="Password" required>
+                    <input type="password" name="login-password" class="field" id="password" placeholder="Password" required>
                     <label class="floating-label">Password</label> 
                   </div>
                   <button type="submit" class="btn btn-primary btn-block btn-lg mt-4">Login</button>
-                  <p class="mt-3"><a id="show-reset-link" href="#" class="toggle-password-reset">Forgot your password?</a></p>
+                  <p class="mt-3"><a id="show-recover-link" href="#" class="toggle-password-recover">Forgot your password?</a></p>
                 </form>
             </div>
-            <div class="panel" id="reset-panel">
+            <div class="panel" id="recover-panel">
                 <p>Enter your email address and we'll send you a link to create a new password</p>
-                <form id="reset-form">
+                <form id="recover-form">
                   <div class="form-group field-container">
-                    <input type="email" class="field" id="reset-email" placeholder="Email address" required>
+                    <input type="email" name="recover-email" class="field" id="recover-email" placeholder="Email address" required>
                     <label class="floating-label">Email</label> 
                   </div>
                   <button type="submit" class="btn btn-primary btn-lg btn-block mt-4">Request a new password</button>
-                  <p class="mt-3"><a href="#" class="toggle-password-reset">Back to login</a></p>
+                  <p class="mt-3"><a href="#" class="toggle-password-recover">Back to login</a></p>
                 </form>
             </div>
         </div>
@@ -56,13 +56,18 @@ permalink: /snippets/login/form
                     <br>
                     2) We don't enforce a password policy
                 </p>
-                <p class="mt-3"><a href="#" class="toggle-mmp-migrate">Do you have a makemypattern.com account?</a></p>
+                <p class="mt-3"><a href="#" class="toggle-resend">Re-send activation email</a></p>
             </div>
-            <div class="panel" id="migrate-panel">
-                <h4>Good news for makemypattern users</h4>
-                <p>When you sign up on <b>freesewing.org</b>, we will automatically migrate your account from <b>makemypattern.com</b>.</p>
-                <p>Just make sure to use the same email address to sign up, and pick a new password. We'll take care of the rest.</p>
-                <p class="mt-3"><a href="#" class="toggle-mmp-migrate">Back to sign up</a></p>
+            <div class="panel" id="resend-panel">
+                <p><b>Re-send activation email</b><br>If you signed up but can't find (or didn't get) your activation email, we can send it again.</p><p>Just enter your email address below</p>
+                <form id="resend-form">
+                  <div class="form-group field-container">
+                    <input type="email" class="field" id="resend-email" name="resend-email" placeholder="Email address" required>
+                    <label class="floating-label">Email</label> 
+                  </div>
+                  <button id="signup-submit" type="submit" class="btn btn-primary btn-block btn-lg mt-4">Resend actication email</button>
+                </form>
+                <p class="mt-3"><a href="#" class="toggle-resend">Back to sign up</a></p>
             </div>
         </div>
     </div>

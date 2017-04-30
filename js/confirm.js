@@ -3,7 +3,7 @@
 
         if(window.location.hash) {
             // Set loading screen
-            $('#account-confirmation').load('/snippets/activation/placeholder');
+            $('#account-confirmation').load('/snippets/generic/loading');
 
             // Set the location of the API you want to connect to.
             var api = 'http://joost.freesewing.org:8081';
@@ -18,6 +18,7 @@
             $.getJSON(url, function( data ) {
                 if(data.result == 'ok') {
                     $('#account-confirmation').load('/snippets/activation/success');
+                    window.localStorage.setItem("jwt", data.token);
                     window.location.replace("/welcome");
                 }
             });

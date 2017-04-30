@@ -1,5 +1,11 @@
 <nav id="top-menu">
     <ul class="nav nav-pills">
+      <li class="nav-item visitor-only">
+        <a class="nav-link on-bg" href="/join">Join freesewing</a>
+      </li>
+      <li class="nav-item logged-out-only">
+        <a class="nav-link on-bg" href="/login">Sign in</a>
+      </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle on-bg" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
         <div class="dropdown-menu bg-thematic">
@@ -13,17 +19,16 @@
       <li class="nav-item">
         <a class="nav-link on-bg" href="/patterns">Patterns</a>
       </li>
-      <li class="nav-item dropdown user-only">
+      <li class="nav-item dropdown logged-in-only">
         <a class="nav-link dropdown-toggle on-bg" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Account</a>
         <div class="dropdown-menu bg-thematic">
           <a class="dropdown-item" href="/drafts">Your drafts</a>
           <a class="dropdown-item" href="/models">Your models</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="/settings">Profile & settings</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/logout">Logout</a>
         </div>
-      </li>
-      <li class="nav-item user-hide">
-        <a class="nav-link on-bg" href="/login">Sign in</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle on-bg" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Docs</a>

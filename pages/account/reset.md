@@ -1,9 +1,10 @@
 ---
 layout: cover
-title: Reset your password
-action: login
+title: Regain access to your account
+action: reset
 permalink: /account/reset
 ---
-<div id="login" data-panel="reset">
-    <img src="/img/logo/spinner.svg">
+
+<div class="panel" class="light-on-bg text-center">
+    <div id="login"></div>
 </div>

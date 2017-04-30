@@ -1,5 +1,5 @@
 ---
-permalink: /snippets/signup/loading
+permalink: /snippets/generic/loading
 ---
 <div class="light-on-bg" style="text-align: center;" markdown="1">
 

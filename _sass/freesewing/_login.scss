@@ -102,9 +102,9 @@
     padding: 0;
 }
 #login-panel,
-#reset-panel,
+#recover-panel,
 #signup-panel,
-#migrate-panel{
+#resend-panel{
     width: 350px;
     float: left;
     position: relative;
@@ -121,11 +121,25 @@
 #signup-panel.move {
     margin-left: -350px;
 }
-#reset-panel,
-#migrate-panel {
+#recover-panel,
+#resend-panel {
     margin-top: 2rem;
 }
 #login h4 {
     color: $black;
     margin-bottom: 1rem;
 }
+
+body.user.logged-in .logged-out-only,
+body.user.logged-in .visitor-only {
+    display: none;
+}
+body.user.logged-out .logged-in-only,
+body.user.logged-out .visitor-only {
+    display: none;
+}
+body.visitor .logged-in-only,
+body.visitor .logged-out-only {
+    display: none;
+}
+
