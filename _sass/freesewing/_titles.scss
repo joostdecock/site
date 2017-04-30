@@ -46,7 +46,7 @@ h1.page-title small {
 article h2 {
     border-bottom: 1px solid $gray;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     h1, .h1 {
         font-size: 2.5rem;
     }

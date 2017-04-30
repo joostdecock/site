@@ -5,6 +5,4 @@ action: reset
 permalink: /account/reset
 ---
 
-<div class="panel" class="light-on-bg text-center">
-    <div id="login"></div>
-</div>
+<div id="login"></div>

@@ -20,7 +20,7 @@ a.burger.white {
 }
 #hamburger { right: 15px; z-index: 2002;}
 #tocburger { right: 60px; z-index: 1002; background-color: $light-purple;}
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     a.burger {
         display: none;
     }

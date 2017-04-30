@@ -50,7 +50,7 @@
 body.oc-shown .oc-overlay {
   display: block;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
 
     #oc-right {
       z-index: 1002;
@@ -72,7 +72,7 @@ body.oc-shown .oc-overlay {
       box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
     }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .on-oc-right {
         display: none;
     }

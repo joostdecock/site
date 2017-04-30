@@ -52,14 +52,27 @@ button.btn:hover{
   font-size: 1.4rem;
   font-weight: 400;
 }
+body.user.logged-in .logged-out-only,
+body.user.logged-in .visitor-only {
+    display: none;
+}
+body.user.logged-out .logged-in-only,
+body.user.logged-out .visitor-only {
+    display: none;
+}
+body.visitor .logged-in-only,
+body.visitor .logged-out-only {
+    display: none;
+}
 
 
-@media (max-width: 991px) {
+
+@media (max-width: 767px) {
     .not-on-small {
         display: none;
     }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .only-on-small {
         display: none;
     }
