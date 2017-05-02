@@ -1,6 +1,9 @@
 img { 
     max-width: 100%; 
 }
+.hidden {
+    display: none;
+}
 .drop-shadow { 
     box-shadow: $shadow;
 }

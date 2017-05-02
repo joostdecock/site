@@ -15,4 +15,11 @@
     {% if page.action == 'reset' %}
     <script src="{{ site.baseurl }}/js/reset.js"></script>
     {% endif %}
+    {% if page.action == 'account' %}
+    <script src="{{ site.baseurl }}/js/account.js"></script>
+    {% endif %}
+    {% if page.action == 'settings' %}
+    <script src="{{ site.baseurl }}/js/vendor/toggles.min.js"></script>
+    <script src="{{ site.baseurl }}/js/settings.js"></script>
+    {% endif %}
 

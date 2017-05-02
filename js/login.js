@@ -1,8 +1,5 @@
 (function ($) {
     $(document).ready(function () {
-        // Set the location of the API you want to connect to.
-        var api = 'http://joost.freesewing.org:8081';
-   
         // Load login form
         $('#login').load('/snippets/login/form', function() {
             if ($('#login').attr('data-tab') == 'signup') {
@@ -54,7 +51,7 @@
         function signup() {
             // Show loader
             $('#login').load('/snippets/generic/loading');
-            $.post(api+'/signup', $('#signup-form').serialize(),function( data ) {
+            $.post(api.data+'/signup', $('#signup-form').serialize(),function( data ) {
                 if(typeof data.message !== 'undefined') {
                     $('#login').load('/snippets/'+data.message);
                 } else {
@@ -66,7 +63,7 @@
         function resend() {
             // Show loader
             $('#login').load('/snippets/generic/loading');
-            $.post(api+'/resend', $('#resend-form').serialize(),function( data ) {
+            $.post(api.data+'/resend', $('#resend-form').serialize(),function( data ) {
                 if(typeof data.message !== 'undefined') {
                     $('#login').load('/snippets/'+data.message);
                 } else {
@@ -78,10 +75,10 @@
         function login() {
             // Show loader
             $('#login-msg').load('/snippets/generic/spinner');
-            $.post(api+'/login', $('#login-form').serialize(),function( data ) {
+            $.post(api.data+'/login', $('#login-form').serialize(),function( data ) {
                 if(data.result == 'ok') {
                     window.localStorage.setItem("jwt", data.token);
-                    window.location.replace("/welcome");
+                    window.location.replace("/account");
                 } else {
                     $('#login-msg').load('/snippets/'+data.message);
                 }
@@ -92,7 +89,7 @@
         function recover() {
             // Show loader
             $('#login').load('/snippets/generic/loading');
-            $.post(api+'/recover', $('#recover-form').serialize(),function( data ) {
+            $.post(api.data+'/recover', $('#recover-form').serialize(),function( data ) {
                 if(typeof data.message !== 'undefined') {
                     $('#login').load('/snippets/'+data.message);
                 } else {

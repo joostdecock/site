@@ -1,3 +1,9 @@
+// Set the location of the APIs you want to connect to.
+var api = {
+    data: 'http://joost.freesewing.org:8081',
+    core: 'https://api.freesewing.org/',
+};
+
 (function ($) {
   $(document).ready(function () {
     $('#markdown-toc').detach().appendTo('#oc-right'); 
@@ -87,12 +93,9 @@
     if(token === null) {
         $('body').addClass('visitor');
     } else {
-        // Set the location of the API you want to connect to.
-        var api = 'http://joost.freesewing.org:8081';
-
         // AJAX API call
         $.ajax({
-          url: api+'/auth',
+          url: api.data+'/auth',
           method: 'GET',
           dataType: 'json',
           success: function() { $('body').addClass('user logged-in'); },
