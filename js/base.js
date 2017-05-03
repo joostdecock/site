@@ -95,7 +95,7 @@ var api = {
     } else {
         // AJAX API call
         $.ajax({
-          url: api.data+'/auth/',
+          url: api.data+'/auth',
           method: 'GET',
           dataType: 'json',
           success: function() { $('body').addClass('user logged-in'); },

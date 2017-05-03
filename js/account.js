@@ -8,7 +8,7 @@
         } else {
             // AJAX API call
             $.ajax({
-              url: api.data+'/account/',
+              url: api.data+'/account',
               method: 'GET',
               dataType: 'json',
               success: function(data) {console.log(data); renderAccount(data)},

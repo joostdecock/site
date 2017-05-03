@@ -26,7 +26,7 @@
             $('#settings').on('click','a#nuke', function(e) {
                 e.preventDefault();
                 $.ajax({
-                  url: api.data+'/account/delete/',
+                  url: api.data+'/account/delete',
                   method: 'GET',
                   dataType: 'json',
                   success: function(data) {
@@ -42,7 +42,7 @@
 
             // AJAX API call
             $.ajax({
-              url: api.data+'/account/',
+              url: api.data+'/account',
               method: 'GET',
               dataType: 'json',
               success: function(data) {console.log(data); renderAccount(data)},
