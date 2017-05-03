@@ -2,5 +2,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
 api:
-  core: 'https://joost.api.freesewing.org'
-  data: 'http://joost.freesewing.org:8081'
+  core: 'https://api.freesewing.org'
+  data: 'http://data.freesewing.org'

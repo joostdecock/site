@@ -1,7 +1,7 @@
 // Set the location of the APIs you want to connect to.
 var api = {
-    data: 'http://joost.freesewing.org:8081',
-    core: 'https://api.freesewing.org/',
+    data: 'https://data.freesewing.org',
+    core: 'https://api.freesewing.org',
 };
 
 (function ($) {

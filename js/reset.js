@@ -23,12 +23,9 @@
         }
         
         function reset() {
-            // Set the location of the API you want to connect to.
-            var api = 'http://joost.freesewing.org:8081';
-            
             // Show loader
             $('#reset-msg').load('/snippets/generic/loading');
-            $.post(api+'/reset', $('#reset-form').serialize(),function( data ) {
+            $.post(api.data+'/reset', $('#reset-form').serialize(),function( data ) {
                 if(typeof data.message !== 'undefined') {
                     $('#login').load('/snippets/'+data.message);
                 } else {
