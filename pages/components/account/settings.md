@@ -30,6 +30,9 @@ permalink: /components/account/settings
         <div class="toggle toggle-light" id="theme-toggle"></div>
     </div>
     <input class="hidden" id="theme" name="theme" value="paperless" type="checkbox" checked="">
+    <h4 class="mt-3">Your picture</h4>
+    <!-- picture -->
+    <img src="" id="picture">
     <div id="loader" class=""><button type="submit" class="btn btn-primary btn-lg mt-5 btn-block disabled">Save settings</button></div>
 </form>
 </div>
