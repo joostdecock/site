@@ -1,7 +1,7 @@
 ---
 layout: cards
 title: Settings
-action: settings
+action: app
 permalink: /account/settings
 ---
 <div id="account"></div>

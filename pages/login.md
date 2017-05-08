@@ -1,9 +1,8 @@
 ---
-layout: cover
+layout: cards
 title: Login
-action: login
-permalink: /login
+permalink: /login/
 ---
-<div id="login" class="loginbox">
-    <img src="/img/logo/spinner.svg">
+<p class="text-center mt-5 mb-5"><a href="#" class="mt-5 mb-5 btn btn-primary btn-lg login">Click here to login</a></p>
+<div id="login-conf" data-goto="/account" data-autoload="true">
 </div>

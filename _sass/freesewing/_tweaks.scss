@@ -2,9 +2,13 @@ img {
     max-width: 100%; 
 }
 .hidden {
-    display: none;
+    display: none!important;
 }
 .drop-shadow { 
+    box-shadow: $shadow;
+}
+.alert {
+    font-weight: 600;
     box-shadow: $shadow;
 }
 .hover-shadow {

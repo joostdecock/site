@@ -46,6 +46,7 @@
 .oc-overlay.left{
 }
 .oc-overlay.right{
+    margin-left: -300px;
 }
 body.oc-shown .oc-overlay {
   display: block;

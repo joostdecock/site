@@ -1,7 +1,7 @@
 ---
 layout: cards
 title: Your account
-action: account
+action: app
 tags: [account]
 permalink: /account/
 ---

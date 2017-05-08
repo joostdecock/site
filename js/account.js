@@ -1,6 +1,5 @@
 (function ($) {
     $(document).ready(function () {
-
         var token = window.localStorage.getItem("jwt");
         if(token === null) {
             // We need a logged in user for this

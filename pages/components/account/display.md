@@ -9,6 +9,6 @@ permalink: /components/account/display
             <span class="crown crown-right" id="account-draft-count">0</span>
         </div>
         <h4 id="account-username"></h4>
-        <a id="settings-btn" href="/account/settings" class="btn btn-primary btn-lg mt-3">Settings</a>
+        <a id="settings-btn" href="#" class="btn btn-primary btn-lg mt-3 modal light">Settings</a>
     </div>
 </div>

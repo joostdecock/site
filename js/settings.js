@@ -1,11 +1,26 @@
 (function ($) {
     $(document).ready(function () {
+        $('#settings').on('click','.modal', function(e) {
+            $('#modal').removeClass();
+            if($(this).hasClass('light')) $('#modal').addClass('light shown');
+            else if($(this).hasClass('dark')) $('#modal').addClass('dark shown');
+            else if($(this).hasClass('thematic')) $('#modal').addClass('thematic shown');
+            $('.burger').addClass('hidden');
+        });
+
+
 
         var token = window.localStorage.getItem("jwt");
         if(token === null) {
             // We need a logged in user for this
             window.location.replace("/login");
         } else {
+            // Bind click: Save settings button
+            $('#settings').on('submit','#settings-form', function(e) {
+                e.preventDefault();
+                saveSettings();
+            });
+            
             // Bind click: Delete button
             $('#settings').on('click','a#delete', function(e) {
                 e.preventDefault();
@@ -47,9 +62,29 @@
               dataType: 'json',
               success: function(data) {console.log(data); renderAccount(data)},
               error: function(data) { window.location.replace("/login"); },
-              headers: {'Authorization': 'Bearer '+token},
+              headers: {'Authorization': 'Bearer ' + token},
             }); 
-            
+           
+            function saveSettings() {
+                // Show loader
+                $('#loader').load('/snippets/generic/spinner');
+                var user = JSON.parse(window.localStorage.getItem("user"));
+                $.ajax({
+                  url: api.data+'/account/update',
+                  method: 'PUT',
+                  data: $('#settings-form').serialize(),
+                  dataType: 'json',
+                  success: function(data) {
+                    if(data.result == 'ok') window.location.replace("/account");
+                    else {
+                        console.log(data)
+                    }  
+                  }, 
+                  error: function(data) { console.log(data) },
+                  headers: {'Authorization': 'Bearer ' + token},
+                }); 
+            }
+
             function renderAccount(data) {
                 $('#account').load('/components/account/display', function(){
                     $('#account-username').html(data.account.username);
@@ -57,24 +92,28 @@
                     $('#account-model-count').html(Object.keys(data.models).length);
                     $('#settings-btn').remove();
                 });
+                if(data.account.data.account.units == 'imperial') var units_on = true;
+                else var units_on = false;
+                if(data.account.data.account.theme == 'paperless') var theme_on = true;
+                else var theme_on = false;
                 $('#settings').load('/components/account/settings', function(){
                     $('#email').attr('value', data.account.email);
                     $('#username').attr('value', data.account.username);
                     $('#units-toggle').toggles({
                         text: {
-                            on: 'Metric (cm)',
-                            off: 'Imperial (inch)'
+                            off: 'Metric (cm)',
+                            on: 'Imperial (inch)'
                         },
-                        on: true,
-                        checkbox: 'units',
+                        on: units_on,
+                        checkbox: $('#units'),
                     });
-                    $('#units-paperless').toggles({
+                    $('#theme-toggle').toggles({
                         text: {
-                            on: 'Classic',
-                            off: 'Paperless'
+                            off: 'Classic',
+                            on: 'Paperless'
                         },
-                        on: true,
-                        checkbox: 'paperless',
+                        on: theme_on,
+                        checkbox: $('#theme'),
                     });
                 });
             }

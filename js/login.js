@@ -1,53 +1,59 @@
 (function ($) {
     $(document).ready(function () {
-        // Load login form
-        $('#login').load('/snippets/login/form', function() {
-            if ($('#login').attr('data-tab') == 'signup') {
-                $('#signup-tab-link').click();
-            } 
-            else if ($('#login').attr('data-logout') == 'logout') {
-                window.localStorage.removeItem("jwt");
-                $('body').removeClass('logged-in user').addClass('visitor');
-            } 
-            else if ($('#login').attr('data-panel') == 'recover') {
-                $('#show-recover-link').click();
-            } 
-        });
+        
+        // Focus on correct tab/panel //////
 
-        // Bind click: Slide panel for password recover
-        $('#login').on('click','a.toggle-password-recover', function() {
+        if ($('#login').attr('data-tab') == 'signup') {
+            $('#signup-tab-link').click();
+        } 
+        else if ($('#login').attr('data-logout') == 'logout') {
+            window.localStorage.removeItem("jwt");
+            $('body').removeClass('logged-in user').addClass('visitor');
+        } 
+        else if ($('#login').attr('data-panel') == 'recover') {
+            $('#show-recover-link').click();
+        } 
+
+        
+        // Bind click events ///////////////
+        
+        // Password recover link
+        $('#login').on('click','a.toggle-password-recover', function() { 
             $('#login-panel').toggleClass('move'); 
         });
-       
-        // Bind click: Slide panel for re-send 
-        $('#login').on('click','a.toggle-resend', function() {
+
+        // Re-send confirmation email link
+        $('#login').on('click','a.toggle-resend', function() { 
             $('#signup-panel').toggleClass('move'); 
         });
-       
-        // Bind click: Signup submit 
-        $('#login').on('submit','#signup-form', function(e) {
-            e.preventDefault();
-            signup();
+        
+        // Signup submit 
+        $('#login').on('submit','#signup-form', function(e) { 
+            e.preventDefault(); 
+            signup(); 
+        });
+        
+        // Login submit 
+        $('#login').on('submit','#login-form', function(e) { 
+            e.preventDefault(); 
+            login(); 
+        });
+        
+        // Resend submit 
+        $('#login').on('submit','#resend-form', function(e) { 
+            e.preventDefault(); 
+            resend(); 
+        });
+        
+        // Recover submit 
+        $('#login').on('submit','#recover-form', function(e) { 
+            e.preventDefault(); 
+            recover(); 
         });
 
-        // Bind click: Login submit 
-        $('#login').on('submit','#login-form', function(e) {
-            e.preventDefault();
-            login();
-        });
-
-        // Bind click: Resend submit 
-        $('#login').on('submit','#resend-form', function(e) {
-            e.preventDefault();
-            resend();
-        });
-
-        // Bind click: Recover submit 
-        $('#login').on('submit','#recover-form', function(e) {
-            e.preventDefault();
-            recover();
-        });
-
+        
+        // Functions ///////////////////////
+        
         function signup() {
             // Show loader
             $('#login').load('/snippets/generic/loading');
@@ -78,7 +84,14 @@
             $.post(api.data+'/login', $('#login-form').serialize(),function( data ) {
                 if(data.result == 'ok') {
                     window.localStorage.setItem("jwt", data.token);
-                    window.location.replace("/account");
+                    window.localStorage.setItem("user", JSON.stringify({ 'id': data.userid, 'email': data.email, 'user': data.username }));
+                    if(typeof($('#login-conf').attr('data-goto')) !== 'undefined') {
+                        window.location.replace($('#login-conf').attr('data-goto'));
+                    } else {
+                        $('body').removeClass('visitor').removeClass('logged-out').addClass('logged-in user');
+                        $('#modal').removeClass();
+                        $('.burger').removeClass('hidden');
+                    }
                 } else {
                     $('#login-msg').load('/snippets/'+data.message);
                 }

@@ -4,22 +4,17 @@
     <script src="{{ site.baseurl }}/js/vendor/stickyfill.min.js"></script>
     <!-- jQuery finger plugin -->
     <script src="{{ site.baseurl }}/js/vendor/jquery.finger.min.js"></script>
+    <!-- jQuery growl plugin -->
+    <script src="{{ site.baseurl }}/js/vendor/jquery.bootstrap-growl.js"></script>
     <!-- Our custom JS -->
     <script src="{{ site.baseurl }}/js/base.js"></script>
-    {% if page.action == 'login' %}
-    <script src="{{ site.baseurl }}/js/login.js"></script>
-    {% endif %}
     {% if page.action == 'confirm' %}
     <script src="{{ site.baseurl }}/js/confirm.js"></script>
     {% endif %}
     {% if page.action == 'reset' %}
     <script src="{{ site.baseurl }}/js/reset.js"></script>
     {% endif %}
-    {% if page.action == 'account' %}
-    <script src="{{ site.baseurl }}/js/account.js"></script>
-    {% endif %}
-    {% if page.action == 'settings' %}
-    <script src="{{ site.baseurl }}/js/vendor/toggles.min.js"></script>
-    <script src="{{ site.baseurl }}/js/settings.js"></script>
+    {% if page.action == 'app' %}
+    <script src="{{ site.baseurl }}/js/app.js"></script>
     {% endif %}
 

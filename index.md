@@ -13,7 +13,6 @@ permalink: /
 > - This site is alpha code. All data you enter on this site can get wiped at any moment
 > - You can create an account, and delete it again. Not much else.
 
-
 ## About this site
 
 This site is a work in progress.  
