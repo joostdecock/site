@@ -59,7 +59,10 @@ img.crown {
     position: relative;
     z-index: 2;
 }
-
+img.avatar {
+    width: 100px;
+    height: 100px;
+}
 @media (max-width: 767px) {
     span.crown {
         width: 120px;

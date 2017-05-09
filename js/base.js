@@ -117,6 +117,12 @@ var token = window.localStorage.getItem("jwt");
             $.getScript( "/js/login.js");
         });
    
+        // Handle logout links
+        $('a.logout').click(function(){
+            window.localStorage.removeItem("jwt");
+            window.location.replace("/");
+        });
+   
         // On login page, trigger modal without click
         if($('#login-conf').attr('data-autoload') === 'true') $('a#login-link').click(); 
 

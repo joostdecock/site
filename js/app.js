@@ -54,6 +54,8 @@
         $('#settings').load('/components/account/settings', function(){
             $('#email').attr('value', account.account.email);
             $('#username').attr('value', account.account.username);
+            console.log(account);
+            $('#picture-key').css('background-image', "url("+api.data+account.account.pictureSrc+")");
             $.getScript( "/js/vendor/toggles.min.js", function(){
                 $('#units-toggle').toggles({
                     text: {
@@ -76,6 +78,34 @@
                     e.preventDefault();
                     saveSettings();
                 });
+                // Bind click handler to picture button
+                $('#settings').on('click','#picture-btn', function(e) {
+                    $('#file').click();
+                });
+                // Bind onchange event to file input
+                $('#settings').on('change','#file', function() {
+                    var file = document.getElementById('file').files[0];
+                    if (file.type === "image/png" || file.type === "image/jpeg" || file.type === "image/gif") {
+                        if(file.size<2000000) {
+                            // Show selected image
+                            $('#picture-msg').html("Loaded "+file.name).removeClass().addClass('alert alert-success');
+                            var img = window.URL.createObjectURL(file);
+                            $('#picture-key').css('background-image', "url("+img+")");
+
+                            // Prep upload
+                            var reader  = new FileReader();
+                            reader.readAsDataURL(file); 
+                            reader.onloadend = function() {
+                                $('#picture').attr('value', reader.result);
+                            }
+
+                        } else {
+                            $('#picture-msg').html("Select a file below 2Mb").removeClass().addClass('alert alert-warning');
+                        }
+                    } else {
+                        $('#picture-msg').html("Select a JPG, PNG, or GIF").removeClass().addClass('alert alert-warning');
+                    }
+                });
                 // Enable button
                 $('#loader > button').removeClass('disabled');
             });
@@ -85,6 +115,10 @@
     function saveSettings() {
         // Show loader
         $('#loader').load('/snippets/generic/spinner');
+
+        // Handle picture
+        
+
         var user = JSON.parse(window.localStorage.getItem("user"));
         $.ajax({
           url: api.data+'/account/update',
@@ -128,7 +162,7 @@
             $.getScript( "/js/login.js");
         } 
         else { // Start of logged-in block
-            
+           console.log(token); 
             // Account page ////////////////
             if(page === '/account/') {
                 loadAccount(renderAccount);
