@@ -1,0 +1,41 @@
+// Model display
+#model-measurement-count:after {
+    content: 'measurements';
+}
+#model-draft-count:after {
+    content: 'drafts';
+}
+
+// Notes
+.notes {
+    padding: 2rem;
+    background: $white;
+    box-shadow: $shadow-hover;
+    position: relative;
+}
+
+.notes pre code {
+    display: block;
+    overflow-x: auto;
+    padding: 1.5em;
+    background: $gray-lighter;
+    border-radius: 0.25rem;
+    font-size: 90%;
+    margin: 1rem 0;
+}
+a.update-bubble {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    outline: none;
+    padding: 8px 11px;
+    border-radius: 50%;
+    background-color: $purple;
+    display: block;
+    width: 52px;
+    height: 52px;
+}
+.update-bubble svg.pencil {
+    width: 36px;
+    height: 36px;
+}

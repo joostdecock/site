@@ -1,6 +1,6 @@
 // Set the location of the APIs you want to connect to here
 var api = {
-    data: 'https://data.freesewing.org',
+    data: 'https://joost.data.freesewing.org',
     core: 'https://api.freesewing.org',
 };
         

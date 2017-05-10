@@ -15,4 +15,10 @@ svg.down{
     stroke-width: 6; 
 }
 svg.close { stroke-width: 3;}
+svg.pencil {
+    stroke: none;
+    .c1 {fill: $gray-lighter;}
+    .c2 {fill: $white;}
+    .c3 {fill: $orange;}
 
+}

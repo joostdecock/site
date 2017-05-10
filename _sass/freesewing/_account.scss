@@ -20,7 +20,9 @@ img.model-picture {
     border-radius: 50%;
 }
 #account-model-count:after,
-#account-draft-count:after {
+#account-draft-count:after,
+#model-measurement-count:after,
+#model-draft-count:after {
     margin-top: -130px;
     font-size: 1rem;
     display: block;
@@ -84,7 +86,9 @@ img.avatar {
         height: 100px;
     }
     #account-model-count:after,
-    #account-draft-count:after {
+    #account-draft-count:after,
+    #model-measurement-count:after,
+    #model-draft-count:after {
         margin-top: -90px;
     }
     .model-display h5 {

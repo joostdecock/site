@@ -71,7 +71,7 @@ body.visitor .logged-in-only,
 body.visitor .logged-out-only {
     display: none;
 }
-
+body { background: $whitish; }
 
 
 @media (max-width: 767px) {

@@ -4,7 +4,7 @@ permalink: /components/account/settings
 <div class="container">
 <div class="row">
 <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-3 mt-2" id="settings-inner">
-<h2>Settings</h2>
+<h2>Account settings</h2>
 <form id="settings-form">
     <h4>Your data</h4>
     <!-- email -->
