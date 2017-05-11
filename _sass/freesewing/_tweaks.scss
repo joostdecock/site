@@ -19,6 +19,10 @@ img {
 .hover-shadow:hover {
   box-shadow: $shadow-hovered
 }
+.paper {
+    background: $white;
+    padding: 2rem 1rem;
+}
 div.tab-pane { 
     padding-top: 1rem; 
 }

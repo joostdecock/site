@@ -8,7 +8,9 @@
   z-index: 1000;
 }
 #modal-main {
-    overflow: auto;
+  overflow: auto;
+  width: 100%;
+  padding: 1rem;
 }
 #modal.shown {
     display: block;

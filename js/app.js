@@ -168,6 +168,7 @@
         $('#model').load('/components/model/page', function(){
             console.log(data);
             marked = $.getScript( "/js/vendor/marked.min.js", function(){
+                marked.setOptions({sanitize: true});
                 $('#notes-inner').html(marked(data.model.notes));
             });
 
@@ -244,9 +245,8 @@
     function renderModelNotepad() {
         // Load settings into modal
         $('#modal').removeClass().addClass('shown light');
-        $('#modal-main').html("<div id='notepad'></div>");
         
-        $('#notepad').load('/components/model/notepad', function(){
+        $('#modal-main').load('/components/model/notepad', function(){
             $('.hashlink').attr('href', '#'+model.model.handle);
             $('#notes').val(model.model.notes);
             // Bind submit handler to save settings button
@@ -263,7 +263,19 @@
             $('#notepad').on('click','#notes-preview', function(e) {
                 e.preventDefault();
                 $('#notes-form').addClass('hidden');
-                $('#notepad > div').append("<div class='preview'>"+marked($('#notes').val())+"</div>");
+                $('#notepad').append("<div id='preview'></div>");
+                $('#preview').load('/components/model/notepad-preview', function() {
+                    $('.hashlink').attr('href', '#'+model.model.handle);
+                    $('#notepad-preview').html(marked($('#notes').val()));
+                    $('#notepad-preview-buttons').on('click','#notes-preview-edit', function(e) {
+                        $('#preview').remove();
+                        $('#notes-form').removeClass('hidden');
+                    });
+                    $('#notepad-preview-buttons').on('click','#notes-preview-save', function(e) {
+                        $('#preview').remove();
+                        $('#notes-form').removeClass('hidden').submit();
+                    });
+                });
             });
         });
     }
@@ -296,10 +308,39 @@
         }); 
     }
 
+    function saveModelNotes() {
+        // Show loader
+        $('#loader').load('/snippets/generic/spinner');
+
+        $.ajax({
+          url: api.data+'/model/'+model.model.handle+'/update',
+          method: 'PUT',
+          data: $('#notes-form').serialize(),
+          dataType: 'json',
+          success: function(data) {
+            if(data.result == 'ok') {
+                closeModal();
+                $.bootstrapGrowl("Notes saved", {type: 'success'});
+                loadModel(model.model.handle, reRenderModel);
+            } else {
+                closeModal();
+                $.bootstrapGrowl("Something went wrong, we were unable to save your notes", {type: 'error'});
+                console.log(data);
+            }  
+          }, 
+          error: function(data) { 
+              $.bootstrapGrowl("Something went wrong, we were unable to contact the backend", {type: 'error'});
+              console.log(data) 
+          },
+          headers: {'Authorization': 'Bearer ' + token},
+        }); 
+    }
+
     function reRenderModel(data) {
         console.log(data);
         $('h1.page-title').html(data.model.name);
         $('#model-picture').attr('src',api.data+data.model.pictureSrc);
+        $('#notes-inner').html(marked(data.model.notes));
     }
 
     $(document).ready(function () {
