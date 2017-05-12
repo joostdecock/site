@@ -53,4 +53,11 @@ span.td-key {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
 }
-
+.input-group span.form-units {
+}
+.input-group span.form-units.metric:after {
+    content: 'cm';
+}
+.input-group span.form-units.imperial:after {
+    content: 'inch';
+}

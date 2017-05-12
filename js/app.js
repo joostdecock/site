@@ -166,20 +166,83 @@
     function renderModel(data) {
         $('h1.page-title').html(data.model.name);
         $('#model').load('/components/model/page', function(){
-            console.log(data);
             marked = $.getScript( "/js/vendor/marked.min.js", function(){
                 marked.setOptions({sanitize: true});
                 $('#notes-inner').html(marked(data.model.notes));
             });
-
             $('.hashlink').attr('href', '#'+data.model.handle);
             $('#model-name').html(data.model.name);
             $('#model-picture').attr('src',api.data+data.model.pictureSrc);
             $('#model-measurement-count').html(Object.keys(data.model.data.measurements).length);
             $('#model-draft-count').html(Object.keys(data.drafts).length);
+            $.get('/json/measurements.json', function( mdata ) {
+                measurements = mdata;
+                $('#measurements').append("<div id='progressbar'></div>");
+                $('#progressbar').load('/snippets/generic/progress', function(){
+                    var pc = modelCompleteFactor();
+                    if(pc>75) $('.progress-bar').addClass('bg-primary');
+                    else if(pc>50) $('.progress-bar').addClass('bg-success');
+                    else if(pc>25) $('.progress-bar').addClass('bg-warning');
+                    else $('.progress-bar').addClass('bg-danger');
+                    $('.progress-bar').css('width',pc+'%').html(pc+'%');
+                });
+                $('#measurements').append("<table id='measurements-list' class='rounded-rows table'></table>");
+                $('#measurements-list').append("<thead><tr><th>Measurement</th><th>Value</th><th>&nbsp;</th></tr></thead>");
+                $.get('/img/icons/svg/pencil.svg', function(pencilobject) {
+                    var serializer = new XMLSerializer();
+                    var row;
+                    var first;
+                    var second;
+                    var pencil = serializer.serializeToString(pencilobject);
+                    $.each(measurements.measurements, function(index, measurement){
+                        if(measurement.body == 'all' || measurement.body == data.model.body) {
+                            if(typeof model.model.data.measurements[index] !== "undefined") {
+                                first += "<tr>" +
+                                    "<td class='name'>"+index+"&nbsp;:</td>" +
+                                    "<td nowrap class='value "+data.model.units+"'>"+model.model.data.measurements[index]+"</td>" +
+                                    "<td class='edit'><a href='#"+data.model.handle+"' data-measurement='"+index+"' class='edit'>"+pencil+"</a></td>" +
+                                "</tr>";
+                            } else {
+                                second += "<tr data-measurement='"+index+"' class='empty'>" +
+                                    "<td class='name empty' colspan='2'>"+index+"</td>" +
+                                    "<td class='add'><a href='#"+data.model.handle+"' data-measurement='"+index+"' class='add'>Add</a></td>" +
+                                "</tr>";
+                            }
+                        }
+                    });
+                    $('#measurements-list').append(first+second);
+                    // Bind click handler to edit link
+                    $('#measurements-list').on('click','a.edit', function(e) {
+                        renderMeasurementSettings($(this).attr('data-measurement'));
+                    });
+                    // Bind click handler to add link
+                    $('#measurements-list').on('click','a.add', function(e) {
+                        renderMeasurementSettings($(this).attr('data-measurement'));
+                    });
+
+                });
+            });
+            // FIXME add drafts
         });
-        
-        // FIXME add drafts
+    }
+
+    function renderMeasurementSettings(measurement) {
+        // Load settings into modal
+        $('#modal').removeClass().addClass('shown light');
+        $('#modal-main').html("<div id='settings'></div>");
+        $('#settings').load('/components/measurement/settings', function(){
+            $('#measurement-main-title').html(measurement);
+            $('#m').attr('name', measurement).attr('id',measurement+'-input')
+            $('#settings-form span.form-units').addClass(model.model.units);
+            console.log('nodel nb');
+            console.log(model);
+
+        });
+
+    }
+
+    function modelCompleteFactor() {
+        return Math.round(Object.keys(model.model.data.measurements).length / (Object.keys(measurements.measurements).length/100));
     }
 
     function renderModelSettings() {
@@ -189,6 +252,8 @@
         
         if(model.model.units == 'imperial') var units_on = true;
         else var units_on = false;
+        if(model.model.body == 'female') var body_on = true;
+        else var body_on = false;
         
         $('#settings').load('/components/model/settings', function(){
             $('.hashlink').attr('href', '#'+model.model.handle);
@@ -202,6 +267,14 @@
                     },
                     on: units_on,
                     checkbox: $('#units'),
+                });
+                $('#body-toggle').toggles({
+                    text: {
+                        off: 'Male',
+                        on: 'Female'
+                    },
+                    on: body_on,
+                    checkbox: $('#body'),
                 });
                 // Bind submit handler to save settings button
                 $('#settings').on('submit','#settings-form', function(e) {
@@ -337,10 +410,11 @@
     }
 
     function reRenderModel(data) {
-        console.log(data);
         $('h1.page-title').html(data.model.name);
         $('#model-picture').attr('src',api.data+data.model.pictureSrc);
         $('#notes-inner').html(marked(data.model.notes));
+        if(data.model.units === 'metric') $('.imperial').removeClass('imperial').addClass('metric');
+        else $('.metric').removeClass('metric').addClass('imperial');
     }
 
     $(document).ready(function () {
@@ -402,6 +476,7 @@
             // Model page ////////////////
             if(page === '/model/') {
                 var marked;
+                var measurements;
                 loadModel(window.location.hash.substr(1), renderModel);
                 
                 // Bind click handler to settings button
@@ -411,7 +486,6 @@
                 
                 // Bind click handler to notes button
                 $('#update-notes').click(function(e) {
-                    console.log('updating notes');
                     renderModelNotepad();
                 });
             }

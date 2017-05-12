@@ -1,0 +1,21 @@
+table.rounded-rows {
+    border-collapse: separate;
+    border-spacing: 0 1rem;
+}
+table.rounded-rows tr td:first-child {
+    border-top-left-radius:0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-left: 1px solid $gray-lighter;
+}
+table.rounded-rows tr td:last-child {
+    border-top-right-radius:0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-right: 1px solid $gray-lighter;
+}
+table.rounded-rows tr td {
+    background: #fff;
+    border: 1px solid $gray-lighter;
+    border-left: none;
+    border-right: none;
+}
+

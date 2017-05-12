@@ -1,0 +1,130 @@
+{
+    "measurements": {
+        "acrossBack": {
+            "axis": "horizontal",
+            "body": "all",
+            "min": 100,
+            "max": 200
+        },
+        "bicepsCircumference": {
+            "axis": "horizontal",
+            "body": "all",
+            "min": 100,
+            "max": 200
+        },
+        "bodyRise": {
+            "axis": "vertical",
+            "body": "all",
+            "min": 100,
+            "max": 200
+        },
+        "centerBackNeckToWaist": {
+            "axis": "vertical",
+            "body": "all",
+            "min": 100,
+            "max": 200
+        },
+        "chestCircumference": {
+            "axis": "horizontal",
+            "body": "all",
+            "min": 100,
+            "max": 200
+        },
+        "crossseamLength": {
+            "axis": "other",
+            "body": "all",
+            "min": 100,
+            "max": 200
+        },
+        "headCircumference": {
+            "axis": "horizontal",
+            "body": "all",
+            "min": 100,
+            "max": 200
+        },
+        "hipsCircumference": {
+            "axis": "horizontal",
+            "body": "all",
+            "min": 100,
+            "max": 200
+        },
+        "inseam": {
+            "axis": "vertical",
+            "body": "all",
+            "min": 100,
+            "max": 200
+        },
+        "naturalWaist": {
+            "axis": "horizontal",
+            "body": "all",
+            "min": 100,
+            "max": 200
+        },
+        "naturalWaistToHip": {
+            "axis": "vertical",
+            "body": "all",
+            "min": 100,
+            "max": 200
+        },
+        "naturalWaistToUnderbust": {
+            "axis": "vertical",
+            "body": "female",
+            "min": 100,
+            "max": 200
+        },
+        "neckCircumference": {
+            "axis": "horizontal",
+            "body": "all",
+            "min": 100,
+            "max": 200
+        },
+        "seatCircumference": {
+            "axis": "horizontal",
+            "body": "all",
+            "min": 100,
+            "max": 200
+        },
+        "shoulderSlope": {
+            "axis": "other",
+            "body": "all",
+            "min": 100,
+            "max": 200
+        },
+        "shoulderToElbow": {
+            "axis": "other",
+            "body": "all",
+            "min": 100,
+            "max": 200
+        },
+        "shoulderToShoulder": {
+            "axis": "horizontal",
+            "body": "all",
+            "min": 100,
+            "max": 200
+        },
+        "sleeveLengthToWrist": {
+            "axis": "other",
+            "body": "all",
+            "min": 100,
+            "max": 200
+        },
+        "underBust": {
+            "axis": "horizontal",
+            "body": "female",
+            "min": 100,
+            "max": 200
+        },
+        "upperLegCircumference": {
+            "axis": "horizontal",
+            "body": "all",
+            "min": 100,
+            "max": 200
+        },
+        "wristCircumference": {
+            "axis": "horizontal",
+            "body": "all",
+            "min": 100,
+            "max": 200
+        }
+    }
+}
