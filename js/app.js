@@ -130,12 +130,10 @@
             } else {
                 closeModal();
                 $.bootstrapGrowl("Something went wrong, we were unable to save your settings", {type: 'error'});
-                console.log(data);
             }  
           }, 
           error: function(data) { 
               $.bootstrapGrowl("Something went wrong, we were unable to contact the backend", {type: 'error'});
-              console.log(data) 
           },
           headers: {'Authorization': 'Bearer ' + token},
         }); 
@@ -153,7 +151,6 @@
             dataType: 'json',
             success: function(data) {
                 model = data;
-                console.log(model);
                 callback(data);
             },
             error: function(data) { 
@@ -161,6 +158,40 @@
             },
             headers: {'Authorization': 'Bearer '+token},
         }); 
+    }
+
+    function renderMeasurements() {
+        $('#measurements-list > tr').remove();
+        var pc = modelCompleteFactor();
+        if(pc>75) var bar = 'bg-primary';
+        else if(pc>50) var bar = 'bg-success'; 
+        else if(pc>25) var bar = 'bg-warning';
+        else var bar = 'bg-danger';
+        $('.progress-bar').css('width',pc+'%').html(pc+'%').removeClass().addClass('progress-bar '+bar);
+        $.get('/img/icons/svg/pencil.svg', function(pencilobject) {
+            var serializer = new XMLSerializer();
+            var row;
+            var pencil = serializer.serializeToString(pencilobject);
+            var first;
+            var second;
+            $.each(measurements.measurements, function(index, measurement){
+                if(measurement.body == 'all' || measurement.body == model.model.body) {
+                    if(typeof model.model.data.measurements[index] !== "undefined") {
+                        first += "<tr>" +
+                            "<td class='name'>"+index+"&nbsp;:</td>" +
+                            "<td nowrap class='value "+model.model.units+"'>"+model.model.data.measurements[index]+"</td>" +
+                            "<td class='edit'><a href='#"+model.model.handle+"' data-measurement='"+index+"' class='edit'>"+pencil+"</a></td>" +
+                        "</tr>";
+                    } else {
+                        second += "<tr data-measurement='"+index+"' class='empty'>" +
+                            "<td class='name empty' colspan='2'>"+index+"</td>" +
+                            "<td class='add'><a href='#"+model.model.handle+"' data-measurement='"+index+"' class='add'>Add</a></td>" +
+                        "</tr>";
+                    }
+                }
+            });
+            $('#measurements-list').append(first+second);
+        });
     }
 
     function renderModel(data) {
@@ -173,6 +204,8 @@
             $('.hashlink').attr('href', '#'+data.model.handle);
             $('#model-name').html(data.model.name);
             $('#model-picture').attr('src',api.data+data.model.pictureSrc);
+            // Check whether we have any data at all
+            if(data.model.data === "") data.model.data = {measurements: ''};
             $('#model-measurement-count').html(Object.keys(data.model.data.measurements).length);
             $('#model-draft-count').html(Object.keys(data.drafts).length);
             $.get('/json/measurements.json', function( mdata ) {
@@ -188,38 +221,14 @@
                 });
                 $('#measurements').append("<table id='measurements-list' class='rounded-rows table'></table>");
                 $('#measurements-list').append("<thead><tr><th>Measurement</th><th>Value</th><th>&nbsp;</th></tr></thead>");
-                $.get('/img/icons/svg/pencil.svg', function(pencilobject) {
-                    var serializer = new XMLSerializer();
-                    var row;
-                    var first;
-                    var second;
-                    var pencil = serializer.serializeToString(pencilobject);
-                    $.each(measurements.measurements, function(index, measurement){
-                        if(measurement.body == 'all' || measurement.body == data.model.body) {
-                            if(typeof model.model.data.measurements[index] !== "undefined") {
-                                first += "<tr>" +
-                                    "<td class='name'>"+index+"&nbsp;:</td>" +
-                                    "<td nowrap class='value "+data.model.units+"'>"+model.model.data.measurements[index]+"</td>" +
-                                    "<td class='edit'><a href='#"+data.model.handle+"' data-measurement='"+index+"' class='edit'>"+pencil+"</a></td>" +
-                                "</tr>";
-                            } else {
-                                second += "<tr data-measurement='"+index+"' class='empty'>" +
-                                    "<td class='name empty' colspan='2'>"+index+"</td>" +
-                                    "<td class='add'><a href='#"+data.model.handle+"' data-measurement='"+index+"' class='add'>Add</a></td>" +
-                                "</tr>";
-                            }
-                        }
-                    });
-                    $('#measurements-list').append(first+second);
-                    // Bind click handler to edit link
-                    $('#measurements-list').on('click','a.edit', function(e) {
-                        renderMeasurementSettings($(this).attr('data-measurement'));
-                    });
-                    // Bind click handler to add link
-                    $('#measurements-list').on('click','a.add', function(e) {
-                        renderMeasurementSettings($(this).attr('data-measurement'));
-                    });
-
+                renderMeasurements();
+                // Bind click handler to edit link
+                $('#measurements-list').on('click','a.edit', function(e) {
+                    renderMeasurementSettings($(this).attr('data-measurement'));
+                });
+                // Bind click handler to add link
+                $('#measurements-list').on('click','a.add', function(e) {
+                renderMeasurementSettings($(this).attr('data-measurement'));
                 });
             });
             // FIXME add drafts
@@ -234,8 +243,13 @@
             $('#measurement-main-title').html(measurement);
             $('#m').attr('name', measurement).attr('id',measurement+'-input')
             $('#settings-form span.form-units').addClass(model.model.units);
-            console.log('nodel nb');
-            console.log(model);
+            $('#'+measurement+'-input').val(model.model.data.measurements[measurement]);
+            // Bind submit handler
+            $('#settings').on('submit','#settings-form', function(e) {
+                e.preventDefault();
+                model.model.data.measurements[measurement] = Number($('#'+measurement+'-input').val());
+                saveModelData();
+            });
 
         });
 
@@ -370,12 +384,10 @@
             } else {
                 closeModal();
                 $.bootstrapGrowl("Something went wrong, we were unable to save your settings", {type: 'error'});
-                console.log(data);
             }  
           }, 
           error: function(data) { 
               $.bootstrapGrowl("Something went wrong, we were unable to contact the backend", {type: 'error'});
-              console.log(data) 
           },
           headers: {'Authorization': 'Bearer ' + token},
         }); 
@@ -398,12 +410,33 @@
             } else {
                 closeModal();
                 $.bootstrapGrowl("Something went wrong, we were unable to save your notes", {type: 'error'});
-                console.log(data);
             }  
           }, 
           error: function(data) { 
               $.bootstrapGrowl("Something went wrong, we were unable to contact the backend", {type: 'error'});
-              console.log(data) 
+          },
+          headers: {'Authorization': 'Bearer ' + token},
+        }); 
+    }
+
+    function saveModelData() {
+        $.ajax({
+          url: api.data+'/model/'+model.model.handle+'/update',
+          method: 'PUT',
+          data: {'data': JSON.stringify(model.model.data)},
+          dataType: 'json',
+          success: function(data) {
+            if(data.result == 'ok') {
+                closeModal();
+                $.bootstrapGrowl("Model data saved", {type: 'success'});
+                renderMeasurements();
+            } else {
+                closeModal();
+                $.bootstrapGrowl("Something went wrong, we were unable to save your model data", {type: 'error'});
+            }  
+          }, 
+          error: function(data) { 
+              $.bootstrapGrowl("Something went wrong, we were unable to contact the backend", {type: 'error'});
           },
           headers: {'Authorization': 'Bearer ' + token},
         }); 
