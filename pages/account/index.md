@@ -9,13 +9,13 @@ permalink: /account/
     <div id="account"></div>
     <div class="row">
         <div class="col-md-12">
-            <h2>Models</h2>
+            <h2 id="models-title">Models</h2>
         </div>
     </div>
     <div class="row" id="models"></div>
     <div class="row">
         <div class="col-md-12">
-            <h2>Drafts</h2>
+            <h2 id="drafts-title">Drafts</h2>
             <div id="drafts"></div>
             <hr class="mt-2">
             <h2>Danger zone</h2>

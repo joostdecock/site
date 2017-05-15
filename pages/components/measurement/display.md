@@ -1,6 +1,7 @@
 ---
 permalink: /components/measurement/display
 ---
+<!-- Start of /components/measurement/display -->
 <div id="measurement-icon" class="measurement-display-icon"></div>
 <div id="measurement-name" class="measurement-display-name"></div>
 <div id="measurement-value" class="measurement-display-value"></div>
@@ -11,3 +12,4 @@ permalink: /components/measurement/display
 <path class="c3" d="M29,13l6,-6l6,6l-6,6z"></path>
 </svg>
 </div>
+<!-- End of /components/measurement/display -->

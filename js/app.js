@@ -10,15 +10,78 @@
             $('#account-picture').attr('src',api.data+data.account.pictureSrc);
             $('#account-model-count').html(Object.keys(data.models).length);
         });
-        $.each(data.models, function(index, model){
-            $('#models').append("<div id='model-"+model.handle+"' class='col-md-2 col-4 model-display'></div>");
-            $("#model-"+model.handle).load('/components/model/display', function(){
-               $('#model-name').attr('id','model-name-'+model.handle).html(model.name); 
-               $('#model-'+model.handle+' a.model-link').attr('href','/model/#'+model.handle); 
-               $('#model-picture').attr('id','model-picture-'+model.handle).attr('src',api.data+model.pictureSrc); 
+        if(data.models === false) {
+            $('#models-title').html('Start by adding a model');
+            $('#models').append("<div class='col-md-12'><p>A model holds measurements. We need those measurement to draft patterns for you. So go ahead and <a href='#' class='add-model'>create your first model</a>.</p></div>");
+            $('#drafts-title').remove();
+        } else {
+            $.each(data.models, function(index, model){
+                $('#models').append("<div id='model-"+model.handle+"' class='col-md-2 col-4 model-display'></div>");
+                $("#model-"+model.handle).load('/components/model/display', function(){
+                    $('#model-name').attr('id','model-name-'+model.handle).html(model.name); 
+                    $('#model-'+model.handle+' a.model-link').attr('href','/model/#'+model.handle); 
+                    $('#model-picture').attr('id','model-picture-'+model.handle).attr('src',api.data+model.pictureSrc); 
+                });
             });
+            if(data.drafts === false || typeof data.drafts === 'undefined') {
+                $('#drafts-title').html('No drafts yet');
+                $('#drafts').append("<div class='col-md-12'><p>Drafts are what we do, you should try it sometime.</p></div>");
+            }
+            $('#drafts').append("<div class='col-md-12 text-center mb-5'><a href='' class='btn btn-primary btn-lg mt-3 hashlink add-draft'>Add draft</a></div>");
+        }
+        $('#models').append("<div class='col-md-12 text-center mb-5'><a href='' class='btn btn-primary btn-lg mt-3 hashlink add-model'>Add model</a></div>");
+        // Bind click handler to add-model link/button
+        $('#models').on('click','a.add-model', function(e) {
+            e.preventDefault();
+            renderModelWizard(); 
         });
     }
+    
+    function renderModelWizard() {
+        // Load wizard into modal
+        $('#modal').removeClass().addClass('shown light');
+        $('#modal-main').html("<div id='settings' class='loginbox' style='overflow: hidden;'></div>");
+        $('#settings').load('/components/model/add', function(){
+            $('#login-panel').on('click','#show-body-type', function(e) {
+                e.preventDefault();
+                $('#login-panel').addClass('move');
+            });
+            $.getScript( "/js/vendor/toggles.min.js", function(){
+                $('#body-toggle').toggles({
+                    text: {
+                        off: 'No breasts',
+                        on: 'Breasts'
+                    },
+                    on: false,
+                    checkbox: $('#body'),
+                });
+                $('#settings').on('submit','#new-model-form', function(e) {
+                    e.preventDefault();
+                    createModel($('#new-model-form').serialize());
+                });
+            });
+        });
+
+    }
+    
+    function createModel(data) {
+        $('#loader').load('/snippets/generic/spinner');
+        $.ajax({
+            url: api.data+'/model',
+            method: 'POST',
+            data: data,
+            dataType: 'json',
+            success: function(data) {
+                window.location.replace("/model/#"+data.handle);
+            },
+            error: function(data) { 
+                $('#loader').load('/components/generic/error');
+                console.log(data);
+            },
+            headers: {'Authorization': 'Bearer '+token},
+        }); 
+    }
+
     
     function reRenderAccount(data) {
         $('#account-username').html(data.account.username);
@@ -117,7 +180,7 @@
         $('#loader').load('/snippets/generic/spinner');
 
         $.ajax({
-          url: api.data+'/account/update',
+          url: api.data+'/account',
           method: 'PUT',
           data: $('#settings-form').serialize(),
           dataType: 'json',
@@ -160,8 +223,8 @@
         }); 
     }
 
-    function renderMeasurements() {
-        $('#measurements-list > tr').remove();
+    function renderMeasurements(filter) {
+        $('#measurements-list tr').remove();
         var pc = modelCompleteFactor();
         if(pc>75) var bar = 'bg-primary';
         else if(pc>50) var bar = 'bg-success'; 
@@ -177,16 +240,20 @@
             $.each(measurements.measurements, function(index, measurement){
                 if(measurement.body == 'all' || measurement.body == model.model.body) {
                     if(typeof model.model.data.measurements[index] !== "undefined") {
-                        first += "<tr>" +
-                            "<td class='name'>"+index+"&nbsp;:</td>" +
-                            "<td nowrap class='value "+model.model.units+"'>"+model.model.data.measurements[index]+"</td>" +
-                            "<td class='edit'><a href='#"+model.model.handle+"' data-measurement='"+index+"' class='edit'>"+pencil+"</a></td>" +
-                        "</tr>";
+                        if(typeof filter === 'undefined' || filter[index] === 1) {
+                            first += "<tr>" +
+                                "<td class='name'>"+index+"&nbsp;:</td>" +
+                                "<td nowrap class='value "+model.model.units+"'>"+model.model.data.measurements[index]+"</td>" +
+                                "<td class='edit'><a href='#"+model.model.handle+"' data-measurement='"+index+"' class='edit'>"+pencil+"</a></td>" +
+                            "</tr>";
+                        }
                     } else {
-                        second += "<tr data-measurement='"+index+"' class='empty'>" +
-                            "<td class='name empty' colspan='2'>"+index+"</td>" +
-                            "<td class='add'><a href='#"+model.model.handle+"' data-measurement='"+index+"' class='add'>Add</a></td>" +
-                        "</tr>";
+                        if(typeof filter === 'undefined' || filter[index] === 1) {
+                            second += "<tr data-measurement='"+index+"' class='empty'>" +
+                                "<td class='name empty' colspan='2'>"+index+"</td>" +
+                                "<td class='add'><a href='#"+model.model.handle+"' data-measurement='"+index+"' class='add'>Add</a></td>" +
+                            "</tr>";
+                        }
                     }
                 }
             });
@@ -205,13 +272,27 @@
             $('#model-name').html(data.model.name);
             $('#model-picture').attr('src',api.data+data.model.pictureSrc);
             // Check whether we have any data at all
-            if(data.model.data === "") data.model.data = {measurements: ''};
+            if(data.model.data === "" || data.model.data === null) data.model.data = {measurements: ''};
             $('#model-measurement-count').html(Object.keys(data.model.data.measurements).length);
             $('#model-draft-count').html(Object.keys(data.drafts).length);
             $.get('/json/measurements.json', function( mdata ) {
                 measurements = mdata;
                 $('#measurements').append("<div id='progressbar'></div>");
-                $('#progressbar').load('/snippets/generic/progress', function(){
+                $('#measurements').append("<div id='filter-wrapper' class='text-center mt-4 mb-2'>Filter by pattern: </div>");
+                $('#filter-wrapper').load('/components/generic/filter-pattern', function(){
+                    $.get('/json/patterns.json', function( pdata ) {
+                        patterns = pdata;
+                        $.each(patterns, function(index, pattern){
+                            $('#filter-patterns-select').append('<option val="'+index+'">'+index+'</option>"');
+                        });
+                        // Bind change of filter
+                        $('#filter-wrapper').on('change', '#filter-patterns-select', function(e) {
+                            if($('#filter-patterns-select').val() === 'all') renderMeasurements();
+                            else renderMeasurements(patterns[$('#filter-patterns-select').val()].measurements);
+                        });
+                    });
+                });
+                $('#progressbar').load('/components/generic/progress', function(){
                     var pc = modelCompleteFactor();
                     if(pc>75) $('.progress-bar').addClass('bg-primary');
                     else if(pc>50) $('.progress-bar').addClass('bg-success');
@@ -247,7 +328,14 @@
             // Bind submit handler
             $('#settings').on('submit','#settings-form', function(e) {
                 e.preventDefault();
-                model.model.data.measurements[measurement] = Number($('#'+measurement+'-input').val());
+                // Is measurements already an object?
+                if(typeof(model.model.data.measurements) === 'string' || model.model.data.measurements === null) {
+                    var measurementsObject = {};
+                    measurementsObject[measurement] = Number($('#'+measurement+'-input').val());
+                    model.model.data.measurements = measurementsObject;
+                } else {
+                    model.model.data.measurements[measurement] = Number($('#'+measurement+'-input').val());
+                }
                 saveModelData();
             });
 
@@ -284,8 +372,8 @@
                 });
                 $('#body-toggle').toggles({
                     text: {
-                        off: 'Male',
-                        on: 'Female'
+                        off: 'No breasts',
+                        on: 'Breasts'
                     },
                     on: body_on,
                     checkbox: $('#body'),
@@ -333,7 +421,7 @@
         // Load settings into modal
         $('#modal').removeClass().addClass('shown light');
         
-        $('#modal-main').load('/components/model/notepad', function(){
+        $('#modal-main').load('/components/generic/notepad', function(){
             $('.hashlink').attr('href', '#'+model.model.handle);
             $('#notes').val(model.model.notes);
             // Bind submit handler to save settings button
@@ -351,7 +439,7 @@
                 e.preventDefault();
                 $('#notes-form').addClass('hidden');
                 $('#notepad').append("<div id='preview'></div>");
-                $('#preview').load('/components/model/notepad-preview', function() {
+                $('#preview').load('/components/generic/notepad-preview', function() {
                     $('.hashlink').attr('href', '#'+model.model.handle);
                     $('#notepad-preview').html(marked($('#notes').val()));
                     $('#notepad-preview-buttons').on('click','#notes-preview-edit', function(e) {
@@ -372,7 +460,7 @@
         $('#loader').load('/snippets/generic/spinner');
 
         $.ajax({
-          url: api.data+'/model/'+model.model.handle+'/update',
+          url: api.data+'/model/'+model.model.handle,
           method: 'PUT',
           data: $('#settings-form').serialize(),
           dataType: 'json',
@@ -398,7 +486,7 @@
         $('#loader').load('/snippets/generic/spinner');
 
         $.ajax({
-          url: api.data+'/model/'+model.model.handle+'/update',
+          url: api.data+'/model/'+model.model.handle,
           method: 'PUT',
           data: $('#notes-form').serialize(),
           dataType: 'json',
@@ -421,7 +509,7 @@
 
     function saveModelData() {
         $.ajax({
-          url: api.data+'/model/'+model.model.handle+'/update',
+          url: api.data+'/model/'+model.model.handle,
           method: 'PUT',
           data: {'data': JSON.stringify(model.model.data)},
           dataType: 'json',
@@ -488,8 +576,8 @@
                         $('#delete').on('click','a#nuke', function(e) {
                             e.preventDefault();
                             $.ajax({
-                              url: api.data+'/account/delete',
-                              method: 'GET',
+                              url: api.data+'/account',
+                              method: 'DELETE',
                               dataType: 'json',
                               success: function(data) {
                                   window.localStorage.removeItem("jwt");
@@ -497,7 +585,7 @@
                                   setTimeout(function(){ window.location.replace("/"); }, 2000);
                               },
                               error: function(data) { 
-                                  $('#modal-main').load("/snippets/generic/error");
+                                  $('#modal-main').load("/components/generic/error");
                               },
                               headers: {'Authorization': 'Bearer '+token},
                             }); 
@@ -510,6 +598,7 @@
             if(page === '/model/') {
                 var marked;
                 var measurements;
+                var patterns;
                 loadModel(window.location.hash.substr(1), renderModel);
                 
                 // Bind click handler to settings button
@@ -520,6 +609,42 @@
                 // Bind click handler to notes button
                 $('#update-notes').click(function(e) {
                     renderModelNotepad();
+                });
+                // Bind click: Delete account button
+                $('a#delete-btn').click(function(e) {
+                    e.preventDefault();
+                    $('#modal').removeClass().addClass('shown light');
+                    $('#modal-main').html("<div id='delete'></div>");
+                    $('#delete').load('/components/model/delete', function(){
+                        $('#remove-model-title').html('Delete '+model.model.name+'?');
+                        $('#nuke').html('Delete '+model.model.name);
+                        $('#confirm').on('input', function(){
+                            if($('#confirm').val().toLowerCase() == 'delete') {
+                                $('#nuke').removeClass('disabled');
+                            }  else {
+                                if(!$('#nuke').hasClass('disabled')) {
+                                    $('#nuke').addClass('disabled');
+                                }
+                            }
+                        });
+                        // Bind click: Nuke account button
+                        $('#delete').on('click','a#nuke', function(e) {
+                            e.preventDefault();
+                            $.ajax({
+                              url: api.data+'/model/'+model.model.handle,
+                              method: 'DELETE',
+                              dataType: 'json',
+                              success: function(data) {
+                                  window.location.replace("/account");
+                              },
+                              error: function(data) { 
+                                  $('#modal-main').load("/components/generic/error");
+                              },
+                              headers: {'Authorization': 'Bearer '+token},
+                            }); 
+                        });
+
+                    });
                 });
             }
         } // End of logged-in block

@@ -1,6 +1,7 @@
 ---
 permalink: /components/account/display
 ---
+<!-- Start of /components/account/display -->
 <div class="account-display">
     <div>
         <div class="crown-wrapper">
@@ -9,6 +10,7 @@ permalink: /components/account/display
             <span class="crown crown-right" id="account-draft-count">0</span>
         </div>
         <h4 id="account-username"></h4>
-        <a id="settings-btn" href="#" class="btn btn-primary btn-lg mt-3 modal light">Settings</a>
+        <a id="settings-btn" href="#" class="btn btn-outline-primary mt-3 modal light">Settings</a>
     </div>
 </div>
+<!-- End of /components/account/display -->

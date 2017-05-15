@@ -1,6 +1,7 @@
 ---
 permalink: /components/model/settings
 ---
+<!-- Start of /components/model/settings -->
 <div class="container">
 <div class="row">
 <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-3 mt-2" id="settings-inner">
@@ -19,7 +20,7 @@ permalink: /components/model/settings
     <input class="hidden" id="units" name="units" value="imperial" type="checkbox" checked="">
     <!-- body -->
     <div class="input-group key-toggle key-sm mt-4 mb-4">
-        <span class="input-group-addon td-key">Body</span>
+        <span class="input-group-addon td-key">Shape</span>
         <div class="toggle toggle-light" id="body-toggle"></div>
     </div>
     <input class="hidden" id="body" name="body" value="female" type="checkbox" checked="">
@@ -36,3 +37,4 @@ permalink: /components/model/settings
 </div>
 </div>
 </div>
+<!-- End of /components/model/settings -->

@@ -1,6 +1,7 @@
 ---
 permalink: /components/measurement/settings
 ---
+<!-- Start of /components/measurement/settings -->
 <div class="container">
 <div class="row">
 <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-3 mt-2" id="settings-inner">
@@ -20,3 +21,4 @@ permalink: /components/measurement/settings
 </div>
 </div>
 </div>
+<!-- End of /components/measurement/settings -->

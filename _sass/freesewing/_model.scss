@@ -25,8 +25,8 @@
 }
 a.update-bubble {
     position: absolute;
-    bottom: 40px;
-    right: 40px;
+    bottom: -10px;
+    right: -5px;
     outline: none;
     padding: 8px 11px;
     border-radius: 50%;
@@ -99,7 +99,7 @@ a.update-bubble {
     padding-left: 3px;
 }
 #measurements-list td.value.imperial:after {
-    content:'inch';
+    content:' inch';
 }
 #measurements-list td.value {
     font-weight: bold;

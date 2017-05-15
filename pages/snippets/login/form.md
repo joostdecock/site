@@ -1,6 +1,7 @@
 ---
 permalink: /snippets/login/form
 ---
+<!-- Start of /snippets/login/form -->
 <ul class="nav nav-tabs nav-justified" role="tablist">
     <li class="nav-item"><a id="login-tab-link" class="nav-link active" href="#login-tab" role="tab" data-toggle="tab">Login</a></li>
     <li class="nav-item"><a id="signup-tab-link" class="nav-link" href="#signup-tab" role="tab" data-toggle="tab">Sign up</a></li>
@@ -72,3 +73,4 @@ permalink: /snippets/login/form
         </div>
     </div>
 </div>
+<!-- End of /snippets/login/form -->

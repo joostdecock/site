@@ -1,6 +1,7 @@
 ---
 permalink: /components/model/page
 ---
+<!-- Start of /components/model/page -->
 <div class="model-display">
     <div>
         <div class="crown-wrapper">
@@ -8,6 +9,7 @@ permalink: /components/model/page
             <img class="crown" id="model-picture" />
             <span class="crown crown-right" id="model-draft-count">0</span>
         </div>
-        <a id="settings-btn" href="#" class="btn btn-primary btn-lg mt-3 modal light hashlink">Settings</a>
+        <a id="settings-btn" href="#" class="btn btn-outline-primary mt-3 modal light hashlink">Settings</a>
     </div>
 </div>
+<!-- End of /components/model/page -->

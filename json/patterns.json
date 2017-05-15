@@ -1,0 +1,34 @@
+{
+    "AidenAshirt": {
+        "measurements": {
+            "bicepsCircumference": 1,
+            "bodyRise": 1,
+            "centerBackNeckToWaist": 1 ,
+            "chestCircumference": 1,
+            "crossseamLength": 1,
+            "headCircumference": 1,
+            "hipsCircumference": 1,
+            "inseam": 1
+        }
+    },
+    "TextbookTrousers": {
+        "measurements": {
+            "naturalWaist": 1,
+            "naturalWaistToHip": 1,
+            "naturalWaistToUnderbust": 1,
+            "neckCircumference": 1,
+            "seatCircumference": 1,
+            "shoulderSlope": 1
+        }
+    },
+    "WahidWaistcoat": {
+        "measurements": {
+            "shoulderToElbow": 1,
+            "shoulderToShoulder": 1,
+            "sleeveLengthToWrist": 1,
+            "underBust": 1,
+            "upperLegCircumference": 1,
+            "wristCircumference": 1
+        }
+    }
+}

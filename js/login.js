@@ -61,7 +61,7 @@
                 if(typeof data.message !== 'undefined') {
                     $('#login').load('/snippets/'+data.message);
                 } else {
-                    $('#login').load('/snippets/generic/error');
+                    $('#login').load('/components/generic/error');
                 }
             }, 'json');
         }
@@ -73,7 +73,7 @@
                 if(typeof data.message !== 'undefined') {
                     $('#login').load('/snippets/'+data.message);
                 } else {
-                    $('#login').load('/snippets/generic/error');
+                    $('#login').load('/components/generic/error');
                 }
             }, 'json');
         }
@@ -106,7 +106,7 @@
                 if(typeof data.message !== 'undefined') {
                     $('#login').load('/snippets/'+data.message);
                 } else {
-                    $('#login').load('/snippets/generic/error');
+                    $('#login').load('/components/generic/error');
                 }
             }, 'json');
         }
