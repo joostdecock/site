@@ -1,34 +1,195 @@
 {
-    "AidenAshirt": {
-        "measurements": {
-            "bicepsCircumference": 1,
-            "bodyRise": 1,
-            "centerBackNeckToWaist": 1 ,
-            "chestCircumference": 1,
-            "crossseamLength": 1,
-            "headCircumference": 1,
-            "hipsCircumference": 1,
-            "inseam": 1
+    "Core": {
+        "AaronAshirt": {
+            "measurements": {
+                "acrossBack": "acrossback",
+                "bicepsCircumference": "bicepscircumference",
+                "centerBackNeckToWaist": "centerbacknecktowaist",
+                "chestCircumference": "chestcircumference",
+                "naturalWaistToHip": "naturalwaisttohip",
+                "neckCircumference": "neckcircumference",
+                "shoulderToShoulder": "shouldertoshoulder",
+                "shoulderSlope": "shoulderslope",
+                "hipsCircumference": "hipscircumference"
+            }
+        },
+        "BrianBodyBlock": {
+            "measurements": {
+                "acrossBack": "acrossback",
+                "bicepsCircumference": "bicepscircumference",
+                "centerBackNeckToWaist": "centerbacknecktowaist",
+                "chestCircumference": "chestcircumference",
+                "naturalWaistToHip": "naturalwaisttohip",
+                "neckCircumference": "neckcircumference",
+                "shoulderSlope": "shoulderslope",
+                "shoulderToShoulder": "shouldertoshoulder",
+                "hipsCircumference": "hipscircumference",
+                "sleeveLengthToWrist": "sleevelengthtowrist",
+                "wristCircumference": "wristcircumference"
+            }
+        },
+        "BruceBoxerBriefs": {
+            "measurements": {
+                "hipsCircumference": "hipscircumference",
+                "upperLegCircumference": "upperlegcircumference",
+                "crossseamLength": "crossseamlength"
+            }
+        },
+        "CathrinCorset": {
+            "measurements": {
+                "underBust": "underbust",
+                "naturalWaist": "naturalwaist",
+                "hips": "hips",
+                "naturalWaistToUnderbust": "naturalwaisttounderbust",
+                "naturalWaistToHips": "naturalwaisttohips"
+            }
+        },
+        "HugoHoodie": {
+            "measurements": {
+                "acrossBack": "acrossback",
+                "bicepsCircumference": "bicepscircumference",
+                "centerBackNeckToWaist": "centerbacknecktowaist",
+                "chestCircumference": "chestcircumference",
+                "naturalWaistToHip": "naturalwaisttohip",
+                "neckCircumference": "neckcircumference",
+                "shoulderSlope": "shoulderslope",
+                "shoulderToShoulder": "shouldertoshoulder",
+                "hipsCircumference": "hipscircumference",
+                "sleeveLengthToWrist": "sleevelengthtowrist",
+                "wristCircumference": "wristcircumference",
+                "headCircumference": "headcircumference"
+            }
+        },
+        "SimonShirt": {
+            "measurements": {
+                "acrossBack": "acrossback",
+                "bicepsCircumference": "bicepscircumference",
+                "centerBackNeckToWaist": "centerbacknecktowaist",
+                "chestCircumference": "chestcircumference",
+                "naturalWaistToHip": "naturalwaisttohip",
+                "neckCircumference": "neckcircumference",
+                "shoulderToShoulder": "shouldertoshoulder",
+                "shoulderSlope": "shoulderslope",
+                "hipsCircumference": "hipscircumference",
+                "naturalWaist": "naturalwaist",
+                "sleeveLengthToWrist": "sleevelengthtowrist",
+                "wristCircumference": "wristcircumference",
+                "shoulderToElbow": "shouldertoelbow"
+            }
+        },
+        "SvenSweatshirt": {
+            "measurements": {
+                "acrossBack": "acrossback",
+                "bicepsCircumference": "bicepscircumference",
+                "centerBackNeckToWaist": "centerbacknecktowaist",
+                "chestCircumference": "chestcircumference",
+                "naturalWaist": "naturalwaist",
+                "naturalWaistToHip": "naturalwaisttohip",
+                "neckCircumference": "neckcircumference",
+                "shoulderSlope": "shoulderslope",
+                "shoulderToShoulder": "shouldertoshoulder",
+                "hipsCircumference": "hipscircumference",
+                "sleeveLengthToWrist": "sleevelengthtowrist",
+                "wristCircumference": "wristcircumference"
+            }
+        },
+        "TamikoTop": {
+            "measurements": {
+                "shoulderToShoulder": "shouldertoshoulder",
+                "chestCircumference": "chestcircumference",
+                "centerBackNeckToWaist": "centerbacknecktowaist",
+                "naturalWaistToHip": "naturalwaisttohip"
+            }
+        },
+        "TheoTrousers": {
+            "measurements": {
+                "hipsCircumference": "hipscircumference",
+                "seatCircumference": "seatcircumference",
+                "inseam": "inseam",
+                "bodyRise": "bodyrise"
+            }
+        },
+        "TheodoreTrousers": {
+            "measurements": {
+                "hipsCircumference": "hipscircumference",
+                "seatCircumference": "seatcircumference",
+                "inseam": "inseam",
+                "bodyRise": "bodyrise"
+            }
+        },
+        "TrayvonTie": {
+            "measurements": {
+                "centerBackNeckToWaist": "centerbacknecktowaist",
+                "neckCircumference": "neckcircumference"
+            }
+        },
+        "WahidWaistcoat": {
+            "measurements": {
+                "acrossBack": "acrossback",
+                "bicepsCircumference": "bicepscircumference",
+                "centerBackNeckToWaist": "centerbacknecktowaist",
+                "chestCircumference": "chestcircumference",
+                "naturalWaistToHip": "naturalwaisttohip",
+                "neckCircumference": "neckcircumference",
+                "shoulderSlope": "shoulderslope",
+                "shoulderToShoulder": "shouldertoshoulder",
+                "hipsCircumference": "hipscircumference",
+                "naturalWaist": "naturalwaist"
+            }
         }
     },
-    "TextbookTrousers": {
-        "measurements": {
-            "naturalWaist": 1,
-            "naturalWaistToHip": 1,
-            "naturalWaistToUnderbust": 1,
-            "neckCircumference": 1,
-            "seatCircumference": 1,
-            "shoulderSlope": 1
-        }
-    },
-    "WahidWaistcoat": {
-        "measurements": {
-            "shoulderToElbow": 1,
-            "shoulderToShoulder": 1,
-            "sleeveLengthToWrist": 1,
-            "underBust": 1,
-            "upperLegCircumference": 1,
-            "wristCircumference": 1
+    "Beta": {
+        "BentBodyBlock": {
+            "measurements": {
+                "acrossBack": "acrossback",
+                "bicepsCircumference": "bicepscircumference",
+                "centerBackNeckToWaist": "centerbacknecktowaist",
+                "chestCircumference": "chestcircumference",
+                "naturalWaistToHip": "naturalwaisttohip",
+                "neckCircumference": "neckcircumference",
+                "shoulderToShoulder": "shouldertoshoulder",
+                "shoulderSlope": "shoulderslope",
+                "hipsCircumference": "hipscircumference",
+                "sleeveLengthToWrist": "sleevelengthtowrist",
+                "wristCircumference": "wristcircumference",
+                "shoulderToElbow": "shouldertoelbow"
+            }
+        },
+        "LesleyLeggings": {
+            "measurements": {
+                "hipsCircumference": "hipscircumference",
+                "seatCircumference": "seatcircumference",
+                "inseam": "inseam",
+                "outseam": "outseam",
+                "naturalWaistToHip": "naturalwaisttohip",
+                "naturalWaistToSeat": "naturalwaisttoseat",
+                "bodyRise": "bodyrise",
+                "ankleCircumference": "anklecircumference",
+                "kneeCircumference": "kneecircumference",
+                "upperLegCircumference": "upperlegcircumference"
+            }
+        },
+        "SethSelvedgeTrouserBlock": {
+            "measurements": {
+                "hipsCircumference": "hipscircumference",
+                "seatCircumference": "seatcircumference",
+                "inseam": "inseam",
+                "outseam": "outseam",
+                "naturalWaistToHip": "naturalwaisttohip",
+                "naturalWaistToSeat": "naturalwaisttoseat",
+                "bodyRise": "bodyrise"
+            }
+        },
+        "TrentTrouserBlock": {
+            "measurements": {
+                "hipsCircumference": "hipscircumference",
+                "seatCircumference": "seatcircumference",
+                "inseam": "inseam",
+                "outseam": "outseam",
+                "naturalWaistToHip": "naturalwaisttohip",
+                "naturalWaistToSeat": "naturalwaisttoseat",
+                "bodyRise": "bodyrise"
+            }
         }
     }
 }

@@ -237,21 +237,21 @@
             var pencil = serializer.serializeToString(pencilobject);
             var first;
             var second;
-            $.each(measurements.measurements, function(index, measurement){
-                if(measurement.body == 'all' || measurement.body == model.model.body) {
-                    if(typeof model.model.data.measurements[index] !== "undefined") {
-                        if(typeof filter === 'undefined' || filter[index] === 1) {
+            $.each(measurements, function(measurement, shape){
+                if(shape == 'all' || shape == model.model.body || typeof filter !== "undefined") {
+                    if(typeof model.model.data.measurements[measurement] !== "undefined") {
+                        if(typeof filter === 'undefined' || typeof filter[measurement] !== "undefined") {
                             first += "<tr>" +
-                                "<td class='name'>"+index+"&nbsp;:</td>" +
-                                "<td nowrap class='value "+model.model.units+"'>"+model.model.data.measurements[index]+"</td>" +
-                                "<td class='edit'><a href='#"+model.model.handle+"' data-measurement='"+index+"' class='edit'>"+pencil+"</a></td>" +
+                                "<td class='name'>"+measurement+"&nbsp;:</td>" +
+                                "<td nowrap class='value "+model.model.units+"'>"+model.model.data.measurements[measurement]+"</td>" +
+                                "<td class='edit'><a href='#"+model.model.handle+"' data-measurement='"+measurement+"' class='edit'>"+pencil+"</a></td>" +
                             "</tr>";
                         }
                     } else {
-                        if(typeof filter === 'undefined' || filter[index] === 1) {
-                            second += "<tr data-measurement='"+index+"' class='empty'>" +
-                                "<td class='name empty' colspan='2'>"+index+"</td>" +
-                                "<td class='add'><a href='#"+model.model.handle+"' data-measurement='"+index+"' class='add'>Add</a></td>" +
+                        if(typeof filter === 'undefined' || typeof filter[measurement] !== "undefined") {
+                            second += "<tr data-measurement='"+measurement+"' class='empty'>" +
+                                "<td class='name empty' colspan='2'>"+measurement+"</td>" +
+                                "<td class='add'><a href='#"+model.model.handle+"' data-measurement='"+measurement+"' class='add'>Add</a></td>" +
                             "</tr>";
                         }
                     }
@@ -282,13 +282,20 @@
                 $('#filter-wrapper').load('/components/generic/filter-pattern', function(){
                     $.get('/json/patterns.json', function( pdata ) {
                         patterns = pdata;
-                        $.each(patterns, function(index, pattern){
-                            $('#filter-patterns-select').append('<option val="'+index+'">'+index+'</option>"');
+                        $.each(patterns, function(namespace, patternlist){
+                            $('#filter-patterns-select').append('<optgroup id="pattern-filter-namespace-'+namespace+'" label="'+namespace+'"></optgroup');
+                            $.each(patternlist, function(index, name){
+                                $('#pattern-filter-namespace-'+namespace).append('<option data-namespace="'+namespace+'" val="'+index+'">'+index+'</option>"');
+                            });
                         });
                         // Bind change of filter
                         $('#filter-wrapper').on('change', '#filter-patterns-select', function(e) {
                             if($('#filter-patterns-select').val() === 'all') renderMeasurements();
-                            else renderMeasurements(patterns[$('#filter-patterns-select').val()].measurements);
+                            else {
+                                var filterNamespace = $('#filter-patterns-select option:selected').attr('data-namespace');
+                                var filterPattern = $('#filter-patterns-select').val();
+                                renderMeasurements(patterns[filterNamespace][filterPattern].measurements);
+                            }
                         });
                     });
                 });
@@ -344,7 +351,7 @@
     }
 
     function modelCompleteFactor() {
-        return Math.round(Object.keys(model.model.data.measurements).length / (Object.keys(measurements.measurements).length/100));
+        return Math.round(Object.keys(model.model.data.measurements).length / (Object.keys(measurements).length/100));
     }
 
     function renderModelSettings() {
