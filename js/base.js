@@ -1,7 +1,7 @@
 // Set the location of the APIs you want to connect to here
 var api = {
-    data: 'http://dta.freesewing.org:8080',
-    core: 'http://api.freesewing.org',
+    data: 'https://data.freesewing.org',
+    core: 'https://api.freesewing.org',
 };
         
 // Load token from local storage
