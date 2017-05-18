@@ -1,6 +1,9 @@
 exclude:
   - Gemfile
   - Gemfile.lock
+  - README.md
+include:  
+  - _redirects
 api:
   core: 'https://api.freesewing.org'
   data: 'http://data.freesewing.org'
