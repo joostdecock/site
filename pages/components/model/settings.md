@@ -4,7 +4,7 @@ permalink: /components/model/settings
 <!-- Start of /components/model/settings -->
 <div class="container">
 <div class="row">
-<div class="col-sm-8 offset-sm-2 col-md-6 offset-md-3 mt-2" id="settings-inner">
+<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 mt-2" id="settings-inner">
 <h2>Model settings</h2>
 <form id="settings-form">
     <!-- username -->
@@ -24,6 +24,12 @@ permalink: /components/model/settings
         <div class="toggle toggle-light" id="body-toggle"></div>
     </div>
     <input class="hidden" id="body" name="body" value="female" type="checkbox" checked="">
+    <!-- shared -->
+    <div class="input-group key-toggle key-sm mt-4 mb-4">
+        <span class="input-group-addon td-key">Share</span>
+        <div class="toggle toggle-light" id="shared-toggle"></div>
+    </div>
+    <input class="hidden" id="shared" name="shared" value="1" type="checkbox" checked="">
     <!-- picture -->
         <div class="bg-thematic drop-shadow" id="picture-key" style="width: 100px; height: 100px; background-color: #fff; display: inline-block; margin-right: 1rem; float: left;"></div>
         <div style="display: inline-block; width: 250px;">

@@ -362,7 +362,9 @@
         else var units_on = false;
         if(model.model.body == 'female') var body_on = true;
         else var body_on = false;
-        
+        if(model.model.shared == '1') var shared_on = true;
+        else var shared_on = false;
+       console.log(model.model); 
         $('#settings').load('/components/model/settings', function(){
             $('#name').attr('value', model.model.name);
             $('#picture-key').css('background-image', "url("+api.data+model.model.pictureSrc+")");
@@ -382,6 +384,14 @@
                     },
                     on: body_on,
                     checkbox: $('#body'),
+                });
+                $('#shared-toggle').toggles({
+                    text: {
+                        off: 'No',
+                        on: 'Yes'
+                    },
+                    on: shared_on,
+                    checkbox: $('#shared'),
                 });
                 // Bind submit handler to save settings button
                 $('#settings').on('submit','#settings-form', function(e) {
@@ -552,7 +562,7 @@
         } 
         else { // Start of logged-in block
             // Account page ////////////////
-            if(page === '/account/') {
+            if(page === '/account') {
                 loadAccount(renderAccount);
                 
                 // Bind click handler to settings button
@@ -597,8 +607,24 @@
                     });
                 });
             }
+            // Model page //////////////////
+            else if(page === '/models') {
+                loadAccount(function(data){
+                    $('h1.page-title').html('Your models');
+                    $('#models-title-row').remove();
+                    $('#non-models-row').remove();
+                    $.each(data.models, function(index, model){
+                        $('#models').append("<div id='model-"+model.handle+"' class='col-md-2 col-4 model-display'></div>");
+                        $("#model-"+model.handle).load('/components/model/display', function(){
+                            $('#model-name').attr('id','model-name-'+model.handle).html(model.name); 
+                            $('#model-'+model.handle+' a.model-link').attr('href','/model/'+model.handle); 
+                            $('#model-picture').attr('id','model-picture-'+model.handle).attr('src',api.data+model.pictureSrc); 
+                        });
+                    });
+                });
+            }
             // Model page ////////////////
-            if(page.substring(0,7) === '/model/') {
+            else if(page.substring(0,7) === '/model/') {
                 var marked;
                 var measurements;
                 var patterns;

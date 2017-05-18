@@ -1,2 +1,4 @@
+# Model list
+/models*    /account  200
 # Model pages
 /model/*    /model  200

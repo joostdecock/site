@@ -3,17 +3,17 @@ layout: cards
 title: Your account
 action: app
 tags: [account]
-permalink: /account/
+permalink: /account
 ---
 <div class="container">
     <div id="account"></div>
-    <div class="row">
+    <div class="row" id="models-title-row">
         <div class="col-md-12">
             <h2 id="models-title">Models</h2>
         </div>
     </div>
     <div class="row" id="models"></div>
-    <div class="row">
+    <div class="row" id="non-models-row">
         <div class="col-md-12">
             <h2 id="drafts-title">Drafts</h2>
             <div id="drafts"></div>

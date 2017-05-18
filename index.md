@@ -6,7 +6,7 @@ permalink: /
 ---
 <div class="container">
 <div class="row">
-<div class="col-md-6 offset-md-3" markdown="1">
+<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2" markdown="1">
 
 > __TL;DR__ 
 > 
