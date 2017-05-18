@@ -32,7 +32,7 @@ permalink: /components/model/settings
             <input class="hidden" id="file" name="file" type="file">
             <input class="hidden" id="picture" name="picture" type="hidden">
         </div>
-    <div id="loader" class=""><button type="submit" class="btn btn-primary btn-lg mt-5 btn-block disabled hashlink">Save settings</button></div>
+    <div id="loader" class=""><button type="submit" class="btn btn-primary btn-lg mt-5 btn-block disabled">Save settings</button></div>
 </form>
 </div>
 </div>

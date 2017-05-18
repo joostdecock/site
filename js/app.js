@@ -19,7 +19,7 @@
                 $('#models').append("<div id='model-"+model.handle+"' class='col-md-2 col-4 model-display'></div>");
                 $("#model-"+model.handle).load('/components/model/display', function(){
                     $('#model-name').attr('id','model-name-'+model.handle).html(model.name); 
-                    $('#model-'+model.handle+' a.model-link').attr('href','/model/#'+model.handle); 
+                    $('#model-'+model.handle+' a.model-link').attr('href','/model/'+model.handle); 
                     $('#model-picture').attr('id','model-picture-'+model.handle).attr('src',api.data+model.pictureSrc); 
                 });
             });
@@ -27,9 +27,9 @@
                 $('#drafts-title').html('No drafts yet');
                 $('#drafts').append("<div class='col-md-12'><p>Drafts are what we do, you should try it sometime.</p></div>");
             }
-            $('#drafts').append("<div class='col-md-12 text-center mb-5'><a href='' class='btn btn-primary btn-lg mt-3 hashlink add-draft'>Add draft</a></div>");
+            $('#drafts').append("<div class='col-md-12 text-center mb-5'><a href='' class='btn btn-primary btn-lg mt-3 add-draft'>Add draft</a></div>");
         }
-        $('#models').append("<div class='col-md-12 text-center mb-5'><a href='' class='btn btn-primary btn-lg mt-3 hashlink add-model'>Add model</a></div>");
+        $('#models').append("<div class='col-md-12 text-center mb-5'><a href='' class='btn btn-primary btn-lg mt-3 add-model'>Add model</a></div>");
         // Bind click handler to add-model link/button
         $('#models').on('click','a.add-model', function(e) {
             e.preventDefault();
@@ -72,7 +72,7 @@
             data: data,
             dataType: 'json',
             success: function(data) {
-                window.location.replace("/model/#"+data.handle);
+                window.location.replace("/model/"+data.handle);
             },
             error: function(data) { 
                 $('#loader').load('/components/generic/error');
@@ -244,14 +244,14 @@
                             first += "<tr>" +
                                 "<td class='name'>"+measurement+"&nbsp;:</td>" +
                                 "<td nowrap class='value "+model.model.units+"'>"+model.model.data.measurements[measurement]+"</td>" +
-                                "<td class='edit'><a href='#"+model.model.handle+"' data-measurement='"+measurement+"' class='edit'>"+pencil+"</a></td>" +
+                                "<td class='edit'><a href='#' data-measurement='"+measurement+"' class='edit'>"+pencil+"</a></td>" +
                             "</tr>";
                         }
                     } else {
                         if(typeof filter === 'undefined' || typeof filter[measurement] !== "undefined") {
                             second += "<tr data-measurement='"+measurement+"' class='empty'>" +
                                 "<td class='name empty' colspan='2'>"+measurement+"</td>" +
-                                "<td class='add'><a href='#"+model.model.handle+"' data-measurement='"+measurement+"' class='add'>Add</a></td>" +
+                                "<td class='add'><a href='#' data-measurement='"+measurement+"' class='add'>Add</a></td>" +
                             "</tr>";
                         }
                     }
@@ -268,7 +268,6 @@
                 marked.setOptions({sanitize: true});
                 $('#notes-inner').html(marked(data.model.notes));
             });
-            $('.hashlink').attr('href', '#'+data.model.handle);
             $('#model-name').html(data.model.name);
             $('#model-picture').attr('src',api.data+data.model.pictureSrc);
             // Check whether we have any data at all
@@ -365,7 +364,6 @@
         else var body_on = false;
         
         $('#settings').load('/components/model/settings', function(){
-            $('.hashlink').attr('href', '#'+model.model.handle);
             $('#name').attr('value', model.model.name);
             $('#picture-key').css('background-image', "url("+api.data+model.model.pictureSrc+")");
             $.getScript( "/js/vendor/toggles.min.js", function(){
@@ -429,7 +427,6 @@
         $('#modal').removeClass().addClass('shown light');
         
         $('#modal-main').load('/components/generic/notepad', function(){
-            $('.hashlink').attr('href', '#'+model.model.handle);
             $('#notes').val(model.model.notes);
             // Bind submit handler to save settings button
             $('#notepad').on('submit','#notes-form', function(e) {
@@ -447,7 +444,6 @@
                 $('#notes-form').addClass('hidden');
                 $('#notepad').append("<div id='preview'></div>");
                 $('#preview').load('/components/generic/notepad-preview', function() {
-                    $('.hashlink').attr('href', '#'+model.model.handle);
                     $('#notepad-preview').html(marked($('#notes').val()));
                     $('#notepad-preview-buttons').on('click','#notes-preview-edit', function(e) {
                         $('#preview').remove();
@@ -602,11 +598,14 @@
                 });
             }
             // Model page ////////////////
-            if(page === '/model/') {
+            if(page.substring(0,7) === '/model/') {
                 var marked;
                 var measurements;
                 var patterns;
-                loadModel(window.location.hash.substr(1), renderModel);
+                // Rewritten URL, need to get the model handle from it
+                var modelHandle = page.substring(7);
+                if(page.substring(page.length-1) == '/') modelHandle = modelHandle.substring(0, modelHandle.length-1);
+                loadModel(modelHandle, renderModel);
                 
                 // Bind click handler to settings button
                 $('#model').on('click','a#settings-btn', function(e) {

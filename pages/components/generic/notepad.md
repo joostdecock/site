@@ -10,8 +10,8 @@ permalink: /components/generic/notepad
         <p><b>Tip:</b> You can use <a href="https://en.wikipedia.org/wiki/Markdown" target="_BLANK">markdown</a> for your notes.</p>
     </div>
     <div id="loader" class="text-right">
-        <a id="notes-enlarge" class="btn btn-outline-primary mt-3 hashlink">Enlarge</a>
-        <a id="notes-preview" class="btn btn-info mt-3 hashlink">Preview</a>
+        <a href="#" id="notes-enlarge" class="btn btn-outline-primary mt-3">Enlarge</a>
+        <a href="#" id="notes-preview" class="btn btn-info mt-3">Preview</a>
         <button type="submit" class="btn btn-primary mt-3">Save</button>
     </div>
 </form>
