@@ -32,12 +32,12 @@ blockquote.comment:before {
 }
 blockquote.question { border-color: $green; }
 blockquote.question:before {
-    content: "?";
+    content: "Question";
     color: $green;
 }
 blockquote.warning { border-color: $red; }
 blockquote.warning:before {
-    content: "\26a0";
-    color: $red;
+    content: "Warning";
+    background: $red;
 }
 article blockquote { margin-top: 2rem; }

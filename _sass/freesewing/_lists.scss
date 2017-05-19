@@ -13,23 +13,27 @@ ul.todo li:before {
     font-weight: normal;
 }
 ul.todo li.done {
-    color: #aaa;
+    color: $gray-light;
     font-weight: 200;
 }
-ul.todo li.todo {
-    color: #ccc;
+ul.todo li.ongoing {
+    font-weight: bold;
 }
 ul.todo li.done:before {
     content: '\f058';
-    color: #5cb85c;
+    color: $green;
 }
 ul.todo li.blocking:before {
     content: '\f071';
-    color: #d9534f;
+    color: $red;
 }
 ul.todo li.wish:before {
     content: '\f004';
-    color: #5bc0de;
+    color: $pink;
+}
+ul.todo li.ongoing:before {
+    content: '\f04b';
+    color: $teal;
 }
 
 // FILE LIST 
