@@ -100,6 +100,7 @@
             },
             error: function(data) { 
                 account = false;
+                console.log('not logged in');
             },
             headers: {'Authorization': 'Bearer '+token},
         }); 
@@ -212,11 +213,11 @@
             url: api.data+'/model/'+handle,
             method: 'GET',
             dataType: 'json',
-            success: function(data) {
-                model = data;
-                callback(data);
+            success: function(returndata) {
+                model = returndata;
+                callback(returndata);
             },
-            error: function(data) { 
+            error: function(returndata) { 
                 account = false;
             },
             headers: {'Authorization': 'Bearer '+token},
@@ -364,7 +365,6 @@
         else var body_on = false;
         if(model.model.shared == '1') var shared_on = true;
         else var shared_on = false;
-       console.log(model.model); 
         $('#settings').load('/components/model/settings', function(){
             $('#name').attr('value', model.model.name);
             $('#picture-key').css('background-image', "url("+api.data+model.model.pictureSrc+")");
@@ -551,14 +551,74 @@
         else $('.metric').removeClass('metric').addClass('imperial');
     }
 
+    function renderModelSelection(account,patternhandle) {
+        var filter = {'ok':[], 'ko': []};
+        $.get('/json/patternmap.json', function( patternmap ) {
+            $.get('/json/patterns.json', function( pdata ) {
+                var patterns = pdata;
+                pattern = patterns[patternmap[patternhandle].namespace][patternmap[patternhandle].pattern];
+                // Count measurements required by pattern
+                var pmcount = Object.keys(pattern.measurements).length;
+                $.each(account.models, function(handle, model){
+                    // Quick check, how many measurement?
+                    if(typeof model.data.measurements === "undefined" || Object.keys(model.data.measurements).length < pmcount) {
+                        filter.ko.push(model);
+                    } else {
+                        var modelok = true;
+                        // Thorough check, are they the required measurements?
+                        $.each(pattern.measurements, function(index, measurement) {
+                            if (typeof model.data.measurements[index] !== "number") modelok = false;
+                        });
+                        if(modelok) filter.ok.push(model);
+                        else filter.ko.push(model);
+                    }
+                    if ((filter.ok.length+filter.ko.length) === Object.keys(account.models).length) {
+                        // We're ready
+                        if(filter.ok.length > 0) {
+                            // We have models good to go
+                            $.each(filter.ok, function(index, model){
+                                $('#okmodels').append("<div id='model-"+model.handle+"' class='col-md-2 col-4 model-display okmodels'></div>");
+                                $("#model-"+model.handle).load('/components/model/display', function(){
+                                    $('#model-name').attr('id','model-name-'+model.handle).html(model.name); 
+                                    $('#model-'+model.handle+' a.model-link').attr('href',page+'/for/'+model.handle); 
+                                    $('#model-picture').attr('id','model-picture-'+model.handle).attr('src',api.data+model.pictureSrc); 
+                                });
+                            });
+                            if(filter.ko.length > 0) {
+                                // We've got some KO models
+                                $('#komodels').append("<div id='model-"+model.handle+"' class='col-md-2 col-4 model-display komodels'></div>");
+                                $.each(filter.ko, function(index, model){
+                                    $('#komodels').append("<div id='model-"+model.handle+"' class='col-md-2 col-4 model-display komodels'></div>");
+                                    $("#model-"+model.handle).load('/components/model/display', function(){
+                                        $('#model-name').attr('id','model-name-'+model.handle).html(model.name); 
+                                        $('#model-'+model.handle+' a.model-link').attr('href','/model/'+model.handle); 
+                                        $('#model-picture').attr('id','model-picture-'+model.handle).attr('src',api.data+model.pictureSrc); 
+                                    });
+                                });
+                            } else {
+                                // We have no KO models
+                                $('#okmsg').remove();
+                                $('#komsg').remove();
+                                $('#komodels').remove();
+                            }
+                        } else {
+                            // No good models found
+                            $('#komsg').remove();
+                            $('#komodels').remove();
+                            $('#okmodels').remove();
+                            $('#okmsg').load('/components/model/nogoodmodel');
+                        }
+                    }
+                });
+            });
+        });
+    }
+
     $(document).ready(function () {
        
-        if(token === null) {
-            // Load login box into modal ///
-            $('#modal').removeClass().addClass('shown thematic');
-            $('#modal-main').html("<div id='login' class='loginbox'></div>");
-            $('#login').load('/snippets/login/form');
-            $.getScript( "/js/login.js");
+        if(window.localStorage.getItem("user") === false) {
+            // eff this, you need to be logged in
+            window.location.replace("/login");
         } 
         else { // Start of logged-in block
             // Account page ////////////////
@@ -679,6 +739,54 @@
                     });
                 });
             }
+            // Make something page ////////////////
+            else if(page === '/draft' || page === '/draft/') {
+                var patterns;
+                $.get('/json/patterns.json', function( pdata ) {
+                    patterns = pdata;
+                    $('#patterns').append('<div id="pattern-list" class="card-columns masonry-wrapper"></div>');
+                    $.each(patterns, function(namespace, patternlist){
+                        $.each(patternlist, function(index, pattern){
+                            $('#pattern-list').append('<a href="#" id="div-link"><div class="card text-center mb-4 hover-shadow" id="'+pattern.info.handle+'-card"></div></a>');
+                            $('#'+pattern.info.handle+'-card').load('/components/pattern/card', function(){
+                                $('#card').attr('id',pattern.info.handle+'-card');
+                                $('#card-image').attr('src','/img/pattern/'+pattern.info.handle+'/linedrawing.png').attr('id',pattern.info.handle+'-image');
+                                $('#card-title').html(pattern.info.handle).attr('id',pattern.info.handle+'-title');
+                                $('#card-text').html(pattern.info.description).attr('id',pattern.info.handle+'-text');
+                                $('#card-link').html('Draft '+pattern.info.handle).attr('id',pattern.info.handle+'-link').attr('href','/draft/'+pattern.info.handle);
+                                $('#div-link').attr('id',pattern.info.handle+'-div-link').attr('href','/draft/'+pattern.info.handle);
+                            });
+                        });
+                    });
+                });
+            }
+            // Make something page ////////////////
+            else if(page.substr(0,7) === '/draft/' && page.split('/').length == 3) {
+                var patternhandle = page.split('/')[2];
+                $('#step1-link').html('Drafting '+patternhandle);
+                var pattern;
+                var patterns;
+                var account;
+                loadAccount(function(data){
+                    account = data;
+                    // Do we even have models?
+                    if(typeof account.models === "undefined" || account.models === false || account.models.length < 1) {
+                        $('#models').load('/components/model/nomodel');
+                        // Bind click handler to add-model link/button
+                        $('#models').on('click','a.add-model', function(e) {
+                            e.preventDefault();
+                            renderModelWizard(); 
+                        });
+                    }
+                    else renderModelSelection(account,patternhandle);
+                });
+            }
+            else {
+                console.log('uncaught app page');
+                console.log(page);
+            }
+
         } // End of logged-in block
     });
-}(jQuery));
+    }(jQuery));
+

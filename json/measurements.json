@@ -22,8 +22,9 @@
     "seatCircumference": "all",
     "inseam": "all",
     "bodyRise": "all",
-    "outseam": "all",
+    "naturalWaistToFloor": "all",
     "naturalWaistToSeat": "all",
+    "outseam": "all",
     "ankleCircumference": "all",
     "kneeCircumference": "all"
 }

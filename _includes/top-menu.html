@@ -1,12 +1,12 @@
 <nav id="top-menu">
     <ul class="nav nav-pills">
       <li class="nav-item visitor-only">
-        <a class="nav-link on-bg login" href="#">Join freesewing</a>
+        <a class="nav-link on-bg login" href="#">Login/Join</a>
       </li>
       <li class="nav-item logged-out-only">
         <a class="nav-link on-bg login" href="#" id="login-link">Sign in</a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown visitor-only">
         <a class="nav-link dropdown-toggle on-bg" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
         <div class="dropdown-menu bg-thematic">
           <a class="dropdown-item" href="/about">About freesewing</a>
@@ -15,6 +15,9 @@
           <a class="dropdown-item" href="/contact">Contact info</a>
           <a class="dropdown-item" href=https://github.com/freesewing/">Freesewing on GitHub</a>
         </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link on-bg logged-in-only" href="/draft">New draft</a>
       </li>
       <li class="nav-item">
         <a class="nav-link on-bg" href="/patterns">Patterns</a>

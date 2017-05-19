@@ -101,6 +101,7 @@ var token = window.localStorage.getItem("jwt");
                 },
                 error: function() { 
                     // It is not, user is logged out
+                    window.localStorage.removeItem("user");
                     $('body').addClass('user logged-out'); 
                 },
                 headers: {'Authorization': 'Bearer '+token},

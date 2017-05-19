@@ -85,6 +85,7 @@
                 if(data.result == 'ok') {
                     window.localStorage.setItem("jwt", data.token);
                     window.localStorage.setItem("user", JSON.stringify({ 'id': data.userid, 'email': data.email, 'user': data.username }));
+                    window.localStorage.setItem("we cool?", 'yeah, we cool');
                     if(typeof($('#login-conf').attr('data-goto')) !== 'undefined') {
                         window.location.replace($('#login-conf').attr('data-goto'));
                     } else {
