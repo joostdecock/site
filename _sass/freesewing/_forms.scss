@@ -61,3 +61,42 @@ span.td-key {
 .input-group span.form-units.imperial:after {
     content: 'inch';
 }
+#accordion {
+    max-width: 500px;
+    margin: auto;
+    label {
+        width: 100%;
+    }
+    input[type='radio'] {
+        margin-right: 8px;
+    }
+    .form-check-label {
+        font-size: 0.9rem;
+    }
+    legend {
+        font-size: 1rem;
+    }
+    .card-header a {
+        display: block;
+    }
+    .card-header a:before {
+        content: "\f078";
+        font-family: 'FontAwesome'; 
+        font-size: 1rem;
+        color: $black;
+        margin-right: 8px;
+    }
+    .card-header a.collapsed:before {
+        content: "\f054";
+    }
+}
+.value-metric:after {
+    content: 'cm';
+}
+.value-imperial:after {
+    content: '"';
+}
+.value-percent:after {
+    content: '%';
+}
+

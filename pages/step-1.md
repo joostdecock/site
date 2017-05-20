@@ -8,7 +8,7 @@ permalink: /step/1
 <div class="container">
 <div class="row">
 <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 text-center">
-<h3>Four steps to go</h3>
+<h3>Three steps to go</h3>
 <ul style="margin: auto; display:inline-block; text-align: left; padding-left: 0;" class="todo mt-2 mb-3">
 <li class="ongoing">Choose a pattern</li>
 <li>Next, choose a model</li>

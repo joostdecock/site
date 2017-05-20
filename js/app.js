@@ -100,7 +100,8 @@
             },
             error: function(data) { 
                 account = false;
-                console.log('not logged in');
+                // eff this, you need to be logged in
+                window.location.replace("/login");
             },
             headers: {'Authorization': 'Bearer '+token},
         }); 
@@ -614,6 +615,147 @@
         });
     }
 
+    function renderDraftForm(account,patternhandle) {
+        $.get('/json/patternmap.json', function( patternmap ) {
+            $.get('/json/patterns.json', function( patterns ) {
+                $.getScript( "/js/vendor/bootstrap-slider.min.js", function(){
+                    $('#options').append("<form id='form'><div id='accordion' role='tablist' aria-multiselectable='true'></div></form>");
+                    var form = {};
+                    form.groups = {};
+                    pattern = patterns[patternmap[patternhandle].namespace][patternmap[patternhandle].pattern];
+        console.log(pattern);
+                    $.each(pattern.options, function(option, o) {
+                        if(typeof form.groups[o.group] === 'undefined') form.groups[o.group] = {};
+                        form.groups[o.group][option] = o;
+                    });
+                    // Sort form groups and prepend theme/language
+                    var ordered = {
+                        '_': {
+                            'theme': {
+                                'default': 'Basic',
+                                'description': 'Use the paperless theme when you want a pattern that does not require printing',
+                                'title': 'Theme',
+                                'type': 'chooseOne',
+                                'options': {
+                                    'Basic': 'Classic',
+                                    'Paperless': 'Paperless'
+                                }
+                            },
+                            'language': {
+                                'default': 'en',
+                                'description': 'This pattern is available in the following languages:',
+                                'title': 'Language',
+                                'type': 'chooseOne',
+                                'options': pattern.languages
+                            }
+                        }
+                    };
+                    Object.keys(form.groups).sort().forEach(function(key) {
+                        var subordered = {};
+                        Object.keys(form.groups[key]).sort().forEach(function(subkey) {
+                            subordered[subkey] = form.groups[key][subkey];
+                        });
+                        ordered[key] = subordered;
+                    });
+                    var show = ' show ';
+                    $.each(ordered, function(title, group) {
+                        $('#accordion').append("<div id='group-"+title+"' class='card'><div class='card-header' role='tab' id='heading-"+title+"'><h3 class='text-capitalize'><a data-toggle='collapse' data-parent='#accordion' href='#collapse-"+title+"' aria-expanded='false' aria-controls='collapse-"+title+"'>"+title+"</a></h3></div><div id='collapse-"+title+"' class='collapse "+show+"' role='tabpanel'aria-labeledby='heading-"+title+"' aria-expanded='false'><div class='card-block' id='content-"+title+"'></div></div>");
+                        $.each(group, function(name, option) {
+                            $('#content-'+title).append(renderOption(name, option, account.account.data.account.units));
+                        });
+                        show = '';
+                    });
+                    $('#form').append('<p class="text-center mt-5"><input type="submit" class="btn btn-lg btn-primary" value="Draft pattern"></p>');
+                    // Bind slide event to slider inputs
+                    $('#accordion').on('change', 'input.slider', function(e) {
+                        $('#'+e.target.id+'-value').html(e.value.newValue);    
+                    });
+                    // Bind change event to radio buttons
+                    $('#accordion').on('change', 'input[type=radio]', function(e) {
+                        $('#'+$(this).attr('name')+'-value').html($(this).attr('data-label'));
+                    });
+                    // Bind click event to help buttons
+                    $('#accordion').on('click', 'a.option-help', function(e) {
+                        e.preventDefault();
+                        $('#modal').removeClass().addClass('shown light');
+                        $('#modal-main').html("<h2 class='text-center'>Sorry, not yet</h2><p class='text-center'>Help for pattern options is not implemented yet.</p>");
+                    });
+                    // Bind submit handler to save settings button
+                    $('#settings').on('submit','#settings-form', function(e) {
+                        e.preventDefault();
+                        saveAccountSettings();
+                    });
+                });
+            });
+        });
+    }
+
+    function renderOption(name, option, units) {
+        switch(option.type) {
+            case 'measure':
+                if(units === 'imperial') var udiv = 25.4;
+                else var udiv = 10
+                var html = '<div class="form-group ">';
+                html += '<label for="'+name+'">';
+                html += '<a href="#" id="'+name+'-help" class="mt-4 btn btn-outline-primary btn-sm option-help" style="float: right;" data-option="'+name+'">Help</a>';
+                html += '<h5 class="mt-3">'+option.title+': <span class="value-'+units+'" id="'+name+'-value">'+(option.default/udiv)+'</span></h5> '+option.description+'</label>';
+                html += '<div class="input-group">';
+                html += '<input class="slider" id="'+name+'" type="text" name="'+name+'" data-provide="slider" ';
+                html += 'data-slider-id="'+name+'-slider" ';
+                html += 'data-slider-step="0.05" ';
+                html += 'data-slider-min="'+(option.min/udiv)+'" data-slider-max="'+(option.max/udiv)+'" ';
+                html += 'data-slider-value="'+(option.default/udiv)+'" data-slider-tooltip="hide" >'; 
+                html += '</div>';
+                html += '</div>';
+                break;
+            case 'percent':
+                if(typeof option.min === "undefined") option.min = 0;
+                if(typeof option.max === "undefined") option.max = 100;
+                var html = '<div class="form-group ">';
+                html += '<label for="'+name+'">';
+                html += '<a href="#" id="'+name+'-help" class="mt-4 btn btn-outline-primary btn-sm option-help" style="float: right;" data-option="'+name+'">Help</a>';
+                html += '<h5 class="mt-3">'+option.title+': <span class="value-percent" id="'+name+'-value">'+option.default+'</span></h5> '+option.description+'</label>';
+                html += '<div class="input-group">';
+                html += '<input class="slider" id="'+name+'" type="text" name="'+name+'" data-provide="slider" ';
+                html += 'data-slider-id="'+name+'-slider" ';
+                html += 'data-slider-step="0.1" ';
+                html += 'data-slider-min="'+option.min+'" data-slider-max="'+option.max+'" ';
+                html += 'data-slider-value="'+option.default+'" data-slider-tooltip="hide" >'; 
+                html += '</div>';
+                html += '</div>';
+                break;
+            case 'chooseOne':
+                var html = '<fieldset class="form-group">';
+                html += '<legend>';
+                html += '<a href="#" id="'+name+'-help" class="mt-4 btn btn-outline-primary btn-sm option-help" style="float: right;" data-option="'+name+'">Help</a>';
+                html += '<h5 class="mt-3">'+option.title+': <span id="'+name+'-value">'+option.options[option.default]+'</span></h5> '+option.description;
+                html += '</legend>';
+                $.each(option.options, function(val,label) {
+                    html += '<div class="form-check">';
+                    html += '<label class="form-check-label">';
+                    html += '<input type="radio" class="form-check-input" name="'+name+'" id="'+name+'-option-'+val+'" value="'+val+'" data-label="'+label+'"';
+                    if(val == option.default) html += ' checked '; // don't use === here
+                    html += '>'+label; 
+                    html += '</label>'; 
+                    html += '</div>'; 
+                });
+                html += '</fieldset>'; 
+                break;
+            default:
+                console.log(option);
+                var html = '<div class="form-group">';
+                html += '<label for=""><h5>'+option.title+'</h5>'+option.description+'</label>';
+                html += '<div class="input-group key-sm">';
+                html += '<span class="input-group-addon td-key" id="'+name+'-key">Default</span>';
+                html += '<input class="form-number form-control text-right" id="'+name+'-input" name="'+name+'" value="'+option.default+'" type="text" min="'+option.min+'" max="'+option.max+'">';
+                html += '<span class="input-group-addon form-units metric"></span>';
+                html += '</div>';
+                html += '</div>';
+                break;
+        }
+        return html;
+    }
+
     $(document).ready(function () {
        
         if(window.localStorage.getItem("user") === false) {
@@ -739,7 +881,7 @@
                     });
                 });
             }
-            // Make something page ////////////////
+            // New draft, step 1 ////////////////
             else if(page === '/draft' || page === '/draft/') {
                 var patterns;
                 $.get('/json/patterns.json', function( pdata ) {
@@ -760,7 +902,7 @@
                     });
                 });
             }
-            // Make something page ////////////////
+            // New draft, step 2 ////////////////
             else if(page.substr(0,7) === '/draft/' && page.split('/').length == 3) {
                 var patternhandle = page.split('/')[2];
                 $('#step1-link').html('Drafting '+patternhandle);
@@ -779,6 +921,18 @@
                         });
                     }
                     else renderModelSelection(account,patternhandle);
+                });
+            }
+            // New draft, step 2 ////////////////
+            else if(page.substr(0,7) === '/draft/' && page.split('/').length == 5 && page.split('/')[3] === 'for') {
+                var patternhandle = page.split('/')[2];
+                var modelhandle = page.split('/')[4];
+                var account;
+                loadAccount(function(data){
+                    account = data;
+                    $('#step1-link').html('Drafting '+patternhandle);
+                    $('#step2-link').html('For '+account.models[modelhandle].name).attr('href','/draft/'+patternhandle);
+                    renderDraftForm(account,patternhandle);
                 });
             }
             else {

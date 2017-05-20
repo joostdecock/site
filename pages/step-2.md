@@ -8,7 +8,7 @@ permalink: /step/2
 <div class="container">
     <div class="row">
         <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 text-center">
-            <h3>Three steps to go</h3>
+            <h3>Two steps to go</h3>
             <ul style="margin: auto; display:inline-block; text-align: left; padding-left: 0;" class="todo mt-2 mb-3">
                 <li class="done"><a href="/draft" id="step1-link">You chose a pattern</a></li>
                 <li class="ongoing">Choose a model</li>
@@ -16,7 +16,7 @@ permalink: /step/2
                 <li>Then, we draft your pattern</li>
             </ul>
             <div class="progress mb-5" style="max-width: 250px; margin:auto;">
-                <div class="progress-bar" style="width: 25%;" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                <div class="progress-bar" style="width: 33%;" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">33%</div>
             </div>
         </div>
     </div>
