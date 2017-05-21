@@ -7,6 +7,8 @@ echo "Prefetching patterns"
 wget -q $DATA_API/patterns -O $DIR/../json/patterns.json
 echo "Prefetching pattern map"
 wget -q $DATA_API/patternmap -O $DIR/../json/patternmap.json
+echo "Prefetching reverse pattern map"
+wget -q $DATA_API/patternpam -O $DIR/../json/patternpam.json
 echo "Prefetching measurements"
 wget -q $DATA_API/measurements -O $DIR/../json/measurements.json
 echo "Bye"

@@ -118,6 +118,9 @@
 .card-danger {
   @include card-variant($brand-danger, $brand-danger);
 }
+.card-black {
+  @include card-variant($gray-dark, $gray-dark);
+}
 
 // Remove all backgrounds
 .card-outline-primary {

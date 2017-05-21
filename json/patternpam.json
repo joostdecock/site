@@ -1,0 +1,70 @@
+{
+    "AaronAshirt": {
+        "namespace": "Core",
+        "pattern": "aaron"
+    },
+    "BrianBodyBlock": {
+        "namespace": "Core",
+        "pattern": "brian"
+    },
+    "BruceBoxerBriefs": {
+        "namespace": "Core",
+        "pattern": "bruce"
+    },
+    "CathrinCorset": {
+        "namespace": "Core",
+        "pattern": "cathrin"
+    },
+    "HugoHoodie": {
+        "namespace": "Core",
+        "pattern": "hugo"
+    },
+    "SimonShirt": {
+        "namespace": "Core",
+        "pattern": "simon"
+    },
+    "SvenSweatshirt": {
+        "namespace": "Core",
+        "pattern": "sven"
+    },
+    "TamikoTop": {
+        "namespace": "Core",
+        "pattern": "tamiko"
+    },
+    "TheoTrousers": {
+        "namespace": "Core",
+        "pattern": "theo"
+    },
+    "TheodoreTrousers": {
+        "namespace": "Core",
+        "pattern": "theodore"
+    },
+    "TrayvonTie": {
+        "namespace": "Core",
+        "pattern": "trayvon"
+    },
+    "WahidWaistcoat": {
+        "namespace": "Core",
+        "pattern": "wahid"
+    },
+    "BentBodyBlock": {
+        "namespace": "Beta",
+        "pattern": "bent"
+    },
+    "CarltonCoat": {
+        "namespace": "Beta",
+        "pattern": "carlton"
+    },
+    "LesleyLeggings": {
+        "namespace": "Beta",
+        "pattern": "lesley"
+    },
+    "SethSelvedgeTrouserBlock": {
+        "namespace": "Beta",
+        "pattern": "seth"
+    },
+    "TrentTrouserBlock": {
+        "namespace": "Beta",
+        "pattern": "trent"
+    }
+}

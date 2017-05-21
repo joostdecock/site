@@ -351,6 +351,35 @@
 
     }
 
+    function renderDraftSettings() {
+        // Load settings into modal
+        $('#modal').removeClass().addClass('shown light');
+        $('#modal-main').html("<div id='settings'></div>");
+       console.log(draft); 
+        if(draft.shared == '1') var shared_on = true;
+        else var shared_on = false;
+        $('#settings').load('/components/draft/settings', function(){
+            $('#name').attr('value', draft.name);
+            $.getScript( "/js/vendor/toggles.min.js", function(){
+                $('#shared-toggle').toggles({
+                    text: {
+                        off: 'No',
+                        on: 'Yes'
+                    },
+                    on: shared_on,
+                    checkbox: $('#shared'),
+                });
+                // Bind submit handler to save settings button
+                $('#settings').on('submit','#settings-form', function(e) {
+                    e.preventDefault();
+                    saveModelSettings();
+                });
+                // Enable button
+                $('#loader > button').removeClass('disabled');
+            });
+        });
+    }
+
     function modelCompleteFactor() {
         return Math.round(Object.keys(model.model.data.measurements).length / (Object.keys(measurements).length/100));
     }
@@ -443,6 +472,42 @@
             $('#notepad').on('submit','#notes-form', function(e) {
                 e.preventDefault();
                 saveModelNotes();
+            });
+            // Bind click handler to enlarge button
+            $('#notepad').on('click','#notes-enlarge', function(e) {
+                e.preventDefault();
+                $('#notes').attr('rows',parseInt($('#notes').attr('rows'))+10);
+            });
+            // Bind click handler to preview button
+            $('#notepad').on('click','#notes-preview', function(e) {
+                e.preventDefault();
+                $('#notes-form').addClass('hidden');
+                $('#notepad').append("<div id='preview'></div>");
+                $('#preview').load('/components/generic/notepad-preview', function() {
+                    $('#notepad-preview').html(marked($('#notes').val()));
+                    $('#notepad-preview-buttons').on('click','#notes-preview-edit', function(e) {
+                        $('#preview').remove();
+                        $('#notes-form').removeClass('hidden');
+                    });
+                    $('#notepad-preview-buttons').on('click','#notes-preview-save', function(e) {
+                        $('#preview').remove();
+                        $('#notes-form').removeClass('hidden').submit();
+                    });
+                });
+            });
+        });
+    }
+
+    function renderDraftNotepad() {
+        // Load settings into modal
+        $('#modal').removeClass().addClass('shown light');
+        
+        $('#modal-main').load('/components/generic/notepad', function(){
+            $('#notes').val(draft.notes);
+            // Bind submit handler to save settings button
+            $('#notepad').on('submit','#notes-form', function(e) {
+                e.preventDefault();
+                saveDraftNotes();
             });
             // Bind click handler to enlarge button
             $('#notepad').on('click','#notes-enlarge', function(e) {
@@ -615,7 +680,7 @@
         });
     }
 
-    function renderDraftForm(account,patternhandle) {
+    function renderDraftForm(account,patternhandle,modelhandle) {
         $.get('/json/patternmap.json', function( patternmap ) {
             $.get('/json/patterns.json', function( patterns ) {
                 $.getScript( "/js/vendor/bootstrap-slider.min.js", function(){
@@ -628,6 +693,8 @@
                         if(typeof form.groups[o.group] === 'undefined') form.groups[o.group] = {};
                         form.groups[o.group][option] = o;
                     });
+                    // Add hidden form fields
+                    $('#form').append('<input type="hidden" name="pattern" value="'+pattern.pattern+'"><input type="hidden" name="model" value="'+modelhandle+'">');
                     // Sort form groups and prepend theme/language
                     var ordered = {
                         '_': {
@@ -641,7 +708,7 @@
                                     'Paperless': 'Paperless'
                                 }
                             },
-                            'language': {
+                            'lang': {
                                 'default': 'en',
                                 'description': 'This pattern is available in the following languages:',
                                 'title': 'Language',
@@ -681,9 +748,9 @@
                         $('#modal-main').html("<h2 class='text-center'>Sorry, not yet</h2><p class='text-center'>Help for pattern options is not implemented yet.</p>");
                     });
                     // Bind submit handler to save settings button
-                    $('#settings').on('submit','#settings-form', function(e) {
+                    $('#options').on('submit','#form', function(e) {
                         e.preventDefault();
-                        saveAccountSettings();
+                        draftPattern();
                     });
                 });
             });
@@ -755,6 +822,96 @@
         }
         return html;
     }
+    
+    function draftPattern() {
+        $('#modal').removeClass().addClass('shown light');
+        $('#modal-main').html("<div id='draft'></div>");
+        var msg = '<div class="row">';
+        msg += '<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 text-center">';
+        msg += "<h3>You're done, now it's our turn</h3>";
+        msg += '<ul style="margin: auto; display:inline-block; text-align: left; padding-left: 0;" class="todo mt-2 mb-3">';
+        msg += '<li class="done"><a href="/draft">'+$('#step1-link').html()+'</a></li>';
+        msg += '<li class="done"><a href="'+$('#step2-link').attr('href')+'" id="step2-link">'+$('#step2-link').html()+'</a></li>';
+        msg += '<li class="done"><a href="#" id="step2-link" class="close-modal">With the options you chose</a></li>';
+        msg += '<li class="ongoing">Drafting your pattern</li>';
+        msg += '</ul>';
+        msg += '<div class="progress mb-5" style="max-width: 250px; margin:auto;">';
+        msg += '<div class="progress-bar progress-bar-striped progress-bar-animated progress-66" style="transition: width 12s;" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" id="progress"></div>';
+        msg += '</div></div></div>';
+        $('#draft').html(msg);
+        setTimeout(function(){$("#progress").removeClass('progress-66').addClass('complete')}, 500);
+
+        $.ajax({
+          url: api.data+'/draft',
+          method: 'POST',
+          data: $('#form').serialize(),
+          dataType: 'json',
+          success: function(data) {
+            if(data.result == 'ok') {
+                window.location.replace("/drafts/"+data.handle);
+            } else {
+                console.log(data);
+                // closeModal();
+                $.bootstrapGrowl("Something went wrong, we were unable to generate your draft", {type: 'error'});
+            }  
+          }, 
+          error: function(data) { 
+              $.bootstrapGrowl("Something went wrong, we were unable to contact the backend", {type: 'error'});
+          },
+          headers: {'Authorization': 'Bearer ' + token},
+        }); 
+    }
+    
+    function loadDraft(handle, callback) {
+        return $.ajax({
+            url: api.data+'/draft/'+handle,
+            method: 'GET',
+            dataType: 'json',
+            success: function(returndata) {
+                draft = returndata.draft;
+                callback(draft);
+            },
+            error: function(returndata) { 
+                $.bootstrapGrowl("Something went wrong, we were unable to load your draft", {type: 'error'});
+            },
+            headers: {'Authorization': 'Bearer '+token},
+        }); 
+    }
+
+    function renderDraft(draft) {
+        var patternHandle;
+        console.log(draft);
+        $('h1.page-title').html(draft.name);
+        $('.crown-middle').html(draft.handle);
+        $('.crown-right').attr('src',api.data+draft.model.pictureSrc);
+        $.get('/json/patternpam.json', function( map ) {
+            patternHandle = map[draft.pattern].pattern;
+            $('.crown-left').attr('src','/img/pattern/'+patternHandle+'/linedrawing.png');
+        });
+        // Responsive SVG embed requires us to strip out the width and height attributes
+        var xmlDoc = $.parseXML( draft.svg );
+        $svg = $(xmlDoc).find('svg'); 
+        $svg.removeAttr('width');
+        $svg.removeAttr('height');
+        $('#svg-wrapper').html(xmlToString(xmlDoc));
+        marked = $.getScript( "/js/vendor/marked.min.js", function(){
+            marked.setOptions({sanitize: true});
+            if(draft.notes !==  '') $('#notes-inner').html(marked(draft.notes));
+        });
+    }
+
+    function xmlToString(xmlData) { 
+        var xmlString;
+        // IE
+        if (window.ActiveXObject){
+            xmlString = xmlData.xml;
+        }
+        // code for Mozilla, Firefox, Opera, etc.
+        else{
+            xmlString = (new XMLSerializer()).serializeToString(xmlData);
+        }
+        return xmlString;
+    }   
 
     $(document).ready(function () {
        
@@ -923,7 +1080,7 @@
                     else renderModelSelection(account,patternhandle);
                 });
             }
-            // New draft, step 2 ////////////////
+            // New draft, step 3 ////////////////
             else if(page.substr(0,7) === '/draft/' && page.split('/').length == 5 && page.split('/')[3] === 'for') {
                 var patternhandle = page.split('/')[2];
                 var modelhandle = page.split('/')[4];
@@ -932,7 +1089,24 @@
                     account = data;
                     $('#step1-link').html('Drafting '+patternhandle);
                     $('#step2-link').html('For '+account.models[modelhandle].name).attr('href','/draft/'+patternhandle);
-                    renderDraftForm(account,patternhandle);
+                    renderDraftForm(account,patternhandle, modelhandle);
+                });
+            }
+            // Show draft ///////////////////////
+            else if(page.substr(0,8) === '/drafts/' && page.split('/').length == 3) {
+                var draft;
+                var draftHandle = page.split('/')[2];
+                console.log(draftHandle);
+                loadDraft(draftHandle, renderDraft);
+                
+                // Bind click handler to settings button
+                $('#draft').on('click','a#settings-btn', function(e) {
+                    renderDraftSettings();
+                });
+                
+                // Bind click handler to notes button
+                $('#update-notes').click(function(e) {
+                    renderDraftNotepad();
                 });
             }
             else {

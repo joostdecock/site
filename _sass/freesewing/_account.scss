@@ -37,7 +37,7 @@ img.model-picture {
 div.crown-wrapper {
     width: 100%;
 }
-span.crown {
+.crown {
     position: relative;
     z-index: 1;
     border-radius: 50%;
@@ -47,18 +47,23 @@ span.crown {
     font-size: 50px;
     color: #fff;
 }
-span.crown-left {
+.crown-left {
     margin-right: -40px;
     background-color: $purple;
 }
-span.crown-right {
+.crown-right {
     margin-left: -40px;
     background-color: $teal;
 }
-img.crown {
+.crown-middle {
+    background-color: $gray-dark;
+}
+.crown {
     border-radius: 50%;
     box-shadow: $shadow;
     position: relative;
+}
+.crown-middle {
     z-index: 2;
 }
 img.avatar {
@@ -66,18 +71,21 @@ img.avatar {
     height: 100px;
 }
 @media (max-width: 767px) {
-    span.crown {
+    .crown {
         width: 120px;
         height: 120px;
         line-height: 120px;
     }
-    span.crown-left {
+    span.crown-middle {
+        line-height: 150px;
+    }
+    .crown-left {
         margin-right: -30px;
     }
-    span.crown-right {
+    .crown-right {
         margin-left: -30px;
     }
-    img.crown {
+    .crown-middle {
         width: 150px;
         height: 150px;
     }

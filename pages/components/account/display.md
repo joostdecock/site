@@ -6,7 +6,7 @@ permalink: /components/account/display
     <div>
         <div class="crown-wrapper">
             <span class="crown crown-left" id="account-model-count">0</span>
-            <img class="crown" id="account-picture" />
+            <img class="crown crown-middle" id="account-picture" />
             <span class="crown crown-right" id="account-draft-count">0</span>
         </div>
         <h4 id="account-username"></h4>

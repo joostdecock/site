@@ -90,6 +90,9 @@ span.td-key {
         content: "\f054";
     }
 }
+#accordion.full-width {
+    max-width: 100%;
+}
 .value-metric:after {
     content: 'cm';
 }
@@ -99,4 +102,9 @@ span.td-key {
 .value-percent:after {
     content: '%';
 }
-
+#progress.progress-66 {
+    width: 66%;
+}
+#progress.complete {
+    width: 100%;
+}
