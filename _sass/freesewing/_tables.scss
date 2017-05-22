@@ -18,4 +18,21 @@ table.rounded-rows tr td {
     border-left: none;
     border-right: none;
 }
+#draftlist {
+    td {
+        font-size: 90%;
+    }
+    td.name {
+        font-size: 100%;
+        font-weight: bold;
+    }
 
+}
+@media (max-width: 767px) {
+    #draftlist {
+        th, td{
+            padding: 0.3rem;
+        }
+    }
+
+}

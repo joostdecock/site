@@ -873,6 +873,7 @@
             },
             error: function(returndata) { 
                 $.bootstrapGrowl("Something went wrong, we were unable to load your draft", {type: 'error'});
+                console.log(returndata);
             },
             headers: {'Authorization': 'Bearer '+token},
         }); 
@@ -894,6 +895,11 @@
         $svg.removeAttr('width');
         $svg.removeAttr('height');
         $('#svg-wrapper').html(xmlToString(xmlDoc));
+        var xmlDoc = $.parseXML( draft.compared );
+        $svg = $(xmlDoc).find('svg'); 
+        $svg.removeAttr('width');
+        $svg.removeAttr('height');
+        $('#compared-wrapper').html(xmlToString(xmlDoc));
         marked = $.getScript( "/js/vendor/marked.min.js", function(){
             marked.setOptions({sanitize: true});
             if(draft.notes !==  '') $('#notes-inner').html(marked(draft.notes));
@@ -1096,7 +1102,6 @@
             else if(page.substr(0,8) === '/drafts/' && page.split('/').length == 3) {
                 var draft;
                 var draftHandle = page.split('/')[2];
-                console.log(draftHandle);
                 loadDraft(draftHandle, renderDraft);
                 
                 // Bind click handler to settings button
@@ -1107,6 +1112,42 @@
                 // Bind click handler to notes button
                 $('#update-notes').click(function(e) {
                     renderDraftNotepad();
+                });
+            }
+            // List of drafts ////////////////
+            else if(page === '/drafts') {
+                console.log('List drafts');
+                var account;
+                var map;
+                var models = [];
+                $.getScript( "/js/vendor/timeago.min.js", function(){
+                    loadAccount(function(data){
+                        account = data;
+                        console.log(account);
+                        $.get('/json/patternpam.json', function( patternmap ) {
+                            map = patternmap;
+                            console.log(map);
+                            // index models by id
+                            $.each(account.models, function(index, model){
+                                models[model.id] = model;
+                            });
+                            console.log(models);
+                            $.each(account.drafts, function(index, draft){
+                            console.log(draft.model);
+                                var row = '<tr>';
+                                row += '<td class="handle"><a href="/drafts/'+draft.handle+'">'+draft.handle+'</a></td>';
+                                row += '<td class="pattern"><a href="/patterns/'+map[draft.pattern].pattern+'">'+map[draft.pattern].pattern+'</a></td>';
+                                row += '<td class="model"><a href="/models/'+models[draft.model].handle+'">'+models[draft.model].name+'</a></td>';
+                                row += '<td class="name"><a href="/drafts/'+draft.handle+'">'+draft.name+'</a></td>';
+                                row += '<td class="date timeago" datetime="'+draft.created+'"></td>';
+                                row += '</tr>';
+                                $('#draftlist').prepend(row);
+                                //renderDraftForm(account,patternhandle, modelhandle);
+                            });
+                            timeago().render($('.timeago'));
+                            $('#draft-row').remove();
+                        });
+                    });
                 });
             }
             else {

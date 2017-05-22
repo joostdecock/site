@@ -15,7 +15,9 @@ permalink: /show-draft
                         <span class="crown crown-middle" id="draft-handle"></span>
                         <img class="crown crown-right" id="draft-model-img">
                     </div>
+                    <a id="preload-btn" href="#" class="btn btn-outline-info mt-3 modal light">Preload</a>
                     <a id="settings-btn" href="#" class="btn btn-outline-primary mt-3 modal light">Settings</a>
+                    <a id="delete-btn" href="#" class="btn btn-outline-danger mt-3 modal light">Delete</a>
                 </div>
             </div>
             <div id="accordion" role="tablist" aria-multiselectable="true" class="full-width">
@@ -25,7 +27,17 @@ permalink: /show-draft
                     </div>
                     <div id="collapse-preview" class="collapse" role="tabpanel" aria-labeledby="heading-preview" aria-expanded="false">
                         <div class="card-block" id="content-preview">
-                            <div class="drop-shadow svg-frame" id="svg-wrapper"></div>
+                            <a href="#" id="link-preview" title="Open in a new window" target="_BLANK"><div class="drop-shadow svg-frame" id="svg-wrapper"></div></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="group-compared" class="card">
+                    <div class="card-header" role="tab" id="heading-compared">
+                        <h3 class="text-capitalize"><a data-toggle="collapse" data-parent="#accordion" href="#collapse-compared" aria-expanded="false" aria-controls="collapse-compared">Compare</a></h3>
+                    </div>
+                    <div id="collapse-compared" class="collapse" role="tabpanel" aria-labeledby="heading-compared" aria-expanded="false">
+                        <div class="card-block" id="content-compared">
+                            <a href="#" id="compared-preview" title="Open in a new window" target="_BLANK"><div class="drop-shadow svg-frame" id="compared-wrapper"></div></a>
                         </div>
                     </div>
                 </div>
@@ -97,7 +109,7 @@ permalink: /show-draft
                 </div>
                 <div id="group-remove" class="card">
                     <div class="card-header" role="tab" id="heading-remove">
-                        <h3 class="text-capitalize"><a data-toggle="collapse" data-parent="#accordion" href="#collapse-remove" aria-expanded="false" aria-controls="collapse-remove">Delete draft</a></h3>
+                        <h3 class="text-capitalize"><a data-toggle="collapse" data-parent="#accordion" href="#collapse-remove" aria-expanded="false" aria-controls="collapse-remove">Actions</a></h3>
                     </div>
                     <div id="collapse-remove" class="collapse" role="tabpanel" aria-labeledby="heading-remove" aria-expanded="false">
                         <div class="card-block" id="content-remove">
