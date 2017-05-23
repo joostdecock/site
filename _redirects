@@ -1,4 +1,14 @@
-# Model list
-/models*    /account  200
-# Model pages
-/model/*    /model  200
+# List models
+/models    /account  200
+# Show model
+/models/*    /model  200
+# List drafts
+/drafts     /list-drafts 200
+# Show draft
+/drafts/*   /show-draft 200
+# New draft: step 3
+/draft/:pattern/for/:model  /step/3 200
+# New draft: step 2
+/draft/:pattern /step/2 200
+# New draft: step 1
+/draft  /step/1 200
