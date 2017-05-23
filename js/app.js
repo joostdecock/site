@@ -19,7 +19,7 @@
                 $('#models').append("<div id='model-"+model.handle+"' class='col-md-2 col-4 model-display'></div>");
                 $("#model-"+model.handle).load('/components/model/display', function(){
                     $('#model-name').attr('id','model-name-'+model.handle).html(model.name); 
-                    $('#model-'+model.handle+' a.model-link').attr('href','/model/'+model.handle); 
+                    $('#model-'+model.handle+' a.model-link').attr('href','/models/'+model.handle); 
                     $('#model-picture').attr('id','model-picture-'+model.handle).attr('src',api.data+model.pictureSrc); 
                 });
             });
@@ -72,7 +72,7 @@
             data: data,
             dataType: 'json',
             success: function(data) {
-                window.location.replace("/model/"+data.handle);
+                window.location.replace("/models/"+data.handle);
             },
             error: function(data) { 
                 $('#loader').load('/components/generic/error');
@@ -719,7 +719,7 @@
                                     $('#komodels').append("<div id='model-"+model.handle+"' class='col-md-2 col-4 model-display komodels'></div>");
                                     $("#model-"+model.handle).load('/components/model/display', function(){
                                         $('#model-name').attr('id','model-name-'+model.handle).html(model.name); 
-                                        $('#model-'+model.handle+' a.model-link').attr('href','/model/'+model.handle); 
+                                        $('#model-'+model.handle+' a.model-link').attr('href','/models/'+model.handle); 
                                         $('#model-picture').attr('id','model-picture-'+model.handle).attr('src',api.data+model.pictureSrc); 
                                     });
                                 });
@@ -1101,6 +1101,7 @@
             // Model page //////////////////
             else if(page === '/models') {
                 loadAccount(function(data){
+                console.log(data);
                     $('h1.page-title').html('Your models');
                     $('#models-title-row').remove();
                     $('#non-models-row').remove();
@@ -1108,20 +1109,19 @@
                         $('#models').append("<div id='model-"+model.handle+"' class='col-md-2 col-4 model-display'></div>");
                         $("#model-"+model.handle).load('/components/model/display', function(){
                             $('#model-name').attr('id','model-name-'+model.handle).html(model.name); 
-                            $('#model-'+model.handle+' a.model-link').attr('href','/model/'+model.handle); 
+                            $('#model-'+model.handle+' a.model-link').attr('href','/models/'+model.handle); 
                             $('#model-picture').attr('id','model-picture-'+model.handle).attr('src',api.data+model.pictureSrc); 
                         });
                     });
                 });
             }
             // Model page ////////////////
-            else if(page.substring(0,7) === '/model/') {
+            else if(page.substring(0,8) === '/models/' && page.split('/').length == 3) {
                 var marked;
                 var measurements;
                 var patterns;
                 // Rewritten URL, need to get the model handle from it
-                var modelHandle = page.substring(7);
-                if(page.substring(page.length-1) == '/') modelHandle = modelHandle.substring(0, modelHandle.length-1);
+                var modelHandle = page.split('/')[2];
                 loadModel(modelHandle, renderModel);
                 
                 // Bind click handler to settings button
