@@ -355,7 +355,7 @@
         // Load settings into modal
         $('#modal').removeClass().addClass('shown light');
         $('#modal-main').html("<div id='settings'></div>");
-       console.log(draft); 
+        console.log('draft shared is '+draft.shared);
         if(draft.shared == '1') var shared_on = true;
         else var shared_on = false;
         $('#settings').load('/components/draft/settings', function(){
@@ -372,7 +372,7 @@
                 // Bind submit handler to save settings button
                 $('#settings').on('submit','#settings-form', function(e) {
                     e.preventDefault();
-                    saveModelSettings();
+                    saveDraftSettings();
                 });
                 // Enable button
                 $('#loader > button').removeClass('disabled');
@@ -560,6 +560,34 @@
         }); 
     }
 
+    function saveDraftSettings() {
+        // Show loader
+        $('#loader').load('/snippets/generic/spinner');
+
+        $.ajax({
+          url: api.data+'/draft/'+draft.handle,
+          method: 'PUT',
+          data: $('#settings-form').serialize(),
+          dataType: 'json',
+          success: function(data) {
+            if(data.result == 'ok') {
+                console.log(data);
+                reRenderDraft(data);
+                closeModal();
+                $.bootstrapGrowl("Settings saved", {type: 'success'});
+                //loadModel(model.model.handle, reRenderModel);
+            } else {
+                closeModal();
+                $.bootstrapGrowl("Something went wrong, we were unable to save your settings", {type: 'error'});
+            }  
+          }, 
+          error: function(data) { 
+              $.bootstrapGrowl("Something went wrong, we were unable to contact the backend", {type: 'error'});
+          },
+          headers: {'Authorization': 'Bearer ' + token},
+        }); 
+    }
+
     function saveModelNotes() {
         // Show loader
         $('#loader').load('/snippets/generic/spinner');
@@ -574,6 +602,32 @@
                 closeModal();
                 $.bootstrapGrowl("Notes saved", {type: 'success'});
                 loadModel(model.model.handle, reRenderModel);
+            } else {
+                closeModal();
+                $.bootstrapGrowl("Something went wrong, we were unable to save your notes", {type: 'error'});
+            }  
+          }, 
+          error: function(data) { 
+              $.bootstrapGrowl("Something went wrong, we were unable to contact the backend", {type: 'error'});
+          },
+          headers: {'Authorization': 'Bearer ' + token},
+        }); 
+    }
+
+    function saveDraftNotes() {
+        // Show loader
+        $('#loader').load('/snippets/generic/spinner');
+
+        $.ajax({
+          url: api.data+'/draft/'+draft.handle,
+          method: 'PUT',
+          data: $('#notes-form').serialize(),
+          dataType: 'json',
+          success: function(data) {
+            if(data.result == 'ok') {
+                closeModal();
+                $.bootstrapGrowl("Notes saved", {type: 'success'});
+                reRenderDraft(data);
             } else {
                 closeModal();
                 $.bootstrapGrowl("Something went wrong, we were unable to save your notes", {type: 'error'});
@@ -615,6 +669,14 @@
         $('#notes-inner').html(marked(data.model.notes));
         if(data.model.units === 'metric') $('.imperial').removeClass('imperial').addClass('metric');
         else $('.metric').removeClass('metric').addClass('imperial');
+    }
+
+    function reRenderDraft(data) {
+        $('h1.page-title').html(data.name);
+        $('#notes-inner').html(marked(data.notes));
+        draft.shared = data.shared;
+        draft.name = data.name;
+        draft.notes = data.notes;
     }
 
     function renderModelSelection(account,patternhandle) {
@@ -736,10 +798,20 @@
                     // Bind slide event to slider inputs
                     $('#accordion').on('change', 'input.slider', function(e) {
                         $('#'+e.target.id+'-value').html(e.value.newValue);    
+                        if(e.value.newValue != $('#'+e.target.id+'-default').attr('data-default')) $('#'+e.target.id+'-default').removeClass('disabled invisible'); 
+                        else $('#'+e.target.id+'-default').addClass('disabled invisible');
                     });
                     // Bind change event to radio buttons
                     $('#accordion').on('change', 'input[type=radio]', function(e) {
                         $('#'+$(this).attr('name')+'-value').html($(this).attr('data-label'));
+                        if($(this).val() != $('#'+e.target.id).attr('data-default')) $('#'+$('#'+e.target.id).attr('name')+'-default').removeClass('disabled invisible'); 
+                        else $('#'+$('#'+e.target.id).attr('name')+'-default').addClass('disabled invisible');
+                    });
+                    // Bind click event to reset buttons
+                    $('#accordion').on('click', 'a.option-reset', function(e) {
+                        e.preventDefault();
+                        if($(this).attr('data-type') === 'radio') $('input:radio[name='+$(this).attr('data-option')+'][value='+$(this).attr('data-default')+']').click();
+                        else $('#'+$(this).attr('data-option')).slider('setValue',$(this).attr('data-default'), false, true); // See https://github.com/seiyria/bootstrap-slider
                     });
                     // Bind click event to help buttons
                     $('#accordion').on('click', 'a.option-help', function(e) {
@@ -765,6 +837,7 @@
                 var html = '<div class="form-group ">';
                 html += '<label for="'+name+'">';
                 html += '<a href="#" id="'+name+'-help" class="mt-4 btn btn-outline-primary btn-sm option-help" style="float: right;" data-option="'+name+'">Help</a>';
+                html += '<a href="#" id="'+name+'-default" class="mt-4 btn btn-outline-primary btn-sm mr-2 disabled btn-outline-info invisible option-reset" style="float: right;" data-option="'+name+'" data-default="'+(option.default/udiv)+'" data-type="slider">Reset</a>';
                 html += '<h5 class="mt-3">'+option.title+': <span class="value-'+units+'" id="'+name+'-value">'+(option.default/udiv)+'</span></h5> '+option.description+'</label>';
                 html += '<div class="input-group">';
                 html += '<input class="slider" id="'+name+'" type="text" name="'+name+'" data-provide="slider" ';
@@ -781,7 +854,23 @@
                 var html = '<div class="form-group ">';
                 html += '<label for="'+name+'">';
                 html += '<a href="#" id="'+name+'-help" class="mt-4 btn btn-outline-primary btn-sm option-help" style="float: right;" data-option="'+name+'">Help</a>';
+                html += '<a href="#" id="'+name+'-default" class="mt-4 btn btn-outline-primary btn-sm mr-2 disabled btn-outline-info invisible option-reset" style="float: right;" data-option="'+name+'" data-default="'+option.default+'" data-type="slider">Reset</a>';
                 html += '<h5 class="mt-3">'+option.title+': <span class="value-percent" id="'+name+'-value">'+option.default+'</span></h5> '+option.description+'</label>';
+                html += '<div class="input-group">';
+                html += '<input class="slider" id="'+name+'" type="text" name="'+name+'" data-provide="slider" ';
+                html += 'data-slider-id="'+name+'-slider" ';
+                html += 'data-slider-step="0.1" ';
+                html += 'data-slider-min="'+option.min+'" data-slider-max="'+option.max+'" ';
+                html += 'data-slider-value="'+option.default+'" data-slider-tooltip="hide" >'; 
+                html += '</div>';
+                html += '</div>';
+                break;
+            case 'angle':
+                var html = '<div class="form-group ">';
+                html += '<label for="'+name+'">';
+                html += '<a href="#" id="'+name+'-help" class="mt-4 btn btn-outline-primary btn-sm option-help" style="float: right;" data-option="'+name+'">Help</a>';
+                html += '<a href="#" id="'+name+'-default" class="mt-4 btn btn-outline-primary btn-sm mr-2 disabled btn-outline-info invisible option-reset" style="float: right;" data-option="'+name+'" data-default="'+option.default+'" data-type="slider">Reset</a>';
+                html += '<h5 class="mt-3">'+option.title+': <span class="value-angle" id="'+name+'-value">'+option.default+'</span></h5> '+option.description+'</label>';
                 html += '<div class="input-group">';
                 html += '<input class="slider" id="'+name+'" type="text" name="'+name+'" data-provide="slider" ';
                 html += 'data-slider-id="'+name+'-slider" ';
@@ -795,12 +884,13 @@
                 var html = '<fieldset class="form-group">';
                 html += '<legend>';
                 html += '<a href="#" id="'+name+'-help" class="mt-4 btn btn-outline-primary btn-sm option-help" style="float: right;" data-option="'+name+'">Help</a>';
+                html += '<a href="#" id="'+name+'-default" class="mt-4 btn btn-outline-primary btn-sm mr-2 disabled btn-outline-info invisible option-reset" style="float: right;" data-option="'+name+'" data-default="'+option.default+'"  data-type="radio">Reset</a>';
                 html += '<h5 class="mt-3">'+option.title+': <span id="'+name+'-value">'+option.options[option.default]+'</span></h5> '+option.description;
                 html += '</legend>';
                 $.each(option.options, function(val,label) {
                     html += '<div class="form-check">';
                     html += '<label class="form-check-label">';
-                    html += '<input type="radio" class="form-check-input" name="'+name+'" id="'+name+'-option-'+val+'" value="'+val+'" data-label="'+label+'"';
+                    html += '<input type="radio" class="form-check-input" name="'+name+'" id="'+name+'-option-'+val+'" value="'+val+'" data-label="'+label+'" data-default="'+option.default+'"';
                     if(val == option.default) html += ' checked '; // don't use === here
                     html += '>'+label; 
                     html += '</label>'; 
@@ -880,8 +970,8 @@
     }
 
     function renderDraft(draft) {
-        var patternHandle;
         console.log(draft);
+        var patternHandle;
         $('h1.page-title').html(draft.name);
         $('.crown-middle').html(draft.handle);
         $('.crown-right').attr('src',api.data+draft.model.pictureSrc);
@@ -903,6 +993,42 @@
         marked = $.getScript( "/js/vendor/marked.min.js", function(){
             marked.setOptions({sanitize: true});
             if(draft.notes !==  '') $('#notes-inner').html(marked(draft.notes));
+        });
+        $('#link-preview').attr('href',draft.dlroot+draft.handle+'.svg');
+        $('#compared-preview').attr('href',draft.dlroot+draft.handle+'.compared.svg');
+        $('.download-draft').each(function(index) {
+            var format = $(this).attr('data-format');
+            $(this).attr('href',api.data+'/download/'+draft.handle+'/'+format);
+        });
+        // Bind click: Delete draft button
+        $('a#delete-btn').click(function(e) {
+            console.log(draft);
+            e.preventDefault();
+            $('#modal').removeClass().addClass('shown light');
+            $('#modal-main').html("<div id='delete'></div>");
+            $('#delete').load('/components/draft/delete', function(){
+                $('#remove-draft-title').html('Delete '+draft.name+'?');
+                // Bind click: Cancel nuke draft button
+                $('#delete').on('click','a#no-nuke', function(e) {
+                    closeModal();
+                });
+                // Bind click: Nuke draft button
+                $('#delete').on('click','a#nuke', function(e) {
+                    e.preventDefault();
+                    $.ajax({
+                      url: api.data+'/draft/'+draft.handle,
+                      method: 'DELETE',
+                      dataType: 'json',
+                      success: function(data) {
+                          window.location.replace("/drafts");                              },
+                      error: function(data) { 
+                          $('#modal-main').load("/components/generic/error");
+                      },
+                      headers: {'Authorization': 'Bearer '+token},
+                    }); 
+                });
+
+            });
         });
     }
 
@@ -1103,7 +1229,6 @@
                 var draft;
                 var draftHandle = page.split('/')[2];
                 loadDraft(draftHandle, renderDraft);
-                
                 // Bind click handler to settings button
                 $('#draft').on('click','a#settings-btn', function(e) {
                     renderDraftSettings();
@@ -1113,6 +1238,7 @@
                 $('#update-notes').click(function(e) {
                     renderDraftNotepad();
                 });
+                
             }
             // List of drafts ////////////////
             else if(page === '/drafts') {

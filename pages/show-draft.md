@@ -61,25 +61,25 @@ permalink: /show-draft
                                     msg="Full-size PDF for copyshop printing or just to look at because it's just so pretty."
                                 %}
                                 {% include download-draft.html 
-                                    format="pdf-a4"
+                                    format="a4.pdf"
                                     class="card-primary card-inverse"
                                     title="A4 PDF"
                                     msg="The planet's most common printing format."
                                 %}
                                 {% include download-draft.html 
-                                    format="pdf-a3"
+                                    format="a3.pdf"
                                     class="card-primary card-inverse"
                                     title="A3 PDF"
                                     msg="Twice the size, half the sticky-taping"
                                 %}
                                 {% include download-draft.html 
-                                    format="pdf-letter"
+                                    format="letter.pdf"
                                     class="card-primary card-inverse"
                                     title="Letter PDF"
                                     msg="Weird paper sizes, coz 'merica yo!"
                                 %}
                                 {% include download-draft.html 
-                                    format="pdf-tabloid"
+                                    format="tabloid.pdf"
                                     class="card-primary card-inverse"
                                     title="Tabloid PDF"
                                     msg="Twice the (weird) size, half the sticky-taping"

@@ -4,6 +4,9 @@ img {
 .hidden {
     display: none!important;
 }
+.invisible {
+    opacity: 0!important;
+}
 .drop-shadow { 
     box-shadow: $shadow;
 }

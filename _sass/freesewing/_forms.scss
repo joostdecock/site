@@ -99,6 +99,9 @@ span.td-key {
 .value-imperial:after {
     content: '"';
 }
+.value-angle:after {
+    content: '°';
+}
 .value-percent:after {
     content: '%';
 }

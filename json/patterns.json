@@ -39,56 +39,86 @@
             },
             "options": {
                 "chestEase": {
+                    "title": "Chest ease",
+                    "description": "The amount of ease at your chest",
+                    "group": "fit",
                     "type": "measure",
                     "min": -40,
                     "max": 160,
                     "default": 30
                 },
                 "armholeDrop": {
+                    "title": "Armhole drop",
+                    "description": "Lower the armhole by this amount. Negative values will raise it.",
+                    "group": "style",
                     "type": "measure",
                     "min": -20,
                     "max": 120,
                     "default": 30
                 },
                 "lengthBonus": {
+                    "title": "Length bonus",
+                    "description": "Lengthen the top. Negative values will shorten it.",
+                    "group": "style",
                     "type": "measure",
                     "min": -60,
                     "max": 200,
                     "default": 60
                 },
                 "necklineBend": {
+                    "title": "Neckline shape",
+                    "description": "Determines the shape/bend of the neckline at the front.",
+                    "group": "style",
                     "type": "percent",
                     "default": 100
                 },
                 "backlineBend": {
+                    "title": "Back armhole shape",
+                    "description": "Determines the shape/bend of the back of the armholes.",
+                    "group": "style",
                     "type": "percent",
                     "default": 30
                 },
                 "necklineDrop": {
+                    "title": "Neckline drop",
+                    "description": "The amount the neck is cutout at the front.",
+                    "group": "style",
                     "type": "measure",
                     "min": 40,
                     "max": 200,
                     "default": 120
                 },
                 "shoulderStrapWidth": {
+                    "title": "Shoulderstrap width",
+                    "description": "The width of the shoulder straps.",
+                    "group": "style",
                     "type": "measure",
                     "min": 10,
                     "max": 80,
                     "default": 40
                 },
                 "shoulderStrapPlacement": {
+                    "title": "Shoulderstrap placement",
+                    "description": "Determines whether the shoulder strap is placed closer to the neck (lower numbers) or the shoulder (higher numbers).",
+                    "group": "style",
                     "type": "percent",
                     "min": 0,
                     "max": 100,
                     "default": 45
                 },
                 "stretchFactor": {
+                    "title": "Stretch factor",
+                    "description": "Determines the horizontal negative ease. 100% means no negative ease, whereas 90% (the default) means 10% negative ease.",
+                    "group": "fit",
                     "type": "percent",
                     "min": 70,
                     "max": 100,
                     "default": 90
                 },
                 "hipsEase": {
+                    "title": "Hips ease",
+                    "description": "The amount of ease at your hips",
+                    "group": "fit",
                     "type": "measure",
                     "min": -40,
                     "max": 160,
@@ -142,36 +172,54 @@
             },
             "options": {
                 "chestEase": {
+                    "title": "Chest ease",
+                    "description": "The amount of ease at your chest",
+                    "group": "fit",
                     "type": "measure",
                     "min": -40,
                     "max": 160,
                     "default": 30
                 },
                 "cuffEase": {
+                    "title": "Cuff ease",
+                    "description": "The amount of ease at your wrist",
+                    "group": "fit",
                     "type": "measure",
                     "min": 0,
                     "max": 100,
                     "default": 45
                 },
                 "armholeDepthFactor": {
+                    "title": "Armhole depth factor",
+                    "description": "A factor that influences the depth of the armhole",
+                    "group": "fit",
                     "type": "percent",
                     "min": 50,
                     "max": 65,
                     "default": 60
                 },
                 "sleevecapHeightFactor": {
+                    "title": "Sleevecap height factor",
+                    "description": "A factor that influences the height of the sleevecap",
+                    "group": "fit",
                     "type": "percent",
                     "min": 45,
                     "max": 65,
                     "default": 55
                 },
                 "lengthBonus": {
+                    "title": "Length bonus",
+                    "description": "Amount to lengthen the body. A negative value will shorten it.",
+                    "group": "fit",
                     "type": "measure",
                     "min": -40,
                     "max": 120,
                     "default": 0
                 },
                 "sleeveLengthBonus": {
+                    "title": "Sleeve length bonus",
+                    "description": "Amount to lengthen the sleeve. A negative value will shorten it.",
+                    "group": "fit",
                     "type": "measure",
                     "min": -40,
                     "max": 80,
@@ -214,36 +262,54 @@
             },
             "options": {
                 "rise": {
+                    "title": "Rise",
+                    "description": "Amount to raise the waist. A negative value will lower it.",
+                    "group": "fit",
                     "type": "measure",
                     "min": -30,
                     "max": 50,
                     "default": 20
                 },
                 "backRise": {
+                    "title": "Back rise",
+                    "description": "Percentage to raise the waist extra at the back.",
+                    "group": "fit",
                     "type": "percent",
                     "min": 0,
                     "max": 6,
                     "default": 3
                 },
                 "elasticWidth": {
+                    "title": "Elastic width",
+                    "description": "Width of the elastic band you intend to use.",
+                    "group": "fit",
                     "type": "measure",
                     "min": 10,
                     "max": 70,
                     "default": 35
                 },
                 "legBonus": {
+                    "title": "Leg length bonus",
+                    "description": "Extra length to add to the legs.",
+                    "group": "fit",
                     "type": "measure",
                     "min": 0,
                     "max": 70,
                     "default": 35
                 },
                 "bulge": {
+                    "title": "Bulge",
+                    "description": "Increase angle to create more room in the front pouch.",
+                    "group": "fit",
                     "type": "angle",
                     "min": 0,
                     "max": 40,
                     "default": 25
                 },
                 "horizontalStretchFactor": {
+                    "title": "Stretch factor",
+                    "description": "The amount of negative ease. 100% means no negative ease, 90% means 10% negative ease.",
+                    "group": "fit",
                     "type": "percent",
                     "min": 75,
                     "max": 90,
@@ -287,48 +353,72 @@
             },
             "options": {
                 "backOpening": {
+                    "title": "Back opening",
+                    "description": "Opening at the center back closure.",
+                    "group": "style",
                     "type": "measure",
                     "min": 0,
                     "max": 80,
                     "default": 30
                 },
                 "waistReduction": {
+                    "title": "Waist reduction",
+                    "description": "The amount by which you want the corset to pinch your waist.",
+                    "group": "fit",
                     "type": "measure",
                     "min": 0,
                     "max": 125,
                     "default": 80
                 },
                 "frontRise": {
+                    "title": "Front rise",
+                    "description": "Rise of the front panels at center front, between your breasts. Negative values will lower them.",
+                    "group": "style",
                     "type": "measure",
                     "min": -50,
                     "max": 50,
                     "default": 25
                 },
                 "frontDrop": {
+                    "title": "Front drop",
+                    "description": "How much the front panels lower from your hips towards your center front.",
+                    "group": "style",
                     "type": "measure",
                     "min": -30,
                     "max": 50,
                     "default": 25
                 },
                 "backRise": {
+                    "title": "Back rise",
+                    "description": "How much the back panels rise from your arms to your center back.",
+                    "group": "style",
                     "type": "measure",
                     "min": -30,
                     "max": 120,
                     "default": 0
                 },
                 "backDrop": {
+                    "title": "Back drop",
+                    "description": "How much the back panels lower from your hips towards your center back. Negative values will raise the back.",
+                    "group": "style",
                     "type": "measure",
                     "min": -30,
                     "max": 30,
                     "default": 0
                 },
                 "hipRise": {
+                    "title": "Hip rise",
+                    "description": "How much the side panels rise on your hips.",
+                    "group": "style",
                     "type": "measure",
                     "min": 0,
                     "max": 60,
                     "default": 30
                 },
                 "panels": {
+                    "title": "Number of panels",
+                    "description": "The number of panels to draft. More panels are better to fit a curvier model.",
+                    "group": "style",
                     "type": "chooseOne",
                     "options": {
                         "11": 11,
@@ -393,36 +483,54 @@
             },
             "options": {
                 "chestEase": {
+                    "title": "Chest ease",
+                    "description": "The amount of ease at your chest.",
+                    "group": "fit",
                     "type": "measure",
                     "min": -40,
                     "max": 160,
                     "default": 60
                 },
                 "bicepsEase": {
+                    "title": "Biceps ease",
+                    "description": "The amount of ease at your upper arm.",
+                    "group": "fit",
                     "type": "measure",
                     "min": 0,
                     "max": 80,
                     "default": 40
                 },
                 "cuffEase": {
+                    "title": "Cuff ease",
+                    "description": "The amount of ease at your wrist.",
+                    "group": "fit",
                     "type": "measure",
                     "min": 0,
                     "max": 100,
                     "default": 35
                 },
                 "lengthBonus": {
+                    "title": "Length bonus",
+                    "description": "Amount to lengthen the body.",
+                    "group": "fit",
                     "type": "measure",
                     "min": 0,
                     "max": 180,
                     "default": 70
                 },
                 "sleeveLengthBonus": {
+                    "title": "Sleeve length bonus",
+                    "description": "Amount to lengthen the sleeves.",
+                    "group": "fit",
                     "type": "measure",
                     "min": -40,
                     "max": 80,
                     "default": 0
                 },
                 "ribbingStretchFactor": {
+                    "title": "Ribbing stretch factor",
+                    "description": "The amount of negative ease for the cuffs and hem ribbing. 100% means no negative ease, 90% means 10% negative ease.",
+                    "group": "fit",
                     "type": "percent",
                     "min": 70,
                     "max": 100,
@@ -952,30 +1060,45 @@
             },
             "options": {
                 "chestEase": {
+                    "title": "Chest ease",
+                    "description": "The amount of ease at your chest.",
+                    "group": "fit",
                     "type": "measure",
                     "min": -40,
                     "max": 160,
                     "default": 30
                 },
                 "bicepsEase": {
+                    "title": "Biceps ease",
+                    "description": "The amount of ease at your upper arm.",
+                    "group": "fit",
                     "type": "measure",
                     "min": 40,
                     "max": 120,
                     "default": 80
                 },
                 "cuffEase": {
+                    "title": "Cuff ease",
+                    "description": "The amount of ease at your wrist.",
+                    "group": "fit",
                     "type": "measure",
                     "min": 0,
                     "max": 100,
                     "default": 60
                 },
                 "lengthBonus": {
+                    "title": "Length bonus",
+                    "description": "The amount to lengthen the body.",
+                    "group": "fit",
                     "type": "measure",
                     "min": 0,
                     "max": 220,
                     "default": 120
                 },
                 "sleeveLengthBonus": {
+                    "title": "Sleeve length bonus",
+                    "description": "The amount to lengthen the sleeves. Negative values shorten them.",
+                    "group": "fit",
                     "type": "measure",
                     "min": -40,
                     "max": 80,
@@ -1014,6 +1137,9 @@
             },
             "options": {
                 "lengthBonus": {
+                    "title": "Length bonus",
+                    "description": "The amount to lengthen the body. Negative values shorten it.",
+                    "group": "fit",
                     "type": "measure",
                     "min": -150,
                     "max": 350,
@@ -1070,18 +1196,27 @@
             },
             "options": {
                 "waistbandWidth": {
+                    "title": "Waistband width",
+                    "description": "The width of the waistband.",
+                    "group": "fit",
                     "type": "measure",
                     "min": -10,
                     "max": 60,
                     "default": 40
                 },
                 "waistbandRise": {
+                    "title": "Back rise",
+                    "description": "The amount by which to raise the back.",
+                    "group": "fit",
                     "type": "measure",
                     "min": 0,
                     "max": 60,
                     "default": 40
                 },
                 "lengthBonus": {
+                    "title": "Length bonus",
+                    "description": "The amount by which to lengthen the legs. Negative values shorten them.",
+                    "group": "fit",
                     "type": "measure",
                     "min": -60,
                     "max": 80,
@@ -1138,18 +1273,27 @@
             },
             "options": {
                 "waistbandWidth": {
+                    "title": "Waistband width",
+                    "description": "The width of the waistband.",
+                    "group": "fit",
                     "type": "measure",
                     "min": 20,
                     "max": 60,
                     "default": 40
                 },
                 "waistbandRise": {
+                    "title": "Back rise",
+                    "description": "The amount by which to raise the back.",
+                    "group": "fit",
                     "type": "measure",
                     "min": 0,
                     "max": 60,
                     "default": 40
                 },
                 "lengthBonus": {
+                    "title": "Length bonus",
+                    "description": "The amount by which to lengthen the legs. Negative values shorten them.",
+                    "group": "fit",
                     "type": "measure",
                     "min": -60,
                     "max": 80,
@@ -1193,12 +1337,18 @@
             },
             "options": {
                 "tipWidth": {
+                    "title": "Tip width",
+                    "description": "The width of the tie at the tip.",
+                    "group": "style",
                     "type": "measure",
                     "min": 20,
                     "max": 120,
                     "default": 60
                 },
                 "knotWidth": {
+                    "title": "Knot width",
+                    "description": "The width of the tie at the knot/middle.",
+                    "group": "style",
                     "type": "measure",
                     "min": 20,
                     "max": 70,
@@ -1258,60 +1408,90 @@
             },
             "options": {
                 "chestEase": {
+                    "title": "Chest ease",
+                    "description": "Amount of ease at the chest.",
+                    "group": "fit",
                     "type": "measure",
                     "min": 0,
                     "max": 160,
                     "default": 20
                 },
                 "waistEase": {
+                    "title": "Waist ease",
+                    "description": "Amount of ease at the waist.",
+                    "group": "fit",
                     "type": "measure",
                     "min": 0,
                     "max": 160,
                     "default": 80
                 },
                 "hipsEase": {
+                    "title": "Hips ease",
+                    "description": "Amount of ease at the hips.",
+                    "group": "fit",
                     "type": "measure",
                     "min": 0,
                     "max": 160,
                     "default": 40
                 },
                 "lengthBonus": {
+                    "title": "Lenght bonus",
+                    "description": "Amount by which to lengthen the waistcoat.",
+                    "group": "style",
                     "type": "measure",
                     "min": 0,
                     "max": 50,
                     "default": 15
                 },
                 "neckInset": {
+                    "title": "Neck inset",
+                    "description": "Distance from the neck to the waistcoat neckline at the shoulder seam.",
+                    "group": "style",
                     "type": "measure",
                     "min": 0,
                     "max": 35,
                     "default": 20
                 },
                 "shoulderInset": {
+                    "title": "Shoulder inset",
+                    "description": "Distance from the shoulder point to the waistcoat armhole at the shoulder seam.",
+                    "group": "style",
                     "type": "measure",
                     "min": 0,
                     "max": 45,
                     "default": 20
                 },
                 "backInset": {
+                    "title": "Back inset",
+                    "description": "Amount the back armhole is cut deeper into the back panel.",
+                    "group": "style",
                     "type": "measure",
                     "min": 15,
                     "max": 55,
                     "default": 25
                 },
                 "frontInset": {
+                    "title": "Front inset",
+                    "description": "Amount the front armhole is cut deeper into the front panel.",
+                    "group": "style",
                     "type": "measure",
                     "min": 15,
                     "max": 45,
                     "default": 30
                 },
                 "frontDrop": {
+                    "title": "Neckline drop",
+                    "description": "The amount the front neckline is lowered. Negative values raise the neckline.",
+                    "group": "style",
                     "type": "measure",
                     "min": -40,
                     "max": 200,
                     "default": 0
                 },
                 "frontStyle": {
+                    "title": "Neckline style",
+                    "description": "Whether you want a rounded or classic necline.",
+                    "group": "style",
                     "type": "chooseOne",
                     "options": {
                         "1": "Classic",
@@ -1320,6 +1500,9 @@
                     "default": 1
                 },
                 "hemStyle": {
+                    "title": "Hem style",
+                    "description": "Whether you want a rounded or classic hem.",
+                    "group": "style",
                     "type": "chooseOne",
                     "options": {
                         "1": "Classic",
@@ -1328,12 +1511,18 @@
                     "default": 1
                 },
                 "hemRadius": {
+                    "title": "Hem radius",
+                    "description": "Radius of the rounded hem. Not relevant if you chose a classic hem.",
+                    "group": "style",
                     "type": "measure",
                     "min": 0,
                     "max": 100,
                     "default": 60
                 },
                 "buttons": {
+                    "title": "Buttons",
+                    "description": "The number of buttons on the front.",
+                    "group": "style",
                     "type": "chooseOne",
                     "options": {
                         "4": 4,
@@ -1349,18 +1538,27 @@
                     "default": 6
                 },
                 "backScyeDart": {
+                    "title": "Back scye dart",
+                    "description": "The amount to take out in a dart at the back of the armhole.",
+                    "group": "fit",
                     "type": "measure",
                     "min": 0,
                     "max": 15,
                     "default": 5
                 },
                 "frontScyeDart": {
+                    "title": "Front scye dart",
+                    "description": "The amount to take out in a dart at the front of the armhole.",
+                    "group": "fit",
                     "type": "measure",
                     "min": 0,
                     "max": 20,
                     "default": 10
                 },
                 "centerBackDart": {
+                    "title": "Center back dart",
+                    "description": "The amount to take out in a dart at the top of the center back.",
+                    "group": "fit",
                     "type": "measure",
                     "min": 0,
                     "max": 20,
@@ -1415,36 +1613,54 @@
             },
             "options": {
                 "chestEase": {
+                    "title": "Chest ease",
+                    "description": "The amount of ease at your chest",
+                    "group": "fit",
                     "type": "measure",
                     "min": -40,
                     "max": 160,
                     "default": 30
                 },
                 "bicepsEase": {
+                    "title": "Biceps ease",
+                    "description": "The amount of ease at your upper arm",
+                    "group": "fit",
                     "type": "measure",
                     "min": 0,
                     "max": 80,
                     "default": 30
                 },
                 "cuffEase": {
+                    "title": "Cuff ease",
+                    "description": "The amount of ease at your wrist",
+                    "group": "fit",
                     "type": "measure",
                     "min": 0,
                     "max": 100,
                     "default": 45
                 },
                 "armholeDepthFactor": {
+                    "title": "Armhole depth factor",
+                    "description": "A factor that influences the depth of the armhole",
+                    "group": "fit",
                     "type": "percent",
                     "min": 50,
                     "max": 65,
                     "default": 60
                 },
                 "sleevecapHeightFactor": {
+                    "title": "Sleevecap height factor",
+                    "description": "A factor that influences the height of the sleevecap",
+                    "group": "fit",
                     "type": "percent",
                     "min": 45,
                     "max": 60,
                     "default": 50
                 },
                 "lengthBonus": {
+                    "title": "Length bonus",
+                    "description": "Amount to lengthen the body. A negative value will shorten it.",
+                    "group": "fit",
                     "type": "measure",
                     "min": -40,
                     "max": 120,
@@ -1503,24 +1719,36 @@
             },
             "options": {
                 "chestEase": {
+                    "title": "Chest ease",
+                    "description": "The amount of ease at your chest.",
+                    "group": "fit",
                     "type": "measure",
                     "min": 180,
                     "max": 320,
                     "default": 240
                 },
                 "seatEase": {
+                    "title": "Seat ease",
+                    "description": "The amount of ease at your butt.",
+                    "group": "fit",
                     "type": "measure",
                     "min": 180,
                     "max": 320,
                     "default": 240
                 },
                 "cuffEase": {
+                    "title": "Cuff ease",
+                    "description": "The amount of ease at your wrist.",
+                    "group": "fit",
                     "type": "measure",
                     "min": 0,
                     "max": 180,
                     "default": 140
                 },
                 "sleevecapEase": {
+                    "title": "Sleevecap ease",
+                    "description": "The amount by which your sleevhead is longer than the armhole.",
+                    "group": "fit",
                     "type": "measure",
                     "min": 0,
                     "max": 35,
@@ -1570,10 +1798,16 @@
             },
             "options": {
                 "stretchFactor": {
+                    "title": "Stretch factor",
+                    "description": "The amount of negative ease. 100% means no negative ease, 90% mean 10% negative ease.",
+                    "group": "fit",
                     "type": "percent",
                     "default": 85
                 },
                 "lengthBonus": {
+                    "title": "Length bonus",
+                    "description": "The amount by which to lengthen the legs. Negative values shorten them.",
+                    "group": "fit",
                     "type": "measure",
                     "min": -200,
                     "max": 100,
@@ -1619,32 +1853,36 @@
             },
             "options": {
                 "hipsEase": {
+                    "title": "Hips ease",
+                    "description": "The of ease at the hips.",
+                    "group": "fit",
                     "type": "measure",
                     "min": 10,
                     "max": 60,
                     "default": 30
                 },
                 "seatEase": {
+                    "title": "Seat ease",
+                    "description": "The amount of ease at your butt.",
+                    "group": "fit",
                     "type": "measure",
                     "min": 60,
                     "max": 160,
                     "default": 100
                 },
                 "crotchCurveFactor": {
+                    "title": "Crotch curve factor",
+                    "description": "A factor the influences the shape of the crotch curve.",
+                    "group": "fit",
                     "type": "percent",
                     "default": 50
                 },
                 "backSeamCurveFactor": {
+                    "title": "Back seam curve factor",
+                    "description": "A factor the influences the shape of the back seam.",
+                    "group": "fit",
                     "type": "percent",
                     "default": 50
-                },
-                "chooseOneOption": {
-                    "type": "chooseOne",
-                    "options": {
-                        "1": "Option 1",
-                        "2": "Option 2"
-                    },
-                    "default": 1
                 }
             },
             "pattern": "SethSelvedgeTrouserBlock"
@@ -1684,22 +1922,34 @@
             },
             "options": {
                 "hipsEase": {
+                    "title": "Hips ease",
+                    "description": "The amount of ease at your hips.",
+                    "group": "fit",
                     "type": "measure",
                     "min": 10,
                     "max": 60,
                     "default": 30
                 },
                 "seatEase": {
+                    "title": "Seat ease",
+                    "description": "The amount of ease at your butt.",
+                    "group": "fit",
                     "type": "measure",
                     "min": 60,
                     "max": 160,
                     "default": 100
                 },
                 "crotchCurveFactor": {
+                    "title": "Crotch curve factor",
+                    "description": "A factor the influences the shape of the crotch curve.",
+                    "group": "fit",
                     "type": "percent",
                     "default": 50
                 },
                 "backSeamCurveFactor": {
+                    "title": "Back seam curve factor",
+                    "description": "A factor the influences the shape of the back seam.",
+                    "group": "fit",
                     "type": "percent",
                     "default": 50
                 }
