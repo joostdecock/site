@@ -1178,14 +1178,14 @@
                     $('#patterns').append('<div id="pattern-list" class="card-columns masonry-wrapper"></div>');
                     $.each(patterns, function(namespace, patternlist){
                         $.each(patternlist, function(index, pattern){
-                            $('#pattern-list').append('<a href="#" id="div-link"><div class="card text-center mb-4 hover-shadow" id="'+pattern.info.handle+'-card"></div></a>');
+                            $('#pattern-list').append('<a href="#" id="'+pattern.info.handle+'-div-link"><div class="card text-center mb-4 hover-shadow" id="'+pattern.info.handle+'-card"></div></a>');
                             $('#'+pattern.info.handle+'-card').load('/components/pattern/card', function(){
                                 $('#card').attr('id',pattern.info.handle+'-card');
                                 $('#card-image').attr('src','/img/pattern/'+pattern.info.handle+'/linedrawing.png').attr('id',pattern.info.handle+'-image');
                                 $('#card-title').html(pattern.info.handle).attr('id',pattern.info.handle+'-title');
                                 $('#card-text').html(pattern.info.description).attr('id',pattern.info.handle+'-text');
                                 $('#card-link').html('Draft '+pattern.info.handle).attr('id',pattern.info.handle+'-link').attr('href','/draft/'+pattern.info.handle);
-                                $('#div-link').attr('id',pattern.info.handle+'-div-link').attr('href','/draft/'+pattern.info.handle);
+                                $('#'+pattern.info.handle+'-div-link').attr('href','/draft/'+pattern.info.handle);
                             });
                         });
                     });
