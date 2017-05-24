@@ -10,8 +10,8 @@ permalink: /
 
 > __TL;DR__ 
 > 
-> - This site is alpha code. All data you enter on this site can get wiped at any moment
-> - You can create an account, and delete it again. Not much else.
+> - This site is early beta code. All data you enter on this site can get wiped at any moment
+> - Your feedback/input/suggestions are welcome [on Gitter](https://gitter.im/freesewing/freesewing)
 
 ## About this site
 
@@ -38,8 +38,8 @@ The what? The data API.
 [This repository](https://github.com/freesewing/data) holds a new API I hacked together based on the 
 [PHP Slim framework](http://slimframework.com/).
 
-There's a lot it doesn't do yet, but it does handle authentication, signup flow,
-and you can also remove your account.
+There's a lot it doesn't do yet, but things are starting to take shape.
+If nothing else, you can generate and download pattern drafts.
 
 When you sign up with an email address that is tied to a makemypattern.com user,
 your data will automatically be migrated, which is nice.
@@ -59,17 +59,7 @@ but I'm using jQuery on the client side (and not Vue or React or Angular or Embe
 I can at least get that to work.
 
 I am painfully aware that there's far superior ways to do what I'm doing. 
-But hey, I'm not even using auth0 yet I can login, and we've got JWT-based authentication, and it works.
- 
-
-So that's progress :)
-
-Here's what you can do:
-
-  - Sign up for an account
-  - Remove your account
-
-I know, it's not much but it's a start. And, if you have a makemypattern.com account, your data will/should be migrated with you.
+But hey, we can always make it great after I make it work.
 
 
 </div>

@@ -7,6 +7,10 @@ img {
 .invisible {
     opacity: 0!important;
 }
+img.svg {
+    width: 100%;
+    height: auto;
+}
 .drop-shadow { 
     box-shadow: $shadow;
 }

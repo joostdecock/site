@@ -977,7 +977,7 @@
         $('.crown-right').attr('src',api.data+draft.model.pictureSrc);
         $.get('/json/patternpam.json', function( map ) {
             patternHandle = map[draft.pattern].pattern;
-            $('.crown-left').attr('src','/img/pattern/'+patternHandle+'/linedrawing.png');
+            $('.crown-left').attr('src','/img/patterns/'+patternHandle+'/'+patternHandle+'.svg');
         });
         // Responsive SVG embed requires us to strip out the width and height attributes
         var xmlDoc = $.parseXML( draft.svg );
@@ -1181,7 +1181,7 @@
                             $('#pattern-list').append('<a href="#" id="'+pattern.info.handle+'-div-link"><div class="card text-center mb-4 hover-shadow" id="'+pattern.info.handle+'-card"></div></a>');
                             $('#'+pattern.info.handle+'-card').load('/components/pattern/card', function(){
                                 $('#card').attr('id',pattern.info.handle+'-card');
-                                $('#card-image').attr('src','/img/pattern/'+pattern.info.handle+'/linedrawing.png').attr('id',pattern.info.handle+'-image');
+                                $('#card-image').attr('src','/img/patterns/'+pattern.info.handle+'/'+pattern.info.handle+'.svg').attr('id',pattern.info.handle+'-image');
                                 $('#card-title').html(pattern.info.handle).attr('id',pattern.info.handle+'-title');
                                 $('#card-text').html(pattern.info.description).attr('id',pattern.info.handle+'-text');
                                 $('#card-link').html('Draft '+pattern.info.handle).attr('id',pattern.info.handle+'-link').attr('href','/draft/'+pattern.info.handle);
