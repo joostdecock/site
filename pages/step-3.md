@@ -21,8 +21,8 @@ permalink: /step/3
         </div>
     </div>
     <div class="row">
-        <div class="col-12" id="options">
-        <p>You can change the pattern options below. When you're done, click the <b>Draft pattern</b> button at the bottom of the page to draft your pattern.</p>
+        <div class="col-12" id="picklist">
+        <ul class="mb-3 filter"><li><b>Quick pick:</b></li><li><a class="px-1" href="#" id="submit-link">Draft pattern</a></li></ul>
         </div>
     </div>
 </div>

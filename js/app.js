@@ -705,36 +705,30 @@
                         if(filter.ok.length > 0) {
                             // We have models good to go
                             $.each(filter.ok, function(index, model){
-                                $('#okmodels').append("<div id='model-"+model.handle+"' class='col-md-2 col-4 model-display okmodels'></div>");
-                                $("#model-"+model.handle).load('/components/model/display', function(){
-                                    $('#model-name').attr('id','model-name-'+model.handle).html(model.name); 
-                                    $('#model-'+model.handle+' a.model-link').attr('href',page+'/for/'+model.handle); 
-                                    $('#model-picture').attr('id','model-picture-'+model.handle).attr('src',api.data+model.pictureSrc); 
-                                });
+                                $('#ok-models').append('<li><a href="'+page+'/for/'+model.handle+'" class="px-1">'+model.name+'</a></li>');
+                                var card = $('#model-card').clone();
+                                $('#picklist').append('<a href="'+page+'/for/'+model.handle+'" id="link-'+model.handle+'" class="card-wrap-link"></a>');
+                                card.attr('id','model-'+model.handle).appendTo('#link-'+model.handle);
+                                $('#model-'+model.handle+' h3.card-title').html(model.name);
+                                $('#model-'+model.handle+' img').attr('src',api.data+model.pictureSrc);
+                                $('#model-'+model.handle+' p.card-text').html('Model '+model.handle);
                             });
-                            if(filter.ko.length > 0) {
-                                // We've got some KO models
-                                $('#komodels').append("<div id='model-"+model.handle+"' class='col-md-2 col-4 model-display komodels'></div>");
-                                $.each(filter.ko, function(index, model){
-                                    $('#komodels').append("<div id='model-"+model.handle+"' class='col-md-2 col-4 model-display komodels'></div>");
-                                    $("#model-"+model.handle).load('/components/model/display', function(){
-                                        $('#model-name').attr('id','model-name-'+model.handle).html(model.name); 
-                                        $('#model-'+model.handle+' a.model-link').attr('href','/models/'+model.handle); 
-                                        $('#model-picture').attr('id','model-picture-'+model.handle).attr('src',api.data+model.pictureSrc); 
-                                    });
-                                });
-                            } else {
-                                // We have no KO models
-                                $('#okmsg').remove();
-                                $('#komsg').remove();
-                                $('#komodels').remove();
-                            }
+                            $('#model-card').remove();
+                            var ko = $('#ko-models').detach()
+                            ko.appendTo('#picklist');
                         } else {
-                            // No good models found
-                            $('#komsg').remove();
-                            $('#komodels').remove();
-                            $('#okmodels').remove();
-                            $('#okmsg').load('/components/model/nogoodmodel');
+                            $('#ok-models').remove();
+                            $('#model-card').addClass('card-primary card-inverse');
+                            $('#model-card img').attr('src','/img/patterns/missing.svg');
+                            $('#model-card h3.card-title').html('Grab your tape measure');
+                            $('#model-card p.card-text').html('None of your models have all the required measurements for this pattern. You need to add measurements before we can draft this pattern.');
+                            $('#ko-models').detach().appendTo('#picklist');
+                        }
+                        if(filter.ko.length > 0) {
+                            // We've got some KO models
+                            $.each(filter.ko, function(index, model){
+                                $('#ko-models').append('<li><a href="/models/'+model.handle+'" class="px-1">'+model.name+'</a></li>');
+                            });
                         }
                     }
                 });
@@ -746,7 +740,7 @@
         $.get('/json/patternmap.json', function( patternmap ) {
             $.get('/json/patterns.json', function( patterns ) {
                 $.getScript( "/js/vendor/bootstrap-slider.min.js", function(){
-                    $('#options').append("<form id='form'><div id='accordion' role='tablist' aria-multiselectable='true'></div></form>");
+                    $('#picklist').append("<form id='form'><div id='accordion' role='tablist' aria-multiselectable='true'></div></form>");
                     var form = {};
                     form.groups = {};
                     pattern = patterns[patternmap[patternhandle].namespace][patternmap[patternhandle].pattern];
@@ -819,8 +813,13 @@
                         $('#modal').removeClass().addClass('shown light');
                         $('#modal-main').html("<h2 class='text-center'>Sorry, not yet</h2><p class='text-center'>Help for pattern options is not implemented yet.</p>");
                     });
+                    // Bind submit handler to quick submit link
+                    $('#picklist').on('click','#submit-link', function(e) {
+                        e.preventDefault();
+                        $('#form').submit();
+                    });
                     // Bind submit handler to save settings button
-                    $('#options').on('submit','#form', function(e) {
+                    $('#picklist').on('submit','#form', function(e) {
                         e.preventDefault();
                         draftPattern();
                     });
@@ -1173,22 +1172,26 @@
             // New draft, step 1 ////////////////
             else if(page === '/draft' || page === '/draft/') {
                 var patterns;
+                var tags = {};
                 $.get('/json/patterns.json', function( pdata ) {
                     patterns = pdata;
-                    $('#patterns').append('<div id="pattern-list" class="card-columns masonry-wrapper"></div>');
                     $.each(patterns, function(namespace, patternlist){
                         $.each(patternlist, function(index, pattern){
-                            $('#pattern-list').append('<a href="#" id="'+pattern.info.handle+'-div-link"><div class="card text-center mb-4 hover-shadow" id="'+pattern.info.handle+'-card"></div></a>');
-                            $('#'+pattern.info.handle+'-card').load('/components/pattern/card', function(){
-                                $('#card').attr('id',pattern.info.handle+'-card');
-                                $('#card-image').attr('src','/img/patterns/'+pattern.info.handle+'/'+pattern.info.handle+'.svg').attr('id',pattern.info.handle+'-image');
-                                $('#card-title').html(pattern.info.handle).attr('id',pattern.info.handle+'-title');
-                                $('#card-text').html(pattern.info.description).attr('id',pattern.info.handle+'-text');
-                                $('#card-link').html('Draft '+pattern.info.handle).attr('id',pattern.info.handle+'-link').attr('href','/draft/'+pattern.info.handle);
-                                $('#'+pattern.info.handle+'-div-link').attr('href','/draft/'+pattern.info.handle);
+                            $('#quick-picks').append('<li><a href="/draft/'+pattern.info.handle+'" class="px-1">'+pattern.info.handle+'</a></li>');
+                            $('#picklist').append('<a href="/draft/'+pattern.info.handle+'" id="link-'+pattern.info.handle+'" class="card-wrap-link"></a>');
+                            var card = $('#pattern-card').clone();
+                            var id = pattern.info.handle+'-card';
+                            card.attr('id',id).addClass(namespace.toLowerCase()).appendTo('#link-'+pattern.info.handle);
+                            $('#'+id+' h3.card-title').html(pattern.info.handle);
+                            $('#'+id+' img').attr('src','/img/patterns/'+pattern.info.handle+'/'+pattern.info.handle+'.svg');
+                            $('#'+id+' p.card-text').html(pattern.info.description);
+                            $('#'+id+' p.card-tags').append('<span class="badge '+namespace.toLowerCase()+'">'+namespace+'</span>');
+                            $.each(pattern.info.tags, function(index, tag){
+                                $('#'+id+' p.card-tags').append(' <span class="badge badge-default '+tag.toLowerCase()+'">'+tag+'</span>');
                             });
                         });
                     });
+                    $('#pattern-card').remove();
                 });
             }
             // New draft, step 2 ////////////////

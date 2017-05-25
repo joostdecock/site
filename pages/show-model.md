@@ -3,7 +3,7 @@ layout: cards
 title: Model
 action: app
 tags: [account]
-permalink: /model/
+permalink: /show-model
 ---
 <div class="container">
     <div id="model"></div>

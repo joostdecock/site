@@ -21,21 +21,18 @@ permalink: /step/2
         </div>
     </div>
 
-    <div class="row" id="okmsg">
-        <div class="col-12">
-            <h2>These models are ok</h2>
-            <p>These models have all the required measurements to draft this pattern. Simply click on one of them to move to the next step.</p>
+<div id="picklist">
+<ul id="ok-models" class="mb-3 filter"><li><b>Quick pick:</b></li></ul>
+<div class="card hover-shadow mb-3 pattern-card" id="model-card">
+    <div class="linedrawing"><img src="/img/logo/spinner.svg"></div>
+    <div class="info">
+        <div class="card-block">
+            <h3 class="card-title mb-1">Loading models...</h3>
+            <p class="card-text mb-1">Please wait while we fetch your available models</p>
         </div>
     </div>
-    <div class="row" id="okmodels"></div>
+</div>
+</div>
+<ul id="ko-models" class="mb-3 filter"><li><b>These models lack (some of) the required measurements for this pattern:</b></li></ul>
 
-    <div class="row" id="komsg">
-        <div class="col-12">
-            <h2>These models cannot be used</h2>
-            <p>If you want to make this pattern for any of these models, you'll have to update them with the required measurements first.</p>
-            <blockquote class="tip">You can click on any of these models to update them.</blockquote>
-        </div>
-    </div>
-
-    <div class="row" id="komodels"></div>
 </div>
