@@ -3,7 +3,7 @@ layout: cards
 title: Choose a pattern
 action: app
 tags: [account]
-permalink: /step/1
+permalink: /step/1/draft
 ---
 <div class="container">
 <div class="row">

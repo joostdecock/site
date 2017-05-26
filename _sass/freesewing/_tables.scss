@@ -26,7 +26,9 @@ table.rounded-rows tr td {
         font-size: 100%;
         font-weight: bold;
     }
-
+    a.delete-draft:hover {
+        color: $red;
+    }
 }
 @media (max-width: 767px) {
     #draftlist {
@@ -34,5 +36,4 @@ table.rounded-rows tr td {
             padding: 0.3rem;
         }
     }
-
 }

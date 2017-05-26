@@ -3,7 +3,7 @@ layout: cards
 title: Choose your options
 action: app
 tags: [account]
-permalink: /step/3
+permalink: /step/3/draft
 ---
 <div class="container">
     <div class="row">

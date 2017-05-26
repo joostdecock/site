@@ -3,7 +3,7 @@ layout: cards
 title: Choose a model
 action: app
 tags: [account]
-permalink: /step/2
+permalink: /step/2/fork
 ---
 <div class="container">
     <div class="row">
@@ -24,7 +24,7 @@ permalink: /step/2
 <div id="picklist">
 <ul id="ok-models" class="mb-3 filter"><li><b>Quick pick:</b></li></ul>
 <div class="card hover-shadow mb-3 pattern-card" id="model-card">
-    <div class="linedrawing"><img src="/img/logo/spinner.svg"></div>
+    <div class="linedrawing model"><img src="/img/logo/spinner.svg"></div>
     <div class="info">
         <div class="card-block">
             <h3 class="card-title mb-1">Loading models...</h3>

@@ -5,11 +5,10 @@
     var page = window.location.pathname;
     
     function renderAccount(data) {
-        $('#account').load('/components/account/display', function(){
-            $('#account-username').html(data.account.username);
-            $('#account-picture').attr('src',api.data+data.account.pictureSrc);
-            $('#account-model-count').html(Object.keys(data.models).length);
-        });
+        $('#account-username').html(data.account.username);
+        $('#account-picture').attr('src',api.data+data.account.pictureSrc);
+        $('#account-model-count').html(Object.keys(data.models).length);
+        $('#account-draft-count').html(Object.keys(data.drafts).length);
         if(data.models === false) {
             $('#models-title').html('Start by adding a model');
             $('#models').append("<div class='col-md-12'><p>A model holds measurements. We need those measurement to draft patterns for you. So go ahead and <a href='#' class='add-model'>create your first model</a>.</p></div>");
@@ -29,12 +28,6 @@
             }
             $('#drafts').append("<div class='col-md-12 text-center mb-5'><a href='' class='btn btn-primary btn-lg mt-3 add-draft'>Add draft</a></div>");
         }
-        $('#models').append("<div class='col-md-12 text-center mb-5'><a href='' class='btn btn-primary btn-lg mt-3 add-model'>Add model</a></div>");
-        // Bind click handler to add-model link/button
-        $('#models').on('click','a.add-model', function(e) {
-            e.preventDefault();
-            renderModelWizard(); 
-        });
     }
     
     function renderModelWizard() {
@@ -736,7 +729,7 @@
         });
     }
 
-    function renderDraftForm(account,patternhandle,modelhandle) {
+    function renderDraftForm(account,patternhandle,modelhandle,defaults=false) {
         $.get('/json/patternmap.json', function( patternmap ) {
             $.get('/json/patterns.json', function( patterns ) {
                 $.getScript( "/js/vendor/bootstrap-slider.min.js", function(){
@@ -744,18 +737,30 @@
                     var form = {};
                     form.groups = {};
                     pattern = patterns[patternmap[patternhandle].namespace][patternmap[patternhandle].pattern];
-        console.log(pattern);
+                    if(account.account.data.account.units === 'imperial') var ufactor = 25.4;
+                    else var ufactor = 10;
                     $.each(pattern.options, function(option, o) {
+                        // Load defaults from forl (if provided)
+                        if(defaults !== false && typeof defaults[option] !== 'undefined') {
+                            if(o.type === 'measure') o.default = (defaults[option] * ufactor);
+                            else o.default = defaults[option];
+                            console.log(defaults[option] * ufactor);
+                        }
                         if(typeof form.groups[o.group] === 'undefined') form.groups[o.group] = {};
                         form.groups[o.group][option] = o;
                     });
                     // Add hidden form fields
                     $('#form').append('<input type="hidden" name="pattern" value="'+pattern.pattern+'"><input type="hidden" name="model" value="'+modelhandle+'">');
+                    // Load defaults for theme and langauge from fork (if provided)
+                    if(defaults !== false && typeof defaults.theme !== 'undefined') dflt_theme = defaults.theme;
+                    else dflt_theme = 'Basic';
+                    if(defaults !== false && typeof defaults.lang !== 'undefined') dflt_lang = defaults.lang;
+                    else dflt_lang = 'en';
                     // Sort form groups and prepend theme/language
                     var ordered = {
-                        '_': {
+                        'general': {
                             'theme': {
-                                'default': 'Basic',
+                                'default': dflt_theme,
                                 'description': 'Use the paperless theme when you want a pattern that does not require printing',
                                 'title': 'Theme',
                                 'type': 'chooseOne',
@@ -765,7 +770,7 @@
                                 }
                             },
                             'lang': {
-                                'default': 'en',
+                                'default': dflt_lang,
                                 'description': 'This pattern is available in the following languages:',
                                 'title': 'Language',
                                 'type': 'chooseOne',
@@ -974,6 +979,7 @@
         $('h1.page-title').html(draft.name);
         $('.crown-middle').html(draft.handle);
         $('.crown-right').attr('src',api.data+draft.model.pictureSrc);
+        $('#fork-btn').attr('href','/fork/'+draft.handle);
         $.get('/json/patternpam.json', function( map ) {
             patternHandle = map[draft.pattern].pattern;
             $('.crown-left').attr('src','/img/patterns/'+patternHandle+'/'+patternHandle+'.svg');
@@ -1001,32 +1007,38 @@
         });
         // Bind click: Delete draft button
         $('a#delete-btn').click(function(e) {
-            console.log(draft);
             e.preventDefault();
-            $('#modal').removeClass().addClass('shown light');
-            $('#modal-main').html("<div id='delete'></div>");
-            $('#delete').load('/components/draft/delete', function(){
-                $('#remove-draft-title').html('Delete '+draft.name+'?');
-                // Bind click: Cancel nuke draft button
-                $('#delete').on('click','a#no-nuke', function(e) {
-                    closeModal();
-                });
-                // Bind click: Nuke draft button
-                $('#delete').on('click','a#nuke', function(e) {
-                    e.preventDefault();
-                    $.ajax({
-                      url: api.data+'/draft/'+draft.handle,
-                      method: 'DELETE',
-                      dataType: 'json',
-                      success: function(data) {
-                          window.location.replace("/drafts");                              },
-                      error: function(data) { 
-                          $('#modal-main').load("/components/generic/error");
-                      },
-                      headers: {'Authorization': 'Bearer '+token},
-                    }); 
-                });
+            deleteDraft(draft);
+        });
+    }
 
+    function deleteDraft(draft) {
+        $('#modal').removeClass().addClass('shown light');
+        $('#modal-main').html("<div id='delete'></div>");
+        $('#delete').load('/components/draft/delete', function(){
+            $('#remove-draft-title').html('Delete '+draft.name+'?');
+            // Bind click: Cancel nuke draft button
+            $('#delete').on('click','a#no-nuke', function(e) {
+                closeModal();
+            });
+            // Bind click: Nuke draft button
+            $('#delete').on('click','a#nuke', function(e) {
+                e.preventDefault();
+                $.ajax({
+                    url: api.data+'/draft/'+draft.handle,
+                    method: 'DELETE',
+                    dataType: 'json',
+                    success: function(data) {
+                        if(window.location.pathname === '/drafts') {
+                            $('#row-'+draft.handle).remove();   
+                            $('#modal').removeClass();
+                        } else window.location.replace("/drafts"); 
+                    },
+                    error: function(data) { 
+                      $('#modal-main').load("/components/generic/error");
+                    },
+                    headers: {'Authorization': 'Bearer '+token},
+                }); 
             });
         });
     }
@@ -1055,6 +1067,11 @@
             if(page === '/account') {
                 loadAccount(renderAccount);
                 
+                // Bind click handler to add-model link/button
+                $('#account').on('click','#add-model-btn', function(e) {
+                    e.preventDefault();
+                    renderModelWizard(); 
+                });
                 // Bind click handler to settings button
                 $('#account').on('click','a#settings-btn', function(e) {
                     renderAccountSettings();
@@ -1097,13 +1114,21 @@
                     });
                 });
             }
-            // Model page //////////////////
+            // Models page //////////////////
             else if(page === '/models') {
                 loadAccount(function(data){
                 console.log(data);
                     $('h1.page-title').html('Your models');
                     $('#models-title-row').remove();
-                    $('#non-models-row').remove();
+                    $('div.crown-wrapper').remove();
+                    $('#account-username').remove();
+                    $('#delete-btn').remove();
+                    $('#settings-btn').remove();
+                    // Bind click handler to add-model link/button
+                    $('#account').on('click','#add-model-btn', function(e) {
+                        e.preventDefault();
+                        renderModelWizard(); 
+                    });
                     $.each(data.models, function(index, model){
                         $('#models').append("<div id='model-"+model.handle+"' class='col-md-2 col-4 model-display'></div>");
                         $("#model-"+model.handle).load('/components/model/display', function(){
@@ -1206,25 +1231,54 @@
                     // Do we even have models?
                     if(typeof account.models === "undefined" || account.models === false || account.models.length < 1) {
                         $('#models').load('/components/model/nomodel');
-                        // Bind click handler to add-model link/button
-                        $('#models').on('click','a.add-model', function(e) {
-                            e.preventDefault();
-                            renderModelWizard(); 
-                        });
                     }
                     else renderModelSelection(account,patternhandle);
                 });
             }
+            // Fork draft, step 2 ////////////////
+            else if(page.substr(0,6) === '/fork/' && page.split('/').length == 3) {
+                var draftHandle = page.split('/')[2];
+                var account;
+                loadDraft(draftHandle, function(draft){
+                    $('#step1-link').html('Forking '+draft.pattern+' draft '+draft.handle);
+                    loadAccount(function(data){
+                        account = data;
+                            $.get('/json/patternpam.json', function( patternmap ) {
+                                // Do we even have models?
+                                if(typeof account.models === "undefined" || account.models === false || account.models.length < 1) {
+                                    $('#models').load('/components/model/nomodel');
+                                }
+                                else renderModelSelection(account,patternmap[draft.pattern].pattern);
+                            });
+                    });
+                });
+            }
             // New draft, step 3 ////////////////
             else if(page.substr(0,7) === '/draft/' && page.split('/').length == 5 && page.split('/')[3] === 'for') {
-                var patternhandle = page.split('/')[2];
-                var modelhandle = page.split('/')[4];
+                var patternHandle = page.split('/')[2];
+                var modelHandle = page.split('/')[4];
                 var account;
                 loadAccount(function(data){
                     account = data;
-                    $('#step1-link').html('Drafting '+patternhandle);
-                    $('#step2-link').html('For '+account.models[modelhandle].name).attr('href','/draft/'+patternhandle);
-                    renderDraftForm(account,patternhandle, modelhandle);
+                    $('#step1-link').html('Drafting '+patternHandle);
+                    $('#step2-link').html('For '+account.models[modelHandle].name).attr('href','/draft/'+patternHandle);
+                    renderDraftForm(account,patternHandle, modelHandle);
+                });
+            }
+            // Fork draft, step 3 ////////////////
+            else if(page.substr(0,6) === '/fork/' && page.split('/').length == 5 && page.split('/')[3] === 'for') {
+                var draftHandle = page.split('/')[2];
+                var modelHandle = page.split('/')[4];
+                var account;
+                loadDraft(draftHandle, function(draft){
+                    $('#step1-link').html('Forking '+draft.pattern+' draft '+draft.handle);
+                    loadAccount(function(data){
+                        account = data;
+                        $('#step2-link').html('For '+account.models[modelHandle].name).attr('href','/fork/'+draftHandle);
+                        $.get('/json/patternpam.json', function( patternmap ) {
+                            renderDraftForm(account,patternmap[draft.pattern].pattern, modelHandle, draft.data);
+                        });
+                    });
                 });
             }
             // Show draft ///////////////////////
@@ -1252,29 +1306,31 @@
                 $.getScript( "/js/vendor/timeago.min.js", function(){
                     loadAccount(function(data){
                         account = data;
-                        console.log(account);
                         $.get('/json/patternpam.json', function( patternmap ) {
                             map = patternmap;
-                            console.log(map);
                             // index models by id
                             $.each(account.models, function(index, model){
                                 models[model.id] = model;
                             });
-                            console.log(models);
                             $.each(account.drafts, function(index, draft){
-                            console.log(draft.model);
-                                var row = '<tr>';
+                                var row = '<tr id="row-'+draft.handle+'">';
                                 row += '<td class="handle"><a href="/drafts/'+draft.handle+'">'+draft.handle+'</a></td>';
                                 row += '<td class="pattern"><a href="/patterns/'+map[draft.pattern].pattern+'">'+map[draft.pattern].pattern+'</a></td>';
                                 row += '<td class="model"><a href="/models/'+models[draft.model].handle+'">'+models[draft.model].name+'</a></td>';
                                 row += '<td class="name"><a href="/drafts/'+draft.handle+'">'+draft.name+'</a></td>';
                                 row += '<td class="date timeago" datetime="'+draft.created+'"></td>';
+                                row += '<td class="trash icon"><a href="#" data-draft="'+draft.id+'" class="delete-draft" title="Delete draft '+draft.handle+'"><i class="fa fa-trash" aria-hidden="true"></i></a></td>';
                                 row += '</tr>';
                                 $('#draftlist').prepend(row);
-                                //renderDraftForm(account,patternhandle, modelhandle);
                             });
                             timeago().render($('.timeago'));
                             $('#draft-row').remove();
+                            $('#spinner').remove();
+                            // Bind click handler to notes button
+                            $('#drafts').on('click','a.delete-draft',function(e) {
+                                e.preventDefault();
+                                deleteDraft(account.drafts[$(this).attr('data-draft')]);
+                            });
                         });
                     });
                 });

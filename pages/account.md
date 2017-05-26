@@ -6,21 +6,23 @@ tags: [account]
 permalink: /account
 ---
 <div class="container">
-    <div id="account"></div>
+    <div class="account-display" id="account">
+        <div>
+            <div class="crown-wrapper">
+                <span class="crown crown-left" id="account-model-count">0</span>
+                <img class="crown crown-middle" id="account-picture" />
+                <span class="crown crown-right" id="account-draft-count">0</span>
+            </div>
+            <h3 id="account-username"></h3>
+            <a id="add-model-btn" href="#" class="btn btn-outline-primary mt-1"><i class="fa fa-plus" aria-hidden="true"></i> Add model</a>
+            <a id="settings-btn" href="#" class="btn btn-outline-primary mt-1"><i class="fa fa-wrench" aria-hidden="true"></i> Settings</a>
+            <a href="#" class="btn btn-outline-danger mt-1" id="delete-btn"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a>
+        </div>
+    </div>
     <div class="row" id="models-title-row">
         <div class="col-md-12">
             <h2 id="models-title">Models</h2>
         </div>
     </div>
     <div class="row" id="models"></div>
-    <div class="row" id="non-models-row">
-        <div class="col-md-12">
-            <h2 id="drafts-title">Drafts</h2>
-            <div id="drafts"></div>
-            <hr class="mt-2">
-            <h2>Danger zone</h2>
-            <p>Remove your account and all data.</p>
-            <p class="mt-2"><a href="#" class="btn btn-danger" id="delete-btn">Delete my account</a></p>
-        </div>
-    </div>
 </div>

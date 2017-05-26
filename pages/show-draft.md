@@ -15,12 +15,31 @@ permalink: /show-draft
                         <span class="crown crown-middle" id="draft-handle"></span>
                         <img class="crown crown-right" id="draft-model-img">
                     </div>
-                    <a id="preload-btn" href="#" class="btn btn-outline-info mt-3 modal light">Preload</a>
-                    <a id="settings-btn" href="#" class="btn btn-outline-primary mt-3 modal light">Settings</a>
-                    <a id="delete-btn" href="#" class="btn btn-outline-danger mt-3 modal light">Delete</a>
+                    <a id="fork-btn" href="#" class="btn btn-outline-info mt-3 modal light"><i class="fa fa-code-fork" aria-hidden="true"></i> Fork</a>
+                    <a id="settings-btn" href="#" class="btn btn-outline-primary mt-3 modal light"><i class="fa fa-wrench" aria-hidden="true"></i> Settings</a>
+                    <a id="delete-btn" href="#" class="btn btn-outline-danger mt-3 modal light"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a>
                 </div>
             </div>
             <div id="accordion" role="tablist" aria-multiselectable="true" class="full-width">
+                <div id="group-notes" class="card">
+                    <div class="card-header" role="tab" id="heading-notes">
+                        <h3 class="text-capitalize"><a data-toggle="collapse" data-parent="#accordion" href="#collapse-notes" aria-expanded="false" aria-controls="collapse-notes">Notes</a></h3>
+                    </div>
+                    <div id="collapse-notes" class="collapse show" role="tabpanel" aria-labeledby="heading-notes" aria-expanded="false">
+                        <div class="card-block" id="content-notes">
+                            <div class="notes">
+                                <div id="notes-inner"></div>
+                                <a class="update-bubble hover-shadow hashlink" id="update-notes" href="#" title="Edit draft notes">
+                                    <svg class="icon pencil" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                                        <path class="c1" d="M5,43l0,-6l2,-2l6,6l-2,2z"></path>
+                                        <path class="c2" d="M8,34l20,-20l6,6l-20,20z"></path>
+                                        <path class="c3" d="M29,13l6,-6l6,6l-6,6z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div id="group-preview" class="card">
                     <div class="card-header" role="tab" id="heading-preview">
                         <h3 class="text-capitalize"><a data-toggle="collapse" data-parent="#accordion" href="#collapse-preview" aria-expanded="false" aria-controls="collapse-preview">Preview</a></h3>
@@ -85,35 +104,6 @@ permalink: /show-draft
                                     msg="Twice the (weird) size, half the sticky-taping"
                                 %}
                             </div> 
-                        </div>
-                    </div>
-                </div>
-                <div id="group-notes" class="card">
-                    <div class="card-header" role="tab" id="heading-notes">
-                        <h3 class="text-capitalize"><a data-toggle="collapse" data-parent="#accordion" href="#collapse-notes" aria-expanded="false" aria-controls="collapse-notes">Notes</a></h3>
-                    </div>
-                    <div id="collapse-notes" class="collapse" role="tabpanel" aria-labeledby="heading-notes" aria-expanded="false">
-                        <div class="card-block" id="content-notes">
-                            <div class="notes">
-                                <div id="notes-inner"></div>
-                                <a class="update-bubble hover-shadow hashlink" id="update-notes" href="#" title="Edit draft notes">
-                                    <svg class="icon pencil" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-                                        <path class="c1" d="M5,43l0,-6l2,-2l6,6l-2,2z"></path>
-                                        <path class="c2" d="M8,34l20,-20l6,6l-20,20z"></path>
-                                        <path class="c3" d="M29,13l6,-6l6,6l-6,6z"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="group-remove" class="card">
-                    <div class="card-header" role="tab" id="heading-remove">
-                        <h3 class="text-capitalize"><a data-toggle="collapse" data-parent="#accordion" href="#collapse-remove" aria-expanded="false" aria-controls="collapse-remove">Actions</a></h3>
-                    </div>
-                    <div id="collapse-remove" class="collapse" role="tabpanel" aria-labeledby="heading-remove" aria-expanded="false">
-                        <div class="card-block" id="content-remove">
-                            <p class="mt-2"><a href="#" class="btn btn-danger hashlink" id="delete-btn" title="Delete this draft">Delete this draft</a></p>
                         </div>
                     </div>
                 </div>
