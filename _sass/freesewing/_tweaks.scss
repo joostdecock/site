@@ -28,7 +28,17 @@ img.svg {
 }
 .paper {
     background: $white;
-    padding: 2rem 1rem;
+    padding: 2rem;
+}
+.paper h2:before {
+    content: ' ';
+    background: $whitish;
+    display: block;
+    height: 2rem;
+    margin: 4rem -2rem 2rem;
+}
+.paper h2:first-child:before {
+    display: none;
 }
 div.tab-pane { 
     padding-top: 1rem; 
@@ -83,11 +93,19 @@ body.visitor .logged-out-only {
     display: none;
 }
 body { background: $whitish; }
-
-
+.badge {
+    text-transform: uppercase;
+    font-weight: 300;
+}
 @media (max-width: 767px) {
     .not-on-small {
         display: none;
+    }
+    .paper {
+        padding: 2rem 1rem;
+    }
+    .paper h2:before {
+        margin: 4rem -15px 2rem;
     }
 }
 @media (min-width: 768px) {

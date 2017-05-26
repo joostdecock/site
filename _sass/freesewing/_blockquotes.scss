@@ -1,43 +1,45 @@
 blockquote { 
-    padding: 15px;
-    border: 3px solid $teal;
-    margin: 0.5rem;
-    min-height: 4.5rem;
+    padding: 2rem;
+    margin: 1.5rem 0.5rem;
+    background: $white;
+    border-left: 4px solid $gray;
 }
 blockquote p:last-child {
     margin-bottom: 0;
 }
 blockquote:before {
-    content: "Tip";
+    content: "";
+    font-family: "FontAwesome" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
     speak: none;
-    font-size: 0.9rem;
-    font-weight: bold;
     line-height: 1;
-    color: $white;
-    display: block;
-    background: $teal;
-    padding: 3px 20px 5px;
-    margin: -15px;
-    margin-bottom: 5px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 3em;
+    float: right;
+    margin-top: -10px;
+    color: $gray-dark;
 }
-blockquote.quote { border-color: $gray; }
-blockquote.quote:before {
-    content: "\1f4ac";
-    color: $gray;
+
+blockquote.tip,
+blockquote.quote,
+blockquote.comment,
+blockquote.question,
+blockquote.warning { 
+    box-shadow: $shadow;
+    border: 0;
+    min-height: 4.5rem;
 }
-blockquote.comment { border-color: $purple; }
-blockquote.comment:before {
-    content: "\1f4e2";
-    color: $purple;
-}
-blockquote.question { border-color: $green; }
-blockquote.question:before {
-    content: "Question";
-    color: $green;
-}
-blockquote.warning { border-color: $red; }
-blockquote.warning:before {
-    content: "Warning";
-    background: $red;
-}
-article blockquote { margin-top: 2rem; }
+blockquote.tip { background: rgba(255, 213, 0, 0.1);}
+blockquote.tip:before { content: "\f0eb"; }
+blockquote.quote { background: rgba(70, 74, 76, 0.1);}
+blockquote.quote:before { content: "\f10e"; }
+blockquote.comment { background: rgba(91, 192, 222, 0.1); }
+blockquote.comment:before { content: "\f0e5"; }
+blockquote.question { background: rgba(92, 184, 92, 0.1); }
+blockquote.question:before { content: "\f29c"; }
+blockquote.warning { background: rgba(217, 83, 79, 0.1); }
+blockquote.warning:before { content: "\f071"; }

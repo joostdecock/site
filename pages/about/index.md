@@ -8,8 +8,8 @@ permalink: /about/
 
 In a nutshell:
 
-Freesewing is an open source platform for made-to-measure sewing patterns
-{: .display-4 }
+> Freesewing is an open source platform for made-to-measure sewing patterns
+{: .quote }
 
 Or, read the origin story:
 
@@ -51,7 +51,6 @@ Or, read the origin story:
 > it's not just me in the middle.
 >
 > joost
-{: .comment}
 
 What Freesewing does is comparable to what 
 [Lekala](https://www.lekala.co/) does:
@@ -59,8 +58,8 @@ provide customized sewing patterns.
 
 But there is one important difference: 
 
-Freesewing is free of charge. Our patterns are free ([CC-BY](/license)) and our code is free ([GPL-3](/license)).
-{: .display-4 }
+> Freesewing is free of charge. Our patterns are free ([CC-BY](/license)) and our code is free ([GPL-3](/license)).
+{: .tip }
 
 
 This is not a business and is not about making money. Freesewing is a labour of love.

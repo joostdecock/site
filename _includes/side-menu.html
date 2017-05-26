@@ -1,27 +1,52 @@
-<div id="oc-left" class="oc-panel bg-thematic" data-side="left">
- <div class="overlay-light">
+<div id="oc-left" class="oc-panel" data-side="left">
    <nav id="side-menu">
-    <ul>
-      <li class="nav-section visitor-only"><a class="login" href="#">Join freesewing</a></li>
-      <li class="logged-out-only login"><a class="login" href="#">Sign in</a></li>
-      <li class="nav-section"><a href="/about">About freesewing</a></li>
-      <li><a href="/contribute">Contribute</a></li>
-      <li><a href="/contact">Contact info</a></li>
-      <li><a href=https://github.com/freesewing/">Freesewing on GitHub</a></li>
-      <li class="nav-section logged-in-only"><a href="/draft">New draft</a></li>
-      <li class="nav-section"><a href="/patterns">Patterns</a></li>
-      <li class="nav-section logged-in-only"><a href="/account">Account</a></li>
-      <li class="logged-in-only"><a href="/models#models-title">Your models</a></li>
-      <li class="logged-in-only"><a href="/drafts">Your drafts</a></li>
-      <li class="logged-in-only"><a href="/logout">Logout</a></li>
-      <li class="nav-section"><a href="/docs">Docs</a></li>
-      <li><a href="/docs/designer">For designers</a></li>
-      <li><a href="/docs/developer">For developers</a></li>
-      <li><a href="/docs/maker">For makers</a></li>
-      <li><a href="/help">Getting help</a></li>
-      <li class="nav-section"><a href="/blog">Blog</a></li>
-      <li class="nav-section"><a href="/donate">Donate</a></li>
-    </ul>
-</nav>
-</div>
+        <div id="sidemenu" role="tablist" aria-multiselectable="true">
+            <div id="group-do" class="card">
+                <div class="card-header" role="tab"><h3><a class="" data-toggle="collapse" data-parent="#sidemenu" href="#collapse-do" aria-expanded="false" aria-controls="collapse-do">Top picks</a></h3></div>
+                <div id="collapse-do" class="collapse show" role="tabpanel" aria-labeledby="heading-do" aria-expanded="false">
+                    <div class="card-block" id="content-do">
+                        <h5 class="visitor-only"><a class="dropdown-item hashlink login">Login/Join</a></h5>
+                        <h5 class="logged-out-only"><a class="dropdown-item hashlink login">Login</a></h5>
+                        <h5><a class="dropdown-item" href="/blog">Read our blog</a></h5>
+                        <h5><a class="dropdown-item" href="/patterns">Browse patterns</a></h5>
+                        <h5 class="logged-in-only"><a class="dropdown-item" href="/draft">Draft a pattern</a></h5>
+                        <h5><a class="dropdown-item" href="/donate">Donate ❤</a></h5>
+                    </div>
+                </div>
+            </div>
+            <div id="group-about" class="card">
+                <div class="card-header" role="tab"><h3><a class="collapsed" data-toggle="collapse" data-parent="#sidemenu" href="#collapse-about" aria-expanded="false" aria-controls="collapse-about">About</a></h3></div>
+                <div id="collapse-about" class="collapse" role="tabpanel" aria-labeledby="heading-about" aria-expanded="false">
+                    <div class="card-block" id="content-about">
+                        <h5><a class="dropdown-item" href="/about">About freesewing</a></h5>
+                        <h5><a class="dropdown-item" href="/contribute">Contribute</a></h5>
+                        <h5><a class="dropdown-item" href="/contact">Contact info</a></h5>
+                        <h5><a class="dropdown-item" href=https://github.com/freesewing/">Freesewing on GitHub</a></h5>
+                    </div>
+                </div>
+            </div>
+            <div id="group-account" class="card logged-in-only">
+                <div class="card-header" role="tab"><h3><a class="collapsed" data-toggle="collapse" data-parent="#sidemenu" href="#collapse-account" aria-expanded="false" aria-controls="collapse-account">Account</a></h3></div>
+                <div id="collapse-account" class="collapse" role="tabpanel" aria-labeledby="heading-account" aria-expanded="false">
+                    <div class="card-block" id="content-account">
+                        <h5><a class="dropdown-item" href="/account">Your account</a></h5>
+                        <h5><a class="dropdown-item" href="/models">Your models</a></h5>
+                        <h5><a class="dropdown-item" href="/drafts">Your drafts</a></h5>
+                        <h5><a class="dropdown-item" href="/logout">Logout</a></h5>
+                    </div>
+                </div>
+            </div>
+            <div id="group-docs" class="card">
+                <div class="card-header" role="tab"><h3><a class="collapsed" data-toggle="collapse" data-parent="#sidemenu" href="#collapse-docs" aria-expanded="false" aria-controls="collapse-docs">Docs</a></h3></div>
+                <div id="collapse-docs" class="collapse" role="tabpanel" aria-labeledby="heading-docs" aria-expanded="false">
+                    <div class="card-block" id="content-docs">
+                        <h5><a class="dropdown-item" href="/docs/designer">For designers</a></h5>
+                        <h5><a class="dropdown-item" href="/docs/developer">For developers</a></h5>
+                        <h5><a class="dropdown-item" href="/docs/maker">For makers</a></h5>
+                        <h5><a class="dropdown-item" href="/help">Getting help</a></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 </div>

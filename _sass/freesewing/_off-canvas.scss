@@ -21,6 +21,21 @@
   transition: transform 300ms ease 0s;
   padding: 0;
   left: -300px;
+  background: $whitish;
+    .card-header a:before {
+        content: "\f078";
+        font-family: 'FontAwesome'; 
+        font-size: 1rem;
+        color: $black;
+        margin-right: 8px;
+    }
+    .card-header a.collapsed:before {
+        content: "\f054";
+    }
+    .card-header.no-sub a:before,
+    .card-header.no-sub a.collapsed:before {
+        opacity: 0;
+    }
 }
 #oc-left.shown {
   -ms-transform: translate(300px, 0);
@@ -28,12 +43,9 @@
   transform: translate(300px, 0);
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
 }
-#oc-left > div {
-  width: 100%;
-  height: 100%;
-  padding: 1rem 0;
+#oc-right {
+    background: $whitish;
 }
-
 .oc-overlay {
   position: fixed;
   width: 100%;
@@ -63,7 +75,6 @@ body.oc-shown .oc-overlay {
       overflow-y: auto;
       transition: transform 300ms ease 0s;
       right: -300px;
-      background: rgba(255, 255, 255, 0.95);
       padding: 1rem;
     }
     #oc-right-wrapper.shown #oc-right {
@@ -76,9 +87,6 @@ body.oc-shown .oc-overlay {
 @media (min-width: 768px) {
     .on-oc-right {
         display: none;
-    }
-    #oc-right {
-        background: #fff;
     }
 }
 // move icons 

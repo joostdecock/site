@@ -16,10 +16,6 @@
         text-transform: capitalize;
         list-style-type: none;
     }
-    .badge {
-        text-transform: uppercase;
-        font-weight: 300;
-    }
     .badge.core { background: $gray-dark!important; }
     .badge.beta { background: $orange!important; }
     .badge.menswear { background: $blue!important; }

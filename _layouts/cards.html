@@ -2,10 +2,8 @@
 layout: notoc
 ---
 {% include header.html %}
-<div class="fade-oc">
-    {% if page.action != 'homepage' %}
-    <h1 class="page-title">{{ page.title | escape }}</h1>
-    {% endif %}
+{% if page.action != 'homepage' %}
+<h1 class="page-title">{{ page.title | escape }}</h1>
+{% endif %}
 
-    {{ content }}
-</div>
+{{ content }}

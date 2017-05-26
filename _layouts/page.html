@@ -9,21 +9,22 @@ layout: default
         </div>
     </div>
     <div class="row">
-        <div class="col-md-8 col-sm-12 fade-oc">
+        <div class="col-md-8 col-sm-12 paper">
             <section id="content">
                 <article class="page">
                     {{ content }}
                 </article>
-                {% include tags.html %}
             </section>
         </div>
         <div class="col-md-4 col-sm-12">
             <div id="oc-right-wrapper">
-            <aside id="toc" class="sticky">
-                <div id="oc-right" class="oc-panel" data-side="right">
-                    <h3 id='toc-title' class="mt-5">Contents</h3>
-                </div>
-            </aside>
+                <aside id="toc" class="sticky">
+                    <div id="oc-right" class="oc-panel" data-side="right">
+                        {% include tags.html %}
+                        <h3 id='toc-title' class="mt-5">Contents</h3>
+                    </div>
+                </aside>
+            </div>
         </div>
     </div>
 </div><!-- /.container -->
