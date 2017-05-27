@@ -1,0 +1,8 @@
+<ul class="breadcrumbs">
+    <li><a href="/" title="Home">Home</a> &raquo;</li>
+    {% for bc in page.crumbs %}
+        {% assign item = bc | split: "|" %}
+        <li><a href="{{ item[0] }}" title="{{ item[1] }}">{{ item[1] }}</a> &raquo;</li>
+    {% endfor %}
+    <li>{{ page.title }}</li>
+</ul>

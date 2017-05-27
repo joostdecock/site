@@ -6,6 +6,7 @@ layout: default
     <div class="row">
         <div class="col-12">
             <h1 class="page-title">{{ page.title | escape }}</h1>
+            {% include breadcrumbs.html %}
         </div>
     </div>
     <div class="row">
@@ -20,11 +21,15 @@ layout: default
             <div id="oc-right-wrapper">
                 <aside id="toc" class="sticky">
                     <div id="oc-right" class="oc-panel" data-side="right">
-                        {% include tags.html %}
                         <h3 id='toc-title' class="mt-5">Contents</h3>
                     </div>
                 </aside>
             </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            {% include tags.html %}
         </div>
     </div>
 </div><!-- /.container -->
