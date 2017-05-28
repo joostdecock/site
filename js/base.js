@@ -135,6 +135,16 @@ var token = window.localStorage.getItem("jwt");
             $('.burger').removeClass('hidden');
         });
 
+        // Heading anchor links ////////////
+        return $("#content h2, #content h3, #content h4, #content h5, #content h6").each(function(i, el) {
+            var $el, icon, id;
+            $el = $(el);
+            id = $el.attr('id');
+            icon = '<i class="fa fa-link"></i>';
+            if (id) {
+                return $el.append($("<a />").addClass("header-link").attr("href", "#" + id).html(icon));
+            }
+        });
 
         // Methods /////////////////////////
        

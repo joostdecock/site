@@ -4,6 +4,14 @@ layout: notoc
 {% include header.html %}
 {% if page.action != 'homepage' %}
 <h1 class="page-title">{{ page.title | escape }}</h1>
+<div class="container"><div class="col">{% include breadcrumbs.html %}</div></div>
 {% endif %}
 
 {{ content }}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            {% include tags.html %}
+        </div>
+    </div>
+</div>

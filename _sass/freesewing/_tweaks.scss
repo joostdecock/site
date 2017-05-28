@@ -30,6 +30,10 @@ img.svg {
     background: $white;
     padding: 2rem;
 }
+// pointer on hover
+.poh:hover {
+    cursor: pointer;
+}
 div.tab-pane { 
     padding-top: 1rem; 
 }

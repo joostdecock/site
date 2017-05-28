@@ -3,6 +3,9 @@ layout: page
 title: Command line usage
 tags: [fundamentals]
 permalink: /docs/core/cli
+crumbs:
+  - /docs|Docs
+  - /docs/core|Core
 ---
 ## About
 While freesewing core typically runs on a webserver,

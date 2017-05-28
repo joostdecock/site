@@ -44,8 +44,11 @@ h1.page-title {
 h1.page-title small { 
     font-size: 1.6rem;
 }
-.phenomic-HeadingAnchor {
-  display: none;
+.header-link {
+    font-size: 75%;
+    padding-left: 0.5rem;
+    color: $light-purple;
+    opacity: 0.5;
 }
 @media (max-width: 767px) {
     h1, .h1 {

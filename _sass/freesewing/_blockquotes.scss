@@ -43,3 +43,11 @@ blockquote.question { background: rgba(92, 184, 92, 0.1); }
 blockquote.question:before { content: "\f29c"; }
 blockquote.warning { background: rgba(217, 83, 79, 0.1); }
 blockquote.warning:before { content: "\f071"; }
+
+blockquote h2:first-child,
+blockquote h3:first-child,
+blockquote h4:first-child,
+blockquote h5:first-child,
+blockquote h6:first-child {
+    padding-top: 0;
+}

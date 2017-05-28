@@ -1,6 +1,15 @@
+a code.highlighter-rouge {
+    background: $pink;
+    color: $white;
+    border: 0;
+    padding: 0.1rem 0.4rem;
+}
 /**
  * Syntax highlighting styles
  */
+pre {
+    margin: 0;
+}
 code {
      background: #eaeaea;
      border: 1px solid #c5c5c5;
@@ -12,6 +21,7 @@ div.highlighter-rouge {
     background: $gray-dark;
     border-radius: 0.5rem;
     padding: 1rem;
+    margin: 1rem 0 1.5rem 0;
 }
 div.highlighter-rouge pre code {
     color: $whitish;
@@ -24,8 +34,8 @@ div.highlighter-rouge pre code {
 
   // Custom freesewing  
   .p     { padding: 0 2px; } // Brackets
-  .nx    { color: $green; font-weight: bold } // Namespace
-  .nc    { color: $green } // Name.Class
+  .nx    { color: $pink; font-weight: bold } // Namespace
+  .nc    { color: $pink } // Name.Class
   .nv    { color: $teal } // Name.Variable
   .sd    { color: #aaa } // Literal.String.Doc
   .kc    { color: $yellow; font-weight: bold } // Keyword.Constant
@@ -34,6 +44,7 @@ div.highlighter-rouge pre code {
   .s1    { color: #32e232 } // Literal.String.Single
   .nf    { color: $pink; font-weight: bold } // Name.Function
   .na    { color: #00ff76 } // Name.Attribute
+  .nt    { color: #fff999 } // Name.Tag
 
   // Standard rouge
   .c     { color: #998; font-style: italic } // Comment
@@ -67,7 +78,6 @@ div.highlighter-rouge pre code {
   .ni    { color: #800080 } // Name.Entity
   .ne    { color: #900; font-weight: bold } // Name.Exception
   .nn    { color: #555 } // Name.Namespace
-  .nt    { color: #000080 } // Name.Tag
   .ow    { font-weight: bold } // Operator.Word
   .w     { color: #bbb } // Text.Whitespace
   .mh    { color: #099 } // Literal.Number.Hex
