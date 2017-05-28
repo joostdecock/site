@@ -1,8 +1,49 @@
 <ul class="breadcrumbs">
     <li><a href="/" title="Home">Home</a> &raquo;</li>
-    {% for bc in page.crumbs %}
-        {% assign item = bc | split: "|" %}
-        <li><a href="{{ item[0] }}" title="{{ item[1] }}">{{ item[1] }}</a> &raquo;</li>
-    {% endfor %}
+    {% if page.crumbs %}
+        {% for bc in page.crumbs %}
+            {% assign item = bc | split: "|" %}
+            <li><a href="{{ item[0] }}" title="{{ item[1] }}">{{ item[1] }}</a> &raquo;</li>
+        {% endfor %}
+    {% else %}
+        {% assign crumb_count = 0 %}
+        {% assign crumb_url = '' %}
+        {% assign page_url = page.url | split: "/" %}
+        {% assign crumb_length = page_url | size | minus: 1 %}
+        {% for crumb_part in page_url %}
+            {% if crumb_count > 0 and crumb_count < crumb_length %}
+                {% capture crumb_url %}{{ crumb_url }}/{{ crumb_part }}{% endcapture %}
+                {% case crumb_url %}
+                    {% when '/docs' %}
+                        {% assign crumb_title = 'Docs' %}
+                    {% when '/docs/core' %}
+                        {% assign crumb_title = 'Core' %}
+                    {% when '/docs/core/classdocs' %}
+                        {% assign crumb_title = 'Classdocs' %}
+                    {% when '/docs/core/classdocs/channels' %}
+                        {% assign crumb_title = '\Freesewing\Channels' %}
+                    {% when '/docs/core/classdocs/channels/core' %}
+                        {% assign crumb_title = '\Core' %}
+                    {% when '/docs/core/classdocs/patterns' %}
+                        {% assign crumb_title = '\Freesewing\Patterns' %}
+                    {% when '/docs/core/classdocs/patterns/core' %}
+                        {% assign crumb_title = '\Core' %}
+                    {% when '/docs/core/classdocs/services' %}
+                        {% assign crumb_title = '\Freesewing\Services' %}
+                    {% when '/docs/core/classdocs/themes' %}
+                        {% assign crumb_title = '\Freesewing\Themes' %}
+                    {% when '/docs/core/classdocs/themes/core' %}
+                        {% assign crumb_title = '\Core' %}
+                    {% when '/docs/core/classdocs/src' %}
+                        {% assign crumb_title = '\Freesewing' %}
+                    {% else %}
+                        {% assign crumb_title = 'FIXME: Unknown breadcrumb' %}
+                {% endcase %}
+                <li><a href="{{ crumb_url}}" title="{{ crumb_title }}">{{ crumb_title }}</a> &raquo;</li>
+            {% endif %}
+            {% assign crumb_count = crumb_count | plus: 1 %}
+        {% endfor %}
+    {% endif %}
     <li>{{ page.title }}</li>
 </ul>
+
