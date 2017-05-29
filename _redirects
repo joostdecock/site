@@ -7,8 +7,12 @@
 # Show draft
 /drafts/*   /show-draft 200
 # New draft: step 3
-/draft/:pattern/for/:model  /step/3 200
+/draft/:pattern/for/:model  /step/3/draft 200
 # New draft: step 2
-/draft/:pattern /step/2 200
+/draft/:pattern /step/2/draft 200
 # New draft: step 1
-/draft  /step/1 200
+/draft  /step/1/draft 200
+# Fork draft: step 3
+/fork/:pattern/for/:model  /step/3/fork 200
+# Fork draft: step 2
+/fork/:pattern /step/2/fork 200
