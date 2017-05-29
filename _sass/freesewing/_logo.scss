@@ -1,45 +1,14 @@
-#home-logo {
-    margin: auto;
-    margin-bottom: 1rem;
-    padding: 0;
-    text-align: center;
-    width: 200px;
-    height: 200px;
-    position: relative;
-}
-#home-logo-background {
-    position: absolute;
-    top: 14px;
-    left: 17px;
-    width: 156px;
-    height: 174px;
-    margin: auto;
-}
-#home-logo img {
-    max-height: 200px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-#logo-message {
-    display: block;
-    position: absolute;
-    width: 200px;
-    bottom: 31px;
-    font-size: 75%;
-    line-height: 1.25;
-}
-#logo-message a {
-  color: #292b2c;
-  text-shadow: 1px 1px 1px #000;
-}
-#top-logo svg {
-    fill: #ffffff;
-    width: 96px;
-    height: 96px;
-}
-#cover-bottom-logo svg {
-    fill: #ffffff;
-    width: 52px;
-    height: 52px;
+#top-logo {
+    svg#logo-shadow {
+        width: 96px;
+        height: 96px;
+    }
+    #skull {
+        fill: $potwtext;
+        // Do not disable stroke here because we cannot override it in #shadow
+    }
+    #shadow {
+        stroke: $potwinversetrans;
+        stroke-width: 1;
+    }
 }

@@ -11,7 +11,7 @@ permalink: /step/3/fork
             <h3>One step to go</h3>
             <ul style="margin: auto; display:inline-block; text-align: left; padding-left: 0;" class="todo mt-2 mb-3">
                 <li class="done"><a href="/draft" id="step1-link">You chose a pattern</a></li>
-                <li class="done"><button type="button" id="step2-link">You chose a model</button></li>
+                <li class="done"><a href="#step2-link" id="step2-link">You chose a model</a></li>
                 <li class="ongoing">Choose your options</li>
                 <li>We'll draft your pattern next</li>
             </ul>
@@ -22,7 +22,7 @@ permalink: /step/3/fork
     </div>
     <div class="row">
         <div class="col-12" id="picklist">
-        <ul class="mb-3 filter"><li><b>Quick pick:</b></li><li><button type="button" class="px-1" id="submit-link">Draft pattern</button></li></ul>
+        <ul class="mb-3 filter"><li><b>Quick pick:</b></li><li><a href="#step2-link" class="px-1" id="submit-link">Draft pattern</a></li></ul>
         </div>
     </div>
 </div>

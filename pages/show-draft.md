@@ -14,9 +14,9 @@ permalink: /show-draft
                         <span class="crown crown-middle" id="draft-handle"></span>
                         <img class="crown crown-right" id="draft-model-img" alt="Model avatar" src="/img/logo/spinner.svg">
                     </div>
-                    <button type="button" id="fork-btn" class="poh btn btn-outline-info mt-3 modal light"><i class="fa fa-code-fork" aria-hidden="true"></i> Fork</button>
-                    <button type="button" id="settings-btn" class="poh btn btn-outline-primary mt-3 modal light"><i class="fa fa-wrench" aria-hidden="true"></i> Settings</button>
-                    <button type="button" id="delete-btn" class="poh btn btn-outline-danger mt-3 modal light"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
+                    <a href="#draft" id="fork-btn" class="poh btn btn-outline-info mt-3 modal light"><i class="fa fa-code-fork" aria-hidden="true"></i> Fork</a>
+                    <a href="#draft" id="settings-btn" class="poh btn btn-outline-primary mt-3 modal light"><i class="fa fa-wrench" aria-hidden="true"></i> Settings</a>
+                    <a href="#draft" id="delete-btn" class="poh btn btn-outline-danger mt-3 modal light"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a>
                 </div>
             </div>
             <div id="accordion" role="tablist" aria-multiselectable="true" class="full-width">
@@ -28,13 +28,7 @@ permalink: /show-draft
                         <div class="card-block" id="content-notes">
                             <div class="notes">
                                 <div id="notes-inner"></div>
-                                <button type="button" class="update-bubble hover-shadow hashlink" id="update-notes" title="Edit draft notes">
-                                    <svg class="icon pencil" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-                                        <path class="c1" d="M5,43l0,-6l2,-2l6,6l-2,2z"></path>
-                                        <path class="c2" d="M8,34l20,-20l6,6l-20,20z"></path>
-                                        <path class="c3" d="M29,13l6,-6l6,6l-6,6z"></path>
-                                    </svg>
-                                </button>
+                                <a href="#draft" class="update-bubble hover-shadow" id="update-notes" title="Edit draft notes"><i class="fa fa-pencil fa-2x" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
@@ -45,7 +39,7 @@ permalink: /show-draft
                     </div>
                     <div id="collapse-preview" class="collapse" role="tabpanel" aria-labeledby="heading-preview" aria-expanded="false">
                         <div class="card-block" id="content-preview">
-                            <button type="button" id="link-preview" title="Open in a new window" target="_BLANK"><div class="drop-shadow svg-frame" id="svg-wrapper"></div></button>
+                            <a href="#draft" id="link-preview" title="Open in a new window" target="_BLANK"><div class="drop-shadow svg-frame" id="svg-wrapper"></div></a>
                         </div>
                     </div>
                 </div>
@@ -55,7 +49,7 @@ permalink: /show-draft
                     </div>
                     <div id="collapse-compared" class="collapse" role="tabpanel" aria-labeledby="heading-compared" aria-expanded="false">
                         <div class="card-block" id="content-compared">
-                            <button type="button" id="compared-preview" title="Open in a new window" target="_BLANK"><div class="drop-shadow svg-frame" id="compared-wrapper"></div></button>
+                            <a href="#draft" id="compared-preview" title="Open in a new window" target="_BLANK"><div class="drop-shadow svg-frame" id="compared-wrapper"></div></a>
                         </div>
                     </div>
                 </div>

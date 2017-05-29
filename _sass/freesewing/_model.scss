@@ -28,12 +28,13 @@ a.update-bubble {
     bottom: -10px;
     right: -5px;
     outline: none;
-    padding: 8px 11px;
+    padding: 10px 15px;
     border-radius: 50%;
     background-color: $purple;
     display: block;
     width: 52px;
     height: 52px;
+    color: $white;
 }
 .update-bubble svg.pencil {
     width: 36px;

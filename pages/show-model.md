@@ -11,13 +11,13 @@ permalink: /show-model
             <h2>Notes</h2>
             <div class="notes">
                 <div id="notes-inner"></div>
-                <button type="button" class="poh update-bubble hover-shadow hashlink" id="update-notes" title="Edit model notes">
+                <a href="#notes-inner"  class="poh update-bubble hover-shadow hashlink" id="update-notes" title="Edit model notes">
                     <svg class="icon pencil" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
                         <path class="c1" d="M5,43l0,-6l2,-2l6,6l-2,2z"></path>
                         <path class="c2" d="M8,34l20,-20l6,6l-20,20z"></path>
                         <path class="c3" d="M29,13l6,-6l6,6l-6,6z"></path>
                     </svg>
-                </button>
+                </a>
             </div>
             <h2>Measurements</h2>
             <div id="measurements"></div>
@@ -26,7 +26,7 @@ permalink: /show-model
             <hr class="mt-2">
             <h2>Danger zone</h2>
             <p>Remove this model all its data.</p>
-            <p class="mt-2"><button type="button" class="btn btn-danger hashlink" id="delete-btn" title="Delete this model">Delete this model</button></p>
+            <p class="mt-2"><a href="#delete-btn" class="btn btn-danger hashlink" id="delete-btn" title="Delete this model">Delete this model</a></p>
         </div>
     </div>
 </div>

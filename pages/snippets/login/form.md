@@ -21,7 +21,7 @@ permalink: /snippets/login/form
                     <label class="floating-label">Password</label> 
                   </div>
                   <button type="submit" class="btn btn-primary btn-block btn-lg mt-4">Login</button>
-                  <p class="mt-3"><button type="button" id="show-recover-link" class="poh toggle-password-recover">Forgot your password?</button></p>
+                  <p class="mt-3"><a href="#login-panel" id="show-recover-link" class="poh toggle-password-recover">Forgot your password?</a></p>
                 </form>
             </div>
             <div class="panel" id="recover-panel">
@@ -32,7 +32,7 @@ permalink: /snippets/login/form
                     <label class="floating-label">Email</label> 
                   </div>
                   <button type="submit" class="btn btn-primary btn-lg btn-block mt-4">Request a new password</button>
-                  <p class="mt-3"><button type="button" class="toggle-password-recover">Back to login</button></p>
+                  <p class="mt-3"><a href="#recovery-panel" class="toggle-password-recover">Back to login</a></p>
                 </form>
             </div>
         </div>
@@ -57,7 +57,7 @@ permalink: /snippets/login/form
                     <br>
                     2) We don't enforce a password policy
                 </p>
-                <p class="mt-3"><button type="button" class="toggle-resend">Re-send activation email</button></p>
+                <p class="mt-3"><a href="#signup-panel" class="toggle-resend">Re-send activation email</a></p>
             </div>
             <div class="panel" id="resend-panel">
                 <p><b>Re-send activation email</b><br>If you signed up but can't find (or didn't get) your activation email, we can send it again.</p><p>Just enter your email address below</p>
@@ -68,7 +68,7 @@ permalink: /snippets/login/form
                   </div>
                   <button id="signup-submit" type="submit" class="btn btn-primary btn-block btn-lg mt-4">Resend actication email</button>
                 </form>
-                <p class="mt-3"><button type="button" class="toggle-resend">Back to sign up</button></p>
+                <p class="mt-3"><a href="#resend-panel" class="toggle-resend">Back to sign up</a></p>
             </div>
         </div>
     </div>
