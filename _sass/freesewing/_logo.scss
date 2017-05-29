@@ -3,9 +3,9 @@
         width: 96px;
         height: 96px;
     }
-    #skull {
+    path#skull {
         fill: $potwtext;
-        // Do not disable stroke here because we cannot override it in #shadow
+        stroke: inherit;
     }
     #shadow {
         stroke: $potwinversetrans;

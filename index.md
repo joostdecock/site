@@ -56,4 +56,27 @@ But hey, we can always make it great after I make it work.
 
 </div>
 </div>
+
+
+    <div class="row">
+        <div class="col-md-6 mb-3 mt-1">
+            {% include card.html 
+                title='What is freesewing?'
+                text="Oh you're new here? No worries, we can explain what this is in just a few minutes. With bonus origin story."
+                img='/img/lamp.jpg'
+                link='/about'
+            %}
+        </div>
+        <div class="col-md-6 mb-3 mt-1">
+            {% include card.html 
+                title='Check out a sample draft'
+                text="This website generate pattern drafts. Here's a sample you can check out to have an idea what to expect."
+                img='/img/draft-detail.png'
+                alt='A Creative Commons picture from the Flickr stream of WOCinTech Chat'
+                link='/drafts/rhtum'
+            %}
+        </div>
+    </div> <!-- .row -->
+
+
 </div> <!-- .container -->
