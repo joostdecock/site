@@ -14,8 +14,8 @@ permalink: /components/measurement/settings
         <span class="input-group-addon form-units"></span>
     </div>
     <div id="loader" class="text-right">
-        <a class="btn btn-outline-primary mt-5" href='#'>Show instructions</a>
-        <button type="submit" class="btn btn-primary mt-5">Save</button>
+        <a href="#loader" class="btn btn-outline-primary mt-5 poh">Show instructions</a>
+        <button type="submit" class="btn btn-primary mt-5 poh">Save</button>
     </div>
 </form>
 </div>

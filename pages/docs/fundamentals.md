@@ -125,7 +125,7 @@ In freesewing, wesupport the following operations in pathstrings:
 
 ## Services
 Freesewing core provides 4 different services. If the description below leaves you guessing,
-you can try them all in [our demo](/demo).
+you can try them all in [our demo](/fixme).
 
 ### The draft service
 The draft service drafts patterns. It's sort of our main thing, and probably the reason you're reading this in the first place.
@@ -164,7 +164,7 @@ pattern has. But it doesn't have to, it can simply ask the info service.
 
 ## Configuration files
 
-The full details on configuration files are [here](/config), but you can get away with 
+The full details on configuration files are [here](/docs/core/config), but you can get away with 
 knowing only this:
 
 - The freesewing global configuration file is `config.yml` and is located at the root of the project.
@@ -174,7 +174,7 @@ knowing only this:
 ## Request parameters
 Freesewing needs your input to do what it does. And that input comes in the form or request parameters.
 
-The full details on all request parameters are available [here](/parameters). 
+The full details on all request parameters are available [here](/docs/core/parameters). 
 But you can get away with knowing only this:
 
 ### The basics

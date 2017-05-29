@@ -23,7 +23,7 @@ bool isValidRequest(
 This allows the channel owner to implement access control. 
 
 Do you want to serve this request? Return `true` if so, or `false` if not.
-You have the entire [`Context`](/class/context) object to make up your mind.
+You have the entire [`Context`](../../src/context) object to make up your mind.
 
 In this case, the only thing we check for is whether the requested pattern exists.
 
@@ -54,8 +54,8 @@ Always called from the `run()` method of one of the services.
 #### Parameters
 {:.no_toc}
 
-- [`Request`](/class/request) : The [`Request`](/class/request) object that holds all user input
-- [`Pattern`](/class/patterns/core/pattern) : The [`Pattern`](/class/patterns/core/pattern) object that holds info on what measurements the pattern expects
+- [`Request`](../../src/request) : The [`Request`](../../src/request) object that holds all user input
+- [`Pattern`](../../patterns/core/pattern) : The [`Pattern`](../../patterns/core/pattern) object that holds info on what measurements the pattern expects
 
 #### Return value
 {:.no_toc}
@@ -86,8 +86,8 @@ Always called from the `run()` method of one of the services.
 #### Parameters
 {:.no_toc}
 
-- [`Request`](/class/request) : The [`Request`](/class/request) object that holds all user input
-- [`Pattern`](/class/patterns/core/pattern) : The [`Pattern`](/class/patterns/core/pattern) object that holds info on what options the pattern supports
+- [`Request`](../../src/request) : The [`Request`](../../src/request) object that holds all user input
+- [`Pattern`](../../patterns/core/pattern) : The [`Pattern`](../../patterns/core/pattern) object that holds info on what options the pattern supports
 
 #### Return value
 {:.no_toc}

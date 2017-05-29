@@ -17,17 +17,17 @@ The core repository holds the freesewing platform.
 
 - [Source code](https://github.com/freesewing/core)
 - [Issues](https://github.com/freesewing/core/issues)
-- [Infrastructure documentation](/infrastructure#core)
+- [Infrastructure documentation](/docs/infrastructure#core)
 
-## docs
+## site
 
-[![Build Status](https://travis-ci.org/freesewing/docs.svg?branch=master)](https://travis-ci.org/freesewing/docs)
+[![Build Status](https://travis-ci.org/freesewing/site.svg?branch=master)](https://travis-ci.org/freesewing/site)
 
-The docs repository holds the freesewing documentation.
+The site repository holds the freesewing.org website.
 
-- [Source code](https://github.com/freesewing/docs)
-- [Issues](https://github.com/freesewing/docs/issues)
-- [Infrastructure documentation](/infrastructure#docs)
+- [Source code](https://github.com/freesewing/site)
+- [Issues](https://github.com/freesewing/site/issues)
+- [Infrastructure documentation](/docs/infrastructure#site)
 
 ## demo
 
@@ -35,7 +35,7 @@ The demo repository holds a stand-alone version of the freesewing demo.
 
 - [Source code](https://github.com/freesewing/demo)
 - [Issues](https://github.com/freesewing/demo/issues)
-- [Infrastructure documentation](/infrastructure#demo)
+- [Infrastructure documentation](/docs/infrastructure#demo)
 
 > <h5 class='notoc'>Why a stand-alone demo?</h5>
 >
@@ -57,7 +57,7 @@ you visit [freesewing.org](https://freesewing.org/).
 
 - [Source code](https://github.com/freesewing/nofront)
 - [Issues](https://github.com/freesewing/nofront/issues)
-- [Infrastructure documentation](/infrastructure#nofront)
+- [Infrastructure documentation](/docs/infrastructure#nofront)
 
 ## bsd
 

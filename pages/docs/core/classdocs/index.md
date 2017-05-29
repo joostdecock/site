@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Core class documentation
-tags: [class docs]
+tags: [core docs]
 permalink: /docs/core/classdocs/
 ---
 
-## Class hierarchy
+## Core class hierarchy
 
 Our class documentation is structured according to the core class hierarchy.
 Click any of the class names below to jump to the relevant documentation.

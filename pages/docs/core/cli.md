@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Command line usage
-tags: [fundamentals]
+tags: [core docs,fundamentals]
 permalink: /docs/core/cli
 crumbs:
   - /docs|Docs
@@ -85,7 +85,7 @@ To draft a pattern with the default options and measurements, set the
 
 
 > For an overview of options you can pass in the browser or on the command line
-> see the [Parameters page](/parameters).
+> see the [Parameters page](/docs/core/parameters).
 
 
 * TOC - Do not remove this line

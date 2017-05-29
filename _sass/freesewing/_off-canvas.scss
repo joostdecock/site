@@ -100,3 +100,29 @@ body.oc-shown .oc-overlay {
 #oc-right-wrapper.shown #tocburger {
   transform: translate(-240px, 0);
 }
+#sidemenu {
+    
+    padding-top: 2rem;
+
+    a {
+        display: block;
+        padding: 0.5rem 1rem;
+    }
+    h4 {
+        padding: 0;
+        margin: 0;
+    }
+    a:hover, a:active {
+        background: $purple;
+        color: $white!important;
+    }
+    .card-header {
+        padding: 0;
+    }
+}
+body.scrolled #tocburger {
+    right: 100px;
+}
+body.scrolled #hamburger {
+    right: 55px;
+}

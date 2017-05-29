@@ -2,7 +2,7 @@
 layout: page
 title: Service
 namespace: Freesewing\Services
-tags: [class documentation]
+tags: [class docs]
 permalink: /docs/core/classdocs/services/service
 ---
 ## Description 
@@ -31,7 +31,7 @@ void run(
     \Freesewing\Context $context
 ) 
 ```
-Run the service and do whatever it does, making changes in the [`Context`](../context) object.
+Run the service and do whatever it does, making changes in the [`Context`](../src/context) object.
 
 ## See also
 {% include classFooter.html %}

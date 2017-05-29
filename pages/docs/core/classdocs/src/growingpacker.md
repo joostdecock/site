@@ -27,7 +27,7 @@ permission to distribute this port under GPLv3 (Thanks Jake!).
 
 ## Typical use
 
-Always called from [`Pattern:layout`](/docs/core/classdocs/src/patterns/core/pattern#layout).
+Always called from [`Pattern:layout`](../patterns/core/pattern#layout).
 
 
 ## Public methods

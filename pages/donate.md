@@ -1,7 +1,6 @@
 ---
 layout: cards
 title: Donate to freesewing
-tags: [donations]
 permalink: /donate/
 ---
 <div class="container mb-5">

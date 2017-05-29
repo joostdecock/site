@@ -1,6 +1,6 @@
 // Set the location of the APIs you want to connect to here
 var api = {
-    data: 'https://joost.data.freesewing.org',
+    data: 'https://data.freesewing.org',
     core: 'https://api.freesewing.org',
 };
         
@@ -109,7 +109,8 @@ var token = window.localStorage.getItem("jwt");
         }
 
         // Handle login links
-        $('a.login').click(function(){
+        $('a.login, button.login').click(function(e){
+            e.preventDefault();
             // Load login box
             $('#modal').removeClass().addClass('shown thematic');
             $('#modal-main').html("<div id='login' class='loginbox'></div>");
@@ -119,7 +120,7 @@ var token = window.localStorage.getItem("jwt");
         });
    
         // Handle logout links
-        $('a.logout').click(function(){
+        $('a.logout, btn.logout').click(function(){
             window.localStorage.removeItem("jwt");
             window.location.replace("/");
         });

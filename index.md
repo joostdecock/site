@@ -8,18 +8,17 @@ permalink: /
 <div class="row">
 <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2" markdown="1">
 
+
 > __TL;DR__ 
 > 
-> - This site is early beta code. All data you enter on this site can get wiped at any moment
+> - This site is `beta` code. All data you enter on this site can get wiped at any moment
 > - Your feedback/input/suggestions are welcome [on Gitter](https://gitter.im/freesewing/freesewing)
 
 ## About this site
 
-This site is a work in progress.  
-Specifically, it's here to test/develop our data API (which stores user info)
-and its integration in the frontend.
+This site is a work in progress. It is to become the main freesewing site.
 
-That frontend (the one you're looking at) site is a fork of 
+This site is a fork of  
 [our docs repository](https://github.com/freesewing/docs).
 So it's based on Jekyll, and statically hosted by Netlify.
 
@@ -27,11 +26,8 @@ Because forks can't live in the same organisation, it's currently under
 [my personal GitHub account](https://github.com/joostdecock/site).
 But don't let that stop you, feel free contribute or just mess around with it.
 
-The frontend has gone through some changes.
-One of those changes is that I ripped out most of the content, because that makes it faster to
-regenerate the site, handy while developing.
-
-More importantly, it contains a bunch of jQuery code that interacts with the data API.
+The frontend has gone through some changes, and 
+contains a bunch of jQuery code that interacts with the data API.
 
 The what? The data API.
 
@@ -39,10 +35,6 @@ The what? The data API.
 [PHP Slim framework](http://slimframework.com/).
 
 There's a lot it doesn't do yet, but things are starting to take shape.
-If nothing else, you can generate and download pattern drafts.
-
-When you sign up with an email address that is tied to a makemypattern.com user,
-your data will automatically be migrated, which is nice.
 
 ## How did we get here?
 

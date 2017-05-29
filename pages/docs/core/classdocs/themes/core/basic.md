@@ -2,7 +2,7 @@
 layout: page
 title: Basic
 namespace: Freesewing\Themes\Core
-tags: [class documentation]
+tags: [class docs]
 permalink: /docs/core/classdocs/themes/core/basic
 ---
 ## Description 

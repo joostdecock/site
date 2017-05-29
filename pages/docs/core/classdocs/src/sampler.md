@@ -28,18 +28,18 @@ void setPattern(
     \Freesewing\Pattern $pattern 
 )
 ```
-Stores the [`Pattern`](/docs/core/classdocs/src/patterns/core/pattern) object in the `pattern` property.
+Stores the [`Pattern`](../patterns/core/pattern) object in the `pattern` property.
 
 #### Typical use
 {:.no_toc}
 
-Used by the [`Services/sampleservice`](services/sampleservice) and 
-[`Services/compareservice`](services/compareservice).
+Used by the [`Services/sampleservice`](../services/sampleservice) and 
+[`Services/compareservice`](../services/compareservice).
 
 #### Parameters
 {:.no_toc}
 
-This expects a child class of [`Pattern`](/docs/core/classdocs/src/patterns/core/pattern).
+This expects a child class of [`Pattern`](../patterns/core/pattern).
 
 ### loadPatternOptions
 
@@ -53,7 +53,7 @@ Options of type `percent` will be divided by 100, so that 50 becomes 0.5.
 #### Typical use
 {:.no_toc}
 
-Used by the [`Services/sampleservice`](services/sampleservice) to add options
+Used by the [`Services/sampleservice`](../services/sampleservice) to add options
 to patterns it instantiates.
 
 #### Return value
@@ -94,8 +94,8 @@ Protected function, so only available in [`OptionsSampler`](optionssampler) and
 
 - `int` `$step` : Which sampling step (out of a total `$steps`) is this?
 - `int` `$steps` : Number of sampling steps in total
-- [`Patterns/pattern`](/docs/core/classdocs/src/patterns/core/pattern) `$pattern` : A [`Patterns/pattern`](/docs/core/classdocs/src/patterns/core/pattern) object
-- [`Themes/theme`](themes/core/theme) `$theme` : A [`Themes/theme`](themes/core/theme) object
+- [`Patterns/pattern`](../patterns/core/pattern) `$pattern` : A [`Patterns/pattern`](../patterns/core/pattern) object
+- [`Themes/theme`](../themes/core/theme) `$theme` : A [`Themes/theme`](../themes/core/theme) object
 - [`SvgRenderbot`] `$svgRenderbot` : An [`SvgRenderbot`] object
 - `string` `$mode` : Mode, either `sample` or `compare`. Defaults to `sample`
 

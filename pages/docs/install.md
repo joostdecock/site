@@ -3,8 +3,6 @@ layout: page
 title: Install instructions
 tags: [fundamentals, designer docs, developer docs]
 permalink: /docs/install
-crumbs:
- - /docs|Docs
 ---
 Jump to the install instructions for:
 
@@ -152,7 +150,7 @@ bundle exec htmlproofer _site --disable-external --assume-extension --file-ignor
 
 ## demo
 
-The [freesewing demo](/demo) is part of the documentation, and included in the docs repository. 
+The [freesewing demo](/fixme) is part of the documentation, and included in the docs repository. 
 But that is a Jekyll-based site which means that running your own instance is going to require some work.
 
 If you want your own demo without the hassle, follow these instructions.
@@ -181,7 +179,7 @@ Update it with the link to your own freesewing instance (no trailing slash)
 or leave it as-is to connect to our API.
 
 Note that if you're connecting to our API, you could have just used 
-[the online demo](/demo).
+[the online demo](/fixme).
 
 ### Running the demo
 

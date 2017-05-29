@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Core patterns
-tags: [class docs]
 permalink: /docs/core/classdocs/patterns/core/
 ---
 * TOC - Do not remove this line

@@ -23,8 +23,8 @@ sizes/measurements.
 
 ## Typical use
 
-Called from [`Services\SampleService::run`](services/sampleservice#run) 
-and [`Services\CompareService::run`](services/compareservice#run).
+Called from [`Services\SampleService::run`](../services/sampleservice#run) 
+and [`Services\CompareService::run`](../services/compareservice#run).
 
 ## Public methods
 
@@ -42,7 +42,7 @@ to the `modelConfig` property.
 #### Parameters
 {:.no_toc}
 This expects a configuration array, obtained from
-[`Patterns\Pattern::getSamplerModelConfig`](patterns/core/pattern#getsamplermodelconfig).
+[`Patterns\Pattern::getSamplerModelConfig`](../patterns/core/pattern#getsamplermodelconfig).
 
 ### loadPatternModels
 
@@ -79,7 +79,7 @@ Then, it adds the new [`Model`](model) to the `models` property, which is an arr
 holding [`Model`](model) objects. `$name` will be the key in that array.
 
 This is only used by the  
-[`Services\CompareService`](services/compareservice) who not only needs to
+[`Services\CompareService`](../services/compareservice) who not only needs to
 load models from the sampler configuration, but also needs to add an extra model
 with the user's measurements.
 
@@ -97,7 +97,7 @@ This method allows that.
 ```
 
 `$name` is an optional string that defaults to `userSize`, but the 
-[`Services\CompareService`](services/compareservice) sets this to `compareModel`
+[`Services\CompareService`](../services/compareservice) sets this to `compareModel`
 which is relevant in [`MeasurementsSampler::sampleMeasurements`](measurementssampler#samplemeasurements)
 
 ### sampleMeasurements
@@ -111,7 +111,7 @@ array sampleMeasurements(
 This iterates over the [`Model`](model) objects in the `models` property.
 
 For each [`Model`](model) this clones the pattern and calls 
-[`Patterns\Pattern::sample`](patterns/core/pattern#sample) with the [`Model`](model)
+[`Patterns\Pattern::sample`](../patterns/core/pattern#sample) with the [`Model`](model)
 as parameter.
 
 It then itterates over the parts and calls 
@@ -120,13 +120,13 @@ It then itterates over the parts and calls
 #### Parameters
 {:.no_toc}
 
-Expects a child of [`Themes\Theme`](themes/core/theme). We need this because the theme
+Expects a child of [`Themes\Theme`](../themes/core/theme). We need this because the theme
 is needed to style the sampled parts.
 
 #### Return value
 {:.no_toc}
 
-Returns a (grand)child of [`Patterns\Pattern`](patterns/core/pattern)
+Returns a (grand)child of [`Patterns\Pattern`](../patterns/core/pattern)
 
 ## See also
 {% include classFooter.html %}

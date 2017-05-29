@@ -371,7 +371,7 @@ Returns a [slug](https://en.wikipedia.org/wiki/Semantic_URL#Slug) for a given st
 #### Typical use
 {:.no_toc}
 
-Only used by the [`Themes/designer`](themes/core/designer) theme.
+Only used by the [`Themes/designer`](../themes/core/designer) theme.
 
 #### Parameters
 {:.no_toc}
@@ -395,7 +395,7 @@ Returns [kint](http://raveren.github.io/kint/) formated debug for the data passe
 #### Typical use
 {:.no_toc}
 
-Only used by the [`Themes/developer`](themes/core/developer) theme.
+Only used by the [`Themes/developer`](../themes/core/developer) theme.
 
 #### Parameters
 {:.no_toc}

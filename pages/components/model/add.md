@@ -10,7 +10,7 @@ permalink: /components/model/add
             <div class="input-group">
                 <input class="form-text form-control text-center" id="name" name="name" value="" type="text" placeholder="Type your model name here">
             </div>
-            <p class="mt-3"><a id="show-body-type" href="#" class="btn btn-primary">Continue &raquo;</a></p>
+            <p class="mt-3"><a id="show-body-type" class="poh btn btn-primary">Continue &raquo;</a></p>
             <p>Naming your models makes it easier to tell them apart.</p>
         </div>
         <div class="panel text-center" id="recover-panel">

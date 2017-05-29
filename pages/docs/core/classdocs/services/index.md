@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Services
-tags: [class docs]
 permalink: /docs/core/classdocs/services/
 ---
 * TOC - Do not remove this line

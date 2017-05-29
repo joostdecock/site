@@ -35,7 +35,7 @@ Returns the directory in which freesewing was installed.
 #### Typical use
 {:.no_toc}
 
-Used by the [`InfoService`](services/infoservice) to discover available patterns, themes, and channels.
+Used by the [`InfoService`](../services/infoservice) to discover available patterns, themes, and channels.
 
 FIXME: Moved to Utils
 
@@ -44,7 +44,7 @@ FIXME: Moved to Utils
 ```php?start_inline=1
 \Freesewing\Channel getChannel() 
 ```
-Returns the [`Channel`](/docs/core/classdocs/src/channels/core/channel) stored in the `channel` property, if any.
+Returns the [`Channel`](../channels/core/channel) stored in the `channel` property, if any.
 
 ### getConfig
 
@@ -93,10 +93,10 @@ Returns the [`OptionsSampler`](optionssampler) object in the `optionsSampler` pr
 ```php?start_inline=1
 \Freesewing\Pattern getPattern() 
 ```
-Returns the [`Pattern`](patterns/core/pattern) object in the `pattern` property, if any.
+Returns the [`Pattern`](../patterns/core/pattern) object in the `pattern` property, if any.
 
-> Given that [`Pattern`](patterns/core/pattern) is an abstract class, the actual object
-> will be a (grand)child of the [`Pattern`](patterns/core/pattern) class.
+> Given that [`Pattern`](../patterns/core/pattern) is an abstract class, the actual object
+> will be a (grand)child of the [`Pattern`](../patterns/core/pattern) class.
 
 ### getRenderbot
 
@@ -124,11 +124,11 @@ Returns the [`Response`](response) object in the `response` property, if any.
 ```php?start_inline=1
 \Freesewing\Services\Service getService() 
 ```
-Returns the [`Services\Service`](services/service) object in the `service` property, if any.
+Returns the [`Services\Service`](../services/service) object in the `service` property, if any.
 
-> Given that [`Services\Service`](services/service) is an 
+> Given that [`Services\Service`](../services/service) is an 
 > abstract class, the actual object  will be a child of the 
-> [`Services\Service`](services/service) class.
+> [`Services\Service`](../services/service) class.
 
 ### getSvgDocument
 
@@ -142,11 +142,11 @@ Returns the [`SvgDocument`](svgdocument) object in the `svgDocument` property, i
 ```php?start_inline=1
 \Freesewing\Themes\Theme getTheme() 
 ```
-Returns the [`Themes\Theme`](themes/core/theme) object in the `theme` property, if any.
+Returns the [`Themes\Theme`](../themes/core/theme) object in the `theme` property, if any.
 
-> Given that [`Themes\Theme`](themes/core/theme) is an abstract class
+> Given that [`Themes\Theme`](../themes/core/theme) is an abstract class
 > the actual object  will be a child of the 
-> [`Themes\Theme`](themes/core/theme) class.
+> [`Themes\Theme`](../themes/core/theme) class.
 
 ### getTranslator
 
@@ -186,12 +186,12 @@ metrics for output (things printed on the pattern).
 void setChannel(\Freesewing\Channels\Channel) 
 ```
 
-Expects a [`Channels\Channel`](/docs/core/classdocs/src/channels/core/channel) object and stores it 
+Expects a [`Channels\Channel`](../channels/core/channel) object and stores it 
 in the `channel` property.
 
-> Given that [`Channels\Channel`](/docs/core/classdocs/src/channels/core/channel) is an
+> Given that [`Channels\Channel`](../channels/core/channel) is an
 > abstract class, the actual object will be a child of the 
-> [`Channels\Channel`](/docs/core/classdocs/src/channels/core/channel) class.
+> [`Channels\Channel`](../channels/core/channel) class.
 
 #### Typical use
 {:.no_toc}
@@ -201,7 +201,7 @@ Called only from the [`Context::configure`](context#configure) method.
 #### Parameters
 {:.no_toc}
 
-Expects a child of [`Channels\Channel`](/docs/core/classdocs/src/channels/core/channel).
+Expects a child of [`Channels\Channel`](../channels/core/channel).
 
 ### setConfig
 
@@ -302,21 +302,21 @@ Expects an instance of [`OptionsSampler`](optionssampler).
 void setPattern(\Freesewing\Patterns\Core\Pattern) 
 ```
 
-Expects a (grand)child of [`Patterns\Core\Pattern`](patterns/core/pattern) and stores it 
+Expects a (grand)child of [`Patterns\Core\Pattern`](../patterns/core/pattern) and stores it 
 in the `pattern` property.
 
 
 #### Typical use
 {:.no_toc}
 
-Used by the [`Services\SampleService`](services/sampleservice) and 
-[`Services\CompareService`](services/compareservice) to attach a pattern 
+Used by the [`Services\SampleService`](../services/sampleservice) and 
+[`Services\CompareService`](../services/compareservice) to attach a pattern 
 to the [`Context`](context). 
 
 #### Parameters
 {:.no_toc}
 
-Expects a (grand)child of [`Patterns\Core\Pattern`](patterns/core/pattern).
+Expects a (grand)child of [`Patterns\Core\Pattern`](../patterns/core/pattern).
 
 ### setRenderbot
 
@@ -376,10 +376,10 @@ to attach a [`Response`](response) object to the [`Context`](context).
 
 Specifically:
 
-- [`InfoService::run`](/docs/core/classdocs/src/services/infoservice#run) 
-- [`DraftService::run`](/docs/core/classdocs/src/services/draftservice#run) 
-- [`SampleService::run`](/docs/core/classdocs/src/services/sampleservice#run) 
-- [`CompareService::run`](/docs/core/classdocs/src/services/compareservice#run) 
+- [`InfoService::run`](../services/infoservice#run) 
+- [`DraftService::run`](../services/draftservice#run) 
+- [`SampleService::run`](../services/sampleservice#run) 
+- [`CompareService::run`](../services/compareservice#run) 
 
 #### Parameters
 {:.no_toc}
@@ -392,7 +392,7 @@ Expects a [`Request`](request) object.
 void setService(\Freesewing\Services\Service) 
 ```
 
-Expects a child of [`Services\Service`](services/service) 
+Expects a child of [`Services\Service`](../services/service) 
 and stores it in the `service` property.
 
 #### Typical use
@@ -403,7 +403,7 @@ Called by [`Context::configure`](context#configure).
 #### Parameters
 {:.no_toc}
 
-Expects a child of [`Services\Service`](services/service).
+Expects a child of [`Services\Service`](../services/service).
 
 ### setSvgDocument
 
@@ -430,7 +430,7 @@ Expects an instance of [`SvgDocument`](svgdocument).
 void setTheme(\Freesewing\Themes\Theme) 
 ```
 
-Expects a child of [`Themes\Theme`](themes/core/theme) 
+Expects a child of [`Themes\Theme`](../themes/core/theme) 
 and stores it in the `theme` property.
 
 #### Typical use
@@ -441,7 +441,7 @@ Called by [`Context::configure`](context#configure).
 #### Parameters
 {:.no_toc}
 
-Expects a child of [`Themes\Theme`](themes/core/theme).
+Expects a child of [`Themes\Theme`](../themes/core/theme).
 
 ### configure
 
@@ -453,9 +453,9 @@ The configure method sets up properties that are common to all requests.
 
 They are:
 - config: Holds the configuration file as an array
-- service: Holds a [`Service`](services/service) object 
-- channel: Holds a [`Channel`](/docs/core/classdocs/src/channels/core/channel) object 
-- theme: Holds a [`Themes\Theme`](themes/core/theme) object 
+- service: Holds a [`Service`](../services/service) object 
+- channel: Holds a [`Channel`](../channels/core/channel) object 
+- theme: Holds a [`Themes\Theme`](../themes/core/theme) object 
 - locale: Holds a string with the locale
 
 #### Typical use
@@ -472,23 +472,23 @@ void addPattern()
 Loads pattern in the pattern property.
 
 Also lets the pattern know whether we are dealing with a paperless theme by feeding
-[`Theme::isPaperless`](/docs/core/classdocs/src/themes/core/theme#ispaperless) into [`Pattern::setPaperless`](/docs/core/classdocs/src/patterns/core/pattern#setpaperless)
+[`Theme::isPaperless`](../themes/core/theme#ispaperless) into [`Pattern::setPaperless`](../patterns/core/pattern#setpaperless)
 
 #### Typical use
 {:.no_toc}
 
 Used by the `run` method of all services 
-to attach a [`Pattern`](patterns/core/pattern) object to the [`Context`](context).
+to attach a [`Pattern`](../patterns/core/pattern) object to the [`Context`](context).
 
 Specifically:
 
-- [`InfoService::run`](/docs/core/classdocs/src/services/infoservice#run) 
-- [`DraftService::run`](/docs/core/classdocs/src/services/draftservice#run) 
-- [`SampleService::run`](/docs/core/classdocs/src/services/sampleservice#run) 
-- [`CompareService::run`](/docs/core/classdocs/src/services/compareservice#run) 
+- [`InfoService::run`](../services/infoservice#run) 
+- [`DraftService::run`](../services/draftservice#run) 
+- [`SampleService::run`](../services/sampleservice#run) 
+- [`CompareService::run`](../services/compareservice#run) 
 
-> Given that [`Pattern`](patterns/core/pattern) is an abstract class, the actual object is always
-> a (grand)child of the [`Pattern`](patterns/core/pattern) class.
+> Given that [`Pattern`](../patterns/core/pattern) is an abstract class, the actual object is always
+> a (grand)child of the [`Pattern`](../patterns/core/pattern) class.
 
 ### addModel
 
@@ -502,7 +502,7 @@ Instantiates a new [`Model`](model) object and calls
 #### Typical use
 {:.no_toc}
 
-Used by [`SampleService::run`](/docs/core/classdocs/src/services/sampleservice#run) and [`DraftService::run`](/docs/core/classdocs/src/services/draftservice#run)
+Used by [`SampleService::run`](../services/sampleservice#run) and [`DraftService::run`](../services/draftservice#run)
 to attach a [`Model`](model) object to the [`Context`](context).
 
 ### addUnits
@@ -521,9 +521,9 @@ to store an array of units in the [`Context`](context) units property.
 
 Specifically:
 
-- [`DraftService::run`](/docs/core/classdocs/src/services/draftservice#run) 
-- [`SampleService::run`](/docs/core/classdocs/src/services/sampleservice#run) 
-- [`CompareService::run`](/docs/core/classdocs/src/services/compareservice#run) 
+- [`DraftService::run`](../services/draftservice#run) 
+- [`SampleService::run`](../services/sampleservice#run) 
+- [`CompareService::run`](../services/compareservice#run) 
 
 {% include units.html %}
 
@@ -543,9 +543,9 @@ to attach a symfony Translator object to the [`Context`](context).
 
 Specifically:
 
-- [`DraftService::run`](/docs/core/classdocs/src/services/draftservice#run) 
-- [`SampleService::run`](/docs/core/classdocs/src/services/sampleservice#run) 
-- [`CompareService::run`](/docs/core/classdocs/src/services/compareservice#run) 
+- [`DraftService::run`](../services/draftservice#run) 
+- [`SampleService::run`](../services/sampleservice#run) 
+- [`CompareService::run`](../services/compareservice#run) 
 
 ### addRenderBot
 
@@ -564,9 +564,9 @@ to attach a [`SvgRenderbot`](svgrenderbot) object to the [`Context`](context).
 
 Specifically:
 
-- [`DraftService::run`](/docs/core/classdocs/src/services/draftservice#run) 
-- [`SampleService::run`](/docs/core/classdocs/src/services/sampleservice#run) 
-- [`CompareService::run`](/docs/core/classdocs/src/services/compareservice#run) 
+- [`DraftService::run`](../services/draftservice#run) 
+- [`SampleService::run`](../services/sampleservice#run) 
+- [`CompareService::run`](../services/compareservice#run) 
 
 > Freesewing allows to use a different renderbot, in case you want to output a 
 > different format. 
@@ -589,9 +589,9 @@ to attach a [`SvgDocument`](svgdocument) object to the [`Context`](context).
 
 Specifically:
 
-- [`DraftService::run`](/docs/core/classdocs/src/services/draftservice#run) 
-- [`SampleService::run`](/docs/core/classdocs/src/services/sampleservice#run) 
-- [`CompareService::run`](/docs/core/classdocs/src/services/compareservice#run) 
+- [`DraftService::run`](../services/draftservice#run) 
+- [`SampleService::run`](../services/sampleservice#run) 
+- [`CompareService::run`](../services/compareservice#run) 
 
 ### addOptionsSampler
 
@@ -605,7 +605,7 @@ Instantiates a new [`OptionsSampler`](optionssampler) object and calls
 #### Typical use
 {:.no_toc}
 
-Used by [`SampleService::run`](/docs/core/classdocs/src/services/sampleservice#run) 
+Used by [`SampleService::run`](../services/sampleservice#run) 
 to attach a [`OptionsSampler`](optionssampler) object to the [`Context`](context).
 
 ### addMeasurementsSampler
@@ -620,7 +620,7 @@ Instantiates a new [`MeasurementsSampler`](measurementssampler) object and calls
 #### Typical use
 {:.no_toc}
 
-Used by [`SampleService::run`](/docs/core/classdocs/src/services/sampleservice#run) and [`CompareService::run`](/docs/core/classdocs/src/services/compareservice#run)
+Used by [`SampleService::run`](../services/sampleservice#run) and [`CompareService::run`](../services/compareservice#run)
 to attach a [`MeasurementsSampler`](measurementssampler) object to the [`Context`](context).
 
 ### runService
@@ -629,12 +629,12 @@ to attach a [`MeasurementsSampler`](measurementssampler) object to the [`Context
 void runService() 
 ```
 
-Calls the `run` method on the [`Services\Service`](services/service) 
+Calls the `run` method on the [`Services\Service`](../services/service) 
 object in the `service` property.
 
-> Given that [`Services\Service`](services/service) is an
+> Given that [`Services\Service`](../services/service) is an
 > abstract class, the actual object will be a child of the 
-> [`Services\Service`](services/service) class.
+> [`Services\Service`](../services/service) class.
 
 #### Typical use
 {:.no_toc}
@@ -647,14 +647,14 @@ Called only from `index.php`, the code that handles all freesewing requests.
 void cleanUp()
 ```
 
-Calls [`Theme::cleanUp`](/docs/core/classdocs/src/themes/core/theme#cleanup) and [`Channel::cleanUp`](/docs/core/classdocs/src/channels/core/channel#cleanup).
+Calls [`Theme::cleanUp`](../themes/core/theme#cleanup) and [`Channel::cleanUp`](../channels/core/channel#cleanup).
 
 If a pattern is attached to the [`Context`](context), this also calls
-[`Pattern::cleanUp`](/docs/core/classdocs/src/patterns/core/pattern#cleanup).
+[`Pattern::cleanUp`](../patterns/core/pattern#cleanup).
 
 > <b>How do you mean, 'If a pattern is attached'?</b>
 > 
-> This check is needed because the infoservice does not always instantiate a [`Pattern`](patterns/core/pattern).
+> This check is needed because the infoservice does not always instantiate a [`Pattern`](../patterns/core/pattern).
 
 This is a way to allow patterns, themes, and channels to clean up at the end of
 a request. For example, if you're logging to a database in your channel,
@@ -669,9 +669,9 @@ to attach a symfony Translator object to the [`Context`](context).
 
 Specifically:
 
-- [`DraftService::run`](/docs/core/classdocs/src/services/draftservice#run) 
-- [`SampleService::run`](/docs/core/classdocs/src/services/sampleservice#run) 
-- [`CompareService::run`](/docs/core/classdocs/src/services/compareservice#run) 
+- [`DraftService::run`](../services/draftservice#run) 
+- [`SampleService::run`](../services/sampleservice#run) 
+- [`CompareService::run`](../services/compareservice#run) 
 
 ## See also
 {% include classFooter.html %}

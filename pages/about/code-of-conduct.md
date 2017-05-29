@@ -3,8 +3,6 @@ layout: page
 title: Code of conduct
 tags: [contributors]
 permalink: /about/code-of-conduct
-crumbs:
-  - /about|About
 ---
 ## Our pledge
 

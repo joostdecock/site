@@ -57,23 +57,23 @@ Essentially, it takes care of the entire remainder of the request.
 
 While doing so, it takes care of a number of things:
 
-- It asks the [`Channel`](/class/channels/core/channel) wether this is a valid [`Request`](../request)
-- It asks the [`Channel`](/class/channels/core/channel) to standardize the [`Model`](../model) measurements and options
-- It adds units, a translator, [`Pattern`](../patterns/core/pattern), [`Model`](../model), 
-[`SvgDocument`](../svgdocument), and [`SvgRenderbot`](../svgrenderbot) to the [`Context`](../context)
+- It asks the [`Channel`]../channels/core/channel) wether this is a valid [`Request`](../src/request)
+- It asks the [`Channel`]../channels/core/channel) to standardize the [`Model`](../src/model) measurements and options
+- It adds units, a translator, [`Pattern`](../patterns/core/pattern), [`Model`](../src/model), 
+[`SvgDocument`](../src/svgdocument), and [`SvgRenderbot`](../src/svgrenderbot) to the [`Context`](../src/context)
 - It calls [`Pattern::draft`](../patterns/core/pattern#draft)
-- It calls [`Response::send`](../response#send)
-- It calls [`Context::cleanUp`](../context#cleanup)
+- It calls [`Response::send`](../src/response#send)
+- It calls [`Context::cleanUp`](../src/context#cleanup)
 
 #### Typical use
 {:.no_toc}
 
-Always called from [`Context::runService`](../context#runservice).
+Always called from [`Context::runService`](../src/context#runservice).
 
 #### Parameters
 {:.no_toc}
 
-- [`Context`](../context) `$context` : The [`Context`](../context) object
+- [`Context`](../src/context) `$context` : The [`Context`](../src/context) object
 
 
 ## See also

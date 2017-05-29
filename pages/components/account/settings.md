@@ -36,7 +36,7 @@ permalink: /components/account/settings
         <div class="bg-thematic drop-shadow" id="picture-key" style="width: 100px; height: 100px; background-color: #fff; display: inline-block; margin-right: 1rem; float: left;"></div>
         <div style="display: inline-block; width: 250px;">
             <p id="picture-msg">This is your current picture, click below to select a new one</p>
-            <a class="btn btn-outline-primary" id="picture-btn" href="#">Change image</a>
+            <a class="btn btn-outline-primary poh" id="picture-btn">Change image</a>
             <input class="hidden" id="file" name="file" type="file">
             <input class="hidden" id="picture" name="picture" type="hidden">
         </div>

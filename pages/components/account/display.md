@@ -6,11 +6,11 @@ permalink: /components/account/display
     <div>
         <div class="crown-wrapper">
             <span class="crown crown-left" id="account-model-count">0</span>
-            <img class="crown crown-middle" id="account-picture" />
+            <img alt="Your account avatar" src="/img/logo/spinner.svg" class="crown crown-middle" id="account-picture" />
             <span class="crown crown-right" id="account-draft-count">0</span>
         </div>
         <h4 id="account-username"></h4>
-        <a id="settings-btn" href="#" class="btn btn-outline-primary mt-3 modal light">Settings</a>
+        <a id="settings-btn" class="poh btn btn-outline-primary mt-3 modal light">Settings</a>
     </div>
 </div>
 <!-- End of /components/account/display -->

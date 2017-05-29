@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Design tutorial part 2 - Beyond basics
-tags: [fundamentals, designer documentation, tutorials]
+tags: [fundamentals, designer docs, tutorial]
 permalink: /docs/designer/tutorial/part-2
 crumbs:
   - /docs|Docs
@@ -39,7 +39,7 @@ If you were to run the sample service on our current BabyBib pattern, it would g
 That's because we have to tell it what to sample first.
 
 A complete pattern draft typically has more lines on it than are relevant for the 
-[`SampleService`](/class/services/sampleservice).
+[`SampleService`](../../core/classdocs/services/sampleservice).
 Things like seam allowance and instructions will only clutter the output when comparing sizes.
 
 Rather than include everything on the page, we want the sample service to only render what is
@@ -53,7 +53,7 @@ point where we add the `outline` path:
 $p->paths['outline']->setSample(true);
 ```
 
-This line calls the [`Path::setSample`](/class/path#setsample) method on our `outline`
+This line calls the [`Path::setSample`](../../core/classdocs/src/path#setsample) method on our `outline`
 path, which sets the path's `sample` property.
 
 The sample service will only render paths
@@ -61,11 +61,11 @@ that have their `sample` property set to `true`.
 
 > <h5 class='notoc'>Accessing the path object</h5>
 >
-> The object of that path is stored in our [`Part`](/class/part) class, in the 
+> The object of that path is stored in our [`Part`](../../core/classdocs/src/part) class, in the 
 > `paths` property which is an array.
 > So we can call a method on it by addressing `$p->paths['outline']`.
 
-So basically, what we've done here is say _Hey [`SampleService`](/class/services/sampleservice),
+So basically, what we've done here is say _Hey [`SampleService`](../../core/classdocs/services/sampleservice),
 please include this path when you do what you do_.
 
 ### Sampling measurements
@@ -452,7 +452,7 @@ $p->offsetPath('bias', 'outline', -3, true, ['class' => 'helpline']);
 </div>
 </div>
 
-The [`Part::offsetPath`](/class/part#offsetpath) method creates a new path at a given distance
+The [`Part::offsetPath`](../../core/classdocs/src/part#offsetpath) method creates a new path at a given distance
 from the original.
 
 In our case, we told it to create a new path called `bias` which uses the `outline` path 
@@ -499,7 +499,7 @@ $p->newSnippet('logo', 'logo', 'logoAnchor');
 </div>
 </div>
 
-The [`Part::newSnippet`](/class/part#newsnippet) method expects a name for our new snippet 
+The [`Part::newSnippet`](../../core/classdocs/src/part#newsnippet) method expects a name for our new snippet 
 (we just went with numbers), the name of the snippet defined in the theme, and the name of the 
 point to anchor it on.
 
@@ -545,19 +545,19 @@ $p->addTitle('titleAnchor', 1, $this->t($p->getTitle()), '1x');
 </div>
 
 The first thing we did was add a point to anchor our title on. But what's new here is the 
-[`Part::addTitle`](/class/part#addtitle) method.
+[`Part::addTitle`](../../core/classdocs/src/part#addtitle) method.
 Titles have three parts:
 
 - The number of the part
 - The name of the part
 - An optional extra message/instructions
 
-And those are the parameters the [`Part::addTitle`](/class/part#addtitle) method takes.
+And those are the parameters the [`Part::addTitle`](../../core/classdocs/src/part#addtitle) method takes.
 
-We also didn't specify a title, but instead used the [`Part::getTitle`](/class/part#gettitle) method
+We also didn't specify a title, but instead used the [`Part::getTitle`](../../core/classdocs/src/part#gettitle) method
 to get the title for the part as set in the patterns configuration file.
 
-And, we wrapped that in the [`Patterns\Pattern::t`](/class/patterns/core/pattern#t) method, 
+And, we wrapped that in the [`Patterns\Pattern::t`](../../core/classdocs/patterns/core/pattern#t) method, 
 which translates a string. This way, the title is set as in the config, and if we provided a
 translation in the language the user requested, we put in the translation instead.
 
@@ -594,7 +594,7 @@ $p->newNote(2,'snap2Anchor',$this->t('Attach snap at the back'), 6, 25, 4);
 </div>
 </div>
 
-The [`Part::newNote`](/class/part#newnote) method is new to us, and I recommend checking out its
+The [`Part::newNote`](../../core/classdocs/src/part#newnote) method is new to us, and I recommend checking out its
 documentation to fully understand its parameters. 
 
 ## Paperless patterns
@@ -739,13 +739,13 @@ $this->paperlessBib($model);
 In our `paperlessBib` method, we'll add dimensions. Dimensions are indications of height,
 width, length, distance,... that we'll put on our pattern.
 
-There's different types of dimensions we can add. They are all documented in the [`Part`](/class/part)
+There's different types of dimensions we can add. They are all documented in the [`Part`](../../core/classdocs/src/part)
 class, but here are the most important ones:
 
-- [`Part::newWidthDimension`](/class/part#newwidthdimension) adds a new dimension indicating width (horizontal)
-- [`Part::newHeightDimension`](/class/part#newheightdimension) adds a new dimension indicating height (vertical)
-- [`Part::newLinearDimension`](/class/part#newlineardimension) adds a new dimension indicating length (a straight line)
-- [`Part::newCurvedDimension`](/class/part#newcurveddimension) adds a new dimension along a given pathstring 
+- [`Part::newWidthDimension`](../../core/classdocs/src/part#newwidthdimension) adds a new dimension indicating width (horizontal)
+- [`Part::newHeightDimension`](../../core/classdocs/src/part#newheightdimension) adds a new dimension indicating height (vertical)
+- [`Part::newLinearDimension`](../../core/classdocs/src/part#newlineardimension) adds a new dimension indicating length (a straight line)
+- [`Part::newCurvedDimension`](../../core/classdocs/src/part#newcurveddimension) adds a new dimension along a given pathstring 
 
 Some examples perhaps? Add the following lines to our `paperlessBib` method:
 
@@ -802,7 +802,7 @@ Let's take them one at a time:
 $p->newWidthDimension('bottomLeftCornerEnd','bottomRightCornerEnd', $p->y('bottomRightCornerStart')+15);
 ```
 
-[`Part::newWidthDimension`](/class/part#newwidthdimension) takes 2 point names as parameters, and will draw a 
+[`Part::newWidthDimension`](../../core/classdocs/src/part#newwidthdimension) takes 2 point names as parameters, and will draw a 
 dimension to indicate the width between them. The third parameter is the Y-coordinate on which the dimension
 shall be placed. 
 
@@ -817,7 +817,7 @@ $p->newHeightDimension('bottomLeftCornerStart', 'top1', $xBase + 60);
 $p->newHeightDimension('bottomLeftCornerStart', 'topRightCornerEnd', $xBase + 75);
 ```
 
-[`Part::newHeightDimension`](/class/part#newheightdimension) 
+[`Part::newHeightDimension`](../../core/classdocs/src/part#newheightdimension) 
 takes 2 point names as parameters, and will draw a 
 dimension to indicate the height between them. The third parameter is the X-coordinate on which the dimension
 shall be placed. 
@@ -831,7 +831,7 @@ Because we are adding multiple height dimensions, we stored the X-coordinate of 
 $p->newLinearDimension('left1',2);
 ```
 
-[`Part::newLinearDimension`](/class/part#newlineardimension) 
+[`Part::newLinearDimension`](../../core/classdocs/src/part#newlineardimension) 
 takes 2 point names as parameters, and will draw a 
 dimension between them to indicate the distance between them.
 It takes an (optional) third parameter that is the offset. We'll use a similar parameter in our next example.
@@ -842,7 +842,7 @@ It takes an (optional) third parameter that is the offset. We'll use a similar p
 $p->newCurvedDimension('M top12 C top4 top5 left1 C left3 left2 1 C 3 4 2 C top3 top2 top1', -5);
 ```
 
-[`Part::newCurvedDimension`](/class/part#newcurveddimension) does not takes points as input, but a pathstring.
+[`Part::newCurvedDimension`](../../core/classdocs/src/part#newcurveddimension) does not takes points as input, but a pathstring.
 It takes an additional parameter that is the offset, and will draw a dimension parallel to that path at this offset.
 
 In this case, we provided the pathstring of our neck opening.
@@ -856,7 +856,7 @@ entire pathstring as in our curved dimension example, will be calculated and use
 
 Furthermore, the label will be in either metric or imperial, depending on what the user requests.
 
-That being said, if you want to specify your own label, you can. Check the [`Part`](/class/part) class
+That being said, if you want to specify your own label, you can. Check the [`Part`](../../core/classdocs/src/part) class
 for all details.
 
 ## Multilingual patterns
@@ -900,7 +900,7 @@ So, to make sure your pattern will be translated to another language, you need t
 `messages.[language code].yml` file.
 
 But, you only need to add translations that are not covered by the pattern you extended.
-We extended the base [`Pattern`](/class/patterns/core/pattern) class, so all strings in 
+We extended the base [`Pattern`](../../core/classdocs/patterns/core/pattern) class, so all strings in 
 `patterns/Pattern/translations/messages.nl.yml` are already known.
 
 ### Providing translation files

@@ -2,7 +2,6 @@
 layout: cards
 title: Your drafts
 action: app
-tags: [account]
 permalink: /list-drafts
 ---
 <div class="container">
@@ -21,7 +20,7 @@ permalink: /list-drafts
                 </thead>
                 <tbody id="draftlist">
                     <tr id='spinner'>
-                        <td colspan="6" class="text-center px-5"><img src="/img/logo/spinner.svg"></td>
+                        <td colspan="6" class="text-center px-5"><img src="/img/logo/spinner.svg" alt="Loading drafts..."></td>
                     </tr>
                     <tr id='draft-row'>
                         <td class="handle"></td>

@@ -104,8 +104,8 @@ $request->getData('service');
 #### Typical use
 {:.no_toc}
 
-Used by [services](/docs/core/classdocs/src/services/service), [`Context`](context), 
-and [channel](/docs/core/classdocs/src/channels/core/channel) to retrieve request parameters.
+Used by [services](../services/service), [`Context`](context), 
+and [channel](../channels/core/channel) to retrieve request parameters.
 
 #### Parameters
 {:.no_toc}

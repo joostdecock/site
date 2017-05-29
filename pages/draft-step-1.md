@@ -2,7 +2,7 @@
 layout: cards
 title: Choose a pattern
 action: app
-tags: [account]
+crumbs: false
 permalink: /step/1/draft
 ---
 <div class="container">
@@ -24,7 +24,7 @@ permalink: /step/1/draft
 <div id="picklist">
 <ul id="quick-picks" class="mb-3 filter"><li><b>Quick pick:</b></li></ul>
 <div class="card hover-shadow mb-3 pattern-card" id="pattern-card">
-    <div class="linedrawing"><img src="/img/logo/spinner.svg"></div>
+    <div class="linedrawing"><img src="/img/logo/spinner.svg" alt="Loading..."></div>
     <div class="info">
         <div class="card-block">
             <h3 class="card-title mb-1">Loading patterns...</h3>

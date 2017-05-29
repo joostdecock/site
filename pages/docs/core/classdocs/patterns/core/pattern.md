@@ -2,7 +2,7 @@
 layout: page
 title: Pattern
 namespace: Freesewing\Patterns\Core
-tags: [class documentation]
+tags: [class docs]
 permalink: /docs/core/classdocs/patterns/core/pattern
 ---
 ## Description 
@@ -105,7 +105,7 @@ This is an abstract method, to be implemented by all childred of [`Pattern`](pat
 #### Typical use
 {:.no_toc}
 
-This will be called from [`SampleService::run`](/class/services/sampleservice#run) to sample a pattern.
+This will be called from [`SampleService::run`](../../services/sampleservice#run) to sample a pattern.
 
 This will typically also be called form [`Pattern::draft`](pattern#draft) as a starting point 
 for a complete pattern draft.
@@ -113,7 +113,7 @@ for a complete pattern draft.
 #### Parameters
 {:.no_toc}
 
-- [`Context`](/class/context) `$context` : The full Freesewing context object
+- [`Context`](../../src/context) `$context` : The full Freesewing context object
 
 #### Return value
 {:.no_toc}
@@ -141,12 +141,12 @@ This is an abstract method, to be implemented by all childred of [`Pattern`](pat
 #### Typical use
 {:.no_toc}
 
-This will be called from [`DraftService::run`](/class/services/draftservice#run) to draft a pattern.
+This will be called from [`DraftService::run`](../../services/draftservice#run) to draft a pattern.
 
 #### Parameters
 {:.no_toc}
 
-- [`Context`](/class/context) `$context` : The full Freesewing context object
+- [`Context`](../../src/context) `$context` : The full Freesewing context object
 
 #### Return value
 {:.no_toc}
@@ -169,7 +169,7 @@ Sets the option `$name` to `$value` in the options property, which is an `array`
 #### Typical use
 {:.no_toc}
 
-Used in patterns to set options that aren't depending on user input, and by the [`OptionsSampler`](/class/optionssampler).
+Used in patterns to set options that aren't depending on user input, and by the [`OptionsSampler`](../../src/optionssampler).
 
 #### Parameters
 {:.no_toc}
@@ -331,8 +331,8 @@ $p->newNote(2, 2, $p->unit(100),9,15,0);
 </div>
 </div>
 
-> Note: This example is from [`Part::unit`](/class/part#unit). 
-> For historical reasons, both [`Pattern`](pattern) and [`Part`](/class/part) have the exact same unit method.
+> Note: This example is from [`Part::unit`](../../src/part#unit). 
+> For historical reasons, both [`Pattern`](pattern) and [`Part`](../../src/part) have the exact same unit method.
 
 #### Typical use
 {:.no_toc}
@@ -358,9 +358,9 @@ void clonePoints(
 )
 ```
 
-Clones points from [`Part`](/class/part) `$from` into [`Part`](/class/part) `$into`.
+Clones points from [`Part`](../../src/part) `$from` into [`Part`](../../src/part) `$into`.
 
-Note that both parts need to exists in the `parts` property, which is an array of [`Part`](/class/part) objects.
+Note that both parts need to exists in the `parts` property, which is an array of [`Part`](../../src/part) objects.
 
 #### Typical use
 {:.no_toc}
@@ -370,8 +370,8 @@ Used in patterns when building a part on the basis of another part.
 #### Parameters
 {:.no_toc}
 
-- `string` `$from` : The [`Part`](/class/part) object under key `$from` in the `parts` property to clone points from.
-- `string` `$into` : The [`Part`](/class/part) object under key `$into` in the `parts` property to clone points into.
+- `string` `$from` : The [`Part`](../../src/part) object under key `$from` in the `parts` property to clone points from.
+- `string` `$into` : The [`Part`](../../src/part) object under key `$into` in the `parts` property to clone points into.
 
 ### newPart
 
@@ -381,9 +381,9 @@ void newPart(
 )
 ```
 
-Creates a new [`Part`](/class/part) and adds it to the `parts` property under `$name`.
+Creates a new [`Part`](../../src/part) and adds it to the `parts` property under `$name`.
 
-The `parts` property is an `array` of name/[`Part`](/class/part) object pairs.
+The `parts` property is an `array` of name/[`Part`](../../src/part) object pairs.
 
 #### Typical use
 {:.no_toc}
@@ -532,7 +532,7 @@ Returns the pattern `config` property, which is an `array`.
 #### Typical use
 {:.no_toc}
 
-The [`InfoService`](/class/services/infoservice) uses this, as does [`Sampler`](/class/sampler).
+The [`InfoService`](../../services/infoservice) uses this, as does [`Sampler`](../../src/sampler).
 
 #### Return value
 {:.no_toc}
@@ -563,7 +563,7 @@ Returns the `height` property.
 #### Typical use
 {:.no_toc}
 
-Used by the [`DraftService`](/class/services/draftservice).
+Used by the [`DraftService`](../../services/draftservice).
 
 #### Return value
 {:.no_toc}
@@ -581,7 +581,7 @@ Returns the `width` property.
 #### Typical use
 {:.no_toc}
 
-Used by the [`DraftService`](/class/services/draftservice).
+Used by the [`DraftService`](../../services/draftservice).
 
 #### Return value
 {:.no_toc}
@@ -641,7 +641,7 @@ Returns the `replacements` property, which is an `array` of search/replace pairs
 #### Typical use
 {:.no_toc}
 
-Called from the [`DraftService`](/class/services/draftservice) to replace strings in the SVG code.
+Called from the [`DraftService`](../../services/draftservice) to replace strings in the SVG code.
 
 #### Return value
 {:.no_toc}
@@ -683,7 +683,7 @@ Returns an `array` of translation files.
 #### Typical use
 {:.no_toc}
 
-Called from the [`Context`](/class/context) class to add all translation
+Called from the [`Context`](../../src/context) class to add all translation
 files to the translator.
 
 #### Parameters
@@ -848,7 +848,7 @@ Note that if there are parts you don't need
 (depending on options for example) you could override this function. 
 Or, you can simple call `setRender(false)` on them to keep them from being rendered.
 
-_Add_ means, create a [`Part`](/class/part) object, and add it to the `parts` 
+_Add_ means, create a [`Part`](../../src/part) object, and add it to the `parts` 
 property, which is an array of all parts.
 
 This will also auto-set the part title and units for you.
@@ -866,8 +866,8 @@ void cleanUp()
 
 Does nothing by default.
 
-The `cleanUp` method is called on the [`Theme`](/class/themes/core/theme), [`Pattern`](pattern), 
-and [`Channel`](/class/channels/core/channel) object before terminating a request.
+The `cleanUp` method is called on the [`Theme`](../../themes/core/theme), [`Pattern`](pattern), 
+and [`Channel`](../../channels/core/channel) object before terminating a request.
 It's a way to tie up any loose ends you may have, like open database connections and such things.
 
 By default, it does nothing though.
@@ -875,8 +875,8 @@ By default, it does nothing though.
 #### Typical use
 {:.no_toc}
 
-Called from [`DraftService::run`](/class/services/draftservice#run), [`SampleService::run`](/class/services/sampleservice#run),
-or [`CompareService::run`](/class/services/compareservice#run).
+Called from [`DraftService::run`](../../services/draftservice#run), [`SampleService::run`](../../services/sampleservice#run),
+or [`CompareService::run`](../../services/compareservice#run).
 
 ### layout
 
@@ -884,7 +884,7 @@ or [`CompareService::run`](/class/services/compareservice#run).
 void layout()
 ```
 
-Creates a layout, fitting all parts on the pattern with the help of a [`Packer`](/class/packer).
+Creates a layout, fitting all parts on the pattern with the help of a [`Packer`](../../src/packer).
 
 #### Typical use
 {:.no_toc}

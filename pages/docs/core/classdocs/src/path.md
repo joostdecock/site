@@ -35,9 +35,9 @@ void setSample(
 
 Sets the sample flag on the [`Path`](path) object.
 
-If a [`Path`](path) has its sample flag set to `true`, it will be rendered by the [`Services/sampleservice`](services/sampleservice).
+If a [`Path`](path) has its sample flag set to `true`, it will be rendered by the [`Services/sampleservice`](../services/sampleservice).
 
-It does exactly the same thing as the `render` flag does for the [`Services/draftservice`](services/draftservice),
+It does exactly the same thing as the `render` flag does for the [`Services/draftservice`](../services/draftservice),
 but there is one important difference:
 
 While paths are rendered by default, they are not sampled by default.
@@ -78,9 +78,9 @@ void setRender(
 
 Sets the render flag on the [`Path`](path) object.
 
-If a [`Path`](path) has its render flag set to `true`, it will be rendered by the [`Services/draftservice`](services/draftservice).
+If a [`Path`](path) has its render flag set to `true`, it will be rendered by the [`Services/draftservice`](../services/draftservice).
 
-It does exactly the same thing as the `sample` flag does for the [`Services/sampleservice`](services/sampleservice),
+It does exactly the same thing as the `sample` flag does for the [`Services/sampleservice`](../services/sampleservice),
 but there is one important difference:
 
 While paths are not sampled by default, they are rendered by default.
@@ -212,7 +212,7 @@ See [`Path::setSample`](path#setsample) for info on the `sample` flag.
 #### Typical use
 {:.no_toc}
 
-Used by [`Services/sampleservice`](services/sampleservice) to determine whether a [`Path`](path) needs to be sampled.
+Used by [`Services/sampleservice`](../services/sampleservice) to determine whether a [`Path`](path) needs to be sampled.
 
 #### Return value
 {:.no_toc}

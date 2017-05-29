@@ -16,7 +16,7 @@ with your own pattern based on our pattern template.
 
 Before you start this tutorial, made sure to read the 
 [about freesewing](/about) and 
-[freesewing fundamentals](/fundamentals) pages.
+[freesewing fundamentals](/docs/fundamentals) pages.
 
 ### You'll be writing code
 
@@ -44,7 +44,7 @@ For the best learning experience, you should design the pattern as we go along,
 doing all the steps as I explain them here.
 
 For that, you'll need to have your own instance of freesewing setup.
-If you have that, great. If not, please check the [install instructions](/install)
+If you have that, great. If not, please check the [install instructions](/docs/install)
 and come back here when you've got it up and running.
 
 Or you can just read along with this guide, that's fine too.
@@ -109,7 +109,7 @@ patternNamespaces:
 
 > <h5 class='notoc'>Pattern configuration</h5>
 >
-> The [configuration files](/config#pattern-configuration-file) page has all the details on the
+> The [configuration files](/docs/core/config#pattern-configuration-file) page has all the details on the
 > different configuration files used in freesewing.
 
 ### Copy the pattern template
@@ -124,7 +124,7 @@ Then, rename the folder to `BabyBib`.
 > <h5 class='notoc'>Freesewing naming conventions</h5>
 >
 > How we name things is important. All the relevant info 
-> is available on [the page on naming conventions](/naming-conventions).
+> is available on [the page on naming conventions](/docs/naming-conventions).
 >
 > For now, just make sure to write `BabyBib` 
 > with two capital `B` letters, as shown.
@@ -334,7 +334,7 @@ index.php?service=draft&pattern=BabyBib&theme=Designer
 
 > <h5 class='notoc'>Use the Designer theme when designing</h5>
 >
-> That `theme=Designer` bit in the URL means we'll be using the [`Designer`](/class/themes/core/designer) theme.
+> That `theme=Designer` bit in the URL means we'll be using the [`Designer`](../../core/classdocs/themes/core/designer) theme.
 > It includes a lot of extra info in the output that will facilitate your design work.
 
 You will get an empty page, as our patttern doesn't do anything yet. But if you look at the source 
@@ -506,17 +506,17 @@ and behind the scenes, the `setValue` method of the `Pattern` class will be call
 Until we decide that we want to implement our own `setValue` method. What we define ourselves
 takes precedence over what our parent class provides.
 
-If you'd like to know all the methods the `Pattern` class offers, click here: [`Pattern`](/class/patterns/core/pattern).
+If you'd like to know all the methods the `Pattern` class offers, click here: [`Pattern`](../../core/classdocs/patterns/core/pattern).
 
 > <h5 class='notoc'>Recognising links to the class documentation</h5>
-> Anytime you see a link styled like this: [`Pattern`](/class/patterns/core/pattern), it is a link to the 
+> Anytime you see a link styled like this: [`Pattern`](../../core/classdocs/patterns/core/pattern), it is a link to the 
 class documentation.
 >
 > When we link to a specific method of a class, things will look like this: 
-[`Pattern::setValue`](/class/patterns/core/pattern#setvalue)
+[`Pattern::setValue`](../../core/classdocs/patterns/core/pattern#setvalue)
 
 ### Method parameters
-When we called the [`Pattern::setValue`](/class/patterns/core/pattern#setvalue) method, we gave it two parameters:
+When we called the [`Pattern::setValue`](../../core/classdocs/patterns/core/pattern#setvalue) method, we gave it two parameters:
 
 ```php?start_inline=1
 $this->setValue('headNeckRatio', 0.8);
@@ -539,7 +539,7 @@ Calling the `initialize` method is the first thing we'll do when we put our patt
 The next thing we'll tackle is the DRAFT section. 
 
 ### The sample method
-We'll start with the [`Pattern::sample`](/class/patterns/core/pattern#sample) method. 
+We'll start with the [`Pattern::sample`](../../core/classdocs/patterns/core/pattern#sample) method. 
 
 > <h5 class='notoc'>The sample method is mandatory</h5>
 >
@@ -621,12 +621,12 @@ Edit the relevant section of your class file to look like this:
 </div>
 </div>
 
-The sample method will be called by the [`SampleService`](/class/services/sampleservice)
+The sample method will be called by the [`SampleService`](../../core/classdocs/services/sampleservice)
 and is expected to draft a basic outline of your pattern.
 
 First we call our own `initialize` method that we created earlier.
 
-Then, we'll call the `draftBib` method that we'll get to in a moment, and pass it our [`Model`](/class/model) object.
+Then, we'll call the `draftBib` method that we'll get to in a moment, and pass it our [`Model`](../../core/classdocs/src/model) object.
 
 > It's a good habit to keep your sample method simple, and draft each part in its own method.
 
@@ -784,12 +784,12 @@ Well, we'll be doing exactly that. Below is the code. Don't panic, we'll walk th
 Some methods are used so often that we've created a shorter to
 type alias for them, to save you time. In the example above:
 
-- `$this->v` is an alias for `$this->getValue`, see [`Pattern::getValue`](/class/patterns/core/pattern#getvalue)
-- `$model->m` is an alias for `$model->getMeasurement`, see [`Model::getmeasurement`](/class/model#getmeasurement)
+- `$this->v` is an alias for `$this->getValue`, see [`Pattern::getValue`](../../core/classdocs/patterns/core/pattern#getvalue)
+- `$model->m` is an alias for `$model->getMeasurement`, see [`Model::getmeasurement`](../../core/classdocs/src/model#getmeasurement)
 
 Another important alias method is:
 
-- `$this->o` which is an alias for `$this->getOption`, see [`Pattern::getOption`](/class/patterns/core/pattern#getoption)
+- `$this->o` which is an alias for `$this->getOption`, see [`Pattern::getOption`](../../core/classdocs/patterns/core/pattern#getoption)
 
 #### Adding points with Part::newPoint
 
@@ -802,11 +802,11 @@ $p->addPoint(3, $p->shift(1,0,$p->x(2)/2), 'Right control point for neckBottom')
 $p->addPoint(4, $p->shift(2,-90,$p->y(1)/2), 'Bottom control point for neckRight');
 ```
 
-We're adding two points with [`Part::newPoint`](/class/part#newpoint) and 
-two points with [`Part::addPoint`](/class/part#addpoint).
+We're adding two points with [`Part::newPoint`](../../core/classdocs/src/part#newpoint) and 
+two points with [`Part::addPoint`](../../core/classdocs/src/part#addpoint).
 
-The difference is that [`Part::newPoint`](/class/part#newpoint) expects and X and Y 
-coordinate, while [`Part::addPoint`](/class/part#addpoint) expects a [`Point`](/class/point) object.
+The difference is that [`Part::newPoint`](../../core/classdocs/src/part#newpoint) expects and X and Y 
+coordinate, while [`Part::addPoint`](../../core/classdocs/src/part#addpoint) expects a [`Point`](../../core/classdocs/src/point) object.
 
 Both of them taken an optional third parameter which is a description of the point.
 You can see that we used that to clarify things a bit.
@@ -822,7 +822,7 @@ $p->newPoint(
 );
 ```
 
-We passed 4 parameters to [`Point::newPoint`](/class/part#newpoint):
+We passed 4 parameters to [`Point::newPoint`](../../core/classdocs/src/part#newpoint):
 
 - A name for the point, we went with `1` because that's easy
 - The X-coordinate, which is `0`
@@ -860,13 +860,13 @@ $p->addPoint(
 );
 ```
 
-We're using [`Point::addPoint`](/class/part#addpoint) here. We still give it a name for the point (`3`)
+We're using [`Point::addPoint`](../../core/classdocs/src/part#addpoint) here. We still give it a name for the point (`3`)
 but instead of giving it an X and Y coordinate, we give it the result of `$p->shift(1,0,$p->x(2)/2)`.
 
-Remember, `$p` is our [`Part`](/class/part) object, so we are calling [`Part::shift`](/class/part#shift).
+Remember, `$p` is our [`Part`](../../core/classdocs/src/part) object, so we are calling [`Part::shift`](../../core/classdocs/src/part#shift).
 
 What're doing is taking point `1`, and shifting it to the right (that's where 0 degrees points to)
-over a distance of the X-value of point `2`. Yes, [`Part::x`](/class/part#x) returns the X-value of
+over a distance of the X-value of point `2`. Yes, [`Part::x`](../../core/classdocs/src/part#x) returns the X-value of
 a given point.
 
 The result is that we end up with point `3` on the same Y-value as point `1`, but halfway between `1` and `2` 
@@ -933,7 +933,7 @@ This actually does more than calculating the length of the neck opening.
 It does that, but then checks how much our neck opening should be, and returns the difference.
 
 To calculate the neck opening, it uses `$part->curveLen(1,3,4,2) * 4`, which is a call to
-[`Part::curveLen`](/class/part#curvelen), a method that calculated the length of a curve.
+[`Part::curveLen`](../../core/classdocs/src/part#curvelen), a method that calculated the length of a curve.
 
 We give it the names of the four points defining our Bezier curve, and it gives us the length
 of our quarter neck opening. Multiply by four, and we know the total neck opening.
@@ -1005,7 +1005,7 @@ There's one line we haven't touched upon, and it's this one:
 $this->msg("Neck opening is $delta mm off"); 
 ```
 
-This calls the [`Pattern::msg`](/class/patterns/core/pattern#msg) method which stores a 
+This calls the [`Pattern::msg`](../../core/classdocs/patterns/core/pattern#msg) method which stores a 
 message in the pattern.
 
 Those messages will be included at the bottom of your pattern source code. 
@@ -1082,10 +1082,10 @@ the `foreach` construct. Those are not freesewing-specific, but just programming
 An array holds a bunch of elements, and is written as such: `[2,3,4]`.
 The `foreach` loops through through your `array` and does something **for each** of the elements.
 
-But our focus is on two new methods: [`Part::newId`](/class/part#newid) and [`Part::flipX`](/class/part#flipx).
+But our focus is on two new methods: [`Part::newId`](../../core/classdocs/src/part#newid) and [`Part::flipX`](../../core/classdocs/src/part#flipx).
 
-[`Part::flipX`](/class/part#flipx) mirrors a point around a given X-value. We're also using 
-[`Part::flipY`](/class/part#flipy) in our code, which mirrors a point around a given Y-value.
+[`Part::flipX`](../../core/classdocs/src/part#flipx) mirrors a point around a given X-value. We're also using 
+[`Part::flipY`](../../core/classdocs/src/part#flipy) in our code, which mirrors a point around a given Y-value.
 
 #### Let Part::newId name your babies
 
@@ -1093,7 +1093,7 @@ When adding points to our part, we need to give them a name. That's simple when 
 one at a time, but when we're adding them in a loop like here, we'd have to add some extra logic
 to make sure each point gets its own name.
 
-Rather than doing that, we'll simply let the [`Part::newId`](/class/part#newid) method name them for us.
+Rather than doing that, we'll simply let the [`Part::newId`](../../core/classdocs/src/part#newid) method name them for us.
 
 It takes one parameter: a prefix that will be applied to the newly named points.
 
@@ -1110,7 +1110,7 @@ We now have all the points needed to describe our neck opening. And we draw it w
 $p->newPath('neckOpening', 'M 1 C 3 4 2 C top3 top2 top1 C top4 top5 left1 C left3 left2 1 z');
 ```
 
-The [`Part::newPath`](/class/part#newpath) method creates a new path. We give it a name (`neckOpening`)
+The [`Part::newPath`](../../core/classdocs/src/part#newpath) method creates a new path. We give it a name (`neckOpening`)
 and then what we call  a `pathstring`.
 
 Pathstrings are a feature of the SVG format that we generate patterns in. You can read about
@@ -1176,7 +1176,7 @@ Then, we've added four more points. And rather than give them a number as name a
 we gave them a descriptive name.
 
 Point `topLeft` is `$strap` to the left of point `left1` and `$strap` above point `top1`.
-We flip it around with [`Part::flipX`](/class/part#flipx) to get `topRight`.
+We flip it around with [`Part::flipX`](../../core/classdocs/src/part#flipx) to get `topRight`.
 
 The line that creates point `bottomLeft` looks like this:
 
@@ -1205,8 +1205,8 @@ $p->newPath(
 We've drawn lines before, but this time there's two differences:
 
 - The pathstring looks different because we're using **L** commands to indicate we want a straight line
-- We've added an extra parameter to [`Part::newPath`](/class/part#newpath). It's
-and array of attributes to pass on to the [`Path`](/class/path) object.
+- We've added an extra parameter to [`Part::newPath`](../../core/classdocs/src/part#newpath). It's
+and array of attributes to pass on to the [`Path`](../../core/classdocs/src/path) object.
 
 In doing this, we've set the `class` attribute of the path to `helpline`. 
 As a result, our line will be styled differently.
@@ -1259,16 +1259,16 @@ $p->newPath('outline', 'M bottomLeftCornerEnd C bottomLeftCornerEndCp bottomLeft
 This bit of code has three new things for us. The thing that jumps out is that
 `BezierToolbox::bezierCircle($radius)` bit.
 
-This is a call to the [`BezierToolbox::bezierCircle`](/class/beziertoolbox#beziercircle)
-method. However, we don't have a [`BezierToolbox`](/class/beziertoolbox) object, to call the method on
+This is a call to the [`BezierToolbox::bezierCircle`](../../core/classdocs/src/beziertoolbox#beziercircle)
+method. However, we don't have a [`BezierToolbox`](../../core/classdocs/src/beziertoolbox) object, to call the method on
 so we have to call the method with this `::` syntax.
 
 > Static methods can be called without an instatiated object
 >
 > Class methods that are **static** can be used without an object to 
-> call them on. [`BezierToolbox::bezierCircle`](/class/beziertoolbox#beziercircle)
-> is an example. And there are more examples in the [`BezierToolbox`](/class/beziertoolbox)
-> and [`Utils`](/class/utils) classes.
+> call them on. [`BezierToolbox::bezierCircle`](../../core/classdocs/src/beziertoolbox#beziercircle)
+> is an example. And there are more examples in the [`BezierToolbox`](../../core/classdocs/src/beziertoolbox)
+> and [`Utils`](../../core/classdocs/src/utils) classes.
 >
 > These utility classes bundle static methods and are available to you thanks to
 > those two `use` lines at the top of your class file.
@@ -1277,13 +1277,13 @@ Apart from that, all you need to know is that you can't draw a perfect
 (quarter) circle with Bezier curves. But you can get really close is you
 offset the control points at just the right distance.
 
-[`BezierToolbox::bezierCircle`](/class/beziertoolbox#beziercircle) gives you
+[`BezierToolbox::bezierCircle`](../../core/classdocs/src/beziertoolbox#beziercircle) gives you
 that distance for a radius you feed it.
 
 #### Rotating points
 
-The other thing that is new is the call to [`Part::rotate`](/class/part#rotate).
-It's one the many helper functions in the [`Part`](/class/part) class that
+The other thing that is new is the call to [`Part::rotate`](../../core/classdocs/src/part#rotate).
+It's one the many helper functions in the [`Part`](../../core/classdocs/src/part) class that
 you can use to create points.
 
 In this case, you guessed it, the method rotates one point around another
@@ -1440,10 +1440,10 @@ do {
 
 #### Finding the edge of a curve
 
-We've used [`Part::rotate`](/class/part#rotate) before to rotate points. And 
+We've used [`Part::rotate`](../../core/classdocs/src/part#rotate) before to rotate points. And 
 we've also used a `do...while` construct and a `foreach` to itterate over an array of points.
 
-The only thing new is the use of the [`Part::curveEdge`](/class/part#curveedge) method which returns
+The only thing new is the use of the [`Part::curveEdge`](../../core/classdocs/src/part#curveedge) method which returns
 the point on the edge of a curve (in our case, the left edge).
 
 Basically, we are rotating the points the make up the strap 1 degree at the time, and keep an eye
@@ -1527,11 +1527,11 @@ We also want to avoid our neckopening and box being drawn.
 The fastest and most efficient way to do that is to just comment them out,
 like with did for the neck opening.
 
-But, you can also leave keep them from showing up by using the [`path::setRender`](/class/path#setrender) 
+But, you can also leave keep them from showing up by using the [`path::setRender`](../../core/classdocs/src/path#setrender) 
 method. Setting it to `false` will keep the path from being rendered.
 
-To call this on the [`Path`](/class/path) object, you need to know they are stored in the `paths` attribute of the
-[`Part`](/class/part) object, which is an array where the key is the name of your path.
+To call this on the [`Path`](../../core/classdocs/src/path) object, you need to know they are stored in the `paths` attribute of the
+[`Part`](../../core/classdocs/src/part) object, which is an array where the key is the name of your path.
 
 So `$p->paths['box']` is our `box` path, and we can call `setRender` like this: `$p->paths['box']->setRender(false)`.
 

@@ -80,9 +80,9 @@ $model->addMeasurements([
 #### Typical use
 {:.no_toc}
 
-Used by the [`Services\DraftService`](services/draftservice), 
-[`Services\SampleService`](services/sampleservice) and 
-[`Services\CompareService`](services/compareservice) to add the 
+Used by the [`Services\DraftService`](../services/draftservice), 
+[`Services\SampleService`](../services/sampleservice) and 
+[`Services\CompareService`](../services/compareservice) to add the 
 measurements provided in the request (or defaults loaded from the 
 config) to the [`Model`](model) object.
 

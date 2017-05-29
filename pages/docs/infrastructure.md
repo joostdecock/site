@@ -39,11 +39,15 @@ You can have a look at the .travis.yml file in the repository root for more deta
 
 Unit tests are handled by PHPUnit, the `scripts/test.sh` script handles integration testing.
 
-## docs
+## site
 
 ### master branch
 
-[https://docs.freesewing.org](https://docs.freesewing.org/) runs the docs master branch.
+[https://freesewing.org](https://freesewing.org/) runs the site master branch.
+
+> Actually, [https://freesewing.org](https://beta.freesewing.org/) runs the site master branch.
+> We'll file this on under #fixme for now.
+{:.warning}
 
 ### develop branch
 

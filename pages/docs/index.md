@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Documentation
-tags: [docs]
 permalink: /docs/
 ---
 

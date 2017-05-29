@@ -118,7 +118,7 @@ worthwhile, knowing that it will helps those among us who
 need it most.
 
 For full details on what happens to donations, read the 
-[donations pledge](/donate/pledge).
+[donations pledge](/about/pledge).
 
 ## Disclaimer
 

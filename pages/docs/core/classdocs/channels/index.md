@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Channels
-tags: [class docs]
 permalink: /docs/core/classdocs/channels/
 ---
 * TOC - Do not remove this line

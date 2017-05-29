@@ -328,12 +328,12 @@ It also takes a `format` option to determine the output format. Options are:
 #### Typical use
 {:.no_toc}
 
-Always called from [`Context::runService`](../context#runservice).
+Always called from [`Context::runService`](../src/context#runservice).
 
 #### Parameters
 {:.no_toc}
 
-- [`Context`](../context) `$context` : The [`Context`](../context) object
+- [`Context`](../src/context) `$context` : The [`Context`](../src/context) object
 
 
 ## See also

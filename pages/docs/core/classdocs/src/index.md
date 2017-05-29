@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Core classes in the \Freesewing namespace
-tags: [class docs]
 permalink: /docs/core/classdocs/src/
 ---
  - [BezierToolbox](beziertoolbox)

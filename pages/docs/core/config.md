@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Configuration files
-tags: [configuration]
+title: Core configuration files
+tags: [core docs,config]
 permalink: /docs/core/config
 crumbs:
   - /docs|Docs

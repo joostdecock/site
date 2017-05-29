@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Core documentation
-tags: [docs]
+tags: [core docs,core docs]
 permalink: /docs/core/
 ---
 

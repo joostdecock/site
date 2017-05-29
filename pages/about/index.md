@@ -58,7 +58,7 @@ provide customized sewing patterns.
 
 But there is one important difference: 
 
-> Freesewing is free of charge. Our patterns are free ([CC-BY](/license)) and our code is free ([GPL-3](/license)).
+> Freesewing is free of charge. Our patterns are free ([CC-BY](/about/license)) and our code is free ([GPL-3](/about/license)).
 {: .tip }
 
 
@@ -143,7 +143,7 @@ For all details, please refer to the [contributors documentation](/contribute).
 Or you can vote with your money and [make a donation](/donate).
 
 We promise it will make you feel warm and fuzzy inside. Especially after
-you read [our donations pledge](/donate/pledge).
+you read [our donations pledge](/about/pledge).
 
 * TOC - Do not remove this line
 {:toc}

@@ -2,7 +2,6 @@
 layout: cards
 title: Draft
 action: app
-tags: [account]
 permalink: /show-draft
 ---
 <div class="container">
@@ -11,13 +10,13 @@ permalink: /show-draft
             <div class="draft-display">
                 <div>
                     <div class="crown-wrapper">
-                        <img class="crown crown-left" id="draft-pattern-img">
+                        <img class="crown crown-left" id="draft-pattern-img" alt="Pattern linedrawing" src="/img/logo/spinner.svg">
                         <span class="crown crown-middle" id="draft-handle"></span>
-                        <img class="crown crown-right" id="draft-model-img">
+                        <img class="crown crown-right" id="draft-model-img" alt="Model avatar" src="/img/logo/spinner.svg">
                     </div>
-                    <a id="fork-btn" href="#" class="btn btn-outline-info mt-3 modal light"><i class="fa fa-code-fork" aria-hidden="true"></i> Fork</a>
-                    <a id="settings-btn" href="#" class="btn btn-outline-primary mt-3 modal light"><i class="fa fa-wrench" aria-hidden="true"></i> Settings</a>
-                    <a id="delete-btn" href="#" class="btn btn-outline-danger mt-3 modal light"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a>
+                    <button type="button" id="fork-btn" class="poh btn btn-outline-info mt-3 modal light"><i class="fa fa-code-fork" aria-hidden="true"></i> Fork</button>
+                    <button type="button" id="settings-btn" class="poh btn btn-outline-primary mt-3 modal light"><i class="fa fa-wrench" aria-hidden="true"></i> Settings</button>
+                    <button type="button" id="delete-btn" class="poh btn btn-outline-danger mt-3 modal light"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
                 </div>
             </div>
             <div id="accordion" role="tablist" aria-multiselectable="true" class="full-width">
@@ -29,13 +28,13 @@ permalink: /show-draft
                         <div class="card-block" id="content-notes">
                             <div class="notes">
                                 <div id="notes-inner"></div>
-                                <a class="update-bubble hover-shadow hashlink" id="update-notes" href="#" title="Edit draft notes">
+                                <button type="button" class="update-bubble hover-shadow hashlink" id="update-notes" title="Edit draft notes">
                                     <svg class="icon pencil" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
                                         <path class="c1" d="M5,43l0,-6l2,-2l6,6l-2,2z"></path>
                                         <path class="c2" d="M8,34l20,-20l6,6l-20,20z"></path>
                                         <path class="c3" d="M29,13l6,-6l6,6l-6,6z"></path>
                                     </svg>
-                                </a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -46,7 +45,7 @@ permalink: /show-draft
                     </div>
                     <div id="collapse-preview" class="collapse" role="tabpanel" aria-labeledby="heading-preview" aria-expanded="false">
                         <div class="card-block" id="content-preview">
-                            <a href="#" id="link-preview" title="Open in a new window" target="_BLANK"><div class="drop-shadow svg-frame" id="svg-wrapper"></div></a>
+                            <button type="button" id="link-preview" title="Open in a new window" target="_BLANK"><div class="drop-shadow svg-frame" id="svg-wrapper"></div></button>
                         </div>
                     </div>
                 </div>
@@ -56,7 +55,7 @@ permalink: /show-draft
                     </div>
                     <div id="collapse-compared" class="collapse" role="tabpanel" aria-labeledby="heading-compared" aria-expanded="false">
                         <div class="card-block" id="content-compared">
-                            <a href="#" id="compared-preview" title="Open in a new window" target="_BLANK"><div class="drop-shadow svg-frame" id="compared-wrapper"></div></a>
+                            <button type="button" id="compared-preview" title="Open in a new window" target="_BLANK"><div class="drop-shadow svg-frame" id="compared-wrapper"></div></button>
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Themes
-tags: [class docs]
 permalink: /docs/core/classdocs/themes/
 ---
 * TOC - Do not remove this line

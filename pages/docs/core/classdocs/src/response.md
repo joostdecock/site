@@ -97,7 +97,7 @@ Returns the `body` property.
 #### Typical use
 {:.no_toc}
 
-Used by the [`Services/draftservice`](services/draftservice) for last-minute
+Used by the [`Services/draftservice`](../services/draftservice) for last-minute
 string replacements on the body.
 
 #### Return value

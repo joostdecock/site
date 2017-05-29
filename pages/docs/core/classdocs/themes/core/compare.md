@@ -2,7 +2,7 @@
 layout: page
 title: Compare
 namespace: Freesewing\Themes\Core
-tags: [class documentation]
+tags: [class docs]
 permalink: /docs/core/classdocs/themes/core/compare
 ---
 ## Description 

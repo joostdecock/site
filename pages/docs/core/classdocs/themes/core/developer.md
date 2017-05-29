@@ -2,7 +2,7 @@
 layout: page
 title: Developer
 namespace: Freesewing\Themes\Core
-tags: [class documentation]
+tags: [class docs]
 permalink: /docs/core/classdocs/themes/core/developer
 ---
 ## Description 
@@ -19,7 +19,7 @@ This theme does not merely return the SVG code of your pattern, but a JSON array
 ```
 
 The [`Developer`](developer) theme will also add a `Access-Control-Allow-Origin:"*"` header 
-to the [`Response`](/class/response) object, so you can call this in an AJAX request across 
+to the [`Response`](../../src/response) object, so you can call this in an AJAX request across 
 domains.
 
 In addition, it has the `embedFluid` option set to `true` in the theme configuration file.
@@ -54,7 +54,7 @@ like in the example below.
 )
 ```
 
-Creates a [`Repsonse`](/class/response) object with SVG and Kint debug embedded in JSON.
+Creates a [`Repsonse`](../../src/response) object with SVG and Kint debug embedded in JSON.
 
 Also sets a `Access-Control-Allow-Origin:"*"` header.
 
@@ -65,7 +65,7 @@ This makes this theme unsuitable for printing, but perfect for injecting into HT
 #### Parameters
 {:.no_toc}
 
-- [`Context`](/class/context) `$context` : The full freesewing context.
+- [`Context`](../../src/context) `$context` : The full freesewing context.
 
 ## See also
 

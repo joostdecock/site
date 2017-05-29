@@ -12,7 +12,7 @@ to confirm the removal of this model.</p>
 <span class="input-group-addon td-key">Confirm</span>
 <input class="form-number form-control" id="confirm" name="confirm" value="" type="text" placeholder="Type delete here" />
 </div>
-<p><a href="#" class="btn btn-danger btn-block btn-lg mt-5 disabled" id="nuke">Delete this model</a></p>
+<p><a class="poh btn btn-danger btn-block btn-lg mt-5 disabled" id="nuke">Delete this model</a></p>
 <p><small><b>Note</b>: Removing a model will not remove any drafts</small></p>
 </div>
 </div>

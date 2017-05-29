@@ -8,6 +8,6 @@ permalink: /snippets/signup/account-exists
 
 Perhaps you forgot your password?
 
-<a href="/account/reset" class="btn btn-primary">Reset your password</a>
+<a href="/reset" class="btn btn-primary">Reset your password</a>
 </div>
 <!-- End of /snippets/signup/account-exists -->

@@ -1,10 +1,7 @@
 ---
 layout: page
 title: Freesewing donations pledge
-tags: [donations]
 permalink: /about/pledge
-crumbs:
-  - /about|About
 ---
 ## The pledge
 
