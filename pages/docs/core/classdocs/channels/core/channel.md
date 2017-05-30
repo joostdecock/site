@@ -1,5 +1,5 @@
 ---
-layout: class
+layout: page
 title: Channel
 namespace: Freesewing\Channels\Core
 tags: [class docs]

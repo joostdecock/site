@@ -1,5 +1,6 @@
 // Set the location of the APIs you want to connect to here
 var api = {
+    site: 'https://beta.freesewing.org',
     data: 'https://data.freesewing.org',
     core: 'https://api.freesewing.org',
 };
@@ -137,7 +138,7 @@ var token = window.localStorage.getItem("jwt");
         });
 
         // Heading anchor links ////////////
-        return $("#content h2, #content h3, #content h4, #content h5, #content h6").each(function(i, el) {
+        $("#content h2, #content h3, #content h4, #content h5, #content h6").each(function(i, el) {
             var $el, icon, id;
             $el = $(el);
             id = $el.attr('id');
@@ -146,6 +147,33 @@ var token = window.localStorage.getItem("jwt");
                 return $el.append($("<a />").addClass("header-link").attr("href", "#" + id).html(icon));
             }
         });
+
+        // Referrals ///////////////////////
+
+        /* 
+         * We don't run any analytics code, but it is nice to know who links to us
+         * so the only thing we track are external referrals.
+         */
+        if(document.referrer !== '') {
+            var referrer = document.createElement('a');
+            var site = document.createElement('a');
+            referrer.href = document.referrer;
+            site.href = api.site;
+            if(referrer.hostname !== site.hostname) {
+                $.ajax({
+                    url: api.data+'/referral',
+                    method: 'POST',
+                    data: {
+                        host: referrer.hostname,
+                        path: referrer.pathname,
+                        url: document.referrer,
+                    },
+                    dataType: 'json',
+                }); 
+            }
+        }
+
+
 
         // Methods /////////////////////////
        

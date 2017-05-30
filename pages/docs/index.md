@@ -9,15 +9,15 @@ permalink: /docs/
     <div class="row">
         <div class="col-md-4 mb-3 mt-1">
             {% include card.html 
-                title='Measurements help'
+                title='Measurements'
                 text='Made-to-measure patterns are only as good as your measurments are. Check these instructions to know how to measure, and where.'
                 img='/img/tape-measure.jpg'
-                link='/docs/measurements/'
+                link='/docs/measurements'
             %}
         </div>
         <div class="col-md-4 mb-3 mt-1">
             {% include card.html 
-                title='Patterns help'
+                title='Patterns'
                 text='A drafted pattern is just the start. These instructions will guide you from draft to completed garment.<br>We have docs for:
 <a href="/docs/patterns/aaron">Aaron</a>,
 <a href="/docs/patterns/brian">Brian</a>,
@@ -37,7 +37,7 @@ permalink: /docs/
         </div>
         <div class="col-md-4 mb-3 mt-1">
             {% include card.html 
-                title='Sewing help'
+                title='Sewing'
                 text='Perhaps you know everything there is to know about sewing. But just in case, we explain all the sewing terminology you need to make our patterns.'
                 img='/img/jeans-detail.jpg'
                 link='/docs/sewing/'
@@ -104,7 +104,7 @@ permalink: /docs/
     <div class="row">
         <div class="col-md-4 mb-3 mt-1">
             {% include card.html 
-                title='Join the team'
+                title='Getting started'
                 text='The most essential information for new contributors, including our <a href="/about/code-of-conduct">code of conduct</a>, <a href="/contribute#ways-to-contribute">ways to contribute</a>, and <a href="/contribute#where-to-get-help-or-report-a-problem">where to get help or report a problem</a>.'
                 img='/img/contributors.jpg'
                 link='/contribute'
