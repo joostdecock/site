@@ -1,12 +1,13 @@
 ---
 layout: page
-title: Aaron
-tags: [maker docs]
+title: Making Aaron
+tags: [maker docs,aaron]
 permalink: /docs/patterns/aaron/
 ---
-* TOC - Do not remove this line
-{:toc}
-
+{% include figure.html
+    url='/img/patterns/aaron/aaron.svg'
+    description='Your end goal'
+%}
 > <h5>Required measurements and pattern options</h5>
 > If you haven't already drafted Aaron, you might want to read up on the [required measurements](/measurements/for/aaron) and [options](/patterns/aaron/options) of this pattern.
 {:.tip}
@@ -17,7 +18,7 @@ permalink: /docs/patterns/aaron/
 > 
 > Aaron is a simple pattern, and very easy to transfer on your fabric.
 > In other words, you can avoid the entire printing/sticky tape business altogether.
-{:.tip}
+{:.paperless}
 
 ## Before you start
 
@@ -266,8 +267,11 @@ You'll have to, once again, stretch your binding a bit while doing this. But thi
 %}
 On the inside of you A-shirt, trim back the knit binding against your seam to finish up.
 
-> Be careful not to cut a whole in your A-shirt. Seriously, this happened to me on more than one occasion.
+> Be careful not to cut a hole in your A-shirt. Seriously, this happened to me on more than one occasion.
 {:.warning}
 
 {% include completed.html %}
+
+* TOC - Do not remove this line
+{:toc}
 
