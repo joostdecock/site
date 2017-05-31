@@ -75,3 +75,39 @@ ul.files li.image:before {
     color: $green;
 }
 
+// CUT LIST
+ul.cuts {
+    margin: 1rem 0;
+}
+ul.cuts li {
+    list-style-type: none;
+    font-weight: normal;
+}
+ul.cuts li:before {
+    content: "\f0c4";
+    font-family: 'FontAwesome';
+    padding-right: 0.5rem;
+    color: $purple;
+    font-weight: normal;
+}
+ul.cuts li.lining:before { 
+    color: $teal;
+}
+ul.cuts li.interfacing:before { 
+    color: $red;
+}
+ul.cuts li.title { 
+    font-weight: bold;
+}
+ul.cuts li.title:before { 
+    content: none;
+}
+blockquote.cuts ul.cuts {
+    margin: 0;
+    margin-left: 1rem;
+    padding: 0;
+}
+blockquote.cuts ul.cuts ul {
+    padding-left: 1rem;
+}
+

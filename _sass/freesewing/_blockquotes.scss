@@ -27,6 +27,9 @@ blockquote:before {
 blockquote.tip,
 blockquote.quote,
 blockquote.comment,
+blockquote.cuts,
+blockquote.print,
+blockquote.love,
 blockquote.question,
 blockquote.warning { 
     box-shadow: $shadow;
@@ -43,6 +46,12 @@ blockquote.question { background: rgba(92, 184, 92, 0.1); }
 blockquote.question:before { content: "\f29c"; }
 blockquote.warning { background: rgba(217, 83, 79, 0.1); }
 blockquote.warning:before { content: "\f071"; }
+blockquote.cuts { background: rgba(102, 63, 149, 0.1) }
+blockquote.cuts:before { content: "\f0c4"; }
+blockquote.print { background: $white }
+blockquote.print:before { content: "\f02f"; }
+blockquote.love { background: $purple; color: $white }
+blockquote.love:before { content: "\f004"; color: $white }
 
 blockquote h2:first-child,
 blockquote h3:first-child,
