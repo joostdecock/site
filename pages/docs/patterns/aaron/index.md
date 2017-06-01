@@ -42,11 +42,18 @@ Cotton with a hint of something stretchy, maybe rayon, or a fine knit. I suggest
 
 > <h5>Summary</h5>
 > - {:.title} Main fabric
->   - Cut 1 **back** [on the fold](/fixme)
->   - Cut 1 **front** [on the fold](/fixme)
->   - Cut strips for neck opening and armhole binding
+>   - Cut **1 back** [on the fold](/fixme)
+>   - Cut **1 front** [on the fold](/fixme)
+>   - Cut **3 strips** for neck opening and armhole binding
 > {:.cuts}
 {:.cuts}
+
+> <h5>Caveats</h5>
+> - For both **front** and **back**
+>   - No seam allowance on the armholes 
+>   - No seam allowance on the neck opening
+>   - Extra hem allowance at the hem.
+{:.warning}
 
 Aaron is a very simply pattern, and consists of two main parts plus some strips for the neck and armhole binding.
 
@@ -56,38 +63,12 @@ Below is a typical draft layout:
     url='/img/patterns/aaron/layout.svg'
     description='A typical Aaron draft'
 %}
+{% include scalebox.html %}
 
 > <h5>Notation legend</h5>
 >
 > The [notation legend](/docs/patterns/notation-legend) explains all the different markings and lines on your draft.
 {:.tip}
-
-### Part 1: Front
-
-Part 1 on the **front** and it needs to be cut on the fold along the left side.
-
-> <h5>Caveats</h5>
-> - No seam allowance on the armholes 
-> - No seam allowance on the neck opening
-> - Extra hem allowance at the hem.
-{:.warning}
-
-{% include scalebox.html %}
-
-### Part 2: Back
-
-Part 2 is the **back** and it too needs to be cut on the fold along the left side.
-
-> <h5>Caveats</h5>
-> - No seam allowance on the armholes 
-> - No seam allowance on the neck opening
-> - Extra hem allowance at the hem.
-{:.warning}
-
-### Binding
-
-You'll also need to cut some strips to use as binding to finish the neck opening and armholes.
-Their dimensions are printed on the pattern within the back part.
 
 ## Construction
 

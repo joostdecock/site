@@ -32,6 +32,7 @@ blockquote.print,
 blockquote.love,
 blockquote.paperless,
 blockquote.question,
+blockquote.error,
 blockquote.cc,
 blockquote.warning { 
     box-shadow: $shadow;
@@ -59,6 +60,9 @@ blockquote.paperless:before { content: "\f18c"; color: $white }
 blockquote.cc { background: $blue; color: $white }
 blockquote.cc:before { content: "\f25e"; color: $white }
 blockquote.cc a {color: $white; }
+blockquote.error { background: $red; color: $white }
+blockquote.error:before { content: "\f25e"; color: $white }
+blockquote.error a {color: $white; }
 
 blockquote h2:first-child,
 blockquote h3:first-child,
