@@ -38,7 +38,6 @@ Long story short, go for a knitted fabric, or some light scuba or something. No 
 
 ## Cutting
 
-> <h5>Summary</h5>
 > - {:.title} Main fabric
 >   - Cut **1 Tamiko top** [on the fold](/fixme)
 > {:.cuts}

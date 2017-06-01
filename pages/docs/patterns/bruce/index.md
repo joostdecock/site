@@ -50,7 +50,6 @@ When in doubt, go for rayon.
 
 ## Cutting
 
-> <h5>Summary</h5>
 > - {:.title} Main fabric
 >   - Cut **1 back** on the fold
 >   - Cut **2 fronts** on the fold

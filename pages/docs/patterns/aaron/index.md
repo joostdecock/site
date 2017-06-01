@@ -40,7 +40,6 @@ Cotton with a hint of something stretchy, maybe rayon, or a fine knit. I suggest
 
 ## Cutting
 
-> <h5>Summary</h5>
 > - {:.title} Main fabric
 >   - Cut **1 back** [on the fold](/fixme)
 >   - Cut **1 front** [on the fold](/fixme)
