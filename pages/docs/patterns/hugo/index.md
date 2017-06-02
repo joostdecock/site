@@ -19,7 +19,7 @@ permalink: /docs/patterns/hugo/
 %}
 > <h5>Required measurements and pattern options</h5>
 > If you haven't already drafted Hugo, you might want to read up on the [required measurements](/measurements/for/hugo) and [options](/patterns/hugo/options) of this pattern.
-{:.tip}
+{:.link}
 
 > <h5>Save time, trees, and effort: go paperless</h5>
 > {:.notoc}

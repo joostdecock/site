@@ -10,7 +10,7 @@ permalink: /docs/patterns/bruce/
 %}
 > <h5>Required measurements and pattern options</h5>
 > If you haven't already drafted Bruce, you might want to read up on the [required measurements](/measurements/for/bruce) and [options](/patterns/bruce/options) of this pattern.
-{:.tip}
+{:.link}
 
 > <h5>Save time, trees, and effort: go paperless</h5>
 > {:.notoc}

@@ -18,7 +18,7 @@ permalink: /docs/patterns/simon/
 %}
 > <h5>Required measurements and pattern options</h5>
 > If you haven't already drafted Simon, you might want to read up on the [required measurements](/measurements/for/aaron) and [options](/patterns/aaron/options) of this pattern.
-{:.tip}
+{:.link}
 
 ## Before you start
 

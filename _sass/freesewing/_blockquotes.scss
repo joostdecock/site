@@ -35,6 +35,7 @@ blockquote.question,
 blockquote.error,
 blockquote.cc,
 blockquote.fork,
+blockquote.link,
 blockquote.warning { 
     box-shadow: $shadow;
     border: 0;
@@ -58,6 +59,8 @@ blockquote.love { background: $purple; color: $white }
 blockquote.love:before { content: "\f004"; color: $white }
 blockquote.paperless { background: $green; color: $white }
 blockquote.paperless:before { content: "\f18c"; color: $white }
+blockquote.link { background: $yellow; }
+blockquote.link:before { content: "\f0c1"; }
 blockquote.cc { background: $blue; color: $white }
 blockquote.cc:before { content: "\f25e"; color: $white }
 blockquote.cc a {color: $white; }
