@@ -3,7 +3,7 @@ layout: page
 title: Measurements
 tags: [maker docs]
 img: /img/potw/potw.jpg
-permalink: /docs/measurements
+permalink: /docs/list-measurements
 ---
 <div id="measurements"></div>
 <script>

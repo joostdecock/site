@@ -9,7 +9,7 @@ permalink: /docs/patterns/wahid/
     description='Your end goal'
 %}
 > <h5>Required measurements and pattern options</h5>
-> If you haven't already drafted Wahid, you might want to read up on the [required measurements](/measurements/for/wahid) and [options](/patterns/wahid/options) of this pattern.
+> If you haven't already drafted Wahid, you might want to read up on the [required measurements](/measurements/for/wahid) and [options](/docs/patterns/wahid/options) of this pattern.
 {:.link}
 
 > <h5>Save time, trees, and effort: go paperless</h5>

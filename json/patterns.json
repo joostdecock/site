@@ -203,8 +203,8 @@
                     "description": "A factor that influences the height of the sleevecap",
                     "group": "fit",
                     "type": "percent",
-                    "min": 45,
-                    "max": 65,
+                    "min": 35,
+                    "max": 75,
                     "default": 55
                 },
                 "lengthBonus": {
@@ -345,7 +345,7 @@
             "measurements": {
                 "underBust": "underbust",
                 "naturalWaist": "naturalwaist",
-                "hips": "hips",
+                "hipsCircumference": "hipscircumference",
                 "naturalWaistToUnderbust": "naturalwaisttounderbust",
                 "naturalWaistToHips": "naturalwaisttohips"
             },
@@ -708,15 +708,6 @@
                     "type": "measure",
                     "min": 0,
                     "max": 50,
-                    "default": 20
-                },
-                "backNeckCutout": {
-                    "title": "Back collar cutout",
-                    "description": "The amount by which the collar extends into the back panel",
-                    "group": "advanced",
-                    "type": "measure",
-                    "min": 5,
-                    "max": 40,
                     "default": 20
                 },
                 "buttonPlacketType": {

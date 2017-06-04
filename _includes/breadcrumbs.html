@@ -45,8 +45,16 @@
                             {% assign crumb_title = 'Pattern docs' %}
                         {% when '/docs/sewing' %}
                             {% assign crumb_title = 'Sewing docs' %}
+                        {% when '/docs/crumb-measurements' %}
+                            {% assign crumb_title = 'Measurements' %}
+                            {% assign crumb_url = '/docs/measurements' %}
                         {% else %}
-                            {% assign crumb_title = 'FIXME: Unknown breadcrumb' %}
+                            {% assign chunks = crumb_url | split: '/' %}
+                            {% if chunks.size == 4 %} 
+                                {% assign crumb_title = chunks.last | capitalize %}
+                            {% else %}
+                                {% assign crumb_title = chunks.size %}
+                            {% endif %}
                     {% endcase %}
                     <li><a href="{{ crumb_url}}" title="{{ crumb_title }}">{{ crumb_title }}</a> &raquo;</li>
                 {% endif %}

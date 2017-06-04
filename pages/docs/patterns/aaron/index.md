@@ -9,7 +9,7 @@ permalink: /docs/patterns/aaron/
     description='Your end goal'
 %}
 > <h5>Required measurements and pattern options</h5>
-> If you haven't already drafted Aaron, you might want to read up on the [required measurements](/measurements/for/aaron) and [options](/patterns/aaron/options) of this pattern.
+> If you haven't already drafted Aaron, you might want to read up on the [required measurements](/measurements/for/aaron) and [options](/docs/patterns/aaron/options) of this pattern.
 {:.link}
 
 > <h5>Save time, trees, and effort: go paperless</h5>

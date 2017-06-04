@@ -10,7 +10,7 @@ permalink: /docs/patterns/tamiko/
 %}
 
 > <h5>Required measurements and pattern options</h5>
-> If you haven't already drafted Tamiko, you might want to read up on the [required measurements](/measurements/for/tamiko) and [options](/patterns/tamiko/options) of this pattern.
+> If you haven't already drafted Tamiko, you might want to read up on the [required measurements](/measurements/for/tamiko) and [options](/docs/patterns/tamiko/options) of this pattern.
 {:.link}
 
 > <h5>Do yourself a favor: go paperless</h5>

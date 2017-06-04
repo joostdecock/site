@@ -12,5 +12,5 @@ permalink: /docs/patterns/sven/
 {:.error}
 
 > <h5>Required measurements and pattern options</h5>
-> What we do have is documentation on the [required measurements](/measurements/for/cathrin) and [options](/patterns/aaron/cathrin) of this pattern.
+> What we do have is documentation on the [required measurements](/measurements/for/cathrin) and [options](/docs/patterns/sven/options) of this pattern.
 {:.link}

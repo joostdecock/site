@@ -15,5 +15,5 @@ That's because Brian is not supposed to be made, but rather can serve as the bas
 
 
 > <h5>Required measurements and pattern options</h5>
-> What we do have is documentation on the [required measurements](/measurements/for/cathrin) and [options](/patterns/aaron/cathrin) of this block.
+> What we do have is documentation on the [required measurements](/measurements/for/brian) and [options](/docs/patterns/brian/options) of this block.
 {:.link}

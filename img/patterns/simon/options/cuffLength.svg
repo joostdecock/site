@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    width ="903.54330795"
+    height ="460.6299217"
+    viewbox ="0 0 903.54330795 460.6299217" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" 
+>
+
+<style type="text/css">
+    <![CDATA[
+    path { fill: none; stroke: #000000; stroke-opacity:1; stroke-width: 0.5; stroke-miterlimit:4; stroke-dashoffset:0; stroke-linecap:round; stroke-linejoin:round; }
+    path.hidden { fill: none; stroke: none; }]]>
+</style>
+
+
+<!-- Start of group #patternScaleContainer -->
+<g id="patternScaleContainer"  transform=" scale(3.54330709 ) " >
+    
+    <!-- Start of group #barrelCuff -->
+    <g id="barrelCuff"  transform=" translate(127.5 5)  translate(0 0) " >
+        <path class="hidden" id="2"  d=" M  -122.5,0  L  122.5,0  L  122.5,120  L  -122.5,120  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(26.9, 55%, 50%);" id="210"  d=" M  0,0  L  115,-0  L  122.5,7.5  L  122.5,30  L  -122.5,30  L  -122.5,7.5  L  -115,0  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(53.8, 55%, 50%);" id="419"  d=" M  0,0  L  112.75,-0  L  122.5,9.75  L  122.5,39  L  -122.5,39  L  -122.5,9.75  L  -112.75,0  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(80.7, 55%, 50%);" id="628"  d=" M  0,0  L  110.5,-0  L  122.5,12  L  122.5,48  L  -122.5,48  L  -122.5,12  L  -110.5,0  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(107.6, 55%, 50%);" id="837"  d=" M  0,0  L  108.25,-0  L  122.5,14.25  L  122.5,57  L  -122.5,57  L  -122.5,14.25  L  -108.25,0  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(134.5, 55%, 50%);" id="1046"  d=" M  0,0  L  106,-0  L  122.5,16.5  L  122.5,66  L  -122.5,66  L  -122.5,16.5  L  -106,0  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(161.4, 55%, 50%);" id="1255"  d=" M  0,0  L  103.75,-0  L  122.5,18.75  L  122.5,75  L  -122.5,75  L  -122.5,18.75  L  -103.75,0  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(188.3, 55%, 50%);" id="1464"  d=" M  0,0  L  101.5,-0  L  122.5,21  L  122.5,84  L  -122.5,84  L  -122.5,21  L  -101.5,0  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(215.2, 55%, 50%);" id="1673"  d=" M  0,0  L  99.25,-0  L  122.5,23.25  L  122.5,93  L  -122.5,93  L  -122.5,23.25  L  -99.25,0  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(242.1, 55%, 50%);" id="1882"  d=" M  0,0  L  97,-0  L  122.5,25.5  L  122.5,102  L  -122.5,102  L  -122.5,25.5  L  -97,0  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(269, 55%, 50%);" id="2091"  d=" M  0,0  L  94.75,-0  L  122.5,27.75  L  122.5,111  L  -122.5,111  L  -122.5,27.75  L  -94.75,0  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(295.9, 55%, 50%);" id="2300"  d=" M  0,0  L  92.5,-0  L  122.5,30  L  122.5,120  L  -122.5,120  L  -122.5,30  L  -92.5,0  z " />
+    </g>
+    <!-- End of group #barrelCuff -->
+</g>
+<!-- End of group #patternScaleContainer -->
+
+</svg>
+

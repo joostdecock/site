@@ -815,8 +815,7 @@
                     // Bind click event to help buttons
                     $('#accordion').on('click', 'a.option-help', function(e) {
                         e.preventDefault();
-                        $('#modal').removeClass().addClass('shown light');
-                        $('#modal-main').html("<h2 class='text-center'>Sorry, not yet</h2><p class='text-center'>Help for pattern options is not implemented yet.</p>");
+                        modalHelp(patternhandle, $(this).attr('data-option'));
                     });
                     // Bind submit handler to quick submit link
                     $('#picklist').on('click','#submit-link', function(e) {
@@ -831,6 +830,41 @@
                 });
             });
         });
+    }
+
+    function modalHelp(pattern, option) {
+        $('#modal').removeClass().addClass('shown light');
+        $('#modal-main').html('<img src="/img/logo/spinner.svg" alt="Loading...">');
+        $.ajax({
+            // Fetching documentation for this option
+            url: '/components/pattern-options/'+pattern.toLowerCase()+'/'+option.toLowerCase(),
+            method: 'GET',
+            dataType: 'html',
+            success: function(data) {
+                // add to page
+                $('#modal-main').html(data);
+            },
+            error: function(data) {
+                // show msg that we don't seem to have docs for this option 
+                var msg = '<blockquote class="error">';
+                msg += '<h5>This documentation is missing</h5>';
+                msg += '<p>We don\'t seem to have documentation for the <b>'+option+'</b> option. That shouldn\'t happen, so I encourage you to report this.<p>';
+                msg += '</blockquote>';
+                msg += '<blockquote class="link">';
+                msg += '<h5>Help us out and submit this report</h5>';
+                msg += '<p>Looks like you\'ve hit a snag. Those things happen, but you could help us prevent it from happening in the future.</p>';
+                msg += 'We have gathered all the info we need to investigate this, but we need you to take the last step of submitting the issue to GitHub.</p>';
+                msg += '<p>So would you do us a favor and report this? Thank you :)</p>';
+                msg += '<p><a target="_BLANK" class="btn btn-primary" ';
+                msg += 'href="https://github.com/freesewing/site/issues/new?title='+pattern+' '+option+' option is undocumented';
+                msg += '&labels[]=documentation';
+                msg += '&body=The '+option+' option of the '+pattern+' pattern is undocumented.';
+                msg += '%0A%0AFeel free to include comments, but please keep the line above intact.">';
+                msg += 'Send report to GitHub</a></p>';
+                msg += '<p>PS: This will open a new window where you just have to click the <b>Submit new issue</b> button.</p></blockquote>';
+                $('#modal-main').html(msg);
+            },
+        }); 
     }
 
     function renderOption(name, option, units) {

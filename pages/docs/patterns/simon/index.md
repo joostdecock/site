@@ -17,7 +17,7 @@ permalink: /docs/patterns/simon/
     description='Your end goal'
 %}
 > <h5>Required measurements and pattern options</h5>
-> If you haven't already drafted Simon, you might want to read up on the [required measurements](/measurements/for/aaron) and [options](/patterns/aaron/options) of this pattern.
+> If you haven't already drafted Simon, you might want to read up on the [required measurements](/measurements/for/simon) and [options](/docs/patterns/simon/options) of this pattern.
 {:.link}
 
 ## Before you start

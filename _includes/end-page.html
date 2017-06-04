@@ -14,8 +14,10 @@
     {% if page.action == 'reset' %}
     <script src="{{ site.baseurl }}/js/reset.js"></script>
     {% endif %}
+    {% if page.action == 'pattern-options' %}
+    <script src="{{ site.baseurl }}/js/pattern-options.js"></script>
+    {% endif %}
     {% if page.action == 'app' %}
-    <!-- jQuery Jcrop plugin -->
     <script src="{{ site.baseurl }}/js/app.js"></script>
     {% endif %}
 
