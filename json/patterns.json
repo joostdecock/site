@@ -613,27 +613,27 @@
                     "description": "The amount of ease at the chest",
                     "group": "fit",
                     "type": "measure",
-                    "min": 0,
+                    "min": 60,
                     "max": 240,
-                    "default": 80
+                    "default": 120
                 },
                 "waistEase": {
                     "title": "Waist ease",
                     "description": "The amount of ease at the natural waist",
                     "group": "fit",
                     "type": "measure",
-                    "min": 0,
+                    "min": 80,
                     "max": 280,
-                    "default": 100
+                    "default": 160
                 },
                 "hipsEase": {
                     "title": "Hips ease",
                     "description": "The amount of ease at the hips",
                     "group": "fit",
                     "type": "measure",
-                    "min": 0,
+                    "min": 8,
                     "max": 240,
-                    "default": 80
+                    "default": 120
                 },
                 "bicepsEase": {
                     "title": "Biceps ease",
@@ -1128,7 +1128,7 @@
                 "lengthBonus": {
                     "title": "Length bonus",
                     "description": "The amount to lengthen the body. Negative values shorten it.",
-                    "group": "fit",
+                    "group": "style",
                     "type": "measure",
                     "min": -150,
                     "max": 350,
@@ -1193,7 +1193,7 @@
                     "max": 60,
                     "default": 40
                 },
-                "waistbandRise": {
+                "backRise": {
                     "title": "Back rise",
                     "description": "The amount by which to raise the back.",
                     "group": "fit",
@@ -1209,7 +1209,7 @@
                     "type": "measure",
                     "min": -60,
                     "max": 80,
-                    "default": 0
+                    "default": 40
                 }
             },
             "pattern": "TheoTrousers"
@@ -1270,7 +1270,7 @@
                     "max": 60,
                     "default": 40
                 },
-                "waistbandRise": {
+                "backRise": {
                     "title": "Back rise",
                     "description": "The amount by which to raise the back.",
                     "group": "fit",

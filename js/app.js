@@ -842,11 +842,11 @@
             dataType: 'html',
             success: function(data) {
                 // add to page
-                $('#modal-main').html(data);
+                $('#modal-main').html("<div class='m800 paper'><h2>"+option+"</h2>"+data+"</div>");
             },
             error: function(data) {
                 // show msg that we don't seem to have docs for this option 
-                var msg = '<blockquote class="error">';
+                var msg = '<div class="m800"><blockquote class="error">';
                 msg += '<h5>This documentation is missing</h5>';
                 msg += '<p>We don\'t seem to have documentation for the <b>'+option+'</b> option. That shouldn\'t happen, so I encourage you to report this.<p>';
                 msg += '</blockquote>';
@@ -861,7 +861,7 @@
                 msg += '&body=The '+option+' option of the '+pattern+' pattern is undocumented.';
                 msg += '%0A%0AFeel free to include comments, but please keep the line above intact.">';
                 msg += 'Send report to GitHub</a></p>';
-                msg += '<p>PS: This will open a new window where you just have to click the <b>Submit new issue</b> button.</p></blockquote>';
+                msg += '<p>PS: This will open a new window where you just have to click the <b>Submit new issue</b> button.</p></blockquote></div>';
                 $('#modal-main').html(msg);
             },
         }); 

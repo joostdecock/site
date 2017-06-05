@@ -91,6 +91,10 @@ body { background: $whitish; }
     text-transform: uppercase;
     font-weight: 300;
 }
+.m800 {
+    max-width: 800px;
+    margin: auto;
+}
 @media (max-width: 767px) {
     .not-on-small {
         display: none;
