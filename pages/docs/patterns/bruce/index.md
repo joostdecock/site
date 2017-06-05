@@ -4,23 +4,10 @@ title: Making Bruce
 tags: [maker docs,bruce]
 permalink: /docs/patterns/bruce/
 ---
-{% include figure.html
-    url='/img/patterns/bruce/bruce.svg'
-    description='Your end goal'
-%}
-> <h5>Required measurements and pattern options</h5>
-> If you haven't already drafted Bruce, you might want to read up on the [required measurements](/measurements/for/bruce) and [options](/docs/patterns/bruce/options) of this pattern.
-{:.link}
+## See also
+{% include mando.html pattern='bruce' %}
 
-> <h5>Save time, trees, and effort: go paperless</h5>
-> {:.notoc}
-> If you want to avoid printing your pattern, make sure to pick the **Paperless theme**. 
-> 
-> Bruce is a relatively simple pattern, and very easy to transfer on your fabric.
-> In other words, you can avoid the entire printing/sticky tape business altogether.
-{:.paperless}
-
-## Video
+### Video
 Text a bit dry for you? I try to make videos available as part of the pattern documentation.
 
 {% include embed.html src="//www.youtube.com/embed/videoseries?list=PL1gv5yv3DoZME1xe5fBEHd0rKPW_xNpF3" %}
@@ -30,6 +17,10 @@ Text a bit dry for you? I try to make videos available as part of the pattern do
 {:.warning}
 
 ## Before you start
+{% include figure.html
+    url='/img/patterns/bruce/bruce.svg'
+    description='Your end goal'
+%}
 
 ### What you need
 

@@ -4,23 +4,14 @@ title: Making Simon
 tags: [maker docs,simon]
 permalink: /docs/patterns/simon/
 ---
-> <h5>Overwhelmed by the options? Fork a draft</h5>
-> This pattern has 42 options that you can tweak. To say that that's a lot would be an understatement.
->
-> Few people want to configure everything manually, and so they **fork a draft**. 
-> 
-> Here's an overview of [Simon drafts you can fork](/patterns/simon/fork). I suggest you check it out.
-{:.fork}
+## See also
+{% include mando.html pattern='simon' %}
 
+## Before you start
 {% include figure.html
     url='/img/patterns/simon/simon.svg'
     description='Your end goal'
 %}
-> <h5>Required measurements and pattern options</h5>
-> If you haven't already drafted Simon, you might want to read up on the [required measurements](/measurements/for/simon) and [options](/docs/patterns/simon/options) of this pattern.
-{:.link}
-
-## Before you start
 
 ### What you need
 

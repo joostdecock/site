@@ -4,23 +4,10 @@ title: Making Theodore
 tags: [maker docs,theodore]
 permalink: /docs/patterns/theodore/
 ---
-{% include figure.html
-    url='/img/patterns/theodore/theodore.svg'
-    description='Your end goal'
-%}
-> <h5>Required measurements and pattern options</h5>
-> If you haven't already drafted Theodore, you might want to read up on the [required measurements](/measurements/for/theodore) and [options](/docs/patterns/theodore/options) of this pattern.
-{:.link}
+## See also
+{% include mando.html pattern='theodore' %}
 
-> <h5>Save time, trees, and effort: go paperless</h5>
-> {:.notoc}
-> If you want to avoid printing your pattern, make sure to pick the **Paperless theme**. 
-> 
-> Theodore is not that complex a pattern, and relatively easy to transfer on your fabric.
-> In other words, you can avoid the entire printing/sticky tape business altogether.
-{:.paperless}
-
-## Video
+### Video
 Text a bit dry for you? I try to make videos available as part of the pattern documentation.
 
 In this particular case, there's a lot of video material available, but it was originally recorded for a previous version of this pattern. Still, good stuff.
@@ -28,6 +15,10 @@ In this particular case, there's a lot of video material available, but it was o
 {% include embed.html src='//www.youtube.com/embed/videoseries?list=PL1gv5yv3DoZOcmOJf6f0YWi522VXXv-mM' %}
 
 ## Before you start
+{% include figure.html
+    url='/img/patterns/theodore/theodore.svg'
+    description='Your end goal'
+%}
 
 ### What you need
 

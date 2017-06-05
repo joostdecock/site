@@ -4,6 +4,9 @@ title: Making Theo
 tags: [maker docs,theo]
 permalink: /docs/patterns/theo/
 ---
+## See also
+{% include mando.html pattern='theo' %}
+
 > <h5>Different cut, same documentation</h5>
 > Theo is the slimline variation of Theodore.
 >

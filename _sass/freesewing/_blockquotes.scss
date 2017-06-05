@@ -61,6 +61,8 @@ blockquote.paperless { background: $green; color: $white }
 blockquote.paperless:before { content: "\f18c"; color: $white }
 blockquote.link { background: $yellow; }
 blockquote.link:before { content: "\f0c1"; }
+blockquote.link.option:before { content: "\f1de"; }
+blockquote.link.measure:before { content: "\f21d"; }
 blockquote.cc { background: $blue; color: $white }
 blockquote.cc:before { content: "\f25e"; color: $white }
 blockquote.cc a {color: $white; }

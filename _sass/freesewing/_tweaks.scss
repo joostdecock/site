@@ -95,6 +95,28 @@ body { background: $whitish; }
     max-width: 800px;
     margin: auto;
 }
+.btn-outline-black {
+    color: $black;
+    background-image: none;
+    background-color: transparent;
+    border-color: $black;
+}
+.btn-outline-white {
+    color: $white;
+    background-image: none;
+    background-color: transparent;
+    border-color: $white;
+}
+.btn-outline-black:hover {
+    color: $white;
+    background-color: $gray-dark;
+    border-color: $black;
+}
+.btn-outline-white:hover {
+    color: $black;
+    background-color: $white;
+    border-color: $white;
+}
 @media (max-width: 767px) {
     .not-on-small {
         display: none;

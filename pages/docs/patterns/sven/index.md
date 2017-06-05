@@ -11,6 +11,5 @@ permalink: /docs/patterns/sven/
 > Sorry, there's just so much to do. You could always help out :)
 {:.error}
 
-> <h5>Required measurements and pattern options</h5>
-> What we do have is documentation on the [required measurements](/measurements/for/cathrin) and [options](/docs/patterns/sven/options) of this pattern.
-{:.link}
+## See also
+{% include mando.html pattern='sven' %}

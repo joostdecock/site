@@ -13,23 +13,11 @@ permalink: /docs/patterns/hugo/
 >
 > At least yet, I hope to complete this at a later date.
 {:.error}
-{% include figure.html
-    url='/img/patterns/hugo/hugo.svg'
-    description='Your end goal'
-%}
-> <h5>Required measurements and pattern options</h5>
-> If you haven't already drafted Hugo, you might want to read up on the [required measurements](/measurements/for/hugo) and [options](/docs/patterns/hugo/options) of this pattern.
-{:.link}
 
-> <h5>Save time, trees, and effort: go paperless</h5>
-> {:.notoc}
-> If you want to avoid printing your pattern, make sure to pick the **Paperless theme**. 
-> 
-> Hugo is a relatively straightforward pattern, and you don't need to print it.
-> In other words, you can avoid the entire printing/sticky tape business altogether.
-{:.paperless}
+## See also
+{% include mando.html pattern='hugo' %}
 
-## Video
+### Video
 Text a bit dry for you? I try to make videos available as part of the pattern documentation.
 
 This 6-episode series shows you how to make your hoodie start to finish:
@@ -37,6 +25,10 @@ This 6-episode series shows you how to make your hoodie start to finish:
 {% include embed.html src='//www.youtube.com/embed/videoseries?list=PL1gv5yv3DoZOHLjisuD1JcUPTkFy_IGGO' %}
 
 ## Before you start
+{% include figure.html
+    url='/img/patterns/hugo/hugo.svg'
+    description='Your end goal'
+%}
 
 ### What you need
 

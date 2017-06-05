@@ -4,23 +4,14 @@ title: Making Aaron
 tags: [maker docs,aaron]
 permalink: /docs/patterns/aaron/
 ---
+## See also
+{% include mando.html pattern='aaron' %}
+
+## Before you start
 {% include figure.html
     url='/img/patterns/aaron/aaron.svg'
     description='Your end goal'
 %}
-> <h5>Required measurements and pattern options</h5>
-> If you haven't already drafted Aaron, you might want to read up on the [required measurements](/measurements/for/aaron) and [options](/docs/patterns/aaron/options) of this pattern.
-{:.link}
-
-> <h5>Save time, trees, and effort: go paperless</h5>
-> {:.notoc}
-> If you want to avoid printing your pattern, make sure to pick the **Paperless theme**. 
-> 
-> Aaron is a simple pattern, and very easy to transfer on your fabric.
-> In other words, you can avoid the entire printing/sticky tape business altogether.
-{:.paperless}
-
-## Before you start
 
 ### What you need
 

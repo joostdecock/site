@@ -4,24 +4,14 @@ title: Making Tamiko
 tags: [maker docs,tamiko]
 permalink: /docs/patterns/tamiko/
 ---
+## See also
+{% include mando.html pattern='tamiko' %}
+
+## Before you start
 {% include figure.html
     url='/img/patterns/tamiko/tamiko.svg'
     description='Your end goal'
 %}
-
-> <h5>Required measurements and pattern options</h5>
-> If you haven't already drafted Tamiko, you might want to read up on the [required measurements](/measurements/for/tamiko) and [options](/docs/patterns/tamiko/options) of this pattern.
-{:.link}
-
-> <h5>Do yourself a favor: go paperless</h5>
-> {:.notoc}
-> If you want to avoid printing your pattern, make sure to pick the **Paperless theme**. 
-> 
-> Tamiko is an extremly simple pattern, and going paperless fits it perfectly.
-> In other words, you can avoid the entire printing/sticky tape business altogether.
-{:.paperless}
-
-## Before you start
 
 ### What you need
 

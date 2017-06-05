@@ -4,23 +4,14 @@ title: Making Trayvon
 tags: [maker docs,trayvon]
 permalink: /docs/patterns/trayvon/
 ---
+## See also
+{% include mando.html pattern='trayvon' %}
+
+## Before you start
 {% include figure.html
     url='/img/patterns/trayvon/trayvon.svg'
     description='Your end goal'
 %}
-> <h5>Required measurements and pattern options</h5>
-> If you haven't already drafted Trayvon, you might want to read up on the [required measurements](/measurements/for/trayvon) and [options](/docs/patterns/trayvon/options) of this pattern.
-{:.link}
-
-> <h5>Save time, trees, and effort: go paperless</h5>
-> {:.notoc}
-> If you want to avoid printing your pattern, make sure to pick the **Paperless theme**. 
-> 
-> Trayvon is the perfect pattern to go paperless, only straight lines.
-> In other words, you can avoid the entire printing/sticky tape business altogether.
-{:.paperless}
-
-## Before you start
 
 ### What you need
 
