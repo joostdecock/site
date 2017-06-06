@@ -741,7 +741,7 @@
                     form.groups[o.group][option] = o;
                 });
                 // Add hidden form fields
-                $('#form').append('<input type="hidden" name="pattern" value="'+pattern.pattern+'"><input type="hidden" name="model" value="'+modelhandle+'">');
+                $('#form').append('<input type="hidden" name="pattern" value="'+fsdata.mapping.handleToPattern[patternhandle]+'"><input type="hidden" name="model" value="'+modelhandle+'">');
                 // Load defaults for theme and langauge from fork (if provided)
                 if(defaults !== false && typeof defaults.theme !== 'undefined') dflt_theme = defaults.theme;
                 else dflt_theme = 'Basic';
