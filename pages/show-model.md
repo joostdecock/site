@@ -3,6 +3,8 @@ layout: cards
 title: Model
 action: app
 permalink: /show-model
+crumbs:
+  - /models|Your models
 ---
 <div class="container">
     <div id="model"></div>

@@ -2,13 +2,8 @@
 DATA_API="https://joost.data.freesewing.org"
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-echo "I will save data to $DIR/../json"
-echo "Prefetching patterns"
-wget -q $DATA_API/patterns -O $DIR/../json/patterns.json
-echo "Prefetching pattern map"
-wget -q $DATA_API/patternmap -O $DIR/../json/patternmap.json
-echo "Prefetching reverse pattern map"
-wget -q $DATA_API/patternpam -O $DIR/../json/patternpam.json
-echo "Prefetching measurements"
-wget -q $DATA_API/measurements -O $DIR/../json/measurements.json
+echo "Saving info as JSON to $DIR/../json"
+wget -q $DATA_API/info/json -O $DIR/../json/freesewing.json
+echo "Saving info as YAML to $DIR/../_data"
+wget -q $DATA_API/info/yaml -O $DIR/../_data/freesewing.yaml
 echo "Bye"

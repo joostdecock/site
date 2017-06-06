@@ -69,7 +69,6 @@
             },
             error: function(data) { 
                 $('#loader').load('/components/generic/error');
-                console.log(data);
             },
             headers: {'Authorization': 'Bearer '+token},
         }); 
@@ -258,6 +257,7 @@
 
     function renderModel(data) {
         $('h1.page-title').html(data.model.name);
+        $('ul.breadcrumbs li:last-child').html(data.model.name);
         $('#model').load('/components/model/page', function(){
             marked = $.getScript( "/js/vendor/marked.min.js", function(){
                 marked.setOptions({sanitize: true});
@@ -269,28 +269,22 @@
             if(data.model.data === "" || data.model.data === null) data.model.data = {measurements: ''};
             $('#model-measurement-count').html(Object.keys(data.model.data.measurements).length);
             $('#model-draft-count').html(Object.keys(data.drafts).length);
-            $.get('/json/measurements.json', function( mdata ) {
-                measurements = mdata;
+            // Load site data
+            $.get('/json/freesewing.json', function( fsdata ) {
+                measurements = fsdata.measurements;
                 $('#measurements').append("<div id='progressbar'></div>");
                 $('#measurements').append("<div id='filter-wrapper' class='text-center mt-4 mb-2'>Filter by pattern: </div>");
                 $('#filter-wrapper').load('/components/generic/filter-pattern', function(){
-                    $.get('/json/patterns.json', function( pdata ) {
-                        patterns = pdata;
-                        $.each(patterns, function(namespace, patternlist){
-                            $('#filter-patterns-select').append('<optgroup id="pattern-filter-namespace-'+namespace+'" label="'+namespace+'"></optgroup');
-                            $.each(patternlist, function(index, name){
-                                $('#pattern-filter-namespace-'+namespace).append('<option data-namespace="'+namespace+'" val="'+index+'">'+index+'</option>"');
-                            });
+                    $.each(fsdata.namespaces, function(namespace, patternlist){
+                        $('#filter-patterns-select').append('<optgroup id="pattern-filter-namespace-'+namespace+'" label="'+namespace+'"></optgroup');
+                        $.each(patternlist, function(index, name){
+                            $('#pattern-filter-namespace-'+namespace).append('<option data-namespace="'+namespace+'" value="'+name+'">'+fsdata.mapping.handleToPatternTitle[name]+'</option>"');
                         });
-                        // Bind change of filter
-                        $('#filter-wrapper').on('change', '#filter-patterns-select', function(e) {
-                            if($('#filter-patterns-select').val() === 'all') renderMeasurements();
-                            else {
-                                var filterNamespace = $('#filter-patterns-select option:selected').attr('data-namespace');
-                                var filterPattern = $('#filter-patterns-select').val();
-                                renderMeasurements(patterns[filterNamespace][filterPattern].measurements);
-                            }
-                        });
+                    });
+                    // Bind change of filter
+                    $('#filter-wrapper').on('change', '#filter-patterns-select', function(e) {
+                        if($('#filter-patterns-select').val() === 'all') renderMeasurements();
+                        else renderMeasurements(fsdata.patterns[fsdata.mapping.handleToPattern[$('#filter-patterns-select').val()]].measurements);
                     });
                 });
                 $('#progressbar').load('/components/generic/progress', function(){
@@ -304,6 +298,7 @@
                 $('#measurements').append("<table id='measurements-list' class='rounded-rows table'></table>");
                 $('#measurements-list').append("<thead><tr><th>Measurement</th><th>Value</th><th>&nbsp;</th></tr></thead>");
                 renderMeasurements();
+
                 // Bind click handler to edit link
                 $('#measurements-list').on('click','a.edit', function(e) {
                     renderMeasurementSettings($(this).attr('data-measurement'));
@@ -348,7 +343,6 @@
         // Load settings into modal
         $('#modal').removeClass().addClass('shown light');
         $('#modal-main').html("<div id='settings'></div>");
-        console.log('draft shared is '+draft.shared);
         if(draft.shared == '1') var shared_on = true;
         else var shared_on = false;
         $('#settings').load('/components/draft/settings', function(){
@@ -564,7 +558,6 @@
           dataType: 'json',
           success: function(data) {
             if(data.result == 'ok') {
-                console.log(data);
                 reRenderDraft(data);
                 closeModal();
                 $.bootstrapGrowl("Settings saved", {type: 'success'});
@@ -674,159 +667,156 @@
 
     function renderModelSelection(account,patternhandle) {
         var filter = {'ok':[], 'ko': []};
-        $.get('/json/patternmap.json', function( patternmap ) {
-            $.get('/json/patterns.json', function( pdata ) {
-                var patterns = pdata;
-                pattern = patterns[patternmap[patternhandle].namespace][patternmap[patternhandle].pattern];
-                // Count measurements required by pattern
-                var pmcount = Object.keys(pattern.measurements).length;
-                $.each(account.models, function(handle, model){
-                    // Quick check, how many measurement?
-                    if(typeof model.data.measurements === "undefined" || Object.keys(model.data.measurements).length < pmcount) {
-                        filter.ko.push(model);
-                    } else {
-                        var modelok = true;
-                        // Thorough check, are they the required measurements?
-                        $.each(pattern.measurements, function(index, measurement) {
-                            if (typeof model.data.measurements[index] !== "number") modelok = false;
+        // Load site data
+        $.get('/json/freesewing.json', function( fsdata ) {
+            var pattern = fsdata.patterns[fsdata.mapping.handleToPattern[patternhandle]];
+            // Count measurements required by pattern
+            var pmcount = Object.keys(pattern.measurements).length;
+            $.each(account.models, function(handle, model){
+                // Quick check, how many measurement?
+                if(typeof model.data.measurements === "undefined" || Object.keys(model.data.measurements).length < pmcount) {
+                    filter.ko.push(model);
+                } else {
+                    var modelok = true;
+                    // Thorough check, are they the required measurements?
+                    $.each(pattern.measurements, function(index, measurement) {
+                        if (typeof model.data.measurements[index] !== "number") modelok = false;
+                    });
+                    if(modelok) filter.ok.push(model);
+                    else filter.ko.push(model);
+                }
+                if ((filter.ok.length+filter.ko.length) === Object.keys(account.models).length) {
+                    // We're ready
+                    if(filter.ok.length > 0) {
+                        // We have models good to go
+                        $.each(filter.ok, function(index, model){
+                            $('#ok-models').append('<li><a href="'+page+'/for/'+model.handle+'" class="px-1">'+model.name+'</a></li>');
+                            var card = $('#model-card').clone();
+                            $('#picklist').append('<a href="'+page+'/for/'+model.handle+'" id="link-'+model.handle+'" class="card-wrap-link"></a>');
+                            card.attr('id','model-'+model.handle).appendTo('#link-'+model.handle);
+                            $('#model-'+model.handle+' h3.card-title').html(model.name);
+                            $('#model-'+model.handle+' img').attr('src',api.data+model.pictureSrc);
+                            $('#model-'+model.handle+' p.card-text').html('Model '+model.handle);
                         });
-                        if(modelok) filter.ok.push(model);
-                        else filter.ko.push(model);
+                        $('#model-card').remove();
+                        var ko = $('#ko-models').detach()
+                        ko.appendTo('#picklist');
+                    } else {
+                        $('#ok-models').remove();
+                        $('#model-card').addClass('card-primary card-inverse');
+                        $('#model-card img').attr('src','/img/patterns/missing.svg');
+                        $('#model-card h3.card-title').html('Grab your tape measure');
+                        $('#model-card p.card-text').html('None of your models have all the required measurements for this pattern. You need to add measurements before we can draft this pattern.');
+                        $('#ko-models').detach().appendTo('#picklist');
                     }
-                    if ((filter.ok.length+filter.ko.length) === Object.keys(account.models).length) {
-                        // We're ready
-                        if(filter.ok.length > 0) {
-                            // We have models good to go
-                            $.each(filter.ok, function(index, model){
-                                $('#ok-models').append('<li><a href="'+page+'/for/'+model.handle+'" class="px-1">'+model.name+'</a></li>');
-                                var card = $('#model-card').clone();
-                                $('#picklist').append('<a href="'+page+'/for/'+model.handle+'" id="link-'+model.handle+'" class="card-wrap-link"></a>');
-                                card.attr('id','model-'+model.handle).appendTo('#link-'+model.handle);
-                                $('#model-'+model.handle+' h3.card-title').html(model.name);
-                                $('#model-'+model.handle+' img').attr('src',api.data+model.pictureSrc);
-                                $('#model-'+model.handle+' p.card-text').html('Model '+model.handle);
-                            });
-                            $('#model-card').remove();
-                            var ko = $('#ko-models').detach()
-                            ko.appendTo('#picklist');
-                        } else {
-                            $('#ok-models').remove();
-                            $('#model-card').addClass('card-primary card-inverse');
-                            $('#model-card img').attr('src','/img/patterns/missing.svg');
-                            $('#model-card h3.card-title').html('Grab your tape measure');
-                            $('#model-card p.card-text').html('None of your models have all the required measurements for this pattern. You need to add measurements before we can draft this pattern.');
-                            $('#ko-models').detach().appendTo('#picklist');
-                        }
-                        if(filter.ko.length > 0) {
-                            // We've got some KO models
-                            $.each(filter.ko, function(index, model){
-                                $('#ko-models').append('<li><a href="/models/'+model.handle+'" class="px-1">'+model.name+'</a></li>');
-                            });
-                        }
+                    if(filter.ko.length > 0) {
+                        // We've got some KO models
+                        $.each(filter.ko, function(index, model){
+                            $('#ko-models').append('<li><a href="/models/'+model.handle+'" class="px-1">'+model.name+'</a></li>');
+                        });
                     }
-                });
+                }
             });
         });
     }
 
     function renderDraftForm(account,patternhandle,modelhandle,defaults=false) {
-        $.get('/json/patternmap.json', function( patternmap ) {
-            $.get('/json/patterns.json', function( patterns ) {
-                $.getScript( "/js/vendor/bootstrap-slider.min.js", function(){
-                    $('#picklist').append("<form id='form'><div id='accordion' role='tablist' aria-multiselectable='true'></div></form>");
-                    var form = {};
-                    form.groups = {};
-                    pattern = patterns[patternmap[patternhandle].namespace][patternmap[patternhandle].pattern];
-                    if(account.account.data.account.units === 'imperial') var ufactor = 25.4;
-                    else var ufactor = 10;
-                    $.each(pattern.options, function(option, o) {
-                        // Load defaults from forl (if provided)
-                        if(defaults !== false && typeof defaults[option] !== 'undefined') {
-                            if(o.type === 'measure') o.default = (defaults[option] * ufactor);
-                            else o.default = defaults[option];
-                            console.log(defaults[option] * ufactor);
-                        }
-                        if(typeof form.groups[o.group] === 'undefined') form.groups[o.group] = {};
-                        form.groups[o.group][option] = o;
-                    });
-                    // Add hidden form fields
-                    $('#form').append('<input type="hidden" name="pattern" value="'+pattern.pattern+'"><input type="hidden" name="model" value="'+modelhandle+'">');
-                    // Load defaults for theme and langauge from fork (if provided)
-                    if(defaults !== false && typeof defaults.theme !== 'undefined') dflt_theme = defaults.theme;
-                    else dflt_theme = 'Basic';
-                    if(defaults !== false && typeof defaults.lang !== 'undefined') dflt_lang = defaults.lang;
-                    else dflt_lang = 'en';
-                    // Sort form groups and prepend theme/language
-                    var ordered = {
-                        'general': {
-                            'theme': {
-                                'default': dflt_theme,
-                                'description': 'Use the paperless theme when you want a pattern that does not require printing',
-                                'title': 'Theme',
-                                'type': 'chooseOne',
-                                'options': {
-                                    'Basic': 'Classic',
-                                    'Paperless': 'Paperless'
-                                }
-                            },
-                            'lang': {
-                                'default': dflt_lang,
-                                'description': 'This pattern is available in the following languages:',
-                                'title': 'Language',
-                                'type': 'chooseOne',
-                                'options': pattern.languages
+        // Load site data
+        $.get('/json/freesewing.json', function( fsdata ) {
+            var pattern = fsdata.patterns[fsdata.mapping.handleToPattern[patternhandle]];
+            // Load slider JS
+            $.getScript( "/js/vendor/bootstrap-slider.min.js", function(){
+                $('#picklist').append("<form id='form'><div id='accordion' role='tablist' aria-multiselectable='true'></div></form>");
+                var form = {};
+                form.groups = {};
+                if(account.account.data.account.units === 'imperial') var ufactor = 25.4;
+                else var ufactor = 10;
+                $.each(pattern.options, function(option, o) {
+                    // Load defaults from for (if provided)
+                    if(defaults !== false && typeof defaults[option] !== 'undefined') {
+                        if(o.type === 'measure') o.default = (defaults[option] * ufactor);
+                        else o.default = defaults[option];
+                    }
+                    if(typeof form.groups[o.group] === 'undefined') form.groups[o.group] = {};
+                    form.groups[o.group][option] = o;
+                });
+                // Add hidden form fields
+                $('#form').append('<input type="hidden" name="pattern" value="'+pattern.pattern+'"><input type="hidden" name="model" value="'+modelhandle+'">');
+                // Load defaults for theme and langauge from fork (if provided)
+                if(defaults !== false && typeof defaults.theme !== 'undefined') dflt_theme = defaults.theme;
+                else dflt_theme = 'Basic';
+                if(defaults !== false && typeof defaults.lang !== 'undefined') dflt_lang = defaults.lang;
+                else dflt_lang = 'en';
+                // Sort form groups and prepend theme/language
+                var ordered = {
+                    'general': {
+                        'theme': {
+                            'default': dflt_theme,
+                            'description': 'Use the paperless theme when you want a pattern that does not require printing',
+                            'title': 'Theme',
+                            'type': 'chooseOne',
+                            'options': {
+                                'Basic': 'Classic',
+                                'Paperless': 'Paperless'
                             }
+                        },
+                        'lang': {
+                            'default': dflt_lang,
+                            'description': 'This pattern is available in the following languages:',
+                            'title': 'Language',
+                            'type': 'chooseOne',
+                            'options': pattern.languages
                         }
-                    };
-                    Object.keys(form.groups).sort().forEach(function(key) {
-                        var subordered = {};
-                        Object.keys(form.groups[key]).sort().forEach(function(subkey) {
-                            subordered[subkey] = form.groups[key][subkey];
-                        });
-                        ordered[key] = subordered;
+                    }
+                };
+                Object.keys(form.groups).sort().forEach(function(key) {
+                    var subordered = {};
+                    Object.keys(form.groups[key]).sort().forEach(function(subkey) {
+                        subordered[subkey] = form.groups[key][subkey];
                     });
-                    var show = ' show ';
-                    $.each(ordered, function(title, group) {
-                        $('#accordion').append("<div id='group-"+title+"' class='card'><div class='card-header' role='tab' id='heading-"+title+"'><h3 class='text-capitalize'><a data-toggle='collapse' data-parent='#accordion' href='#collapse-"+title+"' aria-expanded='false' aria-controls='collapse-"+title+"'>"+title+"</a></h3></div><div id='collapse-"+title+"' class='collapse "+show+"' role='tabpanel'aria-labeledby='heading-"+title+"' aria-expanded='false'><div class='card-block' id='content-"+title+"'></div></div>");
-                        $.each(group, function(name, option) {
-                            $('#content-'+title).append(renderOption(name, option, account.account.data.account.units));
-                        });
-                        show = '';
+                    ordered[key] = subordered;
+                });
+                var show = ' show ';
+                $.each(ordered, function(title, group) {
+                    $('#accordion').append("<div id='group-"+title+"' class='card'><div class='card-header' role='tab' id='heading-"+title+"'><h3 class='text-capitalize'><a data-toggle='collapse' data-parent='#accordion' href='#collapse-"+title+"' aria-expanded='false' aria-controls='collapse-"+title+"'>"+title+"</a></h3></div><div id='collapse-"+title+"' class='collapse "+show+"' role='tabpanel'aria-labeledby='heading-"+title+"' aria-expanded='false'><div class='card-block' id='content-"+title+"'></div></div>");
+                    $.each(group, function(name, option) {
+                        $('#content-'+title).append(renderOption(name, option, account.account.data.account.units));
                     });
-                    $('#form').append('<p class="text-center mt-5"><input type="submit" class="btn btn-lg btn-primary" value="Draft pattern"></p>');
-                    // Bind slide event to slider inputs
-                    $('#accordion').on('change', 'input.slider', function(e) {
-                        $('#'+e.target.id+'-value').html(e.value.newValue);    
-                        if(e.value.newValue != $('#'+e.target.id+'-default').attr('data-default')) $('#'+e.target.id+'-default').removeClass('disabled invisible'); 
-                        else $('#'+e.target.id+'-default').addClass('disabled invisible');
-                    });
-                    // Bind change event to radio buttons
-                    $('#accordion').on('change', 'input[type=radio]', function(e) {
-                        $('#'+$(this).attr('name')+'-value').html($(this).attr('data-label'));
-                        if($(this).val() != $('#'+e.target.id).attr('data-default')) $('#'+$('#'+e.target.id).attr('name')+'-default').removeClass('disabled invisible'); 
-                        else $('#'+$('#'+e.target.id).attr('name')+'-default').addClass('disabled invisible');
-                    });
-                    // Bind click event to reset buttons
-                    $('#accordion').on('click', 'a.option-reset', function(e) {
-                        e.preventDefault();
-                        if($(this).attr('data-type') === 'radio') $('input:radio[name='+$(this).attr('data-option')+'][value='+$(this).attr('data-default')+']').click();
-                        else $('#'+$(this).attr('data-option')).slider('setValue',$(this).attr('data-default'), false, true); // See https://github.com/seiyria/bootstrap-slider
-                    });
-                    // Bind click event to help buttons
-                    $('#accordion').on('click', 'a.option-help', function(e) {
-                        e.preventDefault();
-                        modalHelp(patternhandle, $(this).attr('data-option'));
-                    });
-                    // Bind submit handler to quick submit link
-                    $('#picklist').on('click','#submit-link', function(e) {
-                        e.preventDefault();
-                        $('#form').submit();
-                    });
-                    // Bind submit handler to save settings button
-                    $('#picklist').on('submit','#form', function(e) {
-                        e.preventDefault();
-                        draftPattern();
-                    });
+                    show = '';
+                });
+                $('#form').append('<p class="text-center mt-5"><input type="submit" class="btn btn-lg btn-primary" value="Draft pattern"></p>');
+                // Bind slide event to slider inputs
+                $('#accordion').on('change', 'input.slider', function(e) {
+                    $('#'+e.target.id+'-value').html(e.value.newValue);    
+                    if(e.value.newValue != $('#'+e.target.id+'-default').attr('data-default')) $('#'+e.target.id+'-default').removeClass('disabled invisible'); 
+                    else $('#'+e.target.id+'-default').addClass('disabled invisible');
+                });
+                // Bind change event to radio buttons
+                $('#accordion').on('change', 'input[type=radio]', function(e) {
+                    $('#'+$(this).attr('name')+'-value').html($(this).attr('data-label'));
+                    if($(this).val() != $('#'+e.target.id).attr('data-default')) $('#'+$('#'+e.target.id).attr('name')+'-default').removeClass('disabled invisible'); 
+                    else $('#'+$('#'+e.target.id).attr('name')+'-default').addClass('disabled invisible');
+                });
+                // Bind click event to reset buttons
+                $('#accordion').on('click', 'a.option-reset', function(e) {
+                    e.preventDefault();
+                    if($(this).attr('data-type') === 'radio') $('input:radio[name='+$(this).attr('data-option')+'][value='+$(this).attr('data-default')+']').click();
+                    else $('#'+$(this).attr('data-option')).slider('setValue',$(this).attr('data-default'), false, true); // See https://github.com/seiyria/bootstrap-slider
+                });
+                // Bind click event to help buttons
+                $('#accordion').on('click', 'a.option-help', function(e) {
+                    e.preventDefault();
+                    modalHelp(patternhandle, $(this).attr('data-option'));
+                });
+                // Bind submit handler to quick submit link
+                $('#picklist').on('click','#submit-link', function(e) {
+                    e.preventDefault();
+                    $('#form').submit();
+                });
+                // Bind submit handler to save settings button
+                $('#picklist').on('submit','#form', function(e) {
+                    e.preventDefault();
+                    draftPattern();
                 });
             });
         });
@@ -937,7 +927,6 @@
                 html += '</fieldset>'; 
                 break;
             default:
-                console.log(option);
                 var html = '<div class="form-group">';
                 html += '<label for=""><h5>'+option.title+'</h5>'+option.description+'</label>';
                 html += '<div class="input-group key-sm">';
@@ -978,7 +967,6 @@
             if(data.result == 'ok') {
                 window.location.replace("/drafts/"+data.handle);
             } else {
-                console.log(data);
                 // closeModal();
                 $.bootstrapGrowl("Something went wrong, we were unable to generate your draft", {type: 'error'});
             }  
@@ -1008,14 +996,15 @@
     }
 
     function renderDraft(draft) {
-        console.log(draft);
         var patternHandle;
         $('h1.page-title').html(draft.name);
+        $('ul.breadcrumbs li:last-child').html(draft.name);
         $('.crown-middle').html(draft.handle);
         $('.crown-right').attr('src',api.data+draft.model.pictureSrc);
         $('#fork-btn').attr('href','/fork/'+draft.handle);
-        $.get('/json/patternpam.json', function( map ) {
-            patternHandle = map[draft.pattern].pattern;
+        // Load site data
+        $.get('/json/freesewing.json', function( fsdata ) {
+            patternHandle = fsdata.mapping.patternToHandle[draft.pattern];
             $('.crown-left').attr('src','/img/patterns/'+patternHandle+'/'+patternHandle+'.svg');
         });
         // Responsive SVG embed requires us to strip out the width and height attributes
@@ -1151,7 +1140,6 @@
             // Models page //////////////////
             else if(page === '/models') {
                 loadAccount(function(data){
-                console.log(data);
                     $('h1.page-title').html('Your models');
                     $('#models-title-row').remove();
                     $('div.crown-wrapper').remove();
@@ -1232,22 +1220,21 @@
             else if(page === '/draft' || page === '/draft/') {
                 var patterns;
                 var tags = {};
-                $.get('/json/patterns.json', function( pdata ) {
-                    patterns = pdata;
-                    $.each(patterns, function(namespace, patternlist){
-                        $.each(patternlist, function(index, pattern){
-                            $('#quick-picks').append('<li><a href="/draft/'+pattern.info.handle+'" class="px-1">'+pattern.info.handle+'</a></li>');
-                            $('#picklist').append('<a href="/draft/'+pattern.info.handle+'" id="link-'+pattern.info.handle+'" class="card-wrap-link"></a>');
-                            var card = $('#pattern-card').clone();
-                            var id = pattern.info.handle+'-card';
-                            card.attr('id',id).addClass(namespace.toLowerCase()).appendTo('#link-'+pattern.info.handle);
-                            $('#'+id+' h3.card-title').html(pattern.info.handle);
-                            $('#'+id+' img').attr('src','/img/patterns/'+pattern.info.handle+'/'+pattern.info.handle+'.svg');
-                            $('#'+id+' p.card-text').html(pattern.info.description);
-                            $('#'+id+' p.card-tags').append('<span class="badge '+namespace.toLowerCase()+'">'+namespace+'</span>');
-                            $.each(pattern.info.tags, function(index, tag){
-                                $('#'+id+' p.card-tags').append(' <span class="badge badge-default '+tag.toLowerCase()+'">'+tag+'</span>');
-                            });
+                $.get('/json/freesewing.json', function( fsdata ) {
+                    patterns = fsdata.patterns;
+                    $.each(fsdata.patterns, function(name, pattern){
+                        var namespace = fsdata.mapping.handleToNamespace[pattern.info.handle];
+                        $('#quick-picks').append('<li><a href="/draft/'+pattern.info.handle+'" class="px-1">'+pattern.info.handle+'</a></li>');
+                        $('#picklist').append('<a href="/draft/'+pattern.info.handle+'" id="link-'+pattern.info.handle+'" class="card-wrap-link"></a>');
+                        var card = $('#pattern-card').clone();
+                        var id = pattern.info.handle+'-card';
+                        card.attr('id',id).addClass(namespace.toLowerCase()).appendTo('#link-'+pattern.info.handle);
+                        $('#'+id+' h3.card-title').html(fsdata.mapping.handleToPatternTitle[pattern.info.handle]);
+                        $('#'+id+' img').attr('src','/img/patterns/'+pattern.info.handle+'/'+pattern.info.handle+'.svg');
+                        $('#'+id+' p.card-text').html(pattern.info.description);
+                        $('#'+id+' p.card-tags').append('<span class="badge '+namespace.toLowerCase()+'">'+namespace+'</span>');
+                        $.each(pattern.info.tags, function(index, tag){
+                            $('#'+id+' p.card-tags').append(' <span class="badge badge-default '+tag.toLowerCase()+'">'+tag+'</span>');
                         });
                     });
                     $('#pattern-card').remove();
@@ -1277,13 +1264,14 @@
                     $('#step1-link').html('Forking '+draft.pattern+' draft '+draft.handle);
                     loadAccount(function(data){
                         account = data;
-                            $.get('/json/patternpam.json', function( patternmap ) {
-                                // Do we even have models?
-                                if(typeof account.models === "undefined" || account.models === false || account.models.length < 1) {
-                                    $('#models').load('/components/model/nomodel');
-                                }
-                                else renderModelSelection(account,patternmap[draft.pattern].pattern);
+                        // Do we even have models?
+                        if(typeof account.models === "undefined" || account.models === false || account.models.length < 1) {
+                            $('#models').load('/components/model/nomodel');
+                        } else {
+                            $.get('/json/freesewing.json', function( fsdata ) {
+                                renderModelSelection(account,fsdata.mapping.patternToHandle[draft.pattern]);
                             });
+                        }
                     });
                 });
             }
@@ -1309,8 +1297,8 @@
                     loadAccount(function(data){
                         account = data;
                         $('#step2-link').html('For '+account.models[modelHandle].name).attr('href','/fork/'+draftHandle);
-                        $.get('/json/patternpam.json', function( patternmap ) {
-                            renderDraftForm(account,patternmap[draft.pattern].pattern, modelHandle, draft.data);
+                        $.get('/json/freesewing.json', function( fsdata ) {
+                            renderDraftForm(account,fsdata.mapping.patternToHandle[draft.pattern], draft.data);
                         });
                     });
                 });
@@ -1333,23 +1321,23 @@
             }
             // List of drafts ////////////////
             else if(page === '/drafts') {
-                console.log('List drafts');
                 var account;
                 var map;
                 var models = [];
                 $.getScript( "/js/vendor/timeago.min.js", function(){
                     loadAccount(function(data){
                         account = data;
-                        $.get('/json/patternpam.json', function( patternmap ) {
-                            map = patternmap;
+                        // Load site data
+                        $.get('/json/freesewing.json', function( fsdata ) {
                             // index models by id
                             $.each(account.models, function(index, model){
                                 models[model.id] = model;
                             });
                             $.each(account.drafts, function(index, draft){
+                                var pname = fsdata.mapping.patternToHandle[draft.pattern];
                                 var row = '<tr id="row-'+draft.handle+'">';
                                 row += '<td class="handle"><a href="/drafts/'+draft.handle+'">'+draft.handle+'</a></td>';
-                                row += '<td class="pattern"><a href="/patterns/'+map[draft.pattern].pattern+'">'+map[draft.pattern].pattern+'</a></td>';
+                                row += '<td class="pattern text-capitalize"><a href="/patterns/'+pname+'">'+pname+'</a></td>';
                                 row += '<td class="model"><a href="/models/'+models[draft.model].handle+'">'+models[draft.model].name+'</a></td>';
                                 row += '<td class="name"><a href="/drafts/'+draft.handle+'">'+draft.name+'</a></td>';
                                 row += '<td class="date timeago" datetime="'+draft.created+'"></td>';
