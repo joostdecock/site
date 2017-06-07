@@ -5,7 +5,7 @@ action: app
 crumbs: false
 permalink: /step/3/redraft
 ---
-<div class="container">
+<div class="container" id="draft-container">
     <div class="row">
         <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 text-center">
             <h3>One step to go</h3>

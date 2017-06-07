@@ -1040,8 +1040,18 @@
             method: 'GET',
             dataType: 'json',
             success: function(returndata) {
-                draft = returndata.draft;
-                callback(draft);
+                if(returndata.result == 'ok') {
+                    draft = returndata.draft;
+                    callback(draft);
+                } else {
+                    if(returndata.reason == 'draft_not_yours_and_not_shared') {
+                        var errormsg = '<blockquote class="error m600 mb-5"><h5>This draft is not for you</h5><p>This draft is not yours, nor is it shared. So you don\'t get to see it.</p></blockquote><p>&nbsp;</p>';
+                    } else {
+                        var errormsg = '<blockquote class="error m600"><h5>Things are not ok</h5><p>We couldn\'t load this draft. I\'m not entirely sure why, but it didn\'t work.</p></blockquote>';
+                    }
+                    $('h1.page-title').html('Nope');
+                    $('#draft-container').html(errormsg);
+                }
             },
             error: function(returndata) { 
                 $.bootstrapGrowl("Something went wrong, we were unable to load your draft", {type: 'error'});
@@ -1056,8 +1066,18 @@
             method: 'GET',
             dataType: 'json',
             success: function(returndata) {
-                draft = returndata.draft;
-                callback(draft);
+                if(returndata.result == 'ok') {
+                    draft = returndata.draft;
+                    callback(draft);
+                } else {
+                    if(returndata.reason == 'draft_not_yours_and_not_shared' || returndata.reason == 'draft_not_shared') {
+                        var errormsg = '<blockquote class="error m600 mb-5"><h5>This draft is not for you</h5><p>This draft is not yours, nor is it shared. So you don\'t get to see it.</p></blockquote><p>&nbsp;</p>';
+                    } else {
+                        var errormsg = '<blockquote class="error m600"><h5>Things are not ok</h5><p>We couldn\'t load this draft. I\'m not entirely sure why, but it didn\'t work.</p></blockquote>';
+                    }
+                    $('h1.page-title').html('Nope');
+                    $('#draft-container').html(errormsg);
+                }
             },
             error: function(returndata) { 
                 $.bootstrapGrowl("Something went wrong, we were unable to load this draft", {type: 'error'});
