@@ -4,12 +4,12 @@ title: Draft
 action: app
 permalink: /show-draft
 crumbs:
-  - /drafts|Your drafts
+  - /drafts|Drafts
 ---
 <div class="container">
     <div class="row">
         <div class="col-md-12" id="draft">
-            <div class="draft-display">
+            <div class="draft-display hidden">
                 <div>
                     <div class="crown-wrapper">
                         <img class="crown crown-left" id="draft-pattern-img" alt="Pattern linedrawing" src="/img/logo/spinner.svg">

@@ -238,14 +238,14 @@
                             first += "<tr>" +
                                 "<td class='name'>"+measurement+"&nbsp;:</td>" +
                                 "<td nowrap class='value "+model.model.units+"'>"+model.model.data.measurements[measurement]+"</td>" +
-                                "<td class='edit'><a href='#' data-measurement='"+measurement+"' class='edit'>"+pencil+"</a></td>" +
+                                "<td class='edit'><a href='#' data-measurement='"+measurement+"' class='edit'><i class='fa fa-2x fa-pencil' aria-hidden='true'></i></a></td>" +
                             "</tr>";
                         }
                     } else {
                         if(typeof filter === 'undefined' || typeof filter[measurement] !== "undefined") {
                             second += "<tr data-measurement='"+measurement+"' class='empty'>" +
                                 "<td class='name empty' colspan='2'>"+measurement+"</td>" +
-                                "<td class='add'><a href='#' data-measurement='"+measurement+"' class='add'>Add</a></td>" +
+                                "<td class='add'><a href='#' data-measurement='"+measurement+"' class='add'><i class='fa fa-plus' aria-hidden='true'></i></a></td>" +
                             "</tr>";
                         }
                     }
@@ -321,6 +321,18 @@
             $('#m').attr('name', measurement).attr('id',measurement+'-input')
             $('#settings-form span.form-units').addClass(model.model.units);
             $('#'+measurement+'-input').val(model.model.data.measurements[measurement]);
+            // Bind show instructions handler
+            $('#settings').on('click','#show-instructions', function(e) {
+                $('#instructions').load('/components/measurements/'+measurement.toLowerCase());
+                $('#show-instructions').addClass('hidden');
+                $('#hide-instructions').removeClass('hidden');
+            });
+            // Bind hide instructions handler
+            $('#settings').on('click','#hide-instructions', function(e) {
+                $('#instructions').html('');
+                $('#hide-instructions').addClass('hidden');
+                $('#show-instructions').removeClass('hidden');
+            });
             // Bind submit handler
             $('#settings').on('submit','#settings-form', function(e) {
                 e.preventDefault();
@@ -979,6 +991,17 @@
     }
     
     function loadDraft(handle, callback) {
+        $.ajax({
+            url: api.data+'/auth',
+            method: 'GET',
+            dataType: 'json',
+            success: function() { loadPrivateDraft(handle, callback); },
+            error: function() { loadSharedDraft(handle, callback); },
+            headers: {'Authorization': 'Bearer '+token},
+        }); 
+    }
+
+    function loadPrivateDraft(handle, callback) {
         return $.ajax({
             url: api.data+'/draft/'+handle,
             method: 'GET',
@@ -989,19 +1012,65 @@
             },
             error: function(returndata) { 
                 $.bootstrapGrowl("Something went wrong, we were unable to load your draft", {type: 'error'});
-                console.log(returndata);
             },
             headers: {'Authorization': 'Bearer '+token},
         }); 
     }
 
+    function loadSharedDraft(handle, callback) {
+        return $.ajax({
+            url: api.data+'/shared/draft/'+handle,
+            method: 'GET',
+            dataType: 'json',
+            success: function(returndata) {
+                draft = returndata.draft;
+                callback(draft);
+            },
+            error: function(returndata) { 
+                $.bootstrapGrowl("Something went wrong, we were unable to load this draft", {type: 'error'});
+            },
+        }); 
+    }
+
+
+
+    function loggedIn() {
+        // Is a token present in local storage?
+        if(token === null) {
+            // Nope, this is a stranger to us
+            return false;
+        } else {
+            // Yes, but is it still valid?
+            $.ajax({
+                url: api.data+'/auth',
+                method: 'GET',
+                dataType: 'json',
+                success: function() { return true; },
+                error: function() { return false; },
+                headers: {'Authorization': 'Bearer '+token},
+            }); 
+        }
+    }
+
     function renderDraft(draft) {
+        console.log(draft);
         var patternHandle;
         $('h1.page-title').html(draft.name);
         $('ul.breadcrumbs li:last-child').html(draft.name);
-        $('.crown-middle').html(draft.handle);
-        $('.crown-right').attr('src',api.data+draft.model.pictureSrc);
-        $('#fork-btn').attr('href','/fork/'+draft.handle);
+        if(typeof draft.model === 'undefined') {
+            // Shared draft, viewed anonymously
+            $('div.draft-display').remove();
+            var msg = '<blockquote class="fork m600"><h5>If you were logged in, you could fork this draft</h5>';
+            msg += '<p>Forking is a way to use an existing draft as a template for your own draft.</p>';
+            msg += '<p class="text-center"><a href="/docs/site/forking" class="btn btn-outline-white">Find out more</a></p></blockquote>';
+            $('#draft').prepend(msg);
+        } else {
+            // Draft that belongs to the logged-in user
+            $('.crown-middle').html(draft.handle);
+            $('.crown-right').attr('src',api.data+draft.model.pictureSrc);
+            $('#fork-btn').attr('href','/fork/'+draft.handle);
+            $('div.draft-display').removeClass('hidden');
+        }
         // Load site data
         $.get('/json/freesewing.json', function( fsdata ) {
             patternHandle = fsdata.mapping.patternToHandle[draft.pattern];

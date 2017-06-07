@@ -45,9 +45,6 @@
                             {% assign crumb_title = 'Pattern docs' %}
                         {% when '/docs/sewing' %}
                             {% assign crumb_title = 'Sewing docs' %}
-                        {% when '/docs/crumb-measurements' %}
-                            {% assign crumb_title = 'Measurements' %}
-                            {% assign crumb_url = '/docs/measurements' %}
                         {% else %}
                             {% assign chunks = crumb_url | split: '/' %}
                             {% if chunks.size == 4 %} 

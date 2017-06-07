@@ -76,13 +76,19 @@ a.update-bubble {
     height: 30px;
     padding: 0;
 }
+#measurements-list td.edit a,
 #measurements-list td.add a {
     color: $white;
     font-weight: bold;
+    padding: 8px 12px;
+}
+#measurements-list td.edit a:hover {
+    text-shadow: $shadow-hover;
+    color: $lighter-purple;
 }
 #measurements-list td.add a:hover {
     text-shadow: $shadow-hover;
-    color: $whitish;
+    color: $lighter-teal;
 }
 #measurements-list td.edit svg {
     width: 42px;

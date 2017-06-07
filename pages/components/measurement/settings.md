@@ -14,10 +14,12 @@ permalink: /components/measurement/settings
         <span class="input-group-addon form-units"></span>
     </div>
     <div id="loader" class="text-right">
-        <a href="#loader" class="btn btn-outline-primary mt-5 poh">Show instructions</a>
+        <a id="show-instructions" href="#loader" class="btn btn-outline-primary mt-5">Show instructions</a>
+        <a id="hide-instructions" href="#loader" class="btn btn-outline-primary mt-5 hidden">Hide instructions</a>
         <button type="submit" class="btn btn-primary mt-5 poh">Save</button>
     </div>
 </form>
+<div id="instructions" class="mt-5"><div>
 </div>
 </div>
 </div>
