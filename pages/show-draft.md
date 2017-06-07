@@ -17,6 +17,7 @@ crumbs:
                         <img class="crown crown-right" id="draft-model-img" alt="Model avatar" src="/img/logo/spinner.svg">
                     </div>
                     <a href="#draft" id="fork-btn" class="poh btn btn-outline-info mt-3 modal light"><i class="fa fa-code-fork" aria-hidden="true"></i> Fork</a>
+                    <a href="#draft" id="redraft-btn" class="poh btn btn-outline-info mt-3 modal light"><i class="fa fa-repeat" aria-hidden="true"></i> Redraft</a>
                     <a href="#draft" id="settings-btn" class="poh btn btn-outline-primary mt-3 modal light"><i class="fa fa-wrench" aria-hidden="true"></i> Settings</a>
                     <a href="#draft" id="delete-btn" class="poh btn btn-outline-danger mt-3 modal light"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a>
                 </div>

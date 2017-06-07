@@ -225,34 +225,31 @@
         else if(pc>25) var bar = 'bg-warning';
         else var bar = 'bg-danger';
         $('.progress-bar').css('width',pc+'%').html(pc+'%').removeClass().addClass('progress-bar '+bar);
-        $.get('/img/icons/svg/pencil.svg', function(pencilobject) {
-            var serializer = new XMLSerializer();
-            var row;
-            var pencil = serializer.serializeToString(pencilobject);
-            var first;
-            var second;
-            $.each(measurements, function(measurement, shape){
-                if(shape == 'all' || shape == model.model.body || typeof filter !== "undefined") {
-                    if(typeof model.model.data.measurements[measurement] !== "undefined") {
-                        if(typeof filter === 'undefined' || typeof filter[measurement] !== "undefined") {
-                            first += "<tr>" +
-                                "<td class='name'>"+measurement+"&nbsp;:</td>" +
-                                "<td nowrap class='value "+model.model.units+"'>"+model.model.data.measurements[measurement]+"</td>" +
-                                "<td class='edit'><a href='#' data-measurement='"+measurement+"' class='edit'><i class='fa fa-2x fa-pencil' aria-hidden='true'></i></a></td>" +
-                            "</tr>";
-                        }
-                    } else {
-                        if(typeof filter === 'undefined' || typeof filter[measurement] !== "undefined") {
-                            second += "<tr data-measurement='"+measurement+"' class='empty'>" +
-                                "<td class='name empty' colspan='2'>"+measurement+"</td>" +
-                                "<td class='add'><a href='#' data-measurement='"+measurement+"' class='add'><i class='fa fa-plus' aria-hidden='true'></i></a></td>" +
-                            "</tr>";
-                        }
+        var serializer = new XMLSerializer();
+        var row;
+        var first;
+        var second;
+        $.each(measurements, function(measurement, shape){
+            if(shape == 'all' || shape == model.model.body || typeof filter !== "undefined") {
+                if(typeof model.model.data.measurements[measurement] !== "undefined") {
+                    if(typeof filter === 'undefined' || typeof filter[measurement] !== "undefined") {
+                        first += "<tr>" +
+                            "<td class='name'>"+measurement+"&nbsp;:</td>" +
+                            "<td nowrap class='value "+model.model.units+"'>"+model.model.data.measurements[measurement]+"</td>" +
+                            "<td class='edit'><a href='#' data-measurement='"+measurement+"' class='edit'><i class='fa fa-2x fa-pencil' aria-hidden='true'></i></a></td>" +
+                        "</tr>";
+                    }
+                } else {
+                    if(typeof filter === 'undefined' || typeof filter[measurement] !== "undefined") {
+                        second += "<tr data-measurement='"+measurement+"' class='empty'>" +
+                            "<td class='name empty' colspan='2'>"+measurement+"</td>" +
+                            "<td class='add'><a href='#' data-measurement='"+measurement+"' class='add'><i class='fa fa-plus' aria-hidden='true'></i></a></td>" +
+                        "</tr>";
                     }
                 }
-            });
-            $('#measurements-list').append(first+second);
+            }
         });
+        $('#measurements-list').append(first+second);
     }
 
     function renderModel(data) {
@@ -754,6 +751,7 @@
                 });
                 // Add hidden form fields
                 $('#form').append('<input type="hidden" name="pattern" value="'+fsdata.mapping.handleToPattern[patternhandle]+'"><input type="hidden" name="model" value="'+modelhandle+'">');
+                if (page.substr(0,9) === '/redraft/') $('#form').append('<input type="hidden" name="draft" value="'+page.split('/')[2]+'">');
                 // Load defaults for theme and langauge from fork (if provided)
                 if(defaults !== false && typeof defaults.theme !== 'undefined') dflt_theme = defaults.theme;
                 else dflt_theme = 'Basic';
@@ -956,7 +954,7 @@
         $('#modal').removeClass().addClass('shown light');
         $('#modal-main').html("<div id='draft'></div>");
         var msg = '<div class="row">';
-        msg += '<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 text-center">';
+        msg += '<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 text-center" id="draft-loading">';
         msg += "<h3>You're done, now it's our turn</h3>";
         msg += '<ul style="margin: auto; display:inline-block; text-align: left; padding-left: 0;" class="todo mt-2 mb-3">';
         msg += '<li class="done"><a href="/draft">'+$('#step1-link').html()+'</a></li>';
@@ -969,24 +967,59 @@
         msg += '</div></div></div>';
         $('#draft').html(msg);
         setTimeout(function(){$("#progress").removeClass('progress-66').addClass('complete')}, 500);
-
+        if (page.substr(0,9) === '/redraft/') var method = 'redraft';
+        else var method = 'draft';
         $.ajax({
-          url: api.data+'/draft',
-          method: 'POST',
-          data: $('#form').serialize(),
-          dataType: 'json',
-          success: function(data) {
-            if(data.result == 'ok') {
-                window.location.replace("/drafts/"+data.handle);
-            } else {
-                // closeModal();
-                $.bootstrapGrowl("Something went wrong, we were unable to generate your draft", {type: 'error'});
-            }  
-          }, 
-          error: function(data) { 
-              $.bootstrapGrowl("Something went wrong, we were unable to contact the backend", {type: 'error'});
-          },
-          headers: {'Authorization': 'Bearer ' + token},
+            url: api.data+'/'+method,
+            method: 'POST',
+            data: $('#form').serialize(),
+            dataType: 'json',
+            success: function(data) {
+              if(data.result == 'ok') {
+                  window.location.replace("/drafts/"+data.handle);
+              } else {
+                  var errormsg = '<blockquote class="error">';
+                  errormsg += '<h5>This should not happend, but it did.</h5>';
+                  errormsg += '<p>Something went wrong while drafting your pattern. And although the backend informed us about it, that exception is unhandled in the frontend.<p>';
+                  errormsg += '<p>Basically, we message up. Sorry.<p>';
+                  errormsg += '</blockquote>';
+                  errormsg += '<blockquote class="link">';
+                  errormsg += '<h5>Help us out and submit this report</h5>';
+                  errormsg += '<p>Looks like you\'ve hit a snag. Those things happen, but you could help us prevent it from happening in the future.</p>';
+                  errormsg += 'We have gathered all the info we need to investigate this, but we need you to take the last step of submitting the issue to GitHub.</p>';
+                  errormsg += '<p>So would you do us a favor and report this? Thank you :)</p>';
+                  errormsg += '<p><a target="_BLANK" class="btn btn-primary" ';
+                  errormsg += 'href="https://github.com/freesewing/site/issues/new?title=Failed to draft pattern';
+                  errormsg += '&labels[]=documentation';
+                  errormsg += '&body=This draft went off the rails:%0A'+encodeURIComponent($('#form').serialize());
+                  errormsg += '%0A%0AThis data was returned::%0A'+encodeURIComponent(JSON.stringify(data));
+                  errormsg += '%0A%0AFeel free to include comments, but please keep the info above.">';
+                  errormsg += 'Send report to GitHub</a></p>';
+                  errormsg += '<p>PS: This will open a new window where you just have to click the <b>Submit new issue</b> button.</p></blockquote>';
+                  $('#draft-loading').html(error);
+              }
+            }, 
+            error: function(data) { 
+                var errormsg = '<blockquote class="error">';
+                errormsg += '<h5>That did not go as planned. Like, at all.</h5>';
+                errormsg += '<p>Things just sort of fell apart and I did not see it coming. That shouldn\'t happen, so I encourage you to report this.<p>';
+                errormsg += '</blockquote>';
+                errormsg += '<blockquote class="link">';
+                errormsg += '<h5>Help us out and submit this report</h5>';
+                errormsg += '<p>Looks like you\'ve hit a snag. Those things happen, but you could help us prevent it from happening in the future.</p>';
+                errormsg += 'We have gathered all the info we need to investigate this, but we need you to take the last step of submitting the issue to GitHub.</p>';
+                errormsg += '<p>So would you do us a favor and report this? Thank you :)</p>';
+                errormsg += '<p><a target="_BLANK" class="btn btn-primary" ';
+                errormsg += 'href="https://github.com/freesewing/site/issues/new?title=Failed to draft pattern';
+                errormsg += '&labels[]=documentation';
+                errormsg += '&body=This draft went off the rails:%0A'+encodeURIComponent($('#form').serialize());
+                errormsg += '%0A%0AThis data was returned::%0A'+encodeURIComponent(JSON.stringify(data));
+                errormsg += '%0A%0AFeel free to include comments, but please keep the info above.">';
+                errormsg += 'Send report to GitHub</a></p>';
+                errormsg += '<p>PS: This will open a new window where you just have to click the <b>Submit new issue</b> button.</p></blockquote>';
+                $('#draft-loading').html(errormsg); 
+            },
+            headers: {'Authorization': 'Bearer ' + token},
         }); 
     }
     
@@ -1053,10 +1086,11 @@
     }
 
     function renderDraft(draft) {
-        console.log(draft);
         var patternHandle;
         $('h1.page-title').html(draft.name);
         $('ul.breadcrumbs li:last-child').html(draft.name);
+        var user = window.localStorage.getItem("user");
+        if(typeof user !== 'undefined') user = JSON.parse(user);
         if(typeof draft.model === 'undefined') {
             // Shared draft, viewed anonymously
             $('div.draft-display').remove();
@@ -1064,12 +1098,25 @@
             msg += '<p>Forking is a way to use an existing draft as a template for your own draft.</p>';
             msg += '<p class="text-center"><a href="/docs/site/forking" class="btn btn-outline-white">Find out more</a></p></blockquote>';
             $('#draft').prepend(msg);
-        } else {
-            // Draft that belongs to the logged-in user
+        } else if(typeof user !== 'undefined' && user.id == draft.user){
+            // Own draft
+            console.log(draft);
             $('.crown-middle').html(draft.handle);
             $('.crown-right').attr('src',api.data+draft.model.pictureSrc);
             $('#fork-btn').attr('href','/fork/'+draft.handle);
+            $('#redraft-btn').attr('href','/redraft/'+draft.handle+'/for/'+draft.model.handle);
             $('div.draft-display').removeClass('hidden');
+            console.log('yep');
+        } else {
+            // Logged-in user but not their own draft (shared)
+            $('div.draft-display').remove();
+            var msg = '<blockquote class="fork m600"><h5>Hot women in your neighborhood are forking this draft</h5>';
+            msg += '<p>Forking is a way to use an existing draft as a template for your own draft.</p>';
+            msg += '<p class="text-center"><a href="/fork/'+draft.handle+'" class="btn btn-outline-white">Fork this draft</a> <a href="/docs/site/forking" class="btn btn-outline-white">Find out more</a></p>';
+            msg += '<p><small>PS: That thing about the hot women is obviously a joke. I know nothing about women, let alone hot ones.</small></p>';
+            msg += '</blockquote>';
+            $('#draft').prepend(msg);
+            console.log('logged in but shared');
         }
         // Load site data
         $.get('/json/freesewing.json', function( fsdata ) {
@@ -1357,17 +1404,18 @@
                 });
             }
             // Fork draft, step 3 ////////////////
-            else if(page.substr(0,6) === '/fork/' && page.split('/').length == 5 && page.split('/')[3] === 'for') {
+            else if((page.substr(0,6) === '/fork/' || page.substr(0,9) === '/redraft/') && page.split('/').length == 5 && page.split('/')[3] === 'for') {
                 var draftHandle = page.split('/')[2];
                 var modelHandle = page.split('/')[4];
                 var account;
                 loadDraft(draftHandle, function(draft){
-                    $('#step1-link').html('Forking '+draft.pattern+' draft '+draft.handle);
+                    if (page.substr(0,6) === '/fork/') $('#step1-link').html('Forking '+draft.pattern+' draft '+draft.handle);
+                    else $('#step1-link').html('Redrafting '+draft.pattern+' draft '+draft.handle);
                     loadAccount(function(data){
                         account = data;
                         $('#step2-link').html('For '+account.models[modelHandle].name).attr('href','/fork/'+draftHandle);
                         $.get('/json/freesewing.json', function( fsdata ) {
-                            renderDraftForm(account,fsdata.mapping.patternToHandle[draft.pattern], draft.data);
+                            renderDraftForm(account,fsdata.mapping.patternToHandle[draft.pattern], modelHandle, draft.data);
                         });
                     });
                 });
