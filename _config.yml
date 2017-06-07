@@ -11,3 +11,7 @@ include:
 api:
   core: 'https://api.freesewing.org'
   data: 'http://data.freesewing.org'
+collections:
+    posts:
+        output: true
+        permalink: /blog/:title/

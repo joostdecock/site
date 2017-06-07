@@ -1,16 +1,50 @@
-ul.page-meta,
-ul.post-meta {
+div.post-meta {
     font-size: 0.7rem;
     text-transform: uppercase;
-    padding-left: 0;
-    margin-bottom: 0;
-}
-ul.page-meta li,
-ul.post-meta li {
-    list-style-type: none;
-    display: inline-block;
-    margin-right: 1.5rem;
+    margin-bottom: 0.25rem;
 }
 div.post {
-  font-size: 110%;
+    font-size: 125%;
+    background: $white;
+    padding: 2rem;
+}
+@media (max-width: 767px) {
+    div.post {
+        padding: 2rem 1rem;
+    }
+}
+.card-columns.blog {
+    h4.card-title {
+        margin: 0;
+        padding: 0;
+    }
+    .card-block {
+        padding: 1rem;
+    }
+    footer {
+        margin: 0;
+        padding: 0.25rem 0.5rem;
+        background: $gray-dark;
+        color: $white;
+        font-size: 0.7rem;
+        text-align: right;
+    }
+    footer a {
+        color: $lighter-purple;
+    }
+    .card {
+        display: inline-block
+    }
+    @include media-breakpoint-only(sm) {
+        column-count: 2;
+    }
+    @include media-breakpoint-only(md) {
+        column-count: 2;
+    }
+    @include media-breakpoint-only(lg) {
+        column-count: 3;
+    }
+    @include media-breakpoint-only(xl) {
+        column-count: 4;
+    }
 }

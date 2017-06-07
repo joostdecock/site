@@ -45,6 +45,12 @@
                             {% assign crumb_title = 'Pattern docs' %}
                         {% when '/docs/sewing' %}
                             {% assign crumb_title = 'Sewing docs' %}
+                        {% when '/blog' %}
+                            {% assign crumb_title = 'Blog' %}
+                        {% when '/blog/category' %}
+                            {% assign crumb_title = 'Posts by category' %}
+                        {% when '/blog/author' %}
+                            {% assign crumb_title = 'Posts by author' %}
                         {% else %}
                             {% assign chunks = crumb_url | split: '/' %}
                             {% if chunks.size == 4 %} 
@@ -58,6 +64,8 @@
                 {% assign crumb_count = crumb_count | plus: 1 %}
             {% endfor %}
         {% endif %}
-        <li>{{ page.title }}</li>
+        {% if page.linktitle %}<li>{{ page.linktitle }}</li>
+        {% else %}<li>{{ page.title }}</li>
+        {% endif %}
     </ul>
 {% endunless %}

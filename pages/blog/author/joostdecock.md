@@ -1,13 +1,14 @@
 ---
 layout: cards
-title: Blog
-permalink: /blog/
+title: Blog posts by joostdecock
+permalink: /blog/author/joostdecock
 ---
 <div class="container">
 <div class="row">
 <div class="col">
 <div class="card-columns blog">
 {% for post in site.posts %}
+{% if post.author == 'joostdecock' %}
 <div class="card hover-shadow">
 <a href="{{ post.url }}" title="{{ post.title | escape}}"><img class="card-img-top img-fluid" src="/img{{ post.url }}{{ post.img }}" alt="{{ post.caption }}"></a>
 <div class="card-block">
@@ -19,6 +20,7 @@ by <a href="/blog/author/{{ post.author }}" title="Browse other posts by this au
 in <a href="/blog/category/{{ post.categories }}" title="Browse other posts in this category">{{ post.categories }}</a>
 </footer>
 </div>
+{% endif %}
 {% endfor %}
 </div>
 </div>
