@@ -8,6 +8,7 @@
         } 
         else if ($('#login').attr('data-logout') == 'logout') {
             window.localStorage.removeItem("jwt");
+            window.localStorage.removeItem("fsu");
             $('body').removeClass('logged-in user').addClass('visitor');
         } 
         else if ($('#login').attr('data-panel') == 'recover') {
@@ -84,8 +85,7 @@
             $.post(api.data+'/login', $('#login-form').serialize(),function( data ) {
                 if(data.result == 'ok') {
                     window.localStorage.setItem("jwt", data.token);
-                    window.localStorage.setItem("user", JSON.stringify({ 'id': data.userid, 'email': data.email, 'user': data.username }));
-                    window.localStorage.setItem("we cool?", 'yeah, we cool');
+                    window.localStorage.setItem("fsu", JSON.stringify({ 'id': data.userid, 'email': data.email, 'user': data.username }));
                     if(typeof($('#login-conf').attr('data-goto')) !== 'undefined') {
                         window.location.replace($('#login-conf').attr('data-goto'));
                     } else {

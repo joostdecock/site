@@ -1,0 +1,48 @@
+#comments .meta {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+}
+.comment {
+    margin-bottom: 1.25rem;
+}
+.comment > .comment {
+    padding-left: 0.5rem;
+    padding-top: 15px;
+    margin-top: -25px;
+    border-left: 3px solid #d8d8d8;
+}
+.comment-text {
+    background: $white;
+    box-shadow: $shadow-hover;
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+.comment-text.removed,
+.comment-text.restricted {
+    background: transparent;
+    box-shadow: none;
+    padding: 0 0.5rem 2rem;
+    font-size: 90%;
+    color: $gray-light;
+}
+.comment-text.restricted i {
+    color: $red;
+}
+.comment-actions {
+    text-align: right;
+    margin-bottom: 0.75rem;
+    margin-top: 0.25rem;
+}
+.comment-actions.removed,
+.comment-actions.restricted {
+    display: none;
+}
+.comment-actions a {
+    margin: 0 0.5rem;
+}
+.comment-actions a.comment-remove {
+    color: $red;
+    margin: 0 1.5rem;
+}
+

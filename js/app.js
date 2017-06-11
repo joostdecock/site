@@ -1040,13 +1040,14 @@
             method: 'GET',
             dataType: 'json',
             success: function(returndata) {
-                if(returndata.result == 'ok') {
+                if(typeof returndata.draft == 'object') {
                     draft = returndata.draft;
                     callback(draft);
                 } else {
                     if(returndata.reason == 'draft_not_yours_and_not_shared') {
                         var errormsg = '<blockquote class="error m600 mb-5"><h5>This draft is not for you</h5><p>This draft is not yours, nor is it shared. So you don\'t get to see it.</p></blockquote><p>&nbsp;</p>';
                     } else {
+                        console.log(returndata);
                         var errormsg = '<blockquote class="error m600"><h5>Things are not ok</h5><p>We couldn\'t load this draft. I\'m not entirely sure why, but it didn\'t work.</p></blockquote>';
                     }
                     $('h1.page-title').html('Nope');
@@ -1109,7 +1110,7 @@
         var patternHandle;
         $('h1.page-title').html(draft.name);
         $('ul.breadcrumbs li:last-child').html(draft.name);
-        var user = window.localStorage.getItem("user");
+        var user = window.localStorage.getItem("fsu");
         if(typeof user !== 'undefined') user = JSON.parse(user);
         if(typeof draft.model === 'undefined') {
             // Shared draft, viewed anonymously
@@ -1217,7 +1218,7 @@
 
     $(document).ready(function () {
        
-        if(window.localStorage.getItem("user") === false) {
+        if(window.localStorage.getItem("fsu") === false) {
             // eff this, you need to be logged in
             window.location.replace("/login");
         } 
@@ -1260,6 +1261,7 @@
                               dataType: 'json',
                               success: function(data) {
                                   window.localStorage.removeItem("jwt");
+                                  window.localStorage.removeItem("fsu");
                                   $('#modal-main').html("<h2>Goodby</h2><p>We'll send you to the homepage, ok?</p>");
                                   setTimeout(function(){ window.location.replace("/"); }, 2000);
                               },

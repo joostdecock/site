@@ -1,0 +1,51 @@
+---
+layout: cards
+---
+{% assign pparts = page.url | split: '/' %}
+{% assign pattern = pparts[2] %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <figure class="image">
+                <img class="img img-responsive drop-shadow" src="/img/patterns/{{ pattern }}/spread.jpg" alt="A line drawing and images of {{ pattern | capitalize }}">
+                <figcaption>A line drawing and images of {{ pattern | capitalize }} <a href="/img/patterns/{{ pattern }}/spread.jpg" target="_BLANK"><i class="fa fa-external-link" aria-hidden="true"></i></a></figcaption>
+            </figure>
+        </div>
+        <div class="col-md-3">
+            <h3>About {{ pattern | capitalize }}</h3>
+            <p class="lead">{{ page.tagline }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h4>Description</h4>
+            {{ page.description }}
+        </div>
+        <div class="col-md-4">
+            <blockquote class="magic">
+                <h5>Draft {{ pattern | capitalize }}</h5>
+                <p>Like what you see? Right this way to draft your {{ pattern | capitalize }} pattern.</p>
+                <p><a href="/draft/{{ pattern }}" class="btn btn-outline-white btn-block">Draft {{ pattern | capitalize }}</a>
+            </blockquote>
+            <blockquote class="cuts">
+                <h5>Make {{ pattern | capitalize }}</h5>
+                <p>All the documentation you need to go from your draft to finished garment.</p>
+                <p><a href="/docs/patterns/{{ pattern }}" class="btn btn-outline-primary btn-block">{{ pattern | capitalize }} documentation</a>
+            </blockquote>
+        </div>
+        <div class="col-md-4">
+            <blockquote class="cuts measure">
+                <h5>Measurements</h5>
+                <p>Documentation for the measurements required to draft {{ pattern | capitalize}}</p>
+                <p><a class="btn btn-outline-primary btn-block" href="/docs/patterns/{{ pattern }}/measurements">{{ pattern | capitalize }} measurements</a></p>
+            </blockquote>
+            <blockquote class="cuts option">
+                <h5>Options</h5>
+                <p>Documentation for all the options that come with {{ pattern }}</p>
+                <p><a class="btn btn-outline-primary btn-block" href="/docs/patterns/{{ pattern }}/options">{{ pattern | capitalize }} options</a></p>
+            </blockquote>
+        </div>
+    </div>  
+{{ content }}
+</div>
+

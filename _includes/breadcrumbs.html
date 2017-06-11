@@ -17,6 +17,8 @@
                     {% case crumb_url %}
                         {% when '/about' %}
                             {% assign crumb_title = 'About' %}
+                        {% when '/patterns' %}
+                            {% assign crumb_title = 'Patterns' %}
                         {% when '/docs' %}
                             {% assign crumb_title = 'Docs' %}
                         {% when '/docs/core' %}
@@ -51,13 +53,11 @@
                             {% assign crumb_title = 'Posts by category' %}
                         {% when '/blog/author' %}
                             {% assign crumb_title = 'Posts by author' %}
+                        {% when '/showcase' %}
+                            {% assign crumb_title = 'Showcase' %}
                         {% else %}
                             {% assign chunks = crumb_url | split: '/' %}
-                            {% if chunks.size == 4 %} 
                                 {% assign crumb_title = chunks.last | capitalize %}
-                            {% else %}
-                                {% assign crumb_title = chunks.size %}
-                            {% endif %}
                     {% endcase %}
                     <li><a href="{{ crumb_url}}" title="{{ crumb_title }}">{{ crumb_title }}</a> &raquo;</li>
                 {% endif %}

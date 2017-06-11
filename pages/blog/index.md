@@ -14,9 +14,9 @@ permalink: /blog/
 <h4 class="card-title"><a href="{{ post.url }}" title="{{ post.title | escape}}">{{ post.title }}</a></h4>
 </div>
 <footer class="rounded-bottom">
-On {{ post.date | date: '%B %d, %Y' }}
-by <a href="/blog/author/{{ post.author }}" title="Browse other posts by this author">{{ post.author }}</a>
+<a href="/blog/author/{{ post.author }}" title="Browse other posts by this author">{{ post.author }}</a>
 in <a href="/blog/category/{{ post.categories }}" title="Browse other posts in this category">{{ post.categories }}</a>
+on {{ post.date | date_to_string }}
 </footer>
 </div>
 {% endfor %}

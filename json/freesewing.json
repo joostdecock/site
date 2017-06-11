@@ -3,7 +3,7 @@
         "AaronAshirt": {
             "info": {
                 "name": "Aaron A-Shirt",
-                "description": "A simple tank top",
+                "description": "This no-frills athletic shirt is a wardrobe staple that nobody should be without",
                 "handle": "aaron",
                 "version": 2,
                 "author": "Joost De Cock",
@@ -145,7 +145,7 @@
         "BrianBodyBlock": {
             "info": {
                 "name": "Brian Body Block",
-                "description": "This body block is the basis of many of our menswear patterns",
+                "description": "This body block is the basis of many of our mens tops",
                 "handle": "brian",
                 "version": 2,
                 "date": 20170303,
@@ -349,7 +349,7 @@
         "CathrinCorset": {
             "info": {
                 "name": "Cathrin Corset",
-                "description": "A 9 or 11 panel underbust corset",
+                "description": "This underbust corset is the waist trainer of your dreams/nightmares",
                 "handle": "cathrin",
                 "version": 2,
                 "author": "Joost De Cock",
@@ -472,7 +472,7 @@
         "HugoHoodie": {
             "info": {
                 "name": "Hugo Hoodie",
-                "description": "A hooded sweater with raglan sleeves and front pouch",
+                "description": "This is a casual hooded jumper with raglan sleeves, and a front pouch",
                 "handle": "hugo",
                 "version": 2,
                 "author": "Joost De Cock",
@@ -591,7 +591,7 @@
         "SimonShirt": {
             "info": {
                 "name": "Simon Shirt",
-                "description": "This highly adaptable shirt pattern is the basis of all our menswear shirts",
+                "description": "This is my bid to create the last shirt pattern you'll even need",
                 "handle": "simon",
                 "version": 2,
                 "author": "Joost De Cock",
@@ -1109,7 +1109,7 @@
         "SvenSweatshirt": {
             "info": {
                 "name": "Sven Sweatshirt",
-                "description": "A simple sweater",
+                "description": "A simple sweater and an essential wardrobe ingredient",
                 "handle": "sven",
                 "version": 1,
                 "date": 20170323,
@@ -1253,7 +1253,7 @@
         "TheoTrousers": {
             "info": {
                 "name": "Theo trousers",
-                "description": "Theo is the slim fit version of Theodore",
+                "description": "Theo is the slimline variation of Theodore",
                 "handle": "theo",
                 "version": 2,
                 "author": "Joost De Cock",
@@ -1336,7 +1336,7 @@
         "TheodoreTrousers": {
             "info": {
                 "name": "Theodore trousers",
-                "description": "Classic menswear trousers by the (Aldrich) book",
+                "description": "These are classic menswear trousers by the (Aldrich) book",
                 "handle": "theodore",
                 "version": 2,
                 "author": "Joost De Cock",
@@ -1419,7 +1419,7 @@
         "TrayvonTie": {
             "info": {
                 "name": "Trayvon Tie",
-                "description": "A tie pattern that cuts no corners",
+                "description": "This tie pattern cuts no corners for a professional result",
                 "handle": "trayvon",
                 "version": 2,
                 "author": "Joost De Cock",
@@ -1702,432 +1702,6 @@
                     "shoulderInset"
                 ]
             }
-        },
-        "BentBodyBlock": {
-            "hidden": [
-                false
-            ],
-            "info": {
-                "name": "Bent Body Block",
-                "description": "This block with a two-part sleeve is the basis of our menswear coat and jacket patterns",
-                "handle": "bent",
-                "version": 0.3,
-                "author": "Joost De Cock",
-                "company": "freesewing.org",
-                "link": "freesewing.org/pattern/bent",
-                "tags": [
-                    "menswear",
-                    "top",
-                    "block"
-                ]
-            },
-            "parts": {
-                "backBlock": "Back block",
-                "frontBlock": "Front block",
-                "sleeveBlock": "Sleeve block",
-                "topsleeveBlock": "Topsleeve block",
-                "undersleeveBlock": "Undersleeve block"
-            },
-            "languages": {
-                "en": "English",
-                "nl": "Nederlands",
-                "fr": "French"
-            },
-            "measurements": {
-                "acrossBack": 450,
-                "bicepsCircumference": 335,
-                "centerBackNeckToWaist": 480,
-                "chestCircumference": 1080,
-                "naturalWaistToHip": 120,
-                "neckCircumference": 420,
-                "shoulderToShoulder": 470,
-                "shoulderSlope": 55,
-                "hipsCircumference": 950,
-                "sleeveLengthToWrist": 700,
-                "wristCircumference": 190,
-                "shoulderToElbow": 410
-            },
-            "options": {
-                "armholeDepthFactor": {
-                    "title": "Armhole depth factor",
-                    "description": "A factor that influences the depth of the armhole",
-                    "group": "fit",
-                    "type": "percent",
-                    "min": 50,
-                    "max": 65,
-                    "default": 60
-                },
-                "bicepsEase": {
-                    "title": "Biceps ease",
-                    "description": "The amount of ease at your upper arm",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 0,
-                    "max": 80,
-                    "default": 30
-                },
-                "chestEase": {
-                    "title": "Chest ease",
-                    "description": "The amount of ease at your chest",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": -40,
-                    "max": 160,
-                    "default": 30
-                },
-                "cuffEase": {
-                    "title": "Cuff ease",
-                    "description": "The amount of ease at your wrist",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 0,
-                    "max": 100,
-                    "default": 45
-                },
-                "lengthBonus": {
-                    "title": "Length bonus",
-                    "description": "Amount to lengthen the body. A negative value will shorten it.",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": -40,
-                    "max": 120,
-                    "default": 0
-                },
-                "sleevecapHeightFactor": {
-                    "title": "Sleevecap height factor",
-                    "description": "A factor that influences the height of the sleevecap",
-                    "group": "fit",
-                    "type": "percent",
-                    "min": 45,
-                    "max": 60,
-                    "default": 50
-                }
-            },
-            "optiongroups": {
-                "fit": [
-                    "armholeDepthFactor",
-                    "bicepsEase",
-                    "chestEase",
-                    "cuffEase",
-                    "lengthBonus",
-                    "sleevecapHeightFactor"
-                ]
-            }
-        },
-        "CarltonCoat": {
-            "hidden": [
-                false
-            ],
-            "info": {
-                "name": "Carlton Coat",
-                "description": "If it's good enough for Sherlock Holmes...",
-                "handle": "carlton",
-                "version": 1,
-                "date": 20170203,
-                "author": "Joost De Cock",
-                "email": "joost@decock.org",
-                "company": "freesewing.org",
-                "tags": [
-                    "menswear",
-                    "coat"
-                ]
-            },
-            "parts": {
-                "backBlock": "Back block",
-                "frontBlock": "Front block",
-                "sleeveBlock": "Sleeve block",
-                "topsleeveBlock": "Topsleeve block",
-                "undersleeveBlock": "Undersleeve block",
-                "frontCoatBlock": "Front coat block",
-                "backCoatBlock": "Back coat block",
-                "coatTail": "Coat tail",
-                "collarStand": "Collar stand",
-                "collar": "Collar"
-            },
-            "languages": {
-                "en": "English"
-            },
-            "measurements": {
-                "acrossBack": 420,
-                "bicepsCircumference": 350,
-                "centerBackNeckToWaist": 560,
-                "chestCircumference": 1060,
-                "naturalWaistToHip": 150,
-                "neckCircumference": 390,
-                "seatCircumference": 1130,
-                "shoulderToShoulder": 470,
-                "shoulderSlope": 55,
-                "sleeveLengthToWrist": 650,
-                "wristCircumference": 180,
-                "shoulderToElbow": 380,
-                "naturalWaistToFloor": 1310,
-                "naturalWaistToSeat": 280,
-                "naturalWaist": 930
-            },
-            "options": {
-                "chestEase": {
-                    "title": "Chest ease",
-                    "description": "The amount of ease at your chest.",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 180,
-                    "max": 320,
-                    "default": 240
-                },
-                "cuffEase": {
-                    "title": "Cuff ease",
-                    "description": "The amount of ease at your wrist.",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 0,
-                    "max": 180,
-                    "default": 140
-                },
-                "seatEase": {
-                    "title": "Seat ease",
-                    "description": "The amount of ease at your butt.",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 180,
-                    "max": 320,
-                    "default": 240
-                },
-                "sleevecapEase": {
-                    "title": "Sleevecap ease",
-                    "description": "The amount by which your sleevhead is longer than the armhole.",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 0,
-                    "max": 35,
-                    "default": 35
-                }
-            },
-            "optiongroups": {
-                "fit": [
-                    "chestEase",
-                    "cuffEase",
-                    "seatEase",
-                    "sleevecapEase"
-                ]
-            }
-        },
-        "LesleyLeggings": {
-            "info": {
-                "name": "Lesley Leggings",
-                "handle": "lesley",
-                "description": "A unisex leggings pattern",
-                "version": 0.4,
-                "date": 20170121,
-                "author": "Joost De Cock",
-                "email": "joost@decock.org",
-                "company": "freesewing.org",
-                "tags": [
-                    "unisex",
-                    "leggings",
-                    "bottom"
-                ]
-            },
-            "parts": {
-                ".frame": "Frame",
-                "frontBlock": "Front base",
-                "backBlock": "Back base",
-                "frontSelvedgeBlock": "Front",
-                "backSelvedgeBlock": "Back",
-                "leggings": "Leggings"
-            },
-            "languages": {
-                "en": "English"
-            },
-            "measurements": {
-                "hipsCircumference": 950,
-                "seatCircumference": 1045,
-                "inseam": 910,
-                "outseam": 1070,
-                "naturalWaistToHip": 120,
-                "naturalWaistToSeat": 260,
-                "bodyRise": 320,
-                "ankleCircumference": 255,
-                "kneeCircumference": 420,
-                "upperLegCircumference": 620
-            },
-            "options": {
-                "stretchFactor": {
-                    "title": "Stretch factor",
-                    "description": "The amount of negative ease. 100% means no negative ease, 90% mean 10% negative ease.",
-                    "group": "fit",
-                    "type": "percent",
-                    "default": 85
-                },
-                "lengthBonus": {
-                    "title": "Length bonus",
-                    "description": "The amount by which to lengthen the legs. Negative values shorten them.",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": -200,
-                    "max": 100,
-                    "default": 50
-                }
-            },
-            "optiongroups": {
-                "fit": [
-                    "lengthBonus",
-                    "stretchFactor"
-                ]
-            }
-        },
-        "SethSelvedgeTrouserBlock": {
-            "info": {
-                "name": "Seth Selvedge Trouser Block",
-                "description": "This is the Trent block adapted for selvedge designs",
-                "handle": "seth",
-                "version": 0.2,
-                "date": 20170121,
-                "author": "Joost De Cock",
-                "company": "freesewing.org",
-                "tags": [
-                    "menswear",
-                    "trousers",
-                    "block",
-                    "bottom"
-                ]
-            },
-            "parts": {
-                ".frame": "Frame",
-                "frontBlock": "Front base",
-                "backBlock": "Back base",
-                "frontSelvedgeBlock": "Front",
-                "backSelvedgeBlock": "Back"
-            },
-            "languages": {
-                "en": "English"
-            },
-            "measurements": {
-                "hipsCircumference": 950,
-                "seatCircumference": 1045,
-                "inseam": 910,
-                "outseam": 1070,
-                "naturalWaistToHip": 120,
-                "naturalWaistToSeat": 260,
-                "bodyRise": 320
-            },
-            "options": {
-                "backSeamCurveFactor": {
-                    "title": "Back seam curve factor",
-                    "description": "A factor the influences the shape of the back seam.",
-                    "group": "fit",
-                    "type": "percent",
-                    "default": 50
-                },
-                "crotchCurveFactor": {
-                    "title": "Crotch curve factor",
-                    "description": "A factor the influences the shape of the crotch curve.",
-                    "group": "fit",
-                    "type": "percent",
-                    "default": 50
-                },
-                "hipsEase": {
-                    "title": "Hips ease",
-                    "description": "The of ease at the hips.",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 10,
-                    "max": 60,
-                    "default": 30
-                },
-                "seatEase": {
-                    "title": "Seat ease",
-                    "description": "The amount of ease at your butt.",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 60,
-                    "max": 160,
-                    "default": 100
-                }
-            },
-            "optiongroups": {
-                "fit": [
-                    "backSeamCurveFactor",
-                    "crotchCurveFactor",
-                    "hipsEase",
-                    "seatEase"
-                ]
-            }
-        },
-        "TrentTrouserBlock": {
-            "info": {
-                "name": "Trent Trouser Block",
-                "handle": "trent",
-                "description": "A trouser block for menswear with a more modern cut than Theo(dore)",
-                "version": 0.4,
-                "date": 20170324,
-                "author": "Joost De Cock",
-                "company": "freesewing.org",
-                "link": "freesewing.org/pattern/trent",
-                "tags": [
-                    "menswear",
-                    "trousers",
-                    "bottom"
-                ]
-            },
-            "parts": {
-                ".frame": "Frame",
-                "frontBlock": "Front",
-                "backBlock": "Back"
-            },
-            "languages": {
-                "en": "English"
-            },
-            "measurements": {
-                "hipsCircumference": 950,
-                "seatCircumference": 1045,
-                "inseam": 910,
-                "outseam": 1070,
-                "naturalWaistToHip": 120,
-                "naturalWaistToSeat": 260,
-                "bodyRise": 320
-            },
-            "options": {
-                "backSeamCurveFactor": {
-                    "title": "Back seam curve factor",
-                    "description": "A factor the influences the shape of the back seam.",
-                    "group": "fit",
-                    "type": "percent",
-                    "default": 50
-                },
-                "crotchCurveFactor": {
-                    "title": "Crotch curve factor",
-                    "description": "A factor the influences the shape of the crotch curve.",
-                    "group": "fit",
-                    "type": "percent",
-                    "default": 50
-                },
-                "hipsEase": {
-                    "title": "Hips ease",
-                    "description": "The amount of ease at your hips.",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 10,
-                    "max": 60,
-                    "default": 30
-                },
-                "seatEase": {
-                    "title": "Seat ease",
-                    "description": "The amount of ease at your butt.",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 60,
-                    "max": 160,
-                    "default": 100
-                }
-            },
-            "optiongroups": {
-                "fit": [
-                    "backSeamCurveFactor",
-                    "crotchCurveFactor",
-                    "hipsEase",
-                    "seatEase"
-                ]
-            }
         }
     },
     "namespaces": {
@@ -2144,13 +1718,6 @@
             "theodore",
             "trayvon",
             "wahid"
-        ],
-        "Beta": [
-            "bent",
-            "carlton",
-            "lesley",
-            "seth",
-            "trent"
         ]
     },
     "mapping": {
@@ -2166,12 +1733,7 @@
             "theo": "Theo trousers",
             "theodore": "Theodore trousers",
             "trayvon": "Trayvon Tie",
-            "wahid": "Wahid Waistcoat",
-            "bent": "Bent Body Block",
-            "carlton": "Carlton Coat",
-            "lesley": "Lesley Leggings",
-            "seth": "Seth Selvedge Trouser Block",
-            "trent": "Trent Trouser Block"
+            "wahid": "Wahid Waistcoat"
         },
         "handleToPattern": {
             "aaron": "AaronAshirt",
@@ -2185,12 +1747,7 @@
             "theo": "TheoTrousers",
             "theodore": "TheodoreTrousers",
             "trayvon": "TrayvonTie",
-            "wahid": "WahidWaistcoat",
-            "bent": "BentBodyBlock",
-            "carlton": "CarltonCoat",
-            "lesley": "LesleyLeggings",
-            "seth": "SethSelvedgeTrouserBlock",
-            "trent": "TrentTrouserBlock"
+            "wahid": "WahidWaistcoat"
         },
         "patternToHandle": {
             "AaronAshirt": "aaron",
@@ -2204,12 +1761,7 @@
             "TheoTrousers": "theo",
             "TheodoreTrousers": "theodore",
             "TrayvonTie": "trayvon",
-            "WahidWaistcoat": "wahid",
-            "BentBodyBlock": "bent",
-            "CarltonCoat": "carlton",
-            "LesleyLeggings": "lesley",
-            "SethSelvedgeTrouserBlock": "seth",
-            "TrentTrouserBlock": "trent"
+            "WahidWaistcoat": "wahid"
         },
         "handleToNamespace": {
             "aaron": "Core",
@@ -2223,12 +1775,7 @@
             "theo": "Core",
             "theodore": "Core",
             "trayvon": "Core",
-            "wahid": "Core",
-            "bent": "Beta",
-            "carlton": "Beta",
-            "lesley": "Beta",
-            "seth": "Beta",
-            "trent": "Beta"
+            "wahid": "Core"
         }
     },
     "measurements": {
@@ -2253,11 +1800,6 @@
         "shoulderToElbow": "all",
         "seatCircumference": "all",
         "inseam": "all",
-        "bodyRise": "all",
-        "naturalWaistToFloor": "all",
-        "naturalWaistToSeat": "all",
-        "outseam": "all",
-        "ankleCircumference": "all",
-        "kneeCircumference": "all"
+        "bodyRise": "all"
     }
 }
