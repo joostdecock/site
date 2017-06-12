@@ -3,6 +3,7 @@ layout: page
 title: License info
 tags: [license]
 permalink: /about/license
+nocomments: true
 crumbs:
   - /about|About
 ---

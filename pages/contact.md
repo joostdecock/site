@@ -3,6 +3,7 @@ layout: page
 title: Contact info
 tags: [support]
 permalink: /contact
+nocomments: true
 ---
 ## Freesewing contact info
 

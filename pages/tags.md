@@ -2,6 +2,7 @@
 layout: page
 title: Tags
 permalink: /tags
+nocomments: true
 ---
 {% assign rawtags = "" %}
 {% for page in site.pages %}

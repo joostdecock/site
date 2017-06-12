@@ -263,12 +263,15 @@ function renderComments(comments) {
         var t = comment.time.split(/[- :]/);
         markup += '<a href="#comment-'+comment.id+'" title="Permalink to this comment">';
         markup += timeago().format(new Date(Date.UTC(t[0], t[1]-1, t[2], t[3], t[4], t[5])));
-        markup += '</a> by <a href="/users/'+comment.userhandle+'">'+comment.username+'</a>';
+        markup += '</a> by <a href="/users/'+comment.userhandle+'" title="Visit the profile page of this user">'+comment.username+'</a>';
         markup += '</div>';
         markup += '<div class="comment-text '+comment.status+'">';
         if (comment.status == 'removed') markup += '<i class="fa fa-trash" aria-hidden="true"></i> <em>This comment was removed by its author.</em>';
         else if (comment.status == 'restricted') markup += '<i class="fa fa-ban" aria-hidden="true"></i> <em>his comment was removed by a moderator.</em>';
-        else markup += marked(comment.comment);
+        else {
+            markup += '<a href="/users/'+comment.userhandle+'" title="Visit the profile page of this user"><img src="'+api.data+comment.picture+'" class="avatile"></a>';
+            markup += marked(comment.comment);
+        }
         markup += '</div>';
         markup += '<div class="comment-actions '+comment.status+'">';
         if(logged_in) {

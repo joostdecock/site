@@ -3,7 +3,7 @@
     <head>
         {% include start-page.html %}
     </head>
-    <body {% if page.comments != 'no' %} data-comments="true" {% endif %}>
+    <body {% unless page.nocomments %} data-comments="true" {% endunless %}>
         {% include modal.html %}
         {% include oc-overlay.html %}
         {% include hamburger.html %}

@@ -3,6 +3,7 @@ layout: page
 title: Getting help
 tags: [support]
 permalink: /help
+nocomments: true
 ---
 
 ## Join us on Gitter
