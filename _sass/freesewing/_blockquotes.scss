@@ -28,6 +28,7 @@ blockquote.tip,
 blockquote.quote,
 blockquote.comment,
 blockquote.cuts,
+blockquote.dark,
 blockquote.print,
 blockquote.love,
 blockquote.magic,
@@ -75,6 +76,22 @@ blockquote.error a {color: $white; }
 blockquote.fork { background: $cyan; color: $white }
 blockquote.fork:before { content: "\f126"; color: $white }
 blockquote.fork a {color: $white; }
+
+blockquote.dark {
+    background: rgba(0, 0, 0, 0.75); 
+    border-radius: 0.25rem; 
+    text-align: left;
+    color: $white;
+}
+
+blockquote.dark:before {color: $white;}
+blockquote.dark.what:before {content: "\f128"; color: $white;}
+blockquote.dark.cost:before {content: "\f07a";}
+blockquote.dark.who:before {content: "\f0c0";}
+blockquote.dark.work:before {content: "\f013";}
+blockquote.dark.credit:before {content: "\f002";}
+blockquote.dark.start:before {content: "\f0e7";}
+blockquote.dark a:hover { color: $lighter-purple;}
 
 blockquote h2:first-child,
 blockquote h3:first-child,

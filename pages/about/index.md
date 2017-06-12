@@ -52,6 +52,8 @@ Or, read the origin story:
 >
 > joost
 
+### How is freesewing different?
+
 What Freesewing does is comparable to what 
 [Lekala](https://www.lekala.co/) does:
 provide customized sewing patterns.

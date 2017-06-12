@@ -55,6 +55,10 @@
                             {% assign crumb_title = 'Posts by author' %}
                         {% when '/showcase' %}
                             {% assign crumb_title = 'Showcase' %}
+                        {% when '/showcase/pattern' %}
+                            {% assign crumb_title = 'Showcases by pattern' %}
+                        {% when '/showcase/maker' %}
+                            {% assign crumb_title = 'Showcases by maker' %}
                         {% else %}
                             {% assign chunks = crumb_url | split: '/' %}
                                 {% assign crumb_title = chunks.last | capitalize %}

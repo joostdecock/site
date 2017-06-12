@@ -15,3 +15,14 @@ collections:
     posts:
         output: true
         permalink: /blog/:title/
+    showcases:
+        output: true
+        permalink: /showcase/:title/
+        layout: showcase
+defaults:
+  - scope:
+      path: ""
+      type: showcases
+    values:
+      layout: showcase
+
