@@ -48,3 +48,25 @@ div.post {
         column-count: 4;
     }
 }
+blockquote.share {
+    a {
+        color: #ffc7eb;
+        text-shadow: $shadow;
+        padding: 0.75rem;
+    }
+    a:hover {
+        color: $white;
+    }
+    .social-icons {
+        font-size: 3rem;
+    }
+    @media (max-width: 767px) {
+        .social-icons {
+            font-size: 2rem;
+        }
+        a {
+            padding: 0.5rem;
+        }
+    }
+}
+

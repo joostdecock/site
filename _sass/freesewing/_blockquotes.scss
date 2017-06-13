@@ -34,6 +34,7 @@ blockquote.love,
 blockquote.magic,
 blockquote.paperless,
 blockquote.question,
+blockquote.share,
 blockquote.error,
 blockquote.cc,
 blockquote.fork,
@@ -61,6 +62,8 @@ blockquote.print { background: $white }
 blockquote.print:before { content: "\f02f"; }
 blockquote.love { background: $pink; color: $white }
 blockquote.love:before { content: "\f004"; color: $white }
+blockquote.share { background: #ff4646; color: $white }
+blockquote.share:before { content: "\f1e0"; color: $white }
 blockquote.magic { background: $purple; color: $white }
 blockquote.magic:before { content: "\f0d0"; color: $white }
 blockquote.paperless { background: $green; color: $white }

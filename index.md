@@ -1,6 +1,6 @@
 ---
 layout: cards
-title: Freesewing documentation
+title: Welcome to freesewing.org
 action: homepage
 permalink: /
 ---

@@ -15,7 +15,7 @@
     <meta name='language' content='EN'>
     <meta name='robots' content='index,follow'>
     <meta name="author" content="Joost De Cock">
-    <title>{{ page.title }} - Freesewing</title>
+    <title>{{ page.title }}</title>
 
     <!--
           __                           _           
@@ -34,3 +34,29 @@
     <!-- Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    {% if page.layout == 'blog' %}
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:site"        content="{{ site.twitter }}">
+    <meta name="twitter:creator"     content="{{ site.twitter }}">
+    <meta name="twitter:title"       content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.blurb }}">
+    <meta name="twitter:image"       content="{{ site.url }}img{{ page.url }}{{ page.img }}">
+    <meta property="og:url"          content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:type"         content="article" />
+    <meta property="og:title"        content="{{ page.title }}" />
+    <meta property="og:description"  content="{{ page.blurb }}" />
+    <meta property="og:image"        content="{{ site.url }}img{{ page.url }}{{ page.img }}" />
+    {% else %}
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:site"        content="{{ site.twitter }}">
+    <meta name="twitter:creator"     content="{{ site.twitter }}">
+    <meta name="twitter:title"       content="{{ page.title }}">
+    <meta name="twitter:description" content="Freesewing is an open source platform for made-to-measure sewing patterns">
+    <meta name="twitter:image"       content="{{ site.url }}img/blog/announcing-freesewing/freesewing-logo.jpg">
+    <meta property="og:url"          content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:type"         content="article" />
+    <meta property="og:title"        content="{{ page.title }}" />
+    <meta property="og:description"  content="Freesewing is an open source platform for made-to-measure sewing patterns" />
+    <meta property="og:image"        content="{{ site.url }}img/blog/announcing-freesewing/freesewing-logo.jpg" />
+    {% endif %}
