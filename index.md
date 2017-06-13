@@ -105,20 +105,27 @@ permalink: /
             {% endfor %} 
         </div>
         {% for post in site.posts offset:1 limit:2 %}
-            <div class="col-md-3 mb-3 mt-1">
-                <div class="drop-shadow rounded">
+            <div class="col-md-3 mb-3 mt-1" style="height: 100%;">
+                <div class="drop-shadow rounded" style="height: 48%; margin-bottom: 4%;">
                     <a href="{{post.url}}"><img alt="{{ post.caption }}" src="/img{{ post.url }}{{ post.img }}" class="img img-responsive rounded-top"></a>
                     <div class="post-meta px-1 py-1">
                         <a href="/blog/author/{{ post.author }}" title="Browse other posts by this author">{{ post.author }}</a> in 
                         <a href="/blog/category/{{ post.categories }}" title="Browse other posts in this category">{{ post.categories }}</a> on 
                         <a href="{{post.url}}">{{ post.date | date_to_string }}</a>
                     </div>
-                    <h4 class="not-on-small" style="padding: 0 0.5rem 1rem;"><a href="{{post.url}}" class="black">{{ post.title }}</a></h4>
+                    <h5 class="not-on-small" style="padding: 0 0.5rem 1rem;"><a href="{{post.url}}" class="black">{{ post.linktitle }}</a></h5>
                     <h3 class="only-on-small" style="padding: 0 0.5rem 0.5rem;"><a href="{{post.url}}" class="black">{{ post.title }}</a></h3>
                 </div>
-                {% if forloop.last == true %}
-                <p class="text-center"><a href="/blog" class="btn btn-primary btn-lg btn-block mt-3">More blog posts</a></p>
-                {% endif %}
+                <div class="drop-shadow rounded" style="height: 48%;">
+                    <a href="{{post.url}}"><img alt="{{ post.caption }}" src="/img{{ post.url }}{{ post.img }}" class="img img-responsive rounded-top"></a>
+                    <div class="post-meta px-1 py-1">
+                        <a href="/blog/author/{{ post.author }}" title="Browse other posts by this author">{{ post.author }}</a> in 
+                        <a href="/blog/category/{{ post.categories }}" title="Browse other posts in this category">{{ post.categories }}</a> on 
+                        <a href="{{post.url}}">{{ post.date | date_to_string }}</a>
+                    </div>
+                    <h5 class="not-on-small" style="padding: 0 0.5rem 1rem;"><a href="{{post.url}}" class="black">{{ post.linktitle }}</a></h5>
+                    <h3 class="only-on-small" style="padding: 0 0.5rem 0.5rem;"><a href="{{post.url}}" class="black">{{ post.title }}</a></h3>
+                </div>
             </div>
         {% endfor %}
     </div> <!-- .row -->
