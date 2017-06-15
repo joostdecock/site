@@ -69,4 +69,13 @@ blockquote.share {
         }
     }
 }
-
+#post > div.post > article > p:first-child::first-letter {
+    font-size: 6.5rem;
+    font-weight: 900;
+    display: inline-block;
+    float: left;
+    line-height: 1;
+    padding: 0 15px 15px 0;
+    text-shadow: 2px 2px 0 $red, 4px 4px 0 $yellow, 6px 6px 0 $green, 8px 8px 0 $blue, 10px 10px 0 $purple;
+    margin-left: -5px;
+}

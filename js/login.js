@@ -3,7 +3,7 @@
         
         // Focus on correct tab/panel //////
 
-        if ($('#login').attr('data-tab') == 'signup') {
+        if ($('#login-conf').attr('data-tab') == 'signup') {
             $('#signup-tab-link').click();
         } 
         else if ($('#login').attr('data-logout') == 'logout') {

@@ -8,7 +8,7 @@ permalink: /blog/
 <div class="col">
 <div class="card-columns blog">
 {% for post in site.posts %}
-<div class="card hover-shadow">
+<div class="card hover-shadow mb-3">
 <a href="{{ post.url }}" title="{{ post.title | escape}}"><img class="card-img-top img-fluid" src="/img{{ post.url }}{{ post.img }}" alt="{{ post.caption }}"></a>
 <div class="card-block">
 <h4 class="card-title"><a href="{{ post.url }}" title="{{ post.title | escape}}">{{ post.title }}</a></h4>

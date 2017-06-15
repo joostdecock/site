@@ -72,6 +72,8 @@ var token = window.localStorage.getItem("jwt");
         $('.close-modal').click(function(e) { e.preventDefault(); closeModal(); }); // Close modal links
 
         $('.scroll-to-top').click(function() { $('html, body').animate({scrollTop : 0},800); }); // Scroll to top link
+
+        $('.tour-guide').click(function() { $('#modal').removeClass().addClass('shown light'); $('.burger').addClass('hidden'); $.getScript('/js/tour.js'); }); // Show tour guide
         
         // Handle off-canvas flick on touchscreen interfaces
         $('.oc-panel').on('flick', function(e) {
