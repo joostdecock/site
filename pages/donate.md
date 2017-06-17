@@ -1,7 +1,7 @@
 ---
 layout: cards
 title: Donate to freesewing
-permalink: /donate/
+permalink: /donate
 ---
 <div class="container mb-5">
     <div class="row mb-5">

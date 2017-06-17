@@ -29,7 +29,7 @@
 }
 #close-modal {
     position: fixed;
-    top: 25px;
+    bottom: 25px;
     right: 25px;
     z-index: 888890;
     outline: none;
@@ -43,9 +43,6 @@
 }
 #modal svg {
     opacity: 1;
-}
-#modal-footer {
-    padding: 0.5rem;
 }
 #modal.light {
     svg.close { stroke: #fff; }
@@ -65,7 +62,7 @@
 }
 @media (max-width: 767px) {
     #close-modal {
-        top: 15px;
+        bottom: 15px;
         right: 15px;
         padding: 7px;
         width: 50px;

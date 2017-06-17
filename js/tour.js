@@ -1,8 +1,9 @@
 (function ($) {
     $('#modal-main').load('/components/tour/wrapper', function(){
         // Should we preload an episode?
-        if($('#tour-config').length) {
-            loadTourEpisode($('#tour-config').attr('data-episode'));
+        if(typeof $('#modal-main').attr('data-tour-guide') == 'string') {
+            loadTourEpisode($('#modal-main').attr('data-tour-guide'));
+            $('#modal-main').removeAttr('data-tour-guide');
         }
 
         $('a#next-chapter').click(function(){ nextChapter() });
@@ -32,7 +33,6 @@
             $('#tour-nav').removeClass('hidden');
             $('#tour-wrapper').removeClass('hidden').load('/components/tour/episodes/'+episode);
             $('#tour-back').removeClass('hidden');
-            if (episode == 'welcome') { $('#try-this').addClass('hidden'); }
             $('#next-chapter').removeClass('hidden');
         }
     }

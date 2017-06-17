@@ -21,6 +21,7 @@
   transition: transform 300ms ease 0s;
   padding: 0;
   left: -300px;
+  display: table;
   background: $whitish;
     .card-header a:before {
         content: "\f078";

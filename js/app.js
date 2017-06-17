@@ -1067,7 +1067,7 @@
             method: 'GET',
             dataType: 'json',
             success: function(returndata) {
-                if(returndata.result == 'ok') {
+                if(typeof returndata.draft == 'object') {
                     draft = returndata.draft;
                     callback(draft);
                 } else {

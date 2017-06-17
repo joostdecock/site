@@ -3,14 +3,29 @@ permalink: /components/tour/wrapper
 ---
 <div id="tour-toc">
     <h2>Tour guides</h2>
-    <p>We've got different guides that explain different things:</p>
-    <h5>Basics</h5>
+    <h5>Before you start</h5>
     <ul>
         <li><a href="#tour-wrapper" class="tour-load" data-tour="welcome">Freesewing essentials</a></li>
         <li><a href="#tour-wrapper" class="tour-load" data-tour="mobile-nav">Site navigation on mobile</a></li>
         <li><a href="#tour-wrapper" class="tour-load" data-tour="desktop-nav">Site navigation on desktop</a></li>
     </ul>
-    <blockquote id='try-this' class="tip">If you haven't done so yet, you should pick the <a href="#tour-wrapper" class="tour-load" data-tour="welcome">Freesewing essentials</a> guide</blockquote>
+    <h5>Basics</h5>
+    <ul>
+        <li><a href="#tour-wrapper" class="tour-load" data-tour="missing">Create an account</a></li>
+        <li><a href="#tour-wrapper" class="tour-load" data-tour="missing">Adding models and measurements</a></li>
+        <li><a href="#tour-wrapper" class="tour-load" data-tour="missing">Drafting a pattern</a></li>
+    </ul>
+    <h5>Next steps</h5>
+    <ul>
+        <li><a href="#tour-wrapper" class="tour-load" data-tour="missing">Keeping notes</a></li>
+        <li><a href="#tour-wrapper" class="tour-load" data-tour="missing">The compare service</a></li>
+    </ul>
+    <h5>Advanced</h5>
+    <ul>
+        <li><a href="#tour-wrapper" class="tour-load" data-tour="missing">Redrafting a draft</a></li>
+        <li><a href="#tour-wrapper" class="tour-load" data-tour="missing">Sharing your draft</a></li>
+        <li><a href="#tour-wrapper" class="tour-load" data-tour="missing">Forking a draft</a></li>
+    </ul>
 </div>
 <div id="tour-back" class="hidden"><a href="#tour-wrapper" class="tour-home">Switch to a different guide</a></div>
 <div id="tour-wrapper" class="hidden">
@@ -26,7 +41,7 @@ permalink: /components/tour/wrapper
 
 <style>
     #tour-nav {
-        width: 350px;
+        width: 200px;
         margin: auto;
     }
     #tour-toc {
@@ -61,6 +76,11 @@ permalink: /components/tour/wrapper
         display: inline-block;
         vertical-align: top;
     }
+    img.tour-mobile {
+        display: block;
+        max-height: 250px;
+        margin: 0 auto 0.25rem;
+    }
     #modal-main {
         padding: 0!important;
     }
@@ -76,6 +96,12 @@ permalink: /components/tour/wrapper
     }
     .mobile-screen .text {
         background: rgba(255,255,255,0.75);
+    }
+    .desktop-screen {
+        width: 300px;
+        height: 225px;
+        padding: 150px 25px 65px;
+        margin: 0.5rem auto;
     }
 
 blockquote.tour {

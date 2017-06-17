@@ -1,5 +1,7 @@
 nav#side-menu {
     padding: 0;
+    display: table-cell;
+    vertical-align: middle;
     ul {
         margin-left: 0;
         padding-left: 0;

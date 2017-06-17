@@ -73,7 +73,13 @@ var token = window.localStorage.getItem("jwt");
 
         $('.scroll-to-top').click(function() { $('html, body').animate({scrollTop : 0},800); }); // Scroll to top link
 
-        $('.tour-guide').click(function() { $('#modal').removeClass().addClass('shown light'); $('.burger').addClass('hidden'); $.getScript('/js/tour.js'); }); // Show tour guide
+        $('.tour-guide').click(function(e) { 
+            $('#modal').removeClass().addClass('shown light'); 
+            $('.burger').addClass('hidden'); 
+            $.getScript('/js/tour.js',function(){
+                $('#modal-main').attr('data-tour-guide',e.currentTarget.dataset.episode);
+            }); 
+        }); // Show tour guide
         
         // Handle off-canvas flick on touchscreen interfaces
         $('.oc-panel').on('flick', function(e) {
