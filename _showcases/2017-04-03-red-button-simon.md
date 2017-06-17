@@ -1,6 +1,6 @@
 ---
 title: Joost does Simon
-img: red-buttons.jpg
+img: showcase.jpg
 caption: A Simon shirt by Joost
 category: simon
 author: joostdecock

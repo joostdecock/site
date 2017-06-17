@@ -1,6 +1,6 @@
 ---
 title: Joost does Simon
-img: pink-simon.jpg
+img: showcase.jpg
 caption: A Simon shirt by Joost
 category: simon
 layout: showcase

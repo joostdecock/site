@@ -1,6 +1,6 @@
 ---
 title: Boxers for Sjoerd, by irenesstoffen
-img: bruce.jpg
+img: showcase.jpg
 caption: Arrr!
 category: bruce
 layout: showcase

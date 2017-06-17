@@ -1,6 +1,6 @@
 ---
 title: Corduroy trousers for Gus, by Fabricated
-img: gus.jpg
+img: showcase.jpg
 caption: Gus in his brown corduroys
 category: theodore
 layout: showcase

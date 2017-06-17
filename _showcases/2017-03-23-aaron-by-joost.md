@@ -1,6 +1,6 @@
 ---
 title: Joost does Aaron
-img: by-joost.jpg
+img: showcase.jpg
 caption: An Aaron A-shirt by Joost
 category: aaron
 author: joostdecock

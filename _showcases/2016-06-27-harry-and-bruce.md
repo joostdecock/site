@@ -1,6 +1,6 @@
 ---
 title: Harry relaxes in the bruce boxers made for him by ladysewalot
-img: harry-and-bruce.jpg
+img: showcase.jpg
 caption: Dayum that boy is sexy!
 category: bruce
 layout: showcase

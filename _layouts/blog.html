@@ -12,7 +12,17 @@ layout: default
                 <div class="col post-meta text-right"><a href="/blog/author/{{ page.author }}" title="Browse other posts by this author">{{ page.author }}</a></div>
             </div>
             <figure class="image">
-                <img alt="{{ page.caption }}" src="/img{{ page.url }}{{ page.img }}" class="img img-responsive drop-shadow">
+<img 
+    src="/img{{ page.url }}lqip_{{ page.img }}" 
+    data-sizes="auto"
+    data-srcset="
+        /img{{ page.url }}lqip_{{ page.img }} 25w,
+        /img{{ page.url }}low_{{ page.img }} 500w,
+        /img{{ page.url }}med_{{ page.img }} 1000w,
+        /img{{ page.url }}high_{{ page.img }} 2000w"
+    alt="{{ page.caption }}" 
+    class="lazyload drop-shadow"
+>
                 <figcaption>{{ page.caption }} <a target="_BLANK" href="/img{{page.url}}{{ page.img }}"><i aria-hidden="true" class="fa fa-external-link"></i></a></figcaption>
             </figure>
             <h1 class="post">{{ page.title | escape }}</h1>
