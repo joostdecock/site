@@ -92,8 +92,18 @@ permalink: /
     <div class="row">
         <div class="col-md-6 mb-3 mt-1">
             <div class="card drop-shadow">
-               <a href="/patterns/aaron" title="The Aaron pattern">
-                    <img alt="The Aaron pattern" src="/img/patterns/aaron/sample.jpg" class="rounded-top">
+                <a href="/patterns/aaron" title="The Aaron pattern">
+                    <img 
+                        src="/img/patterns/aaron/lqip_sample.jpg" 
+                        data-sizes="auto"
+                        data-srcset="
+                            /img/patterns/aaron/lqip_sample.jpg 25w,
+                            /img/patterns/aaron/low_sample.jpg 500w,
+                            /img/patterns/aaron/med_sample.jpg 1000w,
+                            /img/patterns/aaron/high_sample.jpg 2000w"
+                        alt="The Aaron pattern" 
+                        class="rounded-top lazyload"
+                    >
                 </a>
                 <div class="card-block">
                     <h4 class="card-title"><a href="/patterns/aaron">Aaron</a></h4>
@@ -104,7 +114,17 @@ permalink: /
         <div class="col-md-3 mb-3 mt-1">
             <div class="card drop-shadow">
                <a href="/patterns/simon" title="The Simon pattern">
-                    <img alt="The Simon pattern" src="/img/patterns/simon/sample.jpg" class="rounded-top">
+                    <img 
+                        src="/img/patterns/simon/lqip_sample.jpg" 
+                        data-sizes="auto"
+                        data-srcset="
+                            /img/patterns/simon/lqip_sample.jpg 25w,
+                            /img/patterns/simon/low_sample.jpg 500w,
+                            /img/patterns/simon/med_sample.jpg 1000w,
+                            /img/patterns/simon/high_sample.jpg 2000w"
+                        alt="The Simon pattern" 
+                        class="rounded-top lazyload"
+                    >
                 </a>
                 <div class="card-block">
                     <h4 class="card-title"><a href="/patterns/simon">Simon</a></h4>
@@ -115,7 +135,17 @@ permalink: /
         <div class="col-md-3 mb-3 mt-1">
             <div class="card drop-shadow">
                <a href="/patterns/bruce" title="The Bruce pattern">
-                    <img alt="The Bruce pattern" src="/img/patterns/bruce/sample.jpg" class="rounded-top">
+                    <img 
+                        src="/img/patterns/bruce/lqip_sample.jpg" 
+                        data-sizes="auto"
+                        data-srcset="
+                            /img/patterns/bruce/lqip_sample.jpg 25w,
+                            /img/patterns/bruce/low_sample.jpg 500w,
+                            /img/patterns/bruce/med_sample.jpg 1000w,
+                            /img/patterns/bruce/high_sample.jpg 2000w"
+                        alt="The Simon pattern" 
+                        class="rounded-top lazyload"
+                    >
                 </a>
                 <div class="card-block">
                     <h4 class="card-title"><a href="/patterns/bruce">Bruce</a></h4>
