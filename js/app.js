@@ -411,14 +411,6 @@
                     on: body_on,
                     checkbox: $('#body'),
                 });
-                $('#shared-toggle').toggles({
-                    text: {
-                        off: 'No',
-                        on: 'Yes'
-                    },
-                    on: shared_on,
-                    checkbox: $('#shared'),
-                });
                 // Bind submit handler to save settings button
                 $('#settings').on('submit','#settings-form', function(e) {
                     e.preventDefault();
