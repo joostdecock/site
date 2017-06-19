@@ -25,11 +25,7 @@ permalink: /components/model/settings
     </div>
     <input class="hidden" id="body" name="body" value="female" type="checkbox" checked="">
     <!-- shared -->
-    <div class="input-group key-toggle key-sm mt-4 mb-4">
-        <span class="input-group-addon td-key">Share</span>
-        <div class="toggle toggle-light" id="shared-toggle"></div>
-    </div>
-    <input class="hidden" id="shared" name="shared" value="1" type="checkbox" checked="">
+    <input class="hidden" id="shared" name="shared" value="0" type="checkbox" checked="">
     <!-- picture -->
         <div class="bg-thematic drop-shadow" id="picture-key" style="width: 100px; height: 100px; background-color: #fff; display: inline-block; margin-right: 1rem; float: left;"></div>
         <div style="display: inline-block; width: 250px;">

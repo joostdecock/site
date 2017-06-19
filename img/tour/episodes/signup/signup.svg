@@ -267,7 +267,7 @@ d="m 15.42134359827604,31.97503079097472 c -0.93847307285801,-0.053053110058 -1.
             <animate attributeType="XML" attributeName="cy" from="100" to="100" begin="loop.begin+20s" dur="0.1s" fill="freeze" />
         </circle>
     </g>
-    <rect height="225" width="300" x="0" y="0" fill="#000" style="opacity: 0;">
+    <rect height="225" width="300" x="0" y="0" fill="#fff" style="opacity: 0;">
         <animate attributeType="CSS" attributeName="opacity" from="0" to="1" begin="loop.begin+19.5s" dur="0.5s" fill="freeze" />
         <animate attributeType="CSS" attributeName="opacity" from="1" to="0" begin="loop.begin+20.5s" dur="0.5s" fill="freeze" />
     </rect>
