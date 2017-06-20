@@ -19,6 +19,7 @@ exclude:
   - README.md
 include:  
   - _redirects
+  - apigen
 
 collections:
     posts:
