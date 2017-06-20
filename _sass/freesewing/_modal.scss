@@ -22,7 +22,7 @@
     background: RGBA(0, 0, 0, 0.95);
 }
 #modal.thematic {
-    background: rgba(92,53,102,0.9);
+    background: $gray-dark;
     background-size: cover;
     background-position: center;
     background-image: $potw;

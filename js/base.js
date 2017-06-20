@@ -1,8 +1,6 @@
 // Set the location of the APIs you want to connect to here
 var api = {
-    site: 'https://beta.freesewing.org',
     data: 'https://data.freesewing.org',
-    core: 'https://api.freesewing.org',
 };
 
 var user = false;
@@ -215,7 +213,6 @@ function logReferral() {
         var referrer = document.createElement('a');
         var site = document.createElement('a');
         referrer.href = document.referrer;
-        site.href = api.site;
         if(referrer.hostname !== site.hostname) {
             $.ajax({
                 url: api.data+'/referral',
