@@ -34,3 +34,5 @@ p a.btn {
 a.black {
     color: $black;
 }
+a.white { color: $white; }
+a.white:hover { text-decoration: underline; }
