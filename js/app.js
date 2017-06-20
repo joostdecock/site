@@ -778,7 +778,7 @@
                     });
                     ordered[key] = subordered;
                 });
-                var show = ' show ';
+                var show = ' '; // Keep everything collapsed
                 $.each(ordered, function(title, group) {
                     $('#accordion').append("<div id='group-"+title+"' class='card'><div class='card-header' role='tab' id='heading-"+title+"'><h3 class='text-capitalize'><a data-toggle='collapse' data-parent='#accordion' href='#collapse-"+title+"' aria-expanded='false' aria-controls='collapse-"+title+"'>"+title+"</a></h3></div><div id='collapse-"+title+"' class='collapse "+show+"' role='tabpanel'aria-labeledby='heading-"+title+"' aria-expanded='false'><div class='card-block' id='content-"+title+"'></div></div>");
                     $.each(group, function(name, option) {
