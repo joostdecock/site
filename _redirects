@@ -16,6 +16,8 @@
 /fork/:pattern/for/:model  /step/3/fork 200
 # Fork draft: step 2
 /fork/:pattern /step/2/fork 200
+# Redraft draft
+/redraft/:pattern/for/:model /step/3/redraft 200
 # Pattern measurements
 /docs/measurements/:pattern /docs/measurements/show-measurement 200
 # List all measurements
