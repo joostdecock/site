@@ -1,7 +1,7 @@
 ---
 permalink: /components/measurements/shouldertoelbow
 ---
-{% include figure.html url="/img/potw/potw.jpg" description="The shoulder to elbow measurement" %}
+{% include figure.html url="/img/potw/potw.jpg" %}
 
 The **shouler to elbow** measurement runs from the edge of your shoulder down to your elbow.
 

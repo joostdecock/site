@@ -1,7 +1,7 @@
 ---
 permalink: /components/measurements/kneecircumference
 ---
-{% include figure.html url="/img/potw/potw.jpg" description="The knee circumference measurement" %}
+{% include figure.html url="/img/potw/potw.jpg" %}
 
 The **kneeCircumference** measurement goes around your knee.
 

@@ -1,7 +1,7 @@
 ---
 permalink: /components/measurements/naturalwaisttofloor
 ---
-{% include figure.html url="/img/potw/potw.jpg" description="The natural waist to floor measurement" %}
+{% include figure.html url="/img/potw/potw.jpg" %}
 
 The **naturalWaistToFloor** is the measurement from your natural waist down to the floor.
 

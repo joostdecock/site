@@ -1,7 +1,7 @@
 ---
 permalink: /components/measurements/hipscircumference
 ---
-{% include figure.html url="/img/potw/potw.jpg" description="The hips circumference measurement" %}
+{% include figure.html url="/img/potw/potw.jpg" %}
 
 The **hips circumference** is measured at the top of your hipbones. 
 

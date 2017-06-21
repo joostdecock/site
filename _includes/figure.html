@@ -1,4 +1,14 @@
 <figure class="image">
-    <img class="img img-responsive drop-shadow" src="{{ include.url }}" alt="{{ include.description }}">
-    <figcaption>{{ include.description }} <a href="{{ include.url }}" target="_BLANK"><i class="fa fa-external-link" aria-hidden="true"></i></a></figcaption>
+    <img 
+        class="img img-responsive drop-shadow" 
+        src="{{ include.url }}" 
+        {% if(include.description) %}
+            alt="{{ include.description }}"
+        {% else %}
+            alt=" "
+        {% endif %}
+    >
+    {% if(include.description) %}
+        <figcaption>{{ include.description }} <a href="{{ include.url }}" target="_BLANK"><i class="fa fa-external-link" aria-hidden="true"></i></a></figcaption>
+    {% endif %}
 </figure>

@@ -1,7 +1,7 @@
 ---
 permalink: /components/measurements/crossseamlength
 ---
-{% include figure.html url="/img/potw/potw.jpg" description="The crossseam length measurement" %}
+{% include figure.html url="/img/potw/potw.jpg" %}
 
 The **crossseam length** is the length of your crossseam, 
 from the front all the way to the back.

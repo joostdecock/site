@@ -1,7 +1,7 @@
 ---
 permalink: /components/measurements/acrossback
 ---
-{% include figure.html url="/img/potw/potw.jpg" description="The across back measurement" %}
+{% include figure.html url="/img/potw/potw.jpg" %}
 
 Your **acrossBack** is the measurement horizontally across your shoulder blades. 
 Think of it as the width of your back without your arms.

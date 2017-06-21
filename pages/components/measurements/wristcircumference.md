@@ -1,7 +1,7 @@
 ---
 permalink: /components/measurements/wristcircumference
 ---
-{% include figure.html url="/img/potw/potw.jpg" description="The wrist circumference measurement" %}
+{% include figure.html url="/img/potw/potw.jpg" %}
 
 The **wrist circumference** measurement is the circumference of your wrist.
 

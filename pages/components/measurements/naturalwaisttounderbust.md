@@ -1,7 +1,7 @@
 ---
 permalink: /components/measurements/naturalwaisttounderbust
 ---
-{% include figure.html url="/img/potw/potw.jpg" description="The measurement" %}
+{% include figure.html url="/img/potw/potw.jpg" %}
 
 The **natural waist to underbust** is the measurement from your natural waist up towards your underbust link (where your bra band sits).
 

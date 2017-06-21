@@ -1,7 +1,7 @@
 ---
 permalink: /components/measurements/seatcircumference
 ---
-{% include figure.html url="/img/potw/potw.jpg" description="The seat circumference measurement" %}
+{% include figure.html url="/img/potw/potw.jpg" %}
 
 The **seat circumference** is the measurement around the fullest part of your bum.
 

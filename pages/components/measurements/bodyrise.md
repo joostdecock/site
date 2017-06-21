@@ -1,7 +1,7 @@
 ---
 permalink: /components/measurements/bodyrise
 ---
-{% include figure.html url="/img/potw/potw.jpg" description="The body rise measurement" %}
+{% include figure.html url="/img/potw/potw.jpg" %}
 
 The Body rise measurement is the height your trouser waist rises from the surface you are sitting on.
 

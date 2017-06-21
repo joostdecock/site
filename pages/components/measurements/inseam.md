@@ -1,7 +1,7 @@
 ---
 permalink: /components/measurements/inseam
 ---
-{% include figure.html url="/img/potw/potw.jpg" description="The inseam measurement" %}
+{% include figure.html url="/img/potw/potw.jpg" %}
 
 The Inseam is the measurement from your crotch down to the floor.
 

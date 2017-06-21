@@ -1,7 +1,7 @@
 ---
 permalink: /components/measurements/shoulderslope
 ---
-{% include figure.html url="/img/potw/potw.jpg" description="The shoulder slope measurement" %}
+{% include figure.html url="/img/potw/potw.jpg" %}
 
 The **shouler slope** measurement is an indicator for the amount with which your shoulder slopes downward. 
 You can not measure it directly, but need to calculate the difference between two measurements to find it.

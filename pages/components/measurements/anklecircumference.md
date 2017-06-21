@@ -1,7 +1,7 @@
 ---
 permalink: /components/measurements/anklecircumference
 ---
-{% include figure.html url="/img/potw/potw.jpg" description="The ankle circumference measurement" %}
+{% include figure.html url="/img/potw/potw.jpg" %}
 
 The **ankleCircumference** measurement goes around your ankle.
 

@@ -1,7 +1,7 @@
 ---
 permalink: /components/measurements/centerbacknecktowaist
 ---
-{% include figure.html url="/img/potw/potw.jpg" description="The center back neck to waist measurement" %}
+{% include figure.html url="/img/potw/potw.jpg" %}
 
 The **center back neck to waist** is the measurement from the center back of your neck down to your natural waist.
 

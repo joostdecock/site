@@ -1,7 +1,7 @@
 ---
 permalink: /components/measurements/chestcircumference
 ---
-{% include figure.html url="/img/potw/potw.jpg" description="The chest circumference measurement" %}
+{% include figure.html url="/img/potw/potw.jpg" %}
 
 The **chest circumference** measurement wraps around the fullest part of your chest.
 

@@ -1,7 +1,7 @@
 ---
 permalink: /components/measurements/underbust
 ---
-{% include figure.html url="/img/potw/potw.jpg" description="The underbust measurement" %}
+{% include figure.html url="/img/potw/potw.jpg" %}
 
 The **underbust** measurement is the circumference of your chest without taking your breasts into account.
 

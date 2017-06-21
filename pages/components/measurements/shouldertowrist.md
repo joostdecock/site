@@ -1,7 +1,7 @@
 ---
 permalink: /components/measurements/shouldertowrist
 ---
-{% include figure.html url="/img/potw/potw.jpg" description="The shoulder to wrist measurement" %}
+{% include figure.html url="/img/potw/potw.jpg" %}
 
 The **shoulder to wrist** measurement runs from the edge of your shoulder down your arm to your wrist.
 

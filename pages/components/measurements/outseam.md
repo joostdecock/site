@@ -1,7 +1,7 @@
 ---
 permalink: /components/measurements/outseam
 ---
-{% include figure.html url="/img/potw/potw.jpg" description="The outseam measurement" %}
+{% include figure.html url="/img/potw/potw.jpg" %}
 
 The **outseam** is the measurement from your hips down to the floor.
 
