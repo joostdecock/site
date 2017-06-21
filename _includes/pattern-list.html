@@ -1,0 +1,33 @@
+<p class="text-center m600 mb-5">
+{% for patternholder in site.data.freesewing.patterns %}
+    {% for pattern in patternholder %}
+        {% if pattern.info.handle %}
+            <a class="mx-1" href="/patterns/{{ pattern.info.handle }}">{{ pattern.info.handle | capitalize }}</a>
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+</p>
+
+{% for patternholder in site.data.freesewing.patterns %}
+    {% for pattern in patternholder %}
+        {% if pattern.info.handle %}
+            {% assign pname =  site.data.freesewing.mapping.handleToPattern['{{pattern.info.handle}}'] %}
+            {% assign namespace = site.data.freesewing.mapping.handleToNamespace[pattern.info.handle] %}
+            <div class="mb-4 {{ namespace | downcase }}" id="pattern-{{ pattern.info.handle }}">
+                <div class="card m600 hover-shadow">
+                    <a class="pattern-link" href='/patterns/{{ pattern.info.handle | downcase }}' title="Read more"><img class="card-img-top pattern-img lazyload" src="/img/patterns/{{ pattern.info.handle }}/spread.jpg" alt="The {{ pattern.info.handle }} pattern"></a>
+                    <div class="card-block">
+                        <a class="pattern-link" href='/patterns/{{ pattern.info.handle | downcase }}' title="Read more"><h4 class="card-title pattern-title text-capitalize">{{ pattern.info.handle }}</h4></a>
+                        <p class="lead card-text pattern-tagline">{{ pattern.info.description }}</p>
+                        <ul class="tags">
+                            <li><span class="badge {{ namespace | downcase }}">{{ namespace | downcase }}</span></li>
+                            {% for tag in pattern.info.tags %}
+                                <li><span class="badge badge-primary {{ tag | downcase }}">{{tag | downcase }}</span></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+{% endfor %}
