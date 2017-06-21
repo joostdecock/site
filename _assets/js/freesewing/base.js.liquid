@@ -171,6 +171,7 @@ function logout() {
 
 function login() {
     $('#modal').removeClass().addClass('shown thematic');
+    $('.burger').addClass('hidden'); 
     $('#modal-main').html("<div id='login' class='loginbox'></div>");
     $('#login').load('/snippets/login/form');
     $.getScript( "/js/login.js");
