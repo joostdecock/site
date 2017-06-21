@@ -9,12 +9,12 @@ nocomments: true
     <h2>New here?</h2>
     <div class="row visitor-onl">
         <div class="col-md-4 mb-3">
-            <div class="card drop-shadow">
+            <div class="card hover-shadow">
                 <a href="#burger" id='tour-trigger-1' title="Take the tour" data-episode="welcome" class="tour-guide">
                     <img src="/img/maze.svg" alt="Take the tour" class="rounded-top">
                 </a>
                 <div class="card-block">
-                    <h4 class="card-title"><a href="#burger" id='tour-trigger-2' title="Take the tour" data-episode="welcome" class="tour-guide">Take the tour</a></h4>
+                    <h4 class="card-title"><a href="#burger" id='tour-trigger-2' title="Take the tour" data-episode="welcome" class="tour-guide">Take the tour<span class="block-link"></span></a></h4>
                     <p class="card-text">I have created a series of short animations to explain different things about this site</p>
                 </div>
             </div>
@@ -41,7 +41,7 @@ nocomments: true
     <div class="row">
         <div class="col-md-6 mb-3 mt-1">
             {% for post in site.posts limit:1 %}
-                <div class="card drop-shadow">
+                <div class="card hover-shadow">
                     <a href="{{ post.url }}" title="{{ post.linktitle }}">
                         <img 
                             src="/img{{ post.url }}lqip_{{ post.img }}" 
@@ -56,7 +56,7 @@ nocomments: true
                         >
                     </a>
                     <div class="card-block">
-                        <h4 class="card-title"><a href="{{ post.url }}">{{ post.linktitle }}</a></h4>
+                        <h4 class="card-title"><a href="{{ post.url }}" title="{{ post.title | escape }}">{{ post.linktitle }}<span class="block-link"></span></a></h4>
                         <p class="card-text">{{ post.blurb }} </p>
                     </div>
                 </div>
@@ -64,7 +64,7 @@ nocomments: true
         </div>
             {% for post in site.posts offset:1 limit:2 %}
         <div class="col-md-3 mb-3 mt-1">
-                <div class="card drop-shadow">
+                <div class="card hover-shadow">
                     <a href="{{ post.url }}" title="{{ post.linktitle }}">
                         <img 
                             src="/img{{ post.url }}lqip_{{ post.img }}" 
@@ -79,7 +79,7 @@ nocomments: true
                         >
                     </a>
                     <div class="card-block">
-                        <h4 class="card-title"><a href="{{ post.url }}">{{ post.linktitle }}</a></h4>
+                        <h4 class="card-title"><a href="{{ post.url }}" title="{{ post.title | escape }}">{{ post.linktitle }}<span class="block-link"></span></a></h4>
                         <p class="card-text only-on-small">{{ post.blurb }} </p>
                     </div>
                 </div>
@@ -91,7 +91,7 @@ nocomments: true
     <h2><a href="/patterns/">Patterns</a></h2>
     <div class="row">
         <div class="col-md-6 mb-3 mt-1">
-            <div class="card drop-shadow">
+            <div class="card hover-shadow">
                 <a href="/patterns/aaron" title="The Aaron pattern">
                     <img 
                         src="/img/patterns/aaron/lqip_sample.jpg" 
@@ -106,13 +106,13 @@ nocomments: true
                     >
                 </a>
                 <div class="card-block">
-                    <h4 class="card-title"><a href="/patterns/aaron">Aaron</a></h4>
+                    <h4 class="card-title"><a href="/patterns/aaron" title="Aaron">Aaron<span class="block-link"></span></a></h4>
                     <p class="card-text">This no-frills athletic shirt is a wardrobe staple that nobody should be without</p>
                 </div>
             </div>
         </div>
         <div class="col-md-3 mb-3 mt-1">
-            <div class="card drop-shadow">
+            <div class="card hover-shadow">
                <a href="/patterns/simon" title="The Simon pattern">
                     <img 
                         src="/img/patterns/simon/lqip_sample.jpg" 
@@ -127,13 +127,13 @@ nocomments: true
                     >
                 </a>
                 <div class="card-block">
-                    <h4 class="card-title"><a href="/patterns/simon">Simon</a></h4>
+                    <h4 class="card-title"><a href="/patterns/simon" title="Simon">Simon<span class="block-link"></span></a></h4>
                     <p class="card-text">This is my bid to create the last shirt pattern you'll even need</p>
                 </div>
             </div>
         </div>
         <div class="col-md-3 mb-3 mt-1">
-            <div class="card drop-shadow">
+            <div class="card hover-shadow">
                <a href="/patterns/bruce" title="The Bruce pattern">
                     <img 
                         src="/img/patterns/bruce/lqip_sample.jpg" 
@@ -148,7 +148,7 @@ nocomments: true
                     >
                 </a>
                 <div class="card-block">
-                    <h4 class="card-title"><a href="/patterns/bruce">Bruce</a></h4>
+                    <h4 class="card-title"><a href="/patterns/bruce" title="Bruce">Bruce<span class="block-link"></span></a></h4>
                     <p class="card-text">These boxer briefs combine stylish comfort with the support you deserve</p>
                 </div>
             </div>

@@ -12,7 +12,7 @@ permalink: /docs/
                     <img src="/img/maker.jpg" alt="Pattern docs" class="rounded-top">
                 </a>
                 <div class="card-block">
-                    <h4 class="card-title"><a href="/docs/patterns/">Pattern docs</a></h4>
+                    <h4 class="card-title"><a href="/docs/patterns/">Pattern docs<span class="card-link"></span></a></h4>
                     <p class="card-text">
                         A drafted pattern is just the start. 
                         These instructions will guide you from draft to completed garment.
