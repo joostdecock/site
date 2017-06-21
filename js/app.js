@@ -1210,9 +1210,9 @@
 
     $(document).ready(function () {
        
-        if(window.localStorage.getItem("fsu") === false) {
+        if(window.localStorage.getItem("fsu") === null) {
             // eff this, you need to be logged in
-            window.location.replace("/login");
+            window.location.replace("/login-required");
         } 
         else { // Start of logged-in block
             // Account page ////////////////
