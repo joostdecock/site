@@ -34,8 +34,8 @@ gems:
 
 assets:
   compress:
-    css: true
-    js:  true
+    css: false
+    js:  false
 
   autowrite: true
   cache: .asset-cache
@@ -43,7 +43,7 @@ assets:
   skip_baseurl_with_cdn: false
   skip_prefix_with_cdn: false
   prefix: "/assets"
-  digest: true
+  digest: false
 
   sources:
     - _assets/css

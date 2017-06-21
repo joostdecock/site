@@ -29,3 +29,30 @@ collections:
         output: true
         permalink: /showcase/:title/
         layout: showcase
+
+gems:
+    - jekyll-assets
+
+assets:
+  compress:
+    css: true
+    js:  true
+
+  autowrite: true
+  cache: .asset-cache
+  cache_type: filesystem
+  skip_baseurl_with_cdn: false
+  skip_prefix_with_cdn: false
+  prefix: "/assets"
+  digest: true
+
+  sources:
+    - _assets/css
+    - _assets/js
+
+  features:
+    liquid: false
+    integrity: false
+    automatic_img_size: true
+    automatic_img_alt : true
+            
