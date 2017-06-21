@@ -1,0 +1,31 @@
+url: 'https://joost.beta.freesewing.org/'
+github: 'https://github.com/freesewing'
+twitter: 'freesewing_org'
+instagram: 'freesewing_org'
+gitter: 'https://gitter.im/freesewing/freesewing'
+
+api:
+  core: 'https://joost.api.freesewing.org'
+  data: 'https://joost.data.freesewing.org'
+
+markdown: kramdown
+kramdown:
+    input: GFM
+    syntax_highlighter: rouge
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+include:  
+  - _redirects
+  - apigen
+
+collections:
+    posts:
+        output: true
+        permalink: /blog/:title/
+    showcases:
+        output: true
+        permalink: /showcase/:title/
+        layout: showcase

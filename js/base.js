@@ -1,6 +1,8 @@
-// Set the location of the APIs you want to connect to here
+---
+---
+// Set the location of the APIs you want to connect to in the jekyll config
 var api = {
-    data: 'https://data.freesewing.org',
+    data: '{{ site.api.data }}',
 };
 
 var user = false;
