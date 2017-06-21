@@ -47,8 +47,6 @@ assets:
 
   sources:
     - _assets/css
-    - _assets/fonts
-    - _assets/img
     - _assets/js
 
   features:

@@ -10,3 +10,4 @@
 //= require vendor/marked.min
 //= require vendor/timeago.min
 //= require vendor/toggles.min
+//= require freesewing/base

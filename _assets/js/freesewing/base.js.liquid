@@ -1,5 +1,3 @@
----
----
 // Set the location of the APIs you want to connect to in the jekyll config
 var api = {
     data: '{{ site.api.data }}',
@@ -231,33 +229,31 @@ function logReferral() {
 }
 
 function loadComments() {
-    marked = $.getScript( "/js/vendor/marked.min.js", function(){
-        marked.setOptions({sanitize: true});
-        var heading = '<h2>Comments</h2>';
-        var form = '<form id="comment-form" class="text-left">';
-        form += '<div class="form-group">';
-        form += '<input type="hidden" name="parent" value="" id="comment-parent">';
-        form += '<label for="comment" id="comment-label"><b>Add your comment</b></label>';
-        form += '<textarea class="form-control" id="comment" name="comment" rows="12"></textarea>';
-        form += '<input type="hidden" name="page" value="'+page+'">';
-        form += '<p><b>Tip:</b> You can use <a href="https://en.wikipedia.org/wiki/Markdown" target="_BLANK">markdown</a> in your comment.</p>';
-        form += '</div>';
-        form += '<div class="text-right" id="comment-form-buttons">';
-        form += '<a id="comment-preview" class="poh btn btn-outline-primary mx-1" href="#comment">Preview</a>';
-        form += '<button type="submit" class="poh btn btn-primary mx-1" href="#comment">Save</button>';
-        form += '</div>';
-        form += '</form>';
-        var loginmsg = '<blockquote class="tip m600"><p>You need to <a href="/login">login</a> before you can comment.</p></blockquote>';
-        var container = '<div id="comments"></div>';
-        
-        if (logged_in) $('#comments-container').html(heading+container+form);
-        else $('#comments-container').html(heading+container+loginmsg);
-        $.get(api.data+'/comments/page'+page,  function(data){renderComments(data.comments)});
+    marked.setOptions({sanitize: true});
+    var heading = '<h2>Comments</h2>';
+    var form = '<form id="comment-form" class="text-left">';
+    form += '<div class="form-group">';
+    form += '<input type="hidden" name="parent" value="" id="comment-parent">';
+    form += '<label for="comment" id="comment-label"><b>Add your comment</b></label>';
+    form += '<textarea class="form-control" id="comment" name="comment" rows="12"></textarea>';
+    form += '<input type="hidden" name="page" value="'+page+'">';
+    form += '<p><b>Tip:</b> You can use <a href="https://en.wikipedia.org/wiki/Markdown" target="_BLANK">markdown</a> in your comment.</p>';
+    form += '</div>';
+    form += '<div class="text-right" id="comment-form-buttons">';
+    form += '<a id="comment-preview" class="poh btn btn-outline-primary mx-1" href="#comment">Preview</a>';
+    form += '<button type="submit" class="poh btn btn-primary mx-1" href="#comment">Save</button>';
+    form += '</div>';
+    form += '</form>';
+    var loginmsg = '<blockquote class="tip m600"><p>You need to <a href="/login">login</a> before you can comment.</p></blockquote>';
+    var container = '<div id="comments"></div>';
+    
+    if (logged_in) $('#comments-container').html(heading+container+form);
+    else $('#comments-container').html(heading+container+loginmsg);
+    $.get(api.data+'/comments/page'+page,  function(data){renderComments(data.comments)});
 
-        // Bind action buttons
-        $('#comment-preview').unbind().click(function(e) { e.preventDefault(); previewComment(); });
-        $('#comment-form').unbind().submit(function(e) { e.preventDefault(); saveComment(); });
-    });
+    // Bind action buttons
+    $('#comment-preview').unbind().click(function(e) { e.preventDefault(); previewComment(); });
+    $('#comment-form').unbind().submit(function(e) { e.preventDefault(); saveComment(); });
 }
 
 
