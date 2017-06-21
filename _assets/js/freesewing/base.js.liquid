@@ -211,9 +211,9 @@ function postAuth() {
 function logReferral() {
     if(document.referrer !== '') {
         var referrer = document.createElement('a');
-        var site = document.createElement('a');
         referrer.href = document.referrer;
-        if(referrer.hostname !== site.hostname) {
+
+        if(referrer.hostname !== window.location.hostname) {
             $.ajax({
                 url: api.data+'/referral',
                 method: 'POST',
