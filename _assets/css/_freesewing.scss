@@ -1,8 +1,5 @@
-// 
 // Freesewing (https://freesewing.org)
-// Copyright 2017 Joost De Cock
-// Licensed MIT
-// 
+// By Joost De Cock (@j__st)
 
 // Variables
 @import "bootstrap/variables";
@@ -10,13 +7,16 @@
 @import "freesewing/potw";
 @import "freesewing/variables";
 
-// Bootstrap framework css
+// Bootstrap framework css: http://getbootstrap.com/
 @import "bootstrap";
 
-// Font Awesome
+// Bootstrap slider css: https://github.com/seiyria/bootstrap-slider
+@import "bootstrap-slider";
+
+// Font Awesome css: http://fontawesome.io/
 @import "font-awesome";
 
-// Our own css
+// Freesewing css
 @import "freesewing/account";
 @import "freesewing/blockquotes";
 @import "freesewing/blog";
@@ -45,7 +45,6 @@
 @import "freesewing/print";
 @import "freesewing/scroller";
 @import "freesewing/side-menu";
-@import "freesewing/slider";
 @import "freesewing/syntax";
 @import "freesewing/tags";
 @import "freesewing/tables";

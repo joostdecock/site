@@ -6,7 +6,7 @@ gitter: 'https://gitter.im/freesewing/freesewing'
 
 api:
   core: 'https://api.freesewing.org'
-  data: 'http://data.freesewing.org'
+  data: 'https://data.freesewing.org'
 
 markdown: kramdown
 kramdown:

@@ -3,9 +3,9 @@ layout: cards
 title: Welcome to freesewing.org
 action: homepage
 permalink: /
+nocomments: true
 ---
-
-<div class="container">
+<div class="container" id="testmarked">
     <h2>New here?</h2>
     <div class="row visitor-onl">
         <div class="col-md-4 mb-3">
