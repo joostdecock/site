@@ -12,8 +12,7 @@
                 $.getJSON(api.data+'/activate/'+hash[0]+'/'+hash[1], function( data ) {
                     if(data.result == 'ok') {
                         $('#account-confirmation').load('/snippets/activation/success');
-                        window.localStorage.setItem("jwt", data.token);
-                        window.location.replace("/account");
+                        setTimeout(function(){window.location.replace("/welcome");}, 2000);
                     }
                 });
             }
@@ -22,7 +21,7 @@
                 $.getJSON(api.data+'/confirm/'+hash[0]+'/'+hash[1], function( data ) {
                     if(data.result == 'ok') {
                         $('#account-confirmation').load('/snippets/activation/success');
-                        window.location.replace("/account");
+                        setTimeout(function(){window.location.replace("/");}, 2000);
                     }
                 });
             }

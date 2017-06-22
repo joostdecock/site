@@ -61,7 +61,8 @@ var token = window.localStorage.getItem("jwt");
 
         // Bind other actions ///////////////////////////////////////
 
-        $('a.login, button.login').click(function(e){ e.preventDefault(); login() }); // Login links
+        $('a.login, button.login').click(function(e){ e.preventDefault(); login('login') }); // Login links
+        $('a.signup, button.signup').click(function(e){ e.preventDefault(); login('signup') }); // Signup links
    
         $('a.logout, btn.logout').click(function(e){ e.preventDefault(); logout() }); // Logout links
    
@@ -169,10 +170,10 @@ function logout() {
     window.location.replace("/");
 }
 
-function login() {
+function login(tab) {
     $('#modal').removeClass().addClass('shown thematic');
     $('.burger').addClass('hidden'); 
-    $('#modal-main').html("<div id='login' class='loginbox'></div>");
+    $('#modal-main').html("<div id='login' class='loginbox'></div><span id='login-conf' data-tab='"+tab+"'></span>");
     $('#login').load('/snippets/login/form');
     $.getScript( "/js/login.js");
 }
