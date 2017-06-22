@@ -185,7 +185,6 @@ function closeModal() {
 // Things to do after login
 function postLogin() { 
     user = JSON.parse(window.localStorage.getItem("fsu"));
-    console.log(window.localStorage.getItem("fsu"));
     logged_in = true;
     $('body').addClass('user logged-in'); 
     postAuth();
@@ -332,12 +331,7 @@ function saveComment() {
     }
 }
 
-function editComment() {
-    console.log('editing comment');
-}
-
 function replyToComment(id) {
-    console.log('Replying to comment '+id);
     $('#comment-parent').val(id);
     $('#comment-form').detach().addClass('mb-5').appendTo('#comment-'+id+' > div.comment-actions');
     $('#comment-label').html('<b>Add your reply</b>');
@@ -353,7 +347,6 @@ function replyToComment(id) {
 }
 
 function removeComment(id) {
-    console.log('removing comment '+id);
     $.ajax({
         url: api.data+'/comment/'+id,
         method: 'DELETE',
