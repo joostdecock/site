@@ -39,19 +39,17 @@
                 e.preventDefault();
                 $('#login-panel').addClass('move');
             });
-            $.getScript( "/js/vendor/toggles.min.js", function(){
-                $('#body-toggle').toggles({
-                    text: {
-                        off: 'No breasts',
-                        on: 'Breasts'
-                    },
-                    on: false,
-                    checkbox: $('#body'),
-                });
-                $('#settings').on('submit','#new-model-form', function(e) {
-                    e.preventDefault();
-                    createModel($('#new-model-form').serialize());
-                });
+            $('#body-toggle').toggles({
+                text: {
+                    off: 'No breasts',
+                    on: 'Breasts'
+                },
+                on: false,
+                checkbox: $('#body'),
+            });
+            $('#settings').on('submit','#new-model-form', function(e) {
+                e.preventDefault();
+                createModel($('#new-model-form').serialize());
             });
         });
 
@@ -113,59 +111,57 @@
             $('#email').attr('value', account.account.email);
             $('#username').attr('value', account.account.username);
             $('#picture-key').css('background-image', "url("+api.data+account.account.pictureSrc+")");
-            $.getScript( "/js/vendor/toggles.min.js", function(){
-                $('#units-toggle').toggles({
-                    text: {
-                        off: 'Metric (cm)',
-                        on: 'Imperial (inch)'
-                    },
-                    on: units_on,
-                    checkbox: $('#units'),
-                });
-                $('#theme-toggle').toggles({
-                    text: {
-                        off: 'Classic',
-                        on: 'Paperless'
-                    },
-                    on: theme_on,
-                    checkbox: $('#theme'),
-                });
-                // Bind submit handler to save settings button
-                $('#settings').on('submit','#settings-form', function(e) {
-                    e.preventDefault();
-                    saveAccountSettings();
-                });
-                // Bind click handler to picture button
-                $('#settings').on('click','#picture-btn', function(e) {
-                    $('#file').click();
-                });
-                // Bind onchange event to file input
-                $('#settings').on('change','#file', function() {
-                    var file = document.getElementById('file').files[0];
-                    if (file.type === "image/png" || file.type === "image/jpeg" || file.type === "image/gif") {
-                        if(file.size<2000000) {
-                            // Show selected image
-                            $('#picture-msg').html("Loaded "+file.name).removeClass().addClass('alert alert-success');
-                            var img = window.URL.createObjectURL(file);
-                            $('#picture-key').css('background-image', "url("+img+")");
-
-                            // Prep upload
-                            var reader  = new FileReader();
-                            reader.readAsDataURL(file); 
-                            reader.onloadend = function() {
-                                $('#picture').attr('value', reader.result);
-                            }
-
-                        } else {
-                            $('#picture-msg').html("Select a file below 2Mb").removeClass().addClass('alert alert-warning');
-                        }
-                    } else {
-                        $('#picture-msg').html("Select a JPG, PNG, or GIF").removeClass().addClass('alert alert-warning');
-                    }
-                });
-                // Enable button
-                $('#loader > button').removeClass('disabled');
+            $('#units-toggle').toggles({
+                text: {
+                    off: 'Metric (cm)',
+                    on: 'Imperial (inch)'
+                },
+                on: units_on,
+                checkbox: $('#units'),
             });
+            $('#theme-toggle').toggles({
+                text: {
+                    off: 'Classic',
+                    on: 'Paperless'
+                },
+                on: theme_on,
+                checkbox: $('#theme'),
+            });
+            // Bind submit handler to save settings button
+            $('#settings').on('submit','#settings-form', function(e) {
+                e.preventDefault();
+                saveAccountSettings();
+            });
+            // Bind click handler to picture button
+            $('#settings').on('click','#picture-btn', function(e) {
+                $('#file').click();
+            });
+            // Bind onchange event to file input
+            $('#settings').on('change','#file', function() {
+                var file = document.getElementById('file').files[0];
+                if (file.type === "image/png" || file.type === "image/jpeg" || file.type === "image/gif") {
+                    if(file.size<2000000) {
+                        // Show selected image
+                        $('#picture-msg').html("Loaded "+file.name).removeClass().addClass('alert alert-success');
+                        var img = window.URL.createObjectURL(file);
+                        $('#picture-key').css('background-image', "url("+img+")");
+
+                        // Prep upload
+                        var reader  = new FileReader();
+                        reader.readAsDataURL(file); 
+                        reader.onloadend = function() {
+                            $('#picture').attr('value', reader.result);
+                        }
+
+                    } else {
+                        $('#picture-msg').html("Select a file below 2Mb").removeClass().addClass('alert alert-warning');
+                    }
+                } else {
+                    $('#picture-msg').html("Select a JPG, PNG, or GIF").removeClass().addClass('alert alert-warning');
+                }
+            });
+            // Enable button
+            $('#loader > button').removeClass('disabled');
         });
     }
 
@@ -256,10 +252,8 @@
         $('h1.page-title').html(data.model.name);
         $('ul.breadcrumbs li:last-child').html(data.model.name);
         $('#model').load('/components/model/page', function(){
-            marked = $.getScript( "/js/vendor/marked.min.js", function(){
-                marked.setOptions({sanitize: true});
-                $('#notes-inner').html(marked(data.model.notes));
-            });
+            marked.setOptions({sanitize: true});
+            $('#notes-inner').html(marked(data.model.notes));
             $('#model-name').html(data.model.name);
             $('#model-picture').attr('src',api.data+data.model.pictureSrc);
             // Check whether we have any data at all
@@ -356,23 +350,21 @@
         else var shared_on = false;
         $('#settings').load('/components/draft/settings', function(){
             $('#name').attr('value', draft.name);
-            $.getScript( "/js/vendor/toggles.min.js", function(){
-                $('#shared-toggle').toggles({
-                    text: {
-                        off: 'No',
-                        on: 'Yes'
-                    },
-                    on: shared_on,
-                    checkbox: $('#shared'),
-                });
-                // Bind submit handler to save settings button
-                $('#settings').on('submit','#settings-form', function(e) {
-                    e.preventDefault();
-                    saveDraftSettings();
-                });
-                // Enable button
-                $('#loader > button').removeClass('disabled');
+            $('#shared-toggle').toggles({
+                text: {
+                    off: 'No',
+                    on: 'Yes'
+                },
+                on: shared_on,
+                checkbox: $('#shared'),
             });
+            // Bind submit handler to save settings button
+            $('#settings').on('submit','#settings-form', function(e) {
+                e.preventDefault();
+                saveDraftSettings();
+            });
+            // Enable button
+            $('#loader > button').removeClass('disabled');
         });
     }
 
@@ -394,59 +386,57 @@
         $('#settings').load('/components/model/settings', function(){
             $('#name').attr('value', model.model.name);
             $('#picture-key').css('background-image', "url("+api.data+model.model.pictureSrc+")");
-            $.getScript( "/js/vendor/toggles.min.js", function(){
-                $('#units-toggle').toggles({
-                    text: {
-                        off: 'Metric (cm)',
-                        on: 'Imperial (inch)'
-                    },
-                    on: units_on,
-                    checkbox: $('#units'),
-                });
-                $('#body-toggle').toggles({
-                    text: {
-                        off: 'No breasts',
-                        on: 'Breasts'
-                    },
-                    on: body_on,
-                    checkbox: $('#body'),
-                });
-                // Bind submit handler to save settings button
-                $('#settings').on('submit','#settings-form', function(e) {
-                    e.preventDefault();
-                    saveModelSettings();
-                });
-                // Bind click handler to picture button
-                $('#settings').on('click','#picture-btn', function(e) {
-                    $('#file').click();
-                });
-                // Bind onchange event to file input
-                $('#settings').on('change','#file', function() {
-                    var file = document.getElementById('file').files[0];
-                    if (file.type === "image/png" || file.type === "image/jpeg" || file.type === "image/gif") {
-                        if(file.size<2000000) {
-                            // Show selected image
-                            $('#picture-msg').html("Loaded "+file.name).removeClass().addClass('alert alert-success');
-                            var img = window.URL.createObjectURL(file);
-                            $('#picture-key').css('background-image', "url("+img+")");
-
-                            // Prep upload
-                            var reader  = new FileReader();
-                            reader.readAsDataURL(file); 
-                            reader.onloadend = function() {
-                                $('#picture').attr('value', reader.result);
-                            }
-
-                        } else {
-                            $('#picture-msg').html("Select a file below 2Mb").removeClass().addClass('alert alert-warning');
-                        }
-                    } else {
-                        $('#picture-msg').html("Select a JPG, PNG, or GIF").removeClass().addClass('alert alert-warning');
-                    }
-                });
-                // Enable button
-                $('#loader > button').removeClass('disabled');
+            $('#units-toggle').toggles({
+                text: {
+                    off: 'Metric (cm)',
+                    on: 'Imperial (inch)'
+                },
+                on: units_on,
+                checkbox: $('#units'),
             });
+            $('#body-toggle').toggles({
+                text: {
+                    off: 'No breasts',
+                    on: 'Breasts'
+                },
+                on: body_on,
+                checkbox: $('#body'),
+            });
+            // Bind submit handler to save settings button
+            $('#settings').on('submit','#settings-form', function(e) {
+                e.preventDefault();
+                saveModelSettings();
+            });
+            // Bind click handler to picture button
+            $('#settings').on('click','#picture-btn', function(e) {
+                $('#file').click();
+            });
+            // Bind onchange event to file input
+            $('#settings').on('change','#file', function() {
+                var file = document.getElementById('file').files[0];
+                if (file.type === "image/png" || file.type === "image/jpeg" || file.type === "image/gif") {
+                    if(file.size<2000000) {
+                        // Show selected image
+                        $('#picture-msg').html("Loaded "+file.name).removeClass().addClass('alert alert-success');
+                        var img = window.URL.createObjectURL(file);
+                        $('#picture-key').css('background-image', "url("+img+")");
+
+                        // Prep upload
+                        var reader  = new FileReader();
+                        reader.readAsDataURL(file); 
+                        reader.onloadend = function() {
+                            $('#picture').attr('value', reader.result);
+                        }
+
+                    } else {
+                        $('#picture-msg').html("Select a file below 2Mb").removeClass().addClass('alert alert-warning');
+                    }
+                } else {
+                    $('#picture-msg').html("Select a JPG, PNG, or GIF").removeClass().addClass('alert alert-warning');
+                }
+            });
+            // Enable button
+            $('#loader > button').removeClass('disabled');
         });
     }
 
@@ -726,100 +716,98 @@
         $.get('/json/freesewing.json', function( fsdata ) {
             var pattern = fsdata.patterns[fsdata.mapping.handleToPattern[patternhandle]];
             // Load slider JS
-            $.getScript( "/js/vendor/bootstrap-slider.min.js", function(){
-                $('#picklist').append("<form id='form'><div id='accordion' role='tablist' aria-multiselectable='true'></div></form>");
-                var form = {};
-                form.groups = {};
-                if(account.account.data.account.units === 'imperial') var ufactor = 25.4;
-                else var ufactor = 10;
-                $.each(pattern.options, function(option, o) {
-                    // Load defaults from for (if provided)
-                    if(defaults !== false && typeof defaults[option] !== 'undefined') {
-                        if(o.type === 'measure') o.default = (defaults[option] * ufactor);
-                        else o.default = defaults[option];
-                    }
-                    if(typeof form.groups[o.group] === 'undefined') form.groups[o.group] = {};
-                    form.groups[o.group][option] = o;
-                });
-                // Add hidden form fields
-                $('#form').append('<input type="hidden" name="pattern" value="'+fsdata.mapping.handleToPattern[patternhandle]+'"><input type="hidden" name="model" value="'+modelhandle+'">');
-                if (page.substr(0,9) === '/redraft/') $('#form').append('<input type="hidden" name="draft" value="'+page.split('/')[2]+'">');
-                // Load defaults for theme and langauge from fork (if provided)
-                if(defaults !== false && typeof defaults.theme !== 'undefined') dflt_theme = defaults.theme;
-                else dflt_theme = 'Basic';
-                if(defaults !== false && typeof defaults.lang !== 'undefined') dflt_lang = defaults.lang;
-                else dflt_lang = 'en';
-                // Sort form groups and prepend theme/language
-                var ordered = {
-                    'general': {
-                        'theme': {
-                            'default': dflt_theme,
-                            'description': 'Use the paperless theme when you want a pattern that does not require printing',
-                            'title': 'Theme',
-                            'type': 'chooseOne',
-                            'options': {
-                                'Basic': 'Classic',
-                                'Paperless': 'Paperless'
-                            }
-                        },
-                        'lang': {
-                            'default': dflt_lang,
-                            'description': 'This pattern is available in the following languages:',
-                            'title': 'Language',
-                            'type': 'chooseOne',
-                            'options': pattern.languages
+            $('#picklist').append("<form id='form'><div id='accordion' role='tablist' aria-multiselectable='true'></div></form>");
+            var form = {};
+            form.groups = {};
+            if(account.account.data.account.units === 'imperial') var ufactor = 25.4;
+            else var ufactor = 10;
+            $.each(pattern.options, function(option, o) {
+                // Load defaults from for (if provided)
+                if(defaults !== false && typeof defaults[option] !== 'undefined') {
+                    if(o.type === 'measure') o.default = (defaults[option] * ufactor);
+                    else o.default = defaults[option];
+                }
+                if(typeof form.groups[o.group] === 'undefined') form.groups[o.group] = {};
+                form.groups[o.group][option] = o;
+            });
+            // Add hidden form fields
+            $('#form').append('<input type="hidden" name="pattern" value="'+fsdata.mapping.handleToPattern[patternhandle]+'"><input type="hidden" name="model" value="'+modelhandle+'">');
+            if (page.substr(0,9) === '/redraft/') $('#form').append('<input type="hidden" name="draft" value="'+page.split('/')[2]+'">');
+            // Load defaults for theme and langauge from fork (if provided)
+            if(defaults !== false && typeof defaults.theme !== 'undefined') dflt_theme = defaults.theme;
+            else dflt_theme = 'Basic';
+            if(defaults !== false && typeof defaults.lang !== 'undefined') dflt_lang = defaults.lang;
+            else dflt_lang = 'en';
+            // Sort form groups and prepend theme/language
+            var ordered = {
+                'general': {
+                    'theme': {
+                        'default': dflt_theme,
+                        'description': 'Use the paperless theme when you want a pattern that does not require printing',
+                        'title': 'Theme',
+                        'type': 'chooseOne',
+                        'options': {
+                            'Basic': 'Classic',
+                            'Paperless': 'Paperless'
                         }
+                    },
+                    'lang': {
+                        'default': dflt_lang,
+                        'description': 'This pattern is available in the following languages:',
+                        'title': 'Language',
+                        'type': 'chooseOne',
+                        'options': pattern.languages
                     }
-                };
-                Object.keys(form.groups).sort().forEach(function(key) {
-                    var subordered = {};
-                    Object.keys(form.groups[key]).sort().forEach(function(subkey) {
-                        subordered[subkey] = form.groups[key][subkey];
-                    });
-                    ordered[key] = subordered;
+                }
+            };
+            Object.keys(form.groups).sort().forEach(function(key) {
+                var subordered = {};
+                Object.keys(form.groups[key]).sort().forEach(function(subkey) {
+                    subordered[subkey] = form.groups[key][subkey];
                 });
-                var show = ' '; // Keep everything collapsed
-                $.each(ordered, function(title, group) {
-                    $('#accordion').append("<div id='group-"+title+"' class='card'><div class='card-header' role='tab' id='heading-"+title+"'><h3 class='text-capitalize'><a data-toggle='collapse' data-parent='#accordion' href='#collapse-"+title+"' aria-expanded='false' aria-controls='collapse-"+title+"'>"+title+"</a></h3></div><div id='collapse-"+title+"' class='collapse "+show+"' role='tabpanel'aria-labeledby='heading-"+title+"' aria-expanded='false'><div class='card-block' id='content-"+title+"'></div></div>");
-                    $.each(group, function(name, option) {
-                        $('#content-'+title).append(renderOption(name, option, account.account.data.account.units));
-                    });
-                    show = '';
+                ordered[key] = subordered;
+            });
+            var show = ' '; // Keep everything collapsed
+            $.each(ordered, function(title, group) {
+                $('#accordion').append("<div id='group-"+title+"' class='card'><div class='card-header' role='tab' id='heading-"+title+"'><h3 class='text-capitalize'><a data-toggle='collapse' data-parent='#accordion' href='#collapse-"+title+"' aria-expanded='false' aria-controls='collapse-"+title+"'>"+title+"</a></h3></div><div id='collapse-"+title+"' class='collapse "+show+"' role='tabpanel'aria-labeledby='heading-"+title+"' aria-expanded='false'><div class='card-block' id='content-"+title+"'></div></div>");
+                $.each(group, function(name, option) {
+                    $('#content-'+title).append(renderOption(name, option, account.account.data.account.units));
                 });
-                $('#form').append('<p class="text-center mt-5"><input type="submit" class="btn btn-lg btn-primary" value="Draft pattern"></p>');
-                // Bind slide event to slider inputs
-                $('#accordion').on('change', 'input.slider', function(e) {
-                    $('#'+e.target.id+'-value').html(e.value.newValue);    
-                    if(e.value.newValue != $('#'+e.target.id+'-default').attr('data-default')) $('#'+e.target.id+'-default').removeClass('disabled invisible'); 
-                    else $('#'+e.target.id+'-default').addClass('disabled invisible');
-                });
-                // Bind change event to radio buttons
-                $('#accordion').on('change', 'input[type=radio]', function(e) {
-                    $('#'+$(this).attr('name')+'-value').html($(this).attr('data-label'));
-                    if($(this).val() != $('#'+e.target.id).attr('data-default')) $('#'+$('#'+e.target.id).attr('name')+'-default').removeClass('disabled invisible'); 
-                    else $('#'+$('#'+e.target.id).attr('name')+'-default').addClass('disabled invisible');
-                });
-                // Bind click event to reset buttons
-                $('#accordion').on('click', 'a.option-reset', function(e) {
-                    e.preventDefault();
-                    if($(this).attr('data-type') === 'radio') $('input:radio[name='+$(this).attr('data-option')+'][value='+$(this).attr('data-default')+']').click();
-                    else $('#'+$(this).attr('data-option')).slider('setValue',$(this).attr('data-default'), false, true); // See https://github.com/seiyria/bootstrap-slider
-                });
-                // Bind click event to help buttons
-                $('#accordion').on('click', 'a.option-help', function(e) {
-                    e.preventDefault();
-                    modalHelp(patternhandle, $(this).attr('data-option'));
-                });
-                // Bind submit handler to quick submit link
-                $('#picklist').on('click','#submit-link', function(e) {
-                    e.preventDefault();
-                    $('#form').submit();
-                });
-                // Bind submit handler to save settings button
-                $('#picklist').on('submit','#form', function(e) {
-                    e.preventDefault();
-                    draftPattern();
-                });
+                show = '';
+            });
+            $('#form').append('<p class="text-center mt-5"><input type="submit" class="btn btn-lg btn-primary" value="Draft pattern"></p>');
+            // Bind slide event to slider inputs
+            $('#accordion').on('change', 'input.slider', function(e) {
+                $('#'+e.target.id+'-value').html(e.value.newValue);    
+                if(e.value.newValue != $('#'+e.target.id+'-default').attr('data-default')) $('#'+e.target.id+'-default').removeClass('disabled invisible'); 
+                else $('#'+e.target.id+'-default').addClass('disabled invisible');
+            });
+            // Bind change event to radio buttons
+            $('#accordion').on('change', 'input[type=radio]', function(e) {
+                $('#'+$(this).attr('name')+'-value').html($(this).attr('data-label'));
+                if($(this).val() != $('#'+e.target.id).attr('data-default')) $('#'+$('#'+e.target.id).attr('name')+'-default').removeClass('disabled invisible'); 
+                else $('#'+$('#'+e.target.id).attr('name')+'-default').addClass('disabled invisible');
+            });
+            // Bind click event to reset buttons
+            $('#accordion').on('click', 'a.option-reset', function(e) {
+                e.preventDefault();
+                if($(this).attr('data-type') === 'radio') $('input:radio[name='+$(this).attr('data-option')+'][value='+$(this).attr('data-default')+']').click();
+                else $('#'+$(this).attr('data-option')).slider('setValue',$(this).attr('data-default'), false, true); // See https://github.com/seiyria/bootstrap-slider
+            });
+            // Bind click event to help buttons
+            $('#accordion').on('click', 'a.option-help', function(e) {
+                e.preventDefault();
+                modalHelp(patternhandle, $(this).attr('data-option'));
+            });
+            // Bind submit handler to quick submit link
+            $('#picklist').on('click','#submit-link', function(e) {
+                e.preventDefault();
+                $('#form').submit();
+            });
+            // Bind submit handler to save settings button
+            $('#picklist').on('submit','#form', function(e) {
+                e.preventDefault();
+                draftPattern();
             });
         });
     }
@@ -1147,10 +1135,8 @@
         $svg.removeAttr('width');
         $svg.removeAttr('height');
         $('#compared-wrapper').html(xmlToString(xmlDoc));
-        marked = $.getScript( "/js/vendor/marked.min.js", function(){
-            marked.setOptions({sanitize: true});
-            if(draft.notes !==  '') $('#notes-inner').html(marked(draft.notes));
-        });
+        marked.setOptions({sanitize: true});
+        if(draft.notes !==  '') $('#notes-inner').html(marked(draft.notes));
         $('#link-preview').attr('href',draft.dlroot+draft.handle+'.svg');
         $('#compared-preview').attr('href',draft.dlroot+draft.handle+'.compared.svg');
         $('.download-draft').each(function(index) {
@@ -1293,7 +1279,6 @@
             }
             // Model page ////////////////
             else if(page.substring(0,8) === '/models/' && page.split('/').length == 3) {
-                var marked;
                 var measurements;
                 var patterns;
                 // Rewritten URL, need to get the model handle from it
@@ -1455,35 +1440,33 @@
                 var account;
                 var map;
                 var models = [];
-                $.getScript( "/js/vendor/timeago.min.js", function(){
-                    loadAccount(function(data){
-                        account = data;
-                        // Load site data
-                        $.get('/json/freesewing.json', function( fsdata ) {
-                            // index models by id
-                            $.each(account.models, function(index, model){
-                                models[model.id] = model;
-                            });
-                            $.each(account.drafts, function(index, draft){
-                                var pname = fsdata.mapping.patternToHandle[draft.pattern];
-                                var row = '<tr id="row-'+draft.handle+'">';
-                                row += '<td class="handle"><a href="/drafts/'+draft.handle+'">'+draft.handle+'</a></td>';
-                                row += '<td class="pattern text-capitalize"><a href="/patterns/'+pname+'">'+pname+'</a></td>';
-                                row += '<td class="model"><a href="/models/'+models[draft.model].handle+'">'+models[draft.model].name+'</a></td>';
-                                row += '<td class="name"><a href="/drafts/'+draft.handle+'">'+draft.name+'</a></td>';
-                                row += '<td class="date timeago" datetime="'+draft.created+'"></td>';
-                                row += '<td class="trash icon"><a href="#" data-draft="'+draft.id+'" class="delete-draft" title="Delete draft '+draft.handle+'"><i class="fa fa-trash" aria-hidden="true"></i></a></td>';
-                                row += '</tr>';
-                                $('#draftlist').prepend(row);
-                            });
-                            timeago().render($('.timeago'));
-                            $('#draft-row').remove();
-                            $('#spinner').remove();
-                            // Bind click handler to notes button
-                            $('#drafts').on('click','a.delete-draft',function(e) {
-                                e.preventDefault();
-                                deleteDraft(account.drafts[$(this).attr('data-draft')]);
-                            });
+                loadAccount(function(data){
+                    account = data;
+                    // Load site data
+                    $.get('/json/freesewing.json', function( fsdata ) {
+                        // index models by id
+                        $.each(account.models, function(index, model){
+                            models[model.id] = model;
+                        });
+                        $.each(account.drafts, function(index, draft){
+                            var pname = fsdata.mapping.patternToHandle[draft.pattern];
+                            var row = '<tr id="row-'+draft.handle+'">';
+                            row += '<td class="handle"><a href="/drafts/'+draft.handle+'">'+draft.handle+'</a></td>';
+                            row += '<td class="pattern text-capitalize"><a href="/patterns/'+pname+'">'+pname+'</a></td>';
+                            row += '<td class="model"><a href="/models/'+models[draft.model].handle+'">'+models[draft.model].name+'</a></td>';
+                            row += '<td class="name"><a href="/drafts/'+draft.handle+'">'+draft.name+'</a></td>';
+                            row += '<td class="date timeago" datetime="'+draft.created+'"></td>';
+                            row += '<td class="trash icon"><a href="#" data-draft="'+draft.id+'" class="delete-draft" title="Delete draft '+draft.handle+'"><i class="fa fa-trash" aria-hidden="true"></i></a></td>';
+                            row += '</tr>';
+                            $('#draftlist').prepend(row);
+                        });
+                        timeago().render($('.timeago'));
+                        $('#draft-row').remove();
+                        $('#spinner').remove();
+                        // Bind click handler to notes button
+                        $('#drafts').on('click','a.delete-draft',function(e) {
+                            e.preventDefault();
+                            deleteDraft(account.drafts[$(this).attr('data-draft')]);
                         });
                     });
                 });
