@@ -13,7 +13,7 @@ to confirm the removal of your account.</p>
 <span class="input-group-addon td-key">Confirm</span>
 <input class="form-number form-control" id="confirm" name="confirm" value="" type="text" placeholder="Type delete here" />
 </div>
-<p><a class="poh btn btn-danger btn-block btn-lg mt-5 disabled" id="nuke"><i class="fa fa-trash-o" aria-hidden="true"> Delete my account</a></p>
+<p><a class="poh btn btn-danger btn-block btn-lg mt-5 disabled" id="nuke"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete my account</a></p>
 </div>
 </div>
 </div>
