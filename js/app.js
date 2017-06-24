@@ -828,7 +828,12 @@
 
     function triggerOptionTargets(triggers) {
         $.each(triggers, function(index, trigger) {
-            if($('input[name="'+trigger.trigger+'"]:checked').val() == trigger.onlyOn) {
+            var inArray = false;
+            var val = $('input[name="'+trigger.trigger+'"]:checked').val();
+            if(typeof trigger.onlyOn === 'object') {
+                if (trigger.onlyOn.indexOf(parseInt(val)) != -1) var inArray = true;
+            }
+            if(val == trigger.onlyOn || inArray) {
                 $('#option-wrapper-'+trigger.target).removeClass('hidden');
             } else {
                 $('#option-wrapper-'+trigger.target).addClass('hidden');

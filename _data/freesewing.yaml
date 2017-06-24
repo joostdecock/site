@@ -101,13 +101,13 @@ patterns:
                 max: 80
                 default: 40
             stretchFactor:
-                title: 'Stretch factor'
-                description: 'Determines the horizontal negative ease. 100% means no negative ease, whereas 90% (the default) means 10% negative ease.'
+                title: Stretch
+                description: 'Determines the horizontal negative ease.'
                 group: fit
                 type: percent
-                min: 70
-                max: 100
-                default: 90
+                min: 0
+                max: 30
+                default: 10
         optiongroups:
             fit:
                 - chestEase
@@ -554,13 +554,6 @@ patterns:
             wristCircumference: 190
             shoulderToElbow: 410
         options:
-            buttonPlacketStyle:
-                title: 'Button placket style'
-                description: 'Style of the button placket'
-                group: plackets
-                type: chooseOne
-                options: null
-                default: 1
             buttonPlacketType:
                 title: 'Button placket type'
                 description: 'Type of the button placket'
@@ -568,33 +561,12 @@ patterns:
                 type: chooseOne
                 options: null
                 default: 1
-            buttonholePlacketStyle:
-                title: 'Buttonhole placket style'
-                description: 'Style of the buttonhole placket'
-                group: plackets
-                type: chooseOne
-                options: null
-                default: 2
             buttonholePlacketType:
                 title: 'Buttonhole placket type'
                 description: 'Type of the buttonhole placket'
                 group: plackets
                 type: chooseOne
                 options: null
-                default: 1
-            cuffButtonRows:
-                title: 'Cuff button rows'
-                description: 'Whether to draft a single or double row of cuff buttons'
-                group: cuffs
-                type: chooseOne
-                options: null
-                default: 1
-            barrelcuffNarrowButton:
-                title: 'Cuff narrow button'
-                description: 'Whether to include a button to tie the cuffs more narrow'
-                group: cuffs
-                type: chooseOne
-                options: ['No narrow button', 'Include narrow button']
                 default: 1
             cuffStyle:
                 title: 'Cuff style'
@@ -663,14 +635,6 @@ patterns:
                 min: 10
                 max: 30
                 default: 20
-            buttonholePlacketFoldWidth:
-                title: 'Buttonhole placket fold width'
-                description: 'Width of the buttonhole placket fold'
-                group: plackets
-                type: measure
-                min: 3
-                max: 10
-                default: 6.35
             buttonholePlacketWidth:
                 title: 'Buttonhole placket width'
                 description: 'Width of the butonhole placket'
@@ -687,6 +651,14 @@ patterns:
                 min: 60
                 max: 240
                 default: 120
+            collarAngle:
+                title: 'Collar angle'
+                description: 'The angle of the collar tips'
+                group: collar
+                type: measure
+                min: 60
+                max: 130
+                default: 85
             collarBend:
                 title: 'Collar bend'
                 description: 'The bend of the collar'
@@ -703,14 +675,6 @@ patterns:
                 min: 0
                 max: 40
                 default: 15
-            collarAngle:
-                title: 'Collar flare'
-                description: 'The angle of the collar tips'
-                group: collar
-                type: measure
-                min: 60
-                max: 130
-                default: 85
             collarFlare:
                 title: 'Collar flare'
                 description: 'The flare of the collar tips'
@@ -799,14 +763,6 @@ patterns:
                 min: 0
                 max: 50
                 default: 30
-            hemCurve:
-                title: 'Hem curve'
-                description: 'The height of the curve on a curved hem'
-                group: style
-                type: measure
-                min: 40
-                max: 120
-                default: 80
             hipFlare:
                 title: 'Hip flare'
                 description: 'The amount to widen the shirt below the waist'
@@ -871,6 +827,62 @@ patterns:
                 min: 0
                 max: 10
                 default: 5
+            buttonPlacketStyle:
+                title: 'Button placket style'
+                description: 'Style of the button placket'
+                group: plackets
+                type: chooseOne
+                options: null
+                default: 1
+                dependsOn: buttonPlacketType
+                onlyOn: 1
+            buttonholePlacketStyle:
+                title: 'Buttonhole placket style'
+                description: 'Style of the buttonhole placket'
+                group: plackets
+                type: chooseOne
+                options: null
+                default: 2
+                dependsOn: buttonholePlacketType
+                onlyOn: 1
+            cuffButtonRows:
+                title: 'Cuff button rows'
+                description: 'Whether to draft a single or double row of cuff buttons. This option is only relevant for barrel cuffs'
+                group: cuffs
+                type: chooseOne
+                options: null
+                default: 1
+                dependsOn: cuffStyle
+                onlyOn: [1, 2, 3]
+            barrelcuffNarrowButton:
+                title: 'Cuff narrow button'
+                description: 'Whether to include a button to tie the cuffs more narrow. This option is only relevant for barrel cuffs'
+                group: cuffs
+                type: chooseOne
+                options: ['No narrow button', 'Include narrow button']
+                default: 1
+                dependsOn: cuffStyle
+                onlyOn: [1, 2, 3]
+            buttonholePlacketFoldWidth:
+                title: 'Buttonhole placket fold width'
+                description: 'Width of the buttonhole placket fold'
+                group: plackets
+                type: measure
+                min: 3
+                max: 10
+                default: 6.35
+                dependsOn: buttonholePlacketStyle
+                onlyOn: 1
+            hemCurve:
+                title: 'Hem curve'
+                description: 'The height of the curve on a curved hem'
+                group: style
+                type: measure
+                min: 40
+                max: 120
+                default: 80
+                dependsOn: hemStyle
+                onlyOn: [2, 3]
         optiongroups:
             advanced:
                 - armholeDepthFactor
