@@ -377,15 +377,6 @@
                 "naturalWaistToHips": 160
             },
             "options": {
-                "backOpening": {
-                    "title": "Back opening",
-                    "description": "Opening at the center back closure.",
-                    "group": "style",
-                    "type": "measure",
-                    "min": 0,
-                    "max": 80,
-                    "default": 30
-                },
                 "waistReduction": {
                     "title": "Waist reduction",
                     "description": "The amount by which you want the corset to pinch your waist.",
@@ -395,23 +386,25 @@
                     "max": 125,
                     "default": 80
                 },
-                "frontRise": {
-                    "title": "Front rise",
-                    "description": "Rise of the front panels at center front, between your breasts. Negative values will lower them.",
-                    "group": "style",
-                    "type": "measure",
-                    "min": -50,
-                    "max": 50,
-                    "default": 25
+                "panels": {
+                    "title": "Number of panels",
+                    "description": "The number of panels to draft. More panels are better to fit a curvier model.",
+                    "group": "fit",
+                    "type": "chooseOne",
+                    "options": {
+                        "11": 11,
+                        "13": 13
+                    },
+                    "default": 13
                 },
-                "frontDrop": {
-                    "title": "Front drop",
-                    "description": "How much the front panels lower from your hips towards your center front.",
+                "backOpening": {
+                    "title": "Back opening",
+                    "description": "Opening at the center back closure.",
                     "group": "style",
                     "type": "measure",
-                    "min": -30,
-                    "max": 50,
-                    "default": 25
+                    "min": 0,
+                    "max": 80,
+                    "default": 30
                 },
                 "backRise": {
                     "title": "Back rise",
@@ -431,6 +424,24 @@
                     "max": 30,
                     "default": 0
                 },
+                "frontRise": {
+                    "title": "Front rise",
+                    "description": "Rise of the front panels at center front, between your breasts. Negative values will lower them.",
+                    "group": "style",
+                    "type": "measure",
+                    "min": -50,
+                    "max": 50,
+                    "default": 25
+                },
+                "frontDrop": {
+                    "title": "Front drop",
+                    "description": "How much the front panels lower from your hips towards your center front.",
+                    "group": "style",
+                    "type": "measure",
+                    "min": -30,
+                    "max": 50,
+                    "default": 25
+                },
                 "hipRise": {
                     "title": "Hip rise",
                     "description": "How much the side panels rise on your hips.",
@@ -439,31 +450,20 @@
                     "min": 0,
                     "max": 60,
                     "default": 30
-                },
-                "panels": {
-                    "title": "Number of panels",
-                    "description": "The number of panels to draft. More panels are better to fit a curvier model.",
-                    "group": "style",
-                    "type": "chooseOne",
-                    "options": {
-                        "11": 11,
-                        "13": 13
-                    },
-                    "default": 13
                 }
             },
             "optiongroups": {
-                "style": [
-                    "backOpening",
-                    "frontRise",
-                    "frontDrop",
-                    "backRise",
-                    "backDrop",
-                    "hipRise",
+                "fit": [
+                    "waistReduction",
                     "panels"
                 ],
-                "fit": [
-                    "waistReduction"
+                "style": [
+                    "backOpening",
+                    "backRise",
+                    "backDrop",
+                    "frontRise",
+                    "frontDrop",
+                    "hipRise"
                 ]
             }
         },
@@ -520,7 +520,7 @@
                 "chestEase": {
                     "title": "Chest ease",
                     "description": "The amount of ease at your chest.",
-                    "group": "fit",
+                    "group": "ease",
                     "type": "measure",
                     "min": -40,
                     "max": 160,
@@ -529,7 +529,7 @@
                 "bicepsEase": {
                     "title": "Biceps ease",
                     "description": "The amount of ease at your upper arm.",
-                    "group": "fit",
+                    "group": "ease",
                     "type": "measure",
                     "min": 0,
                     "max": 80,
@@ -538,7 +538,7 @@
                 "cuffEase": {
                     "title": "Cuff ease",
                     "description": "The amount of ease at your wrist.",
-                    "group": "fit",
+                    "group": "ease",
                     "type": "measure",
                     "min": 0,
                     "max": 100,
@@ -573,10 +573,12 @@
                 }
             },
             "optiongroups": {
-                "fit": [
+                "ease": [
                     "chestEase",
                     "bicepsEase",
-                    "cuffEase",
+                    "cuffEase"
+                ],
+                "fit": [
                     "lengthBonus",
                     "sleeveLengthBonus",
                     "ribbingStretchFactor"
