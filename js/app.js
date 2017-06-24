@@ -738,7 +738,7 @@
             else dflt_theme = 'Basic';
             if(defaults !== false && typeof defaults.lang !== 'undefined') dflt_lang = defaults.lang;
             else dflt_lang = 'en';
-            // Sort form groups and prepend theme/language
+            // Prepend theme/language
             var ordered = {
                 'general': {
                     'theme': {
@@ -760,9 +760,9 @@
                     }
                 }
             };
-            Object.keys(form.groups).sort().forEach(function(key) {
+            Object.keys(form.groups).forEach(function(key) {
                 var subordered = {};
-                Object.keys(form.groups[key]).sort().forEach(function(subkey) {
+                Object.keys(form.groups[key]).forEach(function(subkey) {
                     subordered[subkey] = form.groups[key][subkey];
                 });
                 ordered[key] = subordered;

@@ -38,29 +38,6 @@
                 "hipsCircumference": 950
             },
             "options": {
-                "backlineBend": {
-                    "title": "Back armhole shape",
-                    "description": "Determines the shape/bend of the back of the armholes.",
-                    "group": "style",
-                    "type": "percent",
-                    "default": 30
-                },
-                "necklineBend": {
-                    "title": "Neckline shape",
-                    "description": "Determines the shape/bend of the neckline at the front.",
-                    "group": "style",
-                    "type": "percent",
-                    "default": 100
-                },
-                "armholeDrop": {
-                    "title": "Armhole drop",
-                    "description": "Lower the armhole by this amount. Negative values will raise it.",
-                    "group": "style",
-                    "type": "measure",
-                    "min": -20,
-                    "max": 120,
-                    "default": 30
-                },
                 "chestEase": {
                     "title": "Chest ease",
                     "description": "The amount of ease at your chest",
@@ -79,14 +56,21 @@
                     "max": 160,
                     "default": 60
                 },
-                "lengthBonus": {
-                    "title": "Length bonus",
-                    "description": "Lengthen the top. Negative values will shorten it.",
+                "stretchFactor": {
+                    "title": "Stretch",
+                    "description": "Determines the horizontal negative ease.",
+                    "group": "fit",
+                    "type": "percent",
+                    "min": 0,
+                    "max": 30,
+                    "default": 0
+                },
+                "necklineBend": {
+                    "title": "Neckline shape",
+                    "description": "Determines the shape/bend of the neckline at the front.",
                     "group": "style",
-                    "type": "measure",
-                    "min": -60,
-                    "max": 200,
-                    "default": 60
+                    "type": "percent",
+                    "default": 100
                 },
                 "necklineDrop": {
                     "title": "Neckline drop",
@@ -97,14 +81,21 @@
                     "max": 200,
                     "default": 120
                 },
-                "shoulderStrapPlacement": {
-                    "title": "Shoulderstrap placement",
-                    "description": "Determines whether the shoulder strap is placed closer to the neck (lower numbers) or the shoulder (higher numbers).",
+                "backlineBend": {
+                    "title": "Back armhole shape",
+                    "description": "Determines the shape/bend of the back of the armholes.",
                     "group": "style",
                     "type": "percent",
-                    "min": 0,
-                    "max": 100,
-                    "default": 45
+                    "default": 30
+                },
+                "armholeDrop": {
+                    "title": "Armhole drop",
+                    "description": "Lower the armhole by this amount. Negative values will raise it.",
+                    "group": "style",
+                    "type": "measure",
+                    "min": -20,
+                    "max": 120,
+                    "default": 30
                 },
                 "shoulderStrapWidth": {
                     "title": "Shoulderstrap width",
@@ -115,14 +106,23 @@
                     "max": 80,
                     "default": 40
                 },
-                "stretchFactor": {
-                    "title": "Stretch",
-                    "description": "Determines the horizontal negative ease.",
-                    "group": "fit",
+                "shoulderStrapPlacement": {
+                    "title": "Shoulderstrap placement",
+                    "description": "Determines whether the shoulder strap is placed closer to the neck (lower numbers) or the shoulder (higher numbers).",
+                    "group": "style",
                     "type": "percent",
                     "min": 0,
-                    "max": 30,
-                    "default": 10
+                    "max": 100,
+                    "default": 45
+                },
+                "lengthBonus": {
+                    "title": "Length bonus",
+                    "description": "Lengthen the top. Negative values will shorten it.",
+                    "group": "style",
+                    "type": "measure",
+                    "min": -60,
+                    "max": 200,
+                    "default": 60
                 }
             },
             "optiongroups": {
@@ -132,13 +132,13 @@
                     "stretchFactor"
                 ],
                 "style": [
-                    "armholeDrop",
-                    "backlineBend",
-                    "lengthBonus",
                     "necklineBend",
                     "necklineDrop",
+                    "backlineBend",
+                    "armholeDrop",
+                    "shoulderStrapWidth",
                     "shoulderStrapPlacement",
-                    "shoulderStrapWidth"
+                    "lengthBonus"
                 ]
             }
         },
@@ -182,15 +182,6 @@
                 "wristCircumference": 190
             },
             "options": {
-                "armholeDepthFactor": {
-                    "title": "Armhole depth factor",
-                    "description": "A factor that influences the depth of the armhole",
-                    "group": "fit",
-                    "type": "percent",
-                    "min": 50,
-                    "max": 65,
-                    "default": 60
-                },
                 "chestEase": {
                     "title": "Chest ease",
                     "description": "The amount of ease at your chest",
@@ -199,15 +190,6 @@
                     "min": -40,
                     "max": 160,
                     "default": 30
-                },
-                "cuffEase": {
-                    "title": "Cuff ease",
-                    "description": "The amount of ease at your wrist",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 0,
-                    "max": 100,
-                    "default": 45
                 },
                 "lengthBonus": {
                     "title": "Length bonus",
@@ -227,10 +209,28 @@
                     "max": 80,
                     "default": 0
                 },
+                "cuffEase": {
+                    "title": "Cuff ease",
+                    "description": "The amount of ease at your wrist",
+                    "group": "fit",
+                    "type": "measure",
+                    "min": 0,
+                    "max": 100,
+                    "default": 45
+                },
+                "armholeDepthFactor": {
+                    "title": "Armhole depth factor",
+                    "description": "A factor that influences the depth of the armhole",
+                    "group": "advanced",
+                    "type": "percent",
+                    "min": 50,
+                    "max": 65,
+                    "default": 60
+                },
                 "sleevecapHeightFactor": {
                     "title": "Sleevecap height factor",
                     "description": "A factor that influences the height of the sleevecap",
-                    "group": "fit",
+                    "group": "advanced",
                     "type": "percent",
                     "min": 35,
                     "max": 75,
@@ -239,11 +239,13 @@
             },
             "optiongroups": {
                 "fit": [
-                    "armholeDepthFactor",
                     "chestEase",
-                    "cuffEase",
                     "lengthBonus",
                     "sleeveLengthBonus",
+                    "cuffEase"
+                ],
+                "advanced": [
+                    "armholeDepthFactor",
                     "sleevecapHeightFactor"
                 ]
             }
@@ -280,14 +282,14 @@
                 "crossseamLength": 680
             },
             "options": {
-                "backRise": {
-                    "title": "Back rise",
-                    "description": "Percentage to raise the waist extra at the back.",
+                "horizontalStretchFactor": {
+                    "title": "Stretch",
+                    "description": "The amount of negative ease.",
                     "group": "fit",
                     "type": "percent",
-                    "min": 0,
-                    "max": 6,
-                    "default": 3
+                    "min": 5,
+                    "max": 25,
+                    "default": 15
                 },
                 "bulge": {
                     "title": "Bulge",
@@ -297,15 +299,6 @@
                     "min": 0,
                     "max": 40,
                     "default": 25
-                },
-                "elasticWidth": {
-                    "title": "Elastic width",
-                    "description": "Width of the elastic band you intend to use.",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 10,
-                    "max": 70,
-                    "default": 35
                 },
                 "legBonus": {
                     "title": "Leg length bonus",
@@ -325,24 +318,33 @@
                     "max": 50,
                     "default": 20
                 },
-                "horizontalStretchFactor": {
-                    "title": "Stretch",
-                    "description": "The amount of negative ease.",
+                "backRise": {
+                    "title": "Back rise",
+                    "description": "Percentage to raise the waist extra at the back.",
                     "group": "fit",
                     "type": "percent",
-                    "min": 5,
-                    "max": 25,
-                    "default": 15
+                    "min": 0,
+                    "max": 6,
+                    "default": 3
+                },
+                "elasticWidth": {
+                    "title": "Elastic width",
+                    "description": "Width of the elastic band you intend to use.",
+                    "group": "fit",
+                    "type": "measure",
+                    "min": 10,
+                    "max": 70,
+                    "default": 35
                 }
             },
             "optiongroups": {
                 "fit": [
-                    "backRise",
-                    "bulge",
-                    "elasticWidth",
                     "horizontalStretchFactor",
+                    "bulge",
                     "legBonus",
-                    "rise"
+                    "rise",
+                    "backRise",
+                    "elasticWidth"
                 ]
             }
         },
@@ -379,26 +381,6 @@
                 "naturalWaistToHips": 160
             },
             "options": {
-                "panels": {
-                    "title": "Number of panels",
-                    "description": "The number of panels to draft. More panels are better to fit a curvier model.",
-                    "group": "style",
-                    "type": "chooseOne",
-                    "options": {
-                        "11": 11,
-                        "13": 13
-                    },
-                    "default": 13
-                },
-                "backDrop": {
-                    "title": "Back drop",
-                    "description": "How much the back panels lower from your hips towards your center back. Negative values will raise the back.",
-                    "group": "style",
-                    "type": "measure",
-                    "min": -30,
-                    "max": 30,
-                    "default": 0
-                },
                 "backOpening": {
                     "title": "Back opening",
                     "description": "Opening at the center back closure.",
@@ -406,42 +388,6 @@
                     "type": "measure",
                     "min": 0,
                     "max": 80,
-                    "default": 30
-                },
-                "backRise": {
-                    "title": "Back rise",
-                    "description": "How much the back panels rise from your arms to your center back.",
-                    "group": "style",
-                    "type": "measure",
-                    "min": -30,
-                    "max": 120,
-                    "default": 0
-                },
-                "frontDrop": {
-                    "title": "Front drop",
-                    "description": "How much the front panels lower from your hips towards your center front.",
-                    "group": "style",
-                    "type": "measure",
-                    "min": -30,
-                    "max": 50,
-                    "default": 25
-                },
-                "frontRise": {
-                    "title": "Front rise",
-                    "description": "Rise of the front panels at center front, between your breasts. Negative values will lower them.",
-                    "group": "style",
-                    "type": "measure",
-                    "min": -50,
-                    "max": 50,
-                    "default": 25
-                },
-                "hipRise": {
-                    "title": "Hip rise",
-                    "description": "How much the side panels rise on your hips.",
-                    "group": "style",
-                    "type": "measure",
-                    "min": 0,
-                    "max": 60,
                     "default": 30
                 },
                 "waistReduction": {
@@ -452,20 +398,76 @@
                     "min": 0,
                     "max": 125,
                     "default": 80
+                },
+                "frontRise": {
+                    "title": "Front rise",
+                    "description": "Rise of the front panels at center front, between your breasts. Negative values will lower them.",
+                    "group": "style",
+                    "type": "measure",
+                    "min": -50,
+                    "max": 50,
+                    "default": 25
+                },
+                "frontDrop": {
+                    "title": "Front drop",
+                    "description": "How much the front panels lower from your hips towards your center front.",
+                    "group": "style",
+                    "type": "measure",
+                    "min": -30,
+                    "max": 50,
+                    "default": 25
+                },
+                "backRise": {
+                    "title": "Back rise",
+                    "description": "How much the back panels rise from your arms to your center back.",
+                    "group": "style",
+                    "type": "measure",
+                    "min": -30,
+                    "max": 120,
+                    "default": 0
+                },
+                "backDrop": {
+                    "title": "Back drop",
+                    "description": "How much the back panels lower from your hips towards your center back. Negative values will raise the back.",
+                    "group": "style",
+                    "type": "measure",
+                    "min": -30,
+                    "max": 30,
+                    "default": 0
+                },
+                "hipRise": {
+                    "title": "Hip rise",
+                    "description": "How much the side panels rise on your hips.",
+                    "group": "style",
+                    "type": "measure",
+                    "min": 0,
+                    "max": 60,
+                    "default": 30
+                },
+                "panels": {
+                    "title": "Number of panels",
+                    "description": "The number of panels to draft. More panels are better to fit a curvier model.",
+                    "group": "style",
+                    "type": "chooseOne",
+                    "options": {
+                        "11": 11,
+                        "13": 13
+                    },
+                    "default": 13
                 }
             },
             "optiongroups": {
-                "fit": [
-                    "waistReduction"
-                ],
                 "style": [
-                    "backDrop",
                     "backOpening",
-                    "backRise",
-                    "frontDrop",
                     "frontRise",
+                    "frontDrop",
+                    "backRise",
+                    "backDrop",
                     "hipRise",
                     "panels"
+                ],
+                "fit": [
+                    "waistReduction"
                 ]
             }
         },
@@ -522,15 +524,6 @@
                 "headCircumference": 590
             },
             "options": {
-                "bicepsEase": {
-                    "title": "Biceps ease",
-                    "description": "The amount of ease at your upper arm.",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 0,
-                    "max": 80,
-                    "default": 40
-                },
                 "chestEase": {
                     "title": "Chest ease",
                     "description": "The amount of ease at your chest.",
@@ -539,6 +532,15 @@
                     "min": -40,
                     "max": 160,
                     "default": 60
+                },
+                "bicepsEase": {
+                    "title": "Biceps ease",
+                    "description": "The amount of ease at your upper arm.",
+                    "group": "fit",
+                    "type": "measure",
+                    "min": 0,
+                    "max": 80,
+                    "default": 40
                 },
                 "cuffEase": {
                     "title": "Cuff ease",
@@ -558,15 +560,6 @@
                     "max": 180,
                     "default": 70
                 },
-                "ribbingStretchFactor": {
-                    "title": "Ribbing stretch factor",
-                    "description": "The amount of negative ease for the cuffs and hem ribbing. 100% means no negative ease, 90% means 10% negative ease.",
-                    "group": "fit",
-                    "type": "percent",
-                    "min": 70,
-                    "max": 100,
-                    "default": 90
-                },
                 "sleeveLengthBonus": {
                     "title": "Sleeve length bonus",
                     "description": "Amount to lengthen the sleeves.",
@@ -575,16 +568,25 @@
                     "min": -40,
                     "max": 80,
                     "default": 0
+                },
+                "ribbingStretchFactor": {
+                    "title": "Ribbing stretch factor",
+                    "description": "The amount of negative ease for the cuffs and hem ribbing. 100% means no negative ease, 90% means 10% negative ease.",
+                    "group": "fit",
+                    "type": "percent",
+                    "min": 70,
+                    "max": 100,
+                    "default": 90
                 }
             },
             "optiongroups": {
                 "fit": [
-                    "bicepsEase",
                     "chestEase",
+                    "bicepsEase",
                     "cuffEase",
                     "lengthBonus",
-                    "ribbingStretchFactor",
-                    "sleeveLengthBonus"
+                    "sleeveLengthBonus",
+                    "ribbingStretchFactor"
                 ]
             }
         },
@@ -646,53 +648,104 @@
                 "shoulderToElbow": 410
             },
             "options": {
-                "buttonPlacketType": {
-                    "title": "Button placket type",
-                    "description": "Type of the button placket",
-                    "group": "plackets",
-                    "type": "chooseOne",
-                    "options": {
-                        "1": "Cut-on",
-                        "2": "Separate"
-                    },
-                    "default": 1
+                "chestEase": {
+                    "title": "Chest ease",
+                    "description": "The amount of ease at the chest",
+                    "group": "ease",
+                    "type": "measure",
+                    "min": 60,
+                    "max": 240,
+                    "default": 120
                 },
-                "buttonholePlacketType": {
-                    "title": "Buttonhole placket type",
-                    "description": "Type of the buttonhole placket",
-                    "group": "plackets",
-                    "type": "chooseOne",
-                    "options": {
-                        "1": "Cut-on",
-                        "2": "Separate"
-                    },
-                    "default": 1
+                "waistEase": {
+                    "title": "Waist ease",
+                    "description": "The amount of ease at the natural waist",
+                    "group": "ease",
+                    "type": "measure",
+                    "min": 80,
+                    "max": 280,
+                    "default": 160
                 },
-                "cuffStyle": {
-                    "title": "Cuff style",
-                    "description": "The style of the cuffs",
-                    "group": "cuffs",
-                    "type": "chooseOne",
-                    "options": {
-                        "1": "Rounded barrel cuff",
-                        "2": "Angled barrel cuff",
-                        "3": "Straight barrel cuff",
-                        "4": "Rounded French cuff",
-                        "5": "Angled French cuff",
-                        "6": "Straight French cuff"
-                    },
-                    "default": 2
+                "hipsEase": {
+                    "title": "Hips ease",
+                    "description": "The amount of ease at the hips",
+                    "group": "ease",
+                    "type": "measure",
+                    "min": 8,
+                    "max": 240,
+                    "default": 120
                 },
-                "extraTopButton": {
-                    "title": "Extra top button",
-                    "description": "Whether or not to include an extra top button on the front closure",
-                    "group": "plackets",
-                    "type": "chooseOne",
-                    "options": [
-                        "No extra top button",
-                        "Extra top button"
-                    ],
-                    "default": 1
+                "bicepsEase": {
+                    "title": "Biceps ease",
+                    "description": "The amount of ease at your upper arm",
+                    "group": "ease",
+                    "type": "measure",
+                    "min": 0,
+                    "max": 120,
+                    "default": 30
+                },
+                "collarEase": {
+                    "title": "Collar ease",
+                    "description": "The amount of ease around your neck with a closed collar",
+                    "group": "ease",
+                    "type": "measure",
+                    "min": 0,
+                    "max": 40,
+                    "default": 15
+                },
+                "cuffEase": {
+                    "title": "Cuff ease",
+                    "description": "The amount of ease around your wrist",
+                    "group": "ease",
+                    "type": "measure",
+                    "min": 20,
+                    "max": 80,
+                    "default": 35
+                },
+                "lengthBonus": {
+                    "title": "Extra length",
+                    "description": "The amount to lengthen or shorten the shirt",
+                    "group": "fit",
+                    "type": "measure",
+                    "min": -50,
+                    "max": 250,
+                    "default": 150
+                },
+                "sleeveLengthBonus": {
+                    "title": "Extra sleeve length",
+                    "description": "The amount to lengthen the sleeves",
+                    "group": "fit",
+                    "type": "measure",
+                    "min": 0,
+                    "max": 50,
+                    "default": 30
+                },
+                "yokeDart": {
+                    "title": "Yoke dart",
+                    "description": "Whether to include a dart at the sides of the yoke to fit a rounder back",
+                    "group": "fit",
+                    "type": "measure",
+                    "min": 0,
+                    "max": 10,
+                    "default": 5
+                },
+                "hipFlare": {
+                    "title": "Hip flare",
+                    "description": "The amount to widen the shirt below the waist",
+                    "group": "fit",
+                    "type": "measure",
+                    "min": 0,
+                    "max": 50,
+                    "default": 20
+                },
+                "buttonfreeLength": {
+                    "title": "Button free length",
+                    "description": "How much of the bottom of the front closure to keep button-free",
+                    "group": "fit",
+                    "type": "measure",
+                    "min": -50,
+                    "max": 30,
+                    "default": 10
                 },
                 "hemStyle": {
                     "title": "Hem style",
@@ -706,10 +759,24 @@
                     },
                     "default": 1
                 },
+                "hemCurve": {
+                    "title": "Hem curve",
+                    "description": "The height of the curve on a curved hem",
+                    "group": "style",
+                    "type": "measure",
+                    "min": 40,
+                    "max": 120,
+                    "default": 80,
+                    "dependsOn": "hemStyle",
+                    "onlyOn": [
+                        2,
+                        3
+                    ]
+                },
                 "buttons": {
                     "title": "Number of buttons",
                     "description": "The number of buttons on the front closure",
-                    "group": "plackets",
+                    "group": "style",
                     "type": "chooseOne",
                     "options": {
                         "4": 4,
@@ -724,6 +791,17 @@
                     },
                     "default": 7
                 },
+                "extraTopButton": {
+                    "title": "Extra top button",
+                    "description": "Whether or not to include an extra top button on the front closure",
+                    "group": "style",
+                    "type": "chooseOne",
+                    "options": [
+                        "No extra top button",
+                        "Extra top button"
+                    ],
+                    "default": 1
+                },
                 "splitYoke": {
                     "title": "Split yoke",
                     "description": "Whether to draft a split or regular yoke",
@@ -735,32 +813,29 @@
                     ],
                     "default": 0
                 },
-                "armholeDepthFactor": {
-                    "title": "Armhole depth",
-                    "description": "A factor that controls the depth of the armhole",
-                    "group": "advanced",
-                    "type": "percent",
-                    "min": 50,
-                    "max": 65,
-                    "default": 60
-                },
-                "bicepsEase": {
-                    "title": "Biceps ease",
-                    "description": "The amount of ease at your upper arm",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 0,
-                    "max": 120,
-                    "default": 30
-                },
-                "buttonfreeLength": {
-                    "title": "Button free length",
-                    "description": "How much of the bottom of the front closure to keep button-free",
+                "buttonPlacketType": {
+                    "title": "Button placket type",
+                    "description": "Type of the button placket",
                     "group": "plackets",
-                    "type": "measure",
-                    "min": -50,
-                    "max": 30,
-                    "default": 10
+                    "type": "chooseOne",
+                    "options": {
+                        "1": "Cut-on",
+                        "2": "Separate"
+                    },
+                    "default": 1
+                },
+                "buttonPlacketStyle": {
+                    "title": "Button placket style",
+                    "description": "Style of the button placket",
+                    "group": "plackets",
+                    "type": "chooseOne",
+                    "options": {
+                        "1": "Classic style",
+                        "2": "French style (seamless)"
+                    },
+                    "default": 1,
+                    "dependsOn": "buttonPlacketType",
+                    "onlyOn": 1
                 },
                 "buttonPlacketWidth": {
                     "title": "Button placket width",
@@ -771,6 +846,30 @@
                     "max": 30,
                     "default": 20
                 },
+                "buttonholePlacketType": {
+                    "title": "Buttonhole placket type",
+                    "description": "Type of the buttonhole placket",
+                    "group": "plackets",
+                    "type": "chooseOne",
+                    "options": {
+                        "1": "Cut-on",
+                        "2": "Separate"
+                    },
+                    "default": 1
+                },
+                "buttonholePlacketStyle": {
+                    "title": "Buttonhole placket style",
+                    "description": "Style of the buttonhole placket",
+                    "group": "plackets",
+                    "type": "chooseOne",
+                    "options": {
+                        "1": "Classic style",
+                        "2": "French style (seamless)"
+                    },
+                    "default": 2,
+                    "dependsOn": "buttonholePlacketType",
+                    "onlyOn": 1
+                },
                 "buttonholePlacketWidth": {
                     "title": "Buttonhole placket width",
                     "description": "Width of the butonhole placket",
@@ -780,68 +879,43 @@
                     "max": 45,
                     "default": 35
                 },
-                "chestEase": {
-                    "title": "Chest ease",
-                    "description": "The amount of ease at the chest",
-                    "group": "fit",
+                "buttonholePlacketFoldWidth": {
+                    "title": "Buttonhole placket fold width",
+                    "description": "Width of the buttonhole placket fold",
+                    "group": "plackets",
                     "type": "measure",
-                    "min": 60,
-                    "max": 240,
-                    "default": 120
+                    "min": 3,
+                    "max": 10,
+                    "default": 6.35,
+                    "dependsOn": "buttonholePlacketStyle",
+                    "onlyOn": 1
                 },
-                "collarAngle": {
-                    "title": "Collar angle",
-                    "description": "The angle of the collar tips",
-                    "group": "collar",
+                "sleevePlacketWidth": {
+                    "title": "Sleeve placket width",
+                    "description": "The width of the sleeve placket",
+                    "group": "plackets",
                     "type": "measure",
-                    "min": 60,
-                    "max": 130,
-                    "default": 85
-                },
-                "collarBend": {
-                    "title": "Collar bend",
-                    "description": "The bend of the collar",
-                    "group": "collar",
-                    "type": "measure",
-                    "min": 5,
-                    "max": 30,
-                    "default": 15
-                },
-                "collarEase": {
-                    "title": "Collar ease",
-                    "description": "The amount of ease around your neck with a closed collar",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 0,
-                    "max": 40,
-                    "default": 15
-                },
-                "collarFlare": {
-                    "title": "Collar flare",
-                    "description": "The flare of the collar tips",
-                    "group": "collar",
-                    "type": "measure",
-                    "min": 0,
-                    "max": 30,
-                    "default": 10
-                },
-                "collarGap": {
-                    "title": "Collar gap",
-                    "description": "The gap between the the two collar ends",
-                    "group": "collar",
-                    "type": "measure",
-                    "min": 5,
-                    "max": 30,
+                    "min": 15,
+                    "max": 35,
                     "default": 25
                 },
-                "collarRoll": {
-                    "title": "Collar roll",
-                    "description": "The amount by which the top collar is larger than the undercollar",
+                "sleevePlacketLength": {
+                    "title": "Sleeve placket length",
+                    "description": "The length of the sleeve placket",
+                    "group": "plackets",
+                    "type": "measure",
+                    "min": 130,
+                    "max": 230,
+                    "default": 180
+                },
+                "collarStandWidth": {
+                    "title": "Collar stand width",
+                    "description": "Widht of the collar stand",
                     "group": "collar",
                     "type": "measure",
-                    "min": 0,
-                    "max": 15,
-                    "default": 7
+                    "min": 15,
+                    "max": 70,
+                    "default": 35
                 },
                 "collarStandBend": {
                     "title": "Collar stand bend",
@@ -861,32 +935,65 @@
                     "max": 15,
                     "default": 5
                 },
-                "collarStandWidth": {
-                    "title": "Collar stand width",
-                    "description": "Widht of the collar stand",
+                "collarGap": {
+                    "title": "Collar gap",
+                    "description": "The gap between the the two collar ends",
                     "group": "collar",
                     "type": "measure",
-                    "min": 15,
-                    "max": 70,
-                    "default": 35
+                    "min": 5,
+                    "max": 30,
+                    "default": 25
                 },
-                "cuffDrape": {
-                    "title": "Cuff drape",
-                    "description": "The amount by which the sleeve is wider than the cuff where the are joined",
-                    "group": "cuffs",
+                "collarBend": {
+                    "title": "Collar bend",
+                    "description": "The bend of the collar",
+                    "group": "collar",
+                    "type": "measure",
+                    "min": 5,
+                    "max": 30,
+                    "default": 15
+                },
+                "collarFlare": {
+                    "title": "Collar flare",
+                    "description": "The flare of the collar tips",
+                    "group": "collar",
                     "type": "measure",
                     "min": 0,
-                    "max": 80,
-                    "default": 40
+                    "max": 30,
+                    "default": 10
                 },
-                "cuffEase": {
-                    "title": "Cuff ease",
-                    "description": "The amount of ease around your wrist",
-                    "group": "fit",
+                "collarAngle": {
+                    "title": "Collar angle",
+                    "description": "The angle of the collar tips",
+                    "group": "collar",
                     "type": "measure",
-                    "min": 20,
-                    "max": 80,
-                    "default": 35
+                    "min": 60,
+                    "max": 130,
+                    "default": 85
+                },
+                "collarRoll": {
+                    "title": "Collar roll",
+                    "description": "The amount by which the top collar is larger than the undercollar",
+                    "group": "collar",
+                    "type": "measure",
+                    "min": 0,
+                    "max": 15,
+                    "default": 7
+                },
+                "cuffStyle": {
+                    "title": "Cuff style",
+                    "description": "The style of the cuffs",
+                    "group": "cuffs",
+                    "type": "chooseOne",
+                    "options": {
+                        "1": "Rounded barrel cuff",
+                        "2": "Angled barrel cuff",
+                        "3": "Straight barrel cuff",
+                        "4": "Rounded French cuff",
+                        "5": "Angled French cuff",
+                        "6": "Straight French cuff"
+                    },
+                    "default": 2
                 },
                 "cuffLength": {
                     "title": "Cuff length",
@@ -896,122 +1003,6 @@
                     "min": 30,
                     "max": 120,
                     "default": 65
-                },
-                "lengthBonus": {
-                    "title": "Extra length",
-                    "description": "The amount to lengthen or shorten the shirt",
-                    "group": "style",
-                    "type": "measure",
-                    "min": -50,
-                    "max": 250,
-                    "default": 150
-                },
-                "sleeveLengthBonus": {
-                    "title": "Extra sleeve length",
-                    "description": "The amount to lengthen the sleeves",
-                    "group": "style",
-                    "type": "measure",
-                    "min": 0,
-                    "max": 50,
-                    "default": 30
-                },
-                "hipFlare": {
-                    "title": "Hip flare",
-                    "description": "The amount to widen the shirt below the waist",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 0,
-                    "max": 50,
-                    "default": 20
-                },
-                "hipsEase": {
-                    "title": "Hips ease",
-                    "description": "The amount of ease at the hips",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 8,
-                    "max": 240,
-                    "default": 120
-                },
-                "sleevePlacketLength": {
-                    "title": "Sleeve placket length",
-                    "description": "The length of the sleeve placket",
-                    "group": "cuffs",
-                    "type": "measure",
-                    "min": 130,
-                    "max": 230,
-                    "default": 180
-                },
-                "sleevePlacketWidth": {
-                    "title": "Sleeve placket width",
-                    "description": "The width of the sleeve placket",
-                    "group": "cuffs",
-                    "type": "measure",
-                    "min": 15,
-                    "max": 35,
-                    "default": 25
-                },
-                "sleevecapEase": {
-                    "title": "Sleevecap ease",
-                    "description": "The amount by which the sleevecap seam is longer than the armhole seam",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 0,
-                    "max": 20,
-                    "default": 5
-                },
-                "sleevecapHeightFactor": {
-                    "title": "Sleevecap height",
-                    "description": "A factor that controls the height of the sleevecap",
-                    "group": "advanced",
-                    "type": "percent",
-                    "min": 45,
-                    "max": 60,
-                    "default": 50
-                },
-                "waistEase": {
-                    "title": "Waist ease",
-                    "description": "The amount of ease at the natural waist",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 80,
-                    "max": 280,
-                    "default": 160
-                },
-                "yokeDart": {
-                    "title": "Yoke dart",
-                    "description": "Whether to include a dart at the sides of the yoke to fit a rounder back",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 0,
-                    "max": 10,
-                    "default": 5
-                },
-                "buttonPlacketStyle": {
-                    "title": "Button placket style",
-                    "description": "Style of the button placket",
-                    "group": "plackets",
-                    "type": "chooseOne",
-                    "options": {
-                        "1": "Classic style",
-                        "2": "French style (seamless)"
-                    },
-                    "default": 1,
-                    "dependsOn": "buttonPlacketType",
-                    "onlyOn": 1
-                },
-                "buttonholePlacketStyle": {
-                    "title": "Buttonhole placket style",
-                    "description": "Style of the buttonhole placket",
-                    "group": "plackets",
-                    "type": "chooseOne",
-                    "options": {
-                        "1": "Classic style",
-                        "2": "French style (seamless)"
-                    },
-                    "default": 2,
-                    "dependsOn": "buttonholePlacketType",
-                    "onlyOn": 1
                 },
                 "cuffButtonRows": {
                     "title": "Cuff button rows",
@@ -1047,85 +1038,98 @@
                         3
                     ]
                 },
-                "buttonholePlacketFoldWidth": {
-                    "title": "Buttonhole placket fold width",
-                    "description": "Width of the buttonhole placket fold",
-                    "group": "plackets",
+                "cuffDrape": {
+                    "title": "Cuff drape",
+                    "description": "The amount by which the sleeve is wider than the cuff where the are joined",
+                    "group": "cuffs",
                     "type": "measure",
-                    "min": 3,
-                    "max": 10,
-                    "default": 6.35,
-                    "dependsOn": "buttonholePlacketStyle",
-                    "onlyOn": 1
+                    "min": 0,
+                    "max": 80,
+                    "default": 40
                 },
-                "hemCurve": {
-                    "title": "Hem curve",
-                    "description": "The height of the curve on a curved hem",
-                    "group": "style",
+                "armholeDepthFactor": {
+                    "title": "Armhole depth",
+                    "description": "A factor that controls the depth of the armhole",
+                    "group": "advanced",
+                    "type": "percent",
+                    "min": 50,
+                    "max": 65,
+                    "default": 60
+                },
+                "sleevecapHeightFactor": {
+                    "title": "Sleevecap height",
+                    "description": "A factor that controls the height of the sleevecap",
+                    "group": "advanced",
+                    "type": "percent",
+                    "min": 45,
+                    "max": 60,
+                    "default": 50
+                },
+                "sleevecapEase": {
+                    "title": "Sleevecap ease",
+                    "description": "The amount by which the sleevecap seam is longer than the armhole seam",
+                    "group": "advanced",
                     "type": "measure",
-                    "min": 40,
-                    "max": 120,
-                    "default": 80,
-                    "dependsOn": "hemStyle",
-                    "onlyOn": [
-                        2,
-                        3
-                    ]
+                    "min": 0,
+                    "max": 20,
+                    "default": 5
                 }
             },
             "optiongroups": {
-                "advanced": [
-                    "armholeDepthFactor",
-                    "sleevecapHeightFactor"
-                ],
-                "style": [
-                    "hemCurve",
-                    "hemStyle",
-                    "lengthBonus",
-                    "sleeveLengthBonus",
-                    "splitYoke"
-                ],
-                "cuffs": [
-                    "barrelcuffNarrowButton",
-                    "cuffButtonRows",
-                    "cuffDrape",
-                    "cuffLength",
-                    "cuffStyle",
-                    "sleevePlacketLength",
-                    "sleevePlacketWidth"
-                ],
-                "collar": [
-                    "collarAngle",
-                    "collarBend",
-                    "collarFlare",
-                    "collarGap",
-                    "collarRoll",
-                    "collarStandBend",
-                    "collarStandCurve",
-                    "collarStandWidth"
+                "ease": [
+                    "chestEase",
+                    "waistEase",
+                    "hipsEase",
+                    "bicepsEase",
+                    "collarEase",
+                    "cuffEase"
                 ],
                 "fit": [
-                    "bicepsEase",
-                    "chestEase",
-                    "collarEase",
-                    "cuffEase",
+                    "lengthBonus",
+                    "sleeveLengthBonus",
+                    "yokeDart",
                     "hipFlare",
-                    "hipsEase",
-                    "sleevecapEase",
-                    "waistEase",
-                    "yokeDart"
+                    "buttonfreeLength"
+                ],
+                "style": [
+                    "hemStyle",
+                    "hemCurve",
+                    "buttons",
+                    "extraTopButton",
+                    "splitYoke"
                 ],
                 "plackets": [
-                    "buttonPlacketStyle",
                     "buttonPlacketType",
+                    "buttonPlacketStyle",
                     "buttonPlacketWidth",
-                    "buttonfreeLength",
-                    "buttonholePlacketFoldWidth",
-                    "buttonholePlacketStyle",
                     "buttonholePlacketType",
+                    "buttonholePlacketStyle",
                     "buttonholePlacketWidth",
-                    "buttons",
-                    "extraTopButton"
+                    "buttonholePlacketFoldWidth",
+                    "sleevePlacketWidth",
+                    "sleevePlacketLength"
+                ],
+                "collar": [
+                    "collarStandWidth",
+                    "collarStandBend",
+                    "collarStandCurve",
+                    "collarGap",
+                    "collarBend",
+                    "collarFlare",
+                    "collarAngle",
+                    "collarRoll"
+                ],
+                "cuffs": [
+                    "cuffStyle",
+                    "cuffLength",
+                    "cuffButtonRows",
+                    "barrelcuffNarrowButton",
+                    "cuffDrape"
+                ],
+                "advanced": [
+                    "armholeDepthFactor",
+                    "sleevecapHeightFactor",
+                    "sleevecapEase"
                 ]
             }
         },
@@ -1172,15 +1176,6 @@
                 "wristCircumference": 190
             },
             "options": {
-                "bicepsEase": {
-                    "title": "Biceps ease",
-                    "description": "The amount of ease at your upper arm.",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 40,
-                    "max": 120,
-                    "default": 80
-                },
                 "chestEase": {
                     "title": "Chest ease",
                     "description": "The amount of ease at your chest.",
@@ -1189,6 +1184,15 @@
                     "min": -40,
                     "max": 160,
                     "default": 30
+                },
+                "bicepsEase": {
+                    "title": "Biceps ease",
+                    "description": "The amount of ease at your upper arm.",
+                    "group": "fit",
+                    "type": "measure",
+                    "min": 40,
+                    "max": 120,
+                    "default": 80
                 },
                 "cuffEase": {
                     "title": "Cuff ease",
@@ -1220,8 +1224,8 @@
             },
             "optiongroups": {
                 "fit": [
-                    "bicepsEase",
                     "chestEase",
+                    "bicepsEase",
                     "cuffEase",
                     "lengthBonus",
                     "sleeveLengthBonus"
@@ -1320,6 +1324,15 @@
                 "bodyRise": 200
             },
             "options": {
+                "waistbandWidth": {
+                    "title": "Waistband width",
+                    "description": "The width of the waistband.",
+                    "group": "fit",
+                    "type": "measure",
+                    "min": -10,
+                    "max": 60,
+                    "default": 40
+                },
                 "backRise": {
                     "title": "Back rise",
                     "description": "The amount by which to raise the back.",
@@ -1337,22 +1350,13 @@
                     "min": -60,
                     "max": 80,
                     "default": 40
-                },
-                "waistbandWidth": {
-                    "title": "Waistband width",
-                    "description": "The width of the waistband.",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": -10,
-                    "max": 60,
-                    "default": 40
                 }
             },
             "optiongroups": {
                 "fit": [
+                    "waistbandWidth",
                     "backRise",
-                    "lengthBonus",
-                    "waistbandWidth"
+                    "lengthBonus"
                 ]
             }
         },
@@ -1403,6 +1407,15 @@
                 "bodyRise": 200
             },
             "options": {
+                "waistbandWidth": {
+                    "title": "Waistband width",
+                    "description": "The width of the waistband.",
+                    "group": "fit",
+                    "type": "measure",
+                    "min": 20,
+                    "max": 60,
+                    "default": 40
+                },
                 "backRise": {
                     "title": "Back rise",
                     "description": "The amount by which to raise the back.",
@@ -1420,22 +1433,13 @@
                     "min": -60,
                     "max": 80,
                     "default": 0
-                },
-                "waistbandWidth": {
-                    "title": "Waistband width",
-                    "description": "The width of the waistband.",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 20,
-                    "max": 60,
-                    "default": 40
                 }
             },
             "optiongroups": {
                 "fit": [
+                    "waistbandWidth",
                     "backRise",
-                    "lengthBonus",
-                    "waistbandWidth"
+                    "lengthBonus"
                 ]
             }
         },
@@ -1473,15 +1477,6 @@
                 "neckCircumference": 420
             },
             "options": {
-                "knotWidth": {
-                    "title": "Knot width",
-                    "description": "The width of the tie at the knot/middle.",
-                    "group": "style",
-                    "type": "measure",
-                    "min": 20,
-                    "max": 70,
-                    "default": 35
-                },
                 "tipWidth": {
                     "title": "Tip width",
                     "description": "The width of the tie at the tip.",
@@ -1490,12 +1485,21 @@
                     "min": 20,
                     "max": 120,
                     "default": 60
+                },
+                "knotWidth": {
+                    "title": "Knot width",
+                    "description": "The width of the tie at the knot/middle.",
+                    "group": "style",
+                    "type": "measure",
+                    "min": 20,
+                    "max": 70,
+                    "default": 35
                 }
             },
             "optiongroups": {
                 "style": [
-                    "knotWidth",
-                    "tipWidth"
+                    "tipWidth",
+                    "knotWidth"
                 ]
             }
         },
@@ -1545,6 +1549,111 @@
                 "naturalWaist": 885
             },
             "options": {
+                "chestEase": {
+                    "title": "Chest ease",
+                    "description": "Amount of ease at the chest.",
+                    "group": "ease",
+                    "type": "measure",
+                    "min": 0,
+                    "max": 160,
+                    "default": 20
+                },
+                "waistEase": {
+                    "title": "Waist ease",
+                    "description": "Amount of ease at the waist.",
+                    "group": "ease",
+                    "type": "measure",
+                    "min": 0,
+                    "max": 160,
+                    "default": 80
+                },
+                "hipsEase": {
+                    "title": "Hips ease",
+                    "description": "Amount of ease at the hips.",
+                    "group": "ease",
+                    "type": "measure",
+                    "min": 0,
+                    "max": 160,
+                    "default": 40
+                },
+                "lengthBonus": {
+                    "title": "Lenght bonus",
+                    "description": "Amount by which to lengthen the waistcoat.",
+                    "group": "fit",
+                    "type": "measure",
+                    "min": 0,
+                    "max": 50,
+                    "default": 15
+                },
+                "backScyeDart": {
+                    "title": "Back scye dart",
+                    "description": "The amount to take out in a dart at the back of the armhole.",
+                    "group": "fit",
+                    "type": "measure",
+                    "min": 0,
+                    "max": 15,
+                    "default": 5
+                },
+                "frontScyeDart": {
+                    "title": "Front scye dart",
+                    "description": "The amount to take out in a dart at the front of the armhole.",
+                    "group": "fit",
+                    "type": "measure",
+                    "min": 0,
+                    "max": 20,
+                    "default": 10
+                },
+                "centerBackDart": {
+                    "title": "Center back dart",
+                    "description": "The amount to take out in a dart at the top of the center back.",
+                    "group": "fit",
+                    "type": "measure",
+                    "min": 0,
+                    "max": 20,
+                    "default": 5
+                },
+                "frontDrop": {
+                    "title": "Neckline drop",
+                    "description": "The amount the front neckline is lowered. Negative values raise the neckline.",
+                    "group": "style",
+                    "type": "measure",
+                    "min": -40,
+                    "max": 200,
+                    "default": 0
+                },
+                "frontStyle": {
+                    "title": "Neckline style",
+                    "description": "Whether you want a rounded or classic necline.",
+                    "group": "style",
+                    "type": "chooseOne",
+                    "options": {
+                        "1": "Classic",
+                        "2": "Rounded"
+                    },
+                    "default": 1
+                },
+                "hemStyle": {
+                    "title": "Hem style",
+                    "description": "Whether you want a rounded or classic hem.",
+                    "group": "style",
+                    "type": "chooseOne",
+                    "options": {
+                        "1": "Classic",
+                        "2": "Rounded"
+                    },
+                    "default": 1
+                },
+                "hemRadius": {
+                    "title": "Hem radius",
+                    "description": "Radius of the rounded hem. Not relevant if you chose a classic hem.",
+                    "group": "style",
+                    "type": "measure",
+                    "min": 0,
+                    "max": 100,
+                    "default": 60,
+                    "dependsOn": "hemStyle",
+                    "onlyOn": 2
+                },
                 "buttons": {
                     "title": "Buttons",
                     "description": "The number of buttons on the front.",
@@ -1563,168 +1672,67 @@
                     },
                     "default": 6
                 },
-                "hemStyle": {
-                    "title": "Hem style",
-                    "description": "Whether you want a rounded or classic hem.",
-                    "group": "style",
-                    "type": "chooseOne",
-                    "options": {
-                        "1": "Classic",
-                        "2": "Rounded"
-                    },
-                    "default": 1
-                },
-                "frontStyle": {
-                    "title": "Neckline style",
-                    "description": "Whether you want a rounded or classic necline.",
-                    "group": "style",
-                    "type": "chooseOne",
-                    "options": {
-                        "1": "Classic",
-                        "2": "Rounded"
-                    },
-                    "default": 1
-                },
-                "backInset": {
-                    "title": "Back inset",
-                    "description": "Amount the back armhole is cut deeper into the back panel.",
-                    "group": "style",
-                    "type": "measure",
-                    "min": 15,
-                    "max": 55,
-                    "default": 25
-                },
-                "backScyeDart": {
-                    "title": "Back scye dart",
-                    "description": "The amount to take out in a dart at the back of the armhole.",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 0,
-                    "max": 15,
-                    "default": 5
-                },
-                "centerBackDart": {
-                    "title": "Center back dart",
-                    "description": "The amount to take out in a dart at the top of the center back.",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 0,
-                    "max": 20,
-                    "default": 5
-                },
-                "chestEase": {
-                    "title": "Chest ease",
-                    "description": "Amount of ease at the chest.",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 0,
-                    "max": 160,
-                    "default": 20
-                },
-                "frontInset": {
-                    "title": "Front inset",
-                    "description": "Amount the front armhole is cut deeper into the front panel.",
-                    "group": "style",
-                    "type": "measure",
-                    "min": 15,
-                    "max": 45,
-                    "default": 30
-                },
-                "frontScyeDart": {
-                    "title": "Front scye dart",
-                    "description": "The amount to take out in a dart at the front of the armhole.",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 0,
-                    "max": 20,
-                    "default": 10
-                },
-                "hipsEase": {
-                    "title": "Hips ease",
-                    "description": "Amount of ease at the hips.",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 0,
-                    "max": 160,
-                    "default": 40
-                },
-                "lengthBonus": {
-                    "title": "Lenght bonus",
-                    "description": "Amount by which to lengthen the waistcoat.",
-                    "group": "style",
-                    "type": "measure",
-                    "min": 0,
-                    "max": 50,
-                    "default": 15
-                },
                 "neckInset": {
                     "title": "Neck inset",
                     "description": "Distance from the neck to the waistcoat neckline at the shoulder seam.",
-                    "group": "style",
+                    "group": "insets",
                     "type": "measure",
                     "min": 0,
                     "max": 35,
                     "default": 20
                 },
-                "frontDrop": {
-                    "title": "Neckline drop",
-                    "description": "The amount the front neckline is lowered. Negative values raise the neckline.",
-                    "group": "style",
-                    "type": "measure",
-                    "min": -40,
-                    "max": 200,
-                    "default": 0
-                },
                 "shoulderInset": {
                     "title": "Shoulder inset",
                     "description": "Distance from the shoulder point to the waistcoat armhole at the shoulder seam.",
-                    "group": "style",
+                    "group": "insets",
                     "type": "measure",
                     "min": 0,
                     "max": 45,
                     "default": 20
                 },
-                "waistEase": {
-                    "title": "Waist ease",
-                    "description": "Amount of ease at the waist.",
-                    "group": "fit",
+                "backInset": {
+                    "title": "Back inset",
+                    "description": "Amount the back armhole is cut deeper into the back panel.",
+                    "group": "insets",
                     "type": "measure",
-                    "min": 0,
-                    "max": 160,
-                    "default": 80
+                    "min": 15,
+                    "max": 55,
+                    "default": 25
                 },
-                "hemRadius": {
-                    "title": "Hem radius",
-                    "description": "Radius of the rounded hem. Not relevant if you chose a classic hem.",
-                    "group": "style",
+                "frontInset": {
+                    "title": "Front inset",
+                    "description": "Amount the front armhole is cut deeper into the front panel.",
+                    "group": "insets",
                     "type": "measure",
-                    "min": 0,
-                    "max": 100,
-                    "default": 60,
-                    "dependsOn": "hemStyle",
-                    "onlyOn": 2
+                    "min": 15,
+                    "max": 45,
+                    "default": 30
                 }
             },
             "optiongroups": {
-                "fit": [
-                    "backScyeDart",
-                    "centerBackDart",
+                "ease": [
                     "chestEase",
+                    "waistEase",
+                    "hipsEase"
+                ],
+                "fit": [
+                    "lengthBonus",
+                    "backScyeDart",
                     "frontScyeDart",
-                    "hipsEase",
-                    "waistEase"
+                    "centerBackDart"
                 ],
                 "style": [
-                    "backInset",
-                    "buttons",
                     "frontDrop",
-                    "frontInset",
                     "frontStyle",
-                    "hemRadius",
                     "hemStyle",
-                    "lengthBonus",
+                    "hemRadius",
+                    "buttons"
+                ],
+                "insets": [
                     "neckInset",
-                    "shoulderInset"
+                    "shoulderInset",
+                    "backInset",
+                    "frontInset"
                 ]
             }
         }
