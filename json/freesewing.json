@@ -15,8 +15,6 @@
                 ]
             },
             "parts": {
-                "frontBlock": "Front block",
-                "backBlock": "Back block",
                 "front": "Front",
                 "back": "Back"
             },
@@ -266,7 +264,6 @@
                 ]
             },
             "parts": {
-                "block": "Block",
                 "front": "Front",
                 "back": "Back",
                 "side": "Side",
@@ -365,7 +362,6 @@
                 ]
             },
             "parts": {
-                "base": "Base block",
                 "panels": "Corset"
             },
             "languages": {
@@ -489,9 +485,6 @@
                 ]
             },
             "parts": {
-                "backBlock": "Back block",
-                "frontBlock": "Front block",
-                "sleeveBlock": "Sleeve block",
                 "front": "Front",
                 "back": "Back",
                 "sleeve": "Sleeve",
@@ -607,11 +600,6 @@
                 ]
             },
             "parts": {
-                "backBlock": "Back block",
-                "frontBlock": "Front block",
-                "sleeveBlock": "Sleeve block",
-                "block": "Block",
-                "frontAndBackBlock": "Front and back block",
                 "frontRight": "Front right",
                 "frontLeft": "Front left",
                 "buttonPlacket": "Button placket",
@@ -1151,9 +1139,6 @@
                 ]
             },
             "parts": {
-                "backBlock": "Back block",
-                "frontBlock": "Front block",
-                "sleeveBlock": "Sleeve block",
                 "back": "Back",
                 "front": "Front",
                 "sleeve": "Sleeve"
@@ -1520,9 +1505,6 @@
                 ]
             },
             "parts": {
-                "frontBlock": "Front block",
-                "backBlock": "Back block",
-                "waistcoatFrontBlock": "Waistcoat front block",
                 "front": "Front",
                 "back": "Back",
                 "frontFacing": "Front facing",

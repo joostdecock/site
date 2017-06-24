@@ -12,8 +12,6 @@ patterns:
                 - unisex
                 - top
         parts:
-            frontBlock: 'Front block'
-            backBlock: 'Back block'
             front: Front
             back: Back
         languages:
@@ -227,7 +225,6 @@ patterns:
                 - underwear
                 - bottom
         parts:
-            block: Block
             front: Front
             back: Back
             side: Side
@@ -311,7 +308,6 @@ patterns:
                 - underwear
                 - corset
         parts:
-            base: 'Base block'
             panels: Corset
         languages:
             en: English
@@ -414,9 +410,6 @@ patterns:
                 - hoodie
                 - top
         parts:
-            backBlock: 'Back block'
-            frontBlock: 'Front block'
-            sleeveBlock: 'Sleeve block'
             front: Front
             back: Back
             sleeve: Sleeve
@@ -517,11 +510,6 @@ patterns:
                 - top
                 - shirt
         parts:
-            backBlock: 'Back block'
-            frontBlock: 'Front block'
-            sleeveBlock: 'Sleeve block'
-            block: Block
-            frontAndBackBlock: 'Front and back block'
             frontRight: 'Front right'
             frontLeft: 'Front left'
             buttonPlacket: 'Button placket'
@@ -949,9 +937,6 @@ patterns:
                 - sweater
                 - top
         parts:
-            backBlock: 'Back block'
-            frontBlock: 'Front block'
-            sleeveBlock: 'Sleeve block'
             back: Back
             front: Front
             sleeve: Sleeve
@@ -1259,9 +1244,6 @@ patterns:
                 - top
                 - waistcoat
         parts:
-            frontBlock: 'Front block'
-            backBlock: 'Back block'
-            waistcoatFrontBlock: 'Waistcoat front block'
             front: Front
             back: Back
             frontFacing: 'Front facing'

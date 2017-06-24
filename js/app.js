@@ -722,7 +722,7 @@
             if(account.account.data.account.units === 'imperial') var ufactor = 25.4;
             else var ufactor = 10;
             $.each(pattern.options, function(option, o) {
-                // Load defaults from for (if provided)
+                // Load defaults (if provided)
                 if(defaults !== false && typeof defaults[option] !== 'undefined') {
                     if(o.type === 'measure') o.default = (defaults[option] * ufactor);
                     else o.default = defaults[option];
@@ -738,6 +738,8 @@
             else dflt_theme = 'Basic';
             if(defaults !== false && typeof defaults.lang !== 'undefined') dflt_lang = defaults.lang;
             else dflt_lang = 'en';
+            if(defaults !== false && typeof defaults.parts !== 'undefined') dflt_scope = 'custom';
+            else dflt_scope = 'all';
             // Prepend theme/language
             var ordered = {
                 'general': {
@@ -757,6 +759,25 @@
                         'title': 'Language',
                         'type': 'chooseOne',
                         'options': pattern.languages
+                    },
+                    'scope': {
+                        'default': dflt_scope,
+                        'description': 'By default, we draft a full pattern with all parts. But you are the boss.',
+                        'title': 'Scope',
+                        'type': 'chooseOne',
+                        'options': {
+                            'all': 'Complete pattern',
+                            'custom': 'Only selected pattern parts'
+                        }
+                    },
+                    'partlist': {
+                        'default': '',
+                        'description': 'Select the parts you want included in your draft:',
+                        'title': 'Pattern parts',
+                        'type': 'chooseMany',
+                        'options': pattern.parts,
+                        'dependsOn': 'scope',
+                        'onlyOn': 'custom' 
                     }
                 }
             };
@@ -784,6 +805,12 @@
                 show = '';
             });
             triggerOptionTargets(triggers);
+            if(defaults !== false && typeof defaults.parts !== 'undefined') {
+                // Handle pre-selection of partlist checkboxes    
+                $.each(defaults.parts.split(','), function(index, part) { 
+                    $('#partlist-option-'+part).click();
+                });
+            }
             $('#form').append('<p class="text-center mt-5"><input type="submit" class="btn btn-lg btn-primary" value="Draft pattern"></p>');
             // Bind slide event to slider inputs
             $('#accordion').on('change', 'input.slider', function(e) {
@@ -945,6 +972,23 @@
                 });
                 html += '</fieldset>'; 
                 break;
+            case 'chooseMany':
+                var html = '<fieldset class="form-group" id="option-wrapper-'+name+'">';
+                html += '<legend>';
+                html += '<a href="#" id="'+name+'-help" class="mt-4 btn btn-outline-primary btn-sm option-help" style="float: right;" data-option="'+name+'">Help</a>';
+                html += '<a href="#" id="'+name+'-default" class="mt-4 btn btn-outline-primary btn-sm mr-2 disabled btn-outline-info invisible option-reset" style="float: right;" data-option="'+name+'" data-default="'+option.default+'"  data-type="radio">Reset</a>';
+                html += '<h5 class="mt-3">'+option.title+': <span id="'+name+'-value">'+option.options[option.default]+'</span></h5> '+option.description;
+                html += '</legend>';
+                $.each(option.options, function(val,label) {
+                    html += '<div class="form-check">';
+                    html += '<label class="form-check-label">';
+                    html += '<input type="checkbox" class="form-check-input" name="'+name+'" id="'+name+'-option-'+val+'" value="'+val+'" data-label="'+label+'" data-default="'+option.default+'"';
+                    html += '>&nbsp;&nbsp;'+label; 
+                    html += '</label>'; 
+                    html += '</div>'; 
+                });
+                html += '</fieldset>'; 
+                break;
             default:
                 var html = '<div class="form-group" id="option-wrapper-'+name+'">';
                 html += '<label for=""><h5>'+option.title+'</h5>'+option.description+'</label>';
@@ -978,6 +1022,12 @@
         setTimeout(function(){$("#progress").removeClass('progress-66').addClass('complete')}, 500);
         if (page.substr(0,9) === '/redraft/') var method = 'redraft';
         else var method = 'draft';
+        // Handle parts
+        var parts = [];
+        $.each($('input[name="partlist"]:checked'), function(index, part) {
+            parts.push($(part).val());
+        });
+        if(parts.length > 0) $('#form').append('<input type="hidden" name="parts" value="'+parts+'">');
         $.ajax({
             url: api.data+'/'+method,
             method: 'POST',
@@ -1130,13 +1180,11 @@
             $('#draft').prepend(msg);
         } else if(typeof user !== 'undefined' && user.id == draft.user){
             // Own draft
-            console.log(draft);
             $('.crown-middle').html(draft.handle);
             $('.crown-right').attr('src',api.data+draft.model.pictureSrc);
             $('#fork-btn').attr('href','/fork/'+draft.handle);
             $('#redraft-btn').attr('href','/redraft/'+draft.handle+'/for/'+draft.model.handle);
             $('div.draft-display').removeClass('hidden');
-            console.log('yep');
         } else {
             // Logged-in user but not their own draft (shared)
             $('div.draft-display').remove();
@@ -1146,7 +1194,6 @@
             msg += '<p><small>PS: That thing about the hot women is obviously a joke. I know nothing about women, let alone hot ones.</small></p>';
             msg += '</blockquote>';
             $('#draft').prepend(msg);
-            console.log('logged in but shared');
         }
         // Load site data
         $.get('/json/freesewing.json', function( fsdata ) {
