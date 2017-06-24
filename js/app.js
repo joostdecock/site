@@ -973,11 +973,9 @@
                 html += '</fieldset>'; 
                 break;
             case 'chooseMany':
-                var html = '<fieldset class="form-group" id="option-wrapper-'+name+'">';
+                var html = '<fieldset style="padding-left: 2rem;" class="form-group" id="option-wrapper-'+name+'">';
                 html += '<legend>';
-                html += '<a href="#" id="'+name+'-help" class="mt-4 btn btn-outline-primary btn-sm option-help" style="float: right;" data-option="'+name+'">Help</a>';
-                html += '<a href="#" id="'+name+'-default" class="mt-4 btn btn-outline-primary btn-sm mr-2 disabled btn-outline-info invisible option-reset" style="float: right;" data-option="'+name+'" data-default="'+option.default+'"  data-type="radio">Reset</a>';
-                html += '<h5 class="mt-3">'+option.title+': <span id="'+name+'-value">'+option.options[option.default]+'</span></h5> '+option.description;
+                html += option.description;
                 html += '</legend>';
                 $.each(option.options, function(val,label) {
                     html += '<div class="form-check">';
