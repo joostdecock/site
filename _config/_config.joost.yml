@@ -1,11 +1,11 @@
-url: 'https://joost.beta.freesewing.org/'
+url: 'https://joost.site.freesewing.org/'
 github: 'https://github.com/freesewing'
 twitter: 'freesewing_org'
 instagram: 'freesewing_org'
 gitter: 'https://gitter.im/freesewing/freesewing'
 
 api:
-  core: 'https://joost.api.freesewing.org'
+  core: 'https://joost.core.freesewing.org'
   data: 'https://joost.data.freesewing.org'
 
 markdown: kramdown
