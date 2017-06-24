@@ -768,25 +768,36 @@
                 ordered[key] = subordered;
             });
             var show = ' '; // Keep everything collapsed
+            var triggers = [];
             $.each(ordered, function(title, group) {
                 $('#accordion').append("<div id='group-"+title+"' class='card'><div class='card-header' role='tab' id='heading-"+title+"'><h3 class='text-capitalize'><a data-toggle='collapse' data-parent='#accordion' href='#collapse-"+title+"' aria-expanded='false' aria-controls='collapse-"+title+"'>"+title+"</a></h3></div><div id='collapse-"+title+"' class='collapse "+show+"' role='tabpanel'aria-labeledby='heading-"+title+"' aria-expanded='false'><div class='card-block' id='content-"+title+"'></div></div>");
                 $.each(group, function(name, option) {
+                    if(typeof option.dependsOn !== 'undefined') {
+                        triggers.push({
+                            trigger: option.dependsOn,
+                            target: name,
+                            onlyOn: option.onlyOn
+                        });
+                    }
                     $('#content-'+title).append(renderOption(name, option, account.account.data.account.units));
                 });
                 show = '';
             });
+            triggerOptionTargets(triggers);
             $('#form').append('<p class="text-center mt-5"><input type="submit" class="btn btn-lg btn-primary" value="Draft pattern"></p>');
             // Bind slide event to slider inputs
             $('#accordion').on('change', 'input.slider', function(e) {
                 $('#'+e.target.id+'-value').html(e.value.newValue);    
                 if(e.value.newValue != $('#'+e.target.id+'-default').attr('data-default')) $('#'+e.target.id+'-default').removeClass('disabled invisible'); 
                 else $('#'+e.target.id+'-default').addClass('disabled invisible');
+                triggerOptionTargets(triggers);
             });
             // Bind change event to radio buttons
             $('#accordion').on('change', 'input[type=radio]', function(e) {
                 $('#'+$(this).attr('name')+'-value').html($(this).attr('data-label'));
                 if($(this).val() != $('#'+e.target.id).attr('data-default')) $('#'+$('#'+e.target.id).attr('name')+'-default').removeClass('disabled invisible'); 
                 else $('#'+$('#'+e.target.id).attr('name')+'-default').addClass('disabled invisible');
+                triggerOptionTargets(triggers);
             });
             // Bind click event to reset buttons
             $('#accordion').on('click', 'a.option-reset', function(e) {
@@ -812,6 +823,16 @@
 
             // Activate sliders
             $("input.slider").slider();
+        });
+    }
+
+    function triggerOptionTargets(triggers) {
+        $.each(triggers, function(index, trigger) {
+            if($('input[name="'+trigger.trigger+'"]:checked').val() == trigger.onlyOn) {
+                $('#option-wrapper-'+trigger.target).removeClass('hidden');
+            } else {
+                $('#option-wrapper-'+trigger.target).addClass('hidden');
+            }
         });
     }
 
@@ -855,7 +876,7 @@
             case 'measure':
                 if(units === 'imperial') var udiv = 25.4;
                 else var udiv = 10
-                var html = '<div class="form-group ">';
+                var html = '<div class="form-group" id="option-wrapper-'+name+'">';
                 html += '<label for="'+name+'">';
                 html += '<a href="#" id="'+name+'-help" class="mt-4 btn btn-outline-primary btn-sm option-help" style="float: right;" data-option="'+name+'">Help</a>';
                 html += '<a href="#" id="'+name+'-default" class="mt-4 btn btn-outline-primary btn-sm mr-2 disabled btn-outline-info invisible option-reset" style="float: right;" data-option="'+name+'" data-default="'+(option.default/udiv)+'" data-type="slider">Reset</a>';
@@ -872,7 +893,7 @@
             case 'percent':
                 if(typeof option.min === "undefined") option.min = 0;
                 if(typeof option.max === "undefined") option.max = 100;
-                var html = '<div class="form-group ">';
+                var html = '<div class="form-group" id="option-wrapper-'+name+'">';
                 html += '<label for="'+name+'">';
                 html += '<a href="#" id="'+name+'-help" class="mt-4 btn btn-outline-primary btn-sm option-help" style="float: right;" data-option="'+name+'">Help</a>';
                 html += '<a href="#" id="'+name+'-default" class="mt-4 btn btn-outline-primary btn-sm mr-2 disabled btn-outline-info invisible option-reset" style="float: right;" data-option="'+name+'" data-default="'+option.default+'" data-type="slider">Reset</a>';
@@ -887,7 +908,7 @@
                 html += '</div>';
                 break;
             case 'angle':
-                var html = '<div class="form-group ">';
+                var html = '<div class="form-group" id="option-wrapper-'+name+'">';
                 html += '<label for="'+name+'">';
                 html += '<a href="#" id="'+name+'-help" class="mt-4 btn btn-outline-primary btn-sm option-help" style="float: right;" data-option="'+name+'">Help</a>';
                 html += '<a href="#" id="'+name+'-default" class="mt-4 btn btn-outline-primary btn-sm mr-2 disabled btn-outline-info invisible option-reset" style="float: right;" data-option="'+name+'" data-default="'+option.default+'" data-type="slider">Reset</a>';
@@ -902,7 +923,7 @@
                 html += '</div>';
                 break;
             case 'chooseOne':
-                var html = '<fieldset class="form-group">';
+                var html = '<fieldset class="form-group" id="option-wrapper-'+name+'">';
                 html += '<legend>';
                 html += '<a href="#" id="'+name+'-help" class="mt-4 btn btn-outline-primary btn-sm option-help" style="float: right;" data-option="'+name+'">Help</a>';
                 html += '<a href="#" id="'+name+'-default" class="mt-4 btn btn-outline-primary btn-sm mr-2 disabled btn-outline-info invisible option-reset" style="float: right;" data-option="'+name+'" data-default="'+option.default+'"  data-type="radio">Reset</a>';
@@ -920,7 +941,7 @@
                 html += '</fieldset>'; 
                 break;
             default:
-                var html = '<div class="form-group">';
+                var html = '<div class="form-group" id="option-wrapper-'+name+'">';
                 html += '<label for=""><h5>'+option.title+'</h5>'+option.description+'</label>';
                 html += '<div class="input-group key-sm">';
                 html += '<span class="input-group-addon td-key" id="'+name+'-key">Default</span>';

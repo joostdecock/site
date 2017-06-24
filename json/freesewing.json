@@ -1616,15 +1616,6 @@
                     "max": 20,
                     "default": 10
                 },
-                "hemRadius": {
-                    "title": "Hem radius",
-                    "description": "Radius of the rounded hem. Not relevant if you chose a classic hem.",
-                    "group": "style",
-                    "type": "measure",
-                    "min": 0,
-                    "max": 100,
-                    "default": 60
-                },
                 "hipsEase": {
                     "title": "Hips ease",
                     "description": "Amount of ease at the hips.",
@@ -1678,6 +1669,17 @@
                     "min": 0,
                     "max": 160,
                     "default": 80
+                },
+                "hemRadius": {
+                    "title": "Hem radius",
+                    "description": "Radius of the rounded hem. Not relevant if you chose a classic hem.",
+                    "group": "style",
+                    "type": "measure",
+                    "min": 0,
+                    "max": 100,
+                    "default": 60,
+                    "dependsOn": "hemStyle",
+                    "onlyOn": 2
                 }
             },
             "optiongroups": {
