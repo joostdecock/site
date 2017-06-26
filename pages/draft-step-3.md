@@ -4,6 +4,7 @@ title: Choose your options
 action: app
 crumbs: false
 permalink: /step/3/draft
+nocomments: true
 ---
 <div class="container">
     <div class="row">

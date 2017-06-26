@@ -2,8 +2,7 @@
 layout: cards
 title: Documentation for developers
 permalink: "/docs/developer/"
-crumbs:
- - /docs|Docs
+nocomments: true
 ---
 <div class="container">
     <div class="row">

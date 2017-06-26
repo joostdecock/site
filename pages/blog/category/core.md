@@ -2,6 +2,7 @@
 layout: cards
 title: Blog posts in core
 permalink: /blog/category/core
+nocomments: true
 ---
 <div class="container">
 <div class="row">

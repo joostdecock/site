@@ -4,6 +4,7 @@ title: Choose a pattern
 action: app
 crumbs: false
 permalink: /step/1/draft
+nocomments: true
 ---
 <div class="container">
 <div class="row">

@@ -4,6 +4,7 @@ title: Choose your options
 action: app
 crumbs: false
 permalink: /step/3/redraft
+nocomments: true
 ---
 <div class="container" id="draft-container">
     <div class="row">

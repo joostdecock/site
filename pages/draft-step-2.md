@@ -4,6 +4,7 @@ title: Choose a model
 action: app
 crumbs: false
 permalink: /step/2/draft
+nocomments: true
 ---
 <div class="container">
     <div class="row">

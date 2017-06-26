@@ -2,6 +2,7 @@
 layout: cards
 title: Donate to freesewing
 permalink: /donate
+nocomments: true
 ---
 <div class="container mb-5">
     <div class="row mb-5">

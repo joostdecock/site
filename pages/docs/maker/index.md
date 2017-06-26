@@ -5,6 +5,7 @@ permalink: "/docs/maker/"
 crumbs:
  - /docs|Docs
 tags: [maker docs]
+nocomments: true
 ---
 <div class="container">
     <div class="row">

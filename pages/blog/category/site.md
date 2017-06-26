@@ -2,6 +2,7 @@
 layout: cards
 title: Blog posts in site
 permalink: /blog/category/site
+nocomments: true
 ---
 <div class="container">
 <div class="row">

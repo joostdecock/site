@@ -2,6 +2,7 @@
 layout: cards
 title: Showcase
 permalink: /showcase/
+nocomments: true
 ---
 <div class="container">
 <div class="row">

@@ -5,6 +5,7 @@ action: app
 permalink: /show-draft
 crumbs:
   - /drafts|Drafts
+nocomments: true
 ---
 <div class="container" id="draft-container">
     <div class="row">

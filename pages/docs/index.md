@@ -2,6 +2,7 @@
 layout: cards
 title: Documentation
 permalink: /docs/
+nocomments: true
 ---
 <div class="container">
     <h2 id="for-makers">For makers</h2>

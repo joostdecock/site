@@ -3,6 +3,7 @@ layout: cards
 title: Your account
 action: app
 permalink: /account
+nocomments: true
 ---
 <div class="container">
     <div class="account-display" id="account">

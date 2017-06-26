@@ -3,6 +3,7 @@ layout: cards
 title: Your drafts
 action: app
 permalink: /list-drafts
+nocomments: true
 ---
 <div class="container">
     <div class="row">

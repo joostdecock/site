@@ -2,6 +2,7 @@
 layout: cards
 title: Blog posts by joostdecock
 permalink: /blog/author/joostdecock
+nocomments: true
 ---
 <div class="container">
 <div class="row">

@@ -5,6 +5,7 @@ permalink: "/docs/designer/"
 crumbs:
  - /docs|Docs
 tags: [designer docs]
+nocomments: true
 ---
 <div class="container">
     <div class="row">
