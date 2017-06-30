@@ -19,7 +19,7 @@ We use [SASS](http://sass-lang.com/) for styles and [jekyll-assets](https://gith
 For more info, please refer to our documentation, specifically the site documentation at [freesewing.org/docs/site](https://freesewing.org/docs/site).
 
 ## System Requirements
-To run your own Runy instance, you'll need:
+To run your own Ruby instance, you'll need:
 
  - GNU/Linux, Unix, or macOS
  - Ruby version 2.1 or above
@@ -57,10 +57,11 @@ our patterns, documentation, and other content are licensed [CC-BY](https://crea
 
 ## Contribute
 
-Your pull request are welcome here. For simple changes, there's an *improve this page* link at the bottom of every page on the website.
+Your pull request are welcome here. 
+For simple changes, there's an **Improve this page** link at the bottom of every page on the website.
 
-If you're interested in contributing, you'll want to read [freesewing.org/contribute](https://freesewing.org/contribute).
+If you're interested in contributing, we'd love your help.
+That's exactly why we made this thing open source in the first place.
 
+Read [freesewing.org/contribute](https://freesewing.org/contribute) to get started.
 If you have any questions, the best place to ask is [the freesewing community on Gitter](https://gitter.im/freesewing/freesewing).
-
-
