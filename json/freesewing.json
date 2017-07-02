@@ -386,7 +386,7 @@
                 "naturalWaist": 640,
                 "hipsCircumference": 800,
                 "naturalWaistToUnderbust": 100,
-                "naturalWaistToHips": 160
+                "naturalWaistToHip": 160
             },
             "options": {
                 "waistReduction": {
@@ -1910,7 +1910,6 @@
         "underBust": "female",
         "naturalWaist": "all",
         "naturalWaistToUnderbust": "all",
-        "naturalWaistToHips": "all",
         "headCircumference": "all",
         "shoulderToElbow": "all",
         "seatCircumference": "all",
