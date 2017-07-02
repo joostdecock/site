@@ -3,7 +3,7 @@ layout: page
 title: Measurements
 tags: [maker docs]
 img: /img/potw/potw.jpg
-permalink: /docs/list-measurements
+permalink: /docs/measurements/
 ---
 {% for measurement in site.data.freesewing.measurements %}
 {% assign mname = measurement[0] %}
