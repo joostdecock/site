@@ -1,7 +1,7 @@
 # List models
 /models    /account  200
 # Show model
-/models/*    /model  200
+/models/*    /show-model  200
 # List drafts
 /drafts     /list-drafts 200
 # Show draft
