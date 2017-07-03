@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="501" height="558" viewbox="0 0 501 558">
   <style type="text/css">
   <![CDATA[
-  path{fill:#5C3566;fill-opacity:1;stroke:#292b2c;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;}
+  path{fill:#555753;fill-opacity:1;stroke:#292b2c;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;}
   .sm{stroke-width:2;}
   .back{fill:#86739c;}
   .no-fill{fill:none;}
