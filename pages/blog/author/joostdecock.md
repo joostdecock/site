@@ -11,7 +11,7 @@ nocomments: true
 {% for post in site.posts %}
 {% if post.author == 'joostdecock' %}
 <div class="card hover-shadow mb-3">
-<a href="{{ post.url }}" title="{{ post.title | escape}}">
+<a href="{{ post.url }}" title="{{ post.linktitle | escape}}">
 <img 
     src="/img{{ post.url }}lqip_{{ post.img }}" 
     data-sizes="auto"
@@ -25,7 +25,7 @@ nocomments: true
 >
 </a>
 <div class="card-block">
-<h4 class="card-title"><a href="{{ post.url }}" title="{{ post.title | escape}}">{{ post.title }}</a></h4>
+<h4 class="card-title"><a href="{{ post.url }}" title="{{ post.linktitle | escape}}">{{ post.linktitle }}</a></h4>
 </div>
 <footer class="rounded-bottom">
 On {{ post.date | date: '%B %d, %Y' }}
