@@ -1,18 +1,32 @@
 .card-columns {
+  column-gap: 1.25rem;
+  -moz-column-gap: 1.25rem;
+  -webkit-column-gap: 1.25rem;
+
   @include media-breakpoint-only(xs) {
     column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
   }
   @include media-breakpoint-only(sm) {
     column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
   }
   @include media-breakpoint-only(md) {
     column-count: 4;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
   }
   @include media-breakpoint-only(lg) {
     column-count: 5;
+    -moz-column-count: 5;
+    -webkit-column-count: 5;
   }
   @include media-breakpoint-only(xl) {
     column-count: 6;
+    -moz-column-count: 6;
+    -webkit-column-count: 6;
   }
 }
 

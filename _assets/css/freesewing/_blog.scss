@@ -14,6 +14,10 @@ div.post {
     }
 }
 .card-columns.blog {
+    column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    -webkit-column-gap: 1.25rem;
+
     h4.card-title {
         margin: 0;
         padding: 0;
@@ -35,17 +39,26 @@ div.post {
     .card {
         display: inline-block
     }
+    
     @include media-breakpoint-only(sm) {
         column-count: 2;
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
     }
     @include media-breakpoint-only(md) {
         column-count: 2;
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
     }
     @include media-breakpoint-only(lg) {
         column-count: 3;
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
     }
     @include media-breakpoint-only(xl) {
         column-count: 4;
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
     }
 }
 blockquote.share {

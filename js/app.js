@@ -1306,11 +1306,29 @@
 
     $(document).ready(function () {
        
-        if(window.localStorage.getItem("fsu") === null) {
-            // eff this, you need to be logged in
-            window.location.replace("/login-required");
-        } 
-        else { // Start of logged-in block
+        // Show draft ///////////////////////
+        if(page.substr(0,8) === '/drafts/' && page.split('/').length == 3) {
+            var draft;
+            var draftHandle = page.split('/')[2];
+            loadDraft(draftHandle, renderDraft);
+            // Bind click handler to settings button
+            $('#draft').on('click','a#settings-btn', function(e) {
+                renderDraftSettings();
+            });
+            
+            // Bind click handler to notes button
+            $('#update-notes').click(function(e) {
+                renderDraftNotepad();
+            });
+        }    
+        else { // Start of logged-in only block
+
+            // Reroute if not logged in
+            if(window.localStorage.getItem("fsu") === null) {
+                // eff this, you need to be logged in
+                window.location.replace("/login-required");
+            } 
+
             // Account page ////////////////
             if(page === '/account') {
                 loadAccount(renderAccount);

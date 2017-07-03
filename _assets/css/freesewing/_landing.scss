@@ -1,0 +1,59 @@
+    @keyframes bounce {
+        from {line-height: 4rem;}
+        to {line-height: 5rem;}
+    }
+    .landing {
+        background: $purple;
+        color: $white;
+        text-align: center;
+        padding: 14rem 2rem;
+        margin-top: -6rem;
+        height: 95vh;
+
+        h2 {
+            font-weight: 100;
+            font-size: 4rem;
+            letter-spacing: -0.15rem;
+        }
+        p.lead {
+            font-size: 2rem;
+        }
+        p a {
+            color: $lighter-purple;
+        }
+        p a:hover {
+            color: $white;
+        }
+        #raquo {
+            font-size: 5rem;
+            font-weight: 100;
+            line-height: 4rem;
+            transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            animation-name: bounce;
+            animation-duration: 0.4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        .landing .light-on-bg {
+            background: transparent;
+            color: $white;
+        }
+    }
+@media (max-width: 767px) {
+    .landing {
+        padding: 0rem 3rem;
+        margin-top: -4rem;
+        h2 {
+            font-size: 3rem;
+        }
+        p.lead {
+            font-size: 1.5rem;
+        }
+        #raquo {
+            display: none;
+        }
+    }
+}
+

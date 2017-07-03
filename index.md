@@ -5,38 +5,25 @@ action: homepage
 permalink: /
 nocomments: true
 ---
-<div class="container" id="testmarked">
-    <h2>New here?</h2>
-    <div class="row visitor-onl">
-        <div class="col-md-4 mb-3">
-            <div class="card hover-shadow">
-                <a href="#burger" id='tour-trigger-1' title="Take the tour" data-episode="welcome" class="tour-guide">
-                    <img src="/img/maze.svg" alt="Take the tour" class="rounded-top">
-                </a>
-                <div class="card-block">
-                    <h4 class="card-title"><a href="#burger" id='tour-trigger-2' title="Take the tour" data-episode="welcome" class="tour-guide">Take the tour<span class="block-link"></span></a></h4>
-                    <p class="card-text">I have created a series of short animations to explain different things about this site</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-3">
-        {% include card.html 
-            title='The freesewing origin story'
-            text="Understanding what this is all about will make a lot more sense of you know where this comes from."
-            img='/img/lamp.jpg'
-            link='/about'
-        %}
-        </div>
-        <div class="col-md-4 mb-3">
-        {% include card.html 
-            title='Check out a sample draft'
-            text="This website generate pattern drafts. Here's a sample you can check out to have an idea what to expect."
-            img='/img/draft-detail.png'
-            alt='A Creative Commons picture from the Flickr stream of WOCinTech Chat'
-            link='/drafts/rhtum'
-        %}
-        </div>
-    </div>
+<div class="cover-wrap landing visitor-only">
+<div id="landing">
+    <h2>We draft sewing patterns</h2>
+    <p class="lead" >Made-to-measure patterns. For you. For free.</p>
+        <form id="signup-landing" class="m600 form-inline mt-4">
+            <label class="sr-only" for="signup-email">Email address</label>
+            <input class="form-control mb-2 mr-sm-2 mb-sm-0" id="signup-email" name="signup-email" placeholder="Your email address" required="" type="email">
+            <label class="sr-only" for="signup-password">Email address</label>
+            <input class="form-control mb-2 mr-sm-2 mb-sm-0" id="signup-password" name="signup-password" placeholder="Pick a password" required="" type="password">
+            <button id="signup-submit" type="submit" class="btn btn-outline-white form-control">Sign up to try it out</button>
+        </form>
+        <p class="mt-4">Not convinced? <a href="/drafts/rhtum">Browse a sample draft</a>, or <a href="/about/">read our origin story</a>.</p>
+</div>
+<div class="cover-bottom">
+    <p id="raquo">&raquo;</p>
+</div>
+</div>
+
+<div class="container">
     <h2><a href="/blog/" title="Blog">Blog</a></h2>
     <div class="row">
         <div class="col-md-6 mb-3 mt-1">
@@ -155,7 +142,7 @@ nocomments: true
         </div>
     </div> <!-- .row -->
     <p class="text-center"><a href="/patterns" class="btn btn-primary btn-lg mt-3">More patterns</a></p>
-    <h2>Showcase</h2>
+    <h2><a href="/showcase/" title="Showcase">Showcase</a></h2>
     <div class="row">
         <div class="col">
             <div class="card-columns blog">
