@@ -2,7 +2,7 @@ blockquote {
     padding: 2rem;
     margin: 1.5rem 0.5rem;
     background: $white;
-    border-left: 4px solid $gray;
+    box-shadow: $shadow;
 }
 blockquote p:last-child {
     margin-bottom: 0;
@@ -40,27 +40,19 @@ blockquote.cc,
 blockquote.fork,
 blockquote.link,
 blockquote.warning { 
-    box-shadow: $shadow;
-    border: 0;
     min-height: 4.5rem;
 }
-blockquote.tip { background: rgba(255, 213, 0, 0.1);}
-blockquote.tip:before { content: "\f0eb"; }
-blockquote.quote { background: rgba(70, 74, 76, 0.1); max-width: 50%; float: right; font-style: italic;}
+blockquote.tip:before { content: "\f0eb"; color: $green; }
+blockquote.quote { max-width: 50%; float: right; font-style: italic;}
 @media (max-width: 767px) { blockquote.quote {max-width: 100%; float: none; clear: both} }
 blockquote.quote:before { content: "\f10e"; }
-blockquote.comment { background: rgba(91, 192, 222, 0.1); }
-blockquote.comment:before { content: "\f0e5"; }
-blockquote.question { background: rgba(92, 184, 92, 0.1); }
-blockquote.question:before { content: "\f29c"; }
-blockquote.warning { background: rgba(217, 83, 79, 0.1); }
-blockquote.warning:before { content: "\f071"; }
-blockquote.cuts { background: rgba(102, 63, 149, 0.1) }
-blockquote.cuts:before { content: "\f0c4"; }
+blockquote.comment:before { content: "\f0e5"; color: $light-purple;}
+blockquote.question:before { content: "\f29c"; color: $pink;}
+blockquote.warning:before { content: "\f071"; color: $red;}
+blockquote.cuts:before { content: "\f0c4"; color: $purple;}
 blockquote.cuts.option:before { content: "\f1de"; }
 blockquote.cuts.measure:before { content: "\f21d"; }
-blockquote.print { background: $white }
-blockquote.print:before { content: "\f02f"; }
+blockquote.print:before { content: "\f02f"; color: $gray;}
 blockquote.love { background: $pink; color: $white }
 blockquote.love:before { content: "\f004"; color: $white }
 blockquote.share { background: #ff4646; color: $white }
