@@ -1,34 +1,32 @@
 ---
 layout: page
-title: Adding a pattern
-tags: [site docs, checklist]
-permalink: /docs/site/checklist/add-pattern
+title: Adding a pattern to the site
+tags: [site docs, howto]
+permalink: /docs/site/howto/add-pattern
 ---
 
-To add a new pattern to this site, follow these steps:
-
-## Checklist
-
-  - Add pattern to [freesewing core](https://github.com/freesewing/core)
-  - In the pattern's config file:
-    - Make sure it is visible (no `hidden: true`)
-    - Note the `handle` of the pattern
-  - Prefetch core data by running `./script/prefetch.sh` in the site root
-  - Create the pattern page at `/pages/patterns/[handle].md`
-  - Create the image directory at `/img/patterns/[handle]/`
-    - Add a `spread.jpg` image to it ([sample](/img/patterns/aaron/spread.jpg))
-    - Add a `[handle].svg` linedrawing to it ([sample](/img/patterns/aaron/aaron.svg))
-    - Add an `options` subdirectory to the image directory
-  - Create the documentation directory at `/pages/docs/patterns/[handle]/`
-    - Add the `index.md` page to it
-    - Add the `measurements.md` page to it
-    - Add the `options.md` page to it
-  - Create the options directory at `/pages/components/pattern-options/[handle]/`
-    - Add individual pages for each option as `[optionname].md` (all lowercase)
-  - Write a blog post to announce the pattern
-  - Share on social media
-{:.todo}
-
+> <h5>Checklist</h5>
+> 
+>   - Add pattern to [freesewing core](https://github.com/freesewing/core)
+>   - In the pattern's config file:
+>     - Make sure it is visible (no `hidden: true`)
+>     - Note the `handle` of the pattern
+>   - Prefetch core data by running `./script/prefetch.sh` in the site root
+>   - Create the pattern page at `/pages/patterns/[handle].md`
+>   - Create the image directory at `/img/patterns/[handle]/`
+>     - Add a `spread.jpg` image to it ([sample](/img/patterns/aaron/spread.jpg))
+>     - Add a `[handle].svg` linedrawing to it ([sample](/img/patterns/aaron/aaron.svg))
+>     - Add an `options` subdirectory to the image directory
+>   - Create the documentation directory at `/pages/docs/patterns/[handle]/`
+>     - Add the `index.md` page to it
+>     - Add the `measurements.md` page to it
+>     - Add the `options.md` page to it
+>   - Create the options directory at `/pages/components/pattern-options/[handle]/`
+>     - Add individual pages for each option as `[optionname].md` (all lowercase)
+>   - Write a blog post to announce the pattern
+>   - Share on social media
+> {:.todo}
+{:.tip}
 
 ## Get it to work
 
