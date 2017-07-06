@@ -8,21 +8,21 @@ permalink: /contribute
 
 Hi there, 
 
-Are you interested in contributing to freesewing? We'd love your help. 
-It's exactly why we made this thing open source in the first place.
+Are you interested in contributing to freesewing? 
+That's awesome, and exactly why we this thing is open source in the first place.
 
 ## Code of conduct
 
-We strive to be an open and inclusive community.
-To keep the trolls at bay, we have a [code of conduct](/about/code-of-conduct). 
-and we ask contributors to uphold it.
+Freesewing strives to be an open and inclusive community.
+To keep the trolls at bay, there's a [code of conduct](/about/code-of-conduct). 
+and contributors are expected to uphold it.
 
 ## Where to get help or report a problem
 
-- The freesewing community on Gitter is the best place to ask questions, 
-meet other freesewers, or just hang out and share a laugh. [Join the freesewing community on Gitter](https://gitter.im/freesewing/freesewing).
+- The [freesewing chat on Gitter](https://gitter.im/freesewing/freesewing) is the best place to ask questions, 
+meet other freesewers, or just hang out and share a laugh.
 - Chat not your thing? The [@freesewing_org](https://twitter.com/freesewing_org) 
-account on Twitter is the next best thing.
+Twitter account is the next best thing.
 - Did you spot a mistake? Have a suggestion for an improvement? 
 Please [file an issue on GitHub](https://github.com/freesewing/freesewing.github.io/issues/new). 
 You'll need a GitHub account, but they are free.
@@ -37,34 +37,33 @@ there are lots of ways to contribute. Here are few ideas:
 - Read through the documentation, and any time you see something confusing, 
 or have a suggestion for something that could be improved, click the
  _improve this page_ link that you find at the very bottom of every page. 
-- [Join the freesewing community on Gitter](https://gitter.im/freesewing/freesewing) to talk to like-minded people with a love for sewing on a mission
+- [Join the freesewing chat on Gitter](https://gitter.im/freesewing/freesewing) to talk to like-minded people with a love for sewing on a mission
+to fix sewing patterns once and for all.
 
 ### For makers
 
-- Make our patterns, and provide us with your feedback
+- Make the patterns, and share your feedback
 - Improve the pattern instructions
-- Share your makes with the community, using the #freesewing hashtag
-- Spread the word about freesewing, because we don't have a marketing budget
+- Share your makes with the community, using the **#freesewing** hashtag
+- Spread the word about freesewing: put a link on your blog, or write about your experience with the site
 
 ### For designers
 
 - Host your designs on freesewing.org
-- Let us help you port your existing designs to the freesewing platform
-- Use freesewing to build your pattern business on
+- Port your existing designs to the freesewing platform (You can [get help with that](/contact))
+- Build [your pattern business](/business) on the freesewing platform
 
 ### For developers
 
 - Install freesewing on your computer and kick the tires. Does it work?
-Does it what you'd expect? If not, [open an issue](https://github.com/freesewing/freesewing.github.io/issues/new)
- and let us know.
-- Comment on some of our [open issues](https://github.com/freesewing/freesewing.github.io/issues). 
+Does it what you'd expect? If not, [open an issue](https://github.com/freesewing/freesewing.github.io/issues/new) so it can get fixed.
+- Comment on some of the [open issues](/issues). 
 Have you experienced the same problem? Know a work around? 
-- Hang out at [the freesewing community on Gitter](https://gitter.im/freesewing/freesewing), and lend a hand answering questions. 
-There's a good chance you.ve already experienced what another user is experiencing.
+- Hang out at [the freesewing chat on Gitter](https://gitter.im/freesewing/freesewing), and lend a hand answering questions. 
+There's a good chance you've already experienced what another user is experiencing.
 - Find an open issue (especially those labeled _help-wanted_), and submit a proposed fix. 
-If it's your first pull request, we promise we won't bite, and are glad to answer any questions.
+If it's your first pull request, relax, nobody will bite, and you're free to ask questions.
 - Help evaluate open pull requests, by testing the changes locally and reviewing what's proposed.
-to fix sewing patterns once and for all.
 
 ## Submitting a pull request
 
@@ -72,7 +71,7 @@ to fix sewing patterns once and for all.
 - The more information, the better. Make judicious use of the pull request body. 
 Describe what changes were made, why you made them, and what impact they will have for users.
 - Pull requests are easy and fun. If this is your first pull request, it may help to [understand GitHub Flow](https://guides.github.com/introduction/flow/).
-- If you're submitting a code contribution, be sure to read the code contributions section below.
+- If you're submitting a code contribution, be sure to read the [code contributions](#code-contributions) section below.
 
 ### Submitting a pull request via github.com
 
@@ -89,48 +88,47 @@ Many small changes can be made entirely through the github.com web interface.
 
 That's it! You'll be automatically subscribed to receive updates as others review your proposed change and provide feedback.
 
-## Proposing updates to the documentation
+## Proposing updates to the site/documentation
 
-We want the freesewing documentation to be the best it can be. 
-We've open-sourced our docs and we welcome any pull requests if you find it lacking.
+Thehe freesewing documentation aims to be the best it can be. 
+All content is open-sourced and pull requests are welcome in case you find it lacking.
 
 ### Jekyll and markdown
-Our documentation is written in markdown and generated by Jekyll.
-The [site markup page](/docs/site/markup) has an overview of most of the page elements we use. 
+This site is written in markdown and generated by Jekyll.
+The [site markup page](/docs/site/markup) has an overview of most of the markup. 
 
 ### How to submit changes
 
-You can find the documentation for freesewing in [the docs repository](https://github.com/freesewing/docs). 
+You can find the freesewing website in [the site repository](https://github.com/freesewing/site). 
 See the section above &mdash; [submitting a pull request](#submitting-a-pull-request) &mdash;
 for information on how to propose a change.
 
 ## Code contributions
 
-Interesting in submitting a pull request? Awesome. Read on for a few things you should know.
+Interesting in submitting a pull request for our code? Awesome. Read on for a few things you should know.
 
 ### Coding standard and autoloading
 
-Freesewing uses the [PSR-2 coding standard](http://www.php-fig.org/psr/psr-2/), 
+Freesewing [core](https://github.com/freesewing/core) (and [data](https://github.com/freesewing/core) for that matter) uses the [PSR-2 coding standard](http://www.php-fig.org/psr/psr-2/), 
 and the [PSR-4 autoloader](http://www.php-fig.org/psr/psr-4/). 
 
-Please make sure to respect both the coding standard and the naming conventions of the autoloader.
+Please make sure to respect both the coding standard and the naming conventions of the autoloader. More details on the [naming conventions](/docs/naming-conventions) page.
 
 ### PHP 5.6 compatibility
 
 While PHP7 is a lot faster and provides some cool new features, a lot of (shared) hosting
 environments still ship with the PHP 5.6 branch.
 
-To make deployment as easy as possible, we are keeping the freesewing codebase compatible
+To make deployment as easy as possible, the **freesewing core** codebase is kept compatible
 with PHP5.6 and up.
 
-This means you should refrain from using PHP7-only syntax until at some point in the future
-we will decide to drop support for PHP5.
+This means you should refrain from using PHP7-only syntax until at some point in the future support for PHP5 is dropped.
 
 ### Unit tests
 
-We use PHPUnit for unit tests. The tests are located in the _tests_ folder.
+Freesewing uses PHPUnit for unit tests. The tests are located in the _tests_ folder of the core repository, and not yet written for the data repository (boo!).
 
-At the very least, you should run tests before and after your code changes to see
+For core, at the very least, you should run tests before and after your code changes to see
 the impact. Preferably, your pull request will contain new/updated unit tests to test your code.
 
 ## Credits

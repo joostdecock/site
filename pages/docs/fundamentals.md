@@ -6,58 +6,52 @@ permalink: /docs/fundamentals
 crumbs:
  - /docs|Docs
 ---
-### Building blocks
+> ##### Freesewing is more than core
+> The freesewing project involves other things besides **core**, 
+> such as **freesewing site** (this website)
+> and **freesewing data**, 
+> our data API which handles user data like logins, comments, and so on.
+> 
+> Those things are not relevant when discussing the fundamentals of freesewing.
+> Our focus is on understanding core.
+{:.comment}
 
-Freesewing is made up of a number of different components that work together.
+### Freesewing core
 
-#### Core
+To understand freesewing, we will focus on **freesewing core**:
+the platform that generates patterns.
 
-Freesewing core is the platform on which these other components depend. 
+The freesewing project involves other things besides **core**, 
+such as **freesewing site** (this website)
+and **freesewing data**, 
+our data API which handles user data like logins, comments, and so on.
 
-Unless you are a developer, it's sufficient to know that core is the toolbox you have at your disposal.
+But those things are not relevant when discussing the fundamentals of freesewing.
+Our focus is on understanding core.
 
-#### Patterns
+{% include figure.html
+  url='/img/fundamentals/core.svg'
+  description='Schematic overview of the core platform'
+%}
 
-A freesewing pattern is a component that plugs into the freesewing core.
-
-The role of a pattern is to generate a _draft_ based on the measurements and options provided by the user.
-A pattern is not lines on paper, but a piece of code to generate those lines.
-
-> <h5 class='notoc'>Don't confuse pattterns with drafts</h5>
->
-> What you think of as a **pattern** is called a **draft** in freesewing.
->
-> A **pattern** is a small software module that plugs into the core platform.
-> It's like a master plan, a recipe if you will. 
->
-> A **draft** is what a pattern generates. An SVG file that you can edit in
-> a graphic design tool, or turn into a PDF and print.
-{: .tip }
-
-#### Themes
-
-A theme determines the visual properties of your drafts. In other words,
-what they will look like.
-
-> <h5 class='notoc'>Should I care about themes?</h5>
-> If you're (thinking about) using freesewing to power your pattern company, you will want to make a theme
-> to make your patterns look like your patterns. Colours, line types, fonts, logo, and so on.
->
-> If not, you can mostly forget about themes.
-{: .question }
+The core platform can also be extended with modules.
+These modules come in three types: **channels**, **patterns**, and **themes**.
 
 #### Channels
 
-A channels guards the door to your freesewing instance and determines who gets in.
+A **channel** guards the door to your freesewing core instance and determines who gets in.
 
 The role of a channel is two-fold:
 
-- To determine whether or not we want to serve a given request
+- To determine whether or not we want to serve a given request (access control)
 - To translate user input into something understood by core/themes/patterns
+
+For example, a channel may translate imperial measurements into metric, or 
+treat requests from a mobile app differently than from a website.
 
 > <h5 class='notoc'>Should I care about channels?</h5>
 > If you're (thinking about) using freesewing to power your pattern company, 
-> you probbaly want your own channel.
+> you probably want your own channel.
 >
 > That way, you can use your own names for measurements, you can only allow access to
 > paying customers, or you can treat your website and mobile app in a different way.
@@ -65,12 +59,45 @@ The role of a channel is two-fold:
 > If you're not running your own isntance, you can mostly forget about channels.
 {: .question }
 
+#### Patterns
+
+A **pattern** generates a _draft_ based on the measurements and options provided by the user.
+
+In other words, the pattern does the heavy lifting of taking user input an transforming that
+into something useful.
+
+Patterns are single-purpose. They generate drafts, that's all they do.
+
+#### Themes
+
+A **theme** controls the look and feel. Its role is two-fold:
+
+ - Format the draft 
+ - Format the response
+
+Formatting the draft is (hopefully) self-explanatory. The theme controls the 
+colours of lines, fonts of the text, logos, and what notches and other patterns markings look like.
+
+But themes can also format the request. For example, you could create a theme that doesn't
+return the standard SVG, but turns that automatically in a PDF.
+
+> ##### Should I care about themes?
+> If you're (thinking about) using freesewing to power your pattern company, you will want to make a theme
+> to make your patterns look like your patterns. Colours, line types, fonts, logo, and so on.
+>
+> If not, you can mostly forget about themes.
+{: .question }
+
+
 ### Concepts
 
 There's a number of concepts that you should be familiar with to _get_ freesewing.
 
 #### The coordinate system
 
+{% include figure.html
+  url='/img/fundamentals/coordinates.svg'
+%}
 The coordinate system originates from the top left.
 
 Coordinates are like text in a book. You start at the top on the left side,
@@ -116,21 +143,36 @@ Bezier curves are more intuitive as you might think. Here is an example:
 #### Pathstrings
 
 Pathstrings are a way to describe a path &mdash; made up of curves and/or line segments &mdash; in text.
-In freesewing, wesupport the following operations in pathstrings:
+In freesewing, we support the following operations in pathstrings:
 
 - `M` : Move. The move operation moves to a specific point. Moving does not draw anything. It.s like moving across the paper without putting your pencil down.
 - `L` : Line. The line operation draws a line from where we are now to a given point.
 - `C` : Curve. The curve operation expect 3 point names. Two points that control the curve (so-called control points) and point at the curve endpoint.
 - `Z` or `z` : Close path. This will close your path by drawing a line from wherever you are now to where your path started.
 
+Paths **always** start with a M (move) operation. That is because all operations start from the current point.
+
+For example, when drawing a line, you don't give it the start and the end point, but only the end point.
+That's because, once again, all path operations start from the current point.
+
+But when you start your path, there isn't a current point yet. So you start by moving to a point.
+
 ## Services
 Freesewing core provides 4 different services. If the description below leaves you guessing,
-you can try them all in [our demo](/fixme).
+you can try them all in [our demo](https://demo.freesewing.org/).
 
 ### The draft service
+{% include figure.html
+  url='/img/fundamentals/draft.svg'
+  description='Sample output from the draft service'
+%}
 The draft service drafts patterns. It's sort of our main thing, and probably the reason you're reading this in the first place.
 
 ### The sample service
+{% include figure.html
+  url='/img/fundamentals/sample.svg'
+  description='Sample output from the sample service'
+%}
 The sample service samples model measurements or pattern options.
 
 A sample is a simplified version of the pattern that has just the seamlines.
@@ -142,6 +184,10 @@ Or the sample service can use the same model, but itterate between the minimum a
 values of a given option. This way, you can check how the option impacts the pattern.
 
 ### The compare service
+{% include figure.html
+  url='/img/fundamentals/compare.svg'
+  description='Sample output from the compare service'
+%}
 The compare service exists because people will miss-measure. It happens.
 
 But when it does, it can be hard to know your pattern is wrong in the absence of
@@ -155,88 +201,37 @@ This way, you can simply eyeball your own pattern in comparison to a range of ot
 
 
 ### The info service
+```
+{
+  "services": [
+    "info",
+    "draft",
+    "sample",
+    "compare"
+  ],
+  "patterns": {
+    "Core":{
+      "AaronAshirt":"Aaron A-Shirt",
+      "BrianBodyBlock":"Brian Body Block",
+      "BruceBoxerBriefs":"Bruce Boxer Briefs",
+      "CathrinCorset":"Cathrin Corset",
+      "HugoHoodie":"Hugo Hoodie",
+      "SimonShirt":"Simon Shirt",
+      "SvenSweatshirt":"Sven Sweatshirt",
+      "TamikoTop":"Tamiko Top",
+      "TheoTrousers":"Theo trousers",
+      "TheodoreTrousers":"Theodore trousers",
+      "TrayvonTie":"Trayvon Tie",
+      "WahidWaistcoat":"Wahid Waistcoat"
+  }
+}
+```
 The info service provides information about the core platform. It serves to facilitate 
 frontend integration.
 As such, it's mostly relevant to developers and site builders.
 
-Our demo uses the info service. It doesn't know what patterns we have, or what options each
+[Our demo](https://demo.freesewing.org/) uses the info service. It doesn't know what patterns we have, or what options each
 pattern has. But it doesn't have to, it can simply ask the info service.
-
-## Configuration files
-
-The full details on configuration files are [here](/docs/core/config), but you can get away with 
-knowing only this:
-
-- The freesewing global configuration file is `config.yml` and is located at the root of the project.
-- Pattterns and themes have their own `config.yml` in their folder root.
-- Channels can have their own `config.yml` in their folder root.
-
-## Request parameters
-Freesewing needs your input to do what it does. And that input comes in the form or request parameters.
-
-The full details on all request parameters are available [here](/docs/core/parameters). 
-But you can get away with knowing only this:
-
-### The basics
-
-#### service
-
-The mandatory **service** parameter must be one of:
-
-- draft
-- sample
-- compare
-- info
-
-Browser example: `index.php?service=info`
-
-Command line example: `./freesewing service=info`
-
-### info service parameters
-
-#### format
-
-The **format** parameters must be one of these:
-
-- json
-- text
-- php
-- html
-
-and defaults to json. It controls the output format of the info service.
-
-Browser example: `index.php?service=info&format=html`
-
-Command line example: `./freesewing service=info format=text`
-
-#### pattern
-
-The **pattern** parameter, if present, must be the exact name of a pattern folder/class.
-
-If the pattern is present, the info service will return info on the pattern.
-If not, the info service will return genreal info about the platform.
-
-Browser example: `index.php?service=info&format=html&pattern=AaronAshirt`
-
-Command line example: `./freesewing service=info format=text pattern=AaronAshirt`
-
-### draft service parameters
-
-#### pattern
-
-The mandatory **pattern** parameter, if present, must be the exact name of a pattern folder/class.
-
-Browser example: `index.php?service=draft&pattern=AaronAshirt`
-
-Command line example: `./freesewing service=draft pattern=AaronAshirt`
-
-#### theme
-
-The optional **theme** parameter must be the exaact name of a themes folder/class.
-
-Browser example: `index.php?service=draft&pattern=AaronAshirt&theme=Designer`
-
-Command line example: `./freesewing service=draft pattern=AaronAshirt&theme=Paperless`
 
 
 * TOC - Do not remove this line

@@ -18,7 +18,7 @@ This happens every year on 10 December.
 
 
 ## Caveat
-TL;DR: I will donate 100% of what I receive, but that is not 100% of what you give.
+TL;DR: I promise to donate 100% of what I receive, I'll try to cover the transaction fees (so it's also 100% of what you give).
 {: .lead }
 
 When you donate, PayPal charges a fee. 
@@ -30,7 +30,7 @@ Historically, I have donated 100% of donations given, and paid the difference
 I hope to continue to do that, because I like the idea that 100% of what you
 give goes to charity.
 
-However, I cannot pledge this,because if this project becomes wildly successful,
+However, I cannot pledge this, because if this project becomes wildly successful,
 it would bankrupt me to pay the transaction fee on all donations.
 
 ## Donations history

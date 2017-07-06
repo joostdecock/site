@@ -136,7 +136,7 @@ nocomments: true
                     {% include card.html 
                         title='Freesewing for business'
                         text='You can use freesewing to underpin your pattern business, we even encourage it.'
-                        link='/fixme'
+                        link='/business'
                     %}
                 </div>
             </div>
