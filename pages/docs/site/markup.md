@@ -7,20 +7,20 @@ permalink: /docs/site/markup
 
 ## Types of markup
 
-Before we can present an overview of the markup typically used on this site, it's important to understand that different types of markup work together to come up with the end result.
+Before we start, you should know that different types of markup are mixed together to generate this website.
 
 ### Liquid
-[Liquid](https://shopify.github.io/liquid/) is a template language used in Jekyll. 
+[Liquid](https://shopify.github.io/liquid/) is the template language used in Jekyll. 
 
 While it's mostly used in Jekyll layouts, we sometimes also use it in our content.
-For example, inserting images can be done easily with our liquid figure include (see[images](#images) below).
+For example, inserting images can be done easily with our liquid figure include (see [images](#images) below).
 
-You'll recognize liquid by its opening and closing tags. Liquid uses {% raw %}`{% %}`{% endraw %} for logic and {% raw %}`{{ }}`{% endraw %} for printing.
+You'll recognize liquid by its opening and closing tags. Liquid uses {% raw %}`{% %}`{% endraw %} for logic and {% raw %}`{{ }}`{% endraw %} for output.
 
 ### Kramdown
 We use [kramdown](https://kramdown.gettalong.org/), which is a flavour of Markdown that comes with some extras.
 
-Markdown allows for manipulation of attributes, something we use relatively often to add classes to elements.
+Kramdown allows for manipulation of attributes, something we use relatively often to add classes to elements.
 
 Have a look at the [todo lists](#todo-lists) or our various [blockquote styles](#blockquotes) for examples.
 
@@ -28,7 +28,7 @@ You'll reconize kramdown by its opening and closting tags: `{: }`
 
 
 ### HTML and CSS
-This markup sites at the lowest level, and probably needs no explaining.
+This markup sits at the lowest level, and probably needs no introduction.
 
 
 ## Headings
@@ -209,47 +209,41 @@ Furthermore, they are trivial to add in markdown as you simply need to start you
 The standard blockquote is shown below. While you can use it, blockquotes are 
 most often used in combination with one of the classes shown below the generic example.
 
-> <h5>This is the blockquote</h5>
+> ##### This is the blockquote
 >
 > This is the blockquote message.
 >
-> <h6>This is a blockquote subtitle</h6>
-> Note that you need to write blockquote titles as HTML if you want to keep them out
-> of the table of contents (which you typically should).
+> ###### This is a blockquote subtitle
 >
-> That is, until somebody shows me how you can apply the `{:.no_toc}` attributes
-> to a title withing a blockquote, for I can't seem to figure it out.
+> More text here.
 
 ```
-> <h5>This is the blockquote</h5>
+> ##### This is the blockquote
 >
 > This is the blockquote message.
 >
-> <h6>This is a blockquote subtitle</h6>
-> Note that you need to write blockquote titles as HTML if you want to keep them out
-> of the table of contents (which you typically should).
+> ###### This is a blockquote subtitle
 >
-> That is, until somebody shows me how you can apply the `{:.no_toc}` attributes
-> to a title withing a blockquote, for I can't seem to figure it out.
+> More text here.
 ```
 
-### Class blockquotes
+### Styles blockquotes
 
 Add a class to blockquotes to change their look and purpose.
 
 #### tip
 > Add the `tip` class to your blockquote to show a tip.
+>
+> Remember, we can use the kramdown `{:.classname}` syntax to accomplish this.
 {:.tip}
 
-Remember, we can use the kramdown `{:.classname}` syntax to accomplish this:
 
 ```
 > Add the `tip` class to your blockquote to show a tip.
+>
+> Remember, we can use the kramdown `{:.classname}` syntax to accomplish this.
 {:.tip}
 ```
-
-Apart from **tip** the following blockquote classes are available:
-
 
 #### comment
 
@@ -273,23 +267,23 @@ On mobile, they behave as any other blockquote.
 
 #### warning
 
-> Add the `print` class to display a warning.
+> Add the `warning` class to display a warning.
 {:.warning}
 
-#### cuts
+#### cut
 
-> Add the `cuts` class for remarks concerning pattern cutting.
-{:.cuts}
+> Add the `cut` class for remarks concerning pattern cutting.
+{:.cut}
 
-#### cuts & option
+#### option
 
-> Add the `cuts` and `option` classes for remarks concerning pattern options.
-{:.cuts.option}
+> Add the `option` class for remarks concerning pattern options.
+{:.option}
 
-#### cuts & measure
+#### measure
 
-> Add the `cuts` and `measure` classes for remarks concerning measurements.
-{:.cuts.measure}
+> Add the `measure` class for remarks concerning measurements.
+{:.measure}
 
 #### print
 
@@ -300,11 +294,6 @@ On mobile, they behave as any other blockquote.
 
 > Add the `love` class when declaring your love for something.
 {:.love}
-
-#### magic
-
-> Add the `magic` class when it's beyond muggles.
-{:.magic}
 
 #### paperless
 
@@ -326,10 +315,10 @@ On mobile, they behave as any other blockquote.
 > Add the `cc` class when giving credit to creative commons images.
 {:.cc}
 
-#### cc & nocc
+#### nocc
 
-> Add the `cc` and `nocc` classes to give credit for images that are not creative commons.
-{:.cc.nocc}
+> Add the `nocc` class to give credit for images that are not creative commons.
+{:.nocc}
 
 #### fork
 
@@ -340,6 +329,36 @@ On mobile, they behave as any other blockquote.
 
 > Add the `link` class to make a link really stand out.
 {:.link}
+
+#### Custom blockquotes
+The blockquote styles above enforce consistency throughout the site.
+
+But if you want, you can create your own custom blockquote with our blockquotes include.
+
+{% include blockquote.html
+  bg='linear-gradient(to right, rgba(102,63,149,1) 0%, rgba(91,192,222,1) 100%);'
+  icon='handshake-o'
+  tcolor='rgba(255, 255, 255, 0.8)'
+  icolor='#666'
+  content="<h5>This is a custom blockquote</h5><p>Remember, just because you can doesn't mean you should.</p>"
+%}
+
+Here's how to do that:
+
+{% raw %}
+```liquid
+{% include blockquote.html
+  bg='linear-gradient(to right, rgba(102,63,149,1) 0%, rgba(91,192,222,1) 100%);'
+  icon='handshake-o'
+  tcolor='rgba(255, 255, 255, 0.8)'
+  icolor='#666'
+  content="<h5>This is a custom blockquote</h5><p>Remember, just because you can doesn't mean you should.</p>"
+%}
+```
+{% endraw %}
+
+> Check the [includes documentation](/docs/site/includes) for more details.
+{:.tip}
 
 ## Images
 While markdown has syntax to include images, you should typically use the `figure` include
@@ -358,6 +377,8 @@ Here's how to do that:
     url="/img/potw/potw.jpg"
 %}{% endraw %}
 ```
+> Check the [includes documentation](/docs/site/includes) for more details.
+{:.tip}
 
 ## Links
 
@@ -423,16 +444,30 @@ depending on whether you want to open the menu (left) or the Table of Contents (
 [Open the ToC](#menu-links){:.btn .btn-primary .mt-4 .mb-4 .oc-toggle .right .on-oc-right}
 ```
 
-> <h5 class="no_toc">Display things only when the right area is off-canvas</h5>
->
-> Note that you can only open the table of contents when it's collapsed off-canvas.
-> You can add the `on-oc-right` class to anything, and it will only show up when the 
-> right area is off-canvas.
->
-> If you are reading this on mobile, you will see two buttons above. On a desktop, you'll 
-> see only one. But if you make the browser window narrower to the point the table of contents
-> goes off-canvas, the second button will show up. 
-{: .tip }
+### Guide links
+The guides as listed on the top of [the documentation overview](/docs) open in a modal window 
+and require a specific type of link.
+
+Specifically, give your link the `.tour-guide` class and store the guide to open in the `data-episode` attribute.
+
+For example, 
+[this](#guide-links){:.tour-guide}{:data-episode='mobile-nav'}
+opens the mobile navigation guide.
+
+```md
+For example, 
+[this](#guide-links){:.tour-guide}{:data-episode='mobile-nav'}
+opens the mobile navigation guide.
+```
+
+> ##### Use an anchor link
+> To be semantically correct, your link should link to something.
+> So use an anchor link to a nearby anchor.
+{:.comment}
+
+> ##### Leave out the episode to open the episode list
+> If you don't specify the `data-episode` attribute, the episode list will be opened.
+{:.tip}
 
 ## Code
 
@@ -554,7 +589,61 @@ To exclude a heading from the table of contents, give it the `no_toc` class:
 {:.no_toc}
 ```
 
+> ##### Not needed for blockquotes
+>
+> Remember that the TOC only displays headings of levels 1 to 4.
+> As headings like the one above are level 5, they will never should up in the TOC.
+{:.tip}
 
+## Conditional rendering
+
+> ##### Hidden doesn't mean it's not there
+>
+> These are all techniques to hide content from view.
+> But that doesn't mean the content is not there, it's merely not shown.
+>
+> In other words, don't depend on this to hide secrets.
+{:.warning}
+
+
+### Based on screen size
+
+Screen real-estate is an important factor when working on your content.
+
+If responsive design isn't enough for you, there's two classes to outright hide
+content based on screen size. They are `not-on-small` and `only-on-small`.
+
+Screens up to 767px will show conent with the `only-on-small` class, and will hide content with the `not-on-small` class.
+
+Screen from 768px upwards will hide content with the `only-on-small` class, yet will show content with the `not-on-small` class.
+
+### Based on user state
+
+Three classes are available to show or hide things based on the user state. They are:
+
+ - `visitor-only`
+ - `logged-in-only`
+ - `logged-out-only`
+
+Content with the `visitor-only` class is only show to a user who has never logged in on the site.
+
+Content with the `logged-in-only` class is only show to a user who is currently logged in.
+
+Content with the `logged-out-only` class is only show to a user who is not currently logged in, yet has logged in before.
+
+### Display things only when the right area is off-canvas
+
+On some pages, the table of contents will collapse of canvas on mobile.
+
+You can add the `on-oc-right` class to anything, and it will only show up when the 
+right area is off-canvas.
+
+[Open the menu](#display-things-only-when-the-right-area-is-off-canvas){:.btn .btn-primary .mt-4 .mb-4 .oc-toggle .left }
+[Open the ToC](#display-things-only-when-the-right-area-is-off-canvas){:.btn .btn-primary .mt-4 .mb-4 .oc-toggle .right .on-oc-right}
+
+If you are reading this on mobile, you will see two buttons above. On a desktop, you'll 
+see only one. But if you make the browser window narrower to the point the table of contents
+goes off-canvas, the second button will show up. 
 
 * TOC - Do not remove this line
 {:toc}
