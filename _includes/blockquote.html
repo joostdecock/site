@@ -1,0 +1,6 @@
+{% if(include.bg) %}<blockquote style="background: {{ include.bg }}; {% if(include.tcolor) %}color: {{ include.tcolor}};{% endif%}">
+{% else %}<blockquote {% if(include.color) %}style="color: {{ include.tcolor}};"{% endif%}>
+{% endif %}
+{% if(include.icon) %}<span class="blockquote-icon" {% if(include.icolor) %}style="color: {{ include.icolor}};"{% endif%}><i class="fa fa-{{ include.icon }}"></i></span>{% endif%}
+{{ include.content }}
+</blockquote>
