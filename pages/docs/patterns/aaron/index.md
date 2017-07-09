@@ -92,7 +92,7 @@ Fold the hem upwards, and sew it down. If you have a coverlock, use it. If not, 
 > <h5>A coverlock is nice, but optional</h5>
 > As with all knitwear and stretch fabrics, a coverlock will make your life easier.
 >
-> If you do not have one of those, don't despair. You just need to make sure that your hem can stretch. But a twin-needle of zig-zag stitch will do that for you too.
+> If you do not have one of those, don't despair. You just need to make sure that your hem can stretch. But a twin-needle or zig-zag stitch will do that for you too.
 {:.comment}
 
 ### Step 3: Sew knit binding to the front
