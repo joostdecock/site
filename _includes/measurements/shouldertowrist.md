@@ -1,7 +1,6 @@
-{% include figure.html url="/img/potw/potw.jpg" %}
+{% include measurementTabs.html measurement="shouldertowrist" %}
 
-The **shoulder to wrist** measurement runs from the edge of your shoulder down your arm to your wrist.
+The **shoulder to wrist** measurement determines your sleeve length, and runs from the shoulder point along the arm to your wrist.
 
-To measure your **shoulder to wrist**, start at the edge of your shoulder, 
-where your sleeve starts at a well-fitting shirt. Follow your arm, making sure to keep it in natural (slightly-bend) position, down to your wrist.
-
+To measure your **shoulder to wrist** measurement, place your tape measure at your shoulder point.
+Let your arm hang naturally in a slight bend, and measure along your slightly bended arm up to your wrist.

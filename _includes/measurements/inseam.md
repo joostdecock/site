@@ -1,4 +1,4 @@
-{% include figure.html url="/img/potw/potw.jpg" %}
+{% include measurementTabs.html measurement="inseam" %}
 
 The Inseam is the measurement from your crotch down to the floor.
 

@@ -1,4 +1,4 @@
-{% include figure.html url="/img/potw/potw.jpg" %}
+{% include measurementTabs.html measurement="bicepscircumference" %}
 
 The **bicepsCircumference** measurement goes around the fullest part of your upper arm.
 

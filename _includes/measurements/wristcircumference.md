@@ -1,4 +1,4 @@
-{% include figure.html url="/img/potw/potw.jpg" %}
+{% include measurementTabs.html measurement="wristcircumference" %}
 
 The **wrist circumference** measurement is the circumference of your wrist.
 

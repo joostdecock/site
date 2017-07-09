@@ -1,4 +1,4 @@
-{% include figure.html url="/img/potw/potw.jpg" %}
+{% include measurementTabs.html measurement="anklecircumference" %}
 
 The **ankleCircumference** measurement goes around your ankle.
 

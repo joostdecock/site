@@ -1,6 +1,6 @@
-{% include figure.html url="/img/potw/potw.jpg" %}
+{% include measurementTabs.html measurement="shoulderslope" %}
 
-The **shouler slope** measurement is an indicator for the amount with which your shoulder slopes downward. 
+The **shoulder slope** measurement is an indicator for the amount with which your shoulder slopes downward. 
 You can not measure it directly, but need to calculate the difference between two measurements to find it.
 
 To calculate your **shoulder slope**, tie a ribbon or elastic around your chest, making sure to keep it horizontal.

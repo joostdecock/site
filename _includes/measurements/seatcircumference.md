@@ -1,4 +1,4 @@
-{% include figure.html url="/img/potw/potw.jpg" %}
+{% include measurementTabs.html measurement="seatcircumference" %}
 
 The **seat circumference** is the measurement around the fullest part of your bum.
 

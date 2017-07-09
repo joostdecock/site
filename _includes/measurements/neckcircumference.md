@@ -1,4 +1,4 @@
-{% include figure.html url="/img/potw/potw.jpg" %}
+{% include measurementTabs.html measurement="neckcircumference" %}
 
 The **neck circumference** is the measurement around your neck, at the level you would wear your shirt collar, or tie.
 

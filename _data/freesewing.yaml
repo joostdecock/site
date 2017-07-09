@@ -151,7 +151,7 @@ patterns:
             shoulderSlope: 55
             shoulderToShoulder: 470
             hipsCircumference: 950
-            sleeveLengthToWrist: 700
+            shoulderToWrist: 700
             wristCircumference: 190
         options:
             chestEase:
@@ -260,7 +260,7 @@ patterns:
                 type: measure
                 min: 0
                 max: 70
-                default: 10
+                default: 0
             rise:
                 title: Rise
                 description: 'Amount to raise the waist. A negative value will lower it.'
@@ -268,7 +268,7 @@ patterns:
                 type: measure
                 min: -30
                 max: 50
-                default: 10
+                default: 35
             stretch:
                 title: Stretch
                 description: 'The amount of negative ease.'
@@ -445,7 +445,7 @@ patterns:
             shoulderSlope: 55
             shoulderToShoulder: 470
             hipsCircumference: 950
-            sleeveLengthToWrist: 700
+            shoulderToWrist: 700
             wristCircumference: 190
             headCircumference: 590
         options:
@@ -550,7 +550,7 @@ patterns:
             shoulderSlope: 55
             hipsCircumference: 950
             naturalWaist: 885
-            sleeveLengthToWrist: 700
+            shoulderToWrist: 700
             wristCircumference: 190
             shoulderToElbow: 410
         options:
@@ -964,7 +964,7 @@ patterns:
             shoulderSlope: 55
             shoulderToShoulder: 470
             hipsCircumference: 950
-            sleeveLengthToWrist: 700
+            shoulderToWrist: 700
             wristCircumference: 190
         options:
             chestEase:
@@ -1484,6 +1484,8 @@ patterns:
                 description: 'A factor the influences the shape of the back seam.'
                 group: fit
                 type: percent
+                min: 50
+                max: 100
                 default: 75
         optiongroups:
             fit:
@@ -1569,21 +1571,21 @@ measurements:
     bicepsCircumference: all
     centerBackNeckToWaist: all
     chestCircumference: all
-    naturalWaistToHip: all
-    neckCircumference: all
-    shoulderToShoulder: all
-    shoulderSlope: all
-    hipsCircumference: all
-    sleeveLengthToWrist: all
-    wristCircumference: all
-    upperLegCircumference: all
-    hipsToUpperLeg: all
-    underBust: female
-    naturalWaist: all
-    naturalWaistToUnderbust: all
     headCircumference: all
-    shoulderToElbow: all
-    seatCircumference: all
+    hipsCircumference: all
+    hipsToUpperLeg: all
     inseam: all
-    seatDepth: all
+    naturalWaist: all
+    naturalWaistToHip: all
     naturalWaistToSeat: all
+    naturalWaistToUnderbust: all
+    neckCircumference: all
+    seatCircumference: all
+    seatDepth: all
+    shoulderSlope: all
+    shoulderToElbow: all
+    shoulderToShoulder: all
+    shoulderToWrist: all
+    underBust: female
+    upperLegCircumference: all
+    wristCircumference: all

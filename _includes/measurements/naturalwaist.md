@@ -1,4 +1,4 @@
-{% include figure.html url="/img/potw/potw.jpg" %}
+{% include measurementTabs.html measurement="naturalwaist" %}
 
 The **natural waist** measurement is the circumference of your waist below your ribcage.
 

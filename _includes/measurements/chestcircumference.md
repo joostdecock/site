@@ -1,4 +1,4 @@
-{% include figure.html url="/img/potw/potw.jpg" %}
+{% include measurementTabs.html measurement="chestcircumference" %}
 
 The **chest circumference** measurement wraps around the fullest part of your chest.
 

@@ -86,7 +86,12 @@ nocomments: true
                         <p class="card-text">
                             Correct measurements are crucial. Learn how and where to measure.
                         </p>
-{% include pagelist.html tag='measurements' format='narrowlist' %}
+<ul class="narrow">
+{% for measurement in site.data.freesewing.measurements %}
+{% assign mname = measurement[0] %}
+<li><a href="/docs/measurements/{{mname | downcase }}">{{ mname }}</a></li>
+{% endfor %}
+</ul>
                     </div>
                 </div>
             </div>

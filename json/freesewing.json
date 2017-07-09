@@ -176,7 +176,7 @@
                 "shoulderSlope": 55,
                 "shoulderToShoulder": 470,
                 "hipsCircumference": 950,
-                "sleeveLengthToWrist": 700,
+                "shoulderToWrist": 700,
                 "wristCircumference": 190
             },
             "options": {
@@ -304,7 +304,7 @@
                     "type": "measure",
                     "min": 0,
                     "max": 70,
-                    "default": 10
+                    "default": 0
                 },
                 "rise": {
                     "title": "Rise",
@@ -313,7 +313,7 @@
                     "type": "measure",
                     "min": -30,
                     "max": 50,
-                    "default": 10
+                    "default": 35
                 },
                 "stretch": {
                     "title": "Stretch",
@@ -524,7 +524,7 @@
                 "shoulderSlope": 55,
                 "shoulderToShoulder": 470,
                 "hipsCircumference": 950,
-                "sleeveLengthToWrist": 700,
+                "shoulderToWrist": 700,
                 "wristCircumference": 190,
                 "headCircumference": 590
             },
@@ -645,7 +645,7 @@
                 "shoulderSlope": 55,
                 "hipsCircumference": 950,
                 "naturalWaist": 885,
-                "sleeveLengthToWrist": 700,
+                "shoulderToWrist": 700,
                 "wristCircumference": 190,
                 "shoulderToElbow": 410
             },
@@ -1171,7 +1171,7 @@
                 "shoulderSlope": 55,
                 "shoulderToShoulder": 470,
                 "hipsCircumference": 950,
-                "sleeveLengthToWrist": 700,
+                "shoulderToWrist": 700,
                 "wristCircumference": 190
             },
             "options": {
@@ -1799,6 +1799,8 @@
                     "description": "A factor the influences the shape of the back seam.",
                     "group": "fit",
                     "type": "percent",
+                    "min": 50,
+                    "max": 100,
                     "default": 75
                 }
             },
@@ -1898,23 +1900,23 @@
         "bicepsCircumference": "all",
         "centerBackNeckToWaist": "all",
         "chestCircumference": "all",
-        "naturalWaistToHip": "all",
-        "neckCircumference": "all",
-        "shoulderToShoulder": "all",
-        "shoulderSlope": "all",
-        "hipsCircumference": "all",
-        "sleeveLengthToWrist": "all",
-        "wristCircumference": "all",
-        "upperLegCircumference": "all",
-        "hipsToUpperLeg": "all",
-        "underBust": "female",
-        "naturalWaist": "all",
-        "naturalWaistToUnderbust": "all",
         "headCircumference": "all",
-        "shoulderToElbow": "all",
-        "seatCircumference": "all",
+        "hipsCircumference": "all",
+        "hipsToUpperLeg": "all",
         "inseam": "all",
+        "naturalWaist": "all",
+        "naturalWaistToHip": "all",
+        "naturalWaistToSeat": "all",
+        "naturalWaistToUnderbust": "all",
+        "neckCircumference": "all",
+        "seatCircumference": "all",
         "seatDepth": "all",
-        "naturalWaistToSeat": "all"
+        "shoulderSlope": "all",
+        "shoulderToElbow": "all",
+        "shoulderToShoulder": "all",
+        "shoulderToWrist": "all",
+        "underBust": "female",
+        "upperLegCircumference": "all",
+        "wristCircumference": "all"
     }
 }

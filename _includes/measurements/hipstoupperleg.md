@@ -1,4 +1,4 @@
-{% include figure.html url="/img/potw/potw.jpg" %}
+{% include measurementTabs.html measurement="hipstoupperleg" %}
 
 The **hips to upper leg** is measured at the side of your body from your hipline down to the upper part of your leg. 
 

@@ -1,4 +1,4 @@
-{% include figure.html url="/img/potw/potw.jpg" %}
+{% include measurementTabs.html measurement="kneecircumference" %}
 
 The **kneeCircumference** measurement goes around your knee.
 

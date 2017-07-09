@@ -1,4 +1,4 @@
-{% include figure.html url="/img/potw/potw.jpg" %}
+{% include measurementTabs.html measurement="naturalWaistToFloor" %}
 
 The **naturalWaistToFloor** is the measurement from your natural waist down to the floor.
 

@@ -1,4 +1,4 @@
-{% include figure.html url="/img/potw/potw.jpg" %}
+{% include measurementTabs.html measurement="outseam" %}
 
 The **outseam** is the measurement from your hips down to the floor.
 

@@ -1,4 +1,4 @@
-{% include figure.html url="/img/potw/potw.jpg" %}
+{% include measurementTabs.html measurement="upperlegcircumference" %}
 
 The **upper leg circumference** is the measurement around your leg, all the way at the top of your leg, at your crotch.
 

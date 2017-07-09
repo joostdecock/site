@@ -1,4 +1,4 @@
-{% include figure.html url="/img/potw/potw.jpg" %}
+{% include measurementTabs.html measurement="hipscircumference" %}
 
 The **hips circumference** is measured at the top of your hipbones. 
 
