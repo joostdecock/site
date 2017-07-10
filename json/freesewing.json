@@ -1731,87 +1731,6 @@
                     "frontInset"
                 ]
             }
-        },
-        "TrentTrouserBlock": {
-            "hidden": [
-                false
-            ],
-            "info": {
-                "name": "Trent Trouser Block",
-                "handle": "trent",
-                "description": "A trouser block for menswear with a more modern cut than Theo(dore)",
-                "version": 0.4,
-                "date": 20170324,
-                "author": "Joost De Cock",
-                "company": "freesewing.org",
-                "link": "freesewing.org/pattern/trent",
-                "tags": [
-                    "menswear",
-                    "trousers",
-                    "bottom"
-                ]
-            },
-            "parts": {
-                "frontBlock": "Front",
-                "backBlock": "Back"
-            },
-            "languages": {
-                "en": "English"
-            },
-            "measurements": {
-                "hipsCircumference": 950,
-                "seatCircumference": 1045,
-                "inseam": 910,
-                "naturalWaistToHip": 120,
-                "naturalWaistToSeat": 260,
-                "seatDepth": 240
-            },
-            "options": {
-                "hipsEase": {
-                    "title": "Hips ease",
-                    "description": "The amount of ease at your hips.",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 10,
-                    "max": 60,
-                    "default": 30
-                },
-                "seatEase": {
-                    "title": "Seat ease",
-                    "description": "The amount of ease at your butt.",
-                    "group": "fit",
-                    "type": "measure",
-                    "min": 60,
-                    "max": 160,
-                    "default": 100
-                },
-                "crotchCurveFactor": {
-                    "title": "Crotch curve factor",
-                    "description": "A factor the influences the shape of the crotch curve.",
-                    "group": "fit",
-                    "type": "percent",
-                    "min": 65,
-                    "max": 100,
-                    "default": 85
-                },
-                "backCurveFactor": {
-                    "title": "Back seam curve factor",
-                    "description": "A factor the influences the shape of the back seam.",
-                    "group": "fit",
-                    "type": "percent",
-                    "min": 50,
-                    "max": 100,
-                    "default": 75
-                }
-            },
-            "optiongroups": {
-                "fit": [
-                    "hipsEase",
-                    "seatEase",
-                    "crotchCurveFactor",
-                    "backCurveFactor"
-                ]
-            }
         }
     },
     "namespaces": {
@@ -1828,9 +1747,6 @@
             "theodore",
             "trayvon",
             "wahid"
-        ],
-        "Beta": [
-            "trent"
         ]
     },
     "mapping": {
@@ -1846,8 +1762,7 @@
             "theo": "Theo trousers",
             "theodore": "Theodore trousers",
             "trayvon": "Trayvon Tie",
-            "wahid": "Wahid Waistcoat",
-            "trent": "Trent Trouser Block"
+            "wahid": "Wahid Waistcoat"
         },
         "handleToPattern": {
             "aaron": "AaronAshirt",
@@ -1861,8 +1776,7 @@
             "theo": "TheoTrousers",
             "theodore": "TheodoreTrousers",
             "trayvon": "TrayvonTie",
-            "wahid": "WahidWaistcoat",
-            "trent": "TrentTrouserBlock"
+            "wahid": "WahidWaistcoat"
         },
         "patternToHandle": {
             "AaronAshirt": "aaron",
@@ -1876,8 +1790,7 @@
             "TheoTrousers": "theo",
             "TheodoreTrousers": "theodore",
             "TrayvonTie": "trayvon",
-            "WahidWaistcoat": "wahid",
-            "TrentTrouserBlock": "trent"
+            "WahidWaistcoat": "wahid"
         },
         "handleToNamespace": {
             "aaron": "Core",
@@ -1891,8 +1804,7 @@
             "theo": "Core",
             "theodore": "Core",
             "trayvon": "Core",
-            "wahid": "Core",
-            "trent": "Beta"
+            "wahid": "Core"
         }
     },
     "measurements": {
@@ -1906,7 +1818,6 @@
         "inseam": "all",
         "naturalWaist": "all",
         "naturalWaistToHip": "all",
-        "naturalWaistToSeat": "all",
         "naturalWaistToUnderbust": "all",
         "neckCircumference": "all",
         "seatCircumference": "all",
