@@ -86,17 +86,10 @@
                 if(data.result == 'ok') {
                     window.localStorage.setItem("jwt", data.token);
                     window.localStorage.setItem("fsu", JSON.stringify({ 'id': data.userid, 'email': data.email, 'user': data.username }));
-                    if(typeof($('#login-conf').attr('data-goto')) !== 'undefined') {
-                        window.location.replace($('#login-conf').attr('data-goto'));
-                    } else {
-                        $('body').removeClass('visitor').removeClass('logged-out').addClass('logged-in user');
-                        $('#modal').removeClass();
-                        $('.burger').removeClass('hidden');
-                    }
+                    window.location.replace('/account');
                 } else {
                     $('#login-msg').load('/snippets/'+data.message);
                 }
-                console.log(data);
             }, 'json');
         }
         
