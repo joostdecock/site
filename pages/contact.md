@@ -24,7 +24,7 @@ meet other freesewers, or just hang out and share a laugh.
 Did you spot a mistake? Have a suggestion for an improvement?
 Please file an issue on GitHub. You'll need a GitHub account, but they are free.
 
-<a href='https://github.com/freesewing/freesewing.github.io/issues/new' class='btn btn-outline-primary'>
+<a href='https://github.com/freesewing/site/issues/new' class='btn btn-outline-primary'>
     <i class="fa fa-github" aria-hidden="true"></i>
     Create an issue on GitHub
 </a>

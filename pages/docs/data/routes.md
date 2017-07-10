@@ -8,6 +8,12 @@ permalink: /docs/data/routes
 
 These endpoints are available without authentication:
 
+### Status
+
+`GET /status`
+
+Returns info on the host running the backend, and database.
+
 ### API info
 
 > ##### This is only used at build time

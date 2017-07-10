@@ -1,7 +1,7 @@
 ---
 layout: onecol
 title: Shout-outs
-permalink: /about/shout-outs
+permalink: /shout-outs
 ---
 ## People
 
