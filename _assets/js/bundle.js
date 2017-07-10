@@ -3,7 +3,7 @@
 //= require vendor/bootstrap.min
 //= require vendor/ie10-viewport-bug-workaround
 //= require vendor/lazysizes.min
-//= require vendor/stickyfill.min
+//= require vendor/jquery.stickybits.min.js
 //= require vendor/bootstrap-slider.min
 //= require vendor/jquery.bootstrap-growl.min
 //= require vendor/jquery.finger.min

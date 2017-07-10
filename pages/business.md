@@ -55,7 +55,7 @@ In that case, you can still use the freesewing platform, but you'll have to run 
 
 You will need to:
 
-  - Setup an instance of freesewing core
+  - [Setup an instance of freesewing core](/docs/install)
   - Hook it up to your website/frontend
 
 The first step is documented on this site, and we'll be happy to support you to the best of our abilities, and share our advice and experience.

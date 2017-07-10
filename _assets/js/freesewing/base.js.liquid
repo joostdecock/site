@@ -111,7 +111,7 @@ var token = window.localStorage.getItem("jwt");
         
         // Things that just need to happen //////////////////////////
 
-        $('.sticky').Stickyfill(); // Sticky polyfill
+        $('.sticky').stickybits({ stickyBitStickyOffset: 80 });
 
         headingAnchors(); // Heading anchor links
         

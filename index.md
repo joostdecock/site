@@ -7,14 +7,22 @@ nocomments: true
 ---
 <div class="cover-wrap landing visitor-only">
 <div id="landing">
-    <h2>We draft sewing patterns</h2>
+    <h4>We draft sewing patterns</h4>
     <p class="lead" >Made-to-measure patterns. For you. For free.</p>
-        <form id="signup-landing" class="m600 form-inline mt-4">
-            <label class="sr-only" for="signup-email">Email address</label>
-            <input class="form-control mb-2 mr-sm-2 mb-sm-0" id="signup-email" name="signup-email" placeholder="Your email address" required="" type="email">
-            <label class="sr-only" for="signup-password">Email address</label>
-            <input class="form-control mb-2 mr-sm-2 mb-sm-0" id="signup-password" name="signup-password" placeholder="Pick a password" required="" type="password">
-            <button id="signup-submit" type="submit" class="btn btn-outline-white form-control">Sign up to try it out</button>
+        <form id="signup-landing" class="m600 mt-4">
+            <div class="row">
+                <div class="col-sm-4">
+                    <label class="sr-only" for="signup-email">Email address</label>
+                    <input class="form-control mb-2" id="signup-email" name="signup-email" placeholder="Your email address" required="" type="email">
+                </div>
+                <div class="col-sm-4">
+                    <label class="sr-only" for="signup-password">Email address</label>
+                    <input class="form-control mb-2" id="signup-password" name="signup-password" placeholder="Pick a password" required="" type="password">
+                </div>
+                <div class="col-sm-4">
+                    <button id="signup-submit" type="submit" class="btn btn-outline-white form-control">Sign up to try it</button>
+                </div>
+            </div>
         </form>
         <p class="mt-4">Not convinced? <a href="/drafts/rhtum">Browse a sample draft</a>, or <a href="/about/">read our origin story</a>.</p>
 </div>
@@ -24,7 +32,7 @@ nocomments: true
 </div>
 
 <div class="container">
-    <h2><a href="/blog/" title="Blog">Blog</a></h2>
+    <h3><a href="/blog/" title="Blog">Blog</a></h3>
     <div class="row">
         <div class="col-md-6 mb-3 mt-1">
             {% for post in site.posts limit:1 %}
@@ -74,27 +82,26 @@ nocomments: true
 
             {% endfor %}
     </div> <!-- .row -->
-    <p class="text-center"><a href="/blog" class="btn btn-primary btn-lg mt-3">More blog posts</a></p>
-    <h2><a href="/patterns/">Patterns</a></h2>
+    <p><i class="fa fa-arrow-right" aria-hidden="true"></i> <a href="/blog" class="mt-3">More blog posts</a></p>
+    <h3><a href="/patterns/">Patterns</a></h3>
     <div class="row">
         <div class="col-md-6 mb-3 mt-1">
             <div class="card hover-shadow">
-                <a href="/patterns/aaron" title="The Aaron pattern">
+                <a href="/patterns/sven" title="The Sven pattern">
                     <img 
-                        src="/img/patterns/aaron/lqip_sample.jpg" 
+                        src="/img/patterns/sven/lqip_sample.jpg" 
                         data-sizes="auto"
                         data-srcset="
-                            /img/patterns/aaron/lqip_sample.jpg 25w,
-                            /img/patterns/aaron/low_sample.jpg 500w,
-                            /img/patterns/aaron/med_sample.jpg 1000w,
-                            /img/patterns/aaron/high_sample.jpg 2000w"
-                        alt="The Aaron pattern" 
+                            /img/patterns/sven/lqip_sample.jpg 25w,
+                            /img/patterns/sven/low_sample.jpg 500w,
+                            /img/patterns/sven/med_sample.jpg 1000w"
+                        alt="The Sven pattern" 
                         class="rounded-top lazyload"
                     >
                 </a>
                 <div class="card-block">
-                    <h4 class="card-title"><a href="/patterns/aaron" title="Aaron">Aaron<span class="block-link"></span></a></h4>
-                    <p class="card-text">This no-frills athletic shirt is a wardrobe staple that nobody should be without</p>
+                    <h4 class="card-title"><a href="/patterns/sven" title="Sven">Sven<span class="block-link"></span></a></h4>
+                    <p class="card-text">Sven is a basic sweater with ribbing at the cuffs and neck opening</p>
                 </div>
             </div>
         </div>
@@ -141,14 +148,14 @@ nocomments: true
             </div>
         </div>
     </div> <!-- .row -->
-    <p class="text-center"><a href="/patterns" class="btn btn-primary btn-lg mt-3">More patterns</a></p>
-    <h2><a href="/showcase/" title="Showcase">Showcase</a></h2>
+    <p><i class="fa fa-arrow-right" aria-hidden="true"></i> <a href="/patterns" class="mt-3">More patterns</a></p>
+    <h3><a href="/showcase/" title="Showcase">Showcase</a></h3>
     <div class="row">
         <div class="col">
             <div class="card-columns blog">
                 {% assign sorted = site.showcases | sort:"date" | reverse %}
                 {% for post in sorted limit:10 %}
-                    <div class="card hover-shadow mb-3">
+                    <div class="card hover-shadow mb-3 w-100">
                         <a href="{{ post.url }}" title="{{ post.title | escape}}">
                             <img 
                                 src="/img{{ post.url }}lqip_{{ post.img }}" 
@@ -171,5 +178,5 @@ nocomments: true
             </div>
         </div>
     </div>
-    <p class="text-center"><a href="/showcase" class="btn btn-primary btn-lg mt-3">More showcases</a></p>
+    <p><i class="fa fa-arrow-right" aria-hidden="true"></i> <a href="/showcase" class="mt-3">More showcases</a></p>
 </div> <!-- .container -->
