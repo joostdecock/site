@@ -214,6 +214,7 @@
     }
 
     function renderMeasurements(filter) {
+        console.log(measurementTitles);
         $('#measurements-list tr').remove();
         var pc = modelCompleteFactor();
         if(pc>75) var bar = 'bg-primary';
@@ -230,7 +231,7 @@
                 if(typeof model.model.data.measurements[measurement] !== "undefined") {
                     if(typeof filter === 'undefined' || typeof filter[measurement] !== "undefined") {
                         first += "<tr>" +
-                            "<td class='name'>"+measurement+"&nbsp;:</td>" +
+                            "<td class='name'><a href='#' data-measurement='"+measurement+"' class='edit'>"+measurementTitles[measurement]+"</a>&nbsp;:</td>" +
                             "<td nowrap class='value "+model.model.units+"'>"+model.model.data.measurements[measurement]+"</td>" +
                             "<td class='edit'><a href='#' data-measurement='"+measurement+"' class='edit'><i class='fa fa-2x fa-pencil' aria-hidden='true'></i></a></td>" +
                         "</tr>";
@@ -238,7 +239,7 @@
                 } else {
                     if(typeof filter === 'undefined' || typeof filter[measurement] !== "undefined") {
                         second += "<tr data-measurement='"+measurement+"' class='empty'>" +
-                            "<td class='name empty' colspan='2'>"+measurement+"</td>" +
+                            "<td class='name empty' colspan='2'><a href='#' data-measurement='"+measurement+"' class='edit'>"+measurementTitles[measurement]+"</a></td>" +
                             "<td class='add'><a href='#' data-measurement='"+measurement+"' class='add'><i class='fa fa-plus' aria-hidden='true'></i></a></td>" +
                         "</tr>";
                     }
@@ -263,6 +264,7 @@
             // Load site data
             $.get('/json/freesewing.json', function( fsdata ) {
                 measurements = fsdata.measurements;
+                measurementTitles = fsdata.mapping.measurementToTitle;
                 $('#measurements').append("<div id='progressbar'></div>");
                 $('#measurements').append("<div id='filter-wrapper' class='text-center mt-4 mb-2'>Filter by pattern: </div>");
                 $('#filter-wrapper').load('/components/generic/filter-pattern', function(){
@@ -289,26 +291,26 @@
                 $('#measurements').append("<table id='measurements-list' class='rounded-rows table'></table>");
                 $('#measurements-list').append("<thead><tr><th>Measurement</th><th>Value</th><th>&nbsp;</th></tr></thead>");
                 renderMeasurements();
-
+                
                 // Bind click handler to edit link
                 $('#measurements-list').on('click','a.edit', function(e) {
-                    renderMeasurementSettings($(this).attr('data-measurement'));
+                    renderMeasurementSettings($(this).attr('data-measurement'), fsdata.mapping.measurementToTitle[$(this).attr('data-measurement')]);
                 });
                 // Bind click handler to add link
                 $('#measurements-list').on('click','a.add', function(e) {
-                renderMeasurementSettings($(this).attr('data-measurement'));
+                renderMeasurementSettings($(this).attr('data-measurement'), fsdata.mapping.measurementToTitle[$(this).attr('data-measurement')]);
                 });
             });
             // FIXME add drafts
         });
     }
 
-    function renderMeasurementSettings(measurement) {
+    function renderMeasurementSettings(measurement, mtitle) {
         // Load settings into modal
         $('#modal').removeClass().addClass('shown light');
         $('#modal-main').html("<div id='settings'></div>");
         $('#settings').load('/components/measurement/settings', function(){
-            $('#measurement-main-title').html(measurement);
+            $('#measurement-main-title').html(mtitle);
             $('#m').attr('name', measurement).attr('id',measurement+'-input')
             $('#settings-form span.form-units').addClass(model.model.units);
             $('#'+measurement+'-input').val(model.model.data.measurements[measurement]);
