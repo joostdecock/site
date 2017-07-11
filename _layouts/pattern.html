@@ -25,21 +25,21 @@ layout: cards
             <blockquote class="magic">
                 <h5>Draft {{ pattern | capitalize }}</h5>
                 <p>Like what you see? Right this way to draft your {{ pattern | capitalize }} pattern.</p>
-                <p><a href="/draft/{{ pattern }}" class="btn btn-outline-white btn-block">Draft {{ pattern | capitalize }}</a>
+                <p><a href="/draft/{{ pattern }}" class="btn btn-primary btn-block">Draft {{ pattern | capitalize }}</a>
             </blockquote>
-            <blockquote class="cuts">
+            <blockquote class="cut">
                 <h5>Make {{ pattern | capitalize }}</h5>
                 <p>All the documentation you need to go from your draft to finished garment.</p>
                 <p><a href="/docs/patterns/{{ pattern }}" class="btn btn-outline-primary btn-block">{{ pattern | capitalize }} documentation</a>
             </blockquote>
         </div>
         <div class="col-md-4">
-            <blockquote class="cuts measure">
+            <blockquote class="measure">
                 <h5>Measurements</h5>
                 <p>Documentation for the measurements required to draft {{ pattern | capitalize}}</p>
                 <p><a class="btn btn-outline-primary btn-block" href="/docs/patterns/{{ pattern }}/measurements">{{ pattern | capitalize }} measurements</a></p>
             </blockquote>
-            <blockquote class="cuts option">
+            <blockquote class="option">
                 <h5>Options</h5>
                 <p>Documentation for all the options that come with {{ pattern }}</p>
                 <p><a class="btn btn-outline-primary btn-block" href="/docs/patterns/{{ pattern }}/options">{{ pattern | capitalize }} options</a></p>
