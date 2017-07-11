@@ -17,6 +17,7 @@ permalink: /components/measurement/settings
         <a id="show-instructions" href="#loader" class="btn btn-outline-primary mt-5">Show instructions</a>
         <a id="hide-instructions" href="#loader" class="btn btn-outline-primary mt-5 hidden">Hide instructions</a>
         <button type="submit" class="btn btn-primary mt-5 poh">Save</button>
+        <a href="#loader" class="btn btn-outline-info mt-5 close-modal">Cancel</a>
     </div>
 </form>
 <div id="instructions" class="mt-5"><div>

@@ -312,6 +312,10 @@
             $('#m').attr('name', measurement).attr('id',measurement+'-input')
             $('#settings-form span.form-units').addClass(model.model.units);
             $('#'+measurement+'-input').val(model.model.data.measurements[measurement]);
+            // Bind cancel handler
+            $('#settings').on('click','.close-modal', function(e) {
+                closeModal();
+            });
             // Bind show instructions handler
             $('#settings').on('click','#show-instructions', function(e) {
                 $('#instructions').load('/components/measurements/'+measurement.toLowerCase());
