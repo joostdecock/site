@@ -3,6 +3,7 @@ github: 'https://github.com/freesewing'
 twitter: 'freesewing_org'
 instagram: 'freesewing_org'
 gitter: 'https://gitter.im/freesewing/freesewing'
+branch: 'develop'
 
 api:
   core: 'https://dev.core.freesewing.org'

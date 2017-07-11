@@ -1,8 +1,9 @@
-url: 'https://joost.site.freesewing.org/'
+url: 'https://joost.freesewing.org/'
 github: 'https://github.com/freesewing'
 twitter: 'freesewing_org'
 instagram: 'freesewing_org'
 gitter: 'https://gitter.im/freesewing/freesewing'
+branch: 'develop'
 
 api:
   core: 'https://joost.core.freesewing.org'

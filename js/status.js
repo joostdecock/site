@@ -2,7 +2,6 @@
     $(document).ready(function () {
         var repos = ['core', 'data', 'site'];
         $.getJSON(api.data+'/status', function( s ) {
-            console.log(s);
             $('#users').html(s.data.users);
             $('#models').html(s.data.models);
             $('#drafts').html(s.data.drafts);
@@ -17,9 +16,25 @@
             $('#memory').css('width', used+'%').attr('aria-valuenow', used).html(s.system.memory.used+'/'+memory);
         });
         $.get('/json/freesewing.json', function( fsdata ) {
-            console.log(fsdata);
             $('#patterns').html(Object.keys(fsdata.patterns).length);
         });
+        var branch = $('#branch').attr('data-branch');
+        $.each(repos, function( index, repo ) {
+            $.get('https://api.github.com/repos/freesewing/'+repo+'/branches/'+branch, function( c ) {
+                renderRepo(repo, c.commit, branch);
+            });
+        });
+        timeago().render($('.timeago'));
+
+        function renderRepo(repo, commit, branch) {
+            console.log(commit.commit);
+            var html = '<p class="counter"><a href="'+commit.html_url+'" target="_BLANK">'+commit.sha.substr(0,7)+'</a></p>';
+            html += '<p><b>'+commit.commit.message+'</b></p>';
+            html += '<p><small><span class="timeago" datetime="'+commit.commit.committer.date+'"></span> by <a href="'+commit.committer.html_url+'" target="_BLANK">'+commit.committer.login+'</a>';
+            html += ' in the <a href="https://github.com/freesewing/'+repo+'/tree/'+branch+'" target="_BLANK">'+branch+'</a> branch</small></p>';
+            $('#'+repo).append(html);
+            timeago().render($('.timeago'));
+        }
 
     });
 }(jQuery));
