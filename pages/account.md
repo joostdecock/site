@@ -14,7 +14,7 @@ nocomments: true
                 <span class="crown crown-right" id="account-draft-count">0</span>
             </div>
             <h3 id="account-username"></h3>
-            <button type="button" id="add-model-btn" class="poh btn btn-outline-primary mt-1"><i class="fa fa-plus" aria-hidden="true"></i> Add model</button>
+            <button type="button" id="add-model-btn" class="action-add-model poh btn btn-outline-primary mt-1"><i class="fa fa-plus" aria-hidden="true"></i> Add model</button>
             <button type="button" id="account-settings-btn" class="poh btn btn-outline-primary mt-1"><i class="fa fa-wrench" aria-hidden="true"></i> Settings</button>
             <button type="button" class="poh btn btn-outline-danger mt-1" id="delete-btn"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
         </div>

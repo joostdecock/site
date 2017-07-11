@@ -11,7 +11,7 @@
         $('#account-draft-count').html(Object.keys(data.drafts).length);
         if(data.models === false) {
             $('#models-title').html('Start by adding a model');
-            $('#models').append("<div class='col-md-12'><p>A model holds measurements. We need those measurement to draft patterns for you. So go ahead and <a href='#' class='add-model'>create your first model</a>.</p></div>");
+            $('#models').append("<div class='col-md-12'><p>A model holds measurements. We need those measurement to draft patterns for you. So go ahead and <a href='#' class='action-add-model'>create your first model</a>.</p></div>");
             $('#drafts-title').remove();
         } else {
             $.each(data.models, function(index, model){
@@ -1334,7 +1334,7 @@
                 loadAccount(renderAccount);
                 
                 // Bind click handler to add-model link/button
-                $('#account').on('click','#add-model-btn', function(e) {
+                $('.container').on('click','.action-add-model', function(e) {
                     e.preventDefault();
                     renderModelWizard(); 
                 });
