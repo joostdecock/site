@@ -1468,8 +1468,9 @@
                 loadAccount(function(data){
                     account = data;
                     // Do we even have models?
-                    if(typeof account.models === "undefined" || account.models === false || account.models.length < 1) {
-                        $('#models').load('/components/model/nomodel');
+                    if(typeof account.models === "undefined" || account.models == false || account.models.length < 1) {
+                        $('#picklist').load('/components/model/nomodel');
+                        $('#ko-models').hide();
                     }
                     else renderModelSelection(account,patternhandle);
                 });
