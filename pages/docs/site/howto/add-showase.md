@@ -10,19 +10,18 @@ permalink: /docs/site/howto/add-showcase
 >   - Gather your info:
 >     - date
 >     - title
->     - link title
 >     - slug
 >     - image
 >     - caption
 >     - author
 >     - category
->     - blurb
->   - Create your blog post directory at `/_posts/[date]-[slug]`
->   - In the directory, create the `index.md` file that will hold your blog post.
->   - Add the front matter to the file. See below for an example, or check another blog post.
+>   - Create your showcase file at `/_showcases/[date]-[slug].md`
+>   - Add the front matter to the file. See below for an example, or check another showcase.
 >   - Create the image directory at `/img/blog/[slug]`
 >   - Add the images to it according to the [lazyloading requirements](./add-image-lazyload)
->   - Write your blogpost in markdown
+>   - Write your showcase content in markdown
+>   - Add a showcases by maker overview (if needed)
+>   - Add a showcases by pattern overview (if needed)
 > {:.todo}
 {:.tip}
 
@@ -55,17 +54,15 @@ Let's use [this showcase](/showcase/husband-hugo/) as an example throughout this
   - **author**: uneanneedecouture
   - **category** hugo
 
-## Create the showcase directory
-
-Your showcase goes into its own directory under `/_showcases`. The format of the directory is `[date]-[slug]`.
-
-In our example, the `date` is `2015-12-28` and the `slug` is `husband-hugo`, so you would need to create the directory `/_showcases/2015-12-28-husband-hugo`
-
-Adapt the example and create your own directory as `/_showcases/[date]-[slug]` inserting your showcase's date and slug.
-
 ## Create the showcase file
 
-Inside your newly created directory, create an `index.md` file. This will hold our showcase content.
+Your showcase goes into the `/_showcases` directory. The filename is `[date]-[slug].md`.
+
+In our example, the `date` is `2015-12-28` and the `slug` is `husband-hugo`, so you would need to 
+create the file `/_showcases/2015-12-28-husband-hugo.md`
+
+Adapt the example and create your own showcase file as `/_showcases/[date]-[slug].md` inserting your showcase's date and slug.
+This will hold our showcase content.
 
 The frontmatter in the file is important. For our example, it looks like this:
 
@@ -155,6 +152,50 @@ Which means that when you use `baloon.jpg` in your include, you should add these
  - `lqip_baloon.jpg`
 
 The [howto on adding lazyloaded images](./add-image-lazyload) has more info on how to generate these 4 images.
+
+## Add a showcase by maker overview page
+
+If this is the first showcase of this maker, you will also need to add a showcase overview page for this maker.
+
+These overview pages reside in `/pages/showcase/maker/` and their format is `[maker].md`.
+
+For our example, the file to create is `/pages/showcase/maker/uneanneedecouture.md`.
+
+If the file is not there yet, create it.
+
+The file does not need any content, only front matter. Below is an example:
+
+```
+---
+layout: showcase-maker
+title: Showcases by uneanneedecouture
+permalink: /showcase/maker/uneanneedecouture
+---
+```
+
+Adapt the example with the name of the maker for whom you're adding the showcase.
+
+## Add a showcase by maker overview page
+
+If this is the first showcase of this pattern, you will also need to add a showcase overview page for this pattern.
+
+These overview pages reside in `/pages/showcase/pattern/` and their format is `[pattern handle].md`.
+
+For our example, the file to create is `/pages/showcase/pattern/hugo.md`.
+
+If the file is not there yet, create it.
+
+The file does not need any content, only front matter. Below is an example:
+
+```
+---
+layout: showcase-pattern
+title: Hugo Showcases
+permalink: /showcase/pattern/hugo
+---
+```
+
+Adapt the example with the name of the pattern of which whom you're adding the showcase.
 
 * TOC - Do not remove this line
 {:toc}
