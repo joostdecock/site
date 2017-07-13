@@ -32,6 +32,20 @@ nocomments: true
 </div>
 
 <div class="container">
+<blockquote class="comment" markdown="1">
+##### Welcome to Freesewing early access
+The goal of this early access site is to gather feedback on useability, and uncover any lingering bugs.
+
+If you hit a snag, please report it, in one of the following ways (ordered by preference):
+
+ - [Create an issue on GitHub](https://github.com/freesewing/site/issues/new)
+ - Leave a comment, for example on [the issues page](/issues)
+ - Chat in <a href="https://gitter.im/freesewing/freesewing">the freesewing room on Gitter</a>
+ - Tweet at <a href="https://twitter.com/freesewing_org">@freesewing_org</a> or <a href="https://twitter.com/j__st">@j__st</a>
+ - Email me: [joost@decock.org](mailto:joost@decock.org)
+
+</blockquote>
+
     <h3><a href="/blog/" title="Blog">Blog</a></h3>
     <div class="row">
         <div class="col-md-6 mb-3 mt-1">
