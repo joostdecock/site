@@ -19,4 +19,10 @@ action: issues
 <h2 id="site">Site issues</h2>
 <div id="site-issues"><img src="/img/logo/spinner.svg"></div>
 </div>
+<div class="row mt-2">
+<div id="comments-container" class="col-xl-10 offset-xl-1 col-lg-12 offset-lg-0 mb-5">
+<h2>Comments</h2>
+<div id="comments"></div>
+</div>
+</div>
 </div>
