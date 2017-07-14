@@ -122,10 +122,3 @@ action: status
     </div>
 </div>
 <span id="branch" data-branch="{{ site.branch }}"></span>
-<style>
-p.counter {
-    font-size: 3rem;
-    text-align: right;
-    font-weight: bold;
-}
-</style>

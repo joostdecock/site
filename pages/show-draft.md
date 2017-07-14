@@ -8,21 +8,49 @@ crumbs:
 nocomments: true
 ---
 <div class="container" id="draft-container">
+    <div class="row" id="draft-header">
+        <div class="col-md-4" id="draft-info">
+            <blockquote>
+                <h5>Draft info</h5>
+                <ul>
+                    <li>Pattern: <b><a id="pattern-link" href="#draft-container"></a></b></li>
+                    <li>Model: <b><a id="model-link" href="#draft-container"></a></b></li>
+                    <li>Created: <b><span id="created" class="timeago"></span></b></li>
+                    <li>Shared: <b><a id="shared-link" href="#draft-container" class="draft-settings"></a></b></li>
+                </ul>
+            </blockquote>
+        </div>
+        <div class="col-md-4" id="draft-reference">
+            <blockquote>
+                <h5>Draft reference</h5>
+                <p id="draft-handle" class="counter"></p>
+                <p id="fork-msg"></p>
+            </blockquote>
+        </div>
+        <div class="col-md-4" id="draft-actions">
+            <blockquote>
+                <h5>Actions</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="#draft-container" id="fork-btn"     class="btn btn-block btn-info mt-3 modal light"><i class="fa fa-code-fork" aria-hidden="true"></i> Fork</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#draft-container" id="redraft-btn"  class="btn btn-block btn-info mt-3 modal light"><i class="fa fa-repeat" aria-hidden="true"></i> Redraft</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="#draft-container" id="settings-btn" class="draft-settings btn btn-block btn-primary mt-3 modal light"><i class="fa fa-wrench" aria-hidden="true"></i> Settings</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#draft-container" id="delete-btn"   class="btn btn-block btn-danger mt-3 modal light"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a>
+                        </div>
+                    </div>
+            </blockquote>
+        </div>
+    </div>
     <div class="row">
         <div class="col-md-12" id="draft">
-            <div class="draft-display hidden">
-                <div>
-                    <div class="crown-wrapper">
-                        <img class="crown crown-left" id="draft-pattern-img" alt="Pattern linedrawing" src="/img/logo/spinner.svg">
-                        <span class="crown crown-middle" id="draft-handle"></span>
-                        <img class="crown crown-right" id="draft-model-img" alt="Model avatar" src="/img/logo/spinner.svg">
-                    </div>
-                    <a href="#draft" id="fork-btn" class="poh btn btn-outline-info mt-3 modal light"><i class="fa fa-code-fork" aria-hidden="true"></i> Fork</a>
-                    <a href="#draft" id="redraft-btn" class="poh btn btn-outline-info mt-3 modal light"><i class="fa fa-repeat" aria-hidden="true"></i> Redraft</a>
-                    <a href="#draft" id="settings-btn" class="poh btn btn-outline-primary mt-3 modal light"><i class="fa fa-wrench" aria-hidden="true"></i> Settings</a>
-                    <a href="#draft" id="delete-btn" class="poh btn btn-outline-danger mt-3 modal light"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a>
-                </div>
-            </div>
             <div id="accordion" role="tablist" aria-multiselectable="true" class="full-width">
                 <div id="group-notes" class="card">
                     <div class="card-header" role="tab" id="heading-notes">

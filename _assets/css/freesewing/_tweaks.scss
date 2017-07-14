@@ -121,6 +121,11 @@ body { background: $whitish; }
     background-color: $white;
     border-color: $white;
 }
+p.counter {
+    font-size: 3rem;
+    text-align: right;
+    font-weight: bold;
+}
 @media (max-width: 767px) {
     .not-on-small {
         display: none;

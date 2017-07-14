@@ -656,6 +656,14 @@
 
     function reRenderDraft(data) {
         $('h1.page-title').html(data.name);
+        $('ul.breadcrumbs li:last-child').html(data.name);
+        if(data.shared == 1) {
+            $('#shared-link').html('Yes');
+            $('#fork-msg').html('<small><b>Tip:</b> Other users can fork this draft at <a href="/drafts/'+data.handle+'">'+window.location.hostname+'/drafts/'+data.handle+'</a></small>');
+        } else {
+            $('#shared-link').html('No');
+            $('#fork-msg').html('<small>This reference uniquely identifies your draft.</small>');
+        }
         $('#notes-inner').html(marked(data.notes));
         draft.shared = data.shared;
         draft.name = data.name;
@@ -1179,18 +1187,26 @@
         if(typeof user !== 'undefined') user = JSON.parse(user);
         if(typeof draft.model === 'undefined') {
             // Shared draft, viewed anonymously
-            $('div.draft-display').remove();
+            $('#draft-header').remove();
             var msg = '<blockquote class="fork m600"><h5>If you were logged in, you could fork this draft</h5>';
             msg += '<p>Forking is a way to use an existing draft as a template for your own draft.</p>';
             msg += '<p class="text-center"><a href="/docs/site/forking" class="btn btn-outline-white">Find out more</a></p></blockquote>';
             $('#draft').prepend(msg);
         } else if(typeof user !== 'undefined' && user.id == draft.user){
             // Own draft
-            $('.crown-middle').html(draft.handle);
-            $('.crown-right').attr('src',api.data+draft.model.pictureSrc);
+            $('#draft-handle').html(draft.handle);
+            $('#model-link').attr('href','/models/'+draft.model.handle).html(draft.model.name);
+            if(draft.shared == 1) {
+                $('#shared-link').html('Yes');
+                $('#fork-msg').html('<small><b>Tip:</b> Other users can fork this draft at <a href="/drafts/'+draft.handle+'">'+window.location.hostname+'/drafts/'+draft.handle+'</a></small>');
+            } else {
+                $('#shared-link').html('No');
+                $('#fork-msg').html('<small>This reference uniquely identifies your draft.</small>');
+            }
+            $('#created').attr('datetime', draft.created);
+            timeago().render($('.timeago'));
             $('#fork-btn').attr('href','/fork/'+draft.handle);
             $('#redraft-btn').attr('href','/redraft/'+draft.handle+'/for/'+draft.model.handle);
-            $('div.draft-display').removeClass('hidden');
         } else {
             // Logged-in user but not their own draft (shared)
             $('div.draft-display').remove();
@@ -1204,7 +1220,8 @@
         // Load site data
         $.get('/json/freesewing.json', function( fsdata ) {
             patternHandle = fsdata.mapping.patternToHandle[draft.pattern];
-            $('.crown-left').attr('src','/img/patterns/'+patternHandle+'/'+patternHandle+'.svg');
+            patternTitle = fsdata.mapping.handleToPatternTitle[patternHandle];
+            $('#pattern-link').attr('href','/patterns/'+patternHandle).html(patternTitle);
         });
         // Responsive SVG embed requires us to strip out the width and height attributes
         var xmlDoc = $.parseXML( draft.svg );
@@ -1320,7 +1337,7 @@
             var draftHandle = page.split('/')[2];
             loadDraft(draftHandle, renderDraft);
             // Bind click handler to settings button
-            $('#draft').on('click','a#settings-btn', function(e) {
+            $('.draft-settings').click(function(e) {
                 renderDraftSettings();
             });
             
