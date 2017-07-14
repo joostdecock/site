@@ -711,6 +711,8 @@
                         $.each(filter.ko, function(index, model){
                             $('#ko-models').append('<li><a href="/models/'+model.handle+'" class="px-1">'+model.name+'</a></li>');
                         });
+                    } else {
+                        $('#ko-models').remove();
                     }
                 }
             });
