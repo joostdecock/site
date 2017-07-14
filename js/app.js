@@ -1576,7 +1576,12 @@
                             var row = '<tr id="row-'+draft.handle+'">';
                             row += '<td class="handle"><a href="/drafts/'+draft.handle+'">'+draft.handle+'</a></td>';
                             row += '<td class="pattern text-capitalize"><a href="/patterns/'+pname+'">'+pname+'</a></td>';
-                            row += '<td class="model"><a href="/models/'+models[draft.model].handle+'">'+models[draft.model].name+'</a></td>';
+                            // Model might have been removed since this draft was created
+                            if(typeof models[draft.model] == 'undefined') {
+                                row += '<td class="model"><small>[removed]</small></td>';
+                            } else {
+                                row += '<td class="model"><a href="/models/'+models[draft.model].handle+'">'+models[draft.model].name+'</a></td>';
+                            }
                             row += '<td class="name"><a href="/drafts/'+draft.handle+'">'+draft.name+'</a></td>';
                             row += '<td class="date timeago" datetime="'+draft.created+'"></td>';
                             row += '<td class="trash icon"><a href="#" data-draft="'+draft.id+'" class="delete-draft" title="Delete draft '+draft.handle+'"><i class="fa fa-trash" aria-hidden="true"></i></a></td>';
