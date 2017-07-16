@@ -81,6 +81,12 @@ nocomments: true
                     </div>
                     <div id="collapse-compared" class="collapse" role="tabpanel" aria-labeledby="heading-compared" aria-expanded="false">
                         <div class="card-block" id="content-compared">
+                            <blockquote class="tip m600 mt-2 mb-4">
+                                <h5>About this comparison</h5>
+                                <p>This comparison is a way to check whether things are <em>normal</em> without having to be familiar with the pattern.
+                                You see a bunch of standard sizes, with your own draft laid on top of it.</p>
+                                <p>If yours looks wildly different, something is wrong. Typically it's due to incorrect measurements.</p>
+                            </blockquote>
                             <a href="#draft" id="compared-preview" title="Open in a new window" target="_BLANK"><div class="drop-shadow svg-frame" id="compared-wrapper"></div></a>
                         </div>
                     </div>
