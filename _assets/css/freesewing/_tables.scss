@@ -1,3 +1,4 @@
+table.keyval,
 table.rounded-rows {
     border-collapse: separate;
     border-spacing: 0 1rem;
@@ -18,6 +19,30 @@ table.rounded-rows tr td {
     border-left: none;
     border-right: none;
 }
+table.keyval {
+    width: 100%;
+}
+table.keyval tr td:first-child {
+    background: $gray;
+    color: $white;
+    border: 1px solid $black;
+    text-align: right;
+    padding: 0.3rem 0.5rem 0.1rem;
+    border-top-left-radius:0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    border-right: none;
+}
+table.keyval tr td:last-child {
+    background: $white;
+    color: $black;
+    border: 1px solid $gray-border;
+    text-align: left;
+    padding: 0.3rem 0.5rem 0.1rem;
+    border-top-right-radius:0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    border-left: none;
+}
+
 #draftlist {
     td {
         font-size: 90%;

@@ -661,7 +661,7 @@
             $('#fork-msg').html('<small><b>Tip:</b> Other users can fork this draft at <a href="/drafts/'+data.handle+'">'+window.location.hostname+'/drafts/'+data.handle+'</a></small>');
         } else {
             $('#shared-link').html('No');
-            $('#fork-msg').html('<small>This reference uniquely identifies your draft.</small>');
+            $('#fork-msg').html('');
         }
         $('#notes-inner').html(marked(data.notes));
         draft.shared = data.shared;
@@ -1186,11 +1186,14 @@
         if(typeof user !== 'undefined') user = JSON.parse(user);
         if(typeof draft.model === 'undefined') {
             // Shared draft, viewed anonymously
-            $('#draft-header').remove();
+            $('.owner-only').remove();
             var msg = '<blockquote class="fork m600"><h5>If you were logged in, you could fork this draft</h5>';
             msg += '<p>Forking is a way to use an existing draft as a template for your own draft.</p>';
-            msg += '<p class="text-center"><a href="/docs/site/forking" class="btn btn-outline-white">Find out more</a></p></blockquote>';
+            msg += '<p class="text-center"><a href="/docs/site/fork" class="btn btn-outline-white">Find out more</a></p></blockquote>';
             $('#draft').prepend(msg);
+            $('#draft-handle').html(draft.handle);
+            $('#created').attr('datetime', draft.created);
+            timeago().render($('.timeago'));
         } else if(typeof user !== 'undefined' && user.id == draft.user){
             // Own draft
             $('#draft-handle').html(draft.handle);
@@ -1208,10 +1211,13 @@
             $('#redraft-btn').attr('href','/redraft/'+draft.handle+'/for/'+draft.model.handle);
         } else {
             // Logged-in user but not their own draft (shared)
-            $('div.draft-display').remove();
+            $('.owner-only').remove();
+            $('#draft-handle').html(draft.handle);
+            $('#created').attr('datetime', draft.created);
+            timeago().render($('.timeago'));
             var msg = '<blockquote class="fork m600"><h5>Hot women in your neighborhood are forking this draft</h5>';
             msg += '<p>Forking is a way to use an existing draft as a template for your own draft.</p>';
-            msg += '<p class="text-center"><a href="/fork/'+draft.handle+'" class="btn btn-outline-white">Fork this draft</a> <a href="/docs/site/forking" class="btn btn-outline-white">Find out more</a></p>';
+            msg += '<p class="text-center"><a href="/fork/'+draft.handle+'" class="btn btn-outline-white">Fork this draft</a> <a href="/docs/site/fork" class="btn btn-outline-white">Find out more</a></p>';
             msg += '<p><small>PS: That thing about the hot women is obviously a joke. I know nothing about women, let alone hot ones.</small></p>';
             msg += '</blockquote>';
             $('#draft').prepend(msg);
