@@ -42,6 +42,15 @@ table.keyval tr td:last-child {
     border-bottom-right-radius: 0.25rem;
     border-left: none;
 }
+table.keyval tr td.heading {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid $gray;
+    border-radius: 0 !important;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
 
 #draftlist {
     td {

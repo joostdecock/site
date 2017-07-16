@@ -134,6 +134,18 @@ nocomments: true
                         </div>
                     </div>
                 </div>
+                <div id="group-options" class="card">
+                    <div class="card-header" role="tab" id="heading-options">
+                        <h3 class="text-capitalize"><a data-toggle="collapse" data-parent="#accordion" href="#collapse-options" aria-expanded="false" aria-controls="collapse-options">Pattern options</a></h3>
+                    </div>
+                    <div id="collapse-options" class="collapse" role="tabpanel" aria-labeledby="heading-options" aria-expanded="false">
+                        <div class="card-block" id="content-options">
+                            <div class="m600">
+                                <table class="keyval" id="options-table"></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
