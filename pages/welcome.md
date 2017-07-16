@@ -4,10 +4,10 @@ title: Welcome new user
 permalink: /welcome
 ---
 > <h5>Note: You are not logged in yet</h5>
-> Your account has been activated, but you're not logged in yet. So why not <a href="#burger" class="login">login</a> now?
+> Your account has been activated, but you're not logged in yet. So why not <a href="#burger" class="login">log in</a> now?
 {:.warning}
 
-Congratulations, you now have a freesewing account, and can <a href="#burger" class="login">login</a> for the very first time.
+Congratulations, you now have a freesewing account, and can <a href="#burger" class="login">log in</a> for the very first time.
 
 If you're not sure how to do that, <a href="#burger" class="tour-guide" data-episode="login">help is available</a>.
 

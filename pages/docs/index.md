@@ -35,7 +35,7 @@ nocomments: true
                         <li><a href="#burger" class="tour-guide" data-episode="signup">Creating an account</a></li>
                         <li><a href="#burger" class="tour-guide" data-episode="login">Logging in</a></li>
                     </ul>
-                    <p class="card-text"><b>After you login</b></p>
+                    <p class="card-text"><b>After you log in</b></p>
                     <ul class="narrow">
                         <li><a href="#burger" class="tour-guide" data-episode="model">Adding models and measurements</a></li>
                         <li><a href="#burger" class="tour-guide" data-episode="draft">Drafting a pattern</a></li>

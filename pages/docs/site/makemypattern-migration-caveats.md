@@ -58,7 +58,7 @@ With the caveats out of the way, here's what we migrate:
 ### Username
 If your username is available, we'll give you the same username on freesewing as you had on MMP.
 
-> Note that you login with your email address, so the username is less relevant
+> Note that you log in with your email address, so the username is less relevant
 {:.comment}
 
 ### User picture

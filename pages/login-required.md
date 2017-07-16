@@ -1,19 +1,19 @@
 ---
 layout: page
-title: Here's why you should (sign up and) login
+title: Here's why you should (sign up and) log in
 permalink: /login-required
 nocomments: true
 ---
-> <h5>Life is better after login</h5>
-> You probably ended up here because you tried to do something that needs you to login first.
+> <h5>Life is better after loggging in</h5>
+> You probably ended up here because you tried to do something that needs you to log in first.
 >
-> You can <a href="#burger">login now</a> and get back to what you were doing,
+> You can <a href="#burger" class="login">log in now</a> and get back to what you were doing,
 > or you can read below why you should log in.
 {: .tip }
 
 ## No login, no patterns
 
-If you want patterns, you have to login. 
+If you want patterns, you have to log in. 
 
 Not because we are mean, or because we get something out of you signing up/logging in, but because of the way the software works.
 
@@ -26,15 +26,15 @@ Your specifications means:
 
 So, in order to get your hands on a pattern, you need to:
 
-- <a href="#burger">Sign up</a>
-- <a href="#burger">Login</a>
+- <a href="#burger" class="signup">Sign up</a>
+- <a href="#burger" class="login">Log in</a>
 - Add a model
 - Add measurements to that model
 - Draft your pattern
 
 So signing up/logging in is the first step. Without that, this site is just another blog.
 
-## But I don't want to login
+## But I don't want to log in
 
 No problem, you can still [read our blog](/blog), check out our [showcases](/showcase), or
 comb through our [documentation](/docs), but you can't draft any patterns.
