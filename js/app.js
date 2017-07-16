@@ -214,7 +214,6 @@
     }
 
     function renderMeasurements(filter) {
-        console.log(measurementTitles);
         $('#measurements-list tr').remove();
         var pc = modelCompleteFactor();
         if(pc>75) var bar = 'bg-primary';

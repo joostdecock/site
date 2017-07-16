@@ -7,7 +7,6 @@
             $('#landing').load('/snippets/generic/loading');
             $.post(api.data+'/signup', $('#signup-landing').serialize(),function( data ) {
                 if(typeof data.message !== 'undefined') {
-                    console.log(data);
                     if(data.reason == 'account_exists') {
                         msg = '<h2>We have a user with that email address</h2><p class="lead">Perhaps you wanted to login instead?</p><a href="#burger" class="btn btn-lg btn-outline-white" onclick="login(\'login\');">Login</a>';
                     } else if(data.reason == 'signup_complete') {

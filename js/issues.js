@@ -17,7 +17,6 @@
         });
 
         function renderIssue(issue, repo) {
-            console.log(issue);
             var html = '<div class="mb-4 drop-shadow paper" id="'+repo+'-'+issue.number+'">';
             html += '<p class="mb-0 py-0"><small>Issue <a href="#'+repo+'-'+issue.number+'">#'+issue.number+'</a>, ';
             html += 'created <span class="timeago" datetime="'+issue.created_at+'"></span> by ';

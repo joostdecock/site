@@ -27,7 +27,6 @@
         timeago().render($('.timeago'));
 
         function renderRepo(repo, commit, branch) {
-            console.log(commit.commit);
             var html = '<p class="counter"><a href="'+commit.html_url+'" target="_BLANK">'+commit.sha.substr(0,7)+'</a></p>';
             html += '<p><b>'+commit.commit.message+'</b></p>';
             html += '<p><small><span class="timeago" datetime="'+commit.commit.committer.date+'"></span> by <a href="'+commit.committer.html_url+'" target="_BLANK">'+commit.committer.login+'</a>';
