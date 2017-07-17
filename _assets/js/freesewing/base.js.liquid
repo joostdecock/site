@@ -32,7 +32,7 @@ var token = window.localStorage.getItem("jwt");
         // Bind click for the left menu
         $('.oc-toggle.left').click(function () {
             $('#oc-left').css({ side : "inherit" });
-            if($('#oc-right-wrapper').hasClass('shown')) siobhanOcHide('right');
+            if($('#toc').hasClass('shown')) siobhanOcHide('right');
             siobhanOcToggle('left');
         });
     
@@ -110,7 +110,7 @@ var token = window.localStorage.getItem("jwt");
         
         // Things that just need to happen //////////////////////////
 
-        $('.sticky').stickybits({ stickyBitStickyOffset: 80 });
+        $('.sticky').stickybits({ stickyBitStickyOffset: 0 });
 
         headingAnchors(); // Heading anchor links
         
@@ -136,7 +136,7 @@ function headingAnchors() {
 
 function siobhanOcShow(side) {
     if(side === 'right') {
-        $('#oc-right-wrapper').addClass('shown');
+        $('#toc').addClass('shown');
     } else {
         $('#oc-left').addClass('shown');
     }
@@ -147,7 +147,7 @@ function siobhanOcShow(side) {
 
 function siobhanOcHide(side) {
     if(side === 'right') {
-        $('#oc-right-wrapper').removeClass('shown');
+        $('#toc').removeClass('shown');
     } else {
         $('#oc-left').removeClass('shown');
     }
@@ -158,7 +158,7 @@ function siobhanOcHide(side) {
 
 function siobhanOcToggle(side) {
     if(side === 'left') var sidediv = '#oc-left';
-    else var sidediv = '#oc-right-wrapper';
+    else var sidediv = '#toc';
     if($(sidediv).hasClass('shown')) siobhanOcHide(side); 
     else siobhanOcShow(side); 
 }

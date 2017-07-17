@@ -78,7 +78,7 @@ body.oc-shown .oc-overlay {
       right: -300px;
       padding: 1rem;
     }
-    #oc-right-wrapper.shown #oc-right {
+    #toc.shown #oc-right {
       -ms-transform: translate(-300px, 0);
       -webkit-transform: translate(-300px, 0);
       transform: translate(-300px, 0);
@@ -94,12 +94,6 @@ body.oc-shown .oc-overlay {
 #hamburger,
 #tocburger {
   transition: all 300ms ease 0s;
-}
-#oc-left-wrapper.shown #hamburger {
-  transform: translate(240px, 0);
-}
-#oc-right-wrapper.shown #tocburger {
-  transform: translate(-240px, 0);
 }
 #sidemenu {
     
