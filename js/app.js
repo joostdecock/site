@@ -249,58 +249,62 @@
     }
 
     function renderModel(data) {
+        console.log(data);
         $('h1.page-title').html(data.model.name);
         $('ul.breadcrumbs li:last-child').html(data.model.name);
-        $('#model').load('/components/model/page', function(){
-            marked.setOptions({sanitize: true});
-            $('#notes-inner').html(marked(data.model.notes));
-            $('#model-name').html(data.model.name);
-            $('#model-picture').attr('src',api.data+data.model.pictureSrc);
-            // Check whether we have any data at all
-            if(data.model.data === "" || data.model.data === null) data.model.data = {measurements: ''};
-            $('#model-measurement-count').html(Object.keys(data.model.data.measurements).length);
-            $('#model-draft-count').html(Object.keys(data.drafts).length);
-            // Load site data
-            $.get('/json/freesewing.json', function( fsdata ) {
-                measurements = fsdata.measurements;
-                measurementTitles = fsdata.mapping.measurementToTitle;
-                $('#measurements').append("<div id='progressbar'></div>");
-                $('#measurements').append("<div id='filter-wrapper' class='text-center mt-4 mb-2'>Filter by pattern: </div>");
-                $('#filter-wrapper').load('/components/generic/filter-pattern', function(){
-                    $.each(fsdata.namespaces, function(namespace, patternlist){
-                        $('#filter-patterns-select').append('<optgroup id="pattern-filter-namespace-'+namespace+'" label="'+namespace+'"></optgroup');
-                        $.each(patternlist, function(index, name){
-                            $('#pattern-filter-namespace-'+namespace).append('<option data-namespace="'+namespace+'" value="'+name+'">'+fsdata.mapping.handleToPatternTitle[name]+'</option>"');
-                        });
+        marked.setOptions({sanitize: true});
+        $('#notes-inner').html(marked(data.model.notes));
+        $('#model-name').html(data.model.name);
+        $('#model-picture').attr('src',api.data+data.model.pictureSrc);
+        $('#model-picture-link').attr('href', api.data+data.model.pictureSrc);
+        if(data.model.body == 'male') var breasts = 'No';
+        else var breasts = 'Yes';
+        $('#model-breasts').html(breasts);
+        $('#model-units').html(data.model.units);
+        $('#model-handle').html(data.model.handle);
+        $('#model-created').attr('datetime', data.model.created);
+        timeago().render($('.timeago'));
+        // Check whether we have any data at all
+        if(data.model.data === "" || data.model.data === null) data.model.data = {measurements: ''};
+        // Load site data
+        $.get('/json/freesewing.json', function( fsdata ) {
+            measurements = fsdata.measurements;
+            measurementTitles = fsdata.mapping.measurementToTitle;
+            $('#measurements').append("<div id='progressbar'></div>");
+            $('#measurements').append("<div id='filter-wrapper' class='text-center mt-4 mb-2'>Filter by pattern: </div>");
+            $('#filter-wrapper').load('/components/generic/filter-pattern', function(){
+                $.each(fsdata.namespaces, function(namespace, patternlist){
+                    $('#filter-patterns-select').append('<optgroup id="pattern-filter-namespace-'+namespace+'" label="'+namespace+'"></optgroup');
+                    $.each(patternlist, function(index, name){
+                        $('#pattern-filter-namespace-'+namespace).append('<option data-namespace="'+namespace+'" value="'+name+'">'+fsdata.mapping.handleToPatternTitle[name]+'</option>"');
                     });
-                    // Bind change of filter
-                    $('#filter-wrapper').on('change', '#filter-patterns-select', function(e) {
-                        if($('#filter-patterns-select').val() === 'all') renderMeasurements();
-                        else renderMeasurements(fsdata.patterns[fsdata.mapping.handleToPattern[$('#filter-patterns-select').val()]].measurements);
-                    });
                 });
-                $('#progressbar').load('/components/generic/progress', function(){
-                    var pc = modelCompleteFactor();
-                    if(pc>75) $('.progress-bar').addClass('bg-primary');
-                    else if(pc>50) $('.progress-bar').addClass('bg-success');
-                    else if(pc>25) $('.progress-bar').addClass('bg-warning');
-                    else $('.progress-bar').addClass('bg-danger');
-                    $('.progress-bar').css('width',pc+'%').html(pc+'%');
-                });
-                $('#measurements').append("<table id='measurements-list' class='rounded-rows table'></table>");
-                $('#measurements-list').append("<thead><tr><th>Measurement</th><th>Value</th><th>&nbsp;</th></tr></thead>");
-                renderMeasurements();
-                
-                // Bind click handler to edit link
-                $('#measurements-list').on('click','a.edit', function(e) {
-                    renderMeasurementSettings($(this).attr('data-measurement'), fsdata.mapping.measurementToTitle[$(this).attr('data-measurement')]);
-                });
-                // Bind click handler to add link
-                $('#measurements-list').on('click','a.add', function(e) {
-                renderMeasurementSettings($(this).attr('data-measurement'), fsdata.mapping.measurementToTitle[$(this).attr('data-measurement')]);
+                // Bind change of filter
+                $('#filter-wrapper').on('change', '#filter-patterns-select', function(e) {
+                    if($('#filter-patterns-select').val() === 'all') renderMeasurements();
+                    else renderMeasurements(fsdata.patterns[fsdata.mapping.handleToPattern[$('#filter-patterns-select').val()]].measurements);
                 });
             });
-            // FIXME add drafts
+            $('#progressbar').load('/components/generic/progress', function(){
+                var pc = modelCompleteFactor();
+                if(pc>75) $('.progress-bar').addClass('bg-primary');
+                else if(pc>50) $('.progress-bar').addClass('bg-success');
+                else if(pc>25) $('.progress-bar').addClass('bg-warning');
+                else $('.progress-bar').addClass('bg-danger');
+                $('.progress-bar').css('width',pc+'%').html(pc+'%');
+            });
+            $('#measurements').append("<table id='measurements-list' class='rounded-rows table'></table>");
+            $('#measurements-list').append("<thead><tr><th>Measurement</th><th>Value</th><th>&nbsp;</th></tr></thead>");
+            renderMeasurements();
+            
+            // Bind click handler to edit link
+            $('#measurements-list').on('click','a.edit', function(e) {
+                renderMeasurementSettings($(this).attr('data-measurement'), fsdata.mapping.measurementToTitle[$(this).attr('data-measurement')]);
+            });
+            // Bind click handler to add link
+            $('#measurements-list').on('click','a.add', function(e) {
+            renderMeasurementSettings($(this).attr('data-measurement'), fsdata.mapping.measurementToTitle[$(this).attr('data-measurement')]);
+            });
         });
     }
 
@@ -443,6 +447,27 @@
             // Enable button
             $('#loader > button').removeClass('disabled');
         });
+    }
+
+    function renderModelExport() {
+        // Load export into modal
+        $('#modal').removeClass().addClass('shown light');
+        $('#modal-main').html("<div id='export' class='paper drop-shadow m600 text-center'><h2>Exporting model measurements</h2><img src='/img/logo/spinner.svg'></div>");
+        $.ajax({
+            url: api.data+'/export/model/'+model.model.handle,
+            method: 'GET',
+            dataType: 'json',
+            headers: {'Authorization': 'Bearer ' + token},
+            success: function(data) {
+                $('#export').removeClass('text-center').html("<h2>Export complete</h2><p>You can download your model's measurements in any of these formats:</p><ul class='files' id='export-list'></ul></div>");
+                $.each(data.formats, function(format, link){
+                    $('#export-list').append('<li><a href="'+api.data+link+'" target="_BLANK">'+model.model.handle+'.'+format+'</a></li>');
+                }); 
+            }, 
+            error: function(data) { 
+                $('#export').removeClass('text-center').html("<h2>Oh snap, something went wrong</h2><p>We were unable to export your model's measurements.</p><p>Please report this.</p></div>");
+            },
+        }); 
     }
 
     function renderModelNotepad() {
@@ -647,7 +672,14 @@
 
     function reRenderModel(data) {
         $('h1.page-title').html(data.model.name);
+        $('ul.breadcrumbs li:last-child').html(data.model.name);
+        $('#model-name').html(data.model.name);
         $('#model-picture').attr('src',api.data+data.model.pictureSrc);
+        $('#model-picture-link').attr('href',api.data+data.model.pictureSrc);
+        if(data.model.body == 'male') var breasts = 'No';
+        else var breasts = 'Yes';
+        $('#model-breasts').html(breasts);
+        $('#model-units').html(data.model.units);
         $('#notes-inner').html(marked(data.model.notes));
         if(data.model.units === 'metric') $('.imperial').removeClass('imperial').addClass('metric');
         else $('.metric').removeClass('metric').addClass('imperial');
@@ -1442,6 +1474,11 @@
                 // Bind click handler to settings button
                 $('#model').on('click','a#settings-btn', function(e) {
                     renderModelSettings();
+                });
+                
+                // Bind click handler to export button
+                $('#model').on('click','a#export-btn', function(e) {
+                    renderModelExport();
                 });
                 
                 // Bind click handler to notes button
