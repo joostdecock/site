@@ -230,16 +230,16 @@
                 if(typeof model.model.data.measurements[measurement] !== "undefined") {
                     if(typeof filter === 'undefined' || typeof filter[measurement] !== "undefined") {
                         first += "<tr>" +
-                            "<td class='name'><a href='#' data-measurement='"+measurement+"' class='edit'>"+measurementTitles[measurement]+"</a>&nbsp;:</td>" +
+                            "<td class='name'><a href='#measurements' data-measurement='"+measurement+"' class='edit'>"+measurementTitles[measurement]+"</a>&nbsp;:</td>" +
                             "<td nowrap class='value "+model.model.units+"'>"+model.model.data.measurements[measurement]+"</td>" +
-                            "<td class='edit'><a href='#' data-measurement='"+measurement+"' class='edit'><i class='fa fa-2x fa-pencil' aria-hidden='true'></i></a></td>" +
+                            "<td class='edit'><a href='#measurements' data-measurement='"+measurement+"' class='edit'><i class='fa fa-2x fa-pencil' aria-hidden='true'></i></a></td>" +
                         "</tr>";
                     }
                 } else {
                     if(typeof filter === 'undefined' || typeof filter[measurement] !== "undefined") {
                         second += "<tr data-measurement='"+measurement+"' class='empty'>" +
-                            "<td class='name empty' colspan='2'><a href='#' data-measurement='"+measurement+"' class='edit'>"+measurementTitles[measurement]+"</a></td>" +
-                            "<td class='add'><a href='#' data-measurement='"+measurement+"' class='add'><i class='fa fa-plus' aria-hidden='true'></i></a></td>" +
+                            "<td class='name empty' colspan='2'><a href='#measurements' data-measurement='"+measurement+"' class='edit'>"+measurementTitles[measurement]+"</a></td>" +
+                            "<td class='add'><a href='#measurements' data-measurement='"+measurement+"' class='add'><i class='fa fa-plus' aria-hidden='true'></i></a></td>" +
                         "</tr>";
                     }
                 }
@@ -249,7 +249,6 @@
     }
 
     function renderModel(data) {
-        console.log(data);
         $('h1.page-title').html(data.model.name);
         $('ul.breadcrumbs li:last-child').html(data.model.name);
         marked.setOptions({sanitize: true});
@@ -480,7 +479,6 @@
             dataType: 'json',
             headers: {'Authorization': 'Bearer ' + token},
             success: function(data) {
-                console.log(data);
                 // Go to cloned model page
                 window.location.replace('/models/'+data.handle);
             }, 
@@ -677,7 +675,12 @@
             if(data.result == 'ok') {
                 closeModal();
                 $.bootstrapGrowl("Model data saved", {type: 'success'});
-                renderMeasurements();
+                if($('#filter-patterns-select').val() === 'all') renderMeasurements();
+                else {
+                    $.get('/json/freesewing.json', function( fsdata ) {
+                        renderMeasurements(fsdata.patterns[fsdata.mapping.handleToPattern[$('#filter-patterns-select').val()]].measurements);
+                    });
+                }
             } else {
                 closeModal();
                 $.bootstrapGrowl("Something went wrong, we were unable to save your model data", {type: 'error'});
