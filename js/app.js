@@ -23,7 +23,6 @@
                 });
             });
             if(data.drafts === false || typeof data.drafts === 'undefined') {
-                $('#drafts-title').html('No drafts yet');
                 $('#drafts').append("<div class='col-md-12'><p>Drafts are what we do, you should try it sometime.</p></div>");
             }
         }
@@ -1420,6 +1419,7 @@
     }
 
     function renderDraftList(account, fsdata) {
+        var models = [];
         // index models by id
         $.each(account.models, function(index, model){
             models[model.id] = model;
@@ -1702,42 +1702,10 @@
             }
             // List of drafts ////////////////
             else if(page === '/drafts') {
-                var account;
-                var map;
-                var models = [];
                 loadAccount(function(data){
-                    account = data;
                     // Load site data
                     $.get('/json/freesewing.json', function( fsdata ) {
-                        // index models by id
-                        $.each(account.models, function(index, model){
-                            models[model.id] = model;
-                        });
-                        $.each(account.drafts, function(index, draft){
-                            var pname = fsdata.mapping.patternToHandle[draft.pattern];
-                            var row = '<tr id="row-'+draft.handle+'">';
-                            row += '<td class="handle"><a href="/drafts/'+draft.handle+'">'+draft.handle+'</a></td>';
-                            row += '<td class="pattern text-capitalize"><a href="/patterns/'+pname+'">'+pname+'</a></td>';
-                            // Model might have been removed since this draft was created
-                            if(typeof models[draft.model] == 'undefined') {
-                                row += '<td class="model"><small>[removed]</small></td>';
-                            } else {
-                                row += '<td class="model"><a href="/models/'+models[draft.model].handle+'">'+models[draft.model].name+'</a></td>';
-                            }
-                            row += '<td class="name"><a href="/drafts/'+draft.handle+'">'+draft.name+'</a></td>';
-                            row += '<td class="date timeago" datetime="'+draft.created+'"></td>';
-                            row += '<td class="trash icon"><a href="#" data-draft="'+draft.id+'" class="delete-draft" title="Delete draft '+draft.handle+'"><i class="fa fa-trash" aria-hidden="true"></i></a></td>';
-                            row += '</tr>';
-                            $('#draftlist').prepend(row);
-                        });
-                        timeago().render($('.timeago'));
-                        $('#draft-row').remove();
-                        $('#spinner').remove();
-                        // Bind click handler to notes button
-                        $('#drafts').on('click','a.delete-draft',function(e) {
-                            e.preventDefault();
-                            deleteDraft(account.drafts[$(this).attr('data-draft')]);
-                        });
+                        renderDraftList(data, fsdata);
                     });
                 });
             }

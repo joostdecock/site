@@ -8,8 +8,8 @@ permalink: /components/draft/delete
 <h2 id='remove-draft-title'>Removing a draft</h2>
 <p>There is no way back from this, are you sure?</p>
 <p>
-<a class="poh btn btn-danger mt-2" id="nuke">Delete this draft</a>
-<a class="poh btn btn-outline-primary mt-2" id="no-nuke">Cancel</a>
+<a href="#drafts" class="btn btn-danger mt-2" id="nuke" tabindex="1">Delete this draft</a>
+<a href="#drafts" class="btn btn-outline-primary mt-2" id="no-nuke">Cancel</a>
 </p>
 </div>
 </div>
