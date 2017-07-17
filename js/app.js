@@ -26,8 +26,11 @@
                 $('#drafts-title').html('No drafts yet');
                 $('#drafts').append("<div class='col-md-12'><p>Drafts are what we do, you should try it sometime.</p></div>");
             }
-            $('#drafts').append("<div class='col-md-12 text-center mb-5'><a href='' class='btn btn-primary btn-lg mt-3 add-draft'>Add draft</a></div>");
         }
+        console.log(data);
+        $.get('/json/freesewing.json', function( fsdata ) {
+            renderDraftList(data, fsdata);
+        });
     }
     
     function renderModelWizard() {
@@ -1416,6 +1419,39 @@
         });
     }
 
+    function renderDraftList(account, fsdata) {
+        // index models by id
+        $.each(account.models, function(index, model){
+            models[model.id] = model;
+        });
+        $.each(account.drafts, function(index, draft){
+            var pname = fsdata.mapping.patternToHandle[draft.pattern];
+            var row = '<tr id="row-'+draft.handle+'">';
+            row += '<td class="handle"><a href="/drafts/'+draft.handle+'">'+draft.handle+'</a></td>';
+            row += '<td class="pattern text-capitalize"><a href="/patterns/'+pname+'">'+pname+'</a></td>';
+            // Model might have been removed since this draft was created
+            if(typeof models[draft.model] == 'undefined') {
+                row += '<td class="model"><small>[removed]</small></td>';
+            } else {
+                row += '<td class="model"><a href="/models/'+models[draft.model].handle+'">'+models[draft.model].name+'</a></td>';
+            }
+            row += '<td class="name"><a href="/drafts/'+draft.handle+'">'+draft.name+'</a></td>';
+            row += '<td class="date timeago" datetime="'+draft.created+'"></td>';
+            row += '<td class="trash icon"><a href="#" data-draft="'+draft.id+'" class="delete-draft" title="Delete draft '+draft.handle+'"><i class="fa fa-trash" aria-hidden="true"></i></a></td>';
+            row += '</tr>';
+            $('#draftlist').prepend(row);
+        });
+        timeago().render($('.timeago'));
+        $('#draft-row').remove();
+        $('#spinner').remove();
+        // Bind click handler to notes button
+        $('#drafts').on('click','a.delete-draft',function(e) {
+            e.preventDefault();
+            deleteDraft(account.drafts[$(this).attr('data-draft')]);
+        });
+    }
+
+
     $(document).ready(function () {
        
         // Show draft ///////////////////////
@@ -1444,6 +1480,7 @@
             // Account page ////////////////
             if(page === '/account') {
                 loadAccount(renderAccount);
+                $('#model-actions').remove();
                 
                 // Bind click handler to add-model link/button
                 $('.container').on('click','.action-add-model', function(e) {
@@ -1451,7 +1488,7 @@
                     renderModelWizard(); 
                 });
                 // Bind click handler to settings button
-                $('#account').on('click','#account-settings-btn', function(e) {
+                $('#account-settings-btn').click(function(e) {
                     e.preventDefault();
                     renderAccountSettings();
                 });
@@ -1461,6 +1498,12 @@
                     e.preventDefault();
                     deleteAccount();
                 });
+
+                // Bind click: Add model button
+                $('.add-model-btn').click(function(e) {
+                    e.preventDefault();
+                    renderModelWizard(); 
+                });
             }
             // Models page //////////////////
             else if(page === '/models') {
@@ -1469,10 +1512,11 @@
                     $('#models-title-row').remove();
                     $('div.crown-wrapper').remove();
                     $('#account-username').remove();
-                    $('#delete-btn').remove();
-                    $('#settings-btn').remove();
+                    $('#account-actions').remove();
+                    $('#drafts').remove();
+                    $('ul.breadcrumbs li:last-child').html('Your models');
                     // Bind click handler to add-model link/button
-                    $('#account').on('click','#add-model-btn', function(e) {
+                    $('.add-model-btn').click(function(e) {
                         e.preventDefault();
                         renderModelWizard(); 
                     });
