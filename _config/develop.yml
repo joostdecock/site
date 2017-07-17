@@ -34,6 +34,7 @@ collections:
 
 gems:
     - jekyll-assets
+    - algoliasearch-jekyll
 
 assets:
   compress:
@@ -57,4 +58,11 @@ assets:
     integrity: false
     automatic_img_size: true
     automatic_img_alt : true
+            
+algolia:
+    application_id: 'MA0Y5A2PF0'
+    index_name:     'freesewing'
+    excluded_files:
+        - components/*
+        - snippets/*
             

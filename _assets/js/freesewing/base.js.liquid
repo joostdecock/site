@@ -195,7 +195,6 @@ function postLogout() {
     logged_in = false;
     window.localStorage.removeItem("fsu");
     $('body').addClass('user logged-out'); 
-    $.bootstrapGrowl("Your comment was empy, so we did not save it", {type: 'warning', delay: 0, allow_dismiss: true});
 }
 
 // Things to do after authentication

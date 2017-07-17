@@ -25,3 +25,6 @@
 {% if page.action == 'homepage' %}
     <script src="{{ site.baseurl }}/js/homepage.js"></script>
 {% endif %}
+{% if page.action == 'search' %}
+    {% js search %}
+{% endif %}
