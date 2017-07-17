@@ -15,7 +15,6 @@ var token = window.localStorage.getItem("jwt");
         if(token === null) {
             $('body').addClass('visitor');
             logged_in = false;
-            postAuth();
         } else {
             // Is token still valid?
             $.ajax({
@@ -196,7 +195,7 @@ function postLogout() {
     logged_in = false;
     window.localStorage.removeItem("fsu");
     $('body').addClass('user logged-out'); 
-    postAuth();
+    $.bootstrapGrowl("Your comment was empy, so we did not save it", {type: 'warning', delay: 0, allow_dismiss: true});
 }
 
 // Things to do after authentication
