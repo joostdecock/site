@@ -48,10 +48,4 @@ nocomments: true
     </div>
     <h2>Measurements</h2>
     <div id="measurements"></div>
-    <h2>Drafts</h2>
-    <div id="drafts"></div>
-    <hr class="mt-2">
-    <h2>Danger zone</h2>
-    <p>Remove this model all its data.</p>
-    <p class="mt-2"><a href="#delete-btn" class="btn btn-danger hashlink" id="delete-btn" title="Delete this model">Delete this model</a></p>
 </div>

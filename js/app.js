@@ -470,6 +470,26 @@
         }); 
     }
 
+    function renderModelClone() {
+        // Load clone into modal
+        $('#modal').removeClass().addClass('shown light');
+        $('#modal-main').html("<div id='export' class='paper drop-shadow m600 text-center'><h2>Cloning model</h2><img src='/img/logo/spinner.svg'></div>");
+        $.ajax({
+            url: api.data+'/clone/model/'+model.model.handle,
+            method: 'POST',
+            dataType: 'json',
+            headers: {'Authorization': 'Bearer ' + token},
+            success: function(data) {
+                console.log(data);
+                // Go to cloned model page
+                window.location.replace('/models/'+data.handle);
+            }, 
+            error: function(data) { 
+                $('#export').removeClass('text-center').html("<h2>Oh snap, something went wrong</h2><p>We were unable to clone this model.</p><p>Please report this.</p></div>");
+            },
+        }); 
+    }
+
     function renderModelNotepad() {
         // Load settings into modal
         $('#modal').removeClass().addClass('shown light');
@@ -1481,6 +1501,11 @@
                     renderModelExport();
                 });
                 
+                // Bind click handler to clone button
+                $('#model').on('click','a#clone-btn', function(e) {
+                    renderModelClone();
+                });
+                
                 // Bind click handler to notes button
                 $('#update-notes').click(function(e) {
                     renderModelNotepad();
@@ -1491,6 +1516,7 @@
                     $('#modal').removeClass().addClass('shown light');
                     $('#modal-main').html("<div id='delete'></div>");
                     $('#delete').load('/components/model/delete', function(){
+                        $('#confirm').focus();
                         $('#remove-model-title').html('Delete '+model.model.name+'?');
                         $('#nuke').html('Delete '+model.model.name);
                         $('#confirm').on('input', function(){
