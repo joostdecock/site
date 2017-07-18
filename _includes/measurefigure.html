@@ -1,0 +1,16 @@
+{% assign m = include.measurement | downcase %}
+{% if m == 'seatdepth' %}
+{% assign position = 'seated' %}
+{% else %}
+{% assign position = 'standing' %}
+{% endif %}
+<figure class="image">
+    <a href="/img/measurements/{{ include.model }}/{{ m }}.svg" target="_BLANK" title="Open image in a new window">
+         <img
+             style="background-image: url('/img/measurements/{{ include.model }}/{{ position }}.jpg'); background-size: cover;" 
+             src="/img/measurements/{{ include/model }}/{{ m }}.svg" 
+             alt="Instructions for the {{ m }} measurement" 
+             class="drop-shadow"
+         >
+    </a>
+</figure>

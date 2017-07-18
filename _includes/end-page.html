@@ -1,8 +1,30 @@
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="{{ site.baseurl }}/js/ie10-viewport-bug-workaround.js"></script>
-    <!-- Sticky polyfill -->
-    <script src="{{ site.baseurl }}/js/stickyfill.min.js"></script>
-    <!-- jQuery finger plugin -->
-    <script src="{{ site.baseurl }}/js/jquery.finger.min.js"></script>
-    <!-- Our custom JS -->
-    <script src="{{ site.baseurl }}/js/siobhan.js"></script>
+<!-- JS bundle -->
+{% js bundle %}
+
+{% if page.action == 'confirm' %}
+    <script src="{{ site.baseurl }}/js/confirm.js"></script>
+{% endif %}
+{% if page.action == 'reset' %}
+    <script src="{{ site.baseurl }}/js/reset.js"></script>
+{% endif %}
+{% if page.action == 'pattern-options' %}
+    <script src="{{ site.baseurl }}/js/pattern-options.js"></script>
+{% endif %}
+{% if page.action == 'pattern-measurements' %}
+    <script src="{{ site.baseurl }}/js/pattern-measurements.js"></script>
+{% endif %}
+{% if page.action == 'app' %}
+    <script src="{{ site.baseurl }}/js/app.js"></script>
+{% endif %}
+{% if page.action == 'issues' %}
+    <script src="{{ site.baseurl }}/js/issues.js"></script>
+{% endif %}
+{% if page.action == 'status' %}
+    <script src="{{ site.baseurl }}/js/status.js"></script>
+{% endif %}
+{% if page.action == 'homepage' %}
+    <script src="{{ site.baseurl }}/js/homepage.js"></script>
+{% endif %}
+{% if page.action == 'search' %}
+    {% js search %}
+{% endif %}

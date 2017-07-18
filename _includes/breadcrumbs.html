@@ -1,0 +1,75 @@
+{% unless page.crumbs == false %}
+    <ul class="breadcrumbs">
+        <li><a href="/" title="Home">Home</a> &raquo;</li>
+        {% if page.crumbs %}
+            {% for bc in page.crumbs %}
+                {% assign item = bc | split: "|" %}
+                <li><a href="{{ item[0] }}" title="{{ item[1] }}">{{ item[1] }}</a> &raquo;</li>
+            {% endfor %}
+        {% else %}
+            {% assign crumb_count = 0 %}
+            {% assign crumb_url = '' %}
+            {% assign page_url = page.url | split: "/" %}
+            {% assign crumb_length = page_url | size | minus: 1 %}
+            {% for crumb_part in page_url %}
+                {% if crumb_count > 0 and crumb_count < crumb_length %}
+                    {% capture crumb_url %}{{ crumb_url }}/{{ crumb_part }}{% endcapture %}
+                    {% case crumb_url %}
+                        {% when '/about' %}
+                            {% assign crumb_title = 'About' %}
+                        {% when '/patterns' %}
+                            {% assign crumb_title = 'Patterns' %}
+                        {% when '/docs' %}
+                            {% assign crumb_title = 'Docs' %}
+                        {% when '/docs/core' %}
+                            {% assign crumb_title = 'Core docs' %}
+                        {% when '/docs/core/classdocs' %}
+                            {% assign crumb_title = 'Classdocs' %}
+                        {% when '/docs/core/classdocs/channels' %}
+                            {% assign crumb_title = '\Freesewing\Channels' %}
+                        {% when '/docs/core/classdocs/channels/core' %}
+                            {% assign crumb_title = '\Core' %}
+                        {% when '/docs/core/classdocs/patterns' %}
+                            {% assign crumb_title = '\Freesewing\Patterns' %}
+                        {% when '/docs/core/classdocs/patterns/core' %}
+                            {% assign crumb_title = '\Core' %}
+                        {% when '/docs/core/classdocs/services' %}
+                            {% assign crumb_title = '\Freesewing\Services' %}
+                        {% when '/docs/core/classdocs/themes' %}
+                            {% assign crumb_title = '\Freesewing\Themes' %}
+                        {% when '/docs/core/classdocs/themes/core' %}
+                            {% assign crumb_title = '\Core' %}
+                        {% when '/docs/core/classdocs/src' %}
+                            {% assign crumb_title = '\Freesewing' %}
+                        {% when '/docs/site' %}
+                            {% assign crumb_title = 'Site docs' %}
+                        {% when '/docs/patterns' %}
+                            {% assign crumb_title = 'Pattern docs' %}
+                        {% when '/docs/sewing' %}
+                            {% assign crumb_title = 'Sewing docs' %}
+                        {% when '/blog' %}
+                            {% assign crumb_title = 'Blog' %}
+                        {% when '/blog/category' %}
+                            {% assign crumb_title = 'Posts by category' %}
+                        {% when '/blog/author' %}
+                            {% assign crumb_title = 'Posts by author' %}
+                        {% when '/showcase' %}
+                            {% assign crumb_title = 'Showcase' %}
+                        {% when '/showcase/pattern' %}
+                            {% assign crumb_title = 'Showcases by pattern' %}
+                        {% when '/showcase/maker' %}
+                            {% assign crumb_title = 'Showcases by maker' %}
+                        {% else %}
+                            {% assign chunks = crumb_url | split: '/' %}
+                                {% assign crumb_title = chunks.last | capitalize %}
+                    {% endcase %}
+                    <li><a href="{{ crumb_url}}" title="{{ crumb_title }}">{{ crumb_title }}</a> &raquo;</li>
+                {% endif %}
+                {% assign crumb_count = crumb_count | plus: 1 %}
+            {% endfor %}
+        {% endif %}
+        {% if page.linktitle %}<li>{{ page.linktitle }}</li>
+        {% else %}<li>{{ page.title }}</li>
+        {% endif %}
+    </ul>
+{% endunless %}

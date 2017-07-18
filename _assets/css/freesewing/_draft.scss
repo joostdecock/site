@@ -1,0 +1,61 @@
+#picklist {
+    max-width: 600px;
+    margin: auto;
+    
+    a.card-wrap-link {
+        color: $gray-dark;
+    }
+    ul.filter {
+        padding-left: 0;
+    }
+    ul.filter > li:first-child {
+        text-transform: none;
+    }
+    ul.filter li {
+        display: inline-block;
+        text-transform: capitalize;
+        list-style-type: none;
+    }
+    .badge.core { background: $gray-dark!important; }
+    .badge.beta { background: $orange!important; }
+    .badge.menswear { background: $blue!important; }
+    .badge.womenswear { background: $pink!important; }
+    .badge.unisex { background: $purple!important; }
+    .pattern-card {
+        min-height: 125px;
+        margin: auto;
+    }
+    .linedrawing {
+        max-width: 125px;
+        float: left;
+        min-height: 125px;
+        padding: 10px;
+        padding-right: 25px;
+        width: 40%;
+        text-align: center;
+    } 
+    .linedrawing img {
+        max-width: 105px;
+        max-height: 105px;
+    }
+    .linedrawing.model img {
+        width: 105px;
+        height: 105px;
+    }
+    h3.card-title {
+        padding-top: 0;
+        text-transform: capitalize;
+    }
+    .card-block {
+        padding: 15px;
+    }
+}
+// Draft display
+.svg-frame {
+    background: $white;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+.draft-display {
+    text-align: center;
+}

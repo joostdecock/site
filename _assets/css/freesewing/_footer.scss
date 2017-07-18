@@ -1,0 +1,46 @@
+footer {
+    margin: 6rem 0 0 0;
+    color: $white;
+}
+.footer {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer .skew:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 40px;
+  overflow: visible;
+  width: 100%;
+  height: 450px;
+  background: $purple;
+  z-index: -1;
+  -webkit-transform: skewY(2deg);
+  -moz-transform: skewY(2deg);
+  -ms-transform: skewY(2deg);
+  -o-transform: skewY(2deg);
+  transform: skewY(2deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: initial;
+}
+
+.footer .skew .footer-inner {
+  padding: 5rem 1rem 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+#copyright {
+    margin: 0.25rem 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.footer ul {
+  padding: 0;
+  list-style-type: none;
+}
+.footer ul li {
+  list-style-type: none;
+}
+.footer a {color: $lighter-purple; }

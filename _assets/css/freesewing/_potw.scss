@@ -1,0 +1,10 @@
+/****************************
+ *  Picture of the week
+ ***************************/
+//$potw: url("/img/potw/potw.jpg");
+$potw: url("/img/potw/fluff-on-blue.jpg");
+$potwtext: #fff;
+$potwlink: #fff;
+$potwinverse: #000;
+$potwinversetrans: RGBA(0,0,0,0.7);
+$potwtextshadow: 1px 1px 1px $potwinversetrans, -1px -1px 1px $potwinversetrans, -1px 1px 1px $potwinversetrans, 1px -1px 1px $potwinversetrans;

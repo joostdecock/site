@@ -1,3 +1,5 @@
 _site/
+apigen/core
 .jekyll-metadata
 .sass-cache/
+.asset-cache/

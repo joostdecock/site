@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    width ="6799.0252033472"
+    height ="3989.76378334"
+    viewbox ="0 0 6799.0252033472 3989.76378334" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" 
+>
+
+<style type="text/css">
+    <![CDATA[
+    path { fill: none; stroke: #000000; stroke-opacity:1; stroke-width: 0.5; stroke-miterlimit:4; stroke-dashoffset:0; stroke-linecap:round; stroke-linejoin:round; }
+    path.hidden { fill: none; stroke: none; }]]>
+</style>
+
+
+<!-- Start of group #patternScaleContainer -->
+<g id="patternScaleContainer"  transform=" scale(3.54330709 ) " >
+    
+    <!-- Start of group #backBlock -->
+    <g id="backBlock"  transform=" translate(0 0)  translate(1918.836 0) " >
+    </g>
+    <!-- End of group #backBlock -->
+    
+    <!-- Start of group #frontBlock -->
+    <g id="frontBlock"  transform=" translate(0 0)  translate(1918.836 0) " >
+    </g>
+    <!-- End of group #frontBlock -->
+    
+    <!-- Start of group #sleeveBlock -->
+    <g id="sleeveBlock"  transform=" translate(0 0)  translate(1918.836 0) " >
+    </g>
+    <!-- End of group #sleeveBlock -->
+    
+    <!-- Start of group #front -->
+    <g id="front"  transform=" translate(5 -50.608)  translate(1037.652 0) " >
+        <path class="hidden" id="2"  d=" M  0,55.608  L  310,55.608  L  310,750  L  0,750  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(26.9, 55%, 50%);" id="122"  d=" M  0,109  L  0,298.5  L  0,500  L  0,750  L  260,750  L  260,298.5  C  251.25,298.5  248.874,294.404  238.985,284.515  C  229.096,274.626  89.156,55.608  89.156,55.608  C  75,82.128  48.595,109  0,109  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(53.8, 55%, 50%);" id="252"  d=" M  0,109  L  0,298.5  L  0,500  L  0,750  L  265,750  L  265,298.5  C  255,298.5  251.523,293.949  240.537,282.963  C  229.551,271.977  89.156,55.608  89.156,55.608  C  75,82.128  48.595,109  0,109  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(80.7, 55%, 50%);" id="382"  d=" M  0,109  L  0,298.5  L  0,500  L  0,750  L  270,750  L  270,298.5  C  258.75,298.5  254.029,293.52  242.005,281.496  C  229.981,269.472  89.156,55.608  89.156,55.608  C  75,82.128  48.595,109  0,109  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(107.6, 55%, 50%);" id="512"  d=" M  0,109  L  0,298.5  L  0,500  L  0,750  L  275,750  L  275,298.5  C  262.5,298.5  256.402,293.112  243.395,280.105  C  230.388,267.098  89.156,55.608  89.156,55.608  C  75,82.128  48.595,109  0,109  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(134.5, 55%, 50%);" id="642"  d=" M  0,109  L  0,298.5  L  0,500  L  0,750  L  280,750  L  280,298.5  C  266.25,298.5  258.653,292.726  244.714,278.787  C  230.775,264.848  89.156,55.608  89.156,55.608  C  75,82.128  48.595,109  0,109  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(161.4, 55%, 50%);" id="772"  d=" M  0,109  L  0,298.5  L  0,500  L  0,750  L  285,750  L  285,298.5  C  270,298.5  260.791,292.359  245.966,277.534  C  231.141,262.709  89.156,55.608  89.156,55.608  C  75,82.128  48.595,109  0,109  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(188.3, 55%, 50%);" id="902"  d=" M  0,109  L  0,298.5  L  0,500  L  0,750  L  290,750  L  290,298.5  C  273.75,298.5  262.825,292.01  247.158,276.343  C  231.491,260.676  89.156,55.608  89.156,55.608  C  75,82.128  48.595,109  0,109  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(215.2, 55%, 50%);" id="1032"  d=" M  0,109  L  0,298.5  L  0,500  L  0,750  L  295,750  L  295,298.5  C  277.5,298.5  264.761,291.678  248.292,275.209  C  231.823,258.74  89.156,55.608  89.156,55.608  C  75,82.128  48.595,109  0,109  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(242.1, 55%, 50%);" id="1162"  d=" M  0,109  L  0,298.5  L  0,500  L  0,750  L  300,750  L  300,298.5  C  281.25,298.5  266.607,291.361  249.373,274.127  C  232.139,256.893  89.156,55.608  89.156,55.608  C  75,82.128  48.595,109  0,109  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(269, 55%, 50%);" id="1292"  d=" M  0,109  L  0,298.5  L  0,500  L  0,750  L  305,750  L  305,298.5  C  285,298.5  268.369,291.059  250.405,273.095  C  232.441,255.131  89.156,55.608  89.156,55.608  C  75,82.128  48.595,109  0,109  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(295.9, 55%, 50%);" id="1422"  d=" M  0,109  L  0,298.5  L  0,500  L  0,750  L  310,750  L  310,298.5  C  288.75,298.5  270.052,290.771  251.391,272.11  C  232.73,253.449  89.156,55.608  89.156,55.608  C  75,82.128  48.595,109  0,109  z " />
+    </g>
+    <!-- End of group #front -->
+    
+    <!-- Start of group #back -->
+    <g id="back"  transform=" translate(5 -23.212)  translate(717.652 0) " >
+        <path class="hidden" id="3"  d=" M  0,28.212  L  310,28.212  L  310,750  L  0,750  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(26.9, 55%, 50%);" id="123"  d=" M  0,30  L  0,298.5  L  0,500  L  0,750  L  260,750  L  260,298.5  C  251.25,298.5  248.874,294.404  238.985,284.515  C  229.096,274.626  58.457,28.212  58.457,28.212  C  44.38,29.438  25.165,30  0,30  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(53.8, 55%, 50%);" id="253"  d=" M  0,30  L  0,298.5  L  0,500  L  0,750  L  265,750  L  265,298.5  C  255,298.5  251.523,293.949  240.537,282.963  C  229.551,271.977  58.457,28.212  58.457,28.212  C  44.38,29.438  25.165,30  0,30  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(80.7, 55%, 50%);" id="383"  d=" M  0,30  L  0,298.5  L  0,500  L  0,750  L  270,750  L  270,298.5  C  258.75,298.5  254.029,293.52  242.005,281.496  C  229.981,269.472  58.457,28.212  58.457,28.212  C  44.38,29.438  25.165,30  0,30  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(107.6, 55%, 50%);" id="513"  d=" M  0,30  L  0,298.5  L  0,500  L  0,750  L  275,750  L  275,298.5  C  262.5,298.5  256.402,293.112  243.395,280.105  C  230.388,267.098  58.457,28.212  58.457,28.212  C  44.38,29.438  25.165,30  0,30  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(134.5, 55%, 50%);" id="643"  d=" M  0,30  L  0,298.5  L  0,500  L  0,750  L  280,750  L  280,298.5  C  266.25,298.5  258.653,292.726  244.714,278.787  C  230.775,264.848  58.457,28.212  58.457,28.212  C  44.38,29.438  25.165,30  0,30  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(161.4, 55%, 50%);" id="773"  d=" M  0,30  L  0,298.5  L  0,500  L  0,750  L  285,750  L  285,298.5  C  270,298.5  260.791,292.359  245.966,277.534  C  231.141,262.709  58.457,28.212  58.457,28.212  C  44.38,29.438  25.165,30  0,30  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(188.3, 55%, 50%);" id="903"  d=" M  0,30  L  0,298.5  L  0,500  L  0,750  L  290,750  L  290,298.5  C  273.75,298.5  262.825,292.01  247.158,276.343  C  231.491,260.676  58.457,28.212  58.457,28.212  C  44.38,29.438  25.165,30  0,30  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(215.2, 55%, 50%);" id="1033"  d=" M  0,30  L  0,298.5  L  0,500  L  0,750  L  295,750  L  295,298.5  C  277.5,298.5  264.761,291.678  248.292,275.209  C  231.823,258.74  58.457,28.212  58.457,28.212  C  44.38,29.438  25.165,30  0,30  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(242.1, 55%, 50%);" id="1163"  d=" M  0,30  L  0,298.5  L  0,500  L  0,750  L  300,750  L  300,298.5  C  281.25,298.5  266.607,291.361  249.373,274.127  C  232.139,256.893  58.457,28.212  58.457,28.212  C  44.38,29.438  25.165,30  0,30  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(269, 55%, 50%);" id="1293"  d=" M  0,30  L  0,298.5  L  0,500  L  0,750  L  305,750  L  305,298.5  C  285,298.5  268.369,291.059  250.405,273.095  C  232.441,255.131  58.457,28.212  58.457,28.212  C  44.38,29.438  25.165,30  0,30  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(295.9, 55%, 50%);" id="1423"  d=" M  0,30  L  0,298.5  L  0,500  L  0,750  L  310,750  L  310,298.5  C  288.75,298.5  270.052,290.771  251.391,272.11  C  232.73,253.449  58.457,28.212  58.457,28.212  C  44.38,29.438  25.165,30  0,30  z " />
+    </g>
+    <!-- End of group #back -->
+    
+    <!-- Start of group #sleeve -->
+    <g id="sleeve"  transform=" translate(275.303 178.451)  translate(170 0) " >
+        <path class="hidden" id="4"  d=" M  -270.303,-173.451  L  267.349,-173.451  L  267.349,683.753  L  -270.303,683.753  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(26.9, 55%, 50%);" id="124"  d=" M  -142.5,653.168  L  -252.241,87.418  C  -218.309,87.418  -151.463,-52.088  -32.905,-173.451  C  -23.106,-138.076  -14.199,-130.753  0,-130.753  C  8.8,-130.753  30.605,-130.775  54.241,-138.269  C  162.445,-34.805  219.25,87.418  249.192,87.418  L  142.5,653.168  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(53.8, 55%, 50%);" id="254"  d=" M  -142.5,656.206  L  -253.781,90.456  C  -219.508,90.456  -151.804,-50.045  -32.905,-173.451  C  -23.106,-138.076  -14.199,-130.753  0,-130.753  C  8.8,-130.753  30.605,-130.775  54.241,-138.269  C  162.825,-32.795  220.462,90.456  250.738,90.456  L  142.5,656.206  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(80.7, 55%, 50%);" id="384"  d=" M  -142.5,659.272  L  -255.39,93.522  C  -220.77,93.522  -152.19,-48.011  -32.905,-173.451  C  -23.106,-138.076  -14.199,-130.753  0,-130.753  C  8.8,-130.753  30.605,-130.775  54.241,-138.269  C  163.248,-30.791  221.737,93.522  252.353,93.522  L  142.5,659.272  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(107.6, 55%, 50%);" id="514"  d=" M  -142.5,662.365  L  -257.065,96.615  C  -222.091,96.615  -152.618,-45.984  -32.905,-173.451  C  -23.106,-138.076  -14.199,-130.753  0,-130.753  C  8.8,-130.753  30.605,-130.775  54.241,-138.269  C  163.711,-28.793  223.072,96.615  254.036,96.615  L  142.5,662.365  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(134.5, 55%, 50%);" id="644"  d=" M  -142.5,665.487  L  -258.8,99.737  C  -223.467,99.737  -153.086,-43.963  -32.905,-173.451  C  -23.106,-138.076  -14.199,-130.753  0,-130.753  C  8.8,-130.753  30.605,-130.775  54.241,-138.269  C  164.214,-26.799  224.462,99.737  255.779,99.737  L  142.5,665.487  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(161.4, 55%, 50%);" id="774"  d=" M  -142.5,668.635  L  -260.592,102.885  C  -224.894,102.885  -153.591,-41.945  -32.905,-173.451  C  -23.106,-138.076  -14.199,-130.753  0,-130.753  C  8.8,-130.753  30.605,-130.775  54.241,-138.269  C  164.751,-24.806  225.904,102.885  257.581,102.885  L  142.5,668.635  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(188.3, 55%, 50%);" id="904"  d=" M  -142.5,671.81  L  -262.439,106.06  C  -226.37,106.06  -154.131,-39.929  -32.905,-173.451  C  -23.106,-138.076  -14.199,-130.753  0,-130.753  C  8.8,-130.753  30.605,-130.775  54.241,-138.269  C  165.323,-22.815  227.395,106.06  259.438,106.06  L  142.5,671.81  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(215.2, 55%, 50%);" id="1034"  d=" M  -142.5,675.011  L  -264.335,109.261  C  -227.891,109.261  -154.704,-37.915  -32.905,-173.451  C  -23.106,-138.076  -14.199,-130.753  0,-130.753  C  8.8,-130.753  30.605,-130.775  54.241,-138.269  C  165.926,-20.824  228.932,109.261  261.346,109.261  L  142.5,675.011  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(242.1, 55%, 50%);" id="1164"  d=" M  -142.5,678.236  L  -266.28,112.486  C  -229.455,112.486  -155.307,-35.902  -32.905,-173.451  C  -23.106,-138.076  -14.199,-130.753  0,-130.753  C  8.8,-130.753  30.605,-130.775  54.241,-138.269  C  166.559,-18.832  230.512,112.486  263.303,112.486  L  142.5,678.236  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(269, 55%, 50%);" id="1294"  d=" M  -142.5,680.485  L  -268.27,114.735  C  -231.06,114.735  -155.939,-33.889  -32.905,-173.451  C  -23.106,-138.076  -14.199,-130.753  0,-130.753  C  8.8,-130.753  30.605,-130.775  54.241,-138.269  C  167.22,-16.84  232.132,114.735  265.304,114.735  L  142.5,680.485  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(295.9, 55%, 50%);" id="1424"  d=" M  -142.5,683.753  L  -270.303,118.003  C  -232.703,118.003  -156.599,-31.876  -32.905,-173.451  C  -23.106,-138.076  -14.199,-130.753  0,-130.753  C  8.8,-130.753  30.605,-130.775  54.241,-138.269  C  167.907,-14.846  233.791,118.003  267.349,118.003  L  142.5,683.753  z " />
+    </g>
+    <!-- End of group #sleeve -->
+    
+    <!-- Start of group #pocket -->
+    <g id="pocket"  transform=" translate(5 -568.5)  translate(1587.652 708.75) " >
+        <path class="hidden" id="5"  d=" M  0,573.5  L  201.5,573.5  L  201.5,750  L  0,750  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(26.9, 55%, 50%);" id="125"  d=" M  0,606  L  144,606  C  144,676.5  169,700  169,700  L  144,750  L  0,750  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(53.8, 55%, 50%);" id="255"  d=" M  0,602.75  L  147.25,602.75  C  147.25,675.687  172.25,700  172.25,700  L  147.25,750  L  0,750  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(80.7, 55%, 50%);" id="385"  d=" M  0,599.5  L  150.5,599.5  C  150.5,674.875  175.5,700  175.5,700  L  150.5,750  L  0,750  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(107.6, 55%, 50%);" id="515"  d=" M  0,596.25  L  153.75,596.25  C  153.75,674.062  178.75,700  178.75,700  L  153.75,750  L  0,750  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(134.5, 55%, 50%);" id="645"  d=" M  0,593  L  157,593  C  157,673.25  182,700  182,700  L  157,750  L  0,750  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(161.4, 55%, 50%);" id="775"  d=" M  0,589.75  L  160.25,589.75  C  160.25,672.437  185.25,700  185.25,700  L  160.25,750  L  0,750  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(188.3, 55%, 50%);" id="905"  d=" M  0,586.5  L  163.5,586.5  C  163.5,671.625  188.5,700  188.5,700  L  163.5,750  L  0,750  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(215.2, 55%, 50%);" id="1035"  d=" M  0,583.25  L  166.75,583.25  C  166.75,670.812  191.75,700  191.75,700  L  166.75,750  L  0,750  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(242.1, 55%, 50%);" id="1165"  d=" M  0,580  L  170,580  C  170,670  195,700  195,700  L  170,750  L  0,750  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(269, 55%, 50%);" id="1295"  d=" M  0,576.75  L  173.25,576.75  C  173.25,669.187  198.25,700  198.25,700  L  173.25,750  L  0,750  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(295.9, 55%, 50%);" id="1425"  d=" M  0,573.5  L  176.5,573.5  C  176.5,668.375  201.5,700  201.5,700  L  176.5,750  L  0,750  z " />
+    </g>
+    <!-- End of group #pocket -->
+    
+    <!-- Start of group #pocketFacing -->
+    <g id="pocketFacing"  transform=" translate(-114 -601)  translate(1757.652 442.25) " >
+        <path class="hidden" id="6"  d=" M  119,606  L  169,606  L  169,754.861  L  119,754.861  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(26.9, 55%, 50%);" id="126"  d=" M  119,606  C  119,698.861  157.82,722.361  157.82,722.361  L  169,700  C  169,700  144,676.5  144,606  z " />
+<path transform="translate( -3.25, 3.25 )" style="stroke: hsl(53.8, 55%, 50%);" id="256"  d=" M  122.25,602.75  C  122.25,698.048  161.07,722.361  161.07,722.361  L  172.25,700  C  172.25,700  147.25,675.687  147.25,602.75  z " />
+<path transform="translate( -6.5, 6.5 )" style="stroke: hsl(80.7, 55%, 50%);" id="386"  d=" M  125.5,599.5  C  125.5,697.236  164.32,722.361  164.32,722.361  L  175.5,700  C  175.5,700  150.5,674.875  150.5,599.5  z " />
+<path transform="translate( -9.75, 9.75 )" style="stroke: hsl(107.6, 55%, 50%);" id="516"  d=" M  128.75,596.25  C  128.75,696.423  167.57,722.361  167.57,722.361  L  178.75,700  C  178.75,700  153.75,674.062  153.75,596.25  z " />
+<path transform="translate( -13, 13 )" style="stroke: hsl(134.5, 55%, 50%);" id="646"  d=" M  132,593  C  132,695.611  170.82,722.361  170.82,722.361  L  182,700  C  182,700  157,673.25  157,593  z " />
+<path transform="translate( -16.25, 16.25 )" style="stroke: hsl(161.4, 55%, 50%);" id="776"  d=" M  135.25,589.75  C  135.25,694.798  174.07,722.361  174.07,722.361  L  185.25,700  C  185.25,700  160.25,672.437  160.25,589.75  z " />
+<path transform="translate( -19.5, 19.5 )" style="stroke: hsl(188.3, 55%, 50%);" id="906"  d=" M  138.5,586.5  C  138.5,693.986  177.32,722.361  177.32,722.361  L  188.5,700  C  188.5,700  163.5,671.625  163.5,586.5  z " />
+<path transform="translate( -22.75, 22.75 )" style="stroke: hsl(215.2, 55%, 50%);" id="1036"  d=" M  141.75,583.25  C  141.75,693.173  180.57,722.361  180.57,722.361  L  191.75,700  C  191.75,700  166.75,670.812  166.75,583.25  z " />
+<path transform="translate( -26, 26 )" style="stroke: hsl(242.1, 55%, 50%);" id="1166"  d=" M  145,580  C  145,692.361  183.82,722.361  183.82,722.361  L  195,700  C  195,700  170,670  170,580  z " />
+<path transform="translate( -29.25, 29.25 )" style="stroke: hsl(269, 55%, 50%);" id="1296"  d=" M  148.25,576.75  C  148.25,691.548  187.07,722.361  187.07,722.361  L  198.25,700  C  198.25,700  173.25,669.187  173.25,576.75  z " />
+<path transform="translate( -32.5, 32.5 )" style="stroke: hsl(295.9, 55%, 50%);" id="1426"  d=" M  151.5,573.5  C  151.5,690.736  190.32,722.361  190.32,722.361  L  201.5,700  C  201.5,700  176.5,668.375  176.5,573.5  z " />
+    </g>
+    <!-- End of group #pocketFacing -->
+    
+    <!-- Start of group #hoodSide -->
+    <g id="hoodSide"  transform=" translate(-5.487 358.25)  translate(1587.652 0) " >
+        <path class="hidden" id="7"  d=" M  10.487,-353.25  L  331.671,-353.25  L  331.671,79  L  10.487,79  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(26.9, 55%, 50%);" id="127"  d=" M  30,0  C  30,0  -50,-353.25  113.935,-353.25  C  222.803,-353.25  331.671,-278.25  331.671,-278.25  C  195.001,-76.846  241.024,-19.498  256.671,-0  C  272.318,19.498  331.671,54  331.671,79  C  140.836,79  140.836,0  30,0  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(53.8, 55%, 50%);" id="257"  d=" M  30,0  C  30,0  -50,-353.25  113.935,-353.25  C  222.803,-353.25  331.671,-278.25  331.671,-278.25  C  195.001,-76.846  241.024,-19.498  256.671,-0  C  272.318,19.498  331.671,54  331.671,79  C  140.836,79  140.836,0  30,0  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(80.7, 55%, 50%);" id="387"  d=" M  30,0  C  30,0  -50,-353.25  113.935,-353.25  C  222.803,-353.25  331.671,-278.25  331.671,-278.25  C  195.001,-76.846  241.024,-19.498  256.671,-0  C  272.318,19.498  331.671,54  331.671,79  C  140.836,79  140.836,0  30,0  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(107.6, 55%, 50%);" id="517"  d=" M  30,0  C  30,0  -50,-353.25  113.935,-353.25  C  222.803,-353.25  331.671,-278.25  331.671,-278.25  C  195.001,-76.846  241.024,-19.498  256.671,-0  C  272.318,19.498  331.671,54  331.671,79  C  140.836,79  140.836,0  30,0  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(134.5, 55%, 50%);" id="647"  d=" M  30,0  C  30,0  -50,-353.25  113.935,-353.25  C  222.803,-353.25  331.671,-278.25  331.671,-278.25  C  195.001,-76.846  241.024,-19.498  256.671,-0  C  272.318,19.498  331.671,54  331.671,79  C  140.836,79  140.836,0  30,0  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(161.4, 55%, 50%);" id="777"  d=" M  30,0  C  30,0  -50,-353.25  113.935,-353.25  C  222.803,-353.25  331.671,-278.25  331.671,-278.25  C  195.001,-76.846  241.024,-19.498  256.671,-0  C  272.318,19.498  331.671,54  331.671,79  C  140.836,79  140.836,0  30,0  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(188.3, 55%, 50%);" id="907"  d=" M  30,0  C  30,0  -50,-353.25  113.935,-353.25  C  222.803,-353.25  331.671,-278.25  331.671,-278.25  C  195.001,-76.846  241.024,-19.498  256.671,-0  C  272.318,19.498  331.671,54  331.671,79  C  140.836,79  140.836,0  30,0  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(215.2, 55%, 50%);" id="1037"  d=" M  30,0  C  30,0  -50,-353.25  113.935,-353.25  C  222.803,-353.25  331.671,-278.25  331.671,-278.25  C  195.001,-76.846  241.024,-19.498  256.671,-0  C  272.318,19.498  331.671,54  331.671,79  C  140.836,79  140.836,0  30,0  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(242.1, 55%, 50%);" id="1167"  d=" M  30,0  C  30,0  -50,-353.25  113.935,-353.25  C  222.803,-353.25  331.671,-278.25  331.671,-278.25  C  195.001,-76.846  241.024,-19.498  256.671,-0  C  272.318,19.498  331.671,54  331.671,79  C  140.836,79  140.836,0  30,0  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(269, 55%, 50%);" id="1297"  d=" M  30,0  C  30,0  -50,-353.25  113.935,-353.25  C  222.803,-353.25  331.671,-278.25  331.671,-278.25  C  195.001,-76.846  241.024,-19.498  256.671,-0  C  272.318,19.498  331.671,54  331.671,79  C  140.836,79  140.836,0  30,0  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(295.9, 55%, 50%);" id="1427"  d=" M  30,0  C  30,0  -50,-353.25  113.935,-353.25  C  222.803,-353.25  331.671,-278.25  331.671,-278.25  C  195.001,-76.846  241.024,-19.498  256.671,-0  C  272.318,19.498  331.671,54  331.671,79  C  140.836,79  140.836,0  30,0  z " />
+    </g>
+    <!-- End of group #hoodSide -->
+    
+    <!-- Start of group #hoodCenter -->
+    <g id="hoodCenter"  transform=" translate(5 5)  translate(1357.652 0) " >
+        <path class="hidden" id="8"  d=" M  0,0  L  160,0  L  160,640.766  L  0,640.766  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(26.9, 55%, 50%);" id="128"  d=" M  0,0  L  160,0  L  160,640.766  L  0,640.766  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(53.8, 55%, 50%);" id="258"  d=" M  0,0  L  160,0  L  160,640.766  L  0,640.766  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(80.7, 55%, 50%);" id="388"  d=" M  0,0  L  160,0  L  160,640.766  L  0,640.766  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(107.6, 55%, 50%);" id="518"  d=" M  0,0  L  160,0  L  160,640.766  L  0,640.766  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(134.5, 55%, 50%);" id="648"  d=" M  0,0  L  160,0  L  160,640.766  L  0,640.766  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(161.4, 55%, 50%);" id="778"  d=" M  0,0  L  160,0  L  160,640.766  L  0,640.766  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(188.3, 55%, 50%);" id="908"  d=" M  0,0  L  160,0  L  160,640.766  L  0,640.766  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(215.2, 55%, 50%);" id="1038"  d=" M  0,0  L  160,0  L  160,640.766  L  0,640.766  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(242.1, 55%, 50%);" id="1168"  d=" M  0,0  L  160,0  L  160,640.766  L  0,640.766  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(269, 55%, 50%);" id="1298"  d=" M  0,0  L  160,0  L  160,640.766  L  0,640.766  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(295.9, 55%, 50%);" id="1428"  d=" M  0,0  L  160,0  L  160,640.766  L  0,640.766  z " />
+    </g>
+    <!-- End of group #hoodCenter -->
+    
+    <!-- Start of group #cuff -->
+    <g id="cuff"  transform=" translate(5 5)  translate(1587.652 442.25) " >
+        <path class="hidden" id="9"  d=" M  0,0  L  160,0  L  160,256.5  L  0,256.5  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(26.9, 55%, 50%);" id="129"  d=" M  0,0  L  160,0  L  160,256.5  L  0,256.5  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(53.8, 55%, 50%);" id="259"  d=" M  0,0  L  160,0  L  160,256.5  L  0,256.5  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(80.7, 55%, 50%);" id="389"  d=" M  0,0  L  160,0  L  160,256.5  L  0,256.5  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(107.6, 55%, 50%);" id="519"  d=" M  0,0  L  160,0  L  160,256.5  L  0,256.5  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(134.5, 55%, 50%);" id="649"  d=" M  0,0  L  160,0  L  160,256.5  L  0,256.5  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(161.4, 55%, 50%);" id="779"  d=" M  0,0  L  160,0  L  160,256.5  L  0,256.5  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(188.3, 55%, 50%);" id="909"  d=" M  0,0  L  160,0  L  160,256.5  L  0,256.5  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(215.2, 55%, 50%);" id="1039"  d=" M  0,0  L  160,0  L  160,256.5  L  0,256.5  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(242.1, 55%, 50%);" id="1169"  d=" M  0,0  L  160,0  L  160,256.5  L  0,256.5  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(269, 55%, 50%);" id="1299"  d=" M  0,0  L  160,0  L  160,256.5  L  0,256.5  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(295.9, 55%, 50%);" id="1429"  d=" M  0,0  L  160,0  L  160,256.5  L  0,256.5  z " />
+    </g>
+    <!-- End of group #cuff -->
+    
+    <!-- Start of group #waistband -->
+    <g id="waistband"  transform=" translate(5 5)  translate(0 0) " >
+        <path class="hidden" id="10"  d=" M  0,0  L  160,0  L  160,1116  L  0,1116  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(26.9, 55%, 50%);" id="130"  d=" M  0,0  L  160,0  L  160,936  L  0,936  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(53.8, 55%, 50%);" id="260"  d=" M  0,0  L  160,0  L  160,954  L  0,954  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(80.7, 55%, 50%);" id="390"  d=" M  0,0  L  160,0  L  160,972  L  0,972  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(107.6, 55%, 50%);" id="520"  d=" M  0,0  L  160,0  L  160,990  L  0,990  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(134.5, 55%, 50%);" id="650"  d=" M  0,0  L  160,0  L  160,1008  L  0,1008  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(161.4, 55%, 50%);" id="780"  d=" M  0,0  L  160,0  L  160,1026  L  0,1026  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(188.3, 55%, 50%);" id="910"  d=" M  0,0  L  160,0  L  160,1044  L  0,1044  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(215.2, 55%, 50%);" id="1040"  d=" M  0,0  L  160,0  L  160,1062  L  0,1062  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(242.1, 55%, 50%);" id="1170"  d=" M  0,0  L  160,0  L  160,1080  L  0,1080  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(269, 55%, 50%);" id="1300"  d=" M  0,0  L  160,0  L  160,1098  L  0,1098  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(295.9, 55%, 50%);" id="1430"  d=" M  0,0  L  160,0  L  160,1116  L  0,1116  z " />
+    </g>
+    <!-- End of group #waistband -->
+    
+    <!-- Start of group #neckBinding -->
+    <g id="neckBinding"  transform=" translate(5 5)  translate(1527.652 0) " >
+        <path class="hidden" id="11"  d=" M  0,0  L  50,0  L  50,563.343  L  0,563.343  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(26.9, 55%, 50%);" id="131"  d=" M  0,0  L  50,0  L  50,563.343  L  0,563.343  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(53.8, 55%, 50%);" id="261"  d=" M  0,0  L  50,0  L  50,563.343  L  0,563.343  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(80.7, 55%, 50%);" id="391"  d=" M  0,0  L  50,0  L  50,563.343  L  0,563.343  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(107.6, 55%, 50%);" id="521"  d=" M  0,0  L  50,0  L  50,563.343  L  0,563.343  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(134.5, 55%, 50%);" id="651"  d=" M  0,0  L  50,0  L  50,563.343  L  0,563.343  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(161.4, 55%, 50%);" id="781"  d=" M  0,0  L  50,0  L  50,563.343  L  0,563.343  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(188.3, 55%, 50%);" id="911"  d=" M  0,0  L  50,0  L  50,563.343  L  0,563.343  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(215.2, 55%, 50%);" id="1041"  d=" M  0,0  L  50,0  L  50,563.343  L  0,563.343  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(242.1, 55%, 50%);" id="1171"  d=" M  0,0  L  50,0  L  50,563.343  L  0,563.343  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(269, 55%, 50%);" id="1301"  d=" M  0,0  L  50,0  L  50,563.343  L  0,563.343  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(295.9, 55%, 50%);" id="1431"  d=" M  0,0  L  50,0  L  50,563.343  L  0,563.343  z " />
+    </g>
+    <!-- End of group #neckBinding -->
+    
+    <!-- Start of group #sampler-front -->
+    <g id="sampler-front"  transform=" translate(0 0)  translate(1918.836 0) " >
+    </g>
+    <!-- End of group #sampler-front -->
+    
+    <!-- Start of group #sampler-back -->
+    <g id="sampler-back"  transform=" translate(0 0)  translate(1918.836 0) " >
+    </g>
+    <!-- End of group #sampler-back -->
+    
+    <!-- Start of group #sampler-sleeve -->
+    <g id="sampler-sleeve"  transform=" translate(0 0)  translate(1918.836 0) " >
+    </g>
+    <!-- End of group #sampler-sleeve -->
+    
+    <!-- Start of group #sampler-pocket -->
+    <g id="sampler-pocket"  transform=" translate(0 0)  translate(1918.836 0) " >
+    </g>
+    <!-- End of group #sampler-pocket -->
+    
+    <!-- Start of group #sampler-pocketFacing -->
+    <g id="sampler-pocketFacing"  transform=" translate(0 0)  translate(1918.836 0) " >
+    </g>
+    <!-- End of group #sampler-pocketFacing -->
+    
+    <!-- Start of group #sampler-hoodSide -->
+    <g id="sampler-hoodSide"  transform=" translate(0 0)  translate(1918.836 0) " >
+    </g>
+    <!-- End of group #sampler-hoodSide -->
+    
+    <!-- Start of group #sampler-hoodCenter -->
+    <g id="sampler-hoodCenter"  transform=" translate(0 0)  translate(1918.836 0) " >
+    </g>
+    <!-- End of group #sampler-hoodCenter -->
+    
+    <!-- Start of group #sampler-cuff -->
+    <g id="sampler-cuff"  transform=" translate(0 0)  translate(1918.836 0) " >
+    </g>
+    <!-- End of group #sampler-cuff -->
+    
+    <!-- Start of group #sampler-waistband -->
+    <g id="sampler-waistband"  transform=" translate(0 0)  translate(1918.836 0) " >
+    </g>
+    <!-- End of group #sampler-waistband -->
+    
+    <!-- Start of group #sampler-neckBinding -->
+    <g id="sampler-neckBinding"  transform=" translate(0 0)  translate(1918.836 0) " >
+    </g>
+    <!-- End of group #sampler-neckBinding -->
+</g>
+<!-- End of group #patternScaleContainer -->
+
+</svg>
+

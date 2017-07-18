@@ -1,0 +1,137 @@
+// Account display
+div.account-display {
+    clear: both;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+// Model display
+div.model-display {
+    text-align: center;
+    padding: 20px 10px;
+}
+div.model-display p {
+    margin: 0;
+    padding: 0;
+}
+img.model-picture {
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+}
+#account-model-count:after,
+#account-draft-count:after,
+#model-measurement-count:after,
+#model-draft-count:after {
+    margin-top: -130px;
+    font-size: 1rem;
+    display: block;
+}
+#account-model-count:after {
+    content: 'models';
+}
+#account-draft-count:after {
+    content: 'drafts';
+}
+// Crown
+div.crown-wrapper {
+    width: 100%;
+}
+.crown {
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 50px;
+    color: #fff;
+}
+.crown-left {
+    margin-right: -40px;
+    background-color: $purple;
+}
+.crown-right {
+    margin-left: -40px;
+    background-color: $teal;
+}
+.crown-middle {
+    background-color: $gray-dark;
+}
+.crown {
+    border-radius: 50%;
+    box-shadow: $shadow;
+    position: relative;
+}
+.crown-middle {
+    z-index: 2;
+}
+img.avatar {
+    width: 100px;
+    height: 100px;
+}
+@media (max-width: 767px) {
+    .crown {
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+    }
+    span.crown-middle {
+        line-height: 150px;
+    }
+    .crown-left {
+        margin-right: -30px;
+    }
+    .crown-right {
+        margin-left: -30px;
+    }
+    .crown-middle {
+        width: 150px;
+        height: 150px;
+    }
+    img.model-picture {
+        width: 100px;
+        height: 100px;
+    }
+    #account-model-count:after,
+    #account-draft-count:after,
+    #model-measurement-count:after,
+    #model-draft-count:after {
+        margin-top: -90px;
+    }
+    .model-display h5 {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
+@media (min-width: 768px) {
+    span.crown {
+        width: 160px;
+        height: 160px;
+        line-height: 160px;
+    }
+    img.crown {
+        width: 200px;
+        height: 200px;
+    }
+    img.model-picture {
+        width: 100px;
+        height: 100px;
+    }
+}
+@media (min-width: 992px) {
+    span.crown {
+        width: 160px;
+        height: 160px;
+        line-height: 160px;
+    }
+    img.crown {
+        width: 200px;
+        height: 200px;
+    }
+    img.model-picture {
+        width: 140px;
+        height: 140px;
+    }
+}
+

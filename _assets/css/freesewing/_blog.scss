@@ -1,0 +1,94 @@
+div.post-meta {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+}
+div.post {
+    font-size: 125%;
+    background: $white;
+    padding: 2rem;
+}
+@media (max-width: 767px) {
+    div.post {
+        padding: 2rem 1rem;
+    }
+}
+.card-columns.blog {
+    column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    -webkit-column-gap: 1.25rem;
+
+    h4.card-title {
+        margin: 0;
+        padding: 0;
+    }
+    .card-block {
+        padding: 1rem;
+    }
+    footer {
+        margin: 0;
+        padding: 0.25rem 0.5rem;
+        background: $gray-dark;
+        color: $white;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+    footer a {
+        color: $lighter-purple;
+    }
+    .card {
+        display: inline-block
+    }
+    
+    @include media-breakpoint-only(sm) {
+        column-count: 2;
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+    }
+    @include media-breakpoint-only(md) {
+        column-count: 2;
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+    }
+    @include media-breakpoint-only(lg) {
+        column-count: 3;
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+    }
+    @include media-breakpoint-only(xl) {
+        column-count: 4;
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+    }
+}
+blockquote.share {
+    a {
+        color: #ffc7eb;
+        text-shadow: $shadow;
+        padding: 0.75rem;
+    }
+    a:hover {
+        color: $white;
+    }
+    .social-icons {
+        font-size: 3rem;
+    }
+    @media (max-width: 767px) {
+        .social-icons {
+            font-size: 2rem;
+        }
+        a {
+            padding: 0.5rem;
+        }
+    }
+}
+#post > div.post > article > p:first-child::first-letter {
+    font-size: 6.5rem;
+    font-weight: 900;
+    display: inline-block;
+    float: left;
+    line-height: 1;
+    padding: 0 15px 15px 0;
+    text-shadow: 2px 2px 0 $red, 4px 4px 0 $yellow, 6px 6px 0 $green, 8px 8px 0 $blue, 10px 10px 0 $purple;
+    margin-left: -5px;
+}

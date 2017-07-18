@@ -1,0 +1,141 @@
+img { 
+    max-width: 100%; 
+}
+.hidden {
+    display: none!important;
+}
+.invisible {
+    opacity: 0!important;
+}
+img.svg {
+    width: 100%;
+    height: auto;
+}
+.drop-shadow { 
+    box-shadow: $shadow;
+}
+.alert {
+    font-weight: 600;
+    box-shadow: $shadow;
+}
+.hover-shadow {
+  box-shadow: $shadow-hover;
+  transition: $shadow-transition;
+  display: block;
+}
+.hover-shadow:hover {
+  box-shadow: $shadow-hovered
+}
+.paper {
+    background: $white;
+    padding: 2rem;
+}
+// pointer on hover
+.poh:hover {
+    cursor: pointer;
+}
+div.tab-pane { 
+    padding-top: 1rem; 
+}
+figure.image figcaption { 
+    margin-top: 4px; 
+    margin-left: 0; 
+    margin-bottom: 1rem; 
+    font-size: 90%; 
+}
+figure.image figcaption span.caption{ 
+  display: block;
+  line-height: 1.1;
+  padding-bottom: 4px;
+  text-align: center;  
+}
+figure.image a.credit,
+figure.image span.credit{ 
+  display: block;
+  line-height: 1.1;
+  text-align: right;  
+  font-size: 0.6rem;
+  color: $gray;
+  padding-bottom: 3px;
+}
+.h-100 { 
+    height: 100%; 
+}
+button.btn:hover{
+    cursor: pointer;
+}
+// Latest pages
+.page-preview {
+  margin-bottom: 1rem;
+}
+.page-preview h3.card-title {
+  padding: 0 0 0.2rem 0;
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+body.user.logged-in .logged-out-only,
+body.user.logged-in .visitor-only {
+    display: none;
+}
+body.user.logged-out .logged-in-only,
+body.user.logged-out .visitor-only {
+    display: none;
+}
+body.visitor .logged-in-only,
+body.visitor .logged-out-only {
+    display: none;
+}
+body { background: $whitish; }
+.badge {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.m800 {
+    max-width: 800px;
+    margin: auto;
+}
+.m600 {
+    max-width: 600px;
+    margin: auto;
+}
+.btn-outline-black {
+    color: $black;
+    background-image: none;
+    background-color: transparent;
+    border-color: $black;
+}
+.btn-outline-white {
+    color: $white;
+    background-image: none;
+    background-color: transparent;
+    border-color: $white;
+}
+.btn-outline-black:hover {
+    color: $white;
+    background-color: $gray-dark;
+    border-color: $black;
+}
+.btn-outline-white:hover {
+    color: $black;
+    background-color: $white;
+    border-color: $white;
+}
+p.counter {
+    font-size: 3rem;
+    text-align: right;
+    font-weight: bold;
+}
+@media (max-width: 767px) {
+    .not-on-small {
+        display: none;
+    }
+    .paper {
+        padding: 2rem 1rem;
+    }
+}
+@media (min-width: 768px) {
+    .only-on-small {
+        display: none;
+    }
+}

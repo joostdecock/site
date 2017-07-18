@@ -1,0 +1,13 @@
+{% assign m = include.measurement | downcase %}
+<ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item"><a class="nav-link active" href="#{{ m }}-nobreasts" aria-controls="home" role="tab" data-toggle="tab">No breasts</a></li>
+    <li class="nav-item"><a class="nav-link" href="#{{ m }}-breasts" aria-controls="profile" role="tab" data-toggle="tab">Breasts</a></li>
+</ul>
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="{{ m }}-nobreasts">
+        {% include measurefigure.html measurement=m model="him" %} 
+    </div>
+    <div role="tabpanel" class="tab-pane" id="{{ m }}-breasts">
+        {% include measurefigure.html measurement=m model="her" %} 
+    </div>
+</div>

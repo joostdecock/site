@@ -1,0 +1,77 @@
+header {
+    margin: 0 0 10rem 0;
+}
+.header {
+  position: relative;
+}
+
+.header .skew:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -80px;
+  overflow: visible;
+  width: 100%;
+  height: 240px;
+  background: $purple;
+  z-index: -1;
+  -webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
+  transform: skewY(-2deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: initial;
+}
+
+.header .skew .header-inner {
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.masthead {
+  display: block;
+  position: absolute;
+  left: 30px;
+  top: 20px;
+}
+#masthead-main {
+  font-weight: normal;
+  font-size: 2.2rem;
+  display: block;
+  line-height: 1.4;
+}
+#masthead-sub {
+  font-weight: 400;
+  font-size: 1rem;
+  display: block;
+  line-height: 1.1;
+  max-width: 400px;
+}
+#top-logo {
+  right: 180px;
+  top: 15px;
+  position: absolute;
+}
+
+@media (max-width: 767px) {
+  #top-logo {
+      right: 20px;
+      top: 25px;
+  }
+  #masthead-main {
+    font-size: 2rem;
+  }
+  #masthead-sub {
+    font-size: 0.8rem;
+  }
+  div.masthead {
+    max-width: 250px;
+    top: 30px;
+  }
+}
+@media (min-width: 992px) {
+    #masthead-sub {
+        max-width: 600px;
+    }
+}

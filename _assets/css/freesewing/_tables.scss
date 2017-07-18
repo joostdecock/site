@@ -1,0 +1,73 @@
+table.keyval,
+table.rounded-rows {
+    border-collapse: separate;
+    border-spacing: 0 1rem;
+}
+table.rounded-rows tr td:first-child {
+    border-top-left-radius:0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-left: 1px solid $gray-lighter;
+}
+table.rounded-rows tr td:last-child {
+    border-top-right-radius:0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-right: 1px solid $gray-lighter;
+}
+table.rounded-rows tr td {
+    background: #fff;
+    border: 1px solid $gray-lighter;
+    border-left: none;
+    border-right: none;
+}
+table.keyval {
+    width: 100%;
+}
+table.keyval tr td:first-child {
+    background: $gray;
+    color: $white;
+    border: 1px solid $black;
+    text-align: right;
+    padding: 0.3rem 0.5rem 0.1rem;
+    border-top-left-radius:0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    border-right: none;
+}
+table.keyval tr td:last-child {
+    background: $white;
+    color: $black;
+    border: 1px solid $gray-border;
+    text-align: left;
+    padding: 0.3rem 0.5rem 0.1rem;
+    border-top-right-radius:0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    border-left: none;
+}
+table.keyval tr td.heading {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid $gray;
+    border-radius: 0 !important;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+#draftlist {
+    td {
+        font-size: 90%;
+    }
+    td.name {
+        font-size: 100%;
+        font-weight: bold;
+    }
+    a.delete-draft:hover {
+        color: $red;
+    }
+}
+@media (max-width: 767px) {
+    #draftlist {
+        th, td{
+            padding: 0.3rem;
+        }
+    }
+}

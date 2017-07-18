@@ -1,0 +1,14 @@
+#top-logo {
+    svg#logo-shadow {
+        width: 96px;
+        height: 96px;
+    }
+    path#skull {
+        fill: $potwtext;
+        stroke: inherit;
+    }
+    #shadow {
+        stroke: $potwinversetrans;
+        stroke-width: 1;
+    }
+}

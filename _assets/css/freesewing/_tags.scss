@@ -1,0 +1,18 @@
+ul.tags { 
+    list-style-type: none; 
+    margin-left: 0; 
+    padding-left: 0; 
+}
+
+ul.tags li { 
+    display: inline-block;
+    margin-right: 0.5rem; 
+}
+span.badge.core {
+    background: $black;
+    color: $white;
+}
+span.badge.beta {
+    background: $red;
+    color: $white;
+}

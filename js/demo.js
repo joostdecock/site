@@ -350,7 +350,7 @@ function loadDraftForm(pattern)
             // Response loaded
             clearSpinner();
             $('#form').append( chooseThemeField(infodata['themes'],['Info','Compare','Sample']));
-            $('#form').append( chooseOneField('language', {'options': data['languages'],'default': 'en'}));
+            $('#form').append( chooseOneField('lang', {'options': data['languages'],'default': 'en'}));
             $('#form').append( "<a href='#' id='submit' class='btn btn-primary demo-trigger mt-5 btn-lg' data-method='draft-pattern' data-pattern='"+pattern+"'>Draft pattern</a>" );
             scrollTo('#demo');
         });
