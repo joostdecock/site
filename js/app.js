@@ -715,10 +715,10 @@
         $('ul.breadcrumbs li:last-child').html(data.name);
         if(data.shared == 1) {
             $('#shared-link').html('Yes');
-            $('#fork-msg').html('<small><b>Tip:</b> Other users can fork this draft at <a href="/drafts/'+data.handle+'">'+window.location.hostname+'/drafts/'+data.handle+'</a></small>');
+            $('#fork-msg').html('&nbsp;&nbsp;<i class="fa fa-info-circle" aria-hidden="true"></i> <small><b>Tip:</b> Other users can fork this draft at <a href="/drafts/'+data.handle+'">'+window.location.hostname+'/drafts/'+data.handle+'</a></small>');
         } else {
             $('#shared-link').html('No');
-            $('#fork-msg').html('');
+            $('#fork-msg').html('&nbsp;&nbsp;<i class="fa fa-info-circle" aria-hidden="true">This reference uniquely identifies your draft.</i> ');
         }
         $('#notes-inner').html(marked(data.notes));
         draft.shared = data.shared;
@@ -1238,6 +1238,8 @@
     function renderDraft(draft) {
         $('h1.page-title').html(draft.name);
         $('ul.breadcrumbs li:last-child').html(draft.name);
+        $('#issue-link').attr('href','https://github.com/freesewing/site/issues/new?title=Problem%20with%20draft%20'+draft.handle+'&body=See%20[here]('+window.location.hostname+'/drafts/'+draft.handle+')');
+        console.log(draft);
         if(!logged_in) {
             // Shared draft, viewed anonymously
             $('.owner-only').remove();
@@ -1255,10 +1257,10 @@
                 $('#model-link').attr('href','/models/'+draft.model.handle).html(draft.model.name);
                 if(draft.shared == 1) {
                     $('#shared-link').html('Yes');
-                    $('#fork-msg').html('<small><b>Tip:</b> Other users can fork this draft at <a href="/drafts/'+draft.handle+'">'+window.location.hostname+'/drafts/'+draft.handle+'</a></small>');
+                    $('#fork-msg').html('&nbsp;&nbsp;<i class="fa fa-info-circle" aria-hidden="true"></i> <small> Other users can fork this draft at <a href="/drafts/'+draft.handle+'">'+window.location.hostname+'/drafts/'+draft.handle+'</a></small>');
                 } else {
                     $('#shared-link').html('No');
-                    $('#fork-msg').html('<small>This reference uniquely identifies your draft.</small>');
+                    $('#fork-msg').html('&nbsp;&nbsp;<i class="fa fa-info-circle" aria-hidden="true"></i> <small>This reference uniquely identifies your draft.</small>');
                 }
                 $('#created').attr('datetime', draft.created);
                 timeago().render($('.timeago'));
@@ -1270,12 +1272,12 @@
                 $('#draft-handle').html(draft.handle);
                 $('#created').attr('datetime', draft.created);
                 timeago().render($('.timeago'));
-                var msg = '<blockquote class="fork m600"><h5>Hot women in your neighborhood are forking this draft</h5>';
+                var msg = '<blockquote class="fork m600 mb-5"><h5>Hot women in your neighborhood are forking this draft</h5>';
                 msg += '<p>Forking is a way to use an existing draft as a template for your own draft.</p>';
                 msg += '<p class="text-center"><a href="/fork/'+draft.handle+'" class="btn btn-outline-white">Fork this draft</a> <a href="/docs/site/fork" class="btn btn-outline-white">Find out more</a></p>';
-                msg += '<p><small>PS: That thing about the hot women is obviously a joke. I know nothing about women, let alone hot ones.</small></p>';
+                msg += '<p><small>PS: That thing about the hot women is obviously a joke. I know very little about women, let alone hot ones.</small></p>';
                 msg += '</blockquote>';
-                $('#draft').prepend(msg);
+                $('#draft-container').prepend(msg);
             }
         }
         // Load site data
@@ -1284,23 +1286,24 @@
             var patternTitle = fsdata.mapping.handleToPatternTitle[patternHandle];
             $('#pattern-link').attr('href','/patterns/'+patternHandle).html(patternTitle);
             // Pattern options
-            $('#options-table').append('<tr><td colspan="2" class="heading">general</td></tr>');
-            if(draft.data.theme == 'Paperless') var theme = 'Paperless';
+            if(draft.data.options.theme == 'Paperless') var theme = 'Paperless';
             else var theme = 'Classic';
-            $('#options-table').append('<tr><td>Theme</td><td>'+theme+'</td></tr>');
-            $('#options-table').append('<tr><td>Language</td><td>'+fsdata.patterns[draft.pattern].languages[draft.data.lang]+'</td></tr>');
-            if(draft.data.scope == 'all') var scope = 'Complete pattern';
+            $('#options-table').append('<tr><td>Theme</td><td nowrap>'+theme+'</td></tr>');
+            $('#options-table').append('<tr><td>Language</td><td nowrap>'+fsdata.patterns[draft.pattern].languages[draft.data.options.lang]+'</td></tr>');
+            if(draft.data.options.scope == 'all') var scope = 'Complete pattern';
             else {
                 var scope = 'Only these parts: <ul>';
-                $.each(draft.data.parts.split(','), function(index, part) {
+                $.each(draft.data.options.parts.split(','), function(index, part) {
                     scope += '<li>'+part+'</li>';
                 });
                 scope += '</ul>';
             }
-            $('#options-table').append('<tr><td>Scope</td><td>'+scope+'</td></tr>');
+            $('#options-table').append('<tr><td>Scope</td><td nowrap>'+scope+'</td></tr>');
             Object.keys(fsdata.patterns[draft.pattern].optiongroups).forEach(function(key) {
                 $('#options-table').append('<tr><td colspan="2" class="heading">'+key+'</td></tr>');
-                var keys = Object.values(fsdata.patterns[draft.pattern].optiongroups[key]).sort();
+                var keys = $.map(fsdata.patterns[draft.pattern].optiongroups[key], function(value, index) {
+                    return [value];
+                });
                 $.each(keys, function(index, option){
                     if(fsdata.patterns[draft.pattern].options[option].type == 'percent') var suffix = '%';
                     else if(fsdata.patterns[draft.pattern].options[option].type == 'angle') var suffix = '&deg;';
@@ -1308,8 +1311,18 @@
                         if(draft.model.units == 'imperial') var suffix = '"';
                         else var suffix = 'cm';
                     }
-                    $('#options-table').append('<tr><td>'+fsdata.patterns[draft.pattern].options[option].title+'</td><td>'+draft.data[option]+suffix+'</td></tr>');
+                    $('#options-table').append('<tr><td>'+fsdata.patterns[draft.pattern].options[option].title+'</td><td>'+draft.data.options[option]+suffix+'</td></tr>');
                 });
+            });
+            // Model measurements
+            console.log(fsdata);
+            if(draft.data.options.units == 'imperial') var suffix = 'inch';
+            else var suffix = 'cm';
+            var keys = $.map(fsdata.patterns[draft.pattern].measurements, function(value, index) {
+                return [index];
+            });
+            $.each(keys, function(index, measurement){
+                $('#measurements-table').append('<tr><td>'+fsdata.mapping.measurementToTitle[measurement]+'</td><td>'+draft.data.measurements[measurement]+'&nbsp;'+suffix+'</td></tr>');
             });
         });
         // Responsive SVG embed requires us to strip out the width and height attributes

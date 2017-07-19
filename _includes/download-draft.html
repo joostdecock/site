@@ -1,10 +1,5 @@
-<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">
+<div class="download-draft download-{{ include.format }}">
     <a href="#group-download" class="download-draft" data-format="{{ include.format }}">
-        <div class="card hover-shadow {{ include.class }}">
-            <div class="card-block">
-                <h3 class="card-title">{{ include.title }}</h3>
-                <p class="card-text">{{ include.msg }}</p>
-            </div>
-        </div>
+        <p><span class="format">{{ include.title }}</span>{{ include.msg }}</p>
     </a>
 </div>
