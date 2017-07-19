@@ -20,7 +20,7 @@ nocomments: true
         <div class="col-xl-10 offset-xl-1 col-lg-12">
                     <div class="row mb-3">
                         <div class="col-lg-3 col-md-3 col-6">
-                            <a href="#account" class="add-model-btn rop-shadow btn btn-block btn-info mt-3 modal light"><i class="fa fa-plus" aria-hidden="true"></i> Add model</a>
+                            <a href="#account" class="add-model-btn drop-shadow btn btn-block btn-info mt-3 modal light"><i class="fa fa-plus" aria-hidden="true"></i> Add model</a>
                         </div>
                         <div class="col-lg-3 col-md-3 col-6">
                             <a href="/draft" id="redraft-btn" class="drop-shadow btn btn-block btn-info mt-3 modal light"><i class="fa fa-magic" aria-hidden="true"></i> New draft</a>
