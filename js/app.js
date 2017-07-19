@@ -1285,7 +1285,7 @@
             $('#pattern-link').attr('href','/patterns/'+patternHandle).html(patternTitle);
             // Pattern options
             $('#options-table').append('<tr><td colspan="2" class="heading">general</td></tr>');
-            if(draft.data.theme = 'Paperless') var theme = 'Paperless';
+            if(draft.data.theme == 'Paperless') var theme = 'Paperless';
             else var theme = 'Classic';
             $('#options-table').append('<tr><td>Theme</td><td>'+theme+'</td></tr>');
             $('#options-table').append('<tr><td>Language</td><td>'+fsdata.patterns[draft.pattern].languages[draft.data.lang]+'</td></tr>');
