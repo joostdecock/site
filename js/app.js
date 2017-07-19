@@ -999,7 +999,7 @@
         var fraction32 = Math.round(rest*32)/32;
 
         if(negative) {
-            if(parseInt(inches) == 1) return 1-fraction32;
+            if(parseInt(inches) == 1) return -1-fraction32;
             else return -1 * parseInt(inches)-fraction32;
         }
         else return parseInt(inches)+fraction32;
