@@ -97,7 +97,7 @@ span.td-key {
     content: 'cm';
 }
 .value-imperial:after {
-    content: '"';
+    /* handled in JS */
 }
 .value-angle:after {
     content: '°';

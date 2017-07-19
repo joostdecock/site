@@ -26,7 +26,6 @@
                 $('#drafts').append("<div class='col-md-12'><p>Drafts are what we do, you should try it sometime.</p></div>");
             }
         }
-        console.log(data);
         $.get('/json/freesewing.json', function( fsdata ) {
             renderDraftList(data, fsdata);
         });
@@ -886,7 +885,12 @@
             $('#form').append('<p class="text-center mt-5"><input type="submit" class="btn btn-lg btn-primary" value="Draft pattern"></p>');
             // Bind slide event to slider inputs
             $('#accordion').on('change', 'input.slider', function(e) {
-                $('#'+e.target.id+'-value').html(e.value.newValue);    
+                if($('#'+e.target.id).attr('data-type') == 'measure' && account.account.data.account.units === 'imperial') {
+                    var newValue = inchesAsFraction(roundToFraction(e.value.newValue));
+                } else {
+                    var newValue = e.value.newValue;
+                }
+                $('#'+e.target.id+'-value').html(newValue);    
                 if(e.value.newValue != $('#'+e.target.id+'-default').attr('data-default')) $('#'+e.target.id+'-default').removeClass('disabled invisible'); 
                 else $('#'+e.target.id+'-default').addClass('disabled invisible');
                 triggerOptionTargets(triggers);
@@ -975,22 +979,88 @@
         }); 
     }
 
+    function round(value) {
+        return Math.round(value*100)/100;
+    }
+    
+    function roundToFraction(value) {
+        if(value < 0) {
+            value = Math.abs(value);
+            var negative = true;
+        } else var negative = false;
+        if(value == 0) return 0;
+        if(value < 1) {
+            var inches = 0;
+            var rest = value;
+        } else {
+            var inches = Math.floor(value);
+            var rest = value - inches;
+        }
+        var fraction32 = Math.round(rest*32)/32;
+
+        if(negative) {
+            if(parseInt(inches) == 1) return 1-fraction32;
+            else return -1 * parseInt(inches)-fraction32;
+        }
+        else return parseInt(inches)+fraction32;
+    }
+
+    function inchesAsFraction(value) {
+        if(value < 0) {
+            value = value * -1;
+            var negative = '-';
+        } else var negative = '';
+        if(value == 0) return 0;
+        if(Math.abs(value) < 1) {
+            var inches = '';
+            var rest = value;
+        } else {
+            var inches = Math.floor(value);
+            var rest = value - inches;
+        }
+        var fraction64 = Math.round(rest*64);
+        var metric = Math.round(value*254)/100;
+        var spanStart = '<span style="display: block; font-size: 70%; font-weight: 400; color: #464a4c;">';
+        var spanEnd = ' inch or '+negative+metric+' cm</span>';
+        if(fraction64 == 0) return negative+inches+'"<sup> </sup><sub> </sub>'+spanStart+value+spanEnd;
+        if(fraction64 % 32 == 0) return negative+inches+'<sup>'+fraction64/32+'</sup>/<sub>2</sub>" '+spanStart+negative+value+spanEnd;
+        if(fraction64 % 16 == 0) return negative+inches+'<sup>'+fraction64/16+'</sup>/<sub>4</sub>" '+spanStart+negative+value+spanEnd;
+        if(fraction64 % 8 == 0) return negative+inches+'<sup>'+fraction64/8+'</sup>/<sub>8</sub>" '+spanStart+negative+value+spanEnd;
+        if(fraction64 % 4 == 0) return negative+inches+'<sup>'+fraction64/4+'</sup>/<sub>16</sub>" '+spanStart+negative+value+spanEnd;
+        if(fraction64 % 2 == 0) return negative+inches+'<sup>'+fraction64/2+'</sup>/<sub>32</sub>" '+spanStart+negative+value+spanEnd;
+        else return negative+value+'"';
+    }
+
     function renderOption(name, option, units) {
         switch(option.type) {
             case 'measure':
-                if(units === 'imperial') var udiv = 25.4;
-                else var udiv = 10
+                if(units === 'imperial') {
+                    var udiv = 25.4;
+                    var minValue = roundToFraction(option.min/udiv);
+                    var defaultValue = roundToFraction(option.default/udiv);
+                    var maxValue = roundToFraction(option.max/udiv);
+                }
+                else {
+                    var udiv = 10
+                    var defaultValue = round(option.default/udiv);
+                    var minValue = round(option.min/udiv);
+                    var maxValue = round(option.max/udiv);
+                }
                 var html = '<div class="form-group" id="option-wrapper-'+name+'">';
                 html += '<label for="'+name+'">';
                 html += '<a href="#" id="'+name+'-help" class="mt-4 btn btn-outline-primary btn-sm option-help" style="float: right;" data-option="'+name+'">Help</a>';
-                html += '<a href="#" id="'+name+'-default" class="mt-4 btn btn-outline-primary btn-sm mr-2 disabled btn-outline-info invisible option-reset" style="float: right;" data-option="'+name+'" data-default="'+(option.default/udiv)+'" data-type="slider">Reset</a>';
-                html += '<h5 class="mt-3">'+option.title+': <span class="value-'+units+'" id="'+name+'-value">'+(option.default/udiv)+'</span></h5> '+option.description+'</label>';
+                html += '<a href="#" id="'+name+'-default" class="mt-4 btn btn-outline-primary btn-sm mr-2 disabled btn-outline-info invisible option-reset" style="float: right;" data-option="'+name+'" data-default="'+defaultValue+'" data-type="slider">Reset</a>';
+                html += '<h5 class="mt-3">'+option.title+': <span class="value-'+units+'" id="'+name+'-value">';
+                if(units === 'imperial') html += inchesAsFraction(defaultValue)
+                else html += defaultValue;
+                html += '</span></h5> '+option.description+'</label>';
                 html += '<div class="input-group">';
-                html += '<input class="slider" id="'+name+'" type="text" name="'+name+'" data-provide="slider" ';
+                html += '<input class="slider" id="'+name+'" type="text" name="'+name+'" data-provide="slider" data-type="measure" ';
                 html += 'data-slider-id="'+name+'-slider" ';
-                html += 'data-slider-step="0.05" ';
-                html += 'data-slider-min="'+(option.min/udiv)+'" data-slider-max="'+(option.max/udiv)+'" ';
-                html += 'data-slider-value="'+(option.default/udiv)+'" data-slider-tooltip="hide" >'; 
+                if(units === 'imperial') html += 'data-slider-step="0.03125" ';
+                else html += 'data-slider-step="0.05" ';
+                html += 'data-slider-min="'+minValue+'" data-slider-max="'+maxValue+'" ';
+                html += 'data-slider-value="'+defaultValue+'" data-slider-tooltip="hide" >'; 
                 html += '</div>';
                 html += '</div>';
                 break;
@@ -1239,7 +1309,6 @@
         $('h1.page-title').html(draft.name);
         $('ul.breadcrumbs li:last-child').html(draft.name);
         $('#issue-link').attr('href','https://github.com/freesewing/site/issues/new?title=Problem%20with%20draft%20'+draft.handle+'&body=See%20[here]('+window.location.hostname+'/drafts/'+draft.handle+')');
-        console.log(draft);
         if(!logged_in) {
             // Shared draft, viewed anonymously
             $('.owner-only').remove();
@@ -1315,7 +1384,6 @@
                 });
             });
             // Model measurements
-            console.log(fsdata);
             if(draft.data.options.units == 'imperial') var suffix = 'inch';
             else var suffix = 'cm';
             var keys = $.map(fsdata.patterns[draft.pattern].measurements, function(value, index) {
