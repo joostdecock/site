@@ -1532,9 +1532,18 @@
         });
     }
 
+    function saveUserLocally(data) {
+        console.log(data);     
+        window.localStorage.setItem("fsu", JSON.stringify({ 'id': data.account.id, 'email': data.account.email, 'user': data.account.username }));
+    }
 
     $(document).ready(function () {
        
+            // Make sure local storage has the goods
+            if(window.localStorage.getItem("fsu") === null) {
+                loadAccount(saveUserLocally);
+            }
+
         // Show draft ///////////////////////
         if(page.substr(0,8) === '/drafts/' && page.split('/').length == 3) {
             var draft;
@@ -1551,12 +1560,6 @@
             });
         }    
         else { // Start of logged-in only block
-
-            // Reroute if not logged in
-            if(window.localStorage.getItem("fsu") === null) {
-                // eff this, you need to be logged in
-                window.location.replace("/login-required");
-            } 
 
             // Account page ////////////////
             if(page === '/account') {
