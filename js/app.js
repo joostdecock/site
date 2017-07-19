@@ -1005,7 +1005,7 @@
         else return parseInt(inches)+fraction32;
     }
 
-    function inchesAsFraction(value) {
+    function inchesAsFraction(value, format='form') {
         if(value < 0) {
             value = value * -1;
             var negative = '-';
@@ -1374,23 +1374,26 @@
                     return [value];
                 });
                 $.each(keys, function(index, option){
-                    if(fsdata.patterns[draft.pattern].options[option].type == 'percent') var suffix = '%';
-                    else if(fsdata.patterns[draft.pattern].options[option].type == 'angle') var suffix = '&deg;';
+                    if(fsdata.patterns[draft.pattern].options[option].type == 'percent') var optionValue = draft.data.options[option]+'%';
+                    else if(fsdata.patterns[draft.pattern].options[option].type == 'angle') var optionValue = draft.data.options[option]+'&deg;';
                     else {
-                        if(draft.model.units == 'imperial') var suffix = '"';
-                        else var suffix = 'cm';
+                        if(draft.model.units == 'imperial') var optionValue = inchesAsFraction(draft.data.options[option]);
+                        else var optionValue = draft.data.options[option]+'cm';
                     }
-                    $('#options-table').append('<tr><td>'+fsdata.patterns[draft.pattern].options[option].title+'</td><td>'+draft.data.options[option]+suffix+'</td></tr>');
+                    $('#options-table').append('<tr><td>'+fsdata.patterns[draft.pattern].options[option].title+'</td><td>'+optionValue+'</td></tr>');
                 });
             });
             // Model measurements
-            if(draft.data.options.units == 'imperial') var suffix = 'inch';
+            if(draft.data.units == 'imperial') var suffix = 'inch';
             else var suffix = 'cm';
             var keys = $.map(fsdata.patterns[draft.pattern].measurements, function(value, index) {
                 return [index];
             });
+            console.log(draft.data);
             $.each(keys, function(index, measurement){
-                $('#measurements-table').append('<tr><td>'+fsdata.mapping.measurementToTitle[measurement]+'</td><td>'+draft.data.measurements[measurement]+'&nbsp;'+suffix+'</td></tr>');
+                if(draft.data.units == 'imperial') var measurementValue = inchesAsFraction(draft.data.measurements[measurement]);
+                else var measurementValue = draft.data.measurements[measurement]+' cm';
+                $('#measurements-table').append('<tr><td>'+fsdata.mapping.measurementToTitle[measurement]+'</td><td>'+measurementValue+'</td></tr>');
             });
         });
         // Responsive SVG embed requires us to strip out the width and height attributes
