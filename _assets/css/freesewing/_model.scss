@@ -101,13 +101,6 @@ a.update-bubble {
     padding-right: 1rem;
     font-size: 1rem;
 }
-#measurements-list td.value.metric:after {
-    content:'cm';
-    padding-left: 3px;
-}
-#measurements-list td.value.imperial:after {
-    content:' inch';
-}
 #measurements-list td.value {
     font-weight: bold;
 }

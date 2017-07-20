@@ -1,7 +1,7 @@
 ---
-permalink: /components/measurement/settings
+permalink: /components/measurement/settings-metric
 ---
-<!-- Start of /components/measurement/settings -->
+<!-- Start of /components/measurement/settings-metric -->
 <div class="container">
 <div class="row">
 <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-3 mt-2" id="settings-inner">
@@ -10,7 +10,7 @@ permalink: /components/measurement/settings
     <!-- username -->
     <div class="input-group key-sm mt-4">
         <span class="input-group-addon td-key">Value</span>
-        <input class="form-number form-control text-right" id="m" name="m" value="" type="text">
+        <input class="form-number form-control text-right" id="m" name="m" value="" type="number">
         <span class="input-group-addon form-units"></span>
     </div>
     <div id="loader" class="text-right">
@@ -24,4 +24,4 @@ permalink: /components/measurement/settings
 </div>
 </div>
 </div>
-<!-- End of /components/measurement/settings -->
+<!-- End of /components/measurement/settings-metric -->

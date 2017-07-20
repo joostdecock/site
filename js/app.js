@@ -227,12 +227,14 @@
         var first;
         var second;
         $.each(measurements, function(measurement, shape){
+            if(model.model.units === 'imperial') var measurementValue = inchesAsFraction(model.model.data.measurements[measurement]);
+            else var measurementValue = model.model.data.measurements[measurement]+' cm';
             if(shape == 'all' || shape == model.model.body || typeof filter !== "undefined") {
                 if(typeof model.model.data.measurements[measurement] !== "undefined") {
                     if(typeof filter === 'undefined' || typeof filter[measurement] !== "undefined") {
                         first += "<tr>" +
                             "<td class='name'><a href='#measurements' data-measurement='"+measurement+"' class='edit'>"+measurementTitles[measurement]+"</a>&nbsp;:</td>" +
-                            "<td nowrap class='value "+model.model.units+"'>"+model.model.data.measurements[measurement]+"</td>" +
+                            "<td nowrap class='value "+model.model.units+"'>"+measurementValue+"</td>" +
                             "<td class='edit'><a href='#measurements' data-measurement='"+measurement+"' class='edit'><i class='fa fa-2x fa-pencil' aria-hidden='true'></i></a></td>" +
                         "</tr>";
                     }
@@ -312,11 +314,13 @@
         // Load settings into modal
         $('#modal').removeClass().addClass('shown light');
         $('#modal-main').html("<div id='settings'></div>");
-        $('#settings').load('/components/measurement/settings', function(){
+        $('#settings').load('/components/measurement/settings-'+model.model.units, function(){
             $('#measurement-main-title').html(mtitle);
             $('#m').attr('name', measurement).attr('id',measurement+'-input')
             $('#settings-form span.form-units').addClass(model.model.units);
-            $('#'+measurement+'-input').val(model.model.data.measurements[measurement]);
+            if(model.model.units === 'imperial') var inputValue = inchesAsFraction(model.model.data.measurements[measurement], 'plain');
+            else var inputValue = model.model.data.measurements[measurement];
+            $('#'+measurement+'-input').val(inputValue);
             // Bind cancel handler
             $('#settings').on('click','.close-modal', function(e) {
                 closeModal();
@@ -339,10 +343,14 @@
                 // Is measurements already an object?
                 if(typeof(model.model.data.measurements) === 'string' || model.model.data.measurements === null) {
                     var measurementsObject = {};
-                    measurementsObject[measurement] = Number($('#'+measurement+'-input').val());
+                    // Imperial might not be a number but something like '9 1/2'
+                    if(model.model.units === 'imperial') measurementsObject[measurement] = $('#'+measurement+'-input').val();
+                    else measurementsObject[measurement] = Number($('#'+measurement+'-input').val());
                     model.model.data.measurements = measurementsObject;
                 } else {
-                    model.model.data.measurements[measurement] = Number($('#'+measurement+'-input').val());
+                    // Imperial might not be a number but something like '9 1/2'
+                    if(model.model.units === 'imperial') model.model.data.measurements[measurement] = $('#'+measurement+'-input').val();
+                    else model.model.data.measurements[measurement] = Number($('#'+measurement+'-input').val());
                 }
                 saveModelData();
             });
@@ -564,7 +572,6 @@
     function saveModelSettings() {
         // Show loader
         $('#loader').load('/snippets/generic/spinner');
-
         $.ajax({
           url: api.data+'/model/'+model.model.handle,
           method: 'PUT',
@@ -674,6 +681,8 @@
           dataType: 'json',
           success: function(data) {
             if(data.result == 'ok') {
+                // Use data from backend
+                model.model.data = data.data;
                 closeModal();
                 $.bootstrapGrowl("Model data saved", {type: 'success'});
                 if($('#filter-patterns-select').val() === 'all') renderMeasurements();
@@ -1019,6 +1028,15 @@
             var rest = value - inches;
         }
         var fraction64 = Math.round(rest*64);
+        if(format == 'plain') {
+            if(fraction64 == 0) return negative+inches;
+            if(fraction64 % 32 == 0) return negative+inches+' '+fraction64/32+'/2';
+            if(fraction64 % 16 == 0) return negative+inches+' '+fraction64/16+'/4';
+            if(fraction64 % 8 == 0) return negative+inches+' '+fraction64/8+'/8';
+            if(fraction64 % 4 == 0) return negative+inches+' '+fraction64/4+'/16';
+            if(fraction64 % 2 == 0) return negative+inches+' '+fraction64/2+'/32';
+            else return negative+value;
+        }
         var metric = Math.round(value*254)/100;
         var spanStart = '<span style="display: block; font-size: 70%; font-weight: 400; color: #464a4c;">';
         var spanEnd = ' inch or '+negative+metric+' cm</span>';
@@ -1028,7 +1046,7 @@
         if(fraction64 % 8 == 0) return negative+inches+'<sup>'+fraction64/8+'</sup>/<sub>8</sub>" '+spanStart+negative+value+spanEnd;
         if(fraction64 % 4 == 0) return negative+inches+'<sup>'+fraction64/4+'</sup>/<sub>16</sub>" '+spanStart+negative+value+spanEnd;
         if(fraction64 % 2 == 0) return negative+inches+'<sup>'+fraction64/2+'</sup>/<sub>32</sub>" '+spanStart+negative+value+spanEnd;
-        else return negative+value+'"';
+        else return negative+value+'"'+spanStart+negative+value+spanEnd;
     }
 
     function renderOption(name, option, units) {
@@ -1308,7 +1326,7 @@
     function renderDraft(draft) {
         $('h1.page-title').html(draft.name);
         $('ul.breadcrumbs li:last-child').html(draft.name);
-        $('#issue-link').attr('href','https://github.com/freesewing/site/issues/new?title=Problem%20with%20draft%20'+draft.handle+'&body=See%20[here]('+window.location.hostname+'/drafts/'+draft.handle+')');
+        $('#issue-link').attr('href','https://github.com/freesewing/site/issues/new?title=Problem%20with%20draft%20'+draft.handle+'&body=See%20[here](https:/'+'/'+window.location.hostname+'/drafts/'+draft.handle+')');
         if(!logged_in) {
             // Shared draft, viewed anonymously
             $('.owner-only').remove();
@@ -1389,7 +1407,6 @@
             var keys = $.map(fsdata.patterns[draft.pattern].measurements, function(value, index) {
                 return [index];
             });
-            console.log(draft.data);
             $.each(keys, function(index, measurement){
                 if(draft.data.units == 'imperial') var measurementValue = inchesAsFraction(draft.data.measurements[measurement]);
                 else var measurementValue = draft.data.measurements[measurement]+' cm';
@@ -1536,7 +1553,6 @@
     }
 
     function saveUserLocally(data) {
-        console.log(data);     
         window.localStorage.setItem("fsu", JSON.stringify({ 'id': data.account.id, 'email': data.account.email, 'user': data.account.username }));
     }
 
