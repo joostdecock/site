@@ -264,7 +264,7 @@
         $('#model-breasts').html(breasts);
         $('#model-units').html(data.model.units);
         $('#model-handle').html(data.model.handle);
-        $('#model-created').attr('datetime', data.model.created);
+        $('#model-created').attr('datetime', data.model.created+' UTC');
         timeago().render($('.timeago'));
         // Check whether we have any data at all
         if(data.model.data === "" || data.model.data === null) data.model.data = {measurements: ''};
@@ -1338,7 +1338,7 @@
             msg += '<p class="text-center"><a href="/docs/site/fork" class="btn btn-outline-white">Find out more</a></p></blockquote>';
             $('#draft').prepend(msg);
             $('#draft-handle').html(draft.handle);
-            $('#created').attr('datetime', draft.created);
+            $('#created').attr('datetime', draft.created+' UTC');
             timeago().render($('.timeago'));
         } else {
             if(user.id == draft.user){
@@ -1352,7 +1352,7 @@
                     $('#shared-link').html('No');
                     $('#fork-msg').html('&nbsp;&nbsp;<i class="fa fa-info-circle" aria-hidden="true"></i> <small>This reference uniquely identifies your draft.</small>');
                 }
-                $('#created').attr('datetime', draft.created);
+                $('#created').attr('datetime', draft.created+' UTC');
                 timeago().render($('.timeago'));
                 $('#fork-btn').attr('href','/fork/'+draft.handle);
                 $('#redraft-btn').attr('href','/redraft/'+draft.handle+'/for/'+draft.model.handle);
@@ -1360,7 +1360,7 @@
                 // Logged-in user but not their own draft (shared)
                 $('.owner-only').remove();
                 $('#draft-handle').html(draft.handle);
-                $('#created').attr('datetime', draft.created);
+                $('#created').attr('datetime', draft.created+' UTC');
                 timeago().render($('.timeago'));
                 var msg = '<blockquote class="fork m600 mb-5"><h5>Hot women in your neighborhood are forking this draft</h5>';
                 msg += '<p>Forking is a way to use an existing draft as a template for your own draft.</p>';
@@ -1540,7 +1540,7 @@
                 row += '<td class="model"><a href="/models/'+models[draft.model].handle+'">'+models[draft.model].name+'</a></td>';
             }
             row += '<td class="name"><a href="/drafts/'+draft.handle+'">'+draft.name+'</a></td>';
-            row += '<td class="date timeago" datetime="'+draft.created+'"></td>';
+            row += '<td class="date timeago" datetime="'+draft.created+' UTC"></td>';
             row += '<td class="trash icon"><a href="#" data-draft="'+draft.id+'" class="delete-draft" title="Delete draft '+draft.handle+'"><i class="fa fa-trash" aria-hidden="true"></i></a></td>';
             row += '</tr>';
             $('#draftlist').prepend(row);
