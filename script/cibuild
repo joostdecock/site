@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 set -e # halt script on error
-echo "build: " > build.yml
-echo $COMMIT_REF >> build.yml
-cat build.yml
+echo "build: $COMMIT_REF" > build.yml
 if [ "$BRANCH" = "master" ]; then
     bundle exec jekyll build --config _config/develop.yml,build.yml
 else
