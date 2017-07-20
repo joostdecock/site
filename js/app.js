@@ -1382,7 +1382,7 @@
             $('#options-table').append('<tr><td>Language</td><td nowrap>'+fsdata.patterns[draft.pattern].languages[draft.data.options.lang]+'</td></tr>');
             if(draft.data.options.scope == 'all') var scope = 'Complete pattern';
             else {
-                var scope = 'Only these parts: <ul>';
+                var scope = '<ul>';
                 $.each(draft.data.options.parts.split(','), function(index, part) {
                     scope += '<li>'+part+'</li>';
                 });
@@ -1785,7 +1785,7 @@
                         account = data;
                         $('#step2-link').html('For '+account.models[modelHandle].name).attr('href','/fork/'+draftHandle);
                         $.get('/json/freesewing.json', function( fsdata ) {
-                            renderDraftForm(account,fsdata.mapping.patternToHandle[draft.pattern], modelHandle, draft.data);
+                            renderDraftForm(account,fsdata.mapping.patternToHandle[draft.pattern], modelHandle, draft.data.options);
                         });
                     });
                 });
