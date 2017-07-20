@@ -2,6 +2,7 @@
 layout: page
 title: Part
 namespace: Freesewing
+repo: core
 tags: [class docs]
 permalink: /docs/core/classdocs/src/part
 ---
