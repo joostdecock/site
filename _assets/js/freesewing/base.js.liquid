@@ -3,6 +3,9 @@ var api = {
     data: '{{ site.api.data }}',
 };
 
+var buildRef = '{{ site.build }}'.substr(0,7);
+var buildFull = '{{ site.build }}';
+
 var user = false;
 var logged_in = false;
 var page = window.location.pathname;
