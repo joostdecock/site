@@ -318,8 +318,11 @@
             $('#measurement-main-title').html(mtitle);
             $('#m').attr('name', measurement).attr('id',measurement+'-input')
             $('#settings-form span.form-units').addClass(model.model.units);
-            if(model.model.units === 'imperial') var inputValue = inchesAsFraction(model.model.data.measurements[measurement], 'plain');
-            else var inputValue = model.model.data.measurements[measurement];
+            if(typeof model.model.data.measurements[measurement] == 'undefined') var inputValue = '';
+            else {
+                if(model.model.units === 'imperial') var inputValue = inchesAsFraction(model.model.data.measurements[measurement], 'plain');
+                else var inputValue = model.model.data.measurements[measurement];
+            }
             $('#'+measurement+'-input').val(inputValue);
             // Bind cancel handler
             $('#settings').on('click','.close-modal', function(e) {
