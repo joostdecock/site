@@ -10,7 +10,7 @@ permalink: /components/measurement/settings-metric
     <!-- username -->
     <div class="input-group key-sm mt-4">
         <span class="input-group-addon td-key">Value</span>
-        <input class="form-number form-control text-right" id="m" name="m" value="" type="number">
+        <input class="form-number form-control text-right" id="m" name="m" value="" type="number" step="any" min="0">
         <span class="input-group-addon form-units"></span>
     </div>
     <div id="loader" class="text-right">
