@@ -794,7 +794,8 @@
         });
     }
 
-    function renderDraftForm(account,patternhandle,modelhandle,defaults=false) {
+    function renderDraftForm(account,patternhandle,modelhandle,defaults) {
+        if(typeof defaults == 'undefined') var defaults = false;
         // Load site data
         $.get('/json/freesewing.json', function( fsdata ) {
             var pattern = fsdata.patterns[fsdata.mapping.handleToPattern[patternhandle]];
@@ -1017,7 +1018,8 @@
         else return parseInt(inches)+fraction32;
     }
 
-    function inchesAsFraction(value, format='form') {
+    function inchesAsFraction(value, format) {
+        if(typeof format == 'undefined') var format = 'form';
         if(value < 0) {
             value = value * -1;
             var negative = '-';
