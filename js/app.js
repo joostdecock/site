@@ -1209,8 +1209,6 @@
    
     function reportFailedDraft(model) {
         var patternName = $('#form-pattern-name').attr('data-handle');
-        console.log(model);
-        console.log(patternName);
         var params = '?service=draft&';
         $.each(model.model.data.measurements, function(key, value) {
             params += key+'='+value+'&';
@@ -1323,7 +1321,6 @@
     }
 
     function renderDraft(draft) {
-        console.log(draft);
         $('h1.page-title').html(draft.name);
         $('ul.breadcrumbs li:last-child').html(draft.name);
         $('#issue-link').attr('href','https://github.com/freesewing/site/issues/new?title=Problem%20with%20draft%20'+draft.handle+'&body=See%20[here](https:/'+'/'+window.location.hostname+'/drafts/'+draft.handle+')');
@@ -1394,6 +1391,7 @@
                 $.each(keys, function(index, option){
                     if(fsdata.patterns[draft.pattern].options[option].type == 'percent') var optionValue = draft.data.options[option]+'%';
                     else if(fsdata.patterns[draft.pattern].options[option].type == 'angle') var optionValue = draft.data.options[option]+'&deg;';
+                    else if(fsdata.patterns[draft.pattern].options[option].type == 'chooseOne') var optionValue = fsdata.patterns[draft.pattern].options[option].options[draft.data.options[option]];
                     else {
                         if(draft.model.units == 'imperial') var optionValue = inchesAsFraction(draft.data.options[option]);
                         else var optionValue = draft.data.options[option]+'cm';
