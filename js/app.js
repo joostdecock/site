@@ -1329,6 +1329,7 @@
     }
 
     function renderDraft(draft) {
+        console.log(draft);
         $('h1.page-title').html(draft.name);
         $('ul.breadcrumbs li:last-child').html(draft.name);
         $('#issue-link').attr('href','https://github.com/freesewing/site/issues/new?title=Problem%20with%20draft%20'+draft.handle+'&body=See%20[here](https:/'+'/'+window.location.hostname+'/drafts/'+draft.handle+')');
@@ -1418,20 +1419,11 @@
                 $('#measurements-table').append('<tr><td>'+fsdata.mapping.measurementToTitle[measurement]+'</td><td>'+measurementValue+'</td></tr>');
             });
         });
-        // Responsive SVG embed requires us to strip out the width and height attributes
-        var xmlDoc = $.parseXML( draft.svg );
-        $svg = $(xmlDoc).find('svg'); 
-        $svg.removeAttr('width');
-        $svg.removeAttr('height');
-        $('#svg-wrapper').html(xmlToString(xmlDoc));
-        var xmlDoc = $.parseXML( draft.compared );
-        $svg = $(xmlDoc).find('svg'); 
-        $svg.removeAttr('width');
-        $svg.removeAttr('height');
-        $('#compared-wrapper').html(xmlToString(xmlDoc));
         marked.setOptions({sanitize: true});
         if(draft.notes !==  '') $('#notes-inner').html(marked(draft.notes));
         $('#link-preview').attr('href',draft.dlroot+draft.handle+'.svg');
+        $('#svg-wrapper').html('<img style="width: 100%; height: auto;" src="'+draft.dlroot+draft.handle+'.svg">');
+        $('#compared-wrapper').html('<img style="width: 100%; height: auto;" src="'+draft.dlroot+draft.handle+'.compared.svg">');
         $('#compared-preview').attr('href',draft.dlroot+draft.handle+'.compared.svg');
         $('.download-draft').each(function(index) {
             var format = $(this).attr('data-format');
