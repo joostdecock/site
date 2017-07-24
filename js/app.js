@@ -1233,7 +1233,7 @@
         errormsg += '%0A%0A - [On core master branch](https://core.freesewing.org/'+params+')';
         errormsg += '%0A - [On core develop branch](https://dev.core.freesewing.org/'+params+')';
         errormsg += '%0A - [On core bleeding edge](https://joost.core.freesewing.org/'+params+')';
-        errormsg += '%0A----%0A%0AFeel free to include comments, but please keep the info above intact.';
+        errormsg += '%0A%0A%23%23 Please keep the info above intact%0AYou can include further info and comments here%0A%0A';
         errormsg += '">Send report to GitHub</a></p>';
         errormsg += '<p>PS: This will open a new window where you just have to click the <b>Submit new issue</b> button.</p></blockquote>';
         $('#draft-loading').html(errormsg); 
