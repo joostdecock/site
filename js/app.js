@@ -815,8 +815,8 @@
                 form.groups[o.group][option] = o;
             });
             // Add hidden form fields
-            $('#form').append('<input type="hidden" name="pattern" value="'+fsdata.mapping.handleToPattern[patternhandle]+'"><input type="hidden" name="model" value="'+modelhandle+'">');
-            if (page.substr(0,9) === '/redraft/') $('#form').append('<input type="hidden" name="draft" value="'+page.split('/')[2]+'">');
+            $('#form').append('<input type="hidden" id="form-pattern-name" name="pattern" data-handle="'+patternhandle+'" value="'+fsdata.mapping.handleToPattern[patternhandle]+'"><input type="hidden" name="model" value="'+modelhandle+'" id="form-model-handle">');
+            if (page.substr(0,9) === '/redraft/') $('#form').append('<input type="hidden" name="draft" value="'+page.split('/')[2]+'" id="form-redraft-handle">');
             // Load defaults for theme and langauge from fork (if provided)
             if(defaults !== false && typeof defaults.theme !== 'undefined') dflt_theme = defaults.theme;
             else dflt_theme = 'Basic';
@@ -1197,54 +1197,48 @@
             data: $('#form').serialize(),
             dataType: 'json',
             success: function(data) {
-              if(data.result == 'ok') {
-                  window.location.replace("/drafts/"+data.handle);
-              } else {
-                  var errormsg = '<blockquote class="error">';
-                  errormsg += '<h5>This should not happend, but it did.</h5>';
-                  errormsg += '<p>Something went wrong while drafting your pattern. And although the backend informed us about it, that exception is unhandled in the frontend.<p>';
-                  errormsg += '<p>Basically, we message up. Sorry.<p>';
-                  errormsg += '</blockquote>';
-                  errormsg += '<blockquote class="link">';
-                  errormsg += '<h5>Help us out and submit this report</h5>';
-                  errormsg += '<p>Looks like you\'ve hit a snag. Those things happen, but you could help us prevent it from happening in the future.</p>';
-                  errormsg += 'We have gathered all the info we need to investigate this, but we need you to take the last step of submitting the issue to GitHub.</p>';
-                  errormsg += '<p>So would you do us a favor and report this? Thank you :)</p>';
-                  errormsg += '<p><a target="_BLANK" class="btn btn-primary" ';
-                  errormsg += 'href="https://github.com/freesewing/site/issues/new?title=Failed to draft pattern';
-                  errormsg += '&labels[]=documentation';
-                  errormsg += '&body=This draft went off the rails:%0A'+encodeURIComponent($('#form').serialize());
-                  errormsg += '%0A%0AThis data was returned::%0A'+encodeURIComponent(JSON.stringify(data));
-                  errormsg += '%0A%0AFeel free to include comments, but please keep the info above.">';
-                  errormsg += 'Send report to GitHub</a></p>';
-                  errormsg += '<p>PS: This will open a new window where you just have to click the <b>Submit new issue</b> button.</p></blockquote>';
-                  $('#draft-loading').html(error);
-              }
+              if(data.result == 'ok') window.location.replace("/drafts/"+data.handle);
+              else loadModel($('#form-model-handle').val(), reportFailedDraft);
             }, 
             error: function(data) { 
-                var errormsg = '<blockquote class="error">';
-                errormsg += '<h5>That did not go as planned. Like, at all.</h5>';
-                errormsg += '<p>Things just sort of fell apart and I did not see it coming. That shouldn\'t happen, so I encourage you to report this.<p>';
-                errormsg += '</blockquote>';
-                errormsg += '<blockquote class="link">';
-                errormsg += '<h5>Help us out and submit this report</h5>';
-                errormsg += '<p>Looks like you\'ve hit a snag. Those things happen, but you could help us prevent it from happening in the future.</p>';
-                errormsg += 'We have gathered all the info we need to investigate this, but we need you to take the last step of submitting the issue to GitHub.</p>';
-                errormsg += '<p>So would you do us a favor and report this? Thank you :)</p>';
-                errormsg += '<p><a target="_BLANK" class="btn btn-primary" ';
-                errormsg += 'href="https://github.com/freesewing/site/issues/new?title=Failed to draft pattern';
-                errormsg += '&labels[]=documentation';
-                errormsg += '&body=This draft went off the rails:%0A'+encodeURIComponent($('#form').serialize());
-                errormsg += '%0A%0AThis data was returned::%0A'+encodeURIComponent(JSON.stringify(data));
-                errormsg += '%0A%0AFeel free to include comments, but please keep the info above.">';
-                errormsg += 'Send report to GitHub</a></p>';
-                errormsg += '<p>PS: This will open a new window where you just have to click the <b>Submit new issue</b> button.</p></blockquote>';
-                $('#draft-loading').html(errormsg); 
+                loadModel($('#form-model-handle').val(), reportFailedDraft);
             },
             headers: {'Authorization': 'Bearer ' + token},
         }); 
     }
-    
+   
+    function reportFailedDraft(model) {
+        var patternName = $('#form-pattern-name').attr('data-handle');
+        console.log(model);
+        console.log(patternName);
+        var params = '?service=draft&';
+        $.each(model.model.data.measurements, function(key, value) {
+            params += key+'='+value+'&';
+        });
+        params += $('#form').serialize();
+        params = encodeURIComponent(params);
+        var errormsg = '<blockquote class="error">';
+        errormsg += '<h5>That did not go as planned. Like, at all.</h5>';
+        errormsg += '<p>Things just sort of fell apart and I did not see it coming. That shouldn\'t happen, so I encourage you to report this.<p>';
+        errormsg += '</blockquote>';
+        errormsg += '<blockquote class="link">';
+        errormsg += '<h5>Help me out and submit this report</h5>';
+        errormsg += '<p>Looks like you\'ve hit a snag. Those things happen, but you could help us prevent it from happening in the future.</p>';
+        errormsg += 'I have gathered all the info I need to investigate this, but I need you to take the last step of submitting the issue to GitHub.</p>';
+        errormsg += '<p>So would you do me a favor and report this? Thank you <i class="fa fa-heart" aria-hidden="true" style="color: #ef1fb9"></i></p>';
+        errormsg += '<p><a target="_BLANK" class="btn btn-primary" ';
+        errormsg += 'href="https://github.com/freesewing/site/issues/new?title=Failed to draft '+patternName+' for model '+model.model.handle;
+        errormsg += '&labels[]=unconfirmed bug';
+        errormsg += '&body=These links should recreate the issue:';
+        errormsg += '%0A%0A - [On core master branch](https://core.freesewing.org/'+params+')';
+        errormsg += '%0A - [On core develop branch](https://dev.core.freesewing.org/'+params+')';
+        errormsg += '%0A - [On core bleeding edge](https://joost.core.freesewing.org/'+params+')';
+        errormsg += '%0A----%0A%0AFeel free to include comments, but please keep the info above intact.';
+        errormsg += '">Send report to GitHub</a></p>';
+        errormsg += '<p>PS: This will open a new window where you just have to click the <b>Submit new issue</b> button.</p></blockquote>';
+        $('#draft-loading').html(errormsg); 
+    }
+
     function loadDraft(handle, callback) {
         $.ajax({
             url: api.data+'/auth',
