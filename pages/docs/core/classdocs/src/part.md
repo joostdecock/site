@@ -523,7 +523,7 @@ Calculates the length of a cubic Bezier curve.
 <div role="tabpanel" class="tab-pane active" id="curveLen-result" markdown="1">
 
 {% include coreClassdocsFigure.html
-    description="Rotating points with rotate()"
+    description="Calculating the length of a cubic Bezier curve"
     params="theme=Designer&onlyPoints=1,2,3,4&class=BezierToolbox&method=bezierLength"
 %}
 
@@ -3401,7 +3401,7 @@ bool isPoint(
 Returns true of the ['Point'](point) is known in the ['Part'](part), or false if it's not.
 
 > ##### This does not mean *Is it a point object*
-> If you want to check whether something is a ['Point'](point) object, 
+> If you want to check whether something is a [`Point`](point) object, 
 > you can use `$point instanceof \Freesewing\Point`
 {:.tip}
 
