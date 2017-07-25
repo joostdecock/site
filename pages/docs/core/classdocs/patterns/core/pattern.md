@@ -97,9 +97,9 @@ This is an abstract method, to be implemented by all childred of [`Pattern`](pat
 #### Example
 {:.no_toc}
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Sample should generate a minimal version of the pattern useful for sampling measurments and options"
-    url="https://api.freesewing.org/?service=sample&pattern=AaronAshirt&mode=measurements"
+    params="service=sample&pattern=AaronAshirt&mode=measurements"
 %}
 
 #### Typical use
@@ -133,9 +133,9 @@ This is an abstract method, to be implemented by all childred of [`Pattern`](pat
 #### Example
 {:.no_toc}
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Draft should generate a full pattern draft with all bells and whistles"
-    url="https://api.freesewing.org/?service=draft&pattern=AaronAshirt"
+    params="service=draft&pattern=AaronAshirt"
 %}
 
 #### Typical use
@@ -308,9 +308,9 @@ Formats a value (in mm as that's what we use internally) as text in the chosen u
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="unit-result">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="An example of the unit method"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Basic&onlyPoints=1&class=Part&method=unit"
+    params="?service=draft&pattern=ClassDocs&theme=Basic&onlyPoints=1&class=Part&method=unit"
 %}
 
 </div>
@@ -331,8 +331,11 @@ $p->newNote(2, 2, $p->unit(100),9,15,0);
 </div>
 </div>
 
-> Note: This example is from [`Part::unit`](../../src/part#unit). 
+> ##### This method exists in both the [`Part`](../../src/part) and [`Pattern`](pattern) classes
 > For historical reasons, both [`Pattern`](pattern) and [`Part`](../../src/part) have the exact same unit method.
+>
+> This example is from [`Part::unit`](../../src/part#unit). 
+{:.comment}
 
 #### Typical use
 {:.no_toc}
