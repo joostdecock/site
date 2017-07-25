@@ -17,9 +17,9 @@ It specifically adds a number of things to the pattern:
 
 ## Example 
 
-{% include figure.html 
-    description="You may need to open this in its own window to see the image embedded with newInclude()"
-    url="https://api.freesewing.org/?service=draft&pattern=AaronAshirt&theme=Designer"
+{% include coreClassdocsFigure.html
+    description="You will need to open this in its own window to see the hover effect on points"
+    params="service=draft&pattern=AaronAshirt&theme=Designer"
 %}
 
 ## Public methods

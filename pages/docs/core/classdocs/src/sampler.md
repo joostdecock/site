@@ -96,7 +96,7 @@ Protected function, so only available in [`OptionsSampler`](optionssampler) and
 - `int` `$steps` : Number of sampling steps in total
 - [`Patterns/pattern`](../patterns/core/pattern) `$pattern` : A [`Patterns/pattern`](../patterns/core/pattern) object
 - [`Themes/theme`](../themes/core/theme) `$theme` : A [`Themes/theme`](../themes/core/theme) object
-- [`SvgRenderbot`] `$svgRenderbot` : An [`SvgRenderbot`] object
+- [`SvgRenderbot`](./svgrenderbot) : An [`SvgRenderbot`](./svgrenderbot) object
 - `string` `$mode` : Mode, either `sample` or `compare`. Defaults to `sample`
 
 ### addSampledPartsToPattern

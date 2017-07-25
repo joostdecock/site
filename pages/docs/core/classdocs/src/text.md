@@ -19,9 +19,9 @@ The [`Text`](text) holds data for text to be placed on a pattern draft.
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="text-result">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Text examples"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Basic&class=Text&method=generic"
+    params="service=draft&pattern=ClassDocs&theme=Basic&class=Text&method=generic"
 %}
 
 </div>

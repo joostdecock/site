@@ -19,9 +19,9 @@ For each step, it generates the pattern parts for them, aligning them properly.
 This allows you to verify that your pattern copes nicely within the range of 
 an option. 
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="A pattern sampled with the OptionsSampler to show variations on an option"
-    url="https://api.freesewing.org/?service=sample&pattern=AaronAshirt&mode=options&option=backlineBend"
+    params="service=sample&pattern=AaronAshirt&mode=options&option=backlineBend"
 %}
 
 ## Typical use

@@ -18,9 +18,9 @@ The [`TextOnPath`](textonpath) holds data for text to be placed on/along a path.
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="newTextOnPath-result">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Texts on paths"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Basic&class=Part&method=newTextOnPath"
+    params="service=draft&pattern=ClassDocs&theme=Basic&class=Part&method=newTextOnPath"
 %}
 
 </div>

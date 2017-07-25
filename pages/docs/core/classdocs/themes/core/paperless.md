@@ -20,9 +20,9 @@ either metric or imperial, based on the requested output units.
 
 ## Example 
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="An example of the paperless theme"
-    url="https://api.freesewing.org/?service=draft&pattern=AaronAshirt&theme=Paperless"
+    params="service=draft&pattern=AaronAshirt&theme=Paperless"
 %}
 
 ## Public methods

@@ -40,7 +40,7 @@ thereby triggering [`SvgBlock::__toString`](svgblock#tostring).
 ```xml
 <!--
 
-    Hi mom :)
+    Hi gorgeous :)
 
 -->
 ```
@@ -50,7 +50,7 @@ thereby triggering [`SvgBlock::__toString`](svgblock#tostring).
 
 ```php?start_inline=1
 $svgBlock = new \Freesewing\SvgComments();
-$svgBlock->add('Hi mom :)');
+$svgBlock->add('Hi gorgeous :)');
 
 echo $svgBlock->load();
 ```

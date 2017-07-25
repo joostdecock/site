@@ -16,7 +16,9 @@ It is a child class of [`SvgBlock`](svgblock).
 
 Used by themes to add comments to the ECMAScript document.
 
+> ##### ECMAScript = JavaScript
 > ECMAScript is basically just JavaScript
+{:.tip}
 
 ## Public methods
 

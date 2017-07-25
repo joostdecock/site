@@ -109,9 +109,9 @@ to [`BezierToolbox::bezierDelta`](beziertoolbox#bezierdelta)
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="bezierCircle-result">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Make your Bezier curve mimic a smooth circle segment"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4,5,6&class=BezierToolbox&method=bezierCircle"
+    params="service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4,5,6&class=BezierToolbox&method=bezierCircle"
 %}
 
 </div>
@@ -178,9 +178,9 @@ Calculates the length of a cubic Bezier curve.
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="bezierLength-result">
 
-{% include figure.html 
-    description="A bezierEdge example"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4&class=BezierToolbox&method=bezierLength"
+{% include coreClassdocsFigure.html
+    description="A bezierLength example"
+    params="service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4&class=BezierToolbox&method=bezierLength"
 %}
 
 </div>
@@ -245,9 +245,9 @@ The side is either `left`, `right`, `up` or `down`.
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="bezierEdge-result">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="A bezierEdge example"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4,leftEdge,rightEdge,topEdge,bottomEdge&class=BezierToolbox&method=bezierEdge"
+    params="service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4,leftEdge,rightEdge,topEdge,bottomEdge&class=BezierToolbox&method=bezierEdge"
 %}
 
 </div>
@@ -329,9 +329,9 @@ boZZttomRight point we encounter.
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="bezierBoundary-result">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="A bezierBoundary example"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4&class=BezierToolbox&method=bezierBoundary" 
+    params="service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4&class=BezierToolbox&method=bezierBoundary" 
 %}
 
 </div>
@@ -403,9 +403,9 @@ return 0.5.
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="bezierDelta-result">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Delta of a point along a Bezier curve"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4,5&class=BezierToolbox&method=bezierDelta"
+    params="service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4,5&class=BezierToolbox&method=bezierDelta"
 %}
 
 </div>
@@ -481,9 +481,9 @@ to [`BezierToolbox::bezierDelta`](beziertoolbox#bezierdelta)
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="bezierSplit-result">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="The methods calculates new points that allow us to construct a curve that is a subsection of another curve"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4,5,s5,s6,s7&class=BezierToolbox&method=bezierSplit"
+    params="service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4,5,s5,s6,s7&class=BezierToolbox&method=bezierSplit"
 %}
 
 </div>
@@ -556,9 +556,9 @@ Finds the intersection(s) between a line segment and a cubic Bezier Curve.
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="bezierLineIntersections-result">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="This curve and line intersect in three points"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4,i1,i2,i3&class=BezierToolbox&method=bezierLineIntersections"
+    params="service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4,i1,i2,i3&class=BezierToolbox&method=bezierLineIntersections"
 %}
 
 </div>
@@ -631,9 +631,9 @@ Finds the intersection(s) between 2 cubic Bezier Curves.
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="bezierBezierIntersections-result">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Two cubic Bezier curves can intersect in up to nine points"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=i-1,i-2,i-3,i-4,i-5,i-6,i-7,i-8,i-9&class=BezierToolbox&method=bezierBezierIntersections"
+    params="service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=i1,i2,i3,i4,i5,i6,i7,i8,i9&class=BezierToolbox&method=bezierBezierIntersections"
 %}
 
 </div>

@@ -44,7 +44,7 @@ And making the approximation overly precise is just being
 difficult for the sake of being difficult.
 
 For all intends and purposes, 1/1000th of a mm is way more
-precice than you'll even be able to sew or cut.
+precice than you'll ever be able to sew or cut.
 
 ## Public methods
 

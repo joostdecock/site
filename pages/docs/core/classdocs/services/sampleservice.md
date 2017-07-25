@@ -18,9 +18,9 @@ changing measurement or options values.
 
 ## Example
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="An example of an option sampled by the sample service"
-    url="https://api.freesewing.org/?service=sample&pattern=AaronAshirt&mode=options&option=backlineBend"
+    params="service=sample&pattern=AaronAshirt&mode=options&option=backlineBend"
 %}
 
 

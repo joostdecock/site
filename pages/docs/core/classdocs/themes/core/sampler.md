@@ -32,7 +32,7 @@ Called by the service classes after the pattern is drafted/sampled, but before i
 #### Parameters
 {:.no_toc}
 
-- [`SvgDocument`]../../classdocs/src/svgdocument) `$svgDocument` : The [`SvgDocument`]../../classdocs/src/svgdocument) object to theme.
+- [`SvgDocument`](../../classdocs/src/svgdocument) `$svgDocument` : The [`SvgDocument`](../../classdocs/src/svgdocument) object to theme.
 
 ### samplerPathStyle
 
@@ -48,7 +48,7 @@ This method is reponsible for that rainbow effect in this theme.
 
 #### Typical use
 {:.no_toc}
-Called from the [`Sampler`]../../classdocs/src/sampler) class.
+Called from the [`Sampler`](../../classdocs/src/sampler) class.
 
 #### Parameters
 {:.no_toc}

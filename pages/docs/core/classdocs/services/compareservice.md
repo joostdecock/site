@@ -17,9 +17,9 @@ This allows you to **compare** your result to a range of standard sizes.
 
 ## Example
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="An example of the compare service"
-    url="https://api.freesewing.org/?service=compare&pattern=AaronAshirt&mode=measurements&acrossBack=45&bicepsCircumference=33.5&centerBackNeckToWaist=48&chestCircumference=108&naturalWaistToHip=12&neckCircumference=42&shoulderLength=16&shoulderSlope=4&hipsCircumference=95&chestEase=3&armholeDrop=3&lengthBonus=6&necklineBend=100&backlineBend=30&necklineDrop=12&shoulderStrapWidth=4&shoulderStrapPlacement=45&stretchFactor=90&hipsEase=6&samplerGroup=maleStandardUsSizes&theme=Compare&lang=en&unitsIn=metric&unitsOut=metric"
+    params="service=compare&pattern=AaronAshirt&mode=measurements&acrossBack=45&bicepsCircumference=33.5&centerBackNeckToWaist=48&chestCircumference=108&naturalWaistToHip=12&neckCircumference=42&shoulderLength=16&shoulderSlope=4&hipsCircumference=95&chestEase=3&armholeDrop=3&lengthBonus=6&necklineBend=100&backlineBend=30&necklineDrop=12&shoulderStrapWidth=4&shoulderStrapPlacement=45&stretchFactor=90&hipsEase=6&samplerGroup=maleStandardUsSizes&theme=Compare&lang=en&unitsIn=metric&unitsOut=metric"
 %}
 
 
@@ -55,8 +55,8 @@ Essentially, it takes care of the entire remainder of the request.
 
 While doing so, it takes care of a number of things:
 
-- It asks the [`Channel`]../channels/core/channel) wether this is a valid [`Request`](../src/request)
-- It asks the [`Channel`]../channels/core/channel) to standardize the [`Model`](../src/model) measurements and options
+- It asks the [`Channel`](../channels/core/channel) whether this is a valid [`Request`](../src/request)
+- It asks the [`Channel`](../channels/core/channel) to standardize the [`Model`](../src/model) measurements and options
 - It adds units, a translator, [`Pattern`](../patterns/core/pattern), [`Model`](../src/model), 
 [`SvgDocument`](../src/svgdocument), [`SvgRenderbot`](../src/svgrenderbot), and [`MeasurementsSampler`](../src/measurementssampler) to the [`Context`](../src/context)
 - It calls [`MeasurementsSamplerPattern::sampleMeasurements`](../src/measurementssampler#samplemeasurements)

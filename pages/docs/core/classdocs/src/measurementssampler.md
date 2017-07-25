@@ -16,9 +16,9 @@ the pattern parts for them, aligning them properly.
 This allows you to verify that your pattern grades nicely over a range of
 sizes/measurements. 
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="A pattern sampled with the MeasurementsSampler"
-    url="https://api.freesewing.org/?service=sample&pattern=AaronAshirt&mode=measurements&samplerGroup=maleStandardUsSizes"
+    params="service=sample&pattern=AaronAshirt&mode=measurements&samplerGroup=maleStandardUsSizes"
 %}
 
 ## Typical use
@@ -89,6 +89,7 @@ This method allows that.
 {:.no_toc}
 
 `$measurements` is an array with measurements, strcutured like this:
+
 ```php?start_inline=1
 [
     chestCircumference => 110,

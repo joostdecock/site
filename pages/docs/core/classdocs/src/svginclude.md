@@ -8,7 +8,7 @@ permalink: /docs/core/classdocs/src/svginclude
 ## Description 
 
 The [`SvgInclude`](svginclude) class holds SVG code to be
-included in an SVG document, no questionsasked.
+included in an SVG document, no questions asked.
 
 ## Typical use
 

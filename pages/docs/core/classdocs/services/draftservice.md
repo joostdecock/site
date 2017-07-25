@@ -13,9 +13,9 @@ It is the core business of Freesewing.
 
 ## Example
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="An example of the draft service"
-    url="https://api.freesewing.org/?service=draft&pattern=AaronAshirt"
+    params="?service=draft&pattern=AaronAshirt"
 %}
 
 
@@ -57,8 +57,8 @@ Essentially, it takes care of the entire remainder of the request.
 
 While doing so, it takes care of a number of things:
 
-- It asks the [`Channel`]../channels/core/channel) wether this is a valid [`Request`](../src/request)
-- It asks the [`Channel`]../channels/core/channel) to standardize the [`Model`](../src/model) measurements and options
+- It asks the [`Channel`](../channels/core/channel) wether this is a valid [`Request`](../src/request)
+- It asks the [`Channel`](../channels/core/channel) to standardize the [`Model`](../src/model) measurements and options
 - It adds units, a translator, [`Pattern`](../patterns/core/pattern), [`Model`](../src/model), 
 [`SvgDocument`](../src/svgdocument), and [`SvgRenderbot`](../src/svgrenderbot) to the [`Context`](../src/context)
 - It calls [`Pattern::draft`](../patterns/core/pattern#draft)
