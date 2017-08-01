@@ -7,7 +7,7 @@ nocomments: true
 > <h5>Life is better after loggging in</h5>
 > You probably ended up here because you tried to do something that needs you to log in first.
 >
-> You can <a href="#burger" class="login">log in now</a> and get back to what you were doing,
+> You can <a href="#scroller" class="login">log in now</a> and get back to what you were doing,
 > or you can read below why you should log in.
 {: .tip }
 
@@ -26,8 +26,8 @@ Your specifications means:
 
 So, in order to get your hands on a pattern, you need to:
 
-- <a href="#burger" class="signup">Sign up</a>
-- <a href="#burger" class="login">Log in</a>
+- <a href="#scroller" class="signup">Sign up</a>
+- <a href="#scroller" class="login">Log in</a>
 - Add a model
 - Add measurements to that model
 - Draft your pattern

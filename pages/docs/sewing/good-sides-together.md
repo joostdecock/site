@@ -8,7 +8,7 @@ When I refer to good sides together that can refer to either cutting or sewing:
 
 ## Cutting with good sides together
 {% include figure.html
-    url='/img/sewing/cutting-good-sides-together'
+    url='/img/sewing/cutting-good-sides-together.jpg'
     description='A pocket is marked on the bad side of a piece of double-folded denim, ready to be cut good sides together. After cutting both layers, this will yield two pockets that are mirror images of each other.'
 %}
 

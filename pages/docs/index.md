@@ -10,13 +10,13 @@ nocomments: true
     <div class="row">
         <div class="col-md-12 col-lg-6 mb-3">
             <div class="card hover-shadow">
-                <a href="#burger" title="Feeling lost?" class="tour-guide" data-episode="welcome">
+                <a href="#scroller" title="Feeling lost?" class="tour-guide" data-episode="welcome">
                     <img src="/img/maze.svg" alt="Take the tour" class="rounded-top">
                 </a>
                 <div class="card-block">
-                    <h4 class="card-title"><a href="#burger" class="tour-guide" data-episode="welcome">Freesewing essentials<span class="card-link"></span></a></h4>
+                    <h4 class="card-title"><a href="#scroller" class="tour-guide" data-episode="welcome">Freesewing essentials<span class="card-link"></span></a></h4>
                     <p class="card-text">
-                        If you're not familiar with Freesewing, our <a href="#burger" class="tour-guide" data-episode="welcome">Freesewing essentials</a> guide will bring you up to speed.
+                        If you're not familiar with Freesewing, our <a href="#scroller" class="tour-guide" data-episode="welcome">Freesewing essentials</a> guide will bring you up to speed.
                     </p>
                 </div>
             </div>
@@ -27,18 +27,18 @@ nocomments: true
                     <h4 class="card-title">Other guides</h4>
                     <p class="card-text"><b>Before you start</b></p>
                     <ul class="narrow">
-                        <li><a href="#burger" class="tour-guide" data-episode="mobile-nav">Site navigation on mobile</a></li>
-                        <li><a href="#burger" class="tour-guide" data-episode="desktop-nav">Site navigation on desktop</a></li>
+                        <li><a href="#scroller" class="tour-guide" data-episode="mobile-nav">Site navigation on mobile</a></li>
+                        <li><a href="#scroller" class="tour-guide" data-episode="desktop-nav">Site navigation on desktop</a></li>
                     </ul>
                     <p class="card-text"><b>Basics</b></p>
                     <ul class="narrow">
-                        <li><a href="#burger" class="tour-guide" data-episode="signup">Creating an account</a></li>
-                        <li><a href="#burger" class="tour-guide" data-episode="login">Logging in</a></li>
+                        <li><a href="#scroller" class="tour-guide" data-episode="signup">Creating an account</a></li>
+                        <li><a href="#scroller" class="tour-guide" data-episode="login">Logging in</a></li>
                     </ul>
                     <p class="card-text"><b>After you log in</b></p>
                     <ul class="narrow">
-                        <li><a href="#burger" class="tour-guide" data-episode="model">Adding models and measurements</a></li>
-                        <li><a href="#burger" class="tour-guide" data-episode="draft">Drafting a pattern</a></li>
+                        <li><a href="#scroller" class="tour-guide" data-episode="model">Adding models and measurements</a></li>
+                        <li><a href="#scroller" class="tour-guide" data-episode="draft">Drafting a pattern</a></li>
                     </ul>
                 </div>
             </div>

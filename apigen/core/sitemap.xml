@@ -1,191 +1,191 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-	<loc>https://docs.freesewing.org/apigen/index.html</loc>
+	<loc>https://freesewing.org/apigen/core/index.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/namespace-Freesewing.html</loc>
+	<loc>https://freesewing.org/apigen/core/namespace-Freesewing.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/namespace-Freesewing.Channels.html</loc>
+	<loc>https://freesewing.org/apigen/core/namespace-Freesewing.Channels.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/namespace-Freesewing.Channels.Core.html</loc>
+	<loc>https://freesewing.org/apigen/core/namespace-Freesewing.Channels.Core.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/namespace-Freesewing.Patterns.html</loc>
+	<loc>https://freesewing.org/apigen/core/namespace-Freesewing.Patterns.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/namespace-Freesewing.Patterns.Core.html</loc>
+	<loc>https://freesewing.org/apigen/core/namespace-Freesewing.Patterns.Core.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/namespace-Freesewing.Services.html</loc>
+	<loc>https://freesewing.org/apigen/core/namespace-Freesewing.Services.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/namespace-Freesewing.Themes.html</loc>
+	<loc>https://freesewing.org/apigen/core/namespace-Freesewing.Themes.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/namespace-Freesewing.Themes.Core.html</loc>
+	<loc>https://freesewing.org/apigen/core/namespace-Freesewing.Themes.Core.html</loc>
 </url>
 
 
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.BezierToolbox.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.BezierToolbox.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Boundary.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Boundary.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Channels.Core.Channel.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Channels.Core.Channel.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Channels.Core.Freesewing.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Channels.Core.Freesewing.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Context.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Context.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Coords.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Coords.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Dimension.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Dimension.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.GrowingPacker.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.GrowingPacker.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.LayoutBlock.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.LayoutBlock.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.MeasurementsSampler.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.MeasurementsSampler.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Model.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Model.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Note.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Note.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.OptionsSampler.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.OptionsSampler.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Packer.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Packer.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Part.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Part.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Path.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Path.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Patterns.Core.Pattern.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Patterns.Core.Pattern.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Point.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Point.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Polynomial.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Polynomial.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Request.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Request.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Response.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Response.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Sampler.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Sampler.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Services.CompareService.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Services.CompareService.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Services.DraftService.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Services.DraftService.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Services.InfoService.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Services.InfoService.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Services.SampleService.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Services.SampleService.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Services.Service.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Services.Service.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Stack.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Stack.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.SvgAttributes.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.SvgAttributes.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.SvgBlock.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.SvgBlock.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.SvgComments.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.SvgComments.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.SvgCss.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.SvgCss.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.SvgDefs.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.SvgDefs.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.SvgDocument.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.SvgDocument.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.SvgInclude.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.SvgInclude.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.SvgRenderbot.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.SvgRenderbot.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.SvgScript.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.SvgScript.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.SvgSnippet.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.SvgSnippet.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Text.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Text.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.TextOnPath.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.TextOnPath.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Themes.Core.Basic.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Themes.Core.Basic.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Themes.Core.Compare.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Themes.Core.Compare.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Themes.Core.Designer.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Themes.Core.Designer.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Themes.Core.Designerless.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Themes.Core.Designerless.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Themes.Core.Developer.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Themes.Core.Developer.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Themes.Core.Info.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Themes.Core.Info.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Themes.Core.Paperless.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Themes.Core.Paperless.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Themes.Core.Sampler.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Themes.Core.Sampler.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Themes.Core.Theme.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Themes.Core.Theme.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Transform.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Transform.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Utils.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Utils.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Vector.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Vector.html</loc>
 </url>
 <url>
-	<loc>https://docs.freesewing.org/apigen/class-Freesewing.Yamlr.html</loc>
+	<loc>https://freesewing.org/apigen/core/class-Freesewing.Yamlr.html</loc>
 </url>
 </urlset>

@@ -9,8 +9,19 @@ ul.tags li {
     margin-right: 0.5rem; 
 }
 span.badge.core {
-    background: $black;
+    background: $green;
     color: $white;
+    box-shadow: 2px 2px 0 $blue, 4px 4px 0 $yellow;
+}
+span.badge.site {
+    background: $yellow;
+    color: $black;
+    box-shadow: 2px 2px 0 $green, 4px 4px 0 $blue;
+}
+span.badge.data {
+    background: $blue;
+    color: $white;
+    box-shadow: 2px 2px 0 $yellow, 4px 4px 0 $green;
 }
 span.badge.beta {
     background: $red;

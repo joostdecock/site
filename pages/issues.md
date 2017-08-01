@@ -13,11 +13,11 @@ action: issues
 <a class="mx-1" href="#site">site issues (<span id="site-count"></span>)</a>
 </p>
 <h2 id="core">Core issues</h2>
-<div id="core-issues"><img src="/img/logo/spinner.svg"></div>
+<div id="core-issues"><img src="/img/logo/spinner.svg" alt="Loading..."></div>
 <h2 id="data">Data issues</h2>
-<div id="data-issues"><img src="/img/logo/spinner.svg"></div>
+<div id="data-issues"><img src="/img/logo/spinner.svg" alt="Loading..."></div>
 <h2 id="site">Site issues</h2>
-<div id="site-issues"><img src="/img/logo/spinner.svg"></div>
+<div id="site-issues"><img src="/img/logo/spinner.svg" alt="Loading..."></div>
 </div>
 <div class="row mt-2">
 <div id="comments-container" class="col-xl-10 offset-xl-1 col-lg-12 offset-lg-0 mb-5">

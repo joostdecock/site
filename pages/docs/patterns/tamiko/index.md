@@ -44,7 +44,7 @@ Below is a typical draft layout:
 
 > <h5>Notation legend</h5>
 >
-> The [notation legend](/docs/patterns/notation-legend) explains all the different markings and lines on your draft.
+> The [notation legend](/docs/patterns/notation) explains all the different markings and lines on your draft.
 {:.tip}
 
 ### Part 1: Tamiko top

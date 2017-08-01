@@ -97,6 +97,7 @@ There's a number of concepts that you should be familiar with to _get_ freesewin
 
 {% include figure.html
   url='/img/fundamentals/coordinates.svg'
+  description="The SVG coordinate system"
 %}
 The coordinate system originates from the top left.
 

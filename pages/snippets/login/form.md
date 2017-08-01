@@ -32,7 +32,7 @@ permalink: /snippets/login/form
                     <label class="floating-label">Email</label> 
                   </div>
                   <button type="submit" class="btn btn-primary btn-lg btn-block mt-4">Request a new password</button>
-                  <p class="mt-3"><a href="#recovery-panel" class="toggle-password-recover">Back to log in</a></p>
+                  <p class="mt-3"><a href="#" class="toggle-password-recover">Back to log in</a></p>
                 </form>
             </div>
         </div>
