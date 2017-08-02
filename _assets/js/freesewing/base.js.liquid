@@ -122,6 +122,8 @@ var token = window.localStorage.getItem("jwt");
         $('#markdown-toc').detach().appendTo('#oc-right'); // Move auto-generated ToC to the correct place in the DOM
 
         $('p a code.highlighter-rouge').parent().addClass('noline'); // Avoid underlining class links
+        
+        if ($('body').attr('data-comments') == 'true') loadComments();
     });
 }(jQuery));
 
