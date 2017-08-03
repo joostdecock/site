@@ -10,14 +10,14 @@ crumbs:
 
 ### master branch
 
-[api.freesewing.org](https://api.freesewing.org/) runs the core master branch.
+[core.freesewing.org](https://core.freesewing.org/) runs the core master branch.
 
 ### develop branch
 
-[dev.api.freesewing.org](https://dev.api.freesewing.org) runs the core develop branch.
+[dev.core.freesewing.org](https://dev.core.freesewing.org) runs the core develop branch.
 
 ### Environment
-![Linode](https://www.linode.com/media/images/logos/standard/light/linode-logo_standard_light_small.png)
+![Linode](/img/linode.png)
 {: .float-right style="width:115px; margin: 5px;"}
 
 Both master and develop branches of core are hosted on lin.freesewing.org.
@@ -27,60 +27,104 @@ Lin runs [Debian](https://debian.org) 8 (jessie) with PHP7.0 on Apache over SSL,
 certificates are from [Let's Encrypt](https://letsencrypt.org/).
 
 ### DevOps
-![TravisCI](https://cdn.travis-ci.com/images/logos/Tessa-2-4913e90413586105249b4f55ca622ec8.png)
+![TravisCI](/img/travis.png)
 {: .float-right style="width:115px; margin: 5px;"}
 
 Both master and develop branches are auto-deployed by [TravisCI](https://travis-ci.org/freesewing). 
 
-Every time we push changes to the master/develop branch, Travis will generate a build,
+Travis is a continious integration platform. They have free plan for open source projects.
+
+Every time changes are pushed to the master/develop branch, Travis will generate a build,
 run unit and integration tests on it, and if everything passes, deploy it automatically.
 
 You can have a look at the .travis.yml file in the repository root for more details.
 
 Unit tests are handled by PHPUnit, the `scripts/test.sh` script handles integration testing.
 
+## data
+
+### master instance
+
+[data.freesewing.org](https://data.freesewing.org/) runs the data master branch.
+
+### develop branch
+
+[dev.data.freesewing.org](https://dev.data.freesewing.org) runs the data develop branch.
+
+### Environment
+![Linode](/img/linode.png)
+{: .float-right style="width:115px; margin: 5px;"}
+
+Both master and develop branches of data are hosted on lin.freesewing.org.
+Lin is a virtual server based in [Linode](https://www.linode.com/")'s datacenter in Frankfurt.
+
+Lin runs [Debian](https://debian.org) 8 (jessie) with PHP7.0 on Apache over SSL, 
+certificates are from [Let's Encrypt](https://letsencrypt.org/).
+
+### DevOps
+![TravisCI](/img/travis.png)
+{: .float-right style="width:115px; margin: 5px;"}
+
+Both master and develop branches are auto-deployed by [TravisCI](https://travis-ci.org/freesewing). 
+
+Travis is a continious integration platform. They have free plan for open source projects.
+
+Every time changes are pushed to the master/develop branch, Travis will generate a build and deploy it automatically.
+
+You can have a look at the .travis.yml file in the repository root for more details.
+
 ## site
 
 ### master branch
 
-[https://freesewing.org](https://freesewing.org/) runs the site master branch.
-
-> Actually, [https://freesewing.org](https://beta.freesewing.org/) runs the site master branch.
-> We'll file this on under #fixme for now.
-{:.warning}
+[freesewing.org](https://freesewing.org/) runs the site master branch.
 
 ### develop branch
 
-[https://dev.docs.freesewing.org](https://dev.docs.freesewing.org/) runs the docs develop branch.
+[dev.freesewing.org](https://dev.freesewing.org/) runs the site develop branch.
 
 ### Environment
 
-![Netlify](https://www.netlify.com/img/global/badges/netlify-color-bg.svg)
+![Netlify](/img/netlify.svg)
 {: .float-right }
-The docs repository is a Jekyll site which generates static HTML.
-For both the master and develop branches of docs, the static HTML is hosted by 
+The site repository is a Jekyll site which generates static HTML.
+For both the master and develop branches of site, the static HTML is hosted by 
 [Netlify](https://www.netlify.com/).
 
 Netlify is a <abbr title="Content Delivery Network">CDN</abbr> for static content.
-Their pro plan is free for open source projects, so we use that.
+Their pro plan is free for open source projects.
 
 ### DevOps
 
-![TravisCI](https://cdn.travis-ci.com/images/logos/Tessa-2-4913e90413586105249b4f55ca622ec8.png)
-{: .float-right style="width:115px; margin: 5px;"}
+![Netlify](/img/netlify.svg)
+{: .float-right }
 
-Every time we push changes to the master/develop branch, [TravisCI](https://travis-ci.org/freesewing) 
-will generate a build, and run htmlproofer on it to check for broken links.
+Every time changes are pushed to the master/develop branch, [Netlify](https://www.netlify.com/)
+will generate a build, and deploy it on their CDN.
 
-If everything is fine, the site will automatically be deployed by Netlify.
+### Search
 
-Travis and Netlify are integrated with Slack. Subscribe to the #docs channel to see their notifications.
+![Algolia](/img/algolia.svg)
+{: .float-right }
+Search on the website is provided by [Algolia](https://www.algolia.com/).
+
+Algolia is a cloud search provider and offers a free plan.
+
+To update the Algolia index, run this command in the site root:
+
+```
+bundle exec jekyll algolia
+```
 
 ## demo
 
-### master instance
+### master branch
 
-[https://demo.freesewing.org](https://demo.freesewing.org/) runs the demo master branch.
+[demo.freesewing.org](https://demo.freesewing.org/) runs the demo master branch.
+
+### develop branch
+
+There is none. Just master, this is a very simple repository.
 
 ### Environment
 
@@ -97,26 +141,6 @@ Hosting and deployment of demo is handled by Netlifly.
 
 Pushing changes to the master branch will automatically deploy the 
 new master to [https://demo.freesewing.org](https://demo.freesewing.org/).
-
-## nofront
-
-### master branch
-
-[https://freesewing.org](https://freesewing.org/) runs the nofront master branch.
-
-### develop branch
-
-There is none. Just master, this is a very simple repository.
-
-### Environment
-
-![Netlify](https://www.netlify.com/img/global/badges/netlify-color-bg.svg)
-{: .float-right }
-The nofront repository is static HTML hosted by 
-[Netlify](https://www.netlify.com/).
-
-Netlify is a <abbr title="Content Delivery Network">CDN</abbr> for static content.
-Their pro plan is free for open source projects, so we use that.
 
 * TOC - Do not remove this line
 {:toc}

@@ -18,6 +18,7 @@ var token = window.localStorage.getItem("jwt");
         if(token === null) {
             $('body').addClass('visitor');
             logged_in = false;
+            if ($('body').attr('data-comments') == 'true') loadComments();
         } else {
             // Is token still valid?
             $.ajax({
@@ -122,8 +123,6 @@ var token = window.localStorage.getItem("jwt");
         $('#markdown-toc').detach().appendTo('#oc-right'); // Move auto-generated ToC to the correct place in the DOM
 
         $('p a code.highlighter-rouge').parent().addClass('noline'); // Avoid underlining class links
-        
-        if ($('body').attr('data-comments') == 'true') loadComments();
     });
 }(jQuery));
 
@@ -194,7 +193,7 @@ function postLogin() {
     user = JSON.parse(window.localStorage.getItem("fsu"));
     logged_in = true;
     $('body').addClass('user logged-in'); 
-    postAuth();
+    if ($('body').attr('data-comments') == 'true') loadComments();
 }
 
 // Things to do after logout
@@ -202,10 +201,6 @@ function postLogout() {
     logged_in = false;
     window.localStorage.removeItem("fsu");
     $('body').addClass('user logged-out'); 
-}
-
-// Things to do after authentication
-function postAuth() {
     if ($('body').attr('data-comments') == 'true') loadComments();
 }
 

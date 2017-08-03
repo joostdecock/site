@@ -32,8 +32,8 @@ Cotton with a hint of something stretchy, maybe rayon, or a fine knit. I suggest
 ## Cutting
 
 > - {:.title} Main fabric
->   - Cut **1 back** [on the fold](/fixme)
->   - Cut **1 front** [on the fold](/fixme)
+>   - Cut **1 back** on the fold
+>   - Cut **1 front** on the fold
 >   - Cut **3 strips** for neck opening and armhole binding
 > {:.cuts}
 {:.cuts}
