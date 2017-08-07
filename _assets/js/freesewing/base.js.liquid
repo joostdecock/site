@@ -25,8 +25,8 @@ var token = window.localStorage.getItem("jwt");
                 url: api.data+'/auth',
                 method: 'GET',
                 dataType: 'json',
-                success: function() { postLogin() }, 
-                error: function() { postLogout() }, 
+                success: function(data) { postLogin(data) }, 
+                error: function(data) { postLogout(data) }, 
                 headers: {'Authorization': 'Bearer '+token},
             }); 
         }
@@ -189,15 +189,16 @@ function closeModal() {
 }
 
 // Things to do after login
-function postLogin() { 
+function postLogin(data) { 
     user = JSON.parse(window.localStorage.getItem("fsu"));
     logged_in = true;
     $('body').addClass('user logged-in'); 
     if ($('body').attr('data-comments') == 'true') loadComments();
+    if(typeof data.new_badge == 'string') $.bootstrapGrowl('Yay, you unlocked the <big><b>'+data.new_badge+'</b></big> badge', {type: 'success'});
 }
 
 // Things to do after logout
-function postLogout() { 
+function postLogout(data) { 
     logged_in = false;
     window.localStorage.removeItem("fsu");
     $('body').addClass('user logged-out'); 

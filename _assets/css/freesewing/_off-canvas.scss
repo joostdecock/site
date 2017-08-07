@@ -103,7 +103,7 @@ body.oc-shown .oc-overlay {
         display: block;
         padding: 0.5rem 1rem;
     }
-    h4 {
+    h4,h5 {
         padding: 0;
         margin: 0;
     }
@@ -114,6 +114,7 @@ body.oc-shown .oc-overlay {
     .card-header {
         padding: 0;
     }
+
 }
 body.scrolled #tocburger {
     right: 100px;

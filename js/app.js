@@ -98,6 +98,40 @@
         }); 
     }
 
+    function loadRole(callback) {
+        return $.ajax({
+            url: api.data+'/role',
+            method: 'GET',
+            dataType: 'json',
+            success: function(data) {
+                callback(data);
+            },
+            error: function(data) { 
+                // eff this, you need to be logged in
+                window.location.replace("/login");
+            },
+            headers: {'Authorization': 'Bearer '+token},
+        }); 
+    }
+
+    function loadProfile(handle, callback) {
+        return $.ajax({
+            url: api.data+'/profile/'+handle,
+            method: 'GET',
+            dataType: 'json',
+            success: function(data) {
+                profile = data;
+                callback(data);
+            },
+            error: function(data) { 
+                profile = false;
+                // eff this, you need to be logged in
+                window.location.replace("/login");
+            },
+            headers: {'Authorization': 'Bearer '+token},
+        }); 
+    }
+
     function renderAccountSettings() {
         // Load settings into modal
         $('#modal').removeClass().addClass('shown light');
@@ -815,6 +849,7 @@
                 form.groups[o.group][option] = o;
             });
             // Add hidden form fields
+            if(typeof defaults != 'undefined') $('#form').append('<input type="hidden" id="fork" name="fork" value="true">');
             $('#form').append('<input type="hidden" id="form-pattern-name" name="pattern" data-handle="'+patternhandle+'" value="'+fsdata.mapping.handleToPattern[patternhandle]+'"><input type="hidden" name="model" value="'+modelhandle+'" id="form-model-handle">');
             if (page.substr(0,9) === '/redraft/') $('#form').append('<input type="hidden" name="draft" value="'+page.split('/')[2]+'" id="form-redraft-handle">');
             // Load defaults for theme and langauge from fork (if provided)
@@ -1541,6 +1576,39 @@
         });
     }
 
+    function addBadge(badge, userHandle) {
+        $.ajax({
+            url: api.data+'/badge',
+            method: 'POST',
+            data: { 'badge': badge, 'user': userHandle},
+            dataType: 'json',
+            success: function(data) {
+                $.bootstrapGrowl('Badge '+badge+' added. Reload page to update list.', {type: 'success'});
+            },
+            error: function(data) { 
+                $.bootstrapGrowl('Failed to add badge '+badge+'.', {type: 'error'});
+            },
+            headers: {'Authorization': 'Bearer '+token},
+        }); 
+    }
+    
+    function removeBadge(badge, userHandle) {
+        $.ajax({
+            url: api.data+'/badge',
+            method: 'DELETE',
+            data: { 'badge': badge, 'user': userHandle},
+            dataType: 'json',
+            success: function(data) {
+                $.bootstrapGrowl('Badge '+badge+' removed. Reload page to update list.', {type: 'success'});
+            },
+            error: function(data) { 
+                $.bootstrapGrowl('Failed to remove badge '+badge+'.', {type: 'error'});
+            },
+            headers: {'Authorization': 'Bearer '+token},
+        }); 
+    }
+
+
     function saveUserLocally(data) {
         window.localStorage.setItem("fsu", JSON.stringify({ 'id': data.account.id, 'email': data.account.email, 'user': data.account.username }));
     }
@@ -1687,6 +1755,67 @@
                     });
                 });
             }
+            // User profile page ////////////////
+            else if(page.substring(0,7) === '/users/' && page.split('/').length == 3) {
+                // Rewritten URL, need to get the user handle from it
+                var userHandle = page.split('/')[2];
+                var badges;
+                loadProfile(userHandle, function(data){
+                    $('h1').html(data.profile.username);
+                    $('title').append(': '+data.profile.username);
+                    $('ul.breadcrumbs li:last-child').html(data.profile.username);
+                    $('#avatar').attr('src', api.data+data.profile.pictureSrc);
+                    $('span.username').html(data.profile.username);
+                    $.each(data.badges, function(name, val){
+                        $('#badges').append('<a href="/docs/site/badges#'+name+'"><img src="/img/badges/badge-'+name+'.svg" class="badge-img drop-shadow" style="margin: 5px;"></a>');
+                    });
+                    loadRole(function(role){
+                        if(role.role == 'admin') {
+                            var html = '<div id="badge-admin"><h2>Manage badges</h2>';
+                            html += '<div class="row">';
+                            html += '<div class="col-md-6">';
+                            html += '<h3>Add badges</h3>';
+                            html += '<div id="missing-badges"></div>';
+                            html += '</div>';
+                            html += '<div class="col-md-6">';
+                            html += '<h3>Remove badges</h3>';
+                            html += '<div id="current-badges"></div>';
+                            html += '</div>';
+                            html += '</div>';
+                            $('#user-container').append(html);
+                            if(data.badges != null) {
+                            $.each(data.badges, function(name, val){
+                                 $('#current-badges').append('<a href="#" class="remove-badge" data-badge="'+name+'"><img src="/img/badges/badge-'+name+'.svg" class="badge-img drop-shadow" style="margin: 5px; width: 50px; height: 50px;"></a>');
+                            });
+                            }
+                            $.get('/json/badges.json', function( allBadges ) {
+                                $.each(allBadges, function(name, desc){
+                                    if(data.badges == null || typeof data.badges[name] == 'undefined') {
+                                        $('#missing-badges').append('<a href="#" class="add-badge" data-badge="'+name+'"><img src="/img/badges/badge-'+name+'.svg" class="badge-img drop-shadow" style="margin: 5px; width: 50px; height: 50px;"></a>');
+                                    }
+                                });
+                            });
+                            // Bind click handler to add badges
+                            $('#missing-badges').on('click','a.add-badge', function(e) {
+                                var badge = e.currentTarget.attributes.getNamedItem('data-badge').value;
+                                addBadge(badge, userHandle);
+                            });
+                            // Bind click handler to remove badges
+                            $('#current-badges').on('click','a.remove-badge', function(e) {
+                                var badge = e.currentTarget.attributes.getNamedItem('data-badge').value;
+                                removeBadge(badge, userHandle);
+                            });
+                        }
+                    });
+                });
+
+            }
+            // Own profile page ////////////////
+            else if(page.substring(0,8) === '/profile') {
+                loadAccount(function(data){
+                    window.location.replace("/users/"+data.account.handle);
+                });
+            }
             // New draft, step 1 ////////////////
             else if(page === '/draft' || page === '/draft/') {
                 var patterns;
@@ -1752,6 +1881,7 @@
                 var patternHandle = page.split('/')[2];
                 var modelHandle = page.split('/')[4];
                 var account;
+                var fork = true;
                 loadAccount(function(data){
                     account = data;
                     $('#step1-link').html('Drafting '+patternHandle);
