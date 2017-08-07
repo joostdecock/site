@@ -1614,21 +1614,30 @@
     }
 
     function renderUserList() {
-        $.get(api.data+'/users', function( userlist ) {
-            $.each(userlist.users, function(index, user){
-                var userdiv = $('#userdiv').clone();
-                userdiv.attr('id', 'user-'+user.userhandle);
-                $('#userlist').append(userdiv);
-                $('#user-'+user.userhandle).removeClass('hidden');
-                $('#user-'+user.userhandle+' img.avatar').attr('src', api.data+user.picture);
-                $('#user-'+user.userhandle+' a.profile-link').html(user.username).attr('href','/users/'+user.userhandle);
-                $('#user-'+user.userhandle+' span.timeago').attr('datetime', user.created+' UTC');
-                timeago().render($('.timeago'));
-                $.each(user.badges, function(name, val){
-                    $('#user-'+user.userhandle+' div.badges').append('<a href="/docs/site/badges#'+name+'"><img src="/img/badges/badge-'+name+'.svg" class="badge-mini hover-shadow" style="margin: 5px; display: inline-block;"></a>');
+        $.ajax({
+            url: api.data+'/users',
+            method: 'GET',
+            dataType: 'json',
+            success: function(userlist) {
+                $.each(userlist.users, function(index, user){
+                    var userdiv = $('#userdiv').clone();
+                    userdiv.attr('id', 'user-'+user.userhandle);
+                    $('#userlist').append(userdiv);
+                    $('#user-'+user.userhandle).removeClass('hidden');
+                    $('#user-'+user.userhandle+' img.avatar').attr('src', api.data+user.picture);
+                    $('#user-'+user.userhandle+' a.profile-link').html(user.username).attr('href','/users/'+user.userhandle);
+                    $('#user-'+user.userhandle+' span.timeago').attr('datetime', user.created+' UTC');
+                    timeago().render($('.timeago'));
+                    $.each(user.badges, function(name, val){
+                        $('#user-'+user.userhandle+' div.badges').append('<a href="/docs/site/badges#'+name+'"><img src="/img/badges/badge-'+name+'.svg" class="badge-mini hover-shadow" style="margin: 5px; display: inline-block;"></a>');
+                    });
                 });
-            });
-        });
+            },
+            error: function(data) { 
+                $('#modal-main').load("/components/generic/error");
+            },
+            headers: {'Authorization': 'Bearer '+token},
+        }); 
     }
 
     $(document).ready(function () {
