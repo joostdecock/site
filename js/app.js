@@ -1613,6 +1613,24 @@
         window.localStorage.setItem("fsu", JSON.stringify({ 'id': data.account.id, 'email': data.account.email, 'user': data.account.username }));
     }
 
+    function renderUserList() {
+        $.get(api.data+'/users', function( userlist ) {
+            $.each(userlist.users, function(index, user){
+                var userdiv = $('#userdiv').clone();
+                userdiv.attr('id', 'user-'+user.userhandle);
+                $('#userlist').append(userdiv);
+                $('#user-'+user.userhandle).removeClass('hidden');
+                $('#user-'+user.userhandle+' img.avatar').attr('src', api.data+user.picture);
+                $('#user-'+user.userhandle+' a.profile-link').html(user.username).attr('href','/users/'+user.userhandle);
+                $('#user-'+user.userhandle+' span.timeago').attr('datetime', user.created+' UTC');
+                timeago().render($('.timeago'));
+                $.each(user.badges, function(name, val){
+                    $('#user-'+user.userhandle+' div.badges').append('<a href="/docs/site/badges#'+name+'"><img src="/img/badges/badge-'+name+'.svg" class="badge-mini hover-shadow" style="margin: 5px; display: inline-block;"></a>');
+                });
+            });
+        });
+    }
+
     $(document).ready(function () {
        
             // Make sure local storage has the goods
@@ -1815,6 +1833,10 @@
                 loadAccount(function(data){
                     window.location.replace("/users/"+data.account.handle);
                 });
+            }
+            // User list page ////////////////
+            else if(page === '/users') {
+                renderUserList();
             }
             // New draft, step 1 ////////////////
             else if(page === '/draft' || page === '/draft/') {
