@@ -23,7 +23,7 @@ exceedingly rare.
 
 ## Available badges {#list}
 
-{% for badge in site.data.badges %}<a href="#{{badge[0]}}" class="noline"><img src="/img/badges/badge-{{badge[0]}}.svg" class="badge-img drop-shadow" style="margin-right: 5px; width: 50px; height: 50px; display: inline-block"></a>{% endfor %}
+{% for badge in site.data.badges %}<a href="#{{badge[0]}}" class="noline"><img src="/img/badges/badge-{{badge[0]}}.svg" class="badge-img drop-shadow" style="margin-right: 5px; margin-bottom: 5px; width: 50px; height: 50px; display: inline-block"></a>{% endfor %}
 {% for badge in site.data.badges %}
   <h3 id="{{badge[0]}}" style="clear: both;">{{badge[0]}}</h3>
   <img src="/img/badges/badge-{{badge[0]}}.svg" class="badge-img drop-shadow" style="float: left; margin-right: 1rem;">
