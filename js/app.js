@@ -870,10 +870,7 @@
             if(defaults !== false && typeof defaults.parts !== 'undefined') dflt_scope = 'custom';
             else dflt_scope = 'all';
             if(defaults !== false && typeof defaults.presetSa !== 'undefined') dflt_presetSa = defaults.presetSa;
-            else {
-                if(account.account.data.account.units === 'imperial') dflt_presetSa = 0.625;
-                else dflt_presetSa = 1;
-            }
+            else dflt_presetSa = account.account.data.account.units;
             if(defaults !== false && typeof defaults.customSa !== 'undefined') dflt_customSa = convertForkedDefault(defaults.customSa,account.account.data.account.units,defaults.userUnits);
             else {
                 if(account.account.data.account.units === 'imperial') dflt_customSa = 15.875;
@@ -891,13 +888,14 @@
                 'general': {
                     'presetSa': {
                         'default': dflt_presetSa,
-                        'description': 'Standard seam allowance.',
+                        'description': 'Should your draft include seam allowance?<br>If yes, then how much seam allowance would you like?',
                         'title': 'Seam allowance',
                         'type': 'chooseOne',
                         'options': {
-                            '1': 'Default metric (1 cm)',
-                            '0.625': 'Default imperial (<sup>5</sup>/<sub>8</sub> inch)',
-                            'custom': 'Custom'
+                            'none': "Don't include seam allowance",
+                            'metric': 'Standard metric seam allowance (1 cm)',
+                            'imperial': 'Standard imperial seam allowance (<sup>5</sup>/<sub>8</sub> inch)',
+                            'custom': 'Custom seam allowance'
                         }
                     },
                     'customSa': {
@@ -1275,7 +1273,15 @@
         });
         if(parts.length > 0) $('#form').append('<input type="hidden" name="parts" value="'+parts+'">');
         if($('input[name="presetSa"]:checked').val() == 'custom') $('#sa').val($('#customSa').val());
-        else $('#sa').val($('input[name="presetSa"]:checked').val()); 
+        else if ($('input[name="presetSa"]:checked').val() == 'none') $('#sa').val(0);
+        else if ($('input[name="presetSa"]:checked').val() == 'imperial') {
+            if($('#userUnits').val() == 'imperial') $('#sa').val(0.625);
+            else $('#sa').val(1.525);
+        }
+        else {
+            if($('#userUnits').val() == 'imperial') $('#sa').val(0.3937);
+            else $('#sa').val(1);
+        }
         $.ajax({
             url: api.data+'/'+method,
             method: 'POST',
