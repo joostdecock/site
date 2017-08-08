@@ -828,6 +828,16 @@
         });
     }
 
+    function convertForkedDefault(value, accountUnits, forkUnits) {
+        if(accountUnits === 'imperial') var ufactor = 25.4;
+        else var ufactor = 10;
+        if(accountUnits == forkUnits) return value * ufactor;
+        else {
+            if(forkUnits === 'imperial') return value * 25.4;                
+            else return value * 10;
+        } 
+    }
+
     function renderDraftForm(account,patternhandle,modelhandle,defaults) {
         if(typeof defaults == 'undefined') var defaults = false;
         // Load site data
@@ -837,18 +847,18 @@
             $('#picklist').append("<form id='form'><div id='accordion' role='tablist' aria-multiselectable='true'></div></form>");
             var form = {};
             form.groups = {};
-            if(account.account.data.account.units === 'imperial') var ufactor = 25.4;
-            else var ufactor = 10;
             $.each(pattern.options, function(option, o) {
                 // Load defaults (if provided)
                 if(defaults !== false && typeof defaults[option] !== 'undefined') {
-                    if(o.type === 'measure') o.default = (defaults[option] * ufactor);
+                    if(o.type === 'measure') o.default = convertForkedDefault(defaults[option],account.account.data.account.units,defaults.userUnits);
                     else o.default = defaults[option];
                 }
                 if(typeof form.groups[o.group] === 'undefined') form.groups[o.group] = {};
                 form.groups[o.group][option] = o;
             });
             // Add hidden form fields
+            $('#form').append('<input type="hidden" id="sa" name="sa" value="1">');
+            $('#form').append('<input type="hidden" id="userUnits" name="userUnits" value="'+account.account.data.account.units+'">');
             if(typeof defaults != 'undefined') $('#form').append('<input type="hidden" id="fork" name="fork" value="true">');
             $('#form').append('<input type="hidden" id="form-pattern-name" name="pattern" data-handle="'+patternhandle+'" value="'+fsdata.mapping.handleToPattern[patternhandle]+'"><input type="hidden" name="model" value="'+modelhandle+'" id="form-model-handle">');
             if (page.substr(0,9) === '/redraft/') $('#form').append('<input type="hidden" name="draft" value="'+page.split('/')[2]+'" id="form-redraft-handle">');
@@ -859,25 +869,46 @@
             else dflt_lang = 'en';
             if(defaults !== false && typeof defaults.parts !== 'undefined') dflt_scope = 'custom';
             else dflt_scope = 'all';
+            if(defaults !== false && typeof defaults.presetSa !== 'undefined') dflt_presetSa = defaults.presetSa;
+            else {
+                if(account.account.data.account.units === 'imperial') dflt_presetSa = 0.625;
+                else dflt_presetSa = 1;
+            }
+            if(defaults !== false && typeof defaults.customSa !== 'undefined') dflt_customSa = convertForkedDefault(defaults.customSa,account.account.data.account.units,defaults.userUnits);
+            else {
+                if(account.account.data.account.units === 'imperial') dflt_customSa = 15.875;
+                else dflt_customSa = 10;
+            }
+            if(account.account.data.account.units === 'imperial') {
+                min_customSa = 4.8;
+                max_customSa = 25.4;
+            } else {
+                min_customSa = 5;
+                max_customSa = 25;
+            }
             // Prepend theme/language
             var ordered = {
                 'general': {
-                    'theme': {
-                        'default': dflt_theme,
-                        'description': 'Use the paperless theme when you want a pattern that does not require printing',
-                        'title': 'Theme',
+                    'presetSa': {
+                        'default': dflt_presetSa,
+                        'description': 'Standard seam allowance.',
+                        'title': 'Seam allowance',
                         'type': 'chooseOne',
                         'options': {
-                            'Basic': 'Classic',
-                            'Paperless': 'Paperless'
+                            '1': 'Default metric (1 cm)',
+                            '0.625': 'Default imperial (<sup>5</sup>/<sub>8</sub> inch)',
+                            'custom': 'Custom'
                         }
                     },
-                    'lang': {
-                        'default': dflt_lang,
-                        'description': 'This pattern is available in the following languages:',
-                        'title': 'Language',
-                        'type': 'chooseOne',
-                        'options': pattern.languages
+                    'customSa': {
+                        'default': dflt_customSa,
+                        'description': 'Set your custom seam allowance.',
+                        'title': 'Custom seam allowance',
+                        'type': 'measure',
+                        'min': min_customSa,
+                        'max': max_customSa,
+                        'dependsOn': 'presetSa',
+                        'onlyOn': 'custom' 
                     },
                     'scope': {
                         'default': dflt_scope,
@@ -897,7 +928,24 @@
                         'options': pattern.parts,
                         'dependsOn': 'scope',
                         'onlyOn': 'custom' 
-                    }
+                    },
+                    'theme': {
+                        'default': dflt_theme,
+                        'description': 'Use the paperless theme when you want a pattern that does not require printing',
+                        'title': 'Theme',
+                        'type': 'chooseOne',
+                        'options': {
+                            'Basic': 'Classic',
+                            'Paperless': 'Paperless'
+                        }
+                    },
+                    'lang': {
+                        'default': dflt_lang,
+                        'description': 'This pattern is available in the following languages:',
+                        'title': 'Language',
+                        'type': 'chooseOne',
+                        'options': pattern.languages
+                    },
                 }
             };
             Object.keys(form.groups).forEach(function(key) {
@@ -1226,6 +1274,8 @@
             parts.push($(part).val());
         });
         if(parts.length > 0) $('#form').append('<input type="hidden" name="parts" value="'+parts+'">');
+        if($('input[name="presetSa"]:checked').val() == 'custom') $('#sa').val($('#customSa').val());
+        else $('#sa').val($('input[name="presetSa"]:checked').val()); 
         $.ajax({
             url: api.data+'/'+method,
             method: 'POST',
