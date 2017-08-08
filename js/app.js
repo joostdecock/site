@@ -1409,6 +1409,8 @@
         $('h1.page-title').html(draft.name);
         $('ul.breadcrumbs li:last-child').html(draft.name);
         $('#issue-link').attr('href','https://github.com/freesewing/site/issues/new?title=Problem%20with%20draft%20'+draft.handle+'&body=See%20[here](https:/'+'/'+window.location.hostname+'/drafts/'+draft.handle+')');
+        $('#draft-core-url').html('<a href="'+draft.data.coreUrl+'" target="_BLANK" title="Manually run the API call used to create this draft">Replay API call</a>');
+                console.log(draft);
         if(!logged_in) {
             // Shared draft, viewed anonymously
             $('.owner-only').remove();
@@ -1426,10 +1428,10 @@
                 $('#model-link').attr('href','/models/'+draft.model.handle).html(draft.model.name);
                 if(draft.shared == 1) {
                     $('#shared-link').html('Yes');
-                    $('#fork-msg').html('&nbsp;&nbsp;<i class="fa fa-info-circle" aria-hidden="true"></i> <small> Other users can fork this draft at <a href="/drafts/'+draft.handle+'">'+window.location.hostname+'/drafts/'+draft.handle+'</a></small>');
+                    $('#fork-msg').html('&nbsp;&nbsp;<i class="fa fa-bookmark" aria-hidden="true"></i> <small> Other users can fork this draft at <a href="/drafts/'+draft.handle+'">'+window.location.hostname+'/drafts/'+draft.handle+'</a></small>');
                 } else {
                     $('#shared-link').html('No');
-                    $('#fork-msg').html('&nbsp;&nbsp;<i class="fa fa-info-circle" aria-hidden="true"></i> <small>This reference uniquely identifies your draft.</small>');
+                    $('#fork-msg').prepend('<small>(1) This reference uniquely identifies your draft.</small>');
                 }
                 $('#created').attr('datetime', draft.created+' UTC');
                 timeago().render($('.timeago'));

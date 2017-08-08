@@ -120,9 +120,12 @@ nocomments: true
                     <tr class="owner-only"><td nowrap>Model</td><td><a id="model-link" href="#draft-container"></a></td></tr>
                     <tr><td>Created</td><td nowrap><span id="created" class="timeago"></span></td></tr>
                     <tr class="owner-only"><td nowrap>Shared</td><td><a id="shared-link" href="#draft-container" class="draft-settings"></a></td></tr>
-                    <tr><td><i class="fa fa-info-circle" aria-hidden="true"></i> Reference</td><td id="draft-handle" nowrap></td></tr>
+                    <tr><td>Reference <sup><small>1</small></sup></td><td id="draft-handle" nowrap></td></tr>
+                    <tr><td>Core replay <sup><small>2</small></sup></td><td id="draft-core-url" nowrap></td></tr>
                 </table>
-                <p id="fork-msg"></p>
+                <p id="fork-msg">
+                    <br><small>(2) Replay the core API call that created this draft</small>
+                </p>
             </div>
         </div>
         <div class="col-md-4 mb-5">
