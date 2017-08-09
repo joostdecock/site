@@ -4,20 +4,20 @@ title: Welcome new user
 permalink: /welcome
 ---
 > <h5>Note: You are not logged in yet</h5>
-> Your account has been activated, but you're not logged in yet. So why not <a href="#burger" class="login">log in</a> now?
+> Your account has been activated, but you're not logged in yet. So why not <a href="#" class="login">log in</a> now?
 {:.warning}
 
-Congratulations, you now have a freesewing account, and can <a href="#burger" class="login">log in</a> for the very first time.
+Congratulations, you now have a freesewing account, and can <a href="#" class="login">log in</a> for the very first time.
 
-If you're not sure how to do that, <a href="#burger" class="tour-guide" data-episode="login">help is available</a>.
+If you're not sure how to do that, <a href="#" class="tour-guide" data-episode="login">help is available</a>.
 
 ## The perks of having an account
 
 Having an account unlocks extra functionality on this website. Once logged-in:
 
  - You can leave comments. Feel free to try it out at the bottom of this page.
- - You can add models (<a href="#burger" class="tour-guide" data-episode="model">find out how</a>)
- - You can draft patterns (<a href="#burger" class="tour-guide" data-episode="draft">find out how</a>)
+ - You can add models (<a href="#" class="tour-guide" data-episode="model">find out how</a>)
+ - You can draft patterns (<a href="#" class="tour-guide" data-episode="draft">find out how</a>)
 
 ## Where to go from here
 
@@ -30,7 +30,7 @@ For that, go to [your models page](/models) and click the **Add model** button.
 > Good news: we have a guide that shows you how to add a model and measurements.
 > Click the button below to open it:
 > 
-> <a href="#burger" class="tour-guide btn btn-primary" data-episode="model">Adding models and measurements</a>
+> <a href="#" class="tour-guide btn btn-primary" data-episode="model">Adding models and measurements</a>
 {:.tip}
 
 ### Add measurements
@@ -43,7 +43,7 @@ If you have a specific pattern in mind, you can add the measurements required fo
 > Good news: we have a guide that shows you how to add a model and measurements.
 > Click the button below to open it:
 > 
-> <a href="#burger" class="tour-guide btn btn-primary" data-episode="model">Adding models and measurements</a>
+> <a href="#" class="tour-guide btn btn-primary" data-episode="model">Adding models and measurements</a>
 {:.tip}
 
 ### Draft a pattern
@@ -53,7 +53,7 @@ Once your model has the required measurements, you can [create a new draft](/dra
 > Good news: we have a guide that shows you how to draft a pattern.
 > Click the button below to open it:
 > 
-> <a href="#burger" class="tour-guide btn btn-primary" data-episode="draft">Drafting a pattern</a>
+> <a href="#" class="tour-guide btn btn-primary" data-episode="draft">Drafting a pattern</a>
 {:.tip}
 
 * TOC - Do not remove this line

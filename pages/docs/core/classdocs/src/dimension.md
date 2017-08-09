@@ -22,9 +22,9 @@ for the end user. Here's an example:
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="bezierCircle-result">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="A dimension with its leaders and label"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&class=Dimension&method=generic&theme=Basic"
+    params="service=draft&pattern=ClassDocs&class=Dimension&method=generic&theme=Basic"
 %}
 
 </div>
@@ -94,7 +94,9 @@ array getLeaders()
 ```
 Returns the array stored in the `leaders` property, if any.
 
+> ##### Leaders are [`Path`](path) objects
 > This array is expected to contain [`Path`](path) objects.
+{:.comment}
 
 ### getPath
 

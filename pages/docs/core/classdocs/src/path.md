@@ -5,13 +5,6 @@ namespace: Freesewing
 tags: [class docs]
 permalink: /docs/core/classdocs/src/path
 ---
-<div class="col-xs-12 col-md-3 toc" markdown="1">
-## Contents
-{:.no_toc}
-* TOC - Do not remove this line
-{:toc}
-</div>
-<div class="col-xs-12 col-md-9" markdown="1">
 ## Description 
 
 The [`Path`](path) class holds data for SVG paths. It mostly contains getter and setter methods.
@@ -350,13 +343,14 @@ bool isClosed()
 
 Returns `true` if a [`Path`](path) is closed, and `false` if it is not.
 
-> **This check is rather trivial**
+> ##### This check is rather trivial
 >
 > Note that this only checks whether or not the pathstring ends with 
 > a close command (z or Z). 
 >
 > If your pathstring consists of multiple draw operations strung
 > together with move operations, this method will not be accurate.
+{:.warning}
 
 #### Typical use
 {:.no_toc}
@@ -429,5 +423,7 @@ The name of the endpoint of the [`Path`](path), which is a `string`.
 
 ## See also
 {% include classFooter.html %}
-</div>
+
+* TOC - Do not remove this line
+{:toc}
 

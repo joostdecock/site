@@ -12,8 +12,9 @@ for an SVG document.
 
 It is a child class of [`SvgBlock`](svgblock).
 
-> SVG defs are reusable SVG objects. 
-> [Read more](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/defs).
+> ##### SVG defs are reusable SVG objects. 
+> [Read more about SVG devs on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/defs)
+{:.link}
 
 ## Typical use
 

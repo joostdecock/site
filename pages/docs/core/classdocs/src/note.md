@@ -26,9 +26,9 @@ your pattern about something in particular.
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="note-result">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Three examples of a note anchored on the same point"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1&class=Note&method=generic"
+    params="service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1&class=Note&method=generic"
 %}
 
 </div>

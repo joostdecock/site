@@ -19,9 +19,17 @@ The core repository holds the freesewing platform.
 - [Issues](https://github.com/freesewing/core/issues)
 - [Infrastructure documentation](/docs/infrastructure#core)
 
-## site
+## data
 
-[![Build Status](https://travis-ci.org/freesewing/site.svg?branch=master)](https://travis-ci.org/freesewing/site)
+[![Build Status](https://travis-ci.org/freesewing/data.svg?branch=master)](https://travis-ci.org/freesewing/data)
+
+The data repository holds the freesewing data API.
+
+- [Source code](https://github.com/freesewing/data)
+- [Issues](https://github.com/freesewing/data/issues)
+- [Infrastructure documentation](/docs/infrastructure#data)
+
+## site
 
 The site repository holds the freesewing.org website.
 
@@ -37,27 +45,15 @@ The demo repository holds a stand-alone version of the freesewing demo.
 - [Issues](https://github.com/freesewing/demo/issues)
 - [Infrastructure documentation](/docs/infrastructure#demo)
 
-> <h5 class='notoc'>Why a stand-alone demo?</h5>
->
-> The demo is part of the documentation, and included in the 
-> docs repository. But that is a Jekyll-based site which means
-> that running your own instance is going to require some work.
->
-> If you want your own demo without the hassle, you can simply clone 
-> this and open demo.html in your browser.
-{: .question }
+## tile
 
-## nofront
+The tile repository holds a command-line tool to tile PostScript images on multiple pages.
+It is used by the data API to ultimately generated tiled PDF files.
 
-The nofront (as in, no frontend) repository holds the placeholder 
-freesewing website while we don't have a frontend.
+Tile is a fork of Poster, by Jos T.J. van Eijndhoven.
 
-In other words, this repository holds what you see when 
-you visit [freesewing.org](https://freesewing.org/).
-
-- [Source code](https://github.com/freesewing/nofront)
-- [Issues](https://github.com/freesewing/nofront/issues)
-- [Infrastructure documentation](/docs/infrastructure#nofront)
+- [Source code](https://github.com/freesewing/tile)
+- [Issues](https://github.com/freesewing/tile/issues)
 
 ## bsd
 
@@ -68,7 +64,7 @@ that was ported from Kevin Lindsey's JavaScript code.
 Kevin's original code is licensed under a BSD-3-clause license.
 We have reached a gentlemen's agreement to dual-license the ported code.
 
-This way, we can include the code in the freesewing project under a GPL license, 
+This way, I can include the code in the freesewing project under a GPL license, 
 yet it remains available under the original BSD-3-clause license for those 
 who prefer that option.
 

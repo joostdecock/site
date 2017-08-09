@@ -20,7 +20,7 @@ nocomments: true
                 title='Developer theme'
                 text='Use our demo with the developer theme to get a full Kint dump of the freesewing context.'
                 img='/img/kint-dump.jpg'
-                link='/fixme'
+                link='https://demo.freesewing.org/'
                 link-text='Go to the demo'
             %}
         </div>

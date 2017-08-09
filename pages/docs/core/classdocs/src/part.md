@@ -2,6 +2,7 @@
 layout: page
 title: Part
 namespace: Freesewing
+repo: core
 tags: [class docs]
 permalink: /docs/core/classdocs/src/part
 ---
@@ -87,13 +88,13 @@ These methods return a single [`Point`](point) object:
 The intersection of two lines, a point rotated around another, or mirrored along
 the X-axis, these kind of things.
 
-> **These methods are non-destructive**
+> ##### These methods are non-destructive
 >
 > What's important to keep in mind is that these will create a **new** point.
 >
 > For example, when you shift or rotate a point, you get a new point. 
 > The original that you shifted or rotated is not changed.
-
+{:.tip}
 
 These methods return a [`Point`](point) because you'll typically use them
 in a [`Part::addPoint`](part#addPoint) call, which expects a [`Point`](point) object.
@@ -121,7 +122,7 @@ will be added to the [`Part`](part).
 You'll typically use these methods for some more advanced stuff, like finding
 intersections beteen lines and curves.
 
-> **Use the prefix Luke**
+> ##### Use the prefix Luke
 >
 > All these methods(\*) take a prefix that will be applied to the name of the generated points.
 >
@@ -131,6 +132,7 @@ intersections beteen lines and curves.
 > The prefix allows you to avoid collisions in point names.
 >
 > (\*) addPoint() does not take a prefix but a name, as it only ever adds one point.
+{:.tip}
 
 ### Public methods that create and add non-point objects to the Part
 {:.no_toc}
@@ -159,20 +161,21 @@ These are the methods to add all those other things to a [`Part`](part):
 
 You'll use these methods to add everything but Points to your pattern part.
 
-> **A word on New and Add methods**
+> ##### A word on New and Add methods
 >
 > You'll notice that (almost) all these methods start with **new**. 
 >
 > A method that starts with **new** indicates that this method will create a
 > new object that will be added to the [`Part`](part). 
 > 
-> Methods that with **add** on the other hand, expect a pre-made object as input 
+> Methods that start with **add** on the other hand, expect a pre-made object as input 
 > and will simply add that to the part.
 >
 > Thes **add** methods are typically internal and nothing to worry about, 
 > but [`Part::addPoint`](part#addPoint) is a notable exception. As is 
 > [`Part::addTitle`](part#addtitle) which is named like that to reflect
 > that a [`Part`](part) can only have one title.
+{:.tip}
 
 ### Public methods for Path offset
 {:.no_toc}
@@ -483,6 +486,7 @@ echo $p->distance(3,2)."\n";
 Used to calculate how far two points are apart.
 
 > Note that distance always returns a positive value.
+{:.tip}
 
 #### Parameters
 {:.no_toc}
@@ -518,9 +522,9 @@ Calculates the length of a cubic Bezier curve.
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="curveLen-result" markdown="1">
 
-{% include figure.html 
-    description="Rotating points with rotate()"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4&class=BezierToolbox&method=bezierLength"
+{% include coreClassdocsFigure.html
+    description="Calculating the length of a cubic Bezier curve"
+    params="theme=Designer&onlyPoints=1,2,3,4&class=BezierToolbox&method=bezierLength"
 %}
 
 </div>
@@ -585,9 +589,9 @@ Think of it as the slope of the line.
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="angle-result" markdown="1">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Rotating points with rotate()"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200,210,220,230,240,250,260,270,280,290,300,310,320,330,340,350,earth,moon&class=Part&method=angle"
+    params="theme=Designer&onlyPoints=10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200,210,220,230,240,250,260,270,280,290,300,310,320,330,340,350,earth,moon&class=Part&method=angle"
 %}
 
 </div>
@@ -756,9 +760,9 @@ around X-value `$x`;
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="flipX-result" markdown="1">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="flipX flips/mirror a point around a give X value"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4,5,6,-2,-3,-4,-5,-6&class=Part&method=flipX"
+    params="&theme=Designer&onlyPoints=1,2,3,4,5,6,-2,-3,-4,-5,-6&class=Part&method=flipX"
 %}
 
 </div>
@@ -821,9 +825,9 @@ around Y-value `$Y`;
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="flipY-result" markdown="1">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="flipY flips/mirror a point around a give Y value"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4,5,6,7,8,9,10,11,12,13,14,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14&class=Part&method=flipY"
+    params="theme=Designer&onlyPoints=1,2,3,4,5,6,7,8,9,10,11,12,13,14,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14&class=Part&method=flipY"
 %}
 
 </div>
@@ -895,9 +899,9 @@ Returns a new [`Point`](point) at distance `$distance` from [`Point`](point) `$n
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="shift-result" markdown="1">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="I am aware that this shift() example is very boring"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4&class=Part&method=shift"
+    params="theme=Designer&onlyPoints=1,2,3,4&class=Part&method=shift"
 %}
 
 </div>
@@ -960,9 +964,9 @@ Returns a point that lies `$distance` from [`Point`](point) `$origin` in the dir
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="shiftTowards-result" markdown="1">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Shift towards returns a point shifted from origin towards direction"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=origin,direction,1&class=Part&method=shiftTowards"
+    params="theme=Designer&onlyPoints=origin,direction,1&class=Part&method=shiftTowards"
 %}
 
 </div>
@@ -1035,9 +1039,9 @@ described by `$start`, `$cp1`, `$cp2`, and `$end`.
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="shiftAlong-result" markdown="1">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Shift distance along a curve"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4,5&class=Part&method=shiftAlong"
+    params="theme=Designer&onlyPoints=1,2,3,4,5&class=Part&method=shiftAlong"
 %}
 
 </div>
@@ -1103,9 +1107,9 @@ around the [`Point`](point) stored in the
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="rotate-result" markdown="1">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Rotating points with rotate()"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200,210,220,230,240,250,260,270,280,290,300,310,320,330,340,350,earth,moon&class=Part&method=rotate"
+    params="theme=Designer&onlyPoints=10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200,210,220,230,240,250,260,270,280,290,300,310,320,330,340,350,earth,moon&class=Part&method=rotate"
 %}
 
 </div>
@@ -1170,9 +1174,9 @@ To check for an intersection of two lines that are endless, see ['Part::beamsCro
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="linesCross-result" markdown="1">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="lineCross() finds the intersection between two line segments"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4,5&class=Part&method=linesCross"
+    params="theme=Designer&onlyPoints=1,2,3,4,5&class=Part&method=linesCross"
 %}
 
 </div>
@@ -1224,9 +1228,6 @@ float beamsCross(
 Returns the intersection between 2 endless lines, or false if there is no intersection 
 (which happens only when lines are parallel).
 
-This does not only check for an intersection, but also whether that intersection falls
-within the line segment described by the lines start and endpoint.
-
 To check for an intersection on two line segments (not endless), see ['Part::linesCross](part#linescross);
 
 #### Example
@@ -1239,9 +1240,9 @@ To check for an intersection on two line segments (not endless), see ['Part::lin
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="beamsCross-result" markdown="1">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="lineCross() finds the intersection between two line segments"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4,5&class=Part&method=beamsCross"
+    params="theme=Designer&onlyPoints=1,2,3,4,5&class=Part&method=beamsCross"
 %}
 
 </div>
@@ -1308,9 +1309,9 @@ Returns the [`Point`](point) at edge `$edge` of a curve. Edge should be one of:
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="curveEdge-result" markdown="1">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Find the edges of a Bezier curve with curveEdge()"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4,leftEdge,rightEdge,topEdge,bottomEdge&class=BezierToolbox&method=bezierEdge"
+    params="theme=Designer&onlyPoints=1,2,3,4,leftEdge,rightEdge,topEdge,bottomEdge&class=BezierToolbox&method=bezierEdge"
 %}
 
 </div>
@@ -1385,9 +1386,9 @@ Optionally sets the description of the point.
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="addPoint-result">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="One point added with newPoint() and another added with addPoint()"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2&class=Part&method=addPoint"
+    params="theme=Designer&onlyPoints=1,2&class=Part&method=addPoint"
 %}
 
 </div>
@@ -1442,9 +1443,9 @@ to the [`Part`](part) with prefix `$prefix`
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="curveCrossesX-result" markdown="1">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="curveCrossesX example"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4,sample1,sample2,sample3&class=Part&method=curveCrossesX"
+    params="theme=Designer&onlyPoints=1,2,3,4,sample1,sample2,sample3&class=Part&method=curveCrossesX"
 %}
 
 </div>
@@ -1515,9 +1516,9 @@ to the [`Part`](part) with prefix `$prefix`
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="curveCrossesY-result" markdown="1">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="curveCrossesY example"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4,sample1,sample2,sample3&class=Part&method=curveCrossesY"
+    params="theme=Designer&onlyPoints=1,2,3,4,sample1,sample2,sample3&class=Part&method=curveCrossesY"
 %}
 
 </div>
@@ -1589,9 +1590,9 @@ Addes the [`Point`](point)s at the intersection of a line and curve to the
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="curveCrossesLine-result" markdown="1">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="This curve and line intersect in three points"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4,i1,i2,i3&class=BezierToolbox&method=bezierLineIntersections"
+    params="theme=Designer&onlyPoints=1,2,3,4,i1,i2,i3&class=BezierToolbox&method=bezierLineIntersections"
 %}
 
 </div>
@@ -1668,9 +1669,9 @@ Addes the [`Point`](point)s at the intersection two curves to the
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="curvesCross-result" markdown="1">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Two cubic Bezier curves can intersect in up to nine points"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=i1,i2,i3,i4,i5,i6,i7,i8,i9&class=BezierToolbox&method=bezierBezierIntersections"
+    params="theme=Designer&onlyPoints=i1,i2,i3,i4,i5,i6,i7,i8,i9&class=BezierToolbox&method=bezierBezierIntersections"
 %}
 
 </div>
@@ -1745,6 +1746,16 @@ If `$splitOnDelta` is true, the split happens on  delta `$split` (between 0 and 
 
 Points will be added to the [`Part`](part) with prefix `$prefix`.
 
+> ##### You should not use splitOnDelta
+>
+> The optional `splitOnDelta` variety of this method is best avoided.
+> Splitting a curve on a delta of 0.5 (for example) will not split it 
+> midway through as you might expect.
+>
+> That's because the delta varies from 0 to 1 in the polymomial function that 
+> describes the curve. And feeding it 0.5 gives you no guarantee whatsoever 
+> that you'll endup in the middle of the curve length.
+{:.warning}
 
 #### Example
 {:.no_toc}
@@ -1756,9 +1767,9 @@ Points will be added to the [`Part`](part) with prefix `$prefix`.
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="splitCurve-result" markdown="1">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="The original curve, and the two curves after it's split"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4,5,s1,s2,s3,s4,s5,s6,s7&class=Part&method=splitCurve"
+    params="theme=Designer&onlyPoints=1,2,3,4,5,s1,s2,s3,s4,s5,s6,s7&class=Part&method=splitCurve"
 %}
 
 </div>
@@ -1837,9 +1848,9 @@ The `$name` is so we can reference the [`Point`](point) later (by its name).
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="newPoint-result">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Adding points to your pattern part with newPoint()"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4&class=Part&method=newPoint"
+    params="theme=Designer&onlyPoints=1,2,3,4&class=Part&method=newPoint"
 %}
 
 </div>
@@ -1895,9 +1906,9 @@ The `$name` is so we can reference the [`Path`](path) later (by its name).
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="newPath-result">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Paths added to the pattern with newPath()"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&class=Part&method=newPath"
+    params="class=Part&method=newPath"
 %}
 
 </div>
@@ -1961,9 +1972,9 @@ The `$name` is so we can reference the [`Text`](text) later (by its name).
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="newText-result">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Use CSS classes for regular text, and the 'line-height' attribute for multiline text"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Basic&class=Part&method=newText"
+    params="theme=Basic&class=Part&method=newText"
 %}
 
 </div>
@@ -2054,9 +2065,9 @@ The `$name` is so we can reference the [`TextOnPath`](textonpath) later (by its 
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="newTextOnPath-result">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Texts on paths"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Basic&class=Part&method=newTextOnPath"
+    params="theme=Basic&class=Part&method=newTextOnPath"
 %}
 
 </div>
@@ -2132,9 +2143,9 @@ The `$name` is so we can reference the [`Text`](text) later (by its name).
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="newNote-result">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Use direction, length, and offset to control the appearance of your note"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Basic&class=Part&method=newNote"
+    params="theme=Basic&class=Part&method=newNote"
 %}
 
 </div>
@@ -2199,17 +2210,17 @@ The `$name` is so we can reference the [`SvgSnippet`](svgsnippet) later (by its 
 {:.no_toc}
 
 <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#newSnippet-result" aria-controls="result" role="tab" data-toggle="tab">Result</a></li>
-    <li role="presentation"><a href="#newSnippet-code" aria-controls="code" role="tab" data-toggle="tab">Code</a></li>
-    <li role="presentation"><a href="#newSnippet-defs" aria-controls="code" role="tab" data-toggle="tab">SVG Defs</a></li>
+    <li role="presentation" class="nav-item active"><a class="nav-link active" href="#newSnippet-result" aria-controls="result" role="tab" data-toggle="tab">Result</a></li>
+    <li role="presentation" class="nav-item"><a href="#newSnippet-code" class="nav-link" aria-controls="code" role="tab" data-toggle="tab">Code</a></li>
+    <li role="presentation" class="nav-item"><a href="#newSnippet-defs" aria-controls="code" class="nav-link"  role="tab" data-toggle="tab">SVG Defs</a></li>
 </ul>
 
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="newSnippet-result">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Adding SVG snippets to your pattern part with newSnippet()"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Basic&&class=Part&method=newSnippet"
+    params="theme=Basic&class=Part&method=newSnippet"
 %}
 
 </div>
@@ -2298,9 +2309,9 @@ The `$name` is so we can reference the [`SvgInclude`](svginclude) later (by its 
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="newInclude-result">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="You may need to open this in its own window to see the image embedded with newInclude()"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Basic&class=Part&method=newInclude"
+    params="theme=Basic&class=Part&method=newInclude"
 %}
 
 </div>
@@ -2366,9 +2377,9 @@ They have sensible defaults, but you are free to override them.
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="newWidthDimension-result" markdown="1">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Use newWidthDimension to add horizontal dimensions to your part"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2&class=Part&method=newWidthDimension"
+    params="theme=Designer&onlyPoints=1,2&class=Part&method=newWidthDimension"
 %}
 
 </div>
@@ -2460,9 +2471,9 @@ They have sensible defaults, but you are free to override them.
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="newHeightDimension-result" markdown="1">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Use newHeightDimension to add vertical dimensions to your part"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2&class=Part&method=newHeightDimension"
+    params="theme=Designer&onlyPoints=1,2&class=Part&method=newHeightDimension"
 %}
 
 </div>
@@ -2554,9 +2565,9 @@ They have sensible defaults, but you are free to override them.
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="newLinearDimension-result" markdown="1">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Use newLinearDimension to add linear dimensions to your part"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2&class=Part&method=newLinearDimension"
+    params="theme=Designer&onlyPoints=1,2&class=Part&method=newLinearDimension"
 %}
 
 </div>
@@ -2636,9 +2647,9 @@ defaults for `$pathAttributes` and `$labelAttributes`, resulting in a smaller [`
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="newWidthDimensionSm-result" markdown="1">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Use newWidthDimensionSm to add small horizontal dimensions to your part"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2&class=Part&method=newWidthDimensionSm"
+    params="theme=Designer&onlyPoints=1,2&class=Part&method=newWidthDimensionSm"
 %}
 
 </div>
@@ -2718,9 +2729,9 @@ defaults for `$pathAttributes` and `$labelAttributes`, resulting in a smaller [`
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="newHeightDimensionSm-result" markdown="1">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Use newHeightDimensionSm to add small vertical dimensions to your part"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2&class=Part&method=newHeightDimensionSm"
+    params="theme=Designer&onlyPoints=1,2&class=Part&method=newHeightDimensionSm"
 %}
 
 </div>
@@ -2800,9 +2811,9 @@ defaults for `$pathAttributes` and `$labelAttributes`, resulting in a smaller [`
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="newLinearDimensionSm-result" markdown="1">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Use newLinearDimensionSm() to add small linear dimensions to your part"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2&class=Part&method=newLinearDimensionSm"
+    params="theme=Designer&onlyPoints=1,2&class=Part&method=newLinearDimensionSm"
 %}
 
 </div>
@@ -2891,9 +2902,9 @@ They have sensible defaults, but you are free to override them.
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="newCurvedDimension-result" markdown="1">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Despite it's name, newCurvedDimension() works on any pathstring, not just on curves"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Basic&class=Part&method=newCurvedDimension"
+    params="theme=Basic&class=Part&method=newCurvedDimension"
 %}
 
 </div>
@@ -2970,9 +2981,9 @@ attributes set to display a grainline.
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="newGrainline-result" markdown="1">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Adding a grainline to your part is child's play with newGrainline()"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2&class=Part&method=newGrainline"
+    params="theme=Designer&onlyPoints=1,2&class=Part&method=newGrainline"
 %}
 
 </div>
@@ -3035,9 +3046,9 @@ attributes set to display a cutonfold line.
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="newcutonfold-result" markdown="1">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Adding a cutonfold line to your part is child's play with newCutonfold()"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2&class=Part&method=newCutonfold"
+    params="theme=Designer&onlyPoints=1,2&class=Part&method=newCutonfold"
 %}
 
 </div>
@@ -3096,9 +3107,9 @@ Essentially, it's a fast way to add a bunch of notches to your [`Part`](part).
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="notch-result" markdown="1">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Adding notches to a pattern part with notch()"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4,5&class=Part&method=notch"
+    params="theme=Designer&onlyPoints=1,2,3,4,5&class=Part&method=notch"
 %}
 
 </div>
@@ -3175,9 +3186,9 @@ The possibilities are:
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="addTitle-result">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="Overview of the different modes of addTitle()"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Basic&class=Part&method=addTitle"
+    params="theme=Basic&class=Part&method=addTitle"
 %}
 
 </div>
@@ -3253,9 +3264,9 @@ By offset we mean, drawn equidistant to it.
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="offsetPath-result">
 
-{% include figure.html 
-    description="Texts on paths"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Basic&class=Part&method=offsetPath"
+{% include coreClassdocsFigure.html
+    description="Path offset"
+    params="theme=Basic&class=Part&method=offsetPath"
 %}
 
 </div>
@@ -3292,9 +3303,9 @@ to calculate the offset, avoid overlapping, and close gaps at corners.
 To give you an idea of the complexity, here's the example rendered
 with the debug theme.
 
-{% include figure.html
+{% include coreClassdocsFigure.html
     description="Offsetting paths is... complicated"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&class=Part&method=offsetPath"
+    params="theme=Designer&class=Part&method=offsetPath"
 %}
 
 #### Typical use
@@ -3305,8 +3316,8 @@ Used mostly to add seam-allowance to patterns.
 #### Parameters
 {:.no_toc}
 
-- `string` `$offsetName`: The name for the new [`Path'][Path] object that will be added to the [`Part`](part).
-- `string` `$sourceName`: The name of [`Path'][Path] object (previously added to the [`Part`](part) ) that we will offset.
+- `string` `$offsetName`: The name for the new [`Path`](path) object that will be added to the [`Part`](part).
+- `string` `$sourceName`: The name of [`Path`](path) object (previously added to the [`Part`](part) ) that we will offset.
 - `float` `$distance`: Distance in mm by which to offset.
 - `bool` `$render`: Whether to render this path, or not. Defaults to `false`. 
 - `array` `$attributes`: An array of attributes to be added to the [`Path`](path) object.
@@ -3337,9 +3348,9 @@ pass it a pathstring.
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="offsetPathString-result">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="An example of offsetPathString()"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Basic&class=Part&method=offsetPathString"
+    params="theme=Basic&class=Part&method=offsetPathString"
 %}
 
 </div>
@@ -3371,7 +3382,7 @@ Like in [`Part::newCurvedDimension`](part#newcurveddimension).
 #### Parameters
 {:.no_toc}
 
-- `string` `$name`: The name for the new [`Path'][Path] object that will be added to the [`Part`](part).
+- `string` `$name`: The name for the new [`Path`](path) object that will be added to the [`Part`](part).
 - `string` `$pathstring`: The pathstring that we need to offset.
 - `float` `$distance`: Distance in mm by which to offset.
 - `bool` `$render`: Whether to render this path, or not. Defaults to `false`. 
@@ -3389,8 +3400,10 @@ bool isPoint(
 
 Returns true of the ['Point'](point) is known in the ['Part'](part), or false if it's not.
 
-> If you want to check whether something is a ['Point'](point) object, 
+> ##### This does not mean *Is it a point object*
+> If you want to check whether something is a [`Point`](point) object, 
 > you can use `$point instanceof \Freesewing\Point`
+{:.tip}
 
 #### Typical use
 {:.no_toc}
@@ -3460,8 +3473,10 @@ Sets the `render` property to either `true` or `false` depending on the boolean 
 Parts that have their `render` property set to `false` won't be rendered by the [`SvgRenderbot`](svgrenderbot), 
 which means they won't show up in your pattern.
 
+> ##### This only suppresses output
 > Note that parts are only excluded from being rendered into SVG. But the part is still
 > fully processed.
+{:.warning}
 
 #### Example
 {:.no_toc}
@@ -3511,9 +3526,9 @@ Takes a `$distance` in mm and returns it formatted according to the units of the
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="unit-result">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="An example of the unit method"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Basic&onlyPoints=1&class=Part&method=unit"
+    params="theme=Basic&onlyPoints=1&class=Part&method=unit"
 %}
 
 </div>
@@ -3701,8 +3716,10 @@ Sets the `units` property to the `string` passed to it.
 Units should be set to either `metric` or `imperial`. If they are not set,
 they default to `metric`.
 
+> ##### These are the output units
 > The units in question are the units expected by the end user.
 > In other words, it's the unitsOut as stored in the [`Context`](context).
+{:.comment}
 
 #### Example
 {:.no_toc}

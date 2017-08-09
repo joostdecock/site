@@ -3,6 +3,9 @@ var api = {
     data: '{{ site.api.data }}',
 };
 
+var buildRef = '{{ site.build }}'.substr(0,7);
+var buildFull = '{{ site.build }}';
+
 var user = false;
 var logged_in = false;
 var page = window.location.pathname;
@@ -15,14 +18,15 @@ var token = window.localStorage.getItem("jwt");
         if(token === null) {
             $('body').addClass('visitor');
             logged_in = false;
+            if ($('body').attr('data-comments') == 'true') loadComments();
         } else {
             // Is token still valid?
             $.ajax({
                 url: api.data+'/auth',
                 method: 'GET',
                 dataType: 'json',
-                success: function() { postLogin() }, 
-                error: function() { postLogout() }, 
+                success: function(data) { postLogin(data) }, 
+                error: function(data) { postLogout(data) }, 
                 headers: {'Authorization': 'Bearer '+token},
             }); 
         }
@@ -117,6 +121,8 @@ var token = window.localStorage.getItem("jwt");
         logReferral(); // Referrals 
 
         $('#markdown-toc').detach().appendTo('#oc-right'); // Move auto-generated ToC to the correct place in the DOM
+
+        $('p a code.highlighter-rouge').parent().addClass('noline'); // Avoid underlining class links
     });
 }(jQuery));
 
@@ -183,22 +189,19 @@ function closeModal() {
 }
 
 // Things to do after login
-function postLogin() { 
+function postLogin(data) { 
     user = JSON.parse(window.localStorage.getItem("fsu"));
     logged_in = true;
     $('body').addClass('user logged-in'); 
-    postAuth();
+    if ($('body').attr('data-comments') == 'true') loadComments();
+    if(typeof data.new_badge == 'string') $.bootstrapGrowl('Yay, you unlocked the <big><b>'+data.new_badge+'</b></big> badge', {type: 'success'});
 }
 
 // Things to do after logout
-function postLogout() { 
+function postLogout(data) { 
     logged_in = false;
     window.localStorage.removeItem("fsu");
     $('body').addClass('user logged-out'); 
-}
-
-// Things to do after authentication
-function postAuth() {
     if ($('body').attr('data-comments') == 'true') loadComments();
 }
 
@@ -265,7 +268,10 @@ function renderComments(comments) {
         var t = comment.time.split(/[- :]/);
         markup += '<a href="#comment-'+comment.id+'" title="Permalink to this comment">';
         markup += timeago().format(new Date(Date.UTC(t[0], t[1]-1, t[2], t[3], t[4], t[5])));
-        markup += '</a> by <a href="/users/'+comment.userhandle+'" title="Visit the profile page of this user">'+comment.username+'</a>';
+        markup += '</a> by <a href="/users/'+comment.userhandle+'" title="Visit the profile page of this user">'+comment.username+'</a>&nbsp;';
+        $.each(comment.badges, function(badge, bval) {
+            markup += '<img src="/img/badges/badge-'+badge+'.svg" style="width: 14px; heigth: 14px; border-radius: 7px; margin-right: 2px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.23)" >';
+        });
         markup += '</div>';
         markup += '<div class="comment-text '+comment.status+'">';
         if (comment.status == 'removed') markup += '<i class="fa fa-trash" aria-hidden="true"></i> <em>This comment was removed by its author.</em>';

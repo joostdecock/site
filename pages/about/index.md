@@ -1,13 +1,172 @@
 ---
-layout: page
+layout: cards
 title: About freesewing
 tags: [fundamentals]
 permalink: /about/
 ---
-> Freesewing is an open source platform for made-to-measure sewing patterns
-{: .tip }
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-sm-6 mt-5">
+            <div class="card text-center drop-shadow py-3">
+                <i class="fa fa-cut fa-5x" aria-hidden="true" style="color: #ff5b77;"></i>
+                <div class="card-block">
+                    <h4 class="card-title">Made-to-measure sewing patterns, drafted on the fly</h4>
+                    <p>Enter your measurements, pick your options. Your pattern is ready in seconds</p>
+                    <p><a href="#what" class="btn btn-outline-black">What is this thing?</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mt-5">
+            <div class="card text-center drop-shadow py-3">
+                <i class="fa fa-cc-paypal fa-5x" aria-hidden="true" style="color: #009cde;"></i>
+                <div class="card-block">
+                    <h4 class="card-title">Free as in beer &ndash; or as in free sewing patterns</h4>
+                    <p>You don't have to pay for anything, but I do accept donations &ndash; it's your call</p>
+                    <p><a href="#money" class="btn btn-outline-black">How do you make money?</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mt-5">
+            <div class="card text-center drop-shadow py-3">
+                <i class="fa fa-code fa-5x" aria-hidden="true" style="color: #188f93"></i>
+                <div class="card-block">
+                    <h4 class="card-title">Free as in speech &ndash; or as in open source software</h4>
+                    <p>All code that makes this happen is free software, available on GitHub</p>
+                    <p><a href="#code" class="btn btn-outline-black">Can I see how you did it?</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mt-5">
+            <div class="card text-center drop-shadow py-3">
+                <i class="fa fa-user fa-5x" aria-hidden="true" style="color: #86739c;"></i>
+                <div class="card-block">
+                    <h4 class="card-title">Added value for makers, designers, and developers</h4>
+                    <p>There's something here for all of you, regardless of what hat you wear</p>
+                    <p><a href="#me" class="btn btn-outline-black">What's in it for me?</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mt-5">
+            <div class="card text-center drop-shadow py-3">
+                <i class="fa fa-history fa-5x" aria-hidden="true" style="color: #5c3566;"></i>
+                <div class="card-block">
+                    <h4 class="card-title">The freesewing (and makemypattern) origin story</h4>
+                    <p>If you (still) can't figure out what the heck is going on here, this might help</p>
+                    <p><a href="#origin" class="btn btn-outline-black">How did we get here?</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mt-5">
+            <div class="card text-center drop-shadow py-3">
+                <i class="fa fa-code-fork fa-5x" aria-hidden="true"></i>
+                <div class="card-block">
+                    <h4 class="card-title">Open to your contributions, big and small</h4>
+                    <p>I welcome all contributions, and you have more to offer than your realize</p>
+                    <p><a href="#contribute" class="btn btn-outline-black">How can I contribute?</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-## The freesewing origin story
+<div class="row mt-5">
+<div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 ">
+<div class="paper drop-shadow mb-5" markdown="1">
+
+## What is this thing? {#what}
+This website generates sewing patterns based on your measurements.
+To do so, you enter your measurements, pick your options, and your sewing pattern is drafted for you on the fly.
+
+Once drafted, you can download your pattern as PDF, but I also provide you with the source SVG file.
+
+All your drafts are stored online, as our your models. There's no limits on how many patterns you can draft,
+or how many models you can have. You do you.
+
+Basically, as far as websites for sewing patterns go, this is as good as it gets.
+
+</div>
+<div class="paper drop-shadow mb-5" markdown="1">
+## How do you make money? {#money}
+
+I have a job. It is not very exciting --- and has nothing to do with sewing patterns --- but it pays the bills.
+
+In my spare time, I like to spend my time with sewing, and mucking about with code and pixels.
+Rather than pursuing those interests individually, I've fused them together in what has grown into freesewing.
+
+This is not a business and is not about making money. Freesewing is a labour of love.
+
+</div>
+<div class="paper drop-shadow mb-5" markdown="1">
+## Can I see how you did it? {#code}
+
+You can. All code is available [on GitHub](https://github.com/freesewing/) or check the
+[repository overview](/docs/repositories). 
+
+Before you start digging there, you should know that
+what you experience here on freesewing.org is made up of different parts:
+
+##### The core platform
+Freesewing **core** is the platform that is used to generate the sewing patterns.
+
+It's like a toolbox for designing and generating made-to-measure sewing patterns.
+
+##### The patterns
+No graphical tools are used to create the patterns. Everything is implemented in code.
+
+While **core** ships with a bunch of patterns, you can also extend it with your own.
+
+
+
+##### The website
+
+The **site** repository holds the entire frontend, including this page,
+all the documentation, and everything you see on this website.
+
+##### The backend
+
+The **data** API stores all user data (account info, model data, comments and so on)
+and sits between this website and the core platform.
+
+</div>
+<div class="paper drop-shadow mb-5" markdown="1">
+
+## What can freesewing do for me? {#me}
+
+What's in it for you depends on what role you see yourself in.
+
+### For makers
+
+All our patterns are free of charge. We provide detailed instructions to make them into garments,
+and can help when you get stuck.
+
+We like to showcase makes from the community, and share your work on our 
+[Twitter](https://twitter.com/freesewing_org) and 
+[Instagram](https://www.instagram.com/freesewing_org/)
+accounts. Or checkout the #freesewing hashtag.
+
+### For designers
+
+Designing patterns for the freesewing platform has a lot of advantages for you as a designer.
+
+On the technical side, you have powerful tools at your disposal that take care of a lot
+of things for you (no more grading, ever).
+
+You can host your patterns at freesewing.org (for free) or run your own
+instance, and sell them. Custom pattern drafts provide your customers 
+with a better experience, but also protect you from people copying and passing your
+patterns around. Which means you can sell more patterns at a lower price point.
+
+### For developers
+
+All our code is open source, and you can fork it [on GitHub](https://github.com/freesewing).
+
+We have documentation to help you use our code in your own projects. 
+And our info service makes integration with your front-end child's play.
+
+</div>
+<div class="paper drop-shadow mb-5" markdown="1">
+
+
+## The freesewing origin story {#origin}
 
 Sewing is easy. It really is. 
 What's hard is getting things to fit properly. 
@@ -45,101 +204,19 @@ But additionally, it will be open to your contributions.
 Here's hoping that in the Venn diagram of the somewhat geeky and sewing, 
 it's not just me in the middle.
 
-### How is freesewing different?
+</div>
+<div class="paper drop-shadow mb-5" markdown="1">
+## How can I contribute to freesewing? {#contribute}
 
-What Freesewing does is comparable to what 
-[Lekala](https://www.lekala.co/) does:
-provide customized sewing patterns.
-
-But there is one important difference: 
-
-> Freesewing is free of charge. Our patterns are free ([CC-BY](/about/license)) and our code is free ([GPL-3](/about/license)).
-{: .tip }
-
-
-This is not a business and is not about making money. Freesewing is a labour of love.
-
-## Main parts
-The freesewing project is made up of different parts:
-
-### The core platform
-Freesewing core is the open source platform that underpins all our work.
-Its source code is freely available [on GitHub](https://github.com/freesewing).
-
-As a platform is something you can use to build things on, freesewing core
-is most valuable to people who like to build or create things.
-
-If you're that kind of person, core might be for you.
-
-### The patterns
-Pattern design is a science. And like all sciences, the best way to get ahead
-is to share our work and results openly with the community.
-
-We design patterns to the best of our abilities, and share them freely because we 
-are convinced that together with you, we can come up with far better results that 
-on our own.
-
-No graphical tools are used to create these patterns. The entire pattern is implemented in code.
-
-It's an approach that is perhaps unusual (pattern designers are used to fire up Illustrator, not an 
-<abbr title="Integrated Development Environment">IDE</abbr>) but fits particularly well with 
-the engineering challenge that are sewing patterns.
-
-Moving a line a bit right or left in a graphical program is subjective, 
-and hard to reproduce. With code, you know what is going on and what you are changing to the 
-very last detail.
-
-### The documentation
-This is certainly the most time-consuming work we do.
-But we do it nevertheless because we believe it is important.
-
-We try to document everything. From the code we write to how to sew up our patterns.
-It's an ongoing process of tiny improvements that's never finished.
-
-## What can freesewing do for me?
-
-What's in it for you depends on what role you see yourself in.
-
-### For makers
-
-All our patterns are free of charge. We provide detailed instructions to make them into garments,
-and can help when you get stuck.
-
-We like to showcase makes from the community, and share your work on our 
-[Twitter](https://twitter.com/freesewing_org) and 
-[Instagram](https://www.instagram.com/freesewing_org/)
-accounts. Or checkout the #freesewing hashtag.
-
-### For designers
-
-Designing patterns for the freesewing platform has a lot of advantages for you as a designer.
-
-On the technical side, you have powerful tools at your disposal that take care of a lot
-of things for you (no more grading, ever).
-
-You can host your patterns at freesewing.org (for free) or run your own
-instance, and sell them. Custom pattern drafts provide your customers 
-with a better experience, but also protect you from people copying and passing your
-patterns around. Which means you can sell more patterns at a lower price point.
-
-### For developers
-
-All our code is open source, and you can fork it [on GitHub](https://github.com/freesewing).
-
-We have documentation to help you use our code in your own projects. 
-And our info service makes integration with your front-end child's play.
-
-## How can I contribute to freesewing?
-
-We welcome all contributions, and you might have more to offer than your realize.
+I welcome all contributions, and you have more to offer than your realize.
 
 For all details, please refer to the [contributors documentation](/contribute).
 
 Or you can vote with your money and [make a donation](/donate).
 
-We promise it will make you feel warm and fuzzy inside. Especially after
-you read [our donations pledge](/about/pledge).
+</div>
+</div>
 
-* TOC - Do not remove this line
-{:toc}
+</div>
+</div>
 

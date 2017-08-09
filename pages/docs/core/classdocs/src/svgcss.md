@@ -45,7 +45,6 @@ It also makes sure that CSS @import lines go at the top.
     
     @import url(https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans+Condensed:300);
     path,circle,rect{fill:none;stroke:none}
-    path.text{fill:none;stroke:none}
     .stroke-brand{stroke:#5c3566}
 
     ]]>
@@ -59,7 +58,6 @@ It also makes sure that CSS @import lines go at the top.
 $svgBlock = new \Freesewing\SvgCss();
 $svgBlock->add('
 path,circle,rect{fill:none;stroke:none}
-path.text{fill:none;stroke:none}
 @import url(https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans+Condensed:300);
 .stroke-brand{stroke:#5c3566}
 

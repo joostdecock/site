@@ -382,10 +382,10 @@ Here's how to do that:
 
 ## Links
 
-Links are made [like this](/docs/site/typography).
+Links are made [like this](/docs/site/markup).
 
 ```
-Links are made [like this](/docs/site/typograhy).
+Links are made [like this](/docs/site/markup).
 ```
 
 Note that links in a parapgraph are styled differently from links outside a paragraph.
@@ -393,17 +393,17 @@ Note that links in a parapgraph are styled differently from links outside a para
 To force a paragraph style link, use the `line` class on your link.
 To avoid a paragraph style link, use the `noline` class on your link.
 
-This is a [normal paragraph link](/docs/site/typography), while [this one is not](/docs/site/typography){:.noline}.
+This is a [normal paragraph link](/docs/site/markup), while [this one is not](/docs/site/markup){:.noline}.
 
-- This is a [normal link in a list](/docs/site/typography)
-- While [this one is not](/docs/site/typography){:.line}
+- This is a [normal link in a list](/docs/site/markup)
+- While [this one is not](/docs/site/markup){:.line}
 
 ### Buttons
 Buttons are links with the `btn` class and a bunch of possible extra classes 
 that determine how they are styled.
 
-[Hi, I am a button](/docs/site/typography){:.btn .btn-primary .mt-4 .mb-4}
-[So am I](/docs/site/typography){:.btn .btn-success .mt-4 .mb-4}
+[Hi, I am a button](/docs/site/markup){:.btn .btn-primary .mt-4 .mb-4}
+[So am I](/docs/site/markup){:.btn .btn-success .mt-4 .mb-4}
 
 Please refer to [the Bootstrap documentation](https://v4-alpha.getbootstrap.com/components/buttons/)
  for a complete overview on how to style buttons.

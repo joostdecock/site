@@ -27,5 +27,5 @@ permalink: /docs/patterns/
 ## Not pattern specific
 
 - [Pattern lineage](/docs/patterns/lineage): Think of it as the family tree of our patterns.
-- [Notation legend](/docs/patterns/notation-legend): Explains lines/colours/marking used on our drafts.
+- [Notation legend](/docs/patterns/notation): Explains lines/colours/marking used on our drafts.
 

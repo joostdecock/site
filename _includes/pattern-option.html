@@ -1,14 +1,18 @@
 <div class="row">
     <div class="col-md-6">
         <figure class="image">
-            <img class="img img-responsive drop-shadow" src="/img/patterns/{{ include.pattern }}/options/{{ include.option }}.png" alt="The {{ include.option }} option">
-            <figcaption>The <b>{{ include.option }}</b> option <a href="/img/patterns/{{ include.pattern }}/options/{{ include.option }}.png" target="_BLANK"><i class="fa fa-external-link" aria-hidden="true"></i></a></figcaption>
+            <a href="/img/patterns/{{ include.pattern }}/options/{{ include.option }}.png" target="_BLANK" title="Open in a new window">
+                <img class="img img-responsive drop-shadow" src="/img/patterns/{{ include.pattern }}/options/{{ include.option }}.png" alt="The {{ include.option }} option">
+            </a>
+            <figcaption>The <b>{{ include.option }}</b> option</figcaption>
         </figure>
     </div>
     <div class="col-md-6">
         <figure class="image">
-            <img class="img img-responsive drop-shadow" src="/img/patterns/{{ include.pattern }}/options/{{ include.option }}.svg" alt="Sampling of the {{ include.option }} option">
-            <figcaption>Sampling of the <b>{{ include.option }}</b> option <a href="/img/patterns/{{ include.pattern }}/options/{{ include.option }}.svg" target="_BLANK"><i class="fa fa-external-link" aria-hidden="true"></i></a></figcaption>
+            <a href="{{ site.api.core }}/?service=sample&pattern={{ site.data.freesewing.mapping.handleToPattern[include.pattern] }}&mode=options&option={{ include.option }}&cache={{site.build}}" target="_BLANK" title="Open in a new window">
+                <img class="img img-responsive drop-shadow" src="{{ site.api.core }}/?service=sample&pattern={{ site.data.freesewing.mapping.handleToPattern[include.pattern] }}&mode=options&option={{ include.option }}&cache={{site.build}}" alt="Sampling of the {{ include.option }} option">
+            </a>
+            <figcaption>Sampling of the <b>{{ include.option }}</b> option</figcaption>
         </figure>
     </div>
 </div>

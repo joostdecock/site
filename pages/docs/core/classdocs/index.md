@@ -19,11 +19,11 @@ Click any of the class names below to jump to the relevant documentation.
     - {:.folder.open}core
       - {:.code}[`Pattern`](patterns/core/pattern)
   - {:.folder.open}services
-    - [`CompareService`](services/compareservice)
-    - [`DraftService`](services/draftservice)
-    - [`InfoService`](services/infoservice)
-    - [`SampleService`](services/sampleservice)
-    - [`Service`](services/service)
+    - {:.code}[`CompareService`](services/compareservice)
+    - {:.code}[`DraftService`](services/draftservice)
+    - {:.code}[`InfoService`](services/infoservice)
+    - {:.code}[`SampleService`](services/sampleservice)
+    - {:.code}[`Service`](services/service)
   - {:.folder.open}src
     - {:.code}[`BezierToolbox`](src/beziertoolbox)
     - {:.code}[`Boundary`](src/boundary)
@@ -63,13 +63,13 @@ Click any of the class names below to jump to the relevant documentation.
     - {:.code}[`Yamlr`](src/yamlr)
   - {:.folder.open}themes
     - {:.folder.open}core
-      - [`Basic`](themes/core/basic)
-      - [`Compare`](themes/core/compare)
-      - [`Designer`](themes/core/designer)
-      - [`Developer`](themes/core/developer)
-      - [`Info`](themes/core/info)
-      - [`Paperless`](themes/core/paperless)
-      - [`Sampler`](themes/core/sampler)
-      - [`Theme`](themes/core/theme)
+      - {:.code}[`Basic`](themes/core/basic)
+      - {:.code}[`Compare`](themes/core/compare)
+      - {:.code}[`Designer`](themes/core/designer)
+      - {:.code}[`Developer`](themes/core/developer)
+      - {:.code}[`Info`](themes/core/info)
+      - {:.code}[`Paperless`](themes/core/paperless)
+      - {:.code}[`Sampler`](themes/core/sampler)
+      - {:.code}[`Theme`](themes/core/theme)
 {: .files }
 

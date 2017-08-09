@@ -233,9 +233,9 @@ Finds the intersection between two lines.
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="linesCross-result" markdown="1">
 
-{% include figure.html 
+{% include coreClassdocsFigure.html
     description="lineCross() finds the intersection between two line segments"
-    url="https://api.freesewing.org/?service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4,5&class=Part&method=linesCross"
+    params="service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2,3,4,5&class=Part&method=linesCross"
 %}
 
 </div>

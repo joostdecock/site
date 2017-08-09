@@ -9,8 +9,10 @@ permalink: /docs/core/classdocs/src/boundary
 
 The [`Boundary`](boundary) class holds boundary information that can apply to a path or an entire part.
 
-> Boundary means the smalles possible bounding box that contains all paths. 
+> ##### Boundary = bounding box
+> Boundary means the smallest possible bounding box that contains all paths. 
 > See [`BezierToolbox::bezierBoundary`](beziertoolbox#bezierboundary) for an example.
+{:.comment}
 
 Note that [`Boundary`](boundary) is only used to store this information. It does not calculate
 the bounding box itself.

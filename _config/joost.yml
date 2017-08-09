@@ -64,3 +64,5 @@ algolia:
     excluded_files:
         - components/*
         - snippets/*
+
+build: joost

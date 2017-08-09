@@ -37,7 +37,7 @@ search.addWidget(
     container: '#pagination-container',
     maxPages: 20,
     // default is to scroll to 'body', here we disable this behavior
-    scrollTo: false
+    scrollTo: 'h1'
   })
 );
 

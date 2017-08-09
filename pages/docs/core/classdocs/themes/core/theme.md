@@ -54,7 +54,7 @@ void themePattern(
 
 This is where, as a theme designer, you theme the [`Pattern`](../../patterns//core/pattern) object.
 
-By default, this pulls the (debug) messages to the pattern, so we can add it to the [`SvgDocument`]../../classdocs/src/svgdocument)
+By default, this pulls the (debug) messages to the pattern, so we can add it to the [`SvgDocument`](../../src/svgdocument)
 later when [`Theme::themeSvg`](theme#themesvg) gets called.
 
 This also adds replacements for certain strings used in the theme templates.
@@ -76,7 +76,7 @@ void themeSvg(
 )
 ```
 
-This is where, as a theme designer, you theme the [`SvgDocument`]../../classdocs/src/svgdocument) object.
+This is where, as a theme designer, you theme the [`SvgDocument`]../../src/svgdocument) object.
 
 By default, this loads the theme templates, and adds the (debug) messages from the pattern.
 
@@ -87,7 +87,7 @@ Called by the service classes after the pattern is drafted/sampled, but before i
 #### Parameters
 {:.no_toc}
 
-- [`SvgDocument`]../../classdocs/src/svgdocument) `$svgDocument` : The [`SvgDocument`]../../classdocs/src/svgdocument) object to theme.
+- [`SvgDocument`](../../src/svgdocument) `$svgDocument` : The [`SvgDocument`](../../src/svgdocument) object to theme.
 
 ### themeResponse
 
@@ -97,7 +97,7 @@ void themeResponse(
 )
 ```
 
-This gets the entire [`Context`]../../classdocs/src/context) object, and should return a [`Response`]../../classdocs/src/response) object.
+This gets the entire [`Context`](../../src/context) object, and should return a [`Response`](../../src/response) object.
 
 #### Typical use
 {:.no_toc}
@@ -106,7 +106,7 @@ Called by the service classes after rendering the pattern.
 #### Parameters
 {:.no_toc}
 
-- [`Context`]../../classdocs/src/context) `$context` : The Freesewing context object
+- [`Context`](../../src/context) `$context` : The Freesewing context object
 
 ### cleanUp
 
@@ -142,7 +142,7 @@ Returns an `array` of translation files.
 #### Typical use
 {:.no_toc}
 
-Called from the [`Context`]../../classdocs/src/context) class to add all translation
+Called from the [`Context`](../../src/context) class to add all translation
 files to the translator.
 
 #### Parameters
@@ -167,7 +167,7 @@ void setOptions(
 Allows the theme to set options based on the request data.
 
 By default, this will set all options listed in the theme config
-to their values in the [`Request`]../../classdocs/src/request) object.
+to their values in the [`Request`](../../src/request) object.
          
 #### Typical use
 {:.no_toc}
@@ -179,7 +179,7 @@ This allows you to configure these options in one place.
 #### Parameters
 {:.no_toc}
 
-- [`Request`]../../classdocs/src/request) `$request` : The request object
+- [`Request`](../../src/request) `$request` : The request object
 
 ### applyRenderMask
 
@@ -200,7 +200,7 @@ what parts to render.
 #### Parameters
 {:.no_toc}
 
-- [`Pattern`](../../patterns//core/pattern) `$pattern` : The pattern object
+- [`Pattern`](../../patterns/core/pattern) `$pattern` : The pattern object
 
 
 

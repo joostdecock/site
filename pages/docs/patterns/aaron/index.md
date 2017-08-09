@@ -32,8 +32,8 @@ Cotton with a hint of something stretchy, maybe rayon, or a fine knit. I suggest
 ## Cutting
 
 > - {:.title} Main fabric
->   - Cut **1 back** [on the fold](/fixme)
->   - Cut **1 front** [on the fold](/fixme)
+>   - Cut **1 back** on the fold
+>   - Cut **1 front** on the fold
 >   - Cut **3 strips** for neck opening and armhole binding
 > {:.cuts}
 {:.cuts}
@@ -57,7 +57,7 @@ Below is a typical draft layout:
 
 > <h5>Notation legend</h5>
 >
-> The [notation legend](/docs/patterns/notation-legend) explains all the different markings and lines on your draft.
+> The [notation legend](/docs/patterns/notation) explains all the different markings and lines on your draft.
 {:.tip}
 
 ## Construction
@@ -99,7 +99,7 @@ Fold the hem upwards, and sew it down. If you have a coverlock, use it. If not, 
 
 > **About knit binding**
 >
-> If you are new to [knit binding](/help/sewing/knit-binding), you might read [this page on the subject](/help/sewing/knit-binding).
+> If you are new to [knit binding](/docs/sewing/knit-binding), you might read [this page on the subject](/docs/sewing/knit-binding).
 >
 > **Repeat steps 3 and 4 for both armholes and the neck opening**
 > 
@@ -112,8 +112,8 @@ Fold the hem upwards, and sew it down. If you have a coverlock, use it. If not, 
 > Either way, the less sharp bends you have, the easier it will be. So start with that to warm up before you do the trickier bends.
 {:.tip}
 
-We are going to finish the arm and neck hole with [knit binding](/help/sewing/knit-binding) 
-(note: not a knit band. There's a difference, and it's explained [here](/help/sewing/knit-binding)).
+We are going to finish the arm and neck hole with [knit binding](/docs/sewing/knit-binding) 
+(note: not a knit band. There's a difference, and it's explained [here](/docs/sewing/knit-binding)).
 
 > This is the only part of making this A-shirt that requires a bit of practice. Don't worry, all you need to do is make a couple of these and you'll be a pro in no time.
 {:.comment}
@@ -181,7 +181,7 @@ Mark the where the binding reached the start point. Do the same for the other en
 #### Sew binding ends together
 {% include figure.html
     url='/img/patterns/aaron/step03g.png'
-    description=''
+    description='Join the ends of the binding'
 %}
 Fold you A-shirt in whatever way makes it more easy for your to place both binding ends with good sides together, aligning the marks. Sew them together on the mark.
 

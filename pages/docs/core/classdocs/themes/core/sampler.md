@@ -7,7 +7,7 @@ permalink: /docs/core/classdocs/themes/core/sampler
 ---
 ## Description 
 
-The [`Sampler`](sampler) theme is the default theme for the [`SampleService`](../../services//sampleservice).
+The [`Sampler`](sampler) theme is the default theme for the [`SampleService`](../../services/sampleservice).
 
 ## Public methods
 
@@ -19,7 +19,7 @@ void themeSvg(
 )
 ```
 
-This is where, as a theme designer, you theme the [`SvgDocument`](../../patterns//core/pattern) object.
+This is where, as a theme designer, you theme the [`SvgDocument`](../../src/svgdocument) object.
 
 By default, this loads the theme templates, and adds the (debug) messages from the pattern.
 
@@ -32,7 +32,7 @@ Called by the service classes after the pattern is drafted/sampled, but before i
 #### Parameters
 {:.no_toc}
 
-- [`SvgDocument`]../../classdocs/src/svgdocument) `$svgDocument` : The [`SvgDocument`]../../classdocs/src/svgdocument) object to theme.
+- [`SvgDocument`](../../src/svgdocument) `$svgDocument` : The [`SvgDocument`](../../src/svgdocument) object to theme.
 
 ### samplerPathStyle
 
@@ -48,7 +48,7 @@ This method is reponsible for that rainbow effect in this theme.
 
 #### Typical use
 {:.no_toc}
-Called from the [`Sampler`]../../classdocs/src/sampler) class.
+Called from the [`Sampler`](../../src/sampler) class.
 
 #### Parameters
 {:.no_toc}

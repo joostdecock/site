@@ -18,7 +18,7 @@ permalink: /docs/patterns/trayvon/
 To make Trayvon, you will need the following:
 
 - Basic sewing supplies
-- Between 0.5 meter and 1.5 meter of a suitable fabric ([see Fabric options](#fabric-options)), depending on your grain alignment ([see Grain alignment](#grain-alignment))
+- Between 0.5 meter and 1.5 meter of a suitable fabric ([see Fabric options](#fabric-options)), depending on whether you're cutting on bias, on grain, or cross-grain. 
 
 ### Just the tip
 The tip is the most sensitive part of the tie. If you have never made a tie before, I would advise you to make a few tie tips in scrap fabric before taking scissors and needles to your nice tie fabric.
@@ -108,7 +108,7 @@ Trayvon a very simply pattern, below is a typical layout:
 
 > <h5>Notation legend</h5>
 >
-> The [notation legend](/docs/patterns/notation-legend) explains all the different markings and lines on your draft.
+> The [notation legend](/docs/patterns/notation) explains all the different markings and lines on your draft.
 {:.tip}
 
 ## Construction

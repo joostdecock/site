@@ -1,8 +1,13 @@
 a code.highlighter-rouge {
-    background: $pink;
-    color: $white;
+    background: rgba(117, 39, 210, 0.1);
+    color: $purple;
     border: 0;
-    padding: 0.1rem 0.4rem;
+    padding: 0 0.4rem;
+    box-shadow: $shadow-hover;
+    letter-spacing: -0.5px;
+}
+a code.highlighter-rouge:hover {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.12);
 }
 /**
  * Syntax highlighting styles
@@ -11,11 +16,13 @@ pre {
     margin: 0;
 }
 code {
-     background: #eaeaea;
-     border: 1px solid #c5c5c5;
+     background: $gray-lighter;
+     border: 1px solid #d1d1d1;
      border-radius: 0;
-     padding: 0.1rem 0.4rem;
-     color: $pink;
+    padding: 0 0.4rem;
+}
+p code {
+    margin: 0 0.15rem;
 }
 div.highlighter-rouge {
     background: $gray-dark;

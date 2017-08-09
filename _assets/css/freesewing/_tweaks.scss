@@ -126,6 +126,31 @@ p.counter {
     text-align: right;
     font-weight: bold;
 }
+div.download-draft {
+    background: $purple;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    color: rgba(255,255,255,0.65);
+}
+a.download-draft {
+    color: rgba(255,255,255,0.65);
+}
+.download-draft span.format {
+    font-size: 1.5rem;
+    font-weight: bold;
+    float: right;
+    margin: 0;
+    padding: 0 0 5px 5px;
+    line-height: 1;
+    color: #fff;
+}
+.download-draft p { 
+    margin: 0;
+}
+div.download-draft.download-svg {
+    background: $gray-dark;
+}
 @media (max-width: 767px) {
     .not-on-small {
         display: none;

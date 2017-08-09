@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 set -e # halt script on error
-
-bundle exec jekyll build
-#bundle exec htmlproofer _site --disable-external --assume-extension --file-ignore /apigen/ --url-ignore /draft, /drafts, /models
+echo "build: $COMMIT_REF" > build.yml
+if [ "$BRANCH" = "master" ]; then
+    echo "Building master branch"
+    bundle exec jekyll build --config _config.yml,build.yml
+else
+    echo "Building develop branch"
+    bundle exec jekyll build --config _config/develop.yml,build.yml
+fi
+#bundle exec htmlproofer _site/ --disable-external --assume-extension --file-ignore /apigen/ --url-ignore "/draft/,/drafts/,/models/,/models,/show-draft.html,#"

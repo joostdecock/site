@@ -18,3 +18,8 @@
 /fork/:pattern /step/2/fork 200
 # Redraft draft
 /redraft/:pattern/for/:model /step/3/redraft 200
+# Profile
+/users    /list-users  200
+/users/*    /show-user  200
+/profile*    /show-user  200
+

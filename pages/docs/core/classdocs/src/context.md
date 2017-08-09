@@ -95,8 +95,10 @@ Returns the [`OptionsSampler`](optionssampler) object in the `optionsSampler` pr
 ```
 Returns the [`Pattern`](../patterns/core/pattern) object in the `pattern` property, if any.
 
+> ##### You can't instantiate the [`Pattern`](../patterns/core/pattern) class
 > Given that [`Pattern`](../patterns/core/pattern) is an abstract class, the actual object
 > will be a (grand)child of the [`Pattern`](../patterns/core/pattern) class.
+{:.warning}
 
 ### getRenderbot
 
@@ -126,9 +128,11 @@ Returns the [`Response`](response) object in the `response` property, if any.
 ```
 Returns the [`Services\Service`](../services/service) object in the `service` property, if any.
 
+> ##### You can't instantiate the [`Services\Service`](../services/service) class
 > Given that [`Services\Service`](../services/service) is an 
 > abstract class, the actual object  will be a child of the 
 > [`Services\Service`](../services/service) class.
+{:.warning}
 
 ### getSvgDocument
 
@@ -144,9 +148,11 @@ Returns the [`SvgDocument`](svgdocument) object in the `svgDocument` property, i
 ```
 Returns the [`Themes\Theme`](../themes/core/theme) object in the `theme` property, if any.
 
+> ##### You can't instantiate the [Themes\Theme`](../themes/core/theme) class
 > Given that [`Themes\Theme`](../themes/core/theme) is an abstract class
 > the actual object  will be a child of the 
 > [`Themes\Theme`](../themes/core/theme) class.
+{:.warning} 
 
 ### getTranslator
 
@@ -155,8 +161,10 @@ Symfony\Component\Translation\Translator getTranslator()
 ```
 Returns the `Translator` object in the `translator` property, if any.
 
+> ##### Translation brought to you by the Symfony framework
 > Translation is handled by [Symfony](http://symfony.com/)
 > and documented [on their website](http://symfony.com/doc/current/translation.html).
+{:.link}
 
 ### getUnits
 
@@ -189,9 +197,11 @@ void setChannel(\Freesewing\Channels\Channel)
 Expects a [`Channels\Channel`](../channels/core/channel) object and stores it 
 in the `channel` property.
 
+> ##### You can't instantiate the [`Channels\Channel`](../channels/core/channel) class
 > Given that [`Channels\Channel`](../channels/core/channel) is an
 > abstract class, the actual object will be a child of the 
 > [`Channels\Channel`](../channels/core/channel) class.
+{:.warning}
 
 #### Typical use
 {:.no_toc}
@@ -452,11 +462,12 @@ void configure()
 The configure method sets up properties that are common to all requests.
 
 They are:
-- config: Holds the configuration file as an array
-- service: Holds a [`Service`](../services/service) object 
-- channel: Holds a [`Channel`](../channels/core/channel) object 
-- theme: Holds a [`Themes\Theme`](../themes/core/theme) object 
-- locale: Holds a string with the locale
+
+- `config`: Holds the configuration file as an array
+- `service`: Holds a [`Service`](../services/service) object 
+- `channel`: Holds a [`Channel`](../channels/core/channel) object 
+- `theme`: Holds a [`Themes\Theme`](../themes/core/theme) object 
+- `locale`: Holds a string with the locale
 
 #### Typical use
 {:.no_toc}
@@ -568,10 +579,13 @@ Specifically:
 - [`SampleService::run`](../services/sampleservice#run) 
 - [`CompareService::run`](../services/compareservice#run) 
 
-> Freesewing allows to use a different renderbot, in case you want to output a 
-> different format. 
+> ##### Ships with an SVG renderbot, but you could write your own
+> Freesewing supports different renderbots, in case you want to output a 
+> different format.
+>
 > However, there is currently only one renderbot, the [`SvgRenderbot`](svgrenderbot).
 > As such, this method will always instantiate an [`SvgRenderbot`](svgrenderbot)
+{:.tip}
 
 ### addSvgDocument
 
@@ -632,9 +646,11 @@ void runService()
 Calls the `run` method on the [`Services\Service`](../services/service) 
 object in the `service` property.
 
+> ##### You can't instantiate the [`Services\Service`](../services/service) class
 > Given that [`Services\Service`](../services/service) is an
 > abstract class, the actual object will be a child of the 
 > [`Services\Service`](../services/service) class.
+{:.warning}
 
 #### Typical use
 {:.no_toc}
@@ -652,9 +668,10 @@ Calls [`Theme::cleanUp`](../themes/core/theme#cleanup) and [`Channel::cleanUp`](
 If a pattern is attached to the [`Context`](context), this also calls
 [`Pattern::cleanUp`](../patterns/core/pattern#cleanup).
 
-> <b>How do you mean, 'If a pattern is attached'?</b>
+> ##### How do you mean, *If a pattern is attached*
 > 
 > This check is needed because the infoservice does not always instantiate a [`Pattern`](../patterns/core/pattern).
+{:.question}
 
 This is a way to allow patterns, themes, and channels to clean up at the end of
 a request. For example, if you're logging to a database in your channel,

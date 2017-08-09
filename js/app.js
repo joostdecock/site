@@ -26,7 +26,6 @@
                 $('#drafts').append("<div class='col-md-12'><p>Drafts are what we do, you should try it sometime.</p></div>");
             }
         }
-        console.log(data);
         $.get('/json/freesewing.json', function( fsdata ) {
             renderDraftList(data, fsdata);
         });
@@ -92,6 +91,40 @@
             },
             error: function(data) { 
                 account = false;
+                // eff this, you need to be logged in
+                window.location.replace("/login");
+            },
+            headers: {'Authorization': 'Bearer '+token},
+        }); 
+    }
+
+    function loadRole(callback) {
+        return $.ajax({
+            url: api.data+'/role',
+            method: 'GET',
+            dataType: 'json',
+            success: function(data) {
+                callback(data);
+            },
+            error: function(data) { 
+                // eff this, you need to be logged in
+                window.location.replace("/login");
+            },
+            headers: {'Authorization': 'Bearer '+token},
+        }); 
+    }
+
+    function loadProfile(handle, callback) {
+        return $.ajax({
+            url: api.data+'/profile/'+handle,
+            method: 'GET',
+            dataType: 'json',
+            success: function(data) {
+                profile = data;
+                callback(data);
+            },
+            error: function(data) { 
+                profile = false;
                 // eff this, you need to be logged in
                 window.location.replace("/login");
             },
@@ -228,12 +261,14 @@
         var first;
         var second;
         $.each(measurements, function(measurement, shape){
+            if(model.model.units === 'imperial') var measurementValue = inchesAsFraction(model.model.data.measurements[measurement]);
+            else var measurementValue = model.model.data.measurements[measurement]+' cm';
             if(shape == 'all' || shape == model.model.body || typeof filter !== "undefined") {
                 if(typeof model.model.data.measurements[measurement] !== "undefined") {
                     if(typeof filter === 'undefined' || typeof filter[measurement] !== "undefined") {
                         first += "<tr>" +
                             "<td class='name'><a href='#measurements' data-measurement='"+measurement+"' class='edit'>"+measurementTitles[measurement]+"</a>&nbsp;:</td>" +
-                            "<td nowrap class='value "+model.model.units+"'>"+model.model.data.measurements[measurement]+"</td>" +
+                            "<td nowrap class='value "+model.model.units+"'>"+measurementValue+"</td>" +
                             "<td class='edit'><a href='#measurements' data-measurement='"+measurement+"' class='edit'><i class='fa fa-2x fa-pencil' aria-hidden='true'></i></a></td>" +
                         "</tr>";
                     }
@@ -263,7 +298,7 @@
         $('#model-breasts').html(breasts);
         $('#model-units').html(data.model.units);
         $('#model-handle').html(data.model.handle);
-        $('#model-created').attr('datetime', data.model.created);
+        $('#model-created').attr('datetime', data.model.created+' UTC');
         timeago().render($('.timeago'));
         // Check whether we have any data at all
         if(data.model.data === "" || data.model.data === null) data.model.data = {measurements: ''};
@@ -313,11 +348,16 @@
         // Load settings into modal
         $('#modal').removeClass().addClass('shown light');
         $('#modal-main').html("<div id='settings'></div>");
-        $('#settings').load('/components/measurement/settings', function(){
+        $('#settings').load('/components/measurement/settings-'+model.model.units, function(){
             $('#measurement-main-title').html(mtitle);
             $('#m').attr('name', measurement).attr('id',measurement+'-input')
             $('#settings-form span.form-units').addClass(model.model.units);
-            $('#'+measurement+'-input').val(model.model.data.measurements[measurement]);
+            if(typeof model.model.data.measurements[measurement] == 'undefined') var inputValue = '';
+            else {
+                if(model.model.units === 'imperial') var inputValue = inchesAsFraction(model.model.data.measurements[measurement], 'plain');
+                else var inputValue = model.model.data.measurements[measurement];
+            }
+            $('#'+measurement+'-input').val(inputValue);
             // Bind cancel handler
             $('#settings').on('click','.close-modal', function(e) {
                 closeModal();
@@ -340,10 +380,14 @@
                 // Is measurements already an object?
                 if(typeof(model.model.data.measurements) === 'string' || model.model.data.measurements === null) {
                     var measurementsObject = {};
-                    measurementsObject[measurement] = Number($('#'+measurement+'-input').val());
+                    // Imperial might not be a number but something like '9 1/2'
+                    if(model.model.units === 'imperial') measurementsObject[measurement] = $('#'+measurement+'-input').val();
+                    else measurementsObject[measurement] = Number($('#'+measurement+'-input').val());
                     model.model.data.measurements = measurementsObject;
                 } else {
-                    model.model.data.measurements[measurement] = Number($('#'+measurement+'-input').val());
+                    // Imperial might not be a number but something like '9 1/2'
+                    if(model.model.units === 'imperial') model.model.data.measurements[measurement] = $('#'+measurement+'-input').val();
+                    else model.model.data.measurements[measurement] = Number($('#'+measurement+'-input').val());
                 }
                 saveModelData();
             });
@@ -565,7 +609,6 @@
     function saveModelSettings() {
         // Show loader
         $('#loader').load('/snippets/generic/spinner');
-
         $.ajax({
           url: api.data+'/model/'+model.model.handle,
           method: 'PUT',
@@ -675,6 +718,8 @@
           dataType: 'json',
           success: function(data) {
             if(data.result == 'ok') {
+                // Use data from backend
+                model.model.data = data.data;
                 closeModal();
                 $.bootstrapGrowl("Model data saved", {type: 'success'});
                 if($('#filter-patterns-select').val() === 'all') renderMeasurements();
@@ -715,10 +760,10 @@
         $('ul.breadcrumbs li:last-child').html(data.name);
         if(data.shared == 1) {
             $('#shared-link').html('Yes');
-            $('#fork-msg').html('<small><b>Tip:</b> Other users can fork this draft at <a href="/drafts/'+data.handle+'">'+window.location.hostname+'/drafts/'+data.handle+'</a></small>');
+            $('#fork-msg').html('&nbsp;&nbsp;<i class="fa fa-info-circle" aria-hidden="true"></i> <small><b>Tip:</b> Other users can fork this draft at <a href="/drafts/'+data.handle+'">'+window.location.hostname+'/drafts/'+data.handle+'</a></small>');
         } else {
             $('#shared-link').html('No');
-            $('#fork-msg').html('');
+            $('#fork-msg').html('&nbsp;&nbsp;<i class="fa fa-info-circle" aria-hidden="true">This reference uniquely identifies your draft.</i> ');
         }
         $('#notes-inner').html(marked(data.notes));
         draft.shared = data.shared;
@@ -783,7 +828,18 @@
         });
     }
 
-    function renderDraftForm(account,patternhandle,modelhandle,defaults=false) {
+    function convertForkedDefault(value, accountUnits, forkUnits) {
+        if(accountUnits === 'imperial') var ufactor = 25.4;
+        else var ufactor = 10;
+        if(accountUnits == forkUnits) return value * ufactor;
+        else {
+            if(forkUnits === 'imperial') return value * 25.4;                
+            else return value * 10;
+        } 
+    }
+
+    function renderDraftForm(account,patternhandle,modelhandle,defaults) {
+        if(typeof defaults == 'undefined') var defaults = false;
         // Load site data
         $.get('/json/freesewing.json', function( fsdata ) {
             var pattern = fsdata.patterns[fsdata.mapping.handleToPattern[patternhandle]];
@@ -791,20 +847,21 @@
             $('#picklist').append("<form id='form'><div id='accordion' role='tablist' aria-multiselectable='true'></div></form>");
             var form = {};
             form.groups = {};
-            if(account.account.data.account.units === 'imperial') var ufactor = 25.4;
-            else var ufactor = 10;
             $.each(pattern.options, function(option, o) {
                 // Load defaults (if provided)
                 if(defaults !== false && typeof defaults[option] !== 'undefined') {
-                    if(o.type === 'measure') o.default = (defaults[option] * ufactor);
+                    if(o.type === 'measure') o.default = convertForkedDefault(defaults[option],account.account.data.account.units,defaults.userUnits);
                     else o.default = defaults[option];
                 }
                 if(typeof form.groups[o.group] === 'undefined') form.groups[o.group] = {};
                 form.groups[o.group][option] = o;
             });
             // Add hidden form fields
-            $('#form').append('<input type="hidden" name="pattern" value="'+fsdata.mapping.handleToPattern[patternhandle]+'"><input type="hidden" name="model" value="'+modelhandle+'">');
-            if (page.substr(0,9) === '/redraft/') $('#form').append('<input type="hidden" name="draft" value="'+page.split('/')[2]+'">');
+            $('#form').append('<input type="hidden" id="sa" name="sa" value="1">');
+            $('#form').append('<input type="hidden" id="userUnits" name="userUnits" value="'+account.account.data.account.units+'">');
+            if(typeof defaults != 'undefined') $('#form').append('<input type="hidden" id="fork" name="fork" value="true">');
+            $('#form').append('<input type="hidden" id="form-pattern-name" name="pattern" data-handle="'+patternhandle+'" value="'+fsdata.mapping.handleToPattern[patternhandle]+'"><input type="hidden" name="model" value="'+modelhandle+'" id="form-model-handle">');
+            if (page.substr(0,9) === '/redraft/') $('#form').append('<input type="hidden" name="draft" value="'+page.split('/')[2]+'" id="form-redraft-handle">');
             // Load defaults for theme and langauge from fork (if provided)
             if(defaults !== false && typeof defaults.theme !== 'undefined') dflt_theme = defaults.theme;
             else dflt_theme = 'Basic';
@@ -812,25 +869,44 @@
             else dflt_lang = 'en';
             if(defaults !== false && typeof defaults.parts !== 'undefined') dflt_scope = 'custom';
             else dflt_scope = 'all';
+            if(defaults !== false && typeof defaults.presetSa !== 'undefined') dflt_presetSa = defaults.presetSa;
+            else dflt_presetSa = account.account.data.account.units;
+            if(defaults !== false && typeof defaults.customSa !== 'undefined') dflt_customSa = convertForkedDefault(defaults.customSa,account.account.data.account.units,defaults.userUnits);
+            else {
+                if(account.account.data.account.units === 'imperial') dflt_customSa = 15.875;
+                else dflt_customSa = 10;
+            }
+            if(account.account.data.account.units === 'imperial') {
+                min_customSa = 4.8;
+                max_customSa = 25.4;
+            } else {
+                min_customSa = 5;
+                max_customSa = 25;
+            }
             // Prepend theme/language
             var ordered = {
                 'general': {
-                    'theme': {
-                        'default': dflt_theme,
-                        'description': 'Use the paperless theme when you want a pattern that does not require printing',
-                        'title': 'Theme',
+                    'presetSa': {
+                        'default': dflt_presetSa,
+                        'description': 'Should your draft include seam allowance?<br>If yes, then how much seam allowance would you like?',
+                        'title': 'Seam allowance',
                         'type': 'chooseOne',
                         'options': {
-                            'Basic': 'Classic',
-                            'Paperless': 'Paperless'
+                            'none': "Don't include seam allowance",
+                            'metric': 'Standard metric seam allowance (1 cm)',
+                            'imperial': 'Standard imperial seam allowance (<sup>5</sup>/<sub>8</sub> inch)',
+                            'custom': 'Custom seam allowance'
                         }
                     },
-                    'lang': {
-                        'default': dflt_lang,
-                        'description': 'This pattern is available in the following languages:',
-                        'title': 'Language',
-                        'type': 'chooseOne',
-                        'options': pattern.languages
+                    'customSa': {
+                        'default': dflt_customSa,
+                        'description': 'Set your custom seam allowance.',
+                        'title': 'Custom seam allowance',
+                        'type': 'measure',
+                        'min': min_customSa,
+                        'max': max_customSa,
+                        'dependsOn': 'presetSa',
+                        'onlyOn': 'custom' 
                     },
                     'scope': {
                         'default': dflt_scope,
@@ -850,7 +926,24 @@
                         'options': pattern.parts,
                         'dependsOn': 'scope',
                         'onlyOn': 'custom' 
-                    }
+                    },
+                    'theme': {
+                        'default': dflt_theme,
+                        'description': 'Use the paperless theme when you want a pattern that does not require printing',
+                        'title': 'Theme',
+                        'type': 'chooseOne',
+                        'options': {
+                            'Basic': 'Classic',
+                            'Paperless': 'Paperless'
+                        }
+                    },
+                    'lang': {
+                        'default': dflt_lang,
+                        'description': 'This pattern is available in the following languages:',
+                        'title': 'Language',
+                        'type': 'chooseOne',
+                        'options': pattern.languages
+                    },
                 }
             };
             Object.keys(form.groups).forEach(function(key) {
@@ -886,7 +979,12 @@
             $('#form').append('<p class="text-center mt-5"><input type="submit" class="btn btn-lg btn-primary" value="Draft pattern"></p>');
             // Bind slide event to slider inputs
             $('#accordion').on('change', 'input.slider', function(e) {
-                $('#'+e.target.id+'-value').html(e.value.newValue);    
+                if($('#'+e.target.id).attr('data-type') == 'measure' && account.account.data.account.units === 'imperial') {
+                    var newValue = inchesAsFraction(roundToFraction(e.value.newValue));
+                } else {
+                    var newValue = e.value.newValue;
+                }
+                $('#'+e.target.id+'-value').html(newValue);    
                 if(e.value.newValue != $('#'+e.target.id+'-default').attr('data-default')) $('#'+e.target.id+'-default').removeClass('disabled invisible'); 
                 else $('#'+e.target.id+'-default').addClass('disabled invisible');
                 triggerOptionTargets(triggers);
@@ -975,22 +1073,98 @@
         }); 
     }
 
+    function round(value) {
+        return Math.round(value*100)/100;
+    }
+    
+    function roundToFraction(value) {
+        if(value < 0) {
+            value = Math.abs(value);
+            var negative = true;
+        } else var negative = false;
+        if(value == 0) return 0;
+        if(value < 1) {
+            var inches = 0;
+            var rest = value;
+        } else {
+            var inches = Math.floor(value);
+            var rest = value - inches;
+        }
+        var fraction32 = Math.round(rest*32)/32;
+
+        if(negative) {
+            if(parseInt(inches) == 1) return -1-fraction32;
+            else return -1 * parseInt(inches)-fraction32;
+        }
+        else return parseInt(inches)+fraction32;
+    }
+
+    function inchesAsFraction(value, format) {
+        if(typeof format == 'undefined') var format = 'form';
+        if(value < 0) {
+            value = value * -1;
+            var negative = '-';
+        } else var negative = '';
+        if(value == 0) return 0;
+        if(Math.abs(value) < 1) {
+            var inches = '';
+            var rest = value;
+        } else {
+            var inches = Math.floor(value);
+            var rest = value - inches;
+        }
+        var fraction64 = Math.round(rest*64);
+        if(format == 'plain') {
+            if(fraction64 == 0) return negative+inches;
+            if(fraction64 % 32 == 0) return negative+inches+' '+fraction64/32+'/2';
+            if(fraction64 % 16 == 0) return negative+inches+' '+fraction64/16+'/4';
+            if(fraction64 % 8 == 0) return negative+inches+' '+fraction64/8+'/8';
+            if(fraction64 % 4 == 0) return negative+inches+' '+fraction64/4+'/16';
+            if(fraction64 % 2 == 0) return negative+inches+' '+fraction64/2+'/32';
+            else return negative+value;
+        }
+        var metric = Math.round(value*254)/100;
+        var spanStart = '<span style="display: block; font-size: 70%; font-weight: 400; color: #464a4c;">';
+        var spanEnd = ' inch or '+negative+metric+' cm</span>';
+        if(fraction64 == 0) return negative+inches+'"<sup> </sup><sub> </sub>'+spanStart+value+spanEnd;
+        if(fraction64 % 32 == 0) return negative+inches+'<sup>'+fraction64/32+'</sup>/<sub>2</sub>" '+spanStart+negative+value+spanEnd;
+        if(fraction64 % 16 == 0) return negative+inches+'<sup>'+fraction64/16+'</sup>/<sub>4</sub>" '+spanStart+negative+value+spanEnd;
+        if(fraction64 % 8 == 0) return negative+inches+'<sup>'+fraction64/8+'</sup>/<sub>8</sub>" '+spanStart+negative+value+spanEnd;
+        if(fraction64 % 4 == 0) return negative+inches+'<sup>'+fraction64/4+'</sup>/<sub>16</sub>" '+spanStart+negative+value+spanEnd;
+        if(fraction64 % 2 == 0) return negative+inches+'<sup>'+fraction64/2+'</sup>/<sub>32</sub>" '+spanStart+negative+value+spanEnd;
+        else return negative+value+'"'+spanStart+negative+value+spanEnd;
+    }
+
     function renderOption(name, option, units) {
         switch(option.type) {
             case 'measure':
-                if(units === 'imperial') var udiv = 25.4;
-                else var udiv = 10
+                if(units === 'imperial') {
+                    var udiv = 25.4;
+                    var minValue = roundToFraction(option.min/udiv);
+                    var defaultValue = roundToFraction(option.default/udiv);
+                    var maxValue = roundToFraction(option.max/udiv);
+                }
+                else {
+                    var udiv = 10
+                    var defaultValue = round(option.default/udiv);
+                    var minValue = round(option.min/udiv);
+                    var maxValue = round(option.max/udiv);
+                }
                 var html = '<div class="form-group" id="option-wrapper-'+name+'">';
                 html += '<label for="'+name+'">';
                 html += '<a href="#" id="'+name+'-help" class="mt-4 btn btn-outline-primary btn-sm option-help" style="float: right;" data-option="'+name+'">Help</a>';
-                html += '<a href="#" id="'+name+'-default" class="mt-4 btn btn-outline-primary btn-sm mr-2 disabled btn-outline-info invisible option-reset" style="float: right;" data-option="'+name+'" data-default="'+(option.default/udiv)+'" data-type="slider">Reset</a>';
-                html += '<h5 class="mt-3">'+option.title+': <span class="value-'+units+'" id="'+name+'-value">'+(option.default/udiv)+'</span></h5> '+option.description+'</label>';
+                html += '<a href="#" id="'+name+'-default" class="mt-4 btn btn-outline-primary btn-sm mr-2 disabled btn-outline-info invisible option-reset" style="float: right;" data-option="'+name+'" data-default="'+defaultValue+'" data-type="slider">Reset</a>';
+                html += '<h5 class="mt-3">'+option.title+': <span class="value-'+units+'" id="'+name+'-value">';
+                if(units === 'imperial') html += inchesAsFraction(defaultValue)
+                else html += defaultValue;
+                html += '</span></h5> '+option.description+'</label>';
                 html += '<div class="input-group">';
-                html += '<input class="slider" id="'+name+'" type="text" name="'+name+'" data-provide="slider" ';
+                html += '<input class="slider" id="'+name+'" type="text" name="'+name+'" data-provide="slider" data-type="measure" ';
                 html += 'data-slider-id="'+name+'-slider" ';
-                html += 'data-slider-step="0.05" ';
-                html += 'data-slider-min="'+(option.min/udiv)+'" data-slider-max="'+(option.max/udiv)+'" ';
-                html += 'data-slider-value="'+(option.default/udiv)+'" data-slider-tooltip="hide" >'; 
+                if(units === 'imperial') html += 'data-slider-step="0.03125" ';
+                else html += 'data-slider-step="0.05" ';
+                html += 'data-slider-min="'+minValue+'" data-slider-max="'+maxValue+'" ';
+                html += 'data-slider-value="'+defaultValue+'" data-slider-tooltip="hide" >'; 
                 html += '</div>';
                 html += '</div>';
                 break;
@@ -1098,60 +1272,62 @@
             parts.push($(part).val());
         });
         if(parts.length > 0) $('#form').append('<input type="hidden" name="parts" value="'+parts+'">');
+        if($('input[name="presetSa"]:checked').val() == 'custom') $('#sa').val($('#customSa').val());
+        else if ($('input[name="presetSa"]:checked').val() == 'none') $('#sa').val(0);
+        else if ($('input[name="presetSa"]:checked').val() == 'imperial') {
+            if($('#userUnits').val() == 'imperial') $('#sa').val(0.625);
+            else $('#sa').val(1.525);
+        }
+        else {
+            if($('#userUnits').val() == 'imperial') $('#sa').val(0.3937);
+            else $('#sa').val(1);
+        }
         $.ajax({
             url: api.data+'/'+method,
             method: 'POST',
             data: $('#form').serialize(),
             dataType: 'json',
             success: function(data) {
-              if(data.result == 'ok') {
-                  window.location.replace("/drafts/"+data.handle);
-              } else {
-                  var errormsg = '<blockquote class="error">';
-                  errormsg += '<h5>This should not happend, but it did.</h5>';
-                  errormsg += '<p>Something went wrong while drafting your pattern. And although the backend informed us about it, that exception is unhandled in the frontend.<p>';
-                  errormsg += '<p>Basically, we message up. Sorry.<p>';
-                  errormsg += '</blockquote>';
-                  errormsg += '<blockquote class="link">';
-                  errormsg += '<h5>Help us out and submit this report</h5>';
-                  errormsg += '<p>Looks like you\'ve hit a snag. Those things happen, but you could help us prevent it from happening in the future.</p>';
-                  errormsg += 'We have gathered all the info we need to investigate this, but we need you to take the last step of submitting the issue to GitHub.</p>';
-                  errormsg += '<p>So would you do us a favor and report this? Thank you :)</p>';
-                  errormsg += '<p><a target="_BLANK" class="btn btn-primary" ';
-                  errormsg += 'href="https://github.com/freesewing/site/issues/new?title=Failed to draft pattern';
-                  errormsg += '&labels[]=documentation';
-                  errormsg += '&body=This draft went off the rails:%0A'+encodeURIComponent($('#form').serialize());
-                  errormsg += '%0A%0AThis data was returned::%0A'+encodeURIComponent(JSON.stringify(data));
-                  errormsg += '%0A%0AFeel free to include comments, but please keep the info above.">';
-                  errormsg += 'Send report to GitHub</a></p>';
-                  errormsg += '<p>PS: This will open a new window where you just have to click the <b>Submit new issue</b> button.</p></blockquote>';
-                  $('#draft-loading').html(error);
-              }
+              if(data.result == 'ok') window.location.replace("/drafts/"+data.handle);
+              else loadModel($('#form-model-handle').val(), reportFailedDraft);
             }, 
             error: function(data) { 
-                var errormsg = '<blockquote class="error">';
-                errormsg += '<h5>That did not go as planned. Like, at all.</h5>';
-                errormsg += '<p>Things just sort of fell apart and I did not see it coming. That shouldn\'t happen, so I encourage you to report this.<p>';
-                errormsg += '</blockquote>';
-                errormsg += '<blockquote class="link">';
-                errormsg += '<h5>Help us out and submit this report</h5>';
-                errormsg += '<p>Looks like you\'ve hit a snag. Those things happen, but you could help us prevent it from happening in the future.</p>';
-                errormsg += 'We have gathered all the info we need to investigate this, but we need you to take the last step of submitting the issue to GitHub.</p>';
-                errormsg += '<p>So would you do us a favor and report this? Thank you :)</p>';
-                errormsg += '<p><a target="_BLANK" class="btn btn-primary" ';
-                errormsg += 'href="https://github.com/freesewing/site/issues/new?title=Failed to draft pattern';
-                errormsg += '&labels[]=documentation';
-                errormsg += '&body=This draft went off the rails:%0A'+encodeURIComponent($('#form').serialize());
-                errormsg += '%0A%0AThis data was returned::%0A'+encodeURIComponent(JSON.stringify(data));
-                errormsg += '%0A%0AFeel free to include comments, but please keep the info above.">';
-                errormsg += 'Send report to GitHub</a></p>';
-                errormsg += '<p>PS: This will open a new window where you just have to click the <b>Submit new issue</b> button.</p></blockquote>';
-                $('#draft-loading').html(errormsg); 
+                loadModel($('#form-model-handle').val(), reportFailedDraft);
             },
             headers: {'Authorization': 'Bearer ' + token},
         }); 
     }
-    
+   
+    function reportFailedDraft(model) {
+        var patternName = $('#form-pattern-name').attr('data-handle');
+        var params = '?service=draft&';
+        $.each(model.model.data.measurements, function(key, value) {
+            params += key+'='+value+'&';
+        });
+        params += $('#form').serialize();
+        params = encodeURIComponent(params);
+        var errormsg = '<blockquote class="error">';
+        errormsg += '<h5>That did not go as planned. Like, at all.</h5>';
+        errormsg += '<p>Things just sort of fell apart and I did not see it coming. That shouldn\'t happen, so I encourage you to report this.<p>';
+        errormsg += '</blockquote>';
+        errormsg += '<blockquote class="link">';
+        errormsg += '<h5>Help me out and submit this report</h5>';
+        errormsg += '<p>Looks like you\'ve hit a snag. Those things happen, but you could help us prevent it from happening in the future.</p>';
+        errormsg += 'I have gathered all the info I need to investigate this, but I need you to take the last step of submitting the issue to GitHub.</p>';
+        errormsg += '<p>So would you do me a favor and report this? Thank you <i class="fa fa-heart" aria-hidden="true" style="color: #ef1fb9"></i></p>';
+        errormsg += '<p><a target="_BLANK" class="btn btn-primary" ';
+        errormsg += 'href="https://github.com/freesewing/site/issues/new?title=Failed to draft '+patternName+' for model '+model.model.handle;
+        errormsg += '&labels[]=unconfirmed bug';
+        errormsg += '&body=These links should recreate the issue:';
+        errormsg += '%0A%0A - [On core master branch](https://core.freesewing.org/'+params+')';
+        errormsg += '%0A - [On core develop branch](https://dev.core.freesewing.org/'+params+')';
+        errormsg += '%0A - [On core bleeding edge](https://joost.core.freesewing.org/'+params+')';
+        errormsg += '%0A%0A%23%23 Please keep the info above intact%0AYou can include further info and comments here%0A%0A';
+        errormsg += '">Send report to GitHub</a></p>';
+        errormsg += '<p>PS: This will open a new window where you just have to click the <b>Submit new issue</b> button.</p></blockquote>';
+        $('#draft-loading').html(errormsg); 
+    }
+
     function loadDraft(handle, callback) {
         $.ajax({
             url: api.data+'/auth',
@@ -1238,6 +1414,9 @@
     function renderDraft(draft) {
         $('h1.page-title').html(draft.name);
         $('ul.breadcrumbs li:last-child').html(draft.name);
+        $('#issue-link').attr('href','https://github.com/freesewing/site/issues/new?title=Problem%20with%20draft%20'+draft.handle+'&body=See%20[here](https:/'+'/'+window.location.hostname+'/drafts/'+draft.handle+')');
+        $('#draft-core-url').html('<a href="'+draft.data.coreUrl+'" target="_BLANK" title="Manually run the API call used to create this draft">Replay API call</a>');
+                console.log(draft);
         if(!logged_in) {
             // Shared draft, viewed anonymously
             $('.owner-only').remove();
@@ -1246,7 +1425,7 @@
             msg += '<p class="text-center"><a href="/docs/site/fork" class="btn btn-outline-white">Find out more</a></p></blockquote>';
             $('#draft').prepend(msg);
             $('#draft-handle').html(draft.handle);
-            $('#created').attr('datetime', draft.created);
+            $('#created').attr('datetime', draft.created+' UTC');
             timeago().render($('.timeago'));
         } else {
             if(user.id == draft.user){
@@ -1255,12 +1434,12 @@
                 $('#model-link').attr('href','/models/'+draft.model.handle).html(draft.model.name);
                 if(draft.shared == 1) {
                     $('#shared-link').html('Yes');
-                    $('#fork-msg').html('<small><b>Tip:</b> Other users can fork this draft at <a href="/drafts/'+draft.handle+'">'+window.location.hostname+'/drafts/'+draft.handle+'</a></small>');
+                    $('#fork-msg').html('&nbsp;&nbsp;<i class="fa fa-bookmark" aria-hidden="true"></i> <small> Other users can fork this draft at <a href="/drafts/'+draft.handle+'">'+window.location.hostname+'/drafts/'+draft.handle+'</a></small>');
                 } else {
                     $('#shared-link').html('No');
-                    $('#fork-msg').html('<small>This reference uniquely identifies your draft.</small>');
+                    $('#fork-msg').prepend('<small>(1) This reference uniquely identifies your draft.</small>');
                 }
-                $('#created').attr('datetime', draft.created);
+                $('#created').attr('datetime', draft.created+' UTC');
                 timeago().render($('.timeago'));
                 $('#fork-btn').attr('href','/fork/'+draft.handle);
                 $('#redraft-btn').attr('href','/redraft/'+draft.handle+'/for/'+draft.model.handle);
@@ -1268,14 +1447,14 @@
                 // Logged-in user but not their own draft (shared)
                 $('.owner-only').remove();
                 $('#draft-handle').html(draft.handle);
-                $('#created').attr('datetime', draft.created);
+                $('#created').attr('datetime', draft.created+' UTC');
                 timeago().render($('.timeago'));
-                var msg = '<blockquote class="fork m600"><h5>Hot women in your neighborhood are forking this draft</h5>';
+                var msg = '<blockquote class="fork m600 mb-5"><h5>Hot women in your neighborhood are forking this draft</h5>';
                 msg += '<p>Forking is a way to use an existing draft as a template for your own draft.</p>';
                 msg += '<p class="text-center"><a href="/fork/'+draft.handle+'" class="btn btn-outline-white">Fork this draft</a> <a href="/docs/site/fork" class="btn btn-outline-white">Find out more</a></p>';
-                msg += '<p><small>PS: That thing about the hot women is obviously a joke. I know nothing about women, let alone hot ones.</small></p>';
+                msg += '<p><small>PS: That thing about the hot women is obviously a joke. I know very little about women, let alone hot ones.</small></p>';
                 msg += '</blockquote>';
-                $('#draft').prepend(msg);
+                $('#draft-container').prepend(msg);
             }
         }
         // Load site data
@@ -1284,48 +1463,52 @@
             var patternTitle = fsdata.mapping.handleToPatternTitle[patternHandle];
             $('#pattern-link').attr('href','/patterns/'+patternHandle).html(patternTitle);
             // Pattern options
-            $('#options-table').append('<tr><td colspan="2" class="heading">general</td></tr>');
-            if(draft.data.theme = 'Paperless') var theme = 'Paperless';
+            if(draft.data.options.theme == 'Paperless') var theme = 'Paperless';
             else var theme = 'Classic';
-            $('#options-table').append('<tr><td>Theme</td><td>'+theme+'</td></tr>');
-            $('#options-table').append('<tr><td>Language</td><td>'+fsdata.patterns[draft.pattern].languages[draft.data.lang]+'</td></tr>');
-            if(draft.data.scope == 'all') var scope = 'Complete pattern';
+            $('#options-table').append('<tr><td>Theme</td><td nowrap>'+theme+'</td></tr>');
+            $('#options-table').append('<tr><td>Language</td><td nowrap>'+fsdata.patterns[draft.pattern].languages[draft.data.options.lang]+'</td></tr>');
+            if(draft.data.options.scope == 'all') var scope = 'Complete pattern';
             else {
-                var scope = 'Only these parts: <ul>';
-                $.each(draft.data.parts.split(','), function(index, part) {
+                var scope = '<ul>';
+                $.each(draft.data.options.parts.split(','), function(index, part) {
                     scope += '<li>'+part+'</li>';
                 });
                 scope += '</ul>';
             }
-            $('#options-table').append('<tr><td>Scope</td><td>'+scope+'</td></tr>');
+            $('#options-table').append('<tr><td>Scope</td><td nowrap>'+scope+'</td></tr>');
             Object.keys(fsdata.patterns[draft.pattern].optiongroups).forEach(function(key) {
                 $('#options-table').append('<tr><td colspan="2" class="heading">'+key+'</td></tr>');
-                var keys = Object.values(fsdata.patterns[draft.pattern].optiongroups[key]).sort();
+                var keys = $.map(fsdata.patterns[draft.pattern].optiongroups[key], function(value, index) {
+                    return [value];
+                });
                 $.each(keys, function(index, option){
-                    if(fsdata.patterns[draft.pattern].options[option].type == 'percent') var suffix = '%';
-                    else if(fsdata.patterns[draft.pattern].options[option].type == 'angle') var suffix = '&deg;';
+                    if(fsdata.patterns[draft.pattern].options[option].type == 'percent') var optionValue = draft.data.options[option]+'%';
+                    else if(fsdata.patterns[draft.pattern].options[option].type == 'angle') var optionValue = draft.data.options[option]+'&deg;';
+                    else if(fsdata.patterns[draft.pattern].options[option].type == 'chooseOne') var optionValue = fsdata.patterns[draft.pattern].options[option].options[draft.data.options[option]];
                     else {
-                        if(draft.model.units == 'imperial') var suffix = '"';
-                        else var suffix = 'cm';
+                        if(draft.model.units == 'imperial') var optionValue = inchesAsFraction(draft.data.options[option]);
+                        else var optionValue = draft.data.options[option]+'cm';
                     }
-                    $('#options-table').append('<tr><td>'+fsdata.patterns[draft.pattern].options[option].title+'</td><td>'+draft.data[option]+suffix+'</td></tr>');
+                    $('#options-table').append('<tr><td>'+fsdata.patterns[draft.pattern].options[option].title+'</td><td>'+optionValue+'</td></tr>');
                 });
             });
+            // Model measurements
+            if(draft.data.units == 'imperial') var suffix = 'inch';
+            else var suffix = 'cm';
+            var keys = $.map(fsdata.patterns[draft.pattern].measurements, function(value, index) {
+                return [index];
+            });
+            $.each(keys, function(index, measurement){
+                if(draft.data.units == 'imperial') var measurementValue = inchesAsFraction(draft.data.measurements[measurement]);
+                else var measurementValue = draft.data.measurements[measurement]+' cm';
+                $('#measurements-table').append('<tr><td>'+fsdata.mapping.measurementToTitle[measurement]+'</td><td>'+measurementValue+'</td></tr>');
+            });
         });
-        // Responsive SVG embed requires us to strip out the width and height attributes
-        var xmlDoc = $.parseXML( draft.svg );
-        $svg = $(xmlDoc).find('svg'); 
-        $svg.removeAttr('width');
-        $svg.removeAttr('height');
-        $('#svg-wrapper').html(xmlToString(xmlDoc));
-        var xmlDoc = $.parseXML( draft.compared );
-        $svg = $(xmlDoc).find('svg'); 
-        $svg.removeAttr('width');
-        $svg.removeAttr('height');
-        $('#compared-wrapper').html(xmlToString(xmlDoc));
         marked.setOptions({sanitize: true});
         if(draft.notes !==  '') $('#notes-inner').html(marked(draft.notes));
         $('#link-preview').attr('href',draft.dlroot+draft.handle+'.svg');
+        $('#svg-wrapper').html('<img style="width: 100%; height: auto;" src="'+draft.dlroot+draft.handle+'.svg">');
+        $('#compared-wrapper').html('<img style="width: 100%; height: auto;" src="'+draft.dlroot+draft.handle+'.compared.svg">');
         $('#compared-preview').attr('href',draft.dlroot+draft.handle+'.compared.svg');
         $('.download-draft').each(function(index) {
             var format = $(this).attr('data-format');
@@ -1436,7 +1619,7 @@
                 row += '<td class="model"><a href="/models/'+models[draft.model].handle+'">'+models[draft.model].name+'</a></td>';
             }
             row += '<td class="name"><a href="/drafts/'+draft.handle+'">'+draft.name+'</a></td>';
-            row += '<td class="date timeago" datetime="'+draft.created+'"></td>';
+            row += '<td class="date timeago" datetime="'+draft.created+' UTC"></td>';
             row += '<td class="trash icon"><a href="#" data-draft="'+draft.id+'" class="delete-draft" title="Delete draft '+draft.handle+'"><i class="fa fa-trash" aria-hidden="true"></i></a></td>';
             row += '</tr>';
             $('#draftlist').prepend(row);
@@ -1451,9 +1634,77 @@
         });
     }
 
+    function addBadge(badge, userHandle) {
+        $.ajax({
+            url: api.data+'/badge',
+            method: 'POST',
+            data: { 'badge': badge, 'user': userHandle},
+            dataType: 'json',
+            success: function(data) {
+                $.bootstrapGrowl('Badge '+badge+' added. Reload page to update list.', {type: 'success'});
+            },
+            error: function(data) { 
+                $.bootstrapGrowl('Failed to add badge '+badge+'.', {type: 'error'});
+            },
+            headers: {'Authorization': 'Bearer '+token},
+        }); 
+    }
+    
+    function removeBadge(badge, userHandle) {
+        $.ajax({
+            url: api.data+'/badge',
+            method: 'DELETE',
+            data: { 'badge': badge, 'user': userHandle},
+            dataType: 'json',
+            success: function(data) {
+                $.bootstrapGrowl('Badge '+badge+' removed. Reload page to update list.', {type: 'success'});
+            },
+            error: function(data) { 
+                $.bootstrapGrowl('Failed to remove badge '+badge+'.', {type: 'error'});
+            },
+            headers: {'Authorization': 'Bearer '+token},
+        }); 
+    }
+
+
+    function saveUserLocally(data) {
+        window.localStorage.setItem("fsu", JSON.stringify({ 'id': data.account.id, 'email': data.account.email, 'user': data.account.username }));
+    }
+
+    function renderUserList() {
+        $.ajax({
+            url: api.data+'/users',
+            method: 'GET',
+            dataType: 'json',
+            success: function(userlist) {
+                $.each(userlist.users, function(index, user){
+                    var userdiv = $('#userdiv').clone();
+                    userdiv.attr('id', 'user-'+user.userhandle);
+                    $('#userlist').append(userdiv);
+                    $('#user-'+user.userhandle).removeClass('hidden');
+                    $('#user-'+user.userhandle+' img.avatar').attr('src', api.data+user.picture);
+                    $('#user-'+user.userhandle+' a.profile-link').html(user.username).attr('href','/users/'+user.userhandle);
+                    $('#user-'+user.userhandle+' span.timeago').attr('datetime', user.created+' UTC');
+                    timeago().render($('.timeago'));
+                    $.each(user.badges, function(name, val){
+                        $('#user-'+user.userhandle+' div.badges').append('<a href="/docs/site/badges#'+name+'"><img src="/img/badges/badge-'+name+'.svg" class="badge-mini hover-shadow" style="margin: 5px; display: inline-block;"></a>');
+                    });
+                });
+            },
+            error: function(data) { 
+                $('#modal-main').load("/components/generic/error");
+            },
+            headers: {'Authorization': 'Bearer '+token},
+        }); 
+    }
 
     $(document).ready(function () {
        
+            // Make sure local storage has the goods
+            if(window.localStorage.getItem("fsu") === null) {
+                loadAccount(saveUserLocally);
+            }
+
         // Show draft ///////////////////////
         if(page.substr(0,8) === '/drafts/' && page.split('/').length == 3) {
             var draft;
@@ -1470,12 +1721,6 @@
             });
         }    
         else { // Start of logged-in only block
-
-            // Reroute if not logged in
-            if(window.localStorage.getItem("fsu") === null) {
-                // eff this, you need to be logged in
-                window.location.replace("/login-required");
-            } 
 
             // Account page ////////////////
             if(page === '/account') {
@@ -1595,6 +1840,71 @@
                     });
                 });
             }
+            // User profile page ////////////////
+            else if(page.substring(0,7) === '/users/' && page.split('/').length == 3) {
+                // Rewritten URL, need to get the user handle from it
+                var userHandle = page.split('/')[2];
+                var badges;
+                loadProfile(userHandle, function(data){
+                    $('h1').html(data.profile.username);
+                    $('title').append(': '+data.profile.username);
+                    $('ul.breadcrumbs li:last-child').html(data.profile.username);
+                    $('#avatar').attr('src', api.data+data.profile.pictureSrc);
+                    $('span.username').html(data.profile.username);
+                    $.each(data.badges, function(name, val){
+                        $('#badges').append('<a href="/docs/site/badges#'+name+'"><img src="/img/badges/badge-'+name+'.svg" class="badge-img drop-shadow" style="margin: 5px;"></a>');
+                    });
+                    loadRole(function(role){
+                        if(role.role == 'admin') {
+                            var html = '<div id="badge-admin"><h2>Manage badges</h2>';
+                            html += '<div class="row">';
+                            html += '<div class="col-md-6">';
+                            html += '<h3>Add badges</h3>';
+                            html += '<div id="missing-badges"></div>';
+                            html += '</div>';
+                            html += '<div class="col-md-6">';
+                            html += '<h3>Remove badges</h3>';
+                            html += '<div id="current-badges"></div>';
+                            html += '</div>';
+                            html += '</div>';
+                            $('#user-container').append(html);
+                            if(data.badges != null) {
+                            $.each(data.badges, function(name, val){
+                                 $('#current-badges').append('<a href="#" class="remove-badge" data-badge="'+name+'"><img src="/img/badges/badge-'+name+'.svg" class="badge-img drop-shadow" style="margin: 5px; width: 50px; height: 50px;"></a>');
+                            });
+                            }
+                            $.get('/json/badges.json', function( allBadges ) {
+                                $.each(allBadges, function(name, desc){
+                                    if(data.badges == null || typeof data.badges[name] == 'undefined') {
+                                        $('#missing-badges').append('<a href="#" class="add-badge" data-badge="'+name+'"><img src="/img/badges/badge-'+name+'.svg" class="badge-img drop-shadow" style="margin: 5px; width: 50px; height: 50px;"></a>');
+                                    }
+                                });
+                            });
+                            // Bind click handler to add badges
+                            $('#missing-badges').on('click','a.add-badge', function(e) {
+                                var badge = e.currentTarget.attributes.getNamedItem('data-badge').value;
+                                addBadge(badge, userHandle);
+                            });
+                            // Bind click handler to remove badges
+                            $('#current-badges').on('click','a.remove-badge', function(e) {
+                                var badge = e.currentTarget.attributes.getNamedItem('data-badge').value;
+                                removeBadge(badge, userHandle);
+                            });
+                        }
+                    });
+                });
+
+            }
+            // Own profile page ////////////////
+            else if(page.substring(0,8) === '/profile') {
+                loadAccount(function(data){
+                    window.location.replace("/users/"+data.account.handle);
+                });
+            }
+            // User list page ////////////////
+            else if(page === '/users') {
+                renderUserList();
+            }
             // New draft, step 1 ////////////////
             else if(page === '/draft' || page === '/draft/') {
                 var patterns;
@@ -1660,6 +1970,7 @@
                 var patternHandle = page.split('/')[2];
                 var modelHandle = page.split('/')[4];
                 var account;
+                var fork = true;
                 loadAccount(function(data){
                     account = data;
                     $('#step1-link').html('Drafting '+patternHandle);
@@ -1679,7 +1990,7 @@
                         account = data;
                         $('#step2-link').html('For '+account.models[modelHandle].name).attr('href','/fork/'+draftHandle);
                         $.get('/json/freesewing.json', function( fsdata ) {
-                            renderDraftForm(account,fsdata.mapping.patternToHandle[draft.pattern], modelHandle, draft.data);
+                            renderDraftForm(account,fsdata.mapping.patternToHandle[draft.pattern], modelHandle, draft.data.options);
                         });
                     });
                 });
