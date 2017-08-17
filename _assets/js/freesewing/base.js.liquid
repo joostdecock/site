@@ -330,7 +330,9 @@ function saveComment() {
                 $.bootstrapGrowl("Comment saved, thanks for your input.", {type: 'success'});
                 loadComments(); 
             }, 
-            error: function(data) { /*FIXME */ },
+            error: function(data) { 
+                $.bootstrapGrowl("Something went wrong. Please report this.", {type: 'error'});
+            },
             headers: {'Authorization': 'Bearer ' + token},
         });
     }
@@ -361,7 +363,9 @@ function removeComment(id) {
             $.bootstrapGrowl("Comment removed.", {type: 'success'});
             loadComments(); 
         }, 
-        error: function(data) { /*FIXME */ },
+        error: function(data) { 
+            $.bootstrapGrowl("Something went wrong. Please report this.", {type: 'error'});
+        },
         headers: {'Authorization': 'Bearer ' + token},
     });
 }

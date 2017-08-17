@@ -186,6 +186,19 @@ mimic the behavior of.
 
 Returns an `string`.
 
+### getApiDir
+
+```php?start_inline=1
+string getApiDir()
+```
+
+Returns the directory in which freesewing was installed.
+
+#### Typical use
+{:.no_toc}
+
+Used by the [`InfoService`](../services/infoservice) to discover available patterns, themes, and channels.
+
 ### getClassDir
 
 ```php?start_inline=1

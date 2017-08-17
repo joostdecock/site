@@ -195,7 +195,7 @@ info:
     author: "Joost De Cock"
     email: "joost@decock.org"
     company: "freesewing.org"
-    link: "freesewing.org/fixme"
+    link: "freesewing.org/patterns/example"
 parts:
     frontBlock: "Front block"
     backBlock: "Back block"
