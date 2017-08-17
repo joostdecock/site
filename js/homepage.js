@@ -1,6 +1,13 @@
 (function ($) {
     $(document).ready(function () {
 
+        $.get(api.data+'/comments/recent/5', function( comments ) {
+            console.log(comments);
+            Object.keys(comments.comments).sort().reverse().forEach(function(key) {
+                renderComment(comments.comments[key]);
+            });
+        });
+
         $('#landing').on('submit','#signup-landing', function(e) {
             e.preventDefault();
             // Show loader
@@ -20,5 +27,25 @@
                 }
             }, 'json');
         });
+
+        function renderComment(comment) {
+                var markup = '<div class="mb-1 comment '+comment.status+'">';
+                markup += '<div class="meta">';
+                var t = comment.time.split(/[- :]/);
+                markup += '<small><a href="'+comment.page+'#comment-'+comment.id+'" title="Permalink to this comment">';
+                markup += timeago().format(new Date(Date.UTC(t[0], t[1]-1, t[2], t[3], t[4], t[5])));
+                markup += '</a> by <a href="/users/'+comment.userhandle+'" title="Visit the profile page of this user">'+comment.username+'</a></small>';
+                markup += '</div>';
+                markup += '<div class="comment-text '+comment.status+'">';
+                if (comment.status == 'removed') markup += '<i class="fa fa-trash" aria-hidden="true"></i> <em>This comment was removed by its author.</em>';
+                else if (comment.status == 'restricted') markup += '<i class="fa fa-ban" aria-hidden="true"></i> <em>his comment was removed by a moderator.</em>';
+                else {
+                    markup += marked(comment.comment);
+                }
+                markup += '</div>';
+                markup += '</div>';
+                $('#recent-comments').append(markup);
+        } 
+
     });
 }(jQuery));

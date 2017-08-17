@@ -5,48 +5,85 @@ action: homepage
 permalink: /
 nocomments: true
 ---
-<div class="cover-wrap landing visitor-only">
-<div id="landing">
-    <h4>We draft sewing patterns</h4>
-    <p class="lead" >Made-to-measure patterns. For you. For free.</p>
-        <form id="signup-landing" class="m600 mt-4">
-            <div class="row">
-                <div class="col-sm-4">
-                    <label class="sr-only" for="signup-email">Email address</label>
-                    <input class="form-control mb-2" id="signup-email" name="signup-email" placeholder="Your email address" required="" type="email">
-                </div>
-                <div class="col-sm-4">
-                    <label class="sr-only" for="signup-password">Email address</label>
-                    <input class="form-control mb-2" id="signup-password" name="signup-password" placeholder="Pick a password" required="" type="password">
-                </div>
-                <div class="col-sm-4">
-                    <button id="signup-submit" type="submit" class="btn btn-outline-white form-control">Sign up to try it</button>
+<div class="container">
+    <div class="row" style="margin-top: 8rem; margin-bottom: 8rem;">
+        <div class="col-lg-4 col-sm-6 mt-5">
+            <div class="card text-center drop-shadow py-3">
+                <i class="fa fa-cut fa-5x" aria-hidden="true" style="color: #ff5b77;"></i>
+                <div class="card-block">
+                    <h4 class="card-title">Made-to-measure sewing patterns, drafted on the fly</h4>
+                    <p>Enter your measurements, pick your options. Your pattern is ready in seconds</p>
+                    <p><a href="/about#what" class="btn btn-outline-primary">What is this thing?</a></p>
                 </div>
             </div>
-        </form>
-        <p class="mt-4">Not convinced? <a href="/drafts/rhtum">Browse a sample draft</a>, or <a href="/about/">read our origin story</a>.</p>
+        </div>
+        <div class="col-lg-4 col-sm-6 mt-5">
+            <div class="card text-center drop-shadow py-3">
+                <i class="fa fa-cc-paypal fa-5x" aria-hidden="true" style="color: #009cde;"></i>
+                <div class="card-block">
+                    <h4 class="card-title">Free as in beer &ndash; or as in free sewing patterns</h4>
+                    <p>You don't have to pay for anything, but I do accept donations &ndash; it's your call</p>
+                    <p><a href="/about#money" class="btn btn-outline-primary">How do you make money?</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mt-5">
+            <div class="card text-center drop-shadow py-3">
+                <i class="fa fa-code fa-5x" aria-hidden="true" style="color: #188f93"></i>
+                <div class="card-block">
+                    <h4 class="card-title">Free as in speech &ndash; or as in open source software</h4>
+                    <p>All code that makes this happen is free software, available on GitHub</p>
+                    <p><a href="/about#code" class="btn btn-outline-primary">Can I see how you did it?</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="cover-bottom">
-    <p id="raquo">&raquo;</p>
-</div>
-</div>
+
+<section class="cover-band bg-thematic mt-5 mb-5 visitor-only" style="background: #663f95;">
+    <div class="cover-body mt-5 mb-5" style="background: transparent">
+        <div id="landing">
+            <h1 class="jumbotron-heading">Sign up for free patterns</h1>
+            <form id="signup-landing" class="m600 mt-4">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label class="sr-only" for="signup-email">Email address</label>
+                        <input class="form-control mb-2" id="signup-email" name="signup-email" placeholder="Your email address" required="" type="email">
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="sr-only" for="signup-password">Email address</label>
+                        <input class="form-control mb-2" id="signup-password" name="signup-password" placeholder="Pick a password" required="" type="password">
+                    </div>
+                    <div class="col-sm-4">
+                        <button id="signup-submit" type="submit" class="btn btn-outline-white form-control">Sign up</button>
+                    </div>
+                </div>
+            </form>
+            <p class="mt-4 lead">Not convinced? <a href="/drafts/sampl">Browse a sample draft</a>, or <a href="/about/">check the about page</a>.</p>
+        </div>
+  </div>
+</section>
+
+<section class="cover-band bg-thematic mt-5 mb-5 visitor-hidden" style="background: #663f95;">
+    <div class="mt-5 mb-5 text-center px-3">
+        <h1 class="jumbotron-heading">Care to share?</h1>
+        <p class="mt-3 lead">
+            I am terrible at marketing. Would you help me out?<br>
+            If you like this site, please tell your followers about it:
+        </p>
+        <p class="text-center social-icons" style="font-size: 3rem;">
+            <a class="noline" href="https://twitter.com/intent/tweet?text=This is cool! An open source platform for made-to-measure sewing patterns: https://freesewing.org/ Great work from @freesewing_org&amp;related=freesewing_org" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a class="noline" href="https://facebook.com/sharer.php?u=https://freesewing.org/" rel="nofollow" target="_blank" title="Share on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a class="noline" href="http://pinterest.com/pin/create/button/?url=https://freesewing.org/&amp;description=An open source platform for made-to-measure sewing patterns" rel="nofollow" target="_blank" title="Share on Pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+            <a class="noline" href="http://www.tumblr.com/share/link?url=https://freesewing.org/&amp;name=freesewing.org&amp;description=An open source platform for made-to-measure sewing patterns" rel="nofollow" target="_blank" title="Share on Tumblr"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+            <a class="noline" href="http://www.reddit.com/submit?url=https://freesewing.org/&amp;title=Freesewing is an open source platform for made-to-measure sewing patterns" rel="nofollow" target="_blank" title="Share on Reddit"><i class="fa fa-reddit" aria-hidden="true"></i></a>
+            <a class="noline" href="https://plus.google.com/share?url=https://freesewing.org/" rel="nofollow" target="_blank" title="Share on Google+"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+        </p>
+    </div>
+</section>
 
 <div class="container">
-<blockquote class="comment" markdown="1">
-##### Welcome to Freesewing early access
-The goal of this early access site is to gather feedback on useability, and uncover any lingering bugs.
-
-If you hit a snag, please report it, in one of the following ways (ordered by preference):
-
- - [Create an issue on GitHub](https://github.com/freesewing/site/issues/new)
- - Leave a comment, for example on [the issues page](/issues)
- - Chat in <a href="https://gitter.im/freesewing/freesewing">the freesewing room on Gitter</a>
- - Tweet at <a href="https://twitter.com/freesewing_org">@freesewing_org</a> or <a href="https://twitter.com/j__st">@j__st</a>
- - Email me: [joost@decock.org](mailto:joost@decock.org)
-
-</blockquote>
-
-    <h3><a href="/blog/" title="Blog">Blog</a></h3>
+    <h4>Lastest blog posts</h4>
     <div class="row">
         <div class="col-md-6 mb-3 mt-1">
             {% for post in site.posts limit:1 %}
@@ -97,9 +134,9 @@ If you hit a snag, please report it, in one of the following ways (ordered by pr
             {% endfor %}
     </div> <!-- .row -->
     <p><i class="fa fa-arrow-right" aria-hidden="true"></i> <a href="/blog" class="mt-3">More blog posts</a></p>
-    <h3><a href="/patterns/">Patterns</a></h3>
     <div class="row">
-        <div class="col-md-6 mb-3 mt-1">
+        <div class="col-md-4">
+            <h4>Latest pattern</h4>
             <div class="card hover-shadow">
                 <a href="/patterns/sven" title="The Sven pattern">
                     <img 
@@ -118,79 +155,54 @@ If you hit a snag, please report it, in one of the following ways (ordered by pr
                     <p class="card-text">Sven is a basic sweater with ribbing at the cuffs and neck opening</p>
                 </div>
             </div>
+            <p class="mt-3"><i class="fa fa-arrow-right" aria-hidden="true"></i> <a href="/patterns/" class="mt-3">More patterns</a></p>
         </div>
-        <div class="col-md-3 mb-3 mt-1">
-            <div class="card hover-shadow">
-               <a href="/patterns/simon" title="The Simon pattern">
-                    <img 
-                        src="/img/patterns/simon/lqip_sample.jpg" 
-                        data-sizes="auto"
-                        data-srcset="
-                            /img/patterns/simon/lqip_sample.jpg 25w,
-                            /img/patterns/simon/low_sample.jpg 500w,
-                            /img/patterns/simon/med_sample.jpg 1000w,
-                            /img/patterns/simon/high_sample.jpg 2000w"
-                        alt="The Simon pattern" 
-                        class="rounded-top lazyload"
-                    >
-                </a>
-                <div class="card-block">
-                    <h4 class="card-title"><a href="/patterns/simon" title="Simon">Simon<span class="block-link"></span></a></h4>
-                    <p class="card-text">This is my bid to create the last shirt pattern you'll even need</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 mb-3 mt-1">
-            <div class="card hover-shadow">
-               <a href="/patterns/bruce" title="The Bruce pattern">
-                    <img 
-                        src="/img/patterns/bruce/lqip_sample.jpg" 
-                        data-sizes="auto"
-                        data-srcset="
-                            /img/patterns/bruce/lqip_sample.jpg 25w,
-                            /img/patterns/bruce/low_sample.jpg 500w,
-                            /img/patterns/bruce/med_sample.jpg 1000w,
-                            /img/patterns/bruce/high_sample.jpg 2000w"
-                        alt="The Simon pattern" 
-                        class="rounded-top lazyload"
-                    >
-                </a>
-                <div class="card-block">
-                    <h4 class="card-title"><a href="/patterns/bruce" title="Bruce">Bruce<span class="block-link"></span></a></h4>
-                    <p class="card-text">These boxer briefs combine stylish comfort with the support you deserve</p>
-                </div>
-            </div>
-        </div>
-    </div> <!-- .row -->
-    <p><i class="fa fa-arrow-right" aria-hidden="true"></i> <a href="/patterns" class="mt-3">More patterns</a></p>
-    <h3><a href="/showcase/" title="Showcase">Showcase</a></h3>
-    <div class="row">
-        <div class="col">
-            <div class="card-columns blog">
-                {% assign sorted = site.showcases | sort:"date" | reverse %}
-                {% for post in sorted limit:10 %}
-                    <div class="card hover-shadow mb-3 w-100">
-                        <a href="{{ post.url }}" title="{{ post.title | escape}}">
-                            <img 
-                                src="/img{{ post.url }}lqip_{{ post.img }}" 
-                                data-sizes="auto"
-                                data-srcset="
-                                    /img{{ post.url }}lqip_{{ post.img }} 25w,
-                                    /img{{ post.url }}low_{{ post.img }} 500w,
-                                    /img{{ post.url }}med_{{ post.img }} 1000w,
-                                    /img{{ post.url }}high_{{ post.img }} 2000w"
-                                alt="{{ post.caption }}" 
-                                class="card-img-top lazyload"
-                            >
-                        </a>
-                        <footer class="rounded-bottom">
-                            <a href="/showcase/pattern/{{ post.categories }}" title="Browse other showcases of this pattern">{{ post.categories }}</a> by 
-                            <a href="/showcase/maker/{{ post.author }}" title="Browse other showcases by this maker">{{ post.author }}</a>
-                        </footer>
+        <div class="col-md-4">
+            <h4>Latest showcase</h4>
+            {% assign sorted = site.showcases | sort:"date" | reverse %}
+            {% for post in sorted limit:1 %}
+                <div class="card hover-shadow w-100">
+                    <a href="{{ post.url }}" title="{{ post.title | escape}}">
+                        <img 
+                            src="/img{{ post.url }}lqip_{{ post.img }}" 
+                            data-sizes="auto"
+                            data-srcset="
+                                /img{{ post.url }}lqip_{{ post.img }} 25w,
+                                /img{{ post.url }}low_{{ post.img }} 500w,
+                                /img{{ post.url }}med_{{ post.img }} 1000w,
+                                /img{{ post.url }}high_{{ post.img }} 2000w"
+                            alt="{{ post.caption }}" 
+                            class="card-img-top lazyload"
+                        >
+                    </a>
+                    <div class="card-block">
+                        <h4 class="card-title"><a href="{{ post.url }}" title="{{ post.title | escape}}">{{ post.categories }} by {{ post.author }}<span class="block-link"></span></a></h4>
+                        <p class="card-text">{{ post.title | escape}}</p>
                     </div>
-                {% endfor %}
-            </div>
+                </div>
+            {% endfor %}
+            <p class="mt-3"><i class="fa fa-arrow-right" aria-hidden="true"></i> <a href="/showcase/" class="mt-3">More showcases</a></p>
+        </div>
+        <div class="col-md-4">
+            <h4>Latest comments</h4>
+            <div id="recent-comments"></div>
         </div>
     </div>
-    <p><i class="fa fa-arrow-right" aria-hidden="true"></i> <a href="/showcase" class="mt-3">More showcases</a></p>
 </div> <!-- .container -->
+
+<section class="cover-band bg-thematic mt-5 mb-5">
+    <div class="mt-5 mb-5">
+        <div class="container">
+            <div class="row" style="background: RGBA(0,0,0,0.5); padding: 2rem;">
+                <div class="col-md-7 offset-md-1 text-left">
+                    <h1 class="jumbotron-heading">Vote with your money</h1>
+                    <p class="mt-3 lead">If you want to support my work, please make a donation</p> 
+                </div>
+                <div class="col-md-3 text-center mt-5">
+                    <a href="/donate" class="btn btn-outline-white btn-lg btn-block">Donate</a>
+                </div>
+            </div>
+        </div>
+  </div>
+</section>
+
