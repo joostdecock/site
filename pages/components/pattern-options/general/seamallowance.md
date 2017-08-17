@@ -1,5 +1,5 @@
 ---
-permalink: /components/pattern-options/general/presetsa
+permalink: /components/pattern-options/general/seamallowance
 ---
 
 Determines how much seam allowance to add to the pattern.

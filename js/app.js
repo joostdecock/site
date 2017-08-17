@@ -869,8 +869,8 @@
             else dflt_lang = 'en';
             if(defaults !== false && typeof defaults.parts !== 'undefined') dflt_scope = 'custom';
             else dflt_scope = 'all';
-            if(defaults !== false && typeof defaults.presetSa !== 'undefined') dflt_presetSa = defaults.presetSa;
-            else dflt_presetSa = account.account.data.account.units;
+            if(defaults !== false && typeof defaults.seamAllowance !== 'undefined') dflt_seamAllowance = defaults.seamAllowance;
+            else dflt_seamAllowance = account.account.data.account.units;
             if(defaults !== false && typeof defaults.customSa !== 'undefined') dflt_customSa = convertForkedDefault(defaults.customSa,account.account.data.account.units,defaults.userUnits);
             else {
                 if(account.account.data.account.units === 'imperial') dflt_customSa = 15.875;
@@ -886,9 +886,9 @@
             // Prepend theme/language
             var ordered = {
                 'general': {
-                    'presetSa': {
+                    'seamAllowance': {
                         'group': 'general',
-                        'default': dflt_presetSa,
+                        'default': dflt_seamAllowance,
                         'description': 'Should your draft include seam allowance?<br>If yes, then how much seam allowance would you like?',
                         'title': 'Seam allowance',
                         'type': 'chooseOne',
@@ -907,7 +907,7 @@
                         'type': 'measure',
                         'min': min_customSa,
                         'max': max_customSa,
-                        'dependsOn': 'presetSa',
+                        'dependsOn': 'seamAllowance',
                         'onlyOn': 'custom' 
                     },
                     'scope': {
@@ -1280,9 +1280,9 @@
             parts.push($(part).val());
         });
         if(parts.length > 0) $('#form').append('<input type="hidden" name="parts" value="'+parts+'">');
-        if($('input[name="presetSa"]:checked').val() == 'custom') $('#sa').val($('#customSa').val());
-        else if ($('input[name="presetSa"]:checked').val() == 'none') $('#sa').val(0);
-        else if ($('input[name="presetSa"]:checked').val() == 'imperial') {
+        if($('input[name="seamAllowance"]:checked').val() == 'custom') $('#sa').val($('#customSa').val());
+        else if ($('input[name="seamAllowance"]:checked').val() == 'none') $('#sa').val(0);
+        else if ($('input[name="seamAllowance"]:checked').val() == 'imperial') {
             if($('#userUnits').val() == 'imperial') $('#sa').val(0.625);
             else $('#sa').val(1.525);
         }
