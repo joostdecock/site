@@ -82,6 +82,7 @@ body.user.logged-out .logged-in-only,
 body.user.logged-out .visitor-only {
     display: none;
 }
+body.visitor .visitor-hidden,
 body.visitor .logged-in-only,
 body.visitor .logged-out-only {
     display: none;

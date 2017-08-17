@@ -137,8 +137,6 @@ This contributor documentation borrows heavily from
 [the Jekyll project](http://jekyllrb.com/docs/contributing/). Thanks guys.
 
 
-
-
 * TOC - Do not remove this line
 {:toc}
 
