@@ -25,9 +25,9 @@ When you need PI, you can use this.
 
 ## Public methods overview
 
-This [`Pattern`](pattern) class has 35 public methods, which is a lot.
+This [`Pattern`](pattern) class has a lot of public methods.
 
-To help you make sense of it all, we've grouped similar methods together. 
+To help you make sense of it all, I've grouped similar methods together. 
 In addition to grouping the methods, here are some general guidelines that will help you make sense of them all:
 
 ### Public methods patterns must implement
@@ -45,13 +45,16 @@ when creating your own pattern by extending this class:
 These are the methods a pattern designer should be familiar with:
 
 - [`Pattern::setOption`](pattern#setoption) : Set an option
+- [`Pattern::setOptionIfUnset`](pattern#setoptionifunset) : Set an option unless it's already set
 - [`Pattern::setValue`](pattern#setvalue) : Set a value
+- [`Pattern::setValueIfUnset`](pattern#setvalueifunset) : Set a value unless it's already set
 - [`Pattern::getOption`](pattern#getoption) : Returns a given option 
 - [`Pattern::o`](pattern#o) : Alias for [`Pattern::getOption`](pattern#getoption)
 - [`Pattern::getValue`](pattern#getvalue) : Returns a given value
 - [`Pattern::v`](pattern#v) : Alias for [`Pattern::getValue`](pattern#getvalue)
 - [`Pattern::t`](pattern#t) : Translate a string
 - [`Pattern::unit`](pattern#unit) : Format a measure according to units
+- [`Pattern::stretchToScale`](pattern#stretchToScale) : Take a stretch percentage and returns a scale percentage
 - [`Pattern::clonePoints`](pattern#clonepoints) : Clone points from one part into another
 - [`Pattern::newPart`](pattern#newpart) : Add a new part to the pattern
 - [`Pattern::msg`](pattern#msg) : Add a message to the pattern
@@ -166,10 +169,47 @@ void setOption(
 
 Sets the option `$name` to `$value` in the options property, which is an `array` of name/value pairs.
 
+> ##### Use [`pattern::setOptionIfUnset`](pattern#setoptionifunset) instead
+>
+> While you can use this method to set an option, it's typically better to use 
+> the [`pattern::setOptionIfUnset`](pattern#setoptionifunset) method instead.
+>
+> The reason is that (future) patterns may extend your pattern and choose to set options
+> to a different value. 
+>
+> This method will blindly override their choices (typically not a good thing)
+> whereas [`pattern::setOptionIfUnset`](pattern#setoptionifunset) will only set the option if 
+> it hasn't already been set (which is better).
+{:.tip}
+
 #### Typical use
 {:.no_toc}
 
 Used in patterns to set options that aren't depending on user input, and by the [`OptionsSampler`](../../src/optionssampler).
+
+#### Parameters
+{:.no_toc}
+
+- `string` `$name` : Name of the option to set
+- `mixed` `$value` : The value to set
+
+### setOptionIfUnset
+
+```php?start_inline=1
+void setOptionIfUnset(
+    string $name,
+    mixed $value
+)
+```
+
+Sets the option `$name` to `$value` in the options property 
+(which is an `array` of name/value pairs)
+, unless it already has an assigned value.
+
+#### Typical use
+{:.no_toc}
+
+Used in patterns to set options that aren't depending on user input.
 
 #### Parameters
 {:.no_toc}
@@ -188,6 +228,18 @@ void setValue(
 
 Sets the value `$name` to `$value` in the values property, which is an `array` of name/value pairs.
 
+> ##### Use [`pattern::setValueIfUnset`](pattern#setvalueifunset) instead
+>
+> While you can use this method to set a value, it's typically better to use 
+> the [`pattern::setValueIfUnset`](pattern#setvalueifunset) method instead.
+>
+> The reason is that (future) patterns may extend your pattern and choose to set different values.
+>
+> This method will blindly override their choices (typically not a good thing)
+> whereas [`pattern::setValueIfUnset`](pattern#setvalueifunset) will only set the value if 
+> it hasn't already been set (which is better).
+{:.tip}
+
 #### Typical use
 {:.no_toc}
 
@@ -198,6 +250,30 @@ Used in patterns to set values.
 
 - `string` `$name` : Name of the value to set
 - `mixed` `$value` : The value of the value to set
+
+### setValueIfUnset
+
+```php?start_inline=1
+void setValueIfUnset(
+    string $name,
+    mixed $value
+)
+```
+
+Sets the value `$name` to `$value` in the values property 
+(which is an `array` of name/value pairs)
+, unless it already has an assigned value.
+
+#### Typical use
+{:.no_toc}
+
+Used in patterns to set values.
+
+#### Parameters
+{:.no_toc}
+
+- `string` `$name` : Name of the value to set
+- `mixed` `$value` : The value to set
 
 ### getOption
 
@@ -351,6 +427,36 @@ Used in patterns to preformat text to go on the pattern.
 {:.no_toc}
 
 Returns a `string`.
+
+### stretchToScale
+
+```php?start_inline=1
+void stretchToScale(
+    float $stretch
+)
+```
+
+The way people measure stretch intuitively is different from the way I handle stretch in code.
+
+When people say _25% stretch_ they mean that 10cm fabric should get stretched to 12.5cm fabric.
+In code, that means a scale of 80% needs to be applied.
+
+This method does that calcuation, it's as simple as:
+
+```php?start_inline=true
+return ( 1 / ( 1 + $stretch ) );
+``` 
+
+
+#### Typical use
+{:.no_toc}
+
+Used in patterns that use negative ease, aka stretch.
+
+#### Parameters
+{:.no_toc}
+
+- `float` `$stretch` : The percentage of stretch as a number between 0 and 1.
 
 ### clonePoints
 
