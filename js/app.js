@@ -887,6 +887,7 @@
             var ordered = {
                 'general': {
                     'presetSa': {
+                        'group': 'general',
                         'default': dflt_presetSa,
                         'description': 'Should your draft include seam allowance?<br>If yes, then how much seam allowance would you like?',
                         'title': 'Seam allowance',
@@ -899,6 +900,7 @@
                         }
                     },
                     'customSa': {
+                        'group': 'general',
                         'default': dflt_customSa,
                         'description': 'Set your custom seam allowance.',
                         'title': 'Custom seam allowance',
@@ -909,6 +911,7 @@
                         'onlyOn': 'custom' 
                     },
                     'scope': {
+                        'group': 'general',
                         'default': dflt_scope,
                         'description': 'By default, we draft a full pattern with all parts. But you are the boss.',
                         'title': 'Scope',
@@ -919,6 +922,7 @@
                         }
                     },
                     'partlist': {
+                        'group': 'general',
                         'default': '',
                         'description': 'Select the parts you want included in your draft:',
                         'title': 'Pattern parts',
@@ -928,6 +932,7 @@
                         'onlyOn': 'custom' 
                     },
                     'theme': {
+                        'group': 'general',
                         'default': dflt_theme,
                         'description': 'Use the paperless theme when you want a pattern that does not require printing',
                         'title': 'Theme',
@@ -938,6 +943,7 @@
                         }
                     },
                     'lang': {
+                        'group': 'general',
                         'default': dflt_lang,
                         'description': 'This pattern is available in the following languages:',
                         'title': 'Language',
@@ -1005,7 +1011,7 @@
             // Bind click event to help buttons
             $('#accordion').on('click', 'a.option-help', function(e) {
                 e.preventDefault();
-                modalHelp(patternhandle, $(this).attr('data-option'));
+                modalHelp(patternhandle, $(this).attr('data-option'), $(this).attr('data-group'));
             });
             // Bind submit handler to quick submit link
             $('#picklist').on('click','#submit-link', function(e) {
@@ -1038,12 +1044,14 @@
         });
     }
 
-    function modalHelp(pattern, option) {
+    function modalHelp(pattern, option, group) {
         $('#modal').removeClass().addClass('shown light');
         $('#modal-main').html('<img src="/img/logo/spinner.svg" alt="Loading...">');
+        if(group == 'general') var url = '/components/pattern-options/general/'+option.toLowerCase();
+        else var url = '/components/pattern-options/'+pattern.toLowerCase()+'/'+option.toLowerCase();
         $.ajax({
             // Fetching documentation for this option
-            url: '/components/pattern-options/'+pattern.toLowerCase()+'/'+option.toLowerCase(),
+            url: url,
             method: 'GET',
             dataType: 'html',
             success: function(data) {
@@ -1152,7 +1160,7 @@
                 }
                 var html = '<div class="form-group" id="option-wrapper-'+name+'">';
                 html += '<label for="'+name+'">';
-                html += '<a href="#" id="'+name+'-help" class="mt-4 btn btn-outline-primary btn-sm option-help" style="float: right;" data-option="'+name+'">Help</a>';
+                html += '<a href="#" id="'+name+'-help" class="mt-4 btn btn-outline-primary btn-sm option-help" style="float: right;" data-option="'+name+'" data-group="'+option.group+'">Help</a>';
                 html += '<a href="#" id="'+name+'-default" class="mt-4 btn btn-outline-primary btn-sm mr-2 disabled btn-outline-info invisible option-reset" style="float: right;" data-option="'+name+'" data-default="'+defaultValue+'" data-type="slider">Reset</a>';
                 html += '<h5 class="mt-3">'+option.title+': <span class="value-'+units+'" id="'+name+'-value">';
                 if(units === 'imperial') html += inchesAsFraction(defaultValue)
@@ -1173,7 +1181,7 @@
                 if(typeof option.max === "undefined") option.max = 100;
                 var html = '<div class="form-group" id="option-wrapper-'+name+'">';
                 html += '<label for="'+name+'">';
-                html += '<a href="#" id="'+name+'-help" class="mt-4 btn btn-outline-primary btn-sm option-help" style="float: right;" data-option="'+name+'">Help</a>';
+                html += '<a href="#" id="'+name+'-help" class="mt-4 btn btn-outline-primary btn-sm option-help" style="float: right;" data-option="'+name+'" data-group="'+option.group+'">Help</a>';
                 html += '<a href="#" id="'+name+'-default" class="mt-4 btn btn-outline-primary btn-sm mr-2 disabled btn-outline-info invisible option-reset" style="float: right;" data-option="'+name+'" data-default="'+option.default+'" data-type="slider">Reset</a>';
                 html += '<h5 class="mt-3">'+option.title+': <span class="value-percent" id="'+name+'-value">'+option.default+'</span></h5> '+option.description+'</label>';
                 html += '<div class="input-group">';
@@ -1188,7 +1196,7 @@
             case 'angle':
                 var html = '<div class="form-group" id="option-wrapper-'+name+'">';
                 html += '<label for="'+name+'">';
-                html += '<a href="#" id="'+name+'-help" class="mt-4 btn btn-outline-primary btn-sm option-help" style="float: right;" data-option="'+name+'">Help</a>';
+                html += '<a href="#" id="'+name+'-help" class="mt-4 btn btn-outline-primary btn-sm option-help" style="float: right;" data-option="'+name+'" data-group="'+option.group+'">Help</a>';
                 html += '<a href="#" id="'+name+'-default" class="mt-4 btn btn-outline-primary btn-sm mr-2 disabled btn-outline-info invisible option-reset" style="float: right;" data-option="'+name+'" data-default="'+option.default+'" data-type="slider">Reset</a>';
                 html += '<h5 class="mt-3">'+option.title+': <span class="value-angle" id="'+name+'-value">'+option.default+'</span></h5> '+option.description+'</label>';
                 html += '<div class="input-group">';
@@ -1203,7 +1211,7 @@
             case 'chooseOne':
                 var html = '<fieldset class="form-group" id="option-wrapper-'+name+'">';
                 html += '<legend>';
-                html += '<a href="#" id="'+name+'-help" class="mt-4 btn btn-outline-primary btn-sm option-help" style="float: right;" data-option="'+name+'">Help</a>';
+                html += '<a href="#" id="'+name+'-help" class="mt-4 btn btn-outline-primary btn-sm option-help" style="float: right;" data-option="'+name+'" data-group="'+option.group+'">Help</a>';
                 html += '<a href="#" id="'+name+'-default" class="mt-4 btn btn-outline-primary btn-sm mr-2 disabled btn-outline-info invisible option-reset" style="float: right;" data-option="'+name+'" data-default="'+option.default+'"  data-type="radio">Reset</a>';
                 html += '<h5 class="mt-3">'+option.title+': <span id="'+name+'-value">'+option.options[option.default]+'</span></h5> '+option.description;
                 html += '</legend>';
