@@ -1,0 +1,16 @@
+<figure class="image">
+    <a href="{{ site.api.core }}/?service=draft&pattern=NotationLegend&cache={{ site.build }}&{{ include.params }}" target="_BLANK">
+        <img 
+            class="img img-responsive drop-shadow" 
+            src="{{ site.api.core }}/?service=draft&pattern=NotationLegend&cache={{ site.build }}&{{ include.params }}" 
+            {% if(include.description) %}
+                alt="{{ include.description }}"
+            {% else %}
+                alt=" "
+            {% endif %}
+        >
+    </a>
+    {% if(include.description) %}
+        <figcaption>{{ include.description }}</figcaption>
+    {% endif %}
+</figure>
