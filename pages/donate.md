@@ -94,12 +94,22 @@ crumbs: false
         </div>
     </div> <!-- .row -->
 </div>
+
+<section class="cover-band bg-thematic mt-5 mb-5" style="background: transparent radial-gradient(#2f0f56, #603693, #0a0115) repeat scroll 0% 0%;">
+  <div class="cover-body">
+    <h1 class="jumbotron-heading">Where does the money go?</h1>
+    <p class="lead">
+    When you buy me coffee, I don't actually use it for coffee. Read <a href="/about/pledge">the donations pledge</a> to understand why.
+    </p>
+  </div>
+</section>
+
+
 <div class="container">
 <div class="row">
 <div class="col-lg-8 offset-lg-2 col-md-12 fade-oc" markdown="1">
 
-
-> ## Be smart, skip the fees
+> ##### Be smart, skip the fees
 > 
 > PayPal charges a fee. If you live in the [SEPA](https://en.wikipedia.org/wiki/Single_Euro_Payments_Area)
 > , you can transfer funds without fees via bank transfer.
