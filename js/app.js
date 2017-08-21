@@ -1494,7 +1494,7 @@
                     else if(fsdata.patterns[draft.pattern].options[option].type == 'angle') var optionValue = draft.data.options[option]+'&deg;';
                     else if(fsdata.patterns[draft.pattern].options[option].type == 'chooseOne') var optionValue = fsdata.patterns[draft.pattern].options[option].options[draft.data.options[option]];
                     else {
-                        if(draft.model.units == 'imperial') var optionValue = inchesAsFraction(draft.data.options[option]);
+                        if(draft.data.options.userUnits == 'imperial') var optionValue = inchesAsFraction(draft.data.options[option]);
                         else var optionValue = draft.data.options[option]+'cm';
                     }
                     $('#options-table').append('<tr><td>'+fsdata.patterns[draft.pattern].options[option].title+'</td><td>'+optionValue+'</td></tr>');
