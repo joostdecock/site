@@ -186,7 +186,7 @@ nocomments: true
                     {% include card.html 
                         title='API cheat sheet'
                         text='Never guess how to call a method again, thanks to this handy cheat sheet to the core API.'
-                        link='/pdf/static/cheatsheet.pdf'
+                        link='/pdf/cheatsheet.pdf'
                     %}
                 </div>
             </div>

@@ -32,7 +32,7 @@ nocomments: true
                 title='Designer cheat sheet'
                 text="With out designer cheat sheet, you'll never wonder how to call a method again."
                 img='/img/cheatsheet.jpg'
-                link='/pdf/static/cheatsheet.pdf'
+                link='/pdf/cheatsheet.pdf'
                 link-text='Dowload the cheat sheet'
             %}
         </div>
