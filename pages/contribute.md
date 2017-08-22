@@ -112,7 +112,7 @@ Interesting in submitting a pull request for our code? Awesome. Read on for a fe
 Freesewing [core](https://github.com/freesewing/core) (and [data](https://github.com/freesewing/core) for that matter) uses the [PSR-2 coding standard](http://www.php-fig.org/psr/psr-2/), 
 and the [PSR-4 autoloader](http://www.php-fig.org/psr/psr-4/). 
 
-Please make sure to respect both the coding standard and the naming conventions of the autoloader. More details on the [naming conventions](/docs/naming-conventions) page.
+Please make sure to respect both the coding standard and the naming conventions of the autoloader. 
 
 ### PHP 5.6 compatibility
 
@@ -135,8 +135,6 @@ the impact. Preferably, your pull request will contain new/updated unit tests to
 
 This contributor documentation borrows heavily from 
 [the Jekyll project](http://jekyllrb.com/docs/contributing/). Thanks guys.
-
-
 
 
 * TOC - Do not remove this line

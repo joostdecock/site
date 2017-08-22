@@ -1,77 +1,9 @@
 ---
-layout: cards
+layout: page
 title: About freesewing
 tags: [fundamentals]
 permalink: /about/
 ---
-<div class="container">
-    <div class="row">
-        <div class="col-lg-4 col-sm-6 mt-5">
-            <div class="card text-center drop-shadow py-3">
-                <i class="fa fa-cut fa-5x" aria-hidden="true" style="color: #ff5b77;"></i>
-                <div class="card-block">
-                    <h4 class="card-title">Made-to-measure sewing patterns, drafted on the fly</h4>
-                    <p>Enter your measurements, pick your options. Your pattern is ready in seconds</p>
-                    <p><a href="#what" class="btn btn-outline-black">What is this thing?</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 mt-5">
-            <div class="card text-center drop-shadow py-3">
-                <i class="fa fa-cc-paypal fa-5x" aria-hidden="true" style="color: #009cde;"></i>
-                <div class="card-block">
-                    <h4 class="card-title">Free as in beer &ndash; or as in free sewing patterns</h4>
-                    <p>You don't have to pay for anything, but I do accept donations &ndash; it's your call</p>
-                    <p><a href="#money" class="btn btn-outline-black">How do you make money?</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 mt-5">
-            <div class="card text-center drop-shadow py-3">
-                <i class="fa fa-code fa-5x" aria-hidden="true" style="color: #188f93"></i>
-                <div class="card-block">
-                    <h4 class="card-title">Free as in speech &ndash; or as in open source software</h4>
-                    <p>All code that makes this happen is free software, available on GitHub</p>
-                    <p><a href="#code" class="btn btn-outline-black">Can I see how you did it?</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 mt-5">
-            <div class="card text-center drop-shadow py-3">
-                <i class="fa fa-user fa-5x" aria-hidden="true" style="color: #86739c;"></i>
-                <div class="card-block">
-                    <h4 class="card-title">Added value for makers, designers, and developers</h4>
-                    <p>There's something here for all of you, regardless of what hat you wear</p>
-                    <p><a href="#me" class="btn btn-outline-black">What's in it for me?</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 mt-5">
-            <div class="card text-center drop-shadow py-3">
-                <i class="fa fa-history fa-5x" aria-hidden="true" style="color: #5c3566;"></i>
-                <div class="card-block">
-                    <h4 class="card-title">The freesewing (and makemypattern) origin story</h4>
-                    <p>If you (still) can't figure out what the heck is going on here, this might help</p>
-                    <p><a href="#origin" class="btn btn-outline-black">How did we get here?</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 mt-5">
-            <div class="card text-center drop-shadow py-3">
-                <i class="fa fa-code-fork fa-5x" aria-hidden="true"></i>
-                <div class="card-block">
-                    <h4 class="card-title">Open to your contributions, big and small</h4>
-                    <p>I welcome all contributions, and you have more to offer than your realize</p>
-                    <p><a href="#contribute" class="btn btn-outline-black">How can I contribute?</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-<div class="row mt-5">
-<div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 ">
-<div class="paper drop-shadow mb-5" markdown="1">
-
 ## What is this thing? {#what}
 This website generates sewing patterns based on your measurements.
 To do so, you enter your measurements, pick your options, and your sewing pattern is drafted for you on the fly.
@@ -83,8 +15,6 @@ or how many models you can have. You do you.
 
 Basically, as far as websites for sewing patterns go, this is as good as it gets.
 
-</div>
-<div class="paper drop-shadow mb-5" markdown="1">
 ## How do you make money? {#money}
 
 I have a job. It is not very exciting --- and has nothing to do with sewing patterns --- but it pays the bills.
@@ -94,8 +24,6 @@ Rather than pursuing those interests individually, I've fused them together in w
 
 This is not a business and is not about making money. Freesewing is a labour of love.
 
-</div>
-<div class="paper drop-shadow mb-5" markdown="1">
 ## Can I see how you did it? {#code}
 
 You can. All code is available [on GitHub](https://github.com/freesewing/) or check the
@@ -126,8 +54,6 @@ all the documentation, and everything you see on this website.
 The **data** API stores all user data (account info, model data, comments and so on)
 and sits between this website and the core platform.
 
-</div>
-<div class="paper drop-shadow mb-5" markdown="1">
 
 ## What can freesewing do for me? {#me}
 
@@ -161,10 +87,6 @@ All our code is open source, and you can fork it [on GitHub](https://github.com/
 
 We have documentation to help you use our code in your own projects. 
 And our info service makes integration with your front-end child's play.
-
-</div>
-<div class="paper drop-shadow mb-5" markdown="1">
-
 
 ## The freesewing origin story {#origin}
 
@@ -204,8 +126,6 @@ But additionally, it will be open to your contributions.
 Here's hoping that in the Venn diagram of the somewhat geeky and sewing, 
 it's not just me in the middle.
 
-</div>
-<div class="paper drop-shadow mb-5" markdown="1">
 ## How can I contribute to freesewing? {#contribute}
 
 I welcome all contributions, and you have more to offer than your realize.
@@ -214,9 +134,6 @@ For all details, please refer to the [contributors documentation](/contribute).
 
 Or you can vote with your money and [make a donation](/donate).
 
-</div>
-</div>
-
-</div>
-</div>
+* TOC - Do not remove this line
+{:toc}
 

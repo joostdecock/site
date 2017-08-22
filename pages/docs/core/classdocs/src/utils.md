@@ -186,6 +186,19 @@ mimic the behavior of.
 
 Returns an `string`.
 
+### getApiDir
+
+```php?start_inline=1
+string getApiDir()
+```
+
+Returns the directory in which freesewing was installed.
+
+#### Typical use
+{:.no_toc}
+
+Used by the [`InfoService`](../services/infoservice) to discover available patterns, themes, and channels.
+
 ### getClassDir
 
 ```php?start_inline=1
@@ -276,6 +289,141 @@ Returns a non-associative `array` with an x and y coordinate like this:
 [12,34]
 ```
 
+### circleCircleIntersections
+
+```php?start_inline=1
+array|false circleCircleIntersections( 
+    Freesewing\Point $center1, 
+    float $radius1,
+    Freesewing\Point $center2 
+    float $radius2,
+    string $sort 
+)
+```
+
+Finds the point(s) where two circles intersect.
+
+#### Example
+{:.no_toc}
+
+{% include classTabs.html
+    id="circlesCross" 
+%}
+
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="circlesCross-result" markdown="1">
+
+{% include coreClassdocsFigure.html
+    description="The intersection points of two circles"
+    params="service=draft&pattern=ClassDocs&theme=Designer&onlyPoints=1,2&class=Part&method=circlesCross"
+%}
+
+</div>
+<div role="tabpanel" class="tab-pane" id="circlesCross-code" markdown="1">
+
+```php?start_inline=1
+/** @var \Freesewing\Part $p */
+$p->newPoint(1, 75, 40);
+$p->newPoint(2, 125, 60);
+
+// Note that while there's no support for circles in freesewing core, you can still add them as raw SVG
+$p->newInclude('circle1', '<circle xmlns="http://www.w3.org/2000/svg" cx="75" cy="40" r="40" style="stroke: #ccc; stroke-width: 0.3; stroke-dasharray: 1 1;"/>'); 
+$p->newInclude('circle2', '<circle xmlns="http://www.w3.org/2000/svg" cx="125" cy="60" r="30" style="stroke: #ccc; stroke-width: 0.3; stroke-dasharray: 1 1;"/>'); 
+
+$p->circlesCross(1,40,2,30,'isect');
+$p->notch(['isect1','isect2']);
+```
+
+</div>
+</div>
+
+#### Typical use
+{:.no_toc}
+
+Typically called through [`Part::circlesCross`](part#circlescross).
+
+#### Parameters
+{:.no_toc}
+
+- [`Point`](point) `$center1` : The center of the first circle
+- `float` `$radius1` : The radius of the first circle
+- [`Point`](point) `$center2` : The center of the second circle
+- `float` `$radius12` : The radius of the second circle
+- `string` `$sort` : `x` to sort results by the X-axis, `y` to sort them by the Y-axis
+
+#### Return value
+{:.no_toc}
+
+Returns an `array` of [`Point`](point) objects or `false` if there are no intersections.
+
+### circleCrossesLine
+
+```php?start_inline=1
+array|false circleCrossesLine( 
+    Freesewing\Point $c,
+    float  $r,
+    Freesewing\Point $p1,
+    Freesewing\Point $p2,
+    string $sort = 'x'
+)
+```
+
+Finds the point(s) where a circle an line segment intersect.
+
+#### Example
+{:.no_toc}
+
+{% include classTabs.html
+    id="circlesCrossesLine" 
+%}
+
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="circlesCrossesLine-result" markdown="1">
+
+{% include coreClassdocsFigure.html
+    description="The intersection points of a circle and line segment"
+    params="theme=Basic&class=Part&method=circlesCrossesLine"
+%}
+
+</div>
+<div role="tabpanel" class="tab-pane" id="circlesCrossesLine-code" markdown="1">
+
+```php?start_inline=1
+/** @var \Freesewing\Part $p */
+$p->newPoint(1, 75, 40);
+$p->newPoint(2, 25, 80);
+$p->newPoint(3, 145, 20);
+
+$p->newPath('line', 'M 2 L 3', ['style' =>'stroke: #ccc; stroke-width: 0.3; stroke-dasharray: 1 1;']);
+$p->newInclude('circle', '<circle cx="75" cy="40" r="40" style="stroke: #ccc; stroke-width: 0.3; stroke-dasharray: 1 1;"/>'); 
+
+$p->circleCrossesLine('1',40,2,3,'isect');
+$p->notch(['isect1','isect2']);
+```
+
+</div>
+</div>
+
+#### Typical use
+{:.no_toc}
+
+In patterns.
+
+#### Parameters
+{:.no_toc}
+
+- [`Point`](point) `$c`: The [`Point`](point) that is the center of the circle.
+- `float`  `$r`: The radius of the circle.
+- [`Point`](point): The [`Point`](point) that is the start of the line segment.
+- [`Point`](point): The [`Point`](point) that is the end of the line segment.
+- `string` `$sort`: `x` to sort results by the X-axis, `y` to sort them by the Y-axis
+
+
+#### Return value
+{:.no_toc}
+
+Returns an `array` of [`Point`](point) objects or `false` if there are no intersections.
+
 ### getSlope
 
 ```php?start_inline=1
@@ -358,6 +506,38 @@ Typically called from [`Part::distance`](part#distance).
 {:.no_toc}
 
 Returns the distance between the two points, which is a `float`.
+
+### constraint
+
+```php?start_inline=1
+float constraint( 
+    float $value, 
+    float $min, 
+    float $max 
+)
+```
+Returns `$value` if it's within the bounds of `$min` and `$max`.
+
+If it's outside the bounds set by `$min` and `$max`, this will return either `$min` or `$max`, depending which is closest.
+
+#### Typical use
+{:.no_toc}
+
+This is used to parse the values for options that have a min and max setting.
+
+This way, even if a value is submitted that is outside the allowed range, it will be constrained within the range.
+
+#### Parameters
+{:.no_toc}
+
+- `float` `$value` : The input value
+- `float` `$min` : The minimum
+- `float` `$max` : The maximum
+
+#### Return value
+{:.no_toc}
+
+Returns a `float` `$value` that lies between `$min` and `$max`.
 
 ### slug
 

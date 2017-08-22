@@ -1,12 +1,17 @@
 ---
-layout: page
+layout: onecol
 title: Core documentation
 tags: [core docs,core docs]
 permalink: /docs/core/
 ---
 
-FIXME
+The most important core documentation is [the class documentation](./classdocs).
 
-* TOC - Do not remove this line
-{:toc}
+Apart from that, the following documentation is also relevant:
+
+ - [core configuration files](/docs/core/config)
+ - [core install instructions](/docs/core/install)
+ - [core paramters](/docs/core/parameters)
+ - [freesewing fundamentals](/docs/fundamentals)
+
 

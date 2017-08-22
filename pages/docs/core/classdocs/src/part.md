@@ -32,7 +32,7 @@ of the methods described below.
 In addition, a [`Part`](part) contains data that gets set automatically:
 
 - **A title**, which is a `string`
-- **A boundary**, which is a [`Boundary`](boundary) objects
+- **A boundary**, which is a [`Boundary`](boundary) object
 - **Transforms**, which are [`Transform`](transform) objects
 
 These are set behind the scenes for you.
@@ -44,9 +44,9 @@ If you're using Freesewing at all, you're using this class.
 
 ## Public methods overview
 
-This [`Part`](part) class has 55 public methods, which is a lot. 
+This [`Part`](part) class has a lot of public methods. 
 
-To help you make sense of it all, we've grouped similar methods together.
+To help you make sense of it all, I've grouped similar methods together.
 In addition to grouping the methods, here are some general guidelines that 
 will help you make sense of them all:
 
@@ -78,8 +78,11 @@ These methods return a single [`Point`](point) object:
 - [`Part::flipX`](part#flipx) : Flip/Mirror point around an X value
 - [`Part::flipY`](part#flipy) : Flip/Mirror point around an Y value
 - [`Part::shift`](part#shift) : Shift a point a given distance under a given angle
-- [`Part::shiftTowards`](part#shifttowards) : Shift from one point a given distance in the direction of another point
-- [`Part::shiftAlong`](part#shiftalong) : Shift a given distance along a path
+- [`Part::shiftTowards`](part#shifttowards) : Shift from one point in the direction of another point for a given distance
+- [`Part::shiftFractionTowards`](part#shiftfractiontowards) : Shift from one point in the direction of another point for a fraction of the distance between the points
+- [`Part::shiftOutwards`](part#shiftoutwards) : Like [`Part::shiftTowards`](part#shifttowards) but shifts from the endpoint rather than startpoint
+- [`Part::shiftAlong`](part#shiftalong) : Shift along a Bezier curve for a given distance
+- [`Part::shiftFractionAlong`](part#shiftfractionalong) : Shift along a Bezier curve for a fraction of the curve's length 
 - [`Part::rotate`](part#rotate) : Rotate one point around another
 - [`Part::linesCross`](part#linescross) : Intersection of two line segments
 - [`Part::beamsCross`](part#beamscross) : Intersection of two endless lines
@@ -108,9 +111,11 @@ but add them to the Part for you:
 - [`Part::addPoint`](part#addpoint) : Adds a pre-made point
 - [`Part::curveCrossesX`](part#curvecrossesx) : Adds the point(s) where a curve crosses a given X-value
 - [`Part::curveCrossesY`](part#curvecrossesy) : Adds the point(s) where a curve crosses a given Y-value
-- [`Part::curveCrossesLine`](part#curvecrossesline) : Adds the point(s) where a curve crosses a line
-- [`Part::curvesCross`](part#curvescross) : Adds the point(s) where a curves cross
+- [`Part::curveCrossesLine`](part#curvecrossesline) : Adds the point(s) where a curve intersects with a line
+- [`Part::curvesCross`](part#curvescross) : Adds the point(s) where two curves intersect
 - [`Part::splitCurve`](part#splitcurve) : Adds the points to split a curve in two curves
+- [`Part::circlesCross`](part#circlescross) : Adds the points where two circles intersect
+- [`Part::circleCrossesLine`](part#circlecrossesLine) : Adds the points where a circle intersect with a line
 
 Returning a bunch of [`Point`](point) objects (in an array) would not be very
 helpful to you, and you'd probably end up adding them to the [`Part`](part) 
@@ -1014,6 +1019,152 @@ In patterns.
 
 Returns a [`Point`](point) object of the new, shifted, point.
 
+### shiftFractionTowards
+
+```php?start_inline=1
+float shiftFractionTowards( 
+    string $origin, 
+    string $direction,
+    float $fraction
+)
+```
+
+Returns a point that lies at fraction `$fraction` from [`Point`](point) `$origin` in the direction [`Point`](point) `$direction`.
+
+#### Example
+{:.no_toc}
+
+{% include classTabs.html
+    id="shiftFractionTowards" 
+%}
+
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="shiftFractionTowards-result" markdown="1">
+
+{% include coreClassdocsFigure.html
+    description="Shift towards returns a point shifted from origin towards direction"
+    params="theme=Designer&onlyPoints=origin,direction,1,2&class=Part&method=shiftFractionTowards"
+%}
+
+</div>
+<div role="tabpanel" class="tab-pane" id="shiftFractionTowards-code" markdown="1">
+
+```php?start_inline=1
+/** @var \Freesewing\Part $p */
+$p->newPoint('origin', 90, 30);
+$p->newPoint('direction', 60, 70);
+
+$p->addPoint(1, $p->shiftFractionTowards('origin','direction',0.5));
+$p->addPoint(2, $p->shiftFractionTowards('origin','direction',1.2));
+
+$p->newPath('line', 'M origin L direction', ['class' => 'hint']);
+$p->newNote(1,'origin','origin',3);
+$p->newNote(2,'direction','direction',3);
+
+$p->newNote(3,1,'Point shifted from origin 50% towards direction');
+$p->newNote(4,2,'Point shifted from origin 120% towards direction');
+```
+
+</div>
+</div>
+
+Note that:
+
+- This returns a new [`Point`](point) object, and does not change the `$origin` point.
+- `$fraction` is a `float` typically between 0 and 1, but it can be more than one to shift beyond the end point
+
+#### Typical use
+{:.no_toc}
+
+In patterns.
+
+#### Parameters
+{:.no_toc}
+
+- `string` `$origin`: The name of the [`Point`](point) that is the origin/start of the shift.
+- `string` `$direction`: The name of the [`Point`](point) that is the direction of the shift.
+- `float` `$fraction`: The fraction to shift. 
+
+`$origin` and `$direction` should previously have been added to the [`Part`](part).
+
+#### Return value
+{:.no_toc}
+
+Returns a [`Point`](point) object of the new, shifted, point.
+
+### shiftOutwards
+
+```php?start_inline=1
+float shiftOutwards( 
+    string $origin, 
+    string $direction,
+    float $distance
+)
+```
+
+Returns a point that lies `$distance` beyond [`Point`](point) `$direction` starting from paoint [`Point`](point) `$origin`.
+
+#### Example
+{:.no_toc}
+
+{% include classTabs.html
+    id="shiftTowards" 
+%}
+
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="shiftTowards-result" markdown="1">
+
+{% include coreClassdocsFigure.html
+    description="Shift towards returns a point shifted from origin towards direction"
+    params="theme=Designer&onlyPoints=origin,direction,1&class=Part&method=shiftOutwards"
+%}
+
+</div>
+<div role="tabpanel" class="tab-pane" id="shiftTowards-code" markdown="1">
+
+```php?start_inline=1
+/** @var \Freesewing\Part $p */
+/** @var \Freesewing\Part $p */
+$p->newPoint('origin', 90, 0);
+$p->newPoint('direction', 40, 50);
+$p->newPath('line', 'M origin L direction', ['class' => 'hint']);
+
+$p->addPoint(1, $p->shiftOutwards('origin','direction',30));
+
+$p->newNote(1,'origin','origin',3);
+$p->newNote(2,'direction','direction',3);
+$p->newNote(3,1,'Point shifted outwards by 3cm');
+$p->newLinearDimensionSm(1,'direction');
+```
+
+</div>
+</div>
+
+Note that:
+
+- This returns a new [`Point`](point) object, and does not change the `$origin` point.
+- `$distance` can be larger than the distance between `$origin` and `$direction`.
+- If `$distance` is negative, we'll shift away from `$direction`.
+
+#### Typical use
+{:.no_toc}
+
+In patterns.
+
+#### Parameters
+{:.no_toc}
+
+- `string` `$origin`: The name of the [`Point`](point) that is the origin/start of the shift.
+- `string` `$direction`: The name of the [`Point`](point) that is the direction of the shift.
+- `float` `$distance`: The distance to shift. 
+
+`$origin` and `$direction` should previously have been added to the [`Part`](part).
+
+#### Return value
+{:.no_toc}
+
+Returns a [`Point`](point) object of the new, shifted, point.
+
 ### shiftAlong
 
 ```php?start_inline=1
@@ -1075,7 +1226,73 @@ In patterns.
 - `string` `$end`: The name of the [`Point`](point) that is the  of the curve.
 - `float` `$distance`: The distance to shift along the curve. 
 
-`$origin` and `$direction` should previously have been added to the [`Part`](part).
+#### Return value
+{:.no_toc}
+
+Returns a [`Point`](point) object of the new, shifted, point.
+
+### shiftFractionAlong
+
+```php?start_inline=1
+float shiftTowards( 
+    string $start, 
+    string $cp2,
+    string $cp1,
+    string $end, 
+    float $fraction
+)
+```
+
+Returns a point that lies at `$fraction` of the curve length from [`Point`](point) `$start` along the Bezier curve
+described by `$start`, `$cp1`, `$cp2`, and `$end`.
+
+#### Example
+{:.no_toc}
+
+{% include classTabs.html
+    id="shiftFractionAlong" 
+%}
+
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="shiftFractionAlong-result" markdown="1">
+
+{% include coreClassdocsFigure.html
+    description="Shift fraction along a curve"
+    params="theme=Designer&onlyPoints=1,2,3,4,5&class=Part&method=shiftFractionAlong"
+%}
+
+</div>
+<div role="tabpanel" class="tab-pane" id="shiftFractionAlong-code" markdown="1">
+
+```php?start_inline=1
+/** @var \Freesewing\Part $p */
+$p->newPoint(1, 0, 100);
+$p->newPoint(2, 30, 0);
+$p->newPoint(3, 100, 100);
+$p->newPoint(4, 100, 50);
+$p->addPoint(5, $p->shiftFractionAlong(1,2,3,4, 0.5));
+
+$p->newPath(1,"M 1 C 2 3 4");
+
+$p->newNote(1,5,'Point shifted 50% along the curve',2);
+```
+
+</div>
+</div>
+
+#### Typical use
+{:.no_toc}
+
+In patterns.
+
+#### Parameters
+{:.no_toc}
+
+- `string` `$start`: The name of the [`Point`](point) that is the start of the curve.
+- `string` `$cp1`: The name of the [`Point`](point) that is the first control point of the curve.
+- `string` `$cp2`: The name of the [`Point`](point) that is the second control point of the curve.
+- `string` `$end`: The name of the [`Point`](point) that is the  of the curve.
+- `float` `$distance`: The fraction to shift along the curve. 
 
 #### Return value
 {:.no_toc}
@@ -1726,7 +1943,7 @@ Nothing, [`Point`](point) objects will be added to the [`Part`](part).
 ### splitCurve
 
 ```php?start_inline=1
-\Freesewing\Point curveEdge( 
+\Freesewing\Point splitCurve( 
     string $start,
     string $cp1,
     string $cp2,
@@ -1812,6 +2029,154 @@ The splitting on a delta between 0 and 1 is typically used in internal functions
 - `string` `$split`:  The name of the [`Point`](point) to split the curve on, or a delta between 0 and 1
 - `string` `$prefix`: A prefix for the name of the [`Point`](point) objects to be added to the [`Part`](part).
 - `bool` `$splitOnDelta`: `true` to split on a delta between 0 and 1, `false` by default.
+
+
+#### Return value
+{:.no_toc}
+
+Nothing, [`Point`](point) objects will be added to the [`Part`](part).
+
+## circlesCross
+
+```php?start_inline=1
+\Freesewing\Point circlesCross( 
+    string $c1,
+    float  $r1,
+    string $c2,
+    float  $r2,
+    string $prefix,
+    string $sort = 'x'
+)
+```
+
+Finds the point(s) where two circles intersect and adds them as [`Point`](point) objects to the part.
+
+Points will be added to the [`Part`](part) with prefix `$prefix`.
+     
+`$sort` is the axis to sort results by, either `x` (default) or `y`.
+
+#### Example
+{:.no_toc}
+
+{% include classTabs.html
+    id="circlesCross" 
+%}
+
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="circlesCross-result" markdown="1">
+
+{% include coreClassdocsFigure.html
+    description="The intersection points of two circles"
+    params="theme=Designer&onlyPoints=1,2&class=Part&method=circlesCross"
+%}
+
+</div>
+<div role="tabpanel" class="tab-pane" id="circlesCross-code" markdown="1">
+
+```php?start_inline=1
+/** @var \Freesewing\Part $p */
+$p->newPoint(1, 75, 40);
+$p->newPoint(2, 125, 60);
+
+// Note that while there's no support for circles in freesewing core, you can still add them as raw SVG
+$p->newInclude('circle1', '<circle xmlns="http://www.w3.org/2000/svg" cx="75" cy="40" r="40" style="stroke: #ccc; stroke-width: 0.3; stroke-dasharray: 1 1;"/>'); 
+$p->newInclude('circle2', '<circle xmlns="http://www.w3.org/2000/svg" cx="125" cy="60" r="30" style="stroke: #ccc; stroke-width: 0.3; stroke-dasharray: 1 1;"/>'); 
+
+$p->circlesCross(1,40,2,30,'isect');
+$p->notch(['isect1','isect2']);
+```
+
+</div>
+</div>
+
+#### Typical use
+{:.no_toc}
+
+In patterns.
+
+#### Parameters
+{:.no_toc}
+
+- `string` `$c1`: The name of the [`Point`](point) that is the center of the first circle.
+- `float`  `$r1`: The radius of the first circle.
+- `string` `$c2`: The name of the [`Point`](point) that is the center of the second circle.
+- `float`  `$r2`: The radius of the second circle.
+- `string` `$prefix`: A prefix for the name of the [`Point`](point) objects to be added to the [`Part`](part).
+- `string` `$sort`: `x` to sort results by the X-axis, `y` to sort them by the Y-axis
+
+
+#### Return value
+{:.no_toc}
+
+Nothing, [`Point`](point) objects will be added to the [`Part`](part).
+
+## circleCrossesLine
+
+```php?start_inline=1
+\Freesewing\Point circleCrossesLine( 
+    string $c,
+    float  $r,
+    string $p1,
+    string $p2,
+    string $prefix,
+    string $sort = 'x'
+)
+```
+
+Finds the point(s) where a circle an line segment intersect.
+
+Points will be added to the [`Part`](part) with prefix `$prefix`.
+     
+`$sort` is the axis to sort results by, either `x` (default) or `y`.
+
+#### Example
+{:.no_toc}
+
+{% include classTabs.html
+    id="circlesCrossesLine" 
+%}
+
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="circlesCrossesLine-result" markdown="1">
+
+{% include coreClassdocsFigure.html
+    description="The intersection points of two circles"
+    params="theme=Basic&class=Part&method=circlesCrossesLine"
+%}
+
+</div>
+<div role="tabpanel" class="tab-pane" id="circlesCrossesLine-code" markdown="1">
+
+```php?start_inline=1
+/** @var \Freesewing\Part $p */
+$p->newPoint(1, 75, 40);
+$p->newPoint(2, 25, 80);
+$p->newPoint(3, 145, 20);
+
+$p->newPath('line', 'M 2 L 3', ['style' =>'stroke: #ccc; stroke-width: 0.3; stroke-dasharray: 1 1;']);
+$p->newInclude('circle', '<circle cx="75" cy="40" r="40" style="stroke: #ccc; stroke-width: 0.3; stroke-dasharray: 1 1;"/>'); 
+
+$p->circleCrossesLine('1',40,2,3,'isect');
+$p->notch(['isect1','isect2']);
+```
+
+</div>
+</div>
+
+#### Typical use
+{:.no_toc}
+
+In patterns.
+
+#### Parameters
+{:.no_toc}
+
+- `string` `$c`: The name of the [`Point`](point) that is the center of the circle.
+- `float`  `$r`: The radius of the circle.
+- `string` `$p1`: The name of the [`Point`](point) that is the start of the line segment.
+- `string` `$p2`: The name of the [`Point`](point) that is the end of the line segment.
+- `string` `$prefix`: A prefix for the name of the [`Point`](point) objects to be added to the [`Part`](part).
+- `string` `$sort`: `x` to sort results by the X-axis, `y` to sort them by the Y-axis
 
 
 #### Return value

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="550" height="700" viewBox="0 -600 550 700">
+    <style type="text/css">
+    <![CDATA[
+        rect.don{fill: #663f95; stroke:none}
+        rect.msf{fill: #ee342a; stroke:none}
+        text.fs{font-size:25px;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;fill:#000;text-anchor:middle;font-weight:600}
+        text.sm{font-size:15px;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;fill:#000;text-anchor:middle;font-weight:400}
+        text.legend{font-size:15px;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;fill:#000;text-anchor:start;font-weight:400}
+    ]]>
+    </style>
+    <!-- 2015 -->
+    <g transform="translate(0,-256.65)">
+        <rect height="256.65" width="50" class="don" x="20" y="0" />
+        <rect height="256.65" width="50" class="msf" x="80" y="0" />
+        <text class="fs" x="75" y="286" >2015</text>
+        <text class="sm" x="75" y="-10" >256.65 euro</text>
+    </g> 
+    <!-- 2016 -->
+    <g transform="translate(0,-473.5)">
+        <rect height="473.5" width="50" class="don" x="220" y="0" />
+        <rect height="473.5" width="50" class="msf" x="280" y="0" />
+        <text class="fs" x="275" y="503.5" >2016</text>
+        <text class="sm" x="275" y="-10" >473.5 euro</text>
+    </g>
+    <!-- 2016 -->
+    <g transform="translate(0,-292)">
+        <rect height="292" width="50" class="don" x="420" y="0" />
+        <rect height="0" width="50" class="msf" x="480" y="0" />
+        <text class="fs" x="475" y="323" >2017</text>
+        <text class="sm" x="475" y="-10" >292 euro so far</text>
+    </g>
+    <!-- Legend -->
+    <g transform="translate(0,70)">
+        <circle cx="50" cy="0" r="15" fill="#663f95" />
+        <circle cx="350" cy="0" r="15" fill="#ee342a" />
+        <text class="legend" x="70" y="7" >Donations received</text>
+        <text class="legend" x="370" y="7" >Transferred to MSF</text>
+    </g>
+</svg>

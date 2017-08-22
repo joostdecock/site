@@ -123,8 +123,7 @@ Then, rename the folder to `BabyBib`.
 
 > <h5 class='notoc'>Freesewing naming conventions</h5>
 >
-> How we name things is important. All the relevant info 
-> is available on [the page on naming conventions](/docs/naming-conventions).
+> How we name things is important. 
 >
 > For now, just make sure to write `BabyBib` 
 > with two capital `B` letters, as shown.

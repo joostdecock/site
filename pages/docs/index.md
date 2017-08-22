@@ -186,7 +186,7 @@ nocomments: true
                     {% include card.html 
                         title='API cheat sheet'
                         text='Never guess how to call a method again, thanks to this handy cheat sheet to the core API.'
-                        link='/pdf/static/cheatsheet.pdf'
+                        link='/pdf/cheatsheet.pdf'
                     %}
                 </div>
             </div>
@@ -204,7 +204,7 @@ nocomments: true
                     <p class="card-text">
                         We've bundled <a href="/contribute" title="Getting started">the most essential information for new contributors</a>, including <a href="/contribute#ways-to-contribute">ways to contribute</a> and <a href="/contribute#where-to-get-help-or-report-a-problem">where to get help or report a problem</a>. Also check out  <a href="/about/code-of-conduct">our code of conduct</a> and <a href="/issues">list of open issues</a>.
                     </p>
-                    <p>Other noteworthy links are our <a href="/docs/install">install instructions</a>, <a href="/docs/naming-conventions">naming conventions</a>, and our <a href="/docs/infrastructure">infrastructure</a> and <a href="/docs/repositories">repositories</a> pages.</p>
+                    <p>Other noteworthy links are our <a href="/docs/install">install instructions</a>, and our <a href="/docs/infrastructure">infrastructure</a> and <a href="/docs/repositories">repositories</a> pages.</p>
                 </div>
             </div>
         </div>

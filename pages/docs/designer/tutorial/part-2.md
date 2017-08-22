@@ -154,7 +154,7 @@ measurements:
 </div>
 </div>
 
-I won't go into the details (check FIXME for all info on `models.yml` files)
+I won't go into the details ([more info](/docs/core/parameters#samplegroup))
 but hopefully you'll understand that we've added a bunch of standard baby models
 with their measurements.
 

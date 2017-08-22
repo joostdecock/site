@@ -24,21 +24,6 @@ $context->runService();
 
 ## Public methods
 
-### getApiDir
-
-```php?start_inline=1
-string getApiDir()
-```
-
-Returns the directory in which freesewing was installed.
-
-#### Typical use
-{:.no_toc}
-
-Used by the [`InfoService`](../services/infoservice) to discover available patterns, themes, and channels.
-
-FIXME: Moved to Utils
-
 ### getChannel
 
 ```php?start_inline=1
