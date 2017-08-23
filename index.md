@@ -7,23 +7,13 @@ nocomments: true
 ---
 <div class="container">
     <div class="row" style="margin-top: 8rem; margin-bottom: 8rem;">
-        <div class="col-lg-4 col-sm-6 mt-5">
+        <div class="col-lg-4 col-sm-12 mt-5">
             <div class="card text-center drop-shadow py-3">
                 <i class="fa fa-cut fa-5x" aria-hidden="true" style="color: #ff5b77;"></i>
                 <div class="card-block">
-                    <h4 class="card-title">Made-to-measure sewing patterns, drafted on the fly</h4>
-                    <p>Enter your measurements, pick your options. Your pattern is ready in seconds</p>
+                    <h4 class="card-title">Free sewing patterns</h4>
+                    <p>This site provides made-to-measure sewing patterns, drafted on the fly</p>
                     <p><a href="/about#what" class="btn btn-outline-primary">What is this thing?</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 mt-5">
-            <div class="card text-center drop-shadow py-3">
-                <i class="fa fa-cc-paypal fa-5x" aria-hidden="true" style="color: #009cde;"></i>
-                <div class="card-block">
-                    <h4 class="card-title">Free as in beer &ndash; or as in free sewing patterns</h4>
-                    <p>You don't have to pay for anything, but I do accept donations &ndash; it's your call</p>
-                    <p><a href="/about#money" class="btn btn-outline-primary">How do you make money?</a></p>
                 </div>
             </div>
         </div>
@@ -31,9 +21,19 @@ nocomments: true
             <div class="card text-center drop-shadow py-3">
                 <i class="fa fa-code fa-5x" aria-hidden="true" style="color: #188f93"></i>
                 <div class="card-block">
-                    <h4 class="card-title">Free as in speech &ndash; or as in open source software</h4>
-                    <p>All code that makes this happen is free software, available on GitHub</p>
-                    <p><a href="/about#code" class="btn btn-outline-primary">Can I see how you did it?</a></p>
+                    <h4 class="card-title">Free as in freedom</h4>
+                    <p>All the code that makes this happen is free software, and available on GitHub</p>
+                    <p><a href="/about#code" class="btn btn-outline-primary">Can I see the code?</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mt-5">
+            <div class="card text-center drop-shadow py-3">
+                <i class="fa fa-cc-paypal fa-5x" aria-hidden="true" style="color: #009cde;"></i>
+                <div class="card-block">
+                    <h4 class="card-title">Free as in gratis</h4>
+                    <p>You don't have to pay for anything, but I do accept donations &ndash; it's your call</p>
+                    <p><a href="/about#money" class="btn btn-outline-primary">What's the catch?</a></p>
                 </div>
             </div>
         </div>
