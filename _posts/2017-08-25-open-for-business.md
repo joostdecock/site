@@ -91,6 +91,21 @@ but I hope to have them all out before the end of the year.
 What I'm saying is, watch this space. 
 Or better, check the links at the bottom of this page for social media accounts to follow.
 
+### Better support for *les autres* 
+
+I [tried](https://makemypattern.com/blog/imperial-units-have-been-spotted-and-they-might-break-things)
+and [failed](https://makemypattern.com/blog/imperial-units-not-worth-it) to add support for imperial units to makemypattern.com.
+
+This time around, both metric and imperial are fully supported. You can set your preferred units in your account settings.
+And in each model you can set the units seperately, just in case you happen to sew for people living in different parts of the world.
+
+Speaking of different parts of the world, freesewing core fully supports different languages. 
+You can get your pattern in a number of languages, and if yours is not listed you can help with the translation.
+
+{% include figure.html url="/img/blog/open-for-business/yoke.svg" description="The yoke of Simon, in French" %}
+
+Arguably, that is a bit of a half-measure when this site is only in English, but baby steps, right?
+
 ### Compare to catch issues early
 
 One of the common pitfalls is that people take measurements the wrong way.
