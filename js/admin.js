@@ -27,7 +27,6 @@
         }
 
         function renderUsers(users) {
-            console.log('This is the callback');
             $('#results').html('');
             $.each(users, function(key, user) {
                 var html = '<div class="row paper mb-3 drop-shadow">';
@@ -42,7 +41,6 @@
                 });
                 html += '</div>';
                 $('#results').append(html);
-                console.log(user);
             });
         }
 
