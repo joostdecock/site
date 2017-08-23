@@ -56,7 +56,7 @@ crumbs: false
         </div>
         <div class="col-md-4 mt-5">
             <div class="card text-center drop-shadow py-3" style="background-color: rgba(255, 0, 252, 0.5);">
-                <i class="fa fa-heart fa-5x" aria-hidden="true"></i>
+                <i class="fa fa-bomb fa-5x" aria-hidden="true"></i>
                 <div class="card-block">
                     <h4 class="card-title">Blow my mind with your generosity</h4>
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
