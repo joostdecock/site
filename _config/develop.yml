@@ -5,6 +5,8 @@ instagram: 'freesewing_org'
 gitter: 'https://gitter.im/freesewing/freesewing'
 branch: 'develop'
 
+future: false
+
 api:
   core: 'https://dev.core.freesewing.org'
   data: 'https://dev.data.freesewing.org'
