@@ -760,10 +760,10 @@
         $('ul.breadcrumbs li:last-child').html(data.name);
         if(data.shared == 1) {
             $('#shared-link').html('Yes');
-            $('#fork-msg').prepend('1&nbsp;&nbsp;<i class="fa fa-info-circle" aria-hidden="true"></i> <small><b>Tip:</b> Other users can fork this draft at <a href="/drafts/'+data.handle+'">'+window.location.hostname+'/drafts/'+data.handle+'</a></small>');
+            $('#fork-msg').prepend('<small>(1) This draft is publicly available at <a href="/drafts/'+data.handle+'">'+window.location.hostname+'/drafts/'+data.handle+'</a></small>');
         } else {
             $('#shared-link').html('No');
-            $('#fork-msg').prepend('1&nbsp;&nbsp;<i class="fa fa-info-circle" aria-hidden="true">This reference uniquely identifies your draft.</i> ');
+            $('#fork-msg').prepend('<small>(1) This reference uniquely identifies your draft</small> ');
         }
         $('#notes-inner').html(marked(data.notes));
         draft.shared = data.shared;
@@ -1433,6 +1433,7 @@
             $('#draft-handle').html(draft.handle);
             $('#created').attr('datetime', draft.created+' UTC');
             timeago().render($('.timeago'));
+            $('#fork-msg').prepend('<small>(1) This reference uniquely identifies this draft</small>');
         } else {
             if(user.id == draft.user){
                 // Own draft
@@ -1440,10 +1441,10 @@
                 $('#model-link').attr('href','/models/'+draft.model.handle).html(draft.model.name);
                 if(draft.shared == 1) {
                     $('#shared-link').html('Yes');
-                    $('#fork-msg').prepend('<small>(1) Any user can see this draft at <a href="/drafts/'+draft.handle+'">'+window.location.hostname+'/drafts/'+draft.handle+'</a></small>');
+                    $('#fork-msg').prepend('<small>(1) This draft is publicly available at <a href="/drafts/'+draft.handle+'">'+window.location.hostname+'/drafts/'+draft.handle+'</a></small>');
                 } else {
                     $('#shared-link').html('No');
-                    $('#fork-msg').prepend('<small>(1) This reference uniquely identifies your draft.</small>');
+                    $('#fork-msg').prepend('<small>(1) This reference uniquely identifies your draft</small>');
                 }
                 $('#created').attr('datetime', draft.created+' UTC');
                 timeago().render($('.timeago'));
