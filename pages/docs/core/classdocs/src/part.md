@@ -2036,7 +2036,7 @@ The splitting on a delta between 0 and 1 is typically used in internal functions
 
 Nothing, [`Point`](point) objects will be added to the [`Part`](part).
 
-## circlesCross
+### circlesCross
 
 ```php?start_inline=1
 \Freesewing\Point circlesCross( 
@@ -2110,7 +2110,7 @@ In patterns.
 
 Nothing, [`Point`](point) objects will be added to the [`Part`](part).
 
-## circleCrossesLine
+### circleCrossesLine
 
 ```php?start_inline=1
 \Freesewing\Point circleCrossesLine( 
