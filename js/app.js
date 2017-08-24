@@ -760,10 +760,10 @@
         $('ul.breadcrumbs li:last-child').html(data.name);
         if(data.shared == 1) {
             $('#shared-link').html('Yes');
-            $('#fork-msg').html('&nbsp;&nbsp;<i class="fa fa-info-circle" aria-hidden="true"></i> <small><b>Tip:</b> Other users can fork this draft at <a href="/drafts/'+data.handle+'">'+window.location.hostname+'/drafts/'+data.handle+'</a></small>');
+            $('#fork-msg').prepend('1&nbsp;&nbsp;<i class="fa fa-info-circle" aria-hidden="true"></i> <small><b>Tip:</b> Other users can fork this draft at <a href="/drafts/'+data.handle+'">'+window.location.hostname+'/drafts/'+data.handle+'</a></small>');
         } else {
             $('#shared-link').html('No');
-            $('#fork-msg').html('&nbsp;&nbsp;<i class="fa fa-info-circle" aria-hidden="true">This reference uniquely identifies your draft.</i> ');
+            $('#fork-msg').prepend('1&nbsp;&nbsp;<i class="fa fa-info-circle" aria-hidden="true">This reference uniquely identifies your draft.</i> ');
         }
         $('#notes-inner').html(marked(data.notes));
         draft.shared = data.shared;
@@ -1360,7 +1360,6 @@
                     if(returndata.reason == 'draft_not_yours_and_not_shared') {
                         var errormsg = '<blockquote class="error m600 mb-5"><h5>This draft is not for you</h5><p>This draft is not yours, nor is it shared. So you don\'t get to see it.</p></blockquote><p>&nbsp;</p>';
                     } else {
-                        console.log(returndata);
                         var errormsg = '<blockquote class="error m600"><h5>Things are not ok</h5><p>We couldn\'t load this draft. I\'m not entirely sure why, but it didn\'t work.</p></blockquote>';
                     }
                     $('h1.page-title').html('Nope');
@@ -1424,7 +1423,6 @@
         $('ul.breadcrumbs li:last-child').html(draft.name);
         $('#issue-link').attr('href','https://github.com/freesewing/site/issues/new?title=Problem%20with%20draft%20'+draft.handle+'&body=See%20[here](https:/'+'/'+window.location.hostname+'/drafts/'+draft.handle+')');
         $('#draft-core-url').html('<a href="'+draft.data.coreUrl+'" target="_BLANK" title="Manually run the API call used to create this draft">Replay API call</a>');
-                console.log(draft);
         if(!logged_in) {
             // Shared draft, viewed anonymously
             $('.owner-only').remove();
@@ -1442,7 +1440,7 @@
                 $('#model-link').attr('href','/models/'+draft.model.handle).html(draft.model.name);
                 if(draft.shared == 1) {
                     $('#shared-link').html('Yes');
-                    $('#fork-msg').html('&nbsp;&nbsp;<i class="fa fa-bookmark" aria-hidden="true"></i> <small> Other users can fork this draft at <a href="/drafts/'+draft.handle+'">'+window.location.hostname+'/drafts/'+draft.handle+'</a></small>');
+                    $('#fork-msg').prepend('<small>(1) Any user can see this draft at <a href="/drafts/'+draft.handle+'">'+window.location.hostname+'/drafts/'+draft.handle+'</a></small>');
                 } else {
                     $('#shared-link').html('No');
                     $('#fork-msg').prepend('<small>(1) This reference uniquely identifies your draft.</small>');
@@ -1708,10 +1706,11 @@
 
     $(document).ready(function () {
        
-            // Make sure local storage has the goods
-            if(window.localStorage.getItem("fsu") === null) {
-                loadAccount(saveUserLocally);
-            }
+        // Make sure local storage has the goods
+        if(window.localStorage.getItem("fsu") === null) {
+            if(page.substr(0,8) === '/drafts/' && page.split('/').length == 3) {} // Anonymous draft access
+            else loadAccount(saveUserLocally);
+        }
 
         // Show draft ///////////////////////
         if(page.substr(0,8) === '/drafts/' && page.split('/').length == 3) {
