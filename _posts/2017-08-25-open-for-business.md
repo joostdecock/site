@@ -157,7 +157,7 @@ Also new is that when you draft a pattern, I will keep that draft for you, and i
 {% include figure.html url="/img/blog/open-for-business/draft-list.png" description="All your drafts are kept and available in your account" %}
 
 You can come back at any time to re-download the pattern, or tweak it, redraft it, or fork it.
-Yes fork it, which is kinda cool because you can also fork patterns from other people after they've shared their draft.
+Yes [fork it](/docs/site/fork), which is kinda cool because you can also fork patterns from other people after they've shared their draft.
 
 You can also add your own notes to your drafts (and to your models for that matter).
 
