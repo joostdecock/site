@@ -1,6 +1,6 @@
 ---
-permalink: /components/pattern-options/brian/cuffease
+permalink: /components/pattern-options/brian/chestease
 ---
-{% include figure.html url="/img/patterns/brian/options/cuffEase.svg" description="The cuffEase option sampled" %}
+{% include figure.html url="/img/patterns/brian/options/chestEase.svg" description="The chestEase option sampled" %}
 
-This option controls the ease at your wrist.
+This option controls the ease at your chest.
