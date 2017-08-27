@@ -9,7 +9,7 @@ permalink: /contribute
 Hi there, 
 
 Are you interested in contributing to freesewing? 
-That's awesome, and exactly why we this thing is open source in the first place.
+That's awesome, and exactly why we made this thing open source in the first place.
 
 ## Code of conduct
 
