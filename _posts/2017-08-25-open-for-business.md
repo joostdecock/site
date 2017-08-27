@@ -63,7 +63,7 @@ I can also tell you that mmp has 10 patterns available.
 So which one is it, 10 or 6500? 
 Well, it depends on the context. Which is ambigious and confusing.
 
-Now, patterns and patterns, and drafts are drafts.  
+Now, patterns are patterns, and drafts are drafts.  
 That is, a draft is what you generate from a pattern. It's a pattern drafted to your exact specifications.
 
 {% include figure.html url="/img/blog/open-for-business/draft-sample.svg" description="An example of a draft from freesewing.org" %}
