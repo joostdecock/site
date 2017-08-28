@@ -195,7 +195,7 @@ But when it does, it can be hard to know your pattern is wrong in the absence of
 something to compare it to. That's where the compare service comes in.
 
 It is a combination of the draft service and the sample service.
-It will first created a stack of sampled drafts for standard models, and then stack your
+It will first create a stack of sampled drafts for standard models, and then stack your
 own draft on top of that.
 
 This way, you can simply eyeball your own pattern in comparison to a range of other models.
