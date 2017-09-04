@@ -12,7 +12,7 @@ blurb: "My contribution to The Refasioners 2017 and a sneak preview at the upcom
 For the uninitiated, the refashioners is a yearly event/competition hosted by the charming (and very persuasive) 
 [Portia Lawrie](http://www.makery.uk/). 
 
-Its focus is on giving old, unworn, or unloved garments a new lease on live through the art of refashioning.
+Its focus is on giving old, unworn, or unloved garments a new lease on life through the art of refashioning.
 
 This bonanza of garment Frankensteining kicks of with a series of *hors-comp&eacute;tition*  makes, aimed at getting
 the creative juices flowing. And [just like last year](http://www.makery.uk/2016/08/the-refashioners-2016-joost/), 
