@@ -24,15 +24,15 @@
         <text class="sm" x="275" y="-10" >473.5 euro</text>
     </g>
     <!-- 2017 mmp -->
-    <g transform="translate(0,-427)">
-        <rect height="407" width="50" class="don mmp" x="420" y="0" />
+    <g transform="translate(0,-444.5)">
+        <rect height="444.5" width="50" class="don mmp" x="420" y="0" />
         <rect height="0" width="50" class="msf" x="480" y="0" />
-        <text class="fs" x="475" y="456" >2017</text>
-        <text class="sm" x="475" y="-20" >427 euro so far</text>
+        <text class="fs" x="475" y="472" >2017</text>
+        <text class="sm" x="475" y="-10" >444.5 euro so far</text>
     </g>
     <!-- 2017 fs -->
-    <g transform="translate(0,-427)">
-        <rect height="35" width="50" class="don" x="420" y="0" />
+    <g transform="translate(0,-444.5)">
+        <rect height="52.5" width="50" class="don" x="420" y="0" />
         <rect height="0" width="50" class="msf" x="480" y="0" />
     </g>
     <!-- Legend -->
