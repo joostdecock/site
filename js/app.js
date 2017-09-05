@@ -1643,7 +1643,7 @@
 
     function addBadge(badge, userHandle) {
         $.ajax({
-            url: api.data+'/badge',
+            url: api.data+'/admin/badge',
             method: 'POST',
             data: { 'badge': badge, 'user': userHandle},
             dataType: 'json',
@@ -1659,7 +1659,7 @@
     
     function removeBadge(badge, userHandle) {
         $.ajax({
-            url: api.data+'/badge',
+            url: api.data+'/admin/badge',
             method: 'DELETE',
             data: { 'badge': badge, 'user': userHandle},
             dataType: 'json',

@@ -11,6 +11,43 @@
                 if ( ($('#input').val().length > 1) || ($('#input').val() == '@') )  getUsers($('#input').val(), renderUsers());
         });
 
+        $('#results').on('click', 'a.changepwd',function(e) {
+            $('#modal').removeClass().addClass('shown light');
+            var html = "<div id='pwdchange' class='m600 text-center'>";
+            html += "<h2>Change password</h2>";
+            html += "<p>Forcing a password change for user "+$(this).attr('data-handle')+" ("+$(this).attr('data-email')+")</p>";
+            html += "<p><input type='text' data-handle='"+$(this).attr('data-handle')+" 'class='form-control' placeholder='Type the new password here' id='password'></p>";
+            html += "<a class='btn btn-primary mt-5' href='#' id='forcepwdchange'>Set new password</a>";
+            html += "</div>";
+            $('#modal-main').html(html);
+        });
+        
+        $('#modal-main').on('click', '#forcepwdchange',function(e) {
+            console.log('Changing password for ');
+            console.log($('#password').attr('data-handle'));
+            console.log('to: ');
+            console.log($('#password').val());
+            setPassword($('#password').attr('data-handle'),$('#password').val());
+        });
+
+        function setPassword(userHandle, password) {
+            $.ajax({
+                url: api.data+'/admin/password',
+                method: 'PUT',
+                data: { 'password': password, 'user': userHandle},
+                dataType: 'json',
+                success: function(data) {
+                    $('#modal').removeClass();
+                    $.bootstrapGrowl('Password set', {type: 'success'});
+                },
+                error: function(data) { 
+                    console.log(data);
+                    $.bootstrapGrowl('Failed to set password', {type: 'error'});
+                },
+                headers: {'Authorization': 'Bearer '+token},
+            }); 
+        }
+
         function getUsers(filter, callBack) {
             $.ajax({
                 url: api.data+'/find/users/'+filter,
@@ -39,6 +76,7 @@
                 $.each(user.badges, function(badge, bval) {
                     html += '<img src="/img/badges/badge-'+badge+'.svg" style="width: 28px; heigth: 28px; border-radius: 14px; margin-right: 4px; margin-bottom: 4px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.23)" >';
                 });
+                html += '<p><a class="changepwd btn btn-primary mt-3" href="#" data-email="'+user.email+'" data-handle="'+user.userhandle+'">Change password</a>';
                 html += '</div>';
                 $('#results').append(html);
             });
