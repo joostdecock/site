@@ -1098,13 +1098,13 @@
             var inches = Math.floor(value);
             var rest = value - inches;
         }
-        var fraction32 = Math.round(rest*32)/32;
+        var fraction8 = Math.round(rest*8)/8;
 
         if(negative) {
-            if(parseInt(inches) == 1) return -1-fraction32;
-            else return -1 * parseInt(inches)-fraction32;
+            if(parseInt(inches) == 1) return -1-fraction8;
+            else return -1 * parseInt(inches)-fraction8;
         }
-        else return parseInt(inches)+fraction32;
+        else return parseInt(inches)+fraction8;
     }
 
     function inchesAsFraction(value, format) {
@@ -1169,7 +1169,7 @@
                 html += '<div class="input-group">';
                 html += '<input class="slider" id="'+name+'" type="text" name="'+name+'" data-provide="slider" data-type="measure" ';
                 html += 'data-slider-id="'+name+'-slider" ';
-                if(units === 'imperial') html += 'data-slider-step="0.03125" ';
+                if(units === 'imperial') html += 'data-slider-step="0.125" ';
                 else html += 'data-slider-step="0.05" ';
                 html += 'data-slider-min="'+minValue+'" data-slider-max="'+maxValue+'" ';
                 html += 'data-slider-value="'+defaultValue+'" data-slider-tooltip="hide" >'; 
