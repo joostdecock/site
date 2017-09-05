@@ -37,12 +37,12 @@
                 data: { 'password': password, 'user': userHandle},
                 dataType: 'json',
                 success: function(data) {
-                    console.log(data);
-                    $.bootstrapGrowl('Badge '+badge+' added. Reload page to update list.', {type: 'success'});
+                    $('#modal').removeClass();
+                    $.bootstrapGrowl('Password set', {type: 'success'});
                 },
                 error: function(data) { 
                     console.log(data);
-                    $.bootstrapGrowl('Failed to add badge '+badge+'.', {type: 'error'});
+                    $.bootstrapGrowl('Failed to set password', {type: 'error'});
                 },
                 headers: {'Authorization': 'Bearer '+token},
             }); 
