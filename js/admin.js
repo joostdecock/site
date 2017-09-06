@@ -23,11 +23,47 @@
         });
         
         $('#modal-main').on('click', '#forcepwdchange',function(e) {
-            console.log('Changing password for ');
-            console.log($('#password').attr('data-handle'));
-            console.log('to: ');
-            console.log($('#password').val());
             setPassword($('#password').attr('data-handle'),$('#password').val());
+        });
+
+        $('#results').on('click', 'a.changebadges',function(e) {
+            $('#modal').removeClass().addClass('shown light');
+            var badges = JSON.parse($(this).attr('data-badges'));
+            var handle = $(this).attr('data-handle');
+            var html = "<div class='text-center'><h2>Manage badges</h2>";
+            html += "<p>Managing badges user "+handle+" ("+$(this).attr('data-email')+")</p></div>";
+            html += "<div id='badgechange' class='row text-center'>";
+            html += "<div class='col-sm-6' id='current-badges'><h3>Assigned badges</h3><p>Click on any of them to remove them</p>";
+            if(badges != null) {
+                $.each(badges, function(name, val){
+                    html += '<a href="#" id="badge-'+name+'" class="remove-badge" data-handle="'+handle+'" data-badge="'+name+'"><img src="/img/badges/badge-'+name+'.svg" class="badge-img drop-shadow" style="margin: 5px; width: 50px; height: 50px;"></a>';
+                });
+            }
+            html += "</div><div class='col-sm-6' id='missing-badges'><h3>Available badges</h3><p>Click on any of them to assign them</p>";
+            html += "</div></div>";
+            $('#modal-main').html(html);
+            $.get('/json/badges.json', function( allBadges ) {
+                $.each(allBadges, function(name, desc){
+                    if(badges == null || typeof badges[name] == 'undefined') {
+                        $('#missing-badges').append('<a href="#" id="badge-'+name+'" class="add-badge" data-handle="'+handle+'" data-badge="'+name+'"><img src="/img/badges/badge-'+name+'.svg" class="badge-img drop-shadow" style="margin: 5px; width: 50px; height: 50px;"></a>');
+                    }
+                });
+            });
+        });
+
+        // Bind click handler to add badges
+        $('#modal-main').on('click','a.add-badge', function(e) {
+            var badge = $(this).attr('data-badge');
+            addBadge(badge, $(this).attr('data-handle'));
+            var link = $('#badge-'+badge).removeClass().addClass('remove-badge').detach();
+            $('#current-badges').append(link);
+        });
+        // Bind click handler to remove badges
+        $('#modal-main').on('click','a.remove-badge', function(e) {
+            var badge = $(this).attr('data-badge');
+            removeBadge(badge, $(this).attr('data-handle'));
+            var link = $('#badge-'+badge).removeClass().addClass('add-badge').detach();
+            $('#missing-badges').append(link);
         });
 
         function setPassword(userHandle, password) {
@@ -76,7 +112,7 @@
                 $.each(user.badges, function(badge, bval) {
                     html += '<img src="/img/badges/badge-'+badge+'.svg" style="width: 28px; heigth: 28px; border-radius: 14px; margin-right: 4px; margin-bottom: 4px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.23)" >';
                 });
-                html += '<p><a class="changepwd btn btn-primary mt-3" href="#" data-email="'+user.email+'" data-handle="'+user.userhandle+'">Change password</a>';
+                html += '<p><a class="changepwd btn btn-primary btn-sm mt-3" href="#" data-email="'+user.email+'" data-handle="'+user.userhandle+'">Change password</a> <a class="changebadges btn btn-primary btn-sm mt-3" href="#" data-email="'+user.email+'" data-handle="'+user.userhandle+'" data-badges=\''+JSON.stringify(user.badges)+'\'>Manage badges</a>';
                 html += '</div>';
                 $('#results').append(html);
             });
@@ -103,6 +139,38 @@
                 markup += '</div>';
                 $('#comments').append(markup);
         } 
+
+    function addBadge(badge, userHandle) {
+        $.ajax({
+            url: api.data+'/admin/badge',
+            method: 'POST',
+            data: { 'badge': badge, 'user': userHandle},
+            dataType: 'json',
+            success: function(data) {
+                $.bootstrapGrowl('Badge '+badge+' added. Reload page to update list.', {type: 'success'});
+            },
+            error: function(data) { 
+                $.bootstrapGrowl('Failed to add badge '+badge+'.', {type: 'error'});
+            },
+            headers: {'Authorization': 'Bearer '+token},
+        }); 
+    }
+    
+    function removeBadge(badge, userHandle) {
+        $.ajax({
+            url: api.data+'/admin/badge',
+            method: 'DELETE',
+            data: { 'badge': badge, 'user': userHandle},
+            dataType: 'json',
+            success: function(data) {
+                $.bootstrapGrowl('Badge '+badge+' removed. Reload page to update list.', {type: 'success'});
+            },
+            error: function(data) { 
+                $.bootstrapGrowl('Failed to remove badge '+badge+'.', {type: 'error'});
+            },
+            headers: {'Authorization': 'Bearer '+token},
+        }); 
+    }
 
     });
 }(jQuery));
