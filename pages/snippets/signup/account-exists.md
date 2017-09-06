@@ -4,10 +4,11 @@ permalink: /snippets/signup/account-exists
 <!-- Start of /snippets/signup/account-exists -->
 <div class="light-on-bg" style="text-align: center;" markdown="1">
 
-## Uh-oh, we already have a user with that email address
+## Wait a minute, it is you!
 
-Perhaps you forgot your password?
+We already have a user with that email address.  
+Perhaps you wanted to log in instead?
 
-<a href="/reset" class="btn btn-primary">Reset your password</a>
+<a href="#" class="btn btn-primary btn-block" id="login-instead">Log in</a>
 </div>
 <!-- End of /snippets/signup/account-exists -->
