@@ -1,14 +1,16 @@
 <figure class="image">
-    <img 
-        class="img img-responsive drop-shadow" 
-        src="{{ include.url }}" 
-        {% if(include.description) %}
-            alt="{{ include.description }}"
-        {% else %}
-            alt=" "
-        {% endif %}
-    >
+    <a href="{{ include.url }}" target="_BLANK" title="Open this image in a new window">
+        <img 
+            class="img img-responsive drop-shadow" 
+            src="{{ include.url }}" 
+            {% if(include.description) %}
+                alt="{{ include.description }}"
+            {% else %}
+                alt=" "
+            {% endif %}
+        >
+    </a>
     {% if(include.description) %}
-        <figcaption>{{ include.description }} <a href="{{ include.url }}" target="_BLANK"><i class="fa fa-external-link" aria-hidden="true"></i></a></figcaption>
+        <figcaption>{{ include.description }}</figcaption>
     {% endif %}
 </figure>

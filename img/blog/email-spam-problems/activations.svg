@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="701" height="450" viewBox="0 0 701 450">
+    <style type="text/css">
+    <![CDATA[
+        rect.inact{fill: #fb9500; stroke: none;}
+        rect.act{fill: #5cb85c; stroke:none}
+        rect.ms{fill: #000000; fill-opacity:0.3}
+        text.fs{font-size:25px;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;fill:#000;text-anchor:middle;font-weight:600}
+        text.sm{font-size:15px;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;fill:#000;text-anchor:middle;font-weight:400}
+        text.legend{font-size:15px;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;fill:#000;text-anchor:start;font-weight:400}
+    ]]>
+    </style>
+    <!-- activated -->
+    <g transform="translate(0,0)">
+        <rect height="100" width="661" class="act" x="20" y="20" />
+        <rect height="100" width="6" class="act ms" x="20" y="20" />
+    </g> 
+    <!-- not activated -->
+    <g transform="translate(0,0)">
+        <rect height="100" width="156" class="inact" x="20" y="140" />
+        <rect height="100" width="86" class="inact ms" x="20" y="140" />
+    </g> 
+    <!-- Legend -->
+    <g transform="translate(0,300)">
+        <circle cx="75" cy="0" r="15" fill="#5cb85c" />
+        <circle cx="75" cy="35" r="15" fill="#5cb85c" />
+        <circle cx="75" cy="35" r="15" fill="#000000" fill-opacity="0.3" />
+        <circle cx="75" cy="70" r="15" fill="#fb9500" />
+        <circle cx="75" cy="105" r="15" fill="#fb9500" />
+        <circle cx="75" cy="105" r="15" fill="#000000" fill-opacity="0.3" />
+        <text class="legend" x="105" y="7" >Activated accounts</text>
+        <text class="legend" x="105" y="77" >Not (yet) activated accounts</text>
+        <text class="legend" x="105" y="42" >Activated accounts with a Microsoft-managed email address</text>
+        <text class="legend" x="105" y="112" >Not (yet) activated accounts with a Microsoft-managed email address</text>
+    </g>
+</svg>
