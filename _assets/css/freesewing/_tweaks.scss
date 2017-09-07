@@ -43,6 +43,9 @@ figure.image figcaption {
     margin-bottom: 1rem; 
     font-size: 90%; 
 }
+div.post figure.image figcaption { 
+    font-size: 75%; 
+}
 figure.image figcaption span.caption{ 
   display: block;
   line-height: 1.1;
