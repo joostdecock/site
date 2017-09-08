@@ -19,16 +19,16 @@ If you don't have Jekyll on your system, please follow the
 
 ## Install from GitHub
 
-With Jekyll setup, you can clone the docs repository from GitHub:
+With Jekyll setup, you can clone the site repository from GitHub:
 
 ```sh
-git clone git@github.com:freesewing/docs.git 
+git clone git@github.com:freesewing/site.git 
 ```
 
-This will create the `docs` directory with our code inside.
+This will create the `site` directory with our code inside.
 
 ## Generate the HTML
-To browse the documentation, cd into the `docs` folder and 
+To browse the documentation, cd into the `site` folder and 
 enter the following command:
 
 ```
