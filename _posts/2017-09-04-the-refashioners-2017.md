@@ -1,9 +1,9 @@
 ---
 layout: blog
 title: "The Refashioners 2017 - Now with a Blake Blazer preview and 100% more zebra"
-linktitle: The Refashioners 2017
+linktitle: "The Refashioners 2017"
 img: zebra.jpg
-caption: They said I was crazy to make a zebra jacket, so I made it anyway. And it sank into the swamp.
+caption: "They said I was crazy to make a zebra jacket, so I made it anyway. And it sank into the swamp."
 author: joostdecock
 category: makes
 blurb: "My contribution to The Refasioners 2017 and a sneak preview at the upcoming Blake Blazer pattern"

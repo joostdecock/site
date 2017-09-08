@@ -1,9 +1,9 @@
 ---
 layout: blog
-title: Announcing freesewing, an open source platform for made-to-measure sewing patterns
-linktitle: Announcing freesewing
+title: "Announcing freesewing, an open source platform for made-to-measure sewing patterns"
+linktitle: "Announcing freesewing"
 img: freesewing-logo.jpg
-caption: The freesewing logo
+caption: "The freesewing logo"
 author: joostdecock
 category: core
 blurb: "I am are proud to announce freesewing core v1.0.0 and the accompanying documentation that describes the freesewing project in detail."

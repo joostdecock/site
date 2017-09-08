@@ -1,7 +1,7 @@
 ---
 layout: blog
-title: We're JAMstack, we're JAMstack, we're JAMstack, we're JAMstack, we're JAMstack, we're JAMstack, we're JAMstack, and I hope you like JAMstack too
-linktitle: I hope you like JAMstack too
+title: "We're JAMstack, we're JAMstack, we're JAMstack, we're JAMstack, we're JAMstack, we're JAMstack, we're JAMstack, and I hope you like JAMstack too"
+linktitle: "I hope you like JAMstack too"
 img: pipes.jpg
 caption: "Picture by <a href='https://stock.tookapic.com/jenniferforjoy' target='_BLANK' rel='nofollow'>Jennifer</a>"
 author: joostdecock

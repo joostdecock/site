@@ -1,9 +1,9 @@
 ---
 layout: blog
-title: Freesewing.org is open for business. That is, the business of giving away free sewing patterns
-linktitle: Freesewing.org is open for business
+title: "Freesewing.org is open for business. That is, the business of giving away free sewing patterns"
+linktitle: "Freesewing.org is open for business"
 img: open.jpg
-caption: Open 24/7 from now onwards
+caption: "Open 24/7 from now onwards"
 author: joostdecock
 category: site
 blurb: "Freesewing finally has a friendly face, and it's waiting to meet you at freesewing.org."

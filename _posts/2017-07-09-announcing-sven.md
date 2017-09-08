@@ -1,7 +1,7 @@
 ---
 layout: blog
-title: Announcing the Sven Sweater; A basic sweater based on the Brian body block
-linktitle: Announcing the Sven Sweater
+title: "Announcing the Sven Sweater; A basic sweater based on the Brian body block"
+linktitle: "Announcing the Sven Sweater"
 img: showcase.jpg
 caption: "A Sven made for the office. As in, kinda boring"
 author: joostdecock
