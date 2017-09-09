@@ -18,7 +18,7 @@ Apologies if this post is a bit... like this:
 
 {% include embed.html src="https://www.youtube.com/embed/jkmoIPXs96E" %}
 
-I'm writing this as a blog post -- and not a documentation page -- because I do can't promise to maintain 
+I'm writing this as a blog post -- and not a documentation page -- because I an't promise to maintain 
 these instructions every time something changes. But, since this is a lengthy post, a table of
 content is probably handy:
 
@@ -36,7 +36,7 @@ There are two main reasons to set up your own environment:
  - You want to run your own instance, perhaps because you want to run your own pattern business
 
 Regardless the reasons, these instructions apply to both because we're going to set up 
-a proper (virtual) server, and not some sort of environment on a laptop somewhere.
+a proper virtual server, and not some sort of environment on a laptop somewhere.
 
 As a developer, you might find this overkill, but I like to have my development copy publicly 
 available so that I can sometimes point users to it and ask them to test out a feature on
@@ -54,7 +54,7 @@ I've picked a 2GB (that's the memory we're talking about) Linode for this, but y
 get away with a 1GB one too. This will set you back $5 per month.
 It's basically the price of two coffees per month.
 
-With my server under my control, I've deployed one of Linode's images to it.
+With the server under my control, I've deployed one of Linode's images to it.
 I went with Debian 9 because [Debian](http://www.debian.org/) is my favourite OS, and 9 is the latest 
 stable release.
 
@@ -101,7 +101,7 @@ Like this:
 ```
 joost       IN A      139.162.166.219
 joost.data  IN CNAME  joost
-joost.core  IN CNAME  core
+joost.core  IN CNAME  joost
 ```
 
 That's in the zone file for freesewing.org.
@@ -629,7 +629,7 @@ sudo make install
 
 That was easy :)
 
-### Clone this data repository
+### Clone the data repository
 
 Change to the `git` folder in your home directory and clone the data repo:
 
