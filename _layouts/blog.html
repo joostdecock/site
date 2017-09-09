@@ -21,11 +21,11 @@ layout: notoc
                             /img{{ page.url }}low_{{ page.img }} 500w,
                             /img{{ page.url }}med_{{ page.img }} 1000w,
                             /img{{ page.url }}high_{{ page.img }} 2000w"
-                        alt="{{ page.caption }}" 
+                        alt="{{ page.caption | strip_html}}" 
                         class="lazyload drop-shadow"
                     >
                 </a>
-                {% if(page.caption) %}
+                {% if page.caption %}
                 <figcaption>{{ page.caption }}</figcaption>
                 {% endif %}
             </figure>
