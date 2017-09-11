@@ -5,7 +5,7 @@ permalink: /status
 action: status
 ---
 <div class="container">
-    <p>Skip ahead to <a href="#counters">counters</a>, <a href="#code-base">code base</a>, or <a href="#server-status">server status</a></p>
+    <p>Skip ahead to <a href="#counters">counters</a>, <a href="#referrals">referrals</a>, <a href="#code-base">code base</a>, or <a href="#server-status">server status</a></p>
     <h2 id="counters">Counters</h2>
     <div class="row">
         <div class="col-md-4 mb-3">
@@ -59,6 +59,17 @@ action: status
             </div>
         </div>
     </div>
+    <h2 id="referrals">Referrals</h2>
+    <p>This is data for the last two weeks</p>
+    <table id="reflist" class="table striped paper">
+        <thead>
+            <tr>
+                <th style="max-width: 4rem; text-align:right">Count</th>
+                <th>Site</th>
+                <th class="not-on-small" style="width: 60%;">Proportion</th>
+            </tr>
+        </thead>
+    </table>
     <h2 id="code-base">Code base</h2>
     <div class="row">
         <div class="col-md-4 mb-3">
