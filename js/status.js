@@ -14,6 +14,18 @@
             var memory = parseInt(s.system.memory.free) + parseInt(s.system.memory.used);
             var used = s.system.memory.used / (memory/100);
             $('#memory').css('width', used+'%').attr('aria-valuenow', used).html(s.system.memory.used+'/'+memory);
+            var onepercent = -1;
+            $.each(s.referrals, function(index, referral){
+                if (onepercent == -1) onepercent = referral.hits / 100;
+                var percent = referral.hits/onepercent;
+                var row = "<tr>"
+                row += "<td style='max:width: 4rem; text-align: right;'>"+referral.hits+"</td>";
+                if(typeof referral.link == 'undefined') row += "<td>"+referral.site+"</td>";
+                else row += "<td><a href='"+referral.link+"' target='_BLANK'><b>"+referral.site+"</b></a></td>";
+                row += "<td class='not-on-small' style='width: 60%'><div class='progress'><div class='progress-bar' role='progressbar' style='width: "+percent+"%' aria-valuenow='"+percent+"' aria-valuemin='0' aria-valuemax='100'></div></div></td>";
+                row += "</tr>";
+                $('#reflist').append(row);
+            });
         });
         $.get('/json/freesewing.json', function( fsdata ) {
             $('#patterns').html(Object.keys(fsdata.patterns).length);
