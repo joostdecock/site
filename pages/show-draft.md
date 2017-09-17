@@ -74,12 +74,6 @@ nocomments: true
                     msg="Use the source Luke. Also allows editing in Inkscape or Illustrator."
                 %}
                 {% include download-draft.html 
-                    format="pdf"
-                    class="card-primary card-inverse"
-                    title="PDF"
-                    msg="Full-size PDF for copyshop printing or just to look at because it's just so pretty."
-                %}
-                {% include download-draft.html 
                     format="a4.pdf"
                     class="card-primary card-inverse"
                     title="A4 PDF"
@@ -103,6 +97,13 @@ nocomments: true
                     title="Tabloid PDF"
                     msg="Twice the (weird) size, half the sticky-taping"
                 %}
+            <p>
+                Other formats:  
+                <a class="download-draft" data-format="a2.pdf" style="color: #663f95; font-weight: bold;">A2 PDF</a>, 
+                <a class="download-draft" data-format="a1.pdf" style="color: #663f95; font-weight: bold;">A1 PDF</a>, 
+                <a class="download-draft" data-format="a0.pdf" style="color: #663f95; font-weight: bold;">A0 PDF</a>,  
+                <a class="download-draft" data-format="pdf" style="color: #663f95; font-weight: bold;">Full-size PDF</a>,  
+            </p>
         </div>
     </div>
 
