@@ -98,7 +98,7 @@ Open the main configuration file
 &mdash; `config.yml` in the project's root directory &mdash;
 , and add `Acme` to the `patternNamespaces`:
 
-```yml
+```
 patternNamespaces:
     - Core
     - Docs
@@ -165,7 +165,7 @@ Open the `config.yml` file, and edit it so it looks like this:
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="our-config" markdown="1">
 
-```yml
+```
 info:
     name: "My baby bib pattern"
 
@@ -187,7 +187,7 @@ options:
 </div>
 <div role="tabpanel" class="tab-pane" id="template-config" markdown="1">
 
-```yaml
+```
 hidden: true
 info:
     name: "Pattern Template"
@@ -911,7 +911,7 @@ If we draw a Bezier curve with these four points, it looks like this:
 #### Calculating curve length with Part::curveLen
 
 Now, we want that opening to be 80% of the head circumference. So we're going to draw it, then measure it,
-and tweak it until we're happen.
+and tweak it until we're happy.
 
 Since our neck opening is symmetric both vertical and horizontal, we only need to draw a quarter of it.
 We can just measure how long this curve is, multiply it by four, and we have our neck opening.
@@ -1099,9 +1099,9 @@ It takes one parameter: a prefix that will be applied to the newly named points.
 In our example, we're calling it three times with prefix `left` which will lead to the
 points `left1`, `left2`, and `left3` being created.
 
-In the second part, we're calling it 4 times with prefix `top`, creating points `top1` to `top4`.
+In the second part, we're calling it 5 times with prefix `top`, creating points `top1` to `top5`.
 
-#### Drawing the neck openining
+#### Drawing the neck opening
 
 We now have all the points needed to describe our neck opening. And we draw it with this line:
 
@@ -1131,7 +1131,7 @@ Pathstrings will become second nature to you in no time. The result is this:
 
 ### Designing the bib shape
 
-With our neck opening good to go, it's time we drew a bib around it.
+With our neck opening good to go, it's time we draw a bib around it.
 
 Add the code below to our `draftBib` method:
 
@@ -1556,7 +1556,7 @@ fits babies big and small.
 
 <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="full-config" markdown="1">
-```yml
+```
 info:
     name: "My baby bib pattern"
 
