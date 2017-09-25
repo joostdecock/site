@@ -18,21 +18,21 @@
     </g> 
     <!-- 2016 -->
     <g transform="translate(0,-473.5)">
-        <rect height="473.5" width="50" class="don mmp" x="220" y="0" />
-        <rect height="473.5" width="50" class="msf" x="280" y="0" />
+        <rect height="477" width="50" class="don mmp" x="220" y="0" />
+        <rect height="477" width="50" class="msf" x="280" y="0" />
         <text class="fs" x="275" y="503.5" >2016</text>
         <text class="sm" x="275" y="-10" >473.5 euro</text>
     </g>
     <!-- 2017 mmp -->
-    <g transform="translate(0,-474.5)">
-        <rect height="474.5" width="50" class="don mmp" x="420" y="0" />
+    <g transform="translate(0,-477)">
+        <rect height="477" width="50" class="don mmp" x="420" y="0" />
         <rect height="0" width="50" class="msf" x="480" y="0" />
-        <text class="fs" x="475" y="502" >2017</text>
-        <text class="sm" x="475" y="-10" >474.5 euro so far</text>
+        <text class="fs" x="475" y="504.5" >2017</text>
+        <text class="sm" x="475" y="-10" >477 euro so far</text>
     </g>
     <!-- 2017 fs -->
-    <g transform="translate(0,-474.5)">
-        <rect height="57.5" width="50" class="don" x="420" y="0" />
+    <g transform="translate(0,-477)">
+        <rect height="60" width="50" class="don" x="420" y="0" />
         <rect height="0" width="50" class="msf" x="480" y="0" />
     </g>
     <!-- Legend -->
