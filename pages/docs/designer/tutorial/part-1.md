@@ -496,7 +496,7 @@ As a child of the `Pattern` class, we inherit (like, get for free) a bunch of it
 > plays an important role in pattern design.
 >
 > It is very common for one pattern to be based on another (often called a block).
-> Because this system of inheritance is build right into the code, we can leverage it
+> Because this system of inheritance is built right into the code, we can leverage it
 > to easily extend one pattern into another.
 
 Because the `Pattern` class has a `setValue` method, we can just use it as it its part of our class
@@ -1079,7 +1079,7 @@ There's four new things to learn here. There's the `array` notation and
 the `foreach` construct. Those are not freesewing-specific, but just programming stuff.
 
 An array holds a bunch of elements, and is written as such: `[2,3,4]`.
-The `foreach` loops through through your `array` and does something **for each** of the elements.
+The `foreach` loops through your `array` and does something **for each** of the elements.
 
 But our focus is on two new methods: [`Part::newId`](../../core/classdocs/src/part#newid) and [`Part::flipX`](../../core/classdocs/src/part#flipx).
 
@@ -1286,7 +1286,7 @@ It's one the many helper functions in the [`Part`](../../core/classdocs/src/part
 you can use to create points.
 
 In this case, you guessed it, the method rotates one point around another
-over a given number of defrees.
+over a given number of degrees.
 
 #### Keeping pathstrings readable
 
@@ -1331,7 +1331,7 @@ $p->newPath(
 </div>
 </div>
 
-There's nothing new in htis code, but note that we have rewritten the line to add our `outline`
+There's nothing new in this code, but note that we have rewritten the line to add our `outline`
 path.
 
 In giving our points descriptive names, we've made it easier to understand what's going 
@@ -1580,7 +1580,7 @@ options:
 ```php
 <?php
 /** Freesewing\Patterns\Acme\BabyBib class */
-namespace Freesewing\Patterns\Acme;
+namespace \Freesewing\Patterns\Acme;
 
 /**
  *  Making a baby bib pattern
