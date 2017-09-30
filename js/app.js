@@ -1425,7 +1425,6 @@
         $('#draft-core-url').html('<a href="'+draft.data.coreUrl+'" target="_BLANK" title="Manually run the API call used to create this draft">Replay API call</a>');
         if(!logged_in) {
             // Shared draft, viewed anonymously
-                console.log(draft);
             $('.owner-only').remove();
             $('.user-only').remove();
             var msg = '<blockquote class="fork m600"><h5>If you were logged in, you could fork this draft</h5>';
