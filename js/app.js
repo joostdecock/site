@@ -1426,6 +1426,7 @@
         if(!logged_in) {
             // Shared draft, viewed anonymously
             $('.owner-only').remove();
+            $('.user-only').remove();
             var msg = '<blockquote class="fork m600"><h5>If you were logged in, you could fork this draft</h5>';
             msg += '<p>Forking is a way to use an existing draft as a template for your own draft.</p>';
             msg += '<p class="text-center"><a href="/docs/site/fork" class="btn btn-outline-white">Find out more</a></p></blockquote>';
@@ -1439,6 +1440,7 @@
                 // Own draft
                 $('#draft-handle').html(draft.handle);
                 $('#model-link').attr('href','/models/'+draft.model.handle).html(draft.model.name);
+                $('#user-link').attr('href','/users/'+draft.userHandle).html(draft.userName);
                 if(draft.shared == 1) {
                     $('#shared-link').html('Yes');
                     $('#fork-msg').prepend('<small>(1) This draft is publicly available at <a href="/drafts/'+draft.handle+'">'+window.location.hostname+'/drafts/'+draft.handle+'</a></small>');
@@ -1454,6 +1456,7 @@
                 // Logged-in user but not their own draft (shared)
                 $('.owner-only').remove();
                 $('#draft-handle').html(draft.handle);
+                $('#user-link').attr('href','/users/'+draft.userHandle).html(draft.userName);
                 $('#created').attr('datetime', draft.created+' UTC');
                 timeago().render($('.timeago'));
                 var msg = '<blockquote class="fork m600 mb-5"><h5>Hot women in your neighborhood are forking this draft</h5>';

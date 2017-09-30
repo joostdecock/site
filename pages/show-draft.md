@@ -119,6 +119,7 @@ nocomments: true
                 <table class="keyval">
                     <tr><td>Pattern</td><td nowrap><a id="pattern-link" href="#draft-container"></a></td></tr>
                     <tr class="owner-only"><td nowrap>Model</td><td><a id="model-link" href="#draft-container"></a></td></tr>
+                    <tr class="user-only"><td nowrap>User</td><td><a id="user-link" href="#draft-container"></a></td></tr>
                     <tr><td>Created</td><td nowrap><span id="created" class="timeago"></span></td></tr>
                     <tr class="owner-only"><td nowrap>Shared</td><td><a id="shared-link" href="#draft-container" class="draft-settings"></a></td></tr>
                     <tr><td>Reference <sup><small>1</small></sup></td><td id="draft-handle" nowrap></td></tr>
