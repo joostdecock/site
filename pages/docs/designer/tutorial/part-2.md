@@ -277,6 +277,10 @@ will be rendered by the sample service.
 We've already done that, so let's see what it looks like when we sample our
 `lengthBonus` option:
 
+```
+index.php?service=sample&pattern=BabyBib&mode=options&option=lengthBonus
+```
+
 <div class='drop-shadow mb-3'>
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg viewbox ="0 0 704.16850460988 1640.7637810954" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" >
