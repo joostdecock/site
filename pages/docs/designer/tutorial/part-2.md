@@ -160,7 +160,12 @@ with their measurements.
 
 #### Sampler output
 
-Now that we have a group of models to sample, the sample service can get to work.
+Now that we have a group of models to sample, the sample service can get to work, by navigating to:
+
+```
+index.php?service=sample&pattern=BabyBib
+```
+
 For our BabyBib pattern, this is the output you'll get:
 
 <div class='drop-shadow mb-3'>
