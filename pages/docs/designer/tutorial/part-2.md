@@ -340,7 +340,7 @@ public function draft($model)
     // Is this a paperless pattern?
     if ($this->isPaperless) {
         // Add paperless info to our example part
-        $this->paperlessBib($model);
+        // $this->paperlessBib($model);
     }
 }
 ```
@@ -367,7 +367,7 @@ public function draft($model)
 </div>
 </div>
 
-It convention to keep the `draft` method simple (like the `sample`) method,
+It is convention to keep the `draft` method simple (like the `sample`) method,
 and call a `finalize` method for each part.
 
 That's what we're doing here. We're calling the `finalizeBib` method
@@ -639,6 +639,14 @@ be used based on the requested output units.
 
 Below is an example of our BabyBib pattern rendered by the Paperless theme. Once in metric,
 once in imperial.
+
+```
+index.php?service=draft&pattern=BabyBib&theme=Paperless&unitsOut=metric
+```
+
+```
+index.php?service=draft&pattern=BabyBib&theme=Paperless&unitsOut=imperial
+```
 
 <ul class="nav nav-tabs" role="tablist">
     <li class="nav-item"><a class="nav-link active" href="#our-grid" role="tab" data-toggle="tab">Metric</a></li>
@@ -966,6 +974,10 @@ languages:
 
 Congratulations, you have translated your pattern to Dutch. Don't take my word for it though:
 
+```
+index.php?service=draft&pattern=BabyBib&theme=Paperless&unitsOut=metric&lang=nl
+```
+
 {% include api.html 
     description="Our pattern is rendered in Dutch"
     url="?service=draft&pattern=DesignTutorial&figure=dimensions&lang=nl&theme=Paperless"
@@ -1275,6 +1287,9 @@ class BabyBib extends \Freesewing\Patterns\Core\Pattern
         // Logo
         $p->addPoint('logoAnchor', $p->shift(1,-90,120)); 
         $p->newSnippet('logo', 'logo', 'logoAnchor');
+        
+        $p->newNote(1,1,$this->t('Finish with bias tape'), 12, 15, -3);
+        $p->newNote(2,'snap2Anchor',$this->t('Attach snap at the back'), 6, 25, 4);
     }
 
     /*
