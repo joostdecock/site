@@ -14,7 +14,7 @@
      height="500"
      id="svg4412"
      inkscape:version="0.48.5 r10040"
-     sodipodi:docname="badge-commented.svg">
+     sodipodi:docname="badge-designer-apprentice.svg">
     <metadata
          id="metadata3995">
         <rdf:RDF>
@@ -41,36 +41,14 @@
          id="namedview3993"
          showgrid="false"
          inkscape:zoom="0.943160647031938"
-         inkscape:cx="472.9407961216541"
+         inkscape:cx="432.6507351234737"
          inkscape:cy="229.8728813559318"
          inkscape:window-x="0"
          inkscape:window-y="0"
          inkscape:window-maximized="1"
          inkscape:current-layer="svg4412" />
     <defs
-         id="defs4414">
-        <clipPath
-             clipPathUnits="userSpaceOnUse"
-             id="clipPath4052">
-            <g
-                 style="fill:#204a87"
-                 transform="matrix(1.766854610996603,1.766854610996603,-1.766854610996603,1.766854610996603,624.728730924355,-558.346212666754)"
-                 id="g4054">
-                <!-- Start of group #part -->
-                <g
-                     style="fill:#204a87"
-                     transform="translate(99.36599999999998,93.03499999999999)"
-                     id="g4056">
-                    <path
-                         style="fill:#204a87"
-                         d="m -94.36599999999998,165.025 c 0,27.614 22.38599999999998,50 50,50 L 44.366,215.025 c 27.614,0 49.99999999999999,-22.386 49.99999999999999,-50 l 0,-165.025 C 94.36599999999998,-38.513 60.89500000000001,-79.70499999999998 14.43,-87.9 2.118,-90.069 -2.223,-65.45099999999999 10.087,-63.28 44.244,-57.256 69.36599999999998,-26.013 69.36599999999998,0 69.36599999999998,26.013 34.683,52.025 0,52.025 -34.683,52.025 -69.36599999999998,26.013 -69.36599999999998,0 -69.36599999999998,-26.013 -44.244,-57.256 -10.087,-63.28 2.223,-65.45099999999999 -2.118,-90.069 -14.43,-87.9 -60.89500000000001,-79.70499999999998 -94.36599999999998,-38.513 -94.36599999999998,0 z"
-                         id="path4058"
-                         inkscape:connector-curvature="0" />
-                </g>
-                <!-- End of group #part -->
-            </g>
-        </clipPath>
-    </defs>
+         id="defs4414" />
     <path
          sodipodi:type="arc"
          style="fill:#fce94f;fill-opacity:1;stroke:none"
@@ -105,26 +83,10 @@
         </g>
         <!-- End of group #part -->
     </g>
-    <g
-         id="g4042"
-         style="fill:#ef2929"
-         transform="matrix(0.3914127248387308,-0.3914127248387308,0.3914127248387308,0.3914127248387308,86.58007208122769,496.56801224339)"
-         clip-path="url(#clipPath4052)">
-        <rect
-             y="175"
-             x="216.2940063476562"
-             height="25"
-             width="421.9853820800781"
-             id="rect4038"
-             style="fill:#ef2929;fill-opacity:1;stroke:none" />
-        <rect
-             style="fill:#ef2929;fill-opacity:1;stroke:none"
-             id="rect4040"
-             width="421.9853820800781"
-             height="25"
-             x="216.2940063476562"
-             y="215" />
-    </g>
+    <path
+         style="fill:#ef2929;fill-opacity:1;stroke:none"
+         d="M 380.53125 339.625 L 260.5625 459.59375 L 280.125 459.59375 L 380.53125 359.1875 L 380.53125 339.625 z M 380.53125 370.9375 L 291.875 459.59375 L 311.375 459.59375 C 311.395925198334 459.59375 311.4165791464742 459.5937685836097 311.4375 459.59375 L 380.53125 390.5 C 380.5312685836097 390.4790791464742 380.53125 390.458425198334 380.53125 390.4375 L 380.53125 370.9375 z "
+         id="rect4038" />
     <g
          style="font-size:149.031036377px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ef2929;fill-opacity:1;stroke:none;font-family:HenryMorganHand;-inkscape-font-specification:HenryMorganHand Bold"
          id="text4060">
