@@ -24,7 +24,7 @@ meet other freesewers, or just hang out and share a laugh.
 - Chat not your thing? The [@freesewing_org](https://twitter.com/freesewing_org) 
 Twitter account is the next best thing.
 - Did you spot a mistake? Have a suggestion for an improvement? 
-Please [file an issue on GitHub](https://github.com/freesewing/freesewing.github.io/issues/new). 
+Please [file an issue on GitHub](https://github.com/freesewing/site/issues/new). 
 You'll need a GitHub account, but they are free.
 
 ## Ways to contribute
