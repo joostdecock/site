@@ -1009,7 +1009,7 @@ In patterns.
 
 - `string` `$origin`: The name of the [`Point`](point) that is the origin/start of the shift.
 - `string` `$direction`: The name of the [`Point`](point) that is the direction of the shift.
-- `float` `$distance`: The distance to shift. 
+- `float` `$distance`: The distance to shift. The absolute value of  `float` `$distance` is used. for "negative shifts", use [`Part::shiftOutwards`](part#shiftoutwards) .
 
 `$origin` and `$direction` should previously have been added to the [`Part`](part).
 
