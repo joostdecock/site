@@ -998,7 +998,6 @@ Note that:
 
 - This returns a new [`Point`](point) object, and does not change the `$origin` point.
 - `$distance` can be larger than the distance between `$origin` and `$direction`.
-- If `$distance` is negative, we'll shift away from `$direction`.
 
 #### Typical use
 {:.no_toc}
