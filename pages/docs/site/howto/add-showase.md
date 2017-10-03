@@ -175,7 +175,7 @@ permalink: /showcase/maker/uneanneedecouture
 
 Adapt the example with the name of the maker for whom you're adding the showcase.
 
-## Add a showcase by maker overview page
+## Add a showcase by pattern overview page
 
 If this is the first showcase of this pattern, you will also need to add a showcase overview page for this pattern.
 
