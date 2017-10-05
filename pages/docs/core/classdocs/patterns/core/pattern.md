@@ -57,6 +57,7 @@ These are the methods a pattern designer should be familiar with:
 - [`Pattern::stretchToScale`](pattern#stretchToScale) : Take a stretch percentage and returns a scale percentage
 - [`Pattern::clonePoints`](pattern#clonepoints) : Clone points from one part into another
 - [`Pattern::newPart`](pattern#newpart) : Add a new part to the pattern
+- [`Pattern::requested`](pattern#requested) : Returns the full class name of the pattern requested by the user
 - [`Pattern::msg`](pattern#msg) : Add a message to the pattern
 - [`Pattern::dbg`](pattern#dbg) : Add a debug message to the pattern
 
@@ -72,6 +73,7 @@ These are the methods a pattern designer should be familiar with:
 - [`Pattern::getMessages`](pattern#getmessages) : Returns the pattern messages
 - [`Pattern::getDebug`](pattern#getdebug) : Returns the pattern debug messages
 - [`Pattern::getReplacements`](pattern#getreplacements) : Returns the pattern replacements
+- [`Pattern::getClass`](pattern#getclass) : Alias for [`Pattern::requested`](#requested)
 - [`Pattern::getClassChain`](pattern#getclasschain) : Returns the pattern class chain
 - [`Pattern::getTranslationFiles`](pattern#gettranslationfiles) : Returns the pattern translation files
 - [`Pattern::getSamplerModelConfig`](pattern#getsamplermodelconfig) : Returns the sampler model config
@@ -504,6 +506,22 @@ Called from [`Pattern::loadParts`](pattern#loadparts).
 
 - `string` `$name` : The name of the part in the `parts` array.
 
+### requested
+
+```php?start_inline=1
+string requested()
+```
+
+Returns the full namespaced name of the class/pattern requested by the user.
+
+#### Typical use
+{:.no_toc}
+
+Called from patterns to determine whether we are in the pattern requested, or in a (grand)father pattern.
+
+This is typically used for conditionale execution of code by comparing it to PHP's magic `__CLASS__` variable.
+See [this blog post](/blog/where-are-we/) for more info.
+
 ### msg
 
 ```php?start_inline=1
@@ -756,6 +774,14 @@ Called from the [`DraftService`](../../services/draftservice) to replace strings
 {:.no_toc}
 
 Returns an `array` of search/replace pairs.
+
+### getClass
+
+```php?start_inline=1
+string getClass()
+```
+
+Alias for [`Pattern::requested`](#requested).
 
 ### getClassChain
 
