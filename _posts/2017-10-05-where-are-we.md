@@ -45,7 +45,7 @@ I recently came accross this issue while working on some new patterns, and I tho
 
 Here's the deal: I'm designing a new trouser block for men. It's called **Trent**. I'm also, in parallel, working on a selvedge jeans block for men called **Seth**.
 
-The selvedge block, **Seth**, is based on --- or extends --- the regular block, **Trent**. Or in other words, **Trent** us the parent, and **Seth** is the child pattern.
+The selvedge block, **Seth**, is based on --- or extends --- the regular block, **Trent**. Or in other words, **Trent** is the parent, and **Seth** is the child pattern.
 
 {% include figure.html url="/img/blog/where-are-we/trentSeth.png" description="Seth extends Trent" %}
 
