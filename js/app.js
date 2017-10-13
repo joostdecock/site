@@ -1518,9 +1518,9 @@
         });
         marked.setOptions({sanitize: true});
         if(draft.notes !==  '') $('#notes-inner').html(marked(draft.notes));
-        $('#link-preview').attr('href',draft.dlroot+draft.handle+'.svg');
-        $('#svg-wrapper').html('<img style="width: 100%; height: auto;" src="'+draft.dlroot+draft.handle+'.svg">');
-        $('#compared-wrapper').html('<img style="width: 100%; height: auto;" src="'+draft.dlroot+draft.handle+'.compared.svg">');
+        $('#link-preview').attr('href',draft.dlroot+draft.handle+'.svg?cache='+draft.cache);
+        $('#svg-wrapper').html('<img style="width: 100%; height: auto;" src="'+draft.dlroot+draft.handle+'.svg?cache='+draft.cache+'">');
+        $('#compared-wrapper').html('<img style="width: 100%; height: auto;" src="'+draft.dlroot+draft.handle+'.compared.svg?cache='+draft.cache+'">');
         $('#compared-preview').attr('href',draft.dlroot+draft.handle+'.compared.svg');
         $('.download-draft').each(function(index) {
             var format = $(this).attr('data-format');
