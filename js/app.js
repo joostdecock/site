@@ -1274,12 +1274,14 @@
         setTimeout(function(){$("#progress").removeClass('progress-66').addClass('complete')}, 500);
         if (page.substr(0,9) === '/redraft/') var method = 'redraft';
         else var method = 'draft';
-        // Handle parts
-        var parts = [];
-        $.each($('input[name="partlist"]:checked'), function(index, part) {
-            parts.push($(part).val());
-        });
-        if(parts.length > 0) $('#form').append('<input type="hidden" name="parts" value="'+parts+'">');
+        // Handle parts only if scope is not all
+        if($('input[name="scope"]:checked').val() == 'custom') {
+            var parts = [];
+            $.each($('input[name="partlist"]:checked'), function(index, part) {
+                parts.push($(part).val());
+            });
+            if(parts.length > 0) $('#form').append('<input type="hidden" name="parts" value="'+parts+'">');
+        }
         if($('input[name="seamAllowance"]:checked').val() == 'custom') $('#sa').val($('#customSa').val());
         else if ($('input[name="seamAllowance"]:checked').val() == 'none') $('#sa').val(0);
         else if ($('input[name="seamAllowance"]:checked').val() == 'imperial') {
