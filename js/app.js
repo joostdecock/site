@@ -1274,12 +1274,14 @@
         setTimeout(function(){$("#progress").removeClass('progress-66').addClass('complete')}, 500);
         if (page.substr(0,9) === '/redraft/') var method = 'redraft';
         else var method = 'draft';
-        // Handle parts
-        var parts = [];
-        $.each($('input[name="partlist"]:checked'), function(index, part) {
-            parts.push($(part).val());
-        });
-        if(parts.length > 0) $('#form').append('<input type="hidden" name="parts" value="'+parts+'">');
+        // Handle parts only if scope is not all
+        if($('input[name="scope"]:checked').val() == 'custom') {
+            var parts = [];
+            $.each($('input[name="partlist"]:checked'), function(index, part) {
+                parts.push($(part).val());
+            });
+            if(parts.length > 0) $('#form').append('<input type="hidden" name="parts" value="'+parts+'">');
+        }
         if($('input[name="seamAllowance"]:checked').val() == 'custom') $('#sa').val($('#customSa').val());
         else if ($('input[name="seamAllowance"]:checked').val() == 'none') $('#sa').val(0);
         else if ($('input[name="seamAllowance"]:checked').val() == 'imperial') {
@@ -1516,9 +1518,9 @@
         });
         marked.setOptions({sanitize: true});
         if(draft.notes !==  '') $('#notes-inner').html(marked(draft.notes));
-        $('#link-preview').attr('href',draft.dlroot+draft.handle+'.svg');
-        $('#svg-wrapper').html('<img style="width: 100%; height: auto;" src="'+draft.dlroot+draft.handle+'.svg">');
-        $('#compared-wrapper').html('<img style="width: 100%; height: auto;" src="'+draft.dlroot+draft.handle+'.compared.svg">');
+        $('#link-preview').attr('href',draft.dlroot+draft.handle+'.svg?cache='+draft.cache);
+        $('#svg-wrapper').html('<img style="width: 100%; height: auto;" src="'+draft.dlroot+draft.handle+'.svg?cache='+draft.cache+'">');
+        $('#compared-wrapper').html('<img style="width: 100%; height: auto;" src="'+draft.dlroot+draft.handle+'.compared.svg?cache='+draft.cache+'">');
         $('#compared-preview').attr('href',draft.dlroot+draft.handle+'.compared.svg');
         $('.download-draft').each(function(index) {
             var format = $(this).attr('data-format');

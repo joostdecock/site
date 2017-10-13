@@ -561,7 +561,7 @@ Used to calculate the lenth of Bezier curves.
 - `string` `$start`: The name of the [`Point`](point) that is the start of the curve.
 - `string` `$cp1`: The name of the [`Point`](point) that is the first control point of the curve.
 - `string` `$cp2`: The name of the [`Point`](point) that is the second control point of the curve.
-- `string` `$end`: The name of the [`Point`](point) that is the  of the curve.
+- `string` `$end`: The name of the [`Point`](point) that is the end of the curve.
 
 All these points should previously have been added to the [`Part`](part).
 
@@ -1222,7 +1222,7 @@ In patterns.
 - `string` `$start`: The name of the [`Point`](point) that is the start of the curve.
 - `string` `$cp1`: The name of the [`Point`](point) that is the first control point of the curve.
 - `string` `$cp2`: The name of the [`Point`](point) that is the second control point of the curve.
-- `string` `$end`: The name of the [`Point`](point) that is the  of the curve.
+- `string` `$end`: The name of the [`Point`](point) that is the end of the curve.
 - `float` `$distance`: The distance to shift along the curve. 
 
 #### Return value
@@ -1290,7 +1290,7 @@ In patterns.
 - `string` `$start`: The name of the [`Point`](point) that is the start of the curve.
 - `string` `$cp1`: The name of the [`Point`](point) that is the first control point of the curve.
 - `string` `$cp2`: The name of the [`Point`](point) that is the second control point of the curve.
-- `string` `$end`: The name of the [`Point`](point) that is the  of the curve.
+- `string` `$end`: The name of the [`Point`](point) that is the end of the curve.
 - `float` `$distance`: The fraction to shift along the curve. 
 
 #### Return value
@@ -1568,7 +1568,7 @@ In patterns.
 - `string` `$start`: The name of the [`Point`](point) that is the start of the curve.
 - `string` `$cp1`: The name of the [`Point`](point) that is the first control point of the curve.
 - `string` `$cp2`: The name of the [`Point`](point) that is the second control point of the curve.
-- `string` `$end`: The name of the [`Point`](point) that is the  of the curve.
+- `string` `$end`: The name of the [`Point`](point) that is the end of the curve.
 - `string` `$edge`: One of `left`,`right`,`top`, or `bottom` to indicate what edge to find.
 
 
@@ -1696,7 +1696,7 @@ In patterns.
 - `string` `$start`: The name of the [`Point`](point) that is the start of the curve.
 - `string` `$cp1`: The name of the [`Point`](point) that is the first control point of the curve.
 - `string` `$cp2`: The name of the [`Point`](point) that is the second control point of the curve.
-- `string` `$end`: The name of the [`Point`](point) that is the  of the curve.
+- `string` `$end`: The name of the [`Point`](point) that is the end of the curve.
 - `float` `$x`: The X-value to find intersections on.
 - `prefix` `$prefix`: A prefix for the name of the [`Point`](point) objects to be added to the [`Part`](part).
 
@@ -1769,7 +1769,7 @@ In patterns.
 - `string` `$start`: The name of the [`Point`](point) that is the start of the curve.
 - `string` `$cp1`: The name of the [`Point`](point) that is the first control point of the curve.
 - `string` `$cp2`: The name of the [`Point`](point) that is the second control point of the curve.
-- `string` `$end`: The name of the [`Point`](point) that is the  of the curve.
+- `string` `$end`: The name of the [`Point`](point) that is the end of the curve.
 - `float` `$y`: The Y-value to find intersections on.
 - `prefix` `$prefix`: A prefix for the name of the [`Point`](point) objects to be added to the [`Part`](part).
 
@@ -1845,7 +1845,7 @@ In patterns.
 - `string` `$curveStart`: The name of the [`Point`](point) that is the start of the curve.
 - `string` `$curveCp1`: The name of the [`Point`](point) that is the first control point of the curve.
 - `string` `$curveCp2`: The name of the [`Point`](point) that is the second control point of the curve.
-- `string` `$curveEnd`: The name of the [`Point`](point) that is the  of the curve.
+- `string` `$curveEnd`: The name of the [`Point`](point) that is the end of the curve.
 - `string` `$lineStart`: The name of the [`Point`](point) that is the start of the line.
 - `string` `$lineEnd`: The name of the [`Point`](point) that is the end of the line.
 - `prefix` `$prefix`: A prefix for the name of the [`Point`](point) objects to be added to the [`Part`](part).
@@ -1926,11 +1926,11 @@ In patterns.
 - `string` `$curve1Start`: The name of the [`Point`](point) that is the start of the first curve.
 - `string` `$curve1Cp1`: The name of the [`Point`](point) that is the first control point of the first curve.
 - `string` `$curve1Cp2`: The name of the [`Point`](point) that is the second control point of the first curve.
-- `string` `$curve1End`: The name of the [`Point`](point) that is the  of the first curve.
+- `string` `$curve1End`: The name of the [`Point`](point) that is the end of the first curve.
 - `string` `$curve2Start`: The name of the [`Point`](point) that is the start of the second curve.
 - `string` `$curve2Cp1`: The name of the [`Point`](point) that is the first control point of the second curve.
 - `string` `$curve2Cp2`: The name of the [`Point`](point) that is the second control point of the second curve.
-- `string` `$curve2End`: The name of the [`Point`](point) that is the  of the second curve.
+- `string` `$curve2End`: The name of the [`Point`](point) that is the end of the second curve.
 - `prefix` `$prefix`: A prefix for the name of the [`Point`](point) objects to be added to the [`Part`](part).
 
 
@@ -1954,11 +1954,11 @@ Nothing, [`Point`](point) objects will be added to the [`Part`](part).
 ```
 
 Splits a Bezier curve in two parts and calculates the 8 [`Point`](point) 
-objectsthat to describe the two curves.
+objects that describe the two curves.
 
 The split happens on [`Point`](point) with name `$split` if `$splitOnDelta` is false (the default).
 
-If `$splitOnDelta` is true, the split happens on  delta `$split` (between 0 and 1).
+If `$splitOnDelta` is true, the split happens on delta `$split` (between 0 and 1).
 
 Points will be added to the [`Part`](part) with prefix `$prefix`.
 
@@ -2021,11 +2021,11 @@ The splitting on a delta between 0 and 1 is typically used in internal functions
 #### Parameters
 {:.no_toc}
 
-- `string` `$start`: The name of the [`Point`](point) that is the start of the first curve.
-- `string` `$cp1`: The name of the [`Point`](point) that is the first control point of the first curve.
-- `string` `$cp2`: The name of the [`Point`](point) that is the second control point of the first curve.
-- `string` `$end`: The name of the [`Point`](point) that is the  of the first curve.
-- `string` `$split`:  The name of the [`Point`](point) to split the curve on, or a delta between 0 and 1
+- `string` `$start`: The name of the [`Point`](point) that is the start of the original curve.
+- `string` `$cp1`: The name of the [`Point`](point) that is the first control point of the original curve.
+- `string` `$cp2`: The name of the [`Point`](point) that is the second control point of the original curve.
+- `string` `$end`: The name of the [`Point`](point) that is the end of the original curve.
+- `string` `$split`:  The name of the [`Point`](point) to split the original curve on, or a delta between 0 and 1
 - `string` `$prefix`: A prefix for the name of the [`Point`](point) objects to be added to the [`Part`](part).
 - `bool` `$splitOnDelta`: `true` to split on a delta between 0 and 1, `false` by default.
 
@@ -2365,7 +2365,7 @@ To get around that, you can use the `line-height` attribute for multiline text.
 It will set the spacing between lines in a multiline text string.
 
 Also note that the `dx` and `dy` attributes, which allow you to shift the text
-relative to the anchor point, do only apply to the firt line. 
+relative to the anchor point, do only apply to the first line. 
 As such, you should avoid using these in multiline text, and instead move 
 your anchor point.
 
@@ -3457,7 +3457,7 @@ void notch(
 Adds a `notch` [`SvgSnippet`](svgsnippet) to all points in array `$points`.
 
 Note that `$points` does not contain [`Point`](point) objects, but names
-of points added to tehe [`Part`](part).
+of points added to the [`Part`](part).
 
 Essentially, it's a fast way to add a bunch of notches to your [`Part`](part).
 
