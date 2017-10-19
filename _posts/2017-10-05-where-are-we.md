@@ -80,7 +80,7 @@ Knowing what pattern the user requested is one part of the equation. We also nee
 
 Luckily, PHP has a magic variable called `__CLASS__` that always gives us the full name of the current class. In other words, the full name of the current pattern.
 
-Now we can compare `Parrent::requested()` to `__CLASS__` and if it matches, we know we should true the seams (in our example).
+Now we can compare `Pattern::requested()` to `__CLASS__` and if it matches, we know we should true the seams (in our example).
 
 In practice, it looks something like this:
 
