@@ -3539,6 +3539,9 @@ The possibilities are:
 - small
 - vertical-small
 - horizontal-small
+- extrasmall
+- vertical-extrasmall
+- horizontal-extrasmall
 
 #### Example
 {:.no_toc}

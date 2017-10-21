@@ -23,6 +23,7 @@ shirt style. But you can't (or shouldn't) turn it into trousers.
 - {: .folder .open } [`Pattern`](/docs/core/classdocs/patterns/core/pattern)
   - BrianBodyBlock
     - AaronAshirt
+    - HueyHoodie
     - HugoHoodie
     - SimonShirt
     - SvenSweatshirt
