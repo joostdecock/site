@@ -56,9 +56,9 @@ blockquote.quote:before { content: "\f10e"; }
 blockquote.comment:before { content: "\f0e5"; color: $light-purple;}
 blockquote.question:before { content: "\f29c"; color: $pink;}
 blockquote.warning:before { content: "\f071"; color: $red;}
-blockquote.cut:before { content: "\f0c4"; color: $pink;}
+blockquote.cut:before { content: "\f0c4"; color: $red;}
 blockquote.option:before { content: "\f1de"; color: $blue;}
-blockquote.measure:before { content: "\f21d"; color: $purple}
+blockquote.measure:before { content: "\f21d"; color: $brown;}
 blockquote.print:before { content: "\f02f"; color: $gray;}
 blockquote.love { background: $pink; color: $white }
 blockquote.love:before { content: "\f004"; color: $white }
