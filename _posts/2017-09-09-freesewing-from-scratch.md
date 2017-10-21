@@ -18,7 +18,7 @@ Apologies if this post is a bit... like this:
 
 {% include embed.html src="https://www.youtube.com/embed/jkmoIPXs96E" %}
 
-I'm writing this as a blog post -- and not a documentation page -- because I an't promise to maintain 
+I'm writing this as a blog post -- and not a documentation page -- because I can't promise to maintain 
 these instructions every time something changes. But, since this is a lengthy post, a table of
 content is probably handy:
 
@@ -320,7 +320,7 @@ These are the things to change:
  - **url** : Set this to the url of your freesewing frontend
  - **api**
    - **core** : Set this to the url of your core backend
-   - **data** : Set this to the url of your core backend
+   - **data** : Set this to the url of your data backend
 
 Once this is done, let jekyll generate the site:
 
@@ -350,7 +350,7 @@ We're going to add a new site, so let's create an empty file:
 sudo touch joost.freesewing.org.conf
 ```
 
-To avoid having to use `sudo` everytime we want to update out site config, 
+To avoid having to use `sudo` everytime we want to update our site config, 
 let's make it our file:
 
 ```
@@ -432,7 +432,7 @@ sudo apt-get install certbot
 ```
 
 When it's done, we can get a certificate. However, this apache version on Debian 9
-can't be auto-confiured by certbot, so we'll do it manually.
+can't be auto-configured by certbot, so we'll do it manually.
 
 We'll let certbot spin up a temporary webserver for this, but it can't bind to the port
 apache is already listening on. So first, we stop apache:
@@ -718,7 +718,7 @@ We're going to add a new site, so let's create an empty file:
 sudo touch joost.data.freesewing.org.conf
 ```
 
-To avoid having to use `sudo` everytime we want to update out site config, 
+To avoid having to use `sudo` everytime we want to update our site config, 
 let's make it our file:
 
 ```
@@ -955,7 +955,7 @@ We're going to add a new site, so let's create an empty file:
 sudo touch joost.core.freesewing.org.conf
 ```
 
-To avoid having to use `sudo` everytime we want to update out site config, 
+To avoid having to use `sudo` everytime we want to update our site config, 
 let's make it our file:
 
 ```
