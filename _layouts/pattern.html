@@ -4,48 +4,150 @@ layout: cards
 {% assign pparts = page.url | split: '/' %}
 {% assign pattern = pparts[2] %}
 <div class="container">
-    <div class="row">
-        <div class="col-md-9">
+    <div class="mt-5 mb-5">
+        <p>
+            <b>Quick picks: </b> 
+            <span class="px-2"><a href="#examples">Examples</a></span>
+            <span class="px-2"><a href="#fork">Fork {{ pattern | capitalize }}</a></span>
+            <span class="px-2"><a href="/draft/{{pattern}}">Draft {{ pattern || capitalize }}</a></span>
+            <span class="px-2"><a href="/docs/patterns/{{pattern}}/">Instructions</a></span>
+            <span class="px-2"><a href="/docs/patterns/{{pattern}}/options">Pattern Options</a></span>
+            <span class="px-2"><a href="/docs/patterns/{{pattern}}/measurements">Required Measurements</a></span>
+        </p>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-4">
+            <h3 class='py-1'>Description</h3>
+            {{ page.description }}
+	                {% for patternholder in site.data.freesewing.patterns %}
+	                    {% for fullpattern in patternholder %}
+	                        {% if fullpattern.info.handle == pattern %}
+                                {% if fullpattern.info.inMemoryOf %}
+                                <h5>This one's for {{ pattern | capitalize }}</h5>
+                                <p>This pattern was named in memory of <a href="{{ fullpattern.info.inMemoryOf.link }}" target="_BLANK">{{ fullpattern.info.inMemoryOf.name }}</a>.</p>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+        </div>
+        <div class="col-md-8">
             <figure class="image">
-                <img class="img img-responsive drop-shadow" src="/img/patterns/{{ pattern }}/spread.jpg" alt="A line drawing and images of {{ pattern | capitalize }}">
+                <img class="card-img" src="/img/patterns/{{ pattern }}/spread.jpg" alt="The {{ pattern }} pattern"></a>
                 <figcaption>A line drawing and images of {{ pattern | capitalize }} <a href="/img/patterns/{{ pattern }}/spread.jpg" target="_BLANK"><i class="fa fa-external-link" aria-hidden="true"></i></a></figcaption>
             </figure>
         </div>
-        <div class="col-md-3">
-            <h3>About {{ pattern | capitalize }}</h3>
-            <p class="lead">{{ page.tagline }}</p>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-3 col-md-6 col-12 mb-4">
+            <blockquote class="rounded px-4">
+                    <h4 class="card-title">Draft {{ pattern | capitalize }}</h4>
+                    <p class="lead card-text">Like what you see? Right this way to draft your {{ pattern | capitalize }} pattern.</p>
+                    <p><a class="btn btn-primary btn-block" href="/draft/{{pattern}}">Draft {{ pattern | capitalize }}</a></p>
+            </blockquote>
+        </div>
+        <div class="col-xl-3 col-md-6 col-12 mb-4">
+            <blockquote class="cut rounded px-4">
+                <h4 class="card-title">Instructions</h4>
+                <p class="lead card-text">All you need to get from draft to finished garment.</p>
+                <p><a class="btn btn-outline-primary btn-block" href="/docs/patterns/{{pattern}}">{{ pattern | capitalize }} documentation</a></p>
+            </blockquote>
+        </div>
+        <div class="col-xl-3 col-md-6 col-12 mb-4">
+            <blockquote class="option rounded px-4">
+                    <h4 class="card-title">Pattern Options</h4>
+                    <ul>
+	                {% for patternholder in site.data.freesewing.patterns %}
+	                    {% for fullpattern in patternholder %}
+	                        {% if fullpattern.info.handle == pattern %}
+	                            {% for option in fullpattern.options %}
+                                <li><a href="/docs/patterns/{{pattern}}/options#{{ option[0] }}">{{ option[1].title }}</a></li>
+                                {% endfor %}
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                    </ul>
+                    <p><a class="btn btn-outline-primary btn-block" href="/docs/patterns/{{pattern}}/options">{{ pattern | capitalize }} Options</a></p>
+            </blockquote>
+        </div>
+        <div class="col-xl-3 col-md-6 col-12 mb-4">
+            <blockquote class="measure rounded px-4">
+                <h4 class="card-title">Required Measurements</h4>
+                <ul>
+                {% for patternholder in site.data.freesewing.patterns %}
+                    {% for fullpattern in patternholder %}
+                        {% if fullpattern.info.handle == pattern %}
+                            {% for measurement in fullpattern.measurements %}
+                                {% for mname in site.data.freesewing.mapping.measurementToTitle %}
+                                    {% if mname[0] == measurement[0] %}
+                                        <li><a href="/docs/patterns/{{pattern}}/measurements#{{ measurement[0] }}">{{ mname[1] }}</a></li>
+                                    {% endif %}
+                                {% endfor %}
+                            {% endfor %}
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
+                </ul>
+                <p><a class="btn btn-outline-primary btn-block" href="/docs/patterns/{{pattern}}/measurements">{{ pattern | capitalize }} Measurements</a></p>
+            </blockquote>
         </div>
     </div>
+    <h2 id="examples">{{ pattern | capitalize }} Examples</h2>
+    <blockquote class="nocc">
+        <h5>Why not showcase your own make?</h5>
+        <p>Don't hesitate to <a class="white" href="/contact">get in touch</a> if you'd like to showcase your own version of {{pattern | capitalize}}.</p>
+    </blockquote>
     <div class="row">
-        <div class="col-md-4">
-            <h4>Description</h4>
-            {{ page.description }}
+        <div class="col">
+            <div class="card-columns blog">
+                {% assign sorted = site.showcases | sort:"date" | reverse %}
+                {% for post in sorted %}
+                    {% if post.category == pattern %}
+                        <div class="card hover-shadow mb-3">
+                            <a href="{{ post.url }}" title="{{ post.title | escape}}">
+                                <img 
+                                    src="/img{{ post.url }}lqip_{{ post.img }}" 
+                                    data-sizes="auto"
+                                    data-srcset="
+                                        /img{{ post.url }}lqip_{{ post.img }} 25w,
+                                        /img{{ post.url }}low_{{ post.img }} 500w,
+                                        /img{{ post.url }}med_{{ post.img }} 1000w,
+                                        /img{{ post.url }}high_{{ post.img }} 2000w"
+                                    alt="{{ post.caption }}" 
+                                    class="card-img-top lazyload"
+                                >
+                            </a>
+                            <footer class="rounded-bottom">
+                                by <a href="/showcase/maker/{{ post.author }}" title="Browse other showcases by this maker">{{ post.author }}</a>
+                            </footer>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
-        <div class="col-md-4">
-            <blockquote class="magic">
-                <h5>Draft {{ pattern | capitalize }}</h5>
-                <p>Like what you see? Right this way to draft your {{ pattern | capitalize }} pattern.</p>
-                <p><a href="/draft/{{ pattern }}" class="btn btn-primary btn-block">Draft {{ pattern | capitalize }}</a>
-            </blockquote>
-            <blockquote class="cut">
-                <h5>Make {{ pattern | capitalize }}</h5>
-                <p>All the documentation you need to go from your draft to finished garment.</p>
-                <p><a href="/docs/patterns/{{ pattern }}" class="btn btn-outline-primary btn-block">{{ pattern | capitalize }} documentation</a>
-            </blockquote>
-        </div>
-        <div class="col-md-4">
-            <blockquote class="measure">
-                <h5>Measurements</h5>
-                <p>Documentation for the measurements required to draft {{ pattern | capitalize}}</p>
-                <p><a class="btn btn-outline-primary btn-block" href="/docs/patterns/{{ pattern }}/measurements">{{ pattern | capitalize }} measurements</a></p>
-            </blockquote>
-            <blockquote class="option">
-                <h5>Options</h5>
-                <p>Documentation for all the options that come with {{ pattern }}</p>
-                <p><a class="btn btn-outline-primary btn-block" href="/docs/patterns/{{ pattern }}/options">{{ pattern | capitalize }} options</a></p>
-            </blockquote>
-        </div>
-    </div>  
-{{ content }}
+    </div>
+    <h2 id="fork">Fork {{ pattern | capitalize }}</h2>
+    <blockquote class="tip">
+        <h5>Want something else than the default options?</h5>
+        <p>Below are some variations of {{pattern | capitalize}} that you can use as a starting point for your own draft.</p>
+        <p>This is called <a href="/docs/site/fork">Forking a draft</a>.</p>
+    </blockquote>
+    <div class="row">
+        {{ content }}
+		<div class="col-md-6 col-lg-4 col-12 mb-4">
+		    <div class="card hover-shadow">
+		        <a class="pattern-link" href="/draft/{{pattern}}" title="Draft {{ pattern | capitalize }}">
+                    <img class="card-img-top px-4 py-3" src="/img/patterns/{{ pattern }}/layout.svg" alt="Preview of the standard {{ pattern }} draft">
+		        </a>
+		        <div class="card-block pt-0 pb-2">
+		            <a class="pattern-link" href="/fork/rbtxm" title="Fork this draft"><h4 class="card-title pattern-title text-capitalize">Plain vanilla</h4></a>
+		            <p class="lead card-text"> This is the standard {{ pattern | capitalize }} draft.
+                        <br><br>
+                        Clicking the button below yields the same result as generating a brand new draft from scratch.
+                    </p>
+                    <p class="text-right"><a class="btn btn-outline-primary" href="/draft/{{pattern}}">Draft a standard {{ pattern | capitalize }}</a></p>
+		        </div>
+		    </div>
+		</div>
+    </div>
 </div>
-

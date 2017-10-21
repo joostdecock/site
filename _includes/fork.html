@@ -1,0 +1,13 @@
+<div class="col-md-6 col-lg-4 col-12 mb-4">
+    <a href="#" id="{{ include.handle }}"></a>
+    <div class="card hover-shadow">
+        <a class="pattern-link" href="/fork/{{ include.handle }}" title="Fork this draft">
+            <img class="card-img-top px-4 py-3" src="https://data.freesewing.org/static/users/j/joost/drafts/{{ include.handle }}/{{ include.handle}}.svg?cache=1" alt="Preview of draft {{ include.handle }}">
+        </a>
+        <div class="card-block pt-0 pb-2">
+            <a class="pattern-link" href="/fork/{{ include.handle }}" title="Fork this draft"><h4 class="card-title pattern-title text-capitalize">{{ include.title }}</h4></a>
+            <p class="lead card-text">{{ include.description }}</p>
+            <p class="text-right"><a class="btn btn-primary" href="/fork/{{ include.handle }}">Fork this {{ include.pattern | capitalize }}</a></p>
+        </div>
+    </div>
+</div>

@@ -2,15 +2,19 @@ patterns:
     AaronAshirt:
         info:
             name: 'Aaron A-Shirt'
-            description: 'This no-frills athletic shirt is a wardrobe staple that nobody should be without'
+            description: 'Aaron is an athletic shirt or tank top'
             handle: aaron
             version: 2
             author: 'Joost De Cock'
             company: freesewing
             link: freesewing.org/pattern/aaron
             tags:
-                - unisex
                 - top
+                - underwear
+                - unisex
+            inMemoryOf:
+                name: 'Aaron Swartz'
+                link: 'https://en.wikipedia.org/wiki/Aaron_Swartz'
         parts:
             front: Front
             back: Back
@@ -59,6 +63,8 @@ patterns:
                 description: 'Determines the shape/bend of the neckline at the front.'
                 group: style
                 type: percent
+                min: 5
+                max: 95
                 default: 100
             necklineDrop:
                 title: 'Neckline drop'
@@ -122,7 +128,7 @@ patterns:
     BrianBodyBlock:
         info:
             name: 'Brian Body Block'
-            description: 'This body block is the basis of many of our mens tops'
+            description: 'Brian is a basic body block for men'
             handle: brian
             version: 2
             date: 20170303
@@ -214,7 +220,7 @@ patterns:
     BruceBoxerBriefs:
         info:
             name: 'Bruce Boxer Briefs'
-            description: 'Comfortable yet stylish boxer briefs for men'
+            description: 'Bruce are comfortable yet stylish boxer briefs'
             handle: bruce
             version: 2
             author: 'Joost De Cock'
@@ -306,7 +312,7 @@ patterns:
     CathrinCorset:
         info:
             name: 'Cathrin Corset'
-            description: 'This underbust corset is the waist trainer of your dreams/nightmares'
+            description: 'Cathrin is an underbust corset or waist trainer'
             handle: cathrin
             version: 2
             author: 'Joost De Cock'
@@ -407,7 +413,7 @@ patterns:
     HugoHoodie:
         info:
             name: 'Hugo Hoodie'
-            description: 'This is a casual hooded jumper with raglan sleeves, and a front pouch'
+            description: 'Hugo is a hooded jumper with raglan sleeves'
             handle: hugo
             version: 2
             author: 'Joost De Cock'
@@ -419,6 +425,9 @@ patterns:
                 - sweater
                 - hoodie
                 - top
+            inMemoryOf:
+                name: 'Hugo De Cock'
+                link: 'https://www.instagram.com/p/p6CnG3rpir/'
         parts:
             front: Front
             back: Back
@@ -509,7 +518,7 @@ patterns:
     SimonShirt:
         info:
             name: 'Simon Shirt'
-            description: 'This is my bid to create the last shirt pattern you''ll even need'
+            description: 'Simon is a highly adaptable shirt pattern for men'
             handle: simon
             version: 2
             author: 'Joost De Cock'
@@ -615,9 +624,9 @@ patterns:
                 description: 'The amount to lengthen the sleeve beyond your wrist'
                 group: fit
                 type: measure
-                min: 0
-                max: 50
-                default: 0
+                min: 20
+                max: 70
+                default: 40
             yokeDart:
                 title: 'Yoke dart'
                 description: 'Whether to include a dart at the sides of the yoke to fit a rounder back'
@@ -935,7 +944,7 @@ patterns:
     SvenSweatshirt:
         info:
             name: 'Sven Sweatshirt'
-            description: 'A simple sweater and an essential wardrobe ingredient'
+            description: 'Sven is a straightforward sweater'
             handle: sven
             version: 1
             date: 20170323
@@ -972,9 +981,9 @@ patterns:
                 description: 'The amount of ease at your chest.'
                 group: fit
                 type: measure
-                min: -40
+                min: 30
                 max: 160
-                default: 30
+                default: 80
             bicepsEase:
                 title: 'Biceps ease'
                 description: 'The amount of ease at your upper arm.'
@@ -1017,7 +1026,7 @@ patterns:
     TamikoTop:
         info:
             name: 'Tamiko Top'
-            description: 'A zero-waste top for women and fashion-forward men'
+            description: 'Tamiko is a zero-waste top'
             handle: tamiko
             version: 2
             author: 'Joost De Cock'
@@ -1052,7 +1061,7 @@ patterns:
     TheoTrousers:
         info:
             name: 'Theo trousers'
-            description: 'Theo is the slimline variation of Theodore'
+            description: 'Theo is Theodore with a more slim cut'
             handle: theo
             version: 2
             author: 'Joost De Cock'
@@ -1123,7 +1132,7 @@ patterns:
     TheodoreTrousers:
         info:
             name: 'Theodore trousers'
-            description: 'These are classic menswear trousers by the (Aldrich) book'
+            description: 'Thedore are classic trousers by the (Aldrich) book'
             handle: theodore
             version: 2
             author: 'Joost De Cock'
@@ -1194,7 +1203,7 @@ patterns:
     TrayvonTie:
         info:
             name: 'Trayvon Tie'
-            description: 'This tie pattern cuts no corners for a professional result'
+            description: 'Trayvon is a tie that cuts no corners for a professional result'
             handle: trayvon
             version: 2
             author: 'Joost De Cock'
@@ -1204,6 +1213,9 @@ patterns:
             tags:
                 - unisex
                 - accessories
+            inMemoryOf:
+                name: 'Trayvon Martin'
+                link: 'https://en.wikipedia.org/wiki/Trayvon_Martin'
         parts:
             interfacingTip: 'Interfacing tip'
             interfacingTail: 'Interfacing tail'
@@ -1244,7 +1256,7 @@ patterns:
         info:
             name: 'Wahid Waistcoat'
             handle: wahid
-            description: 'A fitted waistcoat pattern'
+            description: 'Wahid is a classic fitted waistcoat'
             date: 20161206
             author: 'Joost De Cock'
             email: joost@decock.org
@@ -1426,6 +1438,117 @@ patterns:
                 - shoulderInset
                 - backInset
                 - frontInset
+    HueyHoodie:
+        hidden:
+            - false
+        info:
+            name: 'Huey Hoodie'
+            description: 'Huey is a zip-up hoodie with optinal front pockets'
+            handle: huey
+            author: 'Joost De Cock'
+            company: freesewing.org
+            link: freesewing.org/pattern/huey
+            tags:
+                - menswear
+                - top
+                - hoodie
+        parts:
+            front: Front
+            back: Back
+            sleeve: Sleeve
+            hood: Hood
+            pouch: Pouch
+        languages:
+            en: English
+        measurements:
+            acrossBack: 450
+            bicepsCircumference: 335
+            centerBackNeckToWaist: 520
+            chestCircumference: 1080
+            naturalWaistToHip: 145
+            neckCircumference: 420
+            shoulderSlope: 55
+            shoulderToShoulder: 470
+            hipsCircumference: 950
+            shoulderToWrist: 680
+            wristCircumference: 190
+            headCircumference: 590
+        options:
+            pouch:
+                title: 'Front pouch'
+                description: 'Would you like a pouch/pocket on your hoodie?'
+                group: style
+                type: chooseOne
+                options: ['Do not include pouch', 'Include pouch']
+                default: 1
+            ribbingWidth:
+                title: 'Ribbing width'
+                description: 'The width of the ribbing you want to use'
+                group: style
+                type: measure
+                min: 30
+                max: 90
+                default: 60
+            lengthBonus:
+                title: 'Length bonus'
+                description: 'Amount to lengthen the body. A negative value will shorten it.'
+                group: style
+                type: measure
+                min: -40
+                max: 120
+                default: 70
+            sleeveLengthBonus:
+                title: 'Sleeve length bonus'
+                description: 'Amount to lengthen the sleeve beyond the basic sleeve block.'
+                group: style
+                type: measure
+                min: 40
+                max: 120
+                default: 70
+            chestEase:
+                title: 'Chest ease'
+                description: 'The amount of ease at your chest'
+                group: fit
+                type: measure
+                min: 40
+                max: 200
+                default: 140
+            hipsEase:
+                title: 'Hips ease'
+                description: 'The amount of ease at your hips'
+                group: fit
+                type: measure
+                min: 40
+                max: 200
+                default: 140
+            cuffEase:
+                title: 'Cuff ease'
+                description: 'The amount of ease at your wrist'
+                group: fit
+                type: measure
+                min: 0
+                max: 100
+                default: 45
+            armholeDepthFactor:
+                title: 'Armhole depth factor'
+                description: 'A factor that influences the depth of the armhole'
+                group: advanced
+                type: percent
+                min: 60
+                max: 75
+                default: 70
+        optiongroups:
+            style:
+                - pouch
+                - ribbingWidth
+                - lengthBonus
+                - sleeveLengthBonus
+            fit:
+                - chestEase
+                - hipsEase
+                - cuffEase
+            advanced:
+                - armholeDepthFactor
 namespaces:
     Core:
         - aaron
@@ -1440,6 +1563,8 @@ namespaces:
         - theodore
         - trayvon
         - wahid
+    Beta:
+        - huey
 mapping:
     handleToPatternTitle:
         aaron: 'Aaron A-Shirt'
@@ -1454,6 +1579,7 @@ mapping:
         theodore: 'Theodore trousers'
         trayvon: 'Trayvon Tie'
         wahid: 'Wahid Waistcoat'
+        huey: 'Huey Hoodie'
     handleToPattern:
         aaron: AaronAshirt
         brian: BrianBodyBlock
@@ -1467,6 +1593,7 @@ mapping:
         theodore: TheodoreTrousers
         trayvon: TrayvonTie
         wahid: WahidWaistcoat
+        huey: HueyHoodie
     patternToHandle:
         AaronAshirt: aaron
         BrianBodyBlock: brian
@@ -1480,6 +1607,7 @@ mapping:
         TheodoreTrousers: theodore
         TrayvonTie: trayvon
         WahidWaistcoat: wahid
+        HueyHoodie: huey
     handleToNamespace:
         aaron: Core
         brian: Core
@@ -1493,6 +1621,7 @@ mapping:
         theodore: Core
         trayvon: Core
         wahid: Core
+        huey: Beta
     measurementToTitle:
         acrossBack: 'Across back'
         bicepsCircumference: 'Biceps circumference'
