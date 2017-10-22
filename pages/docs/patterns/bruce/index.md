@@ -186,9 +186,9 @@ For best results, start at the top of the seam (where the fabric is folded) and 
 
 If you want to topstitch your serged seams for visual effect, you should do so now.
 
-If you topsticht, simply do it for every seam, making sure to do so with a flexible stitch. You can use a zig-zag stitch or twin needle if you don't have a coverlock or specific flexible stich setting.
+If you topstitch, simply do it for every seam, making sure to do so with a flexible stitch. You can use a zig-zag stitch or twin needle if you don't have a coverlock or specific flexible stitch setting.
 
-> When topstitching the seam that closed the fronts dart, start form the bottom, and let the topstitching run all the way to the top, where the waistband will come. The seam stops halfway through (where the dart ends) but your topstitching should continue.
+> When topstitching the seam that closed the fronts dart, start from the bottom, and let the topstitching run all the way to the top, where the waistband will come. The seam stops halfway through (where the dart ends) but your topstitching should continue.
 {:.tip}
 * TOC - Do not remove this line
 {:toc}
