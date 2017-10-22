@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="550" height="750" viewBox="0 -560 550 700">
+<svg xmlns="http://www.w3.org/2000/svg" width="550" height="770" viewBox="0 -580 550 700">
     <style type="text/css">
     <![CDATA[
         rect.don.mmp{fill: #5c3566; stroke:none}
@@ -24,14 +24,14 @@
         <text class="sm" x="275" y="-10" >473.5 euro</text>
     </g>
     <!-- 2017 mmp -->
-    <g transform="translate(0,-558)">
-        <rect height="558" width="50" class="don mmp" x="420" y="0" />
+    <g transform="translate(0,-568)">
+        <rect height="568" width="50" class="don mmp" x="420" y="0" />
         <rect height="0" width="50" class="msf" x="480" y="0" />
-        <text class="fs" x="475" y="585.5" >2017</text>
-        <text class="sm" x="475" y="-10" >558 euro so far</text>
+        <text class="fs" x="475" y="595.5" >2017</text>
+        <text class="sm" x="475" y="-10" >568 euro so far</text>
     </g>
     <!-- 2017 fs -->
-    <g transform="translate(0,-558)">
+    <g transform="translate(0,-568)">
         <rect height="115" width="50" class="don" x="420" y="0" />
         <rect height="0" width="50" class="msf" x="480" y="0" />
     </g>
