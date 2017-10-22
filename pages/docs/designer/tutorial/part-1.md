@@ -807,7 +807,7 @@ two points with [`Part::addPoint`](../../core/classdocs/src/part#addpoint).
 The difference is that [`Part::newPoint`](../../core/classdocs/src/part#newpoint) expects and X and Y 
 coordinate, while [`Part::addPoint`](../../core/classdocs/src/part#addpoint) expects a [`Point`](../../core/classdocs/src/point) object.
 
-Both of them taken an optional third parameter which is a description of the point.
+Both of them can have an additional optional parameter which is a description of the point.
 You can see that we used that to clarify things a bit.
 
 The first line can also be written as such:
@@ -864,8 +864,8 @@ but instead of giving it an X and Y coordinate, we give it the result of `$p->sh
 
 Remember, `$p` is our [`Part`](../../core/classdocs/src/part) object, so we are calling [`Part::shift`](../../core/classdocs/src/part#shift).
 
-What're doing is taking point `1`, and shifting it to the right (that's where 0 degrees points to)
-over a distance of the X-value of point `2`. Yes, [`Part::x`](../../core/classdocs/src/part#x) returns the X-value of
+What we're doing is taking point `1`, and shifting it to the right (that's where 0 degrees points to)
+over a distance of half the X-value of point `2`. Yes, [`Part::x`](../../core/classdocs/src/part#x) returns the X-value of
 a given point.
 
 The result is that we end up with point `3` on the same Y-value as point `1`, but halfway between `1` and `2` 
@@ -881,11 +881,11 @@ $p->addPoint(
 );
 ```
 
-This time, point `4` is the result of shifting point 2 (the right of our opening) upwards
-(-90 degrees means upwards because we start at 3 o'clock and count counter-clockwise)
-with half of the Y-value of point 2. 
+This time, point `4` is the result of shifting point 2 (the right of our opening) downwards
+(-90 degrees means downward because we start at 3 o'clock and count counter-clockwise)
+by half of the Y-value of point 1. 
 
-Point `4` will have the same X-value as point `2`, but half of it's Y-value.
+Point `4` will have the same X-value as point `2`, and half of the point `1` Y-value.
 
 #### Say hi to Bezier curves
 
@@ -1262,7 +1262,7 @@ This is a call to the [`BezierToolbox::bezierCircle`](../../core/classdocs/src/b
 method. However, we don't have a [`BezierToolbox`](../../core/classdocs/src/beziertoolbox) object, to call the method on
 so we have to call the method with this `::` syntax.
 
-> Static methods can be called without an instatiated object
+> Static methods can be called without an instantiated object
 >
 > Class methods that are **static** can be used without an object to 
 > call them on. [`BezierToolbox::bezierCircle`](../../core/classdocs/src/beziertoolbox#beziercircle)
