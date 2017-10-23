@@ -449,7 +449,7 @@ Add the following lines to the `finalizeBib` method in `BabyBib.php`:
 
 ```php?start_inline=1
 // Bias binding line
-$p->offsetPath('bias', 'outline', -3, true, ['class' => 'helpline']);
+$p->offsetPath('bias', 'outline', 3, true, ['class' => 'helpline']);
 ```
 </div>
 <div role="tabpanel" class="tab-pane" id="template-bias" markdown="1">
@@ -465,7 +465,7 @@ The [`Part::offsetPath`](../../core/classdocs/src/part#offsetpath) method create
 from the original.
 
 In our case, we told it to create a new path called `bias` which uses the `outline` path 
-as its original, and is drawn `-3` mm from it. The `true` parameter says we want this path to be rendered
+as its original, and is drawn `3` mm from it. The `true` parameter says we want this path to be rendered
 &mdash; offsetted paths are only calculated and not rendered by default &mdash; and 
 finally we added some attributes to change the look of our path.
 
