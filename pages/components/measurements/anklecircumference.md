@@ -1,4 +1,4 @@
 ---
 permalink: /components/measurements/anklecircumference
 ---
-{% include measurements/anklecircumference.md %}
+{% include measurements/anklecircumference.html %}

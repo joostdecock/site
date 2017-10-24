@@ -1,4 +1,4 @@
 ---
 permalink: /components/measurements/wristcircumference
 ---
-{% include measurements/wristcircumference.md %}
+{% include measurements/wristcircumference.html %}

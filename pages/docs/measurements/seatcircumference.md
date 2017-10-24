@@ -4,4 +4,4 @@ title: Seat circumference
 tags: [maker docs, measurements]
 permalink: /docs/measurements/seatcircumference
 ---
-{% include measurements/seatcircumference.md %}
+{% include measurements/seatcircumference.html %}

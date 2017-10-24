@@ -1,4 +1,4 @@
 ---
 permalink: /components/measurements/centerbacknecktowaist
 ---
-{% include measurements/centerbacknecktowaist.md %}
+{% include measurements/centerbacknecktowaist.html %}

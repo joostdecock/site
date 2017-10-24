@@ -1,4 +1,4 @@
 ---
 permalink: /components/measurements/chestcircumference
 ---
-{% include measurements/chestcircumference.md %}
+{% include measurements/chestcircumference.html %}

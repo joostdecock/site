@@ -4,4 +4,4 @@ title: Hips to upper leg
 tags: [maker docs, measurements]
 permalink: /docs/measurements/hipstoupperleg
 ---
-{% include measurements/hipstoupperleg.md %}
+{% include measurements/hipstoupperleg.html %}

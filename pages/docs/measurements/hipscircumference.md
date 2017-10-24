@@ -4,4 +4,4 @@ title: Hips circumference
 tags: [maker docs, measurements]
 permalink: /docs/measurements/hipscircumference
 ---
-{% include measurements/hipscircumference.md %}
+{% include measurements/hipscircumference.html %}

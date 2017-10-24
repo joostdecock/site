@@ -1,4 +1,4 @@
 ---
 permalink: /components/measurements/shoulderslope
 ---
-{% include measurements/shoulderslope.md %}
+{% include measurements/shoulderslope.html %}

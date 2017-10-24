@@ -1,4 +1,4 @@
 ---
 permalink: /components/measurements/seatdepth
 ---
-{% include measurements/seatdepth.md %}
+{% include measurements/seatdepth.html %}

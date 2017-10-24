@@ -1,4 +1,4 @@
 ---
 permalink: /components/measurements/hipscircumference
 ---
-{% include measurements/hipscircumference.md %}
+{% include measurements/hipscircumference.html %}

@@ -1,4 +1,4 @@
 ---
 permalink: /components/measurements/seatcircumference
 ---
-{% include measurements/seatcircumference.md %}
+{% include measurements/seatcircumference.html %}

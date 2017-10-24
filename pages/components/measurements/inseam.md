@@ -1,4 +1,4 @@
 ---
 permalink: /components/measurements/inseam
 ---
-{% include measurements/inseam.md %}
+{% include measurements/inseam.html %}

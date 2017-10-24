@@ -1,0 +1,41 @@
+---
+layout: page
+---
+{{ content }}
+
+{% assign pparts = page.url | split: '/' %}
+{% assign pattern = pparts[3] %}
+
+{% for patternholder in site.data.freesewing.patterns %}
+    {% for fullpattern in patternholder %}
+        {% if fullpattern.info.handle == pattern %}
+            {% for measurement in fullpattern.measurements %}
+                {% for measurementsholder in site.data.freesewing.mapping.measurementToTitle %}
+                    {% if measurementsholder[0] == measurement[0] %}
+                        <h3 id="{{ measurement[0] }}">{{ measurementsholder[1] }}</h3>
+                    {% endif %}
+                {% endfor %}
+
+                {% capture component %}measurements/{{measurement[0] | downcase}}.html{% endcapture %}
+                {% include {{ component }} %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+
+<ul id='markdown-toc'>
+{% for patternholder in site.data.freesewing.patterns %}
+    {% for fullpattern in patternholder %}
+        {% if fullpattern.info.handle == pattern %}
+            {% for measurement in fullpattern.measurements %}
+                {% for measurementsholder in site.data.freesewing.mapping.measurementToTitle %}
+                    {% if measurementsholder[0] == measurement[0] %}
+                        <li><a href="#{{measurement[0]}}">{{ measurementsholder[1] }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+</ul>
+

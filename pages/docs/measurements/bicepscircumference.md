@@ -4,4 +4,4 @@ title: Biceps circumference
 tags: [maker docs, measurements]
 permalink: /docs/measurements/bicepscircumference
 ---
-{% include measurements/bicepscircumference.md %}
+{% include measurements/bicepscircumference.html %}
