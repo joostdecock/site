@@ -138,21 +138,21 @@ nocomments: true
         <div class="col-md-4">
             <h4>Latest pattern</h4>
             <div class="card hover-shadow">
-                <a href="/patterns/sven" title="The Sven pattern">
+                <a href="/patterns/huey" title="The Huey pattern">
                     <img 
-                        src="/img/patterns/sven/lqip_sample.jpg" 
+                        src="/img/patterns/huey/lqip_sample.jpg" 
                         data-sizes="auto"
                         data-srcset="
-                            /img/patterns/sven/lqip_sample.jpg 25w,
-                            /img/patterns/sven/low_sample.jpg 500w,
-                            /img/patterns/sven/med_sample.jpg 1000w"
-                        alt="The Sven pattern" 
+                            /img/patterns/huey/lqip_sample.jpg 25w,
+                            /img/patterns/huey/low_sample.jpg 500w,
+                            /img/patterns/huey/med_sample.jpg 1000w"
+                        alt="The Huey pattern" 
                         class="rounded-top lazyload"
                     >
                 </a>
                 <div class="card-block">
-                    <h4 class="card-title"><a href="/patterns/sven" title="Sven">Sven<span class="block-link"></span></a></h4>
-                    <p class="card-text">Sven is a basic sweater with ribbing at the cuffs and neck opening</p>
+                    <h4 class="card-title"><a href="/patterns/huey" title="Huey">Huey<span class="block-link"></span></a></h4>
+                    <p class="card-text">Huey is a zip-up hoodie with an optional front pouch</p>
                 </div>
             </div>
             <p class="mt-3"><i class="fa fa-arrow-right" aria-hidden="true"></i> <a href="/patterns/" class="mt-3">More patterns</a></p>
