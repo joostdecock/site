@@ -4,4 +4,4 @@ title: Chest circumference
 tags: [maker docs, measurements]
 permalink: /docs/measurements/chestcircumference
 ---
-{% include measurements/chestcircumference.md %}
+{% include measurements/chestcircumference.html %}

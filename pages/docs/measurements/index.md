@@ -9,7 +9,7 @@ nocomments: true
 {% assign measurements = site.data.freesewing.measurements | sort %}
 {% for measurement in measurements %}
 {% assign mname = measurement[0] %}
-{% assign mfile = 'measurements/' | append: mname | downcase | append: '.md' %}
+{% assign mfile = 'measurements/' | append: mname | downcase | append: '.html' %}
 <h2 id="{{ measurement[0] }}">{{ mname }}</h2>
 {% include {{ mfile }} %}
 

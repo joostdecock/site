@@ -1,4 +1,4 @@
 ---
 permalink: /components/measurements/shouldertoshoulder
 ---
-{% include measurements/shouldertoshoulder.md %}
+{% include measurements/shouldertoshoulder.html %}

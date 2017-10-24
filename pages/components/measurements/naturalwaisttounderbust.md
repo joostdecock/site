@@ -1,4 +1,4 @@
 ---
 permalink: /components/measurements/naturalwaisttounderbust
 ---
-{% include measurements/naturalwaisttounderbust.md %}
+{% include measurements/naturalwaisttounderbust.html %}

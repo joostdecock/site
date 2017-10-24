@@ -4,7 +4,7 @@ title: Shoulder slope
 tags: [maker docs, measurements]
 permalink: /docs/measurements/shoulderslope
 ---
-{% include measurements/shoulderslope.md %}
+{% include measurements/shoulderslope.html %}
 
 > ##### Use your high bust if you have breasts
 >

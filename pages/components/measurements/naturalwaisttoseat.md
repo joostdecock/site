@@ -1,4 +1,4 @@
 ---
 permalink: /components/measurements/naturalwaisttoseat
 ---
-{% include measurements/naturalwaisttoseat.md %}
+{% include measurements/naturalwaisttoseat.html %}

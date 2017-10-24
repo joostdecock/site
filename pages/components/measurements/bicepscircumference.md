@@ -1,4 +1,4 @@
 ---
 permalink: /components/measurements/bicepscircumference
 ---
-{% include measurements/bicepscircumference.md %}
+{% include measurements/bicepscircumference.html %}

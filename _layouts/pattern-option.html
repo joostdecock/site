@@ -1,0 +1,6 @@
+{% assign pparts = page.url | split: '/' %}
+{% assign pattern = pparts[3] %}
+{% assign option = pparts[4] %}
+
+{% capture component %}pattern-options/{{ pattern }}/{{option | downcase}}.html{% endcapture %}
+{% include {{ component }} %}

@@ -1,0 +1,49 @@
+---
+layout: page
+---
+{{ content }}
+
+{% assign pparts = page.url | split: '/' %}
+{% assign pattern = pparts[3] %}
+{% assign group = '' %}
+
+
+{% for patternholder in site.data.freesewing.patterns %}
+    {% for fullpattern in patternholder %}
+        {% if fullpattern.info.handle == pattern %}
+            {% for option in fullpattern.options %}
+                {% if option[1].group != group %}
+                    {% assign group = option[1].group %}
+                    <h2 id="{{group}}">{{group | capitalize}}</h2>
+                {% endif %}
+                <h3 id="{{ option[0] }}">{{ option[1].title }}</h3>
+                {% capture component %}pattern-options/{{ pattern }}/{{option[0] | downcase}}.html{% endcapture %}
+                {% include {{ component }} %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+
+{% assign first = 1 %}
+{% for patternholder in site.data.freesewing.patterns %}
+    {% for fullpattern in patternholder %}
+        {% if fullpattern.info.handle == pattern %}
+            {% for option in fullpattern.options %}
+                {% if option[1].group != group %}
+                    {% assign group = option[1].group %}
+                    {% if first == 1 %}
+                        <ul id='markdown-toc'>
+                        {% assign first = 0 %}
+                    {% else %}
+                        </ul></li>
+                    {% endif %}
+                    <li><a href="#{{group}}">{{group | capitalize}}</a><ul>
+                {% endif %}
+                <li><a href="#{{option[0]}}">{{ option[1].title }}</a></li>
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+    </ul></li>
+</ul>
+

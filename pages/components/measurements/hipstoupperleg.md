@@ -1,4 +1,4 @@
 ---
 permalink: /components/measurements/hipstoupperleg
 ---
-{% include measurements/hipstoupperleg.md %}
+{% include measurements/hipstoupperleg.html %}

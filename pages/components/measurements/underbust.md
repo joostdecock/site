@@ -1,4 +1,4 @@
 ---
 permalink: /components/measurements/underbust
 ---
-{% include measurements/underbust.md %}
+{% include measurements/underbust.html %}

@@ -1,4 +1,4 @@
 ---
 permalink: /components/measurements/acrossback
 ---
-{% include measurements/acrossback.md %}
+{% include measurements/acrossback.html %}
