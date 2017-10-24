@@ -6,6 +6,12 @@ permalink: /docs/infrastructure
 crumbs:
  - /docs|Docs
 ---
+> ##### See also: The status page
+>
+> If you like this kind of stuff, you might also be interested in the 
+> [status page](/status).
+{:.tip}
+
 ## core
 
 ### master branch
@@ -113,8 +119,14 @@ Algolia is a cloud search provider and offers a free plan.
 To update the Algolia index, run this command in the site root:
 
 ```
-bundle exec jekyll algolia
+bundle exec jekyll algolia push
 ```
+
+> ##### You need the API key for this
+>
+> The command above expects you have the 
+> `ALGOLIA_API_KEY` environment variable set to the API key
+{:.comment}
 
 ## demo
 
