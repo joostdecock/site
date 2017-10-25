@@ -2570,6 +2570,20 @@ Creates a [`SvgSnippet`](/docs/core/classdocs/src/svgsnippet) object and adds it
 
 The `$name` is so we can reference the [`SvgSnippet`](svgsnippet) later (by its name).
 
+The snippets available in 
+[the base theme](https://joost.freesewing.org/docs/core/classdocs/themes/core/theme) 
+are:
+
+ - buttonhole
+ - button
+ - button-lg
+ - logo
+ - logo-sm
+ - logo-lg
+ - scalebox
+ - snap-male
+ - snap-female
+
 #### Example
 {:.no_toc}
 
