@@ -46,7 +46,7 @@ Rather than include everything on the page, we want the sample service to only r
 relevant to us. And the way to do that is to tell the 
 sample service exactly what we want to include.
 
-In `BabyBib.php`, still in our `sample` method, add the following line after the
+In `BabyBib.php`, still in our `draftBib` method, add the following line after the
 point where we add the `outline` path:
 
 ```php?start_inline=1
@@ -202,7 +202,7 @@ the sample service based on these rules:
 - Or, anchor on coordinates `(0,0)`
 
 To see the effect of adding a `samplerAnchor` point, let's add the following
-line to the `sample` method in `BabyBib.php`:
+line to the `draftBib` method in `BabyBib.php`:
 
 ```php?start_inline=1
 $p->newPoint('samplerAnchor', $p->x('bottomLeft'),$p->y('bottomLeft'));
@@ -314,9 +314,8 @@ impacts the length of our bib (and nothing else) as expected.
 
 ## The draft method
 
-So far, our design work has mostly been in the `sample` method of `BabyBib.php`.
-That's because this is the method called by the sample service, and so everything
-we want to show up in a sample should be defined there.
+"So far, our design work in the draftBib function has been called by and displayed through the sample method/function of BabyBib.php.
+Because the 'sample' function is the method called by the sample service, everything we want to show up in a sample should be defined/included there.
 
 But a sample is not a fully drafted pattern.
 Now that we are happy with our bib samples, it's time we turn our attention
@@ -469,8 +468,7 @@ as its original, and is drawn `3` mm from it. The `true` parameter says we want 
 &mdash; offsetted paths are only calculated and not rendered by default &mdash; and 
 finally we added some attributes to change the look of our path.
 
-Path offset is always to the right (from the vantage point of somebody walking along the original path).
-If you want offset to the left, just use a negative offset value (as we did here).
+Path offset is always to the right (from the vantage point of somebody walking along the original path)so our newly made 'helpline' is being created inside our original 'outline'. If you want offset to the left, just use a negative offset value. For instance changing the '3' to '-10' would create a 1cm seam allowance outside the 'outline'.
 
 ### Adding snippets
 
@@ -513,7 +511,7 @@ The [`Part::newSnippet`](../../core/classdocs/src/part#newsnippet) method expect
 point to anchor it on.
 
 There's a bunch of other snippets we can add, like `button` or `buttonhole` that aren't relevant to our
-bib. Check the theme documentation for a full list.
+bib. Check the  [`Part::newSnippet`](../../core/classdocs/src/part#newsnippet) documentation for a full list.
 
 The snippet that we added are:
 
@@ -903,14 +901,14 @@ Freesewing will do a number of things before even starting to make your pattern:
 - We'll try to load the `translations/messages.nl.yml` file of the requested pattern
 - We'll try to load the `translations/messages.nl.yml` file of the parent (or grandparent) pattern
 
-This will give as a number of strings translated into Dutch.
+This will give us a number of strings translated into Dutch.
 When we encounter this line:
 
 ```php?start_inline=1
 $p->newNote(1,1,$this->t('Finish with bias tape'), 12, 15, -3);
 ```
 
-We will check if `Finish with bias tape` is one of the strings we have in our Durch translations files.
+We will check if `Finish with bias tape` is one of the strings we have in our Dutch translations files.
 If it is, we will print that. If not, we'll just print `Finish with bias tape`.
 
 So, to make sure your pattern will be translated to another language, you need to provide a 
@@ -937,9 +935,9 @@ The strings to translate are:
 - `Baby bib`
 
 Before we start translating these, let's provide an English language file, so that 
-if others want to translate our pattern, they can start form English.
+if others want to translate our pattern, they can start from English.
 
-In our pattern directory, create a new directory called `translations`.
+In our pattern directory(the BabyBib folder),create a new directory called `translations`.
 In this directory, create the `messages.en.yml` file, and add the following:
 
 ```yml
@@ -949,7 +947,7 @@ In this directory, create the `messages.en.yml` file, and add the following:
 ```
 
 The format is easy enough, for every string, we provide a translation.
-Which in this case, because it's the English transaltion file, is the same.
+Which in this case, because it's the English translation file, is the same.
 
 Copy this file to `messages.nl.yml` and edit it to look like this:
 
