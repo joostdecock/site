@@ -197,7 +197,7 @@ As usual with Linux, no news is good news.
 
 ### Commit
 
-Now that we have done all this work, we want to share it with the rest of our team and hopefully publish it on the site. With the `git commit` command we instruct Git commit all our changes to a new version of our branch. We're basically saying *we're happy with all the changes, publish our work.* (I removed the change we made to `index.md` prior to doing the commit.)
+Now that we have done all this work, we want to share it with the rest of our team and hopefully publish it on the site. With the `git commit` command we instruct Git commit all our changes to a new version of our branch. We're basically saying *we're happy with all the changes, publish our work.* When we do a commit, we have to give Git a litle description of what we did. The `-m <description>` parameter is used for this. (I removed the change we made to `index.md` prior to doing the commit.)
 
 ~~~ bash
 woutervdub@laptop:/var/www/html/site$ git commit -m "First publishing"
@@ -236,6 +236,20 @@ To git@github.com:woutervdub/site.git
    74da2b6..6566ce7  GitMusings -> GitMusings
 ~~~
 
+### Push
+
+Now that we have aa version we are happy with, we need to share this with the rest of the team. We use a `git push` command to push our changes from our local clone to the remote repositories. 
+
+Here's the result on github: 
+![New branch on Git](/img/docs/newbranchongit.png "New branch on Git")
+
+### Pull request
+
+Now all that is left for us to do is a `pull request`. This will send a request to the owner of the `freesewing` repository to merge our changes with the original from which we started to work. We can do that on the command line or on the github website. I prefer to do it on the latter for no particular reason. Make sure you select the correct `branch` before doing the pull request. It must be the one we're working on now (`GitMusings`).
+
+![Pull request on Git](/img/docs/pullrequestongit.png "Pull request on Git")
+
+When we do a pull request, make sure you enter some descriptive comments about what you did and why you think it's a good idea to add it to the repository. *Fixed issue #189* or *Added documentation for the new pattern option*.
 
 * TOC - Do not remove this line
 {:toc}
