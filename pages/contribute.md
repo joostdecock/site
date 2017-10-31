@@ -67,6 +67,12 @@ If it's your first pull request, relax, nobody will bite, and you're free to ask
 
 ## Submitting a pull request
 
+> ##### Prerequisite: git basics
+>
+> If you're unfamiliar with the concept of pull requests, 
+> the [git basics](/docs/git-basics) page will bring you up to speed.
+{:.tip}
+
 - The smaller the proposed change, the better. If you'd like to propose two unrelated changes, submit two pull requests.
 - The more information, the better. Make judicious use of the pull request body. 
 Describe what changes were made, why you made them, and what impact they will have for users.
