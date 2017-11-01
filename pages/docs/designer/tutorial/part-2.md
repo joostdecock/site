@@ -70,7 +70,7 @@ please include this path when you do what you do_.
 
 ### Sampling measurements
 
-With out `outline` path marked for sampling, we'd like to see how our bib adapts 
+With our `outline` path marked for sampling, we'd like to see how our bib adapts 
 to different sized babies. But first, we need some models.
 
 #### Adding models for measurement sampling
@@ -80,9 +80,9 @@ to need different-sized models. In our case, different-sized babies.
 
 Let's look at our pattern directory again:
 
-- {:.folder open} sample
+- {:.folder open} sampler
   - models.yml
-- {:.code} PatternTemplate.php
+- {:.code} BabyBib.php
 - config.yml
 {:.files}
 
