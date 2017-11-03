@@ -3635,17 +3635,6 @@ which should be an existing [`Path`](path) object in the [`Part`](part).
 
 By offset we mean, drawn equidistant to it. 
 
-The naming of the points of the generated path follow the following rules:
-
--the start point is called [pathname]-startPoint
--the end point is called [pathname]-endPoint
--points that are the offset of the start or endpoint of a line in the original path are named [pathname]-line-[startId]TO[endId] and [pathname]-line-[endId]TO[startId]
--points that are the offset of the start or endpoint of a curve in the original path are named [pathname]-curve-[startId]TO[endId] and  [pathname]-curve-[endId]TO[startId]
--points that are the offset of the control points of a curve in the original path are named as such: [pathname]-cp1--[startpoint].[control point 1].[control point 2].[endpoint] and  [pathname]-cp2--[startpoint].[control point 1].[control point 2].[endpoint]
--all other points that are needed to keep the curve offset precise are impossible to foresee and will change depending on the measurements. In other words, you can never trust those points to be there, so they have names like sa-cp1--.tmp_sa.splitcurve:.volatile24-8..tmp_sa.splitcurve:.volatile24-7..tmp_sa.splitcurve:.volatile24-6..tmp_sa.splitcurve:.volatile24-5
-
-Oppening in a new window the second illustration in the example section will display the naming of the offseted points by pointing at each point. 
-
 #### Example
 {:.no_toc}
 
@@ -3693,12 +3682,35 @@ It is non-trivial to offset a path. Behind this method hides code
 to calculate the offset, avoid overlapping, and close gaps at corners.
 
 To give you an idea of the complexity, here's the example rendered
-with the debug theme.
+with the designer theme.
 
 {% include coreClassdocsFigure.html
     description="Offsetting paths is... complicated"
     params="theme=Designer&class=Part&method=offsetPath"
 %}
+
+> ##### Naming conventions for offsetted points
+>
+> The points created for the path offset are named according to the following rules:
+>
+> - The **start point** of the offset path is called `[pathname]-startPoint` (`[pathname]` is the ID of the path in the Part's paths array).
+> - The **end point** of the offset path is called `[pathname]-endPoint`.
+> - Points that are the offset of the **start or endpoint of a line segment** in the original path are named `[pathname]-line-[startId]TO[endId]` and `[pathname]-line-[endId]TO[startId]` (`[endId]` and `[startId]` are the IDs of the start and end point of the line segment in the original path).
+> - Points that are the offset of the **start or endpoint of a curve** in the original path are named `[pathname]-curve-[startId]TO[endId]` and  `[pathname]-curve-[endId]TO[startId]`
+> - Points that are the offset of the **control points of a curve** in the original path are named `[pathname]-cp1--[startpoint].[control point 1].[control point 2].[endpoint]` and  `[pathname]-cp2--[startpoint].[control point 1].[control point 2].[endpoint]` (`[control point 1]` and `[control point 2]` are the IDs of the curve control points in the original path).
+> - All **other points** (that are needed to keep the curve offset precise) are impossible to foresee and will change depending on the measurements. They are so-called *volatile* points because you can never trust those points to be there. They have names like `sa-cp1--.tmp_sa.splitcurve:.volatile24-8..tmp_sa.splitcurve:.volatile24-7..tmp_sa.splitcurve:.volatile24-6..tmp_sa.splitcurve:.volatile24-5`. 
+>
+> As a rule of thumb, if you see `volatile` in a point's name, you should not build further upon that point.
+{:.comment}
+
+> ##### Use the designer theme to inspect point names
+>
+> Any pattern you open in the designer theme will display the point data in 
+> [the browser console](https://developer.mozilla.org/en-US/docs/Tools/Web_Console) when you hover over them.
+>
+> You can scroll back up and click the designer theme example of the path offset to see for yourself. 
+{:.tip}
+
 
 #### Typical use
 {:.no_toc}
