@@ -3635,6 +3635,17 @@ which should be an existing [`Path`](path) object in the [`Part`](part).
 
 By offset we mean, drawn equidistant to it. 
 
+The naming of the points of the generated path follow the following rules:
+
+-the start point is called [pathname]-startPoint
+-the end point is called [pathname]-endPoint
+-points that are the offset of the start or endpoint of a line in the original path are named [pathname]-line-[startId]TO[endId] and [pathname]-line-[endId]TO[startId]
+-points that are the offset of the start or endpoint of a curve in the original path are named [pathname]-curve-[startId]TO[endId] and  [pathname]-curve-[endId]TO[startId]
+-points that are the offset of the control points of a curve in the original path are named as such: [pathname]-cp1--[startpoint].[control point 1].[control point 2].[endpoint] and  [pathname]-cp2--[startpoint].[control point 1].[control point 2].[endpoint]
+-all other points that are needed to keep the curve offset precise are impossible to foresee and will change depending on the measurements. In other words, you can never trust those points to be there, so they have names like sa-cp1--.tmp_sa.splitcurve:.volatile24-8..tmp_sa.splitcurve:.volatile24-7..tmp_sa.splitcurve:.volatile24-6..tmp_sa.splitcurve:.volatile24-5
+
+Oppening in a new window the second illustration in the example section will display the naming of the offseted points by pointing at each point. 
+
 #### Example
 {:.no_toc}
 
