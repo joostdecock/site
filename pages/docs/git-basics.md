@@ -54,7 +54,7 @@ Changes you make in this repository will not immediately be made in
 the original. But you can suggest those changes to the owner of the main 
 repository through a `pull request`. 
 
-A pull request tells the owner of the freesewing repository (the Grand Poobah) 
+A pull request tells the owner of the freesewing repository (Joost) 
 that you have changes that you would like to see incorporated. He can then 
 gracefully decide to do so, or tell you to stuff it.
 
@@ -141,7 +141,7 @@ requests from different people/forks/branches are merged.
 Different people might be working on differnet changes, all in their own branch.
 They submit their pull requests to ask to have their code merged into the `develop` branch.
 
-Every now and then the Grand Poobah moves all the changes made in `develop` into `master`
+Every now and then Joost moves all the changes made in `develop` into `master`
 at which point those changes become part of the production code. 
 
 #### master
@@ -157,7 +157,7 @@ In other words, all changes must go through `develop` before they can become par
 ### Remote
 
 To make sure we keep our clone up to date with the original code, we need to tell git 
-that our clone belongs to a greater part. Our own repository is referred to as the origin.
+that our clone belongs to a greater part. Our own repository is referred to as the `origin`.
 
 We will tell git that the original repository we forked from is our remote. 
 Now whenever the original gets an update, we can fetch that update. 
@@ -215,7 +215,7 @@ It is the code that we consider to be the best we have right now that is stable 
 
 Freesewing always has an additional branch called `develop` where all the work happens. 
 We want to branch off that one so that we can keep up to date with the changes others 
-are working on. And it simplifies the work the Grand Poobah has to do to create a new master. 
+are working on. And it simplifies the work Joost has to do to create a new master. 
 
 #### Creating a new branch
 
@@ -437,6 +437,127 @@ Something like *Fixed issue #189* or *Added documentation for the new pattern op
 > to merge this page into the `site` repository.
 {:.link}
 
+## Continuing to work
+
+The first change of code has now been committed, pushed to our repository, those 
+changes have been incorporated into a `pull request`, and Joost has merged 
+them into the freesewing `develop` and `master`. Life is good. 
+
+Or is it?
+
+### Getting up-to-date
+
+While the changes were being merged into the freesewing repository, some changes
+were made to make them inline with the rest of the `site`. And other files have 
+been changed to link this page into the site. So now we need to update our fork 
+and clone with these changes.
+
+Since we told Git that we have a remote repository, we can just pull all the changes 
+to our local clone with `git pull upstream <branch>`. We have to do this for each 
+branch we have. 
+
+```bash
+woutervdub@laptop:/var/www/html/site$ git pull upstream develop
+remote: Counting objects: 7, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 7 (delta 4), reused 6 (delta 4), pack-reused 0
+Unpacking objects: 100% (7/7), done.
+From github.com:freesewing/site
+ * branch            develop    -> FETCH_HEAD
+ * [new branch]      develop    -> upstream/develop
+Updating 7b38ad5..94c1480
+error: Your local changes to the following files would be overwritten by merge:
+	pages/docs/gitmusings.md
+Please, commit your changes or stash them before you can merge.
+Aborting
+```
+
+That does not look good. I don't want this file to be overwritten, since it is 
+the one I was working on. It should be the one that is published. And if so, it 
+should not need to be overwritten. What is going on?
+
+While publishing this article, Joost changed the name of this file to something
+that was more inline with the rest of the site. And there were some other changes
+made to other files at the same time. Our local clone still has the original 
+file here and Git warns us that it will be overwritten. 
+
+### git stash
+
+There are numerous occasions where you may have changed files and not pushed them
+back to the `origin`. Either because you're just testing things, or because you're
+not sure those changes should become part of what you're working on. In this case,
+you can tell Git to push everything that has changed onto a stack. You can retrieve 
+things from there at a later time. 
+
+```bash
+woutervdub@laptop:/var/www/html/site$ git stash 
+Saved working directory and index state WIP on GitMusings: 7b38ad5 Second publishing too
+HEAD is now at 7b38ad5 Second publishing too
+```
+
+### git pull upstream develop
+
+Now with that (temporarily) out of the way, we can pull the changes from the `develop`
+branch of `freesewing` again down to our `clone`.
+
+```bash
+woutervdub@laptop:/var/www/html/site$ git pull upstream develop
+remote: Counting objects: 30, done.
+remote: Compressing objects: 100% (23/23), done.
+remote: Total 30 (delta 10), reused 22 (delta 6), pack-reused 0
+Unpacking objects: 100% (30/30), done.
+From github.com:freesewing/site
+ * branch            develop    -> FETCH_HEAD
+   94c1480..5c42dcc  develop    -> upstream/develop
+Updating 7b38ad5..5c42dcc
+Fast-forward
+ pages/contribute.md                    |   6 +
+ pages/docs/designer/tutorial/part-2.md |   6 +-
+ pages/docs/git-basics.md               | 442 +++++++++++++++++++++++++++++++++
+ pages/docs/gitmusings.md               | 256 -------------------
+ 18 files changed, 548 insertions(+), 259 deletions(-)
+ create mode 100755 pages/docs/git-basics.md
+ delete mode 100755 pages/docs/gitmusings.md
+```
+
+As you can see, many files changed. For brevity, I removed everything regarding the 
+Huey Hoody pattern Joost added. This command made our local `clone` identical to 
+the `upstream` `freeSewing`. 
+
+### git push origin develop
+
+Now we need to update our own `origin` with these changes. To do so, we just `push` 
+them to the `origin`. 
+
+```bash
+woutervdub@laptop:/var/www/html/site$ git push origin develop
+Counting objects: 37, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (36/36), done.
+Writing objects: 100% (37/37), 1.87 MiB | 0 bytes/s, done.
+Total 37 (delta 14), reused 0 (delta 0)
+remote: Resolving deltas: 100% (14/14), completed with 8 local objects.
+To git@github.com:woutervdub/site.git
+   74da2b6..5c42dcc  develop -> develop
+```
+ 
+We will need to do this for all the branches that have changed. I decided that 
+since this page has been published, and I'm only working on this page on the 
+`site`, that I don't need the `GitMusings` branch anymore and I'll just work 
+in the `development` branch. So the only other branch I needed to update was
+my `master` branch. 
+
+After these commands, my `fork` on [github](https://github.com/woutervdub/site/network)
+look like this again:
+{% include figure.html
+    url='/img/docs/backtooriginalongit.png'
+    description='After the push, we can see our branch on GitHub'
+%}
+ 
+And we can start with making a new branch, or just edit things in `develop`.
+ 
+Happy coding!
+ 
 * TOC - Do not remove this line
 {:toc}
 
