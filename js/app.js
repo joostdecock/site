@@ -357,7 +357,7 @@
                 if(model.model.units === 'imperial') var inputValue = inchesAsFraction(model.model.data.measurements[measurement], 'plain');
                 else var inputValue = model.model.data.measurements[measurement];
             }
-            $('#'+measurement+'-input').val(inputValue);
+            $('#'+measurement+'-input').val(inputValue).focus();
             // Bind cancel handler
             $('#settings').on('click','.close-modal', function(e) {
                 closeModal();
