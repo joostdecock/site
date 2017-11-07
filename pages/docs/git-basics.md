@@ -439,18 +439,27 @@ Something like *Fixed issue #189* or *Added documentation for the new pattern op
 
 ## Continuing to work
 
-The first change of code has now been committed, pushed to our repository, those 
-changes have been incorporated into a `pull request`, and Joost has merged 
-them into the freesewing `develop` and `master`. Life is good. 
+Your first code change has now been committed, and pushed to our repository. We submitted it
+as a  `pull request`, and Joost has merged 
+our changes into the `develop` branch and later into the `master` branch at which time our
+code became active. Life is good. 
 
 Or is it?
 
-### Getting up-to-date
+### Staying up-to-date
 
-While the changes were being merged into the freesewing repository, some changes
-were made to make them inline with the rest of the `site`. And other files have 
-been changed to link this page into the site. So now we need to update our fork 
-and clone with these changes.
+The code that was merged into the `master` branch is typically not exactly the code
+we submitted in our pull request.
+
+What Joost typically does is merge our changes in the `develop` branch, and then
+give them a code review. Perhaps a typo was changed, a few things clarified, or
+renamed to make them consistent with other content on the site.
+
+Only when everything looks good in the `develop` branch will Joost merge it into
+the `master` branch. Which means that we we have in our `develop` branch now differs
+from what's in the official freesewing `develop` branch.
+
+What we need to do now is update our fork with these so-called *upstream* changes.
 
 Since we told Git that we have a remote repository, we can just pull all the changes 
 to our local clone with `git pull upstream <branch>`. We have to do this for each 
@@ -557,6 +566,14 @@ look like this again:
 And we can start with making a new branch, or just edit things in `develop`.
  
 Happy coding!
+
+> ##### Questions? Help is available
+>
+> If you have any questions at all, 
+> [the freesewing channel on Gitter](https://gitter.im/freesewing/freesewing)
+> is a popular hangout for freesewing hackers, including
+> Wouter who wrote this article.
+{:.tip}
  
 * TOC - Do not remove this line
 {:toc}
