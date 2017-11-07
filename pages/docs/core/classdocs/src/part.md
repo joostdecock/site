@@ -2399,10 +2399,11 @@ Typically used to include text/instructions on the pattern.
 
 ```php?start_inline=1
 void newTextOnPath(
-Y    string $name,
+    string $name,
     string $pathstring,
     string $message,
     array $attributes = null
+    bool $renderPath = TRUE
 ) 
 ```
 
@@ -2418,6 +2419,10 @@ be created and added to the [`TextOnPath`](textonpath) object.
 the [`TextOnPath`](textonpath) object.
 
 The `$name` is so we can reference the [`TextOnPath`](textonpath) later (by its name).
+
+The optional `renderPath` parameter can supress the rendering of the path itself, 
+so that only the text is shown. This allows you to add text to a pre-existing path
+without drawing the path again.
 
 #### Example
 {:.no_toc}
@@ -2472,6 +2477,7 @@ When you think you need this, you probably want [`Part::newCurvedDimension`](par
 - `string` `$pathstring`: A SVG pathstring that describes the path to place the text on.
 - `string` `$message`: The text to be rendered. 
 - `array` `$attributes`: An array of attributes to be added to the [`TextOnPath`](textonpath) object.
+- `bool` `$renderPath`: Set this to `FALSE` to supress the rendering of the path, and only display the text.
 
 ### newNote
 
