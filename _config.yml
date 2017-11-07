@@ -23,6 +23,7 @@ exclude:
   - README.md
 include:  
   - _redirects
+  - _headers
   - apigen
 
 collections:
