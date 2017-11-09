@@ -75,7 +75,7 @@
                     "type": "percent",
                     "min": 5,
                     "max": 95,
-                    "default": 100
+                    "default": 95
                 },
                 "necklineDrop": {
                     "title": "Neckline drop",
