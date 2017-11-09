@@ -6,36 +6,31 @@ permalink: /docs/fundamentals
 crumbs:
  - /docs|Docs
 ---
-> ##### Freesewing is more than core
-> The freesewing project involves other things besides **core**, 
-> such as **freesewing site** (this website)
-> and **freesewing data**, 
-> our data API which handles user data like logins, comments, and so on.
-> 
-> Those things are not relevant when discussing the fundamentals of freesewing.
-> Our focus is on understanding core.
-{:.comment}
 
 ### Freesewing core
 
 To understand freesewing, we will focus on **freesewing core**:
 the platform that generates patterns.
 
-The freesewing project involves other things besides **core**, 
-such as **freesewing site** (this website)
-and **freesewing data**, 
-our data API which handles user data like logins, comments, and so on.
+> ##### Freesewing is more than core
+> As the [about page](https://freesewing.org/about/) explains - 
 
-But those things are not relevant when discussing the fundamentals of freesewing.
-Our focus is on understanding core.
+> The freesewing project involves other things besides **core**, 
+> such as **freesewing site** (this website)
+> and **freesewing data**, 
+> our data API which handles user data like logins, comments, and so on.
+>
+> Those things are not relevant when discussing the fundamentals of freesewing.
+> Our focus is on understanding core.
+{:.comment}
+
+The core platform can also be extended with modules.
+These modules come in three types: **channels**, **patterns**, and **themes**.
 
 {% include figure.html
   url='/img/fundamentals/core.svg'
   description='Schematic overview of the core platform'
 %}
-
-The core platform can also be extended with modules.
-These modules come in three types: **channels**, **patterns**, and **themes**.
 
 #### Channels
 
@@ -63,14 +58,14 @@ treat requests from a mobile app differently than from a website.
 
 A **pattern** generates a _draft_ based on the measurements and options provided by the user.
 
-In other words, the pattern does the heavy lifting of taking user input an transforming that
+In other words, the pattern does the heavy lifting of taking user input and transforming that
 into something useful.
 
 Patterns are single-purpose. They generate drafts, that's all they do.
 
 #### Themes
 
-A **theme** controls the look and feel. Its role is two-fold:
+A **theme** controls the look and feel - the way a draft is displayed. Its role is two-fold:
 
  - Format the draft 
  - Format the response
