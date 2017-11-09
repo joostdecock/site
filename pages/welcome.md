@@ -1,15 +1,27 @@
 ---
 layout: page
-title: Welcome new user
+title: Welcome
+action: welcome
 permalink: /welcome
 ---
-> <h5>Note: You are not logged in yet</h5>
-> Your account has been activated, but you're not logged in yet. So why not <a href="#" class="login">log in</a> now?
-{:.warning}
 
-Congratulations, you now have a freesewing account, and can <a href="#" class="login">log in</a> for the very first time.
+> ##### You're in!
+> Congratulations, you now have a freesewing account, and we've auto-magically logged you in.
+{:.tip}
 
-If you're not sure how to do that, <a href="#" class="tour-guide" data-episode="login">help is available</a>.
+## First things first
+
+### Please check your units
+
+This website supports both metric and imperial units. Make sure to pick the correct units in 
+[your account](/account).
+
+### How about a cool username and picture?
+
+You can change your username to anything you want in 
+[your account](/account).
+
+You can also pick a new profile picture there.
 
 ## The perks of having an account
 

@@ -12,6 +12,8 @@
                 $.getJSON(api.data+'/activate/'+hash[0]+'/'+hash[1], function( data ) {
                     if(data.result == 'ok') {
                         $('#account-confirmation').load('/snippets/activation/success');
+                        window.localStorage.setItem("jwt", data.token);
+                        window.localStorage.setItem("fsu", JSON.stringify({ 'id': data.userid, 'email': data.email, 'user': data.username }));
                         setTimeout(function(){window.location.replace("/welcome");}, 2000);
                     }
                 });

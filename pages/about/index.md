@@ -8,9 +8,9 @@ permalink: /about/
 This website generates sewing patterns based on your measurements.
 To do so, you enter your measurements, pick your options, and your sewing pattern is drafted for you on the fly.
 
-Once drafted, you can download your pattern as PDF, but I also provide you with the source SVG file.
+Once drafted, you can download your pattern as PDF in a variety of printable sizes, and I also provide you with the source SVG file.
 
-All your drafts are stored online, as our your models. There's no limits on how many patterns you can draft,
+All your drafts are stored online, as are your models. There's no limits on how many patterns you can draft,
 or how many models you can have. You do you.
 
 Basically, as far as websites for sewing patterns go, this is as good as it gets.
@@ -41,8 +41,6 @@ It's like a toolbox for designing and generating made-to-measure sewing patterns
 No graphical tools are used to create the patterns. Everything is implemented in code.
 
 While **core** ships with a bunch of patterns, you can also extend it with your own.
-
-
 
 ##### The website
 
