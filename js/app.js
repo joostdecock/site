@@ -843,6 +843,29 @@
         // Load site data
         $.get('/json/freesewing.json', function( fsdata ) {
             var pattern = fsdata.patterns[fsdata.mapping.handleToPattern[patternhandle]];
+            if(account.account.data.account.units != account.models[modelhandle].units) {
+                var mismatch = "<blockquote class='warning'>";
+                mismatch += "<h5>Warning: Units mismatch</h5>";
+                mismatch += "<p>The units configured in your account differ from the units used by model <a href='/models/";
+                mismatch += modelhandle;
+                mismatch += "'>";
+                mismatch += account.models[modelhandle].name;
+                mismatch += "</a></p><ul>";
+                mismatch += "<li>Your account is configured for <b>";
+                mismatch += account.account.data.account.units;
+                mismatch += "</b> units</li><li>Your model uses <b>";
+                mismatch += account.models[modelhandle].units;
+                mismatch += "</b> units</li></ul>";
+                mismatch += "<p>Mixing units is suported, but often people simply don't realize they have a mixup.</p>";
+                mismatch += "<p>If you know what you're doing, then by all means carry on. If this is not what you intended, you should change either the units in <a href='/account'>your account</a> or the units of <a href='/models";
+                mismatch += modelhandle;
+                mismatch += "'>this model</a>.</p>";
+                mismatch += "</blockquote>";
+
+                $('#picklist').append(mismatch);
+            }
+            console.log(account);
+            console.log(modelhandle);
             // Load slider JS
             $('#picklist').append("<form id='form'><div id='accordion' role='tablist' aria-multiselectable='true'></div></form>");
             var form = {};
