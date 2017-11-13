@@ -4,7 +4,7 @@ title: "Freesewing.org is open for business. That is, the business of giving awa
 linktitle: "Freesewing.org is open for business"
 img: open.jpg
 caption: "Open 24/7 from now onwards"
-author: joostdecock
+author: 'Joost De Cock'
 category: site
 blurb: "Freesewing finally has a friendly face, and it's waiting to meet you at freesewing.org."
 ---

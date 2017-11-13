@@ -4,7 +4,7 @@ title: "Announcing freesewing, an open source platform for made-to-measure sewin
 linktitle: "Announcing freesewing"
 img: freesewing-logo.jpg
 caption: "The freesewing logo"
-author: joostdecock
+author: 'Joost De Cock'
 category: core
 blurb: "I am are proud to announce freesewing core v1.0.0 and the accompanying documentation that describes the freesewing project in detail."
 ---

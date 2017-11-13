@@ -9,7 +9,7 @@ layout: notoc
             <div class="row">
                 <div class="col post-meta"><a href="/blog/category/{{ page.categories }}" title="Browse other posts in this category">{{ page.categories }}</a></div>
                 <div class="col post-meta text-center">{{ page.date | date: "%A, %B %-d, %Y" }}</div>
-                <div class="col post-meta text-right"><a href="/blog/author/{{ page.author }}" title="Browse other posts by this author">{{ page.author }}</a></div>
+                <div class="col post-meta text-right"><a href="/blog/author/{{ page.author | downcase | replace: ' ', '' }}" title="Browse other posts by this author">{{ page.author }}</a></div>
             </div>
             <figure class="image">
                 <a target="_BLANK" href="/img{{page.url}}high_{{ page.img }}" title="Open hi-res picture in a new window">

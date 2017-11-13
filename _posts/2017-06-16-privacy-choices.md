@@ -4,7 +4,7 @@ title: "The choices I've made to protect your privacy. Or why you won't be getti
 linktitle: "Choices regarding privacy"
 img: fence.jpg
 caption: "Picture by <a href='https://pixabay.com/en/users/herbert2512-2929941/' target='_BLANK' rel='nofollow'>Herbert</a>"
-author: joostdecock
+author: 'Joost De Cock'
 category: site
 blurb: "I wanted to do the right thing. Here's the choices I made"
 ---

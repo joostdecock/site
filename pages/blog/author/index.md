@@ -20,7 +20,7 @@ permalink: /blog/author/
 <ul>
 {% for author in authors %}
     {% unless author == '' %}
-        <li><a href="{{ author }}">{{ author }}</a></li>
+        <li><a href="{{ author | downcase | replace: ' ', '' }}">{{ author }}</a></li>
     {% endunless %}
 {% endfor %}
 </ul>
