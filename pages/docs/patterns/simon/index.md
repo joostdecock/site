@@ -301,7 +301,7 @@ First place a collar stand with the good side up, then your collar, and finally 
 
 You collar should sit between your two collar stands, and the middles (where you placed your pin) should be aligned.
 
-> The way things look will depend a little bit on your collar choices, but in general your collar stand is going to bend downward, and your collar stand will bend upward.
+> The way things look will depend a little bit on your collar choices, but in general your collar is going to bend downward, and your collar stand will bend upward.
 >
 > To align this all, we are going to baste this together, rather than pin it. Your collar is an important part of your shirt, so it's worth basting this.
 {:.comment}
