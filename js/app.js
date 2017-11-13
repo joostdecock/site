@@ -897,6 +897,17 @@
 			} else {
 				var dflt_metric_sa = pattern.seamAllowance.metric;
 				var dflt_imperial_sa = pattern.seamAllowance.imperial;
+                var nonStandardSa = "<blockquote class='tip'>";
+                nonStandardSa += "<h5>Heads-up: Non-standard seam allowance</h5>";
+                nonStandardSa += "<p>This pattern comes with a default seam allowance of <b>";
+                nonStandardSa += dflt_metric_sa+"cm</b> ("+inchesAsFraction(roundToFraction(dflt_imperial_sa), 'plain').trim()+"inch) instead of the standard <b>1cm</b> (5/8 inch).</p>";
+                nonStandardSa += "<p><b>This is not a coincidence</b></p>";
+                nonStandardSa += "<p>Changing the default seam allowance is not done willy-nilly, but because the designer estimates this seam allowance is better for this pattern.</p>";
+                nonStandardSa += "<p><b>You can still change the seam allowance</b></p>";
+                nonStandardSa += "<p>As with all patterns, you can change your seam allowance in the <b>General</b> group of options.</p>";
+                nonStandardSa += "</blockquote>";
+                $('#form').prepend(nonStandardSa);
+
 			} 
             $('#form').append('<input type="hidden" id="defaultMetricSa" name="defaultMetricSa" value="'+dflt_metric_sa+'">');
             $('#form').append('<input type="hidden" id="defaultImperialSa" name="defaultImperialSa" value="'+dflt_imperial_sa+'">');
