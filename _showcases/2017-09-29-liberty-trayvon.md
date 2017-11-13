@@ -4,7 +4,7 @@ img: showcase.jpg
 caption: Beautiful fabric, and a greatly made tie
 category: trayvon
 layout: showcase
-author: e2_clothing
+author: 'Victoria Evitts'
 ---
 
 My husband travelled to Ireland 🇮🇪 for a weekend (62hrs travelling for 60hrs on the ground 🙀) to attend his brother's wedding 👏

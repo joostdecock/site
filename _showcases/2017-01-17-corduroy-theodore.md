@@ -4,7 +4,7 @@ img: showcase.jpg
 caption: Gus in his brown corduroys
 category: theodore
 layout: showcase
-author: fabricated
+author: 'Kate Davies'
 ---
 
 > <h5>Read the blog post</h5>

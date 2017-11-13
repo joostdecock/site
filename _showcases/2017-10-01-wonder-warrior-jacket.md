@@ -4,7 +4,7 @@ img: showcase.jpg
 caption: This is the Wonder Warrior jacket, looking pretty great
 category: brian
 layout: showcase
-author: myxterhyde
+author: 'JV Hampton-VanSant'
 ---
 
 > ##### Check the original on Twitter

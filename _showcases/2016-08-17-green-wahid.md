@@ -1,9 +1,9 @@
 ---
-title: A green Wahid waistcoat by rememberinggravity
+title: A green Wahid waistcoat by Rose
 img: showcase.jpg
 caption: "That's some A-grade unselfish sewing we've got here"
 category: wahid
-author: rememberinggravity
+author: Rose H
 ---
 
 > <h5>More pictures and info in the original blog post</h5>

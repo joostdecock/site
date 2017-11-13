@@ -4,5 +4,5 @@ img: showcase.jpg
 caption: These are great in summer
 category: theodore
 layout: showcase
-author: joostdecock
+author: Joost De Cock
 ---

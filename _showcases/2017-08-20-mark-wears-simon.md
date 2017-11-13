@@ -4,7 +4,7 @@ img: showcase.jpg
 caption: "Good tie action too"
 category: simon
 layout: showcase
-author: swissarmywife
+author: Michele Nel
 ---
 
 {% include figure.html url="/img/showcase/mark-wears-simon/mark-wears-simon-2.jpg" description="Another view" %}

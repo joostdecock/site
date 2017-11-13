@@ -24,7 +24,7 @@ layout: cards
 >
 </a>
 <footer class="rounded-bottom">
-by <a href="/showcase/maker/{{ post.author }}" title="Browse other showcases by this maker">{{ post.author }}</a>
+by <a href="/showcase/maker/{{ post.author | downcase | replace: ' ', ''}}" title="Browse other showcases by this maker">{{ post.author }}</a>
 </footer>
 </div>
 {% endif %}

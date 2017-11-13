@@ -4,5 +4,5 @@ img: showcase.jpg
 caption: Depending on your job, this might be NSFW
 category: bruce
 layout: showcase
-author: joostdecock
+author: Joost De Cock
 ---
