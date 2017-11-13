@@ -19,90 +19,90 @@ To make Simon, you will need the following:
 
  - About two meters of a suitable fabric (see [Fabric options](#fabric-options)
  - Buttons
- - Fusable interfacing for collar and cuffs (and possibly for the front placket)
+ - Fusible interfacing for collar and cuffs (and possibly for the front placket)
 
 ### Fabric options
 
-Any fabric shop that is worth your business should have a shirting section. 
+Any fabric shop that is worth your business should have a shirting section.
 You can just walk in, ask where you can find the shirting, and pick out something you like.
 
-Most of what you'll find there will be cotton, or a blend of cotton. 
+Most of what you'll find there will be cotton, or a blend of cotton.
 But you're free to go for another fiber too.
 
-When shopping online, it can be harder to get a good idea of what you're looking at. 
-In the absence of touch, it's good to know a thing or two about the different weaves of fabrics. 
+When shopping online, it can be harder to get a good idea of what you're looking at.
+In the absence of touch, it's good to know a thing or two about the different weaves of fabrics.
 The weave is how the fabric was woven, and this determines not only how the fabric looks, but also how it will feel and drape.
 
 > Without wanting to start an encyclopedia of fabrics here, here are some terms you may come across when shopping for shirt fabric online.
-> 
+>
 > **Broadcloth or poplin**
-> 
+>
 > Broadcloth is the way to go for that white shirt for your job interview or wedding.
-> 
+>
 > Broadcloth (frequently referred to as poplin) is a simple weave and results in a flat plain fabric that will give you that crisp formal look.
-> 
-> It's typically a lighter fabric and in light colours can tend to be a bit transparant.
-> 
-> 
+>
+> It's typically a lighter fabric and in light colours can tend to be a bit transparent.
+>
+>
 > **Twill**
-> 
+>
 > You can recognize twill fabrics by their characteristic diagonal texture from the weave.
-> 
-> It drapes more easely than broadcloth, wrinkles less and when it does, is easier to iron.
-> 
+>
+> It drapes more easily than broadcloth, wrinkles less and when it does, is easier to iron.
+>
 > The flip side of the coin is that it won't give you that starchy crisp vibe that broadcloth can.
-> 
-> 
+>
+>
 > **Pinpoint**
-> 
+>
 > Pinpoint is the work horse of shirt fabrics. Typically they produce a heavier and thicker . and thus more durable . fabric.
-> 
-> Pinpoint is a less formal look than broadcloth or twill, but more formal than ofxord. This, combined with its durability, make it a great choice for your everyday work shirt.
-> 
-> 
+>
+> Pinpoint is a less formal look than broadcloth or twill, but more formal than oxford. This, combined with its durability, make it a great choice for your everyday work shirt.
+>
+>
 > **Chambray**
-> 
+>
 > Chambray is simple weave, similar to broadcloth. It is different because it uses a much heavier yarn, and typically different colours for the weft and width.
-> 
-> The result is a much more textured fabric, both in touch as appearance where the different colours create a densly speckled two-coloured fabric.
-> 
-> 
+>
+> The result is a much more textured fabric, both in touch as appearance where the different colours create a densely speckled two-coloured fabric.
+>
+>
 > **Denim**
-> 
+>
 > Denim needs no introduction. It's the stuff your jeans are made from.
-> 
-> Tecnically a twill fabric (look for the signature diagonal texture) denim is produced in much lighter weigths than the ones your jeans are made from. Those are the ones you can use for a shirt.
-> 
-> 
+>
+> Technically a twill fabric (look for the signature diagonal texture) denim is produced in much lighter weights than the ones your jeans are made from. Those are the ones you can use for a shirt.
+>
+>
 > **Flannel**
-> 
+>
 > From Curt Cobain to the hipsters at your local coffee shop, they all swear by flannel shirts.
-> 
-> Warmer than any other option here, flannel comes typically in bruhed cotton though you might find it with added wool for extra warmth.
-> 
-> 
-> **Linnen**
-> 
-> Linnen wrinkles like a mofo, but you can't beat it for safari looks.
-> 
-> The reason you associate it with adventures in tropical climates is that linnen breaths like nothing else and will keep you coolest of all.
-> 
-> 
+>
+> Warmer than any other option here, flannel comes typically in brushed cotton though you might find it with added wool for extra warmth.
+>
+>
+> **Linen**
+>
+> Linen wrinkles like a mofo, but you can't beat it for safari looks.
+>
+> The reason you associate it with adventures in tropical climates is that linen breaths like nothing else and will keep you coolest of all.
+>
+>
 > **Thread count**
-> 
+>
 > A higher thread count means a smoother (and more expensive) fabric.
-> 
+>
 > Thread count is expressed in numbers, like 60s, 80s, 100s and so on to 300s and more.
-> 
+>
 > There's a catch though. Numbers above 100s are typically made my twisting two yarns together. Like a 160s thread count means that two 80s yarns were twisted together for the thread.
-> 
-> 
+>
+>
 > **Single ply or Two ply**
-> 
+>
 > If a thread is made up of two yarns (see thread count above) we call that Two ply.
-> 
+>
 > If the yarn is made up of a single thread, it's call Single ply.
-> 
+>
 > You can expect two ply to last longer, and be more expensive.
 {:.tip}
 
@@ -110,34 +110,34 @@ The weave is how the fabric was woven, and this determines not only how the fabr
 
 > - {:.title} Main fabric
 >   - Cut **1 front left**
->   - Cut **1 button placket** (only if you opted for a seperate button placket)
+>   - Cut **1 button placket** (only if you opted for a separate button placket)
 >   - Cut **1 front right**
->   - Cut **1 buttonhole placket** (only if you opted for a seperate buttonhole placket)
->   - Cut **1 back** 
->   - Cut **1 collar** 
->   - Cut **1 undercollar** 
+>   - Cut **1 buttonhole placket** (only if you opted for a separate buttonhole placket)
+>   - Cut **1 back**
+>   - Cut **1 collar**
+>   - Cut **1 undercollar**
 >   - Cut **2 yoke(s)** or **4 yokes** if you've chosen a split yoke
->   - Cut **2 sleeve(s)** 
->   - Cut **2 collar stand(s)** 
->   - Cut **2 cuff guard(s)** 
->   - Cut **2 cuff plackets(s)** 
->   - Cut **4 cuff(s)** 
+>   - Cut **2 sleeve(s)**
+>   - Cut **2 collar stand(s)**
+>   - Cut **2 cuff guard(s)**
+>   - Cut **2 cuff plackets(s)**
+>   - Cut **4 cuff(s)**
 > - {:.title} Fusible interfacing
->   - Cut **1 collar** 
->   - Cut **1 undercollar** 
->   - Cut **2 collar stand(s)** 
->   - Cut **2 cuff(s)** 
+>   - Cut **1 collar**
+>   - Cut **1 undercollar**
+>   - Cut **2 collar stand(s)**
+>   - Cut **2 cuff(s)**
 > {:.cuts}
 {:.cuts}
 
-> When cutting out two, you can cut them [good sides together](/docs/sewing/good-sides-together). 
+> When cutting out two, you can cut them [good sides together](/docs/sewing/good-sides-together).
 > However, when working with fabric with a pattern, I prefer to cut them individually to finely control the pattern matching.
 >
 > When you cut them individually, remember that they need to be mirror images of each other. So flip either your pattern or your fabric over when cutting the second one.
 {:.tip}
 
 > <h5>Caveats</h5>
-> - The **front right**, **front left**, and **sleeve** have seams that should be made into flat-felled seams. As such, they have extra seam allowance on those seams. When cutting out these pieces, you **must** include this extra seam allowance. 
+> - The **front right**, **front left**, and **sleeve** have seams that should be made into flat-felled seams. As such, they have extra seam allowance on those seams. When cutting out these pieces, you **must** include this extra seam allowance.
 > - The cuff guard and cuff placket have no seam allowance. That is normal, just cut them out as they are drawn on the pattern.
 > - Do not cut out the darts in the **back** piece. You should mark them, but not cut them out.
 {:.warning}
@@ -191,7 +191,7 @@ For each cuff, press the interfacing piece to the bad side of the cuff piece.
 {:.comment}
 
 #### Press interfacing to collar and undercollar, and collar stand
-To make iyour collar, you need to cut one undercollar, one collar, and two collar stands. All of this both in fabric and interfacing.
+To make your collar, you need to cut one undercollar, one collar, and two collar stands. All of this both in fabric and interfacing.
 
 For each piece, press the interfacing piece to the bad side.
 
@@ -214,7 +214,7 @@ For each piece, press the interfacing piece to the bad side.
     url='/img/patterns/simon/2a.png'
     description='Sew cuff together'
 %}
-Place both parts of your cuff (one with interfacing, one without) toghether with the good sides, and sew them together at the standard seam allowance.
+Place both parts of your cuff (one with interfacing, one without) together with the good sides, and sew them together at the standard seam allowance.
 
 > <h5>Make sure to</h5>
 >
@@ -258,7 +258,7 @@ You can now put your cuffs aside, we'll attach them later.
     url='/img/patterns/simon/3a.png'
     description='Sew collar and undercollar together'
 %}
-Place both collar parts toghether with the good sides, and sew them together at the standard seam allowance.
+Place both collar parts together with the good sides, and sew them together at the standard seam allowance.
 
 #### Trim seam allowance
 {% include figure.html
@@ -275,7 +275,7 @@ Before we are going to flip your collar over, we need to trim back the seam allo
 Flip your collar with the good sides out, get those tips as pointy as possible, and give it a good press.
 
 > When pressing your collar, remember that the undercollar is a bit more narrow.
-> 
+>
 > When you align the non-sewn sides, this will cause the seam to roll towards the backside of the collar to guarantee that the inner fabric of the collar is not visible.
 {:.tip}
 
@@ -301,9 +301,9 @@ First place a collar stand with the good side up, then your collar, and finally 
 
 You collar should sit between your two collar stands, and the middles (where you placed your pin) should be aligned.
 
-> The way things look will depend a little bit on your collar choices, but in general your collar stand is going to bend downward, and your collar stand will bend upward.
-> 
-> To aling this all, we are going to baste this together, rather than pin it. Your collar is an important part of your shirt, so it's worth basting this.
+> The way things look will depend a little bit on your collar choices, but in general your collar is going to bend downward, and your collar stand will bend upward.
+>
+> To align this all, we are going to baste this together, rather than pin it. Your collar is an important part of your shirt, so it's worth basting this.
 {:.comment}
 
 First, replace the pins marking the middle with a pin that pins all parts together.
@@ -321,14 +321,14 @@ When you've done one side, start from your pin in the middle again and do this o
 %}
 Sew along the edge of your collar stand, respecting the standard seam allowance.
 
-> Make sure to stop 2cm before the edge (twice the standard seam allowance) as we'll be folding the seam allowance over in the next step, and we need to leave the collar stands seperated enough to slide the shirt in between them later.
+> Make sure to stop 2cm before the edge (twice the standard seam allowance) as we'll be folding the seam allowance over in the next step, and we need to leave the collar stands separated enough to slide the shirt in between them later.
 {:.warning}
 
 #### Fold back and press the collar stand seam allowance
 Fold back the seam allowance of your collar stand on the non-sewn side and press it down.
 
 > In the center part, pressing down the seam allowance will be easy. But towards the tips of your collar, doing so will be tricky without pressing folds in your collar.
-> 
+>
 > Press is as best as you can without making folds in your collar. We'll press this again after flipping the collar out.
 {:.comment}
 
@@ -371,12 +371,12 @@ Place one yoke with the good side up. On top of that, place your back with the g
 
 Finally, place your second yoke on top of the back, but with the good side down.
 
-You back should now be sandwidched between the good sides of your two yokes.
+You back should now be sandwiched between the good sides of your two yokes.
 
 If that's the case, sew them in place along the back/yoke seam, making sure to respect the seam allowance.
 
 > <h5>Keep your label on the inside</h5>
-> If you added a lable in step 1, make sure to put the yoke with your label at the bad side of your back. 
+> If you added a label in step 1, make sure to put the yoke with your label at the bad side of your back.
 {:.warning}
 
 When you're done, don't forget to give it a good press to make the seam lie flat.
@@ -394,7 +394,7 @@ With your yokes attached to the back, we are going to edge-stitch along the seam
 
 Just sew right next to the seam joining the outer yoke to the back.
 
-> Edge-stitching is like top-stitching, but right next to the seam 
+> Edge-stitching is like top-stitching, but right next to the seam
 {:.comment}
 
 ### Step 8: Close the back darts
@@ -420,7 +420,7 @@ Just sew right next to the seam joining the outer yoke to the back.
 </div>
 
 > <h5>You may be able to skip this step</h5>
-> While this step is not optional, you may still be able to skip it because your pattern migth not have back darts at all. In that case, proceed to the next step. 
+> While this step is not optional, you may still be able to skip it because your pattern might not have back darts at all. In that case, proceed to the next step.
 {:.comment}
 
 Your pattern may or may not have back darts. If it has them, you should close them now.
@@ -437,7 +437,7 @@ When you're done, don't forget to give it a good press. Press the extra fabric o
 
 ### Step 9: Prepare the button placket
 
-> If you have chosen a grown-on placket, you can skip the first two sub-steps and skip ahead to [Fold the button placket](#fold-the-button-placket). 
+> If you have chosen a grown-on placket, you can skip the first two sub-steps and skip ahead to [Fold the button placket](#fold-the-button-placket).
 {:.comment}
 
 #### Sew on the button placket
@@ -445,7 +445,7 @@ When you're done, don't forget to give it a good press. Press the extra fabric o
     url='/img/patterns/simon/9a.png'
     description='Sew on the button placket'
 %}
-If you have chosen a seperate button placket, sew it to the Front Right piece.
+If you have chosen a separate button placket, sew it to the Front Right piece.
 
 Place the Front Right (piece 1) down with the good side up, and place the Button Placket (piece 1b) on top of it with the good side down, making sure to align the seam.
 
@@ -472,9 +472,9 @@ When you're happy, press the folded placket.
     description='Sew down the folded placket'
 %}
 
-> This is the classic aproach. If you have chosen the seamless Button placket style, you don't have to do this.
-> 
-> Rather than sew the placket down, simply leave it folded. The folds will be secured in place when we attach the buttons later. 
+> This is the classic approach. If you have chosen the seamless Button placket style, you don't have to do this.
+>
+> Rather than sew the placket down, simply leave it folded. The folds will be secured in place when we attach the buttons later.
 {:.comment}
 
 From the good side of your shirt, sew down the folded placket by stitching in the ditch.
@@ -484,7 +484,7 @@ To do so, sew exactly on top of your earlier seam. Since you folded the fabric o
 
 ### Step 10: Prepare the buttonhole placket
 
-> If you have chosen a grown-on placket, you can skip the first two sub-steps and skip ahead to Understanding a classic buttonhole placket. 
+> If you have chosen a grown-on placket, you can skip the first two sub-steps and skip ahead to Understanding a classic buttonhole placket.
 {:.comment}
 
 #### Sew on the buttonhole placket
@@ -492,7 +492,7 @@ To do so, sew exactly on top of your earlier seam. Since you folded the fabric o
     url='/img/patterns/simon/10a.png'
     description='Sew on the buttonhole placket'
 %}
-If you have chosen a seperate buttonhole placket, sew it to the Front Left piece.
+If you have chosen a separate buttonhole placket, sew it to the Front Left piece.
 
 Place the Front Left (piece 2) down with the good side up, and place the Buttonhole Placket (piece 2b) on top of it with the good side down, making sure to align the seam.
 
@@ -506,8 +506,8 @@ Place your front with the good side down, and press the seam allowance to the bu
 #### Understanding a classic buttonhole placket
 
 > If you have chosen a seamless placket, you should follow the steps of the button placket, as the construction is identical.
-> 
-> The steps below are for a classic buttonhole placket. 
+>
+> The steps below are for a classic buttonhole placket.
 {:.comment}
 
 {% include figure.html
@@ -522,7 +522,7 @@ Your placket has a bunch of lines on it, so let's first clarify what they are:
  - The two+two sew lines are dotted lines that sit at an equal distance of each fold line
 
 #### Trim back seam allowance
-> If you have chosen a grown-on placket, this does not apply. 
+> If you have chosen a grown-on placket, this does not apply.
 {:.comment}
 {% include figure.html
     url='/img/patterns/simon/10c.png'
@@ -552,7 +552,7 @@ Fold the placket on the first fold line. Press the fold in place.
 
 Then, fold the part you just folded again, this time on the second fold line. Press this fold in place too.
 
-> When your placket is folded and pressed, place a few pins along the lenght of your placket to keep things from shifting around 
+> When your placket is folded and pressed, place a few pins along the length of your placket to keep things from shifting around
 {:.tip}
 
 #### Sew the buttonhole placket
@@ -574,15 +574,15 @@ Sew on the first sew line, closest to the edge.
 
 Then, flip your shirt over so that the good side is up, and your placket is up too. Then sew on the second sew line.
 
-> Thise two lines of top-stitching will always be visible, so make sure to keep it neat 
+> These two lines of top-stitching will always be visible, so make sure to keep it neat
 {:.warning}
- 
+
 #### Press the buttonhole placket
 {% include figure.html
     url='/img/patterns/simon/10h.png'
     description='Press the buttonhole placket'
 %}
-Congratulations, you made a classis buttonhole placket.
+Congratulations, you made a classic buttonhole placket.
 
 Now press that baby. You know you want to.
 
@@ -592,7 +592,7 @@ Now press that baby. You know you want to.
 >
 > We are going to close the shoulder seams with a technique that is commonly know as the **burrito method**.
 >
-> If you are familiar with the burrito method, you aready know what to do. If not, read on for a clever way to neatly close your shirt's shoulder seams while locking all the unfinished edges out of sight.
+> If you are familiar with the burrito method, you already know what to do. If not, read on for a clever way to neatly close your shirt's shoulder seams while locking all the unfinished edges out of sight.
 {:.comment}
 
 #### Pin the fronts to the outside yoke
@@ -646,7 +646,7 @@ Just as we've edge-stitched the bottom seam of the yoke in Step 3, we're going t
 
 Since you've just pressed these shoulder seams, everything should lie nice and flat, and you just need to run a stitch right next to the seam.
 
-> Make sure to edge-stitch on the yoke part, where you will catch all the seam allowance, and not on the front part. 
+> Make sure to edge-stitch on the yoke part, where you will catch all the seam allowance, and not on the front part.
 {:.warning}
 
 ### Step 13: Construct the sleeve placket
@@ -668,7 +668,7 @@ Since you've just pressed these shoulder seams, everything should lie nice and f
 <div class="col-md-4">
 {% include figure.html
     url='/img/patterns/simon/13c.png'
-    description='Edge-stitch the cuffguard in place'
+    description='Edge-stitch the cuff guard in place'
 %}
 </div>
 </div>
@@ -677,7 +677,7 @@ Since you've just pressed these shoulder seams, everything should lie nice and f
  - Align the edge of your cuff guard with the cut in your sleeve, on the side shortest to the side seam.
  - Now sew along the fold line marked on the cuff guard, closest to the edge.
 
-> If during cutting out your pattern pieces you had not cut into your sleeve on the line where the sleeve placket needs to be put in, you need to do that first. 
+> If during cutting out your pattern pieces you had not cut into your sleeve on the line where the sleeve placket needs to be put in, you need to do that first.
 {:.tip}
 
  - Fold over the cuff guard, and press down this seam.
@@ -691,7 +691,7 @@ Since you've just pressed these shoulder seams, everything should lie nice and f
     url='/img/patterns/simon/13d.png'
     description='Fold and press the placket'
 %}
-Origami time! We're going to fold the sleeve placket using the marked foldlines as our guide. This will be a lot easier if you press between each fold.
+Origami time! We're going to fold the sleeve placket using the marked fold lines as our guide. This will be a lot easier if you press between each fold.
 
  - First, fold the outer edges of the placket inwards.
  - Next, fold the entire thing double.
@@ -739,7 +739,7 @@ Go around the tip, and come down again on the other side (the fold side) until y
 
 Then, sew horizontal to the other side of the placket to finish.
 
-> I have included an extra illustration here that only shows the outline of the placket. You can see that the end of the guard is caught in our stitching of the placket, and is thus neatly tucked away. 
+> I have included an extra illustration here that only shows the outline of the placket. You can see that the end of the guard is caught in our stitching of the placket, and is thus neatly tucked away.
 {:.comment}
 
 ### Step 14: Set in sleeves
@@ -752,7 +752,7 @@ Then, sew horizontal to the other side of the placket to finish.
 
 > <h5>Careful with the extra seam allowance for the flat-felled seam</h5>
 > There is extra seam allowance on the sleeve to allow for the creation of the flat-felled seam.
-> 
+>
 > As such, be careful to not align the fabric edge, but align the seam so that the sleeve sits out 1cm.
 {:.warning}
 
@@ -826,7 +826,7 @@ Now, from the bad side of the fabric, sew the seam allowance down just at the ed
 
 Important here it to keep an even distance from the seam of your sleeve. If you have a felling foot for your sewing machine, it will help you with that. But if not, just be careful.
 
-> It is more important to keep and even distance from the sleeve seam than to sew exactly at the edge of the fold. Ideally, the fold sits at an even distance anyhere, but if it doesn't, just make sure to sew parallel to the sleeve seam. Even if that means you deviate a bit from the folded edge.
+> It is more important to keep and even distance from the sleeve seam than to sew exactly at the edge of the fold. Ideally, the fold sits at an even distance anyhow, but if it doesn't, just make sure to sew parallel to the sleeve seam. Even if that means you deviate a bit from the folded edge.
 {:.tip}
 
 #### Press the flat-felled seam
@@ -885,9 +885,9 @@ Now, from the bad side of the fabric, sew the seam allowance down just at the ed
 
 Important here it to keep an even distance from the seam of your sleeve. If you have a felling foot for your sewing machine, it will help you with that. But if not, just be careful.
 
-> It is more important to keep and even distance from the sleeve seam than to sew exactly at the edge of the fold. Ideally, the fold sits at an even distance anyhere, but if it doesn't, just make sure to sew parallel to the sleeve seam. Even if that means you deviate a bit from the folded edge.
+> It is more important to keep and even distance from the sleeve seam than to sew exactly at the edge of the fold. Ideally, the fold sits at an even distance anyhow, but if it doesn't, just make sure to sew parallel to the sleeve seam. Even if that means you deviate a bit from the folded edge.
 {:.tip}
- 
+
 #### Press the flat-felled seam
 When it's all done, press the flat-felled seam from the good side so it lies nice and flat.
 
@@ -902,12 +902,12 @@ You need to insert the sleeve between the two layers of your cuff, making sure t
 
 You will need to pin this in place, because depending on how long your sleeve placket is, it might be hard or even impossible to get this to lie flat.
 
-Also note that your sleeve edge will be longer than your cuff (how much longer depends on the sleeve drape). You need to make one or a few folds in your sleeve to accomodate for this.
+Also note that your sleeve edge will be longer than your cuff (how much longer depends on the sleeve drape). You need to make one or a few folds in your sleeve to accommodate for this.
 
 > Your pattern contains helplines on the sleeve to help you place to folds.
 {:.tip}
 
-> Take your time to pin everything carefully in place. We are goint to edge-stitch this later, so it's important that front and back of your cuff align nicely.
+> Take your time to pin everything carefully in place. We are going to edge-stitch this later, so it's important that front and back of your cuff align nicely.
 {:.comment}
 
 #### Edge-stitch cuffs to sleeves
@@ -944,13 +944,13 @@ Top-stitch around your cuff at a distance from the edge that is a bit less than 
 %}
 This is an important seam, so we are going to baste this in place to make sure it sits exactly right before we sew it.
 
-Start at the center back, and place the seam alowance of your back part between your two collar stands. Work your way around one side, and then do the other.
+Start at the center back, and place the seam allowance of your back part between your two collar stands. Work your way around one side, and then do the other.
 
 Make sure to respect the standard seam allowance and - important - avoid any wrinkles.
 
 > While your collar stand is relatively straight, we are going to sew it to what is essentially a hole in your shirt.
 >
-> That's a bit tricky, so take extra care at those parts that are most curved: where the back joins the fronts. 
+> That's a bit tricky, so take extra care at those parts that are most curved: where the back joins the fronts.
 {:.comment}
 
 #### Edge-stitch collar in place
@@ -981,7 +981,7 @@ To give more body to your collar, and firmly secure it in place we're going to s
 
 Sew about half the seam allowance from your earlier edge-stitching. Make sure to stop a few cm before the end of the collar.
 
-> You need to stop a few cm before the end of the collar (note: the end of the collar, not the end of the collar stand) so that this seam is entirely covered when the collar is folded down. 
+> You need to stop a few cm before the end of the collar (note: the end of the collar, not the end of the collar stand) so that this seam is entirely covered when the collar is folded down.
 {:.warning}
 
 #### Press the collar
@@ -1015,7 +1015,7 @@ Now that your collar is attached, give it a good press.
 </div>
 Time to finish the hem (that's the part you tuck in your trousers).
 
-Fold uphalf of the hem allowance and press down. Then, fold up again and press again.
+Fold up half of the hem allowance and press down. Then, fold up again and press again.
 
 Now, sew along upper edge to finish the hem.
 
@@ -1033,7 +1033,7 @@ When you've marked where buttons should go, sew them on.
 
 > Rather than mark the location of the buttons from the pattern, I prefer to transfer the location of the created buttonholes.
 >
-> This way, if a buttonhole sits a little bit out of place, the button will simply follow it. 
+> This way, if a buttonhole sits a little bit out of place, the button will simply follow it.
 {:.comment}
 
 {% include completed.html %}
