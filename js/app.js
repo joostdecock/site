@@ -1517,6 +1517,8 @@
                 scope += '</ul>';
             }
             $('#options-table').append('<tr><td>Scope</td><td nowrap>'+scope+'</td></tr>');
+            if(draft.data.units == 'imperial') $('#options-table').append('<tr><td>Seam allowance</td><td nowrap>'+inchesAsFraction(draft.data.options.sa)+'</td></tr>');
+            else $('#options-table').append('<tr><td>Seam allowance</td><td nowrap>'+draft.data.options.sa+' cm</td></tr>');
             Object.keys(fsdata.patterns[draft.pattern].optiongroups).forEach(function(key) {
                 $('#options-table').append('<tr><td colspan="2" class="heading">'+key+'</td></tr>');
                 var keys = $.map(fsdata.patterns[draft.pattern].optiongroups[key], function(value, index) {
