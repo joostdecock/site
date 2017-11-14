@@ -4,7 +4,7 @@ img: showcase.jpg
 caption: "Yes, that vintage Atari T-shirt is pretty sweet too."
 category: huey
 layout: showcase
-author: joostdecock
+author: Joost De Cock
 ---
 
 > #### See the original on Instagram

@@ -1,10 +1,10 @@
 ---
-title: Boxers for Sjoerd, by irenesstoffen
+title: Boxers for Sjoerd, by Irene
 img: showcase.jpg
 caption: Arrr!
 category: bruce
 layout: showcase
-author: irenesstoffen
+author: 'Irene Portz'
 ---
 
 > <h5>Check the original in irenesstoffen's Instagram feed</h5>

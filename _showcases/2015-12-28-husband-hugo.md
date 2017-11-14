@@ -1,12 +1,12 @@
 ---
-title: A hugo for the husband, by uneanneedecouture
+title: A hugo for the husband, by Sonia
 img: showcase.jpg
 caption: Is it me or is Hugo a popular make for husbands?
 category: hugo
 layout: showcase
-author: uneanneedecouture
+author: Sonia
 ---
-> <h5>Check the original in uneanneedecouture's Instagram feed</h5>
+> <h5>Check the original in Sonia's Instagram feed</h5>
 >
 > This picture is from [the Instagram feed](https://www.instagram.com/p/_1j7FSgynG/)  of [uneanneedecouture](https://uneanneedecouture.wordpress.com/).
 {:.link}

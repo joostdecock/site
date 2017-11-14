@@ -4,7 +4,7 @@ title: "We're JAMstack, we're JAMstack, we're JAMstack, we're JAMstack, we're JA
 linktitle: "I hope you like JAMstack too"
 img: pipes.jpg
 caption: "Picture by <a href='https://stock.tookapic.com/jenniferforjoy' target='_BLANK' rel='nofollow'>Jennifer</a>"
-author: joostdecock
+author: 'Joost De Cock'
 category: site
 blurb: "Freesewing.org goes JAMstack, which begs the question: What does that even mean?"
 ---

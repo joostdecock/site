@@ -1,6 +1,6 @@
 ---
 layout: cards
-title: Blog posts by joostdecock
+title: Blog posts by Joost De Cock
 permalink: /blog/author/joostdecock
 nocomments: true
 ---

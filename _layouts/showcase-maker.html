@@ -2,13 +2,37 @@
 layout: cards
 ---
 <div class="container">
+    {% if page.blog  or page.twitter or page.freesewing or page.instagram%}
+    <div class="m600">
+        <blockquote class="link">
+            <h5>More from {{ page.maker }}</h5>
+            <ul>
+                {% if page.blog %}
+                <li>{{ page.maker}} blogs at <a href="{{ page.blog }}" title="Visit the blog of {{ page.maker | escape}}" target="_BLANK">{{ page.blog }}</a></li>
+                {% endif %}
+                {% if page.twitter %}
+                <li>{{ page.maker }} is <a href="https://twitter.com/{{ page.twitter }}" title="Visit the Twitter account of {{ page.maker | escape}}" target="_BLANK">@{{ page.twitter }} on Twitter</a></li>
+                {% endif %}
+                {% if page.instagram %}
+                <li>{{ page.maker }} is <a href="https://instagram.com/{{ page.instagram }}" title="Visit the Instagram account of {{ page.maker | escape}}" target="_BLANK">@{{ page.instagram }} on Instagram</a></li>
+                {% endif %}
+                {% if page.freesewing %}
+                <li>{{ page.maker }}'s <a href="/users/{{ page.freesewing }}" title="Visit the freesewing profile of {{ page.maker | escape}}" target="_BLANK">profile on freesewing.org</a></li>
+                {% endif %}
+
+            </ul>
+        </blockquote>
+    </div>    
+    {% endif %}
 <div class="row">
 <div class="col">
 <div class="card-columns blog">
+
+
 {% assign sorted = site.showcases | sort:"date" | reverse %}
 {% for post in sorted %}
-{% assign maker = page.url | split: '/' %}
-{% if post.author == maker[3] %}
+{% assign maker = page.maker %}
+{% if post.author == maker %}
 <div class="card hover-shadow mb-3">
 <a href="{{ post.url }}" title="{{ post.title | escape}}">
 <img 
@@ -25,7 +49,7 @@ layout: cards
 </a>
 <footer class="rounded-bottom">
 <a href="/showcase/pattern/{{ post.categories }}" title="Browse other showcases of this pattern">{{ post.categories }}</a> by 
-<a href="/showcase/maker/{{ post.author }}" title="Browse other showcases by this maker">{{ post.author }}</a>
+<a href="/showcase/maker/{{ post.author | downcase | replace: ' ', ''}}" title="Browse other showcases by this maker">{{ post.author }}</a>
 </footer>
 </div>
 {% endif %}

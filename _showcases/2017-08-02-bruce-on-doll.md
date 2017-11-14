@@ -4,7 +4,7 @@ img: showcase.jpg
 caption: The doll is named Jon, and its owner is Alicia
 category: bruce
 layout: showcase
-author: archaiix
+author: Archaiix
 ---
 
 > ##### Read the original post

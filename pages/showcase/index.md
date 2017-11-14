@@ -26,7 +26,7 @@ nocomments: true
 </a>
 <footer class="rounded-bottom">
 <a href="/showcase/pattern/{{ post.categories }}" title="Browse other showcases of this pattern">{{ post.categories }}</a> by 
-<a href="/showcase/maker/{{ post.author }}" title="Browse other showcases by this maker">{{ post.author }}</a>
+<a href="/showcase/maker/{{ post.author | downcase | replace: ' ', ''}}" title="Browse other showcases by this maker">{{ post.author }}</a>
 </footer>
 </div>
 {% endfor %}

@@ -864,8 +864,6 @@
 
                 $('#picklist').append(mismatch);
             }
-            console.log(account);
-            console.log(modelhandle);
             // Load slider JS
             $('#picklist').append("<form id='form'><div id='accordion' role='tablist' aria-multiselectable='true'></div></form>");
             var form = {};
@@ -885,25 +883,46 @@
             if(typeof defaults != 'undefined') $('#form').append('<input type="hidden" id="fork" name="fork" value="true">');
             $('#form').append('<input type="hidden" id="form-pattern-name" name="pattern" data-handle="'+patternhandle+'" value="'+fsdata.mapping.handleToPattern[patternhandle]+'"><input type="hidden" name="model" value="'+modelhandle+'" id="form-model-handle">');
             if (page.substr(0,9) === '/redraft/') $('#form').append('<input type="hidden" name="draft" value="'+page.split('/')[2]+'" id="form-redraft-handle">');
-            // Load defaults for theme and langauge from fork (if provided)
+            // Load defaults for general options from fork (if provided)
             if(defaults !== false && typeof defaults.theme !== 'undefined') dflt_theme = defaults.theme;
             else dflt_theme = 'Basic';
             if(defaults !== false && typeof defaults.lang !== 'undefined') dflt_lang = defaults.lang;
             else dflt_lang = 'en';
             if(defaults !== false && typeof defaults.parts !== 'undefined') dflt_scope = 'custom';
             else dflt_scope = 'all';
+            // Handle seam allowance
+            if(typeof pattern.seamAllowance === 'undefined') {
+				var dflt_metric_sa = 1; // 1cm default
+                var dflt_imperial_sa = 0.625; // 5/8" default
+			} else {
+				var dflt_metric_sa = pattern.seamAllowance.metric;
+				var dflt_imperial_sa = pattern.seamAllowance.imperial;
+                var nonStandardSa = "<blockquote class='tip'>";
+                nonStandardSa += "<h5>Heads-up: Non-standard seam allowance</h5>";
+                nonStandardSa += "<p>This pattern comes with a default seam allowance of <b>";
+                nonStandardSa += dflt_metric_sa+"cm</b> ("+inchesAsFraction(roundToFraction(dflt_imperial_sa), 'plain').trim()+"inch) instead of the standard <b>1cm</b> (5/8 inch).</p>";
+                nonStandardSa += "<p><b>This is not a coincidence</b></p>";
+                nonStandardSa += "<p>Changing the default seam allowance is not done willy-nilly, but because the designer estimates this seam allowance is better for this pattern.</p>";
+                nonStandardSa += "<p><b>You can still change the seam allowance</b></p>";
+                nonStandardSa += "<p>As with all patterns, you can change your seam allowance in the <b>General</b> group of options.</p>";
+                nonStandardSa += "</blockquote>";
+                $('#form').prepend(nonStandardSa);
+
+			} 
+            $('#form').append('<input type="hidden" id="defaultMetricSa" name="defaultMetricSa" value="'+dflt_metric_sa+'">');
+            $('#form').append('<input type="hidden" id="defaultImperialSa" name="defaultImperialSa" value="'+dflt_imperial_sa+'">');
             if(defaults !== false && typeof defaults.seamAllowance !== 'undefined') dflt_seamAllowance = defaults.seamAllowance;
             else dflt_seamAllowance = account.account.data.account.units;
             if(defaults !== false && typeof defaults.customSa !== 'undefined') dflt_customSa = convertForkedDefault(defaults.customSa,account.account.data.account.units,defaults.userUnits);
             else {
-                if(account.account.data.account.units === 'imperial') dflt_customSa = 15.875;
-                else dflt_customSa = 10;
+                if(account.account.data.account.units === 'imperial') dflt_customSa = dflt_imperial_sa*25.4;
+                else dflt_customSa = dflt_metric_sa*10;
             }
             if(account.account.data.account.units === 'imperial') {
-                min_customSa = 4.8;
+                min_customSa = 2.4;
                 max_customSa = 25.4;
             } else {
-                min_customSa = 5;
+                min_customSa = 3;
                 max_customSa = 25;
             }
             // Prepend theme/language
@@ -917,8 +936,8 @@
                         'type': 'chooseOne',
                         'options': {
                             'none': "Don't include seam allowance",
-                            'metric': 'Standard metric seam allowance (1 cm)',
-                            'imperial': 'Standard imperial seam allowance (<sup>5</sup>/<sub>8</sub> inch)',
+                            'metric': 'Standard metric seam allowance ('+round(dflt_metric_sa)+' cm)',
+                            'imperial': 'Standard imperial seam allowance ('+inchesAsFraction(roundToFraction(dflt_imperial_sa), 'plain').trim()+' inch)',
                             'custom': 'Custom seam allowance'
                         }
                     },
@@ -1308,12 +1327,10 @@
         if($('input[name="seamAllowance"]:checked').val() == 'custom') $('#sa').val($('#customSa').val());
         else if ($('input[name="seamAllowance"]:checked').val() == 'none') $('#sa').val(0);
         else if ($('input[name="seamAllowance"]:checked').val() == 'imperial') {
-            if($('#userUnits').val() == 'imperial') $('#sa').val(0.625);
-            else $('#sa').val(1.525);
+            $('#sa').val($('#defaultImperialSa').val());
         }
         else {
-            if($('#userUnits').val() == 'imperial') $('#sa').val(0.3937);
-            else $('#sa').val(1);
+            $('#sa').val($('#defaultMetricSa').val());
         }
         $.ajax({
             url: api.data+'/'+method,
@@ -1511,6 +1528,8 @@
                 scope += '</ul>';
             }
             $('#options-table').append('<tr><td>Scope</td><td nowrap>'+scope+'</td></tr>');
+            if(draft.data.units == 'imperial') $('#options-table').append('<tr><td>Seam allowance</td><td nowrap>'+inchesAsFraction(draft.data.options.sa)+'</td></tr>');
+            else $('#options-table').append('<tr><td>Seam allowance</td><td nowrap>'+draft.data.options.sa+' cm</td></tr>');
             Object.keys(fsdata.patterns[draft.pattern].optiongroups).forEach(function(key) {
                 $('#options-table').append('<tr><td colspan="2" class="heading">'+key+'</td></tr>');
                 var keys = $.map(fsdata.patterns[draft.pattern].optiongroups[key], function(value, index) {

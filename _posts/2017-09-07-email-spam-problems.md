@@ -4,7 +4,7 @@ title: "Thanks for nothing Microsoft; Email shouldn't be this hard"
 linktitle: "Thanks for nothing Microsoft"
 img: full.jpg
 caption: "Would you close a lane because one driver was playing their music too loud?"
-author: joostdecock
+author: 'Joost De Cock'
 category: site
 blurb: "It's damn near impossible for people with a Hotmail/Outlook/MSN/Live email address to sign up for this website."
 ---

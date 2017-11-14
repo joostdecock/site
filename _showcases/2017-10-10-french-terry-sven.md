@@ -4,7 +4,7 @@ img: showcase.jpg
 caption: "The model is totally walking away with it though."
 category: sven
 layout: showcase
-author: nadesmakes
+author: Nadesmakes
 ---
 
 > #### See the original on Instagram

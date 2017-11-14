@@ -4,7 +4,7 @@ img: showcase.jpg
 caption: "Seems the husband was not willing to model these"
 category: bruce
 layout: showcase
-author: judywillimentross
+author: 'Judy Williment-Ross'
 ---
 Judy wrote:
 
