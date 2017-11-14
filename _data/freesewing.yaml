@@ -4,14 +4,11 @@ patterns:
             name: 'Aaron A-Shirt'
             description: 'Aaron is an athletic shirt or tank top'
             handle: aaron
-            version: 2
-            author: 'Joost De Cock'
-            company: freesewing
-            link: freesewing.org/pattern/aaron
             tags:
                 - top
                 - underwear
-                - unisex
+                - menswear
+                - womenswear
             inMemoryOf:
                 name: 'Aaron Swartz'
                 link: 'https://en.wikipedia.org/wiki/Aaron_Swartz'
@@ -130,11 +127,6 @@ patterns:
             name: 'Brian Body Block'
             description: 'Brian is a basic body block for men'
             handle: brian
-            version: 2
-            date: 20170303
-            author: 'Joost De Cock'
-            company: freesewing
-            link: freesewing.org/pattern/brian
             tags:
                 - menswear
                 - top
@@ -314,11 +306,6 @@ patterns:
             name: 'Cathrin Corset'
             description: 'Cathrin is an underbust corset or waist trainer'
             handle: cathrin
-            version: 2
-            author: 'Joost De Cock'
-            email: joost@decock.org
-            company: freesewing.org
-            link: freesewing.org/pattern/cathrin-corset/
             tags:
                 - womenswear
                 - underwear
@@ -415,15 +402,10 @@ patterns:
             name: 'Hugo Hoodie'
             description: 'Hugo is a hooded jumper with raglan sleeves'
             handle: hugo
-            version: 2
-            author: 'Joost De Cock'
-            email: joost@decock.org
-            company: freesewing.org
-            link: freesewing.org/pattern/hugo
             tags:
                 - menswear
-                - sweater
                 - hoodie
+                - sweater
                 - top
             inMemoryOf:
                 name: 'Hugo De Cock'
@@ -520,11 +502,6 @@ patterns:
             name: 'Simon Shirt'
             description: 'Simon is a highly adaptable shirt pattern for men'
             handle: simon
-            version: 2
-            author: 'Joost De Cock'
-            email: joost@decock.org
-            company: freesewing.org
-            link: freesewing.org/pattern/simon
             tags:
                 - menswear
                 - top
@@ -946,16 +923,10 @@ patterns:
             name: 'Sven Sweatshirt'
             description: 'Sven is a straightforward sweater'
             handle: sven
-            version: 1
-            date: 20170323
-            author: 'Joost De Cock'
-            email: joost@decock.org
-            company: freesewing.org
-            link: freesewing.org/pattern/sven
             tags:
                 - menswear
-                - sweater
                 - top
+                - sweater
         parts:
             back: Back
             front: Front
@@ -1028,13 +999,9 @@ patterns:
             name: 'Tamiko Top'
             description: 'Tamiko is a zero-waste top'
             handle: tamiko
-            version: 2
-            author: 'Joost De Cock'
-            email: joost@decock.org
-            company: freesewing.org
-            link: freesewing.org/pattern/tamiko
             tags:
-                - unisex
+                - womenswear
+                - menswear
                 - top
         parts:
             top: 'Tamiko Top'
@@ -1063,11 +1030,6 @@ patterns:
             name: 'Theo trousers'
             description: 'Theo is Theodore with a more slim cut'
             handle: theo
-            version: 2
-            author: 'Joost De Cock'
-            email: joost@decock.org
-            company: freesewing.org
-            link: freesewing.org/pattern/theo
             tags:
                 - menswear
                 - trousers
@@ -1134,11 +1096,6 @@ patterns:
             name: 'Theodore trousers'
             description: 'Thedore are classic trousers by the (Aldrich) book'
             handle: theodore
-            version: 2
-            author: 'Joost De Cock'
-            email: joost@decock.org
-            company: freesewing.org
-            link: freesewing.org/pattern/theodore
             tags:
                 - menswear
                 - trousers
@@ -1205,13 +1162,7 @@ patterns:
             name: 'Trayvon Tie'
             description: 'Trayvon is a tie that cuts no corners for a professional result'
             handle: trayvon
-            version: 2
-            author: 'Joost De Cock'
-            email: joost@decock.org
-            company: freesewing.org
-            link: freesewing.org/pattern/trayvon
             tags:
-                - unisex
                 - accessories
             inMemoryOf:
                 name: 'Trayvon Martin'
@@ -1257,11 +1208,6 @@ patterns:
             name: 'Wahid Waistcoat'
             handle: wahid
             description: 'Wahid is a classic fitted waistcoat'
-            date: 20161206
-            author: 'Joost De Cock'
-            email: joost@decock.org
-            company: freesewing.org
-            link: freesewing.org/pattern/wahid
             tags:
                 - menswear
                 - top
@@ -1438,6 +1384,92 @@ patterns:
                 - shoulderInset
                 - backInset
                 - frontInset
+    BenjaminBowTie:
+        info:
+            name: 'Benjamin Bow Tie'
+            description: 'Benjamin is a bow tie pattern with four different shape options.'
+            handle: benjamin
+            tags:
+                - accessories
+        seamAllowance:
+            metric: 0.6
+            imperial: 0.25
+        languages:
+            en: English
+        parts:
+            bowTie1: 'Bow Tie knot'
+            bowTie2: 'Bow Tie knot'
+            bowTie3: 'Bow Tie knot'
+            collarBand: 'Collar band'
+        measurements:
+            neckCircumference: 394
+        options:
+            tipWidth:
+                title: 'Tip width'
+                description: 'The width of the wings of the bow tie at the tip.'
+                group: style
+                type: measure
+                min: 24
+                max: 80
+                default: 65
+                dependsOn: bowStyle
+                onlyOn: [1, 2, 4]
+            knotWidth:
+                title: 'Knot width'
+                description: 'The width of the bow tie at the knot/middle.'
+                group: style
+                type: measure
+                min: 24
+                max: 40
+                default: 30
+            bowLength:
+                title: 'Bow length'
+                description: 'The length of the wings of the bow tie.'
+                group: style
+                type: measure
+                min: 100
+                max: 140
+                default: 120
+            bowStyle:
+                title: 'Bow style'
+                description: 'The style of the bow'
+                group: style
+                type: chooseOne
+                options: null
+                default: diamond
+            endStyle:
+                title: 'End style'
+                description: 'The style of the end of the tie'
+                group: style
+                type: chooseOne
+                options: null
+                default: straight
+            collarEase:
+                title: 'Collar ease'
+                description: 'The amount of ease in the collar of your shirts'
+                group: ease
+                type: measure
+                min: 0
+                max: 40
+                default: 15
+            adjustmentRibbon:
+                title: 'Adjustment Ribbon'
+                description: 'Add a ribbon to make the tie adjustable'
+                group: sewing
+                type: chooseOne
+                options: [None, '13½" - 18"']
+                default: 0
+        optiongroups:
+            style:
+                - tipWidth
+                - knotWidth
+                - bowLength
+                - bowStyle
+                - endStyle
+            ease:
+                - collarEase
+            sewing:
+                - adjustmentRibbon
     HueyHoodie:
         hidden:
             - false
@@ -1445,9 +1477,6 @@ patterns:
             name: 'Huey Hoodie'
             description: 'Huey is a zip-up hoodie with optinal front pockets'
             handle: huey
-            author: 'Joost De Cock'
-            company: freesewing.org
-            link: freesewing.org/pattern/huey
             tags:
                 - menswear
                 - top
@@ -1564,6 +1593,7 @@ namespaces:
         - trayvon
         - wahid
     Beta:
+        - benjamin
         - huey
 mapping:
     handleToPatternTitle:
@@ -1579,6 +1609,7 @@ mapping:
         theodore: 'Theodore trousers'
         trayvon: 'Trayvon Tie'
         wahid: 'Wahid Waistcoat'
+        benjamin: 'Benjamin Bow Tie'
         huey: 'Huey Hoodie'
     handleToPattern:
         aaron: AaronAshirt
@@ -1593,6 +1624,7 @@ mapping:
         theodore: TheodoreTrousers
         trayvon: TrayvonTie
         wahid: WahidWaistcoat
+        benjamin: BenjaminBowTie
         huey: HueyHoodie
     patternToHandle:
         AaronAshirt: aaron
@@ -1607,6 +1639,7 @@ mapping:
         TheodoreTrousers: theodore
         TrayvonTie: trayvon
         WahidWaistcoat: wahid
+        BenjaminBowTie: benjamin
         HueyHoodie: huey
     handleToNamespace:
         aaron: Core
@@ -1621,6 +1654,7 @@ mapping:
         theodore: Core
         trayvon: Core
         wahid: Core
+        benjamin: Beta
         huey: Beta
     measurementToTitle:
         acrossBack: 'Across back'
