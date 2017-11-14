@@ -51,6 +51,7 @@ blockquote.warning {
 }
 blockquote.tip:before { content: "\f0eb"; color: $green; }
 blockquote.quote { max-width: 50%; float: right; font-style: italic;}
+blockquote.quote.full {max-width: 100%; float: none; clear: both }
 @media (max-width: 767px) { blockquote.quote {max-width: 100%; float: none; clear: both} }
 blockquote.quote:before { content: "\f10e"; }
 blockquote.comment:before { content: "\f0e5"; color: $light-purple;}
