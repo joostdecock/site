@@ -1,7 +1,7 @@
 ---
 layout: cards
 title: Administration
-permalink: /admin
+permalink: /tools/admin
 nocomments: true
 action: admin
 ---
