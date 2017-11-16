@@ -22,7 +22,7 @@ action: tiler
             <h5>Select the format you'd like to convert to</h5>
             <form id="form">
                 <fieldset class="form-group px-5 mt-3" id="format">
-                    <div class="form-check"><label class="form-check-label"><input class="form-check-input format" name="format" id="format-a4" value="A4" type="radio"> <b>A4</b></label></div>
+                    <div class="form-check"><label class="form-check-label"><input class="form-check-input format" name="format" id="format-a4" value="A4" type="radio" checked="checked"> <b>A4</b></label></div>
                     <div class="form-check"><label class="form-check-label"><input class="form-check-input format" name="format" id="format-a3" value="A3" type="radio"> <b>A3</b></label></div>
                     <div class="form-check"><label class="form-check-label"><input class="form-check-input format" name="format" id="format-a2" value="A2" type="radio"> <b>A2</b></label></div>
                     <div class="form-check"><label class="form-check-label"><input class="form-check-input format" name="format" id="format-a1" value="A1" type="radio"> <b>A1</b></label></div>

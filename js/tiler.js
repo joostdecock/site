@@ -47,7 +47,14 @@
             dataType: 'json',
             success: function(data) {
                 if(data.result == 'ok') {
-                    window.location.replace(data.link);
+                    var download = '<div class="m600">';
+                    download += '<blockquote class="link">';
+                    download += '<h5>Your file is ready</h5>';
+                    download += '<p>Your SVG has been converted, and is ready to be downloaded.</p>';
+                    download += '<p><a class="mt-5 btn btn-primary btn-lg btn-block" href="'+data.link+'" target="_BLANK">Open file</a></p>';
+                    download += '<p><small>The button above is a link to your file. You can either right-click it (or long press) to get the <b>Save link as</b> option, or simply open it and save it in the new window.</p>';
+                    download += '</blockquote>';
+                    $('#tile').html(download);
                 } else {
                     $.bootstrapGrowl("Something went wrong, we were unable to convert your SVG", {type: 'error'});
                 }    
