@@ -145,6 +145,8 @@
         $('#settings').load('/components/account/settings', function(){
             $('#email').attr('value', account.account.email);
             $('#username').attr('value', account.account.username);
+            if(typeof account.account.data.social.twitter != 'undefined') $('#twitter').attr('value', account.account.data.social.twitter);
+            if(typeof account.account.data.social.instagram != 'undefined') $('#instagram').attr('value', account.account.data.social.instagram);
             $('#picture-key').css('background-image', "url("+api.data+account.account.pictureSrc+")");
             $('#units-toggle').toggles({
                 text: {
@@ -1873,6 +1875,9 @@
                     $('ul.breadcrumbs li:last-child').html(data.profile.username);
                     $('#avatar').attr('src', api.data+data.profile.pictureSrc);
                     $('span.username').html(data.profile.username);
+                    if(typeof data.social.twitter != 'undefined') $('#social').append('<a href="https://twitter.com/'+data.social.twitter+'" target="_BLANK" title="'+data.profile.username+' is '+data.social.twitter+' on Twitter" class="px-2"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a>');
+                    if(typeof data.social.instagram != 'undefined') $('#social').append('<a href="https://instagram.com/'+data.social.instagram+'" target="_BLANK" title="'+data.profile.username+' is '+data.social.instagram+' on Instagram" class="px-2"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></a>');
+                    console.log(typeof data.social.twitter);
                     $.each(data.badges, function(name, val){
                         $('#badges').append('<a href="/docs/site/badges#'+name+'"><img src="/img/badges/badge-'+name+'.svg" class="badge-img drop-shadow" style="margin: 5px;"></a>');
                     });

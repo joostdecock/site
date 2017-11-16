@@ -12,6 +12,7 @@ crumbs:
             <div style="margin: auto; padding: 1rem; text-align: center;">
                 <img src="/img/logo/spinner.svg" alt="Loading..." id="avatar" style="padding: 0.75rem 0.75rem 2.25rem 0.75rem;background: #fff;" class="drop-shadow">
             </div>
+            <div id="social" class="text-center"></div>
         </div>
         <div class="col-md-8 text-center">
             <h4>Badges unlocked by <span class="username"></span></h4>
