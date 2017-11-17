@@ -7,6 +7,15 @@ img {
 .invisible {
     opacity: 0!important;
 }
+.float-right {
+    float: right;
+}
+.float-left {
+    float: left;
+}
+.bg-highlight {
+    background-color: #f9f9d1;
+}
 img.svg {
     width: 100%;
     height: auto;
