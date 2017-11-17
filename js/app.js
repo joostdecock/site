@@ -145,7 +145,7 @@
         $('#settings').load('/components/account/settings', function(){
             $('#email').attr('value', account.account.email);
             $('#username').attr('value', account.account.username);
-            if(typeof account.account.data != 'undefined' && account.account.data != null) {
+            if(typeof account.account.data.social != 'undefined' && account.account.data.social != null) {
                 if(typeof account.account.data.social.twitter != 'undefined') $('#twitter').attr('value', account.account.data.social.twitter);
                 if(typeof account.account.data.social.instagram != 'undefined') $('#instagram').attr('value', account.account.data.social.instagram);
             }
