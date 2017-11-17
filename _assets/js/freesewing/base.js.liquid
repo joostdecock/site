@@ -266,9 +266,12 @@ function renderComments(comments) {
         var markup = '<div id="comment-'+comment.id+'" class="comment '+comment.status+'">';
         markup += '<div class="meta">';
         var t = comment.time.split(/[- :]/);
-        markup += '<a href="#comment-'+comment.id+'" title="Permalink to this comment">';
+        markup += '<a href="#comment-'+comment.id+'" id="#comment-'+comment.id+'-anchor" title="Permalink to this comment">';
         markup += timeago().format(new Date(Date.UTC(t[0], t[1]-1, t[2], t[3], t[4], t[5])));
-        markup += '</a> by <a href="/users/'+comment.userhandle+'" title="Visit the profile page of this user">'+comment.username+'</a>&nbsp;';
+        markup += '</a> by <a href="/users/'+comment.userhandle+'" title="Visit the profile page of this user">'+comment.username+'</a>';
+        if(typeof comment.social.twitter != 'undefined') markup += '<a href="https://twitter.com/'+comment.social.twitter+'" target="_BLANK" title="'+comment.username+' is '+comment.social.twitter+' on Twitter" class="px-2 float-right">'+comment.username+' on twitter</a>';
+        if(typeof comment.social.instagram != 'undefined') markup += '<a href="https://instagram.com/'+comment.social.instagram+'" target="_BLANK" title="'+comment.username+' is '+comment.social.instagram+' on Instagram" class="px-2 float-right">'+comment.username+' on instagram</a>';
+        markup += '<br>';
         $.each(comment.badges, function(badge, bval) {
             markup += '<img src="/img/badges/badge-'+badge+'.svg" style="width: 14px; heigth: 14px; border-radius: 7px; margin-right: 2px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.23)" >';
         });
