@@ -252,7 +252,6 @@ function loadComments() {
     if (logged_in) $('#comments-container').html(heading+container+form);
     else $('#comments-container').html(heading+container+loginmsg);
     $.get(api.data+'/comments/page'+page,  function(data){renderComments(data.comments)});
-
     // Bind action buttons
     $('#comment-preview').unbind().click(function(e) { e.preventDefault(); previewComment(); });
     $('#comment-form').unbind().submit(function(e) { e.preventDefault(); saveComment(); });
@@ -301,6 +300,14 @@ function renderComments(comments) {
         $('a.comment-remove').unbind().click(function(e) { e.preventDefault(); removeComment($(this).attr('data-comment')); });
         $('a.comment-reply').unbind().click(function(e) { e.preventDefault(); replyToComment($(this).attr('data-comment')); });
     });
+    if (location.hash ) {
+        var requested_hash = location.hash.slice(1);
+        if(requested_hash.substr(0,8) == 'comment-') {
+            location.hash = '';
+            location.hash = requested_hash;
+            $('#'+requested_hash+' > div.comment-text').addClass('bg-highlight');
+        }
+    }
 } 
 
 function previewComment() {
