@@ -1875,7 +1875,7 @@
                     $('ul.breadcrumbs li:last-child').html(data.profile.username);
                     $('#avatar').attr('src', api.data+data.profile.pictureSrc);
                     $('span.username').html(data.profile.username);
-                    if(typeof data.social != 'undefined') {
+                    if(typeof data.social != 'undefined' && data.social != null) {
                         if(typeof data.social.twitter != 'undefined') $('#social').append('<a href="https://twitter.com/'+data.social.twitter+'" target="_BLANK" title="'+data.profile.username+' is '+data.social.twitter+' on Twitter" class="px-2"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a>');
                         if(typeof data.social.instagram != 'undefined') $('#social').append('<a href="https://instagram.com/'+data.social.instagram+'" target="_BLANK" title="'+data.profile.username+' is '+data.social.instagram+' on Instagram" class="px-2"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></a>');
                     }
