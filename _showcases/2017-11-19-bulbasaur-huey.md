@@ -5,9 +5,6 @@ caption: Bulbasaurs are strong AND cute
 category: huey
 layout: showcase
 author: Frankie Baldwin
-freesewing: Topstitched
-instagram: knitwitsowls
-blog: http://knitwits-owls.blogspot.com/
 ---
 <div class="row">
 <div class="col">
