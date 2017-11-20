@@ -64,24 +64,6 @@ nocomments: true
   </div>
 </section>
 
-<section class="cover-band bg-thematic mt-5 mb-5 visitor-hidden" style="background: #663f95;">
-    <div class="mt-5 mb-5 text-center px-3">
-        <h1 class="jumbotron-heading">Care to share?</h1>
-        <p class="mt-3 lead">
-            I am terrible at marketing. Would you help me out?<br>
-            If you like this site, please tell your followers about it:
-        </p>
-        <p class="text-center social-icons" style="font-size: 3rem;">
-            <a class="noline" href="https://twitter.com/intent/tweet?text=This is cool! An open source platform for made-to-measure sewing patterns: https://freesewing.org/ Great work from @freesewing_org&amp;related=freesewing_org" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a class="noline" href="https://facebook.com/sharer.php?u=https://freesewing.org/" rel="nofollow" target="_blank" title="Share on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a class="noline" href="http://pinterest.com/pin/create/button/?url=https://freesewing.org/&amp;description=An open source platform for made-to-measure sewing patterns" rel="nofollow" target="_blank" title="Share on Pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-            <a class="noline" href="http://www.tumblr.com/share/link?url=https://freesewing.org/&amp;name=freesewing.org&amp;description=An open source platform for made-to-measure sewing patterns" rel="nofollow" target="_blank" title="Share on Tumblr"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
-            <a class="noline" href="http://www.reddit.com/submit?url=https://freesewing.org/&amp;title=Freesewing is an open source platform for made-to-measure sewing patterns" rel="nofollow" target="_blank" title="Share on Reddit"><i class="fa fa-reddit" aria-hidden="true"></i></a>
-            <a class="noline" href="https://plus.google.com/share?url=https://freesewing.org/" rel="nofollow" target="_blank" title="Share on Google+"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-        </p>
-    </div>
-</section>
-
 <div class="container">
     <h4>Lastest blog posts</h4>
     <div class="row">
