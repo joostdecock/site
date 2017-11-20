@@ -29,6 +29,11 @@ permalink: /components/account/settings
         <span class="input-group-addon td-key">Instagram</span>
         <input class="form-number form-control" id="instagram" name="instagram" value="" type="text" placeholder="Enter your Instagram username here">
     </div>
+    <!-- github -->
+    <div class="input-group key-sm">
+        <span class="input-group-addon td-key">GitHub</span>
+        <input class="form-number form-control" id="github" name="github" value="" type="text" placeholder="Enter your GitHub username here">
+    </div>
     <p><small><a href="/blog/privacy-choices/" target="_BLANK">Your privacy is in good hands here</a>. I am not interested in collecting your data, and the only reason
     this is here is because <a taget="_BLANK" href="https://github.com/freesewing/site/issues/184">people asked for it</a>.</small></p>
     <h4 class="mt-3">Your defaults</h4>

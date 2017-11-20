@@ -148,6 +148,7 @@
             if(typeof account.account.data.social != 'undefined' && account.account.data.social != null) {
                 if(typeof account.account.data.social.twitter != 'undefined') $('#twitter').attr('value', account.account.data.social.twitter);
                 if(typeof account.account.data.social.instagram != 'undefined') $('#instagram').attr('value', account.account.data.social.instagram);
+                if(typeof account.account.data.social.github != 'undefined') $('#github').attr('value', account.account.data.social.github);
             }
             $('#picture-key').css('background-image', "url("+api.data+account.account.pictureSrc+")");
             $('#units-toggle').toggles({
@@ -1880,6 +1881,7 @@
                     if(typeof data.social != 'undefined' && data.social != null) {
                         if(typeof data.social.twitter != 'undefined') $('#social').append('<a href="https://twitter.com/'+data.social.twitter+'" target="_BLANK" title="'+data.profile.username+' is '+data.social.twitter+' on Twitter" class="px-2"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a>');
                         if(typeof data.social.instagram != 'undefined') $('#social').append('<a href="https://instagram.com/'+data.social.instagram+'" target="_BLANK" title="'+data.profile.username+' is '+data.social.instagram+' on Instagram" class="px-2"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></a>');
+                        if(typeof data.social.github != 'undefined') $('#social').append('<a href="https://github.com/'+data.social.github+'" target="_BLANK" title="'+data.profile.username+' is '+data.social.github+' on GitHub" class="px-2"><i class="fa fa-github fa-4x" aria-hidden="true"></i></a>');
                     }
                     $.each(data.badges, function(name, val){
                         $('#badges').append('<a href="/docs/site/badges#'+name+'"><img src="/img/badges/badge-'+name+'.svg" class="badge-img drop-shadow" style="margin: 5px;"></a>');

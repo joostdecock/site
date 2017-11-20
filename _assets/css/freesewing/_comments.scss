@@ -61,3 +61,15 @@ img.avatile {
 .comment-text {
     min-height: 60px;
 }
+.comment-social-links{
+    display: inline;
+    float: right;
+    text-align: right;
+}
+.comment-social-links a {
+    padding: 0 3px;
+}
+.comment-social-links i.fa {
+    font-size: 125%;
+}
+
