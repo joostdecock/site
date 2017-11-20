@@ -23,6 +23,18 @@ You can change your username to anything you want in
 
 You can also pick a new profile picture there.
 
+### Add your social media accounts
+
+You can add your Twitter and/or Instagram username to 
+[your account](/account)
+so other users can discover more from you.
+
+> ##### Your privacy is in good hands here
+> [I care about your privacy](/blog/privacy-choices/), and the only reason
+> this is here is because 
+> [people asked for it](https://github.com/freesewing/site/issues/184).
+{:.tip}
+
 ## The perks of having an account
 
 Having an account unlocks extra functionality on this website. Once logged-in:

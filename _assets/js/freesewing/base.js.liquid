@@ -270,8 +270,11 @@ function renderComments(comments) {
         markup += '</a> by <a href="/users/'+comment.userhandle+'" title="Visit the profile page of this user">'+comment.username+'</a>';
 
         if(typeof comment.social != 'undefined') {
-            if(typeof comment.social.twitter != 'undefined') markup += '<a href="https://twitter.com/'+comment.social.twitter+'" target="_BLANK" title="'+comment.username+' is '+comment.social.twitter+' on Twitter" class="px-2 float-right">'+comment.username+' on twitter</a>';
-            if(typeof comment.social.instagram != 'undefined') markup += '<a href="https://instagram.com/'+comment.social.instagram+'" target="_BLANK" title="'+comment.username+' is '+comment.social.instagram+' on Instagram" class="px-2 float-right">'+comment.username+' on instagram</a>';
+            var social = '';
+            if(typeof comment.social.twitter != 'undefined') social += '<a href="https://twitter.com/'+comment.social.twitter+'" target="_BLANK" title="'+comment.username+' is '+comment.social.twitter+' on Twitter"><span class="not-on-small">Twitter</span><span class="only-on-small"><i class="fa fa-twitter" aria-hidden="true"></i></span></a> ';
+            if(typeof comment.social.instagram != 'undefined') social += '<a href="https://instagram.com/'+comment.social.instagram+'" target="_BLANK" title="'+comment.username+' is '+comment.social.instagram+' on Instagram"><span class="not-on-small">Instagram</span><span class="only-on-small"><i class="fa fa-instagram" aria-hidden="true"></i></span></a> ';
+            if(typeof comment.social.github != 'undefined') social += '<a href="https://github.com/'+comment.social.github+'" target="_BLANK" title="'+comment.username+' is '+comment.social.github+' on GitHub"><span class="not-on-small">GitHub</span><span class="only-on-small"><i class="fa fa-github" aria-hidden="true"></i></span></a> ';
+            if(social.length > 1) markup += '<div class="comment-social-links"><a href="/users/'+comment.userhandle+'" title="Visit the profile page of this user">'+comment.username+'</a> on '+social+'</div>';
         }
         markup += '<br>';
         $.each(comment.badges, function(badge, bval) {
