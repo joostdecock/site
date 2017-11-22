@@ -177,3 +177,46 @@ div.download-draft.download-svg {
         display: none;
     }
 }
+
+div.card.patron {
+    box-shadow: $shadow;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    padding: 2rem 0.5rem 1rem 0.5rem;
+
+    img {
+        max-width: 50%;
+        margin: auto;
+    }
+    h2 { padding: 0; }
+    div.card-block { padding: 0.5rem; }
+    div.perks {
+        font-size: 1.1rem;
+        text-align: left;
+    }
+    ul { list-style-type: none; }
+    p { text-align: center; }
+    i.fa-check {color: $green;}
+    i.fa-times {color: $red;}
+    span.per-month {
+        font-size: 1rem;
+        color: $gray;
+        display: block;
+        line-height: 1rem;
+    }
+}
+div.perk {
+    margin-top: 1rem;
+    box-shadow: $shadow;
+}
+.bg-patron-monkey { background: #d4d4d4; background: linear-gradient(45deg, rgba(212,212,212,1) 0%, rgba(255,255,255,1) 50%, rgba(212,212,212,1) 100%);}
+.bg-patron-mate {
+    background: rgba(255, 213, 0, 0.5);
+    background: linear-gradient(45deg, rgba(255,213,0,0.5) 0%, rgba(255,235,193,0.5) 50%, rgba(255,213,0,0.5) 100%);
+}
+.bg-patron-captain {
+    background: $black;
+    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 50%, rgba(0,0,0,1) 100%);
+    color: $whitish;
+}
+
