@@ -29,7 +29,7 @@ action: patron
     <div class="row mb-5">
         <div class="col-md-4 mt-5">
             <div class="card patron">
-                <img src="/img/medals/medal-powdermonkey.svg">
+                <img src="/img/patrons/medals/medal-powdermonkey.svg">
                 <div class="card-block">
                     <h6>Powder Monkey</h6>
                     <h1 class="card-title display-1">2€<span class="per-month">per month</span></h1>
@@ -73,7 +73,7 @@ action: patron
         </div>
         <div class="col-md-4 mt-5">
             <div class="card patron">
-                <img src="/img/medals/medal-firstmate.svg">
+                <img src="/img/patrons/medals/medal-firstmate.svg">
                 <div class="card-block">
                     <h6>First Mate</h6>
                     <h1 class="card-title display-1">4€<span class="per-month">per month</span></h1>
@@ -117,7 +117,7 @@ action: patron
         </div>
         <div class="col-md-4 mt-5">
             <div class="card patron">
-                <img src="/img/medals/medal-captain.svg">
+                <img src="/img/patrons/medals/medal-captain.svg">
                 <div class="card-block">
                     <h6>Captain</h6>
                     <h1 class="card-title display-1">8€<span class="per-month">per month</span></h1>
