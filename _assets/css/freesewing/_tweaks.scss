@@ -178,6 +178,12 @@ div.download-draft.download-svg {
     }
 }
 
+span.fine-print {
+    font-size: 1rem;
+    color: $gray;
+    display: block;
+    line-height: 1rem;
+}
 div.card.patron {
     box-shadow: $shadow;
     padding: 1rem 0.5rem;
@@ -198,12 +204,7 @@ div.card.patron {
     p { text-align: center; }
     i.fa-check {color: $green;}
     i.fa-times {color: $red;}
-    span.per-month {
-        font-size: 1rem;
-        color: $gray;
-        display: block;
-        line-height: 1rem;
-    }
+    i.fa-dot-circle-o {color: $purple;}
 }
 div.perk {
     margin-top: 1rem;
