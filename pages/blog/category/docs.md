@@ -1,7 +1,7 @@
 ---
 layout: cards
-title: Blog posts in makes
-permalink: /blog/category/makes
+title: Blog posts in docs
+permalink: /blog/category/docs
 nocomments: true
 ---
 <div class="container">
@@ -9,7 +9,7 @@ nocomments: true
 <div class="col">
 <div class="card-columns blog">
 {% for post in site.posts %}
-{% if post.category == 'makes' %}
+{% if post.category == 'docs' %}
 <div class="card hover-shadow mb-3">
 <a href="{{ post.url }}" title="{{ post.linktitle | escape}}">
 <img 

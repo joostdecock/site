@@ -45,18 +45,31 @@
     color: $red;
     margin: 0 1.5rem;
 }
-img.avatile {
+.comment-text blockquote {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+}
+.comment-text pre code {
+    background: rgba(255,255,255,0.5);
+}
+
+img.avatile,
+img.avatile { 
+    float: left; 
     max-width: 60px;
     max-height: 60px;
+    margin: -8px 8px 8px -8px;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0.25rem;
-    float: left;
-    margin-top: -8px;
-    margin-left: -8px;
-    margin-right: 8px;
-    margin-bottom: 8px;
+}
+img.medaltile { 
+    max-width: 75px;
+    max-height: 75px;
+    float: right; 
+    margin: -20px -20px 8px 8px;
 }
 .comment-text {
     min-height: 60px;

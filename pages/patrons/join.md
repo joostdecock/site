@@ -29,7 +29,7 @@ action: patron
     <div class="row mb-5">
         <div class="col-md-4 mt-5">
             <div class="card patron">
-                <img src="/img/patrons/medals/medal-powdermonkey.svg">
+                <img src="/img/patrons/medals/medal-2.svg" alt="The Powder Monkey medal">
                 <div class="card-block">
                     <h6>Powder Monkey</h6>
                     <h1 class="card-title display-1">2€<span class="fine-print">per month</span></h1>
@@ -75,7 +75,7 @@ action: patron
         </div>
         <div class="col-md-4 mt-5">
             <div class="card patron">
-                <img src="/img/patrons/medals/medal-firstmate.svg">
+                <img src="/img/patrons/medals/medal-4.svg" alt="The First Mate medal">
                 <div class="card-block">
                     <h6>First Mate</h6>
                     <h1 class="card-title display-1">4€<span class="fine-print">per month</span></h1>
@@ -121,7 +121,7 @@ action: patron
         </div>
         <div class="col-md-4 mt-5">
             <div class="card patron">
-                <img src="/img/patrons/medals/medal-captain.svg">
+                <img src="/img/patrons/medals/medal-8.svg" alt="The Captain medal">
                 <div class="card-block">
                     <h6>Captain</h6>
                     <h1 class="card-title display-1">8€<span class="fine-print">per month</span></h1>
@@ -205,7 +205,7 @@ action: patron
     <div class="row"><div class="col"><h2>The perks</h2><h3 class="mt-5">For all Patrons</h3></div></div>
     <div class="row">
         <div class="col-md-6 col-sm-12">
-            <div class="card mt-3 drop-shadow bg-patron-monkey">
+            <div class="card mt-3 drop-shadow bg-patron-2">
                 <div class="card-block">
                     <h4>Unlimited models</h4>
                     <p>You can add as many models as you like, we will store their data so that it's always available to you.</p>
@@ -213,7 +213,7 @@ action: patron
             </div>
         </div>
         <div class="col-md-6 col-sm-12">
-            <div class="card mt-3 drop-shadow bg-patron-monkey">
+            <div class="card mt-3 drop-shadow bg-patron-2">
                 <div class="card-block">
                     <h4>Unlimited drafts</h4>
                     <p>Draft as many patterns as you want, we will keep them all for you.</p>
@@ -221,7 +221,7 @@ action: patron
             </div>
         </div>
         <div class="col-md-6 col-sm-12">
-            <div class="card mt-3 drop-shadow bg-patron-monkey">
+            <div class="card mt-3 drop-shadow bg-patron-2">
                 <div class="card-block">
                     <h4>Priority support</h4>
                     <p>As a Patron, you get to skip the queue. Any issues you raise will be treated with priority.</p>
@@ -229,7 +229,7 @@ action: patron
             </div>
         </div>
         <div class="col-md-6 col-sm-12">
-            <div class="card mt-3 drop-shadow bg-patron-monkey">
+            <div class="card mt-3 drop-shadow bg-patron-2">
                 <div class="card-block">
                     <h4>Recognition</h4>
                     <p>Your name will be included on our list of Patrons. Your patronage will also be marked on your profile page, and your comments will be highlighted too.</p>
@@ -241,7 +241,7 @@ action: patron
     <div class="row"><div class="col"><h3 class="mt-5">For First Mates and Captains only</h3></div></div>
     <div class="row">
         <div class="col-md-6 col-sm-12">
-            <div class="card mt-3 drop-shadow bg-patron-mate">
+            <div class="card mt-3 drop-shadow bg-patron-4">
                 <div class="card-block">
                     <h4>A share of the booty</h4>
                     <p>We'll send you a welcome gift with some of that much coveted Freesewing swag.</p>
@@ -250,7 +250,7 @@ action: patron
             </div>
         </div>
         <div class="col-md-6 col-sm-12">
-            <div class="card mt-3 drop-shadow bg-patron-mate">
+            <div class="card mt-3 drop-shadow bg-patron-4">
                 <div class="card-block">
                     <h4>A berth on the Antverpia</h4>
                     <p>If you ever visit Antwerp, don't bother booking a hotel room. There will always be a bed for you in the house where Freesewing was born.</p>
@@ -262,7 +262,7 @@ action: patron
     <div class="row"><div class="col"><h3 class="mt-5">For Captains only</h3></div></div>
     <div class="row">
         <div class="col-md-6 col-sm-12">
-            <div class="card mt-3 drop-shadow bg-patron-captain">
+            <div class="card mt-3 drop-shadow bg-patron-8">
                 <div class="card-block">
                     <h4>Even more booty</h4>
                     <p>Not all treasure is created equal, and Captains get the best of it. We'll send you a welcome gift with the very best Freesewing swag worthy of your status as a Captain.</p>
@@ -271,7 +271,7 @@ action: patron
             </div>
         </div>
         <div class="col-md-6 col-sm-12">
-            <div class="card mt-3 drop-shadow bg-patron-captain">
+            <div class="card mt-3 drop-shadow bg-patron-8">
                 <div class="card-block">
                     <h4>A Captain's birthday salute</h4>
                     <p>The birthday of a Captain is a big deal and shouldn't go by unnoticed.</p>
@@ -307,7 +307,6 @@ action: patron
 <input type="hidden" name="return" value="https://freesewing.org/patrons/thank-you-donation">
 <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHosted">
 <input type="hidden" name="image_url" value="https://data.freesewing.org/static/img/paypal-logo.png">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
 </div>

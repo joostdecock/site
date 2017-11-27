@@ -1878,6 +1878,12 @@
                     $('ul.breadcrumbs li:last-child').html(data.profile.username);
                     $('#avatar').attr('src', api.data+data.profile.pictureSrc);
                     $('span.username').html(data.profile.username);
+                    var patron = 0;
+                    if(typeof data.patron != 'undefined' && data.patron != null && data.patron.tier != 'undefined' && data.patron.tier > 1) var patron = data.patron.tier;
+                    if(patron > 1) {
+                        if(patron > 2) $('#patron-medal').attr('src','/img/patrons/medals/medal-'+patron+'.svg');
+                        $('#patronage').removeClass('hidden');
+                    }
                     if(typeof data.social != 'undefined' && data.social != null) {
                         if(typeof data.social.twitter != 'undefined') $('#social').append('<a href="https://twitter.com/'+data.social.twitter+'" target="_BLANK" title="'+data.profile.username+' is '+data.social.twitter+' on Twitter" class="px-2"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a>');
                         if(typeof data.social.instagram != 'undefined') $('#social').append('<a href="https://instagram.com/'+data.social.instagram+'" target="_BLANK" title="'+data.profile.username+' is '+data.social.instagram+' on Instagram" class="px-2"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></a>');

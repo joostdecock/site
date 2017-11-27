@@ -79,8 +79,7 @@ permalink: /docs/sewing/topstitching
 This is the layout used by most pages, including this one. It's a main content
 column, and a right column with the table of contents, which goes off-canvas on mobile.
 
-Pages using this layout include [the about page](/about), all class documentation (such as [the core Part class](/docs/core/classdocs/src/part),
-and [the contributors page](/about/contributors).
+Pages using this layout include [the about page](/about) and all class documentation (such as [the core Part class](/docs/core/classdocs/src/part).
 
 A frontmatter example is included below:
 

@@ -9,12 +9,12 @@ author: Frankie Baldwin
 <div class="row">
 <div class="col">
 <div class="card-columns blog">
-{% include figure.html url="/img/showcase/bulbasaur-huey/1.jpg" %}
-{% include figure.html url="/img/showcase/bulbasaur-huey/2.jpg" %}
-{% include figure.html url="/img/showcase/bulbasaur-huey/3.jpg" %}
-{% include figure.html url="/img/showcase/bulbasaur-huey/4.jpg" %}
-{% include figure.html url="/img/showcase/bulbasaur-huey/5.jpg" %}
-{% include figure.html url="/img/showcase/bulbasaur-huey/6.jpg" %}
+{% include figure.html url="/img/showcase/bulbasaur-huey/1.jpg" description="Bulbasaurs are strong AND cute" %}
+{% include figure.html url="/img/showcase/bulbasaur-huey/2.jpg" description="Bulbasaurs are strong AND cute" %}
+{% include figure.html url="/img/showcase/bulbasaur-huey/3.jpg" description="Bulbasaurs are strong AND cute" %}
+{% include figure.html url="/img/showcase/bulbasaur-huey/4.jpg" description="Bulbasaurs are strong AND cute" %}
+{% include figure.html url="/img/showcase/bulbasaur-huey/5.jpg" description="Bulbasaurs are strong AND cute" %}
+{% include figure.html url="/img/showcase/bulbasaur-huey/6.jpg" description="Bulbasaurs are strong AND cute" %}
 </div>
 </div>
 </div>

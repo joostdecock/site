@@ -5,42 +5,44 @@ action: homepage
 permalink: /
 nocomments: true
 ---
-<div class="container">
-    <div class="row" style="margin-top: 8rem; margin-bottom: 8rem;">
-        <div class="col-lg-4 col-sm-12 mt-5">
-            <div class="card text-center drop-shadow py-3">
-                <i class="fa fa-cut fa-5x" aria-hidden="true" style="color: #ff5b77;"></i>
-                <div class="card-block">
-                    <h4 class="card-title">Free sewing patterns</h4>
-                    <p>This site provides made-to-measure sewing patterns, drafted on the fly</p>
-                    <p><a href="/about#what" class="btn btn-outline-primary">What is this thing?</a></p>
+<section class="cover-band" style="margin-top: -8rem !important; padding: 0.5rem; background: #663f95;">
+        <div class="container">
+            <div class="row" style="margin-top: 6rem; margin-bottom: 6rem; color: #292b2c; text-shadow: none;">
+                <div class="col-lg-4 col-sm-6 mt-5">
+                    <div class="card text-center drop-shadow py-3">
+                        <i class="fa fa-cut fa-5x" aria-hidden="true" style="color: #ff5b77;"></i>
+                        <div class="card-block">
+                            <h4 class="card-title">Free sewing patterns</h4>
+                            <p>This site provides made-to-measure sewing patterns, drafted on the fly</p>
+                            <p><a href="/about" class="btn btn-outline-primary">About Freesewing</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mt-5">
+                    <div class="card text-center drop-shadow py-3">
+                        <i class="fa fa-code fa-5x" aria-hidden="true" style="color: #188f93"></i>
+                        <div class="card-block">
+                            <h4 class="card-title">100% Open Source</h4>
+                            <p>All the code that makes this happen is free software, and available on GitHub</p>
+                            <p><a href="https://github.com/freesewing/" class="btn btn-outline-primary">Freesewing on GitHub</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 mt-5">
+                    <div class="card text-center drop-shadow py-3">
+                        <i class="fa fa-handshake-o fa-5x" aria-hidden="true" style="color: #653f95;"></i>
+                        <div class="card-block">
+                            <h4 class="card-title">Community-backed</h4>
+                            <p>Freesewing lives by the grace of our Patrons who keep this ship afloat</p>
+                            <p><a href="/patrons/join" class="btn btn-outline-primary">Find out more</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-sm-6 mt-5">
-            <div class="card text-center drop-shadow py-3">
-                <i class="fa fa-code fa-5x" aria-hidden="true" style="color: #188f93"></i>
-                <div class="card-block">
-                    <h4 class="card-title">Free as in freedom</h4>
-                    <p>All the code that makes this happen is free software, and available on GitHub</p>
-                    <p><a href="/about#code" class="btn btn-outline-primary">Can I see the code?</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 mt-5">
-            <div class="card text-center drop-shadow py-3">
-                <i class="fa fa-cc-paypal fa-5x" aria-hidden="true" style="color: #009cde;"></i>
-                <div class="card-block">
-                    <h4 class="card-title">Free as in gratis</h4>
-                    <p>You don't have to pay for anything, but I do accept donations &ndash; it's your call</p>
-                    <p><a href="/about#money" class="btn btn-outline-primary">What's the catch?</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+</section>
 
-<section class="cover-band bg-thematic mt-5 mb-5 visitor-only" style="background: #663f95;">
+<section class="cover-band bg-thematic mb-5 visitor-only" style="background: #663f95;">
     <div class="cover-body mt-5 mb-5" style="background: transparent">
         <div id="landing">
             <h1 class="jumbotron-heading">Sign up for free patterns</h1>
@@ -64,7 +66,7 @@ nocomments: true
   </div>
 </section>
 
-<div class="container">
+<div class="container mt-5">
     <h4>Lastest blog posts</h4>
     <div class="row">
         <div class="col-md-6 mb-3 mt-1">
@@ -171,20 +173,3 @@ nocomments: true
         </div>
     </div>
 </div> <!-- .container -->
-
-<section class="cover-band bg-thematic mt-5 mb-5">
-    <div class="mt-5 mb-5">
-        <div class="container">
-            <div class="row" style="background: RGBA(0,0,0,0.5); padding: 2rem;">
-                <div class="col-md-7 offset-md-1 text-left">
-                    <h1 class="jumbotron-heading">Vote with your money</h1>
-                    <p class="mt-3 lead">If you want to support my work, please make a donation</p> 
-                </div>
-                <div class="col-md-3 text-center mt-5">
-                    <a href="/donate" class="btn btn-outline-white btn-lg btn-block">Donate</a>
-                </div>
-            </div>
-        </div>
-  </div>
-</section>
-
