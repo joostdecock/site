@@ -7,8 +7,6 @@
    width="500"
    height="500"
    id="svg4412">
-    <!-- SMIL polyfill for IE -->
-    <script xmlns="http://www.w3.org/2000/svg" type="text/ecmascript" xlink:href="/js/vendor/smil.user.js" xmlns:xlink="http://www.w3.org/1999/xlink"/>
   <defs
      id="defs4414" />
   <g

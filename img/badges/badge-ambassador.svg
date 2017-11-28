@@ -5,8 +5,6 @@
    version="1.1"
    width="500"
    height="500">
-    <!-- SMIL polyfill for IE -->
-    <script xmlns="http://www.w3.org/2000/svg" type="text/ecmascript" xlink:href="/js/vendor/smil.user.js" xmlns:xlink="http://www.w3.org/1999/xlink"/>
   <rect
      width="500"
      height="500"

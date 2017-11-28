@@ -1,7 +1,4 @@
 <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="2000" height="1500" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2000 1500">
-    <!-- SMIL polyfill for IE -->
-    <script xmlns="http://www.w3.org/2000/svg" type="text/ecmascript" xlink:href="/js/vendor/smil.user.js" xmlns:xlink="http://www.w3.org/1999/xlink"/>a
-    
     <defs>
         <path id="path" d="M 0 0 l 38 -10 m 288 -131 l 17 26 m 1127 134 l 35 -5" style="fill: none; stroke-linejoin: round;"/>
         <g id="start">
