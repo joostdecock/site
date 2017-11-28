@@ -1167,7 +1167,7 @@ Returns a [`Point`](point) object of the new, shifted, point.
 ### shiftAlong
 
 ```php?start_inline=1
-float shiftTowards( 
+float shiftAlong( 
     string $start, 
     string $cp2,
     string $cp1,

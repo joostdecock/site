@@ -91,6 +91,83 @@ Commonly used to break apart a pathstring.
 
 Returns an `array`.
 
+### asPointArray
+
+```php?start_inline=1
+array asPointArray( 
+    string $data
+)
+```
+[`Utils::asPointArray`](utils#aspointarray) splits a `pathstring` `$data` into an array of points.
+
+It will break the string into individual components, remove valid path command (C, M, L, z), 
+trim whitespace from the start and end of every chunk, and remove empty chunks. This leaves 
+all the `point` identifiers, which the function returns in an `array`. 
+
+#### Example
+{:.no_toc}
+
+{% include classTabs.html
+    id="asPointArray" 
+%}
+
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="asPointArray-result" markdown="1">
+
+```php?start_inline=1
+Array
+(
+    [0] => 1
+    [1] => 2
+    [2] => 3
+    [3] => 4
+)
+
+Array
+(
+    [0] => 2
+    [1] => 3
+    [2] => 4
+    [3] => 4b
+    [4] => 7a
+    [5] => 7
+    [6] => 8
+    [7] => r7
+    [8] => r7a
+    [9] => r4b
+    [10] => r4
+    [11] => r3
+    [12] => r2
+)
+```
+</div>
+<div role="tabpanel" class="tab-pane" id="asPointArray-code" markdown="1">
+```php?start_inline=1
+$data = 'M 1 L 2 L 3 L  4 Z  ';
+print_r(\Freesewing\Utils::asPointArray($data));
+
+$data = "M 2 L 3 L 4 C 4b 7a 7 L 8 L r7 C r7a  r4b r4 L r3 L r2 Z";
+print_r(\Freesewing\Utils::asPointArray($data));
+```
+
+</div>
+</div>
+
+#### Typical use
+{:.no_toc}
+
+Commonly used to break apart a `pathstring` into individual points.
+
+#### Parameters
+{:.no_toc}
+
+- `string` `$data` : The `pathstring` to return as an `array`.
+
+#### Return value
+{:.no_toc}
+
+Returns an `array`.
+
 ### isAllowedPathCommand
 
 ```php?start_inline=1
