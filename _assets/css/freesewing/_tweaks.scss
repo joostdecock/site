@@ -223,3 +223,12 @@ div.perk {
     background: linear-gradient(45deg, black 0%, #242424 50%, black 85%, #242424 100%);
     color: $whitish;
 }
+img.medal-corner { 
+    max-width: 75px;
+    max-height: 75px;
+    margin: 0;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+}
+
