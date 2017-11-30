@@ -763,9 +763,12 @@
     function reRenderDraft(data) {
         $('h1.page-title').html(data.name);
         $('ul.breadcrumbs li:last-child').html(data.name);
+		if($('#fork-msg')[0].children[0].innerText.substring(0,8)=='(1) This') {
+			$('#fork-msg')[0].removeChild($('#fork-msg')[0].childNodes[0]); 
+		}
         if(data.shared == 1) {
             $('#shared-link').html('Yes');
-            $('#fork-msg').prepend('<small>(1) This draft is publicly available at <a href="/drafts/'+data.handle+'">'+window.location.hostname+'/drafts/'+data.handle+'</a></small>');
+            $('#fork-msg').prepend('<small>(1) This draft is publicly available at <a href="/drafts/'+draft.handle+'">'+window.location.hostname+'/drafts/'+draft.handle+'</a></small>');
         } else {
             $('#shared-link').html('No');
             $('#fork-msg').prepend('<small>(1) This reference uniquely identifies your draft</small> ');
