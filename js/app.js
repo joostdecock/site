@@ -861,7 +861,7 @@
                 mismatch += "</b> units</li><li>Your model uses <b>";
                 mismatch += account.models[modelhandle].units;
                 mismatch += "</b> units</li></ul>";
-                mismatch += "<p>Mixing units is suported, but often people simply don't realize they have a mixup.</p>";
+                mismatch += "<p>Mixing units is supported, but often people simply don't realize they have a mixup.</p>";
                 mismatch += "<p>If you know what you're doing, then by all means carry on. If this is not what you intended, you should change either the units in <a href='/account'>your account</a> or the units of <a href='/models";
                 mismatch += modelhandle;
                 mismatch += "'>this model</a>.</p>";
