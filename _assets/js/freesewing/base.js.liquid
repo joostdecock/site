@@ -129,6 +129,9 @@ var token = window.localStorage.getItem("jwt");
         $('#markdown-toc').detach().appendTo('#oc-right'); // Move auto-generated ToC to the correct place in the DOM
 
         $('p a code.highlighter-rouge').parent().addClass('noline'); // Avoid underlining class links
+        
+        // Show patrons banner from time to time  //
+        if(Math.round(Math.random() * (5 - 1) + 1) == 1) $('#patrons-banner').removeClass('hidden');
     });
 }(jQuery));
 
@@ -203,6 +206,7 @@ function postLogin(user) {
     $('body').addClass('user logged-in'); 
     if ($('body').attr('data-comments') == 'true') loadComments();
     if(typeof user.new_badge == 'string') $.bootstrapGrowl('Yay, you unlocked the <big><b>'+data.new_badge+'</b></big> badge', {type: 'success'});
+
 }
 
 // Things to do after logout
@@ -212,7 +216,7 @@ function postLogout(data) {
     window.localStorage.removeItem("jwt");
     $('body').addClass('user logged-out'); 
     if ($('body').attr('data-comments') == 'true') loadComments();
-}
+    }
 
 
 /* 
