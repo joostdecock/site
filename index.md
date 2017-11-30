@@ -42,30 +42,6 @@ nocomments: true
         </div>
 </section>
 
-<section class="cover-band bg-thematic mb-5 visitor-only" style="background: #663f95;">
-    <div class="cover-body mt-5 mb-5" style="background: transparent">
-        <div id="landing">
-            <h1 class="jumbotron-heading">Sign up for free patterns</h1>
-            <form id="signup-landing" class="m600 mt-4">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <label class="sr-only" for="signup-email">Email address</label>
-                        <input class="form-control mb-2" id="signup-email" name="signup-email" placeholder="Your email address" required="" type="email">
-                    </div>
-                    <div class="col-sm-4">
-                        <label class="sr-only" for="signup-password">Email address</label>
-                        <input class="form-control mb-2" id="signup-password" name="signup-password" placeholder="Pick a password" required="" type="password">
-                    </div>
-                    <div class="col-sm-4">
-                        <button id="signup-submit" type="submit" class="btn btn-outline-white form-control">Sign up</button>
-                    </div>
-                </div>
-            </form>
-            <p class="mt-4 lead">Not convinced? <a href="/drafts/sampl">Browse a sample draft</a>, or <a href="/about/">check the about page</a>.</p>
-        </div>
-  </div>
-</section>
-
 <div class="container mt-5">
     <h4>Lastest blog posts</h4>
     <div class="row">
@@ -170,6 +146,52 @@ nocomments: true
         <div class="col-md-4">
             <h4>Latest comments</h4>
             <div id="recent-comments"></div>
+        </div>
+    </div>
+</div> <!-- .container -->
+
+<section class="cover-band bg-thematic mb-5 visitor-only" style="background: #663f95;">
+    <div class="cover-body mt-5 mb-5" style="background: transparent">
+        <div id="landing">
+            <h1 class="jumbotron-heading">Sign up for free patterns</h1>
+            <form id="signup-landing" class="m600 mt-4">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label class="sr-only" for="signup-email">Email address</label>
+                        <input class="form-control mb-2" id="signup-email" name="signup-email" placeholder="Your email address" required="" type="email">
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="sr-only" for="signup-password">Email address</label>
+                        <input class="form-control mb-2" id="signup-password" name="signup-password" placeholder="Pick a password" required="" type="password">
+                    </div>
+                    <div class="col-sm-4">
+                        <button id="signup-submit" type="submit" class="btn btn-outline-white form-control">Sign up</button>
+                    </div>
+                </div>
+            </form>
+            <p class="mt-4 lead">Not convinced? <a href="/drafts/sampl">Browse a sample draft</a>, or <a href="/about/">check the about page</a>.</p>
+        </div>
+  </div>
+</section>
+<div class="container mb-5">
+    <div class="row">
+        <div class="col-md-6">
+            {% include blockquote.html
+                bg='linear-gradient(45deg, rgba(102,63,149,1) 0%, rgba(132,90,184,1) 36%, rgba(112,61,179,1) 65%, rgba(102,63,149,1) 100%);'
+                icon='handshake-o'
+                tcolor='#fff'
+                icolor='#fff'
+                content="<h3>Become a Patron</h3><h4>We invite you to join our community of Patrons to support us in our core work; Developing an open source platform for made-to-measure sewing patterns.</h4>"
+            %}
+        </div>
+        <div class="col-md-6">
+            {% include blockquote.html
+                bg=' linear-gradient(45deg, rgba(255,91,119,1) 0%, rgba(251,66,102,1) 50%, rgba(243,52,87,1) 71%, rgba(255,77,109,1) 100%);'
+                icon='check'
+                tcolor='#fff'
+                icolor='#fff'
+                content="<h3>Join the Patrons now</h3><h4>We are building a bedrock of loyal supporters to ensure a sustainable future for freesewing.org, our code, our patterns, and our community.</h4>"
+            %}
         </div>
     </div>
 </div> <!-- .container -->
