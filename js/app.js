@@ -761,15 +761,12 @@
     }
 
     function reRenderDraft(data) {
-        console.log(data);
         $('h1.page-title').html(data.name);
         $('ul.breadcrumbs li:last-child').html(data.name);
         if(data.shared == 1) {
-            console.log('updating to shared')
             $('#shared-link').html('Yes');
             $('#fork-msg').html('This draft is publicly available at <a href="/drafts/'+data.handle+'">'+window.location.hostname+'/drafts/'+data.handle+'</a></small>');
         } else {
-            console.log('updating to NOT shared')
             $('#shared-link').html('No');
             $('#fork-msg').html('This reference uniquely identifies your draft');
         }
