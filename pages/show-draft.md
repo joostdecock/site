@@ -125,9 +125,11 @@ nocomments: true
                     <tr><td>Reference <sup><small>1</small></sup></td><td id="draft-handle" nowrap></td></tr>
                     <tr><td>Core replay <sup><small>2</small></sup></td><td id="draft-core-url" nowrap></td></tr>
                 </table>
-                <p id="fork-msg">
-                    <br><small>(2) Replay the core API call that created this draft</small>
-                </p>
+                <p><small>
+                    (1) <span id="fork-msg">This reference uniquely identifies your draft</span>
+                    <br>
+                    (2) Replay the core API call that created this draft
+                </small></p>
             </div>
         </div>
         <div class="col-md-4 mb-5">
