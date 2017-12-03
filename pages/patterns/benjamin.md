@@ -8,8 +8,8 @@ description: "<p>The bow tie pattern that you can use for all occassions.</p><p>
 {% include fork.html
     pattern="benjamin"
     handle="nsaem"
-    title="Diamond Benjamin"
-    description="This is a diamond-shaped Benjamin."
+    title="Butterfly Benjamin"
+    description="This is a butterfly-shaped Benjamin."
 %}
 
 {% include fork.html
