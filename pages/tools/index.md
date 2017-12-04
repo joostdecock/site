@@ -4,9 +4,10 @@ title: Tools
 tags: [tools]
 permalink: /tools/
 action: tools
+nocomments: true
 ---
 <div class="container">
-<div class="row">
+<div class="row logged-in-only">
 
 <div class="col-md-6">
 {% include blockquote.html
@@ -40,6 +41,9 @@ action: tools
 %}
 </div>
 
+</div>
+<div class="row">
+
 <div class="col-md-6">
 {% include blockquote.html
   bg='#fff'
@@ -55,8 +59,8 @@ action: tools
 %}
 </div>
 </div>
-<h2>Danger zone</h2>
-<div class="row">
+<h2 class="logged-in-only">Danger zone</h2>
+<div class="row logged-in-only">
 <div class="col-md-6">
 {% include blockquote.html
   bg='#d9534f'
