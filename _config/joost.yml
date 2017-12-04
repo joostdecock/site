@@ -1,3 +1,5 @@
+title: 'Freesewing'
+description: 'Freesewing is an open source platform for made-to-measure sewing patterns'
 url: 'https://joost.freesewing.org/'
 github: 'https://github.com/freesewing'
 twitter: 'freesewing_org'
@@ -33,9 +35,10 @@ collections:
         output: true
         permalink: /showcase/:title/
         layout: showcase
-gems:
+plugins:
     - jekyll-assets
     - algoliasearch-jekyll
+    - jekyll-feed
 
 assets:
   compress:
