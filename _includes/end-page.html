@@ -1,6 +1,12 @@
 <!-- JS bundle -->
 {% js bundle %}
 
+{% if page.action == 'tools' %}
+    <script src="{{ site.baseurl }}/js/tools.js"></script>
+{% endif %}
+{% if page.action == 'export' %}
+    <script src="{{ site.baseurl }}/js/export.js"></script>
+{% endif %}
 {% if page.action == 'confirm' %}
     <script src="{{ site.baseurl }}/js/confirm.js"></script>
 {% endif %}
