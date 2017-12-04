@@ -2,6 +2,7 @@
 layout: cards
 title: Tiler
 permalink: /tools/tiler
+tags: [tools]
 nocomments: true
 action: tiler
 ---
