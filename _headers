@@ -2,3 +2,5 @@
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
   Referrer-Policy: no-referrer
+  Content-Security-Policy "default-src 'self' ; script-src 'self' ; style-src 'self' 'unsafe-inline' ; img-src 'self' https://*.freesewing.org https://*.cloudfront.net; font-src 'self' ; connect-src 'self' https://*.freesewing.org; media-src 'self' https://*.cloudfront.net; object-src 'none' ; child-src 'none' ; frame-src https://www.youtube.com ; worker-src 'none' ; frame-ancestors 'self' ; form-action https://*.freesewing.org https://www.paypal.com ; upgrade-insecure-requests; block-all-mixed-content; disown-opener; reflected-xss block; base-uri https://freesewing.org ; manifest-src 'none' ; referrer no-referrer ; report-uri https://freesewing.report-uri.com/r/d/csp/enforce"
+

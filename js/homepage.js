@@ -2,7 +2,6 @@
     $(document).ready(function () {
 
         $.get(api.data+'/comments/recent/5', function( comments ) {
-            console.log(comments);
             Object.keys(comments.comments).sort().reverse().forEach(function(key) {
                 renderComment(comments.comments[key]);
             });
