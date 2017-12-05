@@ -53,7 +53,7 @@ I ran [Google Analytics](https://analytics.google.com/) on [makemypattern](https
 
 This issue is further complicated by the fact that this static site is hosted by [Netlify](https://www.netlify.com/). So I don't have server logs and can't run any analytics server-side.
 
-For the most part, I decided to just go without analytics. I don't need to know how many people are visiting this site. I still now how many user accounts are created, and how many patterns are generated, which should be fine indicators for the site's overall well-being.
+For the most part, I decided to just go without analytics. I don't need to know how many people are visiting this site. I still know how many user accounts are created, and how many patterns are generated, which should be fine indicators for the site's overall well-being.
 
 But there's one thing that wanted to keep from analytics: the referral logs. It's one of life's small pleasures to go through that list and discover 
 [somebody](https://www.reddit.com/r/freepatterns/comments/4zh5nr/is_there_software_to_generate_sewing_patterns/) 
