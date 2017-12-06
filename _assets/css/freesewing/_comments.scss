@@ -17,6 +17,7 @@
     box-shadow: $shadow-hover;
     padding: 0.5rem;
     border-radius: 0.25rem;
+    overflow: hidden;
 }
 .comment-text.removed,
 .comment-text.restricted {
