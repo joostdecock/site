@@ -1814,6 +1814,48 @@
                 ]
             }
         },
+        "FlorentFlatCap": {
+            "info": {
+                "name": "Florent Flat Cap",
+                "description": "Florent is a flat cap, a rounded cap with a small stiff brim in front",
+                "handle": "florent",
+                "tags": [
+                    "menswear",
+                    "womenswear",
+                    "hats",
+                    "accessories"
+                ]
+            },
+            "parts": {
+                "top": "Cap Top",
+                "side": "Cap Side",
+                "brimBottom": "Cap Brim Bottom",
+                "brimTop": "Cap Brim Top",
+                "brimPlastic": "Cap Brim Interfacing"
+            },
+            "languages": {
+                "en": "English"
+            },
+            "measurements": {
+                "headCircumference": 600
+            },
+            "options": {
+                "headEase": {
+                    "group": "fit",
+                    "title": "Head ease",
+                    "description": "The amount of ease to fit the cap on your head",
+                    "type": "measure",
+                    "min": 0,
+                    "max": 25,
+                    "default": 10
+                }
+            },
+            "optiongroups": {
+                "fit": [
+                    "headEase"
+                ]
+            }
+        },
         "HueyHoodie": {
             "hidden": [
                 false
@@ -1963,6 +2005,7 @@
         ],
         "Beta": [
             "benjamin",
+            "florent",
             "huey"
         ]
     },
@@ -1981,6 +2024,7 @@
             "trayvon": "Trayvon Tie",
             "wahid": "Wahid Waistcoat",
             "benjamin": "Benjamin Bow Tie",
+            "florent": "Florent Flat Cap",
             "huey": "Huey Hoodie"
         },
         "handleToPattern": {
@@ -1997,6 +2041,7 @@
             "trayvon": "TrayvonTie",
             "wahid": "WahidWaistcoat",
             "benjamin": "BenjaminBowTie",
+            "florent": "FlorentFlatCap",
             "huey": "HueyHoodie"
         },
         "patternToHandle": {
@@ -2013,6 +2058,7 @@
             "TrayvonTie": "trayvon",
             "WahidWaistcoat": "wahid",
             "BenjaminBowTie": "benjamin",
+            "FlorentFlatCap": "florent",
             "HueyHoodie": "huey"
         },
         "handleToNamespace": {
@@ -2029,6 +2075,7 @@
             "trayvon": "Core",
             "wahid": "Core",
             "benjamin": "Beta",
+            "florent": "Beta",
             "huey": "Beta"
         },
         "measurementToTitle": {
