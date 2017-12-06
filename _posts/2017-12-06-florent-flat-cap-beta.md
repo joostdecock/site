@@ -14,7 +14,7 @@ to channel the dapper gentleman within: the [Florent Flat Cap](/patterns/florent
 Like Benjamin, this pattern was contributed by the freesewing community, rather than
 yours truly. In this case, it was [Quentin Felix](/users/ptzcb) who signed for the design.
 
-I asked Felix if he wanted to write this announcement blog post himself, 
+I asked Quentin if he wanted to write this announcement blog post himself, 
 but he argued that it was time I did something too. He did have this to share
 though, on his reasons for designing this pattern in the first place:
 
