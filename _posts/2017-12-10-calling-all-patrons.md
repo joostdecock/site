@@ -148,7 +148,7 @@ We are not changing the nature of the site.
 All patterns, and all our code, will remain free. 
 What we are changing is the way we raise funds. From a system of impulsive donations
 to a community of caring Patrons. If you are someone who cares, then 
-[check out what we have to offer](/patrons/join)
+[check out what we have to offer](/patrons/join).
 
 I sincerely believe we are doing a worthwhile thing here. If you feel that way too,
 then I ask you to pledge whatever you can so that we can write many more chapters in this book.
