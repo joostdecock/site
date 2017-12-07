@@ -20,11 +20,67 @@ permalink: /components/account/settings
     </div>
     <!-- shipping address -->
     <div id="patron-settings">
-        <div class="input-group key-sm patrons-only mt-4">
+        <div class="input-group key-sm patrons-only mt-2">
             <span class="input-group-addon td-key">Shipping address</span>
-            <textarea class="form-number form-control" id="address" name="address" value="" rows="5" placeholder="Enter your full name + shipping address here"></textarea>
+            <textarea class="form-control" id="address" name="address" value="" rows="5" placeholder="Enter your full name + shipping address here"></textarea>
         </div>
-        <p><small>A shipping address is only required for <b>Captain</b> and <b>First mate</b> Patrons.</small></p>
+        <p class="mb-2"><small>A shipping address is only required for <b>Captain</b> and <b>First mate</b> Patrons.</small></p>
+        <div id="captain-settings">
+            <div class="input-group key-sm patrons-only">
+                <span class="input-group-addon td-key">Birthmonth</span>
+                <select class="form-control" id="birthday-month" name="birthday-month" value="">
+                    <option value="1" id="birthday-month-1">January</option> 
+                    <option value="2" id="birthday-month-2">February</option>
+                    <option value="3" id="birthday-month-3">March</option>
+                    <option value="4" id="birthday-month-4">April</option>
+                    <option value="5" id="birthday-month-5">May</option>
+                    <option value="6" id="birthday-month-6">June</option>
+                    <option value="7" id="birthday-month-7">July</option>
+                    <option value="8" id="birthday-month-8">August</option>
+                    <option value="9" id="birthday-month-9">September</option>
+                    <option value="10" id="birthday-month-10">October</option>
+                    <option value="11" id="birthday-month-11">November</option>
+                    <option value="12" id="birthday-month-12">December</option>
+                </select>
+            </div>
+            <div class="input-group key-sm patrons-only">
+                <span class="input-group-addon td-key">Birthday</span>
+                <select class="form-control" id="birthday-day" name="birthday-day" value="">
+                    <option value="1" id="birthday-day-1">1</option> 
+                    <option value="2" id="birthday-day-2">2</option> 
+                    <option value="3" id="birthday-day-3">3</option> 
+                    <option value="4" id="birthday-day-4">4</option> 
+                    <option value="5" id="birthday-day-5">5</option> 
+                    <option value="6" id="birthday-day-6">6</option> 
+                    <option value="7" id="birthday-day-7">7</option> 
+                    <option value="8" id="birthday-day-8">8</option> 
+                    <option value="9" id="birthday-day-9">9</option> 
+                    <option value="10" id="birthday-day-10">10</option> 
+                    <option value="11" id="birthday-day-11">11</option> 
+                    <option value="12" id="birthday-day-12">12</option> 
+                    <option value="13" id="birthday-day-13">13</option> 
+                    <option value="14" id="birthday-day-14">14</option> 
+                    <option value="15" id="birthday-day-15">15</option> 
+                    <option value="16" id="birthday-day-16">16</option> 
+                    <option value="17" id="birthday-day-17">17</option> 
+                    <option value="18" id="birthday-day-18">18</option> 
+                    <option value="19" id="birthday-day-19">19</option> 
+                    <option value="20" id="birthday-day-20">20</option> 
+                    <option value="21" id="birthday-day-21">21</option> 
+                    <option value="22" id="birthday-day-22">22</option> 
+                    <option value="23" id="birthday-day-23">23</option> 
+                    <option value="24" id="birthday-day-24">24</option> 
+                    <option value="25" id="birthday-day-25">25</option> 
+                    <option value="26" id="birthday-day-26">26</option> 
+                    <option value="27" id="birthday-day-27">27</option> 
+                    <option value="28" id="birthday-day-28">28</option> 
+                    <option value="29" id="birthday-day-29">29</option> 
+                    <option value="30" id="birthday-day-30">30</option> 
+                    <option value="31" id="birthday-day-31">31</option> 
+                </select>
+            </div>
+            <p class="mb-2"><small>A birthday is only required for <b>Captain</b> Patrons.</small></p>
+        </div>
     </div>
     <h4>Social media</h4>
     <!-- twitter -->

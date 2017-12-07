@@ -148,7 +148,15 @@
             if(typeof account.account.data.patron == 'undefined' || account.account.data.patron.tier < 2) $('#patron-settings').addClass('hidden');
             else {
                 if (account.account.data.patron != null && account.account.data.patron.address != null) $('#address').val(account.account.data.patron.address);
+                if (account.account.data.patron.tier < 8) $('#captain-settings').addClass('hidden');
+                else {
+                    if (account.account.data.patron.birthday != null) {
+                        $('#birthday-month-'+account.account.data.patron.birthday.month).attr('selected','selected');
+                        $('#birthday-day-'+account.account.data.patron.birthday.day).attr('selected','selected');
+                    }
+                }
             }
+
             if(typeof account.account.data.social != 'undefined' && account.account.data.social != null) {
                 if(typeof account.account.data.social.twitter != 'undefined') $('#twitter').attr('value', account.account.data.social.twitter);
                 if(typeof account.account.data.social.instagram != 'undefined') $('#instagram').attr('value', account.account.data.social.instagram);
