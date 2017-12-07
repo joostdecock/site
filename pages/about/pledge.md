@@ -9,7 +9,7 @@ permalink: /about/pledge
 
 You probably assume that we ask for money to keep the servers running. But that's not exactly true.
 
-I don't know if you're familiar with the phrase **Noblesse oblige** but it essentially means that privilege entails responsibility.
+I don't know if you're familiar with the phrase **noblesse oblige** but it essentially means that privilege entails responsibility.
 
 I am privileged, and thus I have responsibilities.
 I am very fortunate to have been born in Western Europe, have a good job, and a roof over my head.
@@ -24,18 +24,18 @@ The main risk to Freesewing is the same as any open source project out there: ma
 While I no longer carry Freesewing alone --- and I can't stress enough how much I value the work of all contributors ---
 that doesn't make me immune to feelings of *Why the fuck am I doing this?*
 
-When people become patrons (or donate) they give more than money.
+When people become Patrons (or donate), they give more than money.
 To me, the main value is the message they send to me and other people working on this. 
 And that message is: *Hey, you're doing a worthwhile thing. Keep up the good work*.
 
 ### The value of your money
 
-It is not *just* about the money. But that doesn't meant the money is not important.
+It is not *just* about the money. But that doesn't mean the money is not important.
 Much to the contrary.
 
 Raising money by doing something I love and then passing it on to charity allows me to sleep at night. 
 
-I could volunteer at a soup kitchen, or teach sewing lessons to refugees or something. But instead I'm working on Freesewing.
+I could volunteer at a soup kitchen, or teach underprivileged children how to sew. But instead I’m working on Freesewing.
 
 Which is why all the money raised through freesewing goes to charity.
 It makes this project not only fun to do, but also socially responsible. 
