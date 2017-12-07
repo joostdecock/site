@@ -107,6 +107,70 @@
             setAddress($('#setaddress').attr('data-handle'),$('#address').val());
         });
 
+        // Bind click handler to change birthday
+        $('#results').on('click', 'a.changebirthday',function(e) {
+            $('#modal').removeClass().addClass('shown light');
+            loadUser($(this).attr('data-handle'), function(account){
+                var html = "<div id='birthdaychange' class='m600 text-center'>";
+                html += "<h2>Set birthday for "+account.account.username+" ("+account.account.handle+")</h2>";
+                html += "<div class='row'><div class='col'>";
+                var month = -1;
+                var day = -1;
+                if(typeof account.account.data.patron.birthday != undefined && account.account.data.patron.birthday != null) {
+                    var month = account.account.data.patron.birthday.month;
+                    var day = account.account.data.patron.birthday.day;
+                }
+                html += "<select class=\"form-control\" id=\"birthday-month\" name=\"birthday-month\">";
+                var months = ['zero','January','February','March','April','May','June','July','August','September','October','November','December'];
+                for (i = 1; i < 13; i++) { 
+                    html += "<option value='"+i+"'";
+                    if (month == i) html += " selected='selected'";
+                    html += ">"+months[i]+"</option>"; 
+                }
+                html += "</select>";
+                html += "</div><div class='col'>";
+                html += "<select class=\"form-control\" id=\"birthday-day\" name=\"birthday-day\">";
+                for (i = 1; i < 32; i++) { 
+                    html += "<option value='"+i+"'";
+                    if (day == i) html += " selected='selected'";
+                    html += ">"+i+"</option>"; 
+                }
+                html += "</select>";
+                html += "</div></div>";
+                html += "<p class='text-center'><a href='#' class='save-birthday btn btn-primary mt-3' id='setbirthday' data-handle=\""+account.account.handle+"\">Save birthday</a></p>";
+                html += "</div>";
+                $('#modal-main').html(html);
+            });
+        });
+
+        $('#modal-main').on('click', '#setbirthday',function(e) {
+            setBirthday($('#setbirthday').attr('data-handle'),$('#birthday-month').val(), $('#birthday-day').val());
+        });
+
+        // Bind click handler to send patron mail
+        $('#results').on('click', 'a.sendpatronemail',function(e) {
+            sendPatronEmail($(this).attr('data-handle'));
+        });
+
+        function sendPatronEmail(userHandle) {
+            $.ajax({
+                url: api.data+'/admin/patron/email',
+                method: 'POST',
+                data: { 'user': userHandle},
+                dataType: 'json',
+                success: function(data) {
+                    if(data.result == 'ok') $.bootstrapGrowl('Patron email sent.', {type: 'success'});
+                    else if(data.result == 'error' && data.reason == 'not-a-patron') $.bootstrapGrowl('This user is not a Patron. No email sent.', {type: 'warning'});
+                    else $.bootstrapGrowl('There was an unexpected problem.', {type: 'error'});
+                },
+                error: function(data) { 
+                    console.log(data);
+                    $.bootstrapGrowl('Could not send email', {type: 'error'});
+                },
+                headers: {'Authorization': 'Bearer '+token},
+            }); 
+        }
+
         function setPassword(userHandle, password) {
             $.ajax({
                 url: api.data+'/admin/password',
@@ -138,6 +202,24 @@
                 error: function(data) { 
                     console.log(data);
                     $.bootstrapGrowl('Failed to set address', {type: 'error'});
+                },
+                headers: {'Authorization': 'Bearer '+token},
+            }); 
+        }
+
+        function setBirthday(userHandle, month, day) {
+            $.ajax({
+                url: api.data+'/admin/birthday',
+                method: 'PUT',
+                data: { 'month': month, 'day': day, 'user': userHandle},
+                dataType: 'json',
+                success: function(data) {
+                    $('#modal').removeClass();
+                    $.bootstrapGrowl('Birthday set', {type: 'success'});
+                },
+                error: function(data) { 
+                    console.log(data);
+                    $.bootstrapGrowl('Failed to set birthday', {type: 'error'});
                 },
                 headers: {'Authorization': 'Bearer '+token},
             }); 
@@ -183,6 +265,8 @@
                 html += '<a class="dropdown-item changebadges" href="#" data-email="'+user.email+'" data-handle="'+user.userhandle+'" data-badges=\''+JSON.stringify(user.badges)+'\'>Manage badges</a>';
                 html += '<a class="dropdown-item changepatron" href="#" data-email="'+user.email+'" data-handle="'+user.userhandle+'">Set patron status</a>';
                 html += '<a class="dropdown-item changeaddress" href="#" data-email="'+user.email+'" data-handle="'+user.userhandle+'">Set shipping address</a>';
+                html += '<a class="dropdown-item changebirthday" href="#" data-email="'+user.email+'" data-handle="'+user.userhandle+'">Set birthday</a>';
+                html += '<a class="dropdown-item sendpatronemail" href="#" data-email="'+user.email+'" data-handle="'+user.userhandle+'">Send patron welcome email</a>';
                 html += '</div>';
                 html += '</div>';
                 html += '</div>';

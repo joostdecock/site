@@ -141,15 +141,14 @@ description="We have three tiers of Patronage. <a href='/patrons/join'>Learn mor
 We have different tiers of Patronage, each with their own perks. You can support us for as
 little as 2 Euro, and it only takes a minute.
 
-It's also important to underscore that we are not changing the nature of the site.
-All patterns, and all our code, will remain free. 
-
 > We are not changing the nature of the site. All patterns, and all our code, will remain free.
 {:.quote}
 
+We are not changing the nature of the site.
+All patterns, and all our code, will remain free. 
 What we are changing is the way we raise funds. From a system of impulsive donations
-to a community of caring Patrons. If you are someone who cares, than 
-[check outlook what we have to offer](/patrons/join)
+to a community of caring Patrons. If you are someone who cares, then 
+[check out what we have to offer](/patrons/join)
 
 I sincerely believe we are doing a worthwhile thing here. If you feel that way too,
 then I ask you to pledge whatever you can so that we can write many more chapters in this book.
