@@ -151,7 +151,7 @@ What we are changing is the way we raise funds. From a system of impulsive donat
 to a community of caring Patrons. If you are someone who cares, than 
 [check outlook what we have to offer](/patrons/join)
 
-I sincerely belief we are doing a worthwhile thing here. If you feel that way too,
+I sincerely believe we are doing a worthwhile thing here. If you feel that way too,
 then I ask you to pledge whatever you can so that we can write many more chapters in this book.
 
 {% include blockquote.html
@@ -159,7 +159,7 @@ bg='linear-gradient(45deg, rgba(102,63,149,1) 0%, rgba(132,90,184,1) 36%, rgba(1
 icon='handshake-o'
 tcolor='#fff'
 icolor='#fff'
-content="<h3>Become a Patron today</h3><h4>You can sign up for as little as 2 Euro, and it only takes a minute.</h4><p class='text-right'><a href='/patrons/join' class='btn btn-lg btn-outline-white'>Join the Patrons</a></p>"
+content="<h3>Become a Patron today</h3><h4>You can sign up for as little as 2 Euro, and it only takes a minute.</h4><p class='text-right'><a href='/patrons/join' class='btn btn-lg btn-outline-white'>Find out more</a></p>"
 %}
 
 Thank you, and have a great year.
