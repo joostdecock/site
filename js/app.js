@@ -136,7 +136,7 @@
         // Load settings into modal
         $('#modal').removeClass().addClass('shown light');
         $('#modal-main').html("<div id='settings'></div>");
-        
+
         if(account.account.data.account.units == 'imperial') var units_on = true;
         else var units_on = false;
         if(account.account.data.account.theme == 'paperless') var theme_on = true;
@@ -145,6 +145,10 @@
         $('#settings').load('/components/account/settings', function(){
             $('#email').attr('value', account.account.email);
             $('#username').attr('value', account.account.username);
+            if(typeof account.account.data.patron == 'undefined' || account.account.data.patron.tier < 2) $('#patron-settings').addClass('hidden');
+            else {
+                if (account.account.data.patron != null && account.account.data.patron.address != null) $('#address').val(account.account.data.patron.address);
+            }
             if(typeof account.account.data.social != 'undefined' && account.account.data.social != null) {
                 if(typeof account.account.data.social.twitter != 'undefined') $('#twitter').attr('value', account.account.data.social.twitter);
                 if(typeof account.account.data.social.instagram != 'undefined') $('#instagram').attr('value', account.account.data.social.instagram);

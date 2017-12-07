@@ -18,6 +18,14 @@ permalink: /components/account/settings
         <span class="input-group-addon td-key">Username</span>
         <input class="form-number form-control" id="username" name="username" value="" type="text">
     </div>
+    <!-- shipping address -->
+    <div id="patron-settings">
+        <div class="input-group key-sm patrons-only mt-4">
+            <span class="input-group-addon td-key">Shipping address</span>
+            <textarea class="form-number form-control" id="address" name="address" value="" rows="5" placeholder="Enter your full name + shipping address here"></textarea>
+        </div>
+        <p><small>A shipping address is only required for <b>Captain</b> and <b>First mate</b> Patrons.</small></p>
+    </div>
     <h4>Social media</h4>
     <!-- twitter -->
     <div class="input-group key-sm">

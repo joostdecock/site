@@ -3,6 +3,7 @@ layout: cards
 title: Administration
 permalink: /tools/admin
 nocomments: true
+nopatronbanner: true
 action: admin
 ---
 <div class="container">

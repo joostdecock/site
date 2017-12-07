@@ -66,6 +66,7 @@
             $('#missing-badges').append(link);
         });
 
+        // Bind click handler to change patron
         $('#results').on('click', 'a.changepatron',function(e) {
             $('#modal').removeClass().addClass('shown light');
             var html = "<div id='patronchange' class='m600 text-center'>";
@@ -83,10 +84,27 @@
             $('#modal-main').html(html);
         });
 
-        // Bind click handler to change patron status
+        // Bind click handler to set patron status
         $('#modal-main').on('click','a.make-patron', function(e) {
             var patron = $(this).attr('data-patron');
             makePatron(patron, $(this).attr('data-handle'));
+        });
+
+        // Bind click handler to change shipping address
+        $('#results').on('click', 'a.changeaddress',function(e) {
+            $('#modal').removeClass().addClass('shown light');
+            loadUser($(this).attr('data-handle'), function(account){
+                var html = "<div id='addresschange' class='m600 text-center'>";
+                html += "<h2>Set shipping address for "+account.account.username+" ("+account.account.handle+")</h2>";
+                html += "<textarea class=\"form-control\" id=\"address\" name=\"address\" rows=\"5\" placeholder=\"Enter your full name + shipping address here\">"+account.account.data.patron.address+"</textarea>";
+                html += "<p class='text-center'><a href='#' class='save-address btn btn-primary mt-3' id='setaddress' data-handle=\""+account.account.handle+"\">Save shipping address</a></p>";
+                html += "</div>";
+                $('#modal-main').html(html);
+            });
+        });
+
+        $('#modal-main').on('click', '#setaddress',function(e) {
+            setAddress($('#setaddress').attr('data-handle'),$('#address').val());
         });
 
         function setPassword(userHandle, password) {
@@ -102,6 +120,24 @@
                 error: function(data) { 
                     console.log(data);
                     $.bootstrapGrowl('Failed to set password', {type: 'error'});
+                },
+                headers: {'Authorization': 'Bearer '+token},
+            }); 
+        }
+
+        function setAddress(userHandle, address) {
+            $.ajax({
+                url: api.data+'/admin/address',
+                method: 'PUT',
+                data: { 'address': address, 'user': userHandle},
+                dataType: 'json',
+                success: function(data) {
+                    $('#modal').removeClass();
+                    $.bootstrapGrowl('Address set', {type: 'success'});
+                },
+                error: function(data) { 
+                    console.log(data);
+                    $.bootstrapGrowl('Failed to set address', {type: 'error'});
                 },
                 headers: {'Authorization': 'Bearer '+token},
             }); 
@@ -146,6 +182,7 @@
                 html += '<a class="dropdown-item changepwd" href="#" data-email="'+user.email+'" data-handle="'+user.userhandle+'">Change password</a>';
                 html += '<a class="dropdown-item changebadges" href="#" data-email="'+user.email+'" data-handle="'+user.userhandle+'" data-badges=\''+JSON.stringify(user.badges)+'\'>Manage badges</a>';
                 html += '<a class="dropdown-item changepatron" href="#" data-email="'+user.email+'" data-handle="'+user.userhandle+'">Set patron status</a>';
+                html += '<a class="dropdown-item changeaddress" href="#" data-email="'+user.email+'" data-handle="'+user.userhandle+'">Set shipping address</a>';
                 html += '</div>';
                 html += '</div>';
                 html += '</div>';
@@ -222,6 +259,25 @@
             headers: {'Authorization': 'Bearer '+token},
         }); 
     }
+    
+        function loadUser(handle, callback) {
+        return $.ajax({
+            url: api.data+'/admin/user/'+handle,
+            method: 'GET',
+            dataType: 'json',
+            success: function(data) {
+                account = data;
+                callback(data);
+            },
+            error: function(data) { 
+                account = false;
+                // eff this, you need to be logged in
+                window.location.replace("/login");
+            },
+            headers: {'Authorization': 'Bearer '+token},
+        }); 
+    }
+
     
     });
 }(jQuery));
