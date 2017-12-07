@@ -6,7 +6,7 @@ img: phone.jpg
 caption: "We are building a bedrock of loyal supporters to ensure a sustainable future for freesewing.org, our code, our patterns, and our community."
 author: 'Joost De Cock'
 category: roundup
-blurb: "A roundup of all the freesewing news of the last month"
+blurb: "You can sign up for as little as 2€, and it only takes a minute"
 ---
 Every year, on this day, I write about what happened in the previous 12 months,
 and look ahead at what you can expect in the year ahead.
@@ -64,7 +64,7 @@ Like every year on this day, I've transferred all donations into the
 account of 
 [Médecins Sans Frontières/Doctors Without Borders](http://www.msf.org/).
 
-This year we came in at **673.14 Euro**, so that's what I've transferred.
+This year we came in at **673.14€**, so that's what I've transferred.
 
 > Why should we give you money in the
 > first place if you're just going to give it away?
@@ -139,7 +139,7 @@ description="We have three tiers of Patronage. <a href='/patrons/join'>Learn mor
 %}
 
 We have different tiers of Patronage, each with their own perks. You can support us for as
-little as 2 Euro, and it only takes a minute.
+little as 2€, and it only takes a minute.
 
 > We are not changing the nature of the site. All patterns, and all our code, will remain free.
 {:.quote}
@@ -158,7 +158,7 @@ bg='linear-gradient(45deg, rgba(102,63,149,1) 0%, rgba(132,90,184,1) 36%, rgba(1
 icon='handshake-o'
 tcolor='#fff'
 icolor='#fff'
-content="<h3>Become a Patron today</h3><h4>You can sign up for as little as 2 Euro, and it only takes a minute.</h4><p class='text-right'><a href='/patrons/join' class='btn btn-lg btn-outline-white'>Find out more</a></p>"
+content="<h3>Become a Patron today</h3><h4>You can sign up for as little as 2€, and it only takes a minute.</h4><p class='text-right'><a href='/patrons/join' class='btn btn-lg btn-outline-white'>Find out more</a></p>"
 %}
 
 Thank you, and have a great year.
