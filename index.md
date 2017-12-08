@@ -181,7 +181,8 @@ nocomments: true
                 icon='handshake-o'
                 tcolor='#fff'
                 icolor='#fff'
-                content="<h3>Become a Patron</h3><h4>We invite you to join our community of Patrons to support us in our core work; Developing an open source platform for made-to-measure sewing patterns.</h4>"
+                content="<h3>Become a Patron</h3><h4>We invite you to join our community of Patrons to support us in our core work; Developing an open source platform for made-to-measure sewing patterns.</h4>
+                    <p class='text-right'><a href='/patrons/join' class='btn btn-lg btn-outline-white mt-3'>Find out more</a></p>"
             %}
         </div>
         <div class="col-md-6">
@@ -190,7 +191,8 @@ nocomments: true
                 icon='check'
                 tcolor='#fff'
                 icolor='#fff'
-                content="<h3>Join the Patrons now</h3><h4>We are building a bedrock of loyal supporters to ensure a sustainable future for freesewing.org, our code, our patterns, and our community.</h4>"
+                content="<h3>Join the Patrons now</h3><h4>We are building a bedrock of loyal supporters to ensure a sustainable future for freesewing.org, our code, our patterns, and our community.</h4>
+                    <p class='text-right'><a href='/patrons/join' class='btn btn-lg btn-outline-white mt-3'>Become a Patron</a></p>"
             %}
         </div>
     </div>

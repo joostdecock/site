@@ -6,26 +6,6 @@ nocomments: true
 action: patron
 ---
 <div class="container mb-5">
-    <div class="row">
-        <div class="col-md-6">
-            {% include blockquote.html
-                bg='linear-gradient(45deg, rgba(102,63,149,1) 0%, rgba(132,90,184,1) 36%, rgba(112,61,179,1) 65%, rgba(102,63,149,1) 100%);'
-                icon='handshake-o'
-                tcolor='#fff'
-                icolor='#fff'
-                content="<h3>Become a Patron</h3><h4>We invite you to join our community of Patrons to support us in our core work; Developing an open source platform for made-to-measure sewing patterns.</h4>"
-            %}
-        </div>
-        <div class="col-md-6">
-            {% include blockquote.html
-                bg=' linear-gradient(45deg, rgba(255,91,119,1) 0%, rgba(251,66,102,1) 50%, rgba(243,52,87,1) 71%, rgba(255,77,109,1) 100%);'
-                icon='check'
-                tcolor='#fff'
-                icolor='#fff'
-                content="<h3>Join the Patrons now</h3><h4>We are building a bedrock of loyal supporters to ensure a sustainable future for freesewing.org, our code, our patterns, and our community.</h4>"
-            %}
-        </div>
-    </div>
     <div class="row mb-5">
         <div class="col-md-4 mt-5">
             <div class="card patron">
