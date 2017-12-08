@@ -3,6 +3,8 @@ layout: cards
 title: "You've been redirected to freesewing.org"
 permalink: /rebound
 crumbs: false
+nopatronbanner: true
+nocomments: true
 ---
 <div class="container"><div class="row"><div class="col-md-6">
 {% include blockquote.html
