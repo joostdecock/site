@@ -12,7 +12,7 @@ nocomments: true
     icon='hand-spock-o'
     tcolor='#292b2c'
     icolor='#663f95'
-    content="<h2>Welcome MakeMyPattern visitor</h2> <h4>You ended up here because you wanted to go to <b>makemypattern.com</b>, but we no longer live there.</h4> <h4>We are now <b><a href='/'>freesewing.org</a></b>, so please update your bookmarks</h4> "
+    content="<h2>Welcome MakeMyPattern visitor</h2> <h4>You ended up here because you wanted to go to <b>makemypattern.com</b>, but we no longer live there.</h4> <h4>We are now <b><a href='/'>freesewing.org</a></b>, so please update your bookmarks.</h4> "
 %}
 </div><div class="col-md-6">
 {% include blockquote.html
