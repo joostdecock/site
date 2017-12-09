@@ -35,7 +35,7 @@
 <meta name="twitter:title"       content="{{ page.title }}">
 <meta name="twitter:description" content="{{ page.blurb }}">
 <meta name="twitter:image"       content="{{ site.url }}img{{ page.url }}high_{{ page.img }}">
-<meta property="og:url"          content="{{ site.url }}{{ page.url }}" />
+<meta property="og:url"          content="{{ site.url }}{{ page.url | remove_first: "/" }}" />
 <meta property="og:type"         content="article" />
 <meta property="og:title"        content="{{ page.title }}" />
 <meta property="og:description"  content="{{ page.blurb }}" />
@@ -47,7 +47,7 @@
 <meta name="twitter:title"       content="{{ page.title }}">
 <meta name="twitter:description" content="{{ page.title }}">
 <meta name="twitter:image"       content="{{ site.url }}img{{ page.url }}high_{{ page.img }}">
-<meta property="og:url"          content="{{ site.url }}{{ page.url }}" />
+<meta property="og:url"          content="{{ site.url }}{{ page.url | remove_first: "/" }}" />
 <meta property="og:type"         content="article" />
 <meta property="og:title"        content="{{ page.title }}" />
 <meta property="og:description"  content="{{ page.title }}" />
@@ -59,9 +59,11 @@
 <meta name="twitter:title"       content="{{ page.title }}">
 <meta name="twitter:description" content="Freesewing is an open source platform for made-to-measure sewing patterns">
 <meta name="twitter:image"       content="{{ site.url }}img/logo/logo-flag.png">
-<meta property="og:url"          content="{{ site.url }}{{ page.url }}" />
+<meta property="og:url"          content="{{ site.url }}{{ page.url | remove_first: "/" }}" />
 <meta property="og:type"         content="article" />
 <meta property="og:title"        content="{{ page.title }}" />
 <meta property="og:description"  content="Freesewing is an open source platform for made-to-measure sewing patterns" />
 <meta property="og:image"        content="{{ site.url }}img/logo/logo-flag.png" />
 {% endif %}
+<link rel="alternate" href="https://freesewing.org/feed" type="application/atom+xml" title="Atom 0.3">
+
