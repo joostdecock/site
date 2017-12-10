@@ -10,7 +10,7 @@
         else if ($('#login').attr('data-logout') == 'logout') {
             window.localStorage.removeItem("jwt");
             window.localStorage.removeItem("fsu");
-            $('body').removeClass('logged-in user').addClass('visitor');
+            $('body').removeClass('logged-in user patron').addClass('visitor');
         } 
         else if ($('#login').attr('data-panel') == 'recover') {
             $('#show-recover-link').click();
@@ -107,7 +107,7 @@
             $.post(api.data+'/login', $('#login-form').serialize(),function( data ) {
                 if(data.result == 'ok') {
                     window.localStorage.setItem("jwt", data.token);
-                    window.localStorage.setItem("fsu", JSON.stringify({ 'id': data.userid, 'email': data.email, 'user': data.username }));
+                    window.localStorage.setItem("fsu", JSON.stringify({ 'id': data.userid, 'email': data.email, 'user': data.username, 'patron': data.patron }));
                     window.location.replace('/account');
                 } else {
                     // Account inactive

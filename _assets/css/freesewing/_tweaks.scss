@@ -99,6 +99,9 @@ body.visitor .logged-in-only,
 body.visitor .logged-out-only {
     display: none;
 }
+body.patron .non-patrons-only { display: none; }
+body.non-patron .patrons-only { display: none; }
+
 body { background: $whitish; }
 .badge {
     text-transform: uppercase;
@@ -177,3 +180,55 @@ div.download-draft.download-svg {
         display: none;
     }
 }
+
+span.fine-print {
+    font-size: 1rem;
+    color: $gray;
+    display: block;
+    line-height: 1rem;
+}
+div.card.patron {
+    box-shadow: $shadow;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    padding: 2rem 0.5rem 1rem 0.5rem;
+
+    img {
+        max-width: 50%;
+        margin: auto;
+    }
+    h2 { padding: 0; }
+    div.card-block { padding: 0.5rem; }
+    div.perks {
+        font-size: 1.1rem;
+        text-align: left;
+    }
+    ul { list-style-type: none; }
+    p { text-align: center; }
+    i.fa-check {color: $green;}
+    i.fa-times {color: $red;}
+    i.fa-dot-circle-o {color: $purple;}
+}
+div.perk {
+    margin-top: 1rem;
+    box-shadow: $shadow;
+}
+.bg-patron-2 { background: #d4d4d4; background: linear-gradient(45deg, rgba(212,212,212,1) 0%, rgba(255,255,255,1) 50%, rgba(212,212,212,1) 100%);}
+.bg-patron-4 {
+    background: rgba(255, 213, 0, 0.5);
+    background: linear-gradient(45deg, rgba(255,213,0,0.5) 0%, rgba(255,235,193,0.5) 50%, rgba(255,213,0,0.5) 100%);
+}
+.bg-patron-8 {
+    background: $black;
+    background: linear-gradient(45deg, black 0%, #242424 50%, black 85%, #242424 100%);
+    color: $whitish;
+}
+img.medal-corner { 
+    max-width: 75px;
+    max-height: 75px;
+    margin: 0;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+}
+

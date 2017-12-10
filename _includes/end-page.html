@@ -1,42 +1,10 @@
 <!-- JS bundle -->
 {% js bundle %}
 
-{% if page.action == 'tools' %}
-    <script src="{{ site.baseurl }}/js/tools.js"></script>
-{% endif %}
-{% if page.action == 'export' %}
-    <script src="{{ site.baseurl }}/js/export.js"></script>
-{% endif %}
-{% if page.action == 'confirm' %}
-    <script src="{{ site.baseurl }}/js/confirm.js"></script>
-{% endif %}
-{% if page.action == 'welcome' %}
-    <script src="{{ site.baseurl }}/js/welcome.js"></script>
-{% endif %}
-{% if page.action == 'tiler' %}
-    <script src="{{ site.baseurl }}/js/tiler.js"></script>
-{% endif %}
-{% if page.action == 'reset' %}
-    <script src="{{ site.baseurl }}/js/reset.js"></script>
-{% endif %}
-{% if page.action == 'app' %}
-    <script src="{{ site.baseurl }}/js/app.js"></script>
-{% endif %}
-{% if page.action == 'issues' %}
-    <script src="{{ site.baseurl }}/js/issues.js"></script>
-{% endif %}
-{% if page.action == 'status' %}
-    <script src="{{ site.baseurl }}/js/status.js"></script>
-{% endif %}
-{% if page.action == 'homepage' %}
-    <script src="{{ site.baseurl }}/js/homepage.js"></script>
-{% endif %}
-{% if page.action == 'resend' %}
-    <script src="{{ site.baseurl }}/js/resend.js"></script>
-{% endif %}
-{% if page.action == 'admin' %}
-    <script src="{{ site.baseurl }}/js/admin.js"></script>
-{% endif %}
-{% if page.action == 'search' %}
-    {% js search %}
+{% if page.action %}
+    {% if page.action == 'search' %}
+        {% js search %}
+    {% else %}
+        <script src="{{ site.baseurl }}/js/{{ page.action }}.js"></script>
+    {% endif %}
 {% endif %}

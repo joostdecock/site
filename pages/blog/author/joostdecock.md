@@ -9,7 +9,7 @@ nocomments: true
 <div class="col">
 <div class="card-columns blog">
 {% for post in site.posts %}
-{% if post.author == 'joostdecock' %}
+{% if post.author == 'Joost De Cock' %}
 <div class="card hover-shadow mb-3">
 <a href="{{ post.url }}" title="{{ post.linktitle | escape}}">
 <img 
@@ -29,7 +29,7 @@ nocomments: true
 </div>
 <footer class="rounded-bottom">
 On {{ post.date | date: '%B %d, %Y' }}
-by <a href="/blog/author/{{ post.author }}" title="Browse other posts by this author">{{ post.author }}</a>
+by <a href="/blog/author/{{ post.author | downcase | replace: ' ', '' }}" title="Browse other posts by this author">{{ post.author }}</a>
 in <a href="/blog/category/{{ post.categories }}" title="Browse other posts in this category">{{ post.categories }}</a>
 </footer>
 </div>
