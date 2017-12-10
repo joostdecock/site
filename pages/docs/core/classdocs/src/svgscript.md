@@ -30,7 +30,7 @@ string load()
 Load returns the data in the `data` property, and wraps it as proper ECMAScript.
 
 Note that this returns the `data` property as a string, 
-thereby triggering [`SvgBlock::__toString`](svgblock#tostring).
+thereby triggering [`SvgBlock::__toString`](svgblock#__tostring).
 
 #### Example
 {:.no_toc}
@@ -67,7 +67,7 @@ echo $svgBlock->load();
 #### Typical use
 {:.no_toc}
 
-Called from [`SvgDocument::__toString`](svgdocument#tostring).
+Called from [`SvgDocument::__toString`](svgdocument#__tostring).
 
 #### Return value
 {:.no_toc}

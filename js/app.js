@@ -136,7 +136,7 @@
         // Load settings into modal
         $('#modal').removeClass().addClass('shown light');
         $('#modal-main').html("<div id='settings'></div>");
-        
+
         if(account.account.data.account.units == 'imperial') var units_on = true;
         else var units_on = false;
         if(account.account.data.account.theme == 'paperless') var theme_on = true;
@@ -145,6 +145,18 @@
         $('#settings').load('/components/account/settings', function(){
             $('#email').attr('value', account.account.email);
             $('#username').attr('value', account.account.username);
+            if(typeof account.account.data.patron == 'undefined' || account.account.data.patron.tier < 2) $('#patron-settings').addClass('hidden');
+            else {
+                if (account.account.data.patron != null && account.account.data.patron.address != null) $('#address').val(account.account.data.patron.address);
+                if (account.account.data.patron.tier < 8) $('#captain-settings').addClass('hidden');
+                else {
+                    if (account.account.data.patron.birthday != null) {
+                        $('#birthday-month-'+account.account.data.patron.birthday.month).attr('selected','selected');
+                        $('#birthday-day-'+account.account.data.patron.birthday.day).attr('selected','selected');
+                    }
+                }
+            }
+
             if(typeof account.account.data.social != 'undefined' && account.account.data.social != null) {
                 if(typeof account.account.data.social.twitter != 'undefined') $('#twitter').attr('value', account.account.data.social.twitter);
                 if(typeof account.account.data.social.instagram != 'undefined') $('#instagram').attr('value', account.account.data.social.instagram);
@@ -1876,6 +1888,12 @@
                     $('ul.breadcrumbs li:last-child').html(data.profile.username);
                     $('#avatar').attr('src', api.data+data.profile.pictureSrc);
                     $('span.username').html(data.profile.username);
+                    var patron = 0;
+                    if(typeof data.patron != 'undefined' && data.patron != null && data.patron.tier != 'undefined' && data.patron.tier > 1) var patron = data.patron.tier;
+                    if(patron > 1) {
+                        if(patron > 2) $('#patron-medal').attr('src','/img/patrons/medals/medal-'+patron+'.svg');
+                        $('#patronage').removeClass('hidden');
+                    }
                     if(typeof data.social != 'undefined' && data.social != null) {
                         if(typeof data.social.twitter != 'undefined') $('#social').append('<a href="https://twitter.com/'+data.social.twitter+'" target="_BLANK" title="'+data.profile.username+' is '+data.social.twitter+' on Twitter" class="px-2"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a>');
                         if(typeof data.social.instagram != 'undefined') $('#social').append('<a href="https://instagram.com/'+data.social.instagram+'" target="_BLANK" title="'+data.profile.username+' is '+data.social.instagram+' on Instagram" class="px-2"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></a>');

@@ -9,10 +9,10 @@ author: Anne Lyth
 <div class="row">
 <div class="col">
 <div class="card-columns blog">
-{% include figure.html url="/img/showcase/fighter-hoodie/1.jpg" %}
-{% include figure.html url="/img/showcase/fighter-hoodie/2.jpg" %}
-{% include figure.html url="/img/showcase/fighter-hoodie/3.jpg" %}
-{% include figure.html url="/img/showcase/fighter-hoodie/4.jpg" %}
+{% include figure.html url="/img/showcase/fighter-hoodie/1.jpg" description="Another view" %}
+{% include figure.html url="/img/showcase/fighter-hoodie/2.jpg" description="Another view" %}
+{% include figure.html url="/img/showcase/fighter-hoodie/3.jpg" description="Another view" %}
+{% include figure.html url="/img/showcase/fighter-hoodie/4.jpg" description="Another view" %}
 </div>
 </div>
 </div>

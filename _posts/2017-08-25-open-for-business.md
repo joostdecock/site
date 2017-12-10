@@ -183,16 +183,16 @@ A while ago, I opened up an early access version of the site to
 those people who were interested, and I would like to thank all of 
 you who tried out the site, reported issues, or merely gave feedback or encouragements.
 
-<img src="/img/badges/badge-early-access.svg" class="badge-img drop-shadow" style="margin: 1%; width: 30%; height: auto; border-radius: 50%">
-<img src="/img/badges/badge-launch-day.svg" class="badge-img drop-shadow" style="margin: 1%; width: 30%; height: auto; border-radius: 50%">
-<img src="/img/badges/badge-donated.svg" class="badge-img drop-shadow" style="margin: 1%; width: 30%; height: auto; border-radius: 50%">
-<img src="/img/badges/badge-issue.svg" class="badge-img drop-shadow" style="margin: 1%; width: 30%; height: auto; border-radius: 50%">
-<img src="/img/badges/badge-contributor.svg" class="badge-img drop-shadow" style="margin: 1%; width: 30%; height: auto; border-radius: 50%">
-<img src="/img/badges/badge-blogpost.svg" class="badge-img drop-shadow" style="margin: 1%; width: 30%; height: auto; border-radius: 50%">
+<img alt="The Early Access badge" src="/img/badges/badge-early-access.svg" class="badge-img drop-shadow" style="margin: 1%; width: 30%; height: auto; border-radius: 50%">
+<img alt="The Launch Day badge" src="/img/badges/badge-launch-day.svg" class="badge-img drop-shadow" style="margin: 1%; width: 30%; height: auto; border-radius: 50%">
+<img alt="The Donated badge" src="/img/badges/badge-donated.svg" class="badge-img drop-shadow" style="margin: 1%; width: 30%; height: auto; border-radius: 50%">
+<img alt="The Issue badge" src="/img/badges/badge-issue.svg" class="badge-img drop-shadow" style="margin: 1%; width: 30%; height: auto; border-radius: 50%">
+<img alt="TheContributor  badge" src="/img/badges/badge-contributor.svg" class="badge-img drop-shadow" style="margin: 1%; width: 30%; height: auto; border-radius: 50%">
+<img alt="The Blog Post badge" src="/img/badges/badge-blogpost.svg" class="badge-img drop-shadow" style="margin: 1%; width: 30%; height: auto; border-radius: 50%">
 <figcaption><small>Some of the badges you can unlock</small></figcaption>
 
 Those of you who took part should all get that coveted early access badge. 
-If it's missing from [your profile](/profile), [get in touch](/contact/).
+If it's missing from [your profile](/profile), [get in touch](/contact).
 
 Other badges are available, including one for signing up on launch day. [The full list of badges is here](/docs/site/badges).
 

@@ -35,7 +35,7 @@ Seamlines &mdash; that is, the lines on which you sew &mdash; are represented by
 
 Seam allowance &mdash; that is, the line on which to cut out your pattern part &mdash; are represented by a dashed line.
 
-In addition, they follow the different colours to indicate different types of fabric. See [seamlines](#seamlines).
+In addition, they follow the different colours to indicate different types of fabric. See [seamlines](#seam-line).
 
 ### Help line
 

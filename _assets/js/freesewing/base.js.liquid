@@ -3,6 +3,12 @@ var api = {
     data: '{{ site.api.data }}',
 };
 
+var patrons = {
+    2: 'Powder Monkey',
+    4: 'First Mate',
+    8: 'Captain',
+}
+
 var buildRef = '{{ site.build }}'.substr(0,7);
 var buildFull = '{{ site.build }}';
 
@@ -16,7 +22,7 @@ var token = window.localStorage.getItem("jwt");
 
         // Authentication ///////////////////////////////////////////
         if(token === null) {
-            $('body').addClass('visitor');
+            $('body').addClass('visitor non-patron');
             logged_in = false;
             if ($('body').attr('data-comments') == 'true') loadComments();
         } else {
@@ -123,6 +129,9 @@ var token = window.localStorage.getItem("jwt");
         $('#markdown-toc').detach().appendTo('#oc-right'); // Move auto-generated ToC to the correct place in the DOM
 
         $('p a code.highlighter-rouge').parent().addClass('noline'); // Avoid underlining class links
+        
+        // Show patrons banner from time to time  //
+        if(Math.floor(Math.random() * 4) == 2) $('#patrons-banner').removeClass('hidden');
     });
 }(jQuery));
 
@@ -189,21 +198,25 @@ function closeModal() {
 }
 
 // Things to do after login
-function postLogin(data) { 
-    user = JSON.parse(window.localStorage.getItem("fsu"));
+function postLogin(user) { 
+    window.localStorage.setItem("fsu", JSON.stringify({ 'id': user.id, 'email': user.email, 'user': user.username, 'patron': user.patron.tier }));
     logged_in = true;
+    if(user.patron.tier > 1) $('body').addClass('patron');
+    else $('body').addClass('non-patron');
     $('body').addClass('user logged-in'); 
     if ($('body').attr('data-comments') == 'true') loadComments();
-    if(typeof data.new_badge == 'string') $.bootstrapGrowl('Yay, you unlocked the <big><b>'+data.new_badge+'</b></big> badge', {type: 'success'});
+    if(typeof user.new_badge == 'string') $.bootstrapGrowl('Yay, you unlocked the <big><b>'+data.new_badge+'</b></big> badge', {type: 'success'});
+
 }
 
 // Things to do after logout
 function postLogout(data) { 
     logged_in = false;
     window.localStorage.removeItem("fsu");
+    window.localStorage.removeItem("jwt");
     $('body').addClass('user logged-out'); 
     if ($('body').attr('data-comments') == 'true') loadComments();
-}
+    }
 
 
 /* 
@@ -260,6 +273,8 @@ function loadComments() {
 
 function renderComments(comments) {
     $.each(comments, function(index, comment) {
+        var patron = 0;
+        if(typeof comment.patron != 'undefined' && comment.patron != null && comment.patron.tier != 'undefined' && comment.patron.tier > 1) var patron = comment.patron.tier;
         if(comment.parent > 0) var container = '#comment-'+comment.parent;
         else var container = '#comments';
         var markup = '<div id="comment-'+comment.id+'" class="comment '+comment.status+'">';
@@ -281,11 +296,12 @@ function renderComments(comments) {
             markup += '<img src="/img/badges/badge-'+badge+'.svg" style="width: 14px; heigth: 14px; border-radius: 7px; margin-right: 2px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.23)" >';
         });
         markup += '</div>';
-        markup += '<div class="comment-text '+comment.status+'">';
+        markup += '<div class="comment-text '+comment.status+' bg-patron-'+patron+'">';
         if (comment.status == 'removed') markup += '<i class="fa fa-trash" aria-hidden="true"></i> <em>This comment was removed by its author.</em>';
         else if (comment.status == 'restricted') markup += '<i class="fa fa-ban" aria-hidden="true"></i> <em>his comment was removed by a moderator.</em>';
         else {
             markup += '<a href="/users/'+comment.userhandle+'" title="Visit the profile page of this user"><img src="'+api.data+comment.picture+'" class="avatile"></a>';
+            if( patron>0 )markup += '<a href="/patrons" title="Show all Freesewing Patrons"><img src="/img/patrons/medals/medal-'+patron+'.svg" class="medaltile"></a>';
             markup += marked(comment.comment);
         }
         markup += '</div>';
