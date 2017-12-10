@@ -12,7 +12,7 @@
 
         function renderPatron(patron) {
                 console.log(patron);
-                var markup = '<div class="card hover-shadow mb-3">';
+                var markup = '<div class="card hover-shadow mb-2 mt-3">';
                 markup += '<a href="/users/'+patron.handle+'" title="Visit the profile page of this Patron">';
                 markup += '<img src="/img/patrons/medals/medal-'+patron.tier+'.svg" class="medal-corner">';
                 markup += '<img src="'+patron.picture+'" alt="Profile image" class="card-img-top">';
