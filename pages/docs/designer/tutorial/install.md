@@ -110,7 +110,7 @@ composer create-project freesewing/core freesewing
 composer dump-autoload -o
 ```
 
-If all went well, you can now run this command:
+If all went well (and you are on Linux or Mac), you can now run this command:
 
 ```sh
 ./freesewing
@@ -118,9 +118,16 @@ If all went well, you can now run this command:
 
 And you'll get some meaningful feedback.
 
+> ##### You can't use the command line freesewing on Windows
+>
+> On Linux and Mac, you can use freesewing from the command line.
+>
+> Alas, you cannot on Windows, so just skip to the next step.
+{:.warning}
+
 ## Run the webserver
 
-We can now use `core` from the command line. But if we want to use it in our browser,
+We can now use `core` from the command line (unless you're on Windows). But if we want to use it in our browser,
 we'll need a web server.
 
 Rather than installing one, we'll use PHP's built-in webserver.
