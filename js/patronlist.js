@@ -3,7 +3,12 @@
 
         $.get(api.data+'/patrons/list', function( result ) {
             if(result.result == 'ok') {
-                $.each(result.patrons, function(timestamp, patron){
+                var ordered = {};
+                Object.keys(result.patrons).forEach(function(key) {
+                    ordered[key] = result.patrons[key];
+                });
+
+                $.each(ordered, function(timestamp, patron){
                     renderPatron(patron);
                 });
             }
@@ -11,7 +16,6 @@
         });
 
         function renderPatron(patron) {
-                console.log(patron);
                 var markup = '<div class="card hover-shadow mb-2 mt-3">';
                 markup += '<a href="/users/'+patron.handle+'" title="Visit the profile page of this Patron">';
                 markup += '<img src="/img/patrons/medals/medal-'+patron.tier+'.svg" class="medal-corner">';
