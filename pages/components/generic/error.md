@@ -4,7 +4,7 @@ permalink: /components/generic/error
 <!-- Start of /components/generic/error -->
 <div class="light-on-bg" style="text-align: center;" markdown="1">
 
-## Ow wow, that was not supposed to happen
+## Oh wow, that was not supposed to happen
 
 Something went wrong, and I'm not sure what.
 

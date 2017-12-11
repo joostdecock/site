@@ -55,7 +55,7 @@ it's not just me in the middle.
 joost
 
 ## Shout-outs
-Freesewing is a project by [Joost De Cock](/about/joostdecock) and [contributors](/about/contributors).
+Freesewing is a project by [Joost De Cock](https://github.com/joostdecock) and contributors.
 
 Hat-tip to [@jakesgordon](https://github.com/jakesgordon) and [Kevin Lindsey](http://www.kevlindev.com) for allowing me to port some of their code.
                 

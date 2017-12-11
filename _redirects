@@ -22,4 +22,6 @@
 /users    /list-users  200
 /users/*    /show-user  200
 /profile*    /show-user  200
+# Donations
+/donate /patrons/join 301
 

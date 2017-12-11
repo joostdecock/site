@@ -5,7 +5,7 @@ linktitle: "Conditional code in extended patterns"
 img: compass.jpg
 caption: "Think of Pattern::requested as your compass"
 author: 'Joost De Cock'
-category: core
+category: docs
 blurb: "Sometimes we want to know inside a class/pattern whether we are the actual pattern the user wants, or merely a stepping stone to get there."
 ---
 Because in freesewing, patterns are implemented as their own classes, 

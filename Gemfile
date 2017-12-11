@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'jekyll'
 gem 'html-proofer'
+gem 'jekyll-feed'
 
 group :plugins do
     gem "jekyll-assets"

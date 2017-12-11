@@ -3,6 +3,59 @@ layout: page
 title: Freesewing donations pledge
 permalink: /about/pledge
 ---
+## Understanding the reasons for this pledge
+
+### Noblesse oblige
+
+You probably assume that we ask for money to keep the servers running. But that's not exactly true.
+
+I don't know if you're familiar with the phrase **noblesse oblige** but it essentially means that privilege entails responsibility.
+
+I am privileged, and thus I have responsibilities.
+I am very fortunate to have been born in Western Europe, have a good job, and a roof over my head.
+
+Could I use the money? Yes I could.  
+Do I need the money? No I don't.
+
+### The value of your support
+
+The main risk to Freesewing is the same as any open source project out there: maintainer burnout.
+
+While I no longer carry Freesewing alone --- and I can't stress enough how much I value the work of all contributors ---
+that doesn't make me immune to feelings of *Why the fuck am I doing this?*
+
+When people become Patrons (or donate), they give more than money.
+To me, the main value is the message they send to me and other people working on this. 
+And that message is: *Hey, you're doing a worthwhile thing. Keep up the good work*.
+
+### The value of your money
+
+It is not *just* about the money. But that doesn't mean the money is not important.
+Much to the contrary.
+
+Raising money by doing something I love and then passing it on to charity allows me to sleep at night. 
+
+I could volunteer at a soup kitchen, or teach underprivileged children how to sew. But instead I’m working on Freesewing.
+
+Which is why all the money raised through freesewing goes to charity.
+It makes this project not only fun to do, but also socially responsible. 
+And I need that to convince myself that yes, it's ok to spend all my time doing this, 
+because at the end of the year, I get to write a check to people who need it so much more.
+
+### Charity is not sexy
+Here's the tricky part: People donate less once they know the money goes to charity in the end. 
+I wish it wasn't the case, but it is.
+
+So I'm not explicitly mentioning it on [our Patrons page](/patrons/join), 
+which is presented like you would see on a business site.
+
+Yes, everything is free, and the money doesn't actually go to paying the server bills 
+(because I choose to pay them out of my pocket for reasons outlined above). 
+But that doesn't mean that these contributions are not crucial to the well-being of the project, 
+or at the very least its maintainer (that would be me).
+
+## What charity does the money go to?
+
 There's a lot of misery in the world. As I watch the news, I often feel my faith in humanity slipping.
 
 Some of the most vulnerable people on this planet seem largely abandoned by rich countries and supra-national organisations.
@@ -16,7 +69,7 @@ I can't think of a single organisation more deserving of our support.
 
 So I am happy to make this pledge:
 
-> ##### Freesewing donations pledge
+## Freesewing donations pledge
 > I, Joost De Cock, founder and maintainer of the freesewing project and 
 > recipient of its donations, hereby pledge that all donations I receive 
 > will be passed on to
@@ -27,22 +80,22 @@ In practice, all donations received in the previous 12 months will be transfered
 
 
 
-> ##### Caveat
+### Caveat
 > TL;DR: I promise to donate 100% of what I receive, I'll try to cover the transaction fees (so it's also 100% of what you give).
 >  {:.lead }
->
-> When you donate, PayPal charges a fee. 
-> The donations pledge only applies to the money received, and not to the fee charged.
->
-> Historically, I have donated 100% of donations given, and paid the difference 
-> (the total of fees) out of my own pocket.
->
-> I hope to continue to do that, because I like the idea that 100% of what you
-> give goes to charity.
->
-> However, I cannot pledge this, because if this project becomes wildly successful,
-> it would bankrupt me to pay the transaction fee on all donations.
 {:.warning}
+
+When you donate, PayPal charges a fee. 
+The donations pledge only applies to the money received, and not to the fee charged.
+
+Historically, I have donated 100% of donations given, and paid the difference 
+(the total of fees) out of my own pocket.
+
+I hope to continue to do that, because I like the idea that 100% of what you
+give goes to charity.
+
+However, I cannot pledge this, because if this project becomes wildly successful,
+it would bankrupt me to pay the transaction fee on all donations.
 
 ## Donations history
 
@@ -50,9 +103,6 @@ In practice, all donations received in the previous 12 months will be transfered
 
 **Note:** I started accepting donations in November 2014. Donations of those
 first couple of weeks are lumped in with the 2015 donations.
-
-If you'd like to make a donation, you can do so [here](/donate).
-{: .lead }
 
 * TOC - Do not remove this line
 {:toc}

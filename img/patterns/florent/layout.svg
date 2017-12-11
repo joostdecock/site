@@ -15,9 +15,9 @@
   -->
 
 <svg
-    width ="1357.08661547"
-    height ="733.46456763"
-    viewbox ="0 0 1357.08661547 733.46456763" class="freesewing"
+    width ="3017.0232312294"
+    height ="1283.0563004386"
+    viewbox ="0 0 3017.0232312294 1283.0563004386" class="freesewing"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:cc="http://creativecommons.org/ns#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -30,7 +30,7 @@
 
 <style type="text/css">
     <![CDATA[
-    path,circle,rect{fill:none;stroke:none}path{fill:none;stroke:#000;stroke-opacity:1;stroke-width:.3;stroke-linecap:round;stroke-linejoin:round}path.fabric{stroke-width:.6;stroke:#653f95}path.lining{stroke-width:.6;stroke:#0275d8}path.interfacing{stroke-width:.6;stroke:#d9534f}path.canvas{stroke-width:.6;stroke:#5cb85c}path.various{stroke-width:.6;stroke:#5bc0de}path.sa{stroke-dasharray:0.4,0.8}path.help{stroke-width:.2;stroke-dasharray:15,1.5,1,1.5}path.hint{stroke-width:.2;stroke-dasharray:0.4,0.8}path.note{stroke:#0275d8;stroke-width:.6;marker-start:url(#noteArrow)}text{font-size:5px;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;fill:#000;text-anchor:start;font-weight:200}text.part-nr{font-size:28px;text-anchor:middle;fill:#000;font-weight:100}text.part-nr.horizontal{text-anchor:start}text.part-title{font-size:18px;text-anchor:middle;fill:#000}text.part-title.horizontal{text-anchor:start}text.pattern-title{font-size:8px;font-weight:bold;text-anchor:middle;fill:#000}text.pattern-title.horizontal{text-anchor:start}text.part-msg{font-size:10px;text-anchor:middle}text.part-msg.horizontal,text.part-title.vertical,text.part-msg.vertical{text-anchor:start}text.part-nr.small{font-size:14px}text.part-title.small{font-size:9px}text.pattern-title.small{font-size:4px}text.part-msg.small{font-size:5px}text.part-nr.extrasmall{font-size:7px}text.part-title.extrasmall{font-size:5px}text.pattern-title.extrasmall{font-size:3px}text.part-msg.extrasmall{font-size:4px}text.note,text.dimension-label{fill:#0275d8}text.note tspan{alignment-baseline:middle}text.note-5,text.note-6,text.note-7,text.note-11,text.note-12,text.note-0,text.note-1,text.dimension-label{text-anchor:middle}text.note-8,text.note-9,text.note-10{text-anchor:end}text.dimension-label{font-size:7px}text.grainline{fill:#999}path.arrow{stroke:#0275d8}path.grainline{stroke:#999;stroke-width:.6;marker-start:url(#grainlineStart);marker-end:url(#grainlineEnd)}path.dimension{stroke:#0275d8;stroke-width:.6;marker-start:url(#dimensionStart);marker-end:url(#dimensionEnd)}path.dimension.dimension-sm{stroke-width:.3}path.dimension-leader{stroke:#0275d8;stroke-width:.3}path.single-arrow{marker-start:url(#dimensionStart)}path.double-arrow{marker-start:url(#dimensionStart);marker-end:url(#dimensionEnd)}.text-xs{font-size:3px}.text-sm{font-size:4px}.text-lg{font-size:7px}.text-xl{font-size:9px}.text-center{text-anchor:middle}.stroke-xs{stroke-width:.1}.stroke-sm{stroke-width:.2}.stroke-lg{stroke-width:.6}.stroke-xl{stroke-width:1}.stroke-xxl{stroke-width:2}.dashed{stroke-dasharray:1,1.5}.dotted{stroke-dasharray:0.4,0.8}.hidden{stroke:none;file:none}.stroke-fabric{stroke:#653f95}.stroke-lining{stroke:#0275d8}.stroke-interfacing{stroke:#d9534f}.stroke-canvas{stroke:#5cb85c}.stroke-note{stroke:#0275d8}.stroke-mark{stroke:#f0ad4e}.stroke-hint{stroke:#86739c}.stroke-gray{stroke:#999}.fill-fabric{fill:#653f95}.fill-lining{fill:#0275d8}.fill-interfacing{fill:#d9534f}.fill-canvas{fill:#5cb85c}.fill-note{fill:#0275d8}.fill-mark{fill:#f0ad4e}.fill-hint{fill:#86739c}.fill-gray{fill:#999}]]>
+    path,circle,rect{fill:none;stroke:none}path{fill:none;stroke:#000;stroke-opacity:1;stroke-width:.3;stroke-linecap:round;stroke-linejoin:round}path.fabric{stroke-width:.6;stroke:#653f95}path.lining{stroke-width:.6;stroke:#0275d8}path.interfacing{stroke-width:.6;stroke:#d9534f}path.canvas{stroke-width:.6;stroke:#5cb85c}path.various{stroke-width:.6;stroke:#5bc0de}path.sa{stroke-dasharray:0.4,0.8}path.help{stroke-width:.2;stroke-dasharray:15,1.5,1,1.5}path.hint{stroke-width:.2;stroke-dasharray:0.4,0.8}path.note{stroke:#0275d8;stroke-width:.6;marker-start:url(#noteArrow)}text{font-size:5px;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;fill:#000;text-anchor:start;font-weight:200}text.part-nr{font-size:28px;text-anchor:middle;fill:#000;font-weight:100}text.part-nr.horizontal{text-anchor:start}text.part-title{font-size:18px;text-anchor:middle;fill:#000}text.part-title.horizontal{text-anchor:start}text.pattern-title{font-size:8px;font-weight:bold;text-anchor:middle;fill:#000}text.pattern-title.horizontal{text-anchor:start}text.part-msg{font-size:10px;text-anchor:middle}text.part-msg.horizontal,text.part-title.vertical,text.part-msg.vertical{text-anchor:start}text.part-nr.small{font-size:14px}text.part-title.small{font-size:9px}text.pattern-title.small{font-size:4px}text.part-msg.small{font-size:5px}text.part-nr.extrasmall{font-size:7px}text.part-title.extrasmall{font-size:5px}text.pattern-title.extrasmall{font-size:3px}text.part-msg.extrasmall{font-size:4px}text.note,text.dimension-label{fill:#0275d8}text.note tspan{alignment-baseline:middle}text.note-5,text.note-6,text.note-7,text.note-11,text.note-12,text.note-0,text.note-1,text.dimension-label{text-anchor:middle}text.note-8,text.note-9,text.note-10{text-anchor:end}text.dimension-label{font-size:7px}text.grainline{fill:#999}path.arrow{stroke:#0275d8}path.grainline{stroke:#999;stroke-width:.6;marker-start:url(#grainlineStart);marker-end:url(#grainlineEnd)}path.dimension{stroke:#0275d8;stroke-width:.6;marker-start:url(#dimensionStart);marker-end:url(#dimensionEnd)}path.dimension.dimension-sm{stroke-width:.3}path.dimension-leader{stroke:#0275d8;stroke-width:.3}path.single-arrow{marker-start:url(#dimensionStart)}path.double-arrow{marker-start:url(#dimensionStart);marker-end:url(#dimensionEnd)}.text-xs{font-size:3px}.text-sm{font-size:4px}.text-lg{font-size:7px}.text-xl{font-size:9px}.text-center{text-anchor:middle}.stroke-xs{stroke-width:.1}.stroke-sm{stroke-width:.2}.stroke-lg{stroke-width:.6}.stroke-xl{stroke-width:1}.stroke-xxl{stroke-width:2}.dashed{stroke-dasharray:1,1.5}.lashed{stroke-dasharray:6,6}.dotted{stroke-dasharray:0.4,0.8}.hidden{stroke:none;file:none}.stroke-fabric{stroke:#653f95}.stroke-lining{stroke:#0275d8}.stroke-interfacing{stroke:#d9534f}.stroke-canvas{stroke:#5cb85c}.stroke-note{stroke:#0275d8}.stroke-mark{stroke:#f0ad4e}.stroke-hint{stroke:#86739c}.stroke-gray{stroke:#999}.fill-fabric{fill:#653f95}.fill-lining{fill:#0275d8}.fill-interfacing{fill:#d9534f}.fill-canvas{fill:#5cb85c}.fill-note{fill:#0275d8}.fill-mark{fill:#f0ad4e}.fill-hint{fill:#86739c}.fill-gray{fill:#999}]]>
 </style>
 
 <defs id="defs">
@@ -40,7 +40,7 @@
     <marker orient="auto" refY="0.0" refX="0.0" id="grainlineStart" style="overflow:visible;" > <path style="stroke: #999999; fill: #999999;" d="M 0,0 L 12,-4 C 10,-2 10,2  12, 4 z" /> </marker>
     <marker orient="auto" refY="0.0" refX="0.0" id="grainlineEnd" style="overflow:visible;" > <path style="stroke: #999999; fill: #999999;" d="M 0,0 L -12,-4 C -10,-2 -10,2  -12, 4 z" /> </marker>
     <g id="notch"> <circle cy="0" cx="0" r="1.4" class="fill-mark" /> <circle cy="0" cx="0" r="2.8" class="stroke-mark stroke-xl" /> </g>
-    <g id="scalebox"> <rect y="0" x="-50.8" height="50.8" width="101.6" style="fill:#333333;fill-opacity:1;stroke:none" /> <rect style="fill:#ffffff;fill-opacity:1;stroke:none" width="100" height="50" x="-49.6" y="0.4" /> <text x="-40" y="10" class="text-sm"> <tspan x="-40" dy="4" class="text-xs">freesewing.org</tspan> <tspan x="-40" dy="8" class="text-xl">Benjamin Bow Tie </tspan> <tspan x="-40" dy="8" class="fill-brand">freesewing.org/drafts/__REFERENCE__</tspan> </text> <text y="0" x="0" class="text-xs text-center"> <tspan x="0" y="42">The (white) inside of this box should measure 10 by 5 cm</tspan> <tspan x="0" dy="5">The (black) outside of this box should measure 4 by 2 inch</tspan> </text> </g>
+    <g id="scalebox"> <rect y="0" x="-50.8" height="50.8" width="101.6" style="fill:#333333;fill-opacity:1;stroke:none" /> <rect style="fill:#ffffff;fill-opacity:1;stroke:none" width="100" height="50" x="-49.6" y="0.4" /> <text x="-40" y="10" class="text-sm"> <tspan x="-40" dy="4" class="text-xs">freesewing.org</tspan> <tspan x="-40" dy="8" class="text-xl">FlorentFlatcap </tspan> <tspan x="-40" dy="8" class="fill-brand">freesewing.org/drafts/drbtw</tspan> </text> <text y="0" x="0" class="text-xs text-center"> <tspan x="0" y="42">The (white) inside of this box should measure 10 by 5 cm</tspan> <tspan x="0" dy="5">The (black) outside of this box should measure 4 by 2 inch</tspan> </text> </g>
     <g id="logo-sm" transform="scale(0.4)"> <use xlink:href = "#logo"/> </g>
     <g id="logo-lg" transform="scale(2)"> <use xlink:href = "#logo"/> </g>
     <g id="logo" transform="translate(-23 -36)"> 
@@ -59,46 +59,102 @@
 <!-- Start of group #patternScaleContainer -->
 <g id="patternScaleContainer"  transform=" scale(3.54330709 ) " >
     
-    <!-- Start of group #bowTie1 -->
-    <g id="bowTie1"  transform=" translate(11 43.5)  translate(0 46) " >
-        <path class="fabric" id="2"  d=" M  0,-12  L  70,-12  L  120,-15  C  129.982,-15.599  170,-32.5  180,-32.5  C  190,-32.5  230,-15  240,-15  C  250,-15  290,-32.5  300,-32.5  L  300,0  L  300,32.5  C  290,32.5  250,15  240,15  C  230,15  190,32.5  180,32.5  C  170,32.5  129.982,15.599  120,15  L  70,12  L  0,12  Z " />
-        <path class="fabric sa" id="3"  d=" M  0,-18  L  69.824,-18  L  69.824,-18  L  119.641,-20.989  L  119.641,-20.989  C  126.654,-21.41  153.265,-32.084  169.276,-36.52  L  169.276,-36.52  C  173.388,-37.659  177.371,-38.5  180,-38.5  L  180,-38.5  C  189.186,-38.5  217.172,-26.976  232.528,-22.589  L  232.528,-22.589  C  236.27,-21.52  238.647,-21  240,-21  L  240,-21  C  246.814,-21  273.228,-31.876  289.232,-36.449  L  289.232,-36.449  C  293.33,-37.62  297.353,-38.5  300,-38.5  L  306,-32.5  L  306,0  L  306,0  L  306,32.5  L  300,38.5  C  290.814,38.5  262.828,26.976  247.472,22.589  L  247.472,22.589  C  243.73,21.52  241.353,21  240,21  L  240,21  C  233.186,21  206.772,31.876  190.768,36.449  L  190.768,36.449  C  186.67,37.62  182.647,38.5  180,38.5  L  180,38.5  C  170.851,38.5  142.825,27.36  127.412,22.804  L  127.413,22.804  C  123.633,21.687  121.106,21.077  119.64,20.989  L  119.641,20.989  L  69.824,18  L  69.824,18  L  -0,18  L  -6,12  L  -6,-12  L  0,-18 " />
-        <path class="hidden" id="4"  d=" M  50,112.5  L  50,112.5 " />
-        <path class="grainline" id="5"  d=" M  30,0  L  120,0 " />
-        <text id="6" class="text-lg text-center grainline" dy="-2" ><textPath xlink:href="#5" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2" >Grainline</tspan></textPath></text>
-        <text x="180" y="6" id="7" class="part-nr extrasmall" transform="translate(0, -6)" ><tspan >1</tspan></text>
-        <text x="180" y="6" id="8" transform="translate(0,-13.2)" class="pattern-title extrasmall" ><tspan >Benjamin</tspan></text>
-        <text x="180" y="6" id="9" class="part-title extrasmall" ><tspan >Bow Tie knot</tspan></text>
-        <text x="180" y="6" id="10" class="part-msg extrasmall" transform="translate(0, 4.5)" ><tspan >4x from main fabric, 4x from interfacing</tspan></text>
-        <use x="50" y="62.5" xlink:href="#scalebox" id="11" ></use>
-        <use x="275" y="6" xlink:href="#logo-sm" id="12" ></use>
+    <!-- Start of group #top -->
+    <g id="top"  transform=" translate(15 15)  translate(0 0) " >
+        <path class="fabric" id="2"  d=" M  0,0  L  204.763,0  C  253.42,0  290.242,15.267  302.687,19.599  C  333.322,30.263  363.145,35.434  384.426,62.545  L  393.814,74.505  L  346.678,111.505  L  337.29,99.545  C  332.283,93.166  314.241,81.905  293.967,81.905  C  273.693,81.905  249.554,91.447  244.566,92.343  C  239.578,93.239  212.873,107.45  152.052,107.45  C  40.547,107.45  -0,44.602  0,0  Z " />
+        <path class="fabric sa" id="3"  d=" M  0,-10  L  204.763,-10  L  204.763,-10  C  255.41,-10  293.802,5.918  305.974,10.155  L  305.974,10.155  C  329.873,18.474  355.557,23.845  376.926,40.871  L  376.925,40.871  C  382.224,45.092  387.645,50.451  392.292,56.371  L  392.292,56.371  L  401.68,68.331  L  399.989,82.371  L  352.853,119.371  L  338.812,117.679  L  329.424,105.719  L  329.424,105.72  C  326.406,101.876  317.021,95.622  303.782,92.926  L  303.781,92.926  C  300.418,92.241  297.458,91.905  293.967,91.905  L  293.967,91.905  C  275.598,91.905  252.306,101.112  246.334,102.185  L  246.334,102.185  C  242.893,102.803  215.369,117.45  152.052,117.45  L  152.052,117.45  C  110.615,117.45  77.266,108.672  53.046,95.598  L  53.046,95.598  C  36.656,86.75  23.159,75.181  13.627,63.37  L  13.627,63.37  C  -2.49,43.399  -10,19.368  -10,-0  L  0,-10 " />
+        <path class="grainline" id="4"  d=" M  40.953,19.599  L  283.102,19.599 " />
+        <text id="5" class="text-lg text-center grainline" dy="-2" ><textPath xlink:href="#4" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2" >Grainline</tspan></textPath></text>
+        <text x="152.052" y="63.525" id="6" class="part-nr small" transform="translate(0, -10)" ><tspan >1</tspan></text>
+        <text x="152.052" y="63.525" id="7" transform="translate(0,-22)" class="pattern-title small" ><tspan >Florent</tspan></text>
+        <text x="152.052" y="63.525" id="8" class="part-title small" ><tspan >Cap Top</tspan></text>
+        <text x="152.052" y="63.525" id="9" class="part-msg small" transform="translate(0, 7.5)" ><tspan >2x main, 2x lining</tspan></text>
+        <use x="202.052" y="63.525" xlink:href="#logo" id="10" ></use>
+        <use x="152.052" y="107.45" xlink:href="#notch" id="11" ></use>
+        <use x="293.967" y="81.905" xlink:href="#notch" id="12" ></use>
+        <use x="204.763" y="0" xlink:href="#notch" id="13" ></use>
     </g>
-    <!-- End of group #bowTie1 -->
+    <!-- End of group #top -->
     
-    <!-- Start of group #bowTie2 -->
-    <g id="bowTie2"  transform=" translate(0 0)  translate(383 0) " >
+    <!-- Start of group #side -->
+    <g id="side"  transform=" translate(15 5)  translate(0 139.371) " >
+        <path class="fabric" id="14"  d=" M  76.026,0  C  76.026,50.684  115.758,91.455  132.167,103.362  C  156.779,121.223  207.354,122.56  247.845,124.683  L  249.734,139.77  C  257.292,200.12  217.941,202.736  197.667,202.736  C  172.325,202.736  112.325,176.917  52.174,115.224  C  20.329,82.563  -0,25.342  0,0 " />
+        <path class="fabric" id="15"  d=" M  0,0  L  76.026,0 " />
+        <path class="fabric sa" id="16"  d=" M  86.026,0  C  86.026,37.238  109.008,68.15  127.017,85.755  L  127.018,85.755  C  131.395,90.034  135.044,93.095  138.039,95.268  L  138.04,95.269  C  160.141,111.308  207.719,112.566  248.369,114.697  L  257.768,123.441  L  259.657,138.528  L  259.656,138.527  C  261.269,151.405  260.841,162.856  258.94,171.614  L  258.94,171.615  C  257.358,178.901  254.356,185.78  251,190.705  L  251.001,190.704  C  248.243,194.751  244.472,198.606  241.008,201.24  L  241.01,201.239  C  226.997,211.902  208.267,212.736  197.667,212.736  L  197.667,212.736  C  170.264,212.736  106.551,185.319  45.014,122.205  L  45.014,122.205  C  18.251,94.756  -0.972,50.326  -7.403,20.7  L  -7.403,20.701  C  -9.052,13.107  -10,5.707  -10,-0 " />
+        <path class="fabric sa" id="17"  d=" M  76.026,0  L  86.026,0 " />
+        <path class="fabric sa" id="18"  d=" M  0,0  L  -10,-0 " />
+        <path class="grainline" id="19"  d=" M  10,0  L  10,20  L  66.026,20  L  66.026,0 " />
+        <text id="20" class="text-lg text-center grainline" dy="-2" ><textPath xlink:href="#19" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2" >Cut on fold</tspan></textPath></text>
+        <path class="grainline" id="21"  d=" M  92.171,132.227  L  239.734,132.227 " />
+        <text id="22" class="text-lg text-center grainline" dy="-2" ><textPath xlink:href="#21" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2" >Grainline</tspan></textPath></text>
+        <text x="197.667" y="167.482" id="23" class="part-nr small" transform="translate(0, -10)" ><tspan >2</tspan></text>
+        <text x="197.667" y="167.482" id="24" transform="translate(0,-22)" class="pattern-title small" ><tspan >Florent</tspan></text>
+        <text x="197.667" y="167.482" id="25" class="part-title small" ><tspan >Cap Side</tspan></text>
+        <text x="197.667" y="167.482" id="26" class="part-msg small" transform="translate(0, 7.5)" ><tspan >1x  main, 1x lining Cut on fold</tspan></text>
+        <use x="67.597" y="100.187" xlink:href="#logo-sm" id="27" ></use>
+        <use x="187.845" y="10" xlink:href="#scalebox" id="28" ></use>
+        <use x="242.037" y="186.065" xlink:href="#notch" id="29" ></use>
+        <use x="110.772" y="165.176" xlink:href="#notch" id="30" ></use>
     </g>
-    <!-- End of group #bowTie2 -->
+    <!-- End of group #side -->
     
-    <!-- Start of group #bowTie3 -->
-    <g id="bowTie3"  transform=" translate(0 0)  translate(383 0) " >
+    <!-- Start of group #brimBottom -->
+    <g id="brimBottom"  transform=" translate(110.021 87.502)  translate(421.68 169.917) " >
+        <path class="fabric" id="31"  d=" M  -88.312,-78.276  C  -75.589,-50.991  -70.248,-0  0,0  C  70.248,0  75.589,-50.991  88.312,-78.276  C  118.961,36.107  40.142,58.205  -0,58.205  C  -40.142,58.205  -118.961,36.107  -88.312,-78.276  z " />
+        <path class="fabric sa" id="32"  d=" M  -79.249,-82.502  C  -72.71,-68.478  -68.493,-50.716  -58.826,-36.478  L  -58.826,-36.478  C  -56.398,-32.901  -53.983,-29.938  -50.825,-26.891  L  -50.825,-26.891  C  -40.09,-16.533  -25.906,-10  0,-10  L  0,-10  C  13.166,-10  22.875,-11.729  31.477,-14.903  L  31.476,-14.903  C  38.173,-17.374  42.984,-20.226  47.655,-24.065  L  47.655,-24.065  C  65.896,-39.06  70.576,-63.901  79.249,-82.502  L  97.971,-80.864  C  104.324,-57.156  106.234,-36.222  104.71,-19.264  L  104.71,-19.264  C  103.468,-5.438  99.729,7.238  94.679,17.18  L  94.679,17.181  C  90.584,25.243  85.015,32.707  79.272,38.467  L  79.272,38.467  C  56.14,61.664  21.486,68.205  -0,68.205  L  -0,68.205  C  -16.181,68.205  -39.878,64.549  -59.911,53.147  L  -59.911,53.147  C  -64.905,50.304  -70.147,46.675  -74.703,42.726  L  -74.703,42.726  C  -80.369,37.817  -86.034,31.452  -90.444,24.579  L  -90.444,24.579  C  -104.834,2.149  -110.796,-33.003  -97.971,-80.864  L  -79.249,-82.502  z " />
+        <path class="grainline" id="33"  d=" M  0,2.91  L  0,55.295 " />
+        <text id="34" class="text-lg text-center grainline" dy="-2" ><textPath xlink:href="#33" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2" >Grainline</tspan></textPath></text>
+        <text x="-40" y="23.282" id="35" class="part-nr small" transform="translate(0, -10)" ><tspan >3</tspan></text>
+        <text x="-40" y="23.282" id="36" transform="translate(0,-22)" class="pattern-title small" ><tspan >Florent</tspan></text>
+        <text x="-40" y="23.282" id="37" class="part-title small" ><tspan >Cap Brim Bottom</tspan></text>
+        <text x="-40" y="23.282" id="38" class="part-msg small" transform="translate(0, 7.5)" ><tspan >1x </tspan></text>
+        <use x="39.696" y="30.254" xlink:href="#logo-sm" id="39" ></use>
+        <use x="0" y="0" xlink:href="#notch" id="40" ></use>
+        <use x="-0" y="58.205" xlink:href="#notch" id="41" ></use>
     </g>
-    <!-- End of group #bowTie3 -->
+    <!-- End of group #brimBottom -->
     
-    <!-- Start of group #collarBand -->
-    <g id="collarBand"  transform=" translate(11 23)  translate(0 0) " >
-        <path class="fabric" id="13"  d=" M  0,-12  L  361,-12  L  361,12  L  0,12  Z " />
-        <path class="fabric sa" id="14"  d=" M  0,-18  L  361,-18  L  367,-12  L  367,12  L  361,18  L  -0,18  L  -6,12  L  -6,-12  L  0,-18 " />
-        <path class="grainline" id="15"  d=" M  130,0  L  341,0 " />
-        <text id="16" class="text-lg text-center grainline" dy="-2" ><textPath xlink:href="#15" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2" >Grainline</tspan></textPath></text>
-        <text x="50" y="5" id="17" class="part-nr extrasmall" transform="translate(0, -6)" ><tspan >2</tspan></text>
-        <text x="50" y="5" id="18" transform="translate(0,-13.2)" class="pattern-title extrasmall" ><tspan >Benjamin</tspan></text>
-        <text x="50" y="5" id="19" class="part-title extrasmall" ><tspan >Collar band</tspan></text>
-        <text x="50" y="5" id="20" class="part-msg extrasmall" transform="translate(0, 4.5)" ><tspan >2x from main fabric, 2x from interfacing</tspan></text>
+    <!-- Start of group #brimTop -->
+    <g id="brimTop"  transform=" translate(112.962 93.712)  translate(421.68 0) " >
+        <path class="fabric" id="42"  d=" M  -88.312,-78.276  C  -75.589,-50.991  -70.248,-0  0,0  C  70.248,0  75.589,-50.991  88.312,-78.276  L  91.21,-79.052  C  97.407,-55.925  99.206,-36.218  97.738,-19.89  L  97.738,-19.891  C  96.558,-6.753  93.197,4.64  88.438,14.01  L  88.438,14.011  C  84.614,21.54  79.708,28.116  74.315,33.524  L  74.315,33.524  C  52.712,55.188  20.834,61.205  -0,61.205  L  -0,61.205  C  -15.644,61.205  -37.535,57.828  -56.448,47.063  L  -56.448,47.063  C  -61.17,44.375  -65.857,41.13  -70.119,37.436  L  -70.119,37.436  C  -75.444,32.822  -80.436,27.213  -84.552,20.799  L  -84.552,20.799  C  -98.172,-0.431  -103.639,-32.666  -91.21,-79.052  Z " />
+        <path class="fabric sa" id="43"  d=" M  -79.249,-82.502  C  -72.71,-68.478  -68.493,-50.716  -58.826,-36.478  L  -58.826,-36.478  C  -56.398,-32.901  -53.983,-29.938  -50.825,-26.891  L  -50.825,-26.891  C  -40.09,-16.533  -25.906,-10  0,-10  L  0,-10  C  13.166,-10  22.875,-11.729  31.477,-14.903  L  31.476,-14.903  C  38.173,-17.374  42.984,-20.226  47.655,-24.065  L  47.655,-24.065  C  65.896,-39.06  70.576,-63.901  79.249,-82.502  L  85.725,-87.936  L  88.623,-88.712  L  100.869,-81.64  C  107.289,-57.682  109.247,-36.226  107.698,-18.995  L  107.698,-18.996  C  106.43,-4.874  102.528,8.35  97.354,18.538  L  97.354,18.539  C  93.141,26.833  87.295,34.669  81.396,40.585  L  81.396,40.585  C  57.608,64.44  21.767,71.205  -0,71.205  L  -0,71.205  C  -16.411,71.205  -40.881,67.43  -61.395,55.754  L  -61.395,55.754  C  -66.497,52.85  -72,49.04  -76.669,44.993  L  -76.667,44.994  C  -82.482,39.956  -88.429,33.274  -92.968,26.2  L  -92.969,26.199  C  -107.69,3.253  -113.863,-33.146  -100.869,-81.64  L  -88.623,-88.712  L  -85.725,-87.936  L  -79.249,-82.502 " />
+        <path class="grainline" id="44"  d=" M  0,2.91  L  0,55.295 " />
+        <text id="45" class="text-lg text-center grainline" dy="-2" ><textPath xlink:href="#44" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2" >Grainline</tspan></textPath></text>
+        <text x="-40" y="23.282" id="46" class="part-nr small" transform="translate(0, -10)" ><tspan >4</tspan></text>
+        <text x="-40" y="23.282" id="47" transform="translate(0,-22)" class="pattern-title small" ><tspan >Florent</tspan></text>
+        <text x="-40" y="23.282" id="48" class="part-title small" ><tspan >Cap Brim Top</tspan></text>
+        <text x="-40" y="23.282" id="49" class="part-msg small" transform="translate(0, 7.5)" ><tspan >1x </tspan></text>
+        <use x="39.696" y="30.254" xlink:href="#logo-sm" id="50" ></use>
+        <use x="0" y="0" xlink:href="#notch" id="51" ></use>
+        <use x="-0" y="58.205" xlink:href="#notch" id="52" ></use>
     </g>
-    <!-- End of group #collarBand -->
+    <!-- End of group #brimTop -->
+    
+    <!-- Start of group #brimPlastic -->
+    <g id="brimPlastic"  transform=" translate(101.801 80.5)  translate(647.843 0) " >
+        <path class="fabric" id="53"  d=" M  -88.452,-74.906  C  -82.803,-61.799  -78.173,-43.722  -67.24,-28.425  L  -67.24,-28.425  C  -64.502,-24.595  -61.335,-20.903  -57.685,-17.545  L  -57.686,-17.545  C  -45.575,-6.404  -27.57,1.5  -0,1.5  L  -0,1.5  C  13.754,1.5  25.199,-0.463  34.585,-3.796  L  34.585,-3.796  C  42.122,-6.472  48.524,-10.103  53.846,-14.281  L  53.846,-14.281  C  75.203,-31.047  80.916,-57.427  88.451,-74.906 " />
+        <path class="fabric" id="54"  d=" M  90.822,-74.566  C  96.458,-52.289  97.855,-33.438  96.14,-17.739  L  96.14,-17.739  C  94.763,-5.141  91.346,5.644  86.569,14.621  L  86.569,14.621  C  82.74,21.817  77.94,28.026  72.63,33.198  L  72.63,33.198  C  51.355,53.918  20.484,59.705  -0,59.705  L  -0,59.705  C  -15.377,59.705  -36.604,56.453  -55.151,46.116  L  -55.151,46.116  C  -59.788,43.532  -64.32,40.465  -68.517,36.924  L  -68.517,36.924  C  -73.761,32.499  -78.62,27.211  -82.709,21.083  L  -82.709,21.083  C  -96.294,0.723  -102.112,-29.945  -90.822,-74.566 " />
+        <path class="fabric" id="55"  d=" M  -88.452,-74.906  L  -90.822,-74.566  z " />
+        <path class="fabric" id="56"  d=" M  90.822,-74.566  L  88.451,-74.906  z " />
+        <text x="-40" y="23.282" id="57" class="part-nr small" transform="translate(0, -10)" ><tspan >5</tspan></text>
+        <text x="-40" y="23.282" id="58" transform="translate(0,-22)" class="pattern-title small" ><tspan >Florent</tspan></text>
+        <text x="-40" y="23.282" id="59" class="part-title small" ><tspan >Cap Brim Interfacing</tspan></text>
+        <text x="-40" y="23.282" id="60" class="part-msg small" transform="translate(0, 7.5)" ><tspan >1x </tspan></text>
+        <use x="39.696" y="30.254" xlink:href="#logo-sm" id="61" ></use>
+        <use x="-0" y="1.5" xlink:href="#notch" id="62" ></use>
+        <use x="-0" y="59.705" xlink:href="#notch" id="63" ></use>
+    </g>
+    <!-- End of group #brimPlastic -->
 </g>
 <!-- End of group #patternScaleContainer -->
 
 </svg>
 
+
+<!--
+
+    After 6 attempts, side seam is 0.91mm off.
+    After 43 attempts, head circumference is 0mm off.
+    Side seam to first notch is 63.187532581447 
+
+  -->

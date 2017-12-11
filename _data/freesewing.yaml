@@ -1470,12 +1470,44 @@ patterns:
                 - collarEase
             sewing:
                 - adjustmentRibbon
+    FlorentFlatCap:
+        info:
+            name: 'Florent Flat Cap'
+            description: 'Florent is a flat cap, a rounded cap with a small stiff brim in front'
+            handle: florent
+            tags:
+                - menswear
+                - womenswear
+                - hats
+                - accessories
+        parts:
+            top: 'Cap Top'
+            side: 'Cap Side'
+            brimBottom: 'Cap Brim Bottom'
+            brimTop: 'Cap Brim Top'
+            brimPlastic: 'Cap Brim Interfacing'
+        languages:
+            en: English
+        measurements:
+            headCircumference: 600
+        options:
+            headEase:
+                group: fit
+                title: 'Head ease'
+                description: 'The amount of ease to fit the cap on your head'
+                type: measure
+                min: 0
+                max: 25
+                default: 10
+        optiongroups:
+            fit:
+                - headEase
     HueyHoodie:
         hidden:
             - false
         info:
             name: 'Huey Hoodie'
-            description: 'Huey is a zip-up hoodie with optinal front pockets'
+            description: 'Huey is a zip-up hoodie with optional front pockets'
             handle: huey
             tags:
                 - menswear
@@ -1594,6 +1626,7 @@ namespaces:
         - wahid
     Beta:
         - benjamin
+        - florent
         - huey
 mapping:
     handleToPatternTitle:
@@ -1610,6 +1643,7 @@ mapping:
         trayvon: 'Trayvon Tie'
         wahid: 'Wahid Waistcoat'
         benjamin: 'Benjamin Bow Tie'
+        florent: 'Florent Flat Cap'
         huey: 'Huey Hoodie'
     handleToPattern:
         aaron: AaronAshirt
@@ -1625,6 +1659,7 @@ mapping:
         trayvon: TrayvonTie
         wahid: WahidWaistcoat
         benjamin: BenjaminBowTie
+        florent: FlorentFlatCap
         huey: HueyHoodie
     patternToHandle:
         AaronAshirt: aaron
@@ -1640,6 +1675,7 @@ mapping:
         TrayvonTie: trayvon
         WahidWaistcoat: wahid
         BenjaminBowTie: benjamin
+        FlorentFlatCap: florent
         HueyHoodie: huey
     handleToNamespace:
         aaron: Core
@@ -1655,6 +1691,7 @@ mapping:
         trayvon: Core
         wahid: Core
         benjamin: Beta
+        florent: Beta
         huey: Beta
     measurementToTitle:
         acrossBack: 'Across back'
