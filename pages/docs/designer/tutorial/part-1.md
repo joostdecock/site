@@ -18,6 +18,9 @@ Before you start this tutorial, made sure to read the
 [about freesewing](/about) and 
 [freesewing fundamentals](/docs/fundamentals) pages.
 
+You'll also need the software. Please read 
+[our dedicated install page for this tutorial](./install).
+
 ### You'll be writing code
 
 Freesewing is a software project, and the pattern we are going to design will be a small _module_ that plugs into it.
