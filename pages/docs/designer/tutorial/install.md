@@ -139,7 +139,7 @@ php -S localhost:8666
 ```
 
 Now, open your browser and navigate to 
-[http://localhost:8666/?index.php?service=info&format=html](http://localhost:8666/?index.php?service=info&format=html)
+[http://localhost:8666/index.php?service=info&format=html](http://localhost:8666/index.php?service=info&format=html)
 
 
 If all went well, it should [look like this](https://core.freesewing.org/?service=info&format=html).
