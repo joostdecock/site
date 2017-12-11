@@ -17,6 +17,13 @@ For instructions, see [the composer installation page](https://getcomposer.org/d
 
 ## Installing core
 
+> <h5 class='notoc'>Contributors should install from GitHub</h5>
+>
+> Installing core from packagist won't allow you to submit your
+> changes back to the repository. If you're looking to contribute
+> to freesewing, you should install from GitHub as shown below.
+{: .warning }
+
 ### Install from Packagist
 
 Core is available on [packagist](https://packagist.org/)
@@ -31,13 +38,6 @@ composer dump-autoload -o
 
 The first command installs freesewing/core from packagist, with all dependencies.
 The second command updated the autoloader.
-
-> <h5 class='notoc'>Contributors should install from GitHub</h5>
->
-> Installing core from packagist won't allow you to submit your
-> changes back to the repository. If you're looking to contribute
-> to freesewing, you should install from GitHub as shown below.
-{: .warning }
 
 ### Install from GitHub
 
