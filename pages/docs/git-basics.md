@@ -240,7 +240,7 @@ Switched to branch 'GitMusings'
 ```
 
 > ##### Creating and checking out a branch in a single step
-> You can save some time and use `git checkout -b GetMusings` which
+> You can save some time and use `git checkout -b GitMusings` which
 > combines the branch and checkout commands into one. 
 > It creates the branch and then checks it out all in one go.
 {:.tip}
