@@ -99,7 +99,7 @@ mkdir freesewing
 cd freesewing
 ```
 
-## Intall core
+## Install core
 
 Open a command prompt, and navigate to the `freesewing` directory with the `cd` command.
 
