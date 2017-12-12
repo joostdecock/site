@@ -17,7 +17,7 @@ permalink: /docs/site/howto/add-showcase
 >     - category
 >   - Create your showcase file at `/_showcases/[date]-[slug].md`
 >   - Add the front matter to the file. See below for an example, or check another showcase.
->   - Create the image directory at `/img/blog/[slug]`
+>   - Create the image directory at `/img/showcase/[slug]`
 >   - Add the images to it according to the [lazyloading requirements](./add-image-lazyload)
 >   - Write your showcase content in markdown
 >   - Add a showcases by maker overview (if needed)
