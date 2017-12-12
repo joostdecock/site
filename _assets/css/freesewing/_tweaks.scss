@@ -222,6 +222,16 @@ div.perk {
     background: $black;
     background: linear-gradient(45deg, black 0%, #242424 50%, black 85%, #242424 100%);
     color: $whitish;
+    
+    a {
+        color: $lighter-purple;
+        box-shadow: 0px -2px 0px rgba(228, 199, 255, 0.5) inset;
+    }
+    a:hover {
+        box-shadow: 0px -3px 0px rgba(228, 199, 255, 0.8) inset;
+        border-bottom: 1px solid rgba(228, 199, 255, 0.8);
+        color: $lighter-purple;
+    }
 }
 img.medal-corner { 
     max-width: 75px;
