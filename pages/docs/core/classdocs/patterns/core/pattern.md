@@ -53,7 +53,6 @@ These are the methods a pattern designer should be familiar with:
 - [`Pattern::getValue`](pattern#getvalue) : Returns a given value
 - [`Pattern::v`](pattern#v) : Alias for [`Pattern::getValue`](pattern#getvalue)
 - [`Pattern::t`](pattern#t) : Translate a string
-- [`Pattern::unit`](pattern#unit) : Format a measure according to units
 - [`Pattern::stretchToScale`](pattern#stretchToScale) : Take a stretch percentage and returns a scale percentage
 - [`Pattern::clonePoints`](pattern#clonepoints) : Clone points from one part into another
 - [`Pattern::newPart`](pattern#newpart) : Add a new part to the pattern
@@ -365,70 +364,6 @@ Called from a pattern when adding text.
 {:.no_toc}
 
 Returns a translated `string`.
-
-### unit
-
-```php?start_inline=1
-string unit(
-    float $value
-)
-```
-
-Formats a value (in mm as that's what we use internally) as text in the chosen units.
-
-#### Example
-{:.no_toc}
-
-{% include classTabs.html
-    id="unit" 
-%}
-
-<div class="tab-content">
-<div role="tabpanel" class="tab-pane active" id="unit-result">
-
-{% include coreClassdocsFigure.html
-    description="An example of the unit method"
-    params="?service=draft&pattern=ClassDocs&theme=Basic&onlyPoints=1&class=Part&method=unit"
-%}
-
-</div>
-<div role="tabpanel" class="tab-pane" id="unit-code" markdown="1">
-
-```php?start_inline=1
-/** @var \Freesewing\Part $p */
-$p->newPoint(1, 40, 10);
-$p->newPoint(2, 40, 20);
-
-// If not set explicitly, units are metric by default
-$p->newNote(1, 1, $p->unit(100),9,15,0);
-
-$p->setUnits('imperial');
-$p->newNote(2, 2, $p->unit(100),9,15,0);
-```
-
-</div>
-</div>
-
-> ##### This method exists in both the [`Part`](../../src/part) and [`Pattern`](pattern) classes
-> For historical reasons, both [`Pattern`](pattern) and [`Part`](../../src/part) have the exact same unit method.
->
-> This example is from [`Part::unit`](../../src/part#unit). 
-{:.comment}
-
-#### Typical use
-{:.no_toc}
-
-Used in patterns to preformat text to go on the pattern.
-
-#### Parameters
-{:.no_toc}
-
-- `float` `$value` : The value to convert, in mm.
-
-#### Return value
-{:.no_toc}
-
-Returns a `string`.
 
 ### stretchToScale
 
