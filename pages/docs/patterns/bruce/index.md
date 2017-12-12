@@ -12,10 +12,6 @@ Text a bit dry for you? I try to make videos available as part of the pattern do
 
 {% include embed.html src="//www.youtube.com/embed/videoseries?list=PL1gv5yv3DoZME1xe5fBEHd0rKPW_xNpF3" %}
 
-> I accidentally deleted the first episode, and I don't have a backup :(
-> However, episode 2 is where I actually make the boxers
-{:.warning}
-
 ## Before you start
 {% include figure.html
     url='/img/patterns/bruce/bruce.svg'
