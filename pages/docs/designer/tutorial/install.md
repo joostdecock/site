@@ -106,9 +106,12 @@ Open a command prompt, and navigate to the `freesewing` directory with the `cd` 
 Once in the `freesewing` directory, run these commands:
 
 ```sh
-composer create-project freesewing/core freesewing
+composer create-project freesewing/core
+cd core
 composer dump-autoload -o
 ```
+
+This will setup core in a directory named `core`, and cd into it and update the classloader.
 
 If all went well (and you are on Linux or Mac), you can now run this command:
 
