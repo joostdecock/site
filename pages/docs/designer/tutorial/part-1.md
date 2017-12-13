@@ -331,13 +331,25 @@ This will tell the autoloader about the new `Freesewing\Patterns\Acme\BabyBib` c
 From this moment onward, your pattern will show up in the demo, and you should see it by navigating to:
 
 ```
-index.php?service=draft&pattern=BabyBib&theme=Designer
+ http://localhost:8666/index.php?service=draft&pattern=BabyBib&theme=Designer
 ```
+
+> ##### Your server name and port number may differ
+>
+> This assumes you are running a webserver at `localhost` on port `8666`.
+>
+> If you followed [the install instructions for this tutorial](./install)
+> that should be the case for you.
+>
+> However, if you have setup your webserver in a different way, you'll need to
+> update the host and port number accordingly.
+{:.warning}
 
 > <h5 class='notoc'>Use the Designer theme when designing</h5>
 >
 > That `theme=Designer` bit in the URL means we'll be using the [`Designer`](../../core/classdocs/themes/core/designer) theme.
 > It includes a lot of extra info in the output that will facilitate your design work.
+{:.tip}
 
 You will get an empty page, as our patttern doesn't do anything yet. But if you look at the source 
 of the page, the start of it should look like this:
