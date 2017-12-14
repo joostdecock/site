@@ -198,7 +198,8 @@ function closeModal() {
 }
 
 // Things to do after login
-function postLogin(user) { 
+function postLogin(data) { 
+    user = data;
     window.localStorage.setItem("fsu", JSON.stringify({ 'id': user.id, 'email': user.email, 'user': user.username, 'patron': user.patron.tier }));
     logged_in = true;
     if(user.patron.tier > 1) $('body').addClass('patron');
