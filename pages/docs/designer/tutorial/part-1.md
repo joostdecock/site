@@ -351,7 +351,7 @@ From this moment onward, your pattern will show up in the demo, and you should s
 > It includes a lot of extra info in the output that will facilitate your design work.
 {:.tip}
 
-You will get an empty page, as our patttern doesn't do anything yet. But if you look at the source 
+You will get an empty page, as our pattern doesn't do anything yet. But if you look at the source 
 of the page, the start of it should look like this:
 
 ```html
