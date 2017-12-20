@@ -41,7 +41,12 @@ nocomments: true
             </div>
         </div>
 </section>
-
+<section class="cover-band bg-thematic mb-5">
+   <div class="cover-body mt-5 mb-5">
+            <h1 class="jumbotron-heading mt-5 mb-5">Happy holidays</h1>
+            <p class="lead mt-3">Don't forget: your sewing machine deserves some quality time too.</p>
+  </div>
+</section>
 <div class="container mt-5">
     <h4>Blog posts</h4>
     <div class="row">
