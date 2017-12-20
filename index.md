@@ -41,12 +41,17 @@ nocomments: true
             </div>
         </div>
 </section>
-
+<section class="cover-band bg-thematic mb-5">
+   <div class="cover-body mt-5 mb-5">
+            <h1 class="jumbotron-heading mt-5 mb-5">Happy holidays</h1>
+            <p class="lead mt-3">Don't forget: your sewing machine deserves some quality time too.</p>
+  </div>
+</section>
 <div class="container mt-5">
-    <h4>Lastest blog posts</h4>
+    <h4>Blog posts</h4>
     <div class="row">
+        {% for post in site.posts limit:2 %}
         <div class="col-md-6 mb-3 mt-1">
-            {% for post in site.posts limit:1 %}
                 <div class="card hover-shadow">
                     <a href="{{ post.url }}" title="{{ post.linktitle }}">
                         <img 
@@ -66,9 +71,11 @@ nocomments: true
                         <p class="card-text">{{ post.blurb }} </p>
                     </div>
                 </div>
-            {% endfor %} 
         </div>
-            {% for post in site.posts offset:1 limit:2 %}
+        {% endfor %} 
+    </div>
+    <div class="row">
+        {% for post in site.posts offset:2 limit:4 %}
         <div class="col-md-3 mb-3 mt-1">
                 <div class="card hover-shadow">
                     <a href="{{ post.url }}" title="{{ post.linktitle }}">
@@ -90,61 +97,10 @@ nocomments: true
                     </div>
                 </div>
         </div>
-
-            {% endfor %}
+        {% endfor %}
     </div> <!-- .row -->
     <p><i class="fa fa-arrow-right" aria-hidden="true"></i> <a href="/blog" class="mt-3">More blog posts</a></p>
-    <div class="row">
-        <div class="col-md-4">
-            <h4>Latest pattern</h4>
-            <div class="card hover-shadow">
-                <a href="/patterns/florent" title="The Florent Flat Cap pattern">
-                    <img 
-                        src="img/patterns/florent/cover.jpg"
-                        alt="The Florent pattern" 
-                        class="rounded-top"
-                    >
-                </a>
-                <div class="card-block">
-                    <h4 class="card-title"><a href="/patterns/florent" title="Florent">Florent<span class="block-link"></span></a></h4>
-                    <p class="card-text">One of the most iconic pieces of headgear, the humble flat cap.</p>
-                </div>
-            </div>
-            <p class="mt-3"><i class="fa fa-arrow-right" aria-hidden="true"></i> <a href="/patterns/" class="mt-3">More patterns</a></p>
-        </div>
-        <div class="col-md-4">
-            <h4>Latest showcase</h4>
-            {% assign sorted = site.showcases | sort:"date" | reverse %}
-            {% for post in sorted limit:1 %}
-                <div class="card hover-shadow w-100">
-                    <a href="{{ post.url }}" title="{{ post.title | escape}}">
-                        <img 
-                            src="/img{{ post.url }}lqip_{{ post.img }}" 
-                            data-sizes="auto"
-                            data-srcset="
-                                /img{{ post.url }}lqip_{{ post.img }} 25w,
-                                /img{{ post.url }}low_{{ post.img }} 500w,
-                                /img{{ post.url }}med_{{ post.img }} 1000w,
-                                /img{{ post.url }}high_{{ post.img }} 2000w"
-                            alt="{{ post.caption }}" 
-                            class="card-img-top lazyload"
-                        >
-                    </a>
-                    <div class="card-block">
-                        <h4 class="card-title"><a href="{{ post.url }}" title="{{ post.title | escape}}">{{ post.categories }} by {{ post.author }}<span class="block-link"></span></a></h4>
-                        <p class="card-text">{{ post.title | escape}}</p>
-                    </div>
-                </div>
-            {% endfor %}
-            <p class="mt-3"><i class="fa fa-arrow-right" aria-hidden="true"></i> <a href="/showcase/" class="mt-3">More showcases</a></p>
-        </div>
-        <div class="col-md-4">
-            <h4>Latest comments</h4>
-            <div id="recent-comments"></div>
-        </div>
-    </div>
 </div> <!-- .container -->
-
 <section class="cover-band bg-thematic mb-5 visitor-only" style="background: #663f95;">
     <div class="cover-body mt-5 mb-5" style="background: transparent">
         <div id="landing">
@@ -169,6 +125,34 @@ nocomments: true
   </div>
 </section>
 <div class="container mb-5">
+    <h4>Showcases</h4>
+    <div class="row">
+            {% assign sorted = site.showcases | sort:"date" | reverse %}
+            {% for post in sorted limit:4 %}
+            <div class="col-md-3 mb-3">
+                <div class="card hover-shadow w-100">
+                    <a href="{{ post.url }}" title="{{ post.title | escape}}">
+                        <img 
+                            src="/img{{ post.url }}lqip_{{ post.img }}" 
+                            data-sizes="auto"
+                            data-srcset="
+                                /img{{ post.url }}lqip_{{ post.img }} 25w,
+                                /img{{ post.url }}low_{{ post.img }} 500w,
+                                /img{{ post.url }}med_{{ post.img }} 1000w,
+                                /img{{ post.url }}high_{{ post.img }} 2000w"
+                            alt="{{ post.caption }}" 
+                            class="card-img-top lazyload"
+                        >
+                    </a>
+                    <div class="card-block">
+                        <h4 class="card-title"><a href="{{ post.url }}" title="{{ post.title | escape}}">{{ post.categories }} by {{ post.author }}<span class="block-link"></span></a></h4>
+                        <p class="card-text">{{ post.title | escape}}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+    </div>
+    <p class="mt-3"><i class="fa fa-arrow-right" aria-hidden="true"></i> <a href="/showcase/" class="mt-3">More showcases</a></p>
     <div class="row">
         <div class="col-md-6">
             {% include blockquote.html
@@ -179,8 +163,6 @@ nocomments: true
                 content="<h3>Become a Patron</h3><h4>We invite you to join our community of Patrons to support us in our core work; Developing an open source platform for made-to-measure sewing patterns.</h4>
                     <p class='text-right'><a href='/patrons/join' class='btn btn-lg btn-outline-white mt-3'>Find out more</a></p>"
             %}
-        </div>
-        <div class="col-md-6">
             {% include blockquote.html
                 bg=' linear-gradient(45deg, rgba(255,91,119,1) 0%, rgba(251,66,102,1) 50%, rgba(243,52,87,1) 71%, rgba(255,77,109,1) 100%);'
                 icon='check'
@@ -189,6 +171,10 @@ nocomments: true
                 content="<h3>Join the Patrons now</h3><h4>We are building a bedrock of loyal supporters to ensure a sustainable future for freesewing.org, our code, our patterns, and our community.</h4>
                     <p class='text-right'><a href='/patrons/join' class='btn btn-lg btn-outline-white mt-3'>Become a Patron</a></p>"
             %}
+        </div>
+        <div class="col-md-6">
+            <h4>Latest comments</h4>
+            <div id="recent-comments"></div>
         </div>
     </div>
 </div> <!-- .container -->

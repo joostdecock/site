@@ -1729,9 +1729,9 @@
                     "default": 65,
                     "dependsOn": "bowStyle",
                     "onlyOn": [
-                        1,
-                        2,
-                        4
+                        "diamond",
+                        "buterfly",
+                        "widesquare"
                     ]
                 },
                 "knotWidth": {
@@ -1811,6 +1811,294 @@
                 ],
                 "sewing": [
                     "adjustmentRibbon"
+                ]
+            }
+        },
+        "BentBodyBlock": {
+            "info": {
+                "name": "Bent Body Block",
+                "description": "This two-part sleeve block is the basis of our coat and jacket patterns",
+                "handle": "bent",
+                "version": 0.3,
+                "author": "Joost De Cock",
+                "company": "freesewing.org",
+                "link": "freesewing.org/pattern/bent",
+                "tags": [
+                    "menswear",
+                    "top",
+                    "block"
+                ]
+            },
+            "parts": {
+                "backBlock": "Back block",
+                "frontBlock": "Front block",
+                "sleeveBlock": "Sleeve block",
+                "topsleeveBlock": "Topsleeve block",
+                "undersleeveBlock": "Undersleeve block"
+            },
+            "languages": {
+                "en": "English",
+                "nl": "Nederlands",
+                "fr": "French"
+            },
+            "measurements": {
+                "acrossBack": 450,
+                "bicepsCircumference": 335,
+                "centerBackNeckToWaist": 480,
+                "chestCircumference": 1080,
+                "naturalWaistToHip": 120,
+                "neckCircumference": 420,
+                "shoulderToShoulder": 470,
+                "shoulderSlope": 55,
+                "hipsCircumference": 950,
+                "shoulderToWrist": 700,
+                "wristCircumference": 190,
+                "shoulderToElbow": 410
+            },
+            "options": {
+                "bicepsEase": {
+                    "title": "Biceps ease",
+                    "description": "The amount of ease at your upper arm",
+                    "group": "fit",
+                    "type": "measure",
+                    "min": 0,
+                    "max": 80,
+                    "default": 30
+                },
+                "chestEase": {
+                    "title": "Chest ease",
+                    "description": "The amount of ease at your chest",
+                    "group": "fit",
+                    "type": "measure",
+                    "min": 40,
+                    "max": 160,
+                    "default": 80
+                },
+                "cuffEase": {
+                    "title": "Cuff ease",
+                    "description": "The amount of ease at your wrist",
+                    "group": "fit",
+                    "type": "measure",
+                    "min": 0,
+                    "max": 100,
+                    "default": 50
+                },
+                "lengthBonus": {
+                    "title": "Length bonus",
+                    "description": "Amount to lengthen the body. A negative value will shorten it.",
+                    "group": "fit",
+                    "type": "measure",
+                    "min": -40,
+                    "max": 120,
+                    "default": 0
+                },
+                "sleeveBend": {
+                    "title": "Sleeve bend",
+                    "description": "How much do you want the sleeve to be bent at the elbow",
+                    "group": "fit",
+                    "type": "angle",
+                    "min": 0,
+                    "max": 20,
+                    "default": 10
+                },
+                "sleeveLengthBonus": {
+                    "title": "Sleeve length bonus",
+                    "description": "Amount to lengthen the sleeve. A negative value will shorten it.",
+                    "group": "fit",
+                    "type": "measure",
+                    "min": -40,
+                    "max": 80,
+                    "default": 0
+                },
+                "armholeDepthFactor": {
+                    "title": "Armhole depth factor",
+                    "description": "A factor that influences the depth of the armhole",
+                    "group": "advanced",
+                    "type": "percent",
+                    "min": 50,
+                    "max": 65,
+                    "default": 60
+                },
+                "sleevecapEase": {
+                    "title": "Sleevecap ease",
+                    "description": "The ease on the sleevecap",
+                    "group": "advanced",
+                    "type": "measure",
+                    "min": 0,
+                    "max": 35,
+                    "default": 20
+                },
+                "sleevecapHeightFactor": {
+                    "title": "Sleevecap height factor",
+                    "description": "A factor that influences the height of the sleevecap",
+                    "group": "advanced",
+                    "type": "percent",
+                    "min": 45,
+                    "max": 60,
+                    "default": 50
+                }
+            },
+            "optiongroups": {
+                "fit": [
+                    "bicepsEase",
+                    "chestEase",
+                    "cuffEase",
+                    "lengthBonus",
+                    "sleeveBend",
+                    "sleeveLengthBonus"
+                ],
+                "advanced": [
+                    "armholeDepthFactor",
+                    "sleevecapEase",
+                    "sleevecapHeightFactor"
+                ]
+            }
+        },
+        "CarltonCoat": {
+            "info": {
+                "name": "Carlton Coat",
+                "description": "For Sherlock Holmes cosplay, or just a really nice coat",
+                "handle": "carlton",
+                "version": 1,
+                "date": 20170203,
+                "author": "Joost De Cock",
+                "email": "joost@decock.org",
+                "company": "freesewing.org",
+                "tags": [
+                    "menswear",
+                    "coat"
+                ]
+            },
+            "parts": {
+                "front": "Front",
+                "back": "Back",
+                "tail": "Tail",
+                "topsleeve": "Topsleeve",
+                "undersleeve": "Undersleeve",
+                "belt": "Belt",
+                "collarStand": "Collar stand",
+                "collar": "Collar",
+                "cuffFacing": "Cuff facing",
+                "pocket": "Pocket",
+                "pocketFlap": "Pocket flap",
+                "chestPocketWelt": "Chest pocket welt"
+            },
+            "languages": {
+                "en": "English"
+            },
+            "measurements": {
+                "acrossBack": 420,
+                "bicepsCircumference": 350,
+                "centerBackNeckToWaist": 560,
+                "chestCircumference": 1060,
+                "naturalWaist": 930,
+                "naturalWaistToFloor": 1310,
+                "naturalWaistToHip": 150,
+                "naturalWaistToSeat": 280,
+                "neckCircumference": 390,
+                "seatCircumference": 1130,
+                "shoulderToElbow": 380,
+                "shoulderToShoulder": 470,
+                "shoulderSlope": 55,
+                "shoulderToWrist": 650,
+                "wristCircumference": 180
+            },
+            "options": {
+                "chestEase": {
+                    "title": "Chest ease",
+                    "description": "The amount of ease at your chest.",
+                    "group": "fit",
+                    "type": "measure",
+                    "min": 180,
+                    "max": 320,
+                    "default": 240
+                },
+                "waistEase": {
+                    "title": "Waist ease",
+                    "description": "The amount of ease at your waist.",
+                    "group": "fit",
+                    "type": "measure",
+                    "min": 80,
+                    "max": 220,
+                    "default": 100
+                },
+                "seatEase": {
+                    "title": "Seat ease",
+                    "description": "The amount of ease at your butt.",
+                    "group": "fit",
+                    "type": "measure",
+                    "min": 180,
+                    "max": 320,
+                    "default": 240
+                },
+                "cuffEase": {
+                    "title": "Cuff ease",
+                    "description": "The amount of ease at your wrist.",
+                    "group": "fit",
+                    "type": "measure",
+                    "min": 100,
+                    "max": 180,
+                    "default": 140
+                },
+                "sleeveBend": {
+                    "title": "Sleeve bend",
+                    "description": "How much do you want the sleeve to be bent at the elbow",
+                    "group": "fit",
+                    "type": "angle",
+                    "min": 0,
+                    "max": 20,
+                    "default": 10
+                },
+                "sleeveLengthBonus": {
+                    "title": "Sleeve length bonus",
+                    "description": "Amount to lengthen the sleeve. A negative value will shorten it.",
+                    "group": "fit",
+                    "type": "measure",
+                    "min": 0,
+                    "max": 120,
+                    "default": 70
+                },
+                "armholeDepthFactor": {
+                    "title": "Armhole depth factor",
+                    "description": "Controls the depth of the armhole. Higher values make a deeper armhole.",
+                    "group": "advanced",
+                    "type": "percent",
+                    "min": 65,
+                    "max": 75,
+                    "default": 67
+                },
+                "sleevecapEase": {
+                    "title": "Sleevecap ease",
+                    "description": "The amount by which your sleevhead is longer than the armhole.",
+                    "group": "advanced",
+                    "type": "measure",
+                    "min": 0,
+                    "max": 35,
+                    "default": 17.5
+                },
+                "sleevecapHeightFactor": {
+                    "title": "Sleevecap height factor",
+                    "description": "Controls the height of the sleevecap. Higher values make a higher narrower sleevecap.",
+                    "group": "advanced",
+                    "type": "percent",
+                    "min": 45,
+                    "max": 55,
+                    "default": 50
+                }
+            },
+            "optiongroups": {
+                "fit": [
+                    "chestEase",
+                    "waistEase",
+                    "seatEase",
+                    "cuffEase",
+                    "sleeveBend",
+                    "sleeveLengthBonus"
+                ],
+                "advanced": [
+                    "armholeDepthFactor",
+                    "sleevecapEase",
+                    "sleevecapHeightFactor"
                 ]
             }
         },
@@ -2005,6 +2293,8 @@
         ],
         "Beta": [
             "benjamin",
+            "bent",
+            "carlton",
             "florent",
             "huey"
         ]
@@ -2024,6 +2314,8 @@
             "trayvon": "Trayvon Tie",
             "wahid": "Wahid Waistcoat",
             "benjamin": "Benjamin Bow Tie",
+            "bent": "Bent Body Block",
+            "carlton": "Carlton Coat",
             "florent": "Florent Flat Cap",
             "huey": "Huey Hoodie"
         },
@@ -2041,6 +2333,8 @@
             "trayvon": "TrayvonTie",
             "wahid": "WahidWaistcoat",
             "benjamin": "BenjaminBowTie",
+            "bent": "BentBodyBlock",
+            "carlton": "CarltonCoat",
             "florent": "FlorentFlatCap",
             "huey": "HueyHoodie"
         },
@@ -2058,6 +2352,8 @@
             "TrayvonTie": "trayvon",
             "WahidWaistcoat": "wahid",
             "BenjaminBowTie": "benjamin",
+            "BentBodyBlock": "bent",
+            "CarltonCoat": "carlton",
             "FlorentFlatCap": "florent",
             "HueyHoodie": "huey"
         },
@@ -2075,6 +2371,8 @@
             "trayvon": "Core",
             "wahid": "Core",
             "benjamin": "Beta",
+            "bent": "Beta",
+            "carlton": "Beta",
             "florent": "Beta",
             "huey": "Beta"
         },
@@ -2114,7 +2412,9 @@
         "hipsToUpperLeg": "all",
         "inseam": "all",
         "naturalWaist": "all",
+        "naturalWaistToFloor": "all",
         "naturalWaistToHip": "all",
+        "naturalWaistToSeat": "all",
         "naturalWaistToUnderbust": "all",
         "neckCircumference": "all",
         "seatCircumference": "all",
