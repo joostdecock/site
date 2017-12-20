@@ -9,7 +9,7 @@ category: core
 blurb: "We're releasing a pattern to recreate the coat worn by Benedict Cumberbatch in Sherlock Holmes, as well as the block it's based on."
 ---
 Good news everybody, we've got your cosplaying needs covered. That is, if you are cosplaying as Sherlock Holmes.
-Our newest pattern release is exactly what the doctor prescribed if for some weird reason
+Our newest pattern release, [the Carlton Coat](/patterns/carlton) is exactly what the doctor prescribed if for some weird reason
 your doctor wants you to look like everyone's favorite detective.
 
 My memory is foggy on the exact origin of this endeavor. It probably involved
