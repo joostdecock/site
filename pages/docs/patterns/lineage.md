@@ -21,19 +21,23 @@ shirt style. But you can't (or shouldn't) turn it into trousers.
 ## Pattern family tree
 
 - {: .folder .open } [`Pattern`](/docs/core/classdocs/patterns/core/pattern)
+  - BenjaminBowTie
   - BrianBodyBlock
     - AaronAshirt
+    - BentBodyBlock
+      - CarltonCoat
     - HueyHoodie
     - HugoHoodie
     - SimonShirt
     - SvenSweatshirt
     - WahidWaistcoat
-  - TheodoreTrousers
-    - TheoTrousers
   - BruceBoxerBriefs
-  - TrayvonTie
+  - FlorentFlatcap
   - CathrinCorset
   - TamikoTop
+  - TheodoreTrousers
+    - TheoTrousers
+  - TrayvonTie
 {: .files }
 
 
