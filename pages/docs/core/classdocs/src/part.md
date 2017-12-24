@@ -3443,7 +3443,7 @@ attributes set to display a cutonfold line.
 $p->newPoint(1, 0, 0);
 $p->newPoint(2, 40, 80);
 
-$p->newGrainline(1,2,$this->t('Grainline'));
+$p->newCutonfold(1,2,$this->t('Cut on fold',-20));
 ```
 
 </div>
