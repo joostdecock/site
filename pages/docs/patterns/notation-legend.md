@@ -87,7 +87,7 @@ At the start and and of the cut-on-fold line, it will point to the actual fold l
 ### Notches
 
 {% include coreNotationFigure.html
-    description="Notches are represented by an organge encircled point"
+    description="Notches are represented by an orange encircled point"
     params="theme=Basic&item=notches"
 %}
 
