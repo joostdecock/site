@@ -140,6 +140,14 @@ If the difference is too big however, just leave it. It will get get cut off whe
 > This is probably the hardest seam in the pattern. Take it slow, and you'll be fine.
 {:.comment}
 
+> ##### Or enclose these seams by sandwiching them between the fronts
+>
+> While it's a bit more work, you can enclose this seam if you baste the insets to a single one of the front pieces first, 
+> and then sew your front pieces together with the insets sandwiched inside. 
+> 
+> Sew the front darts separately and turn the whole thing inside out, and you have a nice seamless package area in front. 
+{:.tip}
+
 ### Step 4: Join second inset and fronts
 {% include figure.html
     url='/img/patterns/bruce/step03-d.png'
