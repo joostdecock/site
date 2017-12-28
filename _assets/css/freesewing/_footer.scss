@@ -1,6 +1,8 @@
 footer {
     margin: 6rem 0 0 0;
     color: $white;
+    font-size: 0.8rem;
+    font-weight: 200;
 }
 .footer {
   position: relative;
@@ -34,15 +36,12 @@ footer {
 #copyright {
     margin: 0.25rem 1rem;
     text-align: center;
-    font-size: 0.9rem;
 }
 .footer a {
     color: $lighter-purple;
-    box-shadow: 0px -2px 0px rgba(255, 255, 255, 0.3) inset;
 }
 .footer a:hover { 
     color: $white;
-    box-shadow: 0px -3px 0px rgba(255, 255, 255, 0.3) inset 
 }
 
 .footer ul {
