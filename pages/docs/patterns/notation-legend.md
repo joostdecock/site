@@ -86,12 +86,12 @@ At the start and and of the cut-on-fold line, it will point to the actual fold l
 
 ### Notches
 
-{% include coreNotationFigure.html
-    description="Notches are represented by an orange encircled point"
-    params="theme=Basic&item=notches"
+{% include coreNotationFigure.html 
+    description='Notches are shown as an orange encircled point' 
+    params='theme=Basic&item=notches' 
 %}
 
-Notches are indicated by and organge encircled point. A mini bulls-eye if you want.
+Notches are indicated by an orange encircled point. A mini bulls-eye if you want.
 
 ### Buttons
 
