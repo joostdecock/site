@@ -43,8 +43,8 @@ nocomments: true
 </section>
 <section class="cover-band bg-thematic mb-5">
    <div class="cover-body mt-5 mb-5">
-            <h1 class="jumbotron-heading mt-5 mb-5">Happy holidays</h1>
-            <p class="lead mt-3">Don't forget: your sewing machine deserves some quality time too.</p>
+            <h1 class="jumbotron-heading mt-5 mb-5">Best wishes for 2018</h1>
+            <p class="lead mt-3">Have a wonderful year, and make it count!</p>
   </div>
 </section>
 <div class="container mt-5">
