@@ -5,7 +5,7 @@ linktitle: "Announcing freesewing"
 img: freesewing-logo.jpg
 caption: "The freesewing logo"
 author: 'Joost De Cock'
-category: core
+category: docs
 blurb: "I am are proud to announce freesewing core v1.0.0 and the accompanying documentation that describes the freesewing project in detail."
 ---
 I am are proud to announce [freesewing core v1.0.0](https://github.com/freesewing/core) 

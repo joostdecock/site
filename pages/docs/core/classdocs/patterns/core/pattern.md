@@ -80,6 +80,8 @@ These are the methods a pattern designer should be familiar with:
 - [`Pattern::setTranslator`](pattern#settranslator) : Sets the pattern translator
 - [`Pattern::setUnits`](pattern#setunits) : Sets the pattern units
 - [`Pattern::setPaperless`](pattern#setpaperless) : Sets whether or not it's a paperless pattern
+- [`Pattern::getVersion`](pattern#getversion) : Returns the version freesewing core (and thus the version of the pattern)
+- [`Pattern::setVersion`](pattern#setversion) : Sets the version freesewing core (and thus the version of the pattern)
 - [`Pattern::addOptions`](pattern#addoptions) : Adds options to the pattern
 - [`Pattern::loadParts`](pattern#loadparts) : Adds parts listed in the pattern config to the pattern
 - [`Pattern::cleanUp`](pattern#cleanup) : Is called before wrapping up, does nothing by default
@@ -857,6 +859,45 @@ Called from a service classes to set the units.
     'out' => 'imperial'
 ] 
 ```
+
+### getVersion
+
+```php?start_inline=1
+string getVersion()
+```
+
+Returns the `version` property of the pattern.    
+Note that this is the version of freesewing core.
+
+#### Typical use
+{:.no_toc}
+
+Called from theme and pattern to add version info to the draft.
+
+#### Return value
+{:.no_toc}
+
+A `string` that contains the [semantic version number](https://semver.org/).
+
+### setVersion
+
+```php?start_inline=1
+array setVersion(
+    string $version
+)
+```
+
+Sets the `version` property to `$version`.
+         
+#### Typical use
+{:.no_toc}
+
+Called from the service classes to set the core version in the pattern.
+
+#### Parameters
+{:.no_toc}
+
+- `string` `$version` : The version of freesewing core. Freesewing uses [semantic versioning](https://semver.org/).
 
 ### setPaperless
 
