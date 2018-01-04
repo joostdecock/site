@@ -9,13 +9,23 @@ nocomments: true
 ---
 <div class="container" id="draft-container" >
     <div class="row owner-only mb-5" id="draft-header">
+        <div class="col-lg-8 offset-lg-2 hidden" id="version-warning">
+            {% include blockquote.html
+                bg='linear-gradient(45deg, rgba(102,63,149,1) 0%, rgba(132,90,184,1) 36%, rgba(112,61,179,1) 65%, rgba(102,63,149,1) 100%);'
+                icon='level-up'
+                tcolor='#fff'
+                icolor='#fff'
+                content="<h3>Your draft has pending updates</h3><h4>You can use this draft as-is, or upgrade it to the latest version by redrafting it.</h4>
+                    <p class='text-right'><a href='#' class='btn btn-lg btn-outline-white mt-3 redraft-btn'>Upgrade draft</a></p>"
+            %}
+        </div>
         <div class="col-xl-10 offset-xl-1 col-lg-12" id="draft-actions">
                     <div class="row mb-3">
                         <div class="col-lg-3 col-md-3 col-6">
                             <a href="#draft-container" id="fork-btn"     class="drop-shadow btn btn-block btn-info mt-3 modal light"><i class="fa fa-code-fork" aria-hidden="true"></i> Fork</a>
                         </div>
                         <div class="col-lg-3 col-md-3 col-6">
-                            <a href="#draft-container" id="redraft-btn"  class="drop-shadow btn btn-block btn-info mt-3 modal light"><i class="fa fa-repeat" aria-hidden="true"></i> Redraft</a>
+                            <a href="#draft-container" class="redraft-btn drop-shadow btn btn-block btn-info mt-3 modal light"><i class="fa fa-repeat" aria-hidden="true"></i> Redraft</a>
                         </div>
                         <div class="col-lg-3 col-md-3 col-6">
                             <a href="#draft-container" id="settings-btn" class="drop-shadow draft-settings btn btn-block btn-primary mt-3 modal light"><i class="fa fa-wrench" aria-hidden="true"></i> Settings</a>
@@ -28,17 +38,12 @@ nocomments: true
     </div>
 
     <div class="row" style="background: #fff;">
-        <div class="col-12">
+        <div class="col-lg-8 mt-3" id="draft">
             <h2>Notes</h2>
             <div class="notes">
                 <div id="notes-inner"></div>
                 <a href="#draft" class="owner-only update-bubble hover-shadow" id="update-notes" title="Edit draft notes"><i class="fa fa-pencil fa-2x" aria-hidden="true"></i></a>
             </div>
-        </div>
-    </div>
-
-    <div class="row" style="background: #fff;">
-        <div class="col-lg-8 mt-3" id="draft">
             <h2>Preview</h2>
             <ul class="nav nav-tabs" role="tablist">
                 <li class="nav-item"><a class="nav-link active" href="#draft-preview" role="tab" data-toggle="tab">Draft</a></li>
@@ -121,6 +126,7 @@ nocomments: true
                     <tr class="owner-only"><td nowrap>Model</td><td><a id="model-link" href="#draft-container"></a></td></tr>
                     <tr class="user-only"><td nowrap>User</td><td><a id="user-link" href="#draft-container"></a></td></tr>
                     <tr><td>Created</td><td nowrap><span id="created" class="timeago"></span></td></tr>
+                    <tr><td>Core version</td><td nowrap id="version"></td></tr>
                     <tr class="owner-only"><td nowrap>Shared</td><td><a id="shared-link" href="#draft-container" class="draft-settings"></a></td></tr>
                     <tr><td>Reference <sup><small>1</small></sup></td><td id="draft-handle" nowrap></td></tr>
                     <tr><td>Core replay <sup><small>2</small></sup></td><td id="draft-core-url" nowrap></td></tr>

@@ -1482,6 +1482,7 @@
         $('ul.breadcrumbs li:last-child').html(draft.name);
         $('#issue-link').attr('href','https://github.com/freesewing/site/issues/new?title=Problem%20with%20draft%20'+draft.handle+'&body=See%20[here](https:/'+'/'+window.location.hostname+'/drafts/'+draft.handle+')');
         $('#draft-core-url').html('<a href="'+draft.data.coreUrl+'" target="_BLANK" title="Manually run the API call used to create this draft">Replay API call</a>');
+        $('#version').html(draft.data.version);
         if(!logged_in) {
             // Shared draft, viewed anonymously
             $('.owner-only').remove();
@@ -1508,7 +1509,7 @@
                 $('#created').attr('datetime', draft.created+' UTC');
                 timeago().render($('.timeago'));
                 $('#fork-btn').attr('href','/fork/'+draft.handle);
-                $('#redraft-btn').attr('href','/redraft/'+draft.handle+'/for/'+draft.model.handle);
+                $('.redraft-btn').attr('href','/redraft/'+draft.handle+'/for/'+draft.model.handle);
             } else {
                 // Logged-in user but not their own draft (shared)
                 $('.owner-only').remove();
@@ -1572,6 +1573,12 @@
                 else var measurementValue = draft.data.measurements[measurement]+' cm';
                 $('#measurements-table').append('<tr><td>'+fsdata.mapping.measurementToTitle[measurement]+'</td><td>'+measurementValue+'</td></tr>');
             });
+            // Version warning, only for own drafts
+            if(logged_in && user.id == draft.user) {
+                if(typeof draft.data.version != 'undefined' && draft.data.version != fsdata.version.core) {
+                   $('#version-warning').removeClass('hidden'); 
+                }
+            }
         });
         marked.setOptions({sanitize: true});
         if(draft.notes !==  '') $('#notes-inner').html(marked(draft.notes));
