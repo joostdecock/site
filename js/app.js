@@ -1696,6 +1696,13 @@
             }
             row += '<td class="name"><a href="/drafts/'+draft.handle+'">'+draft.name+'</a></td>';
             row += '<td class="date timeago" datetime="'+draft.created+' UTC"></td>';
+            if(typeof draft.data.version != 'undefined' && draft.data.version == fsdata.version.core) {
+                var version_class = 'success';
+            } else {
+                var version_class = 'danger';
+                if(draft.data.version == 'unknown, predates v1.3.0') { draft.data.version = '<1.3.0'; }
+            }
+            row += '<td class="version"><span class="badge badge-'+version_class+'"><b>'+draft.data.version+'</b></span></td>';
             row += '<td class="trash icon"><a href="#" data-draft="'+draft.id+'" class="delete-draft" title="Delete draft '+draft.handle+'"><i class="fa fa-trash" aria-hidden="true"></i></a></td>';
             row += '</tr>';
             $('#draftlist').prepend(row);

@@ -16,6 +16,7 @@ nocomments: true
                         <th>Model</th>
                         <th>Name</th>
                         <th>Date</th>
+                        <th>Version</th>
                         <th class="icon"><i class="fa fa-trash" aria-hidden="true"></i></th>
                     </tr>
                 </thead>
@@ -29,6 +30,7 @@ nocomments: true
                         <td class="model"></td>
                         <td class="name"></td>
                         <td class="date"></td>
+                        <td class="version"></td>
                         <td class="trash"></td>
                     </tr>
                 </tbody>
