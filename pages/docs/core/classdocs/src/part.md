@@ -109,6 +109,7 @@ Methods that potentially generate more that one single point do not return them,
 but add them to the Part for you:
 
 - [`Part::addPoint`](part#addpoint) : Adds a pre-made point
+- [`Part::newPoint`](part#newpoint) : Creates & adds a new point
 - [`Part::curveCrossesX`](part#curvecrossesx) : Adds the point(s) where a curve crosses a given X-value
 - [`Part::curveCrossesY`](part#curvecrossesy) : Adds the point(s) where a curve crosses a given Y-value
 - [`Part::curveCrossesLine`](part#curvecrossesline) : Adds the point(s) where a curve intersects with a line
@@ -145,7 +146,6 @@ intersections beteen lines and curves.
 While points are crucial in our [`Part`](part), points alone aren't very useful.
 These are the methods to add all those other things to a [`Part`](part):
 
-- [`Part::newPoint`](part#newpoint) : Creates & adds a new point
 - [`Part::newPath`](part#newpath) : Creates & adds a new path
 - [`Part::newText`](part#newtext) : Creates & adds a new text
 - [`Part::newTextOnPath`](part#newtextonpath) : Creates & adds a new textOnPath
@@ -1633,6 +1633,65 @@ methods in this class that return a [`Point`](point) object.
 - `\Freesewing\Point` `$point`: The [`Point`](point) object.
 - `string` `$description`: An optional description that will be set on the [`Point`](point) object if provided.
 
+### newPoint
+
+```php?start_inline=1
+void newPoint(
+    string $name
+    float $x
+    float $y
+    string $description = null
+) 
+```
+
+Creates a [`Point`](point) object and adds it to the part.
+
+`$x`, `$y`, and an optional `$description` will be used to create the [`Point`](point) object.
+
+The `$name` is so we can reference the [`Point`](point) later (by its name).
+
+#### Example
+{:.no_toc}
+
+{% include classTabs.html
+    id="newPoint" 
+%}
+
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="newPoint-result">
+
+{% include coreClassdocsFigure.html
+    description="Adding points to your pattern part with newPoint()"
+    params="theme=Designer&onlyPoints=1,2,3,4&class=Part&method=newPoint"
+%}
+
+</div>
+<div role="tabpanel" class="tab-pane" id="newPoint-code" markdown="1">
+
+```php?start_inline=1
+/** @var \Freesewing\Part $p */
+$p->newPoint(1, 10, 10);
+$p->newPoint(2, 100, 20);
+$p->newPoint(3, 50, 40);
+$p->newPoint(4, -40, -30, 'Negative coordinates point');
+```
+
+</div>
+</div>
+
+#### Typical use
+{:.no_toc}
+
+Is one of the ways to add points to your pattern part.
+
+#### Parameters
+{:.no_toc}
+
+- `string` `$name`: A name to reference the point by
+- `float` `$x`: The X-coordinate of the [`Point`](point) object
+- `float` `$y`: The Y-coordinate of the [`Point`](point) object
+- `array` `$attributes`: An array of attributes to be added to the [`Point`](point) object
+
 ### curveCrossesX
 
 ```php?start_inline=1
@@ -2184,65 +2243,6 @@ In patterns.
 Nothing, [`Point`](point) objects will be added to the [`Part`](part).
 
 ## Methods that create and add non-point objects to the Part
-
-### newPoint
-
-```php?start_inline=1
-void newPoint(
-    string $name
-    float $x
-    float $y
-    string $description = null
-) 
-```
-
-Creates a [`Point`](point) object and adds it to the part.
-
-`$x`, `$y`, and an optional `$description` will be used to create the [`Point`](point) object.
-
-The `$name` is so we can reference the [`Point`](point) later (by its name).
-
-#### Example
-{:.no_toc}
-
-{% include classTabs.html
-    id="newPoint" 
-%}
-
-<div class="tab-content">
-<div role="tabpanel" class="tab-pane active" id="newPoint-result">
-
-{% include coreClassdocsFigure.html
-    description="Adding points to your pattern part with newPoint()"
-    params="theme=Designer&onlyPoints=1,2,3,4&class=Part&method=newPoint"
-%}
-
-</div>
-<div role="tabpanel" class="tab-pane" id="newPoint-code" markdown="1">
-
-```php?start_inline=1
-/** @var \Freesewing\Part $p */
-$p->newPoint(1, 10, 10);
-$p->newPoint(2, 100, 20);
-$p->newPoint(3, 50, 40);
-$p->newPoint(4, -40, -30, 'Negative coordinates point');
-```
-
-</div>
-</div>
-
-#### Typical use
-{:.no_toc}
-
-Is one of the ways to add points to your pattern part.
-
-#### Parameters
-{:.no_toc}
-
-- `string` `$name`: A name to reference the point by
-- `float` `$x`: The X-coordinate of the [`Point`](point) object
-- `float` `$y`: The Y-coordinate of the [`Point`](point) object
-- `array` `$attributes`: An array of attributes to be added to the [`Point`](point) object
 
 ### newPath
 
