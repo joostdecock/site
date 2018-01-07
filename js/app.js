@@ -145,7 +145,7 @@
         $('#settings').load('/components/account/settings', function(){
             $('#email').attr('value', account.account.email);
             $('#username').attr('value', account.account.username);
-            if(typeof account.account.data.patron == 'undefined' || account.account.data.patron.tier < 2) $('#patron-settings').addClass('hidden');
+            if(typeof account.account.data.patron == 'undefined' || account.account.data.patron == null || account.account.data.patron.tier < 2) $('#patron-settings').addClass('hidden');
             else {
                 if (account.account.data.patron != null && account.account.data.patron.address != null) $('#address').val(account.account.data.patron.address);
                 if (account.account.data.patron.tier < 8) $('#captain-settings').addClass('hidden');
