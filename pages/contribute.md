@@ -57,7 +57,7 @@ to fix sewing patterns once and for all.
 
 - Install freesewing on your computer and kick the tires. Does it work?
 Does it what you'd expect? If not, [open an issue](https://github.com/freesewing/freesewing.github.io/issues/new) so it can get fixed.
-- Comment on some of the [open issues](/issues). 
+- Comment on some of the [open issues](/status#issues). 
 Have you experienced the same problem? Know a work around? 
 - Hang out at [the freesewing chat on Gitter](https://gitter.im/freesewing/freesewing), and lend a hand answering questions. 
 There's a good chance you've already experienced what another user is experiencing.
