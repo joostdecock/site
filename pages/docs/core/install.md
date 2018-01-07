@@ -7,8 +7,16 @@ permalink: /docs/core/install
 
 ## System requirements
 
-- PHP version 5.6 or above (we recommend PHP 7)
+- PHP version 5.6 or above (we recommend PHP 7, see note below)
 - [Composer](https://getcomposer.org/)
+
+> ##### A note about installing on PHP 5.6
+>
+> Core uses a Developer theme that requires PHP 7.0 or newer. However, that theme is only 
+> useful for hacking core. So if you just want to run this and maybe design some patterns
+> install without the dev requirements. 
+>
+> In other words, to install on PHP 5.6, pass `--no-dev` to composer
 
 ## Installing composer
 
