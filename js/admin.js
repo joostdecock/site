@@ -116,7 +116,18 @@
                 html += "<div class='row'><div class='col'>";
                 var month = -1;
                 var day = -1;
-                if(typeof account.account.data.patron.birthday != undefined && account.account.data.patron.birthday != null) {
+                if(
+                    typeof account.account.data.patron == 'undefined' || 
+                    typeof account.account.data.patron.birthday == 'undefined' || 
+                    typeof account.account.data.patron.birthday.day == 'undefined' || 
+                    typeof account.account.data.patron.birthday.month == 'undefined' || 
+                    account.account.data.patron.birthday == null ||
+                    account.account.data.patron.birthday.day == null ||
+                    account.account.data.patron.birthday.month == null
+                ) {
+                    var month = 1;
+                    var day = 1;
+                } else {
                     var month = account.account.data.patron.birthday.month;
                     var day = account.account.data.patron.birthday.day;
                 }
