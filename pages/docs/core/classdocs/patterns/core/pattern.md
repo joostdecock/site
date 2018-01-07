@@ -286,7 +286,7 @@ mixed getOption(
 )
 ```
 
-Returns the option `$name` or `false` of it is not set.
+Returns the option `$name`.
 
 #### Typical use
 {:.no_toc}
@@ -317,7 +317,7 @@ mixed getValue(
 )
 ```
 
-Returns the value `$name` or `false` if it is not set.
+Returns the value `$name`.
 
 #### Typical use
 {:.no_toc}
