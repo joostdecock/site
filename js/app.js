@@ -278,10 +278,13 @@
         var first;
         var second;
         $.each(measurements, function(measurement, shape){
-            if(model.model.units === 'imperial') var measurementValue = inchesAsFraction(model.model.data.measurements[measurement]);
-            else var measurementValue = model.model.data.measurements[measurement]+' cm';
+            if(typeof model.model.data.measurements == 'undefined') var measurementValue = false;
+            else {
+                if(model.model.units === 'imperial') var measurementValue = inchesAsFraction(model.model.data.measurements[measurement]);
+                else var measurementValue = model.model.data.measurements[measurement]+' cm';
+            }
             if(shape == 'all' || shape == model.model.body || typeof filter !== "undefined") {
-                if(typeof model.model.data.measurements[measurement] !== "undefined") {
+                if(typeof model.model.data.measurements !== 'undefined' && typeof model.model.data.measurements[measurement] !== "undefined") {
                     if(typeof filter === 'undefined' || typeof filter[measurement] !== "undefined") {
                         first += "<tr>" +
                             "<td class='name'><a href='#measurements' data-measurement='"+measurement+"' class='edit'>"+measurementTitles[measurement]+"</a>&nbsp;:</td>" +
@@ -369,7 +372,7 @@
             $('#measurement-main-title').html(mtitle);
             $('#m').attr('name', measurement).attr('id',measurement+'-input')
             $('#settings-form span.form-units').addClass(model.model.units);
-            if(typeof model.model.data.measurements[measurement] == 'undefined') var inputValue = '';
+            if(typeof model.model.data.measurements == 'undefined' || typeof model.model.data.measurements[measurement] == 'undefined') var inputValue = '';
             else {
                 if(model.model.units === 'imperial') var inputValue = inchesAsFraction(model.model.data.measurements[measurement], 'plain');
                 else var inputValue = model.model.data.measurements[measurement];
@@ -395,7 +398,7 @@
             $('#settings').on('submit','#settings-form', function(e) {
                 e.preventDefault();
                 // Is measurements already an object?
-                if(typeof(model.model.data.measurements) === 'string' || model.model.data.measurements === null) {
+                if(typeof model.model.data.measurements === 'undefined' || typeof(model.model.data.measurements) === 'string' || model.model.data.measurements === null) {
                     var measurementsObject = {};
                     // Imperial might not be a number but something like '9 1/2'
                     if(model.model.units === 'imperial') measurementsObject[measurement] = $('#'+measurement+'-input').val();
@@ -440,7 +443,8 @@
     }
 
     function modelCompleteFactor() {
-        return Math.round(Object.keys(model.model.data.measurements).length / (Object.keys(measurements).length/100));
+        if(typeof model.model.data.measurements == 'undefined') return 0;
+        else return Math.round(Object.keys(model.model.data.measurements).length / (Object.keys(measurements).length/100));
     }
 
     function renderModelSettings() {
