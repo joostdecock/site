@@ -801,7 +801,7 @@
             var pmcount = Object.keys(pattern.measurements).length;
             $.each(account.models, function(handle, model){
                 // Quick check, how many measurement?
-                if(typeof model.data.measurements === "undefined" || Object.keys(model.data.measurements).length < pmcount) {
+                if(typeof model.data === 'undefined' || typeof model.data.measurements === "undefined" || Object.keys(model.data.measurements).length < pmcount) {
                     filter.ko.push(model);
                 } else {
                     var modelok = true;
