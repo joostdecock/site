@@ -8,16 +8,6 @@ action: status
 ---
 <div class="container">
     <div class="row">
-        <div class="col-sm-6 offset-sm-3">
-            <blockquote class="warning">
-                <h6>We are currently having some issues with creation of new accounts/models/drafts</h6>
-                <p>We have rolled-out some changes over the weekend that have some unexpected side effects. 
-                If you are having problems creating new drafts or models, or even signing up on the site, please be patient while we're working on a fix.</p>
-                <p class="text-right"><a class="btn btn-primary" href="https://gitter.im/freesewing/freesewing" target="_BLANK">Chat with support</a></p>
-            </blockquote>
-        </div>
-    </div>
-    <div class="row">
         <div class="col-sm-4">
             <blockquote id="core-status" class="text-white py-3">
                 <div class="status-icon float-right">

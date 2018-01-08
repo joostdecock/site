@@ -37,7 +37,7 @@ collections:
         permalink: /showcase/:title/
         layout: showcase
 
-gems:
+plugins:
     - jekyll-assets
     - algoliasearch-jekyll
     - jekyll-feed
