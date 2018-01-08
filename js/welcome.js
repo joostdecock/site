@@ -6,7 +6,8 @@
     });
 
     function showQuestions(data) { 
-        var units = data.account.data.account.units;
+        if(typeof data.account.data.account == 'undefined') var units = 'metric';
+        else var units = data.account.data.account.units;
         if(units == 'metric') {
             var otherunits = 'imperial';
             var unit = 'cm';

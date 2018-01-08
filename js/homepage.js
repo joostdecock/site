@@ -28,7 +28,6 @@
         });
 
         function renderComment(comment) {
-            console.log(comment);
                 var patron = 0;
                 if(typeof comment.patron != 'undefined' && comment.patron != null && comment.patron.tier != 'undefined' && comment.patron.tier > 1) var patron = comment.patron.tier;
                 var markup = '<div class="mb-1 comment '+comment.status+'">';
