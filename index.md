@@ -41,13 +41,17 @@ nocomments: true
             </div>
         </div>
 </section>
-<section class="cover-band bg-thematic mb-5">
-   <div class="cover-body mt-5 mb-5">
-            <h1 class="jumbotron-heading mt-5 mb-5">Best wishes for 2018</h1>
-            <p class="lead mt-3">Have a wonderful year, and make it count!</p>
-  </div>
-</section>
 <div class="container mt-5">
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+            <blockquote class="warning">
+                <h6>We are currently having some issues with creation of new accounts/models/drafts</h6>
+                <p>We have rolled-out some changes over the weekend that have some unexpected side effects. 
+                If you are having problems creating new drafts or models, or even signing up on the site, please be patient while we're working on a fix.</p>
+                <p class="text-right"><a class="btn btn-primary" href="https://gitter.im/freesewing/freesewing" target="_BLANK">Chat with support</a></p>
+            </blockquote>
+        </div>
+    </div>
     <h4>Blog posts</h4>
     <div class="row">
         {% for post in site.posts limit:2 %}
