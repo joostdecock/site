@@ -51,7 +51,7 @@ treat requests from a mobile app differently than from a website.
 > That way, you can use your own names for measurements, you can only allow access to
 > paying customers, or you can treat your website and mobile app in a different way.
 >
-> If you're not running your own isntance, you can mostly forget about channels.
+> If you're not running your own instance, you can mostly forget about channels.
 {: .question }
 
 #### Patterns
