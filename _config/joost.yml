@@ -13,6 +13,11 @@ api:
   core: 'https://joost.core.freesewing.org'
   data: 'https://joost.data.freesewing.org'
 
+bail:
+  enable: true
+  api: 'https://joost.data.freesewing.org/error'
+  origin: 'joost.freesewing.org'
+
 markdown: kramdown
 kramdown:
     input: GFM
