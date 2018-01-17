@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/joost/git/core/src</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/nv.d3.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="../js/html5shiv.min.js"></script>
+  <script src="../js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../index.html">/home/joost/git/core</a></li>
+        <li><a href="index.html">src</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Request/Request.php.html#15">Request</a></td><td class="text-right">41%</td></tr>
+       <tr><td><a href="Sampler/Sampler.php.html#15">Sampler</a></td><td class="text-right">47%</td></tr>
+       <tr><td><a href="Utils/Utils.php.html#14">Utils</a></td><td class="text-right">51%</td></tr>
+       <tr><td><a href="Polynomial/Polynomial.php.html#26">Polynomial</a></td><td class="text-right">73%</td></tr>
+       <tr><td><a href="Coords/Coords.php.html#15">Coords</a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Transform/Transform.php.html#12">Transform</a></td><td class="text-right">80%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Utils/Utils.php.html#14">Utils</a></td><td class="text-right">383</td></tr>
+       <tr><td><a href="Polynomial/Polynomial.php.html#26">Polynomial</a></td><td class="text-right">134</td></tr>
+       <tr><td><a href="Sampler/Sampler.php.html#15">Sampler</a></td><td class="text-right">99</td></tr>
+       <tr><td><a href="Request/Request.php.html#15">Request</a></td><td class="text-right">66</td></tr>
+       <tr><td><a href="Transform/Transform.php.html#12">Transform</a></td><td class="text-right">16</td></tr>
+       <tr><td><a href="Coords/Coords.php.html#15">Coords</a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Utils/Utils.php.html#371"><abbr title="Utils::circleLineIntersections">circleLineIntersections</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Part/Part.php.html#1663"><abbr title="Part::shiftFractionTowards">shiftFractionTowards</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Polynomial/Polynomial.php.html#256"><abbr title="Polynomial::getQuarticRoots">getQuarticRoots</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Part/Part.php.html#2110"><abbr title="Part::circleCrossesLine">circleCrossesLine</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Part/Part.php.html#2082"><abbr title="Part::circlesCross">circlesCross</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Part/Part.php.html#1695"><abbr title="Part::shiftFractionAlong">shiftFractionAlong</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Part/Part.php.html#1679"><abbr title="Part::shiftOutwards">shiftOutwards</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Part/Part.php.html#1148"><abbr title="Part::pathOffsetAsStack">pathOffsetAsStack</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/Utils.php.html#59"><abbr title="Utils::asPointArray">asPointArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/Utils.php.html#273"><abbr title="Utils::debug">debug</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/Utils.php.html#320"><abbr title="Utils::circleCircleIntersections">circleCircleIntersections</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Sampler/Sampler.php.html#171"><abbr title="Sampler::addSampledPartsToPattern">addSampledPartsToPattern</abbr></a></td><td class="text-right">18%</td></tr>
+       <tr><td><a href="Request/Request.php.html#36"><abbr title="Request::__construct">__construct</abbr></a></td><td class="text-right">30%</td></tr>
+       <tr><td><a href="Sampler/Sampler.php.html#113"><abbr title="Sampler::sampleParts">sampleParts</abbr></a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="Transform/Transform.php.html#89"><abbr title="Transform::asSvgTransform">asSvgTransform</abbr></a></td><td class="text-right">45%</td></tr>
+       <tr><td><a href="Part/Part.php.html#818"><abbr title="Part::findCurveCurveStackIntersections">findCurveCurveStackIntersections</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Sampler/Sampler.php.html#62"><abbr title="Sampler::getSamplerAnchor">getSamplerAnchor</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Coords/Coords.php.html#28"><abbr title="Coords::setX">setX</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Part/Part.php.html#457"><abbr title="Part::addPoint">addPoint</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Coords/Coords.php.html#41"><abbr title="Coords::setY">setY</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Polynomial/Polynomial.php.html#240"><abbr title="Polynomial::simplify">simplify</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Part/Part.php.html#903"><abbr title="Part::findLineCurveStackIntersections">findLineCurveStackIntersections</abbr></a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="Part/Part.php.html#864"><abbr title="Part::findCurveLineStackIntersections">findCurveLineStackIntersections</abbr></a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="Polynomial/Polynomial.php.html#401"><abbr title="Polynomial::getQuadraticRoots">getQuadraticRoots</abbr></a></td><td class="text-right">86%</td></tr>
+       <tr><td><a href="SvgRenderbot/SvgRenderbot.php.html#286"><abbr title="SvgRenderbot::renderText">renderText</abbr></a></td><td class="text-right">86%</td></tr>
+       <tr><td><a href="Polynomial/Polynomial.php.html#211"><abbr title="Polynomial::getRoots">getRoots</abbr></a></td><td class="text-right">89%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Polynomial/Polynomial.php.html#256"><abbr title="Polynomial::getQuarticRoots">getQuarticRoots</abbr></a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="Utils/Utils.php.html#320"><abbr title="Utils::circleCircleIntersections">circleCircleIntersections</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Utils/Utils.php.html#371"><abbr title="Utils::circleLineIntersections">circleLineIntersections</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Request/Request.php.html#36"><abbr title="Request::__construct">__construct</abbr></a></td><td class="text-right">59</td></tr>
+       <tr><td><a href="Sampler/Sampler.php.html#113"><abbr title="Sampler::sampleParts">sampleParts</abbr></a></td><td class="text-right">49</td></tr>
+       <tr><td><a href="Part/Part.php.html#1148"><abbr title="Part::pathOffsetAsStack">pathOffsetAsStack</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Utils/Utils.php.html#59"><abbr title="Utils::asPointArray">asPointArray</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Part/Part.php.html#818"><abbr title="Part::findCurveCurveStackIntersections">findCurveCurveStackIntersections</abbr></a></td><td class="text-right">22</td></tr>
+       <tr><td><a href="Part/Part.php.html#2082"><abbr title="Part::circlesCross">circlesCross</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Part/Part.php.html#2110"><abbr title="Part::circleCrossesLine">circleCrossesLine</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Part/Part.php.html#903"><abbr title="Part::findLineCurveStackIntersections">findLineCurveStackIntersections</abbr></a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="Part/Part.php.html#864"><abbr title="Part::findCurveLineStackIntersections">findCurveLineStackIntersections</abbr></a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="Sampler/Sampler.php.html#171"><abbr title="Sampler::addSampledPartsToPattern">addSampledPartsToPattern</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="Transform/Transform.php.html#89"><abbr title="Transform::asSvgTransform">asSvgTransform</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="SvgRenderbot/SvgRenderbot.php.html#286"><abbr title="SvgRenderbot::renderText">renderText</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Polynomial/Polynomial.php.html#211"><abbr title="Polynomial::getRoots">getRoots</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Polynomial/Polynomial.php.html#401"><abbr title="Polynomial::getQuadraticRoots">getQuadraticRoots</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Sampler/Sampler.php.html#62"><abbr title="Sampler::getSamplerAnchor">getSamplerAnchor</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Polynomial/Polynomial.php.html#240"><abbr title="Polynomial::simplify">simplify</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Coords/Coords.php.html#41"><abbr title="Coords::setY">setY</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Part/Part.php.html#457"><abbr title="Part::addPoint">addPoint</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Coords/Coords.php.html#28"><abbr title="Coords::setX">setX</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 4.0.8</a> using <a href="https://secure.php.net/" target="_top">PHP 7.0.19-1</a> with <a href="https://xdebug.org/">Xdebug 2.5.0</a> and <a href="https://phpunit.de/">PHPUnit 5.5.7</a> at Wed Jan 17 10:58:52 UTC 2018.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../js/jquery.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/holder.min.js" type="text/javascript"></script>
+  <script src="../js/d3.min.js" type="text/javascript"></script>
+  <script src="../js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([0,0,0,0,0,2,1,0,1,2,4,30], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([11,0,1,0,1,2,1,1,3,6,8,306], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[100,56,"<a href=\"BezierToolbox\/BezierToolbox.php.html#23\">BezierToolbox<\/a>"],[100,8,"<a href=\"Boundary\/Boundary.php.html#14\">Boundary<\/a>"],[100,66,"<a href=\"Context\/Context.php.html#18\">Context<\/a>"],[80,6,"<a href=\"Coords\/Coords.php.html#15\">Coords<\/a>"],[100,6,"<a href=\"Dimension\/Dimension.php.html#16\">Dimension<\/a>"],[100,20,"<a href=\"GrowingPacker\/GrowingPacker.php.html#18\">GrowingPacker<\/a>"],[100,5,"<a href=\"LayoutBlock\/LayoutBlock.php.html#14\">LayoutBlock<\/a>"],[100,14,"<a href=\"MeasurementsSampler\/MeasurementsSampler.php.html#17\">MeasurementsSampler<\/a>"],[100,6,"<a href=\"Model\/Model.php.html#16\">Model<\/a>"],[100,2,"<a href=\"Note\/Note.php.html#19\">Note<\/a>"],[100,13,"<a href=\"OptionsSampler\/OptionsSampler.php.html#16\">OptionsSampler<\/a>"],[100,1,"<a href=\"Packer\/Packer.php.html#15\">Packer<\/a>"],[92.524509803922,260,"<a href=\"Part\/Part.php.html#31\">Part<\/a>"],[98.888888888889,46,"<a href=\"Path\/Path.php.html#12\">Path<\/a>"],[100,7,"<a href=\"Point\/Point.php.html#24\">Point<\/a>"],[73.846153846154,63,"<a href=\"Polynomial\/Polynomial.php.html#26\">Polynomial<\/a>"],[41.935483870968,16,"<a href=\"Request\/Request.php.html#15\">Request<\/a>"],[100,14,"<a href=\"Response\/Response.php.html#15\">Response<\/a>"],[47.540983606557,23,"<a href=\"Sampler\/Sampler.php.html#15\">Sampler<\/a>"],[100,4,"<a href=\"Services\/CompareService.php.html#14\">CompareService<\/a>"],[97.826086956522,10,"<a href=\"Services\/DraftService.php.html#14\">DraftService<\/a>"],[100,28,"<a href=\"Services\/InfoService.php.html#20\">InfoService<\/a>"],[100,5,"<a href=\"Services\/SampleService.php.html#14\">SampleService<\/a>"],[100,7,"<a href=\"Stack\/Stack.php.html#18\">Stack<\/a>"],[100,1,"<a href=\"SvgAttributes\/SvgAttributes.php.html#12\">SvgAttributes<\/a>"],[100,9,"<a href=\"SvgBlock\/SvgBlock.php.html#12\">SvgBlock<\/a>"],[100,2,"<a href=\"SvgComments\/SvgComments.php.html#12\">SvgComments<\/a>"],[100,7,"<a href=\"SvgCss\/SvgCss.php.html#12\">SvgCss<\/a>"],[100,2,"<a href=\"SvgDefs\/SvgDefs.php.html#12\">SvgDefs<\/a>"],[100,3,"<a href=\"SvgDocument\/SvgDocument.php.html#24\">SvgDocument<\/a>"],[100,2,"<a href=\"SvgInclude\/SvgInclude.php.html#12\">SvgInclude<\/a>"],[97.777777777778,56,"<a href=\"SvgRenderbot\/SvgRenderbot.php.html#12\">SvgRenderbot<\/a>"],[100,2,"<a href=\"SvgScript\/SvgScript.php.html#13\">SvgScript<\/a>"],[100,8,"<a href=\"SvgSnippet\/SvgSnippet.php.html#12\">SvgSnippet<\/a>"],[100,6,"<a href=\"Text\/Text.php.html#12\">Text<\/a>"],[100,6,"<a href=\"TextOnPath\/TextOnPath.php.html#15\">TextOnPath<\/a>"],[80.645161290323,15,"<a href=\"Transform\/Transform.php.html#12\">Transform<\/a>"],[51.639344262295,54,"<a href=\"Utils\/Utils.php.html#14\">Utils<\/a>"],[100,12,"<a href=\"Vector\/Vector.php.html#17\">Vector<\/a>"],[100,1,"<a href=\"Yamlr\/Yamlr.php.html#15\">Yamlr<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"BezierToolbox\/BezierToolbox.php.html#44\">BezierToolbox::bezierPoint<\/a>"],[100,1,"<a href=\"BezierToolbox\/BezierToolbox.php.html#58\">BezierToolbox::bezierCircle<\/a>"],[100,3,"<a href=\"BezierToolbox\/BezierToolbox.php.html#77\">BezierToolbox::bezierLength<\/a>"],[100,11,"<a href=\"BezierToolbox\/BezierToolbox.php.html#113\">BezierToolbox::bezierEdge<\/a>"],[100,7,"<a href=\"BezierToolbox\/BezierToolbox.php.html#161\">BezierToolbox::bezierBoundary<\/a>"],[100,4,"<a href=\"BezierToolbox\/BezierToolbox.php.html#220\">BezierToolbox::bezierDelta<\/a>"],[100,1,"<a href=\"BezierToolbox\/BezierToolbox.php.html#257\">BezierToolbox::bezierSplit<\/a>"],[100,15,"<a href=\"BezierToolbox\/BezierToolbox.php.html#320\">BezierToolbox::bezierLineIntersections<\/a>"],[100,13,"<a href=\"BezierToolbox\/BezierToolbox.php.html#435\">BezierToolbox::bezierBezierIntersections<\/a>"],[100,1,"<a href=\"Boundary\/Boundary.php.html#33\">Boundary::setTopLeft<\/a>"],[100,1,"<a href=\"Boundary\/Boundary.php.html#44\">Boundary::setBottomRight<\/a>"],[100,1,"<a href=\"Boundary\/Boundary.php.html#55\">Boundary::getTopLeft<\/a>"],[100,1,"<a href=\"Boundary\/Boundary.php.html#65\">Boundary::getBottomRight<\/a>"],[100,4,"<a href=\"Boundary\/Boundary.php.html#73\">Boundary::updateDimensions<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#69\">Context::addMeasurementsSampler<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#77\">Context::addModel<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#85\">Context::addOptionsSampler<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#96\">Context::addPattern<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#110\">Context::addRenderbot<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#118\">Context::addSvgDocument<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#126\">Context::addTranslator<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#134\">Context::addUnits<\/a>"],[100,2,"<a href=\"Context\/Context.php.html#146\">Context::cleanUp<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#166\">Context::configure<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#180\">Context::getChannel<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#190\">Context::getConfig<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#200\">Context::getConfigFile<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#210\">Context::getLocale<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#219\">Context::getMeasurementsSampler<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#229\">Context::getModel<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#239\">Context::getOptionsSampler<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#249\">Context::getPattern<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#259\">Context::getRenderbot<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#269\">Context::getRequest<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#279\">Context::getResponse<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#289\">Context::getService<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#299\">Context::getSvgDocument<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#309\">Context::getTheme<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#319\">Context::getTranslator<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#329\">Context::getUnits<\/a>"],[100,4,"<a href=\"Context\/Context.php.html#341\">Context::loadChannel<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#364\">Context::loadConfig<\/a>"],[100,2,"<a href=\"Context\/Context.php.html#377\">Context::loadLocale<\/a>"],[100,4,"<a href=\"Context\/Context.php.html#395\">Context::loadPattern<\/a>"],[100,3,"<a href=\"Context\/Context.php.html#421\">Context::loadService<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#446\">Context::loadSvgDocument<\/a>"],[100,4,"<a href=\"Context\/Context.php.html#465\">Context::loadTheme<\/a>"],[100,3,"<a href=\"Context\/Context.php.html#491\">Context::loadTranslator<\/a>"],[100,3,"<a href=\"Context\/Context.php.html#523\">Context::loadUnits<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#542\">Context::runService<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#552\">Context::setChannel<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#563\">Context::setConfig<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#573\">Context::setLocale<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#583\">Context::setMeasurementsSampler<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#593\">Context::setModel<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#603\">Context::setOptionsSampler<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#615\">Context::setPattern<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#625\">Context::setRenderbot<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#635\">Context::setRequest<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#645\">Context::setResponse<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#655\">Context::setService<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#665\">Context::setSvgDocument<\/a>"],[100,1,"<a href=\"Context\/Context.php.html#675\">Context::setTheme<\/a>"],[75,2,"<a href=\"Coords\/Coords.php.html#28\">Coords::setX<\/a>"],[75,2,"<a href=\"Coords\/Coords.php.html#41\">Coords::setY<\/a>"],[100,1,"<a href=\"Coords\/Coords.php.html#55\">Coords::getX<\/a>"],[100,1,"<a href=\"Coords\/Coords.php.html#65\">Coords::getY<\/a>"],[100,1,"<a href=\"Dimension\/Dimension.php.html#29\">Dimension::setLabel<\/a>"],[100,1,"<a href=\"Dimension\/Dimension.php.html#39\">Dimension::setLeaders<\/a>"],[100,1,"<a href=\"Dimension\/Dimension.php.html#49\">Dimension::getLabel<\/a>"],[100,1,"<a href=\"Dimension\/Dimension.php.html#59\">Dimension::getLeaders<\/a>"],[100,1,"<a href=\"Dimension\/Dimension.php.html#69\">Dimension::getPath<\/a>"],[100,1,"<a href=\"Dimension\/Dimension.php.html#79\">Dimension::addLeader<\/a>"],[100,3,"<a href=\"GrowingPacker\/GrowingPacker.php.html#25\">GrowingPacker::fit<\/a>"],[100,1,"<a href=\"GrowingPacker\/GrowingPacker.php.html#51\">GrowingPacker::getFirstBlock<\/a>"],[100,6,"<a href=\"GrowingPacker\/GrowingPacker.php.html#73\">GrowingPacker::findSpace<\/a>"],[100,1,"<a href=\"GrowingPacker\/GrowingPacker.php.html#106\">GrowingPacker::splitSpace<\/a>"],[100,7,"<a href=\"GrowingPacker\/GrowingPacker.php.html#134\">GrowingPacker::growSpace<\/a>"],[100,1,"<a href=\"GrowingPacker\/GrowingPacker.php.html#164\">GrowingPacker::growRight<\/a>"],[100,1,"<a href=\"GrowingPacker\/GrowingPacker.php.html#195\">GrowingPacker::growDown<\/a>"],[100,1,"<a href=\"LayoutBlock\/LayoutBlock.php.html#37\">LayoutBlock::setPosition<\/a>"],[100,1,"<a href=\"LayoutBlock\/LayoutBlock.php.html#49\">LayoutBlock::setSize<\/a>"],[100,1,"<a href=\"LayoutBlock\/LayoutBlock.php.html#60\">LayoutBlock::setUsed<\/a>"],[100,2,"<a href=\"LayoutBlock\/LayoutBlock.php.html#69\">LayoutBlock::isUsed<\/a>"],[100,1,"<a href=\"MeasurementsSampler\/MeasurementsSampler.php.html#20\">MeasurementsSampler::setModelConfig<\/a>"],[100,5,"<a href=\"MeasurementsSampler\/MeasurementsSampler.php.html#34\">MeasurementsSampler::loadPatternModels<\/a>"],[100,1,"<a href=\"MeasurementsSampler\/MeasurementsSampler.php.html#58\">MeasurementsSampler::addPatternModel<\/a>"],[100,4,"<a href=\"MeasurementsSampler\/MeasurementsSampler.php.html#76\">MeasurementsSampler::sampleMeasurements<\/a>"],[100,3,"<a href=\"MeasurementsSampler\/MeasurementsSampler.php.html#105\">MeasurementsSampler::loadModelGroup<\/a>"],[100,1,"<a href=\"Model\/Model.php.html#28\">Model::setMeasurement<\/a>"],[100,1,"<a href=\"Model\/Model.php.html#40\">Model::getMeasurement<\/a>"],[100,1,"<a href=\"Model\/Model.php.html#52\">Model::m<\/a>"],[100,3,"<a href=\"Model\/Model.php.html#65\">Model::addMeasurements<\/a>"],[100,1,"<a href=\"Note\/Note.php.html#29\">Note::setPath<\/a>"],[100,1,"<a href=\"Note\/Note.php.html#39\">Note::getPath<\/a>"],[100,1,"<a href=\"OptionsSampler\/OptionsSampler.php.html#25\">OptionsSampler::loadModelMeasurements<\/a>"],[100,2,"<a href=\"OptionsSampler\/OptionsSampler.php.html#39\">OptionsSampler::loadOptionToSample<\/a>"],[100,4,"<a href=\"OptionsSampler\/OptionsSampler.php.html#60\">OptionsSampler::getSampleValue<\/a>"],[100,6,"<a href=\"OptionsSampler\/OptionsSampler.php.html#87\">OptionsSampler::sampleOptions<\/a>"],[100,1,"<a href=\"Packer\/Packer.php.html#22\">Packer::fit<\/a>"],[100,2,"<a href=\"Part\/Part.php.html#93\">Part::__construct<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#103\">Part::setRender<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#113\">Part::getRender<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#123\">Part::setTitle<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#133\">Part::getTitle<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#143\">Part::setUnits<\/a>"],[100,2,"<a href=\"Part\/Part.php.html#157\">Part::unit<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#177\">Part::newPath<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#197\">Part::newPoint<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#221\">Part::newSnippet<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#240\">Part::newInclude<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#259\">Part::newText<\/a>"],[96,5,"<a href=\"Part\/Part.php.html#284\">Part::newNote<\/a>"],[100,2,"<a href=\"Part\/Part.php.html#333\">Part::newTextOnPath<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#358\">Part::createPoint<\/a>"],[95.348837209302,15,"<a href=\"Part\/Part.php.html#382\">Part::addTitle<\/a>"],[75,2,"<a href=\"Part\/Part.php.html#457\">Part::addPoint<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#474\">Part::addSnippet<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#488\">Part::addInclude<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#502\">Part::addText<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#516\">Part::addNote<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#530\">Part::addTextOnPath<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#544\">Part::addPath<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#558\">Part::addTransform<\/a>"],[96.666666666667,10,"<a href=\"Part\/Part.php.html#572\">Part::addBoundary<\/a>"],[100,4,"<a href=\"Part\/Part.php.html#636\">Part::hasPathToRender<\/a>"],[100,2,"<a href=\"Part\/Part.php.html#657\">Part::offsetPathString<\/a>"],[100,5,"<a href=\"Part\/Part.php.html#677\">Part::offsetPath<\/a>"],[93.548387096774,8,"<a href=\"Part\/Part.php.html#707\">Part::fixStackIntersections<\/a>"],[100,4,"<a href=\"Part\/Part.php.html#773\">Part::findAllStackIntersections<\/a>"],[100,7,"<a href=\"Part\/Part.php.html#796\">Part::findStackIntersections<\/a>"],[50,10,"<a href=\"Part\/Part.php.html#818\">Part::findCurveCurveStackIntersections<\/a>"],[83.333333333333,9,"<a href=\"Part\/Part.php.html#864\">Part::findCurveLineStackIntersections<\/a>"],[83.333333333333,9,"<a href=\"Part\/Part.php.html#903\">Part::findLineCurveStackIntersections<\/a>"],[100,2,"<a href=\"Part\/Part.php.html#941\">Part::findLineLineStackIntersections<\/a>"],[100,2,"<a href=\"Part\/Part.php.html#975\">Part::keyArray<\/a>"],[100,4,"<a href=\"Part\/Part.php.html#993\">Part::purgePoints<\/a>"],[100,14,"<a href=\"Part\/Part.php.html#1019\">Part::pathStackToPath<\/a>"],[100,2,"<a href=\"Part\/Part.php.html#1076\">Part::newId<\/a>"],[100,9,"<a href=\"Part\/Part.php.html#1099\">Part::fillPathStackGaps<\/a>"],[0,6,"<a href=\"Part\/Part.php.html#1148\">Part::pathOffsetAsStack<\/a>"],[100,2,"<a href=\"Part\/Part.php.html#1178\">Part::offsetLine<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#1207\">Part::getLineOffsetPoints<\/a>"],[100,5,"<a href=\"Part\/Part.php.html#1233\">Part::getCurveOffsetPoints<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#1285\">Part::isSamePoint<\/a>"],[100,7,"<a href=\"Part\/Part.php.html#1312\">Part::offsetCurve<\/a>"],[100,5,"<a href=\"Part\/Part.php.html#1391\">Part::offsetTolerance<\/a>"],[100,4,"<a href=\"Part\/Part.php.html#1454\">Part::pathLen<\/a>"],[100,2,"<a href=\"Part\/Part.php.html#1479\">Part::clonePoint<\/a>"],[100,2,"<a href=\"Part\/Part.php.html#1495\">Part::loadPoint<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#1511\">Part::x<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#1523\">Part::y<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#1536\">Part::distance<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#1552\">Part::deltaX<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#1568\">Part::deltaY<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#1585\">Part::rotate<\/a>"],[100,2,"<a href=\"Part\/Part.php.html#1606\">Part::angle<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#1632\">Part::curveLen<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#1649\">Part::shiftTowards<\/a>"],[0,1,"<a href=\"Part\/Part.php.html#1663\">Part::shiftFractionTowards<\/a>"],[0,1,"<a href=\"Part\/Part.php.html#1679\">Part::shiftOutwards<\/a>"],[0,1,"<a href=\"Part\/Part.php.html#1695\">Part::shiftFractionAlong<\/a>"],[95.454545454545,4,"<a href=\"Part\/Part.php.html#1716\">Part::shiftAlong<\/a>"],[100,4,"<a href=\"Part\/Part.php.html#1760\">Part::linesCross<\/a>"],[100,2,"<a href=\"Part\/Part.php.html#1788\">Part::beamsCross<\/a>"],[100,3,"<a href=\"Part\/Part.php.html#1811\">Part::isPoint<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#1831\">Part::flipX<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#1848\">Part::flipY<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#1872\">Part::curveCrossesX<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#1895\">Part::curveCrossesY<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#1912\">Part::shift<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#1934\">Part::curveEdge<\/a>"],[100,3,"<a href=\"Part\/Part.php.html#1958\">Part::curveCrossesLine<\/a>"],[100,2,"<a href=\"Part\/Part.php.html#2000\">Part::splitCurve<\/a>"],[100,3,"<a href=\"Part\/Part.php.html#2045\">Part::curvesCross<\/a>"],[0,3,"<a href=\"Part\/Part.php.html#2082\">Part::circlesCross<\/a>"],[0,3,"<a href=\"Part\/Part.php.html#2110\">Part::circleCrossesLine<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#2141\">Part::newWidthDimensionSm<\/a>"],[100,5,"<a href=\"Part\/Part.php.html#2165\">Part::newWidthDimension<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#2233\">Part::newHeightDimensionSm<\/a>"],[100,5,"<a href=\"Part\/Part.php.html#2257\">Part::newHeightDimension<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#2327\">Part::newLinearDimensionSm<\/a>"],[100,4,"<a href=\"Part\/Part.php.html#2351\">Part::newLinearDimension<\/a>"],[100,4,"<a href=\"Part\/Part.php.html#2408\">Part::newCurvedDimension<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#2471\">Part::newGrainline<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#2484\">Part::newCutOnFold<\/a>"],[100,1,"<a href=\"Part\/Part.php.html#2506\">Part::addDimension<\/a>"],[100,2,"<a href=\"Part\/Part.php.html#2520\">Part::notch<\/a>"],[100,6,"<a href=\"Part\/Part.php.html#2539\">Part::offsetPathSegments<\/a>"],[100,1,"<a href=\"Path\/Path.php.html#39\">Path::setSample<\/a>"],[100,1,"<a href=\"Path\/Path.php.html#49\">Path::getSample<\/a>"],[100,1,"<a href=\"Path\/Path.php.html#59\">Path::setBoundary<\/a>"],[100,1,"<a href=\"Path\/Path.php.html#69\">Path::getBoundary<\/a>"],[100,1,"<a href=\"Path\/Path.php.html#79\">Path::setRender<\/a>"],[100,1,"<a href=\"Path\/Path.php.html#89\">Path::getRender<\/a>"],[100,1,"<a href=\"Path\/Path.php.html#99\">Path::setPathstring<\/a>"],[100,1,"<a href=\"Path\/Path.php.html#109\">Path::getPathstring<\/a>"],[100,1,"<a href=\"Path\/Path.php.html#119\">Path::setAttributes<\/a>"],[100,1,"<a href=\"Path\/Path.php.html#129\">Path::getAttributes<\/a>"],[100,1,"<a href=\"Path\/Path.php.html#140\">Path::setAttribute<\/a>"],[100,2,"<a href=\"Path\/Path.php.html#152\">Path::getAttribute<\/a>"],[97.619047619048,19,"<a href=\"Path\/Path.php.html#170\">Path::findBoundary<\/a>"],[100,2,"<a href=\"Path\/Path.php.html#272\">Path::isClosed<\/a>"],[100,9,"<a href=\"Path\/Path.php.html#290\">Path::breakUp<\/a>"],[100,1,"<a href=\"Path\/Path.php.html#327\">Path::getStartPoint<\/a>"],[100,2,"<a href=\"Path\/Path.php.html#339\">Path::getEndPoint<\/a>"],[100,2,"<a href=\"Point\/Point.php.html#37\">Point::setX<\/a>"],[100,2,"<a href=\"Point\/Point.php.html#51\">Point::setY<\/a>"],[100,1,"<a href=\"Point\/Point.php.html#65\">Point::setDescription<\/a>"],[100,1,"<a href=\"Point\/Point.php.html#75\">Point::getDescription<\/a>"],[100,1,"<a href=\"Point\/Point.php.html#85\">Point::asVector<\/a>"],[100,2,"<a href=\"Polynomial\/Polynomial.php.html#43\">Polynomial::__construct<\/a>"],[100,1,"<a href=\"Polynomial\/Polynomial.php.html#57\">Polynomial::addCoef<\/a>"],[100,1,"<a href=\"Polynomial\/Polynomial.php.html#67\">Polynomial::getCoef<\/a>"],[100,1,"<a href=\"Polynomial\/Polynomial.php.html#78\">Polynomial::getDegree<\/a>"],[100,2,"<a href=\"Polynomial\/Polynomial.php.html#88\">Polynomial::getDerivative<\/a>"],[100,3,"<a href=\"Polynomial\/Polynomial.php.html#103\">Polynomial::evalu<\/a>"],[100,7,"<a href=\"Polynomial\/Polynomial.php.html#124\">Polynomial::bisection<\/a>"],[100,9,"<a href=\"Polynomial\/Polynomial.php.html#165\">Polynomial::getRootsInInterval<\/a>"],[89.473684210526,6,"<a href=\"Polynomial\/Polynomial.php.html#211\">Polynomial::getRoots<\/a>"],[80,3,"<a href=\"Polynomial\/Polynomial.php.html#240\">Polynomial::simplify<\/a>"],[0,13,"<a href=\"Polynomial\/Polynomial.php.html#256\">Polynomial::getQuarticRoots<\/a>"],[97.435897435897,8,"<a href=\"Polynomial\/Polynomial.php.html#331\">Polynomial::getCubicRoots<\/a>"],[86.363636363636,5,"<a href=\"Polynomial\/Polynomial.php.html#401\">Polynomial::getQuadraticRoots<\/a>"],[100,2,"<a href=\"Polynomial\/Polynomial.php.html#451\">Polynomial::getLinearRoot<\/a>"],[30.769230769231,12,"<a href=\"Request\/Request.php.html#36\">Request::__construct<\/a>"],[100,2,"<a href=\"Request\/Request.php.html#88\">Request::getData<\/a>"],[100,1,"<a href=\"Request\/Request.php.html#102\">Request::getAllData<\/a>"],[100,1,"<a href=\"Request\/Request.php.html#112\">Request::getInfo<\/a>"],[100,2,"<a href=\"Response\/Response.php.html#34\">Response::addCacheHeaders<\/a>"],[100,1,"<a href=\"Response\/Response.php.html#48\">Response::setBody<\/a>"],[100,1,"<a href=\"Response\/Response.php.html#58\">Response::getBody<\/a>"],[100,1,"<a href=\"Response\/Response.php.html#72\">Response::setFormat<\/a>"],[100,1,"<a href=\"Response\/Response.php.html#82\">Response::getFormat<\/a>"],[100,4,"<a href=\"Response\/Response.php.html#90\">Response::send<\/a>"],[100,1,"<a href=\"Response\/Response.php.html#117\">Response::addHeader<\/a>"],[100,2,"<a href=\"Response\/Response.php.html#127\">Response::sendHeaders<\/a>"],[100,1,"<a href=\"Response\/Response.php.html#139\">Response::asJson<\/a>"],[100,1,"<a href=\"Sampler\/Sampler.php.html#43\">Sampler::setPattern<\/a>"],[66.666666666667,3,"<a href=\"Sampler\/Sampler.php.html#62\">Sampler::getSamplerAnchor<\/a>"],[100,3,"<a href=\"Sampler\/Sampler.php.html#79\">Sampler::loadPatternOptions<\/a>"],[40,13,"<a href=\"Sampler\/Sampler.php.html#113\">Sampler::sampleParts<\/a>"],[18.181818181818,3,"<a href=\"Sampler\/Sampler.php.html#171\">Sampler::addSampledPartsToPattern<\/a>"],[100,1,"<a href=\"Services\/CompareService.php.html#26\">CompareService::getServiceName<\/a>"],[100,3,"<a href=\"Services\/CompareService.php.html#39\">CompareService::run<\/a>"],[100,1,"<a href=\"Services\/DraftService.php.html#26\">DraftService::getServiceName<\/a>"],[96.296296296296,3,"<a href=\"Services\/DraftService.php.html#39\">DraftService::run<\/a>"],[100,4,"<a href=\"Services\/DraftService.php.html#97\">DraftService::svgRender<\/a>"],[100,2,"<a href=\"Services\/DraftService.php.html#140\">DraftService::replace<\/a>"],[100,1,"<a href=\"Services\/InfoService.php.html#32\">InfoService::getServiceName<\/a>"],[100,4,"<a href=\"Services\/InfoService.php.html#45\">InfoService::run<\/a>"],[100,6,"<a href=\"Services\/InfoService.php.html#83\">InfoService::getPatternList<\/a>"],[100,3,"<a href=\"Services\/InfoService.php.html#106\">InfoService::loadPatternConfig<\/a>"],[100,5,"<a href=\"Services\/InfoService.php.html#124\">InfoService::getChannelList<\/a>"],[100,6,"<a href=\"Services\/InfoService.php.html#146\">InfoService::getThemeList<\/a>"],[100,3,"<a href=\"Services\/InfoService.php.html#168\">InfoService::getPatternInfo<\/a>"],[100,1,"<a href=\"Services\/SampleService.php.html#26\">SampleService::getServiceName<\/a>"],[100,4,"<a href=\"Services\/SampleService.php.html#39\">SampleService::run<\/a>"],[100,2,"<a href=\"Stack\/Stack.php.html#31\">Stack::push<\/a>"],[100,1,"<a href=\"Stack\/Stack.php.html#43\">Stack::addIntersection<\/a>"],[100,4,"<a href=\"Stack\/Stack.php.html#54\">Stack::replace<\/a>"],[100,1,"<a href=\"SvgAttributes\/SvgAttributes.php.html#25\">SvgAttributes::load<\/a>"],[100,1,"<a href=\"SvgBlock\/SvgBlock.php.html#15\">SvgBlock::load<\/a>"],[100,3,"<a href=\"SvgBlock\/SvgBlock.php.html#25\">SvgBlock::__toString<\/a>"],[100,1,"<a href=\"SvgBlock\/SvgBlock.php.html#45\">SvgBlock::getData<\/a>"],[100,4,"<a href=\"SvgBlock\/SvgBlock.php.html#61\">SvgBlock::add<\/a>"],[100,2,"<a href=\"SvgComments\/SvgComments.php.html#25\">SvgComments::load<\/a>"],[100,2,"<a href=\"SvgCss\/SvgCss.php.html#25\">SvgCss::load<\/a>"],[100,5,"<a href=\"SvgCss\/SvgCss.php.html#43\">SvgCss::sortCss<\/a>"],[100,2,"<a href=\"SvgDefs\/SvgDefs.php.html#25\">SvgDefs::load<\/a>"],[100,1,"<a href=\"SvgDocument\/SvgDocument.php.html#57\">SvgDocument::__construct<\/a>"],[100,1,"<a href=\"SvgDocument\/SvgDocument.php.html#83\">SvgDocument::__toString<\/a>"],[100,1,"<a href=\"SvgDocument\/SvgDocument.php.html#101\">SvgDocument::setSvgBody<\/a>"],[100,1,"<a href=\"SvgInclude\/SvgInclude.php.html#22\">SvgInclude::set<\/a>"],[100,1,"<a href=\"SvgInclude\/SvgInclude.php.html#32\">SvgInclude::get<\/a>"],[100,7,"<a href=\"SvgRenderbot\/SvgRenderbot.php.html#37\">SvgRenderbot::render<\/a>"],[100,7,"<a href=\"SvgRenderbot\/SvgRenderbot.php.html#69\">SvgRenderbot::renderPath<\/a>"],[100,2,"<a href=\"SvgRenderbot\/SvgRenderbot.php.html#99\">SvgRenderbot::tab<\/a>"],[100,1,"<a href=\"SvgRenderbot\/SvgRenderbot.php.html#114\">SvgRenderbot::nl<\/a>"],[100,1,"<a href=\"SvgRenderbot\/SvgRenderbot.php.html#122\">SvgRenderbot::indent<\/a>"],[100,1,"<a href=\"SvgRenderbot\/SvgRenderbot.php.html#130\">SvgRenderbot::outdent<\/a>"],[100,1,"<a href=\"SvgRenderbot\/SvgRenderbot.php.html#140\">SvgRenderbot::getUid<\/a>"],[100,1,"<a href=\"SvgRenderbot\/SvgRenderbot.php.html#159\">SvgRenderbot::openGroup<\/a>"],[100,1,"<a href=\"SvgRenderbot\/SvgRenderbot.php.html#180\">SvgRenderbot::closeGroup<\/a>"],[100,15,"<a href=\"SvgRenderbot\/SvgRenderbot.php.html#204\">SvgRenderbot::renderPart<\/a>"],[100,3,"<a href=\"SvgRenderbot\/SvgRenderbot.php.html#254\">SvgRenderbot::renderSnippet<\/a>"],[86.363636363636,6,"<a href=\"SvgRenderbot\/SvgRenderbot.php.html#286\">SvgRenderbot::renderText<\/a>"],[100,1,"<a href=\"SvgRenderbot\/SvgRenderbot.php.html#332\">SvgRenderbot::renderNote<\/a>"],[100,4,"<a href=\"SvgRenderbot\/SvgRenderbot.php.html#352\">SvgRenderbot::renderDimension<\/a>"],[100,5,"<a href=\"SvgRenderbot\/SvgRenderbot.php.html#383\">SvgRenderbot::renderTextOnPath<\/a>"],[100,2,"<a href=\"SvgScript\/SvgScript.php.html#26\">SvgScript::load<\/a>"],[100,1,"<a href=\"SvgSnippet\/SvgSnippet.php.html#31\">SvgSnippet::getAnchor<\/a>"],[100,1,"<a href=\"SvgSnippet\/SvgSnippet.php.html#41\">SvgSnippet::getReference<\/a>"],[100,1,"<a href=\"SvgSnippet\/SvgSnippet.php.html#51\">SvgSnippet::getDescription<\/a>"],[100,1,"<a href=\"SvgSnippet\/SvgSnippet.php.html#61\">SvgSnippet::getAttributes<\/a>"],[100,1,"<a href=\"SvgSnippet\/SvgSnippet.php.html#71\">SvgSnippet::setAnchor<\/a>"],[100,1,"<a href=\"SvgSnippet\/SvgSnippet.php.html#81\">SvgSnippet::setReference<\/a>"],[100,1,"<a href=\"SvgSnippet\/SvgSnippet.php.html#91\">SvgSnippet::setDescription<\/a>"],[100,1,"<a href=\"SvgSnippet\/SvgSnippet.php.html#101\">SvgSnippet::setAttributes<\/a>"],[100,1,"<a href=\"Text\/Text.php.html#28\">Text::setAnchor<\/a>"],[100,1,"<a href=\"Text\/Text.php.html#38\">Text::setText<\/a>"],[100,1,"<a href=\"Text\/Text.php.html#48\">Text::setAttributes<\/a>"],[100,1,"<a href=\"Text\/Text.php.html#58\">Text::getAnchor<\/a>"],[100,1,"<a href=\"Text\/Text.php.html#68\">Text::getText<\/a>"],[100,1,"<a href=\"Text\/Text.php.html#78\">Text::getAttributes<\/a>"],[100,1,"<a href=\"TextOnPath\/TextOnPath.php.html#31\">TextOnPath::setPath<\/a>"],[100,1,"<a href=\"TextOnPath\/TextOnPath.php.html#41\">TextOnPath::setText<\/a>"],[100,1,"<a href=\"TextOnPath\/TextOnPath.php.html#51\">TextOnPath::setAttributes<\/a>"],[100,1,"<a href=\"TextOnPath\/TextOnPath.php.html#61\">TextOnPath::getPath<\/a>"],[100,1,"<a href=\"TextOnPath\/TextOnPath.php.html#71\">TextOnPath::getText<\/a>"],[100,1,"<a href=\"TextOnPath\/TextOnPath.php.html#81\">TextOnPath::getAttributes<\/a>"],[100,9,"<a href=\"Transform\/Transform.php.html#39\">Transform::__construct<\/a>"],[45.454545454545,4,"<a href=\"Transform\/Transform.php.html#89\">Transform::asSvgTransform<\/a>"],[100,2,"<a href=\"Transform\/Transform.php.html#113\">Transform::asSvgParameter<\/a>"],[100,4,"<a href=\"Utils\/Utils.php.html#29\">Utils::asScrubbedArray<\/a>"],[0,5,"<a href=\"Utils\/Utils.php.html#59\">Utils::asPointArray<\/a>"],[100,2,"<a href=\"Utils\/Utils.php.html#82\">Utils::isAllowedPathCommand<\/a>"],[100,4,"<a href=\"Utils\/Utils.php.html#114\">Utils::flattenAttributes<\/a>"],[100,1,"<a href=\"Utils\/Utils.php.html#136\">Utils::getClassDir<\/a>"],[100,1,"<a href=\"Utils\/Utils.php.html#150\">Utils::getApiDir<\/a>"],[100,10,"<a href=\"Utils\/Utils.php.html#165\">Utils::lineLineIntersection<\/a>"],[100,1,"<a href=\"Utils\/Utils.php.html#225\">Utils::getSlope<\/a>"],[100,3,"<a href=\"Utils\/Utils.php.html#241\">Utils::isSamePoint<\/a>"],[100,1,"<a href=\"Utils\/Utils.php.html#258\">Utils::distance<\/a>"],[0,1,"<a href=\"Utils\/Utils.php.html#273\">Utils::debug<\/a>"],[100,1,"<a href=\"Utils\/Utils.php.html#288\">Utils::slug<\/a>"],[100,3,"<a href=\"Utils\/Utils.php.html#300\">Utils::constraint<\/a>"],[0,9,"<a href=\"Utils\/Utils.php.html#320\">Utils::circleCircleIntersections<\/a>"],[0,8,"<a href=\"Utils\/Utils.php.html#371\">Utils::circleLineIntersections<\/a>"],[100,1,"<a href=\"Vector\/Vector.php.html#26\">Vector::__clone<\/a>"],[100,1,"<a href=\"Vector\/Vector.php.html#42\">Vector::multiply<\/a>"],[100,1,"<a href=\"Vector\/Vector.php.html#58\">Vector::dot<\/a>"],[100,1,"<a href=\"Vector\/Vector.php.html#70\">Vector::add<\/a>"],[100,1,"<a href=\"Vector\/Vector.php.html#84\">Vector::asPoint<\/a>"],[100,1,"<a href=\"Vector\/Vector.php.html#101\">Vector::lerp<\/a>"],[100,1,"<a href=\"Vector\/Vector.php.html#117\">Vector::min<\/a>"],[100,1,"<a href=\"Vector\/Vector.php.html#133\">Vector::max<\/a>"],[100,2,"<a href=\"Vector\/Vector.php.html#149\">Vector::gte<\/a>"],[100,2,"<a href=\"Vector\/Vector.php.html#161\">Vector::lte<\/a>"],[100,1,"<a href=\"Yamlr\/Yamlr.php.html#26\">Yamlr::loadYamlFile<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
