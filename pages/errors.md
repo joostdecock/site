@@ -1,0 +1,30 @@
+---
+layout: cards
+title: Error dashboard
+permalink: /errors
+nopatronbanner: true
+crumbs: false
+action: errors
+nocomments: true
+---
+<div class="container">
+    <div class="m600 hidden failed-to-load-errors">
+        <blockquote class="error">
+            <h5>Failed to load recent errors</h5>
+            <p>We were unable to load the recent errors from our backend.</p>
+            <p>This is not supposed to happen. Please check <a href="/status">the status page</a>.</p>
+        </blockquote>
+    </div>
+    <h3 class="errors-loaded">New/Open errors from the last 24 hours</h3> 
+    <table id="errors" class="errors table">
+        <thead>
+            <tr>
+                <th>Count</th>
+                <th>Level</th>
+                <th>Error</th>
+                <th>Type</th>
+                <th>Origin</th>
+            </tr>
+        </thead>
+    </table>
+</div>
