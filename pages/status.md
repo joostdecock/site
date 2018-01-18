@@ -5,13 +5,16 @@ permalink: /status
 nopatronbanner: true
 crumbs: false
 action: status
+nocomments: true
 ---
 <div class="container">
     <div class="row">
         <div class="col-sm-4">
             <blockquote id="core-status" class="text-white py-3">
-                <div class="status-icon float-right">
+                <div class="status-icon float-right text-right">
                     <i class="fa fa-check fa-3x" aria-hidden="true"></i>
+                    <br>
+                    <img src="https://travis-ci.org/freesewing/core.svg?branch={{ site.branch }}" class="drop-shadow mt-3" style="margin-right: -15px;">
                 </div>
                 <h3>Core API</h3>
             </blockquote>
@@ -20,6 +23,8 @@ action: status
             <blockquote id="data-status" class="text-white py-3">
                 <div class="status-icon float-right">
                     <i class="fa fa-check fa-3x" aria-hidden="true"></i>
+                    <br>
+                    <img src="https://travis-ci.org/freesewing/data.svg?branch={{ site.branch }}" class="drop-shadow mt-3" style="margin-right: -15px;">
                 </div>
                 <h3>Data API</h3>
             </blockquote>
@@ -43,45 +48,6 @@ action: status
             </blockquote>
         </div>
     </div>
-    <p>Skip ahead to 
-        <a href="#rollbar">run-time issues</a>, 
-        <a href="#builds">code builds</a>, 
-        <a href="#issues">code issues</a>, 
-        <a href="#counters">counters</a>, 
-        <a href="#code-base">code base</a>, 
-        <a href="#server-status">server status</a>,
-        or <a href="#referrals">referrals</a> 
-    </p>
-    <h2 id="rollbar">Run-time issues on Rollbar</h2>
-    <p>We use <a href="https://rollbar.com/joostdecock/freesewing.org/" target="_BLANK">Rollbar</a> to notify us of errors in our production code. If there are any, they are listed below.</p>
-    <table id="rollbar-table" class="table">
-        <thead>
-            <tr>
-                <th scope="col" class="px-1">Level</th>
-                <th scope="col" class="px-1">Count</th>
-                <th scope="col" class="px-1">Source</th>
-                <th scope="col" class="px-1">Issue</th>
-            </tr>
-        </thead>
-    </table>
-    <h2 id="builds">Code builds by Travis</h2>
-    <p>We use <a href="https://travis-ci.org/freesewing" target="_BLANK">Travis</a> to build and deploy our code. The build status for our core and data backends are listed below.</p>
-    <table class="table">
-        <tr><th nowrap scope="row">core</th><td style="width: 100%"><img src="https://travis-ci.org/freesewing/core.svg?branch=master"></td></tr>
-        <tr><th nowrap scope="row">data</th><td style="width: 100%"><img src="https://travis-ci.org/freesewing/data.svg?branch=master"></td></tr>
-    </table>
-    <h2 id="issues">Code issues on GitHub</h2>
-    <p>We track bugs, feature requests, and other improvements through <a href="https://github.com/freesewing" target="_BLANK">GitHub</a> issues. Open issues are listed below, per repository.</p>
-    <table id="github-table" class="table">
-        <thead>
-            <tr>
-                <th scope="col" class="px-1">Repo</th>
-                <th scope="col" class="px-1">Issue</th>
-                <th scope="col" class="px-1">By</th>
-                <th scope="col" class="px-1">Title</th>
-            </tr>
-        </thead>
-    </table>
     <h2 id="counters">Counters</h2>
     <div class="row only-on-small">
         <table class="table">
@@ -143,33 +109,6 @@ action: status
             </div>
         </div>
     </div>
-    <h2 id="code-base">Code base</h2>
-    <div class="row">
-        <div class="col-md-4 mb-3">
-            <div class="card hover-shadow">
-                <div class="card-block">
-                    <h4 class="card-title">Site</h4>
-                    <div id="site"></div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-3">
-            <div class="card hover-shadow">
-                <div class="card-block">
-                    <h4 class="card-title">Data</h4>
-                    <div id="data"></div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-3">
-            <div class="card hover-shadow">
-                <div class="card-block">
-                    <h4 class="card-title">Core</h4>
-                    <div id="core"></div>
-                </div>
-            </div>
-        </div>
-    </div>
     <h2 id="server-status">Server status</h2>
     <p>Uptime: <span id="uptime"></span></p>
     <div class="row">
@@ -204,16 +143,5 @@ action: status
             </div>
         </div>
     </div>
-    <h2 id="referrals">Referrals</h2>
-    <p>This is data for the last two weeks</p>
-    <table id="reflist" class="table striped paper">
-        <thead>
-            <tr>
-                <th style="max-width: 4rem; text-align:right">Count</th>
-                <th>Site</th>
-                <th class="not-on-small" style="width: 60%;">Proportion</th>
-            </tr>
-        </thead>
-    </table>
 </div>
 <span id="branch" data-branch="{{ site.branch }}"></span>
