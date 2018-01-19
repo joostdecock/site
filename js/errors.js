@@ -1,15 +1,37 @@
 (function ($) {
     $(document).ready(function () {
-        var repos = ['core', 'data', 'site'];
-        $.getJSON(api.data+'/errors', function( errors ) {
-            if(errors.result == 'ok') {
-                 renderRecentErrors(errors.errors);   
-            } else {
-                $('#failed-to-load-errors').removeClass('hidden');
-            }
-        }).fail(function() {
-            $('#failed-to-load-errors').removeClass('hidden');
-        });
+        if(page == '/errors') { // Error dashboard
+            $.getJSON(api.data+'/errors', function( errors ) {
+                if(errors.result == 'ok') {
+                     renderRecentErrors(errors.errors);   
+                } else {
+                    $('.failed-to-load-errors').removeClass('hidden');
+                }
+            }).fail(function() {
+                $('.failed-to-load-errors').removeClass('hidden');
+            });
+        }
+        else if(page.substr(0,8) == '/errors/' && page.length == 48) { // Error group page
+            var errorHash = page.split('/')[2];
+            $.getJSON(api.data+'/errors/'+errorHash, function( error ) {
+                if(error.result == 'ok') {
+                    renderErrorGroupHash(errorHash);
+                    $('#error-counters').html(renderErrorGroupCounters(error.group.count));
+                    renderErrorGroupInstances(error.group.errors);
+                    $('#error-type-icon').html(formatErrorType(error.group.type));
+                    $('#error-group-title').html(error.group.message);
+                    $('#error-group-file').html(renderErrorFileLine(error.group.file, error.group.line));
+                    if(error.group.raw == '') $('#raw').addClass('hidden');
+                    else $('#error-group-raw').html(error.group.raw);
+                    timeago().render($('.timeago'));
+                
+                } else {
+                    $('.failed-to-load-error').removeClass('hidden');
+                }
+            }).fail(function() {
+                $('.failed-to-load-error').removeClass('hidden');
+            });
+        }
 
         function renderRecentErrors(errors) {
             $.each(errors, function(index, e){
@@ -19,11 +41,12 @@
 
         function renderRecentErrorRow(e) {
             var row =  '<tr>';
+            row += '<td class="text-center not-on-small">'+formatErrorStatus(e.status)+'</td>';
             row += '<td class="text-right">'+formatErrorCount(e.count)+'</td>';
             row += '<td class="text-center">'+formatErrorLevel(e.level)+'</td>';
             row += '<td>'+formatErrorGroupText(e.message, e.hash)+'</td>';
             row += '<td class="text-center">'+formatErrorType(e.type)+'</td>';
-            row += '<td class="text-center">'+formatErrorOrigin(e.origin)+'</td>';
+            row += '<td class="text-center not-on-small">'+formatErrorOrigin(e.origin)+'</td>';
             row += '</tr>';
 
             return row;
@@ -51,10 +74,72 @@
         }
 
         function formatErrorOrigin(origin) {
-            if(origin == api.core.substr(8)) return '<span class="badge badge-success badge-pill">CORE</span>';
-            else if(origin == api.data.substr(8)) return '<span class="badge badge-info badge-pill">DATA</span>';
-            else if(origin == window.location.hostname) return '<span class="badge badge-primary badge-pill">SITE</span>';
-            else return '<span class="badge badge-default badge-pill">UNKNOWN</span>';
+            if(origin == api.core.substr(8)) return '<code>CORE</code>';
+            else if(origin == api.data.substr(8)) return '<code>DATA</code>';
+            else if(origin == window.location.hostname) return '<code>SITE</code>';
+            else return '<code>UNKNOWN</code>';
+        }
+        
+        function renderErrorGroupHash(hash) {
+            $('.error-hash').html('<a href="/errors/'+hash+'">'+hash+'</a>');
+        }
+
+        function renderErrorFileLine(file,line) {
+            var url = file;
+            if(file.substr(0,20) == '/home/joost/git/data') {
+                var repo = 'data';
+                var url = 'https://github.com/freesewing/data/tree/master'+file.substr(20);
+                var file = url.substr(47);
+            }
+            if(file.substr(0,20) == '/home/joost/git/core') {
+                var repo = 'core';
+                var url = 'https://github.com/freesewing/core/tree/master'+file.substr(20);
+                var file = url.substr(47);
+            }
+            else {
+                var repo = 'site';
+                var url = file;
+            }
+
+            return '<small><code>'+repo+'</code> &nbsp; <a href="'+url+'#L'+line+'" target="_BLANK">'+file+'#'+line+'</a></small>';
+
+        }
+
+        function renderErrorGroupCounters(c) {
+            console.log(c);
+            var html = '';
+            if (c.new > 0) html += formatErrorStatus('new', c.new);
+            if (c.open > 0) html += ' '+formatErrorStatus('open', c.open);
+            if (c.muted > 0) html += ' '+formatErrorStatus('muted', c.muted);
+            if (c.closed > 0) html += ' '+formatErrorStatus('closed', c.closed);
+
+            return html;
+        }
+
+        function renderErrorGroupInstances(errors) {
+            $.each(errors, function(index, e){
+                $('#errors tr:last').after(renderErrorGroupRow(e));
+            });
+        }
+        
+        function renderErrorGroupRow(e) {
+            var row =  '<tr>';
+            row += '<td class="text-center">'+e.id+'</td>';
+            row += '<td class="text-center">'+formatErrorStatus(e.status)+'</td>';
+            row += '<td>'+e.ip+'</td>';
+            row += '<td><span class="date timeago" datetime="'+e.time+'">'+e.time+'</span></td>';
+            row += '</tr>';
+
+            return row;
+        }
+        
+        function formatErrorStatus(status, count='') {
+            if(count != '') count = count+' ';
+            if(status == 'new') return '<span class="badge badge-success badge-pill">'+count+'NEW</span>';
+            else if(status == 'open') return '<span class="badge badge-info badge-pill">'+count+'OPEN</span>';
+            else if(status == 'muted') return '<span class="badge badge-warning badge-pill">'+count+'MUTED</span>';
+            else if(status == 'closed') return '<span class="badge badge-default badge-pill">'+count+'CLOSED</span>';
+            else return '<span class="badge badge-danger badge-pill">'+count+'UNKNOWN</span>';
         }
     });
 }(jQuery));
