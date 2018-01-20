@@ -3,8 +3,8 @@
 window.onerror=bailHandler;
 
 function bailHandler(msg,file,line,chr)  {
-    var api = '{{ site.bail.api }}';
-    var origin = '{{ site.bail.origin }}';
+    var api = '{{ site.api.data }}/error';
+    var origin = window.location.hostname;
     
     var data = encodeURI('level=0&type=js-error');
     data += encodeURI('&message='+msg);

@@ -13,10 +13,7 @@ api:
   core: 'https://dev.core.freesewing.org'
   data: 'https://dev.data.freesewing.org'
 
-bail:
-  enable: true
-  api: 'https://dev.data.freesewing.org/error'
-  origin: 'data.freesewing.org'
+bail: true
 
 markdown: kramdown
 kramdown:
