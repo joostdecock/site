@@ -1,5 +1,6 @@
 (function ($) {
     $(document).ready(function () {
+        var token = false;
         if(page == '/errors') { // Error dashboard
             $.getJSON(api.data+'/errors', function( errors ) {
                 if(errors.result == 'ok') {
@@ -11,8 +12,26 @@
                 $('.failed-to-load-errors').removeClass('hidden');
             });
         }
+        else if(page == '/errors/all') { // All errors
+            console.log('loading all errors');
+            $.getJSON(api.data+'/errors/all', function( errors ) {
+                if(errors.result == 'ok') {
+                     renderRecentErrors(errors.errors);   
+                } else {
+                    $('.failed-to-load-errors').removeClass('hidden');
+                }
+            }).fail(function() {
+                $('.failed-to-load-errors').removeClass('hidden');
+            });
+        }
         else if(page.substr(0,8) == '/errors/' && page.length == 48) { // Error group page
             var errorHash = page.split('/')[2];
+            renderErrorGroup(errorHash);
+            get_role(errorAdmin);
+        }
+
+        function renderErrorGroup(errorHash) {
+            $('#errors tr.error').remove();
             $.getJSON(api.data+'/errors/'+errorHash, function( error ) {
                 if(error.result == 'ok') {
                     renderErrorGroupHash(errorHash);
@@ -24,7 +43,6 @@
                     if(error.group.raw == '') $('#raw').addClass('hidden');
                     else $('#error-group-raw').html(error.group.raw);
                     timeago().render($('.timeago'));
-                
                 } else {
                     $('.failed-to-load-error').removeClass('hidden');
                 }
@@ -33,20 +51,54 @@
             });
         }
 
-        function renderRecentErrors(errors) {
-            $.each(errors, function(index, e){
-                $('#errors tr:last').after(renderRecentErrorRow(e));
+        function errorAdmin(role) {
+            if(role == 'admin') showErrorAdminControls();
+        }
+
+        function showErrorAdminControls(){
+            $('.error-admin').removeClass('hidden');
+            // Bind click handler to status change buttons
+            $('.update-status').click(function(e) {
+                updateErrorStatus($(this).attr('data-status'));
             });
         }
 
+        function updateErrorStatus(status) {
+            var token = window.localStorage.getItem("jwt");
+            $.ajax({
+                url: api.data+'/admin/errors/'+errorHash,
+                method: 'POST',
+                dataType: 'json',
+                data: {'status' : status},
+                success: function(info) { renderErrorGroup(errorHash) },
+                error: function() { $.bootstrapGrowl("Failed to update status", {type: 'error'}); },
+                headers: {'Authorization': 'Bearer '+token},
+            }); 
+        }
+        
+        function renderRecentErrors(errors) {
+            if(typeof errors == 'undefined') {
+                $('.errors-loaded').addClass('hidden');
+                $('.no-errors-loaded').removeClass('hidden');
+            } else {
+                $('.no-errors-loaded').addClass('hidden');
+                $('.errors-loaded').removeClass('hidden');
+                $.each(errors, function(index, e){
+                    $('#errors tr:last').after(renderRecentErrorRow(e));
+                });
+                timeago().render($('.timeago'));
+            }
+        }
+
         function renderRecentErrorRow(e) {
-            var row =  '<tr>';
+            var row =  '<tr class="error">';
             row += '<td class="text-center not-on-small">'+formatErrorStatus(e.status)+'</td>';
             row += '<td class="text-right">'+formatErrorCount(e.count)+'</td>';
             row += '<td class="text-center">'+formatErrorLevel(e.level)+'</td>';
             row += '<td>'+formatErrorGroupText(e.message, e.hash)+'</td>';
             row += '<td class="text-center">'+formatErrorType(e.type)+'</td>';
             row += '<td class="text-center not-on-small">'+formatErrorOrigin(e.origin)+'</td>';
+            row += '<td><span class="date timeago" datetime="'+e.time+' +UTC">'+e.time+'</span></td>';
             row += '</tr>';
 
             return row;
@@ -106,7 +158,6 @@
         }
 
         function renderErrorGroupCounters(c) {
-            console.log(c);
             var html = '';
             if (c.new > 0) html += formatErrorStatus('new', c.new);
             if (c.open > 0) html += ' '+formatErrorStatus('open', c.open);
@@ -123,11 +174,11 @@
         }
         
         function renderErrorGroupRow(e) {
-            var row =  '<tr>';
+            var row =  '<tr class="error">';
             row += '<td class="text-center">'+e.id+'</td>';
             row += '<td class="text-center">'+formatErrorStatus(e.status)+'</td>';
             row += '<td>'+e.ip+'</td>';
-            row += '<td><span class="date timeago" datetime="'+e.time+'">'+e.time+'</span></td>';
+            row += '<td><span class="date timeago" datetime="'+e.time+' +UTC">'+e.time+'</span></td>';
             row += '</tr>';
 
             return row;
@@ -141,5 +192,17 @@
             else if(status == 'closed') return '<span class="badge badge-default badge-pill">'+count+'CLOSED</span>';
             else return '<span class="badge badge-danger badge-pill">'+count+'UNKNOWN</span>';
         }
+
+        function get_role(callback) {
+            var token = window.localStorage.getItem("jwt");
+            $.ajax({
+                url: api.data+'/auth',
+                method: 'GET',
+                dataType: 'json',
+                success: function(info) { callback(info.role) },
+                error: function() { callback(false) },
+                headers: {'Authorization': 'Bearer '+token},
+            }); 
+       }
     });
 }(jQuery));

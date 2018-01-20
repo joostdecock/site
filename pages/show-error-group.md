@@ -22,6 +22,11 @@ action: errors
         <div class="col-2 col-lg-1" id="error-type-icon">
         </div>
     </div>
+    <div class="error-admin mt-3 mb-3 hidden text-right">
+        <button class="btn btn-sm btn-default btn-info update-status" data-status="open">Open</button>
+        <button class="btn btn-sm btn-default btn-info update-status" data-status="muted">Mute</button>
+        <button class="btn btn-sm btn-default btn-info update-status" data-status="closed">Close</button>
+    </div>
     <div id="raw" class="highlighter-rouge"><pre class="highlight"><code id="error-group-raw"></code></pre></div>
     <div class="row mb-5">
         <div class="col-md-6" id="error-counters">
