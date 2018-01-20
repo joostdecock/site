@@ -98,7 +98,7 @@
             row += '<td>'+formatErrorGroupText(e.message, e.hash)+'</td>';
             row += '<td class="text-center">'+formatErrorType(e.type)+'</td>';
             row += '<td class="text-center not-on-small">'+formatErrorOrigin(e.origin)+'</td>';
-            row += '<td><span class="date timeago" datetime="'+e.time+' +UTC">'+e.time+'</span></td>';
+            row += '<td class="not-on-small"><span class="date timeago" datetime="'+e.time+' +UTC">'+e.time+'</span></td>';
             row += '</tr>';
 
             return row;
