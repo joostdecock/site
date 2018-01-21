@@ -24,4 +24,7 @@
 /profile*    /show-user  200
 # Donations
 /donate /patrons/join 301
-
+# Errors
+/errors/all /show-all-errors 200
+/errors/*   /show-error-group 200
+/errors     /error-dashboard 200
