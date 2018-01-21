@@ -1,5 +1,5 @@
 // Error handling through bail?
-{% if site.bail.enable %}
+{% if site.bail %}
 window.onerror=bailHandler;
 
 function bailHandler(msg,file,line,chr)  {
