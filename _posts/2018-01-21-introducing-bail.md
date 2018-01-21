@@ -135,7 +135,7 @@ Not the entire thing, but a minimalistic version of it that did what we needed, 
 Rather than somehow hack this into our data and core backends, 
 I wrote it as a seperate library that we can simply plug in to both. 
 
-It's called bail and as of today we are running it on our all production system.
+It's called [bail](https://github.com/freesewing/bail) and as of today we are running it on our all production system.
 If you'd like to give it a go, a simple `composer require freesewing/bail` will add it to your PHP project.
 
 {% include figure.html 
