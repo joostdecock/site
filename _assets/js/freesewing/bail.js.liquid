@@ -1,5 +1,4 @@
-// Error handling through bail?
-{% if site.bail %}
+// Error handling through bail
 window.onerror=bailHandler;
 
 function bailHandler(msg,file,line,chr)  {
@@ -27,4 +26,3 @@ function bailHandler(msg,file,line,chr)  {
  	
 	return true
 }
-{% endif %}
