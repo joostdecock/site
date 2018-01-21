@@ -13,6 +13,8 @@ api:
   core: 'https://joost.core.freesewing.org'
   data: 'https://joost.data.freesewing.org'
 
+bail: true
+
 markdown: kramdown
 kramdown:
     input: GFM

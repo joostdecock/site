@@ -1,3 +1,4 @@
+//= require freesewing/bail
 //= require vendor/jquery.min
 //= require vendor/tether.min
 //= require vendor/bootstrap.min

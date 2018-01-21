@@ -1,0 +1,30 @@
+// Error handling through bail?
+{% if site.bail.enable %}
+window.onerror=bailHandler;
+
+function bailHandler(msg,file,line,chr)  {
+    var api = '{{ site.api.data }}/error';
+    var origin = window.location.hostname;
+    
+    var data = encodeURI('level=0&type=js-error');
+    data += encodeURI('&message='+msg);
+    data += encodeURI('&file='+file);
+    data += encodeURI('&line='+line);
+    data += encodeURI('&origin='+origin);
+
+	var request = new XMLHttpRequest();
+	request.open('POST', api);
+	request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+	request.onload = function() {
+		if (request.status === 200) {
+			console.log('Reported error in line '+line+ ' of '+file+': '+msg);
+		}
+		else if (request.status !== 200) {
+			console.log('Failed to report error in line '+line+ ' of '+file+': '+msg);
+		}
+	};
+	request.send(data);
+ 	
+	return true
+}
+{% endif %}

@@ -12,19 +12,6 @@
         });
         $.getJSON(api.data+'/status', function( s ) {
             $('#data-status').addClass('bg-success').append('<h5>Up and running</h5>');
-            $.each(s.rollbar.result.items, function(index, item){
-                if(item.level == 'error') var levelclass = 'danger';
-                else var levelclass = 'default';
-                if(item.unique_occurrences > 10) var countclass = 'warning';
-                else if(item.unique_occurrences > 100) var countclass = 'danger';
-                else var countclass = 'default';
-                if(item.environment == 'data.freesewing.org') var environment = 'data';
-                else if(item.environment == 'core.freesewing.org') var environment = 'core';
-                else var environment = item.environment;
-                var row = "<tr><td><span class='badge badge-"+levelclass+"'>"+item.level+"</span></td>";
-                row += "<td class='text-center'><span class='badge badge-"+countclass+"'>"+item.unique_occurrences+"</span></td><td>"+environment+"</td><td><small>"+item.title+"</small></td></tr>";
-                $('#rollbar-table').append(row);
-            });
             $('.users').html(s.data.users);
             $('.models').html(s.data.models);
             $('.drafts').html(s.data.drafts);

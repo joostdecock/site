@@ -13,6 +13,8 @@ api:
   core: 'https://core.freesewing.org'
   data: 'https://data.freesewing.org'
 
+bail: false
+
 markdown: kramdown
 kramdown:
     input: GFM
