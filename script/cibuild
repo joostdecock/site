@@ -2,6 +2,8 @@
 set -e # halt script on error
 echo "build: $COMMIT_REF" > build.yml
 if [ "$BRANCH" = "master" ]; then
+    echo "Enabling bail"
+    sed -i 's/bail: false/bail: true/g' _config.yml
     echo "Building master branch"
     bundle exec jekyll build --config _config.yml,build.yml
 else
