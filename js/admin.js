@@ -238,8 +238,8 @@
 
         function getUsers(filter, callBack) {
             $.ajax({
-                url: api.data+'/find/users/'+filter,
-                method: 'POST',
+                url: api.data+'/admin/find/users/'+filter,
+                method: 'GET',
                 dataType: 'json',
                 success: function(data) {
                     if(filter = $('#input').val()) renderUsers(data.users);
