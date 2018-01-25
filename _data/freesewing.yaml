@@ -1,5 +1,5 @@
 version:
-    core: 1.4.0
+    core: 1.5.0
 patterns:
     AaronAshirt:
         info:
@@ -162,6 +162,22 @@ patterns:
                 min: -40
                 max: 160
                 default: 30
+            bicepsEase:
+                title: 'Biceps ease'
+                description: 'The amount of ease at your upper arm'
+                group: fit
+                type: measure
+                min: 30
+                max: 80
+                default: 50
+            cuffEase:
+                title: 'Cuff ease'
+                description: 'The amount of ease at your wrist'
+                group: fit
+                type: measure
+                min: 0
+                max: 100
+                default: 45
             lengthBonus:
                 title: 'Length bonus'
                 description: 'Amount to lengthen the body. A negative value will shorten it.'
@@ -178,14 +194,6 @@ patterns:
                 min: -40
                 max: 80
                 default: 0
-            cuffEase:
-                title: 'Cuff ease'
-                description: 'The amount of ease at your wrist'
-                group: fit
-                type: measure
-                min: 0
-                max: 100
-                default: 45
             armholeDepthFactor:
                 title: 'Armhole depth factor'
                 description: 'A factor that influences the depth of the armhole'
@@ -193,7 +201,7 @@ patterns:
                 type: percent
                 min: 50
                 max: 65
-                default: 60
+                default: 50
             sleevecapHeightFactor:
                 title: 'Sleevecap height factor'
                 description: 'A factor that influences the height of the sleevecap'
@@ -205,9 +213,10 @@ patterns:
         optiongroups:
             fit:
                 - chestEase
+                - bicepsEase
+                - cuffEase
                 - lengthBonus
                 - sleeveLengthBonus
-                - cuffEase
             advanced:
                 - armholeDepthFactor
                 - sleevecapHeightFactor
@@ -573,7 +582,7 @@ patterns:
                 type: measure
                 min: 40
                 max: 120
-                default: 40
+                default: 60
             collarEase:
                 title: 'Collar ease'
                 description: 'The amount of ease around your neck with a closed collar'
@@ -612,7 +621,7 @@ patterns:
                 group: fit
                 type: measure
                 min: 0
-                max: 10
+                max: 20
                 default: 5
             hipFlare:
                 title: 'Hip flare'
@@ -862,7 +871,7 @@ patterns:
                 type: percent
                 min: 45
                 max: 60
-                default: 50
+                default: 45
             sleevecapEase:
                 title: 'Sleevecap ease'
                 description: 'The amount by which the sleevecap seam is longer than the armhole seam'
@@ -1514,9 +1523,9 @@ patterns:
                 description: 'The amount of ease at your upper arm'
                 group: fit
                 type: measure
-                min: 0
-                max: 80
-                default: 30
+                min: 40
+                max: 100
+                default: 70
             chestEase:
                 title: 'Chest ease'
                 description: 'The amount of ease at your chest'
@@ -1530,9 +1539,9 @@ patterns:
                 description: 'The amount of ease at your wrist'
                 group: fit
                 type: measure
-                min: 0
-                max: 100
-                default: 50
+                min: 60
+                max: 120
+                default: 120
             lengthBonus:
                 title: 'Length bonus'
                 description: 'Amount to lengthen the body. A negative value will shorten it.'
@@ -1593,6 +1602,165 @@ patterns:
                 - armholeDepthFactor
                 - sleevecapEase
                 - sleevecapHeightFactor
+    CarlitaCoat:
+        info:
+            name: 'Carlita Coat'
+            description: 'The womenswear version of our Carlton coat, aka Sherlock Holmes coat'
+            handle: carlita
+            tags:
+                - womenswear
+                - coat
+        seamAllowance:
+            metric: 2
+            imperial: 0.5
+        parts:
+            front: Front
+            frontPanel: 'Front panel'
+            sidePanel: 'Side panel'
+            back: Back
+            tail: Tail
+            topsleeve: Topsleeve
+            undersleeve: Undersleeve
+            belt: Belt
+            collarStand: 'Collar stand'
+            collar: Collar
+            cuffFacing: 'Cuff facing'
+            pocket: Pocket
+            pocketFlap: 'Pocket flap'
+            chestPocketWelt: 'Chest pocket welt'
+        languages:
+            en: English
+        measurements:
+            acrossBack: 380
+            bicepsCircumference: 270
+            centerBackNeckToWaist: 390
+            chestCircumference: 920
+            naturalWaistToHip: 130
+            neckCircumference: 360
+            shoulderToShoulder: 420
+            shoulderSlope: 40
+            shoulderToWrist: 580
+            wristCircumference: 170
+            naturalWaist: 700
+            seatCircumference: 950
+            shoulderToElbow: 340
+            naturalWaistToFloor: 1060
+            naturalWaistToSeat: 230
+            highBust: 850
+            bustSpan: 170
+            highPointShoulderToBust: 285
+        options:
+            chestEase:
+                title: 'Chest ease'
+                description: 'The amount of ease at your chest.'
+                group: fit
+                type: measure
+                min: 180
+                max: 320
+                default: 240
+            waistEase:
+                title: 'Waist ease'
+                description: 'The amount of ease at your waist.'
+                group: fit
+                type: measure
+                min: 80
+                max: 220
+                default: 100
+            seatEase:
+                title: 'Seat ease'
+                description: 'The amount of ease at your butt.'
+                group: fit
+                type: measure
+                min: 180
+                max: 320
+                default: 240
+            bicepsEase:
+                title: 'Biceps ease'
+                description: 'The amount of ease at your upper arm.'
+                group: fit
+                type: measure
+                min: 40
+                max: 110
+                default: 60
+            shoulderEase:
+                title: 'Shoulder ease'
+                description: 'The amount of ease at your shoulder. This increases the shoulder to shoulder and across back distance to accomodate what you''re wearing under your coat.'
+                group: fit
+                type: measure
+                min: 0
+                max: 30
+                default: 15
+            cuffEase:
+                title: 'Cuff ease'
+                description: 'The amount of ease at your wrist.'
+                group: fit
+                type: measure
+                min: 0
+                max: 180
+                default: 140
+            sleeveBend:
+                title: 'Sleeve bend'
+                description: 'How much do you want the sleeve to be bent at the elbow'
+                group: fit
+                type: angle
+                min: 0
+                max: 20
+                default: 10
+            sleeveLengthBonus:
+                title: 'Sleeve length bonus'
+                description: 'Amount to lengthen the sleeve. A negative value will shorten it.'
+                group: fit
+                type: measure
+                min: 0
+                max: 120
+                default: 6
+            armholeDepthFactor:
+                title: 'Armhole depth factor'
+                description: 'Controls the depth of the armhole. Higher values make a deeper armhole.'
+                group: advanced
+                type: percent
+                min: 65
+                max: 80
+                default: 75
+            sleevecapEase:
+                title: 'Sleevecap ease'
+                description: 'The amount by which your sleevhead is longer than the armhole.'
+                group: advanced
+                type: measure
+                min: 0
+                max: 35
+                default: 17.5
+            sleevecapHeightFactor:
+                title: 'Sleevecap height factor'
+                description: 'Controls the height of the sleevecap. Higher values make a higher narrower sleevecap.'
+                group: advanced
+                type: percent
+                min: 45
+                max: 55
+                default: 50
+            princessSeamSmoothFactor:
+                title: 'Princess seam smooth factor'
+                description: 'Controls how sharply the princess seam will correct once it''s passed the fullness of your breasts. A high factor will smooth the curve, resulting in a less fitted coat that''s easier to sew. A low factor will make sharpen the curve, resulting in a harder to sew seam, and a more fitted coat.'
+                group: advanced
+                type: measure
+                min: 2
+                max: 8
+                default: 5
+        optiongroups:
+            fit:
+                - chestEase
+                - waistEase
+                - seatEase
+                - bicepsEase
+                - shoulderEase
+                - cuffEase
+                - sleeveBend
+                - sleeveLengthBonus
+            advanced:
+                - armholeDepthFactor
+                - sleevecapEase
+                - sleevecapHeightFactor
+                - princessSeamSmoothFactor
     CarltonCoat:
         info:
             name: 'Carlton Coat'
@@ -1662,6 +1830,14 @@ patterns:
                 min: 180
                 max: 320
                 default: 240
+            bicepsEase:
+                title: 'Biceps ease'
+                description: 'The amount of ease at your upper arm.'
+                group: fit
+                type: measure
+                min: 40
+                max: 110
+                default: 60
             cuffEase:
                 title: 'Cuff ease'
                 description: 'The amount of ease at your wrist.'
@@ -1670,6 +1846,14 @@ patterns:
                 min: 100
                 max: 180
                 default: 140
+            shoulderEase:
+                title: 'Shoulder ease'
+                description: 'The amount of ease at your shoulder. This increases the shoulder to shoulder and across back distance to accomodate what you''re wearing under your coat.'
+                group: fit
+                type: measure
+                min: 0
+                max: 30
+                default: 15
             sleeveBend:
                 title: 'Sleeve bend'
                 description: 'How much do you want the sleeve to be bent at the elbow'
@@ -1693,7 +1877,7 @@ patterns:
                 type: percent
                 min: 65
                 max: 75
-                default: 67
+                default: 71
             sleevecapEase:
                 title: 'Sleevecap ease'
                 description: 'The amount by which your sleevhead is longer than the armhole.'
@@ -1715,7 +1899,9 @@ patterns:
                 - chestEase
                 - waistEase
                 - seatEase
+                - bicepsEase
                 - cuffEase
+                - shoulderEase
                 - sleeveBend
                 - sleeveLengthBonus
             advanced:
@@ -1879,6 +2065,7 @@ namespaces:
     Beta:
         - benjamin
         - bent
+        - carlita
         - carlton
         - florent
         - huey
@@ -1898,6 +2085,7 @@ mapping:
         wahid: 'Wahid Waistcoat'
         benjamin: 'Benjamin Bow Tie'
         bent: 'Bent Body Block'
+        carlita: 'Carlita Coat'
         carlton: 'Carlton Coat'
         florent: 'Florent Flat Cap'
         huey: 'Huey Hoodie'
@@ -1916,6 +2104,7 @@ mapping:
         wahid: WahidWaistcoat
         benjamin: BenjaminBowTie
         bent: BentBodyBlock
+        carlita: CarlitaCoat
         carlton: CarltonCoat
         florent: FlorentFlatCap
         huey: HueyHoodie
@@ -1934,6 +2123,7 @@ mapping:
         WahidWaistcoat: wahid
         BenjaminBowTie: benjamin
         BentBodyBlock: bent
+        CarlitaCoat: carlita
         CarltonCoat: carlton
         FlorentFlatCap: florent
         HueyHoodie: huey
@@ -1952,6 +2142,7 @@ mapping:
         wahid: Core
         benjamin: Beta
         bent: Beta
+        carlita: Beta
         carlton: Beta
         florent: Beta
         huey: Beta
@@ -1982,9 +2173,12 @@ mapping:
 measurements:
     acrossBack: all
     bicepsCircumference: all
+    bustSpan: all
     centerBackNeckToWaist: all
     chestCircumference: all
     headCircumference: all
+    highBust: all
+    highPointShoulderToBust: all
     hipsCircumference: all
     hipsToUpperLeg: all
     inseam: all
