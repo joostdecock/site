@@ -9,7 +9,7 @@ category: core
 blurb: "Announcing the Carlita coat, the womenswear version of our Carlton coat pattern."
 
 ---
-This one's for the ladies --- and I'm not (just) talking about that picture of hearth-throb Benedict Cumberbatch at the top of this post.
+This one's for the ladies --- and I'm not (just) talking about that picture of heart-throb Benedict Cumberbatch at the top of this post.
 
 Instead, I'm talking about the release of our latest pattern: 
 the [Carlita Coat](/patterns/carlita) which is out in beta as of today.
