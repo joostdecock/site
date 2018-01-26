@@ -28,7 +28,7 @@ one challenge: fitting the breasts.
 
 ### Princess, meet your seam
 
-We drew an extra princess princess seam in the front panel of the coat, to which we added shaping for the bust.
+We drew an extra princess seam in the front panel of the coat, through which we added shaping for the bust.
 
 To be able to do that accurately, Carlita requires three extra measurements in addition to the measurements required by Carlton. They are:
 
