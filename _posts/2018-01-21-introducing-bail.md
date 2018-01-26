@@ -38,7 +38,7 @@ This is possible by creating custom error handlers in our code to take care of t
 There's a bunch of companies out there that provide this as a service 
 that you can plug in to your code. One of the more well-known is 
 [Rollbar](https://rollbar.com/), which comes with a 2-week trial. 
-So, 2 weeks agowe signed up for such a trial, 
+So, 2 weeks ago we signed up for such a trial, 
 and integrated the Rollbar error handler in our core and data backends.
 
 It worked really well, and soon enough we received notifications whenever something 
