@@ -137,10 +137,15 @@
         $('#modal').removeClass().addClass('shown light');
         $('#modal-main').html("<div id='settings'></div>");
 
-        if(account.account.data.account.units == 'imperial') var units_on = true;
-        else var units_on = false;
-        if(account.account.data.account.theme == 'paperless') var theme_on = true;
-        else var theme_on = false;
+        if(typeof account.account.data.account == 'undefined') {
+            var units_on = false;
+            var theme_on = false;
+        } else {
+            if(account.account.data.account.units == 'imperial') var units_on = true;
+            else var units_on = false;
+            if(account.account.data.account.theme == 'paperless') var theme_on = true;
+            else var theme_on = false;
+        }
         
         $('#settings').load('/components/account/settings', function(){
             $('#email').attr('value', account.account.email);
@@ -864,6 +869,9 @@
         // Load site data
         $.get('/json/freesewing.json', function( fsdata ) {
             var pattern = fsdata.patterns[fsdata.mapping.handleToPattern[patternhandle]];
+            if(typeof account.account.data.account == 'undefined') {
+                account.account.data.account = {'units': 'metric', 'theme': 'classic'};
+            }
             if(account.account.data.account.units != account.models[modelhandle].units) {
                 var mismatch = "<blockquote class='warning'>";
                 mismatch += "<h5>Warning: Units mismatch</h5>";
@@ -918,7 +926,7 @@
 			} else {
 				var dflt_metric_sa = pattern.seamAllowance.metric;
 				var dflt_imperial_sa = pattern.seamAllowance.imperial;
-                var nonStandardSa = "<blockquote class='tip'>";
+                var nonStandardSa = "<blockquote class='tip' id='nonStandardSaWarning'>";
                 nonStandardSa += "<h5>Heads-up: Non-standard seam allowance</h5>";
                 nonStandardSa += "<p>This pattern comes with a default seam allowance of <b>";
                 nonStandardSa += dflt_metric_sa+"cm</b> ("+inchesAsFraction(roundToFraction(dflt_imperial_sa), 'plain').trim()+"inch) instead of the standard <b>1cm</b> (5/8 inch).</p>";
@@ -926,9 +934,14 @@
                 nonStandardSa += "<p>Changing the default seam allowance is not done willy-nilly, but because the designer estimates this seam allowance is better for this pattern.</p>";
                 nonStandardSa += "<p><b>You can still change the seam allowance</b></p>";
                 nonStandardSa += "<p>As with all patterns, you can change your seam allowance in the <b>General</b> group of options.</p>";
+                nonStandardSa += "<p class='text-right'><a href='#' class='btn btn-outline-primary' id='dismissNonStandardSa'>Dismiss</a></p>";
                 nonStandardSa += "</blockquote>";
                 $('#form').prepend(nonStandardSa);
-
+                // Bind click event to dismiss button
+                $('#form').on('click', 'a#dismissNonStandardSa', function(e) {
+                    e.preventDefault();
+                    $('#nonStandardSaWarning').slideUp();
+                });
 			} 
             $('#form').append('<input type="hidden" id="defaultMetricSa" name="defaultMetricSa" value="'+dflt_metric_sa+'">');
             $('#form').append('<input type="hidden" id="defaultImperialSa" name="defaultImperialSa" value="'+dflt_imperial_sa+'">');
