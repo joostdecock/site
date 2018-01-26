@@ -1,6 +1,7 @@
 ---
 layout: measurements
-title: Carlton measurements
-tags: [pattern docs, carlton]
-permalink: /docs/patterns/carlton/measurements
+breastsFirst: true
+title: Carlita measurements
+tags: [pattern docs, carlita]
+permalink: /docs/patterns/carlita/measurements
 ---

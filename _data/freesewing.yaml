@@ -1713,7 +1713,7 @@ patterns:
                 type: measure
                 min: 0
                 max: 120
-                default: 6
+                default: 70
             armholeDepthFactor:
                 title: 'Armhole depth factor'
                 description: 'Controls the depth of the armhole. Higher values make a deeper armhole.'
@@ -1740,12 +1740,10 @@ patterns:
                 default: 50
             princessSeamSmoothFactor:
                 title: 'Princess seam smooth factor'
-                description: 'Controls how sharply the princess seam will correct once it''s passed the fullness of your breasts. A high factor will smooth the curve, resulting in a less fitted coat that''s easier to sew. A low factor will make sharpen the curve, resulting in a harder to sew seam, and a more fitted coat.'
+                description: 'Controls how sharply the princess seam will correct once it''s passed the fullness of your breasts. A high factor will smooth the curve, resulting in a less fitted coat that''s easier to sew. A low factor will sharpen the curve, resulting in a harder to sew seam, and a more fitted coat.'
                 group: advanced
-                type: measure
-                min: 2
-                max: 8
-                default: 5
+                type: percent
+                default: 50
         optiongroups:
             fit:
                 - chestEase
@@ -2149,9 +2147,12 @@ mapping:
     measurementToTitle:
         acrossBack: 'Across back'
         bicepsCircumference: 'Biceps circumference'
+        bustSpan: 'Bust span'
         centerBackNeckToWaist: 'Centerback neck to waist'
         chestCircumference: 'Chest circumference'
         headCircumference: 'Head circumference'
+        highBust: 'High bust'
+        highPointShoulderToBust: 'High point shoulder to bust'
         hipsCircumference: 'Hips circumference'
         hipsToUpperLeg: 'Hips to upper leg'
         inseam: Inseam
