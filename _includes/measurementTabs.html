@@ -1,8 +1,8 @@
 {% assign m = include.measurement | downcase %}
 {% if include.onlyBreasts %}
     {% include measurefigure.html measurement=m model="her" %}
-    <blockquote class="tip"><h5>Got boobs?</h5><p>This measurement is only relevant when fitting breasts</p></blockquote>
-{% else %}
+<blockquote class="tip"><h5>Got boobs?</h5><p>This measurement is only relevant when fitting breasts</p></blockquote>
+    {% else %}
     {% if page.breastsFirst %}
 <ul class="nav nav-tabs" role="tablist">
     <li class="nav-item"><a class="nav-link active" href="#{{ m }}-breasts" aria-controls="breasts" role="tab" data-toggle="tab">Breasts</a></li>
