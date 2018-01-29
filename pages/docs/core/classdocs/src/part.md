@@ -3538,30 +3538,25 @@ void addTitle(
     string $nr,
     string $title,
     string $message = '',
-    string $mode = 'default'
+    array $options = false
 ) 
 ```
 
-Creates three new [`Text`](text) object and adds them to the part.
+Creates four new [`Text`](text) object and adds them to the part.
 
-- One for the part number
-- One for the part title
-- One for an optional message
+  - One for the pattern title
+  - One for the part number
+  - One for the part title
+  - One for an optional message
 
-All three are anchored on the same point, specified by `$anchor`;
+All four are anchored on the same point, specified by `$anchor`;
 
-`$mode` is an optional parameter to change the way the text is rendered.
+`$options` is an optional parameter to change the way the text is rendered.
 The possibilities are:
 
-- default
-- vertical
-- horizontal
-- small
-- vertical-small
-- horizontal-small
-- extrasmall
-- vertical-extrasmall
-- horizontal-extrasmall
+  - `scale` : Default is 100. Give a higher/lower number to scale up/down.
+  - `align` : One of `left`, `right`, or `center` (the default)
+  - `rotate` : Default is 0. Give a number to rotate the title by that many degrees
 
 #### Example
 {:.no_toc}
