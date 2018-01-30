@@ -167,6 +167,7 @@ a.download-draft {
 div.download-draft.download-svg {
     background: $gray-dark;
 }
+.clear { clear: both; }
 @media (max-width: 767px) {
     .not-on-small {
         display: none;

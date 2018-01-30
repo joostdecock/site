@@ -1,0 +1,17 @@
+<figure class="image instruction-img">
+    <a 
+        href="/img{{ page.url | remove: '/docs'}}instructions/{{ include.img }}" 
+        data-lightbox="/img{{ page.url | remove: '/docs'}}instructions/{{ include.img }}"
+        data-title="{{ include.caption }}"
+        data-alt="{{ include.caption }}"
+    >
+    <img 
+        src="/img{{ page.url | remove: '/docs'}}instructions/{{ include.img }}" 
+        alt="{{ include.caption }}" 
+        class="drop-shadow"
+>
+    </a>
+    {% if(include.caption) %}
+    <figcaption>{{ include.caption }}</figcaption>
+    {% endif %}
+</figure>

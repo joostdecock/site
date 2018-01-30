@@ -13,3 +13,17 @@
     display: block; 
     width: 100%; 
 }
+@media (max-width: 767px) {
+    .instruction-img {
+        display: block;
+        clear: both;
+    }
+}
+@media (min-width: 768px) {
+    .instruction-img {
+        max-width: 40%;
+        float: right;
+        margin-left: 1rem;
+    }
+}
+
