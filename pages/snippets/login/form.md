@@ -66,7 +66,7 @@ permalink: /snippets/login/form
                     <input type="email" class="field" id="resend-email" name="resend-email" placeholder="Email address" required>
                     <label class="floating-label">Email</label> 
                   </div>
-                  <button id="signup-submit" type="submit" class="btn btn-primary btn-block btn-lg mt-4">Resend actication email</button>
+                  <button id="resend-submit" type="submit" class="btn btn-primary btn-block btn-lg mt-4">Resend actication email</button>
                 </form>
                 <p class="mt-3"><a href="#resend-panel" class="toggle-resend">Back to sign up</a></p>
             </div>
