@@ -11,5 +11,4 @@
 //= require vendor/marked.min
 //= require vendor/timeago.min
 //= require vendor/toggles.min
-//= require vendor/lightbox.min.js
 //= require freesewing/base
