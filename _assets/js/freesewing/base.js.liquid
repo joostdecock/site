@@ -135,12 +135,12 @@ var token = window.localStorage.getItem("jwt");
         if(Math.floor(Math.random() * 4) == 2) $('#patrons-banner').removeClass('hidden');
 
         // Lightbox options
-        //lightbox.option({
-        //    'resizeDuration': 200,
-        //    'fadeDuration': 200,
-        //    'imageFadeDuration': 200,
-        //    'resizeDuration': 200
-        //})
+        lightbox.option({
+            'resizeDuration': 200,
+            'fadeDuration': 200,
+            'imageFadeDuration': 200,
+            'resizeDuration': 200
+        })
 
     });
 }(jQuery));
