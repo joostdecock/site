@@ -78,31 +78,18 @@ So I am happy to make this pledge:
 
 In practice, all donations received in the previous 12 months will be transfered to MSF once per year, on the 10th of December.
 
-
-
-### Caveat
-> TL;DR: I promise to donate 100% of what I receive, I'll try to cover the transaction fees (so it's also 100% of what you give).
->  {:.lead }
-{:.warning}
-
-When you donate, PayPal charges a fee. 
-The donations pledge only applies to the money received, and not to the fee charged.
-
-Historically, I have donated 100% of donations given, and paid the difference 
-(the total of fees) out of my own pocket.
-
-I hope to continue to do that, because I like the idea that 100% of what you
-give goes to charity.
-
-However, I cannot pledge this, because if this project becomes wildly successful,
-it would bankrupt me to pay the transaction fee on all donations.
-
 ## Donations history
 
 ![Donations overview](/img/donations.svg)
 
-**Note:** I started accepting donations in November 2014. Donations of those
-first couple of weeks are lumped in with the 2015 donations.
+> ##### Notes
+> - For freesewing, the (book)year starts/ends on December 10th.
+> - Donations prior to September 2017 were made on makemypattern.com.
+> - I started accepting donations in November 2014. Donations of those
+> first couple of weeks are lumped in with the 2015 donations.
+{:.tip}
+
+If you'd like to donate, you can do so [here](/patrons/join)
 
 * TOC - Do not remove this line
 {:toc}

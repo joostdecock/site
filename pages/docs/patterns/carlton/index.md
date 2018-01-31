@@ -98,8 +98,9 @@ If you printed your pattern, use the scale box to double check that your draft w
 
 ## Construction
 
+
 ### Step 1: Close the back darts
-{% include instruction-img.html img='step01.svg' caption='test' %}
+{% include instruction-img.html img='step01.svg' caption='Close the back darts' %}
 
 **Close the darts** in Part 2, the Back. 
 
@@ -107,6 +108,21 @@ If you printed your pattern, use the scale box to double check that your draft w
  - Sew along the dart line.
 
 When you're done, **press your darts** so they lie flat.
+
+### Step 2: Construct the belt
+{:.clear}
+{% include instruction-img.html img='step02.svg' caption='Construct the belt' %}
+
+Join the belt together:
+
+ - Place two belt pieces with the good sides together
+ - Sew around the seamline, making sure to make a neat quarter-circle at the corners.
+
+Now clip, flip, and press:
+
+ - Clip the seam allowance at the corners so they don't get bunched up when turning your belt
+ - Turn the belt with the good side out
+ - Press your belt
 
 
 
