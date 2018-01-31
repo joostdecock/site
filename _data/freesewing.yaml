@@ -1,5 +1,5 @@
 version:
-    core: 1.6.2
+    core: 1.6.3
 patterns:
     AaronAshirt:
         info:
@@ -1628,6 +1628,9 @@ patterns:
             pocket: Pocket
             pocketFlap: 'Pocket flap'
             chestPocketWelt: 'Chest pocket welt'
+            innerPocketWelt: 'Inner pocket welt'
+            innerPocketBag: 'Inner pocket bag'
+            innerPocketTab: 'Inner pocket tab'
         languages:
             en: English
         measurements:
@@ -1785,6 +1788,9 @@ patterns:
             pocket: Pocket
             pocketFlap: 'Pocket flap'
             chestPocketWelt: 'Chest pocket welt'
+            innerPocketWelt: 'Inner pocket welt'
+            innerPocketBag: 'Inner pocket bag'
+            innerPocketTab: 'Inner pocket tab'
         languages:
             en: English
         measurements:
