@@ -1,5 +1,5 @@
 version:
-    core: 1.6.3
+    core: 1.6.4
 patterns:
     AaronAshirt:
         info:
@@ -942,6 +942,8 @@ patterns:
             back: Back
             front: Front
             sleeve: Sleeve
+            hemRibbing: 'Hem ribbing'
+            sleeveRibbing: 'Sleeve ribbing'
         languages:
             en: English
         measurements:
@@ -998,6 +1000,33 @@ patterns:
                 min: -40
                 max: 80
                 default: 60
+            ribbing:
+                title: Ribbing
+                description: 'Do you want to include ribbing at the arms and hem, or will your apply a classic hem?'
+                group: style
+                type: chooseOne
+                options: ['Classic hem (No ribbing)', 'Ribbing hem']
+                default: 1
+            ribbingHeight:
+                title: 'Ribbing height'
+                description: 'The height of the ribbing band at the hem and wrists.'
+                group: style
+                type: measure
+                min: 20
+                max: 100
+                default: 60
+                dependsOn: ribbing
+                onlyOn: 1
+            ribbingStretchFactor:
+                title: 'Ribbing stretch factor'
+                description: 'How much you want the ribbing to be stretched.'
+                group: style
+                type: percent
+                min: 0
+                max: 30
+                default: 15
+                dependsOn: ribbing
+                onlyOn: 1
         optiongroups:
             fit:
                 - chestEase
@@ -1005,6 +1034,10 @@ patterns:
                 - cuffEase
                 - lengthBonus
                 - sleeveLengthBonus
+            style:
+                - ribbing
+                - ribbingHeight
+                - ribbingStretchFactor
     TamikoTop:
         info:
             name: 'Tamiko Top'
