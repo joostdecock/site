@@ -17,6 +17,12 @@ layout: cards
     </div>
     <div class="row mb-3">
         <div class="col-md-4">
+            <figure class="image">
+                <img class="card-img" src="/img/patterns/{{ pattern }}/cover.jpg" alt="The {{ pattern }} pattern"></a>
+                <figcaption>A line drawing and images of {{ pattern | capitalize }} <a href="/img/patterns/{{ pattern }}/spread.jpg" target="_BLANK"><i class="fa fa-external-link" aria-hidden="true"></i></a></figcaption>
+            </figure>
+        </div>
+        <div class="col-md-8">
             <h3 class='py-1'>Description</h3>
             {{ page.description }}
 	                {% for patternholder in site.data.freesewing.patterns %}
@@ -29,31 +35,22 @@ layout: cards
                             {% endif %}
                         {% endfor %}
                     {% endfor %}
-        </div>
-        <div class="col-md-8">
-            <figure class="image">
-                <img class="card-img" src="/img/patterns/{{ pattern }}/spread.jpg" alt="The {{ pattern }} pattern"></a>
-                <figcaption>A line drawing and images of {{ pattern | capitalize }} <a href="/img/patterns/{{ pattern }}/spread.jpg" target="_BLANK"><i class="fa fa-external-link" aria-hidden="true"></i></a></figcaption>
-            </figure>
-        </div>
-    </div>
-
     <div class="row">
-        <div class="col-xl-3 col-md-6 col-12 mb-4">
+        <div class="col-xl-6 col-md-12 col-12 mb-4">
             <blockquote class="rounded px-4">
                     <h4 class="card-title">Draft {{ pattern | capitalize }}</h4>
                     <p class="lead card-text">Like what you see? Right this way to draft your {{ pattern | capitalize }} pattern.</p>
                     <p><a class="btn btn-primary btn-block" href="/draft/{{pattern}}">Draft {{ pattern | capitalize }}</a></p>
             </blockquote>
         </div>
-        <div class="col-xl-3 col-md-6 col-12 mb-4">
+        <div class="col-xl-6 col-md-12 col-12 mb-4">
             <blockquote class="cut rounded px-4">
                 <h4 class="card-title">Instructions</h4>
                 <p class="lead card-text">All you need to get from draft to finished garment.</p>
                 <p><a class="btn btn-outline-primary btn-block" href="/docs/patterns/{{pattern}}">{{ pattern | capitalize }} documentation</a></p>
             </blockquote>
         </div>
-        <div class="col-xl-3 col-md-6 col-12 mb-4">
+        <div class="col-xl-6 col-md-12 col-12 mb-4">
             <blockquote class="option rounded px-4">
                     <h4 class="card-title">Pattern Options</h4>
                     <ul>
@@ -70,7 +67,7 @@ layout: cards
                     <p><a class="btn btn-outline-primary btn-block" href="/docs/patterns/{{pattern}}/options">{{ pattern | capitalize }} Options</a></p>
             </blockquote>
         </div>
-        <div class="col-xl-3 col-md-6 col-12 mb-4">
+        <div class="col-xl-6 col-md-12 col-12 mb-4">
             <blockquote class="measure rounded px-4">
                 <h4 class="card-title">Required Measurements</h4>
                 <ul>
@@ -92,6 +89,9 @@ layout: cards
             </blockquote>
         </div>
     </div>
+        </div>
+    </div>
+
     <h2 id="examples">{{ pattern | capitalize }} Examples</h2>
     <blockquote class="nocc">
         <h5>Why not showcase your own make?</h5>

@@ -7,10 +7,12 @@ permalink: /docs/patterns/cathrin/
 > <h5>This documentation is incomplete</h5>
 > Cathrin is lacking documentation. Essentially, I haven't found the time to write it yet.
 > Probably not helped by the fact that I don't tend to make many corsets.
->
-> That being said, [here's helpful post about sewing corsets](https://katafalk.wordpress.com/2009/05/03/how-i-sew-corsets/)
-> that you can refer to.
 {:.error}
+
+> #### Check the original tutorial
+> This pattern is based on [this tutorial by Cathrin Alen](https://katafalk.wordpress.com/2010/06/24/underbust-pattern-tutorial/). 
+Cathrin also has [this informative post on making corsets](https://katafalk.wordpress.com/2009/05/03/how-i-sew-corsets/) on her blog, which you'll might find helpful.
+{:.tip}
 
 Beginner corset makers should read the tutorials written by [Sidney Eileen](http://www.sidneyeileen.com), who demonstrates several different construction methods. [Foundations Revealed](https://www.foundationsrevealed.com) is a paywall site for corset makers,with several exceptional articles free for non members.
 
