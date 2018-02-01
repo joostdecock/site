@@ -3,7 +3,7 @@ layout: pattern
 title: Cathrin Corset
 permalink: /patterns/cathrin
 tagline: This underbust corset is the waist trainer of your dreams/nightmares
-description: "<p>This corset is adaptable to your style wishes, and comes in a 11 or 13 panel variety.</p>The focus of this corset is to reduce your waist, and flatten your belly.</p>"
+description: "<p>This is an underbust pattern of either 9 or 11 panels, based on <a href='https://katafalk.wordpress.com/2010/06/24/underbust-pattern-tutorial/'>this tutorial by Cathrin Ahlen</a> (hence the name).</p><p>This corset is adaptable to your style wishes, and comes in a 11 or 13 panel variety.</p>The focus of this corset is to reduce your waist, and flatten your belly.</p>"
 ---
 {% include fork.html
     pattern="cathrin"
