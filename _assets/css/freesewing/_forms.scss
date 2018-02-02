@@ -100,7 +100,7 @@ span.td-key {
     /* handled in JS */
 }
 .value-angle:after {
-    content: '°';
+    content: '';
 }
 .value-percent:after {
     content: '%';

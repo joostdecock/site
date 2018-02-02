@@ -124,6 +124,22 @@ Now clip, flip, and press:
  - Turn the belt with the good side out
  - Press your belt
 
+### Step 3: Prepare the inner pocket tab
+{:.clear}
+
+> ##### The inner pocket tab is optional
+>
+> This tab is used to close the inner pocket with a button.
+> If you don't want that, you can safely leave out this part.
+{:.tip}
+
+{% include instruction-img.html img='step03.svg' caption='Preparing the inner pocket tab' %}
+
+ - Fold the pocket tab double with the good sides together, so it forms a new triangle
+ - Sew along the non-folded short side
+ - Turn the tab with the good side out
+ - Press your tab
+
 
 
 

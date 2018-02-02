@@ -5,10 +5,10 @@ gem 'html-proofer'
 gem 'jekyll-feed'
 
 group :plugins do
-    gem "jekyll-assets"
+    gem "jekyll-assets", '~> 2.3.2'
     gem "sass"
 end
 
 group :jekyll_plugins do
-      gem 'algoliasearch-jekyll', '~> 0.8.0'
+      gem 'jekyll-algolia'
 end
