@@ -41,7 +41,6 @@ collections:
 
 plugins:
     - jekyll-assets
-    - algoliasearch-jekyll
     - jekyll-feed
 
 assets:

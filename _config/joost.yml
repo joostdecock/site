@@ -39,7 +39,6 @@ collections:
         layout: showcase
 plugins:
     - jekyll-assets
-    - algoliasearch-jekyll
     - jekyll-feed
 
 assets:
