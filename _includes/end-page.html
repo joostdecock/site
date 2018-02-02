@@ -1,9 +1,9 @@
 <!-- JS bundle -->
-{% js bundle %}
+{% asset bundle.js %}
 
 {% if page.action %}
     {% if page.action == 'search' %}
-        {% js search %}
+        {% asset search.js %}
     {% else %}
         <script src="{{ site.baseurl }}/js/{{ page.action }}.js"></script>
     {% endif %}
