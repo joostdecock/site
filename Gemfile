@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'jekyll'
 gem 'html-proofer'
 gem 'jekyll-feed'
+gem 'uglifier'
+gem 'therubyracer'
 
 group :plugins do
     gem "jekyll-assets"
