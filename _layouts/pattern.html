@@ -11,8 +11,8 @@ layout: cards
             <span class="px-2"><a href="#fork">Fork {{ pattern | capitalize }}</a></span>
             <span class="px-2"><a href="/draft/{{pattern}}">Draft {{ pattern | capitalize }}</a></span>
             <span class="px-2"><a href="/docs/patterns/{{pattern}}/">Instructions</a></span>
-            <span class="px-2"><a href="/docs/patterns/{{pattern}}/options">Pattern Options</a></span>
-            <span class="px-2"><a href="/docs/patterns/{{pattern}}/measurements">Required Measurements</a></span>
+            <span class="px-2"><a href="/docs/patterns/{{pattern}}/options">Pattern options</a></span>
+            <span class="px-2"><a href="/docs/patterns/{{pattern}}/measurements">Required measurements</a></span>
         </p>
     </div>
     <div class="row mb-3">
@@ -47,24 +47,33 @@ layout: cards
             <blockquote class="cut rounded px-4">
                 <h4 class="card-title">Instructions</h4>
                 <p class="lead card-text">All you need to get from draft to finished garment.</p>
-                <p><a class="btn btn-outline-primary btn-block" href="/docs/patterns/{{pattern}}">{{ pattern | capitalize }} documentation</a></p>
+                <p><a class="btn btn-outline-primary btn-block" href="/docs/patterns/{{pattern}}">{{ pattern | capitalize }} instructions</a></p>
             </blockquote>
         </div>
         <div class="col-xl-6 col-md-12 col-12 mb-4">
             <blockquote class="option rounded px-4">
                     <h4 class="card-title">Pattern Options</h4>
-                    <ul>
+                    <ul class="no-indent">
 	                {% for patternholder in site.data.freesewing.patterns %}
 	                    {% for fullpattern in patternholder %}
 	                        {% if fullpattern.info.handle == pattern %}
+                                {% assign curgroup = 'none' %}
 	                            {% for option in fullpattern.options %}
-                                <li><a href="/docs/patterns/{{pattern}}/options#{{ option[0] }}">{{ option[1].title }}</a></li>
+                                    {% if curgroup != option[1].group %}
+                                    {% if curgroup != 'none' %}
+                                        </ul></li>
+                                    {% endif %}
+                                    <li class="title">{{ option[1].group | capitalize }}<ul>
+                                        {% assign curgroup = option[1].group %}
+                                    {% endif %}
+                                    <li><a href="/docs/patterns/{{pattern}}/options#{{ option[0] }}">{{ option[1].title }}</a></li>
                                 {% endfor %}
                             {% endif %}
                         {% endfor %}
                     {% endfor %}
+                    </ul></li>
                     </ul>
-                    <p><a class="btn btn-outline-primary btn-block" href="/docs/patterns/{{pattern}}/options">{{ pattern | capitalize }} Options</a></p>
+                    <p><a class="btn btn-outline-primary btn-block" href="/docs/patterns/{{pattern}}/options">{{ pattern | capitalize }} options</a></p>
             </blockquote>
         </div>
         <div class="col-xl-6 col-md-12 col-12 mb-4">
@@ -85,7 +94,7 @@ layout: cards
                     {% endfor %}
                 {% endfor %}
                 </ul>
-                <p><a class="btn btn-outline-primary btn-block" href="/docs/patterns/{{pattern}}/measurements">{{ pattern | capitalize }} Measurements</a></p>
+                <p><a class="btn btn-outline-primary btn-block" href="/docs/patterns/{{pattern}}/measurements">{{ pattern | capitalize }} measurements</a></p>
             </blockquote>
         </div>
     </div>

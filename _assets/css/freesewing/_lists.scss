@@ -116,3 +116,16 @@ blockquote.cuts ul.cuts ul {
     padding-left: 1rem;
 }
 
+// Title list item
+ul.no-indent {
+    padding-left: 0;
+}
+li.title { 
+    list-style-type: none; 
+    font-weight: 600; 
+    font-size: 1.2rem; 
+}
+li.title > ul { 
+    font-weight: normal; 
+    font-size: 1rem; 
+}
