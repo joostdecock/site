@@ -1,0 +1,74 @@
+title: 'Freesewing'
+description: 'Freesewing is an open source platform for made-to-measure sewing patterns'
+url: 'https://site.she.freesewing.org/'
+github: 'https://github.com/freesewing'
+twitter: 'freesewing_org'
+instagram: 'freesewing_org'
+gitter: 'https://gitter.im/freesewing/freesewing'
+branch: 'develop'
+
+future: true
+
+api:
+  core: 'https://core.she.freesewing.org'
+  data: 'https://data.she.freesewing.org'
+
+bail: true
+
+markdown: kramdown
+kramdown:
+    input: GFM
+    syntax_highlighter: rouge
+    toc_levels: 1..4
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+include:  
+  - _redirects
+  - apigen
+
+collections:
+    posts:
+        output: true
+        permalink: /blog/:title/
+    showcases:
+        output: true
+        permalink: /showcase/:title/
+        layout: showcase
+plugins:
+    - jekyll-assets
+    - jekyll-feed
+
+assets:
+  compress:
+    css: false
+    js:  false
+
+  autowrite: true
+  cache: .asset-cache
+  cache_type: filesystem
+  skip_baseurl_with_cdn: false
+  skip_prefix_with_cdn: false
+  prefix: "/assets"
+  digest: false
+
+  sources:
+    - _assets/css
+    - _assets/js
+
+  features:
+    liquid: false
+    integrity: false
+    automatic_img_size: true
+    automatic_img_alt : true
+            
+algolia:
+    application_id: 'MA0Y5A2PF0'
+    index_name:     'freesewing'
+    excluded_files:
+        - components/*
+        - snippets/*
+
+build: she
