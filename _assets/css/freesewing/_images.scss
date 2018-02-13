@@ -13,9 +13,28 @@
     display: block; 
     width: 100%; 
 }
+.float-right-on-large {
+    max-width: 40%;
+    float: right;
+    margin: 0 0 0.5rem 0.5rem;
+}
+.float-left-on-large {
+    max-width: 40%;
+    float: left;
+    margin: 0 0.5rem 0.5rem 0;
+}
 @media (max-width: 767px) {
     .instruction-img {
         display: block;
+        clear: both;
+    }
+    .float-right-on-large,
+    .float-left-on-large {
+        max-width: 100%;
+        float: none;
+        display: block;
+        margin: auto;
+        text-align: center;
         clear: both;
     }
 }

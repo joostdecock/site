@@ -1361,10 +1361,12 @@
         if($('input[name="seamAllowance"]:checked').val() == 'custom') $('#sa').val($('#customSa').val());
         else if ($('input[name="seamAllowance"]:checked').val() == 'none') $('#sa').val(0);
         else if ($('input[name="seamAllowance"]:checked').val() == 'imperial') {
-            $('#sa').val($('#defaultImperialSa').val());
+            if(account.account.data.account.units == 'metric') $('#sa').val($('#defaultImperialSa').val()*2.54);
+            else $('#sa').val($('#defaultImperialSa').val());
         }
         else {
-            $('#sa').val($('#defaultMetricSa').val());
+            if(account.account.data.account.units == 'imperial') $('#sa').val($('#defaultMetricSa').val()/2.54);
+            else $('#sa').val($('#defaultMetricSa').val());
         }
         $.ajax({
             url: api.data+'/'+method,
