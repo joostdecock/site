@@ -2,7 +2,7 @@
 title: Outfit - Simon, Theodore & Wahid by Paul
 img: showcase.jpg
 caption: "Outfit - Simon, Theodore & Wahid by Paul"
-category: simon
+category: [simon,wahid,theodore]
 layout: showcase
 author: Paul
 ---

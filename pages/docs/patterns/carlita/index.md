@@ -45,7 +45,13 @@ Below are some notes from [Anneke](/showcase/maker/annekecaramin) who is current
  > - Stitch upper lining piece to front facing. Stitch side front lining to front facing. (When using an extra back facing piece, leave top five cm of lining/facing seam unsewn)
  > - Make inner pocket flap, fold and press welts. Mark welt location, pin welts, flap and pocket bag in place. Stitch. Slash between welts. Turn and press. Stitch those little triangle thingies to the welts and close pocket bag. Omg.
  > - Optional: cut under collar on the bias to make it sit nicer. Interface collar stand. Sew collar stands to upper and under collar. Cut piece of hair canvas for under collar. Pad stitch under collar. Sew collar pieces around edge with right sides together, leaving bottom edge open. Turn and press. Fold collar into right shape around tailor’s ham or rolled up towel and steam the shit out of it.
- > - Lining: optional: cut back neck facing from shell fabric to have something nice to sew a label on. Draft separate upper back lining piece. Stitch back seams, stitch darts as tucks. Stitch tail lining to upper back. Stitch shoulder and side seams on lining. Stitch shoulder seams on front and back facing. Stitch lining to facing, connecting the earlier stitching lines.
+ > - Lining: optional: cut back neck facing from shell fabric to have something nice to sew a label on. Draft separate upper back lining piece. Stitch back seams, stitch darts as tucks. Stitch tail lining to upper back. Stitch shoulder and side seams on lining. Stitch shoulder seams on front and back facing. Stitch lining to facing, connecting the earlier stitching lines. Insert lining sleeves to mentally prepare for the real deal.
+ > - Get some shoulder pads or craft them yourself from hair canvas and cotton batting. Set in sleeves, cry, unpick, set in sleeves again. Add a strip of cotton batting to the sleeve head for maximum oomph. Attach shoulder pads.
+  > - Pin collar to neckline, matching center back to center collar. Mind the varying seam allowances! Baste in place. Pin facing/lining combo to neckline and front edge, sandwiching collar in between. Stitch carefully around the entire coat, including the bottom edge of the facing (leave the rest of the hem alone). Check for puckers or pleats, trim seams, turn the whole thing right side out and press.
+  > - Turn hem up, press and baste into place. Sew hem with an invisible stitch, then hand sew lining hem to coat.
+  > - Mark buttonholes on coat front and belt pieces. Make buttonholes and attach buttons.
+  > - Remove all basting still present, put on your coat, give yourself a pat on the back and then sleep for three weeks.
+
 
 
 
