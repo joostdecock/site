@@ -2,7 +2,7 @@
 title: Outfit - Florent, Theodore & Wahid by Paul
 img: showcase.jpg
 caption: "Outfit - Florent, Theodore & Wahid by Paul"
-category: florent
+category: [florent,theodore,wahid]
 layout: showcase
 author: Paul
 ---

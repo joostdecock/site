@@ -25,8 +25,11 @@ nocomments: true
 >
 </a>
 <footer class="rounded-bottom">
-<a href="/showcase/pattern/{{ post.categories }}" title="Browse other showcases of this pattern">{{ post.categories }}</a> by 
-<a href="/showcase/maker/{{ post.author | downcase | replace: ' ', ''}}" title="Browse other showcases by this maker">{{ post.author }}</a>
+{% for category in post.categories %}
+<a href="/showcase/pattern/{{ category }}" title="Browse other showcases of {{ category }}">{{ category }}</a>
+{% unless post.categories.last == category %}+{% endunless%}
+{% endfor %}
+by <a href="/showcase/maker/{{ post.author | downcase | replace: ' ', ''}}" title="Browse other showcases by this maker">{{ post.author }}</a>
 </footer>
 </div>
 {% endfor %}
