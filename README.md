@@ -1,4 +1,4 @@
-<a href="https://docs/freesewing.org/"><img src="https://docs.freesewing.org/img/logo-black.svg" align="right" width=200 /></a>
+<a href="/showcase/pattern/{{ post.categories }}" title="Browse other showcases of this pattern">{{ post.categories }}</a> by 
 
 # Freesewing site
 [Freesewing](https://freesewing.org/) is an online platform to draft sewing patterns based on your measurements.
