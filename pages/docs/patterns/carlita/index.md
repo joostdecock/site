@@ -4,15 +4,48 @@ title: Making Carlita
 tags: [maker docs,carlita]
 permalink: /docs/patterns/carlita/
 ---
-> ##### Carlita is currently in beta, documentation is missing
+> ##### Carlita is currently in beta, documentation is under construction
 >
 > This pattern is currently in beta. One of the reasons for that is that its documentation 
-> is yet to be written.
+> is still being written.
 {:.warning}
+
+* TOC - Do not remove this line
+{:toc}
 
 ## See also
 {% include mando.html pattern='carlita' %}
 
-* TOC - Do not remove this line
-{:toc}
+## Maker's notes
+
+Below are some notes from [Anneke](/showcase/maker/annekecaramin) who is currently [making Carlita](http://www.annekecaramin.com/2018/02/this-is-one-of-those-origin-superhero.html).
+
+ > - Draft extra pieces for hair canvas on entire center front, second layer of hair canvas on front shoulder (curved piece from shoulder to bottom of armhole). Find and mark roll line on lapel
+ > - Draft back stay & cut from heavy muslin or hair canvas if you want to be absolutely bulletproof
+ > - Iron interfacing onto back armholes, entire side front (except for seam & hem allowances), bias strips onto back hem
+ > - Stitch front shoulder hair canvas pieces to larger hair canvas piece (quilt together with parallel rows of stitching)
+ > - Attach front hair canvas thing to center front with permanent basting stitch 
+ > - Get that thimble out and pad stitch the lapels
+ > - Tape the roll line
+ > - Tape the front and lapel edge
+ > - Take a picture and post it on social media because this looks so cool
+ > - Close back darts
+ > - Sew back seam in two parts. Baste the part that will form the pleat closed, fold down and press.
+ > - Baste the back stay to the shoulders, armholes and neckline
+ > - Stabilize waist seam with selvedge strip of muslin (optional)
+ > - Stabilize top of coat tail with strip of hair canvas (optional)
+ > - Fold, pin and baste pleats on coat tail piece
+ > - Sew waist seam and press up. Catch stitch waist seam to strip of muslin (optional)
+ > - Sew belt and pocket flap pieces with right sides together, turn and press.
+ > - Sew patch pocket top edge to lining, leaving a hole for turning later. Sew side and bottom edge of patch pocket to lining (make lining 1 mm smaller all around to make sure it doesn’t show on the outside). Turn and press.
+ > - Fold front welt pieces with right sides together, turn and press.
+ > - Place front welt on center front piece between notches. Put pocket bag on top. Match location of front welt and pocket bag on side front piece, pin second part of pocket bag in place. Stitch and press. Pin and sew princess seam up until pocket stitching, stop and continue after the pocket. Stitch the edges of the front welt down.
+ > - Place patch pocket and pocket flap on marked locations and attach.
+ > - Sew front sleeve seam. Attach cuff facing up until the cuff fold line. Stitch back sleeve seam, careful not to catch the facing. Sew the rest of the facing seam. Turn, press, fold cuff back and baste to keep in place.
+ > - Stitch upper lining piece to front facing. Stitch side front lining to front facing. (When using an extra back facing piece, leave top five cm of lining/facing seam unsewn)
+ > - Make inner pocket flap, fold and press welts. Mark welt location, pin welts, flap and pocket bag in place. Stitch. Slash between welts. Turn and press. Stitch those little triangle thingies to the welts and close pocket bag. Omg.
+ > - Optional: cut under collar on the bias to make it sit nicer. Interface collar stand. Sew collar stands to upper and under collar. Cut piece of hair canvas for under collar. Pad stitch under collar. Sew collar pieces around edge with right sides together, leaving bottom edge open. Turn and press. Fold collar into right shape around tailor’s ham or rolled up towel and steam the shit out of it.
+ > - Lining: optional: cut back neck facing from shell fabric to have something nice to sew a label on. Draft separate upper back lining piece. Stitch back seams, stitch darts as tucks. Stitch tail lining to upper back. Stitch shoulder and side seams on lining. Stitch shoulder seams on front and back facing. Stitch lining to facing, connecting the earlier stitching lines.
+
+
 
