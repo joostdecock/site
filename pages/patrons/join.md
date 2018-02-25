@@ -50,6 +50,27 @@ action: patron
                     <input type="hidden" name="image_url" value="https://data.freesewing.org/static/img/paypal-logo.png">
                     <input type="submit" name="submit" alt="Submit" value="Sign up now" class="btn btn-outline-primary poh">
                     </form>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id="form-patron-monkey-yearly">
+                    <input type="hidden" name="cmd" value="_xclick-subscriptions">
+                    <input type="hidden" name="business" value="info@freesewing.org">
+                    <input type="hidden" name="lc" value="BE">
+                    <input type="hidden" name="item_name" value="Freesewing Patron - Powder Monkey - Yearly">
+                    <input type="hidden" name="item_number" value="patron-pm-y">
+                    <input type="hidden" name="no_note" value="1">
+                    <input type="hidden" name="no_shipping" value="2">
+                    <input type="hidden" name="rm" value="1">
+                    <input type="hidden" name="return" value="https://freesewing.org/patrons/thank-you">
+                    <input type="hidden" name="src" value="1">
+                    <input type="hidden" name="a3" value="24.00">
+                    <input type="hidden" name="p3" value="1">
+                    <input type="hidden" name="t3" value="Y">
+                    <input type="hidden" name="currency_code" value="EUR">
+                    <input type="hidden" name="bn" value="PP-SubscriptionsBF:btn_subscribeCC_LG.gif:NonHosted">
+                    <input type="hidden" name="image_url" value="https://data.freesewing.org/static/img/paypal-logo.png">
+                    <p class="mt-3"><small>Same but different:</small>
+                    <input type="submit" name="submit" alt="Submit" value="Pay yearly" class="btn btn-link poh px-0 btn-sm px-0">
+                    </p>
+                    </form>
                 </div>
             </div>
         </div>
@@ -95,6 +116,28 @@ action: patron
                     <input type="hidden" name="bn" value="PP-SubscriptionsBF:btn_subscribeCC_LG.gif:NonHosted">
                     <input type="hidden" name="image_url" value="https://data.freesewing.org/static/img/paypal-logo.png">
                     <input type="submit" name="submit" alt="Submit" value="Sign up now" class="btn btn-outline-primary poh">
+                    </form>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id="form-patron-mate-yearly">
+                    <input type="hidden" name="cmd" value="_xclick-subscriptions">
+                    <input type="hidden" name="business" value="info@freesewing.org">
+                    <input type="hidden" name="lc" value="BE">
+                    <input type="hidden" name="item_name" value="Freesewing Patron - First Mate - Yearly">
+                    <input type="hidden" name="item_number" value="patron-fm-y">
+                    <input type="hidden" name="no_note" value="1">
+                    <input type="hidden" name="no_shipping" value="2">
+                    <input type="hidden" name="rm" value="1">
+                    <input type="hidden" name="return" value="https://freesewing.org/patrons/thank-you">
+                    <input type="hidden" name="src" value="1">
+                    <input type="hidden" name="a3" value="48.00">
+                    <input type="hidden" name="p3" value="1">
+                    <input type="hidden" name="t3" value="Y">
+                    <input type="hidden" name="currency_code" value="EUR">
+                    <input type="hidden" name="bn" value="PP-SubscriptionsBF:btn_subscribeCC_LG.gif:NonHosted">
+                    <input type="hidden" name="image_url" value="https://data.freesewing.org/static/img/paypal-logo.png">
+                    <p class="mt-3"><small>Same but different:</small>
+                    <input type="submit" name="submit" alt="Submit" value="Pay yearly" class="px-0 btn btn-link btn-sm poh">
+                    </p>
+
                     </form>
                 </div>
             </div>
@@ -142,6 +185,27 @@ action: patron
                     <input type="hidden" name="image_url" value="https://data.freesewing.org/static/img/paypal-logo.png">
                     <input type="submit" name="submit" alt="Submit" value="Sign up now" class="btn btn-outline-primary poh">
                     </form>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id="form-patron-captain-yearly">
+                    <input type="hidden" name="cmd" value="_xclick-subscriptions">
+                    <input type="hidden" name="business" value="info@freesewing.org">
+                    <input type="hidden" name="lc" value="BE">
+                    <input type="hidden" name="item_name" value="Freesewing Patron - Captain - Yearly">
+                    <input type="hidden" name="item_number" value="patron-capt">
+                    <input type="hidden" name="no_note" value="1">
+                    <input type="hidden" name="no_shipping" value="2">
+                    <input type="hidden" name="rm" value="1">
+                    <input type="hidden" name="return" value="https://freesewing.org/patrons/thank-you">
+                    <input type="hidden" name="src" value="1">
+                    <input type="hidden" name="a3" value="96.00">
+                    <input type="hidden" name="p3" value="1">
+                    <input type="hidden" name="t3" value="Y">
+                    <input type="hidden" name="currency_code" value="EUR">
+                    <input type="hidden" name="bn" value="PP-SubscriptionsBF:btn_subscribeCC_LG.gif:NonHosted">
+                    <input type="hidden" name="image_url" value="https://data.freesewing.org/static/img/paypal-logo.png">
+                    <p class="mt-3"><small>Same but different:</small>
+                    <input type="submit" name="submit" alt="Submit" value="Pay yearly" class="btn btn-link btn-sm px-0 poh">
+                    </p>
+                    </form>
                 </div>
             </div>
         </div>
@@ -177,7 +241,6 @@ action: patron
                 <div class="card-block">
                     <h4>Data export</h4>
                     <p>At any moment, you can download an archive of all the data we have stored for you.</p>
-                    <p><small><b>Note:</b> This feature is currently in development.</small></p>
                 </div>
             </div>
         </div>
@@ -270,6 +333,17 @@ action: patron
             <input type="submit" class="btn btn-primary btn-lg" style="width: 30%; margin-left: 5%;" id="btn-donate" name="submit" value="Donate">
             </form>
             <p><small>Enter the amount you'd like to donate, and click the <b>Donate</b> button.</small></p>
+            <blockquote class="tip">
+                <h5>Or you here because you're not able to make recurring payments?</h5>
+                <p>PayPal does not allow recurring payments from all countries/banks/cards. 
+                If you find yourself in this this situation and would like to be a patron, you can make a one-time donation instead.</p>
+                <ul>
+                    <li>Donations of 24&euro; or more make you a Powder Monkey for one year</li>
+                    <li>Donations of 48&euro; or more make you a First Mate for one year</li>
+                    <li>Donations of 96&euro; or more make you a Captain for one year</li>
+                </ul>
+                <p>This conversion is optional. We'll contact you to ask how you'd like to do it.</p>
+                </blockquote>
         </div>
     </div>
 
