@@ -20,7 +20,7 @@ To make Carlton, you will need the following:
 
  - Enough suitable fabric and lining (see [Fabric options](#fabric-options)
  - 8 Buttons
- - Canvas for shaping the collar fronts
+ - Canvas for shaping the collar, shoulders, and fronts
  - Shoulder pads
 
 
@@ -52,10 +52,16 @@ Any quality lining from the lining section in your local fabric store should do.
 {:.tip}
 
 ### Caveats
+
+#### Seam allowance
 This pattern comes with 2cm seam allowance by default, because coats can use a bit more seam allowance.
 
 However, sometimes only have of the seam allowance is used to reduce bulk.
 Keep an eye out for these mixed seam allowances.
+
+#### Canvas and interfacing
+
+A properly constructed coat shell requires canvas and (fusible) interfacing. These parts are not added seperately to your pattern. However, the outline of the back stay and chest piece are marked on the back and front parts respectively.
 
 ### Scale
 
@@ -86,6 +92,10 @@ If you printed your pattern, use the scale box to double check that your draft w
 >   - Cut **2 Undersleeves**
 >   - Cut **2 Pockets**
 >   - Cut **2 Pocket flaps**
+> - {:.title} Canvas
+>   - Cut **2 Canvas chest pieces**
+>   - Cut **2 fronts**
+>   - Cut **2 back stays**
 > {:.cuts}
 {:.cuts}
 
@@ -98,9 +108,15 @@ If you printed your pattern, use the scale box to double check that your draft w
 
 ## Construction
 
+<!-- {% increment step %} skipping 0 so we start from 1 -->
 
-### Step 1: Close the back darts
-{% include instruction-img.html img='step01.svg' caption='Close the back darts' %}
+### Step {% increment step %}: Apply fusible interfacing
+
+Iron fusible interfacing to the armholes on the front and back. Do not let the interfacing extend into the seam allowance.
+
+
+### Step {% increment step %}: Close the back darts
+{% include instruction-img.html img='close-the-back-darts.svg' caption='Close the back darts' %}
 
 **Close the darts** in Part 2, the Back. 
 
@@ -109,7 +125,7 @@ If you printed your pattern, use the scale box to double check that your draft w
 
 When you're done, **press your darts** so they lie flat.
 
-### Step 2: Construct the belt
+### Step {% increment step %}: Construct the belt
 {:.clear}
 {% include instruction-img.html img='step02.svg' caption='Construct the belt' %}
 
@@ -124,7 +140,7 @@ Now clip, flip, and press:
  - Turn the belt with the good side out
  - Press your belt
 
-### Step 3: Prepare the inner pocket tab
+### Step {% increment step %}: Prepare the inner pocket tab
 {:.clear}
 
 > ##### The inner pocket tab is optional
