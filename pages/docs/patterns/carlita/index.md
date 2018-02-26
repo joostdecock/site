@@ -1,20 +1,11 @@
 ---
 layout: page
 title: Making Carlita
+pattern: carlita
 tags: [maker docs,carlita]
 permalink: /docs/patterns/carlita/
 ---
-> ##### Carlita is currently in beta, documentation is under construction
->
-> This pattern is currently in beta. One of the reasons for that is that its documentation 
-> is still being written.
-{:.warning}
-
-* TOC - Do not remove this line
-{:toc}
-
-## See also
-{% include mando.html pattern='carlita' %}
+{% include pattern-docs/carlton.md %}
 
 ## Maker's notes
 
