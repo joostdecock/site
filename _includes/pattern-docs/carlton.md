@@ -51,7 +51,7 @@ Any quality lining from the lining section in your local fabric store should do.
 #### Seam allowance
 This pattern comes with 2cm seam allowance by default, because coats can use a bit more seam allowance.
 
-However, sometimes only have of the seam allowance is used to reduce bulk.
+However, sometimes only half of the seam allowance is used to reduce bulk.
 Keep an eye out for these mixed seam allowances.
 
 #### Canvas and interfacing
@@ -117,10 +117,15 @@ If you printed your pattern, use the scale box to double check that your draft w
 Iron fusible interfacing to:
 
  - The cuff facings
- - The sleevecap on the topsleeve and undersleeve parts
- - The armholes on the front and back
- - The shoulder seam on front and back
- - The neckline at the back
+ - Along the sleevecap on the topsleeve and undersleeve parts, see markings on the pattern parts
+ - Along the armholes on the front and back, see markings on the pattern parts
+ - Along the shoulder seam on front and back, see markings on the pattern parts
+ - Along the neckline at the back, see markings on the pattern part
+ - The pocket flaps
+ - The pocket welts
+ - Around the inner pockets, see markings on the pattern parts
+ - Along the top edge of the patch pockets, see markings on the pattern part
+ - Along the hem, see markings on the pattern parts
 
 > ##### Make sure to extend the interfacing into the seam allowance
 >
@@ -130,7 +135,8 @@ Iron fusible interfacing to:
 ### Step {% increment step %}: Join canvas chest piece to the front canvas
 {% include instruction-img.html img='join-chest-canvas-piece-to-front-canvas.svg' caption='Join canvas chest piece to the front canvas' %}
 
-Place the canvas chest piece on your canvas piece of the front panel and baste them together.
+Place the canvas chest piece on your canvas piece of the front panel and permanently baste them together.
+As in, hand-sew them together with a lengthy stitch.
 
 > ##### Make sure to extend the canvas into the seam allowance
 >
@@ -142,7 +148,7 @@ Place the canvas chest piece on your canvas piece of the front panel and baste t
 
 Place your front canvas with the joined canvas chest piece on your front which has the fusible interfacing applied to it.
 
-Baste them together.
+Permanently baste them together.
 
 > ##### Make sure non of your stitches will show
 >
@@ -154,7 +160,7 @@ Baste them together.
 {% include instruction-img.html img='pad-stitch-lapels.svg' caption='Pad stitch the lapels' %}
 
 Now it's time to pad-stitch your lapels. This is going to take a while, but think about
-how cool it's going to look when you post that picture of your finshed pad stitching on social media.
+how cool it's going to look when you post that picture of your finished pad stitching on social media.
 
 > ##### Not sure about pad stitching?
 >
