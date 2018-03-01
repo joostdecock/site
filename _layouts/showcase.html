@@ -8,7 +8,12 @@ layout: default
     <div class="row mt-5" id="posthead">
         <div class="col-xl-10 offset-xl-1 col-lg-12 offset-lg-0 mb-5">
             <div class="row">
-                <div class="col post-meta"><a href="/showcase/pattern/{{ page.categories }}" title="Browse other showcases of this pattern">{{ page.categories }}</a></div>
+                <div class="col post-meta">
+                    {% for category in page.categories %}
+                    <a href="/showcase/pattern/{{ category }}" title="Browse other showcases of {{ category }}">{{ category }}</a>
+                    {% unless page.categories.last == category %}+{% endunless%}
+                    {% endfor %}
+                </div>
                 <div class="col post-meta text-center">{{ page.date | date: "%A, %B %-d, %Y" }}</div>
                 <div class="col post-meta text-right"><a href="/showcase/maker/{{ page.author | downcase | replace: ' ', '' }}" title="Browse other showcases by this maker">{{ page.author }}</a></div>
             </div>

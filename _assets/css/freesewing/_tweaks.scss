@@ -242,4 +242,38 @@ img.medal-corner {
     left: -10px;
     top: -10px;
 }
-
+div.consent { 
+    font-size: 75%;
+    padding: 1rem 0;
+    margin: 1.5rem 0;
+    background: $white;
+    box-shadow: $shadow;
+    border: 8px solid $red;
+    h3 {
+        text-align: center;
+        font-size: 1.8rem;
+        padding: 0 2rem 1rem;
+    }
+    h4 {
+        font-size: 1.4rem;
+    }
+    p { margin-left: 2rem; }
+    p.text-center { margin: auto; }
+    div.consent-details {
+        background: $whitish;
+        padding: 2rem;
+        box-shadow: inset 0px 2px 2px 0px rgba(0,0,0,0.3), inset 0px -2px 2px 0px rgba(0,0,0,0.3);
+    }
+    ul.footnotes {
+        font-size: 0.75rem;
+        padding-left: 3rem;
+        margin-top: -0.5rem;
+        li { list-style-type: none; }
+    }
+}
+div.consent.consent-given { 
+    border: 8px solid $green;
+}
+div.consent-details-sub {
+    margin-left: 2.5rem;
+}

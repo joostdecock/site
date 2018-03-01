@@ -26,8 +26,8 @@
 
     <!-- 2018 -->
     <text class="fs" x="525" y="25" >2018</text>
-    <text class="sm" x="525" y="45" >437.07 euro so far</text>
-    <rect height="437.07" width="50" x="500" y="0" class="don" transform="translate(0,-437.07) scale(1,0.5) translate(0,437.07)"/>
+    <text class="sm" x="525" y="45" >681.30 euro so far</text>
+    <rect height="681.30" width="50" x="500" y="0" class="don" transform="translate(0,-681.30) scale(1,0.5) translate(0,681.30)"/>
 
     <!-- Legend -->
     <g transform="translate(0,100)">
