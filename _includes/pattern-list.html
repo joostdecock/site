@@ -2,7 +2,10 @@
 {% for namespace in site.data.freesewing.namespaces %}
 <small><a class="noline" href="#{{namespace[0]}}">{{ namespace[0] }} patterns</a>:</small> 
     {% for pattern in namespace[1] %}
-        <a class="mx-1" href="/patterns/{{ pattern }}">{{ pattern | capitalize }}</a>
+       {% assign thisPattern = site.data.freesewing.mapping.handleToPattern[pattern] %} 
+       {% unless site.data.freesewing.patterns[thisPattern]info.lab %}
+            <a class="mx-1" href="/patterns/{{ pattern }}">{{ pattern | capitalize }}</a>
+        {% endunless %}
     {% endfor %}
     <br>
 {% endfor %}
@@ -19,6 +22,7 @@
 	            {% assign pname =  site.data.freesewing.mapping.handleToPattern['{{pattern.info.handle}}'] %}
 	            {% assign thisnamespace = site.data.freesewing.mapping.handleToNamespace[pattern.info.handle] %}
 				{% if namespace[0] == thisnamespace %}
+                    {% unless pattern.info.lab %}
 				
 	            <div class="col-lg-3 col-md-4 col-6 mb-4 {{ namespace[0] | downcase }}" id="pattern-{{ pattern.info.handle }}">
 	                <div class="card m600 hover-shadow">
@@ -37,6 +41,7 @@
 	                    </div>
 	                </div>
 	            </div>
+	            {% endunless %}
 	        {% endif %}
 	        {% endif %}
 	    {% endfor %}
