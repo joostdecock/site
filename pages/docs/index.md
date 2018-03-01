@@ -67,11 +67,13 @@ nocomments: true
                     <p class="card-text">
                         We have docs for:
 {% for pattern in site.data.freesewing.patterns %}
+    {% unless pattern[1].info.lab %}
     {% if forloop.last %} 
         and <a href="/docs/patterns/{{ pattern[1].info.handle }}">{{ pattern[1].info.handle | capitalize }}</a>.
     {% else %} 
         <a href="/docs/patterns/{{ pattern[1].info.handle }}">{{ pattern[1].info.handle | capitalize }}</a>,
     {% endif %}
+    {% endunless %}
 {% endfor %}
 
                     </p>
