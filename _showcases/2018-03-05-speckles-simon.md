@@ -1,5 +1,5 @@
 ---
-title: A speckled simon by Annie for her husband
+title: A speckled simon by Allie for her husband
 img: showcase.jpg
 caption: "That constrasting buttonhole packet is a great touch."
 category: simon
