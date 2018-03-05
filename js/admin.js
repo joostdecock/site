@@ -165,10 +165,8 @@
 
         function sendPatronEmail(userHandle) {
             $.ajax({
-                url: api.data+'/admin/patron/email',
+                url: api.data+'/admin/user/'+userHandle.trim()+'/email/patron',
                 method: 'POST',
-                data: { 'user': userHandle},
-                dataType: 'json',
                 success: function(data) {
                     if(data.result == 'ok') $.bootstrapGrowl('Patron email sent.', {type: 'success'});
                     else if(data.result == 'error' && data.reason == 'not-a-patron') $.bootstrapGrowl('This user is not a Patron. No email sent.', {type: 'warning'});
@@ -184,9 +182,9 @@
 
         function setPassword(userHandle, password) {
             $.ajax({
-                url: api.data+'/admin/password',
+                url: api.data+'/admin/user/'+userHandle.trim()+'/password',
                 method: 'PUT',
-                data: { 'password': password, 'user': userHandle},
+                data: { 'password': password},
                 dataType: 'json',
                 success: function(data) {
                     $('#modal').removeClass();
@@ -238,7 +236,7 @@
 
         function getUsers(filter, callBack) {
             $.ajax({
-                url: api.data+'/admin/find/users/'+filter,
+                url: api.data+'/admin/find/users/'+filter.trim(),
                 method: 'GET',
                 dataType: 'json',
                 success: function(data) {
@@ -309,10 +307,8 @@
 
     function addBadge(badge, userHandle) {
         $.ajax({
-            url: api.data+'/admin/badge',
+            url: api.data+'/admin/user/'+userHandle.trim()+'/badge/'+badge.trim(),
             method: 'POST',
-            data: { 'badge': badge, 'user': userHandle},
-            dataType: 'json',
             success: function(data) {
                 $.bootstrapGrowl('Badge '+badge+' added. Reload page to update list.', {type: 'success'});
             },
@@ -325,10 +321,8 @@
     
     function removeBadge(badge, userHandle) {
         $.ajax({
-            url: api.data+'/admin/badge',
+            url: api.data+'/admin/user/'+userHandle.trim()+'/badge/'+badge.trim(),
             method: 'DELETE',
-            data: { 'badge': badge, 'user': userHandle},
-            dataType: 'json',
             success: function(data) {
                 $.bootstrapGrowl('Badge '+badge+' removed. Reload page to update list.', {type: 'success'});
             },
@@ -339,14 +333,12 @@
         }); 
     }
 
-    function makePatron(patron, userHandle) {
+    function makePatron(tier, userHandle) {
         $.ajax({
-            url: api.data+'/admin/patron',
-            method: 'POST',
-            data: { 'patron': patron, 'user': userHandle},
-            dataType: 'json',
+            url: api.data+'/admin/user/'+userHandle.trim()+'/patron/'+tier.trim(),
+            method: 'PUT',
             success: function(data) {
-                $.bootstrapGrowl('Patron status set to '+patron+'. Reload page to update list.', {type: 'success'});
+                $.bootstrapGrowl('Patron status set to '+tier+'. Reload page to update list.', {type: 'success'});
             },
             error: function(data) { 
                 $.bootstrapGrowl('Failed to change Patron status.', {type: 'error'});
