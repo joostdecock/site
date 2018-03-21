@@ -1,6 +1,6 @@
 {
     "version": {
-        "core": "1.7.0"
+        "core": "1.8.0"
     },
     "patterns": {
         "AaronAshirt": {
@@ -30,7 +30,6 @@
                 "fr": "French"
             },
             "measurements": {
-                "acrossBack": 450,
                 "bicepsCircumference": 335,
                 "centerBackNeckToWaist": 480,
                 "chestCircumference": 1080,
@@ -169,7 +168,6 @@
                 "fr": "French"
             },
             "measurements": {
-                "acrossBack": 450,
                 "bicepsCircumference": 335,
                 "centerBackNeckToWaist": 480,
                 "chestCircumference": 1080,
@@ -244,6 +242,15 @@
                     "min": 35,
                     "max": 75,
                     "default": 55
+                },
+                "acrossBackFactor": {
+                    "title": "Across back factor",
+                    "description": "Controls your across back width as a factor of your shoulder to shoulder measurement",
+                    "group": "advanced",
+                    "type": "percent",
+                    "min": 93,
+                    "max": 99,
+                    "default": 96
                 }
             },
             "optiongroups": {
@@ -256,7 +263,8 @@
                 ],
                 "advanced": [
                     "armholeDepthFactor",
-                    "sleevecapHeightFactor"
+                    "sleevecapHeightFactor",
+                    "acrossBackFactor"
                 ]
             }
         },
@@ -521,7 +529,6 @@
                 "fr": "French"
             },
             "measurements": {
-                "acrossBack": 450,
                 "bicepsCircumference": 335,
                 "centerBackNeckToWaist": 480,
                 "chestCircumference": 1080,
@@ -588,6 +595,15 @@
                     "min": 0,
                     "max": 10,
                     "default": 5
+                },
+                "acrossBackFactor": {
+                    "title": "Across back factor",
+                    "description": "Controls your across back width as a factor of your shoulder to shoulder measurement",
+                    "group": "advanced",
+                    "type": "percent",
+                    "min": 93,
+                    "max": 99,
+                    "default": 96
                 }
             },
             "optiongroups": {
@@ -598,6 +614,9 @@
                     "lengthBonus",
                     "sleeveLengthBonus",
                     "ribbingStretchFactor"
+                ],
+                "advanced": [
+                    "acrossBackFactor"
                 ]
             }
         },
@@ -634,7 +653,6 @@
                 "de": "Deutsch"
             },
             "measurements": {
-                "acrossBack": 450,
                 "bicepsCircumference": 335,
                 "centerBackNeckToWaist": 520,
                 "chestCircumference": 1080,
@@ -1074,6 +1092,15 @@
                     "min": 0,
                     "max": 20,
                     "default": 5
+                },
+                "acrossBackFactor": {
+                    "title": "Across back factor",
+                    "description": "Constrols your across back width as a factor of your shoulder to shoulder measurement",
+                    "group": "advanced",
+                    "type": "percent",
+                    "min": 93,
+                    "max": 99,
+                    "default": 96
                 }
             },
             "optiongroups": {
@@ -1130,7 +1157,8 @@
                 "advanced": [
                     "armholeDepthFactor",
                     "sleevecapHeightFactor",
-                    "sleevecapEase"
+                    "sleevecapEase",
+                    "acrossBackFactor"
                 ]
             }
         },
@@ -1156,7 +1184,6 @@
                 "en": "English"
             },
             "measurements": {
-                "acrossBack": 450,
                 "bicepsCircumference": 335,
                 "centerBackNeckToWaist": 480,
                 "chestCircumference": 1080,
@@ -1247,6 +1274,15 @@
                     "default": 15,
                     "dependsOn": "ribbing",
                     "onlyOn": 1
+                },
+                "acrossBackFactor": {
+                    "title": "Across back factor",
+                    "description": "Controls your across back width as a factor of your shoulder to shoulder measurement",
+                    "group": "advanced",
+                    "type": "percent",
+                    "min": 93,
+                    "max": 99,
+                    "default": 96
                 }
             },
             "optiongroups": {
@@ -1261,6 +1297,9 @@
                     "ribbing",
                     "ribbingHeight",
                     "ribbingStretchFactor"
+                ],
+                "advanced": [
+                    "acrossBackFactor"
                 ]
             }
         },
@@ -1545,7 +1584,6 @@
                 "nl": "Nederlands"
             },
             "measurements": {
-                "acrossBack": 450,
                 "bicepsCircumference": 335,
                 "centerBackNeckToWaist": 480,
                 "chestCircumference": 1080,
@@ -1715,6 +1753,15 @@
                     "min": 15,
                     "max": 45,
                     "default": 30
+                },
+                "acrossBackFactor": {
+                    "title": "Across back factor",
+                    "description": "Controls your across back width as a factor of your shoulder to shoulder measurement",
+                    "group": "advanced",
+                    "type": "percent",
+                    "min": 93,
+                    "max": 99,
+                    "default": 96
                 }
             },
             "optiongroups": {
@@ -1741,6 +1788,9 @@
                     "shoulderInset",
                     "backInset",
                     "frontInset"
+                ],
+                "advanced": [
+                    "acrossBackFactor"
                 ]
             }
         },
@@ -1893,7 +1943,6 @@
                 "fr": "French"
             },
             "measurements": {
-                "acrossBack": 450,
                 "bicepsCircumference": 335,
                 "centerBackNeckToWaist": 480,
                 "chestCircumference": 1080,
@@ -1987,6 +2036,15 @@
                     "min": 45,
                     "max": 60,
                     "default": 50
+                },
+                "acrossBackFactor": {
+                    "title": "Across back factor",
+                    "description": "Controls your across back width as a factor of your shoulder to shoulder measurement",
+                    "group": "advanced",
+                    "type": "percent",
+                    "min": 93,
+                    "max": 99,
+                    "default": 96
                 }
             },
             "optiongroups": {
@@ -2001,7 +2059,8 @@
                 "advanced": [
                     "armholeDepthFactor",
                     "sleevecapEase",
-                    "sleevecapHeightFactor"
+                    "sleevecapHeightFactor",
+                    "acrossBackFactor"
                 ]
             }
         },
@@ -2042,7 +2101,6 @@
                 "en": "English"
             },
             "measurements": {
-                "acrossBack": 380,
                 "bicepsCircumference": 270,
                 "centerBackNeckToWaist": 390,
                 "chestCircumference": 920,
@@ -2100,7 +2158,7 @@
                 },
                 "shoulderEase": {
                     "title": "Shoulder ease",
-                    "description": "The amount of ease at your shoulder. This increases the shoulder to shoulder and across back distance to accomodate what you're wearing under your coat.",
+                    "description": "The amount of ease at your shoulder. This increases the shoulder to shoulder distance to accomodate what you're wearing under your coat.",
                     "group": "fit",
                     "type": "measure",
                     "min": 0,
@@ -2167,6 +2225,15 @@
                     "group": "advanced",
                     "type": "percent",
                     "default": 50
+                },
+                "acrossBackFactor": {
+                    "title": "Across back factor",
+                    "description": "Controls your across back width as a factor of your shoulder to shoulder measurement",
+                    "group": "advanced",
+                    "type": "percent",
+                    "min": 93,
+                    "max": 99,
+                    "default": 98
                 }
             },
             "optiongroups": {
@@ -2184,7 +2251,8 @@
                     "armholeDepthFactor",
                     "sleevecapEase",
                     "sleevecapHeightFactor",
-                    "princessSeamSmoothFactor"
+                    "princessSeamSmoothFactor",
+                    "acrossBackFactor"
                 ]
             }
         },
@@ -2224,7 +2292,6 @@
                 "en": "English"
             },
             "measurements": {
-                "acrossBack": 420,
                 "bicepsCircumference": 350,
                 "centerBackNeckToWaist": 560,
                 "chestCircumference": 1060,
@@ -2288,7 +2355,7 @@
                 },
                 "shoulderEase": {
                     "title": "Shoulder ease",
-                    "description": "The amount of ease at your shoulder. This increases the shoulder to shoulder and across back distance to accomodate what you're wearing under your coat.",
+                    "description": "The amount of ease at your shoulder. This increases the shoulder to shoulder distance to accomodate what you're wearing under your coat.",
                     "group": "fit",
                     "type": "measure",
                     "min": 0,
@@ -2339,6 +2406,15 @@
                     "min": 45,
                     "max": 55,
                     "default": 50
+                },
+                "acrossBackFactor": {
+                    "title": "Across back factor",
+                    "description": "Controls your across back width as a factor of your shoulder to shoulder measurement",
+                    "group": "advanced",
+                    "type": "percent",
+                    "min": 93,
+                    "max": 99,
+                    "default": 98
                 }
             },
             "optiongroups": {
@@ -2355,7 +2431,8 @@
                 "advanced": [
                     "armholeDepthFactor",
                     "sleevecapEase",
-                    "sleevecapHeightFactor"
+                    "sleevecapHeightFactor",
+                    "acrossBackFactor"
                 ]
             }
         },
@@ -2426,7 +2503,6 @@
                 "en": "English"
             },
             "measurements": {
-                "acrossBack": 450,
                 "bicepsCircumference": 335,
                 "centerBackNeckToWaist": 520,
                 "chestCircumference": 1080,
@@ -2513,6 +2589,15 @@
                     "min": 60,
                     "max": 75,
                     "default": 70
+                },
+                "acrossBackFactor": {
+                    "title": "Across back factor",
+                    "description": "Controls your across back width as a factor of your shoulder to shoulder measurement",
+                    "group": "advanced",
+                    "type": "percent",
+                    "min": 93,
+                    "max": 99,
+                    "default": 98
                 }
             },
             "optiongroups": {
@@ -2528,13 +2613,13 @@
                     "cuffEase"
                 ],
                 "advanced": [
-                    "armholeDepthFactor"
+                    "armholeDepthFactor",
+                    "acrossBackFactor"
                 ]
             }
         },
         "JaegerJacket": {
             "info": {
-                "lab": true,
                 "name": "Jaeger Jacket",
                 "description": "Jeager is a sport coat style jacket with two buttons and patch pockets.",
                 "handle": "jaeger",
@@ -2566,7 +2651,6 @@
                 "en": "English"
             },
             "measurements": {
-                "acrossBack": 440,
                 "bicepsCircumference": 335,
                 "centerBackNeckToWaist": 470,
                 "chestCircumference": 1080,
@@ -2916,6 +3000,15 @@
                     "min": 45,
                     "max": 60,
                     "default": 50
+                },
+                "acrossBackFactor": {
+                    "title": "Across back factor",
+                    "description": "Controls your across back width as a factor of your shoulder to shoulder measurement",
+                    "group": "advanced",
+                    "type": "percent",
+                    "min": 93,
+                    "max": 99,
+                    "default": 96
                 }
             },
             "optiongroups": {
@@ -2966,7 +3059,8 @@
                     "shoulderSlopeReduction",
                     "sleevecapEase",
                     "armholeDepthFactor",
-                    "sleevecapHeightFactor"
+                    "sleevecapHeightFactor",
+                    "acrossBackFactor"
                 ]
             }
         }
@@ -3111,7 +3205,6 @@
         }
     },
     "measurements": {
-        "acrossBack": "all",
         "bicepsCircumference": "all",
         "bustSpan": "all",
         "centerBackNeckToWaist": "all",
