@@ -6,8 +6,8 @@
     xmlns:freesewing="http://freesewing.org/namespaces/freesewing" viewBox ="0 0 1668 785"
     width ="1668mm"
     height ="785mm"
-    freesewing:version ="1.6.5"
-    freesewing:origin ="joost.core.freesewing.org" 
+    freesewing:version ="1.7.0"
+    freesewing:origin ="core.she.freesewing.org" 
 >
 
 <style type="text/css">
