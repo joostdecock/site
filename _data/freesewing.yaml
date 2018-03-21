@@ -1,5 +1,5 @@
 version:
-    core: 1.6.5
+    core: 1.8.0
 patterns:
     AaronAshirt:
         info:
@@ -23,7 +23,6 @@ patterns:
             de: Deutsch
             fr: French
         measurements:
-            acrossBack: 450
             bicepsCircumference: 335
             centerBackNeckToWaist: 480
             chestCircumference: 1080
@@ -142,7 +141,6 @@ patterns:
             nl: Nederlands
             fr: French
         measurements:
-            acrossBack: 450
             bicepsCircumference: 335
             centerBackNeckToWaist: 480
             chestCircumference: 1080
@@ -210,6 +208,14 @@ patterns:
                 min: 35
                 max: 75
                 default: 55
+            acrossBackFactor:
+                title: 'Across back factor'
+                description: 'Controls your across back width as a factor of your shoulder to shoulder measurement'
+                group: advanced
+                type: percent
+                min: 93
+                max: 99
+                default: 96
         optiongroups:
             fit:
                 - chestEase
@@ -220,6 +226,7 @@ patterns:
             advanced:
                 - armholeDepthFactor
                 - sleevecapHeightFactor
+                - acrossBackFactor
     BruceBoxerBriefs:
         info:
             name: 'Bruce Boxer Briefs'
@@ -438,7 +445,6 @@ patterns:
             de: Deutsch
             fr: French
         measurements:
-            acrossBack: 450
             bicepsCircumference: 335
             centerBackNeckToWaist: 480
             chestCircumference: 1080
@@ -499,6 +505,14 @@ patterns:
                 min: 0
                 max: 10
                 default: 5
+            acrossBackFactor:
+                title: 'Across back factor'
+                description: 'Controls your across back width as a factor of your shoulder to shoulder measurement'
+                group: advanced
+                type: percent
+                min: 93
+                max: 99
+                default: 96
         optiongroups:
             fit:
                 - chestEase
@@ -507,6 +521,8 @@ patterns:
                 - lengthBonus
                 - sleeveLengthBonus
                 - ribbingStretchFactor
+            advanced:
+                - acrossBackFactor
     SimonShirt:
         info:
             name: 'Simon Shirt'
@@ -536,7 +552,6 @@ patterns:
             nl: Nederlands
             de: Deutsch
         measurements:
-            acrossBack: 450
             bicepsCircumference: 335
             centerBackNeckToWaist: 520
             chestCircumference: 1080
@@ -879,6 +894,14 @@ patterns:
                 min: 0
                 max: 20
                 default: 5
+            acrossBackFactor:
+                title: 'Across back factor'
+                description: 'Constrols your across back width as a factor of your shoulder to shoulder measurement'
+                group: advanced
+                type: percent
+                min: 93
+                max: 99
+                default: 96
         optiongroups:
             ease:
                 - chestEase
@@ -928,6 +951,7 @@ patterns:
                 - armholeDepthFactor
                 - sleevecapHeightFactor
                 - sleevecapEase
+                - acrossBackFactor
     SvenSweatshirt:
         info:
             name: 'Sven Sweatshirt'
@@ -946,7 +970,6 @@ patterns:
         languages:
             en: English
         measurements:
-            acrossBack: 450
             bicepsCircumference: 335
             centerBackNeckToWaist: 480
             chestCircumference: 1080
@@ -1026,6 +1049,14 @@ patterns:
                 default: 15
                 dependsOn: ribbing
                 onlyOn: 1
+            acrossBackFactor:
+                title: 'Across back factor'
+                description: 'Controls your across back width as a factor of your shoulder to shoulder measurement'
+                group: advanced
+                type: percent
+                min: 93
+                max: 99
+                default: 96
         optiongroups:
             fit:
                 - chestEase
@@ -1037,6 +1068,8 @@ patterns:
                 - ribbing
                 - ribbingHeight
                 - ribbingStretchFactor
+            advanced:
+                - acrossBackFactor
     TamikoTop:
         info:
             name: 'Tamiko Top'
@@ -1268,7 +1301,6 @@ patterns:
             en: English
             nl: Nederlands
         measurements:
-            acrossBack: 450
             bicepsCircumference: 335
             centerBackNeckToWaist: 480
             chestCircumference: 1080
@@ -1406,6 +1438,14 @@ patterns:
                 min: 15
                 max: 45
                 default: 30
+            acrossBackFactor:
+                title: 'Across back factor'
+                description: 'Controls your across back width as a factor of your shoulder to shoulder measurement'
+                group: advanced
+                type: percent
+                min: 93
+                max: 99
+                default: 96
         optiongroups:
             ease:
                 - chestEase
@@ -1427,6 +1467,8 @@ patterns:
                 - shoulderInset
                 - backInset
                 - frontInset
+            advanced:
+                - acrossBackFactor
     BenjaminBowTie:
         info:
             name: 'Benjamin Bow Tie'
@@ -1537,7 +1579,6 @@ patterns:
             nl: Nederlands
             fr: French
         measurements:
-            acrossBack: 450
             bicepsCircumference: 335
             centerBackNeckToWaist: 480
             chestCircumference: 1080
@@ -1622,6 +1663,14 @@ patterns:
                 min: 45
                 max: 60
                 default: 50
+            acrossBackFactor:
+                title: 'Across back factor'
+                description: 'Controls your across back width as a factor of your shoulder to shoulder measurement'
+                group: advanced
+                type: percent
+                min: 93
+                max: 99
+                default: 96
         optiongroups:
             fit:
                 - bicepsEase
@@ -1634,6 +1683,7 @@ patterns:
                 - armholeDepthFactor
                 - sleevecapEase
                 - sleevecapHeightFactor
+                - acrossBackFactor
     CarlitaCoat:
         info:
             name: 'Carlita Coat'
@@ -1666,7 +1716,6 @@ patterns:
         languages:
             en: English
         measurements:
-            acrossBack: 380
             bicepsCircumference: 270
             centerBackNeckToWaist: 390
             chestCircumference: 920
@@ -1719,7 +1768,7 @@ patterns:
                 default: 40
             shoulderEase:
                 title: 'Shoulder ease'
-                description: 'The amount of ease at your shoulder. This increases the shoulder to shoulder and across back distance to accomodate what you''re wearing under your coat.'
+                description: 'The amount of ease at your shoulder. This increases the shoulder to shoulder distance to accomodate what you''re wearing under your coat.'
                 group: fit
                 type: measure
                 min: 0
@@ -1779,6 +1828,14 @@ patterns:
                 group: advanced
                 type: percent
                 default: 50
+            acrossBackFactor:
+                title: 'Across back factor'
+                description: 'Controls your across back width as a factor of your shoulder to shoulder measurement'
+                group: advanced
+                type: percent
+                min: 93
+                max: 99
+                default: 98
         optiongroups:
             fit:
                 - chestEase
@@ -1794,6 +1851,7 @@ patterns:
                 - sleevecapEase
                 - sleevecapHeightFactor
                 - princessSeamSmoothFactor
+                - acrossBackFactor
     CarltonCoat:
         info:
             name: 'Carlton Coat'
@@ -1826,7 +1884,6 @@ patterns:
         languages:
             en: English
         measurements:
-            acrossBack: 420
             bicepsCircumference: 350
             centerBackNeckToWaist: 560
             chestCircumference: 1060
@@ -1884,7 +1941,7 @@ patterns:
                 default: 140
             shoulderEase:
                 title: 'Shoulder ease'
-                description: 'The amount of ease at your shoulder. This increases the shoulder to shoulder and across back distance to accomodate what you''re wearing under your coat.'
+                description: 'The amount of ease at your shoulder. This increases the shoulder to shoulder distance to accomodate what you''re wearing under your coat.'
                 group: fit
                 type: measure
                 min: 0
@@ -1930,6 +1987,14 @@ patterns:
                 min: 45
                 max: 55
                 default: 50
+            acrossBackFactor:
+                title: 'Across back factor'
+                description: 'Controls your across back width as a factor of your shoulder to shoulder measurement'
+                group: advanced
+                type: percent
+                min: 93
+                max: 99
+                default: 98
         optiongroups:
             fit:
                 - chestEase
@@ -1944,6 +2009,7 @@ patterns:
                 - armholeDepthFactor
                 - sleevecapEase
                 - sleevecapHeightFactor
+                - acrossBackFactor
     FlorentFlatCap:
         info:
             name: 'Florent Flat Cap'
@@ -1996,7 +2062,6 @@ patterns:
         languages:
             en: English
         measurements:
-            acrossBack: 450
             bicepsCircumference: 335
             centerBackNeckToWaist: 520
             chestCircumference: 1080
@@ -2072,6 +2137,14 @@ patterns:
                 min: 60
                 max: 75
                 default: 70
+            acrossBackFactor:
+                title: 'Across back factor'
+                description: 'Controls your across back width as a factor of your shoulder to shoulder measurement'
+                group: advanced
+                type: percent
+                min: 93
+                max: 99
+                default: 98
         optiongroups:
             style:
                 - pouch
@@ -2084,9 +2157,9 @@ patterns:
                 - cuffEase
             advanced:
                 - armholeDepthFactor
+                - acrossBackFactor
     JaegerJacket:
         info:
-            lab: true
             name: 'Jaeger Jacket'
             description: 'Jeager is a sport coat style jacket with two buttons and patch pockets.'
             handle: jaeger
@@ -2114,7 +2187,6 @@ patterns:
         languages:
             en: English
         measurements:
-            acrossBack: 440
             bicepsCircumference: 335
             centerBackNeckToWaist: 470
             chestCircumference: 1080
@@ -2268,7 +2340,7 @@ patterns:
                 description: 'The height where the front pocket starts, as a factor of your natural waist to hip measurement.'
                 group: pockets
                 type: percent
-                min: 0
+                min: 1
                 max: 15
                 default: 7.5
             frontPocketDepth:
@@ -2423,6 +2495,14 @@ patterns:
                 min: 45
                 max: 60
                 default: 50
+            acrossBackFactor:
+                title: 'Across back factor'
+                description: 'Controls your across back width as a factor of your shoulder to shoulder measurement'
+                group: advanced
+                type: percent
+                min: 93
+                max: 99
+                default: 96
         optiongroups:
             fit:
                 - chestEase
@@ -2467,6 +2547,7 @@ patterns:
                 - sleevecapEase
                 - armholeDepthFactor
                 - sleevecapHeightFactor
+                - acrossBackFactor
 namespaces:
     Core:
         - aaron
@@ -2598,7 +2679,6 @@ mapping:
         upperLegCircumference: 'Upper leg circumference'
         wristCircumference: 'Wrist circumference'
 measurements:
-    acrossBack: all
     bicepsCircumference: all
     bustSpan: all
     centerBackNeckToWaist: all
