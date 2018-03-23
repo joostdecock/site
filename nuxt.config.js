@@ -1,7 +1,8 @@
 const axios = require('axios');
 
 module.exports = {
-    srcDir: 'app/',
+  srcDir: 'app/',
+  subFolder: false,
   /*
   ** Headers of the page
   */
@@ -23,18 +24,6 @@ module.exports = {
   modules: [ 
       'nuxtent'
   ],
-  generate: {
-    routes: function() {
-        return axios.get('http://localhost:3000/content-api?')
-            .then(response => {
-                const routes = []
-                for (const key in response.data ) {
-                    routes.push(response.data[key].permalink)
-                }
-                return routes
-            })
-    }
-  },
   /*
   ** Build configuration
   */

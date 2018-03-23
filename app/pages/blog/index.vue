@@ -15,7 +15,7 @@
 
 export default {
     asyncData: async function ({ app, route }) {
-        var foo =  await app.$content('/').getAll();
+        var foo =  await app.$content('/blog').getAll();
         return { posts: foo }
     }
 }
