@@ -22,8 +22,15 @@ module.exports = {
   */
   loading: { color: '#3B8070' },
   modules: [ 
-      'nuxtent'
+      'nuxtent',
+       '@nuxtjs/vuetify'
   ],
+  vuetify: {
+      // Vuetify options
+    theme: { 
+       primary: '#663f95'
+    }
+  },
   /*
   ** Build configuration
   */
