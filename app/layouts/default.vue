@@ -58,7 +58,7 @@
 
     <v-navigation-drawer
       temporary
-      :right="alwaysRight"
+      :right="alwaysTrue"
       v-model="rightDrawer"
       fixed
     >
