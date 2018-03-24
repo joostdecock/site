@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://freesewing.org/apigen/core/sitemap.xml
