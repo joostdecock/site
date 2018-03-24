@@ -31,6 +31,9 @@ module.exports = {
        primary: '#663f95'
     }
   },
+  generate: {
+    interval: 20
+  }
   /*
   ** Build configuration
   */
