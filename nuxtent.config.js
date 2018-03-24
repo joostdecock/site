@@ -1,3 +1,5 @@
+const config = require('config');
+const browserBaseURL = config.get('browserBaseURL');
 module.exports = {
     content: [
         ['blog', {
@@ -33,6 +35,6 @@ module.exports = {
     ],
     api: {
         baseURL: 'http://localhost:3000',
-        browserBaseURL: 'https://v2.freesewing.org'
+        browserBaseURL: browserBaseURL
     }
 }

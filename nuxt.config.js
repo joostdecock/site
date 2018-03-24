@@ -1,4 +1,5 @@
 const axios = require('axios');
+const path = require('path');
 
 module.exports = {
   srcDir: 'app/',
@@ -25,11 +26,15 @@ module.exports = {
       'nuxtent',
        '@nuxtjs/vuetify'
   ],
+  plugins: ['~/plugins/i18n.js'],
   vuetify: {
       // Vuetify options
     theme: { 
        primary: '#663f95'
     }
+  },
+  router: {
+    middleware: 'i18n'
   },
   /*
   ** Build configuration

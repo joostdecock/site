@@ -1,0 +1,13 @@
+{
+  "site": {
+    "title": "Freesewing",
+    "about": "Een open source platform voor naaipatronen op maat"
+  },
+  "mainMenu": {
+    "about": "Over freesewing",
+    "blog": "Blog",
+    "patterns": "Patronen",
+    "showcase": "Voorbeelden",
+    "docs": "Documentatie"
+  }
+}
