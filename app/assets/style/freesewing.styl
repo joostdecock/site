@@ -13,9 +13,13 @@ $color-pack = false
 // Native font stack to avoid loading external font
 $body-font-family = -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
 
-// Set standard font size and line height
-$font-size-root = 16px
-$line-height-root = 1.3
+// Set generous font size and line height
+$font-size-root = 22px
+$line-height-root = 1.5
+
+// Tone it down a bit on smaller screens
+@media screen and (max-width 600)
+  $font-size-root = 16px
 
 // Set heading styles
 h1 
