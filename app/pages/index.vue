@@ -5,7 +5,7 @@
       <ul>
           <li><LangLink to="/blog">Blog index</LangLink></li> 
           <li><LangLink to="/showcase">Showcase index</LangLink></li> 
-          <li><LangLink to="/contact">Contact page</LangLink></li> 
+          <li><LangLink to="/typography">Typography</LangLink></li> 
           <li><LangLink to="/about">About page</LangLink></li> 
       </ul>
       <ul>
@@ -41,19 +41,3 @@ export default {
     }
 }
 </script>
-
-<style>
-.container {
-  max-width: 800px;
-  padding: 2rem;
-  margin: 3rem auto;
-  font-size: 140%;
-  line-height: 1.5;
-}
-h1 {
-  margin: 2rem auto;
-    font-size: 3rem;
-    font-weight: 100;
-    line-height: 1.1;
-}
-</style>

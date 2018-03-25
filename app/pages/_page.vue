@@ -2,7 +2,7 @@
 <section class="container">
     <router-link to="/">Home</router-link> / 
     {{ page.title }}
-  <h1 class="post-title">{{ page.title }} </h1>
+  <h1>{{ page.title }}</h1>
   <nuxtent-body :body="page.body" />
 </section>
 </template>
