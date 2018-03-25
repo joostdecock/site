@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section>
     <router-link to="/">Home</router-link> / 
     Showcase
         <h1>Showcases</h1>
