@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section>
     <router-link to="/">Home</router-link> / 
     Blog
         <h1>Blog posts</h1>

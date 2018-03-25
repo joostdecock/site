@@ -1,5 +1,5 @@
 <template>
-<section class="container">
+<section>
     <router-link to="/">Home</router-link> / 
     <router-link to="/blog">Blog</router-link> / 
     {{ post.linktitle }}
