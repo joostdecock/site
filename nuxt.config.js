@@ -33,6 +33,10 @@ module.exports = {
         primary: '#663f95' 
       }
   },
+  vuetify: {
+    materialIcons: true,
+    css: false
+  },
   css: [
       '~/assets/style/freesewing.styl'
   ],

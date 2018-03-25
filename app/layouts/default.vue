@@ -5,7 +5,11 @@
 
     <v-content>
       <v-container>
-        <nuxt />
+        <v-layout row wrap>
+          <v-flex xs12 xl8 offset-xl2>
+            <nuxt />
+          </v-flex>
+        </v-layout>
       </v-container>
     </v-content>
 
