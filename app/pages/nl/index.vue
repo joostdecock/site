@@ -1,9 +1,9 @@
 <template>
   <section class="container">
     <h1>{{ $t('site.title') }} </h1>
-      <h2>{{ $t('site.about') }} </h2>
+      <h2>{{ $t('site.slogan') }} </h2>
       <ul>
-          <li><nuxt-link to="/blog">Blog index</nuxt-link></li> 
+          <li><LangLink to="/blog">Blog index</LangLink></li> 
           <li><nuxt-link to="/showcase">Showcase index</nuxt-link></li> 
           <li><nuxt-link to="/contact">Contact page</nuxt-link></li> 
           <li><nuxt-link to="/about">About page</nuxt-link></li> 
@@ -27,9 +27,11 @@
 </template>
 
 <script>
+import LangLink from '~/components/i18n/LangLink'
 export default {
   components: {
-  },
+  LangLink
+},
     created() {
         this.$router.options.routes.forEach(route => {
             this.items.push({
@@ -37,17 +39,21 @@ export default {
                 , path: route.path
             })
         })
-
-    }
-    , data() {
+    },
+    computed: { 
+      locale () {
+        return this.$store.state.locale
+      }
+    },
+    data() {
         return {
-            items: []
+            items: [] 
         }
     },
     asyncData: async function ({ app, route }) {
-        var foo =  await app.$content('/').getAll();
-        var foo2 =  await app.$content('/pages').getAll();
-        return { sections: foo, pages: foo2 }
+        var sections =  await app.$content('/').getAll();
+        var pages =  await app.$content('/pages').getAll();
+        return { sections: sections, pages: pages }
     }
 
 }

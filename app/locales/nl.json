@@ -1,7 +1,11 @@
 {
+  "locales": {
+    "en": "Engels",
+    "nl": "Nederlands"
+  },
   "site": {
     "title": "Freesewing",
-    "about": "Een open source platform voor naaipatronen op maat"
+    "slogan": "Een open source platform voor naaipatronen op maat"
   },
   "mainMenu": {
     "about": "Over freesewing",

@@ -1,7 +1,11 @@
 {
+  "locales": {
+    "en": "English",
+    "nl": "Dutch"
+  },
   "site": {
     "title": "Freesewing",
-    "about": "An open source platform for made-to-measure sewing patterns"
+    "slogan": "An open source platform for made-to-measure sewing patterns"
   },
   "mainMenu": {
     "about": "About",

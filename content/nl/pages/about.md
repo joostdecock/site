@@ -1,11 +1,7 @@
 ---
-layout: page
-title: About freesewing
-tags: [fundamentals]
-permalink: /about/
-nopatronbanner: true
+title: Over freesewing
 ---
-## The freesewing origin story {#origin}
+## The freesewing origin story
 
 Sewing is easy. It really is. 
 What's hard is getting things to fit properly. 
