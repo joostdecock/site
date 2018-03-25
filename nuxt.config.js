@@ -28,11 +28,14 @@ module.exports = {
   ],
   plugins: ['~/plugins/i18n.js'],
   vuetify: {
-      // Vuetify options
-    theme: { 
-       primary: '#663f95'
-    }
+      theme: {
+        // This is Freesewing's signature purple
+        primary: '#663f95' 
+      }
   },
+  css: [
+      '~/assets/style/freesewing.styl'
+  ],
   router: {
     middleware: 'i18n'
   },

@@ -51,4 +51,3 @@ import TheTopToolbar from '~/components/SingleInstance/TheTopToolbar'
     }
   }
 </script>
-

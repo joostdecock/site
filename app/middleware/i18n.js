@@ -14,8 +14,8 @@ export default function ({ isHMR, app, store, route, params, error, redirect }) 
   if (locale === defaultLocale && route.fullPath.indexOf('/' + defaultLocale) === 0) {
     const toReplace = '^/' + defaultLocale
     const re = new RegExp(toReplace)
-    return redirect(
-      route.fullPath.replace(re, '/')
-    )
+    console.log('redirecting this shit')
+    console.log(route.fullPath)
+    //return redirect( route.fullPath.replace(re, '/'))
   }
 }
