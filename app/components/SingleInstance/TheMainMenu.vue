@@ -1,10 +1,9 @@
 <template>
   <v-navigation-drawer
     v-model="showLeftMenu"
-    mobile-break-point="10000"
-    fixed
+    class=""
     app
-    temporary
+    clipped
   >
     <v-list>
       <v-list-tile
@@ -51,7 +50,7 @@
           { icon: 'share', title: 'blog', to: '/blog' },
           { icon: 'photo_camera', title: 'showcase', to: '/showcase' },
           { icon: 'import_contacts', title: 'docs', to: '/docs' },
-        ]
+        ],
       }
     },
   }
