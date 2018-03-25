@@ -3,7 +3,7 @@ export const state = () => ({
   defaultLocale: 'en',
   locale: 'en',
   localePrefix: '',
-  menu: {
+  drawer: {
     left: false,
     right: false
   }
@@ -17,13 +17,19 @@ export const mutations = {
       else state.localePrefix = '/'+state.locale
     }
   },
-  showMainMenu(state) {
-    state.menu.left = true
+  showLeftDrawer(state) {
+    state.drawer.left = true
   },
-  hideMainMenu(state) {
-    state.menu.left = false
+  hideLeftDrawer(state) {
+    state.drawer.left = false
   },
-  toggleMenu(state, side) {
-    state.menu[side] = !state.menu[side]
+  showRightDrawer(state) {
+    state.drawer.right = true
+  },
+  hideRightDrawer(state) {
+    state.drawer.right = false
+  },
+  toggleDrawer(state, side) {
+    state.drawer[side] = !state.drawer[side]
   }
 }

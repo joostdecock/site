@@ -1,44 +1,42 @@
 <template>
   <v-app>
-    <TheMainMenu />
+    <TheRightDrawer />
     <TheTopToolbar />
+    <TheLeftDrawer />
 
     <v-content>
       <v-container>
         <v-layout row wrap>
-          <v-flex xs12 xl8 offset-xl2>
+          <AppMainMenuCardFloating /> 
+          <v-flex xs12 lg8 xl5 offset-xl1>
             <nuxt />
+          </v-flex>
+          <v-flex lg2 xl3 ml-3 hidden-md-and-down>
+            Right col 
           </v-flex>
         </v-layout>
       </v-container>
     </v-content>
 
 
-    <v-navigation-drawer
-      temporary
-      :right="alwaysTrue"
-      v-model="rightDrawer"
-      fixed
-    >
-        Hi there 
-    </v-navigation-drawer>
-
-
-    <v-footer app dark>
-      <span>&copy; 2017</span>
+    <v-footer dark height="auto">
+      <span>fixme</span>
     </v-footer>
-
 
   </v-app>
 </template>
 
 <script>
-import TheMainMenu from '~/components/SingleInstance/TheMainMenu'
+import TheLeftDrawer from '~/components/SingleInstance/TheLeftDrawer'
+import TheRightDrawer from '~/components/SingleInstance/TheRightDrawer'
 import TheTopToolbar from '~/components/SingleInstance/TheTopToolbar'
+import AppMainMenuCardFloating from '~/components/Menus/AppMainMenuCardFloating'
   export default {
   components: { 
-    TheMainMenu,
-    TheTopToolbar
+    TheLeftDrawer,
+    TheRightDrawer,
+    TheTopToolbar,
+    AppMainMenuCardFloating
   },
     data () {
       return {

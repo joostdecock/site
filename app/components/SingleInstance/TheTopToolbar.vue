@@ -4,29 +4,29 @@
     app 
     dark
     color="primary"
-    height="76"
     :prominent="alwaysTrue"
     :scroll-off-screen="alwaysTrue"
     >
-      <v-toolbar-side-icon @click.stop="toggleMenu('left')"></v-toolbar-side-icon>
-    <v-flex xs5>
-      <div class="hidden-sm-only hidden-xs-only ml-2">
-        <span style="color: white; font-weight: 200; font-size: 26px; line-height: 1;">{{ $t('site.title') }}</span>
-        <span style="color: white; letter-spacing: -0.5px;" class="hidden-md-only"><br>{{ $t('site.slogan') }}</span>
-      </div>
-    </v-flex>
-    <v-flex xs2>
-    <div class="text-xs-center">
-      <nuxt-link to="/" class="ml-2">
-        <FreesewingLogo />
-      </nuxt-link>
-    </div>
-    </v-flex>
-    <v-flex xs5 class="text-xs-right">
-    <div class="text-xs-right">
+      <v-btn icon @click.stop="toggleDrawer('left')" class="idden-lg-and-up pl-4">
+        <v-icon large>menu</v-icon>
+      </v-btn>
+      <div class="hidden-md-and-down ml-3">&nbsp;</div>
+        <LangLink to="/">
+          <v-btn dark flat>{{ $t('site.title') }}</v-btn>
+        </LangLink>
+      <v-spacer class="text-xs-right">
+        <v-btn dark flat>
+          {{ $t('callToAction.signUpForAFreeAccount') }} 
+          <v-icon right>vpn_key</v-icon>
+        </v-btn>
+        <v-btn dark flat>
+          {{ $t('callToAction.chatWithUs') }} 
+          <v-icon right>tag_faces</v-icon>
+        </v-btn>
+      </v-spacer>
       <v-menu :nudge-width="100">
         <v-toolbar-title slot="activator">
-          <v-btn flat>
+          <v-btn small flat>
             <img :src="'/icons/locales/'+locale+'.svg'" />
           </v-btn>
         </v-toolbar-title>
@@ -42,9 +42,9 @@
           </v-list-tile>
         </v-list>
       </v-menu>
-
-    </div>
-    </v-flex>
+      <v-btn icon @click.stop="toggleDrawer('right')" class="idden-lg-and-up mr-4">
+        <v-icon x-large>chevron_left</v-icon>
+      </v-btn>
   </v-toolbar>
 </template>
 
@@ -73,8 +73,8 @@ export default {
     }
   },
   methods: {
-    toggleMenu: function(side) {
-      this.$store.commit('toggleMenu', side)
+    toggleDrawer: function(side) {
+      this.$store.commit('toggleDrawer', side)
     },
     setLocale: function(loc) {
       this.$store.commit('setLocale', loc)
