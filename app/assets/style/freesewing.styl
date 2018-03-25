@@ -1,8 +1,14 @@
+/*
+ *
+ * Color overrides
+ * Note that primary (and other theme colors) are set in nuxt.conf.js
+ *
+ */
 // Disable the color pack to avoid bloat
 $color-pack = false
 
-// Primary color is set in nuxt.conf.js
-$primary = #00ff00
+// Who would thing having a white background would be such as hassle
+@import './material-light'
 
 /*
  *
@@ -23,10 +29,10 @@ $line-height-root = 1.4
 
 // Set heading styles
 h1 
-  font-size: 3rem
-  font-weight: 200
-  line-height: 1
-  letter-spacing: -.04rem 
+  font-size: 2.8rem
+  font-weight: 800
+  line-height: 1.1
+  letter-spacing: -.03rem 
   margin: 1rem 0 2rem 0
 h2 
   font-size: 2.4rem
@@ -87,4 +93,3 @@ $navigation-drawer-item-font-size = 24px
  *
  */
 @import '~vuetify/src/stylus/main'
-

@@ -8,10 +8,20 @@
     "slogan": "Een open source platform voor naaipatronen op maat"
   },
   "mainMenu": {
-    "about": "Over freesewing",
-    "blog": "Blog",
-    "patterns": "Patronen",
-    "showcase": "Voorbeelden",
-    "docs": "Documentatie"
+    "title": "Hoofdmenu",
+    "items": {
+      "home": "Home pagina",
+      "about": "Over freesewing",
+      "blog": "Blog",
+      "patterns": "Patronen",
+      "showcase": "Voorbeelden",
+      "docs": "Documentatie"
+    }
+  },
+  "callToAction": {
+    "signUp": "Schrijf je in",
+    "signUpForAFreeAccount": "Schrijf je gratis in",
+    "chat": "Chat",
+    "chatWithUs": "Chat met ons"
   }
 }
