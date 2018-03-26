@@ -13,7 +13,7 @@ import AppBreadcrumbs from '~/components/Navigation/AppBreadcrumbs'
 export default {
     asyncData: async function ({ app, route }) {
         console.log('Getting '+route.path+' from content api')
-        return { page: await app.$content('/pages').get(route.path)}
+        return { page: await app.$content('/en/docs').get(route.path)}
     },
     components: {
       AppBreadcrumbs

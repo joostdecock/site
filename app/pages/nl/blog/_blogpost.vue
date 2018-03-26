@@ -11,7 +11,7 @@
 <script>
 export default {
     asyncData: async function ({ app, route }) {
-        return { post: await app.$content('/blog').get(route.path)}
+        return { post: await app.$content('/nl/blog').get(route.path)}
     }
 }
 </script>

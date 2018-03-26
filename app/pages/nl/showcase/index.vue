@@ -1,7 +1,6 @@
 <template>
   <section>
     <router-link to="/">Home</router-link> / 
-    Showcase
         <h1>Showcases</h1>
         <ul>
             <li v-for="showcase in showcases" :key="showcase.permalink">
@@ -15,7 +14,7 @@
 
 export default {
     asyncData: async function ({ app, route }) {
-        var list =  await app.$content('/showcase').getAll();
+        var list =  await app.$content('/nl/showcase').getAll();
         return { showcases: list }
     }
 }

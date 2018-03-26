@@ -1,8 +1,8 @@
 module.exports = {
     content: [
         // English
-        ['blog', {
-            page: '/blog/_post',
+        ['en/blog', {
+            page: '/blog/_blogpost',
             permalink: '/blog/:slug',
             isPost: true,
             anchorLevel: 4,
@@ -11,7 +11,7 @@ module.exports = {
                 'getAll'
             ]
         }],
-        ['showcase', {
+        ['en/showcase', {
             page: '/showcase/_showcase',
             permalink: '/showcase/:slug',
             isPost: true,
@@ -21,9 +21,9 @@ module.exports = {
                 'getAll'
             ]
         }],
-        ['pages', {
-            page: '/_page',
-            permalink: ':section*/:slug',
+        ['en/docs', {
+            page: '/docs/_page',
+            permalink: '/docs/:section*/:slug',
             isPost: false,
             anchorLevel: 4,
             generate: [
@@ -33,8 +33,8 @@ module.exports = {
         }],
         // Dutch (Nederlands)
         ['nl/blog', {
-            page: '/nl/blog/_post',
-            permalink: '/blog/:slug',
+            page: '/nl/blog/_blogpost',
+            permalink: '/nl/blog/:slug',
             isPost: true,
             anchorLevel: 4,
             generate: [
@@ -44,7 +44,7 @@ module.exports = {
         }],
         ['nl/showcase', {
             page: '/nl/showcase/_showcase',
-            permalink: '/showcase/:slug',
+            permalink: '/nl/showcase/:slug',
             isPost: true,
             anchorLevel: 4,
             generate: [
@@ -52,9 +52,9 @@ module.exports = {
                 'getAll'
             ]
         }],
-        ['nl/pages', {
-            page: '/nl/_page',
-            permalink: ':section*/:slug',
+        ['nl/docs', {
+            page: '/nl/docs/_page',
+            permalink: '/nl/docs/:section*/:slug',
             isPost: false,
             anchorLevel: 4,
             generate: [
