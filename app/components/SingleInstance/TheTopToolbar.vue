@@ -15,14 +15,12 @@
           <v-btn dark flat>{{ $t('site.title') }}</v-btn>
         </LangLink>
       <v-spacer class="text-xs-right">
-        <v-btn dark flat>
-          {{ $t('callToAction.signUpForAFreeAccount') }} 
-          <v-icon right>vpn_key</v-icon>
-        </v-btn>
-        <v-btn dark flat>
-          {{ $t('callToAction.chatWithUs') }} 
-          <v-icon right>tag_faces</v-icon>
-        </v-btn>
+        <LangLink to="/patrons/join">
+          <v-btn dark color="accent">
+            {{ $t('callToAction.becomeAPatron') }} 
+            <v-icon right color="primary">favorite</v-icon>
+          </v-btn>
+        </LangLink>
       </v-spacer>
       <v-menu :nudge-width="100">
         <v-toolbar-title slot="activator">
@@ -50,9 +48,11 @@
 
 <script>
 import FreesewingLogo from '~/components/Branding/FreesewingLogo'
+import LangLink from '~/components/i18n/LangLink'
 export default {
   components: {
-    FreesewingLogo
+    FreesewingLogo,
+    LangLink
   },
   name: 'TheTopToolbar',
     computed: { 

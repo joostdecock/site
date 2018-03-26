@@ -19,9 +19,10 @@
     }
   },
   "callToAction": {
-    "signUp": "Sign up",
-    "signUpForAFreeAccount": "Sign up for a free account",
+    "becomeAPatron": "Become a patron",
     "chat": "Chat",
-    "chatWithUs": "Chat with us"
+    "chatWithUs": "Chat with us",
+    "signUp": "Sign up",
+    "signUpForAFreeAccount": "Sign up for a free account"
   }
 }
