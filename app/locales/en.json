@@ -8,21 +8,16 @@
     "slogan": "An open source platform for made-to-measure sewing patterns"
   },
   "mainMenu": {
-    "title": "Main menu",
-    "items": {
-      "home": "Home",
-      "about": "About",
-      "blog": "Blog",
-      "patterns": "Patterns",
-      "showcase": "Showcase",
-      "docs": "Docs"
-    }
+    "home": "Home",
+    "about": "About",
+    "blog": "Blog",
+    "patterns": "Patterns",
+    "showcase": "Showcase",
+    "docs": "Docs",
+    "signup": "Sign up for a free account",
+    "chat": "Chat with us"
   },
   "callToAction": {
-    "becomeAPatron": "Become a patron",
-    "chat": "Chat",
-    "chatWithUs": "Chat with us",
-    "signUp": "Sign up",
-    "signUpForAFreeAccount": "Sign up for a free account"
+    "becomeAPatron": "Become a patron"
   }
 }

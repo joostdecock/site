@@ -1,5 +1,5 @@
 <template>
-  <section style="border: 1px solid red;">
+  <section>
     <h1>{{ $t('site.title') }} </h1>
       <h2>{{ $t('site.slogan') }} </h2>
       <ul>

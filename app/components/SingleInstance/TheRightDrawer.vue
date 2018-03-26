@@ -1,9 +1,9 @@
 <template>
   <v-navigation-drawer
-    :value="showRightDrawer"
+    v-model="showRightDrawer"
     app
     fixed
-    clipped
+    class="pt-5"
     temporary
     :right="alwaysTrue"
   >
@@ -20,8 +20,14 @@
     },
     name: 'TheRightDrawer',
     computed: { 
-      showRightDrawer () {
-        return this.$store.state.drawer.right
+      showRightDrawer: {
+        get: function () {
+          return this.$store.state.drawer.right
+        },
+        set: function (value) {
+          if(value) this.$store.commit('showRightDrawer')
+          else this.$store.commit('hideRightDrawer')
+        }
       }
     },
     data () {

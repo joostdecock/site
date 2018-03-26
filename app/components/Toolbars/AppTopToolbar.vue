@@ -7,7 +7,7 @@
     :prominent="alwaysTrue"
     :scroll-off-screen="alwaysTrue"
     >
-      <v-btn icon @click.stop="toggleDrawer('left')" class="idden-lg-and-up pl-4">
+      <v-btn icon @click.stop="toggleDrawer('left')" class="hidden-lg-and-up ml-4">
         <v-icon large>menu</v-icon>
       </v-btn>
       <div class="hidden-md-and-down ml-3">&nbsp;</div>
@@ -40,7 +40,7 @@
           </v-list-tile>
         </v-list>
       </v-menu>
-      <v-btn icon @click.stop="toggleDrawer('right')" class="idden-lg-and-up mr-4">
+      <v-btn v-if="showSecondaryMenuToggle" icon @click.stop="toggleDrawer('right')" class="hidden-lg-and-up mr-4">
         <v-icon x-large>chevron_left</v-icon>
       </v-btn>
   </v-toolbar>
@@ -54,7 +54,13 @@ export default {
     FreesewingLogo,
     LangLink
   },
-  name: 'TheTopToolbar',
+  props: {
+    showSecondaryMenuToggle: {
+      type: Boolean,
+      default: true
+    },
+  },
+  name: 'AppTopToolbar',
     computed: { 
       locale () {
         return this.$store.state.locale
