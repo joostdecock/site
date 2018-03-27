@@ -42,9 +42,6 @@ module.exports = {
   css: [
       '~/assets/style/freesewing.styl'
   ],
-  router: {
-    middleware: 'i18n'
-  },
   /*
   ** Build configuration
   */
