@@ -20,7 +20,6 @@
     },  
     methods: {
       gotoChat: function() {
-        console.log('going to chat')
         window.location = 'https://gitter.im/freesewing/freesewing'
       } 
     }

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="550" height="750" viewBox="0 -560 550 700">
+    <style type="text/css">
+    <![CDATA[
+        rect.don.mmp{fill: #5c3566; stroke:none}
+        rect.don{fill: #663f95; stroke:none}
+        rect.msf{fill: #ee342a; stroke:none}
+        text.fs{font-size:25px;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;fill:#000;text-anchor:middle;font-weight:600}
+        text.sm{font-size:15px;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;fill:#000;text-anchor:middle;font-weight:400}
+        text.legend{font-size:15px;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;fill:#000;text-anchor:start;font-weight:400}
+    ]]>
+    </style>
+    <!-- 2015 -->
+    <g transform="translate(0,-256.65)">
+        <rect height="256.65" width="50" class="don mmp" x="20" y="0" />
+        <rect height="256.65" width="50" class="msf" x="80" y="0" />
+        <text class="fs" x="75" y="286" >2015</text>
+        <text class="sm" x="75" y="-10" >256.65 euro</text>
+    </g> 
+    <!-- 2016 -->
+    <g transform="translate(0,-473.5)">
+        <rect height="477" width="50" class="don mmp" x="220" y="0" />
+        <rect height="477" width="50" class="msf" x="280" y="0" />
+        <text class="fs" x="275" y="503.5" >2016</text>
+        <text class="sm" x="275" y="-10" >473.5 euro</text>
+    </g>
+    <!-- 2017 mmp -->
+    <g transform="translate(0,-532)">
+        <rect height="532" width="50" class="don mmp" x="420" y="0" />
+        <rect height="0" width="50" class="msf" x="480" y="0" />
+        <text class="fs" x="475" y="559.5" >2017</text>
+        <text class="sm" x="475" y="-10" >532 euro so far</text>
+    </g>
+    <!-- 2017 fs -->
+    <g transform="translate(0,-527)">
+        <rect height="115" width="50" class="don" x="420" y="0" />
+        <rect height="0" width="50" class="msf" x="480" y="0" />
+    </g>
+    <!-- Legend -->
+    <g transform="translate(0,70)">
+        <circle cx="75" cy="0" r="15" fill="#5c3566" />
+        <circle cx="75" cy="35" r="15" fill="#663f95" />
+        <circle cx="75" cy="70" r="15" fill="#ee342a" />
+        <text class="legend" x="105" y="7" >Donations received on makemypattern.com</text>
+        <text class="legend" x="105" y="42" >Donations received on freesewing.org</text>
+        <text class="legend" x="105" y="77" >Transferred to MSF</text>
+    </g>
+</svg>
