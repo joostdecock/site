@@ -2,22 +2,18 @@
   <section>
     <h1>{{ $t('site.title') }} </h1>
     <h2>{{ $t('site.slogan') }} </h2>
-    <p>Speciale aanbieding: groepsaankoop karnemelk</p>
     <ul>
-      <li><LangLink to="/docs/typography">Typography</LangLink></li> 
-      <li><LangLink to="/docs/about">About page</LangLink></li> 
+      <li><lang-link to="/docs/typography">Typography</lang-link></li> 
+      <li><lang-link to="/docs/about">About page</lang-link></li> 
     </ul>
   </section>
 </template>
 
 <script>
-  import LangLink from '~/components/i18n/LangLink'
+  import AppLink from '~/components/App/i18n/AppLink'
   export default {
-  components: { LangLink },
-  computed: { 
-    locale () {
-      return this.$store.state.locale
-    }
-  }
+  components: { 
+    AppLink 
+  },
 }
 </script>

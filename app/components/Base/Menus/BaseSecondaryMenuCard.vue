@@ -7,18 +7,10 @@
      </div>
    </v-card-title>
    <v-divider></v-divider>
-   <AppMainMenuExtentionSupport />
-   <v-divider></v-divider>
    <slot></slot>
  </v-card>
 </template>
 
 <script>
-  import AppMainMenuExtentionSupport from '~/components/Menus/AppMainMenuExtentionSupport'
-  export default {
-    components: {
-      AppMainMenuExtentionSupport
-    },
-    name: 'AppSecondaryMenuCard'
-  }
+  export default { name: 'BaseSecondaryMenuCard' }
 </script>

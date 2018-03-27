@@ -1,28 +1,17 @@
 <template>
   <v-toolbar 
-    fixed 
-    app 
-    dark
-    color="primary"
-    :prominent="alwaysTrue"
-    :scroll-off-screen="alwaysTrue"
+    :dark="dark"
+    :color="color"
+    flat
     >
       <v-btn icon @click.stop="toggleDrawer('left')" class="hidden-lg-and-up ml-4">
         <v-icon large>menu</v-icon>
       </v-btn>
       <div class="hidden-md-and-down ml-3">&nbsp;</div>
-        <LangLink to="/">
-          <v-btn dark flat>{{ $t('site.title') }}</v-btn>
-        </LangLink>
-      <v-spacer class="text-xs-right">
-        <LangLink to="/patrons/join">
-          <v-btn dark color="accent">
-            {{ $t('callToAction.becomeAPatron') }} 
-            <v-icon right color="primary">favorite</v-icon>
-          </v-btn>
-        </LangLink>
-      </v-spacer>
-      <v-menu :nudge-width="100">
+      <app-link to="/">
+        <v-btn dark flat>{{ $t('site.title') }}</v-btn>
+      </app-link>
+      <v-menu nudge-right>
         <v-toolbar-title slot="activator">
           <v-btn small flat>
             <img :src="'/icons/locales/'+locale+'.svg'" />
@@ -40,27 +29,41 @@
           </v-list-tile>
         </v-list>
       </v-menu>
-      <v-btn v-if="showSecondaryMenuToggle" icon @click.stop="toggleDrawer('right')" class="hidden-lg-and-up mr-4">
+      <v-spacer class="text-xs-center">
+      </v-spacer>
+        <app-link to="/patrons/join" class="hidden-sm-and-down mr-4">
+          <v-btn light color="warning">
+            {{ $t('callToAction.becomeAPatron') }} 
+            <v-icon right color="primary">favorite</v-icon>
+          </v-btn>
+        </app-link>
+      <v-btn icon @click.stop="toggleDrawer('right')" class="hidden-xl-only mr-4">
         <v-icon x-large>chevron_left</v-icon>
       </v-btn>
   </v-toolbar>
 </template>
 
 <script>
-import FreesewingLogo from '~/components/Branding/FreesewingLogo'
-import LangLink from '~/components/i18n/LangLink'
+import AppLink from '~/components/App/i18n/AppLink'
 export default {
   components: {
-    FreesewingLogo,
-    LangLink
+    AppLink
   },
   props: {
-    showSecondaryMenuToggle: {
+    fixed: {
       type: Boolean,
       default: true
     },
+    dark: {
+      type: Boolean,
+      default: true
+    },
+    color: {
+      type: String,
+      default: 'primary'
+    },
   },
-  name: 'AppTopToolbar',
+  name: 'AppMainToolbar',
     computed: { 
       locale () {
         return this.$store.state.locale

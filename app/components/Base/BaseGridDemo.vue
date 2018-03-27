@@ -34,5 +34,5 @@
 </template>
 
 <script>
-  export default { name: 'GridDemo' }
+  export default { name: 'BaseGridDemo' }
 </script>

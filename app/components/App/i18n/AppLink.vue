@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'LangLink',
+  name: 'AppLink',
   props: {
     to: {
       type: String,

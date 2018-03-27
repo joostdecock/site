@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'FreesewingLogo',
+  name: 'BaseLogo',
   props: {
     size: {
       type: Number,

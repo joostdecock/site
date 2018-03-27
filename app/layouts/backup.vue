@@ -18,24 +18,24 @@
       </v-container>
     </v-content>
     <v-footer fixed height="auto">
-      <app-main-toolbar color="primary" />
+      <app-main-toolbar color="accent" />
     </v-footer>
   </v-app>
 </template>
 
 <script>
-  import TheRightDrawer from '~/components/SingleInstance/TheRightDrawer' 
-  import TheLeftDrawer from '~/components/SingleInstance/TheLeftDrawer' 
-  import BaseMainMenuCard from '~/components/Base/Menus/BaseMainMenuCard' 
-  import BaseSecondaryMenuCard from '~/components/Base/Menus/BaseSecondaryMenuCard' 
-  import AppMainToolbar from '~/components/App/Toolbars/AppMainToolbar' 
+  import TheLeftDrawer from '~/components/SingleInstance/TheLeftDrawer'
+  import TheRightDrawer from '~/components/SingleInstance/TheRightDrawer'
+  import AppMainToolbar from '~/components/App/Toolbars/AppMainToolbar'
+  import BaseMainMenuCard from '~/components/Base/Menus/BaseMainMenuCard'
+  import BaseSecondaryMenuCard from '~/components/Base/Menus/BaseSecondaryMenuCard'
   export default {
   components: { 
-    TheRightDrawer,
     TheLeftDrawer,
+    TheRightDrawer,
+    AppMainToolbar,
     BaseMainMenuCard,
-    BaseSecondaryMenuCard,
-    AppMainToolbar
+    BaseSecondaryMenuCard
   },
     data () {
       return {

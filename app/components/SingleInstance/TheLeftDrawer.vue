@@ -6,12 +6,14 @@
     fixed
     temporary
   >
-    <AppMainMenu />
+    <div class="align-drawer-bottom">
+      <AppMainMenu />
+    </div>
   </v-navigation-drawer>
 </template>
 
 <script>
-  import AppMainMenu from '~/components/Menus/AppMainMenu'
+  import AppMainMenu from '~/components/App/Menus/AppMainMenu'
   export default {
     components: {
       AppMainMenu
