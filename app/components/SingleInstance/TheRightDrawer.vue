@@ -7,13 +7,14 @@
     temporary
     :right="alwaysTrue"
   >
-    <p>This is the right drawer</p>
-    <AppSecondaryMenu />
+    <div class="align-drawer-bottom">
+      <AppSecondaryMenu />
+    </div>
   </v-navigation-drawer>
 </template>
 
 <script>
-  import AppSecondaryMenu from '~/components/Menus/AppSecondaryMenu'
+  import AppSecondaryMenu from '~/components/App/Menus/AppSecondaryMenu'
   export default {
     components: {
       AppSecondaryMenu

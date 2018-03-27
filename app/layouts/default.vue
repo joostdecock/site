@@ -1,45 +1,41 @@
 <template>
   <v-app>
-    <TheRightDrawer />
-    <AppTopToolbar />
-    <TheLeftDrawer />
-
+    <the-right-drawer />
+    <the-left-drawer />
     <v-content>
-      <v-container>
+      <v-container grid-list-lg>
         <v-layout row wrap>
-          <v-flex xl2 lg2 hidden-md-and-down class="fs-sticky-menu">
-            <AppMainMenuCard /> 
+          <v-flex xl2 lg3 hidden-md-and-down class="fs-sticky-menu">
+            <base-main-menu-card /> 
           </v-flex>
-          <v-flex xl6 offset-xl1 lg8 xs12>
+          <v-flex xl6 offset-xl1 lg8 offset-lg1 xs12>
             <nuxt />
           </v-flex>
-          <v-flex xl2 offset-xl1 lg2 hidden-md-and-down class="fs-sticky-menu">
-            <AppSecondaryMenuCard />
+          <v-flex xl2 offset-xl1 hidden-lg-and-down class="fs-sticky-menu">
+            <base-secondary-menu-card /> 
           </v-flex>
         </v-layout>
       </v-container>
     </v-content>
-
-    <v-footer dark height="auto">
-      <span>fixme</span>
+    <v-footer fixed height="auto">
+      <app-main-toolbar color="primary" />
     </v-footer>
-
   </v-app>
 </template>
 
 <script>
-import TheLeftDrawer from '~/components/SingleInstance/TheLeftDrawer'
-import TheRightDrawer from '~/components/SingleInstance/TheRightDrawer'
-import AppTopToolbar from '~/components/Toolbars/AppTopToolbar'
-import AppMainMenuCard from '~/components/Menus/AppMainMenuCard'
-import AppSecondaryMenuCard from '~/components/Menus/AppSecondaryMenuCard'
+  import TheRightDrawer from '~/components/SingleInstance/TheRightDrawer' 
+  import TheLeftDrawer from '~/components/SingleInstance/TheLeftDrawer' 
+  import BaseMainMenuCard from '~/components/Base/Menus/BaseMainMenuCard' 
+  import BaseSecondaryMenuCard from '~/components/Base/Menus/BaseSecondaryMenuCard' 
+  import AppMainToolbar from '~/components/App/Toolbars/AppMainToolbar' 
   export default {
   components: { 
-    TheLeftDrawer,
     TheRightDrawer,
-    AppTopToolbar,
-    AppMainMenuCard,
-    AppSecondaryMenuCard,
+    TheLeftDrawer,
+    BaseMainMenuCard,
+    BaseSecondaryMenuCard,
+    AppMainToolbar
   },
     data () {
       return {

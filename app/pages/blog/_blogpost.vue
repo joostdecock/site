@@ -11,7 +11,6 @@
 <script>
 export default {
     asyncData: async function ({ app, route }) {
-        console.log(app)
         return { post: await app.$content('/en/blog').get(route.path)}
     }
 }
