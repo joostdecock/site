@@ -1,23 +1,24 @@
 <template>
   <v-app>
     <TheRightDrawer />
-    <TheTopToolbar />
+    <AppTopToolbar />
     <TheLeftDrawer />
 
     <v-content>
       <v-container>
         <v-layout row wrap>
-          <AppMainMenuCardFloating /> 
-          <v-flex xs12 lg8 xl5 offset-xl1>
+          <v-flex xl2 lg2 hidden-md-and-down class="fs-sticky-menu">
+            <AppMainMenuCard /> 
+          </v-flex>
+          <v-flex xl6 offset-xl1 lg8 xs12>
             <nuxt />
           </v-flex>
-          <v-flex lg2 xl3 ml-3 hidden-md-and-down>
-            Right col 
+          <v-flex xl2 offset-xl1 lg2 hidden-md-and-down class="fs-sticky-menu">
+            <AppSecondaryMenuCard />
           </v-flex>
         </v-layout>
       </v-container>
     </v-content>
-
 
     <v-footer dark height="auto">
       <span>fixme</span>
@@ -29,14 +30,16 @@
 <script>
 import TheLeftDrawer from '~/components/SingleInstance/TheLeftDrawer'
 import TheRightDrawer from '~/components/SingleInstance/TheRightDrawer'
-import TheTopToolbar from '~/components/SingleInstance/TheTopToolbar'
-import AppMainMenuCardFloating from '~/components/Menus/AppMainMenuCardFloating'
+import AppTopToolbar from '~/components/Toolbars/AppTopToolbar'
+import AppMainMenuCard from '~/components/Menus/AppMainMenuCard'
+import AppSecondaryMenuCard from '~/components/Menus/AppSecondaryMenuCard'
   export default {
   components: { 
     TheLeftDrawer,
     TheRightDrawer,
-    TheTopToolbar,
-    AppMainMenuCardFloating
+    AppTopToolbar,
+    AppMainMenuCard,
+    AppSecondaryMenuCard,
   },
     data () {
       return {
@@ -53,3 +56,12 @@ import AppMainMenuCardFloating from '~/components/Menus/AppMainMenuCardFloating'
     }
   }
 </script>
+
+<style scoped>
+  .fs-sticky-menu {
+    position: sticky;
+    top: 10px;
+    align-self: flex-start;
+  }
+</style>
+

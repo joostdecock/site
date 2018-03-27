@@ -1,5 +1,4 @@
 const axios = require('axios');
-const path = require('path');
 
 module.exports = {
   srcDir: 'app/',
@@ -32,15 +31,17 @@ module.exports = {
     css: false,
     theme: {
       // This is Freesewing's signature purple
-      primary: '#663f95' 
+      primary: '#663F95', 
+      secondary: '#455A64',
+      warning: '#FFAB00',
+      error: '#D32F2F',
+      info: '#64B5F6',
+      accent: '#FF5B77'
     }
   },
   css: [
       '~/assets/style/freesewing.styl'
   ],
-  router: {
-    middleware: 'i18n'
-  },
   /*
   ** Build configuration
   */

@@ -1,11 +1,10 @@
 <template>
   <section>
     <router-link to="/">Home</router-link> / 
-    Blog
-        <h1>Blog posts</h1>
+      <h1>Blog posts</h1>
         <ul>
             <li v-for="post in posts" :key="post.permalink">
-                <router-link :to="post.permalink">{{ post.linktitle }}</router-link>
+                <router-link :to="post.permalink">{{ post.title }} - {{ post.permalink }}</router-link>
             </li>
         </ul>
   </section>
@@ -15,8 +14,8 @@
 
 export default {
     asyncData: async function ({ app, route }) {
-        var foo =  await app.$content('/nl/blog').getAll();
-        return { posts: foo }
+        var list =  await app.$content('/nl/blog').getAll();
+        return { posts: list }
     }
 }
 </script>

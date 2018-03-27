@@ -1,9 +1,8 @@
 <template>
   <v-navigation-drawer
     v-model="showLeftDrawer"
-    class=""
+    class="pt-5"
     app
-    clipped
     fixed
     temporary
   >
