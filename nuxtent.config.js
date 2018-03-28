@@ -29,6 +29,7 @@ module.exports = {
       isPost: false,
       anchorLevel: 4,
       data: { contentLocale: 'en' },
+      breadcrumbs: true,
       generate: [
         'get',
         'getAll'

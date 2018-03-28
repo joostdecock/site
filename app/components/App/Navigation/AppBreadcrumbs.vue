@@ -3,10 +3,9 @@
     <v-breadcrumbs divider="/">
       <v-breadcrumbs-item
         v-for="item in items"
-        :key="item.text"
-        :disabled="item.disabled"
+        :key="item.permalink"
       >
-        {{ item.text }}
+        {{ item.tile }}
       </v-breadcrumbs-item>
     </v-breadcrumbs>
   </div>
