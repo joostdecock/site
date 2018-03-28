@@ -2,7 +2,7 @@
   <v-app>
     <the-right-drawer />
     <the-left-drawer />
-    <v-content>
+    <v-content class="fs-vertical-container">
       <v-container grid-list-lg>
         <v-layout row wrap>
           <v-flex xl2 lg3 hidden-md-and-down class="fs-sticky-menu">

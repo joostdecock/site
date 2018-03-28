@@ -1,17 +1,35 @@
 <template>
-<section>
-    <router-link to="/">Home</router-link> / 
-    <router-link to="/blog">Blog</router-link> / 
-    {{ post.linktitle }}
-  <h1>{{ post.title }} </h1>
-  <nuxtent-body :body="post.body" />
-</section>
+  <section class="blogpost">
+    <app-breadcrumbs-blog :title="post.linktitle" />
+      <figure>
+        <a href='#'>
+          <img 
+            :src="'/img'+post.permalink+'/high_'+post.img" 
+            class="elevation-9" 
+            data-sizes="auto" 
+            data-srcset="
+              lqip_1.jpg 25w,
+              low_1.jpg 500w,
+              med_1.jpg 1000w,
+              high_1.jpg 2000w"
+          >	
+        </a>
+          <figcaption v-html="post.caption"></figcaption>
+      </figure> 
+      <h1>{{ post.title }} </h1>
+      <nuxtent-body :body="post.body" class="fs-content fs-text" />
+          <pre>{{ post }}</pre>
+  </section>
 </template>
 
 <script>
+import AppBreadcrumbsBlog from '~/components/App/Navigation/AppBreadcrumbsBlog'
 export default {
-    asyncData: async function ({ app, route }) {
-        return { post: await app.$content('/en/blog').get(route.path)}
-    }
+  components: {
+    AppBreadcrumbsBlog
+  },
+  asyncData: async function ({ app, route }) {
+    return { post: await app.$content('/en/blog').get(route.path)}
+  }
 }
 </script>

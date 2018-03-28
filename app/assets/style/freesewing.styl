@@ -22,10 +22,11 @@ $body-font-family = -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Ro
 // Set generous font size and line height
 $font-size-root = 22px
 $line-height-root = 1.4
+$breadcrumbs-item-font-size = 0.9 * $font-size-root
+$breadcrumbs-item-large-font-size = 1.1 * $font-size-root
 
-// Tone it down a bit on smaller screens
-@media screen and (max-width 600)
-  $font-size-root = 16px
+// Helper var for bottom margins
+$text-margin-bottom =  $font-size-root * 0.7272
 
 // Set heading styles
 h1 
@@ -65,6 +66,23 @@ h6
   letter-spacing: .02em
   margin: 0.5rem 0
 
+// Tone it down a bit on smaller screens
+
+
+@media (max-width: 600px)
+  h1
+    font-size: 1.9rem
+  h2              
+    font-size: 1.7rem
+  h3              
+    font-size: 1.5rem
+  h4              
+    font-size: 1.3rem
+  h5              
+    font-size: 1.1rem
+  h6              
+    font-size: 0.9rem
+
 // Bump the navigation drawer font size
 $navigation-drawer-item-font-size = 24px
 
@@ -80,6 +98,43 @@ $navigation-drawer-item-font-size = 24px
     url(/fonts/MaterialIcons-Regular.ttf) format('truetype');
 }
 
+// Links for text
+.fs-text 
+  a
+    text-decoration: none
+    box-shadow: 0px -2px 0px rgba(102,63,149,0.3) inset;
+  a:hover
+    text-decoration: none
+    border-bottom: 1px solid rgba(102,63,149,0.3);
+    box-shadow: 0px -3px 0px rgba(102,63,149,0.3) inset;
+
+// Links outside text
+.fs-deco 
+  a
+    box-shadow: none
+    text-decoration: underline
+  a:hover
+    border: none
+    box-shadow: none
+    text-decoration: initial
+
+// Lists
+ul, ol 
+  margin-left: 2*$text-margin-bottom
+  margin-bottom: $text-margin-bottom
+
+// Prevent footer from sticking to page
+.fs-vertical-container
+  margin-bottom: 100px
+
+// Images
+img 
+  max-width: 100%
+
+figure 
+  figcaption 
+    margin-bottom: $text-margin-bottom
+    font-size: 75%
 /*
  *
  * Blog post specifics
