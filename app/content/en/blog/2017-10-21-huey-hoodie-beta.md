@@ -4,7 +4,7 @@ title: "The Huey Hoodie is now available in beta. Which begs the question, what 
 linktitle: "The Huey Hoodie is now available in beta"
 img: hoodie.jpg
 caption: "This purple Huey hoodie is the first of its kind. Now it's your turn"
-author: 'Joost De Cock'
+author: joostdecock
 category: core
 blurb: "Announcing the Huey Hoodie, and an explanation of what it means for a pattern to be in beta."
 ---

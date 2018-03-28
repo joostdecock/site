@@ -4,7 +4,7 @@ title: "The Florent Flat Cap pattern is now available in beta. That's another gi
 linktitle: "The Florent Flat Cap is now available in beta"
 img: quentin.jpg
 caption: "Quentin surrounded by our future robot overlords."
-author: 'Joost De Cock'
+author: joostdecock
 category: core
 blurb: "Announcing the Florent Flat Cap, by Quentin Felix."
 ---

@@ -4,7 +4,7 @@ title: "Announcing Carlita, the womenswear version of our Carlton coat."
 linktitle: "Announcing the Carlita Coat"
 img: sherlock.jpg
 caption: "Picture you and him, in matching coats."
-author: 'Joost De Cock'
+author: joostdecock
 category: core
 blurb: "Announcing the Carlita coat, the womenswear version of our Carlton coat pattern."
 
