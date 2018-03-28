@@ -1,15 +1,12 @@
 <template>
-  <v-breadcrumbs divider=":">
-      <v-icon small slot="divider">chevron_right</v-icon>
-      <v-breadcrumbs-item>
+  <v-breadcrumbs>
+    <v-icon small slot="divider">chevron_right</v-icon>
+    <v-breadcrumbs-item>
       <app-link to="/">
         <v-icon color="primary">home</v-icon>
       </app-link>
     </v-breadcrumbs-item>
     <v-breadcrumbs-item>
-      <app-link to="/blog">
-        {{ $t('mainMenu.blog') }}
-      </app-link>
     </v-breadcrumbs-item>
     <v-breadcrumbs-item>
       <small>{{ title }}</small>

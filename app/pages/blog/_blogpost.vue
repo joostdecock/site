@@ -17,6 +17,11 @@
           <figcaption v-html="post.caption"></figcaption>
       </figure> 
       <h1>{{ post.title }} </h1>
+      <div class="meta"> 
+        By 
+        <app-link :to="authorLink">{{ post.author }}</app-link>
+        , on {{ post.date }} in <app-link :to="'/blog/category/'+post.category">{{ post.category }}</app-link>
+      </div>
       <nuxtent-body :body="post.body" class="fs-content fs-text" />
           <pre>{{ post }}</pre>
   </section>
@@ -24,9 +29,16 @@
 
 <script>
 import AppBreadcrumbsBlog from '~/components/App/Navigation/AppBreadcrumbsBlog'
+import AppLink from '~/components/App/i18n/AppLink'
 export default {
   components: {
-    AppBreadcrumbsBlog
+    AppBreadcrumbsBlog,
+    AppLink
+  },
+  methods: {
+    authorLink: function () {
+      return '/blog/author/'+this.post.author.replace(/\s/g,''); 
+    } 
   },
   asyncData: async function ({ app, route }) {
     return { post: await app.$content('/en/blog').get(route.path)}
