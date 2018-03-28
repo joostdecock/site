@@ -8,7 +8,7 @@
       exact
     >
       <v-list-tile-action>
-        <v-icon v-html="item.icon"></v-icon>
+        <v-icon color="primary" v-html="item.icon"></v-icon>
       </v-list-tile-action>
       <v-list-tile-content>
         <v-list-tile-title v-text="$t('mainMenu.'+item.title)"></v-list-tile-title>
@@ -22,8 +22,7 @@
     name: 'AppMainMenu',
     computed: { 
       localePrefix () {
-        if(this.$store.state.locale == this.$store.state.defaultLocale) return ''
-        else return '/'+this.$store.state.locale
+        return this.$store.state.localePrefix
       }
     },
     data () {
@@ -40,3 +39,10 @@
     },
   }
 </script>
+
+<style scope>
+a.list__tile--active {
+  background: #e4c7ff66 !important;
+  font-weight: bold;
+}
+</style>

@@ -4,7 +4,7 @@ title: "Speed up your pattern design work with our freesewing snippets plugin fo
 linktitle: "Announcing a freesewing snippets plugin for vim"
 img: train.jpg
 caption: "I do a lot of my design work on the train. Trains are fast. This plugin makes you fast. You get the idea."
-author: 'Joost De Cock'
+author: joostdecock
 category: core
 blurb: "Speed up your pattern design work with our clever snippets plugin for the most badass editor known to peoplekind. Bonus: video"
 ---
