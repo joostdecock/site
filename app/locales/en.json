@@ -19,5 +19,10 @@
   },
   "callToAction": {
     "becomeAPatron": "Become a patron"
+  },
+  "blog": {
+    "postInfo": "Post info",
+    "updates": "Updates",
+    "comments": "No comments yet | One comment | {count} comments"
   }
 }

@@ -7,7 +7,15 @@ caption: "Picture you and him, in matching coats."
 author: joostdecock
 category: core
 blurb: "Announcing the Carlita coat, the womenswear version of our Carlton coat pattern."
-
+updates: 
+  1: 
+    date: 2018-03-28
+    title: foobar
+    update: "There was a problem with the old fart"
+  2: 
+    date: 2018-03-28
+    title: 'also foobar'
+    update: "That wasn't very nice"
 ---
 This one's for the ladies --- and I'm not (just) talking about that picture of heart-throb Benedict Cumberbatch at the top of this post.
 
