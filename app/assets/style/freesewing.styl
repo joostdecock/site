@@ -7,6 +7,15 @@
 // Disable the color pack to avoid bloat
 $color-pack = false
 
+// Then again, we do need to refer to them
+$primary   = #663F95 
+$secondary = #455A64
+$warning   = #FFAB00
+$error     = #D32F2F
+$info      = #64B5F6
+$accent    = #FF5B77
+$shadow = 0px 3px 3px -2px rgba(0, 0, 0, .2), 0px 3px 4px 0px rgba(0, 0, 0, .14), 0px 1px 8px 0px rgba(0, 0, 0, .12) !important;
+
 // Who would thing having a white background would be such as hassle
 @import './material-light'
 
@@ -105,9 +114,7 @@ $navigation-drawer-item-font-size = 24px
     box-shadow: 0px -2px 0px rgba(102,63,149,0.3) inset;
   a:hover
     text-decoration: none
-    border-bottom: 1px solid rgba(102,63,149,0.3);
-    box-shadow: 0px -3px 0px rgba(102,63,149,0.3) inset;
-
+   
 // Links outside text
 .fs-deco 
   a
@@ -144,9 +151,25 @@ img
   max-width: 100%
 
 figure 
+  margin: auto
+
+  img
+    box-shadow: $shadow
+
   figcaption 
     margin-bottom: $text-margin-bottom
     font-size: 75%
+
+// TOC
+a.nuxtent-toc
+  position: absolute
+  box-shadow: none
+  font-size: 50%
+  margin: 0 0 0 10px
+a.nuxtent-toc:hover
+  box-shadow: none
+  border: none
+
 /*
  *
  * Blog post specifics
@@ -171,4 +194,9 @@ figure
   position fixed
   bottom 48px
   width 100%
+
+
+@import 'lists'
+@import 'blockquotes'
+@import 'responsive-embed'
 

@@ -43,6 +43,7 @@ export const mutations = {
     state.components.dynamic[payload.region] = payload.component
   },
   setComponentData(state, payload) {
+    state.components.data[payload.source] = {}
     state.components.data[payload.source] = payload.data
   }
 }

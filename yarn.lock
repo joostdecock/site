@@ -3645,6 +3645,18 @@ markdown-it-anchor@^4.0.0:
   dependencies:
     string "^3.3.3"
 
+markdown-it-attrs@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/markdown-it-attrs/-/markdown-it-attrs-1.2.1.tgz#5e1560f47e896f6c21650e3abc1b12ce9f967d09"
+
+markdown-it-implicit-figures@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-implicit-figures/-/markdown-it-implicit-figures-0.6.0.tgz#ef591a4a9682462d5be9e050b37debd0284850a1"
+
+markdown-it-video@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/markdown-it-video/-/markdown-it-video-0.6.2.tgz#35ba1345655321f47b94dbff328d111f58c75d6d"
+
 markdown-it@^8.4.0:
   version "8.4.1"
   resolved "https://registry.yarnpkg.com/markdown-it/-/markdown-it-8.4.1.tgz#206fe59b0e4e1b78a7c73250af9b34a4ad0aaf44"

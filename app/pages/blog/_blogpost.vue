@@ -18,7 +18,6 @@
       </figure> 
       <h1>{{ post.title }} </h1>
       <nuxtent-body :body="post.body" class="fs-content fs-text" />
-        <pre>{{ post }}</pre>
   </section>
 </template>
 

@@ -20,7 +20,6 @@ export default {
   },
   computed: { 
     items () {
-      console.log(this.toc)
       const sitems = [] 
       for (const item of Object.keys(this.toc.items)) {
         sitems.push({

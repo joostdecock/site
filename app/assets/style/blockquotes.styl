@@ -1,0 +1,61 @@
+blockquote 
+  padding: 2rem
+  margin: 1.5rem 0.5rem
+  box-shadow: $shadow
+
+  & p:last-child
+    margin-bottom: 0
+
+  & p:first-child
+  & h2:first-child
+  & h3:first-child
+  & h4:first-child
+  & h5:first-child
+  & h6:first-child
+    margin-top: 0
+
+  &:before 
+    content: ""
+    font-family: "Material Icons" !important
+    font-style: normal !important
+    font-weight: normal !important
+    font-variant: normal !important
+    text-transform: none !important
+    speak: none
+    line-height: 1
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    font-size: 3em
+    float: right
+    margin-top: -10px
+    color: #455A64
+
+  &.quote 
+    max-width: 50%
+    float: right
+    font-style: italic
+    @media screen and (max-width: 767px)
+      max-width: 100%
+      float: none
+      clear: both
+    &.full
+      max-width: 100%
+      float: none
+      clear: both
+    &:before
+      content: "format_quote"
+
+  &.comment 
+    &:before
+      content: "mode_comment"
+
+  &.link 
+    &:before
+      content: "link"
+      color: $info
+
+  &.warning 
+    &:before
+      content: "warning"
+      color: $secondary
+

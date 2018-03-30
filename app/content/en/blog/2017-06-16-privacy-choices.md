@@ -7,29 +7,34 @@ caption: "Picture by <a href='https://pixabay.com/en/users/herbert2512-2929941/'
 author: joostdecock
 category: site
 blurb: "I wanted to do the right thing. Here's the choices I made"
+updates:
+ 1:
+   date: 2018-03-30 15:59
+   title: Headings fix
+   update: This post was updated to fix two headings of an incorrect level
 ---
 The world wide web is increasingly eroding your privacy. Facebook, Google, and an avalanche of ad networks out there are all keeping tabs on your browser tabs. Tracking you on the web, keeping an an eye on the sites your visiting, so that they can gather more info on you, and sell that to advertisers.
 
 Pardon my French, but I hate that shit.
 
 > Facebook, Google, and an avalanche of ad networks out there are all keeping tabs on your browser tabs
-{:.quote}
+{.quote}
 
 Building this site from scratch has been a great opportunity to reflect on how to do things. 
 
 To make sure I'm not contributing to the problem, I've made the following choices:
 
-### Encryption everywhere
+## Encryption everywhere
 
 Let's run everything over https. That's just [common sense](https://letsencrypt.org/) in 2017. 
 
-### No ads
+## No ads
 
 This one is another no-brainer. The number 1 tracking pest online are ad networks, and I want them nowhere near this site. 
 
 Fortunately, that doesn't pose a problem given that we don't play by the _Give something for free, then sell people's data_ rules of the web.
 
-### No external code
+## No external code
 
 This site loads no external JavaScript code. None. Which does mean I had to rethink a few things that typically require external code. 
 

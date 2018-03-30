@@ -14,7 +14,7 @@ facilitate your pattern design work.
 
 ## Video sample
 
-{% include embed.html src="https://www.youtube.com/embed/1-JYayZdnpc" %}
+@[youtube](1-JYayZdnpc)
 
 ## What does this do?
 
@@ -29,14 +29,12 @@ In other words, you can *tab through* the relevant parts of the code. Futhermore
 > ##### We've also updated our cheatsheet
 >
 > We have updated our [cheatsheet for pattern designers](/pdf/cheatsheet.pdf) to also include the snippet codes.
-{:.tip}
+{.tip}
 
 ## But I don't use vim
 
-{% 
-include floatimgonlarge.html url="/img/blog/core-vim-snippets/vim.jpg" 
-description="vim - It's not for everyone" 
-%}
+![vim - It's not for everyone](/img/blog/core-vim-snippets/vim.jpg)
+
 If you use a different editor whith snippet support, feel free to get in touch and we'll look into porting this functionality to the editor of your choice.
 
 Or, you can do it yourself, the source code is [right here](https://github.com/freesewing/core-vim-snippets).

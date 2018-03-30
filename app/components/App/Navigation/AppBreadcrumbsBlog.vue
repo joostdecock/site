@@ -2,10 +2,10 @@
   <v-breadcrumbs>
     <v-icon small slot="divider">chevron_right</v-icon>
     <v-breadcrumbs-item :to="localePrefix+'/'">
-      <v-icon color="primary">home</v-icon>
+        <v-icon color="primary">home</v-icon>
     </v-breadcrumbs-item>
     <v-breadcrumbs-item :to="localePrefix+'/blog'">
-      {{ $t('mainMenu.blog') }} 
+        {{ $t('mainMenu.blog') }} 
     </v-breadcrumbs-item>
     <v-breadcrumbs-item color="secondary">
       {{ title }}

@@ -74,5 +74,14 @@ module.exports = {
     api: {
       baseURL: 'http://localhost:3000',
       browserBaseURL: process.env.FREESEWING_BROWSER_BASE_URL
+    },
+    parsers: {
+      md: {
+        plugins: {
+          attrs: require('markdown-it-attrs'),
+          figures: [require('markdown-it-implicit-figures'), { figcaption: true }],
+          video: require('markdown-it-video')
+        }
+      }
     }
 }
