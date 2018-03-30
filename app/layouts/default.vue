@@ -3,16 +3,26 @@
     <the-right-drawer />
       <the-left-drawer />
         <v-content class="fs-vertical-container">
-          <v-container grid-list-lg>
+          <v-container>
             <v-layout row wrap>
-              <v-flex xl2 lg3 hidden-md-and-down class="fs-sticky-column">
-                <base-main-menu-card /> 
+              <v-flex xl2 lg3 hidden-md-and-down>
+                <aside class="fs-sticky-column">
+                  <div class="fs-scroll-column mt-5">
+                    <base-main-menu-card /> 
+                    <div class="fs-toolbar-spacer"></div>
+                  </div>
+                </aside>
               </v-flex>
               <v-flex xl6 offset-xl1 lg8 offset-lg1 xs12>
                 <nuxt />
               </v-flex>
-              <v-flex xl2 offset-xl1 hidden-lg-and-down class="fs-sticky-column">
-                <component :is="rightColumnComponent" /> 
+              <v-flex xl2 offset-xl1 hidden-lg-and-down>
+                <aside class="fs-sticky-column">
+                  <div class="fs-scroll-column mt-5">
+                    <component :is="rightColumnComponent" /> 
+                    <div class="fs-toolbar-spacer"></div>
+                  </div>
+                </aside>
               </v-flex>
             </v-layout>
           </v-container>
