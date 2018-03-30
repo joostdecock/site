@@ -4,10 +4,8 @@
     <v-breadcrumbs-item :to="localePrefix+'/'">
       <v-icon color="primary">home</v-icon>
     </v-breadcrumbs-item>
-    <v-breadcrumbs-item>
-      <app-link to="/blog">
-        {{ $t('mainMenu.blog') }} 
-      </app-link>
+    <v-breadcrumbs-item :to="localePrefix+'/blog'">
+      {{ $t('mainMenu.blog') }} 
     </v-breadcrumbs-item>
     <v-breadcrumbs-item color="secondary">
       {{ title }}

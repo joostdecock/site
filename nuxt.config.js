@@ -25,7 +25,10 @@ module.exports = {
       'nuxtent',
        '@nuxtjs/vuetify'
   ],
-  plugins: ['~/plugins/i18n.js'],
+  plugins: [
+      '~/plugins/i18n.js',
+      '~/plugins/moment.js',
+  ],
   vuetify: {
     materialIcons: true,
     css: false,
@@ -46,6 +49,10 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor: [
+        'vue-i18n',
+        'vue-moment',
+    ],
     /*
     ** Run ESLint on save
     */

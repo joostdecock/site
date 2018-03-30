@@ -88,6 +88,7 @@ export default {
     setLocale: function(loc) {
       this.$store.commit('setLocale', loc)
       this.$i18n.locale = loc
+      this.$moment.locale(loc)
     }
   }
 }

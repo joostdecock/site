@@ -23,6 +23,7 @@
   "blog": {
     "postInfo": "Post info",
     "updates": "Updates",
-    "comments": "No comments yet | One comment | {count} comments"
+    "comments": "No comments yet | One comment | {count} comments",
+    "contents": "Contents"
   }
 }

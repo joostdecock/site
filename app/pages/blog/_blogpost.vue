@@ -17,11 +17,6 @@
           <figcaption v-html="post.caption"></figcaption>
       </figure> 
       <h1>{{ post.title }} </h1>
-      <div class="meta"> 
-        <v-icon color="accent">info</v-icon>
-        By 
-        , on <span v-html="formattedTime"></span> in <app-link :to="'/blog/category/'+post.category">{{ post.category }}</app-link>
-      </div>
       <nuxtent-body :body="post.body" class="fs-content fs-text" />
         <pre>{{ post }}</pre>
   </section>
@@ -41,9 +36,6 @@ export default {
     authorLink: function () {
       return '/blog/author/'+this.post.author.replace(/\s/g,''); 
     },
-    formattedTime() {
-      //console.log(moment) 
-    }
   },
   asyncData: async function ({ app, route }) {
     return { post: await app.$content('/en/blog').get(route.path)}
@@ -65,18 +57,15 @@ export default {
         date: this.post.date, 
         category: this.post.category, 
         updates: this.post.updates, 
-        comments: 3 
+        toc: this.post.toc 
       }
+    })
+  },
+  beforeDestroy: function() {
+    this.$store.commit('setDynamicComponent', {
+      region: 'rightColumn', 
+      component: ''
     })
   }
 }
 </script>
-
-<style scoped>
-.meta {
-  font-size: 80%; 
-  border-bottom: 1px solid #ccc;
-  text-align: right;
-  margin-bottom: 2rem;
-}
-</style>
