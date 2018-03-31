@@ -1,16 +1,19 @@
 <template>
-  <v-breadcrumbs>
-    <v-icon small slot="divider">chevron_right</v-icon>
-    <v-breadcrumbs-item :to="localePrefix+'/'">
+  <ul class="breadcrumbs"> 
+    <li>
+      <app-link to="/">
         <v-icon color="primary">home</v-icon>
-    </v-breadcrumbs-item>
-    <v-breadcrumbs-item :to="localePrefix+'/blog'">
+      </app-link>
+    </li>
+    <li><v-icon small slot="divider">chevron_right</v-icon></li>
+    <li>
+      <app-link to="/blog">
         {{ $t('mainMenu.blog') }} 
-    </v-breadcrumbs-item>
-    <v-breadcrumbs-item color="secondary">
-      {{ title }}
-    </v-breadcrumbs-item>
-  </v-breadcrumbs>
+      </app-link>
+    </li>
+    <li><v-icon small slot="divider">chevron_right</v-icon></li>
+    <li class="current">{{ title }}</li>
+  </ul>
 </template>
 
 <script>
@@ -19,11 +22,6 @@ export default {
   name: 'AppBreadcrumbsBlog',
   components: {
     AppLink,
-  },
-  computed: { 
-    localePrefix () {
-      return this.$store.state.localePrefix
-    }
   },
   props: {
     title: { 

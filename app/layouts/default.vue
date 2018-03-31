@@ -1,6 +1,10 @@
 <template>
   <v-app>
-    <the-right-drawer />
+    <the-right-drawer>
+      <div class="fs-scroll-column">
+        <component :is="rightColumnComponent" /> 
+      </div>
+    </the-right-drawer>
       <the-left-drawer />
         <v-content class="fs-vertical-container">
           <v-container>

@@ -8,6 +8,7 @@
   >
     <div class="align-drawer-bottom">
       <AppMainMenu />
+      <div class="fs-toolbar-spacer"></div>
     </div>
   </v-navigation-drawer>
 </template>

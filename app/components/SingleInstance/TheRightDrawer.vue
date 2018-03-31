@@ -8,7 +8,7 @@
     :right="alwaysTrue"
   >
     <div class="align-drawer-bottom">
-      <AppSecondaryMenu />
+      <slot></slot>
     </div>
   </v-navigation-drawer>
 </template>

@@ -40,7 +40,7 @@
       <v-card-title primary-title>
         <div class="display-1">{{ $t('blog.updates') }}</div>
       </v-card-title>
-      <div v-for="update in updates" :key="update">
+      <div v-for="(update, id) in updates" :key="id">
         <v-divider></v-divider>
         <v-card-title>
           <div>
@@ -49,8 +49,6 @@
             <p class="mt-2 body-1 text-xs-right mb-0 mt-0">{{ update.date | moment("from") }}</p>
           </div>
         </v-card-title>
-        <v-card-options>
-        </v-card-options>
       </div>
     </v-card>
     <v-card class="mt-3">
