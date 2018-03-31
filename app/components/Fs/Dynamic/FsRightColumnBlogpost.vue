@@ -58,17 +58,17 @@
         </div>
       </v-card-title>
       <v-divider></v-divider>
-        <app-table-of-contents :toc="post.toc"/>
+        <fs-table-of-contents :toc="post.toc"/>
     </v-card>
   </div>
 </template>
 
 <script>
-import AppTableOfContents from '~/components/App/Navigation/AppTableOfContents'
+import FsTableOfContents from '~/components/Fs/Navigation/FsTableOfContents'
 export default { 
-  name: 'AppRightColumnBlogpost',
+  name: 'FsRightColumnBlogpost',
   components: {
-    AppTableOfContents
+    FsTableOfContents
   },
   computed: { 
     post () {

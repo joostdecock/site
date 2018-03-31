@@ -1,6 +1,6 @@
 <template>
   <section class="blogpost">
-    <app-breadcrumbs-blog :title="post.linktitle" />
+    <fs-breadcrumbs-blog :title="post.linktitle" />
       <figure>
         <a href='#'>
           <img 
@@ -22,14 +22,14 @@
 </template>
 
 <script>
-import AppBreadcrumbsBlog from '~/components/App/Navigation/AppBreadcrumbsBlog'
-import AppLink from '~/components/App/i18n/AppLink'
+import FsBreadcrumbsBlog from '~/components/Fs/Navigation/FsBreadcrumbsBlog'
+import FsLink from '~/components/Fs/i18n/FsLink'
 // Dynamic
 import moment from 'moment'
 export default {
   components: {
-    AppBreadcrumbsBlog,
-    AppLink
+    FsBreadcrumbsBlog,
+    FsLink
   },
   methods: {
     authorLink: function () {
@@ -42,7 +42,7 @@ export default {
   mounted: function() {
     this.$store.commit('setDynamicComponent', {
       region: 'rightColumn', 
-      component: 'app-right-column-blogpost'
+      component: 'fs-right-column-blogpost'
     })
     if(this.post.updates > 0) {
       const updates = this.post.updates

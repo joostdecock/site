@@ -7,17 +7,17 @@
     temporary
   >
     <div class="align-drawer-bottom">
-      <AppMainMenu />
+      <FsMainMenu />
       <div class="fs-toolbar-spacer"></div>
     </div>
   </v-navigation-drawer>
 </template>
 
 <script>
-  import AppMainMenu from '~/components/App/Menus/AppMainMenu'
+  import FsMainMenu from '~/components/Fs/Menus/FsMainMenu'
   export default {
     components: {
-      AppMainMenu
+      FsMainMenu
     },
     name: 'TheLeftDrawer',
     computed: { 

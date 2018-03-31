@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'AppLink',
+  name: 'FsLink',
   props: {
     to: {
       type: String,

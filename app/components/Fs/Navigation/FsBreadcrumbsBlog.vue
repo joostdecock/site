@@ -1,15 +1,15 @@
 <template>
   <ul class="breadcrumbs"> 
     <li>
-      <app-link to="/">
+      <fs-link to="/">
         <v-icon color="primary">home</v-icon>
-      </app-link>
+      </fs-link>
     </li>
     <li><v-icon small slot="divider">chevron_right</v-icon></li>
     <li>
-      <app-link to="/blog">
+      <fs-link to="/blog">
         {{ $t('mainMenu.blog') }} 
-      </app-link>
+      </fs-link>
     </li>
     <li><v-icon small slot="divider">chevron_right</v-icon></li>
     <li class="current">{{ title }}</li>
@@ -17,11 +17,11 @@
 </template>
 
 <script>
-import AppLink from '~/components/App/i18n/AppLink'
+import FsLink from '~/components/Fs/i18n/FsLink'
 export default {
-  name: 'AppBreadcrumbsBlog',
+  name: 'FsBreadcrumbsBlog',
   components: {
-    AppLink,
+    FsLink,
   },
   props: {
     title: { 

@@ -8,9 +8,9 @@
         <v-icon large>menu</v-icon>
       </v-btn>
       <div class="hidden-md-and-down ml-3">&nbsp;</div>
-      <app-link to="/">
+      <fs-link to="/">
         <v-btn dark flat>{{ $t('site.title') }}</v-btn>
-      </app-link>
+      </fs-link>
       <v-menu nudge-right>
         <v-toolbar-title slot="activator">
           <v-btn small flat>
@@ -31,12 +31,12 @@
       </v-menu>
       <v-spacer class="text-xs-center">
       </v-spacer>
-        <app-link to="/patrons/join" class="hidden-sm-and-down mr-4">
+        <fs-link to="/patrons/join" class="hidden-sm-and-down mr-4">
           <v-btn light color="warning">
             {{ $t('callToAction.becomeAPatron') }} 
             <v-icon right color="primary">favorite</v-icon>
           </v-btn>
-        </app-link>
+        </fs-link>
       <v-btn icon @click.stop="toggleDrawer('right')" class="hidden-xl-only mr-4">
         <v-icon x-large>chevron_left</v-icon>
       </v-btn>
@@ -44,10 +44,10 @@
 </template>
 
 <script>
-import AppLink from '~/components/App/i18n/AppLink'
+import FsLink from '~/components/Fs/i18n/FsLink'
 export default {
   components: {
-    AppLink
+    FsLink
   },
   props: {
     fixed: {
@@ -63,7 +63,7 @@ export default {
       default: 'primary'
     },
   },
-  name: 'AppMainToolbar',
+  name: 'FsMainToolbar',
     computed: { 
       locale () {
         return this.$store.state.locale

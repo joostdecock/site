@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'AppTableOfContents',
+  name: 'FsTableOfContents',
   props: {
     toc: { 
       type: Object, 
