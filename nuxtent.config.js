@@ -1,77 +1,63 @@
+const markdownConfig = {
+  plugins: {
+    attrs: require('markdown-it-attrs'),
+    figures: [require('markdown-it-implicit-figures'), { figcaption: true }],
+    video: require('markdown-it-video')
+  }
+}
+
 module.exports = {
   content: [
     // English
     ['en/blog', {
       page: '/blog/_blogpost',
       permalink: '/blog/:slug',
-      isPost: true,
-      anchorLevel: 4,
+      toc: 1,
       data: { contentLocale: 'en' },
-      generate: [
-        'get',
-        'getAll'
-      ]
+      markdown: markdownConfig
     }],
     ['en/showcase', {
       page: '/showcase/_showcase',
       permalink: '/showcase/:slug',
-      isPost: true,
-      anchorLevel: 4,
       data: { contentLocale: 'en' },
-      generate: [
-        'get',
-        'getAll'
-      ]
+      markdown: markdownConfig
     }],
     ['en/docs', {
       page: '/docs/_page',
       permalink: '/docs/:section*/:slug',
       isPost: false,
-      anchorLevel: 4,
-      data: { contentLocale: 'en' },
+      toc: 1,
       breadcrumbs: true,
-      generate: [
-        'get',
-        'getAll'
-      ]
+      data: { contentLocale: 'en' },
+      markdown: markdownConfig
     }],
     // Dutch (Nederlands)
     ['nl/blog', {
       page: '/nl/blog/_blogpost',
       permalink: '/nl/blog/:slug',
-      isPost: true,
-      anchorLevel: 4,
+      toc: 1,
       data: { contentLocale: 'nl' },
-      generate: [
-        'get',
-        'getAll'
-      ]
+      markdown: markdownConfig
     }],
     ['nl/showcase', {
       page: '/nl/showcase/_showcase',
       permalink: '/nl/showcase/:slug',
       isPost: true,
-      anchorLevel: 4,
       data: { contentLocale: 'nl' },
-      generate: [
-        'get',
-        'getAll'
-      ]
+      markdown: markdownConfig
     }],
     ['nl/docs', {
       page: '/nl/docs/_page',
       permalink: '/nl/docs/:section*/:slug',
       isPost: false,
-      anchorLevel: 4,
+      toc: 1,
+      breadcrumbs: true,
       data: { contentLocale: 'nl' },
-      generate: [
-        'get',
-        'getAll'
-      ]
+      markdown: markdownConfig
     }],
-    ],
-    api: {
-      baseURL: 'http://localhost:3000',
-      browserBaseURL: process.env.FREESEWING_BROWSER_BASE_URL
-    }
+  ],
+  api: {
+    baseURL: 'http://localhost:3000',
+    browserBaseURL: process.env.FREESEWING_BROWSER_BASE_URL
+  }
 }

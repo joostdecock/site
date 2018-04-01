@@ -21,7 +21,7 @@ I suggest you start reading [the about page](/about/),
 which hopefully does a half-decent attempt at describing what this thing is.
 
 > As of today mmp will no longer allow new users to sign up and after a grace period of a few months, I will shut it down
-{:.quote}
+{.quote}
 
 If you do know what I'm doing here, 
 or you saw *An open-source platform for made-to-measure sewing patterns* 
@@ -33,8 +33,7 @@ Speaking of which,
 makemypattern.com has so far generated more than 6500 sewing patterns, 
 so I think it's fair to say it's been a good run. 
 
-{% include figure.html url="/img/blog/open-for-business/mmp-patterns.png" description="Graph of the number of patterns generated on makemypattern.com" %}
-
+![Graph of the number of patterns generated on makemypattern.com](/img/blog/open-for-business/mmp-patterns.png)
 
 But [every new beginning comes from some other beginning's end](https://www.youtube.com/watch?v=xGytDsqkQY8). 
 So as of today mmp will no longer allow new users to sign up 
@@ -66,7 +65,7 @@ Well, it depends on the context. Which is ambigious and confusing.
 Now, patterns are patterns, and drafts are drafts.  
 That is, a draft is what you generate from a pattern. It's a pattern drafted to your exact specifications.
 
-{% include figure.html url="/img/blog/open-for-business/draft-sample.svg" description="An example of a draft from freesewing.org" %}
+![An example of a draft from freesewing.org](/img/blog/open-for-business/draft-sample.svg)
 
 I hope that in using both terms consistently, it will become self-explanatory.
 
@@ -80,7 +79,8 @@ Currently, 12 patterns are available on freesewing.org.
 All 10 from mmp (note: some have had their name changed) 
 plus the new [Sven Sweatshirt](/patterns/sven) and the [Brian Body Block](/patterns/brian).
 
-{% include figure.html url="/img/showcase/sven-nr2/med_showcase.jpg" description="An example of the Sven sweatshirt" %}
+![An example of the Sven sweatshirt](/img/showcase/sven-nr2/med_showcase.jpg)
+
 The block also existed in the mmp backend, but it wasn't available to you. 
 So that's another change, I am making all my blocks (slopers) available.
 
@@ -102,7 +102,7 @@ And in each model you can set the units seperately, just in case you happen to s
 Speaking of different parts of the world, freesewing core fully supports different languages. 
 You can get your pattern in a number of languages, and if yours is not listed you can help with the translation.
 
-{% include figure.html url="/img/blog/open-for-business/yoke.svg" description="The yoke of Simon, in French" %}
+![The yoke of Simon, in French](/img/blog/open-for-business/yoke.svg)
 
 Arguably, that is a bit of a half-measure when this site is only in English, but baby steps, right?
 
@@ -116,8 +116,7 @@ in a way that can be hard to spot if you are not familiar with the pattern.
 One way to tackle that is with better measuring instructions, which I have added.
 But what I really wanted was a way to make spot issues in an easy way.
 
-{% include figure.html url="/img/blog/open-for-business/standing.jpg" description="These two are going to help you to take accurate measurements" %}
-
+![These two are going to help you to take accurate measurements](/img/blog/open-for-business/standing.jpg)
 
 Comparing yourself to others is the fastest way to be unhappy. 
 But in this case, there's value to a comparison.
@@ -130,7 +129,8 @@ So, comparison is built-in. Every time you generate a draft, you get two things:
  - Your drafted pattern
  - A comparison of your draft to a range of standard sizes
 
-{% include figure.html url="/img/blog/open-for-business/compare-sample.svg" description="An example of a draft compared to standard sizes" %}
+![An example of a draft compared to standard sizes](/img/blog/open-for-business/compare-sample.svg)
+
 It's a way to quickly eyeball your draft for any glaring issues before you start working with it.
 
 ### Paperless because trees are precious, and printers not a given
@@ -146,7 +146,7 @@ Instead, you can transfer it directly onto fabric or another medium.
 To make that possible, the pattern comes with detailed dimensions and a metric grid (or imperial grid if you're into that)
 that helps you transfer all the information.
 
-{% include figure.html url="/img/blog/open-for-business/paperless-sample.svg" description="An example of a draft using the paperless theme" %}
+![An example of a draft using the paperless theme](/img/blog/open-for-business/paperless-sample.svg)
 
 As I said, I'm curious to see whether this will be useful to people, but I felt it was worth a try.
 
@@ -154,7 +154,7 @@ As I said, I'm curious to see whether this will be useful to people, but I felt 
 
 Also new is that when you draft a pattern, I will keep that draft for you, and it will remain available. 
 
-{% include figure.html url="/img/blog/open-for-business/draft-list.png" description="All your drafts are kept and available in your account" %}
+![All your drafts are kept and available in your account](/img/blog/open-for-business/draft-list.png)
 
 You can come back at any time to re-download the pattern, or tweak it, redraft it, or fork it.
 Yes [fork it](/docs/site/fork), which is kinda cool because you can also fork patterns from other people after they've shared their draft.
@@ -166,7 +166,7 @@ You can also add your own notes to your drafts (and to your models for that matt
 Your makes deserve better than a Flickr album somewhere, so I've added showcases to the site. 
 The idea is to have a grabbag of examples here on the site of things people have made.
 
-{% include figure.html url="/img/showcase/husband-hugo/med_showcase.jpg" description="Showcase of the Hugo hoodie by <a href='https://uneanneedecouture.wordpress.com/2015/12/28/le-sweat-en-merinos-makemypattern/'>uneanneedecouture</a>" %}
+![Showcase of the Hugo hoodie by uneanneedecouture](/img/showcase/husband-hugo/med_showcase.jpg)
 
 Obviously, I can't add your work if I don't know about it, 
 so either get in touch of make sure to use the #freesewing hashtag when posting about it.
@@ -198,7 +198,7 @@ Other badges are available, including one for signing up on launch day. [The ful
 
 ## What happens now?
 
-{% include figure.html url="/img/blog/open-for-business/darkness.svg" description="Darkness, realistically" %}
+![Darkness, realistically](/img/blog/open-for-business/darkness.svg)
 
 Maybe it's just me, but after every major project comes to completion, 
 I tend to slide into a black hole of *is this it?* disillusionment.

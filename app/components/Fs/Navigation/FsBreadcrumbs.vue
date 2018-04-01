@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: 'AppBreadcrumbs',
+  name: 'FsBreadcrumbs',
   props: {
     items: { type: Array }
   }

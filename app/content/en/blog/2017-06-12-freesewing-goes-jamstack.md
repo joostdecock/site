@@ -18,7 +18,7 @@ I went down that path far enought to be confident I could get it to work, and ho
 
 Core took about 7 months to build, and a lot has changed since then. Or perhaps I have changed, I certainly learned a lot along the way. Either way, I've decided to do things different.
 
-## The problem with a CMS
+## The problem with a CMS {.test}
 
 I have no beef with Drupal but the idea of managing the freesewing website through any Content Management System (CMS) does not appeal to me.
 
@@ -26,8 +26,7 @@ One of the main reason is that so much information is stored under an opaque dat
 That goes for content where posts, metadata, images, and so on is all spread across tables, locations, and folders. 
 But there's also the theme that has a bunch of stuff in it, there's the custom Drupal modules to connect to the backend, and so on and so forth.
 
-> I wanted that same approach in a website. Except, it can't be static because it has to, you know, do stuff.
-{:.quote}
+> I wanted that same approach in a website. Except, it can't be static because it has to, you know, do stuff. {.quote}
 
 When we were finalizing core, I built a documentation site for it based on [Jekyll](https://jekyllrb.com/). It felt like a breath of fresh air in comparison. 
 Just a bunch of markdown files, with some SASS, images, and some JavaScript thrown in the mix, and it all compiles into a neat static website.
@@ -64,7 +63,7 @@ Suddenly, I was no longer building a simple site, but I was up to my eyeballs in
 > If you don't know what any of that means, you might get a hint of the frustration I felt as I was trying to tame all these new beasts.
 > 
 > If you do know what it all means, where were you back in April when I walked through the valley of the React of death? 
-{:.comment}
+{.comment}
 
 Point is, I'm not a developer and I was in way over my head. 
 While I was learning new things every day, I wasn't making much progress on the actual task at hand, and felt frustrated with my inability to do even the most mundane things.
@@ -81,7 +80,7 @@ So here we are, freesewing.org is a site powered by the JAMstack. And you know w
 We have Jekyll build out static site, and when we push to our master branch, it gets autmatically deployed to Netlify.
 
 > Eff this newfangled shiny JavaScript all the young kids are using
-{:.quote}
+{.quote}
 
 We have [a brand new data API](https://github.com/freesewing/data) build on [the Slim framework](https://www.slimframework.com/). 
 It handles all user data. Things like accounts, measurements, models, and drafts, but also comments on this website and so on.
@@ -104,9 +103,9 @@ I think if nothing else, I can do that now. And if you see room for improvement,
 
 
 <small>PS: For those of you wondering about the title of this post:</small>
-{:.mt-5}
+{.mt-5}
 
-{% include embed.html src="https://www.youtube.com/embed/oFRbZJXjWIA?rel=0&amp;controls=0&amp;showinfo=0?ecver=1" %}
+@[youtube](oFRbZJXjWIA)
 
 
 

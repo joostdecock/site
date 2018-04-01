@@ -19,7 +19,7 @@
 
 <script>
   export default {
-    name: 'AppMainMenu',
+    name: 'FsMainMenu',
     computed: { 
       localePrefix () {
         return this.$store.state.localePrefix

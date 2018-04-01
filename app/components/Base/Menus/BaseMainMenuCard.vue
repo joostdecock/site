@@ -9,7 +9,7 @@
    <v-divider></v-divider>
    <base-menu-extention-signup />
    <v-divider></v-divider>
-   <app-main-menu />
+   <fs-main-menu />
    <v-divider></v-divider>
    <base-menu-extention-support />
 
@@ -17,12 +17,12 @@
 </template>
 
 <script>
-  import AppMainMenu from '~/components/App/Menus/AppMainMenu'
+  import FsMainMenu from '~/components/Fs/Menus/FsMainMenu'
   import BaseMenuExtentionSignup from '~/components/Base/Menus/BaseMenuExtentionSignup'
   import BaseMenuExtentionSupport from '~/components/Base/Menus/BaseMenuExtentionSupport'
   export default {
     components: {
-      AppMainMenu,
+      FsMainMenu,
       BaseMenuExtentionSignup,
       BaseMenuExtentionSupport
     },

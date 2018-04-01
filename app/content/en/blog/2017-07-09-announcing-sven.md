@@ -16,4 +16,4 @@ That's how we got here. Now about that sweater: It's a simple design based on th
 
 > ##### Pictures or it didn't happen
 > Check out the [Sven showcases](/showcase/pattern/sven) for some samples.
-{:.link}
+{.link}

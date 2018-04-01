@@ -7,6 +7,15 @@
 // Disable the color pack to avoid bloat
 $color-pack = false
 
+// Then again, we do need to refer to them
+$primary   = #663F95 
+$secondary = #455A64
+$warning   = #FFAB00
+$error     = #D32F2F
+$info      = #64B5F6
+$accent    = #FF5B77
+$shadow = 0px 3px 3px -2px rgba(0, 0, 0, .2), 0px 3px 4px 0px rgba(0, 0, 0, .14), 0px 1px 8px 0px rgba(0, 0, 0, .12) !important;
+
 // Who would thing having a white background would be such as hassle
 @import './material-light'
 
@@ -22,8 +31,8 @@ $body-font-family = -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Ro
 // Set generous font size and line height
 $font-size-root = 22px
 $line-height-root = 1.4
-$breadcrumbs-item-font-size = 0.9 * $font-size-root
-$breadcrumbs-item-large-font-size = 1.1 * $font-size-root
+$breadcrumbs-item-font-size = 0.7 * $font-size-root
+$breadcrumbs-item-large-font-size = 0.9 * $font-size-root
 
 // Helper var for bottom margins
 $text-margin-bottom =  $font-size-root * 0.7272
@@ -34,7 +43,7 @@ h1
   font-weight: 500
   line-height: 1.1
   letter-spacing: -.03rem 
-  margin: 1rem 0 0 0
+  margin: 1rem 0
 h2 
   font-size: 2.1rem
   font-weight: 200
@@ -105,9 +114,7 @@ $navigation-drawer-item-font-size = 24px
     box-shadow: 0px -2px 0px rgba(102,63,149,0.3) inset;
   a:hover
     text-decoration: none
-    border-bottom: 1px solid rgba(102,63,149,0.3);
-    box-shadow: 0px -3px 0px rgba(102,63,149,0.3) inset;
-
+   
 // Links outside text
 .fs-deco 
   a
@@ -130,17 +137,39 @@ ul, ol
 // Prevent columns from scrolling
 .fs-sticky-column 
   position: sticky;
-  top: 50px;
+  top: 0;
   align-self: flex-start;
+.fs-scroll-column 
+  overflow-y: auto
+  height: 100vh
+  padding: 8px
+.fs-toolbar-spacer
+  height: 100px
 
 // Images
 img 
   max-width: 100%
 
 figure 
+  margin: auto
+
+  img
+    box-shadow: $shadow
+
   figcaption 
     margin-bottom: $text-margin-bottom
     font-size: 75%
+
+// TOC
+a.nuxtent-toc
+  position: absolute
+  box-shadow: none
+  font-size: 50%
+  margin: 0 0 0 10px
+a.nuxtent-toc:hover
+  box-shadow: none
+  border: none
+
 /*
  *
  * Blog post specifics
@@ -163,6 +192,11 @@ figure
  */
 .align-drawer-bottom 
   position fixed
-  bottom 48px
+  bottom 0
   width 100%
+
+
+@import 'lists'
+@import 'blockquotes'
+@import 'responsive-embed'
 

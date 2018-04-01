@@ -19,7 +19,7 @@
 
 <script>
   export default {
-    name: 'AppSecondaryMenu',
+    name: 'FsSecondaryMenu',
     computed: { 
       localePrefix () {
         if(this.$store.state.locale == this.$store.state.defaultLocale) return ''

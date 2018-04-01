@@ -30,10 +30,7 @@ A better solution is to not depend on your users for reporting errors,
 but instead have them bubble up and reported auto-magically whenever something goes wrong. 
 This is possible by creating custom error handlers in our code to take care of this.
 
-{% include figure.html 
-    url="/img/blog/introducing-bail/rollbar.png" 
-    description="Screen grab from the rollbar.com website" 
-%}
+![Screen grab from the rollbar.com website](/img/blog/introducing-bail/rollbar.png)
 
 There's a bunch of companies out there that provide this as a service 
 that you can plug in to your code. One of the more well-known is 
@@ -55,10 +52,7 @@ Suffice to say it didn't go well.
 Turns out that in fixing this one thing, I broke a bunch of other stuff without realizing it, 
 and I left the site in a half-broken state where for some people, things just wouldn't work.
 
-{% include figure.html 
-    url="/img/blog/introducing-bail/giphy.gif" 
-    description="This will probably not be the last time I break something" 
-%}
+![This will probably not be the last time I break something](/img/blog/introducing-bail/giphy.gif)
 
 That's not good, and I spent much of the remaining weekend undoing the damage, 
 not to mention giving myself a stern talking to about how this should never happen again.
@@ -70,7 +64,7 @@ When you make a change, you run those tests to verify your change doesn't have
 unexpected ripple effects that cause things to break.
 
 > Mistakes happen, that's not going to change, but we should learn from them.
-{:.quote}
+{.quote}
 
 I know that, and our core backend has such tests, but our data backend was written 
 in a bit in a scramble to get this site up and running, and I had never gotten around to it.
@@ -79,10 +73,7 @@ Mistakes happen, that's not going to change, but we should learn from them.
 So while I don't find writing unit tests to be particularly interesting, 
 I put everything I was working on on-hold, and vowed to write tests for the entire data backend first.
 
-{% include figure.html 
-    url="/img/blog/introducing-bail/coverage.png" 
-    description="From no tests to 99.88% test coverage for our data backend" 
-%}
+![From no tests to 99.88% test coverage for our data backend](/img/blog/introducing-bail/coverage.png)
 
 But our data backend uses a database, and for thorough testing, we needed a test database.
 While that's easy enough to setup on a development machine, it's less trivial to do on 
@@ -138,10 +129,7 @@ I wrote it as a seperate library that we can simply plug in to both.
 It's called [bail](https://github.com/freesewing/bail) and as of today we are running it on our all production system.
 If you'd like to give it a go, a simple `composer require freesewing/bail` will add it to your PHP project.
 
-{% include figure.html 
-    url="/img/blog/introducing-bail/dashboard.png" 
-    description="This is what our new error dashboard looks like" 
-%}
+![This is what our new error dashboard looks like](/img/blog/introducing-bail/dashboard.png)
 
 Errors are collected centrally, and you can keep an eye on what's going on in [our error dashboard](/errors).
 

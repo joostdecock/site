@@ -1,24 +1,38 @@
 <template>
   <v-app>
-    <the-right-drawer />
+    <the-right-drawer>
+      <div class="fs-scroll-column">
+        <component :is="rightColumnComponent" /> 
+      </div>
+    </the-right-drawer>
       <the-left-drawer />
         <v-content class="fs-vertical-container">
-          <v-container grid-list-lg>
+          <v-container>
             <v-layout row wrap>
-              <v-flex xl2 lg3 hidden-md-and-down class="fs-sticky-column">
-                <base-main-menu-card /> 
+              <v-flex xl2 lg3 hidden-md-and-down>
+                <aside class="fs-sticky-column">
+                  <div class="fs-scroll-column mt-5">
+                    <base-main-menu-card /> 
+                    <div class="fs-toolbar-spacer"></div>
+                  </div>
+                </aside>
               </v-flex>
               <v-flex xl6 offset-xl1 lg8 offset-lg1 xs12>
                 <nuxt />
               </v-flex>
-              <v-flex xl2 offset-xl1 hidden-lg-and-down class="fs-sticky-column">
-                <component :is="rightColumnComponent" /> 
+              <v-flex xl2 offset-xl1 hidden-lg-and-down>
+                <aside class="fs-sticky-column">
+                  <div class="fs-scroll-column mt-5">
+                    <component :is="rightColumnComponent" /> 
+                    <div class="fs-toolbar-spacer"></div>
+                  </div>
+                </aside>
               </v-flex>
             </v-layout>
           </v-container>
         </v-content>
         <v-footer fixed height="auto">
-          <app-main-toolbar color="primary" />
+          <fs-main-toolbar color="primary" />
         </v-footer>
   </v-app>
 </template>
@@ -28,17 +42,17 @@ import TheRightDrawer from '~/components/SingleInstance/TheRightDrawer'
 import TheLeftDrawer from '~/components/SingleInstance/TheLeftDrawer' 
 import BaseMainMenuCard from '~/components/Base/Menus/BaseMainMenuCard' 
 import BaseSecondaryMenuCard from '~/components/Base/Menus/BaseSecondaryMenuCard' 
-import AppMainToolbar from '~/components/App/Toolbars/AppMainToolbar' 
+import FsMainToolbar from '~/components/Fs/Toolbars/FsMainToolbar' 
 // Dynamic components
-import AppRightColumnBlogpost from '~/components/App/Dynamic/AppRightColumnBlogpost'
+import FsRightColumnBlogpost from '~/components/Fs/Dynamic/FsRightColumnBlogpost'
 export default {
   components: { 
     TheRightDrawer,
     TheLeftDrawer,
     BaseMainMenuCard,
     BaseSecondaryMenuCard,
-    AppMainToolbar,
-    AppRightColumnBlogpost
+    FsMainToolbar,
+    FsRightColumnBlogpost
   },
   computed: { 
     rightColumnComponent () {

@@ -8,16 +8,16 @@
     :right="alwaysTrue"
   >
     <div class="align-drawer-bottom">
-      <AppSecondaryMenu />
+      <slot></slot>
     </div>
   </v-navigation-drawer>
 </template>
 
 <script>
-  import AppSecondaryMenu from '~/components/App/Menus/AppSecondaryMenu'
+  import FsSecondaryMenu from '~/components/Fs/Menus/FsSecondaryMenu'
   export default {
     components: {
-      AppSecondaryMenu
+      FsSecondaryMenu
     },
     name: 'TheRightDrawer',
     computed: { 

@@ -25,10 +25,7 @@ made-to-measure sewing patterns? What does this thing actually do?
 A lot, as it turns out. Something that's become more obvious since 
 [the release of freesewing.org](/blog/open-for-business/) at the end of August.
 
-{% 
-include figure.html url="/img/blog/open-for-business/med_open.jpg" 
-description="Image from<a href='/blog/announcing-freesewing/'>the original announcement blog post</a>" 
-%}
+![Image from the original announcement blog post](/img/blog/open-for-business/med_open.jpg)
 
 On Christmas day, it will (only) have been four months since this release. 
 Yet in that time, we've signed up **2735 users**
@@ -52,10 +49,8 @@ You can try to visit that link, but you'll only end up back here.
 MakeMyPattern.com saw the light of day in 2012. It went through a number
 of iterations since, and today is finally superseded by freesewing.org.
 
-{% 
-include figure.html url="/img/blog/calling-all-patrons/mmp.png" 
-description="Was it an M? A book? A bird? Boobs? We may never know."
-%}
+![Was it an M? A book? A bird? Boobs? We may never know](/img/blog/calling-all-patrons/mmp.png)
+
 We had a good run, and I feel that for any project, it's a good way to go
 when you get cannibalized by something better that you inspired.
 
@@ -133,10 +128,7 @@ To ensure a sustainable future for freesewing.org, our code, our patterns, and o
 we need to build a bedrock of loyal supporters.  
 Patrons who support us in our core work; Developing an open source platform for made-to-measure sewing patterns.
 
-{% 
-include figure.html url="/img/blog/calling-all-patrons/patron-medals.jpg" 
-description="We have three tiers of Patronage. <a href='/patrons/join'>Learn more</a>"
-%}
+![We have three tiers of Patronage](/img/blog/calling-all-patrons/patron-medals.jpg)
 
 We have different tiers of Patronage, each with their own perks. You can support us for as
 little as 2€, and it only takes a minute.

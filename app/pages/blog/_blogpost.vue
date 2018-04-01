@@ -1,6 +1,6 @@
 <template>
   <section class="blogpost">
-    <app-breadcrumbs-blog :title="post.linktitle" />
+    <fs-breadcrumbs-blog :title="post.linktitle" />
       <figure>
         <a href='#'>
           <img 
@@ -17,33 +17,24 @@
           <figcaption v-html="post.caption"></figcaption>
       </figure> 
       <h1>{{ post.title }} </h1>
-      <div class="meta"> 
-        <v-icon color="accent">info</v-icon>
-        By 
-        , on <span v-html="formattedTime"></span> in <app-link :to="'/blog/category/'+post.category">{{ post.category }}</app-link>
-      </div>
       <nuxtent-body :body="post.body" class="fs-content fs-text" />
-        <pre>{{ post }}</pre>
   </section>
 </template>
 
 <script>
-import AppBreadcrumbsBlog from '~/components/App/Navigation/AppBreadcrumbsBlog'
-import AppLink from '~/components/App/i18n/AppLink'
+import FsBreadcrumbsBlog from '~/components/Fs/Navigation/FsBreadcrumbsBlog'
+import FsLink from '~/components/Fs/i18n/FsLink'
 // Dynamic
 import moment from 'moment'
 export default {
   components: {
-    AppBreadcrumbsBlog,
-    AppLink
+    FsBreadcrumbsBlog,
+    FsLink
   },
   methods: {
     authorLink: function () {
       return '/blog/author/'+this.post.author.replace(/\s/g,''); 
     },
-    formattedTime() {
-      //console.log(moment) 
-    }
   },
   asyncData: async function ({ app, route }) {
     return { post: await app.$content('/en/blog').get(route.path)}
@@ -51,7 +42,7 @@ export default {
   mounted: function() {
     this.$store.commit('setDynamicComponent', {
       region: 'rightColumn', 
-      component: 'app-right-column-blogpost'
+      component: 'fs-right-column-blogpost'
     })
     if(this.post.updates > 0) {
       const updates = this.post.updates
@@ -65,18 +56,15 @@ export default {
         date: this.post.date, 
         category: this.post.category, 
         updates: this.post.updates, 
-        comments: 3 
+        toc: this.post.toc 
       }
+    })
+  },
+  beforeDestroy: function() {
+    this.$store.commit('setDynamicComponent', {
+      region: 'rightColumn', 
+      component: ''
     })
   }
 }
 </script>
-
-<style scoped>
-.meta {
-  font-size: 80%; 
-  border-bottom: 1px solid #ccc;
-  text-align: right;
-  margin-bottom: 2rem;
-}
-</style>

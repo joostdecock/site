@@ -7,15 +7,7 @@ caption: "Picture you and him, in matching coats."
 author: joostdecock
 category: core
 blurb: "Announcing the Carlita coat, the womenswear version of our Carlton coat pattern."
-updates: 
-  1: 
-    date: 2018-03-28
-    title: foobar
-    update: "There was a problem with the old fart"
-  2: 
-    date: 2018-03-28
-    title: 'also foobar'
-    update: "That wasn't very nice"
+date: 2018-01-26 19:52
 ---
 This one's for the ladies --- and I'm not (just) talking about that picture of heart-throb Benedict Cumberbatch at the top of this post.
 
@@ -63,10 +55,7 @@ This controls how sharply the princess seam will revert back after having added 
 
 A picture says more than a thousand words, so here's the option sampled on the relevant part of the pattern:
 
-{% include figure.html 
-    url="/img/blog/announcing-carlita/smooth.png" 
-    description="The effect of the option as shown by our sampler service" 
-%}
+![The effect of the option as shown by our sampler service](/img/blog/announcing-carlita/smooth.png)
 
 As you can see, the option controls the urgency with which the princess seam reverts back to your waistline
 after passing the fullest point of your bust.
@@ -81,7 +70,7 @@ This will make the coat less fitted under your chest, and the seam easier to sew
 This goes without saying for regular visitors to this site, but if you're new here, it's worth repeating:
 
 > This coat is not drafted with a certain cup size in mind. Instead, it will adapt to your chest based on your measurements.
-{:.tip}
+{.tip}
 
 ## Ladies, we need your feedback
 

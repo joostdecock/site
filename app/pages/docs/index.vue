@@ -1,19 +1,21 @@
 <template>
   <section>
-    <h1>{{ $t('site.title') }} </h1>
-    <h2>{{ $t('site.slogan') }} </h2>
-    <ul>
-      <li><lang-link to="/docs/typography">Typography</lang-link></li> 
-      <li><lang-link to="/docs/about">About page</lang-link></li> 
-    </ul>
+    <router-link to="/">Home</router-link> / 
+      <h1>Blog posts</h1>
+        <ul>
+            <li v-for="post in posts" :key="post.permalink">
+                <router-link :to="post.permalink">{{ post.title }} - {{ post.permalink }}</router-link>
+            </li>
+        </ul>
   </section>
 </template>
 
 <script>
-  import AppLink from '~/components/App/i18n/AppLink'
-  export default {
-  components: { 
-    AppLink 
-  },
+
+export default {
+    asyncData: async function ({ app, route }) {
+        var list =  await app.$content('/en/docs').getAll();
+        return { posts: list }
+    }
 }
 </script>

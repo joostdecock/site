@@ -10,10 +10,10 @@
 </template>
 
 <script>
-  import AppLink from '~/components/App/i18n/AppLink'
+  import FsLink from '~/components/Fs/i18n/FsLink'
   export default {
   components: { 
-    AppLink 
+    FsLink 
   },
 }
 </script>
