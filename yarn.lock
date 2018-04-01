@@ -4084,9 +4084,9 @@ nuxt@^1.4.0:
     webpack-hot-middleware "^2.21.0"
     webpack-node-externals "^1.6.0"
 
-nuxtent@latest:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/nuxtent/-/nuxtent-1.4.1.tgz#d3756d9eeecb1cda6f874117b08a20b2c049be87"
+nuxtdown@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/nuxtdown/-/nuxtdown-2.0.0.tgz#bda7441906080229d82ea43a219e33a1f1eee76a"
   dependencies:
     chalk "^2.3.0"
     date-fns "^1.28.5"

@@ -19,7 +19,7 @@ What I do remember is that at one point,
 [Anneke](http://www.annekecaramin.com/) and myself decided that we would reverse-engineer the Sherlock Holmes coat.
 More specifically, the coat worn by Benedict Cumberbatch in the BBC series Sherlock Holmes.
 
-{% include figure.html url="/img/blog/announcing-carlton-and-bent/bc.jpg" description="That coat though." %}
+![That coat though](/img/blog/announcing-carlton-and-bent/bc.jpg)
 
 The coat is popular with cosplayers for obvious reasons, but it's also just a really nice coat, and
 other brave souls [such as Melissa](http://blog.fehrtrade.com/gallery/868/the-sherlock-coat/) have tried their hand at it.
@@ -36,26 +36,14 @@ Carlton is a double-breasted long overcoat in the tradition of horseback uniform
 where the back of the coat isn't split, but rather has wide pleats that can drape over the back of the horse. 
 Or, more realistically, fan open behind you as you walk about.
 
-<div class="row">
-<div class="col-sm-6">
-{% include figure.html url="/img/blog/announcing-carlton-and-bent/front.jpg" description="Front view of Carlton on yours truly." %}
-</div>
-<div class="col-sm-6">
-{% include figure.html url="/img/blog/announcing-carlton-and-bent/back.jpg" description="Back view of Carlton on yours truly." %}
-</div>
-</div>
+![Front view of Carlton on yours truly](/img/blog/announcing-carlton-and-bent/front.jpg)
+![Back view of Carlton on yours truly](/img/blog/announcing-carlton-and-bent/back.jpg)
 
 It comes with two patch pockets on the front, two map pockets at the chest, and two inner pockets.
 Six pockets in total, so you'll have plenty of room for all your belongings.
 
-<div class="row">
-<div class="col">
-{% include blogfigure.html img="pockets.jpg" caption="Map and patch pockets on the outside." %}
-</div>
-<div class="col">
-{% include blogfigure.html img="innerpocket.jpg" caption="Inner pockets on the inside." %}
-</div>
-</div>
+![Map and patch pockets on the outside](/img/blog/announcing-carlton-and-bent/pockets.jpg)
+![Inner pockets on the inside](/img/blog/announcing-carlton-and-bent/innerpocket.jpg)
 
 I finished mine just in time for a trip to K&ouml;ln to visit my beloved friend and tailor 
 [Sebastian Hoofs](http://sebastian-hoofs.de/massschneider/).
@@ -63,14 +51,8 @@ It was cold as eff over there, but the coat kept me nice and warm. Not surprisin
 wool I picked up in [Bacci in Florence](http://www.baccitessuti.it/en/index.html) over the summer, and I took
 the extra step of interlining it with French terry (I really don't like to be cold).
 
-<div class="row">
-<div class="col">
-{% include blogfigure.html img="bacci.jpg" caption="I have no affiliation with Bacci, I'm just a sucker for great fabric stores." %}
-</div>
-<div class="col">
-{% include blogfigure.html img="interlining.jpg" caption="You can see the terry interlining where I peeled back the sleeve lining." %}
-</div>
-</div>
+![I have no affiliation with Bacci, I'm just a sucker for great fabric stores](/img/blog/announcing-carlton-and-bent/bacci.jpg)
+![You can see the terry interlining where I peeled back the sleeve lining](interlining.jpg) 
 
 ### Burn the patriarchy to the ground through the power of pockets
 
