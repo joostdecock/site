@@ -119,8 +119,8 @@ The weave is how the fabric was woven, and this determines not only how the fabr
 >   - Cut **2 yoke(s)** or **4 yokes** if you've chosen a split yoke
 >   - Cut **2 sleeve(s)**
 >   - Cut **2 collar stand(s)**
->   - Cut **2 cuff guard(s)**
->   - Cut **2 cuff plackets(s)**
+>   - Cut **2 sleeve placket underlap(s)**
+>   - Cut **2 sleeve placket overlap(s)**
 >   - Cut **4 cuff(s)**
 > - {:.title} Fusible interfacing
 >   - Cut **1 collar**
@@ -296,8 +296,9 @@ Top-stitch along the edge of the collar. This locks down the seam allowance and 
     url='/img/patterns/simon/4a.png'
     description='Place collar between collar stands and baste in place'
 %}
-Mark the middle point of your collar and your collar stands with a pin.
-First place a collar stand with the good side up, then your collar, and finally the second collar stand with the good side down.
+Mark the middle point of your collar and your collar stands with a pin. The middle point of each collar stand is actually slightly off-center since one end is longer than the other. Instead, find the middle point between the two notches.
+
+First place a collar stand with the good side up, then your collar with the undercollar facing up (and the non-sewn side at the top), and finally the second collar stand with the good side down.
 
 You collar should sit between your two collar stands, and the middles (where you placed your pin) should be aligned.
 
@@ -402,19 +403,19 @@ Just sew right next to the seam joining the outer yoke to the back.
 <div class="col-md-4">
 {% include figure.html
     url='/img/patterns/simon/8a.png'
-    description='Join the yokes to the back'
+    description='Fold the back with good sides together to close the darts'
 %}
 </div>
 <div class="col-md-4">
 {% include figure.html
     url='/img/patterns/simon/8b.png'
-    description='Press the yoke'
+    description='Sew the darts'
 %}
 </div>
 <div class="col-md-4">
 {% include figure.html
     url='/img/patterns/simon/8c.png'
-    description='Press the yoke'
+    description='Press darts toward the side seams'
 %}
 </div>
 </div>
@@ -674,7 +675,7 @@ Since you've just pressed these shoulder seams, everything should lie nice and f
 </div>
 
  - Place your sleeve with the good side down, and your cuff guard on top, also with the good side down.
- - Align the edge of your cuff guard with the cut in your sleeve, on the side shortest to the side seam.
+ - Align the edge of your cuff guard (aka sleeve placket underlap) with the cut in your sleeve, on the side shortest to the side seam.
  - Now sew along the fold line marked on the cuff guard, closest to the edge.
 
 > If during cutting out your pattern pieces you had not cut into your sleeve on the line where the sleeve placket needs to be put in, you need to do that first.
@@ -691,7 +692,7 @@ Since you've just pressed these shoulder seams, everything should lie nice and f
     url='/img/patterns/simon/13d.png'
     description='Fold and press the placket'
 %}
-Origami time! We're going to fold the sleeve placket using the marked fold lines as our guide. This will be a lot easier if you press between each fold.
+Origami time! We're going to fold the sleeve placket overlap using the marked fold lines as our guide. This will be a lot easier if you press between each fold.
 
  - First, fold the outer edges of the placket inwards.
  - Next, fold the entire thing double.
