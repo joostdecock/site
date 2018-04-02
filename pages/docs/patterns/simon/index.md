@@ -119,8 +119,8 @@ The weave is how the fabric was woven, and this determines not only how the fabr
 >   - Cut **2 yoke(s)** or **4 yokes** if you've chosen a split yoke
 >   - Cut **2 sleeve(s)**
 >   - Cut **2 collar stand(s)**
->   - Cut **2 cuff guard(s)**
->   - Cut **2 cuff plackets(s)**
+>   - Cut **2 sleeve placket underlap(s)**
+>   - Cut **2 sleeve placket overlap(s)**
 >   - Cut **4 cuff(s)**
 > - {:.title} Fusible interfacing
 >   - Cut **1 collar**
@@ -674,7 +674,7 @@ Since you've just pressed these shoulder seams, everything should lie nice and f
 </div>
 
  - Place your sleeve with the good side down, and your cuff guard on top, also with the good side down.
- - Align the edge of your cuff guard with the cut in your sleeve, on the side shortest to the side seam.
+ - Align the edge of your cuff guard (aka sleeve placket underlap) with the cut in your sleeve, on the side shortest to the side seam.
  - Now sew along the fold line marked on the cuff guard, closest to the edge.
 
 > If during cutting out your pattern pieces you had not cut into your sleeve on the line where the sleeve placket needs to be put in, you need to do that first.
@@ -691,7 +691,7 @@ Since you've just pressed these shoulder seams, everything should lie nice and f
     url='/img/patterns/simon/13d.png'
     description='Fold and press the placket'
 %}
-Origami time! We're going to fold the sleeve placket using the marked fold lines as our guide. This will be a lot easier if you press between each fold.
+Origami time! We're going to fold the sleeve placket overlap using the marked fold lines as our guide. This will be a lot easier if you press between each fold.
 
  - First, fold the outer edges of the placket inwards.
  - Next, fold the entire thing double.
