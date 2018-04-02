@@ -21,6 +21,7 @@
     "becomeAPatron": "Become a patron"
   },
   "blog": {
+    "title": "Blog posts",
     "postInfo": "Post info",
     "updates": "Updates",
     "contents": "Contents"
