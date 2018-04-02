@@ -25,7 +25,6 @@
 import FsBreadcrumbsBlog from '~/components/Fs/Navigation/FsBreadcrumbsBlog'
 import FsLink from '~/components/Fs/i18n/FsLink'
 // Dynamic
-import moment from 'moment'
 export default {
   components: {
     FsBreadcrumbsBlog,
