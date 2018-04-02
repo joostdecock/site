@@ -15,12 +15,12 @@ export default {
   props: {
     toc: { 
       type: Object, 
-      required: true
+      required: false
     }
   },
   computed: { 
     items () {
-      const sitems = [] 
+      const sitems = []
       for (const item of Object.keys(this.toc.items)) {
         sitems.push({
           level: this.toc.items[item].level - this.toc.topLevel + 1,

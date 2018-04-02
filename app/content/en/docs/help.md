@@ -1,8 +1,5 @@
 ---
-layout: page
 title: Getting help
-tags: [support]
-permalink: /help
 nocomments: true
 ---
 
@@ -10,8 +7,7 @@ nocomments: true
 The freesewing community on Gitter is the best place to ask questions, 
 meet other freesewers, or just hang out and share a laugh.
 
-<a href='https://gitter.im/freesewing/freesewing' class='btn btn-outline-primary'>
-    <i class="fa fa-comments" aria-hidden="true"></i> 
+<a href='https://gitter.im/freesewing/freesewing' class='btn primary px-4'>
     Join the freesewing community on Gitter
 </a>
 
@@ -23,8 +19,7 @@ account on Twitter is the next best thing.
 
 You can also follow it for timely updates on freesewing.
 
-<a href='https://twitter.com/intent/follow?screen_name=freesewing_org' class='btn btn-outline-primary'>
-    <i class="fa fa-twitter" aria-hidden="true"></i> 
+<a href='https://twitter.com/intent/follow?screen_name=freesewing_org' class='btn info px-4'>
     Follow @freesewing_org on Twitter
 </a>
 
@@ -33,8 +28,7 @@ You can also follow it for timely updates on freesewing.
 Did you spot a mistake? Have a suggestion for an improvement?
 Please file an issue on GitHub. You'll need a GitHub account, but they are free.
 
-<a href='https://github.com/freesewing/freesewing.github.io/issues/new' class='btn btn-outline-primary'>
-    <i class="fa fa-github" aria-hidden="true"></i>
+<a href='https://github.com/freesewing/freesewing.github.io/issues/new' class='btn px-4'>
     Create an issue on GitHub
 </a>
 
@@ -42,11 +36,6 @@ Please file an issue on GitHub. You'll need a GitHub account, but they are free.
 
 This one does not scale very well, so you might want to consider the options above first.
 
-<a href='mailto:joost@decock.org?subject=Freesewing' class='btn btn-outline-primary'>
-    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+<a href='mailto:joost@decock.org?subject=Freesewing' class='btn px-4'>
     Send an email
 </a>
-
-* TOC - Do not remove this line
-{:toc}
-

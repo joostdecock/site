@@ -45,6 +45,8 @@ import BaseSecondaryMenuCard from '~/components/Base/Menus/BaseSecondaryMenuCard
 import FsMainToolbar from '~/components/Fs/Toolbars/FsMainToolbar' 
 // Dynamic components
 import FsRightColumnBlogpost from '~/components/Fs/Dynamic/FsRightColumnBlogpost'
+import FsRightColumnPage from '~/components/Fs/Dynamic/FsRightColumnPage'
+import FsRightColumnShowcase from '~/components/Fs/Dynamic/FsRightColumnShowcase'
 export default {
   components: { 
     TheRightDrawer,
@@ -52,7 +54,9 @@ export default {
     BaseMainMenuCard,
     BaseSecondaryMenuCard,
     FsMainToolbar,
-    FsRightColumnBlogpost
+    FsRightColumnBlogpost,
+    FsRightColumnPage,
+    FsRightColumnShowcase
   },
   computed: { 
     rightColumnComponent () {

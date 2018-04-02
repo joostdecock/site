@@ -29,7 +29,7 @@
       return {
         items: [
           { icon: 'home', title: 'home', to: '/' },
-          { icon: 'info_outline', title: 'about', to: '/about' },
+          { icon: 'info_outline', title: 'about', to: '/docs/about' },
           { icon: 'view_carousel', title: 'patterns', to: '/patterns' },
           { icon: 'share', title: 'blog', to: '/blog' },
           { icon: 'photo_camera', title: 'showcase', to: '/showcase' },

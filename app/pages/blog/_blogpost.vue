@@ -4,7 +4,7 @@
       <figure>
         <a href='#'>
           <img 
-           :src="'/img'+post.permalink+'/high_'+post.img" 
+           :src="imgDir+'/high_'+post.img" 
            class="elevation-9" 
            data-sizes="auto" 
            data-srcset="
@@ -17,7 +17,7 @@
           <figcaption v-html="post.caption"></figcaption>
       </figure> 
       <h1>{{ post.title }} </h1>
-      <nuxtent-body :body="post.body" class="fs-content fs-text" />
+      <nuxtdown-body :body="post.body" class="fs-content fs-text" />
   </section>
 </template>
 
@@ -37,7 +37,27 @@ export default {
     },
   },
   asyncData: async function ({ app, route }) {
-    return { post: await app.$content('/en/blog').get(route.path)}
+    let locale = ''
+    if(route.path.substr(0,5) === '/blog') {
+      locale = 'en'
+    }
+    else {
+      locale = route.path.substr(1).split('/').shift()
+    }
+    return { 
+      locale: locale, 
+      post: await app.$content('/'+locale+'/blog').get(route.path)
+    }
+  },
+  computed: { 
+    imgDir () {
+      if (this.locale === 'en') {
+        return '/img'+this.post.permalink
+      } else {
+        // FIXME: If we ever have locales like nl-be, this will break as is assumes 2 character locales
+        return '/img'+this.post.permalink.substr(3)
+      }
+    }
   },
   mounted: function() {
     this.$store.commit('setDynamicComponent', {

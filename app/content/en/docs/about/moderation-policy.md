@@ -35,10 +35,6 @@ as well as people impersonating public figures or using fake accounts.
 > We wanted to keep this short and to the point.
 >
 > For a more detailed insight of our values, please consult 
-> our [code of conduct](/about/code-of-conduct) 
+> our [code of conduct](/docs/about/code-of-conduct) 
 > which applies to all freesewing maintainers and contributors.
-{:.comment}
-
-* TOC - Do not remove this line
-{:toc}
-
+{.comment}

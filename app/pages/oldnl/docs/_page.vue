@@ -2,7 +2,7 @@
   <section>
     <article>
       <h1>{{ page.title }}</h1>
-      <nuxtent-body :body="page.body" />
+      <nuxtdown-body :body="page.body" />
     </article>
   </section>
 </template>

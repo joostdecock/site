@@ -1,4 +1,9 @@
 export const state = () => ({
+  freesewing: {
+    site: {
+      repo: 'https://github.com/joostdecock/site'
+    }
+  },
   locales: ['en', 'nl'],
   defaultLocale: 'en',
   locale: 'en',

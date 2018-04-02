@@ -14,14 +14,7 @@
 
 export default {
     asyncData: async function ({ app, route }) {
-      let locale = ''
-      if(route.path.substr(0,5) === '/blog') {
-        locale = 'en'
-      }
-      else {
-        locale = route.path.substr(1).split('/').shift()
-      }
-        var list =  await app.$content('/'+locale+'/blog').getAll();
+        var list =  await app.$content('/nl/blog').getAll();
         return { posts: list }
     }
 }

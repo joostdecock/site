@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Freesewing donations pledge
-permalink: /about/pledge
 ---
 ## Understanding the reasons for this pledge
 
@@ -74,7 +72,7 @@ So I am happy to make this pledge:
 > recipient of its donations, hereby pledge that all donations I receive 
 > will be passed on to
 > [Doctors Without Borders (MSF)](http://www.msf.org/).
-> {:.lead}
+> {.lead}
 
 In practice, all donations received in the previous 12 months will be transfered to MSF once per year, on the 10th of December.
 
@@ -87,10 +85,6 @@ In practice, all donations received in the previous 12 months will be transfered
 > - Donations prior to September 2017 were made on makemypattern.com.
 > - I started accepting donations in November 2014. Donations of those
 > first couple of weeks are lumped in with the 2015 donations.
-{:.tip}
+{.tip}
 
-If you'd like to donate, you can do so [here](/patrons/join)
-
-* TOC - Do not remove this line
-{:toc}
-
+If you'd like to, you can [donate here](/patrons/join)

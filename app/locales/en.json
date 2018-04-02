@@ -9,11 +9,11 @@
   },
   "mainMenu": {
     "home": "Home",
-    "about": "About",
+    "about": "About Freesewing",
     "blog": "Blog",
     "patterns": "Patterns",
     "showcase": "Showcase",
-    "docs": "Docs",
+    "docs": "Documentation",
     "signup": "Sign up for a free account",
     "chat": "Chat with us"
   },
@@ -23,7 +23,18 @@
   "blog": {
     "postInfo": "Post info",
     "updates": "Updates",
-    "comments": "No comments yet | One comment | {count} comments",
     "contents": "Contents"
+  },
+  "showcase": {
+    "postInfo": "Showcase info",
+    "updates": "Updates"
+  },
+  "page": {
+    "contents": "Contents",
+    "makeItBetter": "Make it better",
+    "makeItBetterText": "Did you spot a typo? Do you feel something is missing, or needs clarification?",
+    "editOnlineText": "You can edit this page online and submit your changes.",
+    "editOnGithub": "Edit on GitHub"
+
   }
 }
