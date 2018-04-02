@@ -296,8 +296,9 @@ Top-stitch along the edge of the collar. This locks down the seam allowance and 
     url='/img/patterns/simon/4a.png'
     description='Place collar between collar stands and baste in place'
 %}
-Mark the middle point of your collar and your collar stands with a pin.
-First place a collar stand with the good side up, then your collar, and finally the second collar stand with the good side down.
+Mark the middle point of your collar and your collar stands with a pin. The middle point of each collar stand is actually slightly off-center since one end is longer than the other. Instead, find the middle point between the two notches.
+
+First place a collar stand with the good side up, then your collar with the undercollar facing up (and the non-sewn side at the top), and finally the second collar stand with the good side down.
 
 You collar should sit between your two collar stands, and the middles (where you placed your pin) should be aligned.
 
