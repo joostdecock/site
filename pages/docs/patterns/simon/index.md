@@ -402,19 +402,19 @@ Just sew right next to the seam joining the outer yoke to the back.
 <div class="col-md-4">
 {% include figure.html
     url='/img/patterns/simon/8a.png'
-    description='Join the yokes to the back'
+    description='Fold the back with good sides together to close the darts'
 %}
 </div>
 <div class="col-md-4">
 {% include figure.html
     url='/img/patterns/simon/8b.png'
-    description='Press the yoke'
+    description='Sew the darts'
 %}
 </div>
 <div class="col-md-4">
 {% include figure.html
     url='/img/patterns/simon/8c.png'
-    description='Press the yoke'
+    description='Press darts toward the side seams'
 %}
 </div>
 </div>
