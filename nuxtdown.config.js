@@ -31,6 +31,13 @@ module.exports = {
       data: { contentLocale: 'en' },
       markdown: markdownConfig
     }],
+    ['en/patterns', {
+      page: '/patterns/_pattern',
+      permalink: '/patterns/:slug',
+      isPost: false,
+      data: { contentLocale: 'en' },
+      markdown: markdownConfig
+    }],
     // Dutch (Nederlands)
     ['nl/blog', {
       page: '/nl/blog/_blogpost',
