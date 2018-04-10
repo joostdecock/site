@@ -1,0 +1,1 @@
+../../blog/_blogpost.vue
