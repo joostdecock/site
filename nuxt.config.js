@@ -6,7 +6,7 @@ const freesewingConfig = {
 }
 
 module.exports = {
-  srcDir: 'app/',
+  srcDir: 'nuxt/',
   env: {
     conf: freesewingConfig
   },
@@ -14,7 +14,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'site',
+    title: 'Freesewing.org',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -52,8 +52,8 @@ module.exports = {
       noPrefixDefaultLocale: true,
       vueI18n: {
         messages: {
-            'en': require('./app/locales/en.json'),
-            'nl': require('./app/locales/nl.json'),
+            'en': require('./nuxt/locales/en.json'),
+            'nl': require('./nuxt/locales/nl.json'),
         },
         fallbackLocale: 'en'
       },
@@ -101,7 +101,7 @@ module.exports = {
     extendRoutes (routes, resolve) {
       routes.push({
         path: '/profile', 
-        component: 'app/pages/dynamic/show-user-profile.vue'
+        component: 'nuxt/pages/dynamic/show-user-profile.vue'
       })
     }
   },
