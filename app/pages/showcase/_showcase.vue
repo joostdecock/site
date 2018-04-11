@@ -23,12 +23,10 @@
 
 <script>
 import FsBreadcrumbsShowcase from '~/components/Fs/Navigation/FsBreadcrumbsShowcase'
-import FsLink from '~/components/Fs/i18n/FsLink'
 // Dynamic
 export default {
   components: {
     FsBreadcrumbsShowcase,
-    FsLink
   },
   methods: {
     authorLink: function () {

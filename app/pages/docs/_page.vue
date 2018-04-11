@@ -8,15 +8,13 @@
 
 <script>
 import FsBreadcrumbsPage from '~/components/Fs/Navigation/FsBreadcrumbsPage'
-import FsLink from '~/components/Fs/i18n/FsLink'
 // Dynamic
 export default {
   components: {
     FsBreadcrumbsPage,
-    FsLink
   },
   asyncData: async function ({ app, route }) {
-    return { page: await app.$content('/en/docs').get(route.path)}
+    return { page: await app.$content('/'+app.i18n.locale+'/docs').get(route.path)}
   },
   mounted: function() {
     this.$store.commit('setDynamicComponent', {

@@ -9,7 +9,7 @@
       <li><v-icon small slot="divider">chevron_right</v-icon></li>
       <li>
         <fs-link to="/blog">
-          {{ $t('mainMenu.blog') }} 
+          {{ $t('blog') }} 
         </fs-link>
       </li>
     </ul>
@@ -40,12 +40,8 @@
 </template>
 
 <script>
-import FsLink from '~/components/Fs/i18n/FsLink'
 export default {
   layout: 'postlist',
-  components: {
-    FsLink
-  },
     asyncData: async function ({ app, route }) {
       let locale = ''
       if(route.path.substr(0,5) === '/blog') {
@@ -54,7 +50,7 @@ export default {
       else {
         locale = route.path.substr(1).split('/').shift()
       }
-        var list =  await app.$content('/'+locale+'/blog').getAll();
+        var list =  await app.$content('/'+app.i18n.locale+'/blog').getAll();
         return { posts: list }
     },
     methods: {

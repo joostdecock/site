@@ -1,15 +1,15 @@
 <template>
   <ul class="breadcrumbs"> 
     <li>
-      <fs-link to="/">
+      <nuxt-link to="/">
         <v-icon color="primary">home</v-icon>
-      </fs-link>
+      </nuxt-link>
     </li>
     <li><v-icon small slot="divider">chevron_right</v-icon></li>
     <li>
-      <fs-link to="/blog">
-        {{ $t('mainMenu.blog') }} 
-      </fs-link>
+      <nuxt-link to="/blog">
+        {{ $t('blog') }} 
+      </nuxt-link>
     </li>
     <li><v-icon small slot="divider">chevron_right</v-icon></li>
     <li class="current">{{ title }}</li>
@@ -17,12 +17,8 @@
 </template>
 
 <script>
-import FsLink from '~/components/Fs/i18n/FsLink'
 export default {
   name: 'FsBreadcrumbsBlog',
-  components: {
-    FsLink,
-  },
   props: {
     title: { 
       type: String, 

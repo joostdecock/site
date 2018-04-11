@@ -11,7 +11,7 @@
         <v-icon v-html="item.icon"></v-icon>
       </v-list-tile-action>
       <v-list-tile-content>
-        <v-list-tile-title v-text="$t('mainMenu.'+item.title)"></v-list-tile-title>
+        <v-list-tile-title v-text="$t(item.title)"></v-list-tile-title>
       </v-list-tile-content>
     </v-list-tile>
   </v-list>
@@ -34,7 +34,7 @@
           { icon: 'view_carousel', title: 'patterns', to: '/patterns' },
           { icon: 'share', title: 'blog', to: '/blog' },
           { icon: 'photo_camera', title: 'showcase', to: '/showcase' },
-          { icon: 'import_contacts', title: 'docs', to: '/docs' },
+          { icon: 'import_contacts', title: 'documentation', to: '/docs' },
         ],
       }
     },

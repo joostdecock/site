@@ -8,9 +8,9 @@
         <v-icon large>menu</v-icon>
       </v-btn>
       <div class="hidden-md-and-down ml-3">&nbsp;</div>
-      <fs-link to="/">
-        <v-btn dark flat>{{ $t('site.title') }}</v-btn>
-      </fs-link>
+      <nuxt-link to="/">
+        <v-btn dark flat>{{ $t('freesewing') }}</v-btn>
+      </nuxt-link>
       <v-menu nudge-right>
         <v-toolbar-title slot="activator">
           <v-btn small flat>
@@ -18,25 +18,27 @@
           </v-btn>
         </v-toolbar-title>
         <v-list>
-          <v-list-tile v-for="loc in locales" :key="loc" @click="setLocale(loc)">
+          <v-list-tile 
+               v-for="(locale, index) in $i18n.locales"
+               :key="index" :to="switchLocalePath(locale.code)">
             <v-list-tile-action>
-              <img :src="'/icons/locales/'+loc+'.svg'" />
+              <img :src="'/icons/locales/'+locale.code+'.svg'" />
             </v-list-tile-action>
             <v-list-tile-content>
               <v-list-tile-title>
-                {{ $t('locales.'+loc, loc) }}</v-list-tile-title>
+                {{ locale.name }}</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
         </v-list>
       </v-menu>
       <v-spacer class="text-xs-center">
       </v-spacer>
-        <fs-link to="/patrons/join" class="hidden-sm-and-down mr-4">
+        <nuxt-link to="/patrons/join" class="hidden-sm-and-down mr-4">
           <v-btn light color="warning">
-            {{ $t('callToAction.becomeAPatron') }} 
+            {{ $t('becomeAPatron') }} 
             <v-icon right color="primary">favorite</v-icon>
           </v-btn>
-        </fs-link>
+        </nuxt-link>
       <v-btn icon @click.stop="toggleDrawer('right')" class="hidden-xl-only mr-4">
         <v-icon x-large>chevron_left</v-icon>
       </v-btn>
@@ -44,11 +46,7 @@
 </template>
 
 <script>
-import FsLink from '~/components/Fs/i18n/FsLink'
 export default {
-  components: {
-    FsLink
-  },
   props: {
     fixed: {
       type: Boolean,
@@ -87,7 +85,7 @@ export default {
     },
     setLocale: function(loc) {
       this.$store.commit('setLocale', loc)
-      this.$i18n.locale = loc
+      //this.$i18n.locale = loc
       this.$moment.locale(loc)
     }
   }

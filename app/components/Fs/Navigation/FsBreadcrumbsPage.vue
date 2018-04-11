@@ -1,22 +1,22 @@
 <template>
   <ul class="breadcrumbs"> 
     <li>
-      <fs-link to="/">
+      <nuxt-link to="/">
         <v-icon color="primary">home</v-icon>
-      </fs-link>
+      </nuxt-link>
     </li>
     <li><v-icon small>chevron_right</v-icon></li>
     <li>
-      <fs-link to="/docs">
-        {{ $t('mainMenu.docs') }}
-      </fs-link>
+      <nuxt-link to="/docs">
+        {{ $t('documentation') }}
+      </nuxt-link>
     </li>
     <li><v-icon small>chevron_right</v-icon></li>
     <template v-for="breadcrumb in breadcrumbs">
       <li :key="'title-'+breadcrumb.permalink">
-        <fs-link :to="breadcrumb.permalink" :key="'link-'+breadcrumb.permalink">
+        <nuxt-link :to="breadcrumb.permalink" :key="'link-'+breadcrumb.permalink">
           {{ breadcrumb.frontMatter.title }}
-        </fs-link>
+        </nuxt-link>
       </li>
       <li :key="'spacer-'+breadcrumb.permalink">
         <v-icon :key="'chevron-'+breadcrumb.permalink" small>chevron_right</v-icon></li>
@@ -26,12 +26,8 @@
 </template>
 
 <script>
-import FsLink from '~/components/Fs/i18n/FsLink'
 export default {
   name: 'FsBreadcrumbsPage',
-  components: {
-    FsLink,
-  },
   props: {
     breadcrumbs: { 
       type: Array, 

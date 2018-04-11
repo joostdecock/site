@@ -1,13 +1,20 @@
-const axios = require('axios');
+const freesewingConfig = {
+  api: {
+    data: "https://joost.data.freesewing.org",
+    content: "http://localhost:3000/content-api"
+  }
+}
 
 module.exports = {
   srcDir: 'app/',
-  subFolder: false,
+  env: {
+    conf: freesewingConfig
+  },
   /*
   ** Headers of the page
   */
   head: {
-    title: 'Freesewing.org v2',
+    title: 'site',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -21,13 +28,37 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
-  modules: [ 
-      'nuxtdown',
-       '@nuxtjs/vuetify'
+  /*
+  ** Build configuration
+  */
+ modules: [
+    '@nuxtjs/vuetify',
+    '@nuxtjs/auth',
+    'nuxtdown',
+    ['nuxt-i18n', {
+      locales: [
+        {
+          code: 'en',
+          iso: 'en-US',
+          name: 'English'
+        },
+        {
+          code: 'nl',
+          iso: 'nl-NL',
+          name: 'Nederlands'
+        }
+      ],
+      defaultLocale: 'en',
+      noPrefixDefaultLocale: true,
+      vueI18n: {
+        messages: {
+            'en': require('./app/locales/en.json'),
+            'nl': require('./app/locales/nl.json'),
+        },
+        fallbackLocale: 'en'
+      },
+    }
   ],
-  plugins: [
-      '~/plugins/i18n.js',
-      '~/plugins/moment.js',
   ],
   vuetify: {
     materialIcons: true,
@@ -45,14 +76,36 @@ module.exports = {
   css: [
       '~/assets/style/freesewing.styl'
   ],
-  /*
-  ** Build configuration
-  */
+  axios: {
+//      browserBaseURL: 'https://joost.data.freesewing.org'
+  },
+  auth: {
+    strategies: {
+      user: {
+        _scheme: 'local',
+        endpoints: {
+          login: {
+            url: freesewingConfig.api.data+"/login",
+            method: 'post',
+            propertyName: 'token'
+          },
+          user: {
+            url: freesewingConfig.api.data+"/account",
+            method: 'get'
+          }
+        }
+      }
+    }
+  },
+  router: {
+    extendRoutes (routes, resolve) {
+      routes.push({
+        path: '/profile', 
+        component: 'app/pages/dynamic/show-user-profile.vue'
+      })
+    }
+  },
   build: {
-    vendor: [
-        'vue-i18n',
-        'vue-moment',
-    ],
     /*
     ** Run ESLint on save
     */

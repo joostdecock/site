@@ -5,7 +5,7 @@
         <base-logo :size="(24)" color="#663f95" />
       </v-list-tile-action>
       <v-list-tile-content>
-        <v-list-tile-title>{{ $t('mainMenu.chat') }}</v-list-tile-title>
+        <v-list-tile-title>{{ $t('chatWithUs') }}</v-list-tile-title>
       </v-list-tile-content>
     </v-list-tile>
   </v-list>

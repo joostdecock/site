@@ -23,12 +23,10 @@
 
 <script>
 import FsBreadcrumbsBlog from '~/components/Fs/Navigation/FsBreadcrumbsBlog'
-import FsLink from '~/components/Fs/i18n/FsLink'
 // Dynamic
 export default {
   components: {
     FsBreadcrumbsBlog,
-    FsLink
   },
   methods: {
     authorLink: function () {
@@ -36,21 +34,14 @@ export default {
     },
   },
   asyncData: async function ({ app, route }) {
-    let locale = ''
-    if(route.path.substr(0,5) === '/blog') {
-      locale = 'en'
-    }
-    else {
-      locale = route.path.substr(1).split('/').shift()
-    }
     return { 
-      locale: locale, 
-      post: await app.$content('/'+locale+'/blog').get(route.path)
+      locale: app.i18n.locale, 
+      post: await app.$content('/'+app.i18n.locale+'/blog').get(route.path)
     }
   },
   computed: { 
     imgDir () {
-      if (this.locale === 'en') {
+      if (this.$i18n.locale === 'en') {
         return '/img'+this.post.permalink
       } else {
         // FIXME: If we ever have locales like nl-be, this will break as is assumes 2 character locales

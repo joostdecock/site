@@ -31,13 +31,13 @@ module.exports = {
       data: { contentLocale: 'en' },
       markdown: markdownConfig
     }],
-    ['en/patterns', {
-      page: '/patterns/_pattern',
-      permalink: '/patterns/:slug',
-      isPost: false,
-      data: { contentLocale: 'en' },
-      markdown: markdownConfig
-    }],
+    //['en/patterns', {
+    //  page: '/patterns/_pattern',
+    //  permalink: '/patterns/:slug',
+    //  isPost: false,
+    //  data: { contentLocale: 'en' },
+    //  markdown: markdownConfig
+    //}],
     // Dutch (Nederlands)
     ['nl/blog', {
       page: '/nl/blog/_blogpost',
@@ -65,6 +65,6 @@ module.exports = {
   ],
   api: {
     baseURL: 'http://localhost:3000',
-    browserBaseURL: process.env.FREESEWING_BROWSER_BASE_URL
+    browserBaseURL: "https://joost.admin.freesewing.org/content-api"
   }
-}
+  }

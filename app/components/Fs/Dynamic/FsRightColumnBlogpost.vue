@@ -3,7 +3,7 @@
     <v-card>
       <v-card-title>
         <div>
-          <div class="display-1">{{ $t('blog.postInfo') }}</div>
+          <div class="display-1">{{ $t('postInfo') }}</div>
         </div>
       </v-card-title>
       <v-divider></v-divider>
@@ -38,7 +38,7 @@
     </v-card>
     <v-card v-if="updates" class="mt-3">
       <v-card-title primary-title>
-        <div class="display-1">{{ $t('blog.updates') }}</div>
+        <div class="display-1">{{ $t('updates') }}</div>
       </v-card-title>
       <div v-for="(update, id) in updates" :key="id">
         <v-divider></v-divider>
@@ -54,7 +54,7 @@
     <v-card class="mt-3">
       <v-card-title>
         <div>
-          <div class="display-1">{{ $t('blog.contents') }}</div>
+          <div class="display-1">{{ $t('contents') }}</div>
         </div>
       </v-card-title>
       <v-divider></v-divider>

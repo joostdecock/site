@@ -33,12 +33,8 @@
 </template>
 
 <script>
-import FsLink from '~/components/Fs/i18n/FsLink'
 export default {
   layout: 'postlist',
-  components: {
-    FsLink
-  },
     asyncData: async function ({ app, route }) {
       let locale = ''
       if(route.path.substr(0,9) === '/showcase') {

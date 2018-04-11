@@ -1,23 +1,23 @@
 {
-  "locales": {
-    "en": "Engels",
-    "nl": "Nederlands"
-  },
-  "site": {
-    "title": "Freesewing",
-    "slogan": "Een open source platform voor naaipatronen op maat"
-  },
-  "mainMenu": {
-    "home": "Home pagina",
-    "about": "Over freesewing",
-    "blog": "Blog",
-    "patterns": "Patronen",
-    "showcase": "Voorbeelden",
-    "docs": "Documentatie",
-    "signup": "Meld je gratis aan",
-    "chat": "Chat met ons"
-  },
-  "callToAction": {
-    "becomeAPatron": "Wordt sponsor"
-  }
+  "aboutFreesewing": "Over Freesewing",
+  "becomeAPatron": "Wordt sponsor",
+  "blog": "Blog",
+  "blogPost": "Blog post",
+  "chatWithUs": "Chat met ons",
+  "contents": "Inhoud",
+  "documentation": "Documentatie",
+  "editOnGithub": "Bewerken opn GitHub",
+  "freesewing": "Freesewing",
+  "home": "Home pagina",
+  "makeItBetter": "Alles kan beter",
+  "patterns": "Patronen",
+  "postInfo": "Post gegevens",
+  "showcaseInfo": "Voorbeeld gegevens",
+  "showcase": "Voorbeelden",
+  "signupForAFreeAccount": "Meld je gratis aan",
+  "updates": "Updates",
+
+  "txt-slogan": "Een open source platform voor naaipatronen op maat",
+  "txt-editThisPageOnline": "Je kan deze pagina online bewerken en je aanpassingen doorsturen.",
+  "txt-didYouSpotAtypo": "Foutje ontdekt? Of heb je het gevoel dat we wat ontbreekt of duidelijker kan?"
 }

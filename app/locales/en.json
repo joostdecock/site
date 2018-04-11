@@ -1,42 +1,23 @@
 {
-  "locales": {
-    "en": "English",
-    "nl": "Dutch"
-  },
-  "site": {
-    "title": "Freesewing",
-    "slogan": "An open source platform for made-to-measure sewing patterns"
-  },
-  "mainMenu": {
-    "home": "Home",
-    "about": "About Freesewing",
-    "blog": "Blog",
-    "patterns": "Patterns",
-    "showcase": "Showcase",
-    "docs": "Documentation",
-    "signup": "Sign up for a free account",
-    "chat": "Chat with us"
-  },
-  "callToAction": {
-    "becomeAPatron": "Become a patron"
-  },
-  "blog": {
-    "title": "Blog posts",
-    "postInfo": "Post info",
-    "updates": "Updates",
-    "contents": "Contents"
-  },
-  "showcase": {
-    "title": "Showcase",
-    "postInfo": "Showcase info",
-    "updates": "Updates"
-  },
-  "page": {
-    "contents": "Contents",
-    "makeItBetter": "Make it better",
-    "makeItBetterText": "Did you spot a typo? Do you feel something is missing, or needs clarification?",
-    "editOnlineText": "You can edit this page online and submit your changes.",
-    "editOnGithub": "Edit on GitHub"
+  "aboutFreesewing": "About Freesewing",
+  "becomeAPatron": "Become a patron",
+  "blog": "Blog",
+  "blogPost": "Blog posts",
+  "chatWithUs": "Chat with us",
+  "contents": "Contents",
+  "documentation": "Documentation",
+  "editOnGithub": "Edit on GitHub",
+  "freesewing": "Freesewing",
+  "home": "Home",
+  "makeItBetter": "Make it better",
+  "patterns": "Patterns",
+  "postInfo": "Post info",
+  "showcaseInfo": "Showcase info",
+  "showcase": "Showcase",
+  "signupForAFreeAccount": "Sign up for a free account",
+  "updates": "Updates",
 
-  }
+  "txt-slogan": "An open source platform for made-to-measure sewing patterns",
+  "txt-editThisPageOnline": "You can edit this page online and submit your changes.",
+  "txt-didYouSpotAtypo": "Did you spot a typo? Do you feel something is missing, or needs clarification?"
 }
