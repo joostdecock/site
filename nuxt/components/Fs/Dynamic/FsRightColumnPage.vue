@@ -1,9 +1,9 @@
 <template>
   <div>
     <v-card class="mt-3" v-if="page.toc">
-      <v-card-title>
+      <v-card-title class="fs-primary">
         <div>
-          <div class="display-1">{{ $t('contents') }}</div>
+          <div class="headline">{{ $t('contents') }}</div>
         </div>
       </v-card-title>
       <v-divider></v-divider>
@@ -22,7 +22,7 @@
         <v-btn block
           color="primary" 
           :href="repo+'/edit/develop/app/content/'+page.meta.dirName+page.meta.section+'/'+page.meta.fileName"
-          >{{ $t('page.editOnGithub') }}</v-btn>
+          ><v-icon class="mr-3">edit</v-icon>{{ $t('editOnGithub') }}</v-btn>
       </v-card-text>
     </v-card>
   </div>

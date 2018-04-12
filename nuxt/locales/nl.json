@@ -8,14 +8,14 @@
   "chatWithUs": "Chat met ons",
   "contents": "Inhoud",
   "documentation": "Documentatie",
-  "editOnGithub": "Bewerken opn GitHub",
+  "editOnGithub": "Bewerken via GitHub",
   "emailAddress": "E-mail adres",
   "freesewing": "Freesewing",
   "goodToKnow": "Good to know",
   "home": "Home pagina",
   "logIn": "Aanmelden",
   "makeItBetter": "Alles kan beter",
-  "password": "Paswoord",
+  "password": "Wachtwoord",
   "patterns": "Patronen",
   "postInfo": "Post gegevens",
   "reSendActivationEmail": "Stuur een nieuwe activatie E-mail",
@@ -25,12 +25,12 @@
   "signUpForAFreeAccount": "Schrijf je gratis in",
   "updates": "Updates",
 
-  "txt-signup-step1": "Voer je email adres in, en kies een paswoord.",
+  "txt-signup-step1": "Voer je E-mail adres in, en kies een wachtwoord.",
   "txt-signup-step2": "Bevestig je email adres.",
   "txt-signup-step3": "Geef ons de toestemming om je persoonlijke gegevens te verwerken.",
   "txt-email-sharing": "We geven jouw email adres nooit door aan anderen",
   "txt-password-policy": "We handhaven geen wachtwoordbeleid",
   "txt-slogan": "Een open source platform voor naaipatronen op maat",
   "txt-editThisPageOnline": "Je kan deze pagina online bewerken en je aanpassingen doorsturen.",
-  "txt-didYouSpotAtypo": "Foutje ontdekt? Of heb je het gevoel dat we wat ontbreekt of duidelijker kan?"
+  "txt-didYouSpotATypo": "Foutje ontdekt? Of heb je het gevoel dat we wat ontbreekt of duidelijker kan?"
 }

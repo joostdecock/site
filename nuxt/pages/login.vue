@@ -21,7 +21,7 @@
               :append-icon-cb="() => (hidePassword = !hidePassword)"
               :type="hidePassword ? 'password' : 'text'"
               required
-              prepend-icon="vpn_key"
+              prepend-icon="lock"
               :hint="$t('txt-password-policy')"
               >
         </v-text-field>
@@ -30,11 +30,11 @@
           <v-icon v-else class="mr-3">vpn_key</v-icon>
           {{ $t('logIn') }}
         </v-btn>
-        <v-btn large class="mt-3" to="/">
+        <v-btn large class="mt-3" :to="$fs.path('/')">
           <v-icon class="mr-3">undo</v-icon>
           {{ $t('cancel') }}
         </v-btn>
-        <p class="body-1 mt-5"><nuxt-link to="/signup">{{ $t('signUpForAFreeAccount') }}</nuxt-link></p>
+        <p class="body-1 mt-5"><nuxt-link :to="$fs.path('/signup')">{{ $t('signUpForAFreeAccount') }}</nuxt-link></p>
       </v-form>
     </div>
     <v-snackbar

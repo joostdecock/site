@@ -2,7 +2,7 @@
   <v-list>
     <v-list-tile
       router
-      :to="localePrefix+item.to"
+      :to="$fs.path(item.to)"
       :key="i"
       v-for="(item, i) in items"
       exact

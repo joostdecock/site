@@ -31,14 +31,14 @@
           <v-icon v-else class="mr-3">person_add</v-icon>
           {{ $t('signUp') }}
         </v-btn>
-        <v-btn large class="mt-3" to="/">
+        <v-btn large class="mt-3" :to="$fs.path('/')">
           <v-icon class="mr-3">undo</v-icon>
           {{ $t('cancel') }}
         </v-btn>
         <p class="body-1 mt-5">
-        <nuxt-link to="/login">{{ $t('logIn') }}</nuxt-link>
+        <nuxt-link :to="$fs.path('/login')">{{ $t('logIn') }}</nuxt-link>
         &nbsp;|&nbsp; 
-        <nuxt-link to="/resend">{{ $t('reSendActivationEmail') }}</nuxt-link>
+        <nuxt-link :to="$fs.path('/signup/resend')">{{ $t('reSendActivationEmail') }}</nuxt-link>
         </p>
       </v-form>
     </div>

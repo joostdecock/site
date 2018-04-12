@@ -1,9 +1,9 @@
 <template>
   <div>
     <v-card>
-      <v-card-title>
+      <v-card-title class="fs-primary">
         <div>
-          <div class="display-1">{{ $t('showcaseInfo') }}</div>
+          <div class="headline">{{ $t('showcaseInfo') }}</div>
         </div>
       </v-card-title>
       <v-divider></v-divider>

@@ -9,12 +9,15 @@
       </v-btn>
       <div class="hidden-md-and-down ml-3">&nbsp;</div>
       <nuxt-link to="/">
-        <v-btn dark flat>{{ $t('freesewing') }}</v-btn>
+        <v-btn dark flat>
+        <base-logo color="#fff" :size="(32)" />
+          <span class="ml-3">{{ $t('freesewing') }}</span>
+        </v-btn>
       </nuxt-link>
       <v-menu nudge-right>
         <v-toolbar-title slot="activator">
           <v-btn small flat>
-            <img :src="'/icons/locales/'+locale+'.svg'" />
+            <img :src="'/icons/locales/'+$i18n.locale+'.svg'" />
           </v-btn>
         </v-toolbar-title>
         <v-list>
@@ -46,12 +49,12 @@
 </template>
 
 <script>
+import BaseLogo from '~/components/Base/Branding/BaseLogo'
 export default {
+  components: {
+    BaseLogo
+  },
   props: {
-    fixed: {
-      type: Boolean,
-      default: true
-    },
     dark: {
       type: Boolean,
       default: true
@@ -62,31 +65,9 @@ export default {
     },
   },
   name: 'FsMainToolbar',
-    computed: { 
-      locale () {
-        return this.$store.state.locale
-      },
-      locales () {
-        return this.$store.state.locales
-      }
-    },
-  data () {
-    return {
-      items: [
-      { icon: 'apps', title: 'Welcome', to: '/' },
-      { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' }
-      ],
-      alwaysTrue: JSON.parse('true')
-    }
-  },
   methods: {
     toggleDrawer: function(side) {
       this.$store.commit('toggleDrawer', side)
-    },
-    setLocale: function(loc) {
-      this.$store.commit('setLocale', loc)
-      //this.$i18n.locale = loc
-      this.$moment.locale(loc)
     }
   }
 }
