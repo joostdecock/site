@@ -11,8 +11,8 @@ module.exports = {
     conf: freesewingConfig
   },
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     title: 'Freesewing.org',
     meta: [
@@ -25,13 +25,13 @@ module.exports = {
     ]
   },
   /*
-  ** Customize the progress bar color
-  */
+   ** Customize the progress bar color
+   */
   loading: { color: '#3B8070' },
   /*
-  ** Build configuration
-  */
- modules: [
+   ** Build configuration
+   */
+  modules: [
     '@nuxtjs/vuetify',
     '@nuxtjs/auth',
     'nuxtdown',
@@ -52,13 +52,16 @@ module.exports = {
       noPrefixDefaultLocale: true,
       vueI18n: {
         messages: {
-            'en': require('./nuxt/locales/en.json'),
-            'nl': require('./nuxt/locales/nl.json'),
+          'en': require('./nuxt/locales/en.json'),
+          'nl': require('./nuxt/locales/nl.json'),
         },
         fallbackLocale: 'en'
       },
     }
+    ],
   ],
+  plugins: [
+    '~/plugins/fs' 
   ],
   vuetify: {
     materialIcons: true,
@@ -74,10 +77,10 @@ module.exports = {
     }
   },
   css: [
-      '~/assets/style/freesewing.styl'
+    '~/assets/style/freesewing.styl'
   ],
   axios: {
-//      browserBaseURL: 'https://joost.data.freesewing.org'
+    //      browserBaseURL: 'https://joost.data.freesewing.org'
   },
   auth: {
     strategies: {
@@ -107,8 +110,8 @@ module.exports = {
   },
   build: {
     /*
-    ** Run ESLint on save
-    */
+     ** Run ESLint on save
+     */
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
