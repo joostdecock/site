@@ -10,9 +10,9 @@
         <fs-table-of-contents :toc="page.toc"/>
     </v-card>
     <v-card class="mt-3">
-      <v-card-title>
+      <v-card-title class="fs-primary">
         <div>
-          <div class="display-1">{{ $t('makeItBetter') }}</div>
+          <div class="headline">{{ $t('makeItBetter') }}</div>
         </div>
       </v-card-title>
       <v-divider></v-divider>

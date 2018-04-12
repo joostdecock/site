@@ -1,13 +1,13 @@
 <template>
   <ul class="breadcrumbs"> 
     <li>
-      <nuxt-link to="/">
+      <nuxt-link :to="$fs.path('/')">
         <v-icon color="primary">home</v-icon>
       </nuxt-link>
     </li>
     <li><v-icon small slot="divider">chevron_right</v-icon></li>
     <li>
-      <nuxt-link to="/blog">
+      <nuxt-link :to="$fs.path('/blog')">
         {{ $t('blog') }} 
       </nuxt-link>
     </li>

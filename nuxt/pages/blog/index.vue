@@ -2,18 +2,13 @@
   <section>
     <ul class="breadcrumbs"> 
       <li>
-        <fs-link to="/">
+        <nuxt-link :to="$fs.path('/')">
           <v-icon color="primary">home</v-icon>
-        </fs-link>
+        </nuxt-link>
       </li>
       <li><v-icon small slot="divider">chevron_right</v-icon></li>
-      <li>
-        <fs-link to="/blog">
-          {{ $t('blog') }} 
-        </fs-link>
-      </li>
+      <li>{{ $t('blog') }}</li>
     </ul>
-    <h1 class="offset-xl1">{{ $t('blog.title') }}</h1>
     <v-container fluid grid-list-lg>
       <v-layout row wrap>
         <v-flex 
@@ -41,7 +36,7 @@
 
 <script>
 export default {
-  layout: 'postlist',
+  layout: 'wide',
     asyncData: async function ({ app, route }) {
       let locale = ''
       if(route.path.substr(0,5) === '/blog') {

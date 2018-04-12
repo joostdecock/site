@@ -41,6 +41,7 @@ export default {
   ul { 
     margin: 0;
     padding: 0.75rem; 
+    font-size: 90%;
   }
   ul li { 
     list-style-type: none; 
@@ -63,10 +64,20 @@ export default {
     font-size: 85%;
     padding-top: 0.2rem;
   }
+  ul li.toc-level-2:before {
+    content: '●';
+    font-size: 12px;
+    padding-right: 5px;
+  }
   li.toc-level-3 {
     margin-left: 25px;
     font-size: 75%;
     padding-top: 0.1rem;
+  }
+  ul li.toc-level-3:before {
+    content: '○';
+    font-size: 8px;
+    padding-right: 5px;
   }
   li.toc-level-4,
   li.toc-level-5,

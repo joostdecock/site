@@ -17,16 +17,8 @@
                   </div>
                 </aside>
               </v-flex>
-              <v-flex xl5 offset-xl1 lg6 xs12>
+              <v-flex xl9 offset-xl1 lg8 offset-lg1 xs12>
                 <nuxt />
-              </v-flex>
-              <v-flex xl2 offset-xl1 lg3 hidden-md-and-down>
-                <aside class="fs-sticky-column">
-                  <div class="fs-scroll-column mt-5">
-                    <component :is="rightColumnComponent" /> 
-                    <div class="fs-toolbar-spacer"></div>
-                  </div>
-                </aside>
               </v-flex>
             </v-layout>
           </v-container>
