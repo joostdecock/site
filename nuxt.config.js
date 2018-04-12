@@ -65,7 +65,7 @@ module.exports = {
     css: false,
     theme: {
       // This is Freesewing's signature purple
-      primary: '#663F95', 
+      primary: '#212121', 
       secondary: '#455A64',
       warning: '#FFAB00',
       error: '#D32F2F',

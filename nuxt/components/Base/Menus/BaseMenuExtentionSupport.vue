@@ -2,7 +2,7 @@
   <v-list> 
     <v-list-tile @click="gotoChat">
       <v-list-tile-action>
-        <base-logo :size="(24)" color="#663f95" />
+        <base-logo :size="(24)" color="#212121" />
       </v-list-tile-action>
       <v-list-tile-content>
         <v-list-tile-title>{{ $t('chatWithUs') }}</v-list-tile-title>

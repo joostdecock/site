@@ -42,7 +42,8 @@
 
 <style scope>
 a.list__tile--active {
-  background: #e4c7ff66 !important;
+  background: rgba(0, 0, 0, .05)!important;
   font-weight: bold;
+  border-right: 5px solid #212121;
 }
 </style>
