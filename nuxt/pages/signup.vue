@@ -1,20 +1,21 @@
 <template>
-  <section class="container text-xs-center">
+  <section class="on-splash">
     <div v-if="$auth.loggedIn">
-      <p>You are logged in</p>
-      <v-btn @click="logout" color="secondary" large>Logout</v-btn>
+      <p>fixme</p>
     </div>
     <div v-else>
-      <h1>{{ $t('signUp') }}</h1>
-      <h4>{{ $t('txt-signup-step1') }}</h4>
-      <v-form v-model="valid">
+      <h1 class="mt-5">{{ $t('signUp') }}</h1>
+      <h5>{{ $t('txt-signup-step1') }}</h5>
+      <v-form v-model="valid" class="mt-4">
         <v-text-field
-              :label="$t('email')"
+              :label="$t('emailAddress')"
               v-model="email"
               required
               prepend-icon="email"
-              ></v-text-field>
-          <v-text-field
+              :hint="$t('txt-email-sharing')"
+              >
+        </v-text-field>
+        <v-text-field
               :label="$t('password')"
               v-model="password"
               :append-icon="hidePassword ? 'visibility' : 'visibility_off'"
@@ -22,21 +23,24 @@
               :type="hidePassword ? 'password' : 'text'"
               required
               prepend-icon="vpn_key"
-              ></v-text-field>
-            <v-btn @click="submit" color="primary" large>
-              {{ $t('signUp') }}
-              <v-progress-circular indeterminate color="#fff" class="ml-4" v-if="loading" :size="20" :width="2"></v-progress-circular>
-            </v-btn>
-      </v-form>
-
-        <p>
-        * {{ $t('txt-email-sharing') }}
-        <br>
-        * {{ $t('txt-password-policy') }}
+              :hint="$t('txt-password-policy')"
+              >
+        </v-text-field>
+        <v-btn @click="submit" color="primary" large class="mt-3">
+          <v-progress-circular indeterminate color="#fff" class="ml-4" v-if="loading" :size="20" :width="2"></v-progress-circular>
+          <v-icon v-else class="mr-3">person_add</v-icon>
+          {{ $t('signUp') }}
+        </v-btn>
+        <v-btn large class="mt-3" to="/">
+          <v-icon class="mr-3">undo</v-icon>
+          {{ $t('cancel') }}
+        </v-btn>
+        <p class="body-1 mt-5">
+        <nuxt-link to="/login">{{ $t('logIn') }}</nuxt-link>
+        &nbsp;|&nbsp; 
+        <nuxt-link to="/resend">{{ $t('reSendActivationEmail') }}</nuxt-link>
         </p>
-      <ul class="steps mt-5">
-        <li><v-icon>check_circle</v-icon>{{ $t('txt-signup-step1') }}</li>
-      </ul>
+      </v-form>
     </div>
     <v-snackbar
           :timeout="(4000)"
@@ -50,9 +54,9 @@
 </template>
 
 <script>
-
 export default {
   auth: false,
+  layout: 'splash',
   data () {
     return {
       email: '',
@@ -62,9 +66,6 @@ export default {
       error: false,
       hidePassword: true
     }
-  },
-  mounted: () => { 
-    //  console.log($auth.user)
   },
   computed: { 
     loggedIn () {
@@ -80,35 +81,26 @@ export default {
           password: this.password
         }
       })
-        .catch((i) => {
-          this.loading = false;
-          this.error = true
-        })
-        .then((i) => {
-          this.loading = false;
-        })
-    },
-    logout: function() {
-      this.$auth.logout()
-      this.$auth.reset()
+      .catch((i) => {
+        this.loading = false;
+        this.error = true
+      })
+      .then((i) => {
+        this.loading = false;
+      })
     }
   }
 }
 </script>
 
 <style scoped>
-form {
-  max-width: 300px;
+.on-splash {
+  max-width: 600px;
   margin: auto;
-}
-.input-group--required label::after {
-  content: ''!important;
-}
-ul.steps {
-  margin-left: 0;
-  font-size: 70%;
-}
-ul.steps li {
-  list-style-type: none;
+  background: #ffffffdd;
+  padding: 10px 40px 5px;
+  margin-top: 50px;
+  text-align: center;
+  border-radius: 5px;
 }
 </style>

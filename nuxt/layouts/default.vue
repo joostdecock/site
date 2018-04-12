@@ -56,7 +56,7 @@ export default {
     FsMainToolbar,
     FsRightColumnBlogpost,
     FsRightColumnPage,
-    FsRightColumnShowcase
+    FsRightColumnShowcase,
   },
   computed: { 
     rightColumnComponent () {
