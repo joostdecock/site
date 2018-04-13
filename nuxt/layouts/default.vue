@@ -6,6 +6,7 @@
       </div>
     </the-right-drawer>
       <the-left-drawer />
+        <fs-top-toolbar color="white" light class="hidden-md-and-down"/>
         <v-content class="fs-vertical-container">
           <v-container>
             <v-layout row wrap>
@@ -43,6 +44,7 @@ import TheLeftDrawer from '~/components/SingleInstance/TheLeftDrawer'
 import BaseMainMenuCard from '~/components/Base/Menus/BaseMainMenuCard' 
 import BaseSecondaryMenuCard from '~/components/Base/Menus/BaseSecondaryMenuCard' 
 import FsMainToolbar from '~/components/Fs/Toolbars/FsMainToolbar' 
+import FsTopToolbar from '~/components/Fs/Toolbars/FsTopToolbar' 
 // Dynamic components
 import FsRightColumnBlogpost from '~/components/Fs/Dynamic/FsRightColumnBlogpost'
 import FsRightColumnPage from '~/components/Fs/Dynamic/FsRightColumnPage'
@@ -54,6 +56,7 @@ export default {
     BaseMainMenuCard,
     BaseSecondaryMenuCard,
     FsMainToolbar,
+    FsTopToolbar,
     FsRightColumnBlogpost,
     FsRightColumnPage,
     FsRightColumnShowcase,

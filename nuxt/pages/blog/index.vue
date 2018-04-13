@@ -31,6 +31,19 @@
         </v-flex>
       </v-layout>
     </v-container>
+    <blockquote 
+      class="i18n center mt-5"
+      v-if="$i18n.locale != $i18n.fallbackLocale">
+      <h5>Not all blog posts have been translated to English — but you could change that</h5>
+      <p>We are looking for people to help with our translation efforts.</p>
+      <p>Many hands make light work, and it's excellent karma to make a contribution this way.</p>
+      <p>To learn more about what you can do, and how to do it, click the link below.</p>
+      <p class="text-xs-right">
+      <v-btn color="primary" large>
+        <v-icon>translate</v-icon>FIXME
+      </v-btn>
+      </p>
+    </blockquote>
   </section>
 </template>
 

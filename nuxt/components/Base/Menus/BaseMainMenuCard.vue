@@ -1,10 +1,9 @@
 <template>
   <v-card>
-   <v-card-title primary-title>
-     <div>
-       <div class="display-1">{{ $t('freesewing') }}</div>
-       <div class="subheading">{{ $t('txt-slogan') }}</div>
-     </div>
+   <v-card-title class="fs-primary">
+     <nuxt-link to="/" class="text-xs-center" style="width: 100%;" >
+       <base-logo :size="(128)" />
+     </nuxt-link>
    </v-card-title>
    <v-divider></v-divider>
    <base-menu-extention-signup />
@@ -20,11 +19,13 @@
   import FsMainMenu from '~/components/Fs/Menus/FsMainMenu'
   import BaseMenuExtentionSignup from '~/components/Base/Menus/BaseMenuExtentionSignup'
   import BaseMenuExtentionSupport from '~/components/Base/Menus/BaseMenuExtentionSupport'
+  import BaseLogo from '~/components/Base/Branding/BaseLogo'
   export default {
     components: {
       FsMainMenu,
       BaseMenuExtentionSignup,
-      BaseMenuExtentionSupport
+      BaseMenuExtentionSupport,
+      BaseLogo
     },
     name: 'BaseMainMenuCard'
   }
