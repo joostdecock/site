@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import axios from 'axios'
 
 export default ({ app, store, router }) => {
 
@@ -14,6 +15,13 @@ export default ({ app, store, router }) => {
       },
       user: (user) => {
         return pathMethod('/users/'+user)
+      },
+      api: {
+        data: axios.create({
+          baseURL: 'https://joost.data.freesewing.org/',
+          timeout: 1000,
+          headers: {'X-Custom-Header': 'fixme'}
+        })
       }
     }
 }

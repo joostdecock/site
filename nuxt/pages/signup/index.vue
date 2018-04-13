@@ -75,11 +75,9 @@ export default {
   methods: {
     submit: function() {
       this.loading = true;
-      this.$auth.loginWith('user', {
-        data: {
-          username: this.username,
-          password: this.password
-        }
+      this.$fs.api.data.post('signup', {
+        username: this.username,
+        password: this.password
       })
       .catch((i) => {
         this.loading = false;
