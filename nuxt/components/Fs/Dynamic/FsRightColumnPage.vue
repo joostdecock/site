@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card class="mt-3" v-if="page.toc">
+    <v-card v-if="page.toc">
       <v-card-title class="fs-primary">
         <div>
           <div class="headline">{{ $t('contents') }}</div>

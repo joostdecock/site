@@ -32,7 +32,7 @@
             </v-layout>
           </v-container>
         </v-content>
-        <v-footer fixed height="auto">
+        <v-footer fixed height="auto" class="hidden-lg-and-up">
           <fs-main-toolbar color="primary" />
         </v-footer>
   </v-app>

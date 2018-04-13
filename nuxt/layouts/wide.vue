@@ -1,15 +1,11 @@
 <template>
   <v-app>
-    <the-right-drawer>
-      <div class="fs-scroll-column">
-        <component :is="rightColumnComponent" /> 
-      </div>
-    </the-right-drawer>
       <the-left-drawer />
+        <fs-top-toolbar color="white" light class="hidden-md-and-down"/>
         <v-content class="fs-vertical-container">
           <v-container>
             <v-layout row wrap>
-              <v-flex xl2 lg3 hidden-md-and-down>
+              <v-flex xl2 offset-xl1 lg3 hidden-md-and-down>
                 <aside class="fs-sticky-column">
                   <div class="fs-scroll-column mt-5">
                     <base-main-menu-card /> 
@@ -17,14 +13,14 @@
                   </div>
                 </aside>
               </v-flex>
-              <v-flex xl9 offset-xl1 lg8 offset-lg1 xs12>
+              <v-flex xl8 lg9 md12 sm12 xs12>
                 <nuxt />
               </v-flex>
             </v-layout>
           </v-container>
         </v-content>
-        <v-footer fixed height="auto">
-          <fs-main-toolbar color="primary" />
+        <v-footer fixed height="auto" class="hidden-lg-and-up">
+          <fs-main-toolbar color="primary" :right="(false)" />
         </v-footer>
   </v-app>
 </template>
@@ -35,6 +31,7 @@ import TheLeftDrawer from '~/components/SingleInstance/TheLeftDrawer'
 import BaseMainMenuCard from '~/components/Base/Menus/BaseMainMenuCard' 
 import BaseSecondaryMenuCard from '~/components/Base/Menus/BaseSecondaryMenuCard' 
 import FsMainToolbar from '~/components/Fs/Toolbars/FsMainToolbar' 
+import FsTopToolbar from '~/components/Fs/Toolbars/FsTopToolbar' 
 // Dynamic components
 import FsRightColumnBlogpost from '~/components/Fs/Dynamic/FsRightColumnBlogpost'
 import FsRightColumnPage from '~/components/Fs/Dynamic/FsRightColumnPage'
@@ -46,6 +43,7 @@ export default {
     BaseMainMenuCard,
     BaseSecondaryMenuCard,
     FsMainToolbar,
+    FsTopToolbar,
     FsRightColumnBlogpost,
     FsRightColumnPage,
     FsRightColumnShowcase,

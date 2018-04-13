@@ -42,7 +42,7 @@
             <v-icon right color="primary">favorite</v-icon>
           </v-btn>
         </nuxt-link>
-      <v-btn icon @click.stop="toggleDrawer('right')" class="hidden-xl-only mr-4">
+      <v-btn v-if="right" icon @click.stop="toggleDrawer('right')" class="hidden-xl-only mr-4">
         <v-icon x-large>chevron_left</v-icon>
       </v-btn>
   </v-toolbar>
@@ -62,6 +62,10 @@ export default {
     color: {
       type: String,
       default: 'primary'
+    },
+    right: {
+      type: Boolean,
+      default: true
     },
   },
   name: 'FsMainToolbar',
