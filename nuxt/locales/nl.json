@@ -5,7 +5,9 @@
   "blog": "Blog",
   "blogPost": "Blog post",
   "cancel": "Annuleren",
+  "chatOnGitter": "Chat via Gitter",
   "chatWithUs": "Chat met ons",
+  "community": "Gemeenschap",
   "contents": "Inhoud",
   "documentation": "Documentatie",
   "editOnGithub": "Bewerken via GitHub",
@@ -16,13 +18,16 @@
   "logIn": "Aanmelden",
   "makeItBetter": "Alles kan beter",
   "password": "Wachtwoord",
+  "patrons": "Sponsors",
   "patterns": "Patronen",
   "postInfo": "Post gegevens",
   "reSendActivationEmail": "Stuur een nieuwe activatie E-mail",
+  "search": "Zoeken",
   "showcaseInfo": "Voorbeeld gegevens",
   "showcase": "Voorbeelden",
   "signUp": "Inschrijven",
   "signUpForAFreeAccount": "Schrijf je gratis in",
+  "translationTeam": "Vertaalteam",
   "updates": "Updates",
 
   "txt-signup-step1": "Voer je E-mail adres in, en kies een wachtwoord.",
@@ -32,5 +37,9 @@
   "txt-password-policy": "We handhaven geen wachtwoordbeleid",
   "txt-slogan": "Een open source platform voor naaipatronen op maat",
   "txt-editThisPageOnline": "Je kan deze pagina online bewerken en je aanpassingen doorsturen.",
-  "txt-didYouSpotATypo": "Foutje ontdekt? Of heb je het gevoel dat er wat ontbreekt of duidelijker kan?"
+  "txt-didYouSpotATypo": "Foutje ontdekt? Of heb je het gevoel dat er wat ontbreekt of duidelijker kan?",
+  
+  "GitHub": "GitHub",
+  "Twitter": "Twitter", 
+  "Instagram": "Instagram"
 }

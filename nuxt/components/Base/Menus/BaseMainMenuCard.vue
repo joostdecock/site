@@ -10,7 +10,7 @@
    <v-divider></v-divider>
    <fs-main-menu />
    <v-divider></v-divider>
-   <base-menu-extention-support />
+   <base-menu-extention-patron />
 
  </v-card>
 </template>
@@ -18,13 +18,13 @@
 <script>
   import FsMainMenu from '~/components/Fs/Menus/FsMainMenu'
   import BaseMenuExtentionSignup from '~/components/Base/Menus/BaseMenuExtentionSignup'
-  import BaseMenuExtentionSupport from '~/components/Base/Menus/BaseMenuExtentionSupport'
+  import BaseMenuExtentionPatron from '~/components/Base/Menus/BaseMenuExtentionPatron'
   import BaseLogo from '~/components/Base/Branding/BaseLogo'
   export default {
     components: {
       FsMainMenu,
       BaseMenuExtentionSignup,
-      BaseMenuExtentionSupport,
+      BaseMenuExtentionPatron,
       BaseLogo
     },
     name: 'BaseMainMenuCard'

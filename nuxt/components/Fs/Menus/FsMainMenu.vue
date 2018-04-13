@@ -20,19 +20,13 @@
 <script>
   export default {
     name: 'FsMainMenu',
-    computed: { 
-      localePrefix () {
-        return this.$store.state.localePrefix
-      }
-    },
     data () {
       return {
         items: [
           { icon: 'home', title: 'home', to: '/' },
           { icon: 'info_outline', title: 'aboutFreesewing', to: '/docs/about' },
-          { icon: 'view_carousel', title: 'patterns', to: '/patterns' },
-          { icon: 'share', title: 'blog', to: '/blog' },
-          { icon: 'photo_camera', title: 'showcase', to: '/showcase' },
+          { icon: 'content_paste', title: 'patterns', to: '/patterns' },
+          { icon: 'rss_feed', title: 'blog', to: '/blog' },
           { icon: 'import_contacts', title: 'documentation', to: '/docs' },
         ],
       }

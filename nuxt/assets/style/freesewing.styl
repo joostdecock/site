@@ -177,6 +177,28 @@ a.nuxtdown-toc:hover
  *
  */
 
+// Grid
+.fs-stick-right
+  margin-left: auto
+  margin-right: 0
+
+#fs-mid-column
+  max-width: 600px
+
+@media (min-width: 1904px)
+  #fs-mid-column
+   margin-left: 50px;
+   margin-right: 50px;
+ 
+@media (max-width: 1903px)
+  .fs-sticky-column
+    max-width: 250px;
+
+@media (max-width: 959px)
+  #fs-mid-column
+   margin-left: auto;
+   margin-right: auto;
+
 
 /*
  *
@@ -205,6 +227,7 @@ a.nuxtdown-toc:hover
 .icon 
   font-family: 'Material icons'
   font-style: normal
+  vertical-align: text-top
   
 .btn
   text-transform: none

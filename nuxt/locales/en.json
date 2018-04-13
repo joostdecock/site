@@ -5,7 +5,9 @@
   "blog": "Blog",
   "blogPost": "Blog posts",
   "cancel": "Cancel",
+  "chatOnGitter": "Chat on Gitter",
   "chatWithUs": "Chat with us",
+  "community": "Community",
   "contents": "Contents",
   "documentation": "Documentation",
   "editOnGithub": "Edit on GitHub",
@@ -16,13 +18,16 @@
   "logIn": "Log in",
   "makeItBetter": "Make it better",
   "password": "Password",
+  "patrons": "Patrons",
   "patterns": "Patterns",
   "postInfo": "Post info",
   "reSendActivationEmail": "Re-send activation email",
+  "search": "Search",
   "showcaseInfo": "Showcase info",
   "showcase": "Showcase",
   "signUp": "Sign up",
   "signUpForAFreeAccount": "Sign up for a free account",
+  "translationTeam": "Translation team",
   "updates": "Updates",
 
   "txt-signup-step1": "Enter your email address, and pick a password.",
@@ -32,5 +37,9 @@
   "txt-password-policy": "We don't enforce a password policy",
   "txt-slogan": "An open source platform for made-to-measure sewing patterns",
   "txt-editThisPageOnline": "You can edit this page online and submit your changes.",
-  "txt-didYouSpotATypo": "Did you spot a typo? Do you feel something is missing, or needs clarification?"
+  "txt-didYouSpotATypo": "Did you spot a typo? Do you feel something is missing, or needs clarification?",
+
+  "GitHub": "GitHub",
+  "Twitter": "Twitter", 
+  "Instagram": "Instagram"
 }
