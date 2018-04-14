@@ -18,9 +18,9 @@ export default ({ app, store, router }) => {
       },
       api: {
         data: axios.create({
-          baseURL: 'https://joost.data.freesewing.org/',
-          timeout: 1000,
-          headers: {'X-Custom-Header': 'fixme'}
+          baseURL: 'https://data.she.freesewing.org/',
+          timeout: 4500,
+          headers: {}
         })
       }
     }
