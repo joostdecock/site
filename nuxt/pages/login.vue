@@ -1,7 +1,7 @@
 <template>
   <section class="on-splash">
     <div v-if="$auth.loggedIn">
-      <p>fixme</p>
+      <base-logout />
     </div>
     <div v-else>
       <h1 class="mt-5">{{ $t('logIn') }}</h1>
@@ -49,9 +49,13 @@
 </template>
 
 <script>
+import BaseLogout from '~/components/Base/Messages/BaseLogout'
 export default {
   auth: false,
   layout: 'splash',
+  components: {
+    BaseLogout
+  },
   data () {
     return {
       username: '',
@@ -81,7 +85,10 @@ export default {
         this.error = true
       })
       .then((i) => {
-        this.loading = false;
+        if(!this.error) {
+          this.loading = false;
+          $router.push($fs.path('/'))
+        }
       })
     }
   }
