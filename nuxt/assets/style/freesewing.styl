@@ -1,0 +1,237 @@
+/*
+ *
+ * Color overrides
+ * Note that $primary (and other theme colors) are set in nuxt.conf.js
+ *
+ */
+// Disable the color pack to avoid bloat
+$color-pack = false
+
+// Then again, we do need to refer to them
+$primary   = #212121 
+$secondary = #455A64
+$warning   = #FFAB00
+$error     = #D32F2F
+$info      = #64B5F6
+$accent    = #FF5B77
+$shadow = 0px 2px 1px -1px rgba(0, 0, 0, .2), 0px 1px 1px 0px rgba(0, 0, 0, .14), 0px 1px 3px 0px rgba(0, 0, 0, .12)!important;
+// Who would thing having a white background would be such as hassle
+@import './material-light'
+
+/*
+ *
+ * Vuetify's typography is below our standards
+ * So here's a bunch of overrides to fix that
+ *
+ */
+// Native font stack to avoid loading external font
+$body-font-family = -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+
+// Set generous font size and line height
+$font-size-root = 22px
+$line-height-root = 1.4
+$breadcrumbs-item-font-size = 0.7 * $font-size-root
+$breadcrumbs-item-large-font-size = 0.9 * $font-size-root
+
+// Helper var for bottom margins
+$text-margin-bottom =  $font-size-root * 0.7272
+
+// Set heading styles
+h1 
+  font-size: 2.5rem
+  font-weight: 500
+  line-height: 1.1
+  letter-spacing: -.03rem 
+  margin: 1rem 0
+h2 
+  font-size: 2.1rem
+  font-weight: 200
+  line-height: 1.1
+  letter-spacing: -.03rem 
+  margin: 1.5rem 0
+h3 
+  font-size: 1.8rem
+  font-weight: 200
+  line-height: 1.1
+  letter-spacing: -.02rem
+  margin: 1rem 0
+h4 
+  font-size: 1.5rem
+  font-weight: 200
+  line-height: 1.1
+  letter-spacing: -0.01rem
+  margin: 0.75rem 0
+h5
+  font-size: 1.3rem
+  font-weight: 400
+  line-height: 32px
+  letter-spacing: normal
+  margin: 0.5rem 0
+h6 
+  font-size: 1.1rem
+  font-weight: 500
+  line-height: 1
+  letter-spacing: .02em
+  margin: 0.5rem 0
+
+// Tone it down a bit on smaller screens
+
+
+@media (max-width: 600px)
+  h1
+    font-size: 1.9rem
+  h2              
+    font-size: 1.7rem
+  h3              
+    font-size: 1.5rem
+  h4              
+    font-size: 1.3rem
+  h5              
+    font-size: 1.1rem
+  h6              
+    font-size: 0.9rem
+
+// Bump the navigation drawer font size
+$navigation-drawer-item-font-size = 24px
+
+// Use local icon font rather than fetch from Google
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(/fonts/MaterialIcons-Regular.woff2) format('woff2'),
+    url(/fonts/MaterialIcons-Regular.woff) format('woff'),
+    url(/fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+// Links for text
+.fs-text 
+  a
+    text-decoration: none
+    box-shadow: 0px -2px 0px rgba(0,0,0,.2) inset;
+  a:hover
+    text-decoration: none
+    box-shadow: 0px -3px 0px rgba(0,0,0,.2) inset;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+   
+// Links outside text
+.fs-deco 
+  a
+    box-shadow: none
+    text-decoration: underline
+  a:hover
+    border: none
+    box-shadow: none
+    text-decoration: initial
+
+// Lists
+ul, ol 
+  margin-left: 2*$text-margin-bottom
+  margin-bottom: $text-margin-bottom
+
+// Prevent footer from sticking to page
+.fs-vertical-container
+  margin-bottom: 100px
+
+// Prevent columns from scrolling
+.fs-sticky-column 
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+.fs-scroll-column 
+  overflow-y: auto
+  height: 100vh
+  padding: 8px
+.fs-toolbar-spacer
+  height: 100px
+
+// Images
+img 
+  max-width: 100%
+
+figure 
+  margin: auto
+
+  img
+    box-shadow: $shadow
+
+  figcaption 
+    margin-bottom: $text-margin-bottom
+    font-size: 75%
+
+// TOC
+a.nuxtdown-toc
+  position: absolute
+  box-shadow: none
+  font-size: 50%
+  margin: 0 0 0 10px
+a.nuxtdown-toc:hover
+  box-shadow: none
+  border: none
+
+/*
+ *
+ * Blog post specifics
+ *
+ */
+
+// Grid
+.fs-stick-right
+  margin-left: auto
+  margin-right: 0
+
+#fs-mid-column
+  max-width: 600px
+
+@media (min-width: 1904px)
+  #fs-mid-column
+   margin-left: 50px;
+   margin-right: 50px;
+ 
+@media (max-width: 1903px)
+  .fs-sticky-column
+    max-width: 250px;
+
+@media (max-width: 959px)
+  #fs-mid-column
+   margin-left: auto;
+   margin-right: auto;
+
+
+/*
+ *
+ * All done with Freesewing specific settings
+ *
+ */
+@import '~vuetify/src/stylus/main'
+
+
+/*
+ *
+ * Global freesewing styles
+ *
+ */
+.align-drawer-bottom 
+  position fixed
+  bottom 0
+  width 100%
+
+
+@import 'cards'
+@import 'lists'
+@import 'blockquotes'
+@import 'responsive-embed'
+
+.icon 
+  font-family: 'Material icons'
+  font-style: normal
+  vertical-align: text-top
+  
+.btn
+  text-transform: none
+
+.btn--large
+  font-size: 18px
+

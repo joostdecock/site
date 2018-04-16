@@ -1,0 +1,78 @@
+blockquote 
+  padding: 2rem
+  margin: 1.5rem 0.5rem
+  box-shadow: $shadow
+  background: rgba(0,0,0,.05)
+  -webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, .2), 0px 1px 1px 0px rgba(0, 0, 0, .14), 0px 1px 3px 0px rgba(0, 0, 0, .12);
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, .2), 0px 1px 1px 0px rgba(0, 0, 0, .14), 0px 1px 3px 0px rgba(0, 0, 0, .12);
+
+  & p:last-child
+    margin-bottom: 0
+
+  & p:first-child
+  & h2:first-child
+  & h3:first-child
+  & h4:first-child
+  & h5:first-child
+  & h6:first-child
+    margin-top: 0
+
+  &:before 
+    content: ""
+    font-family: "Material Icons" !important
+    font-style: normal !important
+    font-weight: normal !important
+    font-variant: normal !important
+    text-transform: none !important
+    speak: none
+    line-height: 1
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    font-size: 3em
+    float: right
+    margin-top: -10px
+    color: #212121
+
+  &.center 
+    max-width: 400px
+    margin: auto
+ 
+  &.quote 
+    max-width: 50%
+    float: right
+    font-style: italic
+    @media screen and (max-width: 767px)
+      max-width: 100%
+      float: none
+      clear: both
+    &.full
+      max-width: 100%
+      float: none
+      clear: both
+    &:before
+      content: "format_quote"
+
+  &.comment 
+    &:before
+      content: "mode_comment"
+      color: $info
+
+  &.link 
+    &:before
+      content: "link"
+      color: $info
+
+  &.warning 
+    &:before
+      content: "warning"
+      color: $secondary
+  
+  &.tip 
+    &:before
+      content: "link"
+
+  &.i18n 
+    &:before
+      content: "translate"
+
+

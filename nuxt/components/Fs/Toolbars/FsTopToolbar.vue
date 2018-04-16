@@ -1,0 +1,152 @@
+<template>
+  <v-toolbar 
+    :color="color"
+    flat>
+    <v-spacer></v-spacer>
+      <nuxt-link :to="$fs.path('/patterns')">
+        <v-btn flat large>
+          <v-icon class="mr-3" color="primary">content_paste</v-icon>
+          {{ $t('patterns') }}
+        </v-btn>
+      </nuxt-link>
+
+      <nuxt-link :to="$fs.path('/documentation')">
+        <v-btn flat large>
+          <v-icon class="mr-3" color="primary">import_contacts</v-icon>
+          {{ $t('documentation') }}
+        </v-btn>
+      </nuxt-link>
+      
+      <nuxt-link :to="$fs.path('/blog')">
+        <v-btn flat large>
+          <v-icon class="mr-3" color="primary">rss_feed</v-icon>
+          {{ $t('blog') }}
+        </v-btn>
+      </nuxt-link>
+      
+      <nuxt-link :to="$fs.path('/search')">
+        <v-btn flat large>
+          <v-icon class="mr-3" color="primary">search</v-icon>
+          {{ $t('search') }}
+        </v-btn>
+      </nuxt-link>
+
+      <v-menu nudge-right>
+        <v-toolbar-title slot="activator">
+          <v-btn large flat>
+            <v-icon class="mr-3" color="info">extension</v-icon>
+            {{ $t('community') }}
+            <v-icon color="secondary">arrow_drop_down</v-icon>
+          </v-btn>
+        </v-toolbar-title>
+        <v-list>
+
+          <v-list-tile :to="$fs.path('/showcase')">
+            <v-list-tile-action><v-icon color="primary">photo_camera</v-icon></v-list-tile-action>
+            <v-list-tile-content>{{ $t('showcase') }}</v-list-tile-content>
+          </v-list-tile>
+
+          <v-list-tile href="https://gitter.im/freesewing/freesewing" target="_BLANK">
+            <v-list-tile-action><icon-gitter /></v-list-tile-action>
+            <v-list-tile-content>{{ $t('chatOnGitter') }}</v-list-tile-content>
+          </v-list-tile>
+
+          <v-list-tile href="https://github.com/freesewing" target="_BLANK">
+            <v-list-tile-action><icon-github /></v-list-tile-action>
+            <v-list-tile-content>{{ $t('GitHub') }}</v-list-tile-content>
+          </v-list-tile>
+
+          <v-list-tile href="https://twitter.com/freesewing_org" target="BLANK">
+            <v-list-tile-action><icon-twitter /></v-list-tile-action>
+            <v-list-tile-content>{{ $t('Twitter') }}</v-list-tile-content>
+          </v-list-tile>
+
+          <v-list-tile href="https://instagram.com/freesewing_org" target="_BLANK">
+            <v-list-tile-action><icon-instagram /></v-list-tile-action>
+            <v-list-tile-content>{{ $t('Instagram') }}</v-list-tile-content>
+          </v-list-tile>
+
+          <v-divider></v-divider>
+
+          <v-list-tile :to="$fs.path('/patrons')">
+            <v-list-tile-action><v-icon color="primary">translate</v-icon></v-list-tile-action>
+            <v-list-tile-content>{{ $t('translationTeam') }}</v-list-tile-content>
+          </v-list-tile>
+
+          <v-list-tile :to="$fs.path('/patrons')">
+            <v-list-tile-action><v-icon color="accent">favorite</v-icon></v-list-tile-action>
+            <v-list-tile-content>{{ $t('patrons') }}</v-list-tile-content>
+          </v-list-tile>
+
+        </v-list>
+      </v-menu>
+
+      <v-menu nudge-right>
+        <v-toolbar-title slot="activator">
+          <v-btn large flat>
+            <img class="mr-3" :src="'/icons/locales/'+$i18n.locale+'.svg'" />
+            {{ localeName }}
+            <v-icon color="secondary">arrow_drop_down</v-icon>
+          </v-btn>
+        </v-toolbar-title>
+        <v-list>
+          <v-list-tile 
+               v-for="(locale, index) in $i18n.locales"
+               :key="index" :to="switchLocalePath(locale.code)">
+            <v-list-tile-action>
+              <img :src="'/icons/locales/'+locale.code+'.svg'" />
+            </v-list-tile-action>
+            <v-list-tile-content>
+              <v-list-tile-title>
+                {{ locale.name }}</v-list-tile-title>
+            </v-list-tile-content>
+          </v-list-tile>
+        </v-list>
+      </v-menu>
+      <v-spacer class="text-xs-center"></v-spacer>
+  </v-toolbar>
+</template>
+
+<script>
+import BaseLogo from '~/components/Base/Branding/BaseLogo'
+import IconGithub from '~/components/Base/Icons/IconGithub'
+import IconTwitter from '~/components/Base/Icons/IconTwitter'
+import IconInstagram from '~/components/Base/Icons/IconInstagram'
+import IconGitter from '~/components/Base/Icons/IconGitter'
+export default {
+  components: {
+    BaseLogo,
+    IconGithub,
+    IconTwitter,
+    IconInstagram,
+    IconGitter
+  },
+  props: {
+    dark: {
+      type: Boolean,
+      default: true
+    },
+    color: {
+      type: String,
+      default: 'primary'
+    },
+  },
+  name: 'FsMainToolbar',
+    computed: { 
+      localeName () {
+        const self = this
+        for (let locale of this.$i18n.locales) {
+          if(locale.code === self.$i18n.locale) {
+            return locale.name
+          }
+        }
+        return ''
+      }
+    },
+  methods: {
+    toggleDrawer: function(side) {
+      this.$store.commit('toggleDrawer', side)
+    }
+  }
+}
+</script>

@@ -1,0 +1,34 @@
+ul.todo 
+    &li
+      list-style-type: none
+
+      &:before
+        content: "check_box_outline"
+        font-family: "Material Icons" !important
+        font-style: normal !important
+        font-weight: normal !important
+        font-variant: normal !important
+        text-transform: none !important
+        speak: none
+        line-height: 1
+        -webkit-font-smoothing: antialiased
+        -moz-osx-font-smoothing: grayscale
+        font-size: 0.9em
+        color: $secondary
+        padding-right: 10px
+
+    .done:before
+      color: $info
+      content: "check_box"
+
+    .ongoing:before
+      color: $info
+
+    .blocking:before
+      content: 'pan_tool'
+      color: $warning
+
+    .wish:before
+      content: 'cake'
+      color: $accent
+
