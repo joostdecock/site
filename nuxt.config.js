@@ -103,6 +103,14 @@ module.exports = {
   router: {
     extendRoutes (routes, resolve) {
       routes.push({
+        path: '/signup/confirm/*', 
+        component: 'nuxt/pages/signup/confirm-email.vue'
+      })
+      routes.push({
+        path: '/signup/consent/profile/*', 
+        component: 'nuxt/pages/signup/consent-profile.vue'
+      })
+      routes.push({
         path: '/profile', 
         component: 'nuxt/pages/dynamic/show-user-profile.vue'
       })

@@ -49,7 +49,6 @@
       </div>
       <div v-else-if="success">
         <h1 class="mt-5 mb-1">{{ $t('welcomeAboard') }}</h1>
-        <h5> {{ $t('signup-success-title') }}</h5>
         <p> 
           {{ $t('signup-success-text', {email: email}) }}
           <br>
