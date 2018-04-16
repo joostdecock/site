@@ -125,10 +125,6 @@ module.exports = {
         path: '/signup/consent/*', 
         component: 'nuxt/pages/signup/consent-profile.vue'
       })
-      routes.push({
-        path: '/profile', 
-        component: 'nuxt/pages/dynamic/show-user-profile.vue'
-      })
     }
   },
   build: {
