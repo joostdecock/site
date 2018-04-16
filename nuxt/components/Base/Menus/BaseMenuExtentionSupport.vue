@@ -1,6 +1,6 @@
 <template>
   <v-list> 
-    <v-list-tile @click="gotoChat">
+    <v-list-tile href="https://gitter.im/freesewing/freesewing" target="_BLANK">
       <v-list-tile-action>
         <base-logo :size="(24)" color="#212121" />
       </v-list-tile-action>
@@ -17,12 +17,6 @@
     name: 'BaseMenuExtentionSupport',
     components: {
       BaseLogo
-    },  
-    methods: {
-      gotoChat: function() {
-        window.location = 'https://gitter.im/freesewing/freesewing'
-      } 
-    }
-  
+    }  
   }
 </script>

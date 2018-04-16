@@ -84,6 +84,20 @@ module.exports = {
   },
   auth: {
     strategies: {
+      signup: {
+        _scheme: 'local',
+        endpoints: {
+          login: {
+            url: freesewingConfig.api.data+"/newuser",
+            method: 'post',
+            propertyName: 'token'
+          },
+          user: {
+            url: freesewingConfig.api.data+"/account",
+            method: 'get'
+          }
+        }
+      },
       user: {
         _scheme: 'local',
         endpoints: {
@@ -107,7 +121,7 @@ module.exports = {
         component: 'nuxt/pages/signup/confirm-email.vue'
       })
       routes.push({
-        path: '/signup/consent/profile/*', 
+        path: '/signup/consent/*', 
         component: 'nuxt/pages/signup/consent-profile.vue'
       })
       routes.push({

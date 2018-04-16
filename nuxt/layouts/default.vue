@@ -14,6 +14,7 @@
                 <aside class="fs-sticky-column">
                   <div class="fs-scroll-column mt-5">
                     <base-main-menu-card /> 
+                    <base-user-menu-card v-if="$auth.loggedIn" class="mt-3"/> 
                     <div class="fs-toolbar-spacer"></div>
                   </div>
                 </aside>
@@ -42,6 +43,7 @@
 import TheRightDrawer from '~/components/SingleInstance/TheRightDrawer' 
 import TheLeftDrawer from '~/components/SingleInstance/TheLeftDrawer' 
 import BaseMainMenuCard from '~/components/Base/Menus/BaseMainMenuCard' 
+import BaseUserMenuCard from '~/components/Base/Menus/BaseUserMenuCard' 
 import BaseSecondaryMenuCard from '~/components/Base/Menus/BaseSecondaryMenuCard' 
 import FsMainToolbar from '~/components/Fs/Toolbars/FsMainToolbar' 
 import FsTopToolbar from '~/components/Fs/Toolbars/FsTopToolbar' 
@@ -54,6 +56,7 @@ export default {
     TheRightDrawer,
     TheLeftDrawer,
     BaseMainMenuCard,
+    BaseUserMenuCard,
     BaseSecondaryMenuCard,
     FsMainToolbar,
     FsTopToolbar,

@@ -1,43 +1,36 @@
 <template>
   <v-list>
-    <v-list-tile
-      router
-      :to="$fs.path(item.to)"
-      :key="i"
-      v-for="(item, i) in items"
-      exact
-    >
+    <v-list-tile :to="$fs.path('/docs/about')" v-if="!$auth.loggedIn">
       <v-list-tile-action>
-        <v-icon color="primary" v-html="item.icon"></v-icon>
+        <v-icon color="primary">info_outline</v-icon>
       </v-list-tile-action>
       <v-list-tile-content>
-        <v-list-tile-title v-text="$t(item.title)"></v-list-tile-title>
+        <v-list-tile-title>{{ $t('aboutFreesewing') }}</v-list-tile-title>
+      </v-list-tile-content>
+    </v-list-tile>
+    <v-list-tile :to="$fs.path('/docs/about')">
+      <v-list-tile-action>
+        <v-icon color="primary">content_paste</v-icon>
+      </v-list-tile-action>
+      <v-list-tile-content>
+        <v-list-tile-title>{{ $t('patterns') }}</v-list-tile-title>
+      </v-list-tile-content>
+    </v-list-tile>
+    <v-list-tile :to="$fs.path('/docs')">
+      <v-list-tile-action>
+        <v-icon color="primary">import_contacts</v-icon>
+      </v-list-tile-action>
+      <v-list-tile-content>
+        <v-list-tile-title>{{ $t('documentation') }}</v-list-tile-title>
+      </v-list-tile-content>
+    </v-list-tile>
+    <v-list-tile :to="$fs.path('/blog')">
+      <v-list-tile-action>
+        <v-icon color="primary">rss_feed</v-icon>
+      </v-list-tile-action>
+      <v-list-tile-content>
+        <v-list-tile-title>{{ $t('blog') }}</v-list-tile-title>
       </v-list-tile-content>
     </v-list-tile>
   </v-list>
 </template>
-
-<script>
-  export default {
-    name: 'FsMainMenu',
-    data () {
-      return {
-        items: [
-          { icon: 'home', title: 'home', to: '/' },
-          { icon: 'info_outline', title: 'aboutFreesewing', to: '/docs/about' },
-          { icon: 'content_paste', title: 'patterns', to: '/patterns' },
-          { icon: 'rss_feed', title: 'blog', to: '/blog' },
-          { icon: 'import_contacts', title: 'documentation', to: '/docs' },
-        ],
-      }
-    },
-  }
-</script>
-
-<style scope>
-a.list__tile--active {
-  background: rgba(0, 0, 0, .05)!important;
-  font-weight: bold;
-  border-right: 5px solid #212121;
-}
-</style>

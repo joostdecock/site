@@ -5,13 +5,13 @@
        <base-logo :size="(128)" />
      </nuxt-link>
    </v-card-title>
-   <v-divider></v-divider>
-   <base-menu-extention-signup />
-   <v-divider></v-divider>
+   <div v-if="!$auth.loggedIn">
+     <base-menu-extention-signup />
+     <v-divider></v-divider>
+   </div>
    <fs-main-menu />
    <v-divider></v-divider>
    <base-menu-extention-patron />
-
  </v-card>
 </template>
 

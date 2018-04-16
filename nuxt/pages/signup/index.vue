@@ -1,7 +1,7 @@
 <template>
   <section class="on-splash">
     <div v-if="$auth.loggedIn">
-      <p>fixme</p>
+      <base-logout />
     </div>
     <div v-else>
       <div v-if="error" class="mb-5">
@@ -104,12 +104,14 @@
 <script>
 import IconGithub from '~/components/Base/Icons/IconGithub'
 import IconGitter from '~/components/Base/Icons/IconGitter'
+import BaseLogout from '~/components/Base/Messages/BaseLogout'
 export default {
   auth: false,
   layout: 'splash',
   components: {
     IconGithub,
     IconGitter,
+    BaseLogout,
   },
   data () {
     return {

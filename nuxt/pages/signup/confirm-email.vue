@@ -1,7 +1,7 @@
 <template>
   <section class="on-splash">
     <div v-if="$auth.loggedIn">
-      <p>fixme</p>
+      <base-logout />
     </div>
     <div v-else>
       <div v-if="error" class="mb-5">
@@ -45,11 +45,13 @@
 
 <script>
 import IconGithub from '~/components/Base/Icons/IconGithub'
+import BaseLogout from '~/components/Base/Messages/BaseLogout'
 export default {
   auth: false,
   layout: 'splash',
   components: {
     IconGithub,
+    BaseLogout
   },
   data () {
     return {
@@ -71,14 +73,13 @@ export default {
     .catch((e) => {
       this.loading = false;
       this.error = true
-      console.log(e.response.data)
       this.reason = e.response.data.reason
     })
     .then((i) => {
       if(!this.error) {
         this.loading = false;
         this.success = true;
-        this.$router.push(this.$fs.path('/signup/consent/profile/'+hash))
+        this.$router.push(this.$fs.path('/signup/consent/'+hash))
       }
     })
   }
