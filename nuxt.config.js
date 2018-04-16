@@ -1,7 +1,7 @@
 const freesewingConfig = {
   api: {
-    data: "https://joost.data.freesewing.org",
-    content: "http://localhost:3000/content-api"
+    data: process.env.FS_DATA,
+    content: process.env.FS_SITE+"/content-api"
   }
 }
 
@@ -83,6 +83,7 @@ module.exports = {
     //      browserBaseURL: 'https://joost.data.freesewing.org'
   },
   auth: {
+    cookie: false,
     strategies: {
       signup: {
         _scheme: 'local',

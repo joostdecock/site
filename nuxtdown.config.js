@@ -65,6 +65,6 @@ module.exports = {
   ],
   api: {
     baseURL: 'http://localhost:3000',
-    browserBaseURL: "https://joost.admin.freesewing.org/content-api"
+    browserBaseURL: process.env.FS_SITE
   }
   }
