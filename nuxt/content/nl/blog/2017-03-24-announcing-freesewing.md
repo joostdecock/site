@@ -7,6 +7,12 @@ caption: "Het freesewing logo"
 author: 'Joost De Cock'
 category: docs
 blurb: "Met enige trots mag ik freesewing core v1.0.0 aankondigen, met bijhorende documentatie die het project in detail beschrijft."
+updates:
+ 1:
+   date: 2018-04-17 18:20
+   title: Vertaald naar het Nederlands
+   update: Vertaald naar het Nederlands van [de originele Engelstalige blogpost](/blog/announcing-freesewing).
+   by: joost
 ---
 Met enige trots mag ik [freesewing core v1.0.0](https://github.com/freesewing/core) 
 aankondigen, met bijhorende [documentatie](/docs) die het project in detail beschrijft.
@@ -16,50 +22,47 @@ Maar ik ben ook realistisch, en begrijp dat je niet de tijd hebt om je door pagi
 Dus is hier een verhaal dat de essentie van Freesewing samenvat:
 
 ## Het verhaal achter freesewing
-Sewing is easy. It really is. 
-What's hard is getting things to fit properly. 
-That's why you use a sewing pattern. 
-It's a blueprint for whatever it is you are making. 
-A good pattern gives you good fit. Most patterns don't.
+Kleren maken is makkelijk, echt wel.
+Wat moeilijk is om die kleren mooi te laten passen.
+Daarom gebruik je een naaipatroon.
+Dat dient als blauwdruk voor datgene wat je aan het maken bent.
+Een goed patroon geeft je een goeie pasvorm. De meeste patronen doen dat niet.
 
-That's because &mdash; much like clothes in the shop &mdash; patterns come in sizes. 
-And sizes are a crude way to put people in boxes. 
-They are made for an imaginary average person, rather than for you.
+Dat is omdat — net zoals de kleren die je koopt in de winkel — naaipatronen in verschillende maten worden gemaakt.
+En maten zijn een knullige manier om mensen in hokjes te passen.
+Ze zijn gemaakt voor een onbestaande gemiddelde persoon, niet voor jou.
 
-There's another way, and that is to draft a pattern based on your measurements. 
-These made-to-measure patterns are vastly superior, but they require a lot of work.
+Er is een andere manier, en dat is om een patroon te tekenen vertrekkende van de dimensies van je eigen lichaam.
+Zo'n naaipatroon-op-maat is een stuk beter, maar vergt een hoop werk.
 
-I wanted to change that, and that effort evolved into 
+Daar wou ik graag verandering in brengen, en dat intiatief is uitgemond in 
 [MakeMyPattern.com](https://makemypattern.com/).
-I ran that site for a number of years, and it was a remarkable success.
-Probably helped by the fact that I gave away all patterns for free.
+Die website heb ik een aantal jaren uitgebaat, en het was een opmerkelijk succes.
+Wellicht mede door het feit dat ik alle patronen gratis ter beschikking stelde.
 
-In the world of home sewing, it tends to require a bit of 
-explaining why one would choose to give away their work for free. 
-Things are different in the open source world where the idea of 
-sharing your work with others for the benefit of all is 
-the very thread from which communities are woven.
+In de wereld van de hobby kleermaker/kleermaakster is het niet altijd evident om uit te leggen 
+waarom iemand er voor kiest om zijn werk gratis weg te geven.
+De zaken liggen anders in de wereld van de open source software waar het idee van je werk delen met
+andere ten bate van iedereen het weefsel is waarmee de gemeenschap aan elkaar hangt.
 
-While I can't magically bring the culture of open source 
-to sewing patterns, I certainly can bring sewing patterns 
-into the open source world.
+Ik kan niet zomaar hocus-pocus de cultuur van open source naar de wereld van naaipatronen brengen.
+Maar wat ik wel kan doen is naaipatronen naar de wereld van open source brengen.
 
-[Freesewing.org](https://freesewing.org/) will continue to offer what 
-[Makemypattern.com](https://makemypattern.com/) does today: 
-free sewing patterns drafted to your measurements. 
-But additionally, it will be open to your contributions.
+[Freesewing.org](https://freesewing.org/) zal blijven aanbieden wat 
+[Makemypattern.com](https://makemypattern.com/) reeds aanbood: 
+vrije (en gratis) naaipatronen op maat.
+Maar daarenboven kan iedereen nu zijn steentje bijdragen.
 
-Here's hoping that in the Venn diagram of the somewhat geeky and sewing, 
-it's not just me in the middle.
+Ik hoop dat ik niet de enige ben die het Venn-diagrama van de hobby kleermakers en techneuten pal in het midden zit.
 
 joost
 
-## Shout-outs
-Freesewing is a project by [Joost De Cock](https://github.com/joostdecock) and contributors.
+## Bedankjes
+Freesewing is een project van [Joost De Cock](https://github.com/joostdecock) en vrijwillige medewerkers.
 
-Hat-tip to [@jakesgordon](https://github.com/jakesgordon) and [Kevin Lindsey](http://www.kevlindev.com) for allowing me to port some of their code.
+Dank aan [@jakesgordon](https://github.com/jakesgordon) en [Kevin Lindsey](http://www.kevlindev.com) die me toelieten om voor dit project een deel van hun code om te zetten.
                 
-The early-stage enthusiasm and input of
+Het enthousiasme en de input van
 [@diggydev](https://github.com/diggydev),
 [@cabi](https://github.com/cabi),
 [@woutervdub](https://github.com/woutervdub),
@@ -69,14 +72,14 @@ The early-stage enthusiasm and input of
 [@Stefan1960](https://github.com/Stefan1960),
 [@brendare1](https://github.com/brendare1),
 [@JorisJoppe](https://github.com/JorisJoppe),
-[@JamJenkins](https://github.com/JamJenkins), and
-[@fightingrabbit](https://github.com/fightingrabbit) has been a great boon to this project.
+[@JamJenkins](https://github.com/JamJenkins), en
+[@fightingrabbit](https://github.com/fightingrabbit) waren een belangrijke opsteker tijdens de ontwikkeling van dit project.
                 
-Thanks to [@annekecaramin](https://twitter.com/annekecaramin) for designing a logo cool enough to put on a Tshirt.
+Dank aan [@annekecaramin](https://twitter.com/annekecaramin) om een logo to ontwerpen dat cool genoeg is om op een T-shirt te zetten.
 
-Special thanks to [@scorchtorch](https://twitter.com/scorchtorch) for being the best at that heart/salad/antlers thing.
+Bijzondere dank aan [@scorchtorch](https://twitter.com/scorchtorch) die het best in is dat hart/sla/gewei gedoe.
                  
-Last but not least, this project would not exist without the users, supporters, and donors of [makemypattern.com](https://makemypattern.com/).
+Tot slot, dit project zou niet bestaan zonder de steun van de gebruikers en sponsors van [makemypattern.com](https://makemypattern.com/).
 
-Thanks guys!
+Bedankt allemaal!
 

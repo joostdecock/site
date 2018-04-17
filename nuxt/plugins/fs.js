@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import axios from 'axios'
+import MarkdownIt from 'markdown-it'
 
 export default ({ app, store, router }) => {
 
@@ -21,6 +22,7 @@ export default ({ app, store, router }) => {
           baseURL: process.env.FS_DATA,
           timeout: 4500
         })
-      }
+      },
+      md: new MarkdownIt()
     }
 }
