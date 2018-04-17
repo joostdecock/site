@@ -11,7 +11,7 @@
     </ul>
     <v-container fluid grid-list-lg>
       <v-layout row wrap>
-        <v-flex class="xs6 xl4" v-for="post in posts" :key="post.permalink" >
+        <v-flex class="xs12 sm6 xl4" v-for="post in posts" :key="post.permalink" >
           <v-card>
             <v-card-media to="/" :src="imgSrc(post.permalink, post.img)" :height="imageHeight">
               <nuxt-link :to="post.permalink" style="width: 100%; height: 100%" :title="post.title"></nuxt-link>	
