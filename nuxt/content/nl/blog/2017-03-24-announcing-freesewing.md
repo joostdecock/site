@@ -3,19 +3,19 @@ layout: blog
 title: "Nu beschikbaar: Freesewing, een open source platform voor naaipatronen op maat"
 linktitle: "Nu beschikbaar: Freesewing"
 img: freesewing-logo.jpg
-caption: "The freesewing logo"
+caption: "Het freesewing logo"
 author: 'Joost De Cock'
 category: docs
-blurb: "I am are proud to announce freesewing core v1.0.0 and the accompanying documentation that describes the freesewing project in detail."
+blurb: "Met enige trots mag ik freesewing core v1.0.0 aankondigen, met bijhorende documentatie die het project in detail beschrijft."
 ---
-I am are proud to announce [freesewing core v1.0.0](https://github.com/freesewing/core) 
-and the accompanying [documentation](/docs) that describes the freesewing project in detail.
+Met enige trots mag ik [freesewing core v1.0.0](https://github.com/freesewing/core) 
+aankondigen, met bijhorende [documentatie](/docs) die het project in detail beschrijft.
 
-But I'm also realistic, and understand that you don't have time to plow through pages upon pages of documentation.
+Maar ik ben ook realistisch, en begrijp dat je niet de tijd hebt om je door pagina's documentatie heen te worstelen.
 
-So instead, here's a story to give you the essence of freesewing in a nutshell:
+Dus is hier een verhaal dat de essentie van Freesewing samenvat:
 
-## The freesewing origin story
+## Het verhaal achter freesewing
 Sewing is easy. It really is. 
 What's hard is getting things to fit properly. 
 That's why you use a sewing pattern. 
