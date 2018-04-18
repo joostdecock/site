@@ -19,7 +19,7 @@ export default ({ app, store, router }) => {
       },
       api: {
         data: axios.create({
-          baseURL: process.env.FS_DATA,
+          baseURL: process.env.conf.api.data,
           timeout: 4500
         })
       },
