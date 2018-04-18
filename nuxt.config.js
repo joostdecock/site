@@ -64,7 +64,7 @@ module.exports = {
     '~/plugins/fs' 
   ],
   vuetify: {
-    materialIcons: true,
+    materialIcons: false,
     css: false,
     theme: {
       // This is Freesewing's signature purple
@@ -80,7 +80,7 @@ module.exports = {
     '~/assets/style/freesewing.styl'
   ],
   axios: {
-    //      browserBaseURL: 'https://joost.data.freesewing.org'
+    browserBaseURL: 'https://joost.data.freesewing.org'
   },
   auth: {
     cookie: false,
