@@ -131,6 +131,36 @@ module.exports = {
       })
     }
   },
+  generate: {
+    //routes: function (callback) {
+    //  var fs = require('./nuxt/static/json/freesewing.json')
+    //  var routes = Object.keys(fs.patterns).map( (pattern) => {
+    //    return '/patterns/' + pattern
+    //  })
+    //  console.log(routes)
+    //  callback(null, routes)
+    //}
+    routes: [
+        '/patterns/aaron',
+        '/patterns/brian',
+        '/patterns/bruce',
+        '/patterns/cathrin',
+        '/patterns/hugo',
+        '/patterns/simon',
+        '/patterns/sven',
+        '/patterns/tamiko',
+        '/patterns/theo',
+        '/patterns/theodore',
+        '/patterns/trayvon',
+        '/patterns/wahid',
+        '/patterns/benjamin',
+        '/patterns/bent',
+        '/patterns/carlita',
+        '/patterns/carlton',
+        '/patterns/florent',
+        '/patterns/jaeger',
+    ]
+  },
   build: {
     /*
      ** Run ESLint on save
