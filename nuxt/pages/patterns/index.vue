@@ -27,7 +27,7 @@
             <v-card-text class="fs-nodeco">
               <h5 class="mb-0 mt-0 thetitle">
                 <nuxt-link :to="$fs.path('/patterns/'+pattern)" :title="pattern">
-                  {{ $fs.conf.patterns[pattern].info.name }}
+                  {{ pattern[0].toUpperCase() + pattern.slice(1) }}
                 </nuxt-link>	
               </h5>
               <p class="mb-0 mt-2">
