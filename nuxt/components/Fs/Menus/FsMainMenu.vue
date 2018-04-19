@@ -8,7 +8,7 @@
         <v-list-tile-title>{{ $t('aboutFreesewing') }}</v-list-tile-title>
       </v-list-tile-content>
     </v-list-tile>
-    <v-list-tile :to="$fs.path('/docs/about')">
+    <v-list-tile :to="$fs.path('/patterns')">
       <v-list-tile-action>
         <v-icon color="primary">content_paste</v-icon>
       </v-list-tile-action>

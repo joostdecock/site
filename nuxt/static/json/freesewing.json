@@ -3,11 +3,12 @@
         "core": "1.8.0"
     },
     "patterns": {
-        "AaronAshirt": {
+        "aaron": {
             "info": {
                 "name": "Aaron A-Shirt",
                 "description": "Aaron is an athletic shirt or tank top",
                 "handle": "aaron",
+                "level": 3,
                 "tags": [
                     "top",
                     "underwear",
@@ -17,7 +18,8 @@
                 "inMemoryOf": {
                     "name": "Aaron Swartz",
                     "link": "https://en.wikipedia.org/wiki/Aaron_Swartz"
-                }
+                },
+                "class": "AaronAshirt"
             },
             "parts": {
                 "front": "Front",
@@ -146,16 +148,18 @@
                 ]
             }
         },
-        "BrianBodyBlock": {
+        "brian": {
             "info": {
                 "name": "Brian Body Block",
                 "description": "Brian is a basic body block for men",
                 "handle": "brian",
+                "level": 3,
                 "tags": [
                     "menswear",
                     "top",
                     "block"
-                ]
+                ],
+                "class": "BrianBodyBlock"
             },
             "parts": {
                 "backBlock": "Back block",
@@ -268,11 +272,12 @@
                 ]
             }
         },
-        "BruceBoxerBriefs": {
+        "bruce": {
             "info": {
                 "name": "Bruce Boxer Briefs",
                 "description": "Bruce are comfortable yet stylish boxer briefs",
                 "handle": "bruce",
+                "level": 4,
                 "version": 2,
                 "author": "Joost De Cock",
                 "company": "freesewing",
@@ -281,7 +286,8 @@
                     "menswear",
                     "underwear",
                     "bottom"
-                ]
+                ],
+                "class": "BruceBoxerBriefs"
             },
             "parts": {
                 "front": "Front",
@@ -377,16 +383,18 @@
                 ]
             }
         },
-        "CathrinCorset": {
+        "cathrin": {
             "info": {
                 "name": "Cathrin Corset",
                 "description": "Cathrin is an underbust corset or waist trainer",
                 "handle": "cathrin",
+                "level": 7,
                 "tags": [
                     "womenswear",
                     "underwear",
                     "corset"
-                ]
+                ],
+                "class": "CathrinCorset"
             },
             "parts": {
                 "panels": "Corset"
@@ -494,11 +502,12 @@
                 ]
             }
         },
-        "HugoHoodie": {
+        "hugo": {
             "info": {
                 "name": "Hugo Hoodie",
                 "description": "Hugo is a hooded jumper with raglan sleeves",
                 "handle": "hugo",
+                "level": 5,
                 "tags": [
                     "menswear",
                     "hoodie",
@@ -508,7 +517,8 @@
                 "inMemoryOf": {
                     "name": "Hugo De Cock",
                     "link": "https://www.instagram.com/p/p6CnG3rpir/"
-                }
+                },
+                "class": "HugoHoodie"
             },
             "parts": {
                 "front": "Front",
@@ -620,16 +630,18 @@
                 ]
             }
         },
-        "SimonShirt": {
+        "simon": {
             "info": {
                 "name": "Simon Shirt",
                 "description": "Simon is a highly adaptable shirt pattern for men",
                 "handle": "simon",
+                "level": 7,
                 "tags": [
                     "menswear",
                     "top",
                     "shirt"
-                ]
+                ],
+                "class": "SimonShirt"
             },
             "parts": {
                 "frontRight": "Front right",
@@ -1162,16 +1174,18 @@
                 ]
             }
         },
-        "SvenSweatshirt": {
+        "sven": {
             "info": {
                 "name": "Sven Sweatshirt",
                 "description": "Sven is a straightforward sweater",
                 "handle": "sven",
+                "level": 5,
                 "tags": [
                     "menswear",
                     "top",
                     "sweater"
-                ]
+                ],
+                "class": "SvenSweatshirt"
             },
             "parts": {
                 "back": "Back",
@@ -1303,16 +1317,18 @@
                 ]
             }
         },
-        "TamikoTop": {
+        "tamiko": {
             "info": {
                 "name": "Tamiko Top",
                 "description": "Tamiko is a zero-waste top",
                 "handle": "tamiko",
+                "level": 2,
                 "tags": [
                     "womenswear",
                     "menswear",
                     "top"
-                ]
+                ],
+                "class": "TamikoTop"
             },
             "parts": {
                 "top": "Tamiko Top"
@@ -1344,16 +1360,18 @@
                 ]
             }
         },
-        "TheoTrousers": {
+        "theo": {
             "info": {
                 "name": "Theo trousers",
                 "description": "Theo is Theodore with a more slim cut",
                 "handle": "theo",
+                "level": 8,
                 "tags": [
                     "menswear",
                     "trousers",
                     "bottom"
-                ]
+                ],
+                "class": "TheoTrousers"
             },
             "parts": {
                 "back": "Back",
@@ -1422,16 +1440,18 @@
                 ]
             }
         },
-        "TheodoreTrousers": {
+        "theodore": {
             "info": {
                 "name": "Theodore trousers",
                 "description": "Thedore are classic trousers by the (Aldrich) book",
                 "handle": "theodore",
+                "level": 8,
                 "tags": [
                     "menswear",
                     "trousers",
                     "bottom"
-                ]
+                ],
+                "class": "TheodoreTrousers"
             },
             "parts": {
                 "back": "Back",
@@ -1500,18 +1520,20 @@
                 ]
             }
         },
-        "TrayvonTie": {
+        "trayvon": {
             "info": {
                 "name": "Trayvon Tie",
                 "description": "Trayvon is a tie that cuts no corners for a professional result",
                 "handle": "trayvon",
+                "level": 3,
                 "tags": [
                     "accessories"
                 ],
                 "inMemoryOf": {
                     "name": "Trayvon Martin",
                     "link": "https://en.wikipedia.org/wiki/Trayvon_Martin"
-                }
+                },
+                "class": "TrayvonTie"
             },
             "parts": {
                 "interfacingTip": "Interfacing tip",
@@ -1558,16 +1580,18 @@
                 ]
             }
         },
-        "WahidWaistcoat": {
+        "wahid": {
             "info": {
                 "name": "Wahid Waistcoat",
                 "handle": "wahid",
+                "level": 6,
                 "description": "Wahid is a classic fitted waistcoat",
                 "tags": [
                     "menswear",
                     "top",
                     "waistcoat"
-                ]
+                ],
+                "class": "WahidWaistcoat"
             },
             "parts": {
                 "front": "Front",
@@ -1794,14 +1818,16 @@
                 ]
             }
         },
-        "BenjaminBowTie": {
+        "benjamin": {
             "info": {
                 "name": "Benjamin Bow Tie",
                 "description": "Benjamin is a bow tie pattern with four different shape options.",
                 "handle": "benjamin",
+                "level": 4,
                 "tags": [
                     "accessories"
-                ]
+                ],
+                "class": "BenjaminBowTie"
             },
             "seamAllowance": {
                 "metric": 0.6,
@@ -1915,20 +1941,18 @@
                 ]
             }
         },
-        "BentBodyBlock": {
+        "bent": {
             "info": {
                 "name": "Bent Body Block",
                 "description": "This two-part sleeve block is the basis of our coat and jacket patterns",
                 "handle": "bent",
-                "version": 0.3,
-                "author": "Joost De Cock",
-                "company": "freesewing.org",
-                "link": "freesewing.org/pattern/bent",
+                "level": 6,
                 "tags": [
                     "menswear",
                     "top",
                     "block"
-                ]
+                ],
+                "class": "BentBodyBlock"
             },
             "parts": {
                 "backBlock": "Back block",
@@ -2064,15 +2088,17 @@
                 ]
             }
         },
-        "CarlitaCoat": {
+        "carlita": {
             "info": {
                 "name": "Carlita Coat",
                 "description": "The womenswear version of our Carlton coat, aka Sherlock Holmes coat",
                 "handle": "carlita",
+                "level": 9,
                 "tags": [
                     "womenswear",
                     "coat"
-                ]
+                ],
+                "class": "CarlitaCoat"
             },
             "seamAllowance": {
                 "metric": 2,
@@ -2256,20 +2282,17 @@
                 ]
             }
         },
-        "CarltonCoat": {
+        "carlton": {
             "info": {
                 "name": "Carlton Coat",
                 "description": "For Sherlock Holmes cosplay, or just a really nice coat",
                 "handle": "carlton",
-                "version": 1,
-                "date": 20170203,
-                "author": "Joost De Cock",
-                "email": "joost@decock.org",
-                "company": "freesewing.org",
+                "level": 9,
                 "tags": [
                     "menswear",
                     "coat"
-                ]
+                ],
+                "class": "CarltonCoat"
             },
             "parts": {
                 "front": "Front",
@@ -2436,17 +2459,19 @@
                 ]
             }
         },
-        "FlorentFlatCap": {
+        "florent": {
             "info": {
                 "name": "Florent Flat Cap",
                 "description": "Florent is a flat cap, a rounded cap with a small stiff brim in front",
                 "handle": "florent",
+                "level": 4,
                 "tags": [
                     "menswear",
                     "womenswear",
                     "hats",
                     "accessories"
-                ]
+                ],
+                "class": "FlorentFlatCap"
             },
             "parts": {
                 "top": "Cap Top",
@@ -2478,7 +2503,7 @@
                 ]
             }
         },
-        "HueyHoodie": {
+        "huey": {
             "hidden": [
                 false
             ],
@@ -2486,11 +2511,13 @@
                 "name": "Huey Hoodie",
                 "description": "Huey is a zip-up hoodie with optional front pockets",
                 "handle": "huey",
+                "level": 6,
                 "tags": [
                     "menswear",
                     "top",
                     "hoodie"
-                ]
+                ],
+                "class": "HueyHoodie"
             },
             "parts": {
                 "front": "Front",
@@ -2618,16 +2645,18 @@
                 ]
             }
         },
-        "JaegerJacket": {
+        "jaeger": {
             "info": {
                 "name": "Jaeger Jacket",
                 "description": "Jeager is a sport coat style jacket with two buttons and patch pockets.",
+                "level": 9,
                 "handle": "jaeger",
                 "tags": [
                     "menswear",
                     "top",
                     "blazer"
-                ]
+                ],
+                "class": "JaegerJacket"
             },
             "parts": {
                 "topsleeveBlock": "Topsleeve block",
@@ -3176,7 +3205,6 @@
             "jaeger": "Beta"
         },
         "measurementToTitle": {
-            "acrossBack": "Across back",
             "bicepsCircumference": "Biceps circumference",
             "bustSpan": "Bust span",
             "centerBackNeckToWaist": "Centerback neck to waist",

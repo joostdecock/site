@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    width ="1524.8905526382"
+    height ="325.98425228"
+    viewbox ="0 0 1524.8905526382 325.98425228" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" 
+>
+
+<style type="text/css">
+    <![CDATA[
+    path { fill: none; stroke: #000000; stroke-opacity:1; stroke-width: 0.5; stroke-miterlimit:4; stroke-dashoffset:0; stroke-linecap:round; stroke-linejoin:round; }
+    path.hidden { fill: none; stroke: none; }]]>
+</style>
+
+
+<!-- Start of group #patternScaleContainer -->
+<g id="patternScaleContainer"  transform=" scale(3.54330709 ) " >
+    
+    <!-- Start of group #collar -->
+    <g id="collar"  transform=" translate(215.179 87)  translate(0 0) " >
+        <path class="hidden" id="2"  d=" M  -210.179,-82  L  210.179,-82  L  210.179,0  L  -210.179,0  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(26.9, 55%, 50%);" id="206"  d=" M  0,-5  C  174,-5  205,0  205,0  L  209.986,-57  C  209.986,-57  152.25,-47  104.993,-47  L  -104.993,-47  C  -152.25,-47  -209.986,-57  -209.986,-57  L  -205,0  C  -205,0  -174,-5  0,-5  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(53.8, 55%, 50%);" id="415"  d=" M  0,-7.5  C  173.934,-7.5  204.918,0  204.918,0  L  210.123,-59.5  C  210.123,-59.5  152.193,-49.5  105.062,-49.5  L  -105.062,-49.5  C  -152.193,-49.5  -210.123,-59.5  -210.123,-59.5  L  -204.918,0  C  -204.918,0  -173.934,-7.5  0,-7.5  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(80.7, 55%, 50%);" id="624"  d=" M  0,-10  C  173.804,-10  204.755,0  204.755,0  L  210.179,-62  C  210.179,-62  152.079,-52  105.09,-52  L  -105.09,-52  C  -152.079,-52  -210.179,-62  -210.179,-62  L  -204.755,0  C  -204.755,0  -173.804,-10  0,-10  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(107.6, 55%, 50%);" id="833"  d=" M  0,-12.5  C  173.542,-12.5  204.428,0  204.428,0  L  210.071,-64.5  C  210.071,-64.5  151.85,-54.5  105.036,-54.5  L  -105.036,-54.5  C  -151.85,-54.5  -210.071,-64.5  -210.071,-64.5  L  -204.428,0  C  -204.428,0  -173.542,-12.5  0,-12.5  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(134.5, 55%, 50%);" id="1042"  d=" M  0,-15  C  173.104,-15  203.88,0  203.88,0  L  209.741,-67  C  209.741,-67  151.466,-57  104.871,-57  L  -104.871,-57  C  -151.466,-57  -209.741,-67  -209.741,-67  L  -203.88,0  C  -203.88,0  -173.104,-15  0,-15  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(161.4, 55%, 50%);" id="1251"  d=" M  0,-17.5  C  172.974,-17.5  203.717,0  203.717,0  L  209.797,-69.5  C  209.797,-69.5  151.352,-59.5  104.899,-59.5  L  -104.899,-59.5  C  -151.352,-59.5  -209.797,-69.5  -209.797,-69.5  L  -203.717,0  C  -203.717,0  -172.974,-17.5  0,-17.5  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(188.3, 55%, 50%);" id="1460"  d=" M  0,-20  C  172.649,-20  203.311,0  203.311,0  L  209.61,-72  C  209.61,-72  151.068,-62  104.805,-62  L  -104.805,-62  C  -151.068,-62  -209.61,-72  -209.61,-72  L  -203.311,0  C  -203.311,0  -172.649,-20  0,-20  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(215.2, 55%, 50%);" id="1669"  d=" M  0,-22.5  C  172.213,-22.5  202.766,0  202.766,0  L  209.283,-74.5  C  209.283,-74.5  150.686,-64.5  104.642,-64.5  L  -104.642,-64.5  C  -150.686,-64.5  -209.283,-74.5  -209.283,-74.5  L  -202.766,0  C  -202.766,0  -172.213,-22.5  0,-22.5  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(242.1, 55%, 50%);" id="1878"  d=" M  0,-25  C  171.759,-25  202.199,0  202.199,0  L  208.935,-77  C  208.935,-77  150.289,-67  104.468,-67  L  -104.468,-67  C  -150.289,-67  -208.935,-77  -208.935,-77  L  -202.199,0  C  -202.199,0  -171.759,-25  0,-25  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(269, 55%, 50%);" id="2087"  d=" M  0,-27.5  C  171.261,-27.5  201.576,0  201.576,0  L  208.531,-79.5  C  208.531,-79.5  149.853,-69.5  104.266,-69.5  L  -104.266,-69.5  C  -149.853,-69.5  -208.531,-79.5  -208.531,-79.5  L  -201.576,0  C  -201.576,0  -171.261,-27.5  0,-27.5  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(295.9, 55%, 50%);" id="2296"  d=" M  0,-30  C  170.507,-30  200.634,0  200.634,0  L  207.808,-82  C  207.808,-82  149.194,-72  103.904,-72  L  -103.904,-72  C  -149.194,-72  -207.808,-82  -207.808,-82  L  -200.634,0  C  -200.634,0  -170.507,-30  0,-30  z " />
+    </g>
+    <!-- End of group #collar -->
+</g>
+<!-- End of group #patternScaleContainer -->
+
+</svg>
+

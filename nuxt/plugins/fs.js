@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import axios from 'axios'
 import MarkdownIt from 'markdown-it'
+import FreesewingData from '~/static/json/freesewing.json'
 
 export default ({ app, store, router }) => {
 
@@ -23,6 +24,7 @@ export default ({ app, store, router }) => {
           timeout: 4500
         })
       },
-      md: new MarkdownIt()
+      md: new MarkdownIt(),
+      conf: FreesewingData
     }
 }

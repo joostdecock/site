@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    width ="1840.748033255"
+    height ="2637.400396221"
+    viewbox ="0 0 1840.748033255 2637.400396221" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" 
+>
+
+<style type="text/css">
+    <![CDATA[
+    path { fill: none; stroke: #000000; stroke-opacity:1; stroke-width: 0.5; stroke-miterlimit:4; stroke-dashoffset:0; stroke-linecap:round; stroke-linejoin:round; }
+    path.hidden { fill: none; stroke: none; }]]>
+</style>
+
+
+<!-- Start of group #patternScaleContainer -->
+<g id="patternScaleContainer"  transform=" scale(3.54330709 ) " >
+    
+    <!-- Start of group #frontBlock -->
+    <g id="frontBlock"  transform=" translate(0 0)  translate(519.5 0) " >
+    </g>
+    <!-- End of group #frontBlock -->
+    
+    <!-- Start of group #backBlock -->
+    <g id="backBlock"  transform=" translate(0 0)  translate(519.5 0) " >
+    </g>
+    <!-- End of group #backBlock -->
+    
+    <!-- Start of group #front -->
+    <g id="front"  transform=" translate(5 -0.667)  translate(259.75 0) " >
+        <path class="hidden" id="2"  d=" M  0,5.667  L  249.75,5.667  L  249.75,740  L  0,740  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(26.9, 55%, 50%);" id="8"  d=" M  0,500  L  0,740  L  204.75,740  L  204.75,500  C  204.75,415.333  242.018,276  242.018,276  C  157.775,276  143.452,127.393  157.775,10.533  L  118.073,5.667  C  101.609,140  101.609,140  0,140  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(53.8, 55%, 50%);" id="16"  d=" M  0,500  L  0,740  L  209.25,740  L  209.25,500  C  209.25,415.333  242.791,276  242.791,276  C  157.775,276  143.452,127.393  157.775,10.533  L  118.073,5.667  C  101.609,140  101.609,140  0,140  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(80.7, 55%, 50%);" id="24"  d=" M  0,500  L  0,740  L  213.75,740  L  213.75,500  C  213.75,415.333  243.564,276  243.564,276  C  157.775,276  143.452,127.393  157.775,10.533  L  118.073,5.667  C  101.609,140  101.609,140  0,140  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(107.6, 55%, 50%);" id="32"  d=" M  0,500  L  0,740  L  218.25,740  L  218.25,500  C  218.25,415.333  244.337,276  244.337,276  C  157.775,276  143.452,127.393  157.775,10.533  L  118.073,5.667  C  101.609,140  101.609,140  0,140  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(134.5, 55%, 50%);" id="40"  d=" M  0,500  L  0,740  L  222.75,740  L  222.75,500  C  222.75,415.333  245.111,276  245.111,276  C  157.775,276  143.452,127.393  157.775,10.533  L  118.073,5.667  C  101.609,140  101.609,140  0,140  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(161.4, 55%, 50%);" id="48"  d=" M  0,500  L  0,740  L  227.25,740  L  227.25,500  C  227.25,415.333  245.884,276  245.884,276  C  157.775,276  143.452,127.393  157.775,10.533  L  118.073,5.667  C  101.609,140  101.609,140  0,140  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(188.3, 55%, 50%);" id="56"  d=" M  0,500  L  0,740  L  231.75,740  L  231.75,500  C  231.75,415.333  246.657,276  246.657,276  C  157.775,276  143.452,127.393  157.775,10.533  L  118.073,5.667  C  101.609,140  101.609,140  0,140  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(215.2, 55%, 50%);" id="64"  d=" M  0,500  L  0,740  L  236.25,740  L  236.25,500  C  236.25,415.333  247.43,276  247.43,276  C  157.775,276  143.452,127.393  157.775,10.533  L  118.073,5.667  C  101.609,140  101.609,140  0,140  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(242.1, 55%, 50%);" id="72"  d=" M  0,500  L  0,740  L  240.75,740  L  240.75,500  C  240.75,415.333  248.204,276  248.204,276  C  157.775,276  143.452,127.393  157.775,10.533  L  118.073,5.667  C  101.609,140  101.609,140  0,140  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(269, 55%, 50%);" id="80"  d=" M  0,500  L  0,740  L  245.25,740  L  245.25,500  C  245.25,415.333  248.977,276  248.977,276  C  157.775,276  143.452,127.393  157.775,10.533  L  118.073,5.667  C  101.609,140  101.609,140  0,140  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(295.9, 55%, 50%);" id="88"  d=" M  0,500  L  0,740  L  249.75,740  L  249.75,500  C  249.75,415.333  249.75,276  249.75,276  C  157.775,276  143.452,127.393  157.775,10.533  L  118.073,5.667  C  101.609,140  101.609,140  0,140  z " />
+    </g>
+    <!-- End of group #front -->
+    
+    <!-- Start of group #back -->
+    <g id="back"  transform=" translate(5 -0.667)  translate(0 0) " >
+        <path class="hidden" id="3"  d=" M  0,5.667  L  249.75,5.667  L  249.75,740  L  0,740  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(26.9, 55%, 50%);" id="9"  d=" M  0,500  L  0,740  L  204.75,740  L  204.75,500  C  204.75,415.333  242.018,276  242.018,276  C  169.614,276  137.602,175.123  157.775,10.533  L  118.073,5.667  C  114.784,32.5  59.037,32.5  0,32.5  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(53.8, 55%, 50%);" id="17"  d=" M  0,500  L  0,740  L  209.25,740  L  209.25,500  C  209.25,415.333  242.791,276  242.791,276  C  169.908,276  137.602,175.123  157.775,10.533  L  118.073,5.667  C  114.784,32.5  59.037,32.5  0,32.5  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(80.7, 55%, 50%);" id="25"  d=" M  0,500  L  0,740  L  213.75,740  L  213.75,500  C  213.75,415.333  243.564,276  243.564,276  C  170.202,276  137.602,175.123  157.775,10.533  L  118.073,5.667  C  114.784,32.5  59.037,32.5  0,32.5  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(107.6, 55%, 50%);" id="33"  d=" M  0,500  L  0,740  L  218.25,740  L  218.25,500  C  218.25,415.333  244.337,276  244.337,276  C  170.496,276  137.602,175.123  157.775,10.533  L  118.073,5.667  C  114.784,32.5  59.037,32.5  0,32.5  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(134.5, 55%, 50%);" id="41"  d=" M  0,500  L  0,740  L  222.75,740  L  222.75,500  C  222.75,415.333  245.111,276  245.111,276  C  170.79,276  137.602,175.123  157.775,10.533  L  118.073,5.667  C  114.784,32.5  59.037,32.5  0,32.5  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(161.4, 55%, 50%);" id="49"  d=" M  0,500  L  0,740  L  227.25,740  L  227.25,500  C  227.25,415.333  245.884,276  245.884,276  C  171.083,276  137.602,175.123  157.775,10.533  L  118.073,5.667  C  114.784,32.5  59.037,32.5  0,32.5  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(188.3, 55%, 50%);" id="57"  d=" M  0,500  L  0,740  L  231.75,740  L  231.75,500  C  231.75,415.333  246.657,276  246.657,276  C  171.377,276  137.602,175.123  157.775,10.533  L  118.073,5.667  C  114.784,32.5  59.037,32.5  0,32.5  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(215.2, 55%, 50%);" id="65"  d=" M  0,500  L  0,740  L  236.25,740  L  236.25,500  C  236.25,415.333  247.43,276  247.43,276  C  171.671,276  137.602,175.123  157.775,10.533  L  118.073,5.667  C  114.784,32.5  59.037,32.5  0,32.5  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(242.1, 55%, 50%);" id="73"  d=" M  0,500  L  0,740  L  240.75,740  L  240.75,500  C  240.75,415.333  248.204,276  248.204,276  C  171.965,276  137.602,175.123  157.775,10.533  L  118.073,5.667  C  114.784,32.5  59.037,32.5  0,32.5  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(269, 55%, 50%);" id="81"  d=" M  0,500  L  0,740  L  245.25,740  L  245.25,500  C  245.25,415.333  248.977,276  248.977,276  C  172.259,276  137.602,175.123  157.775,10.533  L  118.073,5.667  C  114.784,32.5  59.037,32.5  0,32.5  z " />
+<path transform="translate( 0, 0 )" style="stroke: hsl(295.9, 55%, 50%);" id="89"  d=" M  0,500  L  0,740  L  249.75,740  L  249.75,500  C  249.75,415.333  249.75,276  249.75,276  C  172.553,276  137.602,175.123  157.775,10.533  L  118.073,5.667  C  114.784,32.5  59.037,32.5  0,32.5  z " />
+    </g>
+    <!-- End of group #back -->
+    
+    <!-- Start of group #sampler-front -->
+    <g id="sampler-front"  transform=" translate(0 0)  translate(519.5 0) " >
+    </g>
+    <!-- End of group #sampler-front -->
+    
+    <!-- Start of group #sampler-back -->
+    <g id="sampler-back"  transform=" translate(0 0)  translate(519.5 0) " >
+    </g>
+    <!-- End of group #sampler-back -->
+</g>
+<!-- End of group #patternScaleContainer -->
+
+</svg>
+
