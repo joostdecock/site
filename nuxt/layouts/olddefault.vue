@@ -10,11 +10,20 @@
         <v-content class="fs-vertical-container">
           <v-container>
             <v-layout row wrap>
-              <v-flex xl6 offset-xl1 lg7 offset-lg0 md10 offset-md1 sm12 xs12>
+              <v-flex xl2 offset-xl1 lg3 hidden-md-and-down>
+                <aside class="fs-sticky-column">
+                  <div class="fs-scroll-column mt-5">
+                    <base-main-menu-card /> 
+                    <base-user-menu-card v-if="$auth.loggedIn" class="mt-3"/> 
+                    <div class="fs-toolbar-spacer"></div>
+                  </div>
+                </aside>
+              </v-flex>
+              <v-flex xl5 offset-xl0 lg6 offset-lg0 md8 sm12 xs12 id="fs-mid-column">
                 <nuxt />
               </v-flex>
-              <v-flex xl3 offset-xl1 lg4 offset-lg1 hidden-md-and-down>
-                <aside class="fs-sticky-column">
+              <v-flex xl2 offset-xl0 lg3 md3 offset-lg0 offset-md1 hidden-sm-and-down>
+                <aside class="fs-sticky-column fs-stick-right">
                   <div class="fs-scroll-column mt-5">
                     <component :is="rightColumnComponent" /> 
                     <div class="fs-toolbar-spacer"></div>
@@ -33,6 +42,9 @@
 <script>
 import TheRightDrawer from '~/components/SingleInstance/TheRightDrawer' 
 import TheLeftDrawer from '~/components/SingleInstance/TheLeftDrawer' 
+import BaseMainMenuCard from '~/components/Base/Menus/BaseMainMenuCard' 
+import BaseUserMenuCard from '~/components/Base/Menus/BaseUserMenuCard' 
+import BaseSecondaryMenuCard from '~/components/Base/Menus/BaseSecondaryMenuCard' 
 import FsMainToolbar from '~/components/Fs/Toolbars/FsMainToolbar' 
 import FsTopToolbar from '~/components/Fs/Toolbars/FsTopToolbar' 
 // Dynamic components
@@ -43,6 +55,9 @@ export default {
   components: { 
     TheRightDrawer,
     TheLeftDrawer,
+    BaseMainMenuCard,
+    BaseUserMenuCard,
+    BaseSecondaryMenuCard,
     FsMainToolbar,
     FsTopToolbar,
     FsRightColumnBlogpost,

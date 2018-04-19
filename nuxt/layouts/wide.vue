@@ -5,15 +5,7 @@
         <v-content class="fs-vertical-container">
           <v-container>
             <v-layout row wrap>
-              <v-flex xl2 offset-xl1 lg3 hidden-md-and-down>
-                <aside class="fs-sticky-column">
-                  <div class="fs-scroll-column mt-5">
-                    <base-main-menu-card /> 
-                    <div class="fs-toolbar-spacer"></div>
-                  </div>
-                </aside>
-              </v-flex>
-              <v-flex xl8 lg9 md12 sm12 xs12>
+              <v-flex xl10 offset-xl1 lg12 md12 sm12 xs12>
                 <nuxt />
               </v-flex>
             </v-layout>
