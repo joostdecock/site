@@ -1,4 +1,5 @@
 <template>
+  <div>
   <v-toolbar 
     :color="color"
     flat>
@@ -10,13 +11,6 @@
         </v-btn>
       </nuxt-link>
 
-      <nuxt-link :to="$fs.path('/documentation')">
-        <v-btn flat large>
-          <v-icon class="mr-3" color="primary">import_contacts</v-icon>
-          {{ $t('documentation') }}
-        </v-btn>
-      </nuxt-link>
-      
       <nuxt-link :to="$fs.path('/blog')">
         <v-btn flat large>
           <v-icon class="mr-3" color="primary">rss_feed</v-icon>
@@ -24,6 +18,71 @@
         </v-btn>
       </nuxt-link>
       
+      <v-menu nudge-right>
+        <v-toolbar-title slot="activator">
+          <v-btn large flat>
+            <v-icon class="mr-3">import_contacts</v-icon>
+            {{ $t('documentation') }}
+            <v-icon color="secondary">arrow_drop_down</v-icon>
+          </v-btn>
+        </v-toolbar-title>
+        <v-list>
+          
+          <v-list-tile>
+            <v-list-tile-content><b>{{ $t('forUsers') }}</b></v-list-tile-content>
+          </v-list-tile>
+
+          <v-list-tile :to="$fs.path('/docs/about')">
+            <v-list-tile-action><v-icon color="primary">info_outline</v-icon></v-list-tile-action>
+            <v-list-tile-content>{{ $t('aboutFreesewing') }}</v-list-tile-content>
+          </v-list-tile>
+
+          <v-list-tile :to="$fs.path('/docs/patterns')">
+            <v-list-tile-action><v-icon color="primary">content_cut</v-icon></v-list-tile-action>
+            <v-list-tile-content>{{ $t('patternDocumentation') }}</v-list-tile-content>
+          </v-list-tile>
+
+          <v-list-tile :to="$fs.path('/docs/measurements')">
+            <v-list-tile-action><v-icon color="primary">accessibility</v-icon></v-list-tile-action>
+            <v-list-tile-content>{{ $t('howToTakeMeasurements') }}</v-list-tile-content>
+          </v-list-tile>
+          
+          <v-divider />
+          <v-list-tile>
+            <v-list-tile-content><b>{{ $t('forContributors') }}</b></v-list-tile-content>
+          </v-list-tile>
+
+          <v-list-tile :to="$fs.path('/docs/fundamentals')">
+            <v-list-tile-action><v-icon color="primary">motorcycle</v-icon></v-list-tile-action>
+            <v-list-tile-content>{{ $t('fundamentals') }}</v-list-tile-content>
+          </v-list-tile>
+          
+          <v-list-tile :to="$fs.path('/docs/designer/tutorial/part-1')">
+            <v-list-tile-action><v-icon color="primary">gesture</v-icon></v-list-tile-action>
+            <v-list-tile-content>{{ $t('learnToDesignPatterns') }}</v-list-tile-content>
+          </v-list-tile>
+          
+          <v-list-tile :to="$fs.path('/docs/api')">
+            <v-list-tile-action><v-icon color="primary">code</v-icon></v-list-tile-action>
+            <v-list-tile-content>{{ $t('documentationForDevelopers') }}</v-list-tile-content>
+          </v-list-tile>
+
+          <v-list-tile :to="$fs.path('/docs/api')">
+            <v-list-tile-action><v-icon color="primary">translate</v-icon></v-list-tile-action>
+            <v-list-tile-content>{{ $t('documentationForTranslators') }}</v-list-tile-content>
+          </v-list-tile>
+          
+          <v-divider />
+
+          <v-list-tile :to="$fs.path('/docs')">
+            <v-list-tile-action><v-icon color="primary">book</v-icon></v-list-tile-action>
+            <v-list-tile-content>{{ $t('documentationOverview') }}</v-list-tile-content>
+          </v-list-tile>
+
+
+        </v-list>
+      </v-menu>
+
       <nuxt-link :to="$fs.path('/search')">
         <v-btn flat large>
           <v-icon class="mr-3" color="primary">search</v-icon>
@@ -103,8 +162,33 @@
           </v-list-tile>
         </v-list>
       </v-menu>
-      <v-spacer class="text-xs-center"></v-spacer>
+      <v-spacer></v-spacer>
   </v-toolbar>
+  <v-toolbar 
+    :color="color"
+    flat>
+    <v-spacer></v-spacer>
+      <nuxt-link :to="$fs.path('/signup')">
+        <v-btn large color="success">
+          <v-icon class="mr-3" color="white">person_add</v-icon>
+          {{ $t('signUpForAFreeAccount') }}
+        </v-btn>
+      </nuxt-link>
+      <nuxt-link :to="$fs.path('/login')">
+        <v-btn large color="primary">
+          <v-icon class="mr-3" color="white">vpn_key</v-icon>
+          {{ $t('logIn') }}
+        </v-btn>
+      </nuxt-link>
+      <nuxt-link :to="$fs.path('/patrons/join')">
+        <v-btn large color="accent">
+          <v-icon class="mr-3" color="white">favorite</v-icon>
+          {{ $t('becomeAPatron') }}
+        </v-btn>
+      </nuxt-link>
+    <v-spacer></v-spacer>
+  </v-toolbar>
+  </div>
 </template>
 
 <script>
