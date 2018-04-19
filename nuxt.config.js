@@ -125,6 +125,10 @@ module.exports = {
         path: '/signup/consent/*', 
         component: 'nuxt/pages/signup/consent-profile.vue'
       })
+      routes.push({
+        path: '/patterns/*', 
+        component: 'nuxt/pages/patterns/_pattern.vue'
+      })
     }
   },
   build: {

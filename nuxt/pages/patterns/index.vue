@@ -35,30 +35,15 @@
                   {{ $fs.conf.patterns[pattern].info.description }}
                 </nuxt-link>	
               </p>
-              <v-progress-linear 
-                :value="5*Object.keys($fs.conf.patterns[pattern].measurements).length" 
-                height="2" 
-                color="info">
-              </v-progress-linear>
-              <v-progress-linear 
-                :value="2*Object.keys($fs.conf.patterns[pattern].options).length" 
-                height="2" 
-                color="success">
-              </v-progress-linear>
-              <v-progress-linear 
-                :value="10*$fs.conf.patterns[pattern].info.level" 
-                height="2" 
-                color="error">
-              </v-progress-linear>
-               <v-slider label="level" value="50" color="error" readonly></v-slider>
+              <v-btn :to="$fs.path('/draft/'+pattern)" color="primary" class="mt-3" block large outline>
+                <v-icon class="mr-3">gesture</v-icon>
+                {{ $t('draftPattern', { pattern: pattern[0].toUpperCase() + pattern.slice(1) }) }}
+              </v-btn>
             </v-card-text>
           </v-card>
         </v-flex>
       </v-layout>
     </v-container>
-    <pre>
-    {{ $fs.conf.patterns }}
-    </pre>
   </section>
 </template>
 
@@ -72,6 +57,9 @@ export default {
 ul.quick-links li {
   list-style-type: none;
   text-transform: capitalize;
+}
+ul.quick-links li p i.icon {
+  text-transform: none;
 }
 span.link-spacer {
   display: inline;
@@ -90,5 +78,9 @@ ul.meta {
 ul.meta li {
   list-style-type: none;
   margin-bottom: 5px;
+}
+.input-group,
+.input-group--slider {
+  padding: 0;
 }
 </style>
