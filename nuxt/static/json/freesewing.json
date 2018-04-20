@@ -1,4 +1,8 @@
 {
+    "api": {
+      "data": "https://data.she.freesewing.org/",
+      "core": "https://core.she.freesewing.org"
+    },
     "version": {
         "core": "1.8.0"
     },

@@ -48,6 +48,11 @@ export default {
       return this.$store.state.components.dynamic.rightColumn
     }
   },
+  created: function() {
+    if(!this.$auth.loggedIn) {
+      this.$auth.loginWith('user');
+    }
+  },
   data () {
     return {
       title: 'Freesewing',

@@ -5,8 +5,8 @@
         <component :is="rightColumnComponent" /> 
       </div>
     </the-right-drawer>
-      <the-left-drawer />
-        <fs-top-toolbar color="white" light class="hidden-md-and-down"/>
+    <the-left-drawer />
+      <fs-top-toolbar color="white" light class="hidden-md-and-down"/>
         <v-content class="fs-vertical-container">
           <v-container>
             <v-layout row wrap>
@@ -55,6 +55,11 @@ export default {
     },
     rightDrawerComponent () {
       return this.$store.state.components.dynamic.rightColumn
+    }
+  },
+  created: function() {
+    if(!this.$auth.loggedIn) {
+      this.$auth.loginWith('user');
     }
   },
   data () {

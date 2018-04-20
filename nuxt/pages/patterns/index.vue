@@ -49,7 +49,11 @@
 
 <script>
 export default {
-  layout: 'wide'
+  layout: 'wide',
+  middleware: ['auth'],
+  options: {
+    auth: false
+  }
 }
 </script>
 

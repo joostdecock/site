@@ -10,3 +10,6 @@ yarn-error.log
 
 # Nuxt generate
 dist
+
+# Staging data
+deploy

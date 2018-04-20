@@ -129,17 +129,17 @@ module.exports = {
         path: '/patterns/*', 
         component: 'nuxt/pages/patterns/_pattern.vue'
       })
+      routes.push({
+        path: '/draft/:pattern', 
+        component: 'nuxt/pages/draft/choose-model.vue'
+      })
+      routes.push({
+        path: '/draft/:pattern/for/:model', 
+        component: 'nuxt/pages/draft/choose-options.vue'
+      })
     }
   },
   generate: {
-    //routes: function (callback) {
-    //  var fs = require('./nuxt/static/json/freesewing.json')
-    //  var routes = Object.keys(fs.patterns).map( (pattern) => {
-    //    return '/patterns/' + pattern
-    //  })
-    //  console.log(routes)
-    //  callback(null, routes)
-    //}
     routes: [
         '/patterns/aaron',
         '/patterns/brian',
@@ -159,6 +159,7 @@ module.exports = {
         '/patterns/carlton',
         '/patterns/florent',
         '/patterns/jaeger',
+
         '/draft/aaron',
         '/draft/brian',
         '/draft/bruce',
