@@ -11,7 +11,7 @@
 <script>
 // SVG code from simpleicons.org
 export default {
-  name: 'IconGitter',
+  name: 'FsIconGitter',
   props: {
     size: {
       type: Number,

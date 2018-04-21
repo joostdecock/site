@@ -14,11 +14,7 @@
 </template>
 
 <script>
-  import FsSecondaryMenu from '~/components/Fs/Menus/FsSecondaryMenu'
   export default {
-    components: {
-      FsSecondaryMenu
-    },
     name: 'TheRightDrawer',
     computed: { 
       showRightDrawer: {

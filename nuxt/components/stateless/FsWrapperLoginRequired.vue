@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: 'FsUsersOnly'
+  name: 'FsWrapperLoginRequired'
 }
 </script>
 

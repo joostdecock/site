@@ -44,8 +44,8 @@
 </template>
 
 <script>
-import IconGithub from '~/components/Base/Icons/IconGithub'
-import BaseLogout from '~/components/Base/Messages/BaseLogout'
+import FsIconGithub from '~/components/stateless/FsIconGithub'
+import FsMessageLogout from '~/components/stateful/FsMessageLogout'
 export default {
   auth: false,
   layout: 'splash',

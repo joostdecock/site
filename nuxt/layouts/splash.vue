@@ -1,5 +1,6 @@
 <template>
   <v-app class="splash">
+    <the-left-drawer />
     <fs-top-toolbar color="transparent" light class="hidden-md-and-down"/>
     <v-content>
       <v-container>
@@ -22,12 +23,15 @@
 </style>
 
 <script>
-import FsTopToolbar from '~/components/Fs/Toolbars/FsTopToolbar' 
-import FsMainToolbar from '~/components/Fs/Toolbars/FsMainToolbar' 
+import TheLeftDrawer    from '~/components/stateless/TheLeftDrawer' 
+import TheMobileToolbar from '~/components/stateful/TheMobileToolbar' 
+import TheTopToolbar    from '~/components/stateful/TheTopToolbar' 
+
 export default {
   components: { 
-    FsTopToolbar,
-    FsMainToolbar,
+    TheLeftDrawer,
+    TheMobileToolbar,
+    TheTopToolbar
   }
 }
 </script>

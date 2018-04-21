@@ -29,9 +29,9 @@
 </template>
 
 <script>
-import FsTableOfContents from '~/components/Fs/Navigation/FsTableOfContents'
+import FsTableOfContents from '~/components/stateless/FsTableOfContents'
 export default { 
-  name: 'FsRightColumnPage',
+  name: 'FsDynamicAsidePage',
   components: {
     FsTableOfContents
   },

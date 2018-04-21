@@ -21,7 +21,7 @@
 
 <script>
 export default {
-  name: 'BaseLoginRequired'
+  name: 'FsMessageLoginRequired'
 }
 </script>
 

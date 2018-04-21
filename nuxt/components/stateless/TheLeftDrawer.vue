@@ -7,14 +7,14 @@
     temporary
   >
     <div class="align-drawer-bottom">
-      <FsMainMenu />
+      <fs-main-menu />
       <div class="fs-toolbar-spacer"></div>
     </div>
   </v-navigation-drawer>
 </template>
 
 <script>
-  import FsMainMenu from '~/components/Fs/Menus/FsMainMenu'
+  import FsMainMenu from '~/components/stateless/FsMenuMain'
   export default {
     components: {
       FsMainMenu

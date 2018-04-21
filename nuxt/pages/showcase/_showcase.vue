@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import FsBreadcrumbsShowcase from '~/components/Fs/Navigation/FsBreadcrumbsShowcase'
+import FsBreadcrumbsShowcase from '~/components/stateless/FsBreadcrumbsShowcase'
 // Dynamic
 export default {
   components: {

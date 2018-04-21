@@ -76,7 +76,7 @@
 </template>
 
 <script>
-import FsBreadcrumbsPattern from '~/components/Fs/Navigation/FsBreadcrumbsPattern'
+import FsBreadcrumbsPattern from '~/components/stateless/FsBreadcrumbsPattern'
 // Dynamic
 export default {
   layout: 'wide',

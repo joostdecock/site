@@ -1,5 +1,5 @@
 <template>
-  <fs-users-only> 
+  <fs-wrapper-login-required> 
 		<ul class="breadcrumbs"> 
 			<li>
 				<nuxt-link :to="$fs.path('/')">
@@ -55,15 +55,15 @@
 				</v-flex>
 			</v-layout>
 		</v-container>
-  </fs-users-only>
+  </fs-wrapper-login-required>
 </template>
 
 <script>
-import FsUsersOnly from '~/components/FsUsersOnly'
+import FsWrapperLoginRequired from '~/components/stateless/FsWrapperLoginRequired'
 export default {
 	layout: 'wide',
   components: {
-    FsUsersOnly
+    FsWrapperLoginRequired
   },
   computed: {
     pattern: function() {

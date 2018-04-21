@@ -102,9 +102,9 @@
 </template>
 
 <script>
-import IconGithub from '~/components/Base/Icons/IconGithub'
-import IconGitter from '~/components/Base/Icons/IconGitter'
-import BaseLogout from '~/components/Base/Messages/BaseLogout'
+import FsIconGithub from '~/components/stateless/FsIconGithub'
+import FsIconGitter from '~/components/stateless/FsIconGitter'
+import FsMessageLogout from '~/components/stateful/FsMessageLogout'
 export default {
   auth: false,
   layout: 'splash',

@@ -1,7 +1,7 @@
 <template>
   <section class="on-splash">
     <div v-if="$auth.loggedIn">
-      <base-logout />
+      <fs-message-logout />
     </div>
     <div v-else>
       <div v-if="error" class="mb-5">
@@ -70,16 +70,16 @@
 </template>
 
 <script>
-import IconGithub from '~/components/Base/Icons/IconGithub'
-import ConsentProfile from '~/components/Base/Consent/ConsentProfile'
-import BaseLogout from '~/components/Base/Messages/BaseLogout'
+import IconGithub from '~/components/stateless/FsIconGithub'
+import FsMessageConsentProfile from '~/components/stateless/FsMessageConsentProfile'
+import FsNessageLogout from '~/components/stateful/FsMessageLogout'
 export default {
   auth: false,
   layout: 'splash',
   components: {
-    IconGithub,
-    ConsentProfile,
-    BaseLogout
+    FsIconGithub,
+    FsMessageConsentProfile,
+    FsMessageLogout
   },
   data () {
     return {

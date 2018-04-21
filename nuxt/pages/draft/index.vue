@@ -54,12 +54,12 @@
 </template>
 
 <script>
-import BaseLoginRequired from '~/components/Base/Messages/BaseLoginRequired'
+import FsMessageLoginRequired from '~/components/stateless/FsMessageLoginRequired'
 
 export default {
 	layout: 'wide',
   components: {
-    BaseLoginRequired
+    FsMessageLoginRequired
   }
 }
 </script>

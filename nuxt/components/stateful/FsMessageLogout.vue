@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: 'BaseLogout',
+  name: 'FsMessageLogout',
   methods: {
     logout: function() {
       this.$auth.logout()

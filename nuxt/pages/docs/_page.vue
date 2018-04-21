@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import FsBreadcrumbsPage from '~/components/Fs/Navigation/FsBreadcrumbsPage'
+import FsBreadcrumbsPage from '~/components/stateless/FsBreadcrumbsPage'
 // Dynamic
 export default {
   components: {

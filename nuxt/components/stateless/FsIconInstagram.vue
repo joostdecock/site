@@ -11,7 +11,7 @@
 <script>
 // SVG code from simpleicons.org
 export default {
-  name: 'IconInstagram',
+  name: 'FsIconInstagram',
   props: {
     size: {
       type: Number,

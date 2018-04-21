@@ -49,12 +49,12 @@
 </template>
 
 <script>
-import BaseLogout from '~/components/Base/Messages/BaseLogout'
+import FsMessageLogout from '~/components/stateful/FsMessageLogout'
 export default {
   auth: false,
   layout: 'splash',
   components: {
-    BaseLogout
+    FsMessageLogout
   },
   data () {
     return {

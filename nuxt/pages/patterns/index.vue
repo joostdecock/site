@@ -19,7 +19,7 @@
     </ul>
     <v-container fluid grid-list-lg v-for="(namespace, index) in $fs.conf.namespaces" :key="index">
       <v-layout row wrap>
-        <v-flex class="xs12 sm6 xl3" v-for="pattern in namespace" :key="pattern" >
+        <v-flex class="xs6 sm4 md4 lg3 xl2" v-for="pattern in namespace" :key="pattern" >
           <v-card>
             <nuxt-link :to="$fs.path('/patterns/'+pattern)" :title="pattern">
               <img :src="'/img/patterns/'+pattern+'/cover.jpg'" />
@@ -50,10 +50,6 @@
 <script>
 export default {
   layout: 'wide',
-  middleware: ['auth'],
-  options: {
-    auth: false
-  }
 }
 </script>
 

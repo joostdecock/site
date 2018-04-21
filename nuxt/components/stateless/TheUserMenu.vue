@@ -46,7 +46,7 @@
 
 <script>
   export default {
-    name: 'FsUserMenu',
+    name: 'TheUserMenu',
     data () {
       return {
         items: [

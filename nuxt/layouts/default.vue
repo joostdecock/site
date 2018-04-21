@@ -6,7 +6,7 @@
       </div>
     </the-right-drawer>
     <the-left-drawer />
-      <fs-top-toolbar color="white" light class="hidden-md-and-down"/>
+      <the-top-toolbar color="white" light class="hidden-md-and-down"/>
         <v-content class="fs-vertical-container">
           <v-container>
             <v-layout row wrap>
@@ -25,29 +25,29 @@
           </v-container>
         </v-content>
         <v-footer fixed height="auto" class="hidden-lg-and-up">
-          <fs-main-toolbar color="primary" />
+          <the-mobile-toolbar color="primary" />
         </v-footer>
   </v-app>
 </template>
 
 <script>
-import TheRightDrawer from '~/components/SingleInstance/TheRightDrawer' 
-import TheLeftDrawer from '~/components/SingleInstance/TheLeftDrawer' 
-import FsMainToolbar from '~/components/Fs/Toolbars/FsMainToolbar' 
-import FsTopToolbar from '~/components/Fs/Toolbars/FsTopToolbar' 
+import TheRightDrawer   from '~/components/stateless/TheRightDrawer' 
+import TheLeftDrawer    from '~/components/stateless/TheLeftDrawer' 
+import TheMobileToolbar from '~/components/stateful/TheMobileToolbar' 
+import TheTopToolbar    from '~/components/stateful/TheTopToolbar' 
 // Dynamic components
-import FsRightColumnBlogpost from '~/components/Fs/Dynamic/FsRightColumnBlogpost'
-import FsRightColumnPage from '~/components/Fs/Dynamic/FsRightColumnPage'
-import FsRightColumnShowcase from '~/components/Fs/Dynamic/FsRightColumnShowcase'
+import FsDynamicAsideBlogpost from '~/components/stateless/FsDynamicAsideBlogpost'
+import FsDynamicAsideShowcase from '~/components/stateless/FsDynamicAsideShowcase'
+import FsDynamicAsidePage     from '~/components/stateless/FsDynamicAsidePage'
 export default {
   components: { 
     TheRightDrawer,
     TheLeftDrawer,
-    FsMainToolbar,
-    FsTopToolbar,
-    FsRightColumnBlogpost,
-    FsRightColumnPage,
-    FsRightColumnShowcase,
+    TheMobileToolbar,
+    TheTopToolbar,
+    FsDynamicAsideBlogpost,
+    FsDynamicAsideShowcase,
+    FsDynamicAsidePage,
   },
   computed: { 
     rightColumnComponent () {

@@ -11,7 +11,7 @@
 <script>
 // SVG code from simpleicons.org
 export default {
-  name: 'IconGithub',
+  name: 'FsIconGithub',
   props: {
     size: {
       type: Number,

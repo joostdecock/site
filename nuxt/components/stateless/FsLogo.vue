@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'BaseLogo',
+  name: 'FsLogo',
   props: {
     size: {
       type: Number,
