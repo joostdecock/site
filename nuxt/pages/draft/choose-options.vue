@@ -15,7 +15,7 @@
 			<li><v-icon small slot="divider">chevron_right</v-icon></li>
       <li>
 				<nuxt-link :to="$fs.path('/draft/'+$route.params.pattern)">
-          {{ $t('forUsername', {username: $auth.user.models[$route.params.model].name}) }}
+          {{ $t('forUsername', {username: $auth.user.models[model].name}) }}
 				</nuxt-link>
       </li>
 			<li><v-icon small slot="divider">chevron_right</v-icon></li>
@@ -31,25 +31,32 @@
         </v-stepper-step>
 				<v-divider></v-divider>
         <v-stepper-step step="2" complete>
-          {{ $t('forUsername', { username: $auth.user.models[$route.params.model].name}) }}
+				  <nuxt-link :to="$fs.path('/draft/'+$route.params.pattern)">
+            {{ $t('forUsername', { username: $auth.user.models[model].name}) }}
+          </nuxt-link>
         </v-stepper-step>
 				<v-divider></v-divider>
         <v-stepper-step step="3">{{ $t('chooseYourOptions') }}</v-stepper-step>
 			</v-stepper-header>
 		</v-stepper>
-
-      <p class="quick-pick">{{ $t('quickPick')}}:<br> fixme</p>
+    <p class="quick-pick">{{ $t('quickPick')}}:<br> fixme</p>
+    <fs-draft-configurator :pattern="pattern" :model="model" />
   </fs-wrapper-login-required>
 </template>
 
 <script>
 import FsWrapperLoginRequired from '~/components/stateless/FsWrapperLoginRequired'
+import FsDraftConfigurator from '~/components/stateful/FsDraftConfigurator'
 export default {
 	layout: 'wide',
   components: {
-    FsWrapperLoginRequired
+    FsWrapperLoginRequired,
+    FsDraftConfigurator
   },
   computed: {
+    model: function() {
+      return this.$route.params.model
+    },
     pattern: function() {
       return this.$route.params.pattern
     },

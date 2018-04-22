@@ -1,4 +1,11 @@
 {
+    "defaults": {
+      "sa": {
+        "metric": 1,
+        "imperial": 0.625,
+        "custom": 0.5
+      }
+    },
     "api": {
       "data": "https://data.she.freesewing.org/",
       "core": "https://core.she.freesewing.org"
@@ -1834,7 +1841,7 @@
                 "class": "BenjaminBowTie"
             },
             "seamAllowance": {
-                "metric": 0.6,
+                "metric": 6,
                 "imperial": 0.25
             },
             "languages": {
@@ -2776,8 +2783,8 @@
                     "group": "style",
                     "type": "percent",
                     "min": 0,
-                    "max": 6.66,
-                    "default": 3.33
+                    "max": 6.6,
+                    "default": 3.3
                 },
                 "backVent": {
                     "title": "Back vent",

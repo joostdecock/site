@@ -35,6 +35,29 @@ export default ({ app, store, router }) => {
         return valid
       },
 
+      // Capitalize first letter of a string
+      ucfirst: (input) => {
+        return input[0].toUpperCase() + input.slice(1)
+      },
+
+      units: {
+        // Formats value in mm according to units
+        format: (value, units, type) => {
+          if(type === 'measure') {
+            if(units === 'imperial') {
+                return 'fixme'
+            } else {
+                return Math.round(value)/10+'cm'
+            }
+          } else if (type === 'angle') {
+                return Math.round(value*10)/10+'°'
+          } else if (type === 'percent') {
+                return Math.round(value*10)/10+'%'
+          }
+        },
+
+      },
+
       // Axios instance to connect to the backend
       api: {
         data: axios.create({

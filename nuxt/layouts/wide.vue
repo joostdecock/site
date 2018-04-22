@@ -1,7 +1,7 @@
 <template>
   <v-app>
       <the-left-drawer />
-        <fs-top-toolbar color="white" light class="hidden-md-and-down"/>
+        <the-top-toolbar color="white" light class="hidden-md-and-down"/>
         <v-content class="fs-vertical-container">
           <v-container>
             <v-layout row wrap>

@@ -1,0 +1,266 @@
+<template>
+  <div class="m800">
+    <template>
+      <v-expansion-panel>
+        <v-expansion-panel-content>
+          <div slot="header"><h4>General</h4></div>
+          <v-card>
+            <v-card-text>
+              <v-expansion-panel>
+
+                <!-- seam allowance -->
+                <v-expansion-panel-content>
+                  <div slot="header">
+                    <h6>{{ $t('seamAllowance') }}:
+                      <span :class="(dflt.sa == config.sa) ? 'default' : 'custom'">
+                        {{ $t('txt-saOption-'+config.sa) }}
+                      </span>
+                    </h6>
+                  </div>
+                  <v-card>
+                    <v-card-text>
+												<v-radio-group v-model="config.sa">
+												  <v-radio
+                            v-for="(value, index) in sa" :key="index"
+												    :label="( index === 'custom') 
+                              ?  $t('txt-saOption-'+index)+' (' +$t('seeBelow') + ')' 
+                              : $t('txt-saOption-'+index)+' '+value" 
+                            :value="index"
+                            :color="(dflt.sa == index) ? 'primary' : 'accent'" ></v-radio>
+											  </v-radio-group>
+                        <div v-if="config.sa === 'custom'">
+                          <p>
+                            {{ $t('txt-saOption-custom') }}: 
+                            {{ $fs.units.format(customSa*(($auth.user.account.units === 'metric') ? 10 : 25.4), $auth.user.account.units, 'measure') }}
+                          </p>
+                          <v-slider
+                          v-model="customSa"
+                          min="0"
+                          :max="2"
+                          :step="0.1"></v-slider>
+                        </div>
+                      <p class="text-xs-right">
+                        <v-btn flat large outline color="accent"
+                          v-if="dflt.sa != config.sa"
+                          @click="config.sa = dflt.sa"
+                          >{{ $t('resetToDefault') }}</v-btn>
+                          <v-btn flat large outline>{{ $t('showHelp') }}</v-btn>
+                      </p>
+                    </v-card-text>
+                  </v-card> 
+                </v-expansion-panel-content> 
+
+                <!-- scope -->
+                <v-expansion-panel-content>
+                  <div slot="header">
+                    <h6>{{ $t('patternParts') }}:
+                      <span :class="(dflt.scope == config.scope) ? 'default' : 'custom'">
+                        {{ (config.scope === 'complete') ? $t('completePattern') : $t('onlySelectedPatternParts') }}
+                      </span>
+                    </h6>
+                  </div>
+                  <v-card>
+                    <v-card-text>
+												<v-radio-group v-model="config.scope">
+												  <v-radio
+                            v-for="index in ['complete', 'custom']" :key="index"
+												    :label="( index === 'custom') 
+                              ? $t('onlySelectedPatternParts') 
+                              : $t('completePattern')" 
+                            :value="index"
+                            :color="(index == dflt.scope) ? 'primary' : 'accent'" ></v-radio>
+											  </v-radio-group>
+                        <div v-if="config.scope === 'custom'">
+                          <p>{{ $t('selectThePartsYouWantIncludedInYourDraft') }}</p>
+                          <v-checkbox
+                            v-for="(part, index) in $fs.conf.patterns[pattern].parts"
+                            :key="index"
+                            :label="index"
+                            hide-details
+                            v-model="customScope[index]"></v-checkbox>
+                          <div class="mt-3">
+                            <v-btn flat @click="scopeSetAll(true)">Check all</v-btn>
+                            <v-btn flat @click="scopeSetAll(false)">Clear all</v-btn>
+                          </div>
+
+                        </div>
+                      <p class="text-xs-right">
+                        <v-btn flat large outline color="accent"
+                          v-if="dflt.sa != config.sa"
+                          @click="config.sa = dflt.sa"
+                          >Reset to default</v-btn>
+                        <v-btn flat large outline>show help</v-btn>
+                      </p>
+                    </v-card-text>
+                  </v-card> 
+                </v-expansion-panel-content> 
+
+                <!-- theme -->
+                <v-expansion-panel-content>
+                  <div slot="header">
+                    <h6>{{ $t('theme') }}:
+                      <span :class="(dflt.theme == config.theme) ? 'default' : 'custom'">
+                        {{ $t(config.theme) }}
+                      </span>
+                    </h6>
+                  </div>
+                  <v-card>
+                    <v-card-text>
+												<v-radio-group v-model="config.theme">
+												  <v-radio
+                            v-for="index in ['classic', 'paperless']" :key="index"
+												    :label="$t(index)"
+                            :value="index"
+                            :color="(index == dflt.theme) ? 'primary' : 'accent'" ></v-radio>
+											  </v-radio-group>
+                      <p class="text-xs-right">
+                        <v-btn flat large outline color="accent"
+                          v-if="dflt.theme != config.theme"
+                          @click="config.theme = dflt.theme"
+                          >Reset to default</v-btn>
+                        <v-btn flat large outline>show help</v-btn>
+                      </p>
+                    </v-card-text>
+                  </v-card> 
+                </v-expansion-panel-content> 
+
+              </v-expansion-panel>
+            </v-card-text>
+          </v-card>
+        </v-expansion-panel-content>
+        <v-expansion-panel-content v-for="(group, index) in dflt.optiongroups" :key="index">
+          <div slot="header"><h4>{{ index }}</h4></div>
+          <v-card>
+            <v-card-text>
+              <v-expansion-panel>
+                <v-expansion-panel-content v-for="option in group" :key="option">
+                  <div slot="header">
+                    <h6>{{ option }}: 
+                    <span :class="(dflt.options[option].default == config.options[option]) ? 'default' : 'custom'">
+                      <span v-if="dflt.options[option].type === 'chooseOne'">{{ dflt.options[option].options[config.options[option]] }}</span>
+                      <span v-else="">{{ $fs.units.format(config.options[option], $auth.user.units, dflt.options[option].type) }}</span>
+                    </span>
+                    </h6>
+                  </div>
+                  <v-card>
+                    <v-card-text>
+                      {{ dflt.options[option].description }}
+
+                      <div v-if="dflt.options[option].type === 'chooseOne'">
+												<v-radio-group v-model="config.options[option]">
+												  <v-radio
+												    v-for="(title, index) in dflt.options[option].options"
+												    :key="index"
+												    :label="title"
+												    :value="parseInt(index)"
+                            :color="(index == dflt.options[option].default) ? 'primary' : 'accent'"
+												  ></v-radio>
+											  </v-radio-group>
+                      </div>
+                      <div v-else>
+                        <v-slider
+                          :color="(dflt.options[option].default == config.options[option]) ? 'primary' : 'accent'"
+                          :min="dflt.options[option].min" 
+                          :max="dflt.options[option].max" 
+                          v-model="config.options[option]"
+                          :step="(dflt.options[option].type === 'measure') ? 1 : 0.1"></v-slider>
+                      </div>
+                      <p class="text-xs-right">
+                        <v-btn flat large outline color="accent"
+                          v-if="dflt.options[option].default != config.options[option]"
+                          @click="config.options[option] = dflt.options[option].default"
+                          >Reset to default</v-btn>
+                        <v-btn flat large outline>show help</v-btn>
+                      </p>
+                    </v-card-text>
+                  </v-card>
+                </v-expansion-panel-content>
+              </v-expansion-panel>
+            </v-card-text>
+          </v-card>
+        </v-expansion-panel-content>
+      </v-expansion-panel>
+      <p class="text-xs-right">
+      <v-btn color="primary" large>
+        <v-icon class="mr-3">insert_drive_file</v-icon>
+        {{ $t('draftPatternForModel', {
+          pattern: $fs.ucfirst(pattern),
+          model: $auth.user.models[model].name}
+          ) }}</v-btn>
+      </p>
+    </template>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'FsDraftConfigurator',
+  props: {
+    pattern: {
+      type: String,
+      required: true
+    },
+    model: {
+      type: String,
+      required: true
+    },
+  },
+  data: function() {
+    const dflt = this.$fs.conf.patterns[this.pattern]
+    dflt.sa = this.$auth.user.account.units
+    dflt.scope = 'complete'
+    dflt.theme = 'classic'
+    const customScope = {}
+    for (let part in this.$fs.conf.patterns[this.pattern].parts) {
+      customScope[part] = true
+    }
+    const sa = {
+      none: '',
+      metric: ' (' + this.$fs.units.format(this.$fs.conf.defaults.sa.metric*10, 'metric', 'measure') + ')',
+      imperial: ' (' + this.$fs.units.format(this.$fs.conf.defaults.sa.imperial, 'imperial', 'measure') + ')',
+      custom: this.$fs.conf.defaults.sa.custom,
+    }
+    const c = { 
+      options: {}, 
+      sa: this.$auth.user.account.units,
+      theme: 'classic',
+      scope: 'complete' 
+    }
+    if (typeof this.$fs.conf.patterns[this.pattern].seamAllowance !== 'undefined') {
+      sa.patternMetric = ' (' + this.$fs.units.format(this.$fs.conf.patterns[this.pattern].seamAllowance.metric, 'metric', 'measure') + ')'
+      sa.patternImperial = ' (' + this.$fs.units.format(this.$fs.conf.patterns[this.pattern].seamAllowance.imperial, 'imperial', 'measure') + ')'
+      c.sa = 'pattern'+this.$fs.ucfirst(this.$auth.user.account.units)
+      dflt.sa = c.sa
+    }
+    for (let optionName in this.$fs.conf.patterns[this.pattern].options) {
+      c.options[optionName] = this.$fs.conf.patterns[this.pattern].options[optionName].default
+    }
+    return {
+      config: c,
+      dflt: dflt,
+      sa: sa,
+      customSa: 0,
+      customScope: customScope
+    }
+  },
+  methods: {
+    scopeSetAll: function(val) {
+      for (let part in this.$fs.conf.patterns[this.pattern].parts) {
+        this.customScope[part] = val
+      }
+    }
+  }
+}
+</script>
+
+<style scoped>
+  ul.expansion-panel {
+    margin-left: 0;
+  }
+  .m800 {
+    max-width: 800px;
+    margin: auto;
+  }
+  span.default { color: #212121; }
+  span.custom { color: #ff5b77; }
+</style>
