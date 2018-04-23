@@ -13,7 +13,7 @@
 				  <v-radio
             @input="updateDraftOption(name, val)"
             v-for="(value, index) in option.options" :key="index"
-            :label="value" 
+            :label="''+value" 
             :value="index"
             :color="(computedDflt != index) ? 'accent' : 'primary'"></v-radio>
         </v-radio-group>
@@ -35,10 +35,6 @@ export default {
   name: 'FsOptionRadio',
   props: {
     pattern: {
-      type: String,
-      required: true
-    },
-    name: {
       type: String,
       required: true
     },

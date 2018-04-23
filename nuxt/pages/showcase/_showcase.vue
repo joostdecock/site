@@ -34,7 +34,6 @@ export default {
     },
   },
   asyncData: async function ({ app, route }) {
-    console.log(route.path)
     let locale = ''
     if(route.path.substr(0,9) === '/showcase') {
       locale = 'en'

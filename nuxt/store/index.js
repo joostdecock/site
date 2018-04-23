@@ -22,10 +22,11 @@ export const state = () => ({
     draft: {
         config: {
           options: {},
-          measurements: {}
+          measurements: {},
+          sa: {}
         },
-        pattern: {},
-        model: {},
+        pattern: '',
+        model: '',
         type: ''
     }
 })
@@ -65,7 +66,7 @@ export const mutations = {
             options: {},
             measurements: {}
         }
-        if(payload.type === 'newDraft') {
+        if(payload.type === 'draftFromModel') {
             for (let optionName in payload.pattern.options) {
                 if(payload.pattern.options[optionName].type === 'measure') {
                   if(this.$auth.user.account.units === 'imperial') {
@@ -83,13 +84,32 @@ export const mutations = {
         for (let measurementName in payload.model.data.measurements) {
             config.measurements[measurementName] = payload.model.data.measurements[measurementName]
         }
+        if(typeof payload.pattern.seamAllowance !== 'undefined') {
+          config.sa = {
+            type: 'pattern'+this.$auth.user.account.units,
+            value: payload.pattern.seamAllowance[this.$auth.user.account.units]
+          }
+        } else {
+          config.sa = {
+            type: this.$auth.user.account.units,
+            value: (this.$auth.user.account.units === 'imperial') ? 0.625 : 1
+          }
+        }
         state.draft = {
-            model: payload.model,
-            pattern: payload.pattern,
+            type: payload.type,
+            model: payload.model.handle,
+            pattern: payload.pattern.info.handle,
             config: config
         }
     },
     setDraftOption(state, payload) {
-        state.draft.config.options[payload.name] = payload.value
+      state.draft.config.options[payload.name] = payload.value
+    },
+    setDraftSa(state, payload) {
+      console.log('Setting SA to '+payload.type)
+      state.draft.config.sa = { 
+        type: payload.type,
+        value: payload.value
+      }
     }
 }

@@ -77,16 +77,11 @@ export default {
       return { valid: valid, invalid: invalid }
     }
   },
-  data: function() {
-    return {
-
-    }
-  },
-  mounted: function() {
+  mounted () {
     this.$store.commit('initializeDraft', {
       model: this.$auth.user.models[this.model], 
       pattern: this.$fs.conf.patterns[this.pattern],
-      type: 'newDraft'
+      type: 'draftFromModel'
     })
   }
 }

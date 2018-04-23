@@ -6,11 +6,13 @@
           {{ $fs.units.format(value, $auth.user.units, option.type) }}
         </span>
       </h6>
+      Local value: {{ value }}<br>
+      Store value: {{ $store.state.draft.config.options[name] }}
     </div>
     <v-card>
       <v-card-text>
         <v-slider
-         @input="updateDraftOption(name, val)"
+         @input="updateDraftOption(name, value)"
          :color="(computedDflt != value) ? 'accent' : 'primary'"
          :min="min" 
          :max="max" 
@@ -20,7 +22,7 @@
         <p class="text-xs-right">
         <v-btn flat large outline color="accent"
           v-if="computedDflt != value"
-          @click="value = computedDflt">
+          @click="resetDraftOption()">
           {{ $t('resetToDefault') }}
         </v-btn>
         <v-btn flat large outline>{{ $t('showHelp') }}</v-btn>
@@ -71,8 +73,12 @@ export default {
     }
   },
   methods: {
+    resetDraftOption() {
+      this.value = this.computedDflt
+      this.$store.commit('setDraftOption', {name: this.name, value: this.value} )
+    },
     updateDraftOption(name, value) {
-        this.$store.commit('setDraftOption', {name: name, value: value} )
+      this.$store.commit('setDraftOption', {name: name, value: value} )
     }
   }
 }

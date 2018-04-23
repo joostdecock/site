@@ -9,6 +9,8 @@
               <v-expansion-panel>
 
                 <!-- seam allowance -->
+                <fs-option-sa :pattern="$fs.conf.patterns[pattern]" />
+<!--
                 <v-expansion-panel-content>
                   <div slot="header">
                     <h6>{{ $t('seamAllowance') }}:
@@ -49,7 +51,7 @@
                     </v-card-text>
                   </v-card> 
                 </v-expansion-panel-content> 
-
+-->
                 <!-- scope -->
                 <v-expansion-panel-content>
                   <div slot="header">
@@ -140,7 +142,7 @@
                     :key="option"
                     :pattern="pattern"
                     :option="options[option]"
-                    :dflt="options[option].default"
+                    :dflt="''+options[option].default"
                   />
 
                   <fs-option-slider
@@ -149,7 +151,7 @@
                     :pattern="pattern"
                     :name="option"
                     :option="options[option]"
-                    :dflt="options[option].default"
+                    :dflt="(options[option].default)"
                   />
 
                 </template>
@@ -173,12 +175,14 @@
 <script>
 import FsOptionSlider from '~/components/stateful/FsOptionSlider'
 import FsOptionRadio from '~/components/stateful/FsOptionRadio'
+import FsOptionSa from '~/components/stateful/FsOptionSa'
 
 export default {
   name: 'FsDraftConfigurator',
   components: {
     FsOptionSlider,
-    FsOptionRadio
+    FsOptionRadio,
+    FsOptionSa
   },
   props: {
     pattern: {
