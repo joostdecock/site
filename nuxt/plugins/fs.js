@@ -47,7 +47,7 @@ export default ({ app, store, router }) => {
             if(units === 'imperial') {
                 return 'fixme'
             } else {
-                return Math.round(value)/10+'cm'
+                return Math.round(value*10)/10+'cm'
             }
           } else if (type === 'angle') {
                 return Math.round(value*10)/10+'°'

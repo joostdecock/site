@@ -128,53 +128,31 @@
             </v-card-text>
           </v-card>
         </v-expansion-panel-content>
-        <v-expansion-panel-content v-for="(group, index) in dflt.optiongroups" :key="index">
+        <v-expansion-panel-content v-for="(group, index) in $fs.conf.patterns[pattern].optiongroups" :key="index">
           <div slot="header"><h4>{{ index }}</h4></div>
           <v-card>
             <v-card-text>
               <v-expansion-panel>
-                <v-expansion-panel-content v-for="option in group" :key="option">
-                  <div slot="header">
-                    <h6>{{ option }}: 
-                    <span :class="(dflt.options[option].default == config.options[option]) ? 'default' : 'custom'">
-                      <span v-if="dflt.options[option].type === 'chooseOne'">{{ dflt.options[option].options[config.options[option]] }}</span>
-                      <span v-else="">{{ $fs.units.format(config.options[option], $auth.user.units, dflt.options[option].type) }}</span>
-                    </span>
-                    </h6>
-                  </div>
-                  <v-card>
-                    <v-card-text>
-                      {{ dflt.options[option].description }}
+                <template v-for="option in group">
+                  
+                  <fs-option-radio
+                    v-if="options[option].type === 'chooseOne'"
+                    :key="option"
+                    :pattern="pattern"
+                    :option="options[option]"
+                    :dflt="options[option].default"
+                  />
 
-                      <div v-if="dflt.options[option].type === 'chooseOne'">
-												<v-radio-group v-model="config.options[option]">
-												  <v-radio
-												    v-for="(title, index) in dflt.options[option].options"
-												    :key="index"
-												    :label="title"
-												    :value="parseInt(index)"
-                            :color="(index == dflt.options[option].default) ? 'primary' : 'accent'"
-												  ></v-radio>
-											  </v-radio-group>
-                      </div>
-                      <div v-else>
-                        <v-slider
-                          :color="(dflt.options[option].default == config.options[option]) ? 'primary' : 'accent'"
-                          :min="dflt.options[option].min" 
-                          :max="dflt.options[option].max" 
-                          v-model="config.options[option]"
-                          :step="(dflt.options[option].type === 'measure') ? 1 : 0.1"></v-slider>
-                      </div>
-                      <p class="text-xs-right">
-                        <v-btn flat large outline color="accent"
-                          v-if="dflt.options[option].default != config.options[option]"
-                          @click="config.options[option] = dflt.options[option].default"
-                          >Reset to default</v-btn>
-                        <v-btn flat large outline>show help</v-btn>
-                      </p>
-                    </v-card-text>
-                  </v-card>
-                </v-expansion-panel-content>
+                  <fs-option-slider
+                    v-else
+                    :key="option"
+                    :pattern="pattern"
+                    :name="option"
+                    :option="options[option]"
+                    :dflt="options[option].default"
+                  />
+
+                </template>
               </v-expansion-panel>
             </v-card-text>
           </v-card>
@@ -193,8 +171,15 @@
 </template>
 
 <script>
+import FsOptionSlider from '~/components/stateful/FsOptionSlider'
+import FsOptionRadio from '~/components/stateful/FsOptionRadio'
+
 export default {
   name: 'FsDraftConfigurator',
+  components: {
+    FsOptionSlider,
+    FsOptionRadio
+  },
   props: {
     pattern: {
       type: String,
@@ -236,6 +221,7 @@ export default {
       c.options[optionName] = this.$fs.conf.patterns[this.pattern].options[optionName].default
     }
     return {
+      options: this.$fs.conf.patterns[this.pattern].options,
       config: c,
       dflt: dflt,
       sa: sa,

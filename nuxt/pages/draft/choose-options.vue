@@ -81,6 +81,13 @@ export default {
     return {
 
     }
+  },
+  mounted: function() {
+    this.$store.commit('initializeDraft', {
+      model: this.$auth.user.models[this.model], 
+      pattern: this.$fs.conf.patterns[this.pattern],
+      type: 'newDraft'
+    })
   }
 }
 </script>
