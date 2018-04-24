@@ -9,55 +9,9 @@
               <v-expansion-panel>
                 <fs-option-sa :pattern="$fs.conf.patterns[pattern]" /> <!-- seam allowance -->
                 <fs-option-scope :pattern="$fs.conf.patterns[pattern]" /> <!-- scope -->
-                <!-- scope -->
-                  <!--
+                <fs-option-theme :pattern="$fs.conf.patterns[pattern]" /> <!-- theme -->
 
-                <v-expansion-panel-content>
-                  <div slot="header">
-                    <h6>{{ $t('patternParts') }}:
-                      <span :class="(dflt.scope == config.scope) ? 'default' : 'custom'">
-                        {{ (config.scope === 'complete') ? $t('completePattern') : $t('onlySelectedPatternParts') }}
-                      </span>
-                    </h6>
-                  </div>
-                  <v-card>
-                    <v-card-text>
-												<v-radio-group v-model="config.scope">
-												  <v-radio
-                            v-for="index in ['complete', 'custom']" :key="index"
-												    :label="( index === 'custom') 
-                              ? $t('onlySelectedPatternParts') 
-                              : $t('completePattern')" 
-                            :value="index"
-                            :color="(index == dflt.scope) ? 'primary' : 'accent'" ></v-radio>
-											  </v-radio-group>
-                        <div v-if="config.scope === 'custom'">
-                          <p>{{ $t('selectThePartsYouWantIncludedInYourDraft') }}</p>
-                          <v-checkbox
-                            v-for="(part, index) in $fs.conf.patterns[pattern].parts"
-                            :key="index"
-                            :label="index"
-                            hide-details
-                            v-model="customScope[index]"></v-checkbox>
-                          <div class="mt-3">
-                            <v-btn flat @click="scopeSetAll(true)">Check all</v-btn>
-                            <v-btn flat @click="scopeSetAll(false)">Clear all</v-btn>
-                          </div>
-
-                        </div>
-                      <p class="text-xs-right">
-                        <v-btn flat large outline color="accent"
-                          v-if="dflt.sa != config.sa"
-                          @click="config.sa = dflt.sa"
-                          >Reset to default</v-btn>
-                        <v-btn flat large outline>show help</v-btn>
-                      </p>
-                    </v-card-text>
-                  </v-card> 
-                </v-expansion-panel-content> 
-                -->
-
-                <!-- theme -->
+                <!-- theme 
                 <v-expansion-panel-content>
                   <div slot="header">
                     <h6>{{ $t('theme') }}:
@@ -85,7 +39,7 @@
                     </v-card-text>
                   </v-card> 
                 </v-expansion-panel-content> 
-
+                -->
               </v-expansion-panel>
             </v-card-text>
           </v-card>
@@ -137,6 +91,7 @@ import FsOptionSlider from '~/components/stateful/FsOptionSlider'
 import FsOptionRadio from '~/components/stateful/FsOptionRadio'
 import FsOptionSa from '~/components/stateful/FsOptionSa'
 import FsOptionScope from '~/components/stateful/FsOptionScope'
+import FsOptionTheme from '~/components/stateful/FsOptionTheme'
 
 export default {
   name: 'FsDraftConfigurator',
@@ -145,6 +100,7 @@ export default {
     FsOptionRadio,
     FsOptionSa,
     FsOptionScope,
+    FsOptionTheme,
   },
   props: {
     pattern: {

@@ -24,7 +24,8 @@ export const state = () => ({
           options: {},
           measurements: {},
           sa: {},
-          scope: {}
+          scope: {},
+          theme: 'classic'
         },
         pattern: '',
         model: '',
@@ -117,10 +118,12 @@ export const mutations = {
       }
     },
     setDraftScope(state, payload) {
-        console.log(payload)
       state.draft.config.scope = { 
         type: payload.type,
         included: {...payload.included}
       }
+    },
+    setDraftTheme(state, payload) {
+      state.draft.config.theme = payload
     }
 }
