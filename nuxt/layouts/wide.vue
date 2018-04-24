@@ -12,8 +12,8 @@
           </v-container>
         </v-content>
         <v-footer fixed height="auto" class="hidden-lg-and-up">
-          <fs-mobile-toolbar color="primary" :right="(false)" />
-        </v-footer>
+          <the-mobile-toolbar color="primary" :right="(false)" />
+        </v-foer>
   </v-app>
 </template>
 
