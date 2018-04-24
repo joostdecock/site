@@ -1,13 +1,16 @@
 <template>
   <v-expansion-panel-content>
     <div slot="header">
+      <div class="fs-state-icons mr-3">
+        <v-icon v-if="computedDflt != value" @click.stop="resetDraftOption()" large color="accent">settings_backup_restore</v-icon>
+        <v-icon large class="ml-2" color="secondary">help_outline</v-icon>
+      </div>
       <h6>{{ option.title }}: 
         <span :class="(computedDflt != value) ? 'fs-option-custom' : ''">
           {{ $fs.units.format(value, $auth.user.units, option.type) }}
         </span>
       </h6>
-      Local value: {{ value }}<br>
-      Store value: {{ $store.state.draft.config.options[name] }}
+      
     </div>
     <v-card>
       <v-card-text>
@@ -19,14 +22,6 @@
          v-model="value"
          :step="step">
         </v-slider>
-        <p class="text-xs-right">
-        <v-btn flat large outline color="accent"
-          v-if="computedDflt != value"
-          @click="resetDraftOption()">
-          {{ $t('resetToDefault') }}
-        </v-btn>
-        <v-btn flat large outline>{{ $t('showHelp') }}</v-btn>
-        </p>
       </v-card-text>
     </v-card>
   </v-expansion-panel-content>
@@ -75,10 +70,10 @@ export default {
   methods: {
     resetDraftOption() {
       this.value = this.computedDflt
-      this.$store.commit('setDraftOption', {name: this.name, value: this.value} )
+      this.$store.dispatch('draftOptionUpdate', {name: this.name, value: this.value} )
     },
     updateDraftOption(name, value) {
-      this.$store.commit('setDraftOption', {name: name, value: value} )
+      this.$store.dispatch('draftOptionUpdate', {name: name, value: value} )
     }
   }
 }

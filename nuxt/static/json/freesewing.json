@@ -928,7 +928,7 @@
                     "type": "measure",
                     "min": 3,
                     "max": 10,
-                    "default": 6.35,
+                    "default": 6,
                     "dependsOn": "buttonholePlacketStyle",
                     "onlyOn": 1
                 },

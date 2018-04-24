@@ -39,7 +39,8 @@
         <v-stepper-step step="3">{{ $t('chooseYourOptions') }}</v-stepper-step>
 			</v-stepper-header>
 		</v-stepper>
-    <p class="quick-pick">{{ $t('quickPick')}}:<br> fixme</p>
+    <p class="quick-pick">{{ $t('quickPick')}}:<br> 
+    fixme</p>
     <fs-draft-configurator :pattern="pattern" :model="model" />
   </fs-wrapper-login-required>
 </template>
@@ -78,7 +79,7 @@ export default {
     }
   },
   mounted () {
-    this.$store.commit('initializeDraft', {
+    this.$store.dispatch('initializeDraft', {
       model: this.$auth.user.models[this.model], 
       pattern: this.$fs.conf.patterns[this.pattern],
       type: 'draftFromModel'

@@ -1,11 +1,13 @@
 <template>
   <v-expansion-panel-content>
     <div slot="header">
-      <h6>{{ $t('patternParts') }}: 
-        <span :class="(scope != value) ? 'fs-option-custom' : ''">
+      <div class="fs-state-icons mr-3">
+        <v-icon v-if="scope != value" @click.stop="resetDraftScope()" large color="accent">settings_backup_restore</v-icon>
+        <v-icon large class="ml-2" color="secondary">help_outline</v-icon>
+      </div>
+      <h6><span :class="(scope != value) ? 'fs-option-custom' : ''">
           {{ (value === 'pattern') ? $t('completePattern') : $t('onlySelectedPatternParts') }}
-        </span>
-      </h6>
+      </span></h6>
     </div>
     <v-card>
       <v-card-text>
@@ -18,7 +20,6 @@
             :value="value"
             :color="(scope != value) ? 'accent' : 'primary'"></v-radio>
         </v-radio-group>
-
         <div v-if="value === 'parts'">
           <p>{{ $t('selectThePartsYouWantIncludedInYourDraft') }}</p>
           <v-checkbox
@@ -32,17 +33,7 @@
             <v-btn flat @click="scopeSetAll(true)">Check all</v-btn>
             <v-btn flat @click="scopeSetAll(false)">Clear all</v-btn>
           </div>
-
         </div>
-
-        <p class="text-xs-right">
-        <v-btn flat large outline color="accent"
-          v-if="scope != value"
-          @click="resetDraftScope()">
-          {{ $t('resetToDefault') }}
-        </v-btn>
-        <v-btn flat large outline>{{ $t('showHelp') }}</v-btn>
-        </p>
       </v-card-text>
     </v-card>
   </v-expansion-panel-content>

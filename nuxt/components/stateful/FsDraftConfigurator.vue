@@ -1,64 +1,31 @@
 <template>
   <div class="m800">
     <template>
+      <h2>{{ $t('patternOptions') }}</h2>
       <v-expansion-panel>
-        <v-expansion-panel-content>
-          <div slot="header"><h4>General</h4></div>
-          <v-card>
-            <v-card-text>
-              <v-expansion-panel>
-                <fs-option-sa :pattern="$fs.conf.patterns[pattern]" /> <!-- seam allowance -->
-                <fs-option-scope :pattern="$fs.conf.patterns[pattern]" /> <!-- scope -->
-                <fs-option-theme :pattern="$fs.conf.patterns[pattern]" /> <!-- theme -->
-
-                <!-- theme 
-                <v-expansion-panel-content>
-                  <div slot="header">
-                    <h6>{{ $t('theme') }}:
-                      <span :class="(dflt.theme == config.theme) ? 'default' : 'custom'">
-                        {{ $t(config.theme) }}
-                      </span>
-                    </h6>
-                  </div>
-                  <v-card>
-                    <v-card-text>
-												<v-radio-group v-model="config.theme">
-												  <v-radio
-                            v-for="index in ['classic', 'paperless']" :key="index"
-												    :label="$t(index)"
-                            :value="index"
-                            :color="(index == dflt.theme) ? 'primary' : 'accent'" ></v-radio>
-											  </v-radio-group>
-                      <p class="text-xs-right">
-                        <v-btn flat large outline color="accent"
-                          v-if="dflt.theme != config.theme"
-                          @click="config.theme = dflt.theme"
-                          >Reset to default</v-btn>
-                        <v-btn flat large outline>show help</v-btn>
-                      </p>
-                    </v-card-text>
-                  </v-card> 
-                </v-expansion-panel-content> 
-                -->
-              </v-expansion-panel>
-            </v-card-text>
-          </v-card>
-        </v-expansion-panel-content>
         <v-expansion-panel-content v-for="(group, index) in $fs.conf.patterns[pattern].optiongroups" :key="index">
-          <div slot="header"><h4>{{ index }}</h4></div>
+          <div slot="header">
+            <h4>{{ index }}
+            <v-badge overlap color="accent" v-if="$store.state.draft.custom[index]">
+              <span slot="badge" class="fs-custom-count">{{ $store.state.draft.custom[index]}}</span>
+              &nbsp;
+            </v-badge>
+            </h4>
+          </div>
           <v-card>
             <v-card-text>
               <v-expansion-panel>
                 <template v-for="option in group">
-                  
+                  <!-- chooseOne options --> 
                   <fs-option-radio
                     v-if="options[option].type === 'chooseOne'"
                     :key="option"
                     :pattern="pattern"
+                    :name="option"
                     :option="options[option]"
                     :dflt="''+options[option].default"
                   />
-
+                  <!-- measure, angle, or percent options --> 
                   <fs-option-slider
                     v-else
                     :key="option"
@@ -67,20 +34,27 @@
                     :option="options[option]"
                     :dflt="(options[option].default)"
                   />
-
                 </template>
               </v-expansion-panel>
             </v-card-text>
           </v-card>
         </v-expansion-panel-content>
       </v-expansion-panel>
-      <p class="text-xs-right">
+
+      <h2>{{ $t('draftOptions') }}</h2>
+      <v-expansion-panel>
+                <!-- sa    --><fs-option-sa    :pattern="$fs.conf.patterns[pattern]" />
+                <!-- scope --><fs-option-scope :pattern="$fs.conf.patterns[pattern]" />
+                <!-- theme --><fs-option-theme :pattern="$fs.conf.patterns[pattern]" />
+              </v-expansion-panel>
+      <p class="text-xs-right mt-5">
       <v-btn color="primary" large>
         <v-icon class="mr-3">insert_drive_file</v-icon>
         {{ $t('draftPatternForModel', {
           pattern: $fs.ucfirst(pattern),
           model: $auth.user.models[model].name}
-          ) }}</v-btn>
+        ) }}
+      </v-btn>
       </p>
     </template>
   </div>
@@ -113,62 +87,12 @@ export default {
     },
   },
   data: function() {
-    const dflt = this.$fs.conf.patterns[this.pattern]
-    dflt.sa = this.$auth.user.account.units
-    dflt.scope = 'complete'
-    dflt.theme = 'classic'
-    const customScope = {}
-    for (let part in this.$fs.conf.patterns[this.pattern].parts) {
-      customScope[part] = true
-    }
-    const sa = {
-      none: '',
-      metric: ' (' + this.$fs.units.format(this.$fs.conf.defaults.sa.metric*10, 'metric', 'measure') + ')',
-      imperial: ' (' + this.$fs.units.format(this.$fs.conf.defaults.sa.imperial, 'imperial', 'measure') + ')',
-      custom: this.$fs.conf.defaults.sa.custom,
-    }
-    const c = { 
-      options: {}, 
-      sa: this.$auth.user.account.units,
-      theme: 'classic',
-      scope: 'complete' 
-    }
-    if (typeof this.$fs.conf.patterns[this.pattern].seamAllowance !== 'undefined') {
-      sa.patternMetric = ' (' + this.$fs.units.format(this.$fs.conf.patterns[this.pattern].seamAllowance.metric, 'metric', 'measure') + ')'
-      sa.patternImperial = ' (' + this.$fs.units.format(this.$fs.conf.patterns[this.pattern].seamAllowance.imperial, 'imperial', 'measure') + ')'
-      c.sa = 'pattern'+this.$fs.ucfirst(this.$auth.user.account.units)
-      dflt.sa = c.sa
-    }
-    for (let optionName in this.$fs.conf.patterns[this.pattern].options) {
-      c.options[optionName] = this.$fs.conf.patterns[this.pattern].options[optionName].default
-    }
-    return {
-      options: this.$fs.conf.patterns[this.pattern].options,
-      config: c,
-      dflt: dflt,
-      sa: sa,
-      customSa: 0,
-      customScope: customScope
-    }
+    return { options: this.$fs.conf.patterns[this.pattern].options }
   },
-  methods: {
-    scopeSetAll: function(val) {
-      for (let part in this.$fs.conf.patterns[this.pattern].parts) {
-        this.customScope[part] = val
-      }
+  computed: { 
+    customCount () {
+      return this.$store.state.draft.custom
     }
   }
 }
 </script>
-
-<style scoped>
-  ul.expansion-panel {
-    margin-left: 0;
-  }
-  .m800 {
-    max-width: 800px;
-    margin: auto;
-  }
-  span.default { color: #212121; }
-  span.custom { color: #ff5b77; }
-</style>

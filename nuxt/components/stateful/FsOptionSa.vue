@@ -1,13 +1,15 @@
 <template>
   <v-expansion-panel-content>
     <div slot="header">
-      <h6>{{ $t('seamAllowance') }}: 
+      <div class="fs-state-icons mr-3">
+        <v-icon v-if="computedDflt != value" @click.stop="resetDraftSa()" large color="accent">settings_backup_restore</v-icon>
+        <v-icon large class="ml-2" color="secondary">help_outline</v-icon>
+      </div>
+      <h6>
         <span :class="(computedDflt != value) ? 'fs-option-custom' : ''">
           {{ $t('txt-saOption-'+value) }}
         </span>
       </h6>
-      Local value: {{ value }}<br>
-      Store value: {{ $store.state.draft.config.sa.type }}
     </div>
     <v-card>
       <v-card-text>
@@ -20,14 +22,6 @@
             :value="index"
             :color="(computedDflt != index) ? 'accent' : 'primary'"></v-radio>
         </v-radio-group>
-        <p class="text-xs-right">
-        <v-btn flat large outline color="accent"
-          v-if="computedDflt != value"
-          @click="resetDraftSa()">
-          {{ $t('resetToDefault') }}
-        </v-btn>
-        <v-btn flat large outline>{{ $t('showHelp') }}</v-btn>
-        </p>
       </v-card-text>
     </v-card>
   </v-expansion-panel-content>
@@ -51,9 +45,9 @@ export default {
       custom: 1
     }
     if (typeof this.pattern.seamAllowance !== 'undefined') {
-      options.push({type: 'patternMetric', value: this.pattern.seamAllowance.metric})
-      options.push({type: 'patternImperial', value: this.pattern.seamAllowance.imperial})
-      computedDflt = 'pattern'.computedDflt
+      options.patternMetric = this.pattern.seamAllowance.metric
+      options.patternImperial = this.pattern.seamAllowance.imperial
+      computedDflt = 'pattern'+this.$fs.ucfirst(computedDflt)
     }
     return {
       computedDflt: computedDflt,
