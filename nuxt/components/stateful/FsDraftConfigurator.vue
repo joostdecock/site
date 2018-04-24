@@ -7,52 +7,11 @@
           <v-card>
             <v-card-text>
               <v-expansion-panel>
-
-                <!-- seam allowance -->
-                <fs-option-sa :pattern="$fs.conf.patterns[pattern]" />
-<!--
-                <v-expansion-panel-content>
-                  <div slot="header">
-                    <h6>{{ $t('seamAllowance') }}:
-                      <span :class="(dflt.sa == config.sa) ? 'default' : 'custom'">
-                        {{ $t('txt-saOption-'+config.sa) }}
-                      </span>
-                    </h6>
-                  </div>
-                  <v-card>
-                    <v-card-text>
-												<v-radio-group v-model="config.sa">
-												  <v-radio
-                            v-for="(value, index) in sa" :key="index"
-												    :label="( index === 'custom') 
-                              ?  $t('txt-saOption-'+index)+' (' +$t('seeBelow') + ')' 
-                              : $t('txt-saOption-'+index)+' '+value" 
-                            :value="index"
-                            :color="(dflt.sa == index) ? 'primary' : 'accent'" ></v-radio>
-											  </v-radio-group>
-                        <div v-if="config.sa === 'custom'">
-                          <p>
-                            {{ $t('txt-saOption-custom') }}: 
-                            {{ $fs.units.format(customSa*(($auth.user.account.units === 'metric') ? 10 : 25.4), $auth.user.account.units, 'measure') }}
-                          </p>
-                          <v-slider
-                          v-model="customSa"
-                          min="0"
-                          :max="2"
-                          :step="0.1"></v-slider>
-                        </div>
-                      <p class="text-xs-right">
-                        <v-btn flat large outline color="accent"
-                          v-if="dflt.sa != config.sa"
-                          @click="config.sa = dflt.sa"
-                          >{{ $t('resetToDefault') }}</v-btn>
-                          <v-btn flat large outline>{{ $t('showHelp') }}</v-btn>
-                      </p>
-                    </v-card-text>
-                  </v-card> 
-                </v-expansion-panel-content> 
--->
+                <fs-option-sa :pattern="$fs.conf.patterns[pattern]" /> <!-- seam allowance -->
+                <fs-option-scope :pattern="$fs.conf.patterns[pattern]" /> <!-- scope -->
                 <!-- scope -->
+                  <!--
+
                 <v-expansion-panel-content>
                   <div slot="header">
                     <h6>{{ $t('patternParts') }}:
@@ -96,6 +55,7 @@
                     </v-card-text>
                   </v-card> 
                 </v-expansion-panel-content> 
+                -->
 
                 <!-- theme -->
                 <v-expansion-panel-content>
@@ -176,13 +136,15 @@
 import FsOptionSlider from '~/components/stateful/FsOptionSlider'
 import FsOptionRadio from '~/components/stateful/FsOptionRadio'
 import FsOptionSa from '~/components/stateful/FsOptionSa'
+import FsOptionScope from '~/components/stateful/FsOptionScope'
 
 export default {
   name: 'FsDraftConfigurator',
   components: {
     FsOptionSlider,
     FsOptionRadio,
-    FsOptionSa
+    FsOptionSa,
+    FsOptionScope,
   },
   props: {
     pattern: {

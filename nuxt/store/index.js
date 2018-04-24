@@ -23,7 +23,8 @@ export const state = () => ({
         config: {
           options: {},
           measurements: {},
-          sa: {}
+          sa: {},
+          scope: {}
         },
         pattern: '',
         model: '',
@@ -95,6 +96,10 @@ export const mutations = {
             value: (this.$auth.user.account.units === 'imperial') ? 0.625 : 1
           }
         }
+        config.scope = {
+          type: 'pattern',
+          included: []
+        }
         state.draft = {
             type: payload.type,
             model: payload.model.handle,
@@ -106,10 +111,16 @@ export const mutations = {
       state.draft.config.options[payload.name] = payload.value
     },
     setDraftSa(state, payload) {
-      console.log('Setting SA to '+payload.type)
       state.draft.config.sa = { 
         type: payload.type,
         value: payload.value
+      }
+    },
+    setDraftScope(state, payload) {
+        console.log(payload)
+      state.draft.config.scope = { 
+        type: payload.type,
+        included: {...payload.included}
       }
     }
 }

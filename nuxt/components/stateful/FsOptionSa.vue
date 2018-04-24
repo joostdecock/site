@@ -35,7 +35,7 @@
 
 <script>
 export default {
-  name: 'FsOptionRadio',
+  name: 'FsOptionSa',
   props: {
     pattern: {
       type: Object,
