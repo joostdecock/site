@@ -162,11 +162,9 @@
           </v-menu>
           <v-spacer></v-spacer>
         </v-toolbar>
-
-        <v-toolbar color="white" flat>
+        <!-- user toolbar -->
+        <v-toolbar color="white" flat v-if="$auth.loggedIn">
           <v-spacer></v-spacer>
-
-          <div v-if="$auth.loggedIn">
             <nuxt-link :to="$fs.path('/draft')">
               <v-btn large flat>
                 <v-icon class="mr-3" color="success">insert_drive_file</v-icon>
@@ -198,9 +196,11 @@
                 {{ $t('settings') }}
               </v-btn>
             </nuxt-link>
-          </div>
-
-          <div v-else>
+          <v-spacer></v-spacer>
+        </v-toolbar>
+        <!-- anon toolbar -->
+        <v-toolbar color="white" flat v-else>
+          <v-spacer></v-spacer>
             <nuxt-link :to="$fs.path('/signup')">
               <v-btn large color="success">
                 <v-icon class="mr-3" color="white">person_add</v-icon>
@@ -219,7 +219,6 @@
                 {{ $t('becomeAPatron') }}
               </v-btn>
             </nuxt-link>
-          </div>
           <v-spacer></v-spacer>
         </v-toolbar>
   </div>

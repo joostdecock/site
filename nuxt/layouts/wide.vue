@@ -13,7 +13,7 @@
         </v-content>
         <v-footer fixed height="auto" class="hidden-lg-and-up">
           <the-mobile-toolbar color="primary" :right="(false)" />
-        </v-foer>
+        </v-footer>
   </v-app>
 </template>
 

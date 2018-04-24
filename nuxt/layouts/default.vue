@@ -59,7 +59,7 @@ export default {
   },
   created: function() {
     if(!this.$auth.loggedIn) {
-      this.$auth.loginWith('user');
+      this.$auth.fetchUser();
     }
   },
   data () {

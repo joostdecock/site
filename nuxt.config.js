@@ -85,7 +85,6 @@ module.exports = {
   auth: {
     cookie: false,
     redirect: {
-      user: false
     },
     strategies: {
       signup: {
