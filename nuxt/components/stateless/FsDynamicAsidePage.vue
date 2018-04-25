@@ -40,7 +40,7 @@ export default {
       return this.$store.state.components.data['page']
     }, 
     repo () {
-      return this.$store.state.freesewing.site.repo
+      return this.$store.state.fs.repo.site
     }
   }
 }

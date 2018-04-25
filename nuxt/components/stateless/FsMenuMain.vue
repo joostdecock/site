@@ -117,7 +117,6 @@ export default {
         this.cmtySub = false
         this.userSub = false
         this[menu] = true
-        console.log(this[menu])
       }
     }
   }
