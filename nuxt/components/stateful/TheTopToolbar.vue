@@ -4,24 +4,24 @@
       <v-spacer></v-spacer>
       <nuxt-link :to="$fs.path('/patterns')">
         <v-btn flat large>
-          <v-icon class="mr-3" color="primary">content_paste</v-icon>
+          <v-icon class="mr-3">content_paste</v-icon>
           {{ $t('patterns') }}
         </v-btn>
       </nuxt-link>
       <nuxt-link :to="$fs.path('/blog')">
         <v-btn flat large>
-          <v-icon class="mr-3" color="primary">rss_feed</v-icon>
+          <v-icon class="mr-3">rss_feed</v-icon>
           {{ $t('blog') }}
         </v-btn>
       </nuxt-link>
       <the-documentation-dropdown-menu />
+      <the-community-dropdown-menu />
       <nuxt-link :to="$fs.path('/search')">
         <v-btn flat large>
-          <v-icon class="mr-3" color="primary">search</v-icon>
+          <v-icon class="mr-3">search</v-icon>
           {{ $t('search') }}
         </v-btn>
       </nuxt-link>
-      <the-community-dropdown-menu />
       <the-language-dropdown-menu />
       <v-spacer></v-spacer>
     </v-toolbar>
@@ -31,11 +31,12 @@
 </template>
 
 <script>
-import FsIconGithub    from '~/components/stateless/FsIconGithub'
-import FsIconTwitter   from '~/components/stateless/FsIconTwitter'
-import FsIconInstagram from '~/components/stateless/FsIconInstagram'
-import FsIconGitter    from '~/components/stateless/FsIconGitter'
-import TheUserToolbar  from '~/components/stateless/TheUserToolbar'
+import FsIconGithub      from '~/components/stateless/FsIconGithub'
+import FsIconTwitter     from '~/components/stateless/FsIconTwitter'
+import FsIconInstagram   from '~/components/stateless/FsIconInstagram'
+import FsIconGitter      from '~/components/stateless/FsIconGitter'
+import TheUserToolbar    from '~/components/stateless/TheUserToolbar'
+import TheVisitorToolbar from '~/components/stateless/TheVisitorToolbar'
 
 import TheDocumentationDropdownMenu  from '~/components/stateless/TheDocumentationDropdownMenu'
 import TheCommunityDropdownMenu      from '~/components/stateless/TheCommunityDropdownMenu'
@@ -49,6 +50,7 @@ export default {
     FsIconInstagram,
     FsIconGitter,
     TheUserToolbar,
+    TheVisitorToolbar,
     TheDocumentationDropdownMenu,
     TheCommunityDropdownMenu,
     TheLanguageDropdownMenu

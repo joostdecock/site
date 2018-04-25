@@ -1,0 +1,68 @@
+<template>
+  <v-list :dense="dense" :class="dense ? 'fs-side-sub' : ''">
+    <v-list-tile :to="$fs.path('/drafts')">
+      <v-list-tile-action>
+        <v-icon color="primary">folder_open</v-icon>
+      </v-list-tile-action>
+      <v-list-tile-content>
+        <v-list-tile-title>{{ $t('drafts') }}</v-list-tile-title>
+      </v-list-tile-content>
+    </v-list-tile>
+    <v-list-tile :to="$fs.path('/models')">
+      <v-list-tile-action>
+        <v-icon color="primary">perm_contact_calendar</v-icon>
+      </v-list-tile-action>
+      <v-list-tile-content>
+        <v-list-tile-title>{{ $t('models') }}</v-list-tile-title>
+      </v-list-tile-content>
+    </v-list-tile>
+    <v-list-tile :to="$fs.path('/account')">
+      <v-list-tile-action>
+        <v-icon color="primary">tune</v-icon>
+      </v-list-tile-action>
+      <v-list-tile-content>
+        <v-list-tile-title>{{ $t('settings') }}</v-list-tile-title>
+      </v-list-tile-content>
+    </v-list-tile>
+    <v-list-tile :to="$fs.user($auth.user.account.username)">
+      <v-list-tile-action>
+        <v-icon color="primary">fingerprint</v-icon>
+      </v-list-tile-action>
+      <v-list-tile-content>
+        <v-list-tile-title>{{ $t('profile') }}</v-list-tile-title>
+      </v-list-tile-content>
+    </v-list-tile>
+    <v-divider></v-divider>
+    <v-list-tile :to="$fs.path('/account')">
+      <v-list-tile-action>
+        <v-icon color="primary">power_settings_new</v-icon>
+      </v-list-tile-action>
+      <v-list-tile-content>
+        <v-list-tile-title>{{ $t('logOut') }}</v-list-tile-title>
+      </v-list-tile-content>
+    </v-list-tile>
+  </v-list>
+</template>
+
+<script>
+export default {
+  name: 'FsMenuUser',
+  methods: {
+    logout: function() {
+      this.$auth.logout()
+      this.$auth.reset()
+    }
+  },
+  props: {
+    dense: Boolean
+  }
+}
+</script>
+
+<style scope>
+a.list__tile--active {
+  background: rgba(0, 0, 0, .05)!important;
+  font-weight: bold;
+  border-right: 5px solid #212121;
+}
+</style>

@@ -13,25 +13,20 @@
         {{ $t('newModel') }}
       </v-btn>
     </nuxt-link>
-    |
-    <nuxt-link :to="$fs.path('/drafts')">
-      <v-btn large flat>
-        <v-icon class="mr-3">folder</v-icon>
-        {{ $t('drafts') }}
-      </v-btn>
-    </nuxt-link>
-    <nuxt-link :to="$fs.path('/models')">
-      <v-btn large flat>
-        <v-icon class="mr-3">perm_contact_calendar</v-icon>
-        {{ $t('models') }}
-      </v-btn>
-    </nuxt-link>
-    <nuxt-link :to="$fs.path('/account')">
-      <v-btn large flat>
-        <v-icon class="mr-3">settings</v-icon>
-        {{ $t('settings') }}
-      </v-btn>
-    </nuxt-link>
+    <the-account-dropdown-menu />
     <v-spacer></v-spacer>
   </v-toolbar>
 </template>
+
+<script>
+import TheAccountDropdownMenu from '~/components/stateless/TheAccountDropdownMenu'
+
+export default {
+  name: 'TheUserToolbar',
+  components: {
+    TheAccountDropdownMenu
+  }
+}
+</script>
+
+

@@ -1,25 +1,26 @@
 <template>
-  <v-toolbar color="white" flat>
+  <v-toolbar flat color="white">
     <v-spacer></v-spacer>
-    <nuxt-link :to="$fs.path('/signup')">
-      <v-btn large color="success">
-        <v-icon class="mr-3" color="white">person_add</v-icon>
-        {{ $t('signUpForAFreeAccount') }}
-      </v-btn>
-    </nuxt-link>
-    <nuxt-link :to="$fs.path('/login')">
-      <v-btn large color="primary">
-        <v-icon class="mr-3" color="white">vpn_key</v-icon>
-        {{ $t('logIn') }}
-      </v-btn>
-    </nuxt-link>
-    <nuxt-link :to="$fs.path('/patrons/join')">
-      <v-btn large color="accent">
-        <v-icon class="mr-3" color="white">favorite</v-icon>
-        {{ $t('becomeAPatron') }}
-      </v-btn>
-    </nuxt-link>
+    <fs-button-signup />
+    <fs-button-login />
+    <fs-button-patron />
     <v-spacer></v-spacer>
   </v-toolbar>
-  </div>
 </template>
+
+<script>
+import FsButtonPatron from '~/components/stateless/FsButtonPatron'
+import FsButtonSignup from '~/components/stateless/FsButtonSignup'
+import FsButtonLogin from '~/components/stateless/FsButtonLogin'
+
+export default {
+  name: 'TheVisitorToolbar',
+  components: {
+    FsButtonPatron,
+    FsButtonSignup,
+    FsButtonLogin
+  }
+}
+</script>
+
+
