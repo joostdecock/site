@@ -42,11 +42,11 @@ module.exports = {
           iso: 'en-US',
           name: 'English'
         },
-        {
-          code: 'nl',
-          iso: 'nl-NL',
-          name: 'Nederlands'
-        }
+        //{
+        //  code: 'nl',
+        //  iso: 'nl-NL',
+        //  name: 'Nederlands'
+        //}
       ],
       defaultLocale: 'en',
       noPrefixDefaultLocale: true,
