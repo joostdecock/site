@@ -1,14 +1,6 @@
 <template>
   <section>
-    <ul class="breadcrumbs"> 
-      <li>
-        <nuxt-link :to="$fs.path('/')">
-          <v-icon color="primary">home</v-icon>
-        </nuxt-link>
-      </li>
-      <li><v-icon small slot="divider">chevron_right</v-icon></li>
-      <li>{{ $t('blog') }}</li>
-    </ul>
+    <fs-breadcrumbs>{{ $t('blog') }}</fs-breadcrumbs> 
     <v-container fluid grid-list-lg>
       <v-layout row wrap>
         <v-flex class="xs12 sm6 xl4" v-for="post in posts" :key="post.permalink" >
@@ -33,17 +25,23 @@
       <p>Many hands make light work, and it's excellent karma to make a contribution this way.</p>
       <p>To learn more about what you can do, and how to do it, click the link below.</p>
       <p class="text-xs-right">
-      <v-btn color="primary" large>
-        <v-icon>translate</v-icon>FIXME
-      </v-btn>
+        <v-btn color="primary" large>
+          <v-icon>translate</v-icon>FIXME
+        </v-btn>
       </p>
     </blockquote>
   </section>
 </template>
 
 <script>
+
+import FsBreadcrumbs from '~/components/stateless/FsBreadcrumbs'
+
 export default {
   layout: 'wide',
+  components: {
+    FsBreadcrumbs
+  },
   asyncData: async function ({ app, route }) {
     let locale = ''
     if(route.path.substr(0,5) === '/blog') {

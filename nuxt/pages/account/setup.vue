@@ -1,5 +1,5 @@
 <template>
   <div>
-    {{ $t('accountSetup') }}
+    fixme: account setup
   </div>
 </template>

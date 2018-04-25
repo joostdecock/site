@@ -120,6 +120,10 @@ module.exports = {
   router: {
     extendRoutes (routes, resolve) {
       routes.push({
+        path: '/docs/*', 
+        component: 'nuxt/pages/docs/_page.vue'
+      })
+      routes.push({
         path: '/signup/confirm/*', 
         component: 'nuxt/pages/signup/confirm-email.vue'
       })

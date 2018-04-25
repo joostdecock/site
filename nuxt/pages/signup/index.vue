@@ -1,7 +1,7 @@
 <template>
   <section class="on-splash">
     <div v-if="$auth.loggedIn">
-      <base-logout />
+      <fs-message-logout />
     </div>
     <div v-else>
       <div v-if="error" class="mb-5">
@@ -38,7 +38,7 @@
         </div>
         <div v-else-if="reason === ''" class="mt-5">
           <v-btn href="https://github.com/freesewing/site/issues/new?title=Problems%20signing%20up" large color="primary" target="_BLANK">
-            <icon-github color="#ffffff" class="mr-3"/>
+            <fs-icon-github color="#ffffff" class="mr-3"/>
             {{ $t('createIssueOnGithub') }}
           </v-btn>
           <v-btn @click="error = false" large >
@@ -109,9 +109,9 @@ export default {
   auth: false,
   layout: 'splash',
   components: {
-    IconGithub,
-    IconGitter,
-    BaseLogout,
+    FsIconGithub,
+    FsIconGitter,
+    FsMessageLogout,
   },
   data () {
     return {

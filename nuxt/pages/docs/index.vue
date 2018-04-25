@@ -1,12 +1,11 @@
 <template>
   <section>
     <router-link to="/">Home</router-link> / 
-      <h1>Blog posts</h1>
-        <ul>
-            <li v-for="post in posts" :key="post.permalink">
-                <router-link :to="post.permalink">{{ post.title }} - {{ post.permalink }}</router-link>
-            </li>
-        </ul>
+    <ul>
+      <li v-for="page in pages" :key="page.permalink">
+        <router-link :to="page.permalink">{{ page.title }} - {{ page.permalink }}</router-link>
+      </li>
+    </ul>
   </section>
 </template>
 
@@ -14,8 +13,8 @@
 
 export default {
     asyncData: async function ({ app, route }) {
-        var list =  await app.$content('/en/docs').getAll();
-        return { posts: list }
+        var list =  await app.$content('/'+app.i18n.locale+'/docs').getAll();
+        return { pages: list }
     }
 }
 </script>

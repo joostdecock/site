@@ -6,27 +6,27 @@
       </div>
     </the-right-drawer>
     <the-left-drawer />
-      <the-top-toolbar color="white" light class="hidden-md-and-down"/>
-        <v-content class="fs-vertical-container">
-          <v-container>
-            <v-layout row wrap>
-              <v-flex xl6 offset-xl1 lg7 offset-lg0 md10 offset-md1 sm12 xs12>
-                <nuxt />
-              </v-flex>
-              <v-flex xl3 offset-xl1 lg4 offset-lg1 hidden-md-and-down>
-                <aside class="fs-sticky-column">
-                  <div class="fs-scroll-column mt-5">
-                    <component :is="rightColumnComponent" /> 
-                    <div class="fs-toolbar-spacer"></div>
-                  </div>
-                </aside>
-              </v-flex>
-            </v-layout>
-          </v-container>
-        </v-content>
-        <v-footer fixed height="auto" class="hidden-lg-and-up">
-          <the-mobile-toolbar color="primary" />
-        </v-footer>
+    <the-top-toolbar color="white" light class="hidden-md-and-down"/>
+    <v-content class="fs-vertical-container">
+      <v-container>
+        <v-layout row wrap>
+          <v-flex xl6 offset-xl1 lg7 offset-lg0 md10 offset-md1 sm12 xs12>
+            <nuxt />
+          </v-flex>
+          <v-flex xl3 offset-xl1 lg4 offset-lg1 hidden-md-and-down>
+            <aside class="fs-sticky-column">
+              <div class="fs-scroll-column mt-5">
+                <component :is="rightColumnComponent" /> 
+                <div class="fs-toolbar-spacer"></div>
+              </div>
+            </aside>
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </v-content>
+    <v-footer fixed height="auto" class="hidden-lg-and-up">
+      <the-mobile-toolbar color="primary" />
+    </v-footer>
   </v-app>
 </template>
 
@@ -59,7 +59,7 @@ export default {
   },
   created: function() {
     if(!this.$auth.loggedIn) {
-      this.$auth.fetchUser();
+      this.$auth.loginWith('user');
     }
   },
   data () {

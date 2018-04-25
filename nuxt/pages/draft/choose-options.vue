@@ -1,6 +1,6 @@
 <template>
-  <fs-wrapper-login-required> 
-		<ul class="breadcrumbs"> 
+  <fs-wrapper-login-required v-if="$route.params.model"> 
+    <ul class="breadcrumbs"> 
 			<li>
 				<nuxt-link :to="$fs.path('/')">
 					<v-icon color="primary">home</v-icon>
@@ -62,10 +62,11 @@ export default {
       return this.$route.params.pattern
     },
     patternName: function() {
-      return this.$route.params.pattern[0].toUpperCase() + this.$route.params.pattern.slice(1)
+      return this.$fs.ucfirst(this.$route.params.pattern)
     },
     models: function() {
       if(!this.$auth.loggedIn) return false
+      if(!this.$route.params.model) return false
       var valid = []
       var invalid = []
       for (let model of Object.keys(this.$auth.user.models)) {
@@ -76,14 +77,17 @@ export default {
         }
       }
       return { valid: valid, invalid: invalid }
+      return []
     }
   },
   mounted () {
-    this.$store.dispatch('initializeDraft', {
-      model: this.$auth.user.models[this.model], 
-      pattern: this.$fs.conf.patterns[this.pattern],
-      type: 'draftFromModel'
-    })
+    if(this.$auth.loggedIn && this.$route.params.model) {
+      this.$store.dispatch('initializeDraft', {
+        model: this.$auth.user.models[this.model], 
+        pattern: this.$fs.conf.patterns[this.pattern],
+        type: 'draftFromModel'
+      })
+    }
   }
 }
 </script>

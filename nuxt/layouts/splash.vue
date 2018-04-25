@@ -32,7 +32,12 @@ export default {
     TheLeftDrawer,
     TheMobileToolbar,
     TheTopToolbar
-  }
+  },
+  created: function() {
+    if(!this.$auth.loggedIn) {
+      this.$auth.loginWith('user');
+    }
+  },
 }
 </script>
 

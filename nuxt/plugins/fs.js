@@ -37,6 +37,7 @@ export default ({ app, store, router }) => {
 
       // Capitalize first letter of a string
       ucfirst: (input) => {
+        if (typeof input === 'undefined') return input
         return input[0].toUpperCase() + input.slice(1)
       },
 

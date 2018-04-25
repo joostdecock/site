@@ -31,7 +31,7 @@
         </div>
         <div v-else-if="reason === ''" class="mt-5">
           <v-btn href="https://github.com/freesewing/site/issues/new?title=Problems%20consent%20signing%20up" large color="primary" target="_BLANK">
-            <icon-github color="#ffffff" class="mr-3"/>
+            <fs-icon-github color="#ffffff" class="mr-3"/>
               {{ $t('createIssueOnGithub') }}
           </v-btn>
           <v-btn @click="error = false" large >
@@ -70,9 +70,9 @@
 </template>
 
 <script>
-import IconGithub from '~/components/stateless/FsIconGithub'
+import FsIconGithub from '~/components/stateless/FsIconGithub'
 import FsMessageConsentProfile from '~/components/stateless/FsMessageConsentProfile'
-import FsNessageLogout from '~/components/stateful/FsMessageLogout'
+import FsMessageLogout from '~/components/stateful/FsMessageLogout'
 export default {
   auth: false,
   layout: 'splash',

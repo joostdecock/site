@@ -1,5 +1,5 @@
 <template>
-  <fs-wrapper-login-required> 
+  <fs-wrapper-login-required v-if="$route.params.pattern"> 
 		<ul class="breadcrumbs"> 
 			<li>
 				<nuxt-link :to="$fs.path('/')">
@@ -70,7 +70,7 @@ export default {
       return this.$route.params.pattern
     },
     patternName: function() {
-      return this.$route.params.pattern[0].toUpperCase() + this.$route.params.pattern.slice(1)
+      return this.$fs.ucfirst(this.$route.params.pattern)
     },
     models: function() {
       if(!this.$auth.loggedIn) return false

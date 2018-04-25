@@ -52,7 +52,7 @@ export default {
   mounted: function() {
     this.$store.commit('setDynamicComponent', {
       region: 'rightColumn', 
-      component: 'fs-right-column-blogpost'
+      component: 'fs-dynamic-aside-blogpost'
     })
     if(this.post.updates > 0) {
       const updates = this.post.updates

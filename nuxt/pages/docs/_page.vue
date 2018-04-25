@@ -2,6 +2,7 @@
   <section class="page">
     <fs-breadcrumbs-page :breadcrumbs="page.breadcrumbs" :title="page.title" />
       <h1>{{ page.title }} </h1>
+      {{ $i18n.locale }}
       <nuxtdown-body :body="page.body" class="fs-content fs-text" />
   </section>
 </template>
@@ -19,7 +20,7 @@ export default {
   mounted: function() {
     this.$store.commit('setDynamicComponent', {
       region: 'rightColumn', 
-      component: 'fs-right-column-page'
+      component: 'fs-dynamic-aside-page'
     })
     this.$store.commit('setComponentData', {
       source: 'page',
