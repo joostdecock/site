@@ -83,6 +83,7 @@
   "step3": "Step 3",
   "step4": "Step 4",
   "theme": "Theme",
+  "thisContentIsNotAvailableInLanguage": "This content is not available in English.",
   "thisPageIsNotIntendedForLoggedInUsers": "This page is not intended for logged-in users",
   "thisPageIsOnlyAvailableToFreesewingUsers": "This page is only available to Freesewing users",
   "translationTeam": "Translation team",
@@ -123,6 +124,8 @@
   "txt-saOption-custom": "Custom seam allowance",
   "txt-saOption-patternMetric": "Pattern default metric seam allowance",
   "txt-saOption-patternImperial": "Pattern default imperial seam allowance",
+  "txt-contentNotTranslated": "Unfortunately, this page has not (yet) been translated to {language}.",
+  "txt-contentLocaleFallback": "That's why we're showing you the English version instead.",
 
   "signup-invalid_input-title": "Invalid input",
   "signup-invalid_input-text": "Please enter a valid email address, and a password",

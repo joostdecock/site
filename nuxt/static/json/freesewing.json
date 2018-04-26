@@ -8,7 +8,8 @@
     },
     "api": {
       "data": "https://data.she.freesewing.org",
-      "core": "https://core.she.freesewing.org"
+      "core": "https://core.she.freesewing.org",
+      "content": "http://localhost:3000"
     },
     "repo": {
       "site": "https://github.com/freesewing/site"

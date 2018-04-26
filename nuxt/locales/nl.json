@@ -81,6 +81,7 @@
   "step3": "Stap 3",
   "step4": "Stap 4",
   "theme": "Layout",
+  "thisContentIsNotAvailableInLanguage": "Deze inhoud is niet beschikbaar in het Nederlands.",
   "thisPageIsNotIntendedForLoggedInUsers": "Deze pagina is niet bedoeld voor aangemelde gebruikers",
   "thisPageIsOnlyAvailableToFreesewingUsers": "Deze pagina is alleen beschikbaar voor Freesewing gebruikers",
   "translationTeam": "Vertaalteam",
@@ -120,6 +121,8 @@
   "txt-saOption-custom": "Aangepaste naadwaarde",
   "txt-saOption-patternMetric": "Standaard metrische naadwaarde voor dit patroon",
   "txt-saOption-patternImperial": "Standaard imperiale naadwaarde voor dit patroon",
+  "txt-contentNotTranslated": "Helaas is deze pagina (nog) niet vertaald naar het Nederlands.",
+  "txt-contentLocaleFallback": "Daarom tonen we je de Engelstalige versie.",
 
   "signup-invalid_input-title": "Ongeldige invoer",
   "signup-invalid_input-text": "Gelieve een geldig E-mail adres en een wachtwoord in te voeren",

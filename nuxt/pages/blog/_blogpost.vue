@@ -1,50 +1,64 @@
 <template>
   <section class="blogpost">
     <fs-breadcrumbs-blog :title="post.linktitle" />
-      <figure>
-        <a href='#'>
-          <img 
-           :src="imgDir+'/high_'+post.img" 
-           class="elevation-9" 
-           data-sizes="auto" 
-           data-srcset="
-           lqip_1.jpg 25w,
-           low_1.jpg 500w,
-           med_1.jpg 1000w,
-           high_1.jpg 2000w"
-           >	
-        </a>
-          <figcaption v-html="post.caption"></figcaption>
-      </figure> 
-      <h1>{{ post.title }} </h1>
-      <nuxtdown-body :body="post.body" class="fs-content fs-text" />
+    <fs-message-locale-fallback v-if="$i18n.locale != post.contentLocale" />
+    <figure>
+      <a href='#'>
+        <img 
+         :src="imgDir+'/high_'+post.img" 
+         class="elevation-9" 
+         data-sizes="auto" 
+         data-srcset="
+         lqip_1.jpg 25w,
+         low_1.jpg 500w,
+         med_1.jpg 1000w,
+         high_1.jpg 2000w"
+         >	
+      </a>
+      <figcaption v-html="post.caption"></figcaption>
+    </figure> 
+    <h1>{{ post.title }} </h1>
+    <nuxtdown-body :body="post.body" class="fs-content fs-text" />
   </section>
 </template>
 
 <script>
 import FsBreadcrumbsBlog from '~/components/stateless/FsBreadcrumbsBlog'
+import FsMessageLocaleFallback from '~/components/stateless/FsMessageLocaleFallback'
 // Dynamic
 export default {
   components: {
     FsBreadcrumbsBlog,
+    FsMessageLocaleFallback,
   },
   methods: {
     authorLink: function () {
       return '/blog/author/'+this.post.author.replace(/\s/g,''); 
     },
   },
-  asyncData: async function ({ app, route }) {
-    return { 
-      locale: app.i18n.locale, 
-      post: await app.$content('/'+app.i18n.locale+'/blog').get(route.path)
+  asyncData: async function ({ app, route, isDev }) {
+    const data = {}
+    data.post = await app.$content('/'+app.i18n.locale+'/blog').get(route.path)
+    .then(function (data) {
+      return data
+    })
+    .catch(function (res) {
+      console.log('Content not found')
+    })
+    if(typeof data.post === 'undefined' && app.i18n.locale !== 'en') {
+      console.log('Trying English version')
+      data.post = await app.$content('/en/blog').get(route.path.substr(3))
+      .then(function (data) {
+        return data
+      })
     }
+    return data
   },
   computed: { 
     imgDir () {
-      if (this.$i18n.locale === 'en') {
+      if (this.$i18n.locale === this.$i18n.fallbackLocale || this.post.contentLocale != this.$i18n.locale) {
         return '/img'+this.post.permalink
       } else {
-        // FIXME: If we ever have locales like nl-be, this will break as is assumes 2 character locales
         return '/img'+this.post.permalink.substr(3)
       }
     }
