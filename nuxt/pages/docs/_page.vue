@@ -1,21 +1,38 @@
 <template>
   <section class="page">
     <fs-breadcrumbs-page :breadcrumbs="page.breadcrumbs" :title="page.title" />
+    <fs-message-locale-fallback v-if="$i18n.locale != page.contentLocale" />
       <h1>{{ page.title }} </h1>
-      {{ $i18n.locale }}
       <nuxtdown-body :body="page.body" class="fs-content fs-text" />
   </section>
 </template>
 
 <script>
 import FsBreadcrumbsPage from '~/components/stateless/FsBreadcrumbsPage'
-// Dynamic
+import FsMessageLocaleFallback from '~/components/stateless/FsMessageLocaleFallback'
+
 export default {
   components: {
     FsBreadcrumbsPage,
+    FsMessageLocaleFallback,
   },
   asyncData: async function ({ app, route }) {
-    return { page: await app.$content('/'+app.i18n.locale+'/docs').get(route.path)}
+    const data = {}
+    data.page = await app.$content('/'+app.i18n.locale+'/docs').get(route.path)
+    .then(function (data) {
+      return data
+    })
+    .catch(function (res) {
+      console.log('Content not found')
+    })
+    if(typeof data.page === 'undefined' && app.i18n.locale !== 'en') {
+      console.log('Trying English version')
+      data.page = await app.$content('/en/docs').get(route.path.substr(3))
+      .then(function (data) {
+        return data
+      })
+    }
+    return data
   },
   mounted: function() {
     this.$store.commit('setDynamicComponent', {

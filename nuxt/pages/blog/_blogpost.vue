@@ -25,7 +25,7 @@
 <script>
 import FsBreadcrumbsBlog from '~/components/stateless/FsBreadcrumbsBlog'
 import FsMessageLocaleFallback from '~/components/stateless/FsMessageLocaleFallback'
-// Dynamic
+
 export default {
   components: {
     FsBreadcrumbsBlog,

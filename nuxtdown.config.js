@@ -31,30 +31,30 @@ module.exports = {
       data: { contentLocale: 'en' },
       markdown: markdownConfig
     }],
-    //// Dutch (Nederlands)
-    //['nl/blog', {
-    //  page: '/nl/blog/_blogpost',
-    //  permalink: '/nl/blog/:slug',
-    //  toc: 1,
-    //  data: { contentLocale: 'nl' },
-    //  markdown: markdownConfig
-    //}],
-    //['nl/showcase', {
-    //  page: '/nl/showcase/_showcase',
-    //  permalink: '/nl/showcase/:slug',
-    //  isPost: true,
-    //  data: { contentLocale: 'nl' },
-    //  markdown: markdownConfig
-    //}],
-    //['nl/docs', {
-    //  page: '/nl/docs/_page',
-    //  permalink: '/nl/docs/:section*/:slug',
-    //  isPost: false,
-    //  toc: 1,
-    //  breadcrumbs: true,
-    //  data: { contentLocale: 'nl' },
-    //  markdown: markdownConfig
-    //}],
+    // Dutch (Nederlands)
+    ['nl/blog', {
+      page: '/nl/blog/_blogpost',
+      permalink: '/nl/blog/:slug',
+      toc: 1,
+      data: { contentLocale: 'nl' },
+      markdown: markdownConfig
+    }],
+    ['nl/showcase', {
+      page: '/nl/showcase/_showcase',
+      permalink: '/nl/showcase/:slug',
+      isPost: true,
+      data: { contentLocale: 'nl' },
+      markdown: markdownConfig
+    }],
+    ['nl/docs', {
+      page: '/nl/docs/_page',
+      permalink: '/nl/docs/:section*/:slug',
+      isPost: false,
+      toc: 1,
+      breadcrumbs: true,
+      data: { contentLocale: 'nl' },
+      markdown: markdownConfig
+    }],
   ],
   api: {
     baseURL: 'http://localhost:3000',
