@@ -14,7 +14,7 @@
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title>
-              {{ post.date | moment("D MMMM YYYY") }}
+              {{ post.date }}
             </v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
@@ -48,7 +48,7 @@
             <p class="mt-0 mb-0 body-2" v-html="$fs.md.render(update.update)"></p>
 
             <p class="mt-2 body-1 text-xs-right mb-0 mt-0">
-              {{ update.date | moment("from") }}
+              {{ update.date }}
               <span v-if="update.by">{{ $t('by') }} <nuxt-link :to="$fs.user(update.by)">@{{ update.by }}</nuxt-link></span>
             </p>
           </div>

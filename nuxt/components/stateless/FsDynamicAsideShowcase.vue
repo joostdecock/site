@@ -14,7 +14,7 @@
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title>
-              {{ post.date | moment("D MMMM YYYY") }}
+              {{ post.date }}
             </v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
@@ -46,7 +46,7 @@
           <div>
             <h3 class="title mb-2 mt-0">{{ update.title }}</h3>
             <p class="mt-0 mb-0"><small>{{ update.update }}</small></p>
-            <p class="mt-2 body-1 text-xs-right mb-0 mt-0">{{ update.date | moment("from") }}</p>
+            <p class="mt-2 body-1 text-xs-right mb-0 mt-0">{{ update.date }}</p>
           </div>
         </v-card-title>
       </div>

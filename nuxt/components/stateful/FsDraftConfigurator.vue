@@ -16,7 +16,6 @@
             <v-card-text>
               <v-expansion-panel>
                 <template v-for="option in group">
-                  <!-- chooseOne options --> 
                   <fs-option-radio
                     v-if="options[option].type === 'chooseOne'"
                     :key="option"
@@ -25,7 +24,6 @@
                     :option="options[option]"
                     :dflt="''+options[option].default"
                   />
-                  <!-- measure, angle, or percent options --> 
                   <fs-option-slider
                     v-else
                     :key="option"
@@ -43,9 +41,9 @@
 
       <h2>{{ $t('draftOptions') }}</h2>
       <v-expansion-panel>
-                <!-- sa    --><fs-option-sa    :pattern="$fs.conf.patterns[pattern]" />
-                <!-- scope --><fs-option-scope :pattern="$fs.conf.patterns[pattern]" />
-                <!-- theme --><fs-option-theme :pattern="$fs.conf.patterns[pattern]" />
+                <fs-option-sa    :pattern="$fs.conf.patterns[pattern]" />
+                <fs-option-scope :pattern="$fs.conf.patterns[pattern]" />
+                <fs-option-theme :pattern="$fs.conf.patterns[pattern]" />
               </v-expansion-panel>
       <p class="text-xs-right mt-5">
       <v-btn color="primary" large>
