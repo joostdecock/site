@@ -28,7 +28,7 @@ $shadow = 0px 2px 1px -1px rgba(0, 0, 0, .2), 0px 1px 1px 0px rgba(0, 0, 0, .14)
 $body-font-family = -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
 
 // Set generous font size and line height
-$font-size-root = 22px
+$font-size-root = 18px
 $line-height-root = 1.4
 $breadcrumbs-item-font-size = 0.7 * $font-size-root
 $breadcrumbs-item-large-font-size = 0.9 * $font-size-root
@@ -164,12 +164,11 @@ img
 figure 
   margin: auto
 
-  img
-    box-shadow: $shadow
-
   figcaption 
     margin-bottom: $text-margin-bottom
     font-size: 75%
+    text-align: right
+    padding-right: 1rem
 
 // TOC
 a.nuxtdown-toc
@@ -243,3 +242,17 @@ ul.expansion-panel
   float: right;
   display: inline-block;
 }
+
+
+/* New look */
+$fs-shadow = 0 1px 2px rgba(0,0,0,0.05)
+
+.fs-shadow
+  box-shadow: $fs-shadow
+
+.fs-padding
+  padding: 1rem 2rem
+
+.fs-content
+  background: #fff
+  box-shadow: $fs-shadow

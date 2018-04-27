@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-toolbar color="white" flat>
+    <v-toolbar color="white" class="fs-shadow">
       <v-spacer></v-spacer>
       <nuxt-link :to="$fs.path('/patterns')">
         <v-btn flat large>

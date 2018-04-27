@@ -10,7 +10,7 @@
     <v-content class="fs-vertical-container">
       <v-container>
         <v-layout row wrap>
-          <v-flex xl6 offset-xl1 lg7 offset-lg0 md10 offset-md1 sm12 xs12>
+          <v-flex xl5 offset-xl2 lg7 offset-lg0 md10 offset-md1 sm12 xs12>
             <nuxt />
           </v-flex>
           <v-flex xl3 offset-xl1 lg4 offset-lg1 hidden-md-and-down>

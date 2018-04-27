@@ -1,7 +1,7 @@
 <template>
   <div>
-    <v-card>
-      <v-card-title class="fs-primary">
+    <v-card class="fs-shadow">
+      <v-card-title class="fs-card-title">
         <div>
           <div class="headline">{{ $t('postInfo') }}</div>
         </div>
@@ -36,8 +36,8 @@
         </v-list-tile>
       </v-list>
     </v-card>
-    <v-card v-if="updates" class="mt-3">
-      <v-card-title class="fs-primary">
+    <v-card v-if="updates" class="mt-3 fs-shadow">
+      <v-card-title class="fs-card-title">
         <div class="headline">{{ $t('updates') }}</div>
       </v-card-title>
       <div v-for="(update, id) in updates" :key="id">
@@ -55,8 +55,8 @@
         </v-card-title>
       </div>
     </v-card>
-    <v-card class="mt-3">
-      <v-card-title class="fs-primary">
+    <v-card class="mt-3 fs-shadow">
+      <v-card-title class="fs-card-title">
         <div>
           <div class="headline">{{ $t('contents') }}</div>
         </div>

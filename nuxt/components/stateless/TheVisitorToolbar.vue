@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar flat color="white">
+  <v-toolbar flat color="transparent">
     <v-spacer></v-spacer>
     <fs-button-signup />
     <fs-button-login />

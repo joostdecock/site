@@ -2,23 +2,24 @@
   <section class="blogpost">
     <fs-breadcrumbs :crumbs="crumbs">{{ post.linktitle }}</fs-breadcrumbs> 
     <fs-message-locale-fallback v-if="$i18n.locale != post.contentLocale" />
-    <figure>
-      <a href='#'>
-        <img 
-         :src="imgDir+'/high_'+post.img" 
-         class="elevation-9" 
-         data-sizes="auto" 
-         data-srcset="
-         lqip_1.jpg 25w,
-         low_1.jpg 500w,
-         med_1.jpg 1000w,
-         high_1.jpg 2000w"
-         >	
-      </a>
-      <figcaption v-html="post.caption"></figcaption>
-    </figure> 
-    <h1>{{ post.title }} </h1>
-    <nuxtdown-body :body="post.body" class="fs-content fs-text" />
+    <article class="fs-content fs-blogpost">
+      <figure>
+        <a href='#'>
+          <img 
+           :src="imgDir+'/high_'+post.img" 
+           data-sizes="auto" 
+           data-srcset="
+           lqip_1.jpg 25w,
+           low_1.jpg 500w,
+           med_1.jpg 1000w,
+           high_1.jpg 2000w"
+           >	
+        </a>
+        <figcaption v-html="post.caption"></figcaption>
+      </figure> 
+      <h1 class="fs-padding">{{ post.title }} </h1>
+      <nuxtdown-body :body="post.body" class="fs-content fs-text fs-padding" />
+    </article>
   </section>
 </template>
 
