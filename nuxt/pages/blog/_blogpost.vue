@@ -1,6 +1,6 @@
 <template>
   <section class="blogpost">
-    <fs-breadcrumbs-blog :title="post.linktitle" />
+    <fs-breadcrumbs :crumbs="crumbs">{{ post.linktitle }}</fs-breadcrumbs> 
     <fs-message-locale-fallback v-if="$i18n.locale != post.contentLocale" />
     <figure>
       <a href='#'>
@@ -23,13 +23,23 @@
 </template>
 
 <script>
-import FsBreadcrumbsBlog from '~/components/stateless/FsBreadcrumbsBlog'
+import FsBreadcrumbs from '~/components/stateless/FsBreadcrumbs'
 import FsMessageLocaleFallback from '~/components/stateless/FsMessageLocaleFallback'
 
 export default {
   components: {
-    FsBreadcrumbsBlog,
+    FsBreadcrumbs,
     FsMessageLocaleFallback,
+  },
+  data: function() {
+    return {
+      crumbs: [
+        { 
+          to: this.$fs.path('/blog/'),
+          title: this.$t('Blog')
+        }
+      ]
+    }
   },
   methods: {
     authorLink: function () {

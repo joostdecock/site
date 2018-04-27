@@ -35,10 +35,6 @@
                   {{ $fs.conf.patterns[pattern].info.description }}
                 </nuxt-link>	
               </p>
-              <v-btn :to="$fs.path('/draft/'+pattern)" color="primary" class="mt-3" block large outline>
-                <v-icon class="mr-3">gesture</v-icon>
-                {{ $t('draftPattern', { pattern: pattern[0].toUpperCase() + pattern.slice(1) }) }}
-              </v-btn>
             </v-card-text>
           </v-card>
         </v-flex>
