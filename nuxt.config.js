@@ -7,7 +7,7 @@ const freesewingConfig = {
 
 module.exports = {
   srcDir: 'nuxt/',
-  //mode: 'spa',
+  mode: 'spa',
   env: {
     conf: freesewingConfig
   },
