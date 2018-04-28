@@ -4,7 +4,6 @@
     <h2>{{ $t('txt-slogan') }} </h2>
     <pre>
     {{ $store.state.user.loggedIn }}
-    {{ $store.state.user.account.username }}
     </pre>
   </section>
 </template>

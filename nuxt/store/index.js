@@ -8,7 +8,8 @@ export const state = () => ({
     account: {},
     models: {},
     drafts: {}
-  },locales: ['en', 'nl'],
+  },
+  locales: ['en', 'nl'],
   defaultLocale: 'en',
   locale: 'en',
   localePrefix: '',
@@ -99,7 +100,17 @@ export const mutations = {
 }
 
 export const actions = {
-  initializeAccount( { commit, dispatch }, payload) {
+  resetAccount( { commit }) {
+    commit('setAccount', {
+      loggedIn: false,
+      isPatron: false,
+      isAdmin: false,
+      account: {},
+      models: {},
+      drafts: {}
+    })
+  },
+  initializeAccount( { commit }, payload) {
     payload.loggedIn = true
     payload.isPatron = (typeof payload.account === 'Object' && payload.account.tier) ?  true : false
     payload.isAdmin = (payload.account.role === 'admin') ?  true : false

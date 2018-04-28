@@ -33,7 +33,7 @@
       </v-list-tile-content>
     </v-list-tile>
     <v-divider></v-divider>
-    <v-list-tile :to="$fs.path('/account')">
+    <v-list-tile @click="$fs.logout()">
       <v-list-tile-action>
         <v-icon color="primary">power_settings_new</v-icon>
       </v-list-tile-action>
@@ -47,11 +47,6 @@
 <script>
 export default {
   name: 'FsMenuUser',
-  methods: {
-    logout: function() {
-      this.$fs.logout()
-    }
-  },
   props: {
     dense: Boolean
   }

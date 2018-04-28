@@ -7,7 +7,7 @@ export default class Storage {
 
     const _key = 'fs_'+key
 
-    if (isUnset(value)) {
+    if (typeof value=== 'undefined' || value === null) {
       localStorage.removeItem(_key)
     } else {
       localStorage.setItem(_key, isJson ? JSON.stringify(value) : value)

@@ -6,8 +6,6 @@ import Storage from './storage'
 
 export default ({ app, store, router }, inject) => {
 
-  const isUnset = o => typeof o === 'undefined' || o === null
-
   const storage = new Storage()
 
   const ax = {
@@ -27,12 +25,19 @@ export default ({ app, store, router }, inject) => {
 
       login(data) {
         return ax.data.post('/login', data)
-          .then((res) => {
-            return(res.data)
-          })
+        .then((res) => {
+          return(res.data)
+        })
         .catch((error) => {
           return(error.response.data)
         })
+      },
+
+      logout() {
+        storage.set('token')
+        store.dispatch(resetAccount)
+        if(app.i18n.locale == app.i18n.fallbackLocale) router.push('/')
+        else return router.push('/'+app.i18n.locale+'/')
       },
 
       setToken(token) {
