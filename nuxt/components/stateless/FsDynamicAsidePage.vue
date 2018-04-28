@@ -13,12 +13,12 @@
       </v-card-title>
       <v-divider></v-divider>
       <v-card-text class="fs-pad">
-        <p>{{ $t('txt-didYouSpotATypo') }}</p> 
+        <p>{{ $t('txt-didYouSpotATypo') }}</p>
         <p>{{ $t('txt-editThisPageOnline') }}</p>
         <p class="text-xs-right mb-0">
-        <v-btn 
-          color="primary" 
-          :href="repo+'/edit/develop/app/content/'+page.meta.dirName+page.meta.section+'/'+page.meta.fileName"
+        <v-btn
+          color="primary"
+          :href="'https://github.com/freesewing/site/edit/develop/app/content/'+page.meta.dirName+page.meta.section+'/'+page.meta.fileName"
           ><v-icon class="mr-3">edit</v-icon>{{ $t('editOnGithub') }}</v-btn>
         </p>
       </v-card-text>
@@ -28,17 +28,14 @@
 
 <script>
 import FsTableOfContents from '~/components/stateless/FsTableOfContents'
-export default { 
+export default {
   name: 'FsDynamicAsidePage',
   components: {
     FsTableOfContents
   },
-  computed: { 
+  computed: {
     page () {
       return this.$store.state.components.data['page']
-    }, 
-    repo () {
-      return this.$store.state.fs.repo.site
     }
   }
 }
