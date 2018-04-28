@@ -2,7 +2,7 @@
   <section class="blogpost">
     <fs-breadcrumbs :crumbs="crumbs">{{ post.linktitle }}</fs-breadcrumbs> 
     <fs-message-locale-fallback v-if="$i18n.locale != post.contentLocale" />
-    <article class="fs-content fs-blogpost">
+    <article class="fs-content elevation-1">
       <figure>
         <a href='#'>
           <img 
@@ -17,19 +17,29 @@
         </a>
         <figcaption v-html="post.caption"></figcaption>
       </figure> 
-      <h1 class="fs-padding">{{ post.title }} </h1>
-      <nuxtdown-body :body="post.body" class="fs-content fs-text fs-padding" />
+      <div class="fs-xpad">
+        <fs-page-meta-data 
+          :date="post.date"
+          :category="post.category" 
+          :author="post.author" 
+          :translation="post.translation" 
+        />
+        <h1>{{ post.title }} </h1>
+        <nuxtdown-body :body="post.body" class="fs-content fs-text pb-3" />
+      </div>
     </article>
   </section>
 </template>
 
 <script>
 import FsBreadcrumbs from '~/components/stateless/FsBreadcrumbs'
+import FsPageMetaData from '~/components/stateless/FsPageMetaData'
 import FsMessageLocaleFallback from '~/components/stateless/FsMessageLocaleFallback'
 
 export default {
   components: {
     FsBreadcrumbs,
+    FsPageMetaData,
     FsMessageLocaleFallback,
   },
   data: function() {

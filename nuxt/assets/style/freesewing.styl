@@ -45,25 +45,25 @@ h1
   margin: 1rem 0
 h2 
   font-size: 2.1rem
-  font-weight: 200
+  font-weight: 500
   line-height: 1.1
   letter-spacing: -.03rem 
   margin: 1.5rem 0
 h3 
   font-size: 1.8rem
-  font-weight: 200
+  font-weight: 500
   line-height: 1.1
   letter-spacing: -.02rem
   margin: 1rem 0
 h4 
   font-size: 1.5rem
-  font-weight: 200
+  font-weight: 500
   line-height: 1.1
   letter-spacing: -0.01rem
   margin: 0.75rem 0
 h5
   font-size: 1.3rem
-  font-weight: 400
+  font-weight: 500
   line-height: 32px
   letter-spacing: normal
   margin: 0.5rem 0
@@ -245,14 +245,26 @@ ul.expansion-panel
 
 
 /* New look */
-$fs-shadow = 0 1px 2px rgba(0,0,0,0.05)
-
-.fs-shadow
-  box-shadow: $fs-shadow
-
-.fs-padding
+.fs-pad
   padding: 1rem 2rem
+
+.fs-xpad
+  padding: 0 2rem
+
+.fs-ypad
+  padding: 1rem 0
 
 .fs-content
   background: #fff
-  box-shadow: $fs-shadow
+.fs-card-title
+  font-weight: 500
+  text-transform: uppercase
+  margin-left: 1rem
+
+ul.fs-metadata
+  margin: 0
+  
+  li
+    list-style-type: none
+    margin-right: 1rem
+    display: inline-block

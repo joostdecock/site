@@ -2,8 +2,10 @@
   <section class="page">
     <fs-breadcrumbs-page :breadcrumbs="page.breadcrumbs" :title="page.title" />
     <fs-message-locale-fallback v-if="$i18n.locale != page.contentLocale" />
+    <article class="fs-content elevation-1 fs-pad">
       <h1>{{ page.title }} </h1>
       <nuxtdown-body :body="page.body" class="fs-content fs-text" />
+    </article>
   </section>
 </template>
 

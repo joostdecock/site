@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar flat color="white">
+  <v-toolbar flat color="transparent">
     <v-spacer></v-spacer>
     <v-btn flat :to="$fs.path('/draft')">
       <v-icon class="mr-3" color="success">insert_drive_file</v-icon>

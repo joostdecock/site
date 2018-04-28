@@ -40,8 +40,7 @@ export default {
   }
   ul { 
     margin: 0;
-    padding: 0.75rem; 
-    font-size: 90%;
+    padding: 1rem 2rem;
   }
   ul li { 
     list-style-type: none; 
@@ -52,7 +51,7 @@ export default {
     content: '- '; 
   }
   li.toc-level-1 {
-    font-size: 90%; 
+    font-size: 110%; 
     padding-top: 0.5rem;
     font-weight: 500;
   }
@@ -61,23 +60,22 @@ export default {
   }
   li.toc-level-2 {
     margin-left: 10px;
-    font-size: 85%;
     padding-top: 0.2rem;
   }
   ul li.toc-level-2:before {
     content: '●';
-    font-size: 12px;
-    padding-right: 5px;
+    font-size: 18px;
+    padding-right: 8px;
   }
   li.toc-level-3 {
     margin-left: 25px;
-    font-size: 75%;
+    font-size: 95%;
     padding-top: 0.1rem;
   }
   ul li.toc-level-3:before {
     content: '○';
-    font-size: 8px;
-    padding-right: 5px;
+    font-size: 16px;
+    padding-right: 8px;
   }
   li.toc-level-4,
   li.toc-level-5,

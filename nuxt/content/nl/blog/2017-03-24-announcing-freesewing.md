@@ -4,7 +4,8 @@ title: "Nu beschikbaar: Freesewing, een open source platform voor naaipatronen o
 linktitle: "Nu beschikbaar: Freesewing"
 img: freesewing-logo.jpg
 caption: "Het freesewing logo"
-author: 'Joost De Cock'
+author: joost
+translation: joost
 category: docs
 blurb: "Met enige trots mag ik freesewing core v1.0.0 aankondigen, met bijhorende documentatie die het project in detail beschrijft."
 updates:
