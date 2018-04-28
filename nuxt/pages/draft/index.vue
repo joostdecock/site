@@ -1,10 +1,10 @@
 <template>
   <section>
-    <div v-if="!$auth.loggedIn">
+    <div v-if="!$store.state.loggedIn">
       <base-login-required />
     </div>
     <div v-else>
-      <ul class="breadcrumbs"> 
+      <ul class="breadcrumbs">
         <li>
           <nuxt-link :to="$fs.path('/')">
             <v-icon color="primary">home</v-icon>
@@ -23,11 +23,11 @@
           <v-stepper-step step="3">{{ $t('chooseYourOptions') }}</v-stepper-step>
         </v-stepper-header>
       </v-stepper>
-      <p class="quick-pick">{{ $t('quickPick')}}:<br> 
+      <p class="quick-pick">{{ $t('quickPick')}}:<br>
       <template v-for="namespace in $fs.conf.namespaces">
         <span class="link-spacer ml-1" v-for="pattern in namespace" :key="pattern">
           <nuxt-link :to="$fs.path('/draft/'+pattern)">{{ pattern }}</nuxt-link>
-        </span> 
+        </span>
       </template>
       </p>
       <v-container fluid grid-list-lg v-for="(namespace, index) in $fs.conf.namespaces" :key="index">
@@ -36,12 +36,12 @@
             <v-card>
               <nuxt-link :to="$fs.path('/draft/'+pattern)" :title="pattern">
                 <img :src="'/img/patterns/'+pattern+'/cover.jpg'" />
-              </nuxt-link>	
+              </nuxt-link>
             <v-card-text class="fs-nodeco">
               <h5 class="mb-0 mt-0 thetitle">
                 <nuxt-link :to="$fs.path('/draft/'+pattern)" :title="pattern">
                   {{ pattern[0].toUpperCase() + pattern.slice(1) }}
-                </nuxt-link>	
+                </nuxt-link>
               </h5>
             </v-card-text>
             </v-card>

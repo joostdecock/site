@@ -8,12 +8,13 @@
 $color-pack = false
 
 // Then again, we do need to refer to them
-$primary   = #212121 
+$primary   = #212121
 $secondary = #455A64
 $warning   = #FFAB00
 $error     = #D32F2F
 $info      = #64B5F6
 $accent    = #FF5B77
+$success   = #4caf50
 $shadow = 0px 2px 1px -1px rgba(0, 0, 0, .2), 0px 1px 1px 0px rgba(0, 0, 0, .14), 0px 1px 3px 0px rgba(0, 0, 0, .12)!important;
 // Who would thing having a white background would be such as hassle
 @import './material-light'
@@ -37,25 +38,25 @@ $breadcrumbs-item-large-font-size = 0.9 * $font-size-root
 $text-margin-bottom =  $font-size-root * 0.7272
 
 // Set heading styles
-h1 
+h1
   font-size: 2.5rem
   font-weight: 500
   line-height: 1.1
-  letter-spacing: -.03rem 
+  letter-spacing: -.03rem
   margin: 1rem 0
-h2 
+h2
   font-size: 2.1rem
   font-weight: 500
   line-height: 1.1
-  letter-spacing: -.03rem 
+  letter-spacing: -.03rem
   margin: 1.5rem 0
-h3 
+h3
   font-size: 1.8rem
   font-weight: 500
   line-height: 1.1
   letter-spacing: -.02rem
   margin: 1rem 0
-h4 
+h4
   font-size: 1.5rem
   font-weight: 500
   line-height: 1.1
@@ -67,7 +68,7 @@ h5
   line-height: 32px
   letter-spacing: normal
   margin: 0.5rem 0
-h6 
+h6
   font-size: 1.1rem
   font-weight: 500
   line-height: 1
@@ -80,15 +81,15 @@ h6
 @media (max-width: 600px)
   h1
     font-size: 1.9rem
-  h2              
+  h2
     font-size: 1.7rem
-  h3              
+  h3
     font-size: 1.5rem
-  h4              
+  h4
     font-size: 1.3rem
-  h5              
+  h5
     font-size: 1.1rem
-  h6              
+  h6
     font-size: 0.9rem
 
 // Bump the navigation drawer font size
@@ -106,38 +107,13 @@ $navigation-drawer-item-font-size = 24px
     url(/fonts/MaterialIcons-Regular.ttf) format('truetype');
 }
 
-// Links for text
-.fs-text 
-  a
-    text-decoration: none
-    box-shadow: 0px -2px 0px rgba(0,0,0,.2) inset;
-  a:hover
-    text-decoration: none
-    box-shadow: 0px -3px 0px rgba(0,0,0,.2) inset;
-    border-bottom: 1px solid rgba(0,0,0,.2);
-   
-// Links outside text
-.fs-deco 
-  a
-    box-shadow: none
-    text-decoration: underline
-  a:hover
-    border: none
-    box-shadow: none
-    text-decoration: initial
-
-// Links without decoration
-.fs-nodeco 
-  a
-    box-shadow: none
-    text-decoration: none
-  a:hover
-    border: none
-    box-shadow: none
-    text-decoration: none
+// Links
+a
+  color: #008fdd
+  text-decoration: none
 
 // Lists
-ul, ol 
+ul, ol
   margin-left: 2*$text-margin-bottom
   margin-bottom: $text-margin-bottom
 
@@ -146,11 +122,11 @@ ul, ol
   margin-bottom: 100px
 
 // Prevent columns from scrolling
-.fs-sticky-column 
+.fs-sticky-column
   position: sticky;
   top: 0;
   align-self: flex-start;
-.fs-scroll-column 
+.fs-scroll-column
   overflow-y: auto
   height: 100vh
   padding: 8px
@@ -158,13 +134,13 @@ ul, ol
   height: 100px
 
 // Images
-img 
+img
   max-width: 100%
 
-figure 
+figure
   margin: auto
 
-  figcaption 
+  figcaption
     margin-bottom: $text-margin-bottom
     font-size: 75%
     text-align: right
@@ -182,7 +158,7 @@ a.nuxtdown-toc:hover
 
 /* side menu */
 .fs-side-sub
-  box-shadow: rgba(0, 0, 0, 0.4) 0px -20px 6px -20px inset, rgba(0, 0, 0, 0.4) 0px 20px 6px -20px inset 
+  box-shadow: rgba(0, 0, 0, 0.4) 0px -20px 6px -20px inset, rgba(0, 0, 0, 0.4) 0px 20px 6px -20px inset
   background: rgba(0,0,0,0.03)!important
 
 /*
@@ -204,7 +180,7 @@ a.nuxtdown-toc:hover
  * Global freesewing styles
  *
  */
-.align-drawer-bottom 
+.align-drawer-bottom
   position fixed
   bottom 0
   width 100%
@@ -215,11 +191,11 @@ a.nuxtdown-toc:hover
 @import 'blockquotes'
 @import 'responsive-embed'
 
-.icon 
+.icon
   font-family: 'Material icons'
   font-style: normal
   vertical-align: text-top
-  
+
 .btn
   text-transform: none
 
@@ -228,10 +204,10 @@ a.nuxtdown-toc:hover
 
 /* draft form */
 
-span.fs-option-custom 
+span.fs-option-custom
   color: #FF5B77
 
-ul.expansion-panel 
+ul.expansion-panel
   margin-left: 0
 
 .m800
@@ -263,7 +239,7 @@ ul.expansion-panel
 
 ul.fs-metadata
   margin: 0
-  
+
   li
     list-style-type: none
     margin-right: 1rem

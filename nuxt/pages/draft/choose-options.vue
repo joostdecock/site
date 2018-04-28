@@ -1,6 +1,6 @@
 <template>
-  <fs-wrapper-login-required v-if="$route.params.model"> 
-    <ul class="breadcrumbs"> 
+  <fs-wrapper-login-required v-if="$route.params.model">
+    <ul class="breadcrumbs">
 			<li>
 				<nuxt-link :to="$fs.path('/')">
 					<v-icon color="primary">home</v-icon>
@@ -15,7 +15,7 @@
 			<li><v-icon small slot="divider">chevron_right</v-icon></li>
       <li>
 				<nuxt-link :to="$fs.path('/draft/'+$route.params.pattern)">
-          {{ $t('forUsername', {username: $auth.user.models[model].name}) }}
+          {{ $t('forUsername', {username: $store.state.user.models[model].name}) }}
 				</nuxt-link>
       </li>
 			<li><v-icon small slot="divider">chevron_right</v-icon></li>
@@ -32,14 +32,14 @@
 				<v-divider></v-divider>
         <v-stepper-step step="2" complete>
 				  <nuxt-link :to="$fs.path('/draft/'+$route.params.pattern)">
-            {{ $t('forUsername', { username: $auth.user.models[model].name}) }}
+            {{ $t('forUsername', { username: $store.state.user.models[model].name}) }}
           </nuxt-link>
         </v-stepper-step>
 				<v-divider></v-divider>
         <v-stepper-step step="3">{{ $t('chooseYourOptions') }}</v-stepper-step>
 			</v-stepper-header>
 		</v-stepper>
-    <p class="quick-pick">{{ $t('quickPick')}}:<br> 
+    <p class="quick-pick">{{ $t('quickPick')}}:<br>
     fixme</p>
     <fs-draft-configurator :pattern="pattern" :model="model" />
   </fs-wrapper-login-required>
@@ -65,12 +65,12 @@ export default {
       return this.$fs.ucfirst(this.$route.params.pattern)
     },
     models: function() {
-      if(!this.$auth.loggedIn) return false
+      if(!this.$store.state.loggedIn) return false
       if(!this.$route.params.model) return false
       var valid = []
       var invalid = []
-      for (let model of Object.keys(this.$auth.user.models)) {
-        if (this.$fs.modelIsValid(this.$auth.user.models[model], this.$route.params.pattern)) {
+      for (let model of Object.keys(this.$store.state.user.models)) {
+        if (this.$fs.modelIsValid(this.$store.state.user.models[model], this.$route.params.pattern)) {
           valid.push(model)
         } else {
           invalid.push(model)
@@ -81,9 +81,9 @@ export default {
     }
   },
   mounted () {
-    if(this.$auth.loggedIn && this.$route.params.model) {
+    if(this.$store.state.loggedIn && this.$route.params.model) {
       this.$store.dispatch('initializeDraft', {
-        model: this.$auth.user.models[this.model], 
+        model: this.$store.state.user.models[this.model],
         pattern: this.$fs.conf.patterns[this.pattern],
         type: 'draftFromModel'
       })

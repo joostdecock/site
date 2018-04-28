@@ -1,6 +1,6 @@
 <template>
   <section class="on-splash">
-    <div v-if="$auth.loggedIn">
+    <div v-if="$store.state.loggedIn">
       <fs-message-logout />
     </div>
     <div v-else>

@@ -60,13 +60,13 @@
             </v-list-tile-content>
           </v-list-tile>
 
-          <v-list v-if="$auth.loggedIn">
+          <v-list v-if="false && store.state.user.loggedIn">
             <v-list-tile avatar @click="toggleSub('user')">
               <v-list-tile-avatar :size="(24)">
-                <img :src="$fs.conf.api.data+$auth.user.account.pictureSrc" :alt="$auth.user.account.username">
+                <img :src="$fs.conf.api.data+$store.state.user.account.pictureSrc" :alt="$store.state.user.account.username">
               </v-list-tile-avatar>
               <v-list-tile-content>
-                <v-list-tile-title> fixme {{ '@'+$auth.user.account.username }}
+                <v-list-tile-title> fixme {{ '@'+$store.state.user.account.username }}
                   <v-icon color="secondary" class="ml-1" v-if="cmtySub">arrow_drop_up</v-icon>
                   <v-icon color="secondary" class="ml-1" v-else>arrow_drop_down</v-icon>
                 </v-list-tile-title>

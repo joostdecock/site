@@ -50,7 +50,7 @@
         <v-icon class="mr-3">insert_drive_file</v-icon>
         {{ $t('draftPatternForModel', {
           pattern: $fs.ucfirst(pattern),
-          model: $auth.user.models[model].name}
+          model: $store.state.user.models[model].name}
         ) }}
       </v-btn>
       </p>
@@ -87,7 +87,7 @@ export default {
   data: function() {
     return { options: this.$fs.conf.patterns[this.pattern].options }
   },
-  computed: { 
+  computed: {
     customCount () {
       return this.$store.state.draft.custom
     }

@@ -18,7 +18,7 @@
 				  <v-radio
             @change="updateDraftSa(index, value)"
             v-for="(value, index) in options" :key="index"
-            :label="$t('txt-saOption-'+index)" 
+            :label="$t('txt-saOption-'+index)"
             :value="index"
             :color="(computedDflt != index) ? 'accent' : 'primary'"></v-radio>
         </v-radio-group>
@@ -37,7 +37,7 @@ export default {
     }
   },
   data: function() {
-    let computedDflt = this.$auth.user.account.units
+    let computedDflt = this.$store.state.user.account.units
     let options = {
       none: 0,
       metric: 1,

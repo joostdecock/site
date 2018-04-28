@@ -7,6 +7,7 @@ const freesewingConfig = {
 
 module.exports = {
   srcDir: 'nuxt/',
+  mode: 'spa',
   env: {
     conf: freesewingConfig
   },
@@ -33,7 +34,6 @@ module.exports = {
    */
   modules: [
     '@nuxtjs/vuetify',
-    '@nuxtjs/auth',
     'nuxtdown',
     ['nuxt-i18n', {
       locales: [
@@ -82,42 +82,8 @@ module.exports = {
   axios: {
     browserBaseURL: 'https://joost.data.freesewing.org'
   },
-  auth: {
-    cookie: false,
-    redirect: {
-    },
-    strategies: {
-      signup: {
-        _scheme: 'local',
-        endpoints: {
-          login: {
-            url: freesewingConfig.api.data+"/newuser",
-            method: 'post',
-            propertyName: 'token'
-          },
-          user: {
-            url: freesewingConfig.api.data+"/account",
-            method: 'get'
-          }
-        }
-      },
-      user: {
-        _scheme: 'local',
-        endpoints: {
-          login: {
-            url: freesewingConfig.api.data+"/login",
-            method: 'post',
-            propertyName: 'token'
-          },
-          user: {
-            url: freesewingConfig.api.data+"/account",
-            method: 'get'
-          }
-        }
-      }
-    }
-  },
   router: {
+    middleware: 'auth',
     extendRoutes (routes, resolve) {
       routes.push({
         path: '/docs/*',

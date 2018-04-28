@@ -21,8 +21,7 @@ export default {
   name: 'FsMessageLogout',
   methods: {
     logout: function() {
-      this.$auth.logout()
-      this.$auth.reset()
+      this.$fs.logout()
     }
   }
 }

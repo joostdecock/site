@@ -18,20 +18,15 @@
 </template>
 
 <script>
-import TheLeftDrawer    from '~/components/stateless/TheLeftDrawer' 
-import TheMobileToolbar from '~/components/stateful/TheMobileToolbar' 
-import TheTopToolbar    from '~/components/stateful/TheTopToolbar' 
+import TheLeftDrawer    from '~/components/stateless/TheLeftDrawer'
+import TheMobileToolbar from '~/components/stateful/TheMobileToolbar'
+import TheTopToolbar    from '~/components/stateful/TheTopToolbar'
 
 export default {
-  components: { 
+  components: {
     TheLeftDrawer,
     TheMobileToolbar,
     TheTopToolbar
   },
-  created: function() {
-    if(!this.$auth.loggedIn) {
-      this.$auth.loginWith('user');
-    }
-  }
 }
 </script>

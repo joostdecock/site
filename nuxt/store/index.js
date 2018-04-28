@@ -1,6 +1,14 @@
+import FsConf from '~/static/json/freesewing.json'
+
 export const state = () => ({
-  fs: require('~/static/json/freesewing.json'),
-  locales: ['en', 'nl'],
+  user: {
+    loggedIn: false,
+    isPatron: false,
+    isAdmin: false,
+    account: {},
+    models: {},
+    drafts: {}
+  },locales: ['en', 'nl'],
   defaultLocale: 'en',
   locale: 'en',
   localePrefix: '',
@@ -13,7 +21,7 @@ export const state = () => ({
       rightColumn: '',
       rightDrawer: '',
     },
-    data: { } 
+    data: { }
   },
   draft: {
     defaults: {
@@ -39,13 +47,6 @@ export const state = () => ({
 })
 
 export const mutations = {
-  setLocale(state, locale) {
-    if (state.locales.indexOf(locale) !== -1) {
-      state.locale = locale
-        if(state.locale == state.defaultLocale) state.localePrefix = ''
-        else state.localePrefix = '/'+state.locale
-    }
-  },
   showLeftDrawer(state) {
     state.drawer.left = true
   },
@@ -75,13 +76,13 @@ export const mutations = {
     state.draft.config.options[payload.name] = payload.value
   },
   setDraftSa(state, payload) {
-    state.draft.config.sa = { 
+    state.draft.config.sa = {
       type: payload.type,
       value: payload.value
     }
   },
   setDraftScope(state, payload) {
-    state.draft.config.scope = { 
+    state.draft.config.scope = {
       type: payload.type,
       included: {...payload.included}
     }
@@ -91,10 +92,19 @@ export const mutations = {
   },
   setDraftCustomOptionsCount(state, payload) {
     state.draft.custom = payload
+  },
+  setAccount(state, payload) {
+    state.user = payload
   }
 }
 
 export const actions = {
+  initializeAccount( { commit, dispatch }, payload) {
+    payload.loggedIn = true
+    payload.isPatron = (typeof payload.account === 'Object' && payload.account.tier) ?  true : false
+    payload.isAdmin = (payload.account.role === 'admin') ?  true : false
+    commit('setAccount', payload)
+  },
   initializeDraft( { commit, state }, payload) {
     const config = {
       options: {}
@@ -103,7 +113,7 @@ export const actions = {
     if(payload.type === 'draftFromModel') {
       for (let optionName in payload.pattern.options) {
         if(payload.pattern.options[optionName].type === 'measure') {
-          if(this.$auth.user.account.units === 'imperial') {
+          if(this.$store.state.user.account.units === 'imperial') {
             // Store in inch
             config.options[optionName] = payload.pattern.options[optionName].default/25.4
           } else {
@@ -120,13 +130,13 @@ export const actions = {
     }
     if(typeof payload.pattern.seamAllowance !== 'undefined') {
       config.sa = {
-        type: 'pattern'+this.$auth.user.account.units,
-        value: payload.pattern.seamAllowance[this.$auth.user.account.units]
+        type: 'pattern'+this.$store.state.user.account.units,
+        value: payload.pattern.seamAllowance[this.$store.state.user.account.units]
       }
     } else {
       config.sa = {
-        type: this.$auth.user.account.units,
-        value: (this.$auth.user.account.units === 'imperial') ? 0.625 : 1
+        type: this.$store.state.user.account.units,
+        value: (this.$store.state.user.account.units === 'imperial') ? 0.625 : 1
       }
     }
     config.scope = {
@@ -147,14 +157,14 @@ export const actions = {
   },
   updateDraftCustomOptionsCount( { commit, state } ) {
     let custom = {}
-    for (var group in state.fs.patterns[state.draft.pattern].optiongroups) {
+    for (var group in FsConf.patterns[state.draft.pattern].optiongroups) {
       custom[group] = 0
-      for (let index in state.fs.patterns[state.draft.pattern].optiongroups[group]) {
-        let option = state.fs.patterns[state.draft.pattern].optiongroups[group][index]
-        if(state.draft.config.options[option] != state.draft.defaults.options[option]) {
-          custom[group]++
+        for (let index in FsConf.patterns[state.draft.pattern].optiongroups[group]) {
+          let option = FsConf.patterns[state.draft.pattern].optiongroups[group][index]
+            if(state.draft.config.options[option] != state.draft.defaults.options[option]) {
+              custom[group]++
+            }
         }
-      }
     }
     commit('setDraftCustomOptionsCount', custom)
   },

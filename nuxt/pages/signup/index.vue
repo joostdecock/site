@@ -1,6 +1,6 @@
 <template>
   <section class="on-splash">
-    <div v-if="$auth.loggedIn">
+    <div v-if="$store.state.loggedIn">
       <fs-message-logout />
     </div>
     <div v-else>
@@ -49,7 +49,7 @@
       </div>
       <div v-else-if="success">
         <h1 class="mt-5 mb-1">{{ $t('welcomeAboard') }}</h1>
-        <p> 
+        <p>
           {{ $t('signup-success-text', {email: email}) }}
           <br>
           <b>{{ $t('txt-clickEmailLink') }}</b>
@@ -92,7 +92,7 @@
         </v-btn>
         <p class="body-1 mt-5">
         <nuxt-link :to="$fs.path('/login')">{{ $t('logIn') }}</nuxt-link>
-        &nbsp;|&nbsp; 
+        &nbsp;|&nbsp;
         <nuxt-link :to="$fs.path('/signup/resend')">{{ $t('reSendActivationEmail') }}</nuxt-link>
         </p>
       </v-form>
@@ -123,11 +123,6 @@ export default {
       success: false,
       hidePassword: true,
       reason: ''
-    }
-  },
-  computed: { 
-    loggedIn () {
-      return this.$auth.loggedIn
     }
   },
   methods: {

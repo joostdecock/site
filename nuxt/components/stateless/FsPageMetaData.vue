@@ -1,19 +1,22 @@
 <template>
   <ul class="fs-metadata">
     <li v-if="date !== ''">
-      <v-btn flat>
-        <v-icon class="mr-3">access_time</v-icon>
+      <v-chip color="white">
+        <v-icon class="mr-2">access_time</v-icon>
         {{ date }}
-      </v-btn>
+      </v-chip>
     </li>
     <li v-if="category != ''">
-      <v-btn flat :to="$fs.path('/blog/category/'+category)">
-      <v-icon class="mr-3">label_outline</v-icon>
-        {{ category }}</v-btn>
+      <v-chip color="white">
+        <v-icon class="mr-2">label_outline</v-icon>
+        <nuxt-link :to="$fs.path('/blog/category/'+category)">
+          {{ category }}
+        </nuxt-link>
+      </v-chip>
     </li>
     <li v-if="pattern != ''">
       <v-btn flat :to="$fs.path('/showcase/pattern/'+pattern)">
-      <v-icon class="mr-3">label_outline</v-icon>
+        <v-icon class="mr-3">label_outline</v-icon>
         {{ $fs.ucfirst(pattern) }}</v-btn>
     </li>
     <li v-if="author != ''">

@@ -1,6 +1,6 @@
 <template>
-  <fs-wrapper-login-required v-if="$route.params.pattern"> 
-		<ul class="breadcrumbs"> 
+  <fs-wrapper-login-required v-if="$route.params.pattern">
+		<ul class="breadcrumbs">
 			<li>
 				<nuxt-link :to="$fs.path('/')">
 					<v-icon color="primary">home</v-icon>
@@ -30,11 +30,11 @@
 			</v-stepper-header>
 		</v-stepper>
 
-      <p class="quick-pick">{{ $t('quickPick')}}:<br> 
+      <p class="quick-pick">{{ $t('quickPick')}}:<br>
         <template v-for="model in models.valid">
           <span class="link-spacer ml-1" :key="'span-'+model">
-					<nuxt-link :to="$fs.path('/draft/'+pattern+'/for/'+model)" :key="'link-'+model">{{ $auth.user.models[model].name }}</nuxt-link>
-        </span> 
+					<nuxt-link :to="$fs.path('/draft/'+pattern+'/for/'+model)" :key="'link-'+model">{{ $store.state.user.models[model].name }}</nuxt-link>
+        </span>
         </template>
 				</p>
         <v-container fluid grid-list-lg>
@@ -42,13 +42,13 @@
 				<v-flex class="xs4 sm3 xl2" v-for="model in models.valid" :key="model">
 					<v-card>
 						<nuxt-link :to="$fs.path('/draft/'+pattern+'/for/'+model)" :title="model">
-							<img :src="$fs.conf.api.data+$auth.user.models[model].pictureSrc" />
-						</nuxt-link>	
+							<img :src="$fs.conf.api.data+$store.state.user.models[model].pictureSrc" />
+						</nuxt-link>
 					<v-card-text class="fs-nodeco">
 						<h5 class="mb-0 mt-0 thetitle">
 							<nuxt-link :to="$fs.path('/draft/'+pattern+'/for/'+model)" :title="model">
-								{{ $auth.user.models[model].name }}
-							</nuxt-link>	
+								{{ $store.state.user.models[model].name }}
+							</nuxt-link>
 						</h5>
 					</v-card-text>
 					</v-card>
@@ -73,11 +73,11 @@ export default {
       return this.$fs.ucfirst(this.$route.params.pattern)
     },
     models: function() {
-      if(!this.$auth.loggedIn) return false
+      if(!this.$store.state.loggedIn) return false
       var valid = []
       var invalid = []
-      for (let model of Object.keys(this.$auth.user.models)) {
-        if (this.$fs.modelIsValid(this.$auth.user.models[model], this.$route.params.pattern)) {
+      for (let model of Object.keys(this.$store.state.user.models)) {
+        if (this.$fs.modelIsValid(this.$store.state.user.models[model], this.$route.params.pattern)) {
           valid.push(model)
         } else {
           invalid.push(model)

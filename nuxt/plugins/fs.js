@@ -2,36 +2,64 @@ import Vue from 'vue'
 import axios from 'axios'
 import MarkdownIt from 'markdown-it'
 import FreesewingData from '~/static/json/freesewing.json'
+import Storage from './storage'
 
 export default ({ app, store, router }, inject) => {
 
-  const pathMethod = function(path) {
-    if(app.i18n.locale == app.i18n.fallbackLocale) return path
-    else return '/'+app.i18n.locale+path
+  const isUnset = o => typeof o === 'undefined' || o === null
+
+  const storage = new Storage()
+
+  const ax = {
+    data: axios.create({
+      baseURL: process.env.conf.api.data,
+      timeout: 4500,
+      headers: {'Authorization': 'Bearer '+storage.get('token')}
+    })
   }
 
   inject('fs', new Vue({
     data: () => ({
-      api: {
-        data: axios.create({
-          baseURL: process.env.conf.api.data,
-          timeout: 4500
-        }),
-        content: axios.create({
-          baseURL: 'http://localhost:3000/content-api',
-          timeout: 4500
-        })
-      },
       md: new MarkdownIt(),
       conf: FreesewingData
     }),
     methods: {
+
+      login(data) {
+        return ax.data.post('/login', data)
+          .then((res) => {
+            return(res.data)
+          })
+        .catch((error) => {
+          return(error.response.data)
+        })
+      },
+
+      setToken(token) {
+        return storage.set('token', token)
+      },
+
+      getToken() {
+        return storage.get('token')
+      },
+
+      auth() {
+        return ax.data.get('/account')
+          .then((res) => {
+            return(res)
+          })
+        .catch((error) => {
+          return(error)
+        })
+      },
+
       path(path) {
         if(app.i18n.locale == app.i18n.fallbackLocale) return path
         else return '/'+app.i18n.locale+path
       },
       user(user) {
-        return pathMethod('/users/'+user)
+        if(app.i18n.locale == app.i18n.fallbackLocale) return '/users/'+user
+        else return '/'+app.i18n.locale+'/users/'+user
       },
       modelIsValid(model, patternHandle) {
         var valid = true
@@ -63,24 +91,6 @@ export default ({ app, store, router }, inject) => {
           }
         }
       },
-      content(section, path, isDev) {
-        let l = app.i18n.locale
-          let url = section+path
-          var data = {}
-        if(isDev) {
-          axios.get('http://localhost:3000/content-api/'+url)
-            .then(function (res) {
-              console.log(res.data)
-                data = res.data
-            })
-          .catch(function (error) {
-            console.log('FAILED')
-              console.log(error)
-          })
-        }
-        console.log(data.title)
-          return data
-      }
     }
   }))
 }

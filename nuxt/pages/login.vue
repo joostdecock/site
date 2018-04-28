@@ -1,49 +1,49 @@
 <template>
   <section class="on-splash">
-    <div v-if="$auth.loggedIn">
+    <div v-if="$store.state.loggedIn">
       <base-logout />
     </div>
     <div v-else>
       <h1 class="mt-5">{{ $t('logIn') }}</h1>
       <v-form v-model="valid" class="mt-4">
         <v-text-field
-              :label="$t('username')"
-              v-model="username"
-              required
-              prepend-icon="email"
-              :hint="$t('txt-email-sharing')"
-              >
+                              :label="$t('username')"
+                              v-model="username"
+                              required
+                              prepend-icon="email"
+                              :hint="$t('txt-email-sharing')"
+                              >
         </v-text-field>
-        <v-text-field
-              :label="$t('password')"
-              v-model="password"
-              :append-icon="hidePassword ? 'visibility' : 'visibility_off'"
-              :append-icon-cb="() => (hidePassword = !hidePassword)"
-              :type="hidePassword ? 'password' : 'text'"
-              required
-              prepend-icon="lock"
-              :hint="$t('txt-password-policy')"
-              >
-        </v-text-field>
-        <v-btn @click="submit" color="primary" large class="mt-3">
-          <v-progress-circular indeterminate color="#fff" class="ml-4" v-if="loading" :size="20" :width="2"></v-progress-circular>
-          <v-icon v-else class="mr-3">vpn_key</v-icon>
-          {{ $t('logIn') }}
-        </v-btn>
-        <v-btn large class="mt-3" :to="$fs.path('/')">
-          <v-icon class="mr-3">undo</v-icon>
-          {{ $t('cancel') }}
-        </v-btn>
-        <p class="body-1 mt-5"><nuxt-link :to="$fs.path('/signup')">{{ $t('signUpForAFreeAccount') }}</nuxt-link></p>
+          <v-text-field
+                              :label="$t('password')"
+                              v-model="password"
+                              :append-icon="hidePassword ? 'visibility' : 'visibility_off'"
+                              :append-icon-cb="() => (hidePassword = !hidePassword)"
+                              :type="hidePassword ? 'password' : 'text'"
+                              required
+                              prepend-icon="lock"
+                              :hint="$t('txt-password-policy')"
+                              >
+          </v-text-field>
+          <v-btn @click="submit" color="primary" large class="mt-3">
+            <v-progress-circular indeterminate color="#fff" class="mr-3" v-if="loading" :size="20" :width="2"></v-progress-circular>
+            <v-icon v-else class="mr-3">vpn_key</v-icon>
+            {{ $t('logIn') }}
+          </v-btn>
+          <v-btn large class="mt-3" :to="$fs.path('/')">
+            <v-icon class="mr-3">cancel</v-icon>
+            {{ $t('cancel') }}
+          </v-btn>
+          <p class="body-1 mt-5"><nuxt-link :to="$fs.path('/signup')">{{ $t('signUpForAFreeAccount') }}</nuxt-link></p>
       </v-form>
     </div>
     <v-snackbar
-          :timeout="(4000)"
-          top
-          right
-          v-model="error"
-          >{{ $t('loginFailed') }}
-          <v-btn flat color="primary" @click.native="error = false"><v-icon>close</v-icon></v-btn>
+             :timeout="(4000)"
+             top
+             right
+             v-model="error"
+             >{{ $t('loginFailed') }}
+             <v-btn flat color="primary" @click.native="error = false"><v-icon>close</v-icon></v-btn>
     </v-snackbar>
   </section>
 </template>
@@ -66,30 +66,21 @@ export default {
       hidePassword: true
     }
   },
-  computed: { 
-    loggedIn () {
-      return this.$auth.loggedIn
-    }
-  },
   methods: {
-    submit: function() {
+    submit: async function() {
       this.loading = true;
-      this.$auth.loginWith('user', {
-        data: {
-          username: this.username,
-          password: this.password
-        }
+      var result = await this.$fs.login({
+        username: this.username,
+        password: this.password
       })
-      .catch((i) => {
-        this.loading = false;
+      if(result.result === 'ok' ) {
+        this.$fs.setToken(result.token)
+        this.loading = false
+        this.$router.go(-1)
+      } else {
+        this.loading = false
         this.error = true
-      })
-      .then((i) => {
-        if(!this.error) {
-          this.loading = false;
-          $router.push($fs.path('/'))
-        }
-      })
+      }
     }
   }
 }

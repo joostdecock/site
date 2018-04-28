@@ -1,6 +1,6 @@
 <template>
   <section class="on-splash">
-    <div v-if="$auth.loggedIn">
+    <div v-if="$store.state.loggedIn">
       <fs-message-logout />
     </div>
     <div v-else>
@@ -60,7 +60,7 @@
         </v-btn>
         <consent-profile />
           <p class="body-1 mt-3">
-          {{ $t('txt-gdprCompliant') }} 
+          {{ $t('txt-gdprCompliant') }}
           <nuxt-link :to="$fs.path('/privacy')" class="ml-3">{{ $t('privacyInfo')}}</nuxt-link>
           </p>
 
@@ -114,25 +114,26 @@ export default {
           this.$router.push(this.$fs.path('/'))
         }
       })
-    }, 
+    },
     createAccount: function() {
-      this.$auth.loginWith('signup', {
-        data: {
-          hash: this.getHash()
-        }
-      })
-      .catch((e) => {
-        this.loading = false;
-        this.error = true
-        this.reason = e.response.data.reason
-      })
-      .then((i) => {
-        if(!this.error) {
-          this.loading = false;
-          this.$router.push(this.$fs.path('/account/setup'))
-        }
-      })
-    }, 
+      // fixme
+      //this.$auth.loginWith('signup', {
+      //  data: {
+      //    hash: this.getHash()
+      //  }
+      //})
+      //.catch((e) => {
+      //  this.loading = false;
+      //  this.error = true
+      //  this.reason = e.response.data.reason
+      //})
+      //.then((i) => {
+      //  if(!this.error) {
+      //    this.loading = false;
+      //    this.$router.push(this.$fs.path('/account/setup'))
+      //  }
+      //})
+    },
   }
 
 }

@@ -2,7 +2,7 @@
   <v-app>
     <the-right-drawer>
       <div class="fs-scroll-column">
-        <component :is="rightColumnComponent" /> 
+        <component :is="rightColumnComponent" />
       </div>
     </the-right-drawer>
     <the-left-drawer />
@@ -16,7 +16,7 @@
           <v-flex xl3 offset-xl1 lg4 offset-lg1 hidden-md-and-down>
             <aside class="fs-sticky-column">
               <div class="fs-scroll-column mt-5">
-                <component :is="rightColumnComponent" /> 
+                <component :is="rightColumnComponent" />
                 <div class="fs-toolbar-spacer"></div>
               </div>
             </aside>
@@ -31,16 +31,16 @@
 </template>
 
 <script>
-import TheRightDrawer   from '~/components/stateless/TheRightDrawer' 
-import TheLeftDrawer    from '~/components/stateless/TheLeftDrawer' 
-import TheMobileToolbar from '~/components/stateful/TheMobileToolbar' 
-import TheTopToolbar    from '~/components/stateful/TheTopToolbar' 
+import TheRightDrawer   from '~/components/stateless/TheRightDrawer'
+import TheLeftDrawer    from '~/components/stateless/TheLeftDrawer'
+import TheMobileToolbar from '~/components/stateful/TheMobileToolbar'
+import TheTopToolbar    from '~/components/stateful/TheTopToolbar'
 // Dynamic components
 import FsDynamicAsideBlogpost from '~/components/stateless/FsDynamicAsideBlogpost'
 import FsDynamicAsideShowcase from '~/components/stateless/FsDynamicAsideShowcase'
 import FsDynamicAsidePage     from '~/components/stateless/FsDynamicAsidePage'
 export default {
-  components: { 
+  components: {
     TheRightDrawer,
     TheLeftDrawer,
     TheMobileToolbar,
@@ -49,17 +49,12 @@ export default {
     FsDynamicAsideShowcase,
     FsDynamicAsidePage,
   },
-  computed: { 
+  computed: {
     rightColumnComponent () {
       return this.$store.state.components.dynamic.rightColumn
     },
     rightDrawerComponent () {
       return this.$store.state.components.dynamic.rightColumn
-    }
-  },
-  created: function() {
-    if(!this.$auth.loggedIn) {
-      this.$auth.loginWith('user');
     }
   },
   data () {

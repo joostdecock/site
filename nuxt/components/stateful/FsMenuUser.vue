@@ -24,7 +24,7 @@
         <v-list-tile-title>{{ $t('settings') }}</v-list-tile-title>
       </v-list-tile-content>
     </v-list-tile>
-    <v-list-tile :to="$fs.user($auth.user.account.username)">
+    <v-list-tile :to="$fs.user($store.state.user.account.username)">
       <v-list-tile-action>
         <v-icon color="primary">fingerprint</v-icon>
       </v-list-tile-action>
@@ -49,8 +49,7 @@ export default {
   name: 'FsMenuUser',
   methods: {
     logout: function() {
-      this.$auth.logout()
-      this.$auth.reset()
+      this.$fs.logout()
     }
   },
   props: {

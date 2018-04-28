@@ -3,9 +3,9 @@
     <v-toolbar-title slot="activator">
       <v-btn flat>
         <v-avatar :size="(24)" class="mr-3">
-          <img :src="$fs.conf.api.data+$auth.user.account.pictureSrc" :alt="$auth.user.account.username">
+          <img :src="$fs.conf.api.data+$store.state.user.account.pictureSrc" :alt="$store.state.user.account.username">
         </v-avatar>
-        {{ '@'+$auth.user.account.username }}
+        {{ '@'+$store.state.user.account.username }}
         <v-icon color="primary">arrow_drop_down</v-icon>
       </v-btn>
     </v-toolbar-title>

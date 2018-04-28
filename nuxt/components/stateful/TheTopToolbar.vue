@@ -25,7 +25,7 @@
       <the-language-dropdown-menu />
       <v-spacer></v-spacer>
     </v-toolbar>
-    <the-user-toolbar v-if="$auth.loggedIn" />
+    <the-user-toolbar v-if="$store.state.user.loggedIn" />
     <the-visitor-toolbar  v-else />
   </div>
 </template>

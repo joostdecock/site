@@ -5,20 +5,20 @@
         <v-icon v-if="computedDflt != value" @click.stop="resetDraftOption()" large color="accent">settings_backup_restore</v-icon>
         <v-icon large class="ml-2" color="secondary">help_outline</v-icon>
       </div>
-      <h6>{{ option.title }}: 
+      <h6>{{ option.title }}:
         <span :class="(computedDflt != value) ? 'fs-option-custom' : ''">
-          {{ $fs.units.format(value, $auth.user.units, option.type) }}
+          {{ $fs.units.format(value, $store.state.user.units, option.type) }}
         </span>
       </h6>
-      
+
     </div>
     <v-card>
       <v-card-text>
         <v-slider
          @input="updateDraftOption(name, value)"
          :color="(computedDflt != value) ? 'accent' : 'primary'"
-         :min="min" 
-         :max="max" 
+         :min="min"
+         :max="max"
          v-model="value"
          :step="step">
         </v-slider>
@@ -54,13 +54,13 @@ export default {
     let max = this.option.max || 100
     let step = 1
     if(this.option.type === 'measure') {
-      computedDflt =  (this.$auth.user.account.units === 'imperial') ? this.dflt/25.4 : this.dflt/10
-      min = (this.$auth.user.account.units === 'imperial') ? this.option.min/25.4 : this.option.min/10
-      max = (this.$auth.user.account.units === 'imperial') ? this.option.max/25.4 : this.option.max/10
+      computedDflt =  (this.$store.state.user.account.units === 'imperial') ? this.dflt/25.4 : this.dflt/10
+      min = (this.$store.state.user.account.units === 'imperial') ? this.option.min/25.4 : this.option.min/10
+      max = (this.$store.state.user.account.units === 'imperial') ? this.option.max/25.4 : this.option.max/10
       step = 0.1
     }
-    return { 
-      value: computedDflt, 
+    return {
+      value: computedDflt,
       computedDflt: computedDflt,
       min: min,
       max: max,

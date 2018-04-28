@@ -15,7 +15,7 @@
 
 <style>
 #app.splash {
-  background: #212121; 
+  background: #212121;
   background-size: cover;
   background-position: center;
   background-image: url('/img/potm/potm.jpg');
@@ -23,20 +23,15 @@
 </style>
 
 <script>
-import TheLeftDrawer    from '~/components/stateless/TheLeftDrawer' 
-import TheMobileToolbar from '~/components/stateful/TheMobileToolbar' 
-import TheTopToolbar    from '~/components/stateful/TheTopToolbar' 
+import TheLeftDrawer    from '~/components/stateless/TheLeftDrawer'
+import TheMobileToolbar from '~/components/stateful/TheMobileToolbar'
+import TheTopToolbar    from '~/components/stateful/TheTopToolbar'
 
 export default {
-  components: { 
+  components: {
     TheLeftDrawer,
     TheMobileToolbar,
     TheTopToolbar
-  },
-  created: function() {
-    if(!this.$auth.loggedIn) {
-      this.$auth.loginWith('user');
-    }
   },
 }
 </script>
