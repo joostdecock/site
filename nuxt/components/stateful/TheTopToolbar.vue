@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-toolbar color="white" class="elevation-1">
+    <v-toolbar :color="(splash) ? 'transparent' : 'white'" :class="(splash) ? '' : 'elevation-1'" :flat="splash">
       <v-spacer></v-spacer>
       <nuxt-link :to="$fs.path('/patterns')">
         <v-btn flat large>
@@ -26,7 +26,7 @@
       <v-spacer></v-spacer>
     </v-toolbar>
     <the-user-toolbar v-if="$store.state.user.loggedIn" />
-    <the-visitor-toolbar  v-else />
+    <the-visitor-toolbar  v-else-if="!splash" />
   </div>
 </template>
 
@@ -54,6 +54,12 @@ export default {
     TheDocumentationDropdownMenu,
     TheCommunityDropdownMenu,
     TheLanguageDropdownMenu
+  },
+  props: {
+    splash: {
+      type: Boolean,
+      default: false
+    }
   },
   computed: {
     // Name of the current language to show in the toolbar

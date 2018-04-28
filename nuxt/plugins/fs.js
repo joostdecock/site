@@ -35,9 +35,7 @@ export default ({ app, store, router }, inject) => {
 
       logout() {
         storage.set('token')
-        store.dispatch(resetAccount)
-        if(app.i18n.locale == app.i18n.fallbackLocale) router.push('/')
-        else return router.push('/'+app.i18n.locale+'/')
+        store.dispatch('resetAccount')
       },
 
       setToken(token) {

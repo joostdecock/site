@@ -1,14 +1,14 @@
 <template>
   <v-app class="splash">
     <the-left-drawer />
-    <fs-top-toolbar color="transparent" light class="hidden-md-and-down"/>
+    <the-top-toolbar color="transparent" light class="hidden-md-and-down" :splash="(true)"/>
     <v-content>
       <v-container>
         <nuxt />
       </v-container>
     </v-content>
     <v-footer fixed height="auto" class="hidden-lg-and-up">
-      <fs-main-toolbar color="primary" :right="(false)" />
+      <the-mobile-toolbar color="primary" :right="(false)" />
     </v-footer>
   </v-app>
 </template>
