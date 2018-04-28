@@ -14,7 +14,6 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@nuxtjs/auth": "^4.1.0",
     "@nuxtjs/axios": "^5.3.1",
     "@nuxtjs/vuetify": "^0.4.1",
     "markdown-it-attrs": "^1.2.1",
