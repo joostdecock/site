@@ -123,6 +123,7 @@
   "txt-saOption-patternImperial": "Standaard imperiale naadwaarde voor dit patroon",
   "txt-contentNotTranslated": "Helaas is deze pagina (nog) niet vertaald naar het Nederlands.",
   "txt-contentLocaleFallback": "Daarom tonen we je de Engelstalige versie.",
+  "txt-modelsWithMissingMeasurements": "Van deze modellen kennen we niet alle vereiste maten om dit patroon te tekenen:",
 
   "signup-invalid_input-title": "Ongeldige invoer",
   "signup-invalid_input-text": "Gelieve een geldig E-mail adres en een wachtwoord in te voeren",
@@ -135,8 +136,8 @@
   "signup--text": "Er is een onverwacht probleem opgetreden. Help ons te onderzoeken waarom door een issue aan te maken via GitHub",
   "signup-no_such_pending_confirmation-title": "Ongeldige bevestigingscode",
   "signup-no_such_pending_confirmation-text": "Helaas kunnen we geen inschrijving terugvinden met deze bevestigingscode. Mogelijk is de code verlopen. In dat geval kan U zich gewoon terug inschrijven.",
-  
+
   "GitHub": "GitHub",
-  "Twitter": "Twitter", 
+  "Twitter": "Twitter",
   "Instagram": "Instagram"
 }

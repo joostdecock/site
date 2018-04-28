@@ -7,7 +7,7 @@
       </div>
       <h6>{{ option.title }}:
         <span :class="(computedDflt != value) ? 'fs-option-custom' : ''">
-          {{ $fs.units.format(value, $store.state.user.units, option.type) }}
+          {{ $fs.formatUnits(value, $store.state.user.units, option.type) }}
         </span>
       </h6>
 

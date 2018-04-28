@@ -124,7 +124,7 @@ export const actions = {
     if(payload.type === 'draftFromModel') {
       for (let optionName in payload.pattern.options) {
         if(payload.pattern.options[optionName].type === 'measure') {
-          if(this.$store.state.user.account.units === 'imperial') {
+          if(state.user.account.units === 'imperial') {
             // Store in inch
             config.options[optionName] = payload.pattern.options[optionName].default/25.4
           } else {
@@ -141,13 +141,13 @@ export const actions = {
     }
     if(typeof payload.pattern.seamAllowance !== 'undefined') {
       config.sa = {
-        type: 'pattern'+this.$store.state.user.account.units,
-        value: payload.pattern.seamAllowance[this.$store.state.user.account.units]
+        type: 'pattern'+state.user.account.units,
+        value: payload.pattern.seamAllowance[state.user.account.units]
       }
     } else {
       config.sa = {
-        type: this.$store.state.user.account.units,
-        value: (this.$store.state.user.account.units === 'imperial') ? 0.625 : 1
+        type: state.user.account.units,
+        value: (state.user.account.units === 'imperial') ? 0.625 : 1
       }
     }
     config.scope = {

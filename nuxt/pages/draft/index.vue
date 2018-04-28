@@ -1,87 +1,58 @@
 <template>
-  <section>
-    <div v-if="!$store.state.loggedIn">
-      <base-login-required />
-    </div>
-    <div v-else>
-      <ul class="breadcrumbs">
-        <li>
-          <nuxt-link :to="$fs.path('/')">
-            <v-icon color="primary">home</v-icon>
-          </nuxt-link>
-        </li>
-        <li><v-icon small slot="divider">chevron_right</v-icon></li>
-        <li>{{ $t('newDraft') }}</li>
-      </ul>
-      <h1 class="text-xs-center">{{ $t('step1') }}: {{ $t('chooseAPattern') }}</h1>
-      <v-stepper class="mb-5">
-        <v-stepper-header>
-          <v-stepper-step step="1">{{ $t('chooseAPattern') }}</v-stepper-step>
-          <v-divider></v-divider>
-          <v-stepper-step step="2">{{ $t('chooseAModel') }}</v-stepper-step>
-          <v-divider></v-divider>
-          <v-stepper-step step="3">{{ $t('chooseYourOptions') }}</v-stepper-step>
-        </v-stepper-header>
-      </v-stepper>
-      <p class="quick-pick">{{ $t('quickPick')}}:<br>
-      <template v-for="namespace in $fs.conf.namespaces">
-        <span class="link-spacer ml-1" v-for="pattern in namespace" :key="pattern">
-          <nuxt-link :to="$fs.path('/draft/'+pattern)">{{ pattern }}</nuxt-link>
-        </span>
-      </template>
-      </p>
-      <v-container fluid grid-list-lg v-for="(namespace, index) in $fs.conf.namespaces" :key="index">
-        <v-layout row wrap>
-          <v-flex class="xs4 sm3 xl2" v-for="pattern in namespace" :key="pattern" >
-            <v-card>
+  <fs-wrapper-login-required>
+    <fs-breadcrumbs>{{ $t('newDraft') }}</fs-breadcrumbs>
+    <h1 class="text-xs-center">{{ $t('step1') }}: {{ $t('chooseAPattern') }}</h1>
+    <v-stepper class="mb-5">
+      <v-stepper-header>
+        <v-stepper-step step="1">{{ $t('chooseAPattern') }}</v-stepper-step>
+        <v-divider></v-divider>
+        <v-stepper-step step="2">{{ $t('chooseAModel') }}</v-stepper-step>
+        <v-divider></v-divider>
+        <v-stepper-step step="3">{{ $t('chooseYourOptions') }}</v-stepper-step>
+      </v-stepper-header>
+    </v-stepper>
+    <p class="text-xs-center">
+    <template v-for="(namespace, ns) in $fs.conf.namespaces">
+      <v-btn
+        round
+        outline
+        v-for="pattern in namespace"
+        :key="pattern"
+        :color="(ns === 'Beta') ? 'secondary' : 'primary'"
+        :to="$fs.path('/draft/'+pattern)"
+        >{{ $fs.ucfirst(pattern) }}</v-btn>
+    </template>
+    </p>
+    <v-container fluid grid-list-lg v-for="(namespace, index) in $fs.conf.namespaces" :key="index">
+      <v-layout row wrap>
+        <v-flex class="xs4 sm3 xl2" v-for="pattern in namespace" :key="pattern" >
+          <v-card>
+            <nuxt-link :to="$fs.path('/draft/'+pattern)" :title="pattern">
+              <img :src="'/img/patterns/'+pattern+'/cover.jpg'" />
+            </nuxt-link>
+          <v-card-text class="fs-nodeco">
+            <h5 class="mb-0 mt-0 text-xs-center">
               <nuxt-link :to="$fs.path('/draft/'+pattern)" :title="pattern">
-                <img :src="'/img/patterns/'+pattern+'/cover.jpg'" />
+                {{ pattern[0].toUpperCase() + pattern.slice(1) }}
               </nuxt-link>
-            <v-card-text class="fs-nodeco">
-              <h5 class="mb-0 mt-0 thetitle">
-                <nuxt-link :to="$fs.path('/draft/'+pattern)" :title="pattern">
-                  {{ pattern[0].toUpperCase() + pattern.slice(1) }}
-                </nuxt-link>
-              </h5>
-            </v-card-text>
-            </v-card>
-          </v-flex>
-        </v-layout>
-      </v-container>
-    </div>
-  </section>
+            </h5>
+          </v-card-text>
+          </v-card>
+        </v-flex>
+      </v-layout>
+    </v-container>
+  </fs-wrapper-login-required>
 </template>
 
 <script>
-import FsMessageLoginRequired from '~/components/stateless/FsMessageLoginRequired'
+import FsWrapperLoginRequired from '~/components/stateless/FsWrapperLoginRequired'
+import FsBreadcrumbs from '~/components/stateless/FsBreadcrumbs'
 
 export default {
   layout: 'wide',
   components: {
-    FsMessageLoginRequired
+    FsWrapperLoginRequired,
+    FsBreadcrumbs
   }
 }
 </script>
-
-<style scoped>
-p.quick-pick {
-  text-transform: capitalize;
-  font-size: 80%;
-  max-width: 600px;
-  margin: auto;
-  text-align: center;
-  margin-bottom: 15px;
-}
-span.link-spacer {
-  display: inline;
-}
-span.link-spacer:after {
-  content: ', ';
-}
-p.quick-pick span:last-of-type:after {
-  content: '';
-}
-.thetitle {
-  text-align: center;
-}
-</style>

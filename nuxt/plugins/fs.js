@@ -78,19 +78,17 @@ export default ({ app, store, router }, inject) => {
         if (typeof input === 'undefined') return input
           return input[0].toUpperCase() + input.slice(1)
       },
-      units() {
-        format: (value, units, type) => {
-          if(type === 'measure') {
-            if(units === 'imperial') {
-              return 'fixme'
-            } else {
-              return Math.round(value*10)/10+'cm'
-            }
-          } else if (type === 'angle') {
-            return Math.round(value*10)/10+'°'
-          } else if (type === 'percent') {
-            return Math.round(value*10)/10+'%'
+      formatUnits: (value, units, type) => {
+        if(type === 'measure') {
+          if(units === 'imperial') {
+            return 'fixme'
+          } else {
+            return Math.round(value*10)/10+'cm'
           }
+        } else if (type === 'angle') {
+          return Math.round(value*10)/10+'°'
+        } else if (type === 'percent') {
+          return Math.round(value*10)/10+'%'
         }
       },
     }

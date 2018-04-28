@@ -126,6 +126,7 @@
   "txt-saOption-patternImperial": "Pattern default imperial seam allowance",
   "txt-contentNotTranslated": "Unfortunately, this page has not (yet) been translated to {language}.",
   "txt-contentLocaleFallback": "That's why we're showing you the English version instead.",
+  "txt-modelsWithMissingMeasurements": "These models lack some of the required measurements to draft this pattern:",
 
   "signup-invalid_input-title": "Invalid input",
   "signup-invalid_input-text": "Please enter a valid email address, and a password",
@@ -140,6 +141,6 @@
   "signup-no_such_pending_confirmation-text": "Sorry, but that is not a confirmation code we have on record? Perhaps it expired, in which case you can just sign up again.",
 
   "GitHub": "GitHub",
-  "Twitter": "Twitter", 
+  "Twitter": "Twitter",
   "Instagram": "Instagram"
 }

@@ -1,6 +1,5 @@
 <template>
-  <no-ssr>
-  <ul class="breadcrumbs"> 
+  <ul class="breadcrumbs">
     <li>
       <nuxt-link :to="$fs.path('/')">
         <v-icon color="primary">home</v-icon>
@@ -27,19 +26,18 @@
     </template>
     <li class="current"><slot></slot></li>
   </ul>
-  </no-ssr>
 </template>
 
 <script>
 export default {
   name: 'FsBreadcrumbs',
   props: {
-    mdCrumbs: { 
-      type: Array, 
+    mdCrumbs: {
+      type: Array,
       default: () => { return [] }
     },
-    crumbs: { 
-      type: Array, 
+    crumbs: {
+      type: Array,
       default: () => { return [] }
     }
   }

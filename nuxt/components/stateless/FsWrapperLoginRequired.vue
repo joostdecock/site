@@ -1,6 +1,6 @@
 <template>
   <div>
-    <blockquote v-if="!store.state.user.loggedIn">
+    <blockquote v-if="!$store.state.user.loggedIn">
     <h3>{{ $t('youAreNotLoggedIn') }}</h3>
     <p>
       {{ $t('thisPageIsOnlyAvailableToFreesewingUsers') }}

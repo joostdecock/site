@@ -41,19 +41,10 @@
 
       <h2>{{ $t('draftOptions') }}</h2>
       <v-expansion-panel>
-                <fs-option-sa    :pattern="$fs.conf.patterns[pattern]" />
-                <fs-option-scope :pattern="$fs.conf.patterns[pattern]" />
-                <fs-option-theme :pattern="$fs.conf.patterns[pattern]" />
-              </v-expansion-panel>
-      <p class="text-xs-right mt-5">
-      <v-btn color="primary" large>
-        <v-icon class="mr-3">insert_drive_file</v-icon>
-        {{ $t('draftPatternForModel', {
-          pattern: $fs.ucfirst(pattern),
-          model: $store.state.user.models[model].name}
-        ) }}
-      </v-btn>
-      </p>
+        <fs-option-sa    :pattern="$fs.conf.patterns[pattern]" />
+        <fs-option-scope :pattern="$fs.conf.patterns[pattern]" />
+        <fs-option-theme :pattern="$fs.conf.patterns[pattern]" />
+      </v-expansion-panel>
     </template>
   </div>
 </template>
