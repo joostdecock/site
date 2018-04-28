@@ -4,13 +4,13 @@ import MarkdownIt from 'markdown-it'
 import FreesewingData from '~/static/json/freesewing.json'
 
 export default ({ app, store, router }, inject) => {
-  
+
   const pathMethod = function(path) {
     if(app.i18n.locale == app.i18n.fallbackLocale) return path
     else return '/'+app.i18n.locale+path
   }
 
- inject('fs', new Vue({
+  inject('fs', new Vue({
     data: () => ({
       api: {
         data: axios.create({
@@ -35,18 +35,18 @@ export default ({ app, store, router }, inject) => {
       },
       modelIsValid(model, patternHandle) {
         var valid = true
-        Object.entries(FreesewingData.patterns[patternHandle].measurements).forEach( 
-          ([key, value]) => {
-            if(typeof model.data.measurements[key] === 'undefined') {
-              valid = false
-            }
-          }
-        )
-        return valid
+          Object.entries(FreesewingData.patterns[patternHandle].measurements).forEach(
+              ([key, value]) => {
+                if(typeof model.data.measurements[key] === 'undefined') {
+                  valid = false
+                }
+              }
+              )
+          return valid
       },
       ucfirst(input) {
         if (typeof input === 'undefined') return input
-        return input[0].toUpperCase() + input.slice(1)
+          return input[0].toUpperCase() + input.slice(1)
       },
       units() {
         format: (value, units, type) => {
@@ -65,21 +65,21 @@ export default ({ app, store, router }, inject) => {
       },
       content(section, path, isDev) {
         let l = app.i18n.locale
-        let url = section+path
-        var data = {}
+          let url = section+path
+          var data = {}
         if(isDev) {
           axios.get('http://localhost:3000/content-api/'+url)
-          .then(function (res) {
-            console.log(res.data)
-            data = res.data
-          })
+            .then(function (res) {
+              console.log(res.data)
+                data = res.data
+            })
           .catch(function (error) {
-             console.log('FAILED')
-             console.log(error)
+            console.log('FAILED')
+              console.log(error)
           })
         }
         console.log(data.title)
-        return data
+          return data
       }
     }
   }))

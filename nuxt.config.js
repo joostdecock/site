@@ -61,14 +61,14 @@ module.exports = {
     ],
   ],
   plugins: [
-    '~/plugins/fs' 
+    '~/plugins/fs'
   ],
   vuetify: {
     materialIcons: false,
     css: false,
     theme: {
       // This is Freesewing's signature purple
-      primary: '#212121', 
+      primary: '#212121',
       secondary: '#455A64',
       warning: '#FFAB00',
       error: '#D32F2F',
@@ -120,33 +120,33 @@ module.exports = {
   router: {
     extendRoutes (routes, resolve) {
       routes.push({
-        path: '/docs/*', 
+        path: '/docs/*',
         component: 'nuxt/pages/docs/_page.vue'
       })
       routes.push({
-        path: '/signup/confirm/*', 
+        path: '/signup/confirm/*',
         component: 'nuxt/pages/signup/confirm-email.vue'
       })
       routes.push({
-        path: '/signup/consent/*', 
+        path: '/signup/consent/*',
         component: 'nuxt/pages/signup/consent-profile.vue'
       })
       routes.push({
-        path: '/patterns/*', 
+        path: '/patterns/*',
         component: 'nuxt/pages/patterns/_pattern.vue'
       })
       routes.push({
-        path: '/draft/:pattern', 
+        path: '/draft/:pattern',
         component: 'nuxt/pages/draft/choose-model.vue'
       })
       routes.push({
-        path: '/draft/:pattern/for/:model', 
+        path: '/draft/:pattern/for/:model',
         component: 'nuxt/pages/draft/choose-options.vue'
       })
     }
   },
   generate: {
-    //interval: 250,
+    interval: 1000,
     routes: [
         '/patterns/aaron',
         '/patterns/brian',
