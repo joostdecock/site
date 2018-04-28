@@ -11,8 +11,7 @@ export default ({ app, store, router }, inject) => {
   const ax = {
     data: axios.create({
       baseURL: process.env.conf.api.data,
-      timeout: 4500,
-      headers: {'Authorization': 'Bearer '+storage.get('token')}
+      timeout: 4500
     })
   }
 
@@ -47,7 +46,7 @@ export default ({ app, store, router }, inject) => {
       },
 
       auth() {
-        return ax.data.get('/account')
+        return ax.data.get('/account', { headers: {'Authorization': 'Bearer '+storage.get('token')} })
           .then((res) => {
             return(res)
           })
