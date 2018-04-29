@@ -69,6 +69,24 @@ export default ({ app, store, router }, inject) => {
         })
       },
 
+      loadDraft(handle) {
+        return ax.data.get('/draft/'+handle, { headers: {'Authorization': 'Bearer '+storage.get('token')} })
+          .then((res) => {
+            return(res)
+          })
+        .catch((error) => {
+          return(error)
+        })
+      },
+
+      draftSvgLink(draftHandle, userHandle) {
+        return FreesewingData.api.data+'/static/users/'+userHandle.substr(0,1)+'/'+userHandle+'/drafts/'+draftHandle+'/'+draftHandle+'.svg'
+      },
+
+      draftComparedLink(draftHandle, userHandle) {
+        return FreesewingData.api.data+'/static/users/'+userHandle.substr(0,1)+'/'+userHandle+'/drafts/'+draftHandle+'/'+draftHandle+'.compared.svg'
+      },
+
       path(path) {
         if(app.i18n.locale == app.i18n.fallbackLocale) return path
         else return '/'+app.i18n.locale+path
