@@ -1,10 +1,8 @@
-blockquote 
+blockquote
   padding: 2rem
   margin: 1.5rem 0.5rem
   box-shadow: $shadow
   background: rgba(0,0,0,.05)
-  -webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, .2), 0px 1px 1px 0px rgba(0, 0, 0, .14), 0px 1px 3px 0px rgba(0, 0, 0, .12);
-  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, .2), 0px 1px 1px 0px rgba(0, 0, 0, .14), 0px 1px 3px 0px rgba(0, 0, 0, .12);
 
   & p:last-child
     margin-bottom: 0
@@ -17,7 +15,7 @@ blockquote
   & h6:first-child
     margin-top: 0
 
-  &:before 
+  &:before
     content: ""
     font-family: "Material Icons" !important
     font-style: normal !important
@@ -28,16 +26,16 @@ blockquote
     line-height: 1
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
-    font-size: 3em
+    font-size: 5em
     float: right
     margin-top: -10px
     color: #212121
 
-  &.center 
+  &.center
     max-width: 400px
     margin: auto
- 
-  &.quote 
+
+  &.quote
     max-width: 50%
     float: right
     font-style: italic
@@ -52,26 +50,25 @@ blockquote
     &:before
       content: "format_quote"
 
-  &.comment 
+  &.comment
     &:before
       content: "mode_comment"
       color: $info
 
-  &.link 
+  &.link
     &:before
       content: "link"
       color: $info
 
-  &.warning 
+  &.warning
     &:before
       content: "warning"
-      color: $secondary
-  
-  &.tip 
+
+  &.tip
     &:before
       content: "link"
 
-  &.i18n 
+  &.i18n
     &:before
       content: "translate"
 

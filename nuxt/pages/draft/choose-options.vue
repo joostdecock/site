@@ -154,8 +154,6 @@ export default {
   }
 }
 </script>
-				<nuxt-link :to="$fs.path('/draft/'+$route.params.pattern)">
-          {{ $t('forUsername', {username: $store.state.user.models[model].name}) }}
 
 <style scoped>
 p.quick-pick {

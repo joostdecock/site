@@ -1,28 +1,28 @@
 <template>
   <section class="blogpost">
-    <fs-breadcrumbs :crumbs="crumbs">{{ post.linktitle }}</fs-breadcrumbs> 
+    <fs-breadcrumbs :crumbs="crumbs">{{ post.linktitle }}</fs-breadcrumbs>
     <fs-message-locale-fallback v-if="$i18n.locale != post.contentLocale" />
     <article class="fs-content elevation-1">
       <figure>
         <a href='#'>
-          <img 
-           :src="imgDir+'/high_'+post.img" 
-           data-sizes="auto" 
+          <img
+           :src="imgDir+'/high_'+post.img"
+           data-sizes="auto"
            data-srcset="
            lqip_1.jpg 25w,
            low_1.jpg 500w,
            med_1.jpg 1000w,
            high_1.jpg 2000w"
-           >	
+           >
         </a>
         <figcaption v-html="post.caption"></figcaption>
-      </figure> 
+      </figure>
       <div class="fs-xpad">
-        <fs-page-meta-data 
+        <fs-page-meta-data
           :date="post.date"
-          :category="post.category" 
-          :author="post.author" 
-          :translation="post.translation" 
+          :category="post.category"
+          :author="post.author"
+          :translation="post.translation"
         />
         <h1>{{ post.title }} </h1>
         <nuxtdown-body :body="post.body" class="fs-content fs-text pb-3" />
@@ -45,7 +45,7 @@ export default {
   data: function() {
     return {
       crumbs: [
-        { 
+        {
           to: this.$fs.path('/blog/'),
           title: this.$t('Blog')
         }
@@ -54,10 +54,10 @@ export default {
   },
   methods: {
     authorLink: function () {
-      return '/blog/author/'+this.post.author.replace(/\s/g,''); 
+      return '/blog/author/'+this.post.author.replace(/\s/g,'');
     },
   },
-  asyncData: async function ({ app, route, isDev }) {
+  asyncData: async function ({ app, route }) {
     const data = {}
     data.post = await app.$content('/'+app.i18n.locale+'/blog').get(route.path)
     .then(function (data) {
@@ -75,7 +75,7 @@ export default {
     }
     return data
   },
-  computed: { 
+  computed: {
     imgDir () {
       if (this.$i18n.locale === this.$i18n.fallbackLocale || this.post.contentLocale != this.$i18n.locale) {
         return '/img'+this.post.permalink
@@ -86,7 +86,7 @@ export default {
   },
   mounted: function() {
     this.$store.commit('setDynamicComponent', {
-      region: 'rightColumn', 
+      region: 'rightColumn',
       component: 'fs-dynamic-aside-blogpost'
     })
     if(this.post.updates > 0) {
@@ -97,17 +97,17 @@ export default {
     this.$store.commit('setComponentData', {
       source: 'blogpost',
       data: {
-        author: this.post.author, 
-        date: this.post.date, 
-        category: this.post.category, 
-        updates: this.post.updates, 
-        toc: this.post.toc 
+        author: this.post.author,
+        date: this.post.date,
+        category: this.post.category,
+        updates: this.post.updates,
+        toc: this.post.toc
       }
     })
   },
   beforeDestroy: function() {
     this.$store.commit('setDynamicComponent', {
-      region: 'rightColumn', 
+      region: 'rightColumn',
       component: ''
     })
   }

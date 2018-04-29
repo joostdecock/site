@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import axios from 'axios'
 import MarkdownIt from 'markdown-it'
+import { format, differenceInCalendarDays, differenceInMonths } from 'date-fns'
 import FreesewingData from '~/static/json/freesewing.json'
 import Storage from './storage'
 
@@ -59,7 +60,6 @@ export default ({ app, store, router }, inject) => {
         let data = store.state.draft.config
         data.pattern = store.state.draft.pattern
         data.model = store.state.draft.model.handle
-        console.log(JSON.parse(JSON.stringify(data)))
         return ax.data.post('/draft', data, { headers: {'Authorization': 'Bearer '+storage.get('token')} })
           .then((res) => {
             return(res)
@@ -105,6 +105,24 @@ export default ({ app, store, router }, inject) => {
           return Math.round(value*10)/10+'%'
         }
       },
+
+      formatVersion(input) {
+        return "<v-btn>input</v-btn>"
+      },
+
+      daysAgo(input) {
+        let now = new Date()
+        let days = differenceInCalendarDays(now, input)
+        if (days === 0) {
+          return app.i18n.t('today')
+        } else if (days === 1) {
+          return app.i18n.t('yesterday')
+        } else if (days < 30) {
+          return app.i18n.t('daysAgo', {days: days})
+        } else {
+          return app.i18n.t('monthsAgo', {months: differenceInMonths(now, input)})
+        }
+      }
     }
   }))
 }

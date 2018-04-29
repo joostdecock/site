@@ -44,6 +44,10 @@ export const state = () => ({
     },
     type: '',
     custom: {}
+  },
+  selected: {
+    drafts: [],
+    models: []
   }
 })
 
@@ -96,7 +100,11 @@ export const mutations = {
   },
   setAccount(state, payload) {
     state.user = payload
-  }
+  },
+  setSelectedDrafts(state, payload) {
+    console.log(payload)
+    state.selected.drafts = payload
+  },
 }
 
 export const actions = {

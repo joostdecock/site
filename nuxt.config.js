@@ -109,6 +109,10 @@ module.exports = {
         path: '/draft/:pattern/for/:model',
         component: 'nuxt/pages/draft/choose-options.vue'
       })
+      routes.push({
+        path: '/drafts/:draft',
+        component: 'nuxt/pages/drafts/_draft.vue'
+      })
     }
   },
   generate: {
