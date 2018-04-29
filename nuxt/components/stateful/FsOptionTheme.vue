@@ -6,7 +6,7 @@
         <v-icon large class="ml-2" color="secondary">help_outline</v-icon>
       </div>
       <h6><span :class="(dflt != value) ? 'fs-option-custom' : ''">
-          {{ $t(value+'Theme') }}
+          {{ $t(themes[value]+'Theme') }}
       </span></h6>
     </div>
     <v-card>
@@ -14,11 +14,11 @@
         <v-radio-group v-model="value"
           >
 				  <v-radio
-            @change="updateDraftTheme(theme)"
-            v-for="theme in ['classic', 'paperless']" :key="theme"
-            :label="$t(theme+'Theme')" 
-            :value="theme"
-            :color="(theme != dflt) ? 'accent' : 'primary'"></v-radio>
+            @change="updateDraftTheme(index)"
+            v-for="(theme, index) in themes" :key="theme"
+            :label="$t(theme+'Theme')"
+            :value="index"
+            :color="(index != dflt) ? 'accent' : 'primary'"></v-radio>
         </v-radio-group>
       </v-card-text>
     </v-card>
@@ -31,12 +31,16 @@ export default {
   props: {
     dflt: {
       type: String,
-      default: 'classic'
+      default: 'Basic'
     }
   },
   data: function() {
     return {
-      value: this.dflt
+      value: this.dflt,
+      themes: {
+        Basic: 'classic',
+        Paperless: 'paperless'
+      }
     }
   },
   methods: {

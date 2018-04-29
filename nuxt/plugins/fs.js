@@ -55,6 +55,20 @@ export default ({ app, store, router }, inject) => {
         })
       },
 
+      draft() {
+        let data = store.state.draft.config
+        data.pattern = store.state.draft.pattern
+        data.model = store.state.draft.model.handle
+        console.log(JSON.parse(JSON.stringify(data)))
+        return ax.data.post('/draft', data, { headers: {'Authorization': 'Bearer '+storage.get('token')} })
+          .then((res) => {
+            return(res)
+          })
+        .catch((error) => {
+          return(error)
+        })
+      },
+
       path(path) {
         if(app.i18n.locale == app.i18n.fallbackLocale) return path
         else return '/'+app.i18n.locale+path

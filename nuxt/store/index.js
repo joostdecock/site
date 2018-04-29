@@ -29,13 +29,13 @@ export const state = () => ({
       options: {},
       sa: {},
       scope: {},
-      theme: 'classic'
+      theme: 'Basic'
     },
     config: {
       options: {},
       sa: {},
       scope: {},
-      theme: 'classic'
+      theme: 'Basic'
     },
     pattern: '',
     model: {
@@ -154,6 +154,7 @@ export const actions = {
       type: 'pattern',
       included: []
     }
+    config.theme = 'Basic'
     commit('setDraftInitial', {
       type: payload.type,
       model: {
