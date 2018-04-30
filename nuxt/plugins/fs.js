@@ -16,6 +16,22 @@ export default ({ app, store, router }, inject) => {
     })
   }
 
+  const formatUnitsMethod = (value, units, type) => {
+    if(type === 'measure') {
+      if(units === 'imperial') {
+        return 'fixme'
+      } else {
+        return Math.round(value*10)/10+'cm'
+      }
+    } else if (type === 'angle') {
+      return Math.round(value*10)/10+'°'
+    } else if (type === 'percent') {
+      return Math.round(value*10)/10+'%'
+    } else {
+      return value
+    }
+  }
+
   inject('fs', new Vue({
     data: () => ({
       md: new MarkdownIt(),
@@ -79,21 +95,64 @@ export default ({ app, store, router }, inject) => {
         })
       },
 
-      draftSvgLink(draftHandle, userHandle) {
-        return FreesewingData.api.data+'/static/users/'+userHandle.substr(0,1)+'/'+userHandle+'/drafts/'+draftHandle+'/'+draftHandle+'.svg'
+      updateDraft(handle, data) {
+        return ax.data.put('/draft/'+handle, data, { headers: {'Authorization': 'Bearer '+storage.get('token')} })
+          .then((res) => {
+            return(res)
+          })
+        .catch((error) => {
+          return(error)
+        })
       },
 
-      draftComparedLink(draftHandle, userHandle) {
-        return FreesewingData.api.data+'/static/users/'+userHandle.substr(0,1)+'/'+userHandle+'/drafts/'+draftHandle+'/'+draftHandle+'.compared.svg'
+      deleteDraft(handle) {
+        return ax.data.delete('/draft/'+handle, { headers: {'Authorization': 'Bearer '+storage.get('token')} })
+        .then((res) => {
+          return res.data
+        })
+        .catch((error) => {
+          return(error)
+        })
+      },
+
+      draftSvgLink(draftHandle, userHandle, cachingToken) {
+        return FreesewingData.api.data+'/static/users/'+userHandle.substr(0,1)+'/'+
+          userHandle+'/drafts/'+draftHandle+'/'+draftHandle+'.svg?cache='+cachingToken
+      },
+
+      draftComparedLink(draftHandle, userHandle, cachingToken) {
+        return FreesewingData.api.data+'/static/users/'+userHandle.substr(0,1)+'/'+
+          userHandle+'/drafts/'+draftHandle+'/'+draftHandle+'.compared.svg?cache='+cachingToken
+      },
+
+      draftDownloadLink(draftHandle, format) {
+        return FreesewingData.api.data+'/download/'+draftHandle+'/'+format
+      },
+
+      patternHandle(name) {
+        if(typeof FreesewingData.mapping.patternToHandle[name] === 'string') {
+          return FreesewingData.mapping.patternToHandle[name]
+        } else if (typeof FreesewingData.mapping.handleToPattern[name.toLowerCase()] === 'string') {
+          return name.toLowerCase()
+        } else {
+          return false
+        }
       },
 
       path(path) {
         if(app.i18n.locale == app.i18n.fallbackLocale) return path
         else return '/'+app.i18n.locale+path
       },
-      user(user) {
+      userPath(user) {
         if(app.i18n.locale == app.i18n.fallbackLocale) return '/users/'+user
         else return '/'+app.i18n.locale+'/users/'+user
+      },
+      draftPath(handle) {
+        if(app.i18n.locale == app.i18n.fallbackLocale) return '/drafts/'+handle
+        else return '/'+app.i18n.locale+'/drafts/'+handle
+      },
+      dataPath(path) {
+        return FreesewingData.api.data+path
       },
       modelIsValid(model, patternHandle) {
         var valid = true
@@ -111,16 +170,14 @@ export default ({ app, store, router }, inject) => {
           return input[0].toUpperCase() + input.slice(1)
       },
       formatUnits: (value, units, type) => {
-        if(type === 'measure') {
-          if(units === 'imperial') {
-            return 'fixme'
-          } else {
-            return Math.round(value*10)/10+'cm'
-          }
-        } else if (type === 'angle') {
-          return Math.round(value*10)/10+'°'
-        } else if (type === 'percent') {
-          return Math.round(value*10)/10+'%'
+        return formatUnitsMethod(value, units, type)
+      },
+
+      formatPatternOption: (value, option, pattern, units) => {
+        if(FreesewingData.patterns[pattern].options[option].type === 'chooseOne') {
+           return FreesewingData.patterns[pattern].options[option].options[value]
+        } else {
+          return formatUnitsMethod(value, units, FreesewingData.patterns[pattern].options[option].type)
         }
       },
 

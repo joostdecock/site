@@ -16,6 +16,9 @@ $info      = #64B5F6
 $accent    = #FF5B77
 $success   = #4caf50
 $shadow = 0px 2px 1px -1px rgba(0, 0, 0, .2), 0px 1px 1px 0px rgba(0, 0, 0, .14), 0px 1px 3px 0px rgba(0, 0, 0, .12)!important;
+$linkline =rgba(0,0,0,0.2)
+$linkshadow = 0px -1px 0px $linkline inset
+
 // Who would thing having a white background would be such as hassle
 @import './material-light'
 
@@ -108,9 +111,17 @@ $navigation-drawer-item-font-size = 24px
 }
 
 // Links
-a
-  color: #008fdd
+p a, td a
   text-decoration: none
+  box-shadow: $linkshadow
+  border-bottom: 2px solid $linkline
+  padding-right: 4px
+  padding-left: 4px
+p a:hover, td a:hover
+  color: $accent
+  border-bottom: 0
+  box-shadow: none
+
 
 // Lists
 ul, ol

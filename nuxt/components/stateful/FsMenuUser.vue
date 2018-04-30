@@ -24,7 +24,7 @@
         <v-list-tile-title>{{ $t('settings') }}</v-list-tile-title>
       </v-list-tile-content>
     </v-list-tile>
-    <v-list-tile :to="$fs.user($store.state.user.account.username)">
+    <v-list-tile :to="$fs.userPath($store.state.user.account.username)">
       <v-list-tile-action>
         <v-icon color="primary">fingerprint</v-icon>
       </v-list-tile-action>

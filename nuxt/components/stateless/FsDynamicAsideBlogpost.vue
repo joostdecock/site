@@ -19,7 +19,7 @@
             <p class="mt-0 mb-0 body-2" v-html="$fs.md.render(update.update)"></p>
             <p class="mt-2 body-1 text-xs-right mb-0 mt-0">
               {{ update.date }}
-              <span v-if="update.by">{{ $t('by') }} <nuxt-link :to="$fs.user(update.by)">@{{ update.by }}</nuxt-link></span>
+              <span v-if="update.by">{{ $t('by') }} <nuxt-link :to="$fs.userPath(update.by)">@{{ update.by }}</nuxt-link></span>
             </p>
           </div>
         </v-card-title>
@@ -30,12 +30,12 @@
 
 <script>
 import FsTableOfContents from '~/components/stateless/FsTableOfContents'
-export default { 
+export default {
   name: 'FsDynamicAsideBlogpost',
   components: {
     FsTableOfContents
   },
-  computed: { 
+  computed: {
     post () {
       return this.$store.state.components.data['blogpost']
     },

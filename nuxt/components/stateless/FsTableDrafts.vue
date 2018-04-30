@@ -26,16 +26,8 @@
           {{ $store.state.user.models[props.item.model].name }}
         </nuxt-link>
       </td>
-      <td class="text-xs-center">
-        <nuxt-link :to="$fs.path('/drafts/'+props.item.handle)">
-          {{ props.item.name }}
-        </nuxt-link>
-      </td>
-      <td class="text-xs-center">
-        <nuxt-link :to="$fs.path('/drafts/'+props.item.handle)">
-          {{ $fs.daysAgo(props.item.created) }}
-        </nuxt-link>
-      </td>
+      <td class="text-xs-center">{{ props.item.name }}</td>
+      <td class="text-xs-center">{{ $fs.daysAgo(props.item.created) }}</td>
       <td class="text-xs-center">
         <fs-version-core :version="props.item.data.version" />
       </td>

@@ -20,13 +20,13 @@
         {{ $fs.ucfirst(pattern) }}</v-btn>
     </li>
     <li v-if="author != ''">
-      <v-btn flat nuxt :to="$fs.user(author)">
+      <v-btn flat nuxt :to="$fs.userPath(author)">
         <v-icon class="mr-3">account_circle</v-icon>
         @{{ author }}
       </v-btn>
     </li>
     <li v-if="translation != ''">
-      <v-btn flat nuxt :to="$fs.user(translation)">
+      <v-btn flat nuxt :to="$fs.path(translation)">
         <v-icon class="mr-3">translate</v-icon>
         @{{ translation }}
       </v-btn>
