@@ -2,7 +2,9 @@
   <v-data-table
     :headers="headers"
     :items="items"
+    :pagination.sync="pagination"
     select-all
+    must-sort
     class="elevation-1"
     v-model="selected"
     :rows-per-page-items="[10,25,50,{text: $t('all'),value:-1}]"
@@ -63,14 +65,18 @@ export default {
   data () {
     return {
       headers: [
-        { text: '#', value: 'handle', align: 'center' },
-        { text: this.$t('pattern'), value: 'pattern', align: 'center' },
-        { text: this.$t('model'), value: 'model', align: 'center' },
-        { text: this.$t('name'), value: 'name', align: 'center' },
-        { text: this.$t('date'), value: 'created', align: 'center' },
-        { text: this.$t('version'), value: 'data.version', align: 'center', sortable: false },
+        { text: ' #', value: 'handle', align: 'center' },
+        { text: ' '+this.$t('pattern'), value: 'pattern', align: 'center' },
+        { text: ' '+this.$t('model'), value: 'model', align: 'center' },
+        { text: ' '+this.$t('name'), value: 'name', align: 'center' },
+        { text: ' '+this.$t('date'), value: 'created', align: 'center' },
+        { text: ' '+this.$t('version'), value: 'data.version', align: 'center', sortable: false },
       ],
-      selected: []
+      selected: [],
+      pagination: {
+        sortBy: 'created',
+        descending: true
+      },
     }
   },
   methods: {

@@ -78,22 +78,22 @@ export const mutations = {
     state.draft = payload
   },
   setDraftOption(state, payload) {
-    state.draft.config.options[payload.name] = payload.value
+    state.draft.config.patternOptions[payload.name] = payload.value
   },
   setDraftSa(state, payload) {
-    state.draft.config.sa = {
+    state.draft.config.draftOptions.sa = {
       type: payload.type,
       value: payload.value
     }
   },
   setDraftScope(state, payload) {
-    state.draft.config.scope = {
+    state.draft.config.draftOptions.scope = {
       type: payload.type,
       included: {...payload.included}
     }
   },
   setDraftTheme(state, payload) {
-    state.draft.config.theme = payload
+    state.draft.config.draftOptions.theme = payload
   },
   setDraftCustomOptionsCount(state, payload) {
     state.draft.custom = payload
@@ -102,7 +102,6 @@ export const mutations = {
     state.user = payload
   },
   setSelectedDrafts(state, payload) {
-    console.log(payload)
     state.selected.drafts = payload
   },
 }
@@ -126,50 +125,45 @@ export const actions = {
   },
   initializeDraft( { commit, state }, payload) {
     const config = {
-      options: {}
+      type: payload.type,
+      pattern: payload.pattern,
+      model: payload.model,
+      draftOptions: {},
+      patternOptions: {}
     }
-    const measurements = {}
     if(payload.type === 'draftFromModel') {
-      for (let optionName in payload.pattern.options) {
-        if(payload.pattern.options[optionName].type === 'measure') {
+      for (let optionName in FsConf.patterns[payload.pattern].options) {
+        let option = FsConf.patterns[payload.pattern].options[optionName]
+        if(option.type === 'measure') {
           if(state.user.account.units === 'imperial') {
             // Store in inch
-            config.options[optionName] = payload.pattern.options[optionName].default/25.4
+            config.patternOptions[option.name] = option.default/25.4
           } else {
             // Store in cm
-            config.options[optionName] = payload.pattern.options[optionName].default/10
+            config.patternOptions[optionName] = option.default/10
           }
         } else {
-          config.options[optionName] = payload.pattern.options[optionName].default
+          config.patternOptions[optionName] = option.default
         }
       }
     }
-    for (let measurementName in payload.model.data.measurements) {
-      measurements[measurementName] = payload.model.data.measurements[measurementName]
-    }
     if(typeof payload.pattern.seamAllowance !== 'undefined') {
-      config.sa = {
+      config.draftOptions.sa = {
         type: 'pattern'+state.user.account.units,
         value: payload.pattern.seamAllowance[state.user.account.units]
       }
     } else {
-      config.sa = {
+      config.draftOptions.sa = {
         type: state.user.account.units,
         value: (state.user.account.units === 'imperial') ? 0.625 : 1
       }
     }
-    config.scope = {
+    config.draftOptions.scope = {
       type: 'pattern',
       included: []
     }
-    config.theme = 'Basic'
+    config.draftOptions.theme = 'Basic'
     commit('setDraftInitial', {
-      type: payload.type,
-      model: {
-        handle: payload.model.handle,
-        measurements: measurements
-      },
-      pattern: payload.pattern.info.handle,
       config: config,
       defaults: JSON.parse(JSON.stringify(config)),
       custom: {}
@@ -177,11 +171,11 @@ export const actions = {
   },
   updateDraftCustomOptionsCount( { commit, state } ) {
     let custom = {}
-    for (var group in FsConf.patterns[state.draft.pattern].optiongroups) {
+    for (var group in FsConf.patterns[state.draft.config.pattern].optiongroups) {
       custom[group] = 0
-        for (let index in FsConf.patterns[state.draft.pattern].optiongroups[group]) {
-          let option = FsConf.patterns[state.draft.pattern].optiongroups[group][index]
-            if(state.draft.config.options[option] != state.draft.defaults.options[option]) {
+        for (let index in FsConf.patterns[state.draft.config.pattern].optiongroups[group]) {
+          let option = FsConf.patterns[state.draft.config.pattern].optiongroups[group][index]
+            if(state.draft.config.patternOptions[option] != state.draft.defaults.patternOptions[option]) {
               custom[group]++
             }
         }

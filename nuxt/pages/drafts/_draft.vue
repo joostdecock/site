@@ -96,9 +96,12 @@ export default {
       this.updateTitle = false
     },
     async trashDraft() {
-      let data = await this.$fs.deleteDraft(this.draft.handle)
-      if(data.result === 'ok') {
-        this.$router.push($fs.path('/drafts'))
+      let response = await this.$fs.deleteDraft(this.draft.handle)
+      if(response.data.result === 'ok') {
+        // Refresh profile data to purge draft
+        await this.$fs.authRefresh()
+        // Now redirect
+        this.$router.push(this.$fs.path('/drafts'))
       } else {
         this.error = true
       }

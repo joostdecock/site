@@ -8,7 +8,8 @@
       $t('draftingPattern', {pattern: $fs.ucfirst(pattern)}) :
       $t('step3')+': '+$t('chooseYourOptions')"></h1>
     <div v-if="loading">
-      <fs-draft-ticker :ticks="ticks"/>
+      <fs-draft-ticker :ready="ready" :error="error" />
+      <fs-message-error-please-report v-if="error" />
     </div>
     <div v-else>
 		<v-stepper class="mb-5" value="3">
@@ -56,13 +57,16 @@ import FsWrapperLoginRequired from '~/components/stateless/FsWrapperLoginRequire
 import FsDraftConfigurator from '~/components/stateful/FsDraftConfigurator'
 import FsBreadcrumbs from '~/components/stateless/FsBreadcrumbs'
 import FsDraftTicker from '~/components/stateless/FsDraftTicker'
+import FsMessageErrorPleaseReport from '~/components/stateless/FsMessageErrorPleaseReport'
+
 export default {
 	layout: 'wide',
   components: {
     FsWrapperLoginRequired,
     FsDraftConfigurator,
     FsBreadcrumbs,
-    FsDraftTicker
+    FsDraftTicker,
+    FsMessageErrorPleaseReport
   },
   computed: {
     model: function() {
@@ -87,14 +91,13 @@ export default {
         }
       }
       return { valid: valid, invalid: invalid }
-      return []
     }
   },
   mounted () {
     if(this.$store.state.user.loggedIn && this.$route.params.model) {
       this.$store.dispatch('initializeDraft', {
-        model: this.$store.state.user.models[this.model],
-        pattern: this.$fs.conf.patterns[this.pattern],
+        model: this.$route.params.model,
+        pattern: this.$route.params.pattern,
         type: 'draftFromModel'
       })
     }
@@ -102,6 +105,7 @@ export default {
   data: function() {
     return {
       error: false,
+      ready: false,
       loading: false,
       crumbs: [
         {
@@ -112,44 +116,24 @@ export default {
           to: this.$fs.path('/draft/'+this.$route.params.pattern),
           title: this.$t('forUsername', { username: this.$store.state.user.models[this.$route.params.model].name })
         }
-      ],
-      ticks: {
-        200: '<span class="fs-emoji">💀</span>'+this.$t('summoningTheSpiritsOfTheSkullAndNeedle'),
-         800: '<span class="fs-emoji">🏃</span>'+this.$t('newTaskForUser', {user: '<span class="fs-info">@'+this.$store.state.user.account.username+'</span>'}),
-        1100: '<span class="fs-emoji">👕</span>'+this.$t('patternIsPattern', {pattern: '<span class="fs-success">'+this.$fs.ucfirst(this.$route.params.pattern+'</span>')}),
-        1300: '<span class="fs-emoji">💃🏽</span>'+this.$t('modelIsModel', {model: '<span class="fs-success">'+this.$store.state.user.models[this.$route.params.model].name+'</span>'}),
-        2000: '<span class="fs-emoji">⚡</span>'+this.$t('connectingToSomeApi', {api: 'data'}),
-        2300: '<span class="fs-emoji">👷</span><span class="fs-warning">[data]</span> '+this.$t('processingDraftOptions'),
-        3000: '<span class="fs-emoji">🏋️</span><span class="fs-warning">[data]</span> '+this.$t('loadingModelData'),
-        3300: '<span class="fs-emoji">⚡</span><span class="fs-warning">[data]</span> '+this.$t('connectingToSomeApi', {api: 'core'}),
-        3700: '<span class="fs-emoji">⏩</span><span class="fs-warning">[data]</span> '+this.$t('submittingTaskToCore'),
-        4000: '<span class="fs-emoji">📐</span><span class="fs-accent">[core]</span> '+this.$t('draftingPattern', {pattern: this.$route.params.pattern}),
-        6000: '<span class="fs-emoji">📦</span><span class="fs-warning">[data]</span> '+this.$t('retrievingDraftFromCore'),
-        6500: '<span class="fs-emoji">💾</span><span class="fs-warning">[data]</span> '+this.$t('storingDraftData'),
-        7000: '<span class="fs-emoji">🎉</span>'+this.$t('taskCompleted'),
-        7500: '<span class="fs-emoji">😘</span>'+this.$t('loadingResult')
-      }
+      ]
     }
   },
   methods: {
-    submit: function() {
-      self = this
-      this.$fs.draft()
-      .then((response) => {
-        if(response.data.result === 'ok') {
-          self.$router.push(self.$fs.path('/drafts/'+response.data.handle))
-        } else {
-          self.error = true
-        }
-      })
-      .catch((error) => {
-        this.error = true
-      })
+    submit: async function() {
       this.crumbs.push({
         to: this.$fs.path('/draft/'+this.$route.params.pattern+'/for/'+this.$route.params.model),
         title: this.$t('chooseYourOptions')
       })
       this.loading = true
+      const self = this
+      let data = await this.$fs.draft()
+      if(data.result === 'ok') {
+        self.ready = true
+        self.$router.push(self.$fs.path('/drafts/'+data.handle))
+      } else {
+        self.error = true
+      }
     }
   }
 }

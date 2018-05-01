@@ -60,13 +60,14 @@
             </v-list-tile-content>
           </v-list-tile>
 
-          <v-list v-if="false && store.state.user.loggedIn">
+          <v-list v-if="$store.state.user.loggedIn">
+          <v-divider></v-divider>
             <v-list-tile avatar @click="toggleSub('user')">
               <v-list-tile-avatar :size="(24)">
                 <img :src="$fs.conf.api.data+$store.state.user.account.pictureSrc" :alt="$store.state.user.account.username">
               </v-list-tile-avatar>
               <v-list-tile-content>
-                <v-list-tile-title> fixme {{ '@'+$store.state.user.account.username }}
+                <v-list-tile-title> {{ '@'+$store.state.user.account.username }}
                   <v-icon color="secondary" class="ml-1" v-if="cmtySub">arrow_drop_up</v-icon>
                   <v-icon color="secondary" class="ml-1" v-else>arrow_drop_down</v-icon>
                 </v-list-tile-title>
@@ -76,9 +77,25 @@
           <div v-else class="mt-2">
             <fs-button-signup />
             <fs-button-login />
-            <fs-button-patron />
           </div>
           <fs-menu-user v-if="userSub" dense />
+          <v-list-tile :to="$fs.path('/model')">
+            <v-list-tile-action>
+              <v-icon color="accent">perm_identity</v-icon>
+            </v-list-tile-action>
+            <v-list-tile-content>
+              <v-list-tile-title>{{ $t('newModel') }}</v-list-tile-title>
+            </v-list-tile-content>
+          </v-list-tile>
+          <v-list-tile :to="$fs.path('/draft')">
+            <v-list-tile-action>
+              <v-icon color="success">insert_drive_file</v-icon>
+            </v-list-tile-action>
+            <v-list-tile-content>
+              <v-list-tile-title>{{ $t('newDraft') }}</v-list-tile-title>
+            </v-list-tile-content>
+          </v-list-tile>
+          <p class="text-xs-center mt-3"><fs-button-patron v-if="!$store.state.user.account.isPatron"/></p>
         </v-list>
   </aside>
 </template>

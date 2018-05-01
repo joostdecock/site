@@ -12,7 +12,7 @@ export default ({ app, store, router }, inject) => {
   const ax = {
     data: axios.create({
       baseURL: process.env.conf.api.data,
-      timeout: 4500
+      timeout: 15000
     })
   }
 
@@ -30,6 +30,10 @@ export default ({ app, store, router }, inject) => {
     } else {
       return value
     }
+  }
+
+  const normalize = (object) => {
+    return JSON.parse(JSON.stringify(object))
   }
 
   inject('fs', new Vue({
@@ -72,16 +76,26 @@ export default ({ app, store, router }, inject) => {
         })
       },
 
-      draft() {
-        let data = store.state.draft.config
-        data.pattern = store.state.draft.pattern
-        data.model = store.state.draft.model.handle
-        return ax.data.post('/draft', data, { headers: {'Authorization': 'Bearer '+storage.get('token')} })
-          .then((res) => {
-            return(res)
-          })
+      authRefresh() {
+        let { data } = ax.data.get('/account', { headers: {'Authorization': 'Bearer '+storage.get('token')} })
+        .then((res) => {
+          if(typeof data === 'object') {
+            store.dispatch('initializeAccount', data)
+            return(data)
+          }
+        })
         .catch((error) => {
           return(error)
+        })
+      },
+
+      draft() {
+        return ax.data.post('/draft', normalize(store.state.draft.config), { headers: {'Authorization': 'Bearer '+storage.get('token')} })
+          .then((res) => {
+            return(res.data)
+          })
+        .catch((error) => {
+          return({ result: 'error'})
         })
       },
 
@@ -108,7 +122,7 @@ export default ({ app, store, router }, inject) => {
       deleteDraft(handle) {
         return ax.data.delete('/draft/'+handle, { headers: {'Authorization': 'Bearer '+storage.get('token')} })
         .then((res) => {
-          return res.data
+          return res
         })
         .catch((error) => {
           return(error)
