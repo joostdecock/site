@@ -3,9 +3,14 @@
     <fs-breadcrumbs>{{ $t('drafts') }}</fs-breadcrumbs>
     <h1 class="mb-5 text-xs-center">{{ $t('drafts') }}</h1>
     <fs-table-drafts :items="loadDrafts()" />
-    <blockquote class="warning text-xs-left" v-if="$store.state.selected.drafts.length > 0">
-      <h3>fixme</h3>
-    </blockquote>
+    <div class="text-xs-left mt-5" v-if="$store.state.selected.drafts.length > 0">
+      <v-btn color="primary" @click="deleting = false"><v-icon class="mr-3">autorenew</v-icon>{{ $t('update') }}</v-btn>
+      <v-btn color="error" @click="bulkDelete()" :disabled="deleting">
+        <v-progress-circular indeterminate color="#fff" class="mr-3" :size="24" :width="2" v-if="deleting"></v-progress-circular>
+        <v-icon class="mr-3" v-else>delete</v-icon>
+        {{ $t('delete') }}
+      </v-btn>
+    </div>
   </fs-wrapper-login-required>
 </template>
 
@@ -23,10 +28,16 @@ export default {
   data: function() {
     return {
       error: false,
-      loading: true
+      loading: true,
+      deleting: false,
     }
   },
   methods: {
+    bulkDelete: async function() {
+      this.deleting = true
+      await this.$fs.bulkDeleteDrafts()
+      this.deleting = false
+    },
     loadDrafts: function() {
       const drafts = []
       for(let id in this.$store.state.user.drafts) {

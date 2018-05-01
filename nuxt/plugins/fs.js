@@ -32,6 +32,19 @@ export default ({ app, store, router }, inject) => {
     }
   }
 
+  const authRefreshMethod = () => {
+    return ax.data.get('/account', { headers: {'Authorization': 'Bearer '+storage.get('token')} })
+    .then((res) => {
+      if(typeof res.data === 'object') {
+        store.dispatch('initializeAccount', res.data)
+        return
+      }
+    })
+    .catch((error) => {
+      return(error)
+    })
+  }
+
   const normalize = (object) => {
     return JSON.parse(JSON.stringify(object))
   }
@@ -77,16 +90,7 @@ export default ({ app, store, router }, inject) => {
       },
 
       authRefresh() {
-        let { data } = ax.data.get('/account', { headers: {'Authorization': 'Bearer '+storage.get('token')} })
-        .then((res) => {
-          if(typeof data === 'object') {
-            store.dispatch('initializeAccount', data)
-            return(data)
-          }
-        })
-        .catch((error) => {
-          return(error)
-        })
+        authRefreshMethod()
       },
 
       draft() {
@@ -127,6 +131,20 @@ export default ({ app, store, router }, inject) => {
         .catch((error) => {
           return(error)
         })
+      },
+
+      bulkDeleteDrafts() {
+        const promises = []
+        for( let index in store.state.selected.drafts) {
+          let handle = store.state.selected.drafts[index].handle
+          promises.push(ax.data.delete('/draft/'+handle, { headers: {'Authorization': 'Bearer '+storage.get('token')} }))
+        }
+        Promise.all(promises)
+        .then(() => {
+          authRefreshMethod()
+          return true
+        })
+        .catch(() => { return false })
       },
 
       draftSvgLink(draftHandle, userHandle, cachingToken) {
