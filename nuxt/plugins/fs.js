@@ -134,17 +134,46 @@ export default ({ app, store, router }, inject) => {
       },
 
       bulkDeleteDrafts() {
-        const promises = []
-        for( let index in store.state.selected.drafts) {
-          let handle = store.state.selected.drafts[index].handle
-          promises.push(ax.data.delete('/draft/'+handle, { headers: {'Authorization': 'Bearer '+storage.get('token')} }))
-        }
-        Promise.all(promises)
-        .then(() => {
-          authRefreshMethod()
-          return true
+        return new Promise(function(resolve, reject) {
+          const promises = []
+          for( let index in store.state.selected.drafts) {
+            let handle = store.state.selected.drafts[index].handle
+            promises.push(
+              ax.data.delete(
+                '/draft/'+handle,
+                { headers: {'Authorization': 'Bearer '+storage.get('token')} }
+              )
+            )
+          }
+          Promise.all(promises)
+          .then(() => {
+            authRefreshMethod()
+            resolve(true)
+          })
+          .catch(() => { reject(false) })
         })
-        .catch(() => { return false })
+      },
+
+      bulkUpdateDrafts() {
+        return new Promise(function(resolve, reject) {
+          const promises = []
+          for( let index in store.state.selected.drafts) {
+            let handle = store.state.selected.drafts[index].handle
+            promises.push(
+              ax.data.post(
+                '/draft/'+handle+'/upgrade',
+                {},
+                { headers: {'Authorization': 'Bearer '+storage.get('token')} }
+              )
+            )
+          }
+          Promise.all(promises)
+          .then(() => {
+            authRefreshMethod()
+            resolve(true)
+          })
+          .catch(() => { reject(false) })
+				})
       },
 
       draftSvgLink(draftHandle, userHandle, cachingToken) {
