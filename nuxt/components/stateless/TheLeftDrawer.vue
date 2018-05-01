@@ -5,7 +5,7 @@
     fixed
     temporary
   >
-    <div style="display: flex; margin: 0; height: 100%">
+    <div style="display: grid; margin: 0; height: 100%">
       <fs-menu-main />
     </div>
   </v-navigation-drawer>
