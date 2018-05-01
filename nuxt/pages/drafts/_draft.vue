@@ -98,11 +98,9 @@ export default {
     trashDraft() {
       this.$fs.deleteDraft(this.draft.handle)
       .then((result) => {
-        console.log(result)
         this.$router.push(this.$fs.path('/drafts'))
       })
       .catch((error) => {
-        console.log(error)
         this.error = true
       })
     }

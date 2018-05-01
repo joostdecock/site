@@ -1,8 +1,12 @@
 <template>
   <v-toolbar flat color="transparent">
     <v-spacer></v-spacer>
-    <v-btn color="success"><v-icon class="mr-3">call_split</v-icon>{{ $t('fork') }}</v-btn>
-    <v-btn color="accent"><v-icon class="mr-3">repeat</v-icon>{{ $t('redraft') }}</v-btn>
+    <v-btn color="success" :to="$fs.path('/fork/'+draft.handle)">
+      <v-icon class="mr-3">call_split</v-icon>{{ $t('fork') }}
+    </v-btn>
+    <v-btn color="accent" :to="$fs.path('/redraft/'+draft.handle+'/for/'+draft.model.handle)">
+      <v-icon class="mr-3">repeat</v-icon>{{ $t('redraft') }}
+    </v-btn>
     <v-menu>
       <div slot="activator">
         <v-btn color="primary">

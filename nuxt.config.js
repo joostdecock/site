@@ -110,6 +110,14 @@ module.exports = {
         component: 'nuxt/pages/draft/choose-options.vue'
       })
       routes.push({
+        path: '/fork/:draft',
+        component: 'nuxt/pages/fork/choose-model.vue'
+      })
+      routes.push({
+        path: '/fork/:draft/for/:model',
+        component: 'nuxt/pages/fork/choose-options.vue'
+      })
+      routes.push({
         path: '/drafts/:draft',
         component: 'nuxt/pages/drafts/_draft.vue'
       })
