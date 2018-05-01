@@ -67,20 +67,20 @@ export default {
     }
   },
   methods: {
-    submit: async function() {
+    submit: function() {
       this.loading = true;
-      var result = await this.$fs.login({
+      this.$fs.login({
         username: this.username,
         password: this.password
       })
-      if(result.result === 'ok' ) {
-        this.$fs.setToken(result.token)
+      .then((result) => {
         this.loading = false
         this.$router.go(-1)
-      } else {
+      })
+      .catch((result) => {
         this.loading = false
         this.error = true
-      }
+      })
     }
   }
 }

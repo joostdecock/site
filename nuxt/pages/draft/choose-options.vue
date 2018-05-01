@@ -127,13 +127,14 @@ export default {
       })
       this.loading = true
       const self = this
-      let data = await this.$fs.draft()
-      if(data.result === 'ok') {
+      this.$fs.draft()
+      .then((data) => {
         self.ready = true
         self.$router.push(self.$fs.path('/drafts/'+data.handle))
-      } else {
+      })
+      .catch((error) => {
         self.error = true
-      }
+      })
     }
   }
 }

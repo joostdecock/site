@@ -37,17 +37,21 @@ export default {
     }
   },
   methods: {
-    bulkDelete: async function() {
+    bulkDelete: function() {
       this.deleting = true
-      await this.$fs.bulkDeleteDrafts()
-      this.deleting = false
+      this.$fs.bulkDeleteDrafts()
+      .then((result) => {
+        (result) ? this.deleting = false : this.error = true
+      })
+      .catch((error) => { this.error = true })
     },
-    bulkUpdate: async function() {
+    bulkUpdate: function() {
       this.updating = true
       this.$fs.bulkUpdateDrafts()
       .then((result) => {
         (result) ? this.updating = false : this.error = true
       })
+      .catch((error) => { this.error = true })
     },
     loadDrafts: function() {
       const drafts = []

@@ -92,32 +92,34 @@ export default {
   },
   methods: {
     saveTitle() {
-      const { data } = this.$fs.updateDraft(this.draft.handle, {name: this.draft.name})
-      this.updateTitle = false
+      this.$fs.updateDraft(this.draft.handle, {name: this.draft.name})
+      .then((result) => { this.updateTitle = false })
     },
-    async trashDraft() {
-      let response = await this.$fs.deleteDraft(this.draft.handle)
-      if(response.data.result === 'ok') {
-        // Refresh profile data to purge draft
-        await this.$fs.authRefresh()
-        // Now redirect
+    trashDraft() {
+      this.$fs.deleteDraft(this.draft.handle)
+      .then((result) => {
+        console.log(result)
         this.$router.push(this.$fs.path('/drafts'))
-      } else {
+      })
+      .catch((error) => {
+        console.log(error)
         this.error = true
-      }
+      })
     }
   },
-  asyncData: async function ({ app, route }) {
-    const response = await app.$fs.loadDraft(route.params.draft)
-    if(typeof response.data === 'object' && typeof response.data.draft === 'object') {
-      return response.data
-    } else {
-      if(response.response.status == 404) {
-        return { notFound: true }
+  asyncData: function ({ app, route }) {
+    return app.$fs.loadDraft(route.params.draft)
+    .then((data) => {
+      console.log(data)
+      return data
+    })
+    .catch((error) => {
+      if(error.reason === 'no_such_draft') {
+        return {notFound: true}
       } else {
         return {error: true}
       }
-    }
-  },
+    })
+  }
 }
 </script>

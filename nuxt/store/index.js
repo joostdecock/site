@@ -123,6 +123,19 @@ export const actions = {
     payload.isAdmin = (payload.account.role === 'admin') ?  true : false
     commit('setAccount', payload)
   },
+  unsetAccount( { commit }, payload) {
+    payload.loggedIn = true
+    payload.isPatron = (typeof payload.account === 'Object' && payload.account.tier) ?  true : false
+    payload.isAdmin = (payload.account.role === 'admin') ?  true : false
+    commit('setAccount', {
+      loggedIn: false,
+      isPatron: false,
+      isAdmin: false,
+      account: {},
+      models: {},
+      drafts: {}
+    })
+  },
   initializeDraft( { commit, state }, payload) {
     const config = {
       type: payload.type,

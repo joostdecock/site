@@ -32,17 +32,25 @@ export default ({ app, store, router }, inject) => {
     }
   }
 
-  const authRefreshMethod = () => {
-    return ax.data.get('/account', { headers: {'Authorization': 'Bearer '+storage.get('token')} })
-    .then((res) => {
-      if(typeof res.data === 'object') {
-        store.dispatch('initializeAccount', res.data)
-        return
-      }
+  const authMethod = () => {
+    return new Promise(function(resolve, reject) {
+      ax.data.get('/account', { headers: {'Authorization': 'Bearer '+storage.get('token')} })
+      .then((res) => {
+        if(typeof res.data === 'object') {
+          store.dispatch('initializeAccount', res.data)
+          resolve(true)
+        }
+      })
+      .catch(() => { reject(false) })
     })
-    .catch((error) => {
-      return(error)
-    })
+  }
+
+  const setToken = (token) => {
+    return storage.set('token', token)
+  }
+
+  const token = () => {
+    return storage.get('token')
   }
 
   const normalize = (object) => {
@@ -55,81 +63,63 @@ export default ({ app, store, router }, inject) => {
       conf: FreesewingData
     }),
     methods: {
-
+      // Async methods (thenable)
       login(data) {
-        return ax.data.post('/login', data)
-        .then((res) => {
-          return(res.data)
+        return new Promise(function(resolve, reject) {
+          ax.data.post('/login', data)
+          .then((res) => {
+            setToken(res.data.token)
+            resolve(res.data)
+          })
+          .catch(() => { reject(error.response.data) })
         })
-        .catch((error) => {
-          return(error.response.data)
-        })
-      },
-
-      logout() {
-        storage.set('token')
-        store.dispatch('resetAccount')
-      },
-
-      setToken(token) {
-        return storage.set('token', token)
-      },
-
-      getToken() {
-        return storage.get('token')
       },
 
       auth() {
-        return ax.data.get('/account', { headers: {'Authorization': 'Bearer '+storage.get('token')} })
-          .then((res) => {
-            return(res)
-          })
-        .catch((error) => {
-          return(error)
-        })
-      },
-
-      authRefresh() {
-        authRefreshMethod()
+        authMethod()
       },
 
       draft() {
-        return ax.data.post('/draft', normalize(store.state.draft.config), { headers: {'Authorization': 'Bearer '+storage.get('token')} })
+        return new Promise(function(resolve, reject) {
+          ax.data.post('/draft', normalize(store.state.draft.config), { headers: {'Authorization': 'Bearer '+token()} })
           .then((res) => {
-            return(res.data)
+            authMethod()
+            .then(() => { resolve(res.data) })
           })
-        .catch((error) => {
-          return({ result: 'error'})
+          .catch(() => { reject(false) })
         })
       },
 
       loadDraft(handle) {
-        return ax.data.get('/draft/'+handle, { headers: {'Authorization': 'Bearer '+storage.get('token')} })
+        return new Promise(function(resolve, reject) {
+          ax.data.get('/draft/'+handle, { headers: {'Authorization': 'Bearer '+token()} })
           .then((res) => {
-            return(res)
+            resolve(res.data)
           })
-        .catch((error) => {
-          return(error)
+          .catch((error) => { reject(error.response.data) })
         })
       },
 
       updateDraft(handle, data) {
-        return ax.data.put('/draft/'+handle, data, { headers: {'Authorization': 'Bearer '+storage.get('token')} })
+        return ax.data.put('/draft/'+handle, data, { headers: {'Authorization': 'Bearer '+token()} })
+        .then((res) => {
+          let data = res.data
+          authMethod()
           .then((res) => {
-            return(res)
+            resolve(data)
           })
-        .catch((error) => {
-          return(error)
         })
+        .catch((error) => { return(error) })
       },
 
       deleteDraft(handle) {
-        return ax.data.delete('/draft/'+handle, { headers: {'Authorization': 'Bearer '+storage.get('token')} })
-        .then((res) => {
-          return res
-        })
-        .catch((error) => {
-          return(error)
+        return new Promise(function(resolve, reject) {
+          ax.data.delete('/draft/'+handle, { headers: {'Authorization': 'Bearer '+token()} })
+          .then((res) => {
+            authMethod()
+            .then((res) => { resolve(true) })
+          })
+          .catch((error) => { reject(false) })
         })
       },
 
@@ -147,7 +137,7 @@ export default ({ app, store, router }, inject) => {
           }
           Promise.all(promises)
           .then(() => {
-            authRefreshMethod()
+            authMethod()
             resolve(true)
           })
           .catch(() => { reject(false) })
@@ -169,11 +159,22 @@ export default ({ app, store, router }, inject) => {
           }
           Promise.all(promises)
           .then(() => {
-            authRefreshMethod()
+            authMethod()
             resolve(true)
           })
           .catch(() => { reject(false) })
 				})
+      },
+
+      // Sync methods
+
+      getToken() {
+        return token()
+      },
+
+      logout() {
+        setToken('')
+        store.dispatch('resetAccount')
       },
 
       draftSvgLink(draftHandle, userHandle, cachingToken) {
