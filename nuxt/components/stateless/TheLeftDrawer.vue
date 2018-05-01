@@ -1,14 +1,12 @@
 <template>
   <v-navigation-drawer
     v-model="showLeftDrawer"
-    class="pt-5"
     app
     fixed
     temporary
   >
-    <div class="align-drawer-bottom">
+    <div style="display: flex; margin: 0; height: 100%">
       <fs-menu-main />
-      <div class="fs-toolbar-spacer"></div>
     </div>
   </v-navigation-drawer>
 </template>
@@ -20,7 +18,7 @@
       FsMenuMain
     },
     name: 'TheLeftDrawer',
-    computed: { 
+    computed: {
       showLeftDrawer: {
         get: function () {
           return this.$store.state.drawer.left

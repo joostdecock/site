@@ -4,6 +4,7 @@
     <h2>{{ $t('txt-slogan') }} </h2>
     <pre>
     {{ $store.state.user.loggedIn }}
+    {{ $store.state.user.isPatron }}
     </pre>
   </section>
 </template>

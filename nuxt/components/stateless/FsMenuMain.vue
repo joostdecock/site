@@ -1,5 +1,5 @@
 <template>
-  <aside>
+  <aside style="align-self: flex-end; width: 100%;">
     <v-list>
       <v-list-tile :to="$fs.path('/search')">
         <v-list-tile-action>
@@ -95,7 +95,9 @@
               <v-list-tile-title>{{ $t('newDraft') }}</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
-          <p class="text-xs-center mt-3"><fs-button-patron v-if="!$store.state.user.account.isPatron"/></p>
+          <p class="text-xs-center mt-3" v-if="!$store.state.user.isPatron">
+          <fs-button-patron />
+          </p>
         </v-list>
   </aside>
 </template>

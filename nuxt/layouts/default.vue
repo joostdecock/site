@@ -17,7 +17,6 @@
             <aside class="fs-sticky-column">
               <div class="fs-scroll-column mt-5">
                 <component :is="rightColumnComponent" />
-                <div class="fs-toolbar-spacer"></div>
               </div>
             </aside>
           </v-flex>
