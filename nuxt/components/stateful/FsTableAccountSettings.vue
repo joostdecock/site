@@ -1,62 +1,46 @@
 <template>
   <div>
   <table class="table fs-info-table">
-    <tbody>
-    <tr><th class="fs-titlerow" colspan="2"><br>{{ $t('data') }}</th></tr>
-      <tr>
-        <th>{{ $t('username') }}</th>
-        <td>{{ $store.state.user.account.username }}</td>
-        <td><v-btn flat round outline color="accent" @click="editValue('username')">edit</v-btn></td>
+    <template v-for="(items, group) in fields">
+    <thead :key="'thead-'+group">
+      <tr :key="'theadrow-'+group">
+      <th :key="'theadth-'+group" class="fs-titlerow" colspan="3">{{ $t(group) }}</th></tr>
+    </thead>
+    <tbody :key="'tbody-'+group">
+      <template v-for="field in items">
+      <tr v-if="editing == field" :key="'row1'+field">
+        <td colspan="3" :key="'row1td'+field" class="fs-edit-inline">
+          <fs-account-field-edit :field="field" :title="$t(field)" :value="$store.state.user.account[field]" v-on:cancel="editing=''" />
+        </td>
       </tr>
-      <tr>
-        <th>{{ $t('email') }}</th>
-        <td>{{ $store.state.user.account.email }}</td>
-        <td><v-btn flat round outline color="accent" @click="editValue('email')">edit</v-btn></td>
+      <tr v-else :key="'row2'+field">
+        <th :key="'row2td1'+field">{{ $t(field) }}</th>
+        <td :key="'row2td2'+field">{{ $store.state.user.account[field] }}</td>
+        <td :key="'row2td3'+field"><v-btn flat round outline color="accent" @click="editing=field">edit</v-btn></td>
       </tr>
-      <tr>
-        <th>{{ $t('password') }}</th>
-        <td><span class="fs-muted">[{{$t('notShown')}}]</span></td>
-        <td><v-btn flat round outline color="accent" @click="editValue('password')">edit</v-btn></td>
-      </tr>
-      <tr><th class="fs-titlerow" colspan="2"><br>{{ $t('defaults') }}</th></tr>
-      <tr>
-        <th>{{ $t('units') }}</th>
-        <td>{{ $store.state.user.account.units }}</td>
-        <td><v-btn flat round outline color="accent" @click="editValue('units')">edit</v-btn></td>
-      </tr>
-      <tr>
-        <th>{{ $t('theme') }}</th>
-        <td>{{ $store.state.user.account.theme }}</td>
-        <td><v-btn flat round outline color="accent" @click="editValue('units')">edit</v-btn></td>
-      </tr>
-      <tr>
-        <th>{{ $t('language') }}</th>
-        <td>{{ $i18n.locale }}</td>
-        <td><v-btn flat round outline color="accent" @click="editValue('units')">edit</v-btn></td>
-      </tr>
-      <tr><th class="fs-titlerow" colspan="2"><br>{{ $t('social') }}</th></tr>
-      <tr>
-        <th>{{ $t('twitter') }}</th>
-        <td v-html="($store.state.user.account.social.twitter || '<span class=fs-muted>['+$t('notSet')+']</span>')"></td>
-        <td><v-btn flat round outline color="accent" @click="editValue('twitter')">edit</v-btn></td>
-      </tr>
-      <tr>
-        <th>{{ $t('instagram') }}</th>
-        <td v-html="($store.state.user.account.social.instagram || '<span class=fs-muted>['+$t('notSet')+']</span>')"></td>
-        <td><v-btn flat round outline color="accent" @click="editValue('instagram')">edit</v-btn></td>
-      </tr>
-      <tr>
-        <th>{{ $t('github') }}</th>
-        <td v-html="($store.state.user.account.social.github || '<span class=fs-muted>['+$t('notSet')+']</span>')"></td>
-        <td><v-btn flat round outline color="accent" @click="editValue('github')">edit</v-btn></td>
-      </tr>
+      </template>
     </tbody>
+    </template>
   </table>
   </div>
 </template>
 
 <script>
+import FsAccountFieldEdit from '~/components/stateful/FsAccountFieldEdit.vue'
 export default {
   name: 'FsTableAccountSettings',
+  components: {
+    FsAccountFieldEdit
+  },
+  data () {
+    return {
+      editing: '',
+      fields: {
+        data: ['username', 'email', 'password'],
+        defaults: ['units', 'theme', 'language'],
+        social: ['twitter', 'instagram', 'github']
+      }
+    }
+  }
 }
 </script>

@@ -35,13 +35,13 @@ export default ({ app, store, router }, inject) => {
   const authMethod = () => {
     return new Promise(function(resolve, reject) {
       ax.data.get('/account', { headers: {'Authorization': 'Bearer '+storage.get('token')} })
-      .then((res) => {
-        if(typeof res.data === 'object') {
-          store.dispatch('initializeAccount', res.data)
-          resolve(true)
-        }
-      })
-      .catch(() => { reject(false) })
+        .then((res) => {
+          if(typeof res.data === 'object') {
+            store.dispatch('initializeAccount', res.data)
+            resolve(true)
+          }
+        })
+        .catch(() => { reject(false) })
     })
   }
 
@@ -67,11 +67,11 @@ export default ({ app, store, router }, inject) => {
       login(data) {
         return new Promise(function(resolve, reject) {
           ax.data.post('/login', data)
-          .then((res) => {
-            setToken(res.data.token)
-            resolve(res.data)
-          })
-          .catch(() => { reject(error.response.data) })
+            .then((res) => {
+              setToken(res.data.token)
+              resolve(res.data)
+            })
+            .catch(() => { reject(error.response.data) })
         })
       },
 
@@ -82,44 +82,46 @@ export default ({ app, store, router }, inject) => {
       draft() {
         return new Promise(function(resolve, reject) {
           ax.data.post('/draft', normalize(store.state.draft.config), { headers: {'Authorization': 'Bearer '+token()} })
-          .then((res) => {
-            authMethod()
-            .then(() => { resolve(res.data) })
-          })
-          .catch(() => { reject(false) })
+            .then((res) => {
+              authMethod()
+                .then(() => { resolve(res.data) })
+            })
+            .catch(() => { reject(false) })
         })
       },
 
       loadDraft(handle) {
         return new Promise(function(resolve, reject) {
           ax.data.get('/draft/'+handle, { headers: {'Authorization': 'Bearer '+token()} })
-          .then((res) => {
-            resolve(res.data)
-          })
-          .catch((error) => { reject(error.response.data) })
+            .then((res) => {
+              resolve(res.data)
+            })
+            .catch((error) => { reject(error.response.data) })
         })
       },
 
       updateDraft(handle, data) {
-        return ax.data.put('/draft/'+handle, data, { headers: {'Authorization': 'Bearer '+token()} })
-        .then((res) => {
-          let data = res.data
-          authMethod()
-          .then((res) => {
-            resolve(data)
-          })
+        return new Promise(function(resolve, reject) {
+          ax.data.put('/draft/'+handle, data, { headers: {'Authorization': 'Bearer '+token()} })
+            .then((res) => {
+              let data = res.data
+              authMethod()
+                .then((res) => {
+                  resolve(data)
+                })
+            })
+            .catch((error) => { reject(error) })
         })
-        .catch((error) => { return(error) })
       },
 
       deleteDraft(handle) {
         return new Promise(function(resolve, reject) {
           ax.data.delete('/draft/'+handle, { headers: {'Authorization': 'Bearer '+token()} })
-          .then((res) => {
-            authMethod()
-            .then((res) => { resolve(true) })
-          })
-          .catch((error) => { reject(false) })
+            .then((res) => {
+              authMethod()
+                .then((res) => { resolve(true) })
+            })
+            .catch((error) => { reject(false) })
         })
       },
 
@@ -136,11 +138,11 @@ export default ({ app, store, router }, inject) => {
             )
           }
           Promise.all(promises)
-          .then(() => {
-            authMethod()
-            resolve(true)
-          })
-          .catch(() => { reject(false) })
+            .then(() => {
+              authMethod()
+              resolve(true)
+            })
+            .catch(() => { reject(false) })
         })
       },
 
@@ -158,12 +160,29 @@ export default ({ app, store, router }, inject) => {
             )
           }
           Promise.all(promises)
-          .then(() => {
-            authMethod()
-            resolve(true)
-          })
-          .catch(() => { reject(false) })
-				})
+            .then(() => {
+              authMethod()
+              resolve(true)
+            })
+            .catch(() => { reject(false) })
+        })
+      },
+
+      updateAccount(data) {
+        return new Promise(function(resolve, reject) {
+          ax.data.put('/account', data, { headers: {'Authorization': 'Bearer '+token()} })
+            .then((res) => {
+              if(res.data.result === 'ok') {
+                authMethod()
+                  .then((res) => {
+                    resolve(res.data)
+                  })
+              } else {
+                reject(res.data) 
+              }
+            })
+            .catch((error) => { reject(error) })
+        })
       },
 
       // Sync methods
@@ -218,18 +237,18 @@ export default ({ app, store, router }, inject) => {
       },
       modelIsValid(model, patternHandle) {
         var valid = true
-          Object.entries(FreesewingData.patterns[patternHandle].measurements).forEach(
-              ([key, value]) => {
-                if(typeof model.data.measurements[key] === 'undefined') {
-                  valid = false
-                }
-              }
-              )
-          return valid
+        Object.entries(FreesewingData.patterns[patternHandle].measurements).forEach(
+          ([key, value]) => {
+            if(typeof model.data.measurements[key] === 'undefined') {
+              valid = false
+            }
+          }
+        )
+        return valid
       },
       ucfirst(input) {
         if (typeof input === 'undefined') return input
-          return input[0].toUpperCase() + input.slice(1)
+        return input[0].toUpperCase() + input.slice(1)
       },
       formatUnits: (value, units, type) => {
         return formatUnitsMethod(value, units, type)
@@ -237,7 +256,7 @@ export default ({ app, store, router }, inject) => {
 
       formatPatternOption: (value, option, pattern, units) => {
         if(FreesewingData.patterns[pattern].options[option].type === 'chooseOne') {
-           return FreesewingData.patterns[pattern].options[option].options[value]
+          return FreesewingData.patterns[pattern].options[option].options[value]
         } else {
           return formatUnitsMethod(value, units, FreesewingData.patterns[pattern].options[option].type)
         }
