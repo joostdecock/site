@@ -4,12 +4,12 @@
     <h1 class="mb-5 text-xs-center">{{ $t('settings') }}</h1>
       <div class="fs-content elevation-1">
       <v-tabs v-model="active" color="primary" dark centered>
-        <v-tab href="#basics">{{ $t('basics') }}</v-tab>
+        <v-tab href="#settings">{{ $t('basics') }}</v-tab>
         <v-tab href='#avatar'>{{ $t('avatar') }}</v-tab>
         <v-tab href='#social'>{{ $t('social') }}</v-tab>
         <v-tab href='#privacy'>{{ $t('privacy') }}</v-tab>
-        <v-tab-item id="basics" class="fs-pad">
-            the basics here
+        <v-tab-item id="settings" class="fs-pad">
+          <fs-table-account-settings />
         </v-tab-item>
         <v-tab-item id="avatar" class="fs-pad">
           avatar here
@@ -28,11 +28,13 @@
 <script>
 import FsWrapperLoginRequired from '~/components/stateless/FsWrapperLoginRequired'
 import FsBreadcrumbs from '~/components/stateless/FsBreadcrumbs'
+import FsTableAccountSettings from '~/components/stateful/FsTableAccountSettings'
 export default {
 	layout: 'wide',
   components: {
     FsWrapperLoginRequired,
     FsBreadcrumbs,
+    FsTableAccountSettings
   },
   data: function() {
     return {
