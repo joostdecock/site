@@ -75,13 +75,8 @@ export default ({ app, store, router }, inject) => {
         })
       },
 
-      loadAccount() {
-        console.log('why?')
-        //authMethod()
-      },
-
       auth() {
-        authMethod()
+        return authMethod()
       },
 
       draft() {
