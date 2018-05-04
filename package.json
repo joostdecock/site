@@ -24,7 +24,8 @@
     "nuxt-i18n": "^2.9.2",
     "nuxtdown": "^2.0.3",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2"
+    "stylus-loader": "^3.0.2",
+    "vue-upload-component": "^2.8.5"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

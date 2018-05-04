@@ -75,6 +75,11 @@ export default ({ app, store, router }, inject) => {
         })
       },
 
+      loadAccount() {
+        console.log('why?')
+        //authMethod()
+      },
+
       auth() {
         authMethod()
       },
@@ -206,6 +211,14 @@ export default ({ app, store, router }, inject) => {
       },
 
       // Sync methods
+
+      username() {
+        return store.state.user.account.username
+      },
+
+      avatar() {
+        return FreesewingData.api.data+store.state.user.account.pictureSrc
+      },
 
       getToken() {
         return token()
