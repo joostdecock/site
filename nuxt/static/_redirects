@@ -1,5 +1,10 @@
-# Onboarding email confirmation
+# Onboarding E-mail confirmation
 /signup/confirm/*  /signup/confirm-email    200
 
 # Onboarding consent for profile data
 /signup/consent/*   /signup/consent-profile 200
+
+# E-mail change confirmation
+/email/confirm/*  /account/confirm-email-change    200
+
+

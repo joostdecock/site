@@ -172,13 +172,33 @@ export default ({ app, store, router }, inject) => {
         return new Promise(function(resolve, reject) {
           ax.data.put('/account', data, { headers: {'Authorization': 'Bearer '+token()} })
             .then((res) => {
+              if(res.data.result === 'ok' && res.data.reason === 'no_changes_made') {
+                resolve(res.data)
+              } else if(res.data.result === 'ok') {
+                let data = res.data
+                authMethod()
+                  .then((res) => {
+                    resolve(data)
+                  })
+              } else {
+                reject(res.data)
+              }
+            })
+            .catch((error) => { reject(error) })
+        })
+      },
+
+      confirmEmailChange(hash) {
+        return new Promise(function(resolve, reject) {
+          ax.data.get('/confirm/email/'+hash, { headers: {'Authorization': 'Bearer '+token()} })
+            .then((res) => {
               if(res.data.result === 'ok') {
                 authMethod()
                   .then((res) => {
                     resolve(res.data)
                   })
               } else {
-                reject(res.data) 
+                reject(res.data)
               }
             })
             .catch((error) => { reject(error) })

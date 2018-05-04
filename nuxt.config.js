@@ -98,6 +98,10 @@ module.exports = {
         component: 'nuxt/pages/signup/consent-profile.vue'
       })
       routes.push({
+        path: '/email/confirm/*',
+        component: 'nuxt/pages/account/confirm-email-change.vue'
+      })
+      routes.push({
         path: '/patterns/*',
         component: 'nuxt/pages/patterns/_pattern.vue'
       })

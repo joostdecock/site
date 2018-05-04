@@ -31,6 +31,7 @@ export default {
     FsBreadcrumbs,
     FsTableAccountSettings
   },
+  layout: 'wide',
   data: function() {
     return {
       error: false,

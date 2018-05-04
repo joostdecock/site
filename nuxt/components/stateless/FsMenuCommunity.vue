@@ -13,15 +13,15 @@
     </v-list-tile>
     <v-list-tile href="https://github.com/freesewing" target="_BLANK">
       <v-list-tile-action><fs-icon-github  color="#00000080" /></v-list-tile-action>
-        <v-list-tile-content>{{ $t('GitHub') }}</v-list-tile-content>
+        <v-list-tile-content>{{ $t('github') }}</v-list-tile-content>
     </v-list-tile>
     <v-list-tile href="https://twitter.com/freesewing_org" target="BLANK">
       <v-list-tile-action><fs-icon-twitter color="#00000080" /></v-list-tile-action>
-        <v-list-tile-content>{{ $t('Twitter') }}</v-list-tile-content>
+        <v-list-tile-content>{{ $t('twitter') }}</v-list-tile-content>
     </v-list-tile>
     <v-list-tile href="https://instagram.com/freesewing_org" target="_BLANK">
       <v-list-tile-action><fs-icon-instagram color="#00000080" /></v-list-tile-action>
-        <v-list-tile-content>{{ $t('Instagram') }}</v-list-tile-content>
+        <v-list-tile-content>{{ $t('instagram') }}</v-list-tile-content>
     </v-list-tile>
     <v-divider></v-divider>
     <v-list-tile :to="$fs.path('/patrons')">
