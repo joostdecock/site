@@ -56,7 +56,6 @@ export default {
 <style scope>
 a.list__tile--active {
   background: rgba(0, 0, 0, .05)!important;
-  font-weight: bold;
   border-right: 5px solid #212121;
 }
 </style>

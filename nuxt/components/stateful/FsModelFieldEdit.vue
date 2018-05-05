@@ -1,59 +1,18 @@
 <template>
   <div class="fs-edit-inline elevation-1 fs-pad">
     <p class="error--text" v-if="error"><v-icon class="mr-1" color="error">warning</v-icon> {{ $t('error-'+reason) }}</p>
-    <div v-if="field === 'password'">
-      <h6>{{ $t('password') }}</h6>
-      <v-text-field
-            :label="$t('currentPassword')"
-            v-model="currentPassword"
-            :append-icon="hideCurrentPassword ? 'visibility' : 'visibility_off'"
-            :append-icon-cb="() => (hideCurrentPassword = !hideCurrentPassword)"
-            :type="hideCurrentPassword ? 'password' : 'text'"
-            required
-            prepend-icon="vpn_key"
-            :hint="$t('enterYourCurrentPassword')"
-            >
-      </v-text-field>
-      <v-text-field
-            :label="$t('newPassword')"
-            v-model="newPassword"
-            :append-icon="hidePassword ? 'visibility' : 'visibility_off'"
-            :append-icon-cb="() => (hidePassword = !hidePassword)"
-            :type="hidePassword ? 'password' : 'text'"
-            required
-            prepend-icon="vpn_key"
-            :hint="$t('enterYourNewPassword')"
-            >
-      </v-text-field>
-    </div>
-    <div v-else-if="field === 'theme'">
-      <h6>{{ $t('theme') }}</h6>
+    <div v-if="field === 'breasts'">
+      <h6>{{ $t('breasts') }}</h6>
       <v-radio-group v-model="val" :disbaled="updating">
-        <v-radio
-          v-for="value in ['classic', 'paperless']" :key="value"
-          :label="$t(value+'Theme')"
-          :value="value"
-          ></v-radio>
+        <v-radio :label="$t('withoutBreasts')" :value="0"></v-radio>
+        <v-radio :label="$t('withBreasts')" :value="1"></v-radio>
       </v-radio-group>
     </div>
-    <div v-else-if="field === 'units'">
-      <h6>{{ $t('units') }}</h6>
+    <div v-else-if="field === 'shared'">
+      <h6>{{ $t('share') }}</h6>
       <v-radio-group v-model="val" :disbaled="updating">
-        <v-radio
-          v-for="value in ['metric', 'imperial']" :key="value"
-          :label="$t(value+'Units')"
-          :value="value"
-          ></v-radio>
-      </v-radio-group>
-    </div>
-    <div v-else-if="field === 'locale'">
-      <h6>{{ $t('locale') }}</h6>
-      <v-radio-group v-model="val" :disbaled="updating">
-        <v-radio
-          v-for="value in $i18n.locales" :key="value.code"
-          :label="value.name"
-          :value="value.code"
-          ></v-radio>
+        <v-radio :label="$t('notShared')" :value="0"></v-radio>
+        <v-radio :label="$t('shared')" :value="1"></v-radio>
       </v-radio-group>
     </div>
     <div v-else>
@@ -76,7 +35,7 @@
 
 <script>
 export default {
-  name: 'FsAccountFieldEdit',
+  name: 'FsModelFieldEdit',
   props: {
     field: {
       type: String,
@@ -87,6 +46,10 @@ export default {
       required: true
     },
     value: {
+      type: [String, Number],
+      default: ''
+    },
+    handle: {
       type: String,
       default: ''
     }
@@ -108,13 +71,8 @@ export default {
       this.updating = true
       this.error = false
       const data = {}
-      if(this.field === 'password') {
-        data.newPassword = this.newPassword
-        data.currentPassword = this.currentPassword
-      } else {
-        data[this.field] =  this.val
-      }
-      this.$fs.updateAccount(data)
+      data[this.field] =  this.val
+      this.$fs.updateModel(this.handle, data)
       .then((res) => {
         this.updating = false
         if(res.reason === 'no_changes_made') {

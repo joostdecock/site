@@ -104,6 +104,9 @@ export const mutations = {
   setSelectedDrafts(state, payload) {
     state.selected.drafts = payload
   },
+  setSelectedModels(state, payload) {
+    state.selected.models = payload
+  },
 }
 
 export const actions = {

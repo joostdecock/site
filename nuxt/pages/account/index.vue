@@ -11,7 +11,7 @@
         <fs-table-account-settings />
       </v-tab-item>
       <v-tab-item id="avatar" class="fs-pad">
-        <fs-account-avatar-uploader />
+        <fs-avatar-uploader type="user" />
       </v-tab-item>
       <v-tab-item id="privacy" class="fs-pad">
         privacy here
@@ -25,13 +25,13 @@
 import FsWrapperLoginRequired from '~/components/stateless/FsWrapperLoginRequired'
 import FsBreadcrumbs from '~/components/stateless/FsBreadcrumbs'
 import FsTableAccountSettings from '~/components/stateful/FsTableAccountSettings'
-import FsAccountAvatarUploader from '~/components/stateful/FsAccountAvatarUploader'
+import FsAvatarUploader from '~/components/stateful/FsAvatarUploader'
 export default {
   components: {
     FsWrapperLoginRequired,
     FsBreadcrumbs,
     FsTableAccountSettings,
-    FsAccountAvatarUploader
+    FsAvatarUploader
   },
   layout: 'wide',
   data: function() {

@@ -2,7 +2,8 @@
   <div>
     <div class="fs-pad text-xs-center" style="margin: auto" v-if="!edit">
       <v-avatar tile :size="(256)">
-        <img :src="$fs.avatar()" :alt="$fs.username()" />
+        <img :src="$fs.modelAvatar(model.pictureSrc)" :alt="model.name" v-if="type === 'model'" />
+        <img :src="$fs.avatar()" :alt="$fs.username()" v-else />
       </v-avatar>
       <br>
       <v-btn flat round outline color="accent" @click="edit = !edit" class="mt-3">{{ $t('edit') }}</v-btn>
@@ -27,7 +28,7 @@
         </div>
         <div>
           <file-upload
-            :put-action="$fs.conf.api.data+'/account'"
+            :put-action="(type === 'model') ? $fs.conf.api.data+'/model/'+model.handle : $fs.conf.api.data+'/account'"
             :multiple="false"
             :drop="true"
             :drop-directory="false"
@@ -36,7 +37,6 @@
             ref="upload"
             @input-filter="inputFilter"
             @input-file="inputFile"
-            @uploaded="test"
           >
           </file-upload>
           <div>
@@ -87,21 +87,27 @@ export default {
   components: {
     FileUpload: VueUploadComponent
   },
+  props: {
+    type: {
+      type: String,
+      required: true
+    },
+    model: {
+      type: Object,
+      required: false
+    }
+  },
   data () {
     return {
       files: [],
       edit: false,
-      msg: this.$t('avatarUpdated'),
+      msg: (this.type === 'model') ? this.$t('imageUpdated') : this.$t('avatarUpdated'),
       notifyIcon: 'check',
       notifyColor: 'success',
       snackbar: false,
     }
   },
   methods: {
-    test: function () {
-
-      console.log('hi mome')
-    },
     getHeader: () => {
       return {authorization: this.$fs.getToken()}
     },

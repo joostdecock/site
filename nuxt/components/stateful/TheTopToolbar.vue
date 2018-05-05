@@ -4,7 +4,7 @@
       <v-spacer></v-spacer>
       <nuxt-link :to="$fs.path('/patterns')">
         <v-btn flat large>
-          <v-icon class="mr-3">content_paste</v-icon>
+          <fs-icon-tshirt class="mr-3" />
           {{ $t('patterns') }}
         </v-btn>
       </nuxt-link>
@@ -35,6 +35,7 @@ import FsIconGithub      from '~/components/stateless/FsIconGithub'
 import FsIconTwitter     from '~/components/stateless/FsIconTwitter'
 import FsIconInstagram   from '~/components/stateless/FsIconInstagram'
 import FsIconGitter      from '~/components/stateless/FsIconGitter'
+import FsIconTshirt      from '~/components/stateless/FsIconTshirt'
 import TheUserToolbar    from '~/components/stateless/TheUserToolbar'
 import TheVisitorToolbar from '~/components/stateless/TheVisitorToolbar'
 
@@ -49,6 +50,7 @@ export default {
     FsIconTwitter,
     FsIconInstagram,
     FsIconGitter,
+    FsIconTshirt,
     TheUserToolbar,
     TheVisitorToolbar,
     TheDocumentationDropdownMenu,

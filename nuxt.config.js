@@ -125,6 +125,10 @@ module.exports = {
         path: '/drafts/:draft',
         component: 'nuxt/pages/drafts/_draft.vue'
       })
+      routes.push({
+        path: '/models/:model',
+        component: 'nuxt/pages/models/_model.vue'
+      })
     }
   },
   generate: {

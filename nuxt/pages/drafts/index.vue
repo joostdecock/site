@@ -14,6 +14,12 @@
         {{ $t('delete') }}
       </v-btn>
     </div>
+    <p class="text-xs-right mt-3">
+      <v-btn color="primary" :to="$fs.path('/draft')">
+        <v-icon class="mr-3">insert_drive_file</v-icon>
+        {{ $t('newDraft') }}
+      </v-btn>
+    </p>
   </fs-wrapper-login-required>
 </template>
 

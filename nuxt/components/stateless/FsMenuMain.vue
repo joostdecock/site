@@ -53,7 +53,7 @@
 
       <v-list-tile :to="$fs.path('/patterns')">
         <v-list-tile-action>
-          <v-icon>content_paste</v-icon>
+          <fs-icon-tshirt :color="($fs.path('/patterns') === $route.path) ? '#212121' : 'rgba(0,0,0,0.54)'" />
         </v-list-tile-action>
         <v-list-tile-content>
           <v-list-tile-title>{{ $t('patterns') }}</v-list-tile-title>
@@ -112,6 +112,7 @@ import FsMenuUser from '~/components/stateful/FsMenuUser'
 import FsButtonPatron from '~/components/stateless/FsButtonPatron'
 import FsButtonSignup from '~/components/stateless/FsButtonSignup'
 import FsButtonLogin from '~/components/stateless/FsButtonLogin'
+import FsIconTshirt      from '~/components/stateless/FsIconTshirt'
 
 export default {
   components: {
@@ -120,7 +121,8 @@ export default {
     FsMenuUser,
     FsButtonPatron,
     FsButtonSignup,
-    FsButtonLogin
+    FsButtonLogin,
+    FsIconTshirt
   },
   data: function() {
     return {

@@ -53,7 +53,7 @@ export default ({ app, store, router }, inject) => {
     return storage.get('token')
   }
 
-  const normalize = (object) => {
+  const normalizeMethod = (object) => {
     return JSON.parse(JSON.stringify(object))
   }
 
@@ -81,7 +81,7 @@ export default ({ app, store, router }, inject) => {
 
       draft() {
         return new Promise(function(resolve, reject) {
-          ax.data.post('/draft', normalize(store.state.draft.config), { headers: {'Authorization': 'Bearer '+token()} })
+          ax.data.post('/draft', normalizeMethod(store.state.draft.config), { headers: {'Authorization': 'Bearer '+token()} })
             .then((res) => {
               authMethod()
                 .then(() => { resolve(res.data) })
@@ -168,6 +168,37 @@ export default ({ app, store, router }, inject) => {
         })
       },
 
+      loadModel(handle) {
+        return new Promise(function(resolve, reject) {
+          ax.data.get('/model/'+handle, { headers: {'Authorization': 'Bearer '+token()} })
+            .then((res) => {
+              resolve(res.data)
+            })
+            .catch((error) => { reject(error.response.data) })
+        })
+      },
+
+      bulkDeleteModels() {
+        return new Promise(function(resolve, reject) {
+          const promises = []
+          for( let index in store.state.selected.models) {
+            let handle = store.state.selected.models[index].handle
+            promises.push(
+              ax.data.delete(
+                '/model/'+handle,
+                { headers: {'Authorization': 'Bearer '+storage.get('token')} }
+              )
+            )
+          }
+          Promise.all(promises)
+            .then(() => {
+              authMethod()
+              resolve(true)
+            })
+            .catch(() => { reject(false) })
+        })
+      },
+
       updateAccount(data) {
         return new Promise(function(resolve, reject) {
           ax.data.put('/account', data, { headers: {'Authorization': 'Bearer '+token()} })
@@ -205,7 +236,39 @@ export default ({ app, store, router }, inject) => {
         })
       },
 
+      createModel(data) {
+        return new Promise(function(resolve, reject) {
+          ax.data.post('/model', data, { headers: {'Authorization': 'Bearer '+token()} })
+          .then((res) => { resolve(res.data)})
+          .catch((error) => { reject(error) })
+        })
+      },
+
+      updateModel(handle, data) {
+        return new Promise(function(resolve, reject) {
+          ax.data.put('/model/'+handle, data, { headers: {'Authorization': 'Bearer '+token()} })
+            .then((res) => {
+              if(res.data.result === 'ok' && res.data.reason === 'no_changes_made') {
+                resolve(res.data)
+              } else if(res.data.result === 'ok') {
+                let data = res.data
+                authMethod()
+                  .then((res) => {
+                    resolve(data)
+                  })
+              } else {
+                reject(res.data)
+              }
+            })
+            .catch((error) => { reject(error) })
+        })
+      },
+
       // Sync methods
+
+      normalize(object) {
+        return normalizeMethod(object)
+      },
 
       username() {
         return store.state.user.account.username
@@ -213,6 +276,10 @@ export default ({ app, store, router }, inject) => {
 
       avatar() {
         return FreesewingData.api.data+store.state.user.account.pictureSrc
+      },
+
+      modelAvatar(src) {
+        return FreesewingData.api.data+src
       },
 
       getToken() {
