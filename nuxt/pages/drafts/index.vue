@@ -71,6 +71,9 @@ export default {
       }
       return drafts
     }
+  },
+  beforeCreate: function () {
+    this.$fs.auth()
   }
 }
 </script>

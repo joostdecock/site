@@ -136,6 +136,7 @@
   "add": "Add",
   "noFilter": "No filter",
   "measurementsRequiredForPattern": "Measurements required for {pattern}",
+  "measurementUpdated": "Measurement updated",
   "filterByPattern": "Filter by pattern",
   "nameUpdated": "Name updated",
   "breastsUpdated": "Breasts setting updated",

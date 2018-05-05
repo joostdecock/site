@@ -71,13 +71,16 @@ export default {
       })
     },
     refreshModel() {
-      this.model = this.$fs.normalize(this.$store.state.user.models[this.model.handle])
+      let model = this.$fs.normalize(this.$store.state.user.models[this.model.handle])
+      if(typeof model.data.measurements === 'undefined') model.data.measurements = {}
+      this.model = model
     }
   },
   asyncData: function ({ app, route }) {
     return app.$fs.loadModel(route.params.model)
     .then((data) => {
       console.log(data)
+      if(typeof data.model.data.measurements === 'undefined') data.model.data.measurements = {}
       return data
     })
     .catch((error) => {

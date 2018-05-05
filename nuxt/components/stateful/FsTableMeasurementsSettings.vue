@@ -30,13 +30,14 @@
       <template v-for="field in measurementList()">
       <tr v-if="editing == field" :key="'row1'+field">
         <td colspan="3" :key="'row1td'+field" class="fs-edit-inline">
-          <fs-model-field-edit
+          <fs-measurement-field-edit
             :field="field"
             :title="$t(field)"
-            :value="getValue(field)"
+            :value="model.data.measurements[field]"
             :handle="model.handle"
             v-on:cancel="editing=''"
             v-on:update="notify($event)"
+            :model="model"
             />
         </td>
       </tr>
@@ -133,25 +134,12 @@ export default {
       if(this.filter === 'none') {
         return Object.keys(this.$fs.conf.measurements)
       } else {
-        console.log(this.filter)
         let measurements = []
         for(let m in this.$fs.conf.patterns[this.filter].measurements) {
           measurements.push(m)
         }
         return measurements
       }
-
-      let measurements = {}
-      for(let m in this.model.data.measurements) {
-        measurements[m] = this.model.data.measurements[m]
-      }
-      console.log(measurements)
-      for(let m in this.$fs.conf.measurements) {
-        if(typeof measurements[m] === 'undefined') {
-          measurements[m] = ''
-        }
-      }
-      return measurements
     }
   }
 

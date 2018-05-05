@@ -43,6 +43,7 @@ export default {
       this.deleting = true
       this.$fs.bulkDeleteModels()
       .then((result) => {
+        this.$store.commit('setSelectedModels', [])
         (result) ? this.deleting = false : this.error = true
       })
       .catch((error) => { this.error = true })
@@ -55,6 +56,9 @@ export default {
       }
       return models
     }
+  },
+  beforeCreate: function () {
+    this.$fs.auth()
   }
 }
 </script>
