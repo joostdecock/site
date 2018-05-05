@@ -41,7 +41,7 @@ export default ({ app, store, router }, inject) => {
             resolve(true)
           }
         })
-        .catch(() => { reject(false) })
+        .catch((res) => { reject(res) })
     })
   }
 
