@@ -122,7 +122,10 @@ export const actions = {
   },
   initializeAccount( { commit }, payload) {
     payload.loggedIn = true
-    payload.isPatron = (payload.account.patron.tier) ?  true : false
+    payload.isPatron = false
+    if(typeof payload.account.patron === 'object' && payload.account.patron.tier > 0) {
+      payload.isPatron = true
+    }
     payload.isAdmin = (payload.account.role === 'admin') ?  true : false
     commit('setAccount', payload)
   },
