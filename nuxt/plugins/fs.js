@@ -23,11 +23,14 @@ export default ({ app, store, router }, inject) => {
       ax.data.get('/account', { headers: {'Authorization': 'Bearer '+storage.get('token')} })
         .then((res) => {
           if(typeof res.data === 'object') {
-            store.dispatch('initializeAccount', res.data)
+            store.dispatch('injectAccount', res.data)
               resolve(true)
           }
         })
-      .catch((res) => { reject(res) })
+      .catch((res) => {
+        store.dispatch('ejectAccount', {})
+        reject(res)
+      })
     })
   }
 
@@ -283,7 +286,7 @@ export default ({ app, store, router }, inject) => {
 
       logout() {
         setToken('')
-          store.dispatch('resetAccount')
+          store.dispatch('ejectAccount')
       },
 
       draftSvgLink(draftHandle, userHandle, cachingToken) {

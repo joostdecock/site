@@ -7,6 +7,9 @@ export default async function ({ app, store }) {
         console.log('could not load account')
         console.log(res)
       })
+    } else {
+      store.dispatch('ejectAccount', {})
     }
+
   }
 }

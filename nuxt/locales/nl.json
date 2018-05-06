@@ -18,6 +18,7 @@
   "filterByPattern": "Filter op patroon",
   "measurementUpdated": "Maat bijgewerkt",
   "measurementsRequiredForPattern": "Maten die vereist zijn voor {pattern}",
+  "weAreLoadingDataFromTheBackend": "We laden gegevens van de backend",
   "noFilter": "Geen filter",
   "add": "Toevoegen",
   "breastsUpdated": "Borsten instelling bijgewerkt",

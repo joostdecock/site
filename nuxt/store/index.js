@@ -3,6 +3,7 @@ export const state = () => ({
     loggedIn: false,
     isPatron: false,
     isAdmin: false,
+    isFresh: false,
     account: {},
     models: {},
     drafts: {}
@@ -108,18 +109,9 @@ export const mutations = {
 }
 
 export const actions = {
-  resetAccount( { commit }) {
-    commit('setAccount', {
-      loggedIn: false,
-      isPatron: false,
-      isAdmin: false,
-      account: {},
-      models: {},
-      drafts: {}
-    })
-  },
-  initializeAccount( { commit }, payload) {
+  injectAccount( { commit }, payload) {
     payload.loggedIn = true
+    payload.isFresh = true
     payload.isPatron = false
     if(typeof payload.account.patron === 'object' && payload.account.patron.tier > 0) {
       payload.isPatron = true
@@ -127,14 +119,12 @@ export const actions = {
     payload.isAdmin = (payload.account.role === 'admin') ?  true : false
     commit('setAccount', payload)
   },
-  unsetAccount( { commit }, payload) {
-    payload.loggedIn = true
-    payload.isPatron = (typeof payload.account === 'Object' && payload.account.tier) ?  true : false
-    payload.isAdmin = (payload.account.role === 'admin') ?  true : false
+  ejectAccount( { commit }) {
     commit('setAccount', {
       loggedIn: false,
       isPatron: false,
       isAdmin: false,
+      isFresh: true,
       account: {},
       models: {},
       drafts: {}
