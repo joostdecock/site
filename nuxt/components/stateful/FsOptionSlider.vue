@@ -6,11 +6,9 @@
         <v-icon large class="ml-2" color="secondary">help_outline</v-icon>
       </div>
       <h6>{{ option.title }}:
-        <span :class="(computedDflt != value) ? 'fs-option-custom' : ''">
-          {{ $fs.formatUnits(value, $store.state.user.units, option.type) }}
+        <span :class="(computedDflt != value) ? 'fs-option-custom' : ''" v-html="$fs.formatUnits(value, $store.state.user.account.units, option.type)">
         </span>
       </h6>
-
     </div>
     <v-card>
       <v-card-text>
@@ -49,15 +47,18 @@ export default {
     }
   },
   data: function() {
+    let units = this.$store.state.user.account.units
     let computedDflt = this.dflt
     let min = this.option.min || 0
     let max = this.option.max || 100
     let step = 1
+    let scale = 1
     if(this.option.type === 'measure') {
-      computedDflt =  (this.$store.state.user.account.units === 'imperial') ? this.dflt/25.4 : this.dflt/10
-      min = (this.$store.state.user.account.units === 'imperial') ? this.option.min/25.4 : this.option.min/10
-      max = (this.$store.state.user.account.units === 'imperial') ? this.option.max/25.4 : this.option.max/10
-      step = 0.1
+      step = this.$fs.conf.defaults.sliders.step[units]
+      scale = this.$fs.conf.defaults.sliders.scale[units]
+      computedDflt =  this.$fs.sliderRound(this.dflt)
+      min = this.$fs.sliderRound(this.option.min)
+      max = this.$fs.sliderRound(this.option.max)
     }
     return {
       value: computedDflt,
@@ -71,9 +72,11 @@ export default {
     resetDraftOption() {
       this.value = this.computedDflt
       this.$store.dispatch('draftOptionUpdate', {name: this.name, value: this.value} )
+      this.$fs.updateDraftCustomOptionsCount()
     },
     updateDraftOption(name, value) {
       this.$store.dispatch('draftOptionUpdate', {name: name, value: value} )
+      this.$fs.updateDraftCustomOptionsCount()
     }
   }
 }

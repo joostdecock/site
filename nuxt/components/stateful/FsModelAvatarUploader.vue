@@ -105,10 +105,6 @@ export default {
     }
   },
   methods: {
-    test: function () {
-
-      console.log('hi mome')
-    },
     getHeader: () => {
       return {authorization: this.$fs.getToken()}
     },

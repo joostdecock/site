@@ -93,9 +93,9 @@ export default {
       return { valid: valid, invalid: invalid }
     }
   },
-  mounted () {
+  created () {
     if(this.$store.state.user.loggedIn && this.$route.params.model) {
-      this.$store.dispatch('initializeDraft', {
+      this.$fs.initializeDraft({
         model: this.$route.params.model,
         pattern: this.$route.params.pattern,
         type: 'draftFromModel'

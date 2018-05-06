@@ -1,5 +1,3 @@
-import FsConf from '~/static/json/freesewing.json'
-
 export const state = () => ({
   user: {
     loggedIn: false,
@@ -142,68 +140,8 @@ export const actions = {
       drafts: {}
     })
   },
-  initializeDraft( { commit, state }, payload) {
-    const config = {
-      type: payload.type,
-      pattern: payload.pattern,
-      model: payload.model,
-      draftOptions: {},
-      patternOptions: {}
-    }
-    if(payload.type === 'draftFromModel') {
-      for (let optionName in FsConf.patterns[payload.pattern].options) {
-        let option = FsConf.patterns[payload.pattern].options[optionName]
-        if(option.type === 'measure') {
-          if(state.user.account.units === 'imperial') {
-            // Store in inch
-            config.patternOptions[option.name] = option.default/25.4
-          } else {
-            // Store in cm
-            config.patternOptions[optionName] = option.default/10
-          }
-        } else {
-          config.patternOptions[optionName] = option.default
-        }
-      }
-    }
-    if(typeof payload.pattern.seamAllowance !== 'undefined') {
-      config.draftOptions.sa = {
-        type: 'pattern'+state.user.account.units,
-        value: payload.pattern.seamAllowance[state.user.account.units]
-      }
-    } else {
-      config.draftOptions.sa = {
-        type: state.user.account.units,
-        value: (state.user.account.units === 'imperial') ? 0.625 : 1
-      }
-    }
-    config.draftOptions.scope = {
-      type: 'pattern',
-      included: []
-    }
-    config.draftOptions.theme = 'Basic'
-    commit('setDraftInitial', {
-      config: config,
-      defaults: JSON.parse(JSON.stringify(config)),
-      custom: {}
-    })
-  },
-  updateDraftCustomOptionsCount( { commit, state } ) {
-    let custom = {}
-    for (var group in FsConf.patterns[state.draft.config.pattern].optiongroups) {
-      custom[group] = 0
-        for (let index in FsConf.patterns[state.draft.config.pattern].optiongroups[group]) {
-          let option = FsConf.patterns[state.draft.config.pattern].optiongroups[group][index]
-            if(state.draft.config.patternOptions[option] != state.draft.defaults.patternOptions[option]) {
-              custom[group]++
-            }
-        }
-    }
-    commit('setDraftCustomOptionsCount', custom)
-  },
   draftOptionUpdate( { commit, dispatch }, payload) {
     commit('setDraftOption', payload)
-    dispatch('updateDraftCustomOptionsCount')
   }
 }
 

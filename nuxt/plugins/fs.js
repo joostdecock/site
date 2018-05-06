@@ -2,12 +2,14 @@ import Vue from 'vue'
 import axios from 'axios'
 import MarkdownIt from 'markdown-it'
 import { format, differenceInCalendarDays, differenceInMonths } from 'date-fns'
-import FreesewingData from '~/static/json/freesewing.json'
+import f from '~/static/json/freesewing.json'
 import Storage from './storage'
+import Utils from './utils'
 
 export default ({ app, store, router }, inject) => {
 
   const storage = new Storage()
+  const utils = new Utils()
 
   const ax = {
     data: axios.create({
@@ -16,32 +18,16 @@ export default ({ app, store, router }, inject) => {
     })
   }
 
-  const formatUnitsMethod = (value, units, type) => {
-    if(type === 'measure') {
-      if(units === 'imperial') {
-        return 'fixme'
-      } else {
-        return Math.round(value*10)/10+'cm'
-      }
-    } else if (type === 'angle') {
-      return Math.round(value*10)/10+'°'
-    } else if (type === 'percent') {
-      return Math.round(value*10)/10+'%'
-    } else {
-      return value
-    }
-  }
-
   const authMethod = () => {
     return new Promise(function(resolve, reject) {
       ax.data.get('/account', { headers: {'Authorization': 'Bearer '+storage.get('token')} })
         .then((res) => {
           if(typeof res.data === 'object') {
             store.dispatch('initializeAccount', res.data)
-            resolve(true)
+              resolve(true)
           }
         })
-        .catch((res) => { reject(res) })
+      .catch((res) => { reject(res) })
     })
   }
 
@@ -53,14 +39,19 @@ export default ({ app, store, router }, inject) => {
     return storage.get('token')
   }
 
-  const normalizeMethod = (object) => {
-    return JSON.parse(JSON.stringify(object))
+  const sliderRoundMethod = (value, units) => {
+    let scale = f.defaults.sliders.scale[units]
+      if(units === 'imperial') {
+        return utils.roundToFraction(value/scale)
+      } else {
+        return utils.round(value/scale)
+      }
   }
 
   inject('fs', new Vue({
     data: () => ({
       md: new MarkdownIt(),
-      conf: FreesewingData
+      conf: f
     }),
     methods: {
       // Async methods (thenable)
@@ -69,9 +60,9 @@ export default ({ app, store, router }, inject) => {
           ax.data.post('/login', data)
             .then((res) => {
               setToken(res.data.token)
-              resolve(res.data)
+                resolve(res.data)
             })
-            .catch(() => { reject(error.response.data) })
+          .catch(() => { reject(error.response.data) })
         })
       },
 
@@ -81,12 +72,12 @@ export default ({ app, store, router }, inject) => {
 
       draft() {
         return new Promise(function(resolve, reject) {
-          ax.data.post('/draft', normalizeMethod(store.state.draft.config), { headers: {'Authorization': 'Bearer '+token()} })
+          ax.data.post('/draft', utils.normalize(store.state.draft.config), { headers: {'Authorization': 'Bearer '+token()} })
             .then((res) => {
               authMethod()
                 .then(() => { resolve(res.data) })
             })
-            .catch(() => { reject(false) })
+          .catch(() => { reject(false) })
         })
       },
 
@@ -96,7 +87,7 @@ export default ({ app, store, router }, inject) => {
             .then((res) => {
               resolve(res.data)
             })
-            .catch((error) => { reject(error.response.data) })
+          .catch((error) => { reject(error.response.data) })
         })
       },
 
@@ -105,12 +96,12 @@ export default ({ app, store, router }, inject) => {
           ax.data.put('/draft/'+handle, data, { headers: {'Authorization': 'Bearer '+token()} })
             .then((res) => {
               let data = res.data
-              authMethod()
+                authMethod()
                 .then((res) => {
                   resolve(data)
                 })
             })
-            .catch((error) => { reject(error) })
+          .catch((error) => { reject(error) })
         })
       },
 
@@ -121,50 +112,50 @@ export default ({ app, store, router }, inject) => {
               authMethod()
                 .then((res) => { resolve(true) })
             })
-            .catch((error) => { reject(false) })
+          .catch((error) => { reject(false) })
         })
       },
 
       bulkDeleteDrafts() {
         return new Promise(function(resolve, reject) {
           const promises = []
-          for( let index in store.state.selected.drafts) {
-            let handle = store.state.selected.drafts[index].handle
-            promises.push(
-              ax.data.delete(
-                '/draft/'+handle,
-                { headers: {'Authorization': 'Bearer '+storage.get('token')} }
-              )
-            )
-          }
+            for( let index in store.state.selected.drafts) {
+              let handle = store.state.selected.drafts[index].handle
+                promises.push(
+                    ax.data.delete(
+                      '/draft/'+handle,
+                      { headers: {'Authorization': 'Bearer '+storage.get('token')} }
+                      )
+                    )
+            }
           Promise.all(promises)
             .then(() => {
               authMethod()
-              resolve(true)
+                resolve(true)
             })
-            .catch(() => { reject(false) })
+          .catch(() => { reject(false) })
         })
       },
 
       bulkUpdateDrafts() {
         return new Promise(function(resolve, reject) {
           const promises = []
-          for( let index in store.state.selected.drafts) {
-            let handle = store.state.selected.drafts[index].handle
-            promises.push(
-              ax.data.post(
-                '/draft/'+handle+'/upgrade',
-                {},
-                { headers: {'Authorization': 'Bearer '+storage.get('token')} }
-              )
-            )
-          }
+            for( let index in store.state.selected.drafts) {
+              let handle = store.state.selected.drafts[index].handle
+                promises.push(
+                    ax.data.post(
+                      '/draft/'+handle+'/upgrade',
+                      {},
+                      { headers: {'Authorization': 'Bearer '+storage.get('token')} }
+                      )
+                    )
+            }
           Promise.all(promises)
             .then(() => {
               authMethod()
-              resolve(true)
+                resolve(true)
             })
-            .catch(() => { reject(false) })
+          .catch(() => { reject(false) })
         })
       },
 
@@ -174,28 +165,28 @@ export default ({ app, store, router }, inject) => {
             .then((res) => {
               resolve(res.data)
             })
-            .catch((error) => { reject(error.response.data) })
+          .catch((error) => { reject(error.response.data) })
         })
       },
 
       bulkDeleteModels() {
         return new Promise(function(resolve, reject) {
           const promises = []
-          for( let index in store.state.selected.models) {
-            let handle = store.state.selected.models[index].handle
-            promises.push(
-              ax.data.delete(
-                '/model/'+handle,
-                { headers: {'Authorization': 'Bearer '+storage.get('token')} }
-              )
-            )
-          }
+            for( let index in store.state.selected.models) {
+              let handle = store.state.selected.models[index].handle
+                promises.push(
+                    ax.data.delete(
+                      '/model/'+handle,
+                      { headers: {'Authorization': 'Bearer '+storage.get('token')} }
+                      )
+                    )
+            }
           Promise.all(promises)
             .then(() => {
               authMethod()
-              resolve(true)
+                resolve(true)
             })
-            .catch(() => { reject(false) })
+          .catch(() => { reject(false) })
         })
       },
 
@@ -207,7 +198,7 @@ export default ({ app, store, router }, inject) => {
                 resolve(res.data)
               } else if(res.data.result === 'ok') {
                 let data = res.data
-                authMethod()
+                  authMethod()
                   .then((res) => {
                     resolve(data)
                   })
@@ -215,7 +206,7 @@ export default ({ app, store, router }, inject) => {
                 reject(res.data)
               }
             })
-            .catch((error) => { reject(error) })
+          .catch((error) => { reject(error) })
         })
       },
 
@@ -232,15 +223,15 @@ export default ({ app, store, router }, inject) => {
                 reject(res.data)
               }
             })
-            .catch((error) => { reject(error) })
+          .catch((error) => { reject(error) })
         })
       },
 
       createModel(data) {
         return new Promise(function(resolve, reject) {
           ax.data.post('/model', data, { headers: {'Authorization': 'Bearer '+token()} })
-          .then((res) => { resolve(res.data)})
-          .catch((error) => { reject(error) })
+            .then((res) => { resolve(res.data)})
+            .catch((error) => { reject(error) })
         })
       },
 
@@ -252,7 +243,7 @@ export default ({ app, store, router }, inject) => {
                 resolve(res.data)
               } else if(res.data.result === 'ok') {
                 let data = res.data
-                authMethod()
+                  authMethod()
                   .then((res) => {
                     resolve(data)
                   })
@@ -260,14 +251,18 @@ export default ({ app, store, router }, inject) => {
                 reject(res.data)
               }
             })
-            .catch((error) => { reject(error) })
+          .catch((error) => { reject(error) })
         })
       },
 
       // Sync methods
 
+      sliderRound(value) {
+        return sliderRoundMethod(value, store.state.user.account.units)
+      },
+
       normalize(object) {
-        return normalizeMethod(object)
+        return utils.normalize(object)
       },
 
       username() {
@@ -275,11 +270,11 @@ export default ({ app, store, router }, inject) => {
       },
 
       avatar() {
-        return FreesewingData.api.data+store.state.user.account.pictureSrc
+        return f.api.data+store.state.user.account.pictureSrc
       },
 
       modelAvatar(src) {
-        return FreesewingData.api.data+src
+        return f.api.data+src
       },
 
       getToken() {
@@ -288,27 +283,27 @@ export default ({ app, store, router }, inject) => {
 
       logout() {
         setToken('')
-        store.dispatch('resetAccount')
+          store.dispatch('resetAccount')
       },
 
       draftSvgLink(draftHandle, userHandle, cachingToken) {
-        return FreesewingData.api.data+'/static/users/'+userHandle.substr(0,1)+'/'+
+        return f.api.data+'/static/users/'+userHandle.substr(0,1)+'/'+
           userHandle+'/drafts/'+draftHandle+'/'+draftHandle+'.svg?cache='+cachingToken
       },
 
       draftComparedLink(draftHandle, userHandle, cachingToken) {
-        return FreesewingData.api.data+'/static/users/'+userHandle.substr(0,1)+'/'+
+        return f.api.data+'/static/users/'+userHandle.substr(0,1)+'/'+
           userHandle+'/drafts/'+draftHandle+'/'+draftHandle+'.compared.svg?cache='+cachingToken
       },
 
       draftDownloadLink(draftHandle, format) {
-        return FreesewingData.api.data+'/download/'+draftHandle+'/'+format
+        return f.api.data+'/download/'+draftHandle+'/'+format
       },
 
       patternHandle(name) {
-        if(typeof FreesewingData.mapping.patternToHandle[name] === 'string') {
-          return FreesewingData.mapping.patternToHandle[name]
-        } else if (typeof FreesewingData.mapping.handleToPattern[name.toLowerCase()] === 'string') {
+        if(typeof f.mapping.patternToHandle[name] === 'string') {
+          return f.mapping.patternToHandle[name]
+        } else if (typeof f.mapping.handleToPattern[name.toLowerCase()] === 'string') {
           return name.toLowerCase()
         } else {
           return false
@@ -328,32 +323,33 @@ export default ({ app, store, router }, inject) => {
         else return '/'+app.i18n.locale+'/drafts/'+handle
       },
       dataPath(path) {
-        return FreesewingData.api.data+path
+        return f.api.data+path
       },
       modelIsValid(model, patternHandle) {
         var valid = true
-        Object.entries(FreesewingData.patterns[patternHandle].measurements).forEach(
-          ([key, value]) => {
-            if(typeof model.data.measurements[key] === 'undefined') {
-              valid = false
-            }
-          }
-        )
-        return valid
+          Object.entries(f.patterns[patternHandle].measurements).forEach(
+              ([key, value]) => {
+                if(typeof model.data.measurements[key] === 'undefined') {
+                  valid = false
+                }
+              }
+              )
+          return valid
       },
       ucfirst(input) {
         if (typeof input === 'undefined') return input
-        return input[0].toUpperCase() + input.slice(1)
+          return input[0].toUpperCase() + input.slice(1)
       },
+
       formatUnits: (value, units, type) => {
-        return formatUnitsMethod(value, units, type)
+        return utils.format(value, units, type)
       },
 
       formatPatternOption: (value, option, pattern, units) => {
-        if(FreesewingData.patterns[pattern].options[option].type === 'chooseOne') {
-          return FreesewingData.patterns[pattern].options[option].options[value]
+        if(f.patterns[pattern].options[option].type === 'chooseOne') {
+          return f.patterns[pattern].options[option].options[value]
         } else {
-          return formatUnitsMethod(value, units, FreesewingData.patterns[pattern].options[option].type)
+          return utils.format(value, units, f.patterns[pattern].options[option].type)
         }
       },
 
@@ -363,17 +359,76 @@ export default ({ app, store, router }, inject) => {
 
       daysAgo(input) {
         let now = new Date()
-        let days = differenceInCalendarDays(now, input)
-        if (days === 0) {
-          return app.i18n.t('today')
-        } else if (days === 1) {
-          return app.i18n.t('yesterday')
-        } else if (days < 30) {
-          return app.i18n.t('daysAgo', {days: days})
-        } else {
-          return app.i18n.t('monthsAgo', {months: differenceInMonths(now, input)})
+          let days = differenceInCalendarDays(now, input)
+          if (days === 0) {
+            return app.i18n.t('today')
+          } else if (days === 1) {
+            return app.i18n.t('yesterday')
+          } else if (days < 30) {
+            return app.i18n.t('daysAgo', {days: days})
+          } else {
+            return app.i18n.t('monthsAgo', {months: differenceInMonths(now, input)})
+          }
+      },
+
+      initializeDraft(payload) {
+        const config = {
+          type: payload.type,
+          pattern: payload.pattern,
+          model: payload.model,
+          draftOptions: {},
+          patternOptions: {}
         }
-      }
+        let units = store.state.user.account.units
+        let option = {}
+        if(payload.type === 'draftFromModel') {
+          for (let optionName in f.patterns[payload.pattern].options) {
+            option = f.patterns[payload.pattern].options[optionName]
+            if(option.type === 'measure') {
+              config.patternOptions[optionName] = utils.sliderRound(option.default, units)
+            } else {
+              config.patternOptions[optionName] = utils.round(option.default)
+            }
+          }
+        }
+        if(typeof payload.pattern.seamAllowance !== 'undefined') {
+          config.draftOptions.sa = {
+            type: 'pattern'+units,
+            value: payload.pattern.seamAllowance[units]
+          }
+        } else {
+          config.draftOptions.sa = {
+            type: units,
+            value: (units === 'imperial') ? 0.625 : 1
+          }
+        }
+        config.draftOptions.scope = {
+          type: 'pattern',
+          included: []
+        }
+        config.draftOptions.theme = 'Basic'
+        store.commit('setDraftInitial', {
+          config: config,
+          defaults: JSON.parse(JSON.stringify(config)),
+          custom: {}
+        })
+      },
+
+      updateDraftCustomOptionsCount() {
+        let custom = {}
+        let units = store.state.user.account.units
+          for (let group in f.patterns[store.state.draft.config.pattern].optiongroups) {
+            custom[group] = 0
+            for (let index in f.patterns[store.state.draft.config.pattern].optiongroups[group]) {
+              let option = f.patterns[store.state.draft.config.pattern].optiongroups[group][index]
+              if(store.state.draft.config.patternOptions[option] != store.state.draft.defaults.patternOptions[option]) {
+                custom[group]++
+              }
+            }
+          }
+        store.commit('setDraftCustomOptionsCount', custom)
+      },
     }
+
   }))
 }

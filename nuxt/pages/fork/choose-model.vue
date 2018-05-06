@@ -94,11 +94,9 @@ export default {
   asyncData: async function ({ app, route }) {
     return app.$fs.loadDraft(route.params.draft)
     .then((data) => {
-      console.log(data)
       return data
     })
     .catch(function (res) {
-      console.log(res)
       console.log('Draft not found')
     })
   },

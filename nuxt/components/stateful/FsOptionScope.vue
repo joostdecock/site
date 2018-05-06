@@ -53,7 +53,7 @@ export default {
     }
   },
   data: function() {
-    return { 
+    return {
       value: this.scope,
       included: this.pattern.parts
     }
@@ -64,7 +64,6 @@ export default {
       this.$store.commit('setDraftScope', {type: this.scope, included: this.pattern.parts} )
     },
     updateDraftScope(type) {
-      console.log(type)
       this.$store.commit('setDraftScope', {type: type, included: this.included} )
     },
     scopeSetAll: function(val) {

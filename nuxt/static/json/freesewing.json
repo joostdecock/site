@@ -4,6 +4,16 @@
         "metric": 1,
         "imperial": 0.625,
         "custom": 0.5
+      },
+      "sliders": {
+        "step": {
+          "metric": 0.1,
+          "imperial": 0.125
+        },
+        "scale": {
+          "metric": 10,
+          "imperial": 25.4
+        }
       }
     },
     "api": {
