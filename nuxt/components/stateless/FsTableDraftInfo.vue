@@ -1,7 +1,15 @@
 <template>
   <table class="table fs-info-table">
+    <thead>
+      <tr>
+        <th class="fs-titlerow" colspan="2">
+          {{ $t('draftPatternForModel', {pattern: $fs.ucfirst($fs.patternHandle(draft.pattern)), model: draft.model.name}) }}
+        </th>
+      </tr>
+    </thead>
+    <tbody>
     <tr>
-      <th>{{ $t('name') }}</th>
+      <th class="fs-wp50">{{ $t('name') }}</th>
       <td>{{ draft.name }}</td>
     </tr>
     <tr>
@@ -40,6 +48,7 @@
       <th>{{ $t('coreLink') }}</th>
       <td><a :href="draft.data.coreUrl" target="_BLANK">{{ $t('replay') }}</a></td>
     </tr>
+    </tbody>
   </table>
 </template>
 

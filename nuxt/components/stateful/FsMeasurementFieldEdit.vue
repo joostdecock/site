@@ -7,6 +7,7 @@
       :id="field"
       v-model="val"
       :label="title"
+      :hint="(model.units === 'imperial') ? $t('useDecimalsOrFractions') : $t('valuesInCm')"
       :suffix="(model.units === 'imperial') ? $t('inch') : $t('centimeter')"
       ></v-text-field>
     <v-btn color="primary" @click="saveField" :disabled="updating">
@@ -61,7 +62,7 @@ export default {
       this.updating = true
       this.error = false
       const data = {}
-      data[this.field] =  this.val
+      data[this.field] = this.val
       this.$fs.updateModel(this.model.handle, data)
       .then((res) => {
         this.updating = false

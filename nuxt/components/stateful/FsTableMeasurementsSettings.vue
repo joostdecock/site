@@ -43,8 +43,9 @@
       </tr>
       <tr v-else :key="'row2'+field">
         <th :key="'row2td1'+field" :class="(typeof model.data.measurements[field] === 'undefined') ? 'fs-muted' : ''">{{ $t(field) }}</th>
-        <td :key="'row2td2'+field">
-          {{ (typeof model.data.measurements[field] === 'undefined') ? '-' : $fs.formatUnits(model.data.measurements[field], model.units, 'measure') }}
+        <td :key="'row2td2'+field"
+          v-html="(typeof model.data.measurements[field] === 'undefined') ? '-' : $fs.formatUnits(model.data.measurements[field], model.units, 'measure')"
+          >
         </td>
         <td :key="'row2td3'+field">
           <v-btn flat round outline

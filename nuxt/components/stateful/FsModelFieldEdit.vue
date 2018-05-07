@@ -15,6 +15,13 @@
         <v-radio :label="$t('shared')" :value="1"></v-radio>
       </v-radio-group>
     </div>
+    <div v-else-if="field === 'units'">
+      <h6>{{ $t('share') }}</h6>
+      <v-radio-group v-model="val" :disbaled="updating">
+        <v-radio :label="$t('metricUnits')" value="metric"></v-radio>
+        <v-radio :label="$t('imperialUnits')" value="imperial"></v-radio>
+      </v-radio-group>
+    </div>
     <div v-else>
       <h6>{{ title }}</h6>
       <v-text-field :name="field" :id="field" v-model="val" :label="title"></v-text-field>

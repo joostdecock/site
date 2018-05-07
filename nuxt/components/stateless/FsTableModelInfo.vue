@@ -1,15 +1,21 @@
 <template>
   <div>
   <table class="table fs-info-table">
+    <thead>
+      <tr>
+        <th colspan="2" class="fs-titlerow">{{$t('model')}} {{draft.model.handle}}</th>
+      </tr>
     <tr>
       <td colspan="2" class="text-xs-center py-3">
-        <v-avatar size="256">
+        <v-avatar size="128">
           <img :src="$fs.dataPath(draft.model.pictureSrc)" />
         </v-avatar>
       </td>
     </tr>
+    </thead>
+    <tbody>
     <tr>
-      <th>{{ $t('name') }}</th>
+      <th class="fs-wp50">{{ $t('name') }}</th>
       <td>{{ draft.model.name }}</td>
     </tr>
     <tr>
@@ -20,13 +26,18 @@
       <th>{{ $t('units') }}</th>
       <td>{{ $t(draft.model.units) }}</td>
     </tr>
+    </tbody>
+    <thead>
     <tr>
-      <th colspan="2" class="text-xs-center py-2">{{ $t('measurements') }}</th>
+      <th colspan="2" class="fs-titlerow">{{ $t('measurements') }}</th>
     </tr>
+    </thead>
+    <tbody>
     <tr v-for="(val, key) in draft.data.measurements" :key="key">
       <th>{{ $t(key) }}</th>
       <td>{{ $fs.formatUnits(val, $store.state.user.units, 'measure') }}</td>
     </tr>
+    </tbody>
   </table>
   </div>
 </template>

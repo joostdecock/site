@@ -1,20 +1,21 @@
 <template>
-  <div>
   <table class="table fs-info-table">
+    <tbody>
       <tr>
-        <th>{{ $t('seamAllowance') }}</th>
-        <td>{{ draft.data.options.seamAllowance }}</td>
+        <th class="fs-wp50">{{ $t('seamAllowance') }}</th>
+        <td v-html="formatSa()">
+        </td>
       </tr>
       <tr>
-        <th>{{ $t('scope') }}</th>
-        <td>{{ draft.data.options.scope }}</td>
+        <th class="fs-wp50">{{ $t('scope') }}</th>
+        <td v-html="formatScope()"></td>
       </tr>
       <tr>
-        <th>{{ $t('layout') }}</th>
-        <td>{{ draft.data.options.theme }}</td>
+        <th class="fs-wp50">{{ $t('layout') }}</th>
+        <td>{{ options.theme }}</td>
       </tr>
+    </tbody>
   </table>
-  </div>
 </template>
 
 <script>
@@ -24,6 +25,39 @@ export default {
     draft: {
       type: Object,
       required: true
+    }
+  },
+  data: function() {
+    if(typeof this.draft.data.options.draftOptions === 'undefined') {
+      // Drafted prior to site v2
+      return {options: this.draft.data.options}
+    } else {
+      return {options: this.draft.data.options.draftOptions}
+    }
+  },
+  methods: {
+    formatSa: function () {
+      if(this.options.sa.type === 'imperial') {
+        return this.$t('txt-saOption-imperial')+' (5/8")'
+      }
+      else if(this.options.sa.type === 'metric') {
+        return this.$t('txt-saOption-metric')+' (1cm)'
+      }
+      else if (typeof this.options.sa !== 'object') {
+        // Pre v2 draft
+        return this.options.sa
+      }
+      else return fixme
+    },
+    formatScope: function () {
+      if(this.options.scope.type === 'pattern') {
+        return this.$t('completePattern')
+      }
+      else if (typeof this.options.scope !== 'object') {
+        // Pre v2 draft
+        return this.options.scope
+      }
+      else return fixme
     }
   }
 }

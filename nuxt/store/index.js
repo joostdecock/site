@@ -31,18 +31,27 @@ export const state = () => ({
       theme: 'Basic'
     },
     config: {
-      options: {},
-      sa: {},
-      scope: {},
-      theme: 'Basic'
+      draftOptions: {
+        sa: {},
+        scope: {},
+        theme: 'Basic'
+      },
+      model: '',
+      pattern: '',
+      type: '',
+      patternOptions: {}
     },
-    pattern: '',
-    model: {
-      handle: '',
-      measurements: {}
+    custom: {
+      draftOptions: {
+        sa: {},
+        scope: {},
+        theme: 'Basic'
+      },
+      model: '',
+      pattern: '',
+      type: '',
+      patternOptions: {}
     },
-    type: '',
-    custom: {}
   },
   selected: {
     drafts: [],

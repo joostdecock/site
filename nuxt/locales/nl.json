@@ -18,6 +18,8 @@
   "filterByPattern": "Filter op patroon",
   "measurementUpdated": "Maat bijgewerkt",
   "measurementsRequiredForPattern": "Maten die vereist zijn voor {pattern}",
+  "useDecimalsOrFractions": "Gebruik decimalen (1.25) or breuken (1 1/4)",
+  "inch": "duim",
   "weAreLoadingDataFromTheBackend": "We laden gegevens van de backend",
   "noFilter": "Geen filter",
   "add": "Toevoegen",

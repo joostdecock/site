@@ -360,6 +360,31 @@ export default ({ app, store, router }, inject) => {
         return "<v-btn>input</v-btn>"
       },
 
+      parseImperial(value) {
+        let inch = 0
+        let fraction = ''
+        //value = value.trim()
+        if(value.indexOf('/') === -1) {
+          console.log('no slash found in', value)
+          return value
+        }
+        if(value.indexOf(' ') !== -1) {
+          let chunks = value.split(' ')
+          if(chunks.length !== 2) {
+            console.log('no 2 chunks in ', value)
+              console.log(chunks)
+            return false
+          }
+          inch = chunks[0]
+          fraction = chunks[1]
+        } else {
+          fraction = value
+        }
+            console.log('returning ', value)
+
+        return parseInt(inch)+(utils.fractionToDecimal(fraction))
+      },
+
       daysAgo(input) {
         let now = new Date()
           let days = differenceInCalendarDays(now, input)

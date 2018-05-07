@@ -51,7 +51,7 @@ export default {
       notifyIcon: 'check',
       notifyColor: 'success',
       snackbar: false,
-      items: ['name', 'breasts', 'shared'],
+      items: ['name', 'breasts', 'shared', 'units'],
     }
   },
   methods: {
@@ -72,6 +72,8 @@ export default {
     getValue: function(field) {
       if(field === 'name') {
         return this.model.name
+      } else if(field === 'units') {
+        return this.model[field]
       } else {
         return (this.model[field] == 1) ? 1 : 0
       }
@@ -79,11 +81,11 @@ export default {
     getTitle: function(field) {
       if(field === 'breasts') {
         return (this.model[field] == 1) ? this.$t('withBreasts') : this.$t('withoutBreasts')
-      }
-      else if(field === 'shared') {
+      } else if(field === 'shared') {
         return (this.model[field] == 1) ? this.$t('shared') : this.$t('notShared')
-      }
-      else {
+      } else if(field === 'units') {
+        return this.$t(this.model[field]+'Units')
+      } else {
         return this.model[field]
       }
     }

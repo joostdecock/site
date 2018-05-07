@@ -25,6 +25,11 @@ export default class Units {
     return Math.round(value*100)/100;
   }
 
+  fractionToDecimal(fraction) {
+    let parts = fraction.split('/')
+    return parts[0]/parts[1]
+  }
+
   sliderRound(value, units) {
     if(units === 'imperial') {
       return this.roundToFraction(value/25.4)
@@ -80,6 +85,6 @@ export default class Units {
     if(fraction64 % 8 == 0) return ' '+negative+inches+' <sup>'+fraction64/8+'</sup>/<sub>8</sub>"'
     if(fraction64 % 4 == 0) return ' '+negative+inches+' <sup>'+fraction64/4+'</sup>/<sub>16</sub>"'
     if(fraction64 % 2 == 0) return ' '+negative+inches+' <sup>'+fraction64/2+'</sup>/<sub>32</sub>"'
-    else return negative+value+'"'+spanStart+negative+value+spanEnd;
+    else return negative+value+'"'
   }
 }
