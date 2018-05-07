@@ -28,7 +28,7 @@
         </div>
         <div>
           <file-upload
-            :put-action="(type === 'model') ? $fs.conf.api.data+'/model/'+model.handle : $fs.conf.api.data+'/account'"
+            :put-action="(type === 'model') ? $fs.conf.apis.data+'/model/'+model.handle : $fs.conf.apis.data+'/account'"
             :multiple="false"
             :drop="true"
             :drop-directory="false"

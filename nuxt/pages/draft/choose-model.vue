@@ -31,7 +31,7 @@
         <v-flex class="xs4 sm3 xl2" v-for="model in models.valid" :key="model">
           <v-card>
             <nuxt-link :to="$fs.path('/draft/'+pattern+'/for/'+model)" :title="model">
-              <img :src="$fs.conf.api.data+$store.state.user.models[model].pictureSrc" />
+              <img :src="$fs.conf.apis.data+$store.state.user.models[model].pictureSrc" />
             </nuxt-link>
             <v-card-text class="fs-nodeco">
               <h5 class="mb-0 mt-0 text-xs-center">

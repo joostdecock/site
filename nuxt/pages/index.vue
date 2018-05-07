@@ -2,10 +2,10 @@
   <section>
     <h1>{{ $t('freesewing') }} </h1>
     <h2>{{ $t('txt-slogan') }} </h2>
-    <fs-icon-tshirt size="500" />
+    <fs-icon-tshirt :size="(500)" />
     <pre>
     {{ $store.state.user.loggedIn }}
-    {{ $store.state.user.isPatron }}
+    {{ $fs.yaml }}
     </pre>
   </section>
 </template>

@@ -65,7 +65,7 @@
       <v-divider></v-divider>
       <v-list-tile avatar @click="toggleSub('user')">
         <v-list-tile-avatar :size="(24)">
-          <img :src="$fs.conf.api.data+$store.state.user.account.pictureSrc" :alt="$store.state.user.account.username">
+          <img :src="$fs.conf.apis.data+$store.state.user.account.pictureSrc" :alt="$store.state.user.account.username">
         </v-list-tile-avatar>
         <v-list-tile-content>
           <v-list-tile-title> {{ '@'+$store.state.user.account.username }}

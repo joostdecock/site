@@ -1,0 +1,25 @@
+# Seam allowance
+sa:
+  metric: 1
+  imperial: 0.625
+  custom: 0.5
+
+
+# Slider steps
+step:
+  metric: 0.1
+  imperial: 0.125
+
+# Scale conversion to core (mm inside)
+scale:
+  metric: 10,
+  imperial: 25.4
+
+# Code repositories
+repos:
+  site: "https://github.com/freesewing/site"
+  data: "https://github.com/freesewing/site"
+  core: "https://github.com/freesewing/site"
+
+# Some strings
+title: 'freesewing.org'

@@ -2,9 +2,10 @@ import Vue from 'vue'
 import axios from 'axios'
 import MarkdownIt from 'markdown-it'
 import { format, differenceInCalendarDays, differenceInMonths } from 'date-fns'
-import f from '~/static/json/freesewing.json'
+//import f from '~/static/json/freesewing.json'
 import Storage from './storage'
 import Utils from './utils'
+import Conf from './config'
 
 export default ({ app, store, router }, inject) => {
 
@@ -13,7 +14,7 @@ export default ({ app, store, router }, inject) => {
 
   const ax = {
     data: axios.create({
-      baseURL: process.env.conf.api.data,
+      baseURL: Conf.apis.data,
       timeout: 15000
     })
   }
@@ -43,7 +44,7 @@ export default ({ app, store, router }, inject) => {
   }
 
   const sliderRoundMethod = (value, units) => {
-    let scale = f.defaults.sliders.scale[units]
+    let scale = Conf.defaults.scale[units]
       if(units === 'imperial') {
         return utils.roundToFraction(value/scale)
       } else {
@@ -54,7 +55,7 @@ export default ({ app, store, router }, inject) => {
   inject('fs', new Vue({
     data: () => ({
       md: new MarkdownIt(),
-      conf: f
+      conf: Conf
     }),
     methods: {
       // Async methods (thenable)
@@ -273,11 +274,11 @@ export default ({ app, store, router }, inject) => {
       },
 
       avatar() {
-        return f.api.data+store.state.user.account.pictureSrc
+        return Conf.apis.data+store.state.user.account.pictureSrc
       },
 
       modelAvatar(src) {
-        return f.api.data+src
+        return Conf.apis.data+src
       },
 
       getToken() {
@@ -290,23 +291,23 @@ export default ({ app, store, router }, inject) => {
       },
 
       draftSvgLink(draftHandle, userHandle, cachingToken) {
-        return f.api.data+'/static/users/'+userHandle.substr(0,1)+'/'+
+        return Conf.apis.data+'/static/users/'+userHandle.substr(0,1)+'/'+
           userHandle+'/drafts/'+draftHandle+'/'+draftHandle+'.svg?cache='+cachingToken
       },
 
       draftComparedLink(draftHandle, userHandle, cachingToken) {
-        return f.api.data+'/static/users/'+userHandle.substr(0,1)+'/'+
+        return Conf.apis.data+'/static/users/'+userHandle.substr(0,1)+'/'+
           userHandle+'/drafts/'+draftHandle+'/'+draftHandle+'.compared.svg?cache='+cachingToken
       },
 
       draftDownloadLink(draftHandle, format) {
-        return f.api.data+'/download/'+draftHandle+'/'+format
+        return Conf.apis.data+'/download/'+draftHandle+'/'+format
       },
 
       patternHandle(name) {
-        if(typeof f.mapping.patternToHandle[name] === 'string') {
-          return f.mapping.patternToHandle[name]
-        } else if (typeof f.mapping.handleToPattern[name.toLowerCase()] === 'string') {
+        if(typeof Conf.mapping.patternToHandle[name] === 'string') {
+          return Conf.mapping.patternToHandle[name]
+        } else if (typeof Conf.mapping.handleToPattern[name.toLowerCase()] === 'string') {
           return name.toLowerCase()
         } else {
           return false
@@ -326,11 +327,11 @@ export default ({ app, store, router }, inject) => {
         else return '/'+app.i18n.locale+'/drafts/'+handle
       },
       dataPath(path) {
-        return f.api.data+path
+        return Conf.apis.data+path
       },
       modelIsValid(model, patternHandle) {
         var valid = true
-          Object.entries(f.patterns[patternHandle].measurements).forEach(
+          Object.entries(Conf.patterns[patternHandle].measurements).forEach(
               ([key, value]) => {
                 if(typeof model.data.measurements[key] === 'undefined') {
                   valid = false
@@ -349,10 +350,10 @@ export default ({ app, store, router }, inject) => {
       },
 
       formatPatternOption: (value, option, pattern, units) => {
-        if(f.patterns[pattern].options[option].type === 'chooseOne') {
-          return f.patterns[pattern].options[option].options[value]
+        if(Conf.patterns[pattern].options[option].type === 'chooseOne') {
+          return Conf.patterns[pattern].options[option].options[value]
         } else {
-          return utils.format(value, units, f.patterns[pattern].options[option].type)
+          return utils.format(value, units, Conf.patterns[pattern].options[option].type)
         }
       },
 
@@ -410,8 +411,8 @@ export default ({ app, store, router }, inject) => {
         let units = store.state.user.account.units
         let option = {}
         if(payload.type === 'draftFromModel') {
-          for (let optionName in f.patterns[payload.pattern].options) {
-            option = f.patterns[payload.pattern].options[optionName]
+          for (let optionName in Conf.patterns[payload.pattern].options) {
+            option = Conf.patterns[payload.pattern].options[optionName]
             if(option.type === 'measure') {
               config.patternOptions[optionName] = utils.sliderRound(option.default, units)
             } else {
@@ -445,10 +446,10 @@ export default ({ app, store, router }, inject) => {
       updateDraftCustomOptionsCount() {
         let custom = {}
         let units = store.state.user.account.units
-          for (let group in f.patterns[store.state.draft.config.pattern].optiongroups) {
+          for (let group in Conf.patterns[store.state.draft.config.pattern].optiongroups) {
             custom[group] = 0
-            for (let index in f.patterns[store.state.draft.config.pattern].optiongroups[group]) {
-              let option = f.patterns[store.state.draft.config.pattern].optiongroups[group][index]
+            for (let index in Conf.patterns[store.state.draft.config.pattern].optiongroups[group]) {
+              let option = Conf.patterns[store.state.draft.config.pattern].optiongroups[group][index]
               if(store.state.draft.config.patternOptions[option] != store.state.draft.defaults.patternOptions[option]) {
                 custom[group]++
               }
