@@ -1,0 +1,57 @@
+aaron:
+    title: 'Aaron A-Shirt'
+    description: 'Aaron is an athletic shirt or tank top.'
+benjamin:
+    title: 'Benjamin Bow Tie'
+    description: 'Benjamin is a bow tie pattern with four different shape options.'
+bent:
+    title: 'Bent Body Block'
+    description: 'This two-part sleeve block is the basis of our coat and jacket patterns.'
+brian:
+    title: 'Brian Body Block'
+    description: 'Brian is a basic body block for men.'
+bruce:
+    title: 'Bruce Boxer Briefs'
+    description: 'Bruce are comfortable yet stylish boxer briefs.'
+carlita:
+    title: 'Carlita Coat'
+    description: 'The womenswear version of our Carlton coat, aka Sherlock Holmes coat.'
+carlton:
+    title: 'Carlton Coat'
+    description: 'For Sherlock Holmes cosplay, or just a really nice coat.'
+cathrin:
+    title: 'Cathrin Corset'
+    description: 'Cathrin is an underbust corset or waist trainer.'
+florent:
+    title: 'Florent Flat Cap'
+    description: 'Florent is a flat cap, a rounded cap with a small stiff brim in front.'
+huey:
+    title: 'Huey Hoodie'
+    description: 'Huey is a zip-up hoodie with optional front pockets.'
+hugo:
+    title: 'Hugo Hoodie'
+    description: 'Hugo is a hooded jumper with raglan sleeves.'
+jaeger:
+    title: 'Jaeger Jacket'
+    description: 'Jeager is a sport coat style jacket with two buttons and patch pockets.'
+simon:
+    title: 'Simon Shirt'
+    description: 'Simon is a highly adaptable shirt pattern for men.'
+sven:
+    title: 'Sven Sweatshirt'
+    description: 'Sven is a straightforward sweater.'
+tamiko:
+    title: 'Tamiko Top'
+    description: 'Tamiko is a zero-waste top.'
+theo:
+    title: 'Theo trousers'
+    description: 'Theo is Theodore with a more slim cut.'
+theodore:
+    title: 'Theodore trousers'
+    description: 'Theodore are classic trousers by the (Aldrich) book.'
+trayvon:
+    title: 'Trayvon Tie'
+    description: 'Trayvon is a tie that cuts no corners for a professional result.'
+wahid:
+    title: 'Wahid Waistcoat'
+    description: 'Wahid is a classic fitted waistcoat.'

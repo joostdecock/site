@@ -1,0 +1,57 @@
+aaron:
+    title: 'Shirt Aaron'
+    description: 'Aaron ist ein sportliches Shirt oder ein Tank Top.'
+benjamin:
+    title: 'Schleife Benjamin'
+    description: 'Benjamin ist eine Schleife - oder Fliege - mit vier unterschiedlichen Formoptionen.'
+bent:
+    title: 'Grundschnitt Bent'
+    description: 'Dieser zweiteilige Armschnitt ist die Grundlage für insere Mäntel- und Jackenschnitte.'
+brian:
+    title: 'Grundschnitt Brian' 
+    description: 'Brian ist eine Grundschnitt für Männer.' 
+bruce:
+    title: 'Retroshorts Bruce' # TODO
+    description: 'Bruce sind bequeme und stylische Retroshorts.'
+carlita:
+    title: 'Mantel Carlita' 
+    description: 'Die Damenversion unseres Carlton-Mantels, aka Sherlock Holmes Mantel.'
+carlton:
+    title: 'Mantel Carlton Coat' 
+    description: 'Für Sherlock Holmes Cosplay, or nur ein wirklich hübscher Mantel.'
+cathrin:
+    title: 'Korsett Cathrin'
+    description: 'Cathrin ist ein Unterbrustkorsett oder Taillentrainer.'
+florent:
+    title: 'Schiebermütze Florent'
+    description: 'Florent ist eine abgerundete Schiebermütze mit einem kleinen festen Schild an der Vorderseite.'
+huey:
+    title: 'Hoodie Huey'
+    description: 'Huey ist ein Hoodie mit Reißverschluss und mit optionalen Taschen auf der Vorderseite.'
+hugo:
+    title: 'Hoodie Hugo'
+    description: 'Hugo ist ein Kapuzensweatshirt mit Raglanärmeln.'
+jaeger:
+    title: 'Sakko Jaeger'
+    description: 'Jeager ist ein sportliches Sakko mit zwei Knöpfen und aufgesetzten Taschen.'
+simon:
+    title: 'Hemd Simon'
+    description: 'Simon ist ein sehr anpassungsfähiger Hemdenschnitt für Männer.'
+sven:
+    title: 'Sweatshirt Sven'
+    description: 'Sven ist ein geradliniges Sweatshirt.'
+tamiko:
+    title: 'Tamiko Top'
+    description: 'Tamiko ist ein Zero Waste Top.'
+theo:
+    title: 'Hose Theo'
+    description: 'Theo ist Theodore - mit einem schmaleren Schnitt.'
+theodore:
+    title: 'Hose Theodore' 
+    description: 'Theodore ist eine klassische Hose nach dem (Aldrich) Lehrbuch.'
+trayvon:
+    title: 'Krawatte Trayvon'
+    description: 'Trayvon ist eine Krawatte, die keine Abkürzungen für ein professionelles Ergebnis nimmt. 
+wahid:
+    title: 'Weste Wahid'
+    description: 'Wahid ist eine klassische taillierte Weste.' 

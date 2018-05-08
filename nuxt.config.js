@@ -1,4 +1,3 @@
-
 module.exports = {
   srcDir: 'nuxt/',
   mode: 'spa',
@@ -43,8 +42,8 @@ module.exports = {
       noPrefixDefaultLocale: true,
       vueI18n: {
         messages: {
-          'en': require('./nuxt/locales/en.json'),
-          'nl': require('./nuxt/locales/nl.json'),
+          en: require('./nuxt/locales/en/en.json'),
+          nl: require('./nuxt/locales/nl/nl.json'),
         },
         fallbackLocale: 'en'
       },

@@ -1,0 +1,51 @@
+enabled:
+  - en
+  - nl
+disabled:
+  - de
+  - es
+  - fr
+  - no
+status:
+  target:
+    strings: 537
+    blog: 28
+    showcase: 51
+    docs: 9
+  locales:
+    en:
+      strings: 537
+      blog: 28
+      showcase: 51
+      docs: 9
+      coordinator: 'joost'
+    nl:
+      strings: 537
+      blog: 2
+      showcase: 1
+      docs: 2
+      coordinator: 'AnnekeCaramin'
+    de:
+      strings: 38
+      blog: 0
+      showcase: 0
+      docs: 0
+      coordinator: '_vacant'
+    es:
+      strings: 61
+      blog: 0
+      showcase: 0
+      docs: 0
+      coordinator: '_vacant'
+    fr:
+      strings: 29
+      blog: 0
+      showcase: 0
+      docs: 0
+      coordinator: '_vacant'
+    no:
+      strings: 25
+      blog: 0
+      showcase: 0
+      docs: 0
+      coordinator: '_vacant'

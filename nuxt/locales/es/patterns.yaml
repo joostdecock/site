@@ -1,0 +1,57 @@
+aaron:
+    title: 'Camiseta Aaron' 
+    description: 'Aaron es una camiseta deportiva sin mangas.' 
+benjamin:
+    title: 'Pajarita Benjamin' 
+    description: 'Benjamin es un patrón de pajarita con cuatro estilos diferentes.' 
+bent:
+    title: 'Patrón Base Bent'
+    description: 'Este patrón con manga sastre es la base del molde de nuestro abrigo y de nuestra chaqueta.' 
+brian:
+    title: 'Patrón Base Brian' 
+    description: 'Brian es el patrón base de cuerpo para hombre.' 
+bruce:
+    title: ' Bóxer Cerrado Bruce' 
+    description: 'Bruce es un bóxer cerrado cómodo y elegante.' 
+carlita:
+    title: 'Abrigo Carlita' 
+    description: 'La versión para mujer de nuestro abrigo Carlton, también conocido como el abrigo Sherlock Holmes.' 
+carlton:
+    title: 'Abrigo Carlton' 
+    description: 'Para disfrazarse de Sherlock Holmes o tener un abrigo muy elegante.' 
+cathrin:
+    title: 'Corsé Cathrin' 
+    description: 'Cathrin es un corsé bajo pecho o reductor de la cintura.' 
+florent:
+    title: 'Boina Plana Florent' 
+    description: 'Florent es una boina plana, de forma redondeada y con una pequeña visera rígida.' 
+huey:
+    title: 'Sudadera con Capucha Huey' 
+    description: 'Huey es una sudadera con capucha, cremallera y bolsillos delanteros opcionales.'
+hugo:
+    title: 'Sudadera con Capucha Hugo' 
+    description: 'Hugo es una sudadera con capucha y manga ranglán.'
+jaeger:
+    title: 'Chaqueta Jaeger' 
+    description: 'Jeager es una blazer informal con dos botones y bolsillos estilo parche.' # TODO
+simon:
+    title: 'Camisa Simon' 
+    description: 'Simon es un patrón de camisa de hombre con múltiples opciones.' 
+sven:
+    title: 'Sudadera Sven'
+    description: 'Sven es una sudadera de líneas sencillas.' 
+tamiko:
+    title: 'Top Tamiko' 
+    description: 'Tamiko es un top cero residuos.'
+theo:
+    title: 'Pantalones Theo'
+    description: 'Theo es una versión de Theodore con un corte más ajustado.'
+theodore:
+    title: 'Pantalones Theodore' 
+    description: 'Thedore es el pantalón de corte clásico basado en el libro de (Aldrich).'
+trayvon:
+    title: 'Corbata Trayvon' 
+    description: 'Trayvon is a tie that cuts no corners for a professional result.' # TODO
+wahid:
+    title: 'Chaleco Wahid'
+    description: 'Wahid es el clásico chaleco entallado.'

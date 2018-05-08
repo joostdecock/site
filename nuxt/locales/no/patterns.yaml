@@ -1,0 +1,57 @@
+aaron:
+    title: 'Aaron A-Shirt' # TODO
+    description: 'Aaron is an athletic shirt or tank top.' # TODO
+benjamin:
+    title: 'Benjamin Bow Tie' # TODO
+    description: 'Benjamin is a bow tie pattern with four different shape options.' # TODO
+bent:
+    title: 'Bent Body Block' # TODO
+    description: 'This two-part sleeve block is the basis of our coat and jacket patterns.' # TODO
+brian:
+    title: 'Brian Body Block' # TODO
+    description: 'Brian is a basic body block for men.' # TODO
+bruce:
+    title: 'Bruce Boxer Briefs' # TODO
+    description: 'Bruce are comfortable yet stylish boxer briefs.' # TODO
+carlita:
+    title: 'Carlita Coat' # TODO
+    description: 'The womenswear version of our Carlton coat, aka Sherlock Holmes coat.' # TODO
+carlton:
+    title: 'Carlton Coat' # TODO
+    description: 'For Sherlock Holmes cosplay, or just a really nice coat.' # TODO
+cathrin:
+    title: 'Cathrin Corset' # TODO
+    description: 'Cathrin is an underbust corset or waist trainer.' # TODO
+florent:
+    title: 'Florent Flat Cap' # TODO
+    description: 'Florent is a flat cap, a rounded cap with a small stiff brim in front.' # TODO
+huey:
+    title: 'Huey Hoodie' # TODO
+    description: 'Huey is a zip-up hoodie with optional front pockets.' # TODO
+hugo:
+    title: 'Hugo Hoodie' # TODO
+    description: 'Hugo is a hooded jumper with raglan sleeves.' # TODO
+jaeger:
+    title: 'Jaeger Jacket' # TODO
+    description: 'Jeager is a sport coat style jacket with two buttons and patch pockets.' # TODO
+simon:
+    title: 'Simon Shirt' # TODO
+    description: 'Simon is a highly adaptable shirt pattern for men.' # TODO
+sven:
+    title: 'Sven Sweatshirt' # TODO
+    description: 'Sven is a straightforward sweater.' # TODO
+tamiko:
+    title: 'Tamiko Top' # TODO
+    description: 'Tamiko is a zero-waste top.' # TODO
+theo:
+    title: 'Theo trousers' # TODO
+    description: 'Theo is Theodore with a more slim cut.' # TODO
+theodore:
+    title: 'Theodore trousers' # TODO
+    description: 'Thedore are classic trousers by the (Aldrich) book.' # TODO
+trayvon:
+    title: 'Trayvon Tie' # TODO
+    description: 'Trayvon is a tie that cuts no corners for a professional result.' # TODO
+wahid:
+    title: 'Wahid Waistcoat' # TODO
+    description: 'Wahid is a classic fitted waistcoat.' # TODO
