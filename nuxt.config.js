@@ -119,6 +119,10 @@ module.exports = {
         path: '/models/:model',
         component: 'nuxt/pages/models/_model.vue'
       })
+      routes.push({
+        path: '/i18n/:locale',
+        component: 'nuxt/pages/i18n/_locale.vue'
+      })
     }
   },
   generate: {
