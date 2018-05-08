@@ -153,18 +153,12 @@ signup--text: This should not happen. Please help us out by creating an issue on
 signup--title: An unknown error occured
 signup-invalid_input-text: 'Please enter a valid email address, and a password'
 signup-invalid_input-title: Invalid input
-signup-no_such_pending_confirmation-text: >-
-  Sorry, but that is not a confirmation code we have on record? Perhaps it
-  expired, in which case you can just sign up again.
+signup-no_such_pending_confirmation-text: 'Sorry, but that is not a confirmation code we have on record? Perhaps it expired, in which case you can just sign up again.'
 signup-no_such_pending_confirmation-title: There's no such pending confirmation
-signup-signup_pending-text: >-
-  We already have a pending activation for this email address. We have sent you
-  a fresh copy of the activation email in case you missed the original one.
+signup-signup_pending-text: We already have a pending activation for this email address. We have sent you a fresh copy of the activation email in case you missed the original one.
 signup-signup_pending-title: Your signup is pending activation
 signup-success-text: 'We''ve sent you an email at {email}.'
-signup-user_exists-text: >-
-  We already have a user with that email address. Perhaps you'd like to login
-  instead?
+signup-user_exists-text: We already have a user with that email address. Perhaps you'd like to login instead?
 signup-user_exists-title: That user exists
 social: Social
 somethingWentWrong: Something went wrong
@@ -179,6 +173,7 @@ taskCompleted: Task completed
 theme: Theme
 themeUpdated: Layout preference set
 thisContentIsNotAvailableInLanguage: This content is not available in English.
+thisIsTheCurrentStatusOfOurTranslations: This is the current status of our translations.
 thisPageIsNotIntendedForLoggedInUsers: This page is not intended for logged-in users
 thisPageIsOnlyAvailableToFreesewingUsers: This page is only available to Freesewing users
 today: Today
@@ -192,14 +187,10 @@ txt-changeRequiresConfirmation: This change requires confirmation via E-mail
 txt-clickEmailLink: Please click the link in the email to continue.
 txt-consentProfile: Do you give your consent to process your profile data?
 txt-consentProfileAnswerShare: '<b>No</b>, never.'
-txt-consentProfileAnswerTiming: >-
-  <b>12 months</b> after your last login, or until you <b>remove</b> your
-  account or <b>revoke</b> this consent.
+txt-consentProfileAnswerTiming: '<b>12 months</b> after your last login, or until you <b>remove</b> your account or <b>revoke</b> this consent.'
 txt-consentProfileAnswerWhat: 'Your <b>email address</b>, <b>username</b>, and <b>password</b>.'
 txt-consentProfileAnswerWhatOptional: 'Optional: A <b>profile picture</b>, and <b>social media accounts</b>'
-txt-consentProfileAnswerWhy: >-
-  To <b>authenticate</b> you, <b>contact</b> you when needed, and build a
-  <b>community</b>.
+txt-consentProfileAnswerWhy: 'To <b>authenticate</b> you, <b>contact</b> you when needed, and build a <b>community</b>.'
 txt-consentProfileQuestionShare: Do we share it with others?
 txt-consentProfileQuestionTiming: How long do we keep it?
 txt-consentProfileQuestionWhat: What is profile data?
@@ -209,14 +200,9 @@ txt-contentNotTranslated: 'Unfortunately, this page has not (yet) been translate
 txt-didYouSpotATypo: 'Did you spot a typo? Do you feel something is missing, or needs clarification?'
 txt-editThisPageOnline: You can edit this page online and submit your changes.
 txt-email-sharing: We'll never share your email with anyone else
-txt-emailChangeConfirmationNotFound: >-
-  Sorry, but we have no pending E-mail change for this confirmation code.
-  Perhaps it expired, in which case you can simply make the change again in your
-  settings.
+txt-emailChangeConfirmationNotFound: 'Sorry, but we have no pending E-mail change for this confirmation code. Perhaps it expired, in which case you can simply make the change again in your settings.'
 txt-emailNotFound: 'If you can''t find the email, check your spam folder, or contact us.'
-txt-gdprCompliant: >-
-  Freesewing.org respects your privacy and your rights. We apply the General
-  Data Protection Regulation (GDPR) of the European Union (EU).
+txt-gdprCompliant: Freesewing.org respects your privacy and your rights. We apply the General Data Protection Regulation (GDPR) of the European Union (EU).
 txt-modelsWithMissingMeasurements: 'These models lack some of the required measurements to draft this pattern:'
 txt-newModel: 'To get started, please give your model a name.'
 txt-password-policy: We don't enforce a password policy
@@ -230,14 +216,8 @@ txt-signup-step1: 'Enter your email address, and pick a password.'
 txt-signup-step2: Confirm your email address.
 txt-signup-step3: Give us permission to process your personal data.
 txt-slogan: An open source platform for made-to-measure sewing patterns
-txt-withOrWithoutBreasts: >-
-  Fitting breasts requires a bunch of extra measurements that are not relevant
-  if you don't have breasts. If you indicate your model does not have breasts,
-  we won't show you these measurements as they are irrelevant. If you're not
-  sure what to pick, go for breasts.
-txt-withOrWithoutBreasts-explainer: >-
-  On other websites, this question may be phrased as 'male or female?'. Here, we
-  don't like putting people in boxes. All we care about is fitting your chest.
+txt-withOrWithoutBreasts: 'Fitting breasts requires a bunch of extra measurements that are not relevant if you don''t have breasts. If you indicate your model does not have breasts, we won''t show you these measurements as they are irrelevant. If you''re not sure what to pick, go for breasts.'
+txt-withOrWithoutBreasts-explainer: 'On other websites, this question may be phrased as ''male or female?''. Here, we don''t like putting people in boxes. All we care about is fitting your chest.'
 units: Units
 unitsUpdated: Units set
 update: Update

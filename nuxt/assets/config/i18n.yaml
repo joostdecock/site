@@ -8,25 +8,25 @@ disabled:
   - no
 status:
   target:
-    strings: 537
+    strings: 422
     blog: 28
     showcase: 51
     docs: 9
   locales:
     en:
-      strings: 537
+      strings: 422
       blog: 28
       showcase: 51
       docs: 9
       coordinator: 'joost'
     nl:
-      strings: 537
+      strings: 422
       blog: 2
       showcase: 1
       docs: 2
       coordinator: 'AnnekeCaramin'
     de:
-      strings: 38
+      strings: 36
       blog: 0
       showcase: 0
       docs: 0

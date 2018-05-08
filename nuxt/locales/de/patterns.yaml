@@ -1,57 +1,57 @@
 aaron:
-    title: 'Shirt Aaron'
-    description: 'Aaron ist ein sportliches Shirt oder ein Tank Top.'
+  description: Aaron ist ein sportliches Shirt oder ein Tank Top.
+  title: Shirt Aaron
 benjamin:
-    title: 'Schleife Benjamin'
-    description: 'Benjamin ist eine Schleife - oder Fliege - mit vier unterschiedlichen Formoptionen.'
+  description: Benjamin ist eine Schleife - oder Fliege - mit vier unterschiedlichen Formoptionen.
+  title: Schleife Benjamin
 bent:
-    title: 'Grundschnitt Bent'
-    description: 'Dieser zweiteilige Armschnitt ist die Grundlage für insere Mäntel- und Jackenschnitte.'
+  description: Dieser zweiteilige Armschnitt ist die Grundlage für insere Mäntel- und Jackenschnitte.
+  title: Grundschnitt Bent
 brian:
-    title: 'Grundschnitt Brian' 
-    description: 'Brian ist eine Grundschnitt für Männer.' 
+  description: Brian ist eine Grundschnitt für Männer.
+  title: Grundschnitt Brian
 bruce:
-    title: 'Retroshorts Bruce' # TODO
-    description: 'Bruce sind bequeme und stylische Retroshorts.'
+  description: Bruce sind bequeme und stylische Retroshorts.
+  title: Retroshorts Bruce TODO
 carlita:
-    title: 'Mantel Carlita' 
-    description: 'Die Damenversion unseres Carlton-Mantels, aka Sherlock Holmes Mantel.'
+  description: 'Die Damenversion unseres Carlton-Mantels, aka Sherlock Holmes Mantel.'
+  title: Mantel Carlita
 carlton:
-    title: 'Mantel Carlton Coat' 
-    description: 'Für Sherlock Holmes Cosplay, or nur ein wirklich hübscher Mantel.'
+  description: 'Für Sherlock Holmes Cosplay, or nur ein wirklich hübscher Mantel.'
+  title: Mantel Carlton Coat
 cathrin:
-    title: 'Korsett Cathrin'
-    description: 'Cathrin ist ein Unterbrustkorsett oder Taillentrainer.'
+  description: Cathrin ist ein Unterbrustkorsett oder Taillentrainer.
+  title: Korsett Cathrin
 florent:
-    title: 'Schiebermütze Florent'
-    description: 'Florent ist eine abgerundete Schiebermütze mit einem kleinen festen Schild an der Vorderseite.'
+  description: Florent ist eine abgerundete Schiebermütze mit einem kleinen festen Schild an der Vorderseite.
+  title: Schiebermütze Florent
 huey:
-    title: 'Hoodie Huey'
-    description: 'Huey ist ein Hoodie mit Reißverschluss und mit optionalen Taschen auf der Vorderseite.'
+  description: Huey ist ein Hoodie mit Reißverschluss und mit optionalen Taschen auf der Vorderseite.
+  title: Hoodie Huey
 hugo:
-    title: 'Hoodie Hugo'
-    description: 'Hugo ist ein Kapuzensweatshirt mit Raglanärmeln.'
+  description: Hugo ist ein Kapuzensweatshirt mit Raglanärmeln.
+  title: Hoodie Hugo
 jaeger:
-    title: 'Sakko Jaeger'
-    description: 'Jeager ist ein sportliches Sakko mit zwei Knöpfen und aufgesetzten Taschen.'
+  description: Jeager ist ein sportliches Sakko mit zwei Knöpfen und aufgesetzten Taschen.
+  title: Sakko Jaeger
 simon:
-    title: 'Hemd Simon'
-    description: 'Simon ist ein sehr anpassungsfähiger Hemdenschnitt für Männer.'
+  description: Simon ist ein sehr anpassungsfähiger Hemdenschnitt für Männer.
+  title: Hemd Simon
 sven:
-    title: 'Sweatshirt Sven'
-    description: 'Sven ist ein geradliniges Sweatshirt.'
+  description: Sven ist ein geradliniges Sweatshirt.
+  title: Sweatshirt Sven
 tamiko:
-    title: 'Tamiko Top'
-    description: 'Tamiko ist ein Zero Waste Top.'
+  description: Tamiko ist ein Zero Waste Top.
+  title: Tamiko Top DONE
 theo:
-    title: 'Hose Theo'
-    description: 'Theo ist Theodore - mit einem schmaleren Schnitt.'
+  description: Theo ist Theodore - mit einem schmaleren Schnitt.
+  title: Hose Theo
 theodore:
-    title: 'Hose Theodore' 
-    description: 'Theodore ist eine klassische Hose nach dem (Aldrich) Lehrbuch.'
+  description: Theodore ist eine klassische Hose nach dem (Aldrich) Lehrbuch.
+  title: Hose Theodore
 trayvon:
-    title: 'Krawatte Trayvon'
-    description: 'Trayvon ist eine Krawatte, die keine Abkürzungen für ein professionelles Ergebnis nimmt. 
+  description: 'Trayvon ist eine Krawatte, die keine Abkürzungen für ein professionelles Ergebnis nimmt.'
+  title: Krawatte Trayvon
 wahid:
-    title: 'Weste Wahid'
-    description: 'Wahid ist eine klassische taillierte Weste.' 
+  description: Wahid ist eine klassische taillierte Weste.
+  title: Weste Wahid

@@ -1,57 +1,57 @@
 aaron:
-    title: 'Aaron A-Shirt'
-    description: 'Aaron is an athletic shirt or tank top.'
+  description: Aaron is an athletic shirt or tank top.
+  title: Aaron A-Shirt
 benjamin:
-    title: 'Benjamin Bow Tie'
-    description: 'Benjamin is a bow tie pattern with four different shape options.'
+  description: Benjamin is a bow tie pattern with four different shape options.
+  title: Benjamin Bow Tie
 bent:
-    title: 'Bent Body Block'
-    description: 'This two-part sleeve block is the basis of our coat and jacket patterns.'
+  description: This two-part sleeve block is the basis of our coat and jacket patterns.
+  title: Bent Body Block
 brian:
-    title: 'Brian Body Block'
-    description: 'Brian is a basic body block for men.'
+  description: Brian is a basic body block for men.
+  title: Brian Body Block
 bruce:
-    title: 'Bruce Boxer Briefs'
-    description: 'Bruce are comfortable yet stylish boxer briefs.'
+  description: Bruce are comfortable yet stylish boxer briefs.
+  title: Bruce Boxer Briefs
 carlita:
-    title: 'Carlita Coat'
-    description: 'The womenswear version of our Carlton coat, aka Sherlock Holmes coat.'
+  description: 'The womenswear version of our Carlton coat, aka Sherlock Holmes coat.'
+  title: Carlita Coat
 carlton:
-    title: 'Carlton Coat'
-    description: 'For Sherlock Holmes cosplay, or just a really nice coat.'
+  description: 'For Sherlock Holmes cosplay, or just a really nice coat.'
+  title: Carlton Coat
 cathrin:
-    title: 'Cathrin Corset'
-    description: 'Cathrin is an underbust corset or waist trainer.'
+  description: Cathrin is an underbust corset or waist trainer.
+  title: Cathrin Corset
 florent:
-    title: 'Florent Flat Cap'
-    description: 'Florent is a flat cap, a rounded cap with a small stiff brim in front.'
+  description: 'Florent is a flat cap, a rounded cap with a small stiff brim in front.'
+  title: Florent Flat Cap
 huey:
-    title: 'Huey Hoodie'
-    description: 'Huey is a zip-up hoodie with optional front pockets.'
+  description: Huey is a zip-up hoodie with optional front pockets.
+  title: Huey Hoodie
 hugo:
-    title: 'Hugo Hoodie'
-    description: 'Hugo is a hooded jumper with raglan sleeves.'
+  description: Hugo is a hooded jumper with raglan sleeves.
+  title: Hugo Hoodie
 jaeger:
-    title: 'Jaeger Jacket'
-    description: 'Jeager is a sport coat style jacket with two buttons and patch pockets.'
+  description: Jeager is a sport coat style jacket with two buttons and patch pockets.
+  title: Jaeger Jacket
 simon:
-    title: 'Simon Shirt'
-    description: 'Simon is a highly adaptable shirt pattern for men.'
+  description: Simon is a highly adaptable shirt pattern for men.
+  title: Simon Shirt
 sven:
-    title: 'Sven Sweatshirt'
-    description: 'Sven is a straightforward sweater.'
+  description: Sven is a straightforward sweater.
+  title: Sven Sweatshirt
 tamiko:
-    title: 'Tamiko Top'
-    description: 'Tamiko is a zero-waste top.'
+  description: Tamiko is a zero-waste top.
+  title: Tamiko Top
 theo:
-    title: 'Theo trousers'
-    description: 'Theo is Theodore with a more slim cut.'
+  description: Theo is Theodore with a more slim cut.
+  title: Theo trousers
 theodore:
-    title: 'Theodore trousers'
-    description: 'Theodore are classic trousers by the (Aldrich) book.'
+  description: Theodore are classic trousers by the (Aldrich) book.
+  title: Theodore trousers
 trayvon:
-    title: 'Trayvon Tie'
-    description: 'Trayvon is a tie that cuts no corners for a professional result.'
+  description: Trayvon is a tie that cuts no corners for a professional result.
+  title: Trayvon Tie
 wahid:
-    title: 'Wahid Waistcoat'
-    description: 'Wahid is a classic fitted waistcoat.'
+  description: Wahid is a classic fitted waistcoat.
+  title: Wahid Waistcoat

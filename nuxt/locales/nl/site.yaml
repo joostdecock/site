@@ -6,7 +6,7 @@ avatar: Profielfoto
 avatarUpdated: Avatar bijgewerkt
 basics: Basis
 becomeAPatron: Wordt sponsor
-blog: Blog
+blog: Blog DONE
 blogPost: Blog post
 breasts: Borsten
 breastsUpdated: Borsten instelling bijgewerkt
@@ -46,7 +46,7 @@ draftingPattern: '{pattern} tekenen'
 drafts: Patroontekeningen
 edit: Bewerken
 editOnGithub: Bewerken via GitHub
-email: E-mail
+email: E-mail DONE
 emailAddress: E-mail adres
 emailUpdated: E-mail wijziging is hangende. Controleer je inbox voor de bevestiging E-mail
 enterYourCurrentPassword: Voer je huidig wachtwoord in
@@ -58,11 +58,11 @@ forContributors: Voor vrijwillige medewerkers
 forMoreInfoRtfm: 'Raadpleeg de documentatie voor meer informatie:'
 forUsername: 'Voor {username}'
 forUsers: Voor gebruikers
-freesewing: Freesewing
+freesewing: Freesewing DONE
 fundamentals: Basis principes
-github: GitHub
+github: GitHub DONE
 githubUpdated: GitHub gebruikersnaam bijgewerkt
-goodToKnow: Good to know
+goodToKnow: Goed om weten
 hi: Hoi
 home: Home pagina
 howToTakeMeasurements: Leer hoe je maten neemt
@@ -70,7 +70,7 @@ i18n: Internationalisatie (i18n)
 image: Afbeelding
 imperialUnits: Imperiale eenheden (duim)
 inch: duim
-instagram: Instagram
+instagram: Instagram DONE
 instagramUpdated: Instagram gebruikersnaam bijgewerkt
 justAMoment: Een ogenblikje
 languageLanguageFiles: 'Taal bestanden {language}'
@@ -87,8 +87,8 @@ measurementUpdated: Maat bijgewerkt
 measurements: Maten
 measurementsRequiredForPattern: 'Maten die vereist zijn voor {pattern}'
 metricUnits: Metrische eenheden (cm)
-model: Model
-modelIsModel: 'Model is {model}'
+model: Model DONE
+modelIsModel: 'Model is {model} DONE'
 models: Modellen
 monthAgo: Een maand geleden
 monthsAgo: '{months} maand geleden'
@@ -123,8 +123,8 @@ patternParts: Patroon delen
 patterns: Patronen
 postInfo: Post gegevens
 preferences: Voorkeuren
-privacy: Privacy
-privacyInfo: Privacy info
+privacy: Privacy DONE
+privacyInfo: Privacy info DONE
 processingDraftOptions: Verwerken van patroontekening opties
 profile: Profiel
 quickPick: Snelle keuzes
@@ -149,26 +149,16 @@ showcase: Voorbeelden
 showcaseInfo: Voorbeeld gegevens
 signUp: Inschrijven
 signUpForAFreeAccount: Schrijf je gratis in
-signup--text: >-
-  Er is een onverwacht probleem opgetreden. Help ons te onderzoeken waarom door
-  een issue aan te maken via GitHub
+signup--text: Er is een onverwacht probleem opgetreden. Help ons te onderzoeken waarom door een issue aan te maken via GitHub
 signup--title: En toen ging het fout
 signup-invalid_input-text: Gelieve een geldig E-mail adres en een wachtwoord in te voeren
 signup-invalid_input-title: Ongeldige invoer
-signup-no_such_pending_confirmation-text: >-
-  Helaas kunnen we geen inschrijving terugvinden met deze bevestigingscode.
-  Mogelijk is de code verlopen. In dat geval kan U zich gewoon terug
-  inschrijven.
+signup-no_such_pending_confirmation-text: Helaas kunnen we geen inschrijving terugvinden met deze bevestigingscode. Mogelijk is de code verlopen. In dat geval kan U zich gewoon terug inschrijven.
 signup-no_such_pending_confirmation-title: Ongeldige bevestigingscode
-signup-signup_pending-text: >-
-  We hebben reeds een hangende inschrijving voor dit email adres. We hebben de
-  activatie E-mail nogmaals uitgestuurd, voor het geval je de originele gemist
-  hebt.
+signup-signup_pending-text: 'We hebben reeds een hangende inschrijving voor dit email adres. We hebben de activatie E-mail nogmaals uitgestuurd, voor het geval je de originele gemist hebt.'
 signup-signup_pending-title: Je inschrijving wacht op activatie
 signup-success-text: 'We hebben een E-mail gestuurd aan {email}.'
-signup-user_exists-text: >-
-  We hebben reeds een gebruiker met dit E-mail adres. Misschien was het je
-  bedoeling om je aan te melden?
+signup-user_exists-text: We hebben reeds een gebruiker met dit E-mail adres. Misschien was het je bedoeling om je aan te melden?
 signup-user_exists-title: Die gebruiker bestaat al
 social: Sociaal
 somethingWentWrong: Er liep iets fout
@@ -183,29 +173,24 @@ taskCompleted: Taak is afgerond
 theme: Layout
 themeUpdated: Voorkeur layout bijgewerkt
 thisContentIsNotAvailableInLanguage: Deze inhoud is niet beschikbaar in het Nederlands.
+thisIsTheCurrentStatusOfOurTranslations: Dit is de huidige status van onze vertalingen.
 thisPageIsNotIntendedForLoggedInUsers: Deze pagina is niet bedoeld voor aangemelde gebruikers
 thisPageIsOnlyAvailableToFreesewingUsers: Deze pagina is alleen beschikbaar voor Freesewing gebruikers
 today: Vandaag
 translationTeam: Vertaalteam
 tryAgain: Nogmaals proberen
-twitter: Twitter
+twitter: Twitter DONE
 twitterUpdated: Twitter gebruikersnaam bijgewerkt
-txt-avatarDropzoneText: >-
-  Sleep je afbeelding hiernaartoe, of gebruik de knop hieronder om een
-  afbeelding te kiezen uit je bestanden.
+txt-avatarDropzoneText: 'Sleep je afbeelding hiernaartoe, of gebruik de knop hieronder om een afbeelding te kiezen uit je bestanden.'
 txt-avatarDropzoneTitle: Sleep je afbeelding hiernaartoe
 txt-changeRequiresConfirmation: Deze wijziging vereist bevestging via E-mail
 txt-clickEmailLink: Gelieve op de link in de E-mail te klikken om verder te gaan.
 txt-consentProfile: Geef je ons de toestemming om je profiel gegevens te verwerken?
 txt-consentProfileAnswerShare: '<b>Nee</b>, nooit.'
-txt-consentProfileAnswerTiming: >-
-  <b>12 maanden</b> na je meest recente login, of tot je je account
-  <b>verwijderd</b> of deze <b>toestemming intrekt</b>.
+txt-consentProfileAnswerTiming: '<b>12 maanden</b> na je meest recente login, of tot je je account <b>verwijderd</b> of deze <b>toestemming intrekt</b>.'
 txt-consentProfileAnswerWhat: 'Je <b>E-mail adres</b>, <b>gebruikersnaam</b>, en <b>wachtwoord</b>.'
 txt-consentProfileAnswerWhatOptional: 'Optioneel: Een <b>profiel foto</b>, en je <b>sociale media accounts</b>'
-txt-consentProfileAnswerWhy: >-
-  Om je te <b>authenticeren</b>, te <b>contacteren</b> wanneer nodig, en een
-  <b>gemeenschap</b> te bouwen.
+txt-consentProfileAnswerWhy: 'Om je te <b>authenticeren</b>, te <b>contacteren</b> wanneer nodig, en een <b>gemeenschap</b> te bouwen.'
 txt-consentProfileQuestionShare: Delen we ze met anderen?
 txt-consentProfileQuestionTiming: Hoe lang houden we ze bij?
 txt-consentProfileQuestionWhat: Wat zijn profiel gegevens?
@@ -215,17 +200,10 @@ txt-contentNotTranslated: Helaas is deze pagina (nog) niet vertaald naar het Ned
 txt-didYouSpotATypo: Foutje ontdekt? Of heb je het gevoel dat er wat ontbreekt of duidelijker kan?
 txt-editThisPageOnline: Je kan deze pagina online bewerken en je aanpassingen doorsturen.
 txt-email-sharing: We geven jouw email adres nooit door aan derden
-txt-emailChangeConfirmationNotFound: >-
-  Helaas kunnen we geen hangende E-mail wijzinging vinden voor deze
-  bevestigingscode. Misschien is de termijn voor de wijziging verlopen. In dat
-  geval kan U gewoon weer de aanpassing doorvoeren in uw instellingen.
+txt-emailChangeConfirmationNotFound: Helaas kunnen we geen hangende E-mail wijzinging vinden voor deze bevestigingscode. Misschien is de termijn voor de wijziging verlopen. In dat geval kan U gewoon weer de aanpassing doorvoeren in uw instellingen.
 txt-emailNotFound: 'E-mail niet te vinden? Controleer je spam folder, of neem contact met ons op.'
-txt-gdprCompliant: >-
-  Freesewing.org respecteert jouw privacy en rechten. We passen de Algememe
-  Verordening Gegevensbescherming (AVG) van de Europese Unie (EU) toe.
-txt-modelsWithMissingMeasurements: >-
-  Van deze modellen kennen we niet alle vereiste maten om dit patroon te
-  tekenen:
+txt-gdprCompliant: Freesewing.org respecteert jouw privacy en rechten. We passen de Algememe Verordening Gegevensbescherming (AVG) van de Europese Unie (EU) toe.
+txt-modelsWithMissingMeasurements: 'Van deze modellen kennen we niet alle vereiste maten om dit patroon te tekenen:'
 txt-newModel: 'Eerst en vooral, geef je model een naam.'
 txt-password-policy: We handhaven geen wachtwoordbeleid
 txt-saOption-custom: Aangepaste naadwaarde
@@ -238,19 +216,12 @@ txt-signup-step1: 'Voer je E-mail adres in, en kies een wachtwoord.'
 txt-signup-step2: Bevestig je email adres.
 txt-signup-step3: Geef ons de toestemming om je persoonlijke gegevens te verwerken.
 txt-slogan: Een open source platform voor naaipatronen op maat
-txt-withOrWithoutBreasts: >-
-  Een patroon voor een model met borsten vereist een aantal extra maten die niet
-  relevant zijn voor een model zonder borsten. Als je hier aangeeft dat je model
-  geen borsten heeft, dan verbergen we die extra maten daar ze niet relevant
-  zijn. Als je niet zeker weet wat te kiezen, kies dan voor borsten.
-txt-withOrWithoutBreasts-explainer: >-
-  Op andere websites zou men misschien vragen 'Man of vrouw?'. Hier willen we
-  mensen niet in vakjes stoppen. Het enige wat we willen bereiken is een goede
-  pasvorm, ook aan je borst(en).
+txt-withOrWithoutBreasts: 'Een patroon voor een model met borsten vereist een aantal extra maten die niet relevant zijn voor een model zonder borsten. Als je hier aangeeft dat je model geen borsten heeft, dan verbergen we die extra maten daar ze niet relevant zijn. Als je niet zeker weet wat te kiezen, kies dan voor borsten.'
+txt-withOrWithoutBreasts-explainer: 'Op andere websites zou men misschien vragen ''Man of vrouw?''. Hier willen we mensen niet in vakjes stoppen. Het enige wat we willen bereiken is een goede pasvorm, ook aan je borst(en).'
 units: Eenheden
 unitsUpdated: Voorkeur eenheden bijgewerlkt
 update: Bijwerken
-updates: Updates
+updates: Updates DONE
 useDecimalsOrFractions: Gebruik decimalen (1.25) or breuken (1 1/4)
 username: Gebruikersnaam
 usernameUpdated: Gebruikersnaam bijgewerkt

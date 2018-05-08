@@ -1,236 +1,239 @@
-aboutFreesewing: "About Freesewing" # TODO
-add: "Add" # TODO
-all: "All" # TODO
-alreadyHaveAnAccount: "Already have an account?" # TODO
-avatar: "Avatar" # TODO
-avatarUpdated: "Avatar updated" # TODO
-basics: "Basics" # TODO
-becomeAPatron: "Become a patron" # TODO
-blog: "Blog" # TODO
-blogPost: "Blog posts" # TODO
-breasts: "Breasts" # TODO
-breastsUpdated: "Breasts setting updated" # TODO
-cancel: "Cancel" # TODO
-chatOnGitter: "Chat on Gitter" # TODO
-chatWithUs: "Chat with us" # TODO
-chooseAModel: "Choose a model" # TODO
-chooseAPattern: "Choose a pattern" # TODO
-chooseYourOptions: "Choose your options" # TODO
-classicTheme: "Classic theme" # TODO
-close: "Close" # TODO
-community: "Community" # TODO
-compare: "Compare" # TODO
-completePattern: "Complete pattern" # TODO
-connectingToSomeApi: "Connecting to {api} API" # TODO
-contactUs: "Contact us" # TODO
-contents: "Contents" # TODO
-createIssueOnGithub: "Create issue on GitHub" # TODO
-createModel: "Create model" # TODO
-createMyAccount: "Create my account" # TODO
-currentPassword: "Current password" # TODO
-data: "Data" # TODO
-date: "Date" # TODO
-daysAgo: "{days} days ago" # TODO
-delete: "Delete" # TODO
-difficulty: "Difficulty" # TODO
-documentation: "Documentation" # TODO
-documentationForDevelopers: "Documentation for developers" # TODO
-documentationForTranslators: "Documentation for translators" # TODO
-documentationOverview: "Documentation overview" # TODO
-draft: "Draft" # TODO
-draftingPattern: "Drafting {pattern}" # TODO
-draftOptions: "Draft options" # TODO
-draftPattern: "Draft {pattern}" # TODO
-draftPatternForModel: "Draft {pattern} for {model}" # TODO
-drafts: "Drafts" # TODO
-draftThePattern: "Draft the pattern" # TODO
-edit: "Edit" # TODO
-editOnGithub: "Edit on GitHub" # TODO
-emailAddress: "E-mail address" # TODO
-email: "E-mail" # TODO
-emailUpdated: "E-mail update pending. Please check your inbox for a confirmation E-mail" # TODO
-enterYourCurrentPassword: "Enter your current password" # TODO
-enterYourNewPassword: "Enter your new password" # TODO
-error-unknown: "An unknown error occured" # TODO
-error-username_taken: "Username taken" # TODO
-filterByPattern: "Filter by pattern" # TODO
-forContributors: "For contributors" # TODO
-forUsername: "For {username}" # TODO
-forUsers: "For users" # TODO
-freesewing: "Freesewing" # TODO
-fundamentals: "Fundamentals" # TODO
-github: "GitHub" # TODO
-githubUpdated: "GitHub username updated" # TODO
-goodToKnow: "Good to know" # TODO
-hi: "Hi" # TODO
-home: "Home" # TODO
-howToTakeMeasurements: "How to take measurements" # TODO
-image: "Image" # TODO
-imperialUnits: "Imperial units (inch)" # TODO
-inch: "inch" # TODO
-instagram: "Instagram" # TODO
-instagramUpdated: "Instagram account set" # TODO
-justAMoment: "Just a moment" # TODO
-learnToDesignPatterns: "Learn to design patterns" # TODO
-loadingModelData: "Loading model data" # TODO
-loadingResult: "Loading result" # TODO
-locale: "Language" # TODO
-localeUpdated: "Language preference updated" # TODO
-loginFailed: "Login failed" # TODO
-logIn: "Log in" # TODO
-logOut: "Log out" # TODO
-makeItBetter: "Make it better" # TODO
-measurements: "Measurements" # TODO
-measurementsRequiredForPattern: "Measurements required for {pattern}" # TODO
-measurementUpdated: "Measurement updated" # TODO
-metricUnits: "Metric units (cm)" # TODO
-modelIsModel: "Model is {model}" # TODO
-model: "Model" # TODO
-models: "Models" # TODO
-monthAgo: "A month ago" # TODO
-monthsAgo: "{months} months ago" # TODO
-name: "Name" # TODO
-nameOfTheModel: "Name of the model" # TODO
-nameUpdated: "Name updated" # TODO
-newDraft: "New draft" # TODO
-newModel: "New model" # TODO
-newPassword: "New password" # TODO
-newPatternDraft: "New {pattern} draft" # TODO
-newTaskForUser: "New task for {user}" # TODO
-noChanges: "No changes" # TODO
-noDraftsFound: "No drafts found" # TODO
-noFilter: "No filter" # TODO
-noIDoNot: "No, I do not" # TODO
-notes: "Notes" # TODO
-notShared: "Not shared" # TODO
-oaskCompleted: "Task completed" # TODO
-ohNo: "Oh no!" # TODO
-okThatsDone: "OK, that's done" # TODO
-onlySelectedPatternParts: "Only selected pattern parts" # TODO
-pageNotFound: "The page you are looking for is nowhere to be found." # TODO
-paperlessTheme: "Paperless theme" # TODO
-password: "Password" # TODO
-passwordUpdated: "Password changed" # TODO
-patrons: "Patrons" # TODO
-patternDesignTutorial: "Pattern design tutorial" # TODO
-patternDocumentation: "Pattern instructions" # TODO
-patternIsPattern: "Pattern is {pattern}" # TODO
-patternOptions: "Pattern options" # TODO
-patternParts: "Pattern parts" # TODO
-pattern: "Pattern" # TODO
-patterns: "Patterns" # TODO
-postInfo: "Post info" # TODO
-preferences: "Preferences" # TODO
-privacyInfo: "Privacy info" # TODO
-privacy: "Privacy" # TODO
-processingDraftOptions: "Processing draft options" # TODO
-profile: "Profile" # TODO
-quickPick: "Quick pick" # TODO
-removeAllMyData: "Remove all my data" # TODO
-requiredMeasurements: "Required measurements" # TODO
-reSendActivationEmail: "Re-send activation email" # TODO
-retrievingDraftFromCore: "Retrieving draft from core" # TODO
-rowsFromToOfTotal: "Rows {from} to {to} of {total}" # TODO
-rowsPerPage: "Rows per page" # TODO
-save: "Save" # TODO
-seamAllowance: "Seam allowance" # TODO
-search: "Search" # TODO
-seeBelow: "See below" # TODO
-selectADifferentImage: "Select a different image" # TODO
-selectAnImage: "Select an image" # TODO
-settings: "Settings" # TODO
-shared: "Shared" # TODO
-sharedUpdated: "Shared setting updated" # TODO
-share: "Share" # TODO
-showcaseInfo: "Showcase info" # TODO
-showcase: "Showcase" # TODO
-showHelp: "Show help" # TODO
-signUpForAFreeAccount: "Sign up for a free account" # TODO
-signup-invalid_input-text: "Please enter a valid email address, and a password" # TODO
-signup-invalid_input-title: "Invalid input" # TODO
-signup-no_such_pending_confirmation-text: "Sorry, but that is not a confirmation code we have on record? Perhaps it expired, in which case you can just sign up again." # TODO
-signup-no_such_pending_confirmation-title: "There's no such pending confirmation" # TODO
-signUp: "Sign up" # TODO
-signup-signup_pending-text: "We already have a pending activation for this email address. We have sent you a fresh copy of the activation email in case you missed the original one." # TODO
-signup-signup_pending-title: "Your signup is pending activation" # TODO
-signup-success-text: "We've sent you an email at {email}." # TODO
-signup--text: "This should not happen. Please help us out by creating an issue on GitHub" # TODO
-signup--title: "An unknown error occured" # TODO
-signup-user_exists-text: "We already have a user with that email address. Perhaps you'd like to login instead?" # TODO
-signup-user_exists-title: "That user exists" # TODO
-social: "Social" # TODO
-somethingWentWrong: "Something went wrong" # TODO
-startUpload: "Start upload" # TODO
-step1: "Step 1" # TODO
-step2: "Step 2" # TODO
-step3: "Step 3" # TODO
-step4: "Step 4" # TODO
-stopUpload: "Stop upload" # TODO
-storingDraftData: "Storing draft data" # TODO
-theme: "Theme" # TODO
-themeUpdated: "Layout preference set" # TODO
-thisContentIsNotAvailableInLanguage: "This content is not available in English." # TODO
-thisPageIsNotIntendedForLoggedInUsers: "This page is not intended for logged-in users" # TODO
-thisPageIsOnlyAvailableToFreesewingUsers: "This page is only available to Freesewing users" # TODO
-today: "Today" # TODO
-translationTeam: "Translation team" # TODO
-tryAgain: "Try again" # TODO
-twitter: "Twitter" # TODO
-twitterUpdated: "Twitter account set" # TODO
-txt-avatarDropzoneText: "Drag and drop an image here, or click the button to pick one from your files." # TODO
-txt-avatarDropzoneTitle: "Drop your image here" # TODO
-txt-changeRequiresConfirmation: "This change requires confirmation via E-mail" # TODO
-txt-clickEmailLink: "Please click the link in the email to continue." # TODO
-txt-consentProfileAnswerShare: "<b>No</b>, never." # TODO
-txt-consentProfileAnswerTiming: "<b>12 months</b> after your last login, or until you <b>remove</b> your account or <b>revoke</b> this consent." # TODO
-txt-consentProfileAnswerWhatOptional: "Optional: A <b>profile picture</b>, and <b>social media accounts</b>" # TODO
-txt-consentProfileAnswerWhat: "Your <b>email address</b>, <b>username</b>, and <b>password</b>." # TODO
-txt-consentProfileAnswerWhy: "To <b>authenticate</b> you, <b>contact</b> you when needed, and build a <b>community</b>." # TODO
-txt-consentProfile: "Do you give your consent to process your profile data?" # TODO
-txt-consentProfileQuestionShare: "Do we share it with others?" # TODO
-txt-consentProfileQuestionTiming: "How long do we keep it?" # TODO
-txt-consentProfileQuestionWhat: "What is profile data?" # TODO
-txt-consentProfileQuestionWhy: "Why do we need it?" # TODO
-txt-contentLocaleFallback: "That's why we're showing you the English version instead." # TODO
-txt-contentNotTranslated: "Unfortunately, this page has not (yet) been translated to {language}." # TODO
-txt-didYouSpotATypo: "Did you spot a typo? Do you feel something is missing, or needs clarification?" # TODO
-txt-editThisPageOnline: "You can edit this page online and submit your changes." # TODO
-txt-emailChangeConfirmationNotFound: "Sorry, but we have no pending E-mail change for this confirmation code. Perhaps it expired, in which case you can simply make the change again in your settings." # TODO
-txt-emailNotFound: "If you can't find the email, check your spam folder, or contact us." # TODO
-txt-email-sharing: "We'll never share your email with anyone else" # TODO
-txt-gdprCompliant: "Freesewing.org respects your privacy and your rights. We apply the General Data Protection Regulation (GDPR) of the European Union (EU)." # TODO
-txt-modelsWithMissingMeasurements: "These models lack some of the required measurements to draft this pattern:" # TODO
-txt-newModel: "To get started, please give your model a name." # TODO
-txt-password-policy: "We don't enforce a password policy" # TODO
-txt-saOption-custom: "Custom seam allowance" # TODO
-txt-saOption-imperial: "Standard imperial seam allowance" # TODO
-txt-saOption-metric: "Standard metric seam allowance" # TODO
-txt-saOption-none: "Don't include seam allowance" # TODO
-txt-saOption-patternImperial: "Pattern default imperial seam allowance" # TODO
-txt-saOption-patternMetric: "Pattern default metric seam allowance" # TODO
-txt-signup-step1: "Enter your email address, and pick a password." # TODO
-txt-signup-step2: "Confirm your email address." # TODO
-txt-signup-step3: "Give us permission to process your personal data." # TODO
-txt-slogan: "An open source platform for made-to-measure sewing patterns" # TODO
-txt-withOrWithoutBreasts-explainer: "On other websites, this question may be phrased as 'male or female?'. Here, we don't like putting people in boxes. All we care about is fitting your chest." # TODO
-txt-withOrWithoutBreasts: "Fitting breasts requires a bunch of extra measurements that are not relevant if you don't have breasts. If you indicate your model does not have breasts, we won't show you these measurements as they are irrelevant. If you're not sure what to pick, go for breasts." # TODO
-units: "Units" # TODO
-unitsUpdated: "Units set" # TODO
-updates: "Updates" # TODO
-update: "Update" # TODO
-useDecimalsOrFractions: "Use decimals (1.25) or fractions (1 1/4)" # TODO
-usernameUpdated: "Username updated" # TODO
-username: "Username" # TODO
-version: "Version" # TODO
-weAreLoadingDataFromTheBackend: "We are loading data from the backend" # TODO
-weAreValidatingYourConfirmationCode: "We are validating your confirmation code" # TODO
-welcomeAboard: "Welcome aboard" # TODO
-withBreasts: "With breasts" # TODO
-withOrWithoutBreasts: "With or without breasts?" # TODO
-withoutBreasts: "Without breasts" # TODO
-wouldYouLikeToLogOut: "Would you like to log out?" # TODO
-yesIDo: "Yes, I do" # TODO
-yesterday: "Yesterday" # TODO
-youAreCurrentlyLoggedIn: "You are currently logged in." # TODO
-youAreNotLoggedIn: "You are not logged in." # TODO
-youAreNotLoggedIn: "You are not logged in" # TODO
+aboutFreesewing: About Freesewing TODO
+add: Add TODO
+all: All TODO
+alreadyHaveAnAccount: Already have an account? TODO
+avatar: Avatar TODO
+avatarUpdated: Avatar updated TODO
+basics: Basics TODO
+becomeAPatron: Become a patron TODO
+blog: Blog TODO
+blogPost: Blog posts TODO
+breasts: Breasts TODO
+breastsUpdated: Breasts setting updated TODO
+cancel: Cancel TODO
+chatOnGitter: Chat on Gitter TODO
+chatWithUs: Chat with us TODO
+chooseAModel: Choose a model TODO
+chooseAPattern: Choose a pattern TODO
+chooseYourOptions: Choose your options TODO
+classicTheme: Classic theme TODO
+close: Close TODO
+community: Community TODO
+compare: Compare TODO
+completePattern: Complete pattern TODO
+connectingToSomeApi: 'Connecting to {api} API TODO'
+contactUs: Contact us TODO
+contents: Contents TODO
+createIssueOnGithub: Create issue on GitHub TODO
+createModel: Create model TODO
+createMyAccount: Create my account TODO
+currentPassword: Current password TODO
+data: Data TODO
+date: Date TODO
+daysAgo: '{days} days ago TODO'
+delete: Delete TODO
+difficulty: Difficulty TODO
+documentation: Documentation TODO
+documentationForDevelopers: Documentation for developers TODO
+documentationForTranslators: Documentation for translators TODO
+documentationOverview: Documentation overview TODO
+draft: Draft TODO
+draftOptions: Draft options TODO
+draftPattern: 'Draft {pattern} TODO'
+draftPatternForModel: 'Draft {pattern} for {model} TODO'
+draftThePattern: Draft the pattern TODO
+draftingPattern: 'Drafting {pattern} TODO'
+drafts: Drafts TODO
+edit: Edit TODO
+editOnGithub: Edit on GitHub TODO
+email: E-mail TODO
+emailAddress: E-mail address TODO
+emailUpdated: E-mail update pending. Please check your inbox for a confirmation E-mail TODO
+enterYourCurrentPassword: Enter your current password TODO
+enterYourNewPassword: Enter your new password TODO
+error-unknown: An unknown error occured TODO
+error-username_taken: Username taken TODO
+filterByPattern: Filter by pattern TODO
+forContributors: For contributors TODO
+forMoreInfoRtfm: 'For more info, read the documentation: TODO'
+forUsername: 'For {username} TODO'
+forUsers: For users TODO
+freesewing: Freesewing TODO
+fundamentals: Fundamentals TODO
+github: GitHub TODO
+githubUpdated: GitHub username updated TODO
+goodToKnow: Good to know TODO
+hi: Hi TODO
+home: Home TODO
+howToTakeMeasurements: How to take measurements TODO
+i18n: Internationalization (i18n) TODO
+image: Image TODO
+imperialUnits: Imperial units (inch) TODO
+inch: inch TODO
+instagram: Instagram TODO
+instagramUpdated: Instagram account set TODO
+justAMoment: Just a moment TODO
+languageLanguageFiles: '{language} language files TODO'
+learnToDesignPatterns: Learn to design patterns TODO
+loadingModelData: Loading model data TODO
+loadingResult: Loading result TODO
+locale: Language TODO
+localeUpdated: Language preference updated TODO
+logIn: Log in TODO
+logOut: Log out TODO
+loginFailed: Login failed TODO
+makeItBetter: Make it better TODO
+measurementUpdated: Measurement updated TODO
+measurements: Measurements TODO
+measurementsRequiredForPattern: 'Measurements required for {pattern} TODO'
+metricUnits: Metric units (cm) TODO
+model: Model TODO
+modelIsModel: 'Model is {model} TODO'
+models: Models TODO
+monthAgo: A month ago TODO
+monthsAgo: '{months} months ago TODO'
+name: Name TODO
+nameOfTheModel: Name of the model TODO
+nameUpdated: Name updated TODO
+newDraft: New draft TODO
+newModel: New model TODO
+newPassword: New password TODO
+newPatternDraft: 'New {pattern} draft TODO'
+newTaskForUser: 'New task for {user} TODO'
+noChanges: No changes TODO
+noDraftsFound: No drafts found TODO
+noFilter: No filter TODO
+noIDoNot: 'No, I do not TODO'
+notShared: Not shared TODO
+notes: Notes TODO
+ohNo: Oh no! TODO
+okThatsDone: 'OK, that''s done TODO'
+onlySelectedPatternParts: Only selected pattern parts TODO
+pageNotFound: The page you are looking for is nowhere to be found. TODO
+paperlessTheme: Paperless theme TODO
+password: Password TODO
+passwordUpdated: Password changed TODO
+patrons: Patrons TODO
+pattern: Pattern TODO
+patternDesignTutorial: Pattern design tutorial TODO
+patternDocumentation: Pattern instructions TODO
+patternIsPattern: 'Pattern is {pattern} TODO'
+patternOptions: Pattern options TODO
+patternParts: Pattern parts TODO
+patterns: Patterns TODO
+postInfo: Post info TODO
+preferences: Preferences TODO
+privacy: Privacy TODO
+privacyInfo: Privacy info TODO
+processingDraftOptions: Processing draft options TODO
+profile: Profile TODO
+quickPick: Quick pick TODO
+reSendActivationEmail: Re-send activation email TODO
+removeAllMyData: Remove all my data TODO
+requiredMeasurements: Required measurements TODO
+retrievingDraftFromCore: Retrieving draft from core TODO
+rowsFromToOfTotal: 'Rows {from} to {to} of {total} TODO'
+rowsPerPage: Rows per page TODO
+save: Save TODO
+seamAllowance: Seam allowance TODO
+search: Search TODO
+seeBelow: See below TODO
+selectADifferentImage: Select a different image TODO
+selectAnImage: Select an image TODO
+settings: Settings TODO
+share: Share TODO
+shared: Shared TODO
+sharedUpdated: Shared setting updated TODO
+showHelp: Show help TODO
+showcase: Showcase TODO
+showcaseInfo: Showcase info TODO
+signUp: Sign up TODO
+signUpForAFreeAccount: Sign up for a free account TODO
+signup--text: This should not happen. Please help us out by creating an issue on GitHub TODO
+signup--title: An unknown error occured TODO
+signup-invalid_input-text: 'Please enter a valid email address, and a password TODO'
+signup-invalid_input-title: Invalid input TODO
+signup-no_such_pending_confirmation-text: 'Sorry, but that is not a confirmation code we have on record? Perhaps it expired, in which case you can just sign up again. TODO'
+signup-no_such_pending_confirmation-title: There's no such pending confirmation TODO
+signup-signup_pending-text: We already have a pending activation for this email address. We have sent you a fresh copy of the activation email in case you missed the original one. TODO
+signup-signup_pending-title: Your signup is pending activation TODO
+signup-success-text: 'We''ve sent you an email at {email}. TODO'
+signup-user_exists-text: We already have a user with that email address. Perhaps you'd like to login instead? TODO
+signup-user_exists-title: That user exists TODO
+social: Social TODO
+somethingWentWrong: Something went wrong TODO
+startUpload: Start upload TODO
+step1: Step 1 TODO
+step2: Step 2 TODO
+step3: Step 3 TODO
+step4: Step 4 TODO
+stopUpload: Stop upload TODO
+storingDraftData: Storing draft data TODO
+taskCompleted: Task completed TODO
+theme: Theme TODO
+themeUpdated: Layout preference set TODO
+thisContentIsNotAvailableInLanguage: This content is not available in English. TODO
+thisIsTheCurrentStatusOfOurTranslations: This is the current status of our translations. TODO
+thisPageIsNotIntendedForLoggedInUsers: This page is not intended for logged-in users TODO
+thisPageIsOnlyAvailableToFreesewingUsers: This page is only available to Freesewing users TODO
+today: Today TODO
+translationTeam: Translation team TODO
+tryAgain: Try again TODO
+twitter: Twitter TODO
+twitterUpdated: Twitter account set TODO
+txt-avatarDropzoneText: 'Drag and drop an image here, or click the button to pick one from your files. TODO'
+txt-avatarDropzoneTitle: Drop your image here TODO
+txt-changeRequiresConfirmation: This change requires confirmation via E-mail TODO
+txt-clickEmailLink: Please click the link in the email to continue. TODO
+txt-consentProfile: Do you give your consent to process your profile data? TODO
+txt-consentProfileAnswerShare: '<b>No</b>, never. TODO'
+txt-consentProfileAnswerTiming: '<b>12 months</b> after your last login, or until you <b>remove</b> your account or <b>revoke</b> this consent. TODO'
+txt-consentProfileAnswerWhat: 'Your <b>email address</b>, <b>username</b>, and <b>password</b>. TODO'
+txt-consentProfileAnswerWhatOptional: 'Optional: A <b>profile picture</b>, and <b>social media accounts</b> TODO'
+txt-consentProfileAnswerWhy: 'To <b>authenticate</b> you, <b>contact</b> you when needed, and build a <b>community</b>. TODO'
+txt-consentProfileQuestionShare: Do we share it with others? TODO
+txt-consentProfileQuestionTiming: How long do we keep it? TODO
+txt-consentProfileQuestionWhat: What is profile data? TODO
+txt-consentProfileQuestionWhy: Why do we need it? TODO
+txt-contentLocaleFallback: That's why we're showing you the English version instead. TODO
+txt-contentNotTranslated: 'Unfortunately, this page has not (yet) been translated to {language}. TODO'
+txt-didYouSpotATypo: 'Did you spot a typo? Do you feel something is missing, or needs clarification? TODO'
+txt-editThisPageOnline: You can edit this page online and submit your changes. TODO
+txt-email-sharing: We'll never share your email with anyone else TODO
+txt-emailChangeConfirmationNotFound: 'Sorry, but we have no pending E-mail change for this confirmation code. Perhaps it expired, in which case you can simply make the change again in your settings. TODO'
+txt-emailNotFound: 'If you can''t find the email, check your spam folder, or contact us. TODO'
+txt-gdprCompliant: Freesewing.org respects your privacy and your rights. We apply the General Data Protection Regulation (GDPR) of the European Union (EU). TODO
+txt-modelsWithMissingMeasurements: 'These models lack some of the required measurements to draft this pattern: TODO'
+txt-newModel: 'To get started, please give your model a name. TODO'
+txt-password-policy: We don't enforce a password policy TODO
+txt-saOption-custom: Custom seam allowance TODO
+txt-saOption-imperial: Standard imperial seam allowance TODO
+txt-saOption-metric: Standard metric seam allowance TODO
+txt-saOption-none: Don't include seam allowance TODO
+txt-saOption-patternImperial: Pattern default imperial seam allowance TODO
+txt-saOption-patternMetric: Pattern default metric seam allowance TODO
+txt-signup-step1: 'Enter your email address, and pick a password. TODO'
+txt-signup-step2: Confirm your email address. TODO
+txt-signup-step3: Give us permission to process your personal data. TODO
+txt-slogan: An open source platform for made-to-measure sewing patterns TODO
+txt-withOrWithoutBreasts: 'Fitting breasts requires a bunch of extra measurements that are not relevant if you don''t have breasts. If you indicate your model does not have breasts, we won''t show you these measurements as they are irrelevant. If you''re not sure what to pick, go for breasts. TODO'
+txt-withOrWithoutBreasts-explainer: 'On other websites, this question may be phrased as ''male or female?''. Here, we don''t like putting people in boxes. All we care about is fitting your chest. TODO'
+units: Units TODO
+unitsUpdated: Units set TODO
+update: Update TODO
+updates: Updates TODO
+useDecimalsOrFractions: Use decimals (1.25) or fractions (1 1/4) TODO
+username: Username TODO
+usernameUpdated: Username updated TODO
+version: Version TODO
+weAreLoadingDataFromTheBackend: We are loading data from the backend TODO
+weAreValidatingYourConfirmationCode: We are validating your confirmation code TODO
+welcomeAboard: Welcome aboard TODO
+withBreasts: With breasts TODO
+withOrWithoutBreasts: With or without breasts? TODO
+withoutBreasts: Without breasts TODO
+wouldYouLikeToLogOut: Would you like to log out? TODO
+yesIDo: 'Yes, I do TODO'
+yesterday: Yesterday TODO
+youAreCurrentlyLoggedIn: You are currently logged in. TODO
+youAreNotLoggedIn: You are not logged in. TODO
