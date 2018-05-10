@@ -63,13 +63,18 @@ function padTranslation(translation, original) {
   for(i in original) {
     translation[i] = padEntry(translation[i], original[i])
   }
+  for(i in translation) {
+    if(typeof original[i] === 'undefined') {
+      delete translation[i]
+    }
+  }
   return translation
 }
 
 /* Adds entry from origin language to translation object, recursive if needed */
 function padEntry(translation, original) {
   if(typeof original === 'string') {
-    if(typeof original === 'undefined' || translation === original) {
+    if(typeof translation === 'undefined' || translation === original) {
       translation = original+' TODO'
     }
   }
