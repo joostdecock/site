@@ -13,7 +13,7 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
     "configure": "node ./scripts/configure.js",
-    "locgen": "node ./scripts/locbuild.js ; node ./scripts/loccount.js"
+    "locgen": "node ./scripts/locgen.js"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",
