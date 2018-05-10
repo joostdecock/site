@@ -19,17 +19,7 @@ function loadLanguageTranslationFiles(locale) {
   const language = {}
   for(f in config.i18n.files) {
     file = config.i18n.files[f]
-      if(typeof file === 'string') {
-        language[file] = loadTranslationFile(locale, file)
-      } else if (typeof file === 'object') {
-        for (i in file) {
-          for (j in file[i]) {
-            language[file[i][j]] = loadTranslationFile(locale, file[i][j])
-          }
-        }
-      } else {
-        console.log('Could not load file of type ', typeof file)
-      }
+    language[file] = loadTranslationFile(locale, file)
   }
   return language
 }
@@ -197,6 +187,7 @@ new Promise(function(resolve, reject) {
     // Write updated YAML files to disk
     for(file in translations.en) {
       fs.writeFileSync('./nuxt/locales/'+locale+'/'+file+'.yaml', yaml.safeDump(translations[locale][file], {sortKeys: true, lineWidth: 10000}), 'utf8')
+      fs.writeFileSync('./nuxt/static/i18n/'+locale+'.'+file+'.json', JSON.stringify(translations[locale][file], null, 0), 'utf8')
     }
     // Filter out DONE and TODO
     for(file in translations.en) {

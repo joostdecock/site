@@ -23,7 +23,10 @@ compare: Compare TODO
 completePattern: Complete pattern TODO
 connectingToSomeApi: 'Connecting to {api} API TODO'
 contactUs: Contact us TODO
+content: Content TODO
 contents: Contents TODO
+countAvailable: '{count} available TODO'
+countTranslated: '{count} translated TODO'
 createIssueOnGithub: Create issue on GitHub TODO
 createModel: Create model TODO
 createMyAccount: Create my account TODO
@@ -32,6 +35,7 @@ data: Data TODO
 date: Date TODO
 daysAgo: '{days} days ago TODO'
 delete: Delete TODO
+description: Description TODO
 difficulty: Difficulty TODO
 documentation: Documentation TODO
 documentationForDevelopers: Documentation for developers TODO
@@ -49,6 +53,7 @@ editOnGithub: Edit on GitHub TODO
 email: E-mail TODO
 emailAddress: E-mail address TODO
 emailUpdated: E-mail update pending. Please check your inbox for a confirmation E-mail TODO
+emails: E-mails TODO
 enterYourCurrentPassword: Enter your current password TODO
 enterYourNewPassword: Enter your new password TODO
 error-unknown: An unknown error occured TODO
@@ -58,6 +63,7 @@ forContributors: For contributors TODO
 forMoreInfoRtfm: 'For more info, read the documentation: TODO'
 forUsername: 'For {username} TODO'
 forUsers: For users TODO
+format: Format TODO
 freesewing: Freesewing TODO
 fundamentals: Fundamentals TODO
 github: GitHub TODO
@@ -72,6 +78,7 @@ imperialUnits: Imperial units (inch) TODO
 inch: inch TODO
 instagram: Instagram TODO
 instagramUpdated: Instagram account set TODO
+joinTheTranslationTeam: 'Even if you have never contributed to an open source project, translation is a smooth on-ramp towards contributor fame. TODO'
 justAMoment: Just a moment TODO
 languageLanguageFiles: '{language} language files TODO'
 learnToDesignPatterns: Learn to design patterns TODO
@@ -86,6 +93,7 @@ makeItBetter: Make it better TODO
 measurementUpdated: Measurement updated TODO
 measurements: Measurements TODO
 measurementsRequiredForPattern: 'Measurements required for {pattern} TODO'
+messages: Messages TODO
 metricUnits: Metric units (cm) TODO
 model: Model TODO
 modelIsModel: 'Model is {model} TODO'
@@ -163,6 +171,7 @@ signup-user_exists-title: That user exists TODO
 social: Social TODO
 somethingWentWrong: Something went wrong TODO
 startUpload: Start upload TODO
+status: Status TODO
 step1: Step 1 TODO
 step2: Step 2 TODO
 step3: Step 3 TODO
@@ -203,6 +212,9 @@ txt-email-sharing: We'll never share your email with anyone else TODO
 txt-emailChangeConfirmationNotFound: 'Sorry, but we have no pending E-mail change for this confirmation code. Perhaps it expired, in which case you can simply make the change again in your settings. TODO'
 txt-emailNotFound: 'If you can''t find the email, check your spam folder, or contact us. TODO'
 txt-gdprCompliant: Freesewing.org respects your privacy and your rights. We apply the General Data Protection Regulation (GDPR) of the European Union (EU). TODO
+txt-joinTheTranslationTeam1: 'Even if you have never contributed to an open source project, translation is a smooth on-ramp towards contributor fame. TODO'
+txt-joinTheTranslationTeam2: 'It doesn''t matter whether you translate a few words or sentences, or tackle an entire language by yourself. Every contribution counts, and many hands make light work. TODO'
+txt-joinTheTranslationTeam3: 'Read the documentation for translators to get started. Don''t worry, it''s easy. TODO'
 txt-modelsWithMissingMeasurements: 'These models lack some of the required measurements to draft this pattern: TODO'
 txt-newModel: 'To get started, please give your model a name. TODO'
 txt-password-policy: We don't enforce a password policy TODO
@@ -226,6 +238,7 @@ useDecimalsOrFractions: Use decimals (1.25) or fractions (1 1/4) TODO
 username: Username TODO
 usernameUpdated: Username updated TODO
 version: Version TODO
+volunteerVerb: Volunteer TODO
 weAreLoadingDataFromTheBackend: We are loading data from the backend TODO
 weAreValidatingYourConfirmationCode: We are validating your confirmation code TODO
 welcomeAboard: Welcome aboard TODO

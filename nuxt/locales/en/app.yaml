@@ -23,7 +23,10 @@ compare: Compare
 completePattern: Complete pattern
 connectingToSomeApi: 'Connecting to {api} API'
 contactUs: Contact us
+content: Content
 contents: Contents
+countAvailable: '{count} available'
+countTranslated: '{count} translated'
 createIssueOnGithub: Create issue on GitHub
 createModel: Create model
 createMyAccount: Create my account
@@ -32,6 +35,7 @@ data: Data
 date: Date
 daysAgo: '{days} days ago'
 delete: Delete
+description: Description
 difficulty: Difficulty
 documentation: Documentation
 documentationForDevelopers: Documentation for developers
@@ -49,6 +53,7 @@ editOnGithub: Edit on GitHub
 email: E-mail
 emailAddress: E-mail address
 emailUpdated: E-mail update pending. Please check your inbox for a confirmation E-mail
+emails: E-mails
 enterYourCurrentPassword: Enter your current password
 enterYourNewPassword: Enter your new password
 error-unknown: An unknown error occured
@@ -58,6 +63,7 @@ forContributors: For contributors
 forMoreInfoRtfm: 'For more info, read the documentation:'
 forUsername: 'For {username}'
 forUsers: For users
+format: Format
 freesewing: Freesewing
 fundamentals: Fundamentals
 github: GitHub
@@ -72,6 +78,7 @@ imperialUnits: Imperial units (inch)
 inch: inch
 instagram: Instagram
 instagramUpdated: Instagram account set
+joinTheTranslationTeam: Join the translation team
 justAMoment: Just a moment
 languageLanguageFiles: '{language} language files'
 learnToDesignPatterns: Learn to design patterns
@@ -86,6 +93,7 @@ makeItBetter: Make it better
 measurementUpdated: Measurement updated
 measurements: Measurements
 measurementsRequiredForPattern: 'Measurements required for {pattern}'
+messages: Messages
 metricUnits: Metric units (cm)
 model: Model
 modelIsModel: 'Model is {model}'
@@ -163,6 +171,7 @@ signup-user_exists-title: That user exists
 social: Social
 somethingWentWrong: Something went wrong
 startUpload: Start upload
+status: Status
 step1: Step 1
 step2: Step 2
 step3: Step 3
@@ -170,6 +179,7 @@ step4: Step 4
 stopUpload: Stop upload
 storingDraftData: Storing draft data
 taskCompleted: Task completed
+key: Key
 theme: Theme
 themeUpdated: Layout preference set
 thisContentIsNotAvailableInLanguage: This content is not available in English.
@@ -203,6 +213,9 @@ txt-email-sharing: We'll never share your email with anyone else
 txt-emailChangeConfirmationNotFound: 'Sorry, but we have no pending E-mail change for this confirmation code. Perhaps it expired, in which case you can simply make the change again in your settings.'
 txt-emailNotFound: 'If you can''t find the email, check your spam folder, or contact us.'
 txt-gdprCompliant: Freesewing.org respects your privacy and your rights. We apply the General Data Protection Regulation (GDPR) of the European Union (EU).
+txt-joinTheTranslationTeam1: 'Even if you have never contributed to an open source project, translation is a smooth on-ramp towards contributor fame.'
+txt-joinTheTranslationTeam2: 'It doesn''t matter whether you translate a few words or sentences, or tackle an entire language by yourself. Every contribution counts, and many hands make light work.'
+txt-joinTheTranslationTeam3: 'Read the documentation for translators to get started. Don''t worry, it''s easy.'
 txt-modelsWithMissingMeasurements: 'These models lack some of the required measurements to draft this pattern:'
 txt-newModel: 'To get started, please give your model a name.'
 txt-password-policy: We don't enforce a password policy
@@ -226,6 +239,7 @@ useDecimalsOrFractions: Use decimals (1.25) or fractions (1 1/4)
 username: Username
 usernameUpdated: Username updated
 version: Version
+volunteerVerb: Volunteer
 weAreLoadingDataFromTheBackend: We are loading data from the backend
 weAreValidatingYourConfirmationCode: We are validating your confirmation code
 welcomeAboard: Welcome aboard

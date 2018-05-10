@@ -1,0 +1,121 @@
+apis:
+  core: 'https://core.she.freesewing.org'
+  data: 'https://data.she.freesewing.org'
+content:
+  - blog
+  - showcase
+  - docs
+defaults:
+  repos:
+    core: 'https://github.com/freesewing/core'
+    data: 'https://github.com/freesewing/data'
+    site: 'https://github.com/freesewing/site'
+    tile: 'https://github.com/freesewing/tile'
+  sa:
+    custom: 0.5
+    imperial: 0.625
+    metric: 1
+  scale:
+    imperial: 25.4
+    metric: '10,'
+  step:
+    imperial: 0.125
+    metric: 0.1
+i18n:
+  coordinators:
+    de: _vacant
+    en: joost
+    es: _vacant
+    fr: _vacant
+    nl: AnnekeCaramin
+    'no': _vacant
+  files:
+    - app
+    - i18n
+    - measurements
+    - options
+    - patterns
+  locales:
+    disabled:
+      - de
+      - es
+      - fr
+      - 'no'
+    enabled:
+      - en
+      - nl
+  origin: en
+  stats:
+    de:
+      app: 0
+      blog: 0
+      docs: 0
+      i18n: 0
+      measurements: 0
+      options: 0
+      patterns: 36
+      showcase: 0
+    en:
+      app: 252
+      blog: 28
+      docs: 9
+      i18n: 6
+      measurements: 25
+      options: 237
+      patterns: 37
+      showcase: 51
+    es:
+      app: 0
+      blog: 0
+      docs: 0
+      i18n: 0
+      measurements: 25
+      options: 0
+      patterns: 36
+      showcase: 0
+    fr:
+      app: 0
+      blog: 0
+      docs: 0
+      i18n: 0
+      measurements: 25
+      options: 0
+      patterns: 4
+      showcase: 0
+    nl:
+      app: 252
+      blog: 2
+      docs: 2
+      i18n: 6
+      measurements: 25
+      options: 235
+      patterns: 37
+      showcase: 1
+    'no':
+      app: 0
+      blog: 0
+      docs: 0
+      i18n: 0
+      measurements: 25
+      options: 0
+      patterns: 0
+      showcase: 0
+    xx:
+      app: 0
+      blog: 0
+      docs: 0
+      i18n: 0
+      measurements: 0
+      options: 0
+      patterns: 0
+      showcase: 0
+  target:
+    app: 252
+    blog: 28
+    docs: 9
+    i18n: 6
+    measurements: 25
+    options: 237
+    patterns: 37
+    showcase: 51
+  template: xx

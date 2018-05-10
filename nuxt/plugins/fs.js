@@ -2,7 +2,6 @@ import Vue from 'vue'
 import axios from 'axios'
 import MarkdownIt from 'markdown-it'
 import { format, differenceInCalendarDays, differenceInMonths } from 'date-fns'
-//import f from '~/static/json/freesewing.json'
 import Storage from './storage'
 import Utils from './utils'
 import Conf from './config'
@@ -259,7 +258,32 @@ export default ({ app, store, router }, inject) => {
         })
       },
 
+      get(url) {
+        return new Promise(function(resolve, reject) {
+          let conf = {
+            timeout: 15000
+          }
+          if(url.indexOf('://') === -1) {
+            conf.baseURL = 'http://localhost:3000'
+            conf.browserBaseURL = process.env.FS_SITE
+          }
+          const gurl = axios.create(conf)
+
+          gurl.get(url)
+            .then((res) => {
+              resolve(res.data)
+            })
+          .catch((error) => { reject(error.response.data) })
+        })
+      },
+
       // Sync methods
+
+      percentColor(percent) {
+        if(percent>90) return "success"
+        else if(percent>50) return "accent"
+        else return "primary"
+      },
 
       sliderRound(value) {
         return sliderRoundMethod(value, store.state.user.account.units)
