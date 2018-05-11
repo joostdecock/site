@@ -279,6 +279,10 @@ export default ({ app, store, router }, inject) => {
 
       // Sync methods
 
+      percent(val, target) {
+        return Math.round(val/(target/100))
+      },
+
       percentColor(percent) {
         if(percent>90) return "success"
         else if(percent>50) return "accent"

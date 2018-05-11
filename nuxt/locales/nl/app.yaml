@@ -37,6 +37,7 @@ daysAgo: '{days} dagen geleden'
 delete: Verwijderen
 description: Omschrijving
 difficulty: Moeilijkheidsgraad
+docs: Documentatie
 documentation: Documentatie
 documentationForDevelopers: Documentatie voor ontwikkelaars
 documentationForTranslators: Documentatie voor vertalers
@@ -173,6 +174,7 @@ social: Sociaal
 somethingWentWrong: Er liep iets fout
 startUpload: Upload starten
 status: Status DONE
+statusTranslationLanguage: 'Status vertaling {language}'
 step1: Stap 1
 step2: Stap 2
 step3: Stap 3
@@ -186,6 +188,7 @@ thisContentIsNotAvailableInLanguage: Deze inhoud is niet beschikbaar in het Nede
 thisIsTheCurrentStatusOfOurTranslations: Dit is de huidige status van onze vertalingen.
 thisPageIsNotIntendedForLoggedInUsers: Deze pagina is niet bedoeld voor aangemelde gebruikers
 thisPageIsOnlyAvailableToFreesewingUsers: Deze pagina is alleen beschikbaar voor Freesewing gebruikers
+title: Titel
 today: Vandaag
 translationTeam: Vertaalteam
 tryAgain: Nogmaals proberen
@@ -231,6 +234,7 @@ txt-signup-step3: Geef ons de toestemming om je persoonlijke gegevens te verwerk
 txt-slogan: Een open source platform voor naaipatronen op maat
 txt-withOrWithoutBreasts: 'Een patroon voor een model met borsten vereist een aantal extra maten die niet relevant zijn voor een model zonder borsten. Als je hier aangeeft dat je model geen borsten heeft, dan verbergen we die extra maten daar ze niet relevant zijn. Als je niet zeker weet wat te kiezen, kies dan voor borsten.'
 txt-withOrWithoutBreasts-explainer: 'Op andere websites zou men misschien vragen ''Man of vrouw?''. Hier willen we mensen niet in vakjes stoppen. Het enige wat we willen bereiken is een goede pasvorm, ook aan je borst(en).'
+type: Type DONE
 units: Eenheden
 unitsUpdated: Voorkeur eenheden bijgewerlkt
 update: Bijwerken

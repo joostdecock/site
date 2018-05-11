@@ -37,6 +37,7 @@ daysAgo: '{days} days ago TODO'
 delete: Delete TODO
 description: Description TODO
 difficulty: Difficulty TODO
+docs: Documentation TODO
 documentation: Documentation TODO
 documentationForDevelopers: Documentation for developers TODO
 documentationForTranslators: Documentation for translators TODO
@@ -173,6 +174,7 @@ social: Social TODO
 somethingWentWrong: Something went wrong TODO
 startUpload: Start upload TODO
 status: Status TODO
+statusTranslationLanguage: 'Status translation {language} TODO'
 step1: Step 1 TODO
 step2: Step 2 TODO
 step3: Step 3 TODO
@@ -186,6 +188,7 @@ thisContentIsNotAvailableInLanguage: This content is not available in English. T
 thisIsTheCurrentStatusOfOurTranslations: This is the current status of our translations. TODO
 thisPageIsNotIntendedForLoggedInUsers: This page is not intended for logged-in users TODO
 thisPageIsOnlyAvailableToFreesewingUsers: This page is only available to Freesewing users TODO
+title: Title TODO
 today: Today TODO
 translationTeam: Translation team TODO
 tryAgain: Try again TODO
@@ -231,6 +234,7 @@ txt-signup-step3: Give us permission to process your personal data. TODO
 txt-slogan: An open source platform for made-to-measure sewing patterns TODO
 txt-withOrWithoutBreasts: 'Fitting breasts requires a bunch of extra measurements that are not relevant if you don''t have breasts. If you indicate your model does not have breasts, we won''t show you these measurements as they are irrelevant. If you''re not sure what to pick, go for breasts. TODO'
 txt-withOrWithoutBreasts-explainer: 'On other websites, this question may be phrased as ''male or female?''. Here, we don''t like putting people in boxes. All we care about is fitting your chest. TODO'
+type: Type TODO
 units: Units TODO
 unitsUpdated: Units set TODO
 update: Update TODO

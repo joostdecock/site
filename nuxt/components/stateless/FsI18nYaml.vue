@@ -1,5 +1,7 @@
 <template>
   <div>
+    <pre>
+    </pre>
     <div class="text-xs-center mt-3 mb-3">
       <v-progress-circular size="100" :value="score" :rotate="(-90)" :width="(12)" :color="$fs.percentColor(score)">{{score}}%</v-progress-circular>
       <p class="mt-3">
@@ -24,7 +26,15 @@
             {{ props.item.key }}
         </td>
         <td>
+          <span v-if="file !== 'patterns' && file !== 'options'">
             {{ $t(props.item.key, 'en') }}
+          </span>
+          <span v-else-if="file === 'options'">
+            {{ $t('_options.'+props.item.key, 'en') }}
+          </span>
+          <span v-else-if="file === 'patterns'">
+            {{ $t('_patterns.'+props.item.key, 'en') }}
+          </span>
         </td>
         <td>
           <span v-if="file !== 'patterns'">

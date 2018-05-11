@@ -2,9 +2,9 @@ apis:
   core: 'https://core.she.freesewing.org'
   data: 'https://data.she.freesewing.org'
 content:
+  - docs
   - blog
   - showcase
-  - docs
 defaults:
   repos:
     core: 'https://github.com/freesewing/core'
@@ -56,7 +56,7 @@ i18n:
       patterns: 36
       showcase: 0
     en:
-      app: 253
+      app: 257
       blog: 28
       docs: 9
       i18n: 6
@@ -83,7 +83,7 @@ i18n:
       patterns: 4
       showcase: 0
     nl:
-      app: 253
+      app: 257
       blog: 2
       docs: 2
       i18n: 6
@@ -110,7 +110,7 @@ i18n:
       patterns: 0
       showcase: 0
   target:
-    app: 253
+    app: 257
     blog: 28
     docs: 9
     i18n: 6

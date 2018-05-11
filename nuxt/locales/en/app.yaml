@@ -37,6 +37,7 @@ daysAgo: '{days} days ago'
 delete: Delete
 description: Description
 difficulty: Difficulty
+docs: Documentation
 documentation: Documentation
 documentationForDevelopers: Documentation for developers
 documentationForTranslators: Documentation for translators
@@ -173,6 +174,7 @@ social: Social
 somethingWentWrong: Something went wrong
 startUpload: Start upload
 status: Status
+statusTranslationLanguage: 'Status translation {language}'
 step1: Step 1
 step2: Step 2
 step3: Step 3
@@ -186,6 +188,7 @@ thisContentIsNotAvailableInLanguage: This content is not available in English.
 thisIsTheCurrentStatusOfOurTranslations: This is the current status of our translations.
 thisPageIsNotIntendedForLoggedInUsers: This page is not intended for logged-in users
 thisPageIsOnlyAvailableToFreesewingUsers: This page is only available to Freesewing users
+title: Title
 today: Today
 translationTeam: Translation team
 tryAgain: Try again
@@ -231,6 +234,7 @@ txt-signup-step3: Give us permission to process your personal data.
 txt-slogan: An open source platform for made-to-measure sewing patterns
 txt-withOrWithoutBreasts: 'Fitting breasts requires a bunch of extra measurements that are not relevant if you don''t have breasts. If you indicate your model does not have breasts, we won''t show you these measurements as they are irrelevant. If you''re not sure what to pick, go for breasts.'
 txt-withOrWithoutBreasts-explainer: 'On other websites, this question may be phrased as ''male or female?''. Here, we don''t like putting people in boxes. All we care about is fitting your chest.'
+type: Type
 units: Units
 unitsUpdated: Units set
 update: Update
