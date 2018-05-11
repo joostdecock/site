@@ -328,10 +328,10 @@ splitYoke:
   title: Tweedelige schouderpas
 stretch:
   description: 'Hoeveel kleiner de omtrek is dan je lichaamsmaten. In andere woorden, hoe strak alles zit.'
-  title: Stretch TODO
+  title: Stretch DONE
 stretchFactor:
   description: 'Bepaalt hoeveel kleiner de horizontale omtrek is dan je lichaamsmaten. In andere woorden, hoe strak alles zit.'
-  title: Stretch TODO
+  title: Stretch DONE
 tipWidth:
   description:
     _default: De breedte van de puntjes van de vlinderdas.

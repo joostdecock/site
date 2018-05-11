@@ -17,7 +17,6 @@
               <fs-i18n-yaml :locale="$route.params.locale" :file="file" />
             </v-tab-item>
           </v-tabs>
-          <s-header-status-i18n :stats="stats" section="messages" />
         </v-tab-item>
         <v-tab-item id="patterns" class="fs-pad">
           <s-header-status-i18n :stats="stats" section="patterns" />
@@ -78,9 +77,6 @@
         </blockquote>
       </div>
     </div>
-    <pre>
-    {{ stats }}
-    </pre>
   </section>
 </template>
 

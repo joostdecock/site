@@ -80,6 +80,7 @@ instagram: Instagram
 instagramUpdated: Instagram account set
 joinTheTranslationTeam: Join the translation team
 justAMoment: Just a moment
+key: Key
 languageLanguageFiles: '{language} language files'
 learnToDesignPatterns: Learn to design patterns
 loadingModelData: Loading model data
@@ -179,7 +180,6 @@ step4: Step 4
 stopUpload: Stop upload
 storingDraftData: Storing draft data
 taskCompleted: Task completed
-key: Key
 theme: Theme
 themeUpdated: Layout preference set
 thisContentIsNotAvailableInLanguage: This content is not available in English.
