@@ -1,6 +1,6 @@
 apis:
-  core: 'https://core.she.freesewing.org'
-  data: 'https://data.she.freesewing.org'
+  core: 'https://v2.core.freesewing.org'
+  data: 'https://v2.data.freesewing.org'
 content:
   - docs
   - blog
