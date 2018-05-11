@@ -264,7 +264,7 @@ export default ({ app, store, router }, inject) => {
             timeout: 15000
           }
           if(url.indexOf('://') === -1) {
-            conf.baseURL = 'http://localhost:3000'
+            conf.baseURL = process.env.FS_SITE
             conf.browserBaseURL = process.env.FS_SITE
           }
           const gurl = axios.create(conf)
