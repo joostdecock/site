@@ -64,11 +64,14 @@ function padTranslation(translation, original) {
 /* Adds entry from origin language to translation object, recursive if needed */
 function padEntry(translation, original) {
   if(typeof original === 'string') {
-    if(typeof translation === 'undefined' || translation === original) {
+      if(typeof translation === 'undefined' || translation === original) {
       translation = original+' TODO'
     }
   }
   else if(typeof original === 'object') {
+    if(typeof translation === 'undefined') {
+      translation = original
+    }
     for(i in original) {
       translation[i] = padEntry(translation[i], original[i])
     }
@@ -186,8 +189,14 @@ new Promise(function(resolve, reject) {
     }
     // Write updated YAML files to disk
     for(file in translations.en) {
-      fs.writeFileSync('./nuxt/locales/'+locale+'/'+file+'.yaml', yaml.safeDump(translations[locale][file], {sortKeys: true, lineWidth: 10000}), 'utf8')
-      fs.writeFileSync('./nuxt/static/i18n/'+locale+'.'+file+'.json', JSON.stringify(translations[locale][file], null, 0), 'utf8')
+      try {
+        fs.writeFileSync('./nuxt/locales/'+locale+'/'+file+'.yaml', yaml.safeDump(translations[locale][file], {sortKeys: true, lineWidth: 10000}), 'utf8')
+        fs.writeFileSync('./nuxt/static/i18n/'+locale+'.'+file+'.json', JSON.stringify(translations[locale][file], null, 0), 'utf8')
+      } catch (e) {
+        console.log('Could not write output file '+file+' for locale '+locale)
+        console.log(translations[locale][file])
+        console.log(e)
+      }
     }
     // Filter out DONE and TODO
     for(file in translations.en) {
@@ -215,37 +224,37 @@ new Promise(function(resolve, reject) {
   .catch((error) => { console.log(error); reject()})
 })
 
-console.log('Locale locgen done, fetching data locales from GitHub')
-// Fetch locale files from data repository
-const proms = []
-const email = {}
-new Promise(function(resolve, reject) {
-  for(l in allLocales) {
-    let locale = allLocales[l]
-    proms.push(
-      axios.get('https://raw.githubusercontent.com/freesewing/data/v2/locales/'+locale+'.yaml')
-        .then((res) => {
-          email[locale] = yaml.safeLoad(res.data)
-        })
-      .catch((error) => {
-        email[locale] = {}
-        console.log('Language not avaialble: '+locale)
-      })
-    )
-  }
-  Promise.all(proms)
-  .then(() => {
-    for(l in allLocales) {
-      let locale = allLocales[l]
-      if(locale !== 'en') {
-        for(i in email.en) {
-          if(typeof email[locale][i] === 'undefined' || email[locale][i] === email.en[i]) {
-            email[locale][i] = email.en[i]+' TODO'
-          }
-        }
-      }
-      fs.writeFileSync('./nuxt/static/i18n/'+locale+'.email.json', JSON.stringify(email[locale], null, 0), 'utf8')
-    }
-  })
-})
+//console.log('Locale locgen done, fetching data locales from GitHub')
+//// Fetch locale files from data repository
+//const proms = []
+//const email = {}
+//new Promise(function(resolve, reject) {
+//  for(l in allLocales) {
+//    let locale = allLocales[l]
+//    proms.push(
+//      axios.get('https://raw.githubusercontent.com/freesewing/data/v2/locales/'+locale+'.yaml')
+//        .then((res) => {
+//          email[locale] = yaml.safeLoad(res.data)
+//        })
+//      .catch((error) => {
+//        email[locale] = {}
+//        console.log('Language not avaialble: '+locale)
+//      })
+//    )
+//  }
+//  Promise.all(proms)
+//  .then(() => {
+//    for(l in allLocales) {
+//      let locale = allLocales[l]
+//      if(locale !== 'en') {
+//        for(i in email.en) {
+//          if(typeof email[locale][i] === 'undefined' || email[locale][i] === email.en[i]) {
+//            email[locale][i] = email.en[i]+' TODO'
+//          }
+//        }
+//      }
+//      fs.writeFileSync('./nuxt/static/i18n/'+locale+'.email.json', JSON.stringify(email[locale], null, 0), 'utf8')
+//    }
+//  })
+//})
 

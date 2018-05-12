@@ -3,6 +3,9 @@ acrossBackFactor:
   title: Rugwijdte
 adjustmentRibbon:
   description: Voeg een lintje toe om de das aanpaspaar te maken.
+  options:
+    - Do not include ribbon TODO
+    - Include ribbon TODO
   title: Aanpaslintje
 armholeDepthFactor:
   description: 'Controleert de diepte van het armsgat. Hoe hoger deze waarde, hoe dieper het armsgat.'
@@ -30,6 +33,10 @@ backScyeDart:
   title: Neep armsgat achter
 backVent:
   description: 'Wil je een split in de middenrug, of helemaal geen? '
+  options:
+    - No back vent TODO
+    - Single back vent TODO
+    - Double back vent TODO
   title: Rugsplit
 backVentLength:
   description: 'Controleert de lengte van het rugsplit. Hoe lager het cijfer, hoe korter het split.'
@@ -39,6 +46,9 @@ backlineBend:
   title: Vorm armsgat achter
 barrelcuffNarrowButton:
   description: Of je al dan niet een knoop wil om de manchetten smaller te maken. Deze optie is enkel relevant bij klassieke manchetten (zonder manchetknopen).
+  options:
+    - No narrow button TODO
+    - Include narrow button TODO
   title: Extra knoop manchet
 bicepsEase:
   description: 'De hoeveelheid overwijdte aan je bovenarm. Let op dat we proberen dit te respecteren, maar dat de mouw in het armsgat laten passen voorrang krijgt op de hoeveelheid overwijdte. '
@@ -48,15 +58,26 @@ bowLength:
   title: Lengte strik
 bowStyle:
   description: De stijl van de strik.
+  options:
+    butterfly: Butterfly TODO
+    diamond: Diamond TODO
+    square: Square TODO
+    widesquare: Wide Square TODO
   title: Stijl strik
 bulge:
   description: Maak de hoek groter voor meer ruimte in het kruisstuk.
   title: Kruisstuk
 buttonPlacketStyle:
   description: De stijl van het knopenpat.
+  options:
+    '1': Classic style TODO
+    '2': French style (seamless) TODO
   title: Stijl knopenpat
 buttonPlacketType:
   description: Het type knopenpat.
+  options:
+    '1': Cut-on TODO
+    '2': Separate TODO
   title: Type knopenpat
 buttonPlacketWidth:
   description: De breedte van het knopenpat.
@@ -69,15 +90,42 @@ buttonholePlacketFoldWidth:
   title: Breedte vouw knoopsgatenpat
 buttonholePlacketStyle:
   description: De stijl van het knoopsgatenpat.
+  options:
+    '1': Classic style TODO
+    '2': French style (seamless) TODO
   title: Stijl knoopsgatenpat
 buttonholePlacketType:
   description: Het type knoopsgatenpat.
+  options:
+    '1': Cut-on TODO
+    '2': Separate TODO
   title: Type knoopsgatenpat
 buttonholePlacketWidth:
   description: De breedte van het knoopsgatenpat.
   title: Breedte knoopsgatenpat
 buttons:
   description: Het aantal knopen op de sluiting vooraan.
+  options:
+    simon:
+      '10': 10 buttons TODO
+      '11': 11 buttons TODO
+      '12': 12 buttons TODO
+      '4': 4 buttons TODO
+      '5': 5 buttons TODO
+      '6': 6 buttons TODO
+      '7': 7 buttons TODO
+      '8': 8 buttons TODO
+      '9': 9 buttons TODO
+    wahid:
+      '10': 10 buttons TODO
+      '11': 11 buttons TODO
+      '12': 12 buttons TODO
+      '4': 4 buttons TODO
+      '5': 5 buttons TODO
+      '6': 6 buttons TODO
+      '7': 7 buttons TODO
+      '8': 8 buttons TODO
+      '9': 9 buttons TODO
   title: Aantal knopen
 centerBackDart:
   description: De hoeveelheid die met een neep uit de bovenkant van de middenrug genomen wordt.
@@ -144,6 +192,9 @@ collarStandWidth:
   title: Breedte staander
 cuffButtonRows:
   description: Of je een enkele of dubbele rij knopen op de manchet wil. Deze optie is enkel relevant voor klassieke manchetten.
+  options:
+    '1': Single cuff button row TODO
+    '2': Double cuff button row TODO
   title: Rijen knopen op manchet
 cuffDrape:
   description: Hoeveel wijder de mouw is dan de manchet op het punt waar ze wordt aangezet.
@@ -156,15 +207,29 @@ cuffLength:
   title: Lengte manchet
 cuffStyle:
   description: De stijl van de manchetten.
+  options:
+    '1': Rounded barrel cuff TODO
+    '2': Angled barrel cuff TODO
+    '3': Straight barrel cuff TODO
+    '4': Rounded French cuff TODO
+    '5': Angled French cuff TODO
+    '6': Straight French cuff TODO
   title: Stijl manchet
 elasticWidth:
   description: De breedte van het elastiek dat je van plan bent te gebruiken.
   title: Breedte elastiek
 endStyle:
   description: Het soort punt dat de das heeft.
+  options:
+    pointed: Pointed end TODO
+    rounded: Rounded end TODO
+    straight: Straight end TODO
   title: Stijl punt
 extraTopButton:
   description: Of je al dan niet een extra knoop bovenaan de sluiting wil.
+  options:
+    - No extra top button TODO
+    - Extra top button TODO
   title: Axtra knoop bovenaan
 frontCutawayAngle:
   description: In welke hoek wil je dat de voorpanden openen vanaf de onderste knoop.
@@ -203,6 +268,9 @@ frontScyeDart:
   title: Neep armsgat voor
 frontStyle:
   description: Of je een afgeronde of klassieke halslijn wil.
+  options:
+    '1': Classic TODO
+    '2': Rounded TODO
   title: Stijl halslijn
 headEase:
   description: De hoeveelheid overwijdte om de pet op je hoofd te laten passen.
@@ -217,6 +285,14 @@ hemStyle:
   description:
     _default: Of je een afgeronde of klassieke zoom wil.
     simon: De vorm van de zoom van het hemd.
+  options:
+    simon:
+      '1': Straight hem TODO
+      '2': Baseball hem TODO
+      '3': Slashed hem TODO
+    wahid:
+      '1': Classic TODO
+      '2': Rounded TODO
   title: Vorm zoom
 hipFlare:
   description: Hoeveel wijder het hemd wordt onder de taille.
@@ -259,15 +335,24 @@ necklineDrop:
   title: Hoogte halslijn
 panels:
   description: Het aantal panelen. Meer panelen passen beter bij een ronder figuur.
+  options:
+    '11': 11 panels TODO
+    '13': 13 panels TODO
   title: Aantal panelen
 pouch:
   description: Wil je een zak op je hoodie?
+  options:
+    - Do not include pouch TODO
+    - Include pouch TODO
   title: Voorzak
 princessSeamSmoothFactor:
   description: 'Controleert hoe fel de prinsessennaad weer naar binnen buigt voorbij het volste punt van de borst. Een hogere factor maakt deze lijn gladder, met als resultaat een pinder aansluitende jas die makkelijker te naaien is. Een lagere factor maakt de curve scherper, met als resultaat een naad die moeilijker te naaien is en een jas die meer aansluit.'
   title: Curve prinsessennaad
 ribbing:
   description: 'Wil je een boord aan de mouwen en zoom, of ga je een klassieke zoom gebruiken?'
+  options:
+    - Classic hem (No ribbing) TODO
+    - Ribbing hem TODO
   title: Boord
 ribbingHeight:
   description: De hoogte van de boord aan de zoom en mouwen.
@@ -325,6 +410,9 @@ sleevecapHeightFactor:
   title: Hoogte mouwkop factor
 splitYoke:
   description: Of je een tweedelige of gewone schouderpas wil.
+  options:
+    - Regular yoke TODO
+    - Split yoke TODO
   title: Tweedelige schouderpas
 stretch:
   description: 'Hoeveel kleiner de omtrek is dan je lichaamsmaten. In andere woorden, hoe strak alles zit.'

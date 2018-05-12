@@ -58,7 +58,7 @@ i18n:
       docs: 9
       i18n: 6
       measurements: 26
-      options: 237
+      options: 302
       patterns: 37
       showcase: 51
     es:
@@ -112,7 +112,7 @@ i18n:
     docs: 9
     i18n: 6
     measurements: 26
-    options: 237
+    options: 302
     patterns: 37
     showcase: 51
   template: xx

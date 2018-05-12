@@ -107,6 +107,7 @@ export default {
         key = key.split('.')
         if(key.length === 2) val = this.lang[key[0]][key[1]]
         if(key.length === 3) val = this.lang[key[0]][key[1]][key[2]]
+        if(key.length === 4) val = this.lang[key[0]][key[1]][key[2]][key[3]]
       } else val = this.lang[key]
       return val.replace('TODO', '').replace('DONE', '').trim()
     },
@@ -131,6 +132,19 @@ export default {
             for(let j in data[i].description) {
               items.push({key: i+'.description.'+j, val: data[i].description[j], missing: self.isMissing(data[i].description[j])})
               if(self.isMissing(data[i].description[j])) misscount++
+            }
+          }
+          if(typeof data[i].options !== 'undefined') {
+            for(let o in data[i].options) {
+              if(typeof data[i].options[o] === 'string') {
+                items.push({key: i+'.options.'+o, val: data[i].options[o], missing: self.isMissing(data[i].options[o])})
+                if(self.isMissing(data[i].options[o])) misscount++
+              } else {
+                for(let oo in data[i].options[o]) {
+                  items.push({key: i+'.options.'+o+'.'+oo, val: data[i].options[o][oo], missing: self.isMissing(data[i].options[o][oo])})
+                  if(self.isMissing(data[i].options[o][oo])) misscount++
+                }
+              }
             }
           }
         }

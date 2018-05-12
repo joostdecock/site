@@ -4,7 +4,7 @@
     <h2>{{ $t('txt-slogan') }} </h2>
     <fs-icon-tshirt :size="(200)" />
     <pre>
-    {{ $i18n.messages.en._options }}
+    {{ $i18n.messages.en._options.adjustmentRibbon }}
     {{ $store.state.user.loggedIn }}
     {{$fs.yaml }}
     </pre>

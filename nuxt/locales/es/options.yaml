@@ -3,6 +3,9 @@ acrossBackFactor:
   title: Across back factor TODO
 adjustmentRibbon:
   description: Add a ribbon to make the tie adjustable. TODO
+  options:
+    - Do not include ribbon TODO TODO TODO
+    - Include ribbon TODO TODO TODO
   title: Adjustment Ribbon TODO
 armholeDepthFactor:
   description: Controls the depth of the armhole. Higher values make a deeper armhole. TODO
@@ -30,6 +33,10 @@ backScyeDart:
   title: Back scye dart TODO
 backVent:
   description: 'Do you want a central back vent, or none at all? TODO'
+  options:
+    - No back vent TODO TODO TODO
+    - Single back vent TODO TODO TODO
+    - Double back vent TODO TODO TODO
   title: Back vent TODO
 backVentLength:
   description: Controls the length of the back vent. Lower numbers result in a shorter vent. TODO
@@ -39,6 +46,9 @@ backlineBend:
   title: Back armhole shape TODO
 barrelcuffNarrowButton:
   description: Whether to include a button to tie the cuffs more narrow. This option is only relevant for barrel cuffs. TODO
+  options:
+    - No narrow button TODO TODO TODO
+    - Include narrow button TODO TODO TODO
   title: Cuff narrow button TODO
 bicepsEase:
   description: 'The amount of ease at your upper arm. Note that while we try to respect this, fitting the sleeve to the armhole takes precedence over respecting the exact amount of ease. TODO'
@@ -48,15 +58,26 @@ bowLength:
   title: Bow length TODO
 bowStyle:
   description: The style of the bow. TODO
+  options:
+    butterfly: Butterfly TODO TODO TODO
+    diamond: Diamond TODO TODO TODO
+    square: Square TODO TODO TODO
+    widesquare: Wide Square TODO TODO TODO
   title: Bow style TODO
 bulge:
   description: Increase angle to create more room in the front pouch. TODO
   title: Bulge TODO
 buttonPlacketStyle:
   description: Style of the button placket. TODO
+  options:
+    '1': Classic style TODO TODO TODO
+    '2': French style (seamless) TODO TODO TODO
   title: Button placket style TODO
 buttonPlacketType:
   description: Type of the button placket. TODO
+  options:
+    '1': Cut-on TODO TODO TODO
+    '2': Separate TODO TODO TODO
   title: Button placket type TODO
 buttonPlacketWidth:
   description: Width of the button placket. TODO
@@ -69,15 +90,42 @@ buttonholePlacketFoldWidth:
   title: Buttonhole placket fold width TODO
 buttonholePlacketStyle:
   description: Style of the buttonhole placket. TODO
+  options:
+    '1': Classic style TODO TODO TODO
+    '2': French style (seamless) TODO TODO TODO
   title: Buttonhole placket style TODO
 buttonholePlacketType:
   description: Type of the buttonhole placket. TODO
+  options:
+    '1': Cut-on TODO TODO TODO
+    '2': Separate TODO TODO TODO
   title: Buttonhole placket type TODO
 buttonholePlacketWidth:
   description: Width of the butonhole placket. TODO
   title: Buttonhole placket width TODO
 buttons:
   description: The number of buttons on the front closure. TODO
+  options:
+    simon:
+      '10': 10 buttons TODO TODO
+      '11': 11 buttons TODO TODO
+      '12': 12 buttons TODO TODO
+      '4': 4 buttons TODO TODO
+      '5': 5 buttons TODO TODO
+      '6': 6 buttons TODO TODO
+      '7': 7 buttons TODO TODO
+      '8': 8 buttons TODO TODO
+      '9': 9 buttons TODO TODO
+    wahid:
+      '10': 10 buttons TODO TODO
+      '11': 11 buttons TODO TODO
+      '12': 12 buttons TODO TODO
+      '4': 4 buttons TODO TODO
+      '5': 5 buttons TODO TODO
+      '6': 6 buttons TODO TODO
+      '7': 7 buttons TODO TODO
+      '8': 8 buttons TODO TODO
+      '9': 9 buttons TODO TODO
   title: Number of buttons TODO
 centerBackDart:
   description: The amount to take out in a dart at the top of the center back. TODO
@@ -144,6 +192,9 @@ collarStandWidth:
   title: Collar stand width TODO
 cuffButtonRows:
   description: Whether to draft a single or double row of cuff buttons. This option is only relevant for barrel cuffs. TODO
+  options:
+    '1': Single cuff button row TODO TODO TODO
+    '2': Double cuff button row TODO TODO TODO
   title: Cuff button rows TODO
 cuffDrape:
   description: The amount by which the sleeve is wider than the cuff where the are joined. TODO
@@ -156,15 +207,29 @@ cuffLength:
   title: Cuff length TODO
 cuffStyle:
   description: The style of the cuffs. TODO
+  options:
+    '1': Rounded barrel cuff TODO TODO TODO
+    '2': Angled barrel cuff TODO TODO TODO
+    '3': Straight barrel cuff TODO TODO TODO
+    '4': Rounded French cuff TODO TODO TODO
+    '5': Angled French cuff TODO TODO TODO
+    '6': Straight French cuff TODO TODO TODO
   title: Cuff style TODO
 elasticWidth:
   description: Width of the elastic band you intend to use. TODO
   title: Elastic width TODO
 endStyle:
   description: The style of the end of the tie. TODO
+  options:
+    pointed: Pointed end TODO TODO TODO
+    rounded: Rounded end TODO TODO TODO
+    straight: Straight end TODO TODO TODO
   title: End style TODO
 extraTopButton:
   description: Whether or not to include an extra top button on the front closure. TODO
+  options:
+    - No extra top button TODO TODO TODO
+    - Extra top button TODO TODO TODO
   title: Extra top button TODO
 frontCutawayAngle:
   description: How much do you want the front to open up below the lower button. TODO
@@ -203,6 +268,9 @@ frontScyeDart:
   title: Front scye dart TODO
 frontStyle:
   description: Whether you want a rounded or classic necline. TODO
+  options:
+    '1': Classic TODO TODO TODO
+    '2': Rounded TODO TODO TODO
   title: Neckline style TODO
 headEase:
   description: The amount of ease to fit the cap on your head. TODO
@@ -217,6 +285,14 @@ hemStyle:
   description:
     _default: Whether you want a rounded or classic hem. TODO
     simon: The style of the shirt hem. TODO
+  options:
+    simon:
+      '1': Straight hem TODO TODO TODO
+      '2': Baseball hem TODO TODO TODO
+      '3': Slashed hem TODO TODO TODO
+    wahid:
+      '1': Classic TODO TODO TODO
+      '2': Rounded TODO TODO TODO
   title: Hem style TODO
 hipFlare:
   description: The amount to widen the shirt below the waist. TODO
@@ -259,15 +335,24 @@ necklineDrop:
   title: Neckline drop TODO
 panels:
   description: The number of panels to draft. More panels are better to fit a curvier model. TODO
+  options:
+    '11': 11 panels TODO TODO TODO
+    '13': 13 panels TODO TODO TODO
   title: Number of panels TODO
 pouch:
   description: Would you like a pouch/pocket on your hoodie? TODO
+  options:
+    - Do not include pouch TODO TODO TODO
+    - Include pouch TODO TODO TODO
   title: Front pouch TODO
 princessSeamSmoothFactor:
   description: 'Controls how sharply the princess seam will correct once it''s passed the fullness of your breasts. A high factor will smooth the curve, resulting in a less fitted coat that''s easier to sew. A low factor will sharpen the curve, resulting in a harder to sew seam, and a more fitted coat. TODO'
   title: Princess seam smooth factor TODO
 ribbing:
   description: 'Do you want to include ribbing at the arms and hem, or will you apply a classic hem? TODO'
+  options:
+    - Classic hem (No ribbing) TODO TODO TODO
+    - Ribbing hem TODO TODO TODO
   title: Ribbing TODO
 ribbingHeight:
   description: The height of the ribbing band at the hem and wrists. TODO
@@ -325,6 +410,9 @@ sleevecapHeightFactor:
   title: Sleevecap height factor TODO
 splitYoke:
   description: Whether to draft a split or regular yoke. TODO
+  options:
+    - Regular yoke TODO TODO TODO
+    - Split yoke TODO TODO TODO
   title: Split yoke TODO
 stretch:
   description: The amount of negative ease. TODO
