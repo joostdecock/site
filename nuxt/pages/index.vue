@@ -2,10 +2,11 @@
   <section>
     <h1>{{ $t('freesewing') }} </h1>
     <h2>{{ $t('txt-slogan') }} </h2>
-    <fs-icon-tshirt :size="(500)" />
+    <fs-icon-tshirt :size="(200)" />
     <pre>
+    {{ $fs.conf.apis }}
     {{ $store.state.user.loggedIn }}
-    {{ $fs.yaml }}
+    {{$fs.yaml }}
     </pre>
   </section>
 </template>
@@ -13,7 +14,9 @@
 <script>
 import FsIconTshirt      from '~/components/stateless/FsIconTshirt'
 export default {
-  components: {FsIconTshirt}
+  components: {FsIconTshirt},
+  mounted: function() {
+  }
 }
 </script>
 
