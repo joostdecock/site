@@ -1,10 +1,8 @@
 <template>
   <section>
     <fs-breadcrumbs>{{ $t('i18n') }}</fs-breadcrumbs>
+    <h1 class="text-xs-center mb-5">{{ $t('i18n') }}</h1>
     <div class="fs-content fs-pad elevation-1">
-    <h1>{{ $t('i18n') }}</h1>
-    <p>Below is the current status of our translaton efforts.</p>
-    <p>For more info, read the documentation: <nuxt-link :to="$fs.path('/docs/i18n')">Documentation for translators</nuxt-link>.</p>
     <table class="table fs-info-table">
       <thead>
         <tr class="fs-titlerow">

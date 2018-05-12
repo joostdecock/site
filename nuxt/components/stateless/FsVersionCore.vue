@@ -26,7 +26,7 @@ export default {
         this.color = 'error'
         this.textcolor = 'white'
         return '<1.3'
-      } else if (version === this.$fs.conf.version.core) {
+      } else if (version === this.$fs.conf.versions.core) {
         this.color = 'success'
         this.textcolor = 'white'
         return version

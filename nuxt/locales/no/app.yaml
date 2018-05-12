@@ -1,5 +1,6 @@
 aboutFreesewing: About Freesewing TODO
 add: Add TODO
+advanced: Advanced TODO
 all: All TODO
 alreadyHaveAnAccount: Already have an account? TODO
 avatar: Avatar TODO
@@ -25,16 +26,19 @@ connectingToSomeApi: 'Connecting to {api} API TODO'
 contactUs: Contact us TODO
 content: Content TODO
 contents: Contents TODO
+coreLink: Core link TODO
 countAvailable: '{count} available TODO'
 countTranslated: '{count} translated TODO'
 createIssueOnGithub: Create issue on GitHub TODO
 createModel: Create model TODO
 createMyAccount: Create my account TODO
+created: Created TODO
 currentPassword: Current password TODO
 data: Data TODO
 date: Date TODO
 daysAgo: '{days} days ago TODO'
 delete: Delete TODO
+deleteThisDraft: Delete this draft TODO
 description: Description TODO
 difficulty: Difficulty TODO
 docs: Documentation TODO
@@ -42,6 +46,7 @@ documentation: Documentation TODO
 documentationForDevelopers: Documentation for developers TODO
 documentationForTranslators: Documentation for translators TODO
 documentationOverview: Documentation overview TODO
+download: Download TODO
 draft: Draft TODO
 draftOptions: Draft options TODO
 draftPattern: 'Draft {pattern} TODO'
@@ -60,12 +65,15 @@ enterYourNewPassword: Enter your new password TODO
 error-unknown: An unknown error occured TODO
 error-username_taken: Username taken TODO
 filterByPattern: Filter by pattern TODO
+fit: Fit TODO
 forContributors: For contributors TODO
 forMoreInfoRtfm: 'For more info, read the documentation: TODO'
 forUsername: 'For {username} TODO'
 forUsers: For users TODO
+fork: Fork TODO
 format: Format TODO
 freesewing: Freesewing TODO
+fullSizePdf: Full size PDF TODO
 fundamentals: Fundamentals TODO
 github: GitHub TODO
 githubUpdated: GitHub username updated TODO
@@ -75,15 +83,19 @@ home: Home TODO
 howToTakeMeasurements: How to take measurements TODO
 i18n: Internationalization (i18n) TODO
 image: Image TODO
+imperial: Imperial TODO
 imperialUnits: Imperial units (inch) TODO
 inch: inch TODO
+info: Info TODO
 instagram: Instagram TODO
 instagramUpdated: Instagram account set TODO
 joinTheTranslationTeam: 'Even if you have never contributed to an open source project, translation is a smooth on-ramp towards contributor fame. TODO'
 justAMoment: Just a moment TODO
 key: Key TODO
 languageLanguageFiles: '{language} language files TODO'
+layout: Layout TODO
 learnToDesignPatterns: Learn to design patterns TODO
+letterPdf: Letter PDF TODO
 loadingModelData: Loading model data TODO
 loadingResult: Loading result TODO
 locale: Language TODO
@@ -96,6 +108,7 @@ measurementUpdated: Measurement updated TODO
 measurements: Measurements TODO
 measurementsRequiredForPattern: 'Measurements required for {pattern} TODO'
 messages: Messages TODO
+metric: Metric TODO
 metricUnits: Metric units (cm) TODO
 model: Model TODO
 modelIsModel: 'Model is {model} TODO'
@@ -110,6 +123,7 @@ newModel: New model TODO
 newPassword: New password TODO
 newPatternDraft: 'New {pattern} draft TODO'
 newTaskForUser: 'New task for {user} TODO'
+'no': No TODO
 noChanges: No changes TODO
 noDraftsFound: No drafts found TODO
 noFilter: No filter TODO
@@ -139,12 +153,16 @@ processingDraftOptions: Processing draft options TODO
 profile: Profile TODO
 quickPick: Quick pick TODO
 reSendActivationEmail: Re-send activation email TODO
+redraft: Redraft TODO
+reference: Reference TODO
 removeAllMyData: Remove all my data TODO
+replay: Replay TODO
 requiredMeasurements: Required measurements TODO
 retrievingDraftFromCore: Retrieving draft from core TODO
 rowsFromToOfTotal: 'Rows {from} to {to} of {total} TODO'
 rowsPerPage: Rows per page TODO
 save: Save TODO
+scope: Scope TODO
 seamAllowance: Seam allowance TODO
 search: Search TODO
 seeBelow: See below TODO
@@ -181,6 +199,9 @@ step3: Step 3 TODO
 step4: Step 4 TODO
 stopUpload: Stop upload TODO
 storingDraftData: Storing draft data TODO
+style: Style TODO
+svgSourceCode: SVG Source code TODO
+tabloidPdf: Tabloid PDF TODO
 taskCompleted: Task completed TODO
 theme: Theme TODO
 themeUpdated: Layout preference set TODO
@@ -240,6 +261,7 @@ unitsUpdated: Units set TODO
 update: Update TODO
 updates: Updates TODO
 useDecimalsOrFractions: Use decimals (1.25) or fractions (1 1/4) TODO
+user: User TODO
 username: Username TODO
 usernameUpdated: Username updated TODO
 version: Version TODO
@@ -251,6 +273,7 @@ withBreasts: With breasts TODO
 withOrWithoutBreasts: With or without breasts? TODO
 withoutBreasts: Without breasts TODO
 wouldYouLikeToLogOut: Would you like to log out? TODO
+'yes': Yes TODO
 yesIDo: 'Yes, I do TODO'
 yesterday: Yesterday TODO
 youAreCurrentlyLoggedIn: You are currently logged in. TODO

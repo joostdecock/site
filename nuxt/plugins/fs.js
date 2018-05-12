@@ -51,6 +51,16 @@ export default ({ app, store, router }, inject) => {
       }
   }
 
+  const patternHandleMethod = (name) => {
+    if(typeof Conf.mapping.patternToHandle[name] === 'string') {
+      return Conf.mapping.patternToHandle[name]
+    } else if (typeof Conf.mapping.handleToPattern[name.toLowerCase()] === 'string') {
+      return name.toLowerCase()
+    } else {
+      return false
+    }
+  }
+
   inject('fs', new Vue({
     data: () => ({
       md: new MarkdownIt(),
@@ -279,6 +289,21 @@ export default ({ app, store, router }, inject) => {
 
       // Sync methods
 
+
+      // Translation pattern option title
+      pot(option, pattern, locale) {
+        return app.i18n.messages[locale]._options[option].title
+      },
+
+      // Translation pattern option description
+      pod(option, pattern, locale) {
+        let p = patternHandleMethod(pattern)
+        let m = app.i18n.messages[locale]._options[option]
+        if(typeof m.description === 'string') { return m.description }
+        else if (typeof m.description[p] === 'string') { return m.description[p] }
+        else { return m.description._default }
+      },
+
       percent(val, target) {
         return Math.round(val/(target/100))
       },
@@ -333,13 +358,7 @@ export default ({ app, store, router }, inject) => {
       },
 
       patternHandle(name) {
-        if(typeof Conf.mapping.patternToHandle[name] === 'string') {
-          return Conf.mapping.patternToHandle[name]
-        } else if (typeof Conf.mapping.handleToPattern[name.toLowerCase()] === 'string') {
-          return name.toLowerCase()
-        } else {
-          return false
-        }
+        return patternHandleMethod(name)
       },
 
       path(path) {

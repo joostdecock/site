@@ -9,7 +9,7 @@
       </thead>
       <tbody :key="'tbody-'+gkey">
       <tr v-for="option in group" :key="option">
-        <th class="fs-wp50">{{ $t(option) }}</th>
+        <th class="fs-wp50">{{ $fs.pot(option, draft.pattern, $i18n.locale) }}</th>
         <td v-html="$fs.formatPatternOption( options[option], option, $fs.patternHandle(draft.pattern), $store.state.user.account.units)">
         </td>
       </tr>

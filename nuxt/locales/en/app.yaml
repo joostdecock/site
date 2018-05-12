@@ -1,5 +1,6 @@
 aboutFreesewing: About Freesewing
 add: Add
+advanced: Advanced
 all: All
 alreadyHaveAnAccount: Already have an account?
 avatar: Avatar
@@ -25,16 +26,19 @@ connectingToSomeApi: 'Connecting to {api} API'
 contactUs: Contact us
 content: Content
 contents: Contents
+coreLink: Core link
 countAvailable: '{count} available'
 countTranslated: '{count} translated'
 createIssueOnGithub: Create issue on GitHub
 createModel: Create model
 createMyAccount: Create my account
+created: Created
 currentPassword: Current password
 data: Data
 date: Date
 daysAgo: '{days} days ago'
 delete: Delete
+deleteThisDraft: Delete this draft
 description: Description
 difficulty: Difficulty
 docs: Documentation
@@ -42,6 +46,7 @@ documentation: Documentation
 documentationForDevelopers: Documentation for developers
 documentationForTranslators: Documentation for translators
 documentationOverview: Documentation overview
+download: Download
 draft: Draft
 draftOptions: Draft options
 draftPattern: 'Draft {pattern}'
@@ -60,12 +65,15 @@ enterYourNewPassword: Enter your new password
 error-unknown: An unknown error occured
 error-username_taken: Username taken
 filterByPattern: Filter by pattern
+fit: Fit
 forContributors: For contributors
 forMoreInfoRtfm: 'For more info, read the documentation:'
 forUsername: 'For {username}'
 forUsers: For users
+fork: Fork
 format: Format
 freesewing: Freesewing
+fullSizePdf: Full size PDF
 fundamentals: Fundamentals
 github: GitHub
 githubUpdated: GitHub username updated
@@ -75,15 +83,19 @@ home: Home
 howToTakeMeasurements: How to take measurements
 i18n: Internationalization (i18n)
 image: Image
+imperial: Imperial
 imperialUnits: Imperial units (inch)
 inch: inch
+info: Info
 instagram: Instagram
 instagramUpdated: Instagram account set
 joinTheTranslationTeam: Join the translation team
 justAMoment: Just a moment
 key: Key
 languageLanguageFiles: '{language} language files'
+layout: Layout
 learnToDesignPatterns: Learn to design patterns
+letterPdf: Letter PDF
 loadingModelData: Loading model data
 loadingResult: Loading result
 locale: Language
@@ -96,6 +108,7 @@ measurementUpdated: Measurement updated
 measurements: Measurements
 measurementsRequiredForPattern: 'Measurements required for {pattern}'
 messages: Messages
+metric: Metric
 metricUnits: Metric units (cm)
 model: Model
 modelIsModel: 'Model is {model}'
@@ -110,6 +123,7 @@ newModel: New model
 newPassword: New password
 newPatternDraft: 'New {pattern} draft'
 newTaskForUser: 'New task for {user}'
+'no': 'No'
 noChanges: No changes
 noDraftsFound: No drafts found
 noFilter: No filter
@@ -139,12 +153,16 @@ processingDraftOptions: Processing draft options
 profile: Profile
 quickPick: Quick pick
 reSendActivationEmail: Re-send activation email
+redraft: Redraft
+reference: Reference
 removeAllMyData: Remove all my data
+replay: Replay
 requiredMeasurements: Required measurements
 retrievingDraftFromCore: Retrieving draft from core
 rowsFromToOfTotal: 'Rows {from} to {to} of {total}'
 rowsPerPage: Rows per page
 save: Save
+scope: Scope
 seamAllowance: Seam allowance
 search: Search
 seeBelow: See below
@@ -181,6 +199,9 @@ step3: Step 3
 step4: Step 4
 stopUpload: Stop upload
 storingDraftData: Storing draft data
+style: Style
+svgSourceCode: SVG Source code
+tabloidPdf: Tabloid PDF
 taskCompleted: Task completed
 theme: Theme
 themeUpdated: Layout preference set
@@ -240,6 +261,7 @@ unitsUpdated: Units set
 update: Update
 updates: Updates
 useDecimalsOrFractions: Use decimals (1.25) or fractions (1 1/4)
+user: User
 username: Username
 usernameUpdated: Username updated
 version: Version
@@ -251,6 +273,7 @@ withBreasts: With breasts
 withOrWithoutBreasts: With or without breasts?
 withoutBreasts: Without breasts
 wouldYouLikeToLogOut: Would you like to log out?
+'yes': 'Yes'
 yesIDo: 'Yes, I do'
 yesterday: Yesterday
 youAreCurrentlyLoggedIn: You are currently logged in.

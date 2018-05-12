@@ -53,11 +53,11 @@ i18n:
       patterns: 36
       showcase: 0
     en:
-      app: 257
+      app: 280
       blog: 28
       docs: 9
       i18n: 6
-      measurements: 25
+      measurements: 26
       options: 237
       patterns: 37
       showcase: 51
@@ -80,11 +80,11 @@ i18n:
       patterns: 4
       showcase: 0
     nl:
-      app: 257
+      app: 280
       blog: 2
       docs: 2
       i18n: 6
-      measurements: 25
+      measurements: 26
       options: 237
       patterns: 37
       showcase: 1
@@ -107,11 +107,11 @@ i18n:
       patterns: 0
       showcase: 0
   target:
-    app: 257
+    app: 280
     blog: 28
     docs: 9
     i18n: 6
-    measurements: 25
+    measurements: 26
     options: 237
     patterns: 37
     showcase: 51

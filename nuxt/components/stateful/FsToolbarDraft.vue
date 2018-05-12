@@ -23,12 +23,12 @@
       <v-divider></v-divider>
       <v-list-tile v-for="f in iso" :href="$fs.draftDownloadLink(draft.handle, f.format)" :key="f.format">
         <v-list-tile-action><v-icon color="primary">insert_drive_file</v-icon></v-list-tile-action>
-        <v-list-tile-content>{{ $t(f.title) }}</v-list-tile-content>
+        <v-list-tile-content>{{ f.title }}</v-list-tile-content>
       </v-list-tile>
       <v-divider></v-divider>
       <v-list-tile v-for="f in us" :href="$fs.draftDownloadLink(draft.handle, f.format)" :key="f.format">
         <v-list-tile-action><v-icon>insert_drive_file</v-icon></v-list-tile-action>
-        <v-list-tile-content>{{ $t(f.title) }}</v-list-tile-content>
+        <v-list-tile-content>{{ f.title }}</v-list-tile-content>
       </v-list-tile>
     </v-list>
     </v-menu>

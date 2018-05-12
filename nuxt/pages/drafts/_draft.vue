@@ -25,10 +25,10 @@
             <img :src="$fs.draftComparedLink(draft.handle, draft.userHandle, draft.cache)" />
           </a>
         </v-tab-item>
-        <v-tab-item id="notes" v-html="$fs.md.render(draft.notes)" class="fs-pad">
+        <v-tab-item id="notes" v-html="'<div class=\'fs-m800 fs-pad\'>'+$fs.md.render(draft.notes)+'</div>'" class="fs-pad">
         </v-tab-item>
       </v-tabs>
-      <v-tabs v-model="active2" color="primary" dark centered>
+      <v-tabs v-model="active2" color="transparent" centered>
         <v-tab href="#info">{{ $t('info') }}</v-tab>
         <v-tab href="#model">{{ $t('model') }}</v-tab>
         <v-tab href='#draft-options'>{{ $t('draftOptions') }}</v-tab>
@@ -108,7 +108,6 @@ export default {
   asyncData: function ({ app, route }) {
     return app.$fs.loadDraft(route.params.draft)
     .then((data) => {
-      console.log(data)
       return data
     })
     .catch((error) => {
