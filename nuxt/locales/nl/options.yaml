@@ -203,7 +203,7 @@ cuffEase:
   description: De hoeveelheid overwijdte aan je pols.
   title: Overwijdte manchet
 cuffLength:
-  description: De lenget van de manchetten.
+  description: De lengte van de manchetten.
   title: Lengte manchet
 cuffStyle:
   description: De stijl van de manchetten.
@@ -298,7 +298,7 @@ hipFlare:
   description: Hoeveel wijder het hemd wordt onder de taille.
   title: Wijdte heup
 hipRise:
-  description: Hoe hoog de zijpanellen vallen op je heupen.
+  description: Hoe hoog de zijpanelen vallen op je heupen.
   title: Hoogte heup
 hipsEase:
   description: De hoeveelheid overwijdte aan je heupen.
@@ -358,7 +358,7 @@ ribbingHeight:
   description: De hoogte van de boord aan de zoom en mouwen.
   title: Hoogte boord
 ribbingStretchFactor:
-  description: Bepaald hoever de boord uitgerokken wordt.
+  description: Bepaalt hoever de boord uitgerokken wordt.
   title: Stretchfactor boord
 ribbingWidth:
   description: De breedte van de boord die je wil gebruiken.
@@ -391,7 +391,7 @@ sideFrontPlacement:
   description: Locatie van de naad tussen voor- en zijpand in verhouding met je borstomtrek. Een hoger cijfer zorgt voor een breder zijpand.
   title: Plaatsing naden zijpand
 sleeveBend:
-  description: Hoeveel wil je dat de mouw buigt aan de elleboog.
+  description: Hoeveel je wil dat de mouw buigt aan de elleboog.
   title: Kromming mouw
 sleeveLengthBonus:
   description: De hoeveelheid waarmee de mouw verlengd wordt. Een negatieve waarde zal ze korter maken.
