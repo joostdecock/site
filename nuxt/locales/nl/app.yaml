@@ -1,6 +1,5 @@
 aboutFreesewing: Over Freesewing
 add: Toevoegen
-advanced: Geavanceerd
 all: Alles
 alreadyHaveAnAccount: Ben je reeds ingeschreven?
 avatar: Profielfoto
@@ -26,6 +25,7 @@ connectingToSomeApi: 'Verbinding maken met de {api} API'
 contactUs: Neem contact op
 content: Inhoud
 contents: Inhoud
+coordinator: Coördinator
 coreLink: Core link DONE
 countAvailable: '{count} beschikbaar'
 countTranslated: '{count} vertaald'
@@ -40,6 +40,7 @@ daysAgo: '{days} dagen geleden'
 delete: Verwijderen
 deleteThisDraft: Verwijder deze patroontekening
 description: Omschrijving
+details: Details DONE
 difficulty: Moeilijkheidsgraad
 docs: Documentatie
 documentation: Documentatie
@@ -65,7 +66,6 @@ enterYourNewPassword: Voer je nieuw wachtwoord in
 error-unknown: Onverwachte fout
 error-username_taken: Gebruikersnaam niet beschikbaar
 filterByPattern: Filter op patroon
-fit: Pasvorm
 forContributors: Voor vrijwillige medewerkers
 forMoreInfoRtfm: 'Raadpleeg de documentatie voor meer informatie:'
 forUsername: 'Voor {username}'
@@ -92,6 +92,7 @@ instagramUpdated: Instagram gebruikersnaam bijgewerkt
 joinTheTranslationTeam: Kom bij het vertaalteam
 justAMoment: Een ogenblikje
 key: Sleutel
+language: Taal
 languageLanguageFiles: 'Taal bestanden {language}'
 layout: Layout DONE
 learnToDesignPatterns: Leer patronen ontwerpen
@@ -199,7 +200,6 @@ step3: Stap 3
 step4: Stap 4
 stopUpload: Upload stoppen
 storingDraftData: Gegevens patroontekening opslaan
-style: Stijl
 svgSourceCode: SVG Broncode
 tabloidPdf: Tabloid PDF DONE
 taskCompleted: Taak is afgerond

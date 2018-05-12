@@ -1,6 +1,5 @@
 aboutFreesewing: About Freesewing
 add: Add
-advanced: Advanced
 all: All
 alreadyHaveAnAccount: Already have an account?
 avatar: Avatar
@@ -26,6 +25,7 @@ connectingToSomeApi: 'Connecting to {api} API'
 contactUs: Contact us
 content: Content
 contents: Contents
+coordinator: Coordinator
 coreLink: Core link
 countAvailable: '{count} available'
 countTranslated: '{count} translated'
@@ -40,6 +40,7 @@ daysAgo: '{days} days ago'
 delete: Delete
 deleteThisDraft: Delete this draft
 description: Description
+details: Details
 difficulty: Difficulty
 docs: Documentation
 documentation: Documentation
@@ -65,7 +66,6 @@ enterYourNewPassword: Enter your new password
 error-unknown: An unknown error occured
 error-username_taken: Username taken
 filterByPattern: Filter by pattern
-fit: Fit
 forContributors: For contributors
 forMoreInfoRtfm: 'For more info, read the documentation:'
 forUsername: 'For {username}'
@@ -92,6 +92,7 @@ instagramUpdated: Instagram account set
 joinTheTranslationTeam: Join the translation team
 justAMoment: Just a moment
 key: Key
+language: Language
 languageLanguageFiles: '{language} language files'
 layout: Layout
 learnToDesignPatterns: Learn to design patterns
@@ -199,7 +200,6 @@ step3: Step 3
 step4: Step 4
 stopUpload: Stop upload
 storingDraftData: Storing draft data
-style: Style
 svgSourceCode: SVG Source code
 tabloidPdf: Tabloid PDF
 taskCompleted: Task completed

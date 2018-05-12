@@ -1,6 +1,5 @@
 aboutFreesewing: About Freesewing TODO
 add: Add TODO
-advanced: Advanced TODO
 all: All TODO
 alreadyHaveAnAccount: Already have an account? TODO
 avatar: Avatar TODO
@@ -26,6 +25,7 @@ connectingToSomeApi: 'Connecting to {api} API TODO'
 contactUs: Contact us TODO
 content: Content TODO
 contents: Contents TODO
+coordinator: Coordinator TODO
 coreLink: Core link TODO
 countAvailable: '{count} available TODO'
 countTranslated: '{count} translated TODO'
@@ -40,6 +40,7 @@ daysAgo: '{days} days ago TODO'
 delete: Delete TODO
 deleteThisDraft: Delete this draft TODO
 description: Description TODO
+details: Details TODO
 difficulty: Difficulty TODO
 docs: Documentation TODO
 documentation: Documentation TODO
@@ -65,7 +66,6 @@ enterYourNewPassword: Enter your new password TODO
 error-unknown: An unknown error occured TODO
 error-username_taken: Username taken TODO
 filterByPattern: Filter by pattern TODO
-fit: Fit TODO
 forContributors: For contributors TODO
 forMoreInfoRtfm: 'For more info, read the documentation: TODO'
 forUsername: 'For {username} TODO'
@@ -92,6 +92,7 @@ instagramUpdated: Instagram account set TODO
 joinTheTranslationTeam: 'Even if you have never contributed to an open source project, translation is a smooth on-ramp towards contributor fame. TODO'
 justAMoment: Just a moment TODO
 key: Key TODO
+language: Language TODO
 languageLanguageFiles: '{language} language files TODO'
 layout: Layout TODO
 learnToDesignPatterns: Learn to design patterns TODO
@@ -199,7 +200,6 @@ step3: Step 3 TODO
 step4: Step 4 TODO
 stopUpload: Stop upload TODO
 storingDraftData: Storing draft data TODO
-style: Style TODO
 svgSourceCode: SVG Source code TODO
 tabloidPdf: Tabloid PDF TODO
 taskCompleted: Task completed TODO

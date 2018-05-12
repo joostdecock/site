@@ -31,6 +31,7 @@ i18n:
     - i18n
     - measurements
     - options
+    - optiongroups
     - patterns
   locales:
     disabled:
@@ -49,6 +50,7 @@ i18n:
       docs: 0
       i18n: 0
       measurements: 0
+      optiongroups: 0
       options: 0
       patterns: 36
       showcase: 0
@@ -58,6 +60,7 @@ i18n:
       docs: 9
       i18n: 6
       measurements: 26
+      optiongroups: 12
       options: 302
       patterns: 37
       showcase: 51
@@ -67,6 +70,7 @@ i18n:
       docs: 0
       i18n: 0
       measurements: 25
+      optiongroups: 0
       options: 0
       patterns: 36
       showcase: 0
@@ -76,6 +80,7 @@ i18n:
       docs: 0
       i18n: 0
       measurements: 25
+      optiongroups: 0
       options: 0
       patterns: 4
       showcase: 0
@@ -85,6 +90,7 @@ i18n:
       docs: 2
       i18n: 6
       measurements: 26
+      optiongroups: 12
       options: 237
       patterns: 37
       showcase: 1
@@ -94,6 +100,7 @@ i18n:
       docs: 0
       i18n: 0
       measurements: 25
+      optiongroups: 0
       options: 0
       patterns: 0
       showcase: 0
@@ -103,6 +110,7 @@ i18n:
       docs: 0
       i18n: 0
       measurements: 0
+      optiongroups: 0
       options: 0
       patterns: 0
       showcase: 0
@@ -112,6 +120,7 @@ i18n:
     docs: 9
     i18n: 6
     measurements: 26
+    optiongroups: 12
     options: 302
     patterns: 37
     showcase: 51

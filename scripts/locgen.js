@@ -114,7 +114,8 @@ function writeJsonFile(locale, translation) {
   let json = {
     ...translation.app,
     ...translation.i18n,
-    ...translation.measurements
+    ...translation.measurements,
+    ...translation.optiongroups
   }
   json._patterns = translation.patterns
   json._options = translation.options
@@ -154,6 +155,7 @@ function setTarget(stats) {
     i18n: stats.xx.i18n,
     measurements: stats.xx.measurements,
     options: stats.xx.options,
+    optiongroups: stats.xx.optiongroups,
     patterns: stats.xx.patterns,
     blog: stats.en.blog,
     docs: stats.en.docs,
@@ -224,37 +226,37 @@ new Promise(function(resolve, reject) {
   .catch((error) => { console.log(error); reject()})
 })
 
-//console.log('Locale locgen done, fetching data locales from GitHub')
-//// Fetch locale files from data repository
-//const proms = []
-//const email = {}
-//new Promise(function(resolve, reject) {
-//  for(l in allLocales) {
-//    let locale = allLocales[l]
-//    proms.push(
-//      axios.get('https://raw.githubusercontent.com/freesewing/data/v2/locales/'+locale+'.yaml')
-//        .then((res) => {
-//          email[locale] = yaml.safeLoad(res.data)
-//        })
-//      .catch((error) => {
-//        email[locale] = {}
-//        console.log('Language not avaialble: '+locale)
-//      })
-//    )
-//  }
-//  Promise.all(proms)
-//  .then(() => {
-//    for(l in allLocales) {
-//      let locale = allLocales[l]
-//      if(locale !== 'en') {
-//        for(i in email.en) {
-//          if(typeof email[locale][i] === 'undefined' || email[locale][i] === email.en[i]) {
-//            email[locale][i] = email.en[i]+' TODO'
-//          }
-//        }
-//      }
-//      fs.writeFileSync('./nuxt/static/i18n/'+locale+'.email.json', JSON.stringify(email[locale], null, 0), 'utf8')
-//    }
-//  })
-//})
+console.log('Locale locgen done, fetching data locales from GitHub')
+// Fetch locale files from data repository
+const proms = []
+const email = {}
+new Promise(function(resolve, reject) {
+  for(l in allLocales) {
+    let locale = allLocales[l]
+    proms.push(
+      axios.get('https://raw.githubusercontent.com/freesewing/data/v2/locales/'+locale+'.yaml')
+        .then((res) => {
+          email[locale] = yaml.safeLoad(res.data)
+        })
+      .catch((error) => {
+        email[locale] = {}
+        console.log('Language not available: '+locale)
+      })
+    )
+  }
+  Promise.all(proms)
+  .then(() => {
+    for(l in allLocales) {
+      let locale = allLocales[l]
+      if(locale !== 'en') {
+        for(i in email.en) {
+          if(typeof email[locale][i] === 'undefined' || email[locale][i] === email.en[i]) {
+            email[locale][i] = email.en[i]+' TODO'
+          }
+        }
+      }
+      fs.writeFileSync('./nuxt/static/i18n/'+locale+'.email.json', JSON.stringify(email[locale], null, 0), 'utf8')
+    }
+  })
+})
 

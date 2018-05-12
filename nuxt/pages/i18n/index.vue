@@ -13,10 +13,10 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(s, loc) in stats" :key="'tr-'+loc">
+        <tr v-for="(loc) in sort" :key="'tr-'+loc">
           <td :key="'col1-'+loc" v-html="$t(loc)" class="text-xs-right"></td>
           <td :key="'col2-'+loc">
-            <v-progress-linear height="4" :value="s.avg.score" :key="'bar-'+index+t" :color="s.avg.color"></v-progress-linear>
+            <v-progress-linear height="4" :value="stats[loc].avg.score" :key="'bar-'+loc" :color="stats[loc].avg.color"></v-progress-linear>
           </td>
           <td :key="'col3-'+loc" class="text-xs-center">
             <v-btn v-if="$fs.conf.i18n.coordinators[loc] === '_vacant'" block color="accent"
@@ -51,6 +51,7 @@ export default {
   data() {
       let avg = 0
       const stats = {}
+      const sort = []
       const types = this.$fs.conf.i18n.target
       for(let loc in this.$fs.conf.i18n.stats) {
         if(loc !== this.$fs.conf.i18n.template) {
@@ -65,14 +66,24 @@ export default {
             stats[loc][t].color = this.$fs.percentColor(percent)
           }
           avg = avg/Object.keys(types).length,
+          sort.push([loc, avg])
           stats[loc].avg = {
             score: avg,
             color: this.$fs.percentColor(avg)
           }
         }
       }
+      sort.sort(function(a,b) {
+        return a[1] - b[1]
+      })
+      let sorted = []
+      for(let s in sort.reverse()) {
+        let entry = sort[s]
+        sorted.push(entry[0])
+      }
       return {
         stats: stats,
+        sort: sorted,
         locales: Object.keys(stats)
       }
   },
