@@ -35,8 +35,8 @@
         <v-tab href='#pattern-options'>{{ $t('patternOptions') }}</v-tab>
         <v-tab-item id="info" class="fs-pad"><fs-table-draft-info :draft="draft" /></v-tab-item>
         <v-tab-item id="model" class="fs-pad"><fs-table-model-info :draft="draft" /></v-tab-item>
-        <v-tab-item id="draft-options" class="fs-pad"><fs-table-draft-options :draft="draft" /></v-tab-item>
-        <v-tab-item id="pattern-options" class="fs-pad"><fs-table-pattern-options :draft="draft" /></v-tab-item>
+          <v-tab-item id="draft-options" class="fs-pad"><fs-table-draft-options :draft="draft" /></v-tab-item>
+          <v-tab-item id="pattern-options" class="fs-pad"><fs-table-pattern-options :draft="draft" /></v-tab-item>
       </v-tabs>
       </div>
       <blockquote class="error fs-m800 mt-5" v-if="deleteDraft">

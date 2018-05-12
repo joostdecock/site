@@ -356,7 +356,9 @@ cathrin:
             description: 'The number of panels to draft. More panels are better to fit a curvier model.'
             group: fit
             type: chooseOne
-            options: null
+            options:
+                '11': '11 panels'
+                '13': '13 panels'
             default: 13
         backOpening:
             title: 'Back opening'
@@ -664,7 +666,10 @@ simon:
             description: 'The style of the shirt hem.'
             group: style
             type: chooseOne
-            options: null
+            options:
+                '1': 'Straight hem'
+                '2': 'Baseball hem'
+                '3': 'Slashed hem'
             default: 1
         hemCurve:
             title: 'Hem curve'
@@ -683,7 +688,16 @@ simon:
             description: 'The number of buttons on the front closure.'
             group: style
             type: chooseOne
-            options: null
+            options:
+                '4': 4
+                '5': 5
+                '6': 6
+                '7': 7
+                '8': 8
+                '9': 9
+                '10': 10
+                '11': 11
+                '12': 12
             default: 7
         extraTopButton:
             title: 'Extra top button'
@@ -708,14 +722,18 @@ simon:
             description: 'Type of the button placket.'
             group: plackets
             type: chooseOne
-            options: null
+            options:
+                '1': Cut-on
+                '2': Separate
             default: 1
         buttonPlacketStyle:
             title: 'Button placket style'
             description: 'Style of the button placket.'
             group: plackets
             type: chooseOne
-            options: null
+            options:
+                '1': 'Classic style'
+                '2': 'French style (seamless)'
             default: 1
             dependsOn: buttonPlacketType
             onlyOn: 1
@@ -732,14 +750,18 @@ simon:
             description: 'Type of the buttonhole placket.'
             group: plackets
             type: chooseOne
-            options: null
+            options:
+                '1': Cut-on
+                '2': Separate
             default: 1
         buttonholePlacketStyle:
             title: 'Buttonhole placket style'
             description: 'Style of the buttonhole placket.'
             group: plackets
             type: chooseOne
-            options: null
+            options:
+                '1': 'Classic style'
+                '2': 'French style (seamless)'
             default: 2
             dependsOn: buttonholePlacketType
             onlyOn: 1
@@ -846,7 +868,13 @@ simon:
             description: 'The style of the cuffs.'
             group: cuffs
             type: chooseOne
-            options: null
+            options:
+                '1': 'Rounded barrel cuff'
+                '2': 'Angled barrel cuff'
+                '3': 'Straight barrel cuff'
+                '4': 'Rounded French cuff'
+                '5': 'Angled French cuff'
+                '6': 'Straight French cuff'
             default: 2
         cuffLength:
             title: 'Cuff length'
@@ -861,7 +889,9 @@ simon:
             description: 'Whether to draft a single or double row of cuff buttons. This option is only relevant for barrel cuffs.'
             group: cuffs
             type: chooseOne
-            options: null
+            options:
+                '1': 'Single cuff button row'
+                '2': 'Double cuff button row'
             default: 1
             dependsOn: cuffStyle
             onlyOn:
@@ -1414,14 +1444,18 @@ wahid:
             description: 'Whether you want a rounded or classic necline.'
             group: style
             type: chooseOne
-            options: null
+            options:
+                '1': Classic
+                '2': Rounded
             default: 1
         hemStyle:
             title: 'Hem style'
             description: 'Whether you want a rounded or classic hem.'
             group: style
             type: chooseOne
-            options: null
+            options:
+                '1': Classic
+                '2': Rounded
             default: 1
         hemRadius:
             title: 'Hem radius'
@@ -1438,7 +1472,16 @@ wahid:
             description: 'The number of buttons on the front closure.'
             group: style
             type: chooseOne
-            options: null
+            options:
+                '4': 4
+                '5': 5
+                '6': 6
+                '7': 7
+                '8': 8
+                '9': 9
+                '10': 10
+                '11': 11
+                '12': 12
             default: 6
         neckInset:
             title: 'Neck inset'
@@ -1559,14 +1602,21 @@ benjamin:
             description: 'The style of the bow.'
             group: style
             type: chooseOne
-            options: null
+            options:
+                diamond: Diamond
+                butterfly: Butterfly
+                square: Square
+                widesquare: 'Wide Square'
             default: diamond
         endStyle:
             title: 'End style'
             description: 'The style of the end of the tie.'
             group: style
             type: chooseOne
-            options: null
+            options:
+                straight: 'Straight end'
+                pointed: 'Pointed end'
+                rounded: 'Rounded end'
             default: straight
         collarEase:
             title: 'Collar ease'
@@ -1582,8 +1632,8 @@ benjamin:
             group: sewing
             type: chooseOne
             options:
-                - None
-                - '13½" - 18"'
+                - 'Do not include ribbon'
+                - 'Include ribbon'
             default: 0
     optiongroups:
         style:

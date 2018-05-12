@@ -19,7 +19,6 @@ const items = [
 ]
 
 fetch(items)
-fs.writeFileSync(yamlDir+'apis.yaml', "data: "+process.env.FS_DATA+"\ncore: "+process.env.FS_CORE, 'utf8')
 
 function fetch(items) {
   return new Promise(function(resolve, reject) {
