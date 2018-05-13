@@ -3,7 +3,7 @@
   <table class="table fs-info-table">
     <thead>
       <tr>
-        <th colspan="2" class="fs-titlerow">{{$t('model')}} {{draft.model.handle}}</th>
+        <th colspan="2" class="fs-titlerow">{{draft.model.name}}</th>
       </tr>
     <tr>
       <td colspan="2" class="text-xs-center py-3">
@@ -15,8 +15,8 @@
     </thead>
     <tbody>
     <tr>
-      <th class="fs-wp50">{{ $t('name') }}</th>
-      <td>{{ draft.model.name }}</td>
+      <th class="fs-wp50">{{ $t('reference') }}</th>
+      <td><pre>{{ draft.model.handle }}</pre></td>
     </tr>
     <tr>
       <th>{{ $t('breasts') }}</th>

@@ -29,11 +29,11 @@ export default {
     }
   },
   data: function() {
-    if(typeof this.draft.data.options.patternOptions === 'undefined') {
+    if(typeof this.draft.data.gist === 'undefined') {
       // Drafted prior to site v2
       return {options: this.draft.data.options}
     } else {
-      return {options: this.draft.data.options.patternOptions}
+      return {options: this.draft.data.gist.patternOptions}
     }
   }
 }

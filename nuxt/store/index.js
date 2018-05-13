@@ -30,16 +30,18 @@ export const state = () => ({
       scope: {},
       theme: 'Basic'
     },
-    config: {
+    gist: {
+      type: '',
+      pattern: '',
+      units: '',
+      model: {},
+      patternOptions: {},
       draftOptions: {
         sa: {},
         scope: {},
-        theme: 'Basic'
-      },
-      model: '',
-      pattern: '',
-      type: '',
-      patternOptions: {}
+        theme: 'Basic',
+        locale: 'en'
+    },
     },
     custom: {
       draftOptions: {
@@ -56,6 +58,9 @@ export const state = () => ({
   selected: {
     drafts: [],
     models: []
+  },
+  actions: {
+    deleteDraft: false
   }
 })
 
@@ -86,22 +91,22 @@ export const mutations = {
     state.draft = payload
   },
   setDraftOption(state, payload) {
-    state.draft.config.patternOptions[payload.name] = payload.value
+    state.draft.gist.patternOptions[payload.name] = payload.value
   },
   setDraftSa(state, payload) {
-    state.draft.config.draftOptions.sa = {
+    state.draft.gist.draftOptions.sa = {
       type: payload.type,
       value: payload.value
     }
   },
   setDraftScope(state, payload) {
-    state.draft.config.draftOptions.scope = {
+    state.draft.gist.draftOptions.scope = {
       type: payload.type,
       included: {...payload.included}
     }
   },
   setDraftTheme(state, payload) {
-    state.draft.config.draftOptions.theme = payload
+    state.draft.gist.draftOptions.theme = payload
   },
   setDraftCustomOptionsCount(state, payload) {
     state.draft.custom = payload
@@ -114,6 +119,9 @@ export const mutations = {
   },
   setSelectedModels(state, payload) {
     state.selected.models = payload
+  },
+  setAction(state, payload) {
+    state.actions[payload.action] = payload.value
   },
 }
 

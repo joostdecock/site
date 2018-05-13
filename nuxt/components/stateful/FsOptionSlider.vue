@@ -54,9 +54,9 @@ export default {
     let step = 1
     let scale = 1
     if(this.option.type === 'measure') {
-      step = this.$fs.conf.defaults.sliders.step[units]
-      scale = this.$fs.conf.defaults.sliders.scale[units]
-      computedDflt =  this.$fs.sliderRound(this.dflt)
+      step = this.$fs.conf.defaults.step[units]
+      scale = this.$fs.conf.defaults.scale[units]
+      computedDflt =  this.$fs.sliderRound(this.dflt, units)
       min = this.$fs.sliderRound(this.option.min)
       max = this.$fs.sliderRound(this.option.max)
     }

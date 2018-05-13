@@ -28,11 +28,11 @@ export default {
     }
   },
   data: function() {
-    if(typeof this.draft.data.options.draftOptions === 'undefined') {
+    if(typeof this.draft.data.gist === 'undefined') {
       // Drafted prior to site v2
       return {options: this.draft.data.options}
     } else {
-      return {options: this.draft.data.options.draftOptions}
+      return {options: this.draft.data.gist.draftOptions}
     }
   },
   methods: {

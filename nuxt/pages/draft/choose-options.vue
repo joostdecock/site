@@ -1,12 +1,13 @@
 <template>
-  <fs-wrapper-login-required>
+  <fs-wrapper-login-required :callback="draftInit()">
     <fs-breadcrumbs :crumbs="crumbs">
       <span v-html="(loading) ? $t('draftingPattern', {pattern: $fs.ucfirst(patternHandle)}) : $t('chooseYourOptions')"></span>
     </fs-breadcrumbs>
     <h1 class="text-xs-center"
         v-html="(loading) ?
         $t('draftingPattern', {pattern: $fs.ucfirst(patternHandle)}) :
-        $t('step3')+': '+$t('chooseYourOptions')"></h1>
+        $t('step3')+': '+$t('chooseYourOptions')">
+    </h1>
     <div v-if="loading">
       <fs-draft-ticker :ready="ready" :error="error" />
         <fs-message-error-please-report v-if="error" />
@@ -22,7 +23,7 @@
           <v-divider></v-divider>
           <v-stepper-step step="2" complete>
             <nuxt-link :to="$fs.path('/draft/'+patternHandle)">
-              {{ $t('forUsername', { username: modelName}) | 'loading' }}
+              {{ $t('forUsername', { username: modelName}) }}
             </nuxt-link>
           </v-stepper-step>
           <v-divider></v-divider>
@@ -31,24 +32,22 @@
       </v-stepper>
       <p class="text-xs-center">
       <v-btn round outline @click="submit()">
-        {{ $t('draftPatternForModel', {
-        pattern: $fs.ucfirst(patternHandle),
-        model: modelName}
-        ) }}
+        {{ $t('draftPatternForModel', { pattern: $fs.ucfirst(patternHandle), model: modelName}) }}
       </v-btn>
       </p>
+      <pre>{{ $store.state.draft.gist }}</pre>
       <fs-draft-configurator :pattern="patternHandle" :model="modelHandle" />
+        <p class="text-xs-center mt-5">
+        <v-btn color="primary" large @click="submit()" :disabled="loading">
+          <v-progress-circular indeterminate color="#fff" class="mr-3" v-if="loading" :size="(24)" :width="(2)"></v-progress-circular>
+          <v-icon class="mr-3" v-else>insert_drive_file</v-icon>
+          {{ $t('draftPatternForModel', {
+          pattern: $fs.ucfirst(patternHandle),
+          model: modelName}
+          ) }}
+        </v-btn>
+        </p>
     </div>
-    <p class="text-xs-center mt-5">
-    <v-btn color="primary" large @click="submit()" :disabled="loading">
-      <v-progress-circular indeterminate color="#fff" class="mr-3" v-if="loading" :size="(24)" :width="(2)"></v-progress-circular>
-      <v-icon class="mr-3" v-else>insert_drive_file</v-icon>
-      {{ $t('draftPatternForModel', {
-      pattern: $fs.ucfirst(patternHandle),
-      model: modelName}
-      ) }}
-    </v-btn>
-    </p>
       </fs-wrapper-login-required>
 </template>
 
@@ -84,25 +83,16 @@ export default {
         mname = this.$route.params.model
       }
       return [
-        {
-          to: this.$fs.path('/draft/'),
-          title: this.$t('newPatternDraft', { pattern: this.$fs.ucfirst(this.$route.params.pattern) })
-        },
-        {
-          to: this.$fs.path('/draft/'+this.$route.params.pattern),
-          title: this.$t('forUsername', { username: mname })
-        }
+      {
+        to: this.$fs.path('/draft/'),
+        title: this.$t('newPatternDraft', { pattern: this.$fs.ucfirst(this.$route.params.pattern) })
+      },
+      {
+        to: this.$fs.path('/draft/'+this.$route.params.pattern),
+        title: this.$t('forUsername', { username: mname })
+      }
       ]
     },
-  },
-  created () {
-    if(this.$store.state.user.loggedIn && this.$route.params.model) {
-      this.$fs.initializeDraft({
-        model: this.$route.params.model,
-        pattern: this.$route.params.pattern,
-        type: 'draftFromModel'
-      })
-    }
   },
   data: function() {
     return {
@@ -113,6 +103,7 @@ export default {
       error: false,
       ready: false,
       loading: false,
+      initialized: false
     }
   },
   asyncData: async function ({ app, route }) {
@@ -133,6 +124,12 @@ export default {
       .catch((error) => {
         self.error = true
       })
+    },
+    draftInit: function() {
+      if(this.initialized === false  && typeof this.$store.state.user.models[this.$route.params.model] !== 'undefined') {
+        this.$fs.initializeDraft(this.$route.params.pattern, this.$route.params.model)
+        this.initialized = true
+      }
     }
   }
 }
