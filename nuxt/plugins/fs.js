@@ -449,7 +449,6 @@ export default ({ app, store, router }, inject) => {
 
       initializeDraft(payload) {
         const config = {
-          type: payload.type,
           pattern: payload.pattern,
           model: payload.model,
           draftOptions: {},
@@ -488,6 +487,55 @@ export default ({ app, store, router }, inject) => {
           defaults: JSON.parse(JSON.stringify(config)),
           custom: {}
         })
+      },
+
+      initializeFork(payload) {
+        const config = {
+          pattern: patternHandleMethod(payload.fork.pattern),
+          model: payload.model,
+          fork: payload.fork,
+          draftOptions: {},
+          patternOptions: {}
+        }
+        let units = store.state.user.account.units
+        let option = {}
+        let ufactor = 1
+        if(config.fork.data.options.userUnits === 'imperial') {
+          ufactor = 25.4
+        } else {
+          ufactor = 10
+        }
+        for (let optionName in Conf.patterns[config.pattern].options) {
+          option = Conf.patterns[config.pattern].options[optionName]
+          if(option.type === 'measure') {
+            config.patternOptions[optionName] = utils.sliderRound(config.fork.data.options[optionName]*ufactor, units)
+          } else {
+            config.patternOptions[optionName] = utils.round(config.fork.data.options[optionName])
+          }
+        }
+        if(typeof payload.pattern.seamAllowance !== 'undefined') {
+          config.draftOptions.sa = {
+            type: 'pattern'+units,
+            value: payload.pattern.seamAllowance[units]
+          }
+        } else {
+          config.draftOptions.sa = {
+            type: units,
+            value: (units === 'imperial') ? 0.625 : 1
+          }
+        }
+        console.log(config.fork.data.options.userUnits)
+          return true
+        //config.draftOptions.scope = {
+        //  type: 'pattern',
+        //  included: []
+        //}
+        //config.draftOptions.theme = 'Basic'
+        //store.commit('setDraftInitial', {
+        //  config: config,
+        //  defaults: JSON.parse(JSON.stringify(config)),
+        //  custom: {}
+        //})
       },
 
       updateDraftCustomOptionsCount() {

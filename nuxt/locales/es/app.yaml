@@ -71,6 +71,7 @@ forMoreInfoRtfm: 'For more info, read the documentation: TODO'
 forUsername: 'For {username} TODO'
 forUsers: For users TODO
 fork: Fork TODO
+forkDraftHandle: 'Fork draft {handle} TODO'
 format: Format TODO
 freesewing: Freesewing TODO
 fullSizePdf: Full size PDF TODO

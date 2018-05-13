@@ -45,19 +45,21 @@
       </v-layout>
     </v-container>
     <v-divider class="mt-5"></v-divider>
-    <p class="text-xs-center mt-3 fs-muted">
-      {{ $t('txt-modelsWithMissingMeasurements') }}
-    </p>
-    <p class="text-xs-center mt-1">
-    <v-btn
-       outline
-       round
-       v-for="model in models.invalid"
-       :key="model"
-       color="secondary"
-       :to="$fs.path('/draft/'+pattern+'/for/'+model)"
-       >{{ $store.state.user.models[model].name }}</v-btn>
-    </p>
+    <div v-if="models.invalid.length > 0">
+      <p class="text-xs-center mt-3 fs-muted">
+        {{ $t('txt-modelsWithMissingMeasurements') }}
+      </p>
+      <p class="text-xs-center mt-1">
+      <v-btn
+         outline
+         round
+         v-for="model in models.invalid"
+         :key="model"
+         color="secondary"
+         :to="$fs.path('/draft/'+pattern+'/for/'+model)"
+         >{{ $store.state.user.models[model].name }}</v-btn>
+      </p>
+    </div>
   </fs-wrapper-login-required>
 </template>
 

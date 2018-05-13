@@ -1,55 +1,60 @@
 <template>
-  <fs-wrapper-login-required v-if="$route.params.model">
+  <fs-wrapper-login-required>
     <fs-breadcrumbs :crumbs="crumbs">
-      <span v-html="(loading) ? $t('draftingPattern', {pattern: $fs.ucfirst(pattern)}) : $t('chooseYourOptions')"></span>
+      <span v-html="(loading) ? $t('draftingPattern', {pattern: $fs.ucfirst(patternHandle)}) : $t('chooseYourOptions')"></span>
     </fs-breadcrumbs>
     <h1 class="text-xs-center"
-      v-html="(loading) ?
-      $t('draftingPattern', {pattern: $fs.ucfirst(pattern)}) :
-      $t('step3')+': '+$t('chooseYourOptions')"></h1>
+        v-html="(loading) ?
+        $t('draftingPattern', {pattern: $fs.ucfirst(patternHandle)}) :
+        $t('step3')+': '+$t('chooseYourOptions')"></h1>
     <div v-if="loading">
       <fs-draft-ticker :ready="ready" :error="error" />
-      <fs-message-error-please-report v-if="error" />
+        <fs-message-error-please-report v-if="error" />
     </div>
     <div v-else>
-		<v-stepper class="mb-5" value="3">
-			<v-stepper-header class="fs-nodeco">
-        <v-stepper-step step="1" complete>
-          <nuxt-link :to="$fs.path('/draft/')">
-            {{ $t('draftingPattern', {pattern: patternName }) }}
-          </nuxt-link>
-        </v-stepper-step>
-				<v-divider></v-divider>
-        <v-stepper-step step="2" complete>
-				  <nuxt-link :to="$fs.path('/draft/'+$route.params.pattern)">
-            {{ $t('forUsername', { username: $store.state.user.models[model].name}) }}
-          </nuxt-link>
-        </v-stepper-step>
-				<v-divider></v-divider>
-        <v-stepper-step step="3">{{ $t('chooseYourOptions') }}</v-stepper-step>
-			</v-stepper-header>
-		</v-stepper>
-    <p class="text-xs-center">
+      <v-stepper class="mb-5" value="3">
+        <v-stepper-header class="fs-nodeco">
+          <v-stepper-step step="1" complete>
+            <nuxt-link :to="$fs.path('/drafts/'+$route.params.draft)">
+              {{ $t('draftingPattern', {pattern: $fs.ucfirst($fs.patternHandle(draft.pattern)) }) }}
+            </nuxt-link>
+          </v-stepper-step>
+          <v-divider></v-divider>
+          <v-stepper-step step="2" complete>
+            <nuxt-link :to="$fs.path('/fork/'+$route.params.draft)">
+              {{ $t('forUsername', { username: modelName}) | 'loading' }}
+            </nuxt-link>
+          </v-stepper-step>
+          <v-divider></v-divider>
+          <v-stepper-step step="3">{{ $t('chooseYourOptions') }}</v-stepper-step>
+        </v-stepper-header>
+      </v-stepper>
+      <p class="text-xs-center">
       <v-btn round outline @click="submit()">
         {{ $t('draftPatternForModel', {
-          pattern: $fs.ucfirst(pattern),
-          model: $store.state.user.models[model].name}
-        ) }}
-        </v-btn>
-    </p>
-    <fs-draft-configurator :pattern="pattern" :model="model" />
-    </div>
-    <p class="text-xs-center mt-5">
-      <v-btn color="primary" large @click="submit()" :disabled="loading">
-        <v-progress-circular indeterminate color="#fff" class="mr-3" v-if="loading" :size="(24)" :width="(2)"></v-progress-circular>
-        <v-icon class="mr-3" v-else>insert_drive_file</v-icon>
-        {{ $t('draftPatternForModel', {
-          pattern: $fs.ucfirst(pattern),
-          model: $store.state.user.models[model].name}
+        pattern: $fs.ucfirst($fs.patternHandle(this.draft.pattern)),
+        model: modelName}
         ) }}
       </v-btn>
+      </p>
+<!--
+      <fs-draft-configurator :pattern="patternHandle" :model="modelHandle" />
+-->
+    </div>
+    <p class="text-xs-center mt-5">
+    <v-btn color="primary" large @click="submit()" :disabled="loading">
+      <v-progress-circular indeterminate color="#fff" class="mr-3" v-if="loading" :size="(24)" :width="(2)"></v-progress-circular>
+      <v-icon class="mr-3" v-else>insert_drive_file</v-icon>
+      {{ $t('draftPatternForModel', {
+      pattern: $fs.ucfirst($fs.patternHandle(this.draft.pattern)),
+      model: modelName}
+      ) }}
+    </v-btn>
     </p>
-  </fs-wrapper-login-required>
+<pre>
+{{ draft }}
+</pre>
+      </fs-wrapper-login-required>
 </template>
 
 <script>
@@ -60,7 +65,7 @@ import FsDraftTicker from '~/components/stateless/FsDraftTicker'
 import FsMessageErrorPleaseReport from '~/components/stateless/FsMessageErrorPleaseReport'
 
 export default {
-	layout: 'wide',
+  layout: 'wide',
   components: {
     FsWrapperLoginRequired,
     FsDraftConfigurator,
@@ -69,55 +74,68 @@ export default {
     FsMessageErrorPleaseReport
   },
   computed: {
-    model: function() {
-      return this.$route.params.model
-    },
-    pattern: function() {
-      return this.$route.params.pattern
-    },
-    patternName: function() {
-      return this.$fs.ucfirst(this.$route.params.pattern)
-    },
-    models: function() {
-      if(!this.$store.state.loggedIn) return false
-      if(!this.$route.params.model) return false
-      var valid = []
-      var invalid = []
-      for (let model of Object.keys(this.$store.state.user.models)) {
-        if (this.$fs.modelIsValid(this.$store.state.user.models[model], this.$route.params.pattern)) {
-          valid.push(model)
-        } else {
-          invalid.push(model)
-        }
+    modelName () {
+      if(typeof this.$store.state.user.models[this.$route.params.model] !== 'undefined') {
+        return this.$store.state.user.models[this.$route.params.model].name
+      } else {
+        return this.$route.params.model
       }
-      return { valid: valid, invalid: invalid }
-    }
+    },
+    crumbs () {
+      let mname = ''
+      if(typeof this.$store.state.user.models[this.$route.params.model] !== 'undefined') {
+        mname = this.$store.state.user.models[this.$route.params.model].name
+      } else {
+        mname = this.$route.params.model
+      }
+      return [
+        {
+          to: this.$fs.path('/drafts/'+this.$route.params.draft),
+          title: this.$t('forkDraftHandle', { handle: this.$route.params.draft })
+        },
+        {
+          to: this.$fs.path('/fork/'+this.$route.params.draft),
+          title: this.$t('forUsername', { username: mname })
+        }
+      ]
+    },
   },
-  mounted () {
-    if(this.$store.state.user.loggedIn && this.$route.params.model) {
-      this.$store.dispatch('initializeDraft', {
-        model: this.$route.params.model,
-        pattern: this.$route.params.pattern,
-        type: 'draftFromModel'
-      })
-    }
+  created () {
+    //if(this.$store.state.user.loggedIn && this.$route.params.draft) {
+    //  this.$fs.initializeFork({
+    //    model: this.draft.modelHandle,
+    //    pattern: this.$fs.patternHandle(this.draft.pattern),
+    //    fork: this.draft
+    //  })
+    //}
   },
   data: function() {
     return {
+      modelHandle: this.$route.params.model,
+      model: this.$store.state.user.models[this.$route.params.model],
+      patternHandle: this.$route.params.pattern,
+      patternName: this.$fs.ucfirst(this.$route.params.pattern),
       error: false,
       ready: false,
       loading: false,
-      crumbs: [
-        {
-          to: this.$fs.path('/draft/'),
-          title: this.$t('newPatternDraft', { pattern: this.$fs.ucfirst(this.$route.params.pattern) })
-        },
-        {
-          to: this.$fs.path('/draft/'+this.$route.params.pattern),
-          title: this.$t('forUsername', { username: this.$store.state.user.models[this.$route.params.model].name })
-        }
-      ]
     }
+  },
+  asyncData: async function ({ app, route }) {
+    return app.$fs.loadDraft(route.params.draft)
+    .then((data) => {
+      app.$fs.initializeFork({
+        fork: data.draft,
+        model: route.params.model
+      })
+      return data
+    })
+    .catch((error) => {
+      if(error.reason === 'no_such_draft') {
+        return {notFound: true}
+      } else {
+        return {error: true}
+      }
+    })
   },
   methods: {
     submit: async function() {
@@ -149,13 +167,13 @@ p.quick-pick {
   margin-bottom: 15px;
 }
 span.link-spacer {
-	display: inline;
+  display: inline;
 }
 span.link-spacer:after {
-	content: ', ';
+  content: ', ';
 }
 p.quick-pick span:last-of-type:after {
-	content: '';
+  content: '';
 }
 .thetitle {
   text-align: center;

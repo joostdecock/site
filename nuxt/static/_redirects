@@ -7,4 +7,7 @@
 # E-mail change confirmation
 /email/confirm/*  /account/confirm-email-change    200
 
+# i18n language status pages
+/i18n/*  /i18n/status-locale    200
+
 

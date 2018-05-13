@@ -121,7 +121,7 @@ module.exports = {
       })
       routes.push({
         path: '/i18n/:locale',
-        component: 'nuxt/pages/i18n/_locale.vue'
+        component: 'nuxt/pages/i18n/status-locale.vue'
       })
     }
   },

@@ -71,6 +71,7 @@ forMoreInfoRtfm: 'For more info, read the documentation:'
 forUsername: 'For {username}'
 forUsers: For users
 fork: Fork
+forkDraftHandle: 'Fork draft {handle}'
 format: Format
 freesewing: Freesewing
 fullSizePdf: Full size PDF

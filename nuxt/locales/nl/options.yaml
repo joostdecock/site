@@ -4,8 +4,8 @@ acrossBackFactor:
 adjustmentRibbon:
   description: Voeg een lintje toe om de das aanpaspaar te maken.
   options:
-    - Voeg geen lintje toe 
-    - Voeg lintje toe 
+    - Voeg geen lintje toe
+    - Voeg lintje toe
   title: Aanpaslintje
 armholeDepthFactor:
   description: 'Controleert de diepte van het armsgat. Hoe hoger deze waarde, hoe dieper het armsgat.'
@@ -34,9 +34,9 @@ backScyeDart:
 backVent:
   description: 'Wil je een split in de middenrug, of helemaal geen? '
   options:
-    - Geen rugsplit 
-    - Enkel rugsplit 
-    - Dubbel rugsplit 
+    - Geen rugsplit
+    - Enkel rugsplit
+    - Dubbel rugsplit
   title: Rugsplit
 backVentLength:
   description: 'Controleert de lengte van het rugsplit. Hoe lager het cijfer, hoe korter het split.'
@@ -59,10 +59,10 @@ bowLength:
 bowStyle:
   description: De stijl van de strik.
   options:
-    butterfly: Vlinder 
-    diamond: Diamant 
-    square: Vierkant 
-    widesquare: Wijd vierkant 
+    butterfly: Vlinder
+    diamond: Diamant
+    square: Vierkant
+    widesquare: Wijd vierkant
   title: Stijl strik
 bulge:
   description: Maak de hoek groter voor meer ruimte in het kruisstuk.
@@ -71,7 +71,7 @@ buttonPlacketStyle:
   description: De stijl van het knopenpat.
   options:
     '1': Klassieke stijl
-    '2': Franse stijl (naadloos) 
+    '2': Franse stijl (naadloos)
   title: Stijl knopenpat
 buttonPlacketType:
   description: Het type knopenpat.
@@ -91,7 +91,7 @@ buttonholePlacketFoldWidth:
 buttonholePlacketStyle:
   description: De stijl van het knoopsgatenpat.
   options:
-    '1': Klassieke stijl 
+    '1': Klassieke stijl
     '2': Franse stijl (naadloos)
   title: Stijl knoopsgatenpat
 buttonholePlacketType:
@@ -107,25 +107,25 @@ buttons:
   description: Het aantal knopen op de sluiting vooraan.
   options:
     simon:
-      '10': 10 knopen 
-      '11': 11 knopen 
-      '12': 12 knopen 
-      '4': 4 knopen 
-      '5': 5 knopen 
-      '6': 6 knopen 
-      '7': 7 knopen 
-      '8': 8 knopen 
-      '9': 9 knopen 
+      '10': 10 knopen
+      '11': 11 knopen
+      '12': 12 knopen
+      '4': 4 knopen
+      '5': 5 knopen
+      '6': 6 knopen
+      '7': 7 knopen
+      '8': 8 knopen
+      '9': 9 knopen
     wahid:
-      '10': 10 knopen 
-      '11': 11 knopen 
-      '12': 12 knopen 
-      '4': 4 knopen 
-      '5': 5 knopen 
-      '6': 6 knopen 
-      '7': 7 knopen 
-      '8': 8 knopen 
-      '9': 9 knopen 
+      '10': 10 knopen
+      '11': 11 knopen
+      '12': 12 knopen
+      '4': 4 knopen
+      '5': 5 knopen
+      '6': 6 knopen
+      '7': 7 knopen
+      '8': 8 knopen
+      '9': 9 knopen
   title: Aantal knopen
 centerBackDart:
   description: De hoeveelheid die met een neep uit de bovenkant van de middenrug genomen wordt.
@@ -269,8 +269,8 @@ frontScyeDart:
 frontStyle:
   description: Of je een afgeronde of klassieke halslijn wil.
   options:
-    '1': Klassiek 
-    '2': Afgerond 
+    '1': Klassiek
+    '2': Afgerond
   title: Stijl halslijn
 headEase:
   description: De hoeveelheid overwijdte om de pet op je hoofd te laten passen.
@@ -287,12 +287,12 @@ hemStyle:
     simon: De vorm van de zoom van het hemd.
   options:
     simon:
-      '1': Rechte zoom 
-      '2': Ronde zoom 
-      '3': Zoom met zijsplit 
+      '1': Rechte zoom
+      '2': Ronde zoom
+      '3': Zoom met zijsplit
     wahid:
-      '1': Klassiek 
-      '2': Afgerond 
+      '1': Klassiek
+      '2': Afgerond
   title: Vorm zoom
 hipFlare:
   description: Hoeveel wijder het hemd wordt onder de taille.
@@ -336,14 +336,14 @@ necklineDrop:
 panels:
   description: Het aantal panelen. Meer panelen passen beter bij een ronder figuur.
   options:
-    '11': 11 panelen 
-    '13': 13 panelen 
+    '11': 11 panelen
+    '13': 13 panelen
   title: Aantal panelen
 pouch:
   description: Wil je een zak op je hoodie?
   options:
-    - Geen zak toevoegen 
-    - Zak toevoegen 
+    - Geen zak toevoegen
+    - Zak toevoegen
   title: Voorzak
 princessSeamSmoothFactor:
   description: 'Controleert hoe fel de prinsessennaad weer naar binnen buigt voorbij het volste punt van de borst. Een hogere factor maakt deze lijn gladder, met als resultaat een pinder aansluitende jas die makkelijker te naaien is. Een lagere factor maakt de curve scherper, met als resultaat een naad die moeilijker te naaien is en een jas die meer aansluit.'
@@ -351,7 +351,7 @@ princessSeamSmoothFactor:
 ribbing:
   description: 'Wil je een boord aan de mouwen en zoom, of ga je een klassieke zoom gebruiken?'
   options:
-    - Klassieke zoom (zonder boord) 
+    - Klassieke zoom (zonder boord)
     - Zoom met boord
   title: Boord
 ribbingHeight:
@@ -411,7 +411,7 @@ sleevecapHeightFactor:
 splitYoke:
   description: Of je een tweedelige of gewone schouderpas wil.
   options:
-    - Gewone schouderpas 
+    - Gewone schouderpas
     - Tweedelige schouderpas
   title: Tweedelige schouderpas
 stretch:
