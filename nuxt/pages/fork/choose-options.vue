@@ -1,11 +1,11 @@
 <template>
   <fs-wrapper-login-required :callback="forkInit()">
     <fs-breadcrumbs :crumbs="crumbs">
-      <span v-html="(loading) ? $t('draftingPattern', {pattern: $fs.ucfirst(patternHandle)}) : $t('chooseYourOptions')"></span>
+      <span v-html="(loading) ? $t('draftingPattern', {pattern: $fs.ucfirst(patternName)}) : $t('chooseYourOptions')"></span>
     </fs-breadcrumbs>
     <h1 class="text-xs-center"
         v-html="(loading) ?
-        $t('draftingPattern', {pattern: $fs.ucfirst(patternHandle)}) :
+        $t('draftingPattern', {pattern: $fs.ucfirst(patternName)}) :
         $t('step3')+': '+$t('chooseYourOptions')">
     </h1>
     <div v-if="loading">
@@ -17,7 +17,7 @@
         <v-stepper-header class="fs-nodeco">
           <v-stepper-step step="1" complete>
             <nuxt-link :to="$fs.path('/fork/')">
-              {{ $t('forkDraftHandle', {handle: $route.params.draft }) }}
+              {{ $t('forkDraftHandle', {handle: $route.params.draft+' ('+$fs.ucfirst(patternName)+')' }) }}
             </nuxt-link>
           </v-stepper-step>
           <v-divider></v-divider>
@@ -32,23 +32,20 @@
       </v-stepper>
       <p class="text-xs-center">
       <v-btn round outline @click="submit()">
-        {{ $t('draftPatternForModel', { pattern: $fs.ucfirst(patternHandle), model: modelName}) }}
+        {{ $t('draftPatternForModel', { pattern: $fs.ucfirst(patternName), model: modelName}) }}
       </v-btn>
       </p>
-      <pre>{{ $store.state.draft.gist }}</pre>
       <fs-draft-configurator :pattern="$store.state.draft.gist.pattern" :model="$route.params.model" />
-    <!--
         <p class="text-xs-center mt-5">
         <v-btn color="primary" large @click="submit()" :disabled="loading">
           <v-progress-circular indeterminate color="#fff" class="mr-3" v-if="loading" :size="(24)" :width="(2)"></v-progress-circular>
           <v-icon class="mr-3" v-else>insert_drive_file</v-icon>
           {{ $t('draftPatternForModel', {
-          pattern: $fs.ucfirst(patternHandle),
+          pattern: $fs.ucfirst(patternName),
           model: modelName}
           ) }}
         </v-btn>
         </p>
-    -->
     </div>
       </fs-wrapper-login-required>
 </template>
@@ -77,6 +74,14 @@ export default {
         return this.$route.params.model
       }
     },
+    patternName () {
+      if(typeof this.$store.state.draft.gist.pattern !== 'undefined') {
+        return this.$store.state.draft.gist.pattern
+      } else {
+        return this.$route.params.draft
+      }
+
+    },
     crumbs () {
       let mname = ''
       if(typeof this.$store.state.user.models[this.$route.params.model] !== 'undefined') {
@@ -100,8 +105,6 @@ export default {
     return {
       modelHandle: this.$route.params.model,
       model: this.$store.state.user.models[this.$route.params.model],
-      patternHandle: this.$route.params.pattern,
-      patternName: this.$fs.ucfirst(this.$route.params.pattern),
       error: false,
       ready: false,
       loading: false,

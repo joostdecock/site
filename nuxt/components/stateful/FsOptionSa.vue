@@ -2,14 +2,14 @@
   <v-expansion-panel-content>
     <div slot="header">
       <div class="fs-state-icons mr-3">
-        <v-icon v-if="computedDflt != value" @click.stop="resetDraftSa()" large color="accent">settings_backup_restore</v-icon>
+        <v-icon v-if="(computedDflt != value || customSa != customSaDflt)" @click.stop="resetDraftSa()" large color="accent">settings_backup_restore</v-icon>
         <v-icon large class="ml-2" color="secondary">help_outline</v-icon>
       </div>
       <h6>
-        <span :class="(computedDflt != value) ? 'fs-option-custom' : ''">
+        <span :class="(computedDflt != value || customSa != customSaDflt) ? 'fs-option-custom' : ''">
           {{ $t('txt-saOption-'+value) }}
         </span>
-        <span class="fs-option-custom" v-if="value === 'custom'">({{customSa}})</span>
+        <span :class="(customSa === customSaDflt)? '' : 'fs-option-custom'" v-if="value === 'custom'">({{$fs.formatUnits(customSa, $store.state.user.account.units, 'measure')}})</span>
       </h6>
     </div>
     <v-card>
@@ -26,7 +26,7 @@
         <v-slider
         v-if="value === 'custom'"
          @input="updateDraftSa('custom', customSa)"
-         :color="(computedDflt != value) ? 'accent' : 'primary'"
+         :color="(customSa != customSaDflt) ? 'accent' : 'primary'"
          :min="customSaMin"
          :max="customSaMax"
          v-model="customSa"
@@ -60,20 +60,23 @@ export default {
       computedDflt = 'pattern'+this.$fs.ucfirst(computedDflt)
     }
     let customSaDflt = 0
+    if(this.$store.state.draft.defaults.draftOptions.sa.type === 'custom') {
+      customSaDflt = this.$store.state.draft.defaults.draftOptions.sa.value
+    } else {
+      customSaDflt = this.$fs.conf.defaults.sa[this.$store.state.user.account.units]
+    }
     let customSaMin = 0
     let customSaMax = 0
     if(this.$store.state.user.account.units === 'imperial') {
-      customSaDflt = 1
       customSaMin = 0.25
       customSaMax = 2
     } else {
-      customSaDflt = (5/8)
       customSaMin = 0.5
       customSaMax = 2.5
     }
     return {
-      computedDflt: computedDflt,
-      value: computedDflt,
+      computedDflt: this.$store.state.draft.defaults.draftOptions.sa.type,
+      value: this.$store.state.draft.defaults.draftOptions.sa.type,
       options: options,
       customSaDflt: customSaDflt,
       customSa: customSaDflt,
@@ -84,6 +87,7 @@ export default {
   methods: {
     resetDraftSa() {
       this.value = this.computedDflt
+      this.customSa = this.customSaDflt
       this.$store.commit('setDraftSa', {type: this.value, value: this.options[this.value]} )
     },
     updateDraftSa(type, value) {

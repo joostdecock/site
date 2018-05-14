@@ -140,7 +140,7 @@ export default ({ app, store, route }, inject) => {
       } else {
         gist.draftOptions.sa = {
           type: gist.units,
-          value: (gist.units === 'imperial') ? 0.625 : 1
+          value: Conf.defaults.sa[gist.units]
         }
       }
       gist.draftOptions.scope = {
@@ -485,6 +485,7 @@ export default ({ app, store, route }, inject) => {
       },
       ucfirst(input) {
         if (typeof input === 'undefined') return input
+        if (input.length === 0) return input
           return input[0].toUpperCase() + input.slice(1)
       },
 

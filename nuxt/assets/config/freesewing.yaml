@@ -9,7 +9,7 @@ defaults:
     site: 'https://github.com/freesewing/site'
     tile: 'https://github.com/freesewing/tile'
   sa:
-    custom: 0.5
+    custom: 1
     imperial: 0.625
     metric: 1
   scale:
