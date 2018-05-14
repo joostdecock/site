@@ -18,6 +18,9 @@ defaults:
   step:
     imperial: 0.125
     metric: 0.1
+  themes:
+    - Classic
+    - Paperless
 i18n:
   coordinators:
     de: _vacant
@@ -55,7 +58,7 @@ i18n:
       patterns: 36
       showcase: 0
     en:
-      app: 281
+      app: 282
       blog: 28
       docs: 9
       i18n: 6
@@ -85,7 +88,7 @@ i18n:
       patterns: 4
       showcase: 0
     nl:
-      app: 281
+      app: 282
       blog: 2
       docs: 2
       i18n: 6
@@ -115,7 +118,7 @@ i18n:
       patterns: 0
       showcase: 0
   target:
-    app: 281
+    app: 282
     blog: 28
     docs: 9
     i18n: 6

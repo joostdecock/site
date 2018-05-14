@@ -46,7 +46,7 @@
       <v-expansion-panel>
         <fs-option-sa />
         <fs-option-scope />
-        <fs-option-theme :pattern="$fs.conf.patterns[pattern]" />
+        <fs-option-theme />
       </v-expansion-panel>
     </template>
   </div>

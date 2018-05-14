@@ -2,11 +2,11 @@
   <v-expansion-panel-content>
     <div slot="header">
       <div class="fs-state-icons mr-3">
-        <v-icon v-if="dflt != value" @click.stop="resetDraftTheme()" large color="accent">settings_backup_restore</v-icon>
+        <v-icon v-if="value != dfltValue" @click.stop="resetDraftTheme()" large color="accent">settings_backup_restore</v-icon>
         <v-icon large class="ml-2" color="secondary">help_outline</v-icon>
       </div>
-      <h6><span :class="(dflt != value) ? 'fs-option-custom' : ''">
-          {{ $t(themes[value]+'Theme') }}
+      <h6><span :class="(value != dfltValue) ? 'fs-option-custom' : ''">
+          {{ $t(value.toLowerCase()+'Theme') }}
       </span></h6>
     </div>
     <v-card>
@@ -14,11 +14,11 @@
         <v-radio-group v-model="value"
           >
 				  <v-radio
-            @change="updateDraftTheme(index)"
-            v-for="(theme, index) in themes" :key="theme"
-            :label="$t(theme+'Theme')"
-            :value="index"
-            :color="(index != dflt) ? 'accent' : 'primary'"></v-radio>
+            @change="updateDraftTheme(theme)"
+            v-for="theme in $fs.conf.defaults.themes" :key="theme"
+            :label="$t(theme.toLowerCase()+'Theme')"
+            :value="theme"
+            :color="(theme != dfltValue) ? 'accent' : 'primary'"></v-radio>
         </v-radio-group>
       </v-card-text>
     </v-card>
@@ -28,19 +28,11 @@
 <script>
 export default {
   name: 'FsOptionTheme',
-  props: {
-    dflt: {
-      type: String,
-      default: 'Basic'
-    }
-  },
   data: function() {
+    let d = this.$fs.normalize(this.$store.state.draft.defaults)
     return {
-      value: this.dflt,
-      themes: {
-        Basic: 'classic',
-        Paperless: 'paperless'
-      }
+      value: d.draftOptions.theme,
+      dfltValue: d.draftOptions.theme
     }
   },
   methods: {
