@@ -4,10 +4,17 @@ export default class Units {
     return JSON.parse(JSON.stringify(object))
   }
 
+  asMm(value, units) {
+    if(units === 'imperial') {
+      return value*25.4
+    } else {
+      return value*10
+    }
+  }
+
   format(value, units, type) {
     if(type === 'measure') {
       if(units === 'imperial') {
-        //return 'fixme'
         return this.inchesAsFraction(value)
       } else {
         return Math.round(value*10)/10+'cm'

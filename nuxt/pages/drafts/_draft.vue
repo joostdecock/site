@@ -40,7 +40,10 @@
             <v-tab-item id="notes" v-html="'<div class=\'fs-m800 fs-pad\'>'+$fs.md.render(draft.notes)+'</div>'" class="fs-pad">
             </v-tab-item>
             <v-tab-item id="gist" class="fs-pad">
-              <code>{{ draft.data.gist }}</code>
+              <pre v-if="typeof draft.data.gist !== 'undefined'">{{ draft.data.gist }}</pre>
+              <blockquote v-else>
+                This draft predates our use of draft gists. Please update it to generate its gist.
+              </blockquote>
             </v-tab-item>
           </v-tabs>
         </div>

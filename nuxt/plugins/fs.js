@@ -59,13 +59,104 @@ export default ({ app, store, route }, inject) => {
 
   const modelMeasurementsMethod = (model, pattern) => {
     let measurements = {}
-    if(typeof store.state.user.models[model] === 'undefined') {
-      return {} // Model not loaded into store yet
-    }
     for(let m in Conf.patterns[pattern].measurements) {
-      measurements[m] = store.state.user.models[model].data.measurements[m]
+      measurements[m] = model.data.measurements[m]
     }
     return measurements
+  }
+
+  const loadDraftMethod = (handle) => {
+    return new Promise(function(resolve, reject) {
+    ax.data.get('/draft/'+handle, { headers: {'Authorization': 'Bearer '+token()} })
+      .then((res) => {
+        resolve(res.data)
+      })
+    .catch((error) => { reject(error.response.data) })
+    })
+  }
+
+  const asGist = (type, data) => {
+    const gist = {
+      type: type,
+      units: data.units,
+      draftOptions:  {},
+      patternOptions: {}
+    }
+    if(type === 'forkFromModel') {
+      // Forked draft
+      gist.pattern = patternHandleMethod(data.draft.pattern)
+      gist.patternClass = patternClassMethod(data.draft.pattern)
+      let sourceOptions = {}
+      let units = ''
+      let sa ={}
+      if(typeof data.draft.data.gist === 'object') {
+        // New draft that comes with a gist
+        sourceOptions = data.draft.data.gist.patternOptions
+        units = data.draft.data.gist.units
+        gist.draftOptions = data.draft.data.gist.draftOptions
+      } else {
+        // Old draft without a gist
+        sourceOptions = data.draft.data.options
+        units = data.draft.data.options.unitsIn
+        gist.draftOptions.sa = {
+          type: 'fixme',
+          value: 1
+        }
+        gist.draftOptions.scope = {
+          type: 'fixme',
+          included: []
+        }
+        gist.draftOptions.theme = 'fixme'
+        gist.draftOptions.locale = data.locale
+      }
+      let ufactor = (units === 'metric') ? 10 : 25.4
+      let option = {}
+      for (let optionName in Conf.patterns[gist.pattern].options) {
+        option = Conf.patterns[gist.pattern].options[optionName]
+        if(option.type === 'measure') {
+          gist.patternOptions[optionName] = utils.sliderRound(sourceOptions[optionName]*ufactor, gist.units)
+        } else {
+          gist.patternOptions[optionName] = utils.round(sourceOptions[optionName])
+        }
+      }
+    } else if(type === 'draftFromModel') {
+      // New draft
+      gist.pattern = patternHandleMethod(data.pattern)
+      gist.patternClass = patternClassMethod(data.pattern)
+      let option = {}
+      for (let optionName in Conf.patterns[gist.pattern].options) {
+        option = Conf.patterns[gist.pattern].options[optionName]
+        if(option.type === 'measure') {
+          gist.patternOptions[optionName] = utils.sliderRound(option.default, gist.units)
+        } else {
+          gist.patternOptions[optionName] = utils.round(option.default)
+        }
+      }
+      if(typeof Conf.patterns[gist.pattern].seamAllowance !== 'undefined') {
+        gist.draftOptions.sa = {
+          type: 'pattern'+gist.units,
+          value: Conf.patterns[gist.pattern].seamAllowance[gist.units]
+        }
+      } else {
+        gist.draftOptions.sa = {
+          type: gist.units,
+          value: (gist.units === 'imperial') ? 0.625 : 1
+        }
+      }
+      gist.draftOptions.scope = {
+        type: 'pattern',
+        included: []
+      }
+      gist.draftOptions.theme = 'Basic'
+      gist.draftOptions.locale = app.i18n.locale
+    }
+    gist.model = {
+      units: data.model.units,
+      handle: data.model.handle,
+      name: data.model.name,
+      measurements: modelMeasurementsMethod(data.model, gist.pattern)
+    }
+    return gist
   }
 
   inject('fs', new Vue({
@@ -102,13 +193,7 @@ export default ({ app, store, route }, inject) => {
       },
 
       loadDraft(handle) {
-        return new Promise(function(resolve, reject) {
-          ax.data.get('/draft/'+handle, { headers: {'Authorization': 'Bearer '+token()} })
-            .then((res) => {
-              resolve(res.data)
-            })
-          .catch((error) => { reject(error.response.data) })
-        })
+        return loadDraftMethod(handle)
       },
 
       updateDraft(handle, data) {
@@ -321,6 +406,10 @@ export default ({ app, store, route }, inject) => {
         else return "primary"
       },
 
+      asMm(value, units) {
+        return utils.asMm(value, units)
+      },
+
       sliderRound(value, units) {
         return utils.sliderRound(value, units)
       },
@@ -450,47 +539,38 @@ export default ({ app, store, route }, inject) => {
       },
 
       initializeDraft(pattern, model) {
-        const gist = {
-          type: 'draftFromModel',
+        const gist = asGist('draftFromModel', {
           pattern: pattern,
-          patternClass: patternClassMethod(pattern),
+          model: store.state.user.models[model],
           units: store.state.user.account.units,
-          model: {
-            units: store.state.user.models[model].units,
-            handle: model,
-            name: store.state.user.models[model].name,
-            measurements: modelMeasurementsMethod(model, pattern)
-          },
-          draftOptions: {},
-          patternOptions: {}
-        }
-        let units = store.state.user.account.units
-        let option = {}
-        for (let optionName in Conf.patterns[gist.pattern].options) {
-          option = Conf.patterns[gist.pattern].options[optionName]
-          if(option.type === 'measure') {
-            gist.patternOptions[optionName] = utils.sliderRound(option.default, units)
-          } else {
-            gist.patternOptions[optionName] = utils.round(option.default)
-          }
-        }
-        if(typeof gist.pattern.seamAllowance !== 'undefined') {
-          gist.draftOptions.sa = {
-            type: 'pattern'+units,
-            value: gist.pattern.seamAllowance[units]
-          }
+          locale: app.i18n.locale
+        })
+        store.commit('setDraftInitial', {
+          gist: gist,
+          defaults: JSON.parse(JSON.stringify(gist)),
+          custom: {}
+        })
+      },
+
+      initializeFork(draftHandle, model) {
+        let draft = {}
+        if(typeof store.state.user.drafts[draftHandle] === 'undefined') {
+          loadDraftMethod(draftHandle)
+            .then((res) => {
+              draft = res.data
+            })
+            .catch((e) => {
+              console.log(e)
+            })
         } else {
-          gist.draftOptions.sa = {
-            type: units,
-            value: (units === 'imperial') ? 0.625 : 1
-          }
+          draft = store.state.user.drafts[draftHandle]
         }
-        gist.draftOptions.scope = {
-          type: 'pattern',
-          included: []
-        }
-        gist.draftOptions.theme = 'Basic'
-        gist.draftOptions.locale = app.i18n.locale
+        const gist = asGist('forkFromModel', {
+          draft: draft,
+          model: store.state.user.models[model],
+          units: store.state.user.account.units,
+          locale: app.i18n.locale
+        })
         store.commit('setDraftInitial', {
           gist: gist,
           defaults: JSON.parse(JSON.stringify(gist)),

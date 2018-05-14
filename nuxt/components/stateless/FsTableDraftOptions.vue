@@ -47,7 +47,11 @@ export default {
         // Pre v2 draft
         return this.options.sa
       }
-      else return fixme
+      else if (typeof this.options.sa === 'object') {
+        // v2 draft
+        return 'fixme'
+      }
+      else return 'fixme'
     },
     formatScope: function () {
       if(this.options.scope.type === 'pattern') {
@@ -57,7 +61,7 @@ export default {
         // Pre v2 draft
         return this.options.scope
       }
-      else return fixme
+      else return 'fixme'
     }
   }
 }

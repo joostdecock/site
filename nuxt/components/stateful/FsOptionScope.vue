@@ -64,7 +64,13 @@ export default {
       this.$store.commit('setDraftScope', {type: this.scope, included: this.pattern.parts} )
     },
     updateDraftScope(type) {
-      this.$store.commit('setDraftScope', {type: type, included: this.included} )
+      let parts = {}
+      for(let part in this.included) {
+        if (this.included[part] !== false) {
+          parts[part] = true
+        }
+      }
+      this.$store.commit('setDraftScope', {type: type, included: parts} )
     },
     scopeSetAll: function(val) {
       for (let part in this.pattern.parts) {
