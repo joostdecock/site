@@ -40,12 +40,6 @@
 <script>
 export default {
   name: 'FsOptionSa',
-  props: {
-    pattern: {
-      type: Object,
-      required: true
-    }
-  },
   data: function() {
     let computedDflt = this.$store.state.user.account.units
     let options = {
@@ -54,9 +48,10 @@ export default {
       imperial: 0,
       custom: 1
     }
-    if (typeof this.pattern.seamAllowance !== 'undefined') {
-      options.patternMetric = this.pattern.seamAllowance.metric
-      options.patternImperial = this.pattern.seamAllowance.imperial
+    let pattern = this.$store.state.draft.defaults.pattern
+    if (typeof this.$fs.conf.patterns[pattern].seamAllowance !== 'undefined') {
+      options.patternMetric = this.$fs.conf.patterns[pattern].seamAllowance.metric
+      options.patternImperial = this.$fs.conf.patterns[pattern].seamAllowance.imperial
       computedDflt = 'pattern'+this.$fs.ucfirst(computedDflt)
     }
     let customSaDflt = 0

@@ -44,8 +44,8 @@
 
       <h2>{{ $t('draftOptions') }}</h2>
       <v-expansion-panel>
-        <fs-option-sa    :pattern="$fs.conf.patterns[pattern]" />
-        <fs-option-scope :pattern="$fs.conf.patterns[pattern]" />
+        <fs-option-sa />
+        <fs-option-scope />
         <fs-option-theme :pattern="$fs.conf.patterns[pattern]" />
       </v-expansion-panel>
     </template>
