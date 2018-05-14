@@ -14,7 +14,7 @@ defaults:
     metric: 1
   scale:
     imperial: 25.4
-    metric: '10,'
+    metric: 10
   step:
     imperial: 0.125
     metric: 0.1

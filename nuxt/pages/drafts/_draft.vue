@@ -1,9 +1,6 @@
 <template>
   <section>
     <fs-breadcrumbs :crumbs="crumbs">{{ $t('draft') }} {{ $route.params.draft }}</fs-breadcrumbs>
-    <pre>
-    {{ $store.state.actions.deleteDraft }}
-    </pre>
     <div v-if="draft">
       <h1 v-if="!updateTitle">{{ draft.name }}
         <v-btn outline round class="ml-3" color="accent" @click="updateTitle=true">{{ $t('edit') }}</v-btn>

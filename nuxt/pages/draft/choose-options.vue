@@ -35,7 +35,6 @@
         {{ $t('draftPatternForModel', { pattern: $fs.ucfirst(patternHandle), model: modelName}) }}
       </v-btn>
       </p>
-      <pre>{{ $store.state.draft.gist }}</pre>
       <fs-draft-configurator :pattern="patternHandle" :model="modelHandle" />
         <p class="text-xs-center mt-5">
         <v-btn color="primary" large @click="submit()" :disabled="loading">
