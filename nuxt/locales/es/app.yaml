@@ -1,282 +1,282 @@
-aboutFreesewing: Acerca de Freesewing TODO
-add: Añadir TODO
-all: Todo TODO
-alreadyHaveAnAccount: Ya tienes una cuenta? TODO
+aboutFreesewing: Acerca de Freesewing
+add: Añadir
+all: Todo
+alreadyHaveAnAccount: Ya tienes una cuenta?
 avatar: Avatar Done
-avatarUpdated: Avatar actualizado TODO
-basics: Bases TODO
-becomeAPatron: Conviértete en patrocinador TODO
+avatarUpdated: Avatar actualizado
+basics: Bases
+becomeAPatron: Conviértete en patrocinador
 blog: Blog Done
-blogPost: Entradas del post TODO
-breasts: Pechos TODO
-breastsUpdated: Opción de pechos actualizada updated TODO
-cancel: Cancelal TODO
-chatOnGitter: Chatea en Gitter TODO
-chatWithUs: Chatea con nosotros TODO
-chooseAModel: Elige un modelo TODO
-chooseAPattern: Elige un patrón TODO
-chooseYourOptions: Elige tus opciones TODO
-classicTheme: Tema clásico TODO
-close: Cerrar TODO
-community: Comunidad TODO
-compare: Comparar TODO
-completePattern: Patrón completo TODO
-connectingToSomeApi: 'Conectando a la {api} API TODO'
-contactUs: Contactáctanos TODO
-content: Contenido TODO
-contents: Contenidos TODO
-coordinator: Coordinador TODO
+blogPost: Entradas del post
+breasts: Pechos
+breastsUpdated: Opción de pechos actualizada updated
+cancel: Cancelal
+chatOnGitter: Chatea en Gitter
+chatWithUs: Chatea con nosotros
+chooseAModel: Elige un modelo
+chooseAPattern: Elige un patrón
+chooseYourOptions: Elige tus opciones
+classicTheme: Tema clásico
+close: Cerrar
+community: Comunidad
+compare: Comparar
+completePattern: Patrón completo
+connectingToSomeApi: 'Conectando a la {api} API '
+contactUs: Contactáctanos
+content: Contenido
+contents: Contenidos
+coordinator: Coordinador
 coreLink: Core link TODO
-countAvailable: '{count} disponible TODO'
-countTranslated: '{count} traducido TODO'
-createIssueOnGithub: Create asunto en GitHub TODO
-createModel: Crear modelo TODO
-createMyAccount: Crear mi cuenta TODO
-created: Creado TODO
-currentPassword: Contraneña actual TODO
-data: Datos TODO
-date: Fecha TODO
-daysAgo: 'hace {days} días TODO'
-delete: Borrar TODO
-deleteThisDraft: Borrar este boceto TODO
-description: Descripción TODO
-details: Detalles TODO
-difficulty: Dificultad TODO
-docs: Documentación TODO
-documentation: Documentación TODO
-documentationForDevelopers: Documentación para desarrolladores TODO
-documentationForTranslators: Documentación para traductores TODO
-documentationOverview: Documentation general TODO
-download: Descargar TODO
-draft: Boceto TODO
-draftOptions: Opciones del boceto TODO
-draftPattern: 'Dibujar {pattern} TODO'
-draftPatternForModel: 'Dibujar {pattern} para {model} TODO'
-draftThePattern: Dibuja el patrón TODO
-draftingPattern: 'Dibujando {pattern} TODO'
-drafts: Bocetos TODO
-edit: Editar TODO
-editOnGithub: Editar en GitHub TODO
+countAvailable: '{count} disponible '
+countTranslated: '{count} traducido '
+createIssueOnGithub: Create asunto en GitHub
+createModel: Crear modelo
+createMyAccount: Crear mi cuenta
+created: Creado
+currentPassword: Contraneña actual
+data: Datos
+date: Fecha
+daysAgo: 'hace {days} días '
+delete: Borrar
+deleteThisDraft: Borrar este boceto
+description: Descripción
+details: Detalles
+difficulty: Dificultad
+docs: Documentación
+documentation: Documentación
+documentationForDevelopers: Documentación para desarrolladores
+documentationForTranslators: Documentación para traductores
+documentationOverview: Documentation general
+download: Descargar
+draft: Boceto
+draftOptions: Opciones del boceto
+draftPattern: 'Dibujar {pattern} '
+draftPatternForModel: 'Dibujar {pattern} para {model} '
+draftThePattern: Dibuja el patrón
+draftingPattern: 'Dibujando {pattern} '
+drafts: Bocetos
+edit: Editar
+editOnGithub: Editar en GitHub
 email: E-mail DONE
-emailAddress: Dirección de E-mail TODO
-emailUpdated: Actualización de E-mail update pending. Revisa tu bandeja de entrada para el E-mail de confirmación TODO
+emailAddress: Dirección de E-mail
+emailUpdated: Actualización de E-mail update pending. Revisa tu bandeja de entrada para el E-mail de confirmación
 emails: E-mails DONE
-enterYourCurrentPassword: Introduce tu contraseña actual TODO
-enterYourNewPassword: Introduce tu nueva contraseña TODO
-error-unknown: Ha ocurrido un error inesperado TODO
-error-username_taken: Nombre de usuario ya escogido TODO
-filterByPattern: Filtrar por patrón TODO
-forContributors: Para colaboradores TODO
-forMoreInfoRtfm: 'Para más información, lee la documentación: TODO'
-forUsername: 'Para {username} TODO'
-forUsers: Para usuarios TODO
-fork: Bifurcar TODO
-forkDraftHandle: 'Bifurcar boceto {handle} TODO'
-format: Formato TODO
+enterYourCurrentPassword: Introduce tu contraseña actual
+enterYourNewPassword: Introduce tu nueva contraseña
+error-unknown: Ha ocurrido un error inesperado
+error-username_taken: Nombre de usuario ya escogido
+filterByPattern: Filtrar por patrón
+forContributors: Para colaboradores
+forMoreInfoRtfm: 'Para más información, lee la documentación: '
+forUsername: 'Para {username} '
+forUsers: Para usuarios
+fork: Bifurcar
+forkDraftHandle: 'Bifurcar boceto {handle} '
+format: Formato
 freesewing: Freesewing DONE
-fullSizePdf: PDF tamaño completo TODO
-fundamentals: Fundamentos TODO
+fullSizePdf: PDF tamaño completo
+fundamentals: Fundamentos
 github: GitHub DONE
-githubUpdated: Nombre de usuario de GitHub actualizado TODO
-goodToKnow: Bueno saberlo TODO
-hi: Hola TODO
+githubUpdated: Nombre de usuario de GitHub actualizado
+goodToKnow: Bueno saberlo
+hi: Hola
 home: Home TODO
-howToTakeMeasurements: Cómo tomar medidas TODO
-i18n: Internationalización (i18n) TODO
-image: Imágen TODO
+howToTakeMeasurements: Cómo tomar medidas
+i18n: Internationalización (i18n)
+image: Imágen
 imperial: Imperial DONE
-imperialUnits: Unidades imperiales (pulgadas) TODO
-inch: pulgada TODO
-info: Información TODO
+imperialUnits: Unidades imperiales (pulgadas)
+inch: pulgada
+info: Información
 instagram: Instagram DONE
-instagramUpdated: Cuenta de Instagram establecida TODO
+instagramUpdated: Cuenta de Instagram establecida
 joinTheTranslationTeam: 'Incluso si nunca has contribuído a un proyecto open source, la traducción es una cuesta de poca pendiente hacia la fama de colaborador'
-justAMoment: Un momento TODO
+justAMoment: Un momento
 key: Key TODO
-language: Idioma TODO
-languageLanguageFiles: '{language} ficheros de idiomas TODO'
-layout: Plantilla TODO
-learnToDesignPatterns: Aprende a diseñar patrones TODO
+language: Idioma
+languageLanguageFiles: '{language} ficheros de idiomas '
+layout: Plantilla
+learnToDesignPatterns: Aprende a diseñar patrones
 letterPdf: Letter PDF DONE
-loadingModelData: Cargardo información del modelo TODO
-loadingResult: Cargando resultado TODO
-locale: Idioma TODO
-localeUpdated: Preferencia de idioma actualizada TODO
-logIn: Iniciar sesión TODO
-logOut: cerrar sesión TODO
-loginFailed: Inicio de sesión fallido TODO
-makeItBetter: Maejóralo TODO
-measurementUpdated: Medida actualizada TODO
-measurements: Medidas TODO
-measurementsRequiredForPattern: 'Medidas requeridas por {pattern} TODO'
-messages: Mensajes TODO
-metric: Métrico TODO
-metricUnits: Unidades decimales (cm) TODO
-model: Modelo TODO
-modelIsModel: 'El modelo es {model} TODO'
-models: Modelos TODO
-monthAgo: Hace un mes TODO
-monthsAgo: 'Hace {months} meses TODO'
-name: Nombre TODO
-nameOfTheModel: Nombre del modelo TODO
-nameUpdated: Nonmbre actualizado TODO
-newDraft: Nuevo boceto TODO
-newModel: Nuevo modelo TODO
-newPassword: Nueva contraseña TODO
-newPatternDraft: 'Nuevo boceto de {pattern} TODO'
-newTaskForUser: 'Nueva tarea para {user} TODO'
+loadingModelData: Cargardo información del modelo
+loadingResult: Cargando resultado
+locale: Idioma
+localeUpdated: Preferencia de idioma actualizada
+logIn: Iniciar sesión
+logOut: cerrar sesión
+loginFailed: Inicio de sesión fallido
+makeItBetter: Maejóralo
+measurementUpdated: Medida actualizada
+measurements: Medidas
+measurementsRequiredForPattern: 'Medidas requeridas por {pattern} '
+messages: Mensajes
+metric: Métrico
+metricUnits: Unidades decimales (cm)
+model: Modelo
+modelIsModel: 'El modelo es {model} '
+models: Modelos
+monthAgo: Hace un mes
+monthsAgo: 'Hace {months} meses '
+name: Nombre
+nameOfTheModel: Nombre del modelo
+nameUpdated: Nonmbre actualizado
+newDraft: Nuevo boceto
+newModel: Nuevo modelo
+newPassword: Nueva contraseña
+newPatternDraft: 'Nuevo boceto de {pattern} '
+newTaskForUser: 'Nueva tarea para {user} '
 'no': No DONE
-noChanges: Sin cambios TODO
-noDraftsFound: No se encontraron bocetos TODO
-noFilter: Sin filtros TODO
-noIDoNot: 'No, I do not TODO'
-notShared: No compartido TODO
-notes: Notas TODO
-ohNo: ¡Oh no! TODO
-okThatsDone: 'OK, eso está hecho TODO'
-onlySelectedPatternParts: Sólo las partes seleccionadas del patrón TODO
-pageNotFound: La página que buscas no se encuentra en ninguna parte. TODO
-paperlessTheme: Tema sin papel TODO
-password: Contraseña TODO
+noChanges: Sin cambios
+noDraftsFound: No se encontraron bocetos
+noFilter: Sin filtros
+noIDoNot: 'No, I do not '
+notShared: No compartido
+notes: Notas
+ohNo: ¡Oh no!
+okThatsDone: 'OK, eso está hecho '
+onlySelectedPatternParts: Sólo las partes seleccionadas del patrón
+pageNotFound: La página que buscas no se encuentra en ninguna parte.
+paperlessTheme: Tema sin papel
+password: Contraseña
 passwordUpdated: Password changed TODO
-patrons: Patrocinadores TODO
-pattern: Patrón TODO
-patternDesignTutorial: Tutorial de diseño de patrones TODO
-patternDocumentation: Instrucciones del patrón TODO
-patternIsPattern: 'El patrón es {pattern} TODO'
-patternOptions: Opciones del patrón TODO
-patternParts: Partes del patrón TODO
-patterns: Patrones TODO
+patrons: Patrocinadores
+pattern: Patrón
+patternDesignTutorial: Tutorial de diseño de patrones
+patternDocumentation: Instrucciones del patrón
+patternIsPattern: 'El patrón es {pattern} '
+patternOptions: Opciones del patrón
+patternParts: Partes del patrón
+patterns: Patrones
 postInfo: Post info TODO
-preferences: Preferencias TODO
-privacy: Privacidad TODO
-privacyInfo: Información de privacidad TODO
-processingDraftOptions: Procesando las opciones del boceto TODO
-profile: Perfil TODO
-quickPick: Vista rápida TODO
-reSendActivationEmail: Reenviar email de activación TODO
-redraft: Redibujar TODO
-reference: Referencia TODO
-removeAllMyData: Borrar todos mis datos TODO
+preferences: Preferencias
+privacy: Privacidad
+privacyInfo: Información de privacidad
+processingDraftOptions: Procesando las opciones del boceto
+profile: Perfil
+quickPick: Vista rápida
+reSendActivationEmail: Reenviar email de activación
+redraft: Redibujar
+reference: Referencia
+removeAllMyData: Borrar todos mis datos
 replay: Replay TODO
-requiredMeasurements: Medidas requeridas TODO
-retrievingDraftFromCore: Retrieving el boceto desde el núcleo TODO
-rowsFromToOfTotal: 'Filas {from} a la {to} de {total} TODO'
-rowsPerPage: Filas por página TODO
-save: Guardar TODO
+requiredMeasurements: Medidas requeridas
+retrievingDraftFromCore: Retrieving el boceto desde el núcleo
+rowsFromToOfTotal: 'Filas {from} a la {to} de {total} '
+rowsPerPage: Filas por página
+save: Guardar
 scope: Scope TODO
-seamAllowance: Margen de costura TODO
-search: Buscar TODO
-seeBelow: Mira abajo TODO
-selectADifferentImage: Selecciona otra imagen TODO
-selectAnImage: Selecciona una imagen TODO
-settings: Ajustes TODO
-share: Compartir TODO
-shared: Compartido TODO
-sharedUpdated: Opción de compartir actualizada TODO
-showHelp: Mostrar ayuda TODO
+seamAllowance: Margen de costura
+search: Buscar
+seeBelow: Mira abajo
+selectADifferentImage: Selecciona otra imagen
+selectAnImage: Selecciona una imagen
+selectThePartsYouWantIncludedInYourDraft: Select the parts you want included in your draft TODO
+settings: Ajustes
+share: Compartir
+shared: Compartido
+sharedUpdated: Opción de compartir actualizada
+showHelp: Mostrar ayuda
 showcase: Showcase TODO
 showcaseInfo: Showcase info TODO
-signUp: Registrarse TODO
-signUpForAFreeAccount: Regístrate para una cuenta gratuíta TODO
-signup--text: Esto no debería pasar. Por favor, ayúdanos creando un asunto en GitHub TODO
-signup--title: Ha ocurrido un error desconocido TODO
-signup-invalid_input-text: 'Por favor, introduce una dirección de email válida y una contraseña TODO'
-signup-invalid_input-title: Entrada incorrecta TODO
-signup-no_such_pending_confirmation-text: 'Sorry, but that is not a confirmation code we have on record? Perhaps it expired, in which case you can just sign up again. TODO'
-signup-no_such_pending_confirmation-text: 'Lo sentimos, pero no tenemos registrado ese código de confirmación. Tal vez ha expirado, en cuyo caso puedes sencillamente registrarte otra vez. TODO'
-signup-no_such_pending_confirmation-title: No tenemos esa confirmación pendiente TODO
-signup-signup_pending-text: Ya tenemos una confirmación pendiente para esa dirección de email. Te hemos enviado una nueva copia del email de confirmación en caso de que lo hayas perdido. TODO
-signup-signup_pending-title: Tu cuenta está pendiente de activación TODO
-signup-success-text: 'Te hemos enviado un email a {email}. TODO'
-signup-user_exists-text: Ya tenemos un usuario con esa dirección de email. Tal vez quieras iniciar sesión TODO
-signup-user_exists-title: Ese usuario existe TODO
+signUp: Registrarse
+signUpForAFreeAccount: Regístrate para una cuenta gratuíta
+signup--text: 'Esto no debería pasar. Por favor, ayúdanos creando un asunto en GitHub'
+signup--title: Ha ocurrido un error desconocido
+signup-invalid_input-text: 'Por favor, introduce una dirección de email válida y una contraseña '
+signup-invalid_input-title: Entrada incorrecta
+signup-no_such_pending_confirmation-text: 'Lo sentimos, pero no tenemos registrado ese código de confirmación. Tal vez ha expirado, en cuyo caso puedes sencillamente registrarte otra vez. '
+signup-no_such_pending_confirmation-title: No tenemos esa confirmación pendiente
+signup-signup_pending-text: Ya tenemos una confirmación pendiente para esa dirección de email. Te hemos enviado una nueva copia del email de confirmación en caso de que lo hayas perdido.
+signup-signup_pending-title: Tu cuenta está pendiente de activación
+signup-success-text: 'Te hemos enviado un email a {email}. '
+signup-user_exists-text: Ya tenemos un usuario con esa dirección de email. Tal vez quieras iniciar sesión
+signup-user_exists-title: Ese usuario existe
 social: Social DONE
-somethingWentWrong: Algo ha ido mal TODO
-startUpload: Empezar subida TODO
-status: Estado TODO
-statusTranslationLanguage: 'Estado de traducción {language} TODO'
-step1: Paso 1 TODO
-step2: Paso 2 TODO
-step3: Paso 3 TODO
-step4: Paso 4 TODO
-stopUpload: Detener subida TODO
-storingDraftData: Guardando datos del boceto TODO
-svgSourceCode: Código fuente SVG TODO
-tabloidPdf: PDF Tabloide TODO
-taskCompleted: Tarea completada TODO
-theme: Tema TODO
-themeUpdated: Preferencias de la plantilla establecidas TODO
-thisContentIsNotAvailableInLanguage: Este contenido no está disponible en Español. TODO
-thisIsTheCurrentStatusOfOurTranslations: Éste es el estado actual de nuestras traducciones. TODO
-thisPageIsNotIntendedForLoggedInUsers: Esta página no está pensada para usuarios con una sesión abierta TODO
-thisPageIsOnlyAvailableToFreesewingUsers: Espa página está sólo disponible para usuarios de Freesewing TODO
-title: Título TODO
-today: Hoy TODO
-translationTeam: Equipo de traducción TODO
-tryAgain: Prueba otra vez TODO
+somethingWentWrong: Algo ha ido mal
+startUpload: Empezar subida
+status: Estado
+statusTranslationLanguage: 'Estado de traducción {language} '
+step1: Paso 1
+step2: Paso 2
+step3: Paso 3
+step4: Paso 4
+stopUpload: Detener subida
+storingDraftData: Guardando datos del boceto
+svgSourceCode: Código fuente SVG
+tabloidPdf: PDF Tabloide
+taskCompleted: Tarea completada
+theme: Tema
+themeUpdated: Preferencias de la plantilla establecidas
+thisContentIsNotAvailableInLanguage: Este contenido no está disponible en Español.
+thisIsTheCurrentStatusOfOurTranslations: Éste es el estado actual de nuestras traducciones.
+thisPageIsNotIntendedForLoggedInUsers: Esta página no está pensada para usuarios con una sesión abierta
+thisPageIsOnlyAvailableToFreesewingUsers: Espa página está sólo disponible para usuarios de Freesewing
+title: Título
+today: Hoy
+translationTeam: Equipo de traducción
+tryAgain: Prueba otra vez
 twitter: Twitter DONE
-twitterUpdated: Cuenta de Twitter establecida TODO
-txt-avatarDropzoneText: 'Arrastra una imagen aquí, o haz clic en el botón para elegir una de entre tus archivos. TODO'
-txt-avatarDropzoneTitle: Arrastra tu imagen aquí TODO
-txt-changeRequiresConfirmation: Este cambio requiere confirmación vía E-mail TODO
-txt-clickEmailLink: Por favor, sigue el enlace en el email para continuar. TODO
-txt-consentProfile: Das permiso para procesar tu información de usuario? TODO
-txt-consentProfileAnswerShare: '<b>No</b>, nunca. TODO'
-txt-consentProfileAnswerTiming: '<b>12 meses</b> desde tu última sesión, o hasta que <b>elimines</b> tu cuenta o <b>revoques</b> este consentimiento. TODO'
-txt-consentProfileAnswerWhat: 'Tu <b>dirección de email</b>, <b>nombre de usuario</b>, y <b>contraseña</b>. TODO'
-txt-consentProfileAnswerWhatOptional: 'Opcional: Una <b>imágen de perfil</b>, y <b>cuentas de redes sociales</b> TODO'
-txt-consentProfileAnswerWhy: 'Para <b>autentificar</b> tu <b>contacto</b> cuando lo necesites, y construir una <b>comunidad</b>. TODO'
-txt-consentProfileQuestionShare: Lo compartimos con otros? TODO
-txt-consentProfileQuestionTiming: Por cuánto tiempo lo guardamos? TODO
-txt-consentProfileQuestionWhat: Qué son los datos del perfil? TODO
-txt-consentProfileQuestionWhy: Por qué lo necesitamos? TODO
-txt-contentLocaleFallback: Por eso te estamos enseñando la versión en inglés en su lugar. TODO
-txt-contentNotTranslated: 'Lamentablemente, esta página no ha sido traducida al {language} (todavía). TODO'
-txt-didYouSpotATypo: 'Has encontrado un erro tipográfico? Crees que algo falta, o necesita aclaración? TODO'
-txt-editThisPageOnline: Puedes editar esta página y luego enviar tus cambios. TODO
-txt-email-sharing: Nunca compartiremos esto con nadie TODO
-txt-emailChangeConfirmationNotFound: 'Lo sentimos, pero no tenemos ningún cambio de E-mail pendiente para este código de confirmación. Tal vez ha expirado, en cuyo caso puedes hacer el cambio de nuevo en tus ajustes. TODO'
-txt-emailNotFound: 'Si no puedes encontrar el email mira en tu carpeta de SPAM, o contacta con nosotros. TODO'
-txt-gdprCompliant: Freesewing.org respeta tu privacidad y tus derechos. Aplicamos la Regulación General de Protección de Datos (RGPD) de la Unión Europea (UE). TODO
-txt-joinTheTranslationTeam1: 'Incluso si nunca has contribuído a un proyecto open source, la traducción es una cuesta de poca pendiente hacia la fama de colaborador. TODO'
-txt-joinTheTranslationTeam2: 'It doesn''t matter whether you translate a few words or sentences, or tackle an entire language by yourself. Every contribution counts, and many hands make light work. TODO'
-txt-joinTheTranslationTeam3: 'Lee la documentación para traductores para empezar. No te preocupes, es fácil. TODO'
-txt-modelsWithMissingMeasurements: 'A este modelo le faltan algunas de las medidas requeridas para dibujar este patrón: TODO'
-txt-newModel: 'Para empezar, dale un nombre a este modelo. TODO'
-txt-password-policy: No aplicamos una política de contraseña TODO
-txt-saOption-custom: Margen de costura personalizado TODO
-txt-saOption-imperial: Margen de costura imperial estándar TODO
-txt-saOption-metric: Margen de costura métrico estándar TODO
-txt-saOption-none: No incluír margen de costura TODO
-txt-saOption-patternImperial: Márgen de costura imperial por defecto del patrón TODO
-txt-saOption-patternMetric: Márgen de costura métrico defecto del patrón TODO
-txt-signup-step1: 'Introduce tu dirección de email y elige una contraseña. TODO'
-txt-signup-step2: Confirma tu dirección de email. TODO
-txt-signup-step3: Danos permiso para procesar tus datos personales. TODO
-txt-slogan: Una plataforma open source platform para patrones de costura a medida TODO
-txt-withOrWithoutBreasts: 'Ajustar pechos requiere una serie de medidas que no son relevantes si no tienes pechos. Si has elegido que tu modelo no tenga pechos, to te mostraremos estas medidas por ser irrelevantes. Si no sabes qué elegir, elige pechos. TODO'
-txt-withOrWithoutBreasts-explainer: 'En otros sitios, esta pregunta se plantea como "¿hombre o mujer?. Aquí no nos gusta poner etiquetas a la gente. Sólo nos importa ajustar tu pecho. TODO'
-type: Tipo TODO
-units: Unidades TODO
-unitsUpdated: Juego de unidades TODO
-update: Actualizar TODO
-updates: Actualizaciones TODO
-useDecimalsOrFractions: Usar decimales (1.25) o fracciones (1 1/4) TODO
-user: Usuario TODO
-username: Nombre de usuario TODO
-usernameUpdated: Nombre de usuario actualizado TODO
-version: Versión TODO
-volunteerVerb: Voluntario TODO
-weAreLoadingDataFromTheBackend: Estamos cargando datos desde el backend TODO
-weAreValidatingYourConfirmationCode: Estamos validando tu código de confirmación TODO
-welcomeAboard: Bienvenido a bordo TODO
-withBreasts: Con pechos TODO
-withOrWithoutBreasts: Con o sin pechos? TODO
-withoutBreasts: Sin pechos TODO
-wouldYouLikeToLogOut: ¿Quieres cerrar la sesión TODO
-'yes': Sí TODO
-yesIDo: 'Yes, I do TODO'
-yesterday: Ayer TODO
-youAreCurrentlyLoggedIn: Tienes una sesión abierta. TODO
-youAreNotLoggedIn: No tienes una sesión abierta. TODO
+twitterUpdated: Cuenta de Twitter establecida
+txt-avatarDropzoneText: 'Arrastra una imagen aquí, o haz clic en el botón para elegir una de entre tus archivos. '
+txt-avatarDropzoneTitle: Arrastra tu imagen aquí
+txt-changeRequiresConfirmation: Este cambio requiere confirmación vía E-mail
+txt-clickEmailLink: 'Por favor, sigue el enlace en el email para continuar.'
+txt-consentProfile: Das permiso para procesar tu información de usuario?
+txt-consentProfileAnswerShare: '<b>No</b>, nunca. '
+txt-consentProfileAnswerTiming: '<b>12 meses</b> desde tu última sesión, o hasta que <b>elimines</b> tu cuenta o <b>revoques</b> este consentimiento. '
+txt-consentProfileAnswerWhat: 'Tu <b>dirección de email</b>, <b>nombre de usuario</b>, y <b>contraseña</b>. '
+txt-consentProfileAnswerWhatOptional: 'Opcional: Una <b>imágen de perfil</b>, y <b>cuentas de redes sociales</b> '
+txt-consentProfileAnswerWhy: 'Para <b>autentificar</b> tu <b>contacto</b> cuando lo necesites, y construir una <b>comunidad</b>. '
+txt-consentProfileQuestionShare: Lo compartimos con otros?
+txt-consentProfileQuestionTiming: Por cuánto tiempo lo guardamos?
+txt-consentProfileQuestionWhat: Qué son los datos del perfil?
+txt-consentProfileQuestionWhy: Por qué lo necesitamos?
+txt-contentLocaleFallback: Por eso te estamos enseñando la versión en inglés en su lugar.
+txt-contentNotTranslated: 'Lamentablemente, esta página no ha sido traducida al {language} (todavía). '
+txt-didYouSpotATypo: 'Has encontrado un erro tipográfico? Crees que algo falta, o necesita aclaración? '
+txt-editThisPageOnline: Puedes editar esta página y luego enviar tus cambios.
+txt-email-sharing: Nunca compartiremos esto con nadie
+txt-emailChangeConfirmationNotFound: 'Lo sentimos, pero no tenemos ningún cambio de E-mail pendiente para este código de confirmación. Tal vez ha expirado, en cuyo caso puedes hacer el cambio de nuevo en tus ajustes. '
+txt-emailNotFound: 'Si no puedes encontrar el email mira en tu carpeta de SPAM, o contacta con nosotros. '
+txt-gdprCompliant: Freesewing.org respeta tu privacidad y tus derechos. Aplicamos la Regulación General de Protección de Datos (RGPD) de la Unión Europea (UE).
+txt-joinTheTranslationTeam1: 'Incluso si nunca has contribuído a un proyecto open source, la traducción es una cuesta de poca pendiente hacia la fama de colaborador. '
+txt-joinTheTranslationTeam2: 'It doesn''t matter whether you translate a few words or sentences, or tackle an entire language by yourself. Every contribution counts, and many hands make light work. '
+txt-joinTheTranslationTeam3: 'Lee la documentación para traductores para empezar. No te preocupes, es fácil. '
+txt-modelsWithMissingMeasurements: 'A este modelo le faltan algunas de las medidas requeridas para dibujar este patrón: '
+txt-newModel: 'Para empezar, dale un nombre a este modelo. '
+txt-password-policy: No aplicamos una política de contraseña
+txt-saOption-custom: Margen de costura personalizado
+txt-saOption-imperial: Margen de costura imperial estándar
+txt-saOption-metric: Margen de costura métrico estándar
+txt-saOption-none: No incluír margen de costura
+txt-saOption-patternImperial: Márgen de costura imperial por defecto del patrón
+txt-saOption-patternMetric: Márgen de costura métrico defecto del patrón
+txt-signup-step1: 'Introduce tu dirección de email y elige una contraseña. '
+txt-signup-step2: Confirma tu dirección de email.
+txt-signup-step3: Danos permiso para procesar tus datos personales.
+txt-slogan: Una plataforma open source platform para patrones de costura a medida
+txt-withOrWithoutBreasts: 'Ajustar pechos requiere una serie de medidas que no son relevantes si no tienes pechos. Si has elegido que tu modelo no tenga pechos, to te mostraremos estas medidas por ser irrelevantes. Si no sabes qué elegir, elige pechos. '
+txt-withOrWithoutBreasts-explainer: 'En otros sitios, esta pregunta se plantea como "¿hombre o mujer?. Aquí no nos gusta poner etiquetas a la gente. Sólo nos importa ajustar tu pecho. '
+type: Tipo
+units: Unidades
+unitsUpdated: Juego de unidades
+update: Actualizar
+updates: Actualizaciones
+useDecimalsOrFractions: Usar decimales (1.25) o fracciones (1 1/4)
+user: Usuario
+username: Nombre de usuario
+usernameUpdated: Nombre de usuario actualizado
+version: Versión
+volunteerVerb: Voluntario
+weAreLoadingDataFromTheBackend: Estamos cargando datos desde el backend
+weAreValidatingYourConfirmationCode: Estamos validando tu código de confirmación
+welcomeAboard: Bienvenido a bordo
+withBreasts: Con pechos
+withOrWithoutBreasts: Con o sin pechos?
+withoutBreasts: Sin pechos
+wouldYouLikeToLogOut: ¿Quieres cerrar la sesión
+'yes': Sí
+yesIDo: 'Yes, I do '
+yesterday: Ayer
+youAreCurrentlyLoggedIn: Tienes una sesión abierta.
+youAreNotLoggedIn: No tienes una sesión abierta.

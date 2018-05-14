@@ -8,6 +8,7 @@
         $t('draftingPattern', {pattern: $fs.ucfirst(patternName)}) :
         $t('step3')+': '+$t('chooseYourOptions')">
     </h1>
+    {{ $route.name }}
     <div v-if="loading">
       <fs-draft-ticker :ready="ready" :error="error" />
         <fs-message-error-please-report v-if="error" />
@@ -65,6 +66,12 @@ export default {
     FsBreadcrumbs,
     FsDraftTicker,
     FsMessageErrorPleaseReport
+  },
+  props: {
+    mode: {
+      type: String,
+      required: true
+    }
   },
   computed: {
     modelName () {
