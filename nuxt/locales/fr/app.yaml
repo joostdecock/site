@@ -1,103 +1,103 @@
-aboutFreesewing: About Freesewing TODO
-add: Add TODO
-all: All TODO
-alreadyHaveAnAccount: Already have an account? TODO
-avatar: Avatar TODO
-avatarUpdated: Avatar updated TODO
-basics: Basics TODO
-becomeAPatron: Become a patron TODO
-blog: Blog TODO
-blogPost: Blog posts TODO
-breasts: Breasts TODO
-breastsUpdated: Breasts setting updated TODO
-cancel: Cancel TODO
-chatOnGitter: Chat on Gitter TODO
-chatWithUs: Chat with us TODO
-chooseAModel: Choose a model TODO
-chooseAPattern: Choose a pattern TODO
-chooseYourOptions: Choose your options TODO
-classicTheme: Classic theme TODO
-close: Close TODO
-community: Community TODO
-compare: Compare TODO
+aboutFreesewing: A propos de Freesewing 
+add: Ajouter
+all: Tout 
+alreadyHaveAnAccount: Vous avez déjà un compte ?
+avatar: Avatar DONE
+avatarUpdated: Avatar mis à jour
+basics: Les bases
+becomeAPatron: Devenez mécène
+blog: Blog DONE
+blogPost: Messages de blog
+breasts: Poitrine
+breastsUpdated: Réglages poitrine mis à jour
+cancel: Annuler
+chatOnGitter: Chatter sur Gitter
+chatWithUs: Chatter avec nous
+chooseAModel: Choisir un modèle
+chooseAPattern: Choisir un patron
+chooseYourOptions: Choisir vos options
+classicTheme: Thème classique
+close: Fermer
+community: Communauté
+compare: Comparer
 completePattern: Complete pattern TODO
 connectingToSomeApi: 'Connecting to {api} API TODO'
-contactUs: Contact us TODO
-content: Content TODO
-contents: Contents TODO
-coordinator: Coordinator TODO
+contactUs: Nous contacter
+content: Contenu
+contents: Contenus
+coordinator: Coordinateur
 coreLink: Core link TODO
 countAvailable: '{count} available TODO'
 countTranslated: '{count} translated TODO'
 createIssueOnGithub: Create issue on GitHub TODO
-createModel: Create model TODO
-createMyAccount: Create my account TODO
-created: Created TODO
-currentPassword: Current password TODO
-data: Data TODO
-date: Date TODO
+createModel: Créer le modèle
+createMyAccount: Créer mon compte
+created: Créé
+currentPassword: Mot de passe actuel
+data: Données
+date: Date DONE
 daysAgo: '{days} days ago TODO'
-delete: Delete TODO
-deleteThisDraft: Delete this draft TODO
-description: Description TODO
-details: Details TODO
-difficulty: Difficulty TODO
-docs: Documentation TODO
-documentation: Documentation TODO
-documentationForDevelopers: Documentation for developers TODO
-documentationForTranslators: Documentation for translators TODO
-documentationOverview: Documentation overview TODO
-download: Download TODO
-draft: Draft TODO
-draftOptions: Draft options TODO
+delete: Supprimer
+deleteThisDraft: Supprimer ce brouillon
+description: Description DONE
+details: Details DONE
+difficulty: Difficulté
+docs: Documentation DONE
+documentation: Documentation DONE
+documentationForDevelopers: Documentation pour les développeurs
+documentationForTranslators: Documentation pour les traducteurs
+documentationOverview: Vue d'ensemble de la documentation
+download: Télécharger
+draft: Brouillon
+draftOptions: Options du brouillon
 draftPattern: 'Draft {pattern} TODO'
 draftPatternForModel: 'Draft {pattern} for {model} TODO'
 draftThePattern: Draft the pattern TODO
 draftingPattern: 'Drafting {pattern} TODO'
-drafts: Drafts TODO
-edit: Edit TODO
-editOnGithub: Edit on GitHub TODO
-email: E-mail TODO
-emailAddress: E-mail address TODO
+drafts: Brouillons
+edit: Editer
+editOnGithub: Editer avec GitHub
+email: E-mail DONE
+emailAddress: Adresse mail
 emailUpdated: E-mail update pending. Please check your inbox for a confirmation E-mail TODO
-emails: E-mails TODO
-enterYourCurrentPassword: Enter your current password TODO
-enterYourNewPassword: Enter your new password TODO
-error-unknown: An unknown error occured TODO
-error-username_taken: Username taken TODO
+emails: E-mails DONE
+enterYourCurrentPassword: Composer votre mot de passe actuel
+enterYourNewPassword: Composer votre nouveau mot de passe
+error-unknown: Une erreur inconnue est survenue
+error-username_taken: Nom d'utilisateur déjà pris
 filterByPattern: Filter by pattern TODO
-forContributors: For contributors TODO
+forContributors: Pour les contributeurs
 forMoreInfoRtfm: 'For more info, read the documentation: TODO'
 forUsername: 'For {username} TODO'
-forUsers: For users TODO
+forUsers: Pour les utilisateurs
 fork: Fork TODO
 forkDraftHandle: 'Fork draft {handle} TODO'
 format: Format TODO
-freesewing: Freesewing TODO
-fullSizePdf: Full size PDF TODO
-fundamentals: Fundamentals TODO
-github: GitHub TODO
-githubUpdated: GitHub username updated TODO
-goodToKnow: Good to know TODO
-hi: Hi TODO
+freesewing: Freesewing DONE
+fullSizePdf: PDF à l'échelle
+fundamentals: Fondamentaux
+github: GitHub DONE
+githubUpdated: Nom d'utilisateur GitHub mis à jour
+goodToKnow: Bon à savoir
+hi: Salut
 home: Home TODO
-howToTakeMeasurements: How to take measurements TODO
-i18n: Internationalization (i18n) TODO
-image: Image TODO
+howToTakeMeasurements: Comment prendre les mesures
+i18n: Internationalisation (i18n)
+image: Image DONE
 imperial: Imperial TODO
-imperialUnits: Imperial units (inch) TODO
-inch: inch TODO
-info: Info TODO
-instagram: Instagram TODO
-instagramUpdated: Instagram account set TODO
+imperialUnits: Unités impériales (pouces)
+inch: pouce
+info: Info DONE
+instagram: Instagram DONE
+instagramUpdated: Compte Instagram établi
 joinTheTranslationTeam: 'Even if you have never contributed to an open source project, translation is a smooth on-ramp towards contributor fame. TODO'
-justAMoment: Just a moment TODO
+justAMoment: Juste un instant
 key: Key TODO
-language: Language TODO
+language: Langue
 languageLanguageFiles: '{language} language files TODO'
 layout: Layout TODO
-learnToDesignPatterns: Learn to design patterns TODO
-letterPdf: Letter PDF TODO
+learnToDesignPatterns: Apprendre à concevoir des patrons
+letterPdf: PDF lettre
 loadingModelData: Loading model data TODO
 loadingResult: Loading result TODO
 locale: Language TODO
