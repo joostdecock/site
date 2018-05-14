@@ -139,6 +139,7 @@ pageNotFound: The page you are looking for is nowhere to be found.
 paperlessTheme: Paperless theme
 password: Password
 passwordUpdated: Password changed
+patronText: '{username} is a {patronTier} since {daysAgo}'
 patrons: Patrons
 pattern: Pattern
 patternDesignTutorial: Pattern design tutorial
@@ -266,6 +267,7 @@ user: User
 username: Username
 usernameUpdated: Username updated
 version: Version
+visitPatronProfile: Visit the profile page of this patron
 volunteerVerb: Volunteer
 weAreLoadingDataFromTheBackend: We are loading data from the backend
 weAreValidatingYourConfirmationCode: We are validating your confirmation code

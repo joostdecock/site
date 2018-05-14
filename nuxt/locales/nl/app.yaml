@@ -139,6 +139,7 @@ pageNotFound: De pagina waar je naar op zoek bent is nergens te vinden.
 paperlessTheme: Papierloze layout
 password: Wachtwoord
 passwordUpdated: Wachtwoord gewijzigd
+patronText: '{username} is a {patronTier} since {daysAgo} TODO'
 patrons: Sponsors
 pattern: Patroon
 patternDesignTutorial: Patroon ontwerp les
@@ -266,6 +267,7 @@ user: Gebruiker
 username: Gebruikersnaam
 usernameUpdated: Gebruikersnaam bijgewerkt
 version: Versie
+visitPatronProfile: Visit the profile page of this patron TODO
 volunteerVerb: Wordt vrijwilliger
 weAreLoadingDataFromTheBackend: We laden gegevens van de backend
 weAreValidatingYourConfirmationCode: We valideren je bevestigingscode

@@ -139,6 +139,7 @@ pageNotFound: The page you are looking for is nowhere to be found. TODO
 paperlessTheme: Paperless theme TODO
 password: Password TODO
 passwordUpdated: Password changed TODO
+patronText: '{username} is a {patronTier} since {daysAgo} TODO'
 patrons: Patrons TODO
 pattern: Pattern TODO
 patternDesignTutorial: Pattern design tutorial TODO
@@ -266,6 +267,7 @@ user: User TODO
 username: Username TODO
 usernameUpdated: Username updated TODO
 version: Version TODO
+visitPatronProfile: Visit the profile page of this patron TODO
 volunteerVerb: Volunteer TODO
 weAreLoadingDataFromTheBackend: We are loading data from the backend TODO
 weAreValidatingYourConfirmationCode: We are validating your confirmation code TODO
