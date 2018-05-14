@@ -63,7 +63,13 @@ export default {
       const drafts = []
       for(let id in this.$store.state.user.drafts) {
         let draft = JSON.parse(JSON.stringify(this.$store.state.user.drafts[id]))
-        draft.model = draft.data.options.model
+        if(typeof draft.data.gist === 'object') {
+          // v2 draft
+          draft.model = draft.data.gist.model.handle
+        } else {
+          // v1 draft
+          draft.model = draft.data.options.model
+        }
         if(typeof this.$fs.conf.mapping.patternToHandle[draft.pattern] === 'string') {
           draft.pattern = this.$fs.conf.mapping.patternToHandle[draft.pattern]
         }

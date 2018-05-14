@@ -6,7 +6,7 @@ import Storage from './storage'
 import Utils from './utils'
 import Conf from './config'
 
-export default ({ app, store, router }, inject) => {
+export default ({ app, store, route }, inject) => {
 
   const storage = new Storage()
   const utils = new Utils()
@@ -42,15 +42,6 @@ export default ({ app, store, router }, inject) => {
     return storage.get('token')
   }
 
-  const sliderRoundMethod = (value, units) => {
-    let scale = Conf.defaults.scale[units]
-      if(units === 'imperial') {
-        return utils.roundToFraction(value/scale)
-      } else {
-        return utils.round(value/scale)
-      }
-  }
-
   const patternHandleMethod = (name) => {
     if(typeof Conf.mapping.patternToHandle[name] === 'string') {
       return Conf.mapping.patternToHandle[name]
@@ -59,6 +50,113 @@ export default ({ app, store, router }, inject) => {
     } else {
       return false
     }
+  }
+
+  const patternClassMethod = (name) => {
+    let pattern = patternHandleMethod(name)
+    return Conf.mapping.handleToPattern[pattern]
+  }
+
+  const modelMeasurementsMethod = (model, pattern) => {
+    let measurements = {}
+    for(let m in Conf.patterns[pattern].measurements) {
+      measurements[m] = model.data.measurements[m]
+    }
+    return measurements
+  }
+
+  const loadDraftMethod = (handle) => {
+    return new Promise(function(resolve, reject) {
+    ax.data.get('/draft/'+handle, { headers: {'Authorization': 'Bearer '+token()} })
+      .then((res) => {
+        resolve(res.data)
+      })
+    .catch((error) => { reject(error.response.data) })
+    })
+  }
+
+  const asGist = (type, data) => {
+    const gist = {
+      type: type,
+      units: data.units,
+      draftOptions:  {},
+      patternOptions: {}
+    }
+    if(type === 'forkFromModel') {
+      // Forked draft
+      gist.pattern = patternHandleMethod(data.draft.pattern)
+      gist.patternClass = patternClassMethod(data.draft.pattern)
+      let sourceOptions = {}
+      let units = ''
+      let sa ={}
+      if(typeof data.draft.data.gist === 'object') {
+        // New draft that comes with a gist
+        sourceOptions = data.draft.data.gist.patternOptions
+        units = data.draft.data.gist.units
+        gist.draftOptions = data.draft.data.gist.draftOptions
+      } else {
+        // Old draft without a gist
+        sourceOptions = data.draft.data.options
+        units = data.draft.data.options.unitsIn
+        gist.draftOptions.sa = {
+          type: 'fixme',
+          value: 1
+        }
+        gist.draftOptions.scope = {
+          type: 'fixme',
+          included: []
+        }
+        gist.draftOptions.theme = 'fixme'
+        gist.draftOptions.locale = data.locale
+      }
+      let ufactor = (units === 'metric') ? 10 : 25.4
+      let option = {}
+      for (let optionName in Conf.patterns[gist.pattern].options) {
+        option = Conf.patterns[gist.pattern].options[optionName]
+        if(option.type === 'measure') {
+          gist.patternOptions[optionName] = utils.sliderRound(sourceOptions[optionName]*ufactor, gist.units)
+        } else {
+          gist.patternOptions[optionName] = utils.round(sourceOptions[optionName])
+        }
+      }
+    } else if(type === 'draftFromModel') {
+      // New draft
+      gist.pattern = patternHandleMethod(data.pattern)
+      gist.patternClass = patternClassMethod(data.pattern)
+      let option = {}
+      for (let optionName in Conf.patterns[gist.pattern].options) {
+        option = Conf.patterns[gist.pattern].options[optionName]
+        if(option.type === 'measure') {
+          gist.patternOptions[optionName] = utils.sliderRound(option.default, gist.units)
+        } else {
+          gist.patternOptions[optionName] = utils.round(option.default)
+        }
+      }
+      if(typeof Conf.patterns[gist.pattern].seamAllowance !== 'undefined') {
+        gist.draftOptions.sa = {
+          type: 'pattern'+gist.units,
+          value: Conf.patterns[gist.pattern].seamAllowance[gist.units]
+        }
+      } else {
+        gist.draftOptions.sa = {
+          type: gist.units,
+          value: Conf.defaults.sa[gist.units]
+        }
+      }
+      gist.draftOptions.scope = {
+        type: 'pattern',
+        included: []
+      }
+      gist.draftOptions.theme = 'Basic'
+      gist.draftOptions.locale = app.i18n.locale
+    }
+    gist.model = {
+      units: data.model.units,
+      handle: data.model.handle,
+      name: data.model.name,
+      measurements: modelMeasurementsMethod(data.model, gist.pattern)
+    }
+    return gist
   }
 
   inject('fs', new Vue({
@@ -85,7 +183,7 @@ export default ({ app, store, router }, inject) => {
 
       draft() {
         return new Promise(function(resolve, reject) {
-          ax.data.post('/draft', utils.normalize(store.state.draft.config), { headers: {'Authorization': 'Bearer '+token()} })
+          ax.data.post('/draft', utils.normalize(store.state.draft.gist), { headers: {'Authorization': 'Bearer '+token()} })
             .then((res) => {
               authMethod()
                 .then(() => { resolve(res.data) })
@@ -95,13 +193,7 @@ export default ({ app, store, router }, inject) => {
       },
 
       loadDraft(handle) {
-        return new Promise(function(resolve, reject) {
-          ax.data.get('/draft/'+handle, { headers: {'Authorization': 'Bearer '+token()} })
-            .then((res) => {
-              resolve(res.data)
-            })
-          .catch((error) => { reject(error.response.data) })
-        })
+        return loadDraftMethod(handle)
       },
 
       updateDraft(handle, data) {
@@ -324,8 +416,12 @@ export default ({ app, store, router }, inject) => {
         else return "primary"
       },
 
-      sliderRound(value) {
-        return sliderRoundMethod(value, store.state.user.account.units)
+      asMm(value, units) {
+        return utils.asMm(value, units)
+      },
+
+      sliderRound(value, units) {
+        return utils.sliderRound(value, units)
       },
 
       normalize(object) {
@@ -399,6 +495,7 @@ export default ({ app, store, router }, inject) => {
       },
       ucfirst(input) {
         if (typeof input === 'undefined') return input
+        if (input.length === 0) return input
           return input[0].toUpperCase() + input.slice(1)
       },
 
@@ -423,14 +520,11 @@ export default ({ app, store, router }, inject) => {
         let fraction = ''
         //value = value.trim()
         if(value.indexOf('/') === -1) {
-          console.log('no slash found in', value)
           return value
         }
         if(value.indexOf(' ') !== -1) {
           let chunks = value.split(' ')
           if(chunks.length !== 2) {
-            console.log('no 2 chunks in ', value)
-              console.log(chunks)
             return false
           }
           inch = chunks[0]
@@ -438,8 +532,6 @@ export default ({ app, store, router }, inject) => {
         } else {
           fraction = value
         }
-            console.log('returning ', value)
-
         return parseInt(inch)+(utils.fractionToDecimal(fraction))
       },
 
@@ -457,105 +549,61 @@ export default ({ app, store, router }, inject) => {
           }
       },
 
-      initializeDraft(payload) {
-        const config = {
-          pattern: payload.pattern,
-          model: payload.model,
-          draftOptions: {},
-          patternOptions: {}
-        }
-        let units = store.state.user.account.units
-        let option = {}
-        if(payload.type === 'draftFromModel') {
-          for (let optionName in Conf.patterns[payload.pattern].options) {
-            option = Conf.patterns[payload.pattern].options[optionName]
-            if(option.type === 'measure') {
-              config.patternOptions[optionName] = utils.sliderRound(option.default, units)
-            } else {
-              config.patternOptions[optionName] = utils.round(option.default)
-            }
-          }
-        }
-        if(typeof payload.pattern.seamAllowance !== 'undefined') {
-          config.draftOptions.sa = {
-            type: 'pattern'+units,
-            value: payload.pattern.seamAllowance[units]
-          }
-        } else {
-          config.draftOptions.sa = {
-            type: units,
-            value: (units === 'imperial') ? 0.625 : 1
-          }
-        }
-        config.draftOptions.scope = {
-          type: 'pattern',
-          included: []
-        }
-        config.draftOptions.theme = 'Basic'
+      initializeDraft(pattern, model) {
+        const gist = asGist('draftFromModel', {
+          pattern: pattern,
+          model: store.state.user.models[model],
+          units: store.state.user.account.units,
+          locale: app.i18n.locale
+        })
         store.commit('setDraftInitial', {
-          config: config,
-          defaults: JSON.parse(JSON.stringify(config)),
+          gist: gist,
+          defaults: JSON.parse(JSON.stringify(gist)),
           custom: {}
         })
       },
 
-      initializeFork(payload) {
-        const config = {
-          pattern: patternHandleMethod(payload.fork.pattern),
-          model: payload.model,
-          fork: payload.fork,
-          draftOptions: {},
-          patternOptions: {}
-        }
-        let units = store.state.user.account.units
-        let option = {}
-        let ufactor = 1
-        if(config.fork.data.options.userUnits === 'imperial') {
-          ufactor = 25.4
+      initializeFork(draftHandle, model) {
+        let draft = {}
+        if(typeof store.state.user.drafts[draftHandle] === 'undefined') {
+          loadDraftMethod(draftHandle)
+            .then((res) => {
+              draft = res.data
+            })
+            .catch((e) => {
+              console.log(e)
+            })
         } else {
-          ufactor = 10
+          draft = store.state.user.drafts[draftHandle]
         }
-        for (let optionName in Conf.patterns[config.pattern].options) {
-          option = Conf.patterns[config.pattern].options[optionName]
-          if(option.type === 'measure') {
-            config.patternOptions[optionName] = utils.sliderRound(config.fork.data.options[optionName]*ufactor, units)
-          } else {
-            config.patternOptions[optionName] = utils.round(config.fork.data.options[optionName])
-          }
-        }
-        if(typeof payload.pattern.seamAllowance !== 'undefined') {
-          config.draftOptions.sa = {
-            type: 'pattern'+units,
-            value: payload.pattern.seamAllowance[units]
-          }
-        } else {
-          config.draftOptions.sa = {
-            type: units,
-            value: (units === 'imperial') ? 0.625 : 1
-          }
-        }
-        console.log(config.fork.data.options.userUnits)
-          return true
-        //config.draftOptions.scope = {
-        //  type: 'pattern',
-        //  included: []
-        //}
-        //config.draftOptions.theme = 'Basic'
-        //store.commit('setDraftInitial', {
-        //  config: config,
-        //  defaults: JSON.parse(JSON.stringify(config)),
-        //  custom: {}
-        //})
+        const gist = asGist('forkFromModel', {
+          draft: draft,
+          model: store.state.user.models[model],
+          units: store.state.user.account.units,
+          locale: app.i18n.locale
+        })
+        store.commit('setDraftInitial', {
+          gist: gist,
+          defaults: JSON.parse(JSON.stringify(gist)),
+          custom: {}
+        })
+      },
+
+      modelMeasurements(model, pattern) {
+        return modelMeasurementsMethod(model, pattern)
       },
 
       updateDraftCustomOptionsCount() {
+        if(typeof store.state.draft.gist.pattern === 'undefined' || store.state.draft.gist.pattern === '') {
+          return false
+        }
         let custom = {}
         let units = store.state.user.account.units
-          for (let group in Conf.patterns[store.state.draft.config.pattern].optiongroups) {
+          for (let group in Conf.patterns[store.state.draft.gist.pattern].optiongroups) {
             custom[group] = 0
-            for (let index in Conf.patterns[store.state.draft.config.pattern].optiongroups[group]) {
-              let option = Conf.patterns[store.state.draft.config.pattern].optiongroups[group][index]
-              if(store.state.draft.config.patternOptions[option] != store.state.draft.defaults.patternOptions[option]) {
+            for (let index in Conf.patterns[store.state.draft.gist.pattern].optiongroups[group]) {
+              let option = Conf.patterns[store.state.draft.gist.pattern].optiongroups[group][index]
+              if(store.state.draft.gist.patternOptions[option] != store.state.draft.defaults.patternOptions[option]) {
                 custom[group]++
               }
             }

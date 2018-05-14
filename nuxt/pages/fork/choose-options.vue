@@ -1,12 +1,14 @@
 <template>
-  <fs-wrapper-login-required>
+  <fs-wrapper-login-required :callback="forkInit()">
     <fs-breadcrumbs :crumbs="crumbs">
-      <span v-html="(loading) ? $t('draftingPattern', {pattern: $fs.ucfirst(patternHandle)}) : $t('chooseYourOptions')"></span>
+      <span v-html="(loading) ? $t('draftingPattern', {pattern: $fs.ucfirst(patternName)}) : $t('chooseYourOptions')"></span>
     </fs-breadcrumbs>
     <h1 class="text-xs-center"
         v-html="(loading) ?
-        $t('draftingPattern', {pattern: $fs.ucfirst(patternHandle)}) :
-        $t('step3')+': '+$t('chooseYourOptions')"></h1>
+        $t('draftingPattern', {pattern: $fs.ucfirst(patternName)}) :
+        $t('step3')+': '+$t('chooseYourOptions')">
+    </h1>
+    {{ $route.name }}
     <div v-if="loading">
       <fs-draft-ticker :ready="ready" :error="error" />
         <fs-message-error-please-report v-if="error" />
@@ -15,14 +17,14 @@
       <v-stepper class="mb-5" value="3">
         <v-stepper-header class="fs-nodeco">
           <v-stepper-step step="1" complete>
-            <nuxt-link :to="$fs.path('/drafts/'+$route.params.draft)">
-              {{ $t('draftingPattern', {pattern: $fs.ucfirst($fs.patternHandle(draft.pattern)) }) }}
+            <nuxt-link :to="$fs.path('/fork/')">
+              {{ $t('forkDraftHandle', {handle: $route.params.draft+' ('+$fs.ucfirst(patternName)+')' }) }}
             </nuxt-link>
           </v-stepper-step>
           <v-divider></v-divider>
           <v-stepper-step step="2" complete>
             <nuxt-link :to="$fs.path('/fork/'+$route.params.draft)">
-              {{ $t('forUsername', { username: modelName}) | 'loading' }}
+              {{ $t('forUsername', { username: modelName}) }}
             </nuxt-link>
           </v-stepper-step>
           <v-divider></v-divider>
@@ -31,29 +33,21 @@
       </v-stepper>
       <p class="text-xs-center">
       <v-btn round outline @click="submit()">
-        {{ $t('draftPatternForModel', {
-        pattern: $fs.ucfirst($fs.patternHandle(this.draft.pattern)),
-        model: modelName}
-        ) }}
+        {{ $t('draftPatternForModel', { pattern: $fs.ucfirst(patternName), model: modelName}) }}
       </v-btn>
       </p>
-<!--
-      <fs-draft-configurator :pattern="patternHandle" :model="modelHandle" />
--->
+      <fs-draft-configurator :pattern="$store.state.draft.gist.pattern" :model="$route.params.model" />
+        <p class="text-xs-center mt-5">
+        <v-btn color="primary" large @click="submit()" :disabled="loading">
+          <v-progress-circular indeterminate color="#fff" class="mr-3" v-if="loading" :size="(24)" :width="(2)"></v-progress-circular>
+          <v-icon class="mr-3" v-else>insert_drive_file</v-icon>
+          {{ $t('draftPatternForModel', {
+          pattern: $fs.ucfirst(patternName),
+          model: modelName}
+          ) }}
+        </v-btn>
+        </p>
     </div>
-    <p class="text-xs-center mt-5">
-    <v-btn color="primary" large @click="submit()" :disabled="loading">
-      <v-progress-circular indeterminate color="#fff" class="mr-3" v-if="loading" :size="(24)" :width="(2)"></v-progress-circular>
-      <v-icon class="mr-3" v-else>insert_drive_file</v-icon>
-      {{ $t('draftPatternForModel', {
-      pattern: $fs.ucfirst($fs.patternHandle(this.draft.pattern)),
-      model: modelName}
-      ) }}
-    </v-btn>
-    </p>
-<pre>
-{{ draft }}
-</pre>
       </fs-wrapper-login-required>
 </template>
 
@@ -73,6 +67,12 @@ export default {
     FsDraftTicker,
     FsMessageErrorPleaseReport
   },
+  props: {
+    mode: {
+      type: String,
+      required: true
+    }
+  },
   computed: {
     modelName () {
       if(typeof this.$store.state.user.models[this.$route.params.model] !== 'undefined') {
@@ -80,6 +80,14 @@ export default {
       } else {
         return this.$route.params.model
       }
+    },
+    patternName () {
+      if(typeof this.$store.state.draft.gist.pattern !== 'undefined') {
+        return this.$store.state.draft.gist.pattern
+      } else {
+        return this.$route.params.draft
+      }
+
     },
     crumbs () {
       let mname = ''
@@ -89,53 +97,26 @@ export default {
         mname = this.$route.params.model
       }
       return [
-        {
-          to: this.$fs.path('/drafts/'+this.$route.params.draft),
-          title: this.$t('forkDraftHandle', { handle: this.$route.params.draft })
-        },
-        {
-          to: this.$fs.path('/fork/'+this.$route.params.draft),
-          title: this.$t('forUsername', { username: mname })
-        }
+      {
+        to: this.$fs.path('/fork/'),
+        title: this.$t('forkDraftHandle', { handle: this.$route.params.draft })
+      },
+      {
+        to: this.$fs.path('/fork/'+this.$route.params.draft),
+        title: this.$t('forUsername', { username: mname })
+      }
       ]
     },
-  },
-  created () {
-    //if(this.$store.state.user.loggedIn && this.$route.params.draft) {
-    //  this.$fs.initializeFork({
-    //    model: this.draft.modelHandle,
-    //    pattern: this.$fs.patternHandle(this.draft.pattern),
-    //    fork: this.draft
-    //  })
-    //}
   },
   data: function() {
     return {
       modelHandle: this.$route.params.model,
       model: this.$store.state.user.models[this.$route.params.model],
-      patternHandle: this.$route.params.pattern,
-      patternName: this.$fs.ucfirst(this.$route.params.pattern),
       error: false,
       ready: false,
       loading: false,
+      initialized: false
     }
-  },
-  asyncData: async function ({ app, route }) {
-    return app.$fs.loadDraft(route.params.draft)
-    .then((data) => {
-      app.$fs.initializeFork({
-        fork: data.draft,
-        model: route.params.model
-      })
-      return data
-    })
-    .catch((error) => {
-      if(error.reason === 'no_such_draft') {
-        return {notFound: true}
-      } else {
-        return {error: true}
-      }
-    })
   },
   methods: {
     submit: async function() {
@@ -153,6 +134,12 @@ export default {
       .catch((error) => {
         self.error = true
       })
+    },
+    forkInit: function() {
+      if(this.initialized === false  && typeof this.$store.state.user.models[this.$route.params.model] !== 'undefined') {
+        this.$fs.initializeFork(this.$route.params.draft, this.$route.params.model)
+        this.initialized = true
+      }
     }
   }
 }

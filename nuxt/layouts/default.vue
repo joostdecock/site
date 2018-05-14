@@ -38,6 +38,7 @@ import TheTopToolbar    from '~/components/stateful/TheTopToolbar'
 import FsDynamicAsideBlogpost from '~/components/stateless/FsDynamicAsideBlogpost'
 import FsDynamicAsideShowcase from '~/components/stateless/FsDynamicAsideShowcase'
 import FsDynamicAsidePage     from '~/components/stateless/FsDynamicAsidePage'
+import FsDynamicAsideDraft    from '~/components/stateless/FsDynamicAsideDraft'
 export default {
   components: {
     TheRightDrawer,
@@ -47,6 +48,7 @@ export default {
     FsDynamicAsideBlogpost,
     FsDynamicAsideShowcase,
     FsDynamicAsidePage,
+    FsDynamicAsideDraft,
   },
   computed: {
     rightColumnComponent () {

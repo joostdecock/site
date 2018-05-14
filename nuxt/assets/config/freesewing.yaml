@@ -9,15 +9,18 @@ defaults:
     site: 'https://github.com/freesewing/site'
     tile: 'https://github.com/freesewing/tile'
   sa:
-    custom: 0.5
+    custom: 1
     imperial: 0.625
     metric: 1
   scale:
     imperial: 25.4
-    metric: '10,'
+    metric: 10
   step:
     imperial: 0.125
     metric: 0.1
+  themes:
+    - Classic
+    - Paperless
 i18n:
   coordinators:
     de: _vacant
@@ -55,7 +58,7 @@ i18n:
       patterns: 36
       showcase: 0
     en:
-      app: 283
+      app: 284
       blog: 28
       docs: 9
       i18n: 6
@@ -65,7 +68,7 @@ i18n:
       patterns: 37
       showcase: 51
     es:
-      app: 0
+      app: 272
       blog: 0
       docs: 0
       i18n: 0
@@ -85,7 +88,7 @@ i18n:
       patterns: 4
       showcase: 0
     nl:
-      app: 281
+      app: 282
       blog: 2
       docs: 2
       i18n: 6
@@ -115,7 +118,7 @@ i18n:
       patterns: 0
       showcase: 0
   target:
-    app: 283
+    app: 284
     blog: 28
     docs: 9
     i18n: 6

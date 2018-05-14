@@ -105,11 +105,23 @@ module.exports = {
       })
       routes.push({
         path: '/fork/:draft',
-        component: 'nuxt/pages/fork/choose-model.vue'
+        name: 'fork-1',
+        component: 'nuxt/pages/fork/choose-model.vue',
       })
       routes.push({
         path: '/fork/:draft/for/:model',
-        component: 'nuxt/pages/fork/choose-options.vue'
+        name: 'fork-2',
+        component: 'nuxt/pages/fork/choose-options.vue',
+      })
+      routes.push({
+        path: '/redraft/:draft',
+        name: 'redraft-1',
+        component: 'nuxt/pages/fork/choose-model.vue',
+      })
+      routes.push({
+        path: '/redraft/:draft/for/:model',
+        name: 'redraft-2',
+        component: 'nuxt/pages/fork/choose-options.vue',
       })
       routes.push({
         path: '/drafts/:draft',

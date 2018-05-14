@@ -2,7 +2,7 @@
   <table class="table fs-info-table">
     <tbody>
     <tr>
-      <th class="fs-wp50">{{ $t('name') }}</th>
+      <th class="fs-wp20">{{ $t('name') }}</th>
       <td>{{ draft.name }}</td>
     </tr>
     <tr>

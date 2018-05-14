@@ -1,5 +1,5 @@
 <template>
-  <v-switch v-model="shared" @change="update"></v-switch>
+  <v-switch v-model="isShared" @change="update"></v-switch>
 </template>
 
 <script>
@@ -17,7 +17,12 @@ export default {
   },
   methods: {
     update() {
-      const { data } = this.$fs.updateDraft(this.draft, {shared: this.shared})
+      const { data } = this.$fs.updateDraft(this.draft, {shared: this.isShared})
+    }
+  },
+  data() {
+    return {
+      isShared: this.shared
     }
   }
 }

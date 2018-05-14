@@ -2,13 +2,14 @@
   <v-expansion-panel-content>
     <div slot="header">
       <div class="fs-state-icons mr-3">
-        <v-icon v-if="computedDflt != value" @click.stop="resetDraftSa()" large color="accent">settings_backup_restore</v-icon>
+        <v-icon v-if="(computedDflt != value || customSa != customSaDflt)" @click.stop="resetDraftSa()" large color="accent">settings_backup_restore</v-icon>
         <v-icon large class="ml-2" color="secondary">help_outline</v-icon>
       </div>
       <h6>
-        <span :class="(computedDflt != value) ? 'fs-option-custom' : ''">
+        <span :class="(computedDflt != value || customSa != customSaDflt) ? 'fs-option-custom' : ''">
           {{ $t('txt-saOption-'+value) }}
         </span>
+        <span :class="(customSa === customSaDflt)? '' : 'fs-option-custom'" v-if="value === 'custom'">({{$fs.formatUnits(customSa, $store.state.user.account.units, 'measure')}})</span>
       </h6>
     </div>
     <v-card>
@@ -22,6 +23,15 @@
             :value="index"
             :color="(computedDflt != index) ? 'accent' : 'primary'"></v-radio>
         </v-radio-group>
+        <v-slider
+        v-if="value === 'custom'"
+         @input="updateDraftSa('custom', customSa)"
+         :color="(customSa != customSaDflt) ? 'accent' : 'primary'"
+         :min="customSaMin"
+         :max="customSaMax"
+         v-model="customSa"
+         :step="$fs.conf.defaults.step[$store.state.user.account.units]">
+        </v-slider>
       </v-card-text>
     </v-card>
   </v-expansion-panel-content>
@@ -30,12 +40,6 @@
 <script>
 export default {
   name: 'FsOptionSa',
-  props: {
-    pattern: {
-      type: Object,
-      required: true
-    }
-  },
   data: function() {
     let computedDflt = this.$store.state.user.account.units
     let options = {
@@ -44,20 +48,41 @@ export default {
       imperial: 0,
       custom: 1
     }
-    if (typeof this.pattern.seamAllowance !== 'undefined') {
-      options.patternMetric = this.pattern.seamAllowance.metric
-      options.patternImperial = this.pattern.seamAllowance.imperial
+    let pattern = this.$store.state.draft.defaults.pattern
+    if (typeof this.$fs.conf.patterns[pattern].seamAllowance !== 'undefined') {
+      options.patternMetric = this.$fs.conf.patterns[pattern].seamAllowance.metric
+      options.patternImperial = this.$fs.conf.patterns[pattern].seamAllowance.imperial
       computedDflt = 'pattern'+this.$fs.ucfirst(computedDflt)
     }
+    let customSaDflt = 0
+    if(this.$store.state.draft.defaults.draftOptions.sa.type === 'custom') {
+      customSaDflt = this.$store.state.draft.defaults.draftOptions.sa.value
+    } else {
+      customSaDflt = this.$fs.conf.defaults.sa[this.$store.state.user.account.units]
+    }
+    let customSaMin = 0
+    let customSaMax = 0
+    if(this.$store.state.user.account.units === 'imperial') {
+      customSaMin = 0.25
+      customSaMax = 2
+    } else {
+      customSaMin = 0.5
+      customSaMax = 2.5
+    }
     return {
-      computedDflt: computedDflt,
-      value: computedDflt,
+      computedDflt: this.$store.state.draft.defaults.draftOptions.sa.type,
+      value: this.$store.state.draft.defaults.draftOptions.sa.type,
       options: options,
+      customSaDflt: customSaDflt,
+      customSa: customSaDflt,
+      customSaMin: customSaMin,
+      customSaMax: customSaMax,
     }
   },
   methods: {
     resetDraftSa() {
       this.value = this.computedDflt
+      this.customSa = this.customSaDflt
       this.$store.commit('setDraftSa', {type: this.value, value: this.options[this.value]} )
     },
     updateDraftSa(type, value) {

@@ -117,7 +117,13 @@ export default {
       for(let i in orig) {
         db[type].orig[orig[i].permalink] = orig[i]
       }
-      var tran =  await app.$content('/'+route.params.locale+'/'+type).getAll();
+      try {
+        var tran =  await app.$content('/'+route.params.locale+'/'+type).getAll();
+      }
+      catch(error) {
+        console.log('No '+type+' content for '+route.params.locale)
+        var tran = {}
+      }
       for(let i in tran) {
         db[type].tran[tran[i].permalink] = tran[i]
       }

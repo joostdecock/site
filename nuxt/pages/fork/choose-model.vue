@@ -2,6 +2,7 @@
   <fs-wrapper-login-required v-if="$route.params.draft">
     <fs-breadcrumbs :crumbs="crumbs">{{ $t('chooseAModel') }}</fs-breadcrumbs>
     <h1 class="text-xs-center">{{ $t('step2') }}: {{ $t('chooseAModel') }}</h1>
+    {{ mode }}
     <v-stepper class="mb-5" value="2">
       <v-stepper-header class="fs-nodeco">
         <v-stepper-step step="1" complete>
@@ -99,7 +100,8 @@ export default {
         to: this.$fs.path('/fork'),
       title: this.$t('forkDraftHandle', {handle: draft})
 
-      }]
+      }],
+      mode: (this.$route.name.substr(0,4) === 'fork') ? 'fork' : 'redraft'
     }
   },
   asyncData: async function ({ app, route }) {

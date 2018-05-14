@@ -22,7 +22,7 @@
                     :pattern="pattern"
                     :name="option"
                     :option="options[option]"
-                    :dflt="''+options[option].default"
+                    :dflt="$store.state.draft.defaults.patternOptions[option]"
                   />
                   <fs-option-slider
                     v-else
@@ -30,7 +30,10 @@
                     :pattern="pattern"
                     :name="option"
                     :option="options[option]"
-                    :dflt="(options[option].default)"
+                    :dflt="(options[option].type === 'measure')
+                    ? $fs.asMm($store.state.draft.defaults.patternOptions[option], $store.state.user.account.units)
+                    : $store.state.draft.defaults.patternOptions[option]
+                    "
                   />
                 </template>
               </v-expansion-panel>
@@ -41,9 +44,9 @@
 
       <h2>{{ $t('draftOptions') }}</h2>
       <v-expansion-panel>
-        <fs-option-sa    :pattern="$fs.conf.patterns[pattern]" />
-        <fs-option-scope :pattern="$fs.conf.patterns[pattern]" />
-        <fs-option-theme :pattern="$fs.conf.patterns[pattern]" />
+        <fs-option-sa />
+        <fs-option-scope />
+        <fs-option-theme />
       </v-expansion-panel>
     </template>
   </div>

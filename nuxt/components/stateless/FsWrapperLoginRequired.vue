@@ -4,12 +4,12 @@
       <div v-if="!authCompleted">
         <h3>{{ $t('justAMoment') }}</h3>
         <p>{{ $t('weAreLoadingDataFromTheBackend') }}</p>
-          <v-progress-circular indeterminate color="primary"></v-progress-circular>
+        <v-progress-circular indeterminate color="primary"></v-progress-circular>
       </div>
       <div v-else>
         <h3>{{ $t('youAreNotLoggedIn') }}</h3>
         <p>
-          {{ $t('thisPageIsOnlyAvailableToFreesewingUsers') }}
+        {{ $t('thisPageIsOnlyAvailableToFreesewingUsers') }}
         </p>
         <div class="mt-5">
           <v-btn :to="$fs.path('/login')" large color="primary" class="mb-3">
@@ -32,12 +32,25 @@
 <script>
 export default {
   name: 'FsWrapperLoginRequired',
+  props: {
+    callback: {
+      type: Function,
+      required: false
+    }
+  },
   computed: {
     authCompleted () {
-      if(typeof this.$store.state.user !== 'undefined') {
+      if(typeof this.$store.state.user.account.id !== 'undefined') {
         return this.$store.state.user.isFresh
       } else {
         return false
+      }
+    }
+  },
+  watch: {
+    authCompleted: function () {
+      if(typeof this.callback !== 'undefined') {
+        this.callback() // Account loaded, running callback
       }
     }
   },
@@ -45,10 +58,10 @@ export default {
 </script>
 
 <style scoped>
-  blockquote {
-    max-width: 800px;
-    margin: 40px auto;
-    text-align: center;
-  }
+blockquote {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
 </style>
 
