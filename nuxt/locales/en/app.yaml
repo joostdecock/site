@@ -148,6 +148,7 @@ patternIsPattern: 'Pattern is {pattern}'
 patternOptions: Pattern options
 patternParts: Pattern parts
 patterns: Patterns
+pleaseUpgradeThisDraft: Please upgrade this draft.
 postInfo: Post info
 preferences: Preferences
 privacy: Privacy
@@ -210,6 +211,7 @@ taskCompleted: Task completed
 theme: Theme
 themeUpdated: Layout preference set
 thisContentIsNotAvailableInLanguage: This content is not available in English.
+thisDraftPredatesThisFeature: This draft predates this feature.
 thisIsTheCurrentStatusOfOurTranslations: This is the current status of our translations.
 thisPageIsNotIntendedForLoggedInUsers: This page is not intended for logged-in users
 thisPageIsOnlyAvailableToFreesewingUsers: This page is only available to Freesewing users
@@ -262,8 +264,9 @@ txt-withOrWithoutBreasts-explainer: 'On other websites, this question may be phr
 type: Type
 units: Units
 unitsUpdated: Units set
-update: Update
 updates: Updates
+upgrade: Upgrade
+upgradeRequired: Upgrade required
 useDecimalsOrFractions: Use decimals (1.25) or fractions (1 1/4)
 user: User
 username: Username

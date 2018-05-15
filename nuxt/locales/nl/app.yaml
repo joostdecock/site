@@ -148,6 +148,7 @@ patternIsPattern: 'Patroon is {pattern}'
 patternOptions: Patroon opties
 patternParts: Patroon delen
 patterns: Patronen
+pleaseUpgradeThisDraft: Gelieve deze patroontekening bij te werken.
 postInfo: Post gegevens
 preferences: Voorkeuren
 privacy: Privacy DONE
@@ -210,6 +211,7 @@ taskCompleted: Taak is afgerond
 theme: Layout
 themeUpdated: Voorkeur layout bijgewerkt
 thisContentIsNotAvailableInLanguage: Deze inhoud is niet beschikbaar in het Nederlands.
+thisDraftPredatesThisFeature: Deze patroontekening is te oud voor deze functionaliteit.
 thisIsTheCurrentStatusOfOurTranslations: Dit is de huidige status van onze vertalingen.
 thisPageIsNotIntendedForLoggedInUsers: Deze pagina is niet bedoeld voor aangemelde gebruikers
 thisPageIsOnlyAvailableToFreesewingUsers: Deze pagina is alleen beschikbaar voor Freesewing gebruikers
@@ -262,8 +264,9 @@ txt-withOrWithoutBreasts-explainer: 'Op andere websites zou men misschien vragen
 type: Type DONE
 units: Eenheden
 unitsUpdated: Voorkeur eenheden bijgewerlkt
-update: Bijwerken
 updates: Updates DONE
+upgrade: Bijwerken
+upgradeRequired: Bijwerken vereist
 useDecimalsOrFractions: Gebruik decimalen (1.25) or breuken (1 1/4)
 user: Gebruiker
 username: Gebruikersnaam

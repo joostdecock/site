@@ -89,26 +89,9 @@ export default ({ app, store, route }, inject) => {
       let sourceOptions = {}
       let units = ''
       let sa ={}
-      if(typeof data.draft.data.gist === 'object') {
-        // New draft that comes with a gist
-        sourceOptions = data.draft.data.gist.patternOptions
-        units = data.draft.data.gist.units
-        gist.draftOptions = data.draft.data.gist.draftOptions
-      } else {
-        // Old draft without a gist
-        sourceOptions = data.draft.data.options
-        units = data.draft.data.options.unitsIn
-        gist.draftOptions.sa = {
-          type: 'fixme',
-          value: 1
-        }
-        gist.draftOptions.scope = {
-          type: 'fixme',
-          included: []
-        }
-        gist.draftOptions.theme = 'fixme'
-        gist.draftOptions.locale = data.locale
-      }
+      sourceOptions = data.draft.data.gist.patternOptions
+      units = data.draft.data.gist.units
+      gist.draftOptions = data.draft.data.gist.draftOptions
       let ufactor = (units === 'metric') ? 10 : 25.4
       let option = {}
       for (let optionName in Conf.patterns[gist.pattern].options) {
@@ -242,7 +225,7 @@ export default ({ app, store, route }, inject) => {
         })
       },
 
-      bulkUpdateDrafts() {
+      bulkUpgradeDrafts() {
         return new Promise(function(resolve, reject) {
           const promises = []
             for( let index in store.state.selected.drafts) {
@@ -260,6 +243,17 @@ export default ({ app, store, route }, inject) => {
               authMethod()
                 resolve(true)
             })
+          .catch(() => { reject(false) })
+        })
+      },
+
+      upgradeDraft(handle) {
+        return new Promise(function(resolve, reject) {
+          ax.data.post('/draft/'+handle+'/upgrade',{},{ headers: {'Authorization': 'Bearer '+storage.get('token')} })
+          .then(() => {
+            authMethod()
+            resolve(true)
+          })
           .catch(() => { reject(false) })
         })
       },

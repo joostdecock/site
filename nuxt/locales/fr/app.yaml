@@ -148,6 +148,7 @@ patternIsPattern: 'Pattern is {pattern} TODO'
 patternOptions: Pattern options TODO
 patternParts: Pattern parts TODO
 patterns: Patterns TODO
+pleaseUpgradeThisDraft: Please upgrade this draft. TODO
 postInfo: Post info TODO
 preferences: Preferences TODO
 privacy: Privacy TODO
@@ -210,6 +211,7 @@ taskCompleted: Task completed TODO
 theme: Theme TODO
 themeUpdated: Layout preference set TODO
 thisContentIsNotAvailableInLanguage: This content is not available in English. TODO
+thisDraftPredatesThisFeature: This draft predates this feature. TODO
 thisIsTheCurrentStatusOfOurTranslations: This is the current status of our translations. TODO
 thisPageIsNotIntendedForLoggedInUsers: This page is not intended for logged-in users TODO
 thisPageIsOnlyAvailableToFreesewingUsers: This page is only available to Freesewing users TODO
@@ -262,8 +264,9 @@ txt-withOrWithoutBreasts-explainer: 'On other websites, this question may be phr
 type: Type TODO
 units: Units TODO
 unitsUpdated: Units set TODO
-update: Update TODO
 updates: Updates TODO
+upgrade: Upgrade TODO
+upgradeRequired: Upgrade required TODO
 useDecimalsOrFractions: Use decimals (1.25) or fractions (1 1/4) TODO
 user: User TODO
 username: Username TODO

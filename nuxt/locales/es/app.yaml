@@ -148,6 +148,7 @@ patternIsPattern: 'El patrón es {pattern}'
 patternOptions: Opciones del patrón
 patternParts: Partes del patrón
 patterns: Patrones
+pleaseUpgradeThisDraft: Please upgrade this draft. TODO
 postInfo: Información de la entrada
 preferences: Preferencias
 privacy: Privacidad
@@ -210,6 +211,7 @@ taskCompleted: Tarea completada
 theme: Tema
 themeUpdated: Preferencias de la plantilla establecidas
 thisContentIsNotAvailableInLanguage: Este contenido no está disponible en Español.
+thisDraftPredatesThisFeature: This draft predates this feature. TODO
 thisIsTheCurrentStatusOfOurTranslations: Éste es el estado actual de nuestras traducciones.
 thisPageIsNotIntendedForLoggedInUsers: Esta página no está pensada para usuarios con una sesión abierta
 thisPageIsOnlyAvailableToFreesewingUsers: Espa página está sólo disponible para usuarios de Freesewing
@@ -262,8 +264,9 @@ txt-withOrWithoutBreasts-explainer: 'En otros sitios, esta pregunta se plantea c
 type: Tipo
 units: Unidades
 unitsUpdated: Juego de unidades
-update: Actualizar
 updates: Actualizaciones
+upgrade: Upgrade TODO
+upgradeRequired: Upgrade required TODO
 useDecimalsOrFractions: Usar decimales (1.25) o fracciones (1 1/4)
 user: Usuario
 username: Nombre de usuario

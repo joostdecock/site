@@ -4,11 +4,11 @@
     <h1 class="mb-5 text-xs-center">{{ $t('drafts') }}</h1>
     <fs-table-drafts :items="loadDrafts()" />
     <div class="text-xs-left mt-5" v-if="$store.state.selected.drafts.length > 0">
-      <v-btn color="primary" @click="bulkUpdate()" :disabled="(updating || deleting)">
-        <v-progress-circular indeterminate color="#fff" class="mr-3" :size="24" :width="2" v-if="updating"></v-progress-circular>
-        <v-icon class="mr-3" v-else>autorenew</v-icon>{{ $t('update') }}
+      <v-btn color="primary" @click="bulkUpgrade()" :disabled="(upgrading || deleting)">
+        <v-progress-circular indeterminate color="#fff" class="mr-3" :size="24" :width="2" v-if="upgrading"></v-progress-circular>
+        <v-icon class="mr-3" v-else>autorenew</v-icon>{{ $t('upgrade') }}
       </v-btn>
-      <v-btn color="error" @click="bulkDelete()" :disabled="(updating || deleting)">
+      <v-btn color="error" @click="bulkDelete()" :disabled="(upgrading || deleting)">
         <v-progress-circular indeterminate color="#fff" class="mr-3" :size="24" :width="2" v-if="deleting"></v-progress-circular>
         <v-icon class="mr-3" v-else>delete</v-icon>
         {{ $t('delete') }}
@@ -39,7 +39,7 @@ export default {
       error: false,
       loading: true,
       deleting: false,
-      updating: false,
+      upgrading: false,
     }
   },
   methods: {
@@ -51,11 +51,11 @@ export default {
       })
       .catch((error) => { this.error = true })
     },
-    bulkUpdate: function() {
-      this.updating = true
-      this.$fs.bulkUpdateDrafts()
+    bulkUpgrade: function() {
+      this.upgrading = true
+      this.$fs.bulkUpgradeDrafts()
       .then((result) => {
-        (result) ? this.updating = false : this.error = true
+        (result) ? this.upgrading = false : this.error = true
       })
       .catch((error) => { this.error = true })
     },

@@ -38,8 +38,13 @@
             </v-tab-item>
             <v-tab-item id="gist" class="fs-pad">
               <pre v-if="typeof draft.data.gist !== 'undefined'">{{ draft.data.gist }}</pre>
-              <blockquote v-else>
-                This draft predates our use of draft gists. Please update it to generate its gist.
+              <blockquote v-else class="warning">
+                <h3>{{ $t('thisDraftPredatesThisFeature') }}</h3>
+                <p>{{ $t('pleaseUpgradeThisDraft') }}</p>
+                <p class="text-xs-right"><v-btn @click="upgradeDraft" class="primary" :disabled="upgrading">
+                  <v-progress-circular v-if="upgrading" indeterminate color="white"></v-progress-circular>
+                  <v-icon v-else class="mr-3">autorenew</v-icon>
+                  {{ $t('upgrade') }}</v-btn></p>
               </blockquote>
             </v-tab-item>
           </v-tabs>
@@ -85,7 +90,8 @@ export default {
       active2: 0,
       updateTitle: false,
       deleteDraft: false,
-      error: false
+      error: false,
+      upgrading: false
     }
   },
   computed: {
@@ -99,8 +105,19 @@ export default {
   },
   methods: {
     saveTitle() {
-      this.$fs.updateDraft(this.draft.handle, {name: this.draft.name})
+      this.$fs.upgradeDraft(this.draft.handle, {name: this.draft.name})
       .then((result) => { this.updateTitle = false })
+    },
+    upgradeDraft() {
+      this.upgrading = true
+      this.$fs.upgradeDraft(this.draft.handle)
+      .then((result) => {
+        // fixme: This is hackish
+        window.location.reload(true)
+      })
+      .catch((error) => {
+        this.error = true
+      })
     },
     trashDraft() {
       this.$store.commit('setAction', {action: 'deleteDraft', value: false})

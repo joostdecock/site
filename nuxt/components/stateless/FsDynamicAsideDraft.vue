@@ -6,22 +6,25 @@
         <fs-table-draft-info :draft="draft" />
       </v-card-text>
     </v-card>
-
     <v-card class="mt-5">
       <v-card-title class="fs-card-title">{{ $t('actions') }}</v-card-title>
       <v-card-text>
         <v-list>
-          <v-list-tile :to="$fs.path('/fork/'+draft.handle)" >
+          <v-list-tile :to="$fs.path('/fork/'+draft.handle)" :disabled="typeof draft.data.gist === 'undefined'">
             <v-list-tile-action><v-icon color="success">call_split</v-icon></v-list-tile-action>
-            <v-list-tile-content>{{ $t('fork') }}</v-list-tile-content>
+            <v-list-tile-content>{{ $t('fork') }}
+              <span v-if="typeof draft.data.gist === 'undefined'">({{ $t('upgradeRequired') }})</span>
+            </v-list-tile-content>
           </v-list-tile>
-          <v-list-tile :to="$fs.path('/redraft/'+draft.handle+'/for/'+draft.model.handle)">
+          <v-list-tile :to="$fs.path('/redraft/'+draft.handle+'/for/'+draft.model.handle)" :disabled="typeof draft.data.gist === 'undefined'">
             <v-list-tile-action><v-icon color="warning">repeat</v-icon></v-list-tile-action>
-            <v-list-tile-content>{{ $t('redraft') }}</v-list-tile-content>
+            <v-list-tile-content>{{ $t('redraft') }}
+              <span v-if="typeof draft.data.gist === 'undefined'">({{ $t('upgradeRequired') }})</span>
+            </v-list-tile-content>
           </v-list-tile>
-          <v-list-tile :to="$fs.path('/redraft/'+draft.handle+'/for/'+draft.model.handle)">
+          <v-list-tile @click="upgradeDraft">
             <v-list-tile-action><v-icon color="info">autorenew</v-icon></v-list-tile-action>
-            <v-list-tile-content>{{ $t('update') }}</v-list-tile-content>
+            <v-list-tile-content>{{ $t('upgrade') }}</v-list-tile-content>
           </v-list-tile>
           <v-list-tile @click="download = !download">
             <v-list-tile-action>
@@ -99,6 +102,18 @@ export default {
       ],
       download: false
     }
+  },
+  methods: {
+    upgradeDraft() {
+      this.$fs.upgradeDraft(this.draft.handle)
+      .then((result) => {
+        // fixme: This is hackish
+        window.location.reload(true)
+      })
+      .catch((error) => {
+        this.error = true
+      })
+    },
   }
 }
 </script>

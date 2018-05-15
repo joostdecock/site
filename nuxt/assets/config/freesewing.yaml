@@ -26,7 +26,7 @@ i18n:
     de: _vacant
     en: joost
     es: AlfaLyer
-    fr: _vacant
+    fr: MrsMonkey
     nl: AnnekeCaramin
     'no': _vacant
   files:
@@ -58,7 +58,7 @@ i18n:
       patterns: 36
       showcase: 0
     en:
-      app: 285
+      app: 288
       blog: 28
       docs: 9
       i18n: 6
@@ -68,7 +68,7 @@ i18n:
       patterns: 37
       showcase: 51
     es:
-      app: 282
+      app: 281
       blog: 0
       docs: 0
       i18n: 0
@@ -88,7 +88,7 @@ i18n:
       patterns: 4
       showcase: 0
     nl:
-      app: 283
+      app: 286
       blog: 2
       docs: 2
       i18n: 6
@@ -118,7 +118,7 @@ i18n:
       patterns: 0
       showcase: 0
   target:
-    app: 285
+    app: 288
     blog: 28
     docs: 9
     i18n: 6
