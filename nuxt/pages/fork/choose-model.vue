@@ -1,21 +1,8 @@
 <template>
   <fs-wrapper-login-required v-if="$route.params.draft">
     <fs-breadcrumbs :crumbs="crumbs">{{ $t('chooseAModel') }}</fs-breadcrumbs>
-    <h1 class="text-xs-center">{{ $t('step2') }}: {{ $t('chooseAModel') }}</h1>
-    {{ mode }}
-    <v-stepper class="mb-5" value="2">
-      <v-stepper-header class="fs-nodeco">
-        <v-stepper-step step="1" complete>
-          <nuxt-link :to="$fs.path('/draft/')">
-            {{ $t('forkDraftHandle', {handle: draft.handle}) }}
-          </nuxt-link>
-        </v-stepper-step>
-        <v-divider></v-divider>
-        <v-stepper-step step="2">{{ $t('chooseAModel') }}</v-stepper-step>
-        <v-divider></v-divider>
-        <v-stepper-step step="3">{{ $t('chooseYourOptions') }}</v-stepper-step>
-      </v-stepper-header>
-    </v-stepper>
+    <h1 class="text-xs-center">{{ $t(mode+'DraftHandle', {handle: draft.handle}) }}</h1>
+    <h2 class="text-xs-center">{{ $t('chooseAModel') }}</h2>
   <p class="text-xs-center">
     <v-btn
        outline
@@ -23,14 +10,14 @@
        v-for="model in models.valid"
        :key="model"
        color="primary"
-       :to="$fs.path('/fork/'+fork+'/for/'+model)"
+       :to="$fs.path('/'+mode+'/'+fork+'/for/'+model)"
        >{{ $store.state.user.models[model].name }}</v-btn>
     </p>
     <v-container fluid grid-list-lg>
       <v-layout row wrap>
         <v-flex class="xs4 sm3 xl2" v-for="model in models.valid" :key="model">
           <v-card>
-            <nuxt-link :to="$fs.path('/fork/'+fork+'/for/'+model)" :title="model">
+            <nuxt-link :to="$fs.path('/'+mode+'/'+fork+'/for/'+model)" :title="model">
               <img :src="$fs.conf.apis.data+$store.state.user.models[model].pictureSrc" />
             </nuxt-link>
             <v-card-text class="fs-nodeco">
@@ -91,14 +78,10 @@ export default {
     }
   },
   data: function() {
-    let draft = ''
-    if (typeof this.draft !== 'undefined') {
-      draft = this.draft.handle
-    }
     return {
       crumbs: [{
-        to: this.$fs.path('/fork'),
-      title: this.$t('forkDraftHandle', {handle: draft})
+        to: (this.$route.name.substr(0,4) === 'fork') ? this.$fs.path('/fork') : this.$fs.path('/redraft'),
+        title: (this.$route.name.substr(0,4) === 'fork') ?  this.$t('forkDraftHandle', {handle: this.$route.params.draft}) : this.$t('redraftDraftHandle', {handle: this.$route.params.draft})
 
       }],
       mode: (this.$route.name.substr(0,4) === 'fork') ? 'fork' : 'redraft'

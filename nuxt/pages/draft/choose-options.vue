@@ -115,7 +115,7 @@ export default {
       })
       this.loading = true
       const self = this
-      this.$fs.draft()
+      this.$fs.draft('draft')
       .then((data) => {
         self.ready = true
         self.$router.push(self.$fs.path('/drafts/'+data.handle))

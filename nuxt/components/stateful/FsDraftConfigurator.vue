@@ -1,7 +1,7 @@
 <template>
   <div class="m800">
     <template>
-      <h2>{{ $t('patternOptions') }}</h2>
+      <h3>{{ $t('patternOptions') }}</h3>
       <v-expansion-panel>
         <v-expansion-panel-content v-for="(group, index) in $fs.conf.patterns[pattern].optiongroups" :key="index">
           <div slot="header">
@@ -42,7 +42,7 @@
         </v-expansion-panel-content>
       </v-expansion-panel>
 
-      <h2>{{ $t('draftOptions') }}</h2>
+      <h3>{{ $t('draftOptions') }}</h3>
       <v-expansion-panel>
         <fs-option-sa />
         <fs-option-scope />

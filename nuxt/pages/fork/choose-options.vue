@@ -3,39 +3,16 @@
     <fs-breadcrumbs :crumbs="crumbs">
       <span v-html="(loading) ? $t('draftingPattern', {pattern: $fs.ucfirst(patternName)}) : $t('chooseYourOptions')"></span>
     </fs-breadcrumbs>
-    <h1 class="text-xs-center"
-        v-html="(loading) ?
-        $t('draftingPattern', {pattern: $fs.ucfirst(patternName)}) :
-        $t('step3')+': '+$t('chooseYourOptions')">
-    </h1>
-    {{ $route.name }}
     <div v-if="loading">
+      <h1 class="text-xs-center">
+        {{ $t('draftingPattern', {pattern: $fs.ucfirst(patternName)}) }}
+      </h1>
       <fs-draft-ticker :ready="ready" :error="error" />
         <fs-message-error-please-report v-if="error" />
     </div>
     <div v-else>
-      <v-stepper class="mb-5" value="3">
-        <v-stepper-header class="fs-nodeco">
-          <v-stepper-step step="1" complete>
-            <nuxt-link :to="$fs.path('/fork/')">
-              {{ $t('forkDraftHandle', {handle: $route.params.draft+' ('+$fs.ucfirst(patternName)+')' }) }}
-            </nuxt-link>
-          </v-stepper-step>
-          <v-divider></v-divider>
-          <v-stepper-step step="2" complete>
-            <nuxt-link :to="$fs.path('/fork/'+$route.params.draft)">
-              {{ $t('forUsername', { username: modelName}) }}
-            </nuxt-link>
-          </v-stepper-step>
-          <v-divider></v-divider>
-          <v-stepper-step step="3">{{ $t('chooseYourOptions') }}</v-stepper-step>
-        </v-stepper-header>
-      </v-stepper>
-      <p class="text-xs-center">
-      <v-btn round outline @click="submit()">
-        {{ $t('draftPatternForModel', { pattern: $fs.ucfirst(patternName), model: modelName}) }}
-      </v-btn>
-      </p>
+    <h1 class="text-xs-center">{{ $t(mode+'DraftHandle', {handle: $route.params.draft}) }}</h1>
+    <h2 class="text-xs-center">{{ $t('chooseYourOptions') }}</h2>
       <fs-draft-configurator :pattern="$store.state.draft.gist.pattern" :model="$route.params.model" />
         <p class="text-xs-center mt-5">
         <v-btn color="primary" large @click="submit()" :disabled="loading">
@@ -59,7 +36,6 @@ import FsDraftTicker from '~/components/stateless/FsDraftTicker'
 import FsMessageErrorPleaseReport from '~/components/stateless/FsMessageErrorPleaseReport'
 
 export default {
-  layout: 'wide',
   components: {
     FsWrapperLoginRequired,
     FsDraftConfigurator,
@@ -67,12 +43,7 @@ export default {
     FsDraftTicker,
     FsMessageErrorPleaseReport
   },
-  props: {
-    mode: {
-      type: String,
-      required: true
-    }
-  },
+  layout: 'wide',
   computed: {
     modelName () {
       if(typeof this.$store.state.user.models[this.$route.params.model] !== 'undefined') {
@@ -98,11 +69,11 @@ export default {
       }
       return [
       {
-        to: this.$fs.path('/fork/'),
-        title: this.$t('forkDraftHandle', { handle: this.$route.params.draft })
+        to: this.$fs.path('/drafts/'+this.$route.params.draft),
+        title: (this.$route.name.substr(0,4) === 'fork') ?  this.$t('forkDraftHandle', {handle: this.$route.params.draft}) : this.$t('redraftDraftHandle', {handle: this.$route.params.draft})
       },
       {
-        to: this.$fs.path('/fork/'+this.$route.params.draft),
+        to: (this.$route.name.substr(0,4) === 'fork') ? this.$fs.path('/fork/'+this.$route.params.draft) : this.$fs.path('/redraft/'+this.$route.params.draft),
         title: this.$t('forUsername', { username: mname })
       }
       ]
@@ -115,18 +86,15 @@ export default {
       error: false,
       ready: false,
       loading: false,
-      initialized: false
+      initialized: false,
+      mode: (this.$route.name.substr(0,4) === 'fork') ? 'fork' : 'redraft'
     }
   },
   methods: {
     submit: async function() {
-      this.crumbs.push({
-        to: this.$fs.path('/draft/'+this.$route.params.pattern+'/for/'+this.$route.params.model),
-        title: this.$t('chooseYourOptions')
-      })
       this.loading = true
       const self = this
-      this.$fs.draft()
+      this.$fs.draft(this.mode)
       .then((data) => {
         self.ready = true
         self.$router.push(self.$fs.path('/drafts/'+data.handle))
@@ -137,7 +105,7 @@ export default {
     },
     forkInit: function() {
       if(this.initialized === false  && typeof this.$store.state.user.models[this.$route.params.model] !== 'undefined') {
-        this.$fs.initializeFork(this.$route.params.draft, this.$route.params.model)
+        this.$fs.initializeFork(this.$route.params.draft, this.$route.params.model, this.mode)
         this.initialized = true
       }
     }

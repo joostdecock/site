@@ -157,6 +157,7 @@ profile: Perfil
 quickPick: Vista rápida
 reSendActivationEmail: Reenviar email de activación
 redraft: Redibujar
+redraftDraftHandle: 'Redraft draft {handle} TODO'
 reference: Referencia
 removeAllMyData: Borrar todos mis datos
 replay: Replay TODO

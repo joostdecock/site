@@ -157,6 +157,7 @@ profile: Profile TODO
 quickPick: Quick pick TODO
 reSendActivationEmail: Re-send activation email TODO
 redraft: Redraft TODO
+redraftDraftHandle: 'Redraft draft {handle} TODO'
 reference: Reference TODO
 removeAllMyData: Remove all my data TODO
 replay: Replay TODO

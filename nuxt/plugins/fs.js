@@ -82,7 +82,7 @@ export default ({ app, store, route }, inject) => {
       draftOptions:  {},
       patternOptions: {}
     }
-    if(type === 'forkFromModel') {
+    if(type === 'forkFromModel' || type === 'redraftFromModel') {
       // Forked draft
       gist.pattern = patternHandleMethod(data.draft.pattern)
       gist.patternClass = patternClassMethod(data.draft.pattern)
@@ -181,7 +181,7 @@ export default ({ app, store, route }, inject) => {
         return authMethod()
       },
 
-      draft() {
+      draft(mode) {
         return new Promise(function(resolve, reject) {
           ax.data.post('/draft', utils.normalize(store.state.draft.gist), { headers: {'Authorization': 'Bearer '+token()} })
             .then((res) => {
@@ -563,7 +563,7 @@ export default ({ app, store, route }, inject) => {
         })
       },
 
-      initializeFork(draftHandle, model) {
+      initializeFork(draftHandle, model, mode) {
         let draft = {}
         if(typeof store.state.user.drafts[draftHandle] === 'undefined') {
           loadDraftMethod(draftHandle)
@@ -576,12 +576,18 @@ export default ({ app, store, route }, inject) => {
         } else {
           draft = store.state.user.drafts[draftHandle]
         }
-        const gist = asGist('forkFromModel', {
+        const gist = asGist(mode+'FromModel', {
           draft: draft,
           model: store.state.user.models[model],
           units: store.state.user.account.units,
           locale: app.i18n.locale
         })
+        if(mode === 'fork') {
+          gist.draftOptions.fork = draftHandle
+        }
+        else if(mode === 'redraft') {
+          gist.draftOptions.redraft = draftHandle
+        }
         store.commit('setDraftInitial', {
           gist: gist,
           defaults: JSON.parse(JSON.stringify(gist)),

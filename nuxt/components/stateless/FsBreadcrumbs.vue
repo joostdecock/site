@@ -17,9 +17,10 @@
     </template>
     <template v-for="(c, index) in crumbs">
       <li :key="'title-'+index">
-        <nuxt-link :to="c.to" :key="'link-'+index">
+        <nuxt-link :to="c.to" :key="'link-'+index" v-if="typeof c.to !== 'undefined'">
           {{ c.title }}
         </nuxt-link>
+        <span v-else>{{ c.title }}</span>
       </li>
       <li :key="'spacer-'+index">
         <v-icon :key="'chevron-'+index" small>chevron_right</v-icon></li>

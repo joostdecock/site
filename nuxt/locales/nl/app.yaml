@@ -157,6 +157,7 @@ profile: Profiel
 quickPick: Snelle keuzes
 reSendActivationEmail: Stuur een nieuwe activatie E-mail
 redraft: Herteken
+redraftDraftHandle: 'Herteken patroontekening {handle}'
 reference: Referentie
 removeAllMyData: Verwijder all mijn gegevens
 replay: Herdoe

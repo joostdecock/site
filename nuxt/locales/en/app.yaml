@@ -157,6 +157,7 @@ profile: Profile
 quickPick: Quick pick
 reSendActivationEmail: Re-send activation email
 redraft: Redraft
+redraftDraftHandle: 'Redraft draft {handle}'
 reference: Reference
 removeAllMyData: Remove all my data
 replay: Replay
