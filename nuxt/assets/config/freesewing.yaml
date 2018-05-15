@@ -25,8 +25,8 @@ i18n:
   coordinators:
     de: _vacant
     en: joost
-    es: _vacant
-    fr: AlfaLyr
+    es: AlfaLyer
+    fr: _vacant
     nl: AnnekeCaramin
     'no': _vacant
   files:
@@ -39,11 +39,11 @@ i18n:
   locales:
     disabled:
       - de
-      - es
       - fr
       - 'no'
     enabled:
       - en
+      - es
       - nl
   origin: en
   stats:
@@ -68,12 +68,12 @@ i18n:
       patterns: 37
       showcase: 51
     es:
-      app: 272
+      app: 282
       blog: 0
       docs: 0
       i18n: 0
       measurements: 26
-      optiongroups: 0
+      optiongroups: 12
       options: 0
       patterns: 37
       showcase: 0

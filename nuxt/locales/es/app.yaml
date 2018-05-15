@@ -1,16 +1,16 @@
 aboutFreesewing: Acerca de Freesewing
 add: Añadir
 all: Todo
-alreadyHaveAnAccount: Ya tienes una cuenta?
-avatar: Avatar Done
+alreadyHaveAnAccount: ¿Ya tienes una cuenta?
+avatar: Avatar DONE
 avatarUpdated: Avatar actualizado
 basics: Bases
 becomeAPatron: Conviértete en patrocinador
-blog: Blog Done
+blog: Blog DONE
 blogPost: Entradas del post
 breasts: Pechos
 breastsUpdated: Opción de pechos actualizada updated
-cancel: Cancelal
+cancel: Cancelar
 chatOnGitter: Chatea en Gitter
 chatWithUs: Chatea con nosotros
 chooseAModel: Elige un modelo
@@ -21,15 +21,15 @@ close: Cerrar
 community: Comunidad
 compare: Comparar
 completePattern: Patrón completo
-connectingToSomeApi: 'Conectando a la {api} API '
+connectingToSomeApi: 'Conectando a la API {api}'
 contactUs: Contactáctanos
 content: Contenido
 contents: Contenidos
 coordinator: Coordinador
-coreLink: Core link TODO
+coreLink: Enlace principal TODO
 countAvailable: '{count} disponible '
 countTranslated: '{count} traducido '
-createIssueOnGithub: Create asunto en GitHub
+createIssueOnGithub: Crear asunto en GitHub
 createModel: Crear modelo
 createMyAccount: Crear mi cuenta
 created: Creado
@@ -50,16 +50,16 @@ documentationOverview: Documentation general
 download: Descargar
 draft: Boceto
 draftOptions: Opciones del boceto
-draftPattern: 'Dibujar {pattern} '
-draftPatternForModel: 'Dibujar {pattern} para {model} '
-draftThePattern: Dibuja el patrón
-draftingPattern: 'Dibujando {pattern} '
+draftPattern: 'Trazar {pattern} '
+draftPatternForModel: 'Trazar {pattern} para {model} '
+draftThePattern: Traza el patrón
+draftingPattern: 'Trazando {pattern} '
 drafts: Bocetos
 edit: Editar
 editOnGithub: Editar en GitHub
 email: E-mail DONE
 emailAddress: Dirección de E-mail
-emailUpdated: Actualización de E-mail update pending. Revisa tu bandeja de entrada para el E-mail de confirmación
+emailUpdated: Actualización de E-mail pendiente. Revisa tu bandeja de entrada para el E-mail de confirmación
 emails: E-mails DONE
 enterYourCurrentPassword: Introduce tu contraseña actual
 enterYourNewPassword: Introduce tu nueva contraseña
@@ -80,10 +80,10 @@ github: GitHub DONE
 githubUpdated: Nombre de usuario de GitHub actualizado
 goodToKnow: Bueno saberlo
 hi: Hola
-home: Home TODO
+home: Home DONE
 howToTakeMeasurements: Cómo tomar medidas
-i18n: Internationalización (i18n)
-image: Imágen
+i18n: Internacionalización (i18n)
+image: Imagen
 imperial: Imperial DONE
 imperialUnits: Unidades imperiales (pulgadas)
 inch: pulgada
@@ -92,9 +92,9 @@ instagram: Instagram DONE
 instagramUpdated: Cuenta de Instagram establecida
 joinTheTranslationTeam: 'Incluso si nunca has contribuído a un proyecto open source, la traducción es una cuesta de poca pendiente hacia la fama de colaborador'
 justAMoment: Un momento
-key: Key TODO
+key: Clave
 language: Idioma
-languageLanguageFiles: '{language} ficheros de idiomas '
+languageLanguageFiles: 'Ficheros de idioma de {language}'
 layout: Plantilla
 learnToDesignPatterns: Aprende a diseñar patrones
 letterPdf: Letter PDF DONE
@@ -111,7 +111,7 @@ measurements: Medidas
 measurementsRequiredForPattern: 'Medidas requeridas por {pattern} '
 messages: Mensajes
 metric: Métrico
-metricUnits: Unidades decimales (cm)
+metricUnits: Unidades métricas (cm)
 model: Modelo
 modelIsModel: 'El modelo es {model} '
 models: Modelos
@@ -129,26 +129,26 @@ newTaskForUser: 'Nueva tarea para {user} '
 noChanges: Sin cambios
 noDraftsFound: No se encontraron bocetos
 noFilter: Sin filtros
-noIDoNot: 'No, I do not '
+noIDoNot: 'No'
 notShared: No compartido
 notes: Notas
 ohNo: ¡Oh no!
 okThatsDone: 'OK, eso está hecho '
 onlySelectedPatternParts: Sólo las partes seleccionadas del patrón
-pageNotFound: La página que buscas no se encuentra en ninguna parte.
+pageNotFound: La página que buscas no se encuentra en ninguna parte
 paperlessTheme: Tema sin papel
 password: Contraseña
-passwordUpdated: Password changed TODO
-patronText: '{username} is a {patronTier} since {daysAgo} TODO'
+passwordUpdated: Contraseña cambiada
+patronText: '{username} es un {patronTier} desde {daysAgo}'
 patrons: Patrocinadores
 pattern: Patrón
 patternDesignTutorial: Tutorial de diseño de patrones
 patternDocumentation: Instrucciones del patrón
-patternIsPattern: 'El patrón es {pattern} '
+patternIsPattern: 'El patrón es {pattern}'
 patternOptions: Opciones del patrón
 patternParts: Partes del patrón
 patterns: Patrones
-postInfo: Post info TODO
+postInfo: Información de la entrada
 preferences: Preferencias
 privacy: Privacidad
 privacyInfo: Información de privacidad
@@ -156,30 +156,30 @@ processingDraftOptions: Procesando las opciones del boceto
 profile: Perfil
 quickPick: Vista rápida
 reSendActivationEmail: Reenviar email de activación
-redraft: Redibujar
+redraft: Trazar de nuevo
 redraftDraftHandle: 'Redraft draft {handle} TODO'
 reference: Referencia
 removeAllMyData: Borrar todos mis datos
-replay: Replay TODO
+replay: Ejecutar de nuevo
 requiredMeasurements: Medidas requeridas
-retrievingDraftFromCore: Retrieving el boceto desde el núcleo
+retrievingDraftFromCore: Recuperando el boceto desde el núcleo
 rowsFromToOfTotal: 'Filas {from} a la {to} de {total} '
 rowsPerPage: Filas por página
 save: Guardar
-scope: Scope TODO
+scope: Alcance
 seamAllowance: Margen de costura
 search: Buscar
 seeBelow: Mira abajo
 selectADifferentImage: Selecciona otra imagen
 selectAnImage: Selecciona una imagen
-selectThePartsYouWantIncludedInYourDraft: Select the parts you want included in your draft TODO
+selectThePartsYouWantIncludedInYourDraft: Selecciona las partes que quieres incluír en tu boceto
 settings: Ajustes
 share: Compartir
 shared: Compartido
 sharedUpdated: Opción de compartir actualizada
 showHelp: Mostrar ayuda
-showcase: Showcase TODO
-showcaseInfo: Showcase info TODO
+showcase: Escaparate
+showcaseInfo: Información de escaparate
 signUp: Registrarse
 signUpForAFreeAccount: Regístrate para una cuenta gratuíta
 signup--text: 'Esto no debería pasar. Por favor, ayúdanos creando un asunto en GitHub'
@@ -197,7 +197,7 @@ social: Social DONE
 somethingWentWrong: Algo ha ido mal
 startUpload: Empezar subida
 status: Estado
-statusTranslationLanguage: 'Estado de traducción {language} '
+statusTranslationLanguage: 'Estado de traducción al {language} '
 step1: Paso 1
 step2: Paso 2
 step3: Paso 3
@@ -222,27 +222,27 @@ twitterUpdated: Cuenta de Twitter establecida
 txt-avatarDropzoneText: 'Arrastra una imagen aquí, o haz clic en el botón para elegir una de entre tus archivos. '
 txt-avatarDropzoneTitle: Arrastra tu imagen aquí
 txt-changeRequiresConfirmation: Este cambio requiere confirmación vía E-mail
-txt-clickEmailLink: 'Por favor, sigue el enlace en el email para continuar.'
+txt-clickEmailLink: 'Por favor, sigue el enlace en el email para continuar. '
 txt-consentProfile: Das permiso para procesar tu información de usuario?
 txt-consentProfileAnswerShare: '<b>No</b>, nunca. '
 txt-consentProfileAnswerTiming: '<b>12 meses</b> desde tu última sesión, o hasta que <b>elimines</b> tu cuenta o <b>revoques</b> este consentimiento. '
 txt-consentProfileAnswerWhat: 'Tu <b>dirección de email</b>, <b>nombre de usuario</b>, y <b>contraseña</b>. '
 txt-consentProfileAnswerWhatOptional: 'Opcional: Una <b>imágen de perfil</b>, y <b>cuentas de redes sociales</b> '
 txt-consentProfileAnswerWhy: 'Para <b>autentificar</b> tu <b>contacto</b> cuando lo necesites, y construir una <b>comunidad</b>. '
-txt-consentProfileQuestionShare: Lo compartimos con otros?
-txt-consentProfileQuestionTiming: Por cuánto tiempo lo guardamos?
-txt-consentProfileQuestionWhat: Qué son los datos del perfil?
-txt-consentProfileQuestionWhy: Por qué lo necesitamos?
+txt-consentProfileQuestionShare: ¿Lo compartimos con otros?
+txt-consentProfileQuestionTiming: ¿Por cuánto tiempo lo guardamos?
+txt-consentProfileQuestionWhat: ¿Qué son los datos del perfil?
+txt-consentProfileQuestionWhy: ¿Por qué lo necesitamos?
 txt-contentLocaleFallback: Por eso te estamos enseñando la versión en inglés en su lugar.
 txt-contentNotTranslated: 'Lamentablemente, esta página no ha sido traducida al {language} (todavía). '
-txt-didYouSpotATypo: 'Has encontrado un erro tipográfico? Crees que algo falta, o necesita aclaración? '
+txt-didYouSpotATypo: '¿Has encontrado un erro tipográfico? ¿Crees que algo falta, o necesita aclaración? '
 txt-editThisPageOnline: Puedes editar esta página y luego enviar tus cambios.
 txt-email-sharing: Nunca compartiremos esto con nadie
 txt-emailChangeConfirmationNotFound: 'Lo sentimos, pero no tenemos ningún cambio de E-mail pendiente para este código de confirmación. Tal vez ha expirado, en cuyo caso puedes hacer el cambio de nuevo en tus ajustes. '
 txt-emailNotFound: 'Si no puedes encontrar el email mira en tu carpeta de SPAM, o contacta con nosotros. '
 txt-gdprCompliant: Freesewing.org respeta tu privacidad y tus derechos. Aplicamos la Regulación General de Protección de Datos (RGPD) de la Unión Europea (UE).
 txt-joinTheTranslationTeam1: 'Incluso si nunca has contribuído a un proyecto open source, la traducción es una cuesta de poca pendiente hacia la fama de colaborador. '
-txt-joinTheTranslationTeam2: 'It doesn''t matter whether you translate a few words or sentences, or tackle an entire language by yourself. Every contribution counts, and many hands make light work. '
+txt-joinTheTranslationTeam2: 'No importa si traduces unas pocas palabras o frases, o si te ocupas de un idioma entero. Cada contribución cuenta, y muchas manos hacen el trabajo fácil. '
 txt-joinTheTranslationTeam3: 'Lee la documentación para traductores para empezar. No te preocupes, es fácil. '
 txt-modelsWithMissingMeasurements: 'A este modelo le faltan algunas de las medidas requeridas para dibujar este patrón: '
 txt-newModel: 'Para empezar, dale un nombre a este modelo. '
@@ -256,9 +256,9 @@ txt-saOption-patternMetric: Márgen de costura métrico defecto del patrón
 txt-signup-step1: 'Introduce tu dirección de email y elige una contraseña. '
 txt-signup-step2: Confirma tu dirección de email.
 txt-signup-step3: Danos permiso para procesar tus datos personales.
-txt-slogan: Una plataforma open source platform para patrones de costura a medida
+txt-slogan: Una plataforma open source para patrones de costura a medida
 txt-withOrWithoutBreasts: 'Ajustar pechos requiere una serie de medidas que no son relevantes si no tienes pechos. Si has elegido que tu modelo no tenga pechos, to te mostraremos estas medidas por ser irrelevantes. Si no sabes qué elegir, elige pechos. '
-txt-withOrWithoutBreasts-explainer: 'En otros sitios, esta pregunta se plantea como "¿hombre o mujer?. Aquí no nos gusta poner etiquetas a la gente. Sólo nos importa ajustar tu pecho. '
+txt-withOrWithoutBreasts-explainer: 'En otros sitios, esta pregunta se plantea como "¿hombre o mujer?". Aquí no nos gusta poner etiquetas a la gente. Sólo nos importa ajustar tu pecho. '
 type: Tipo
 units: Unidades
 unitsUpdated: Juego de unidades
@@ -275,11 +275,11 @@ weAreLoadingDataFromTheBackend: Estamos cargando datos desde el backend
 weAreValidatingYourConfirmationCode: Estamos validando tu código de confirmación
 welcomeAboard: Bienvenido a bordo
 withBreasts: Con pechos
-withOrWithoutBreasts: Con o sin pechos?
+withOrWithoutBreasts: ¿Con o sin pechos?
 withoutBreasts: Sin pechos
 wouldYouLikeToLogOut: ¿Quieres cerrar la sesión
 'yes': Sí
-yesIDo: 'Yes, I do '
+yesIDo: Sí
 yesterday: Ayer
-youAreCurrentlyLoggedIn: Tienes una sesión abierta.
-youAreNotLoggedIn: No tienes una sesión abierta.
+youAreCurrentlyLoggedIn: Tienes una sesión abierta
+youAreNotLoggedIn: No tienes una sesión abierta

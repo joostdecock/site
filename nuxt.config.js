@@ -33,6 +33,10 @@ module.exports = {
           name: 'English'
         },
         {
+          code: 'es',
+          name: 'Español'
+        },
+        {
           code: 'nl',
           iso: 'nl-NL',
           name: 'Nederlands'
@@ -43,6 +47,7 @@ module.exports = {
       vueI18n: {
         messages: {
           en: require('./nuxt/locales/en/en.json'),
+          es: require('./nuxt/locales/es/es.json'),
           nl: require('./nuxt/locales/nl/nl.json'),
         },
         fallbackLocale: 'en'

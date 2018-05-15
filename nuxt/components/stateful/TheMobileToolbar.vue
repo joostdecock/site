@@ -12,13 +12,13 @@
     <v-menu nudge-right>
       <v-toolbar-title slot="activator">
         <v-btn small flat>
-          <img :src="'/icons/locales/'+$i18n.locale+'.svg'" />
+          <img :src="'/icons/flags/'+$i18n.locale+'.svg'" />
         </v-btn>
       </v-toolbar-title>
       <v-list>
         <v-list-tile v-for="(locale, index) in $i18n.locales" :key="index" :to="switchLocalePath(locale.code)">
           <v-list-tile-action>
-            <img :src="'/icons/locales/'+locale.code+'.svg'" />
+            <img :src="'/icons/flags/'+locale.code+'.svg'" />
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title>
@@ -31,7 +31,7 @@
     <v-spacer class="text-xs-center"></v-spacer>
     <nuxt-link to="/patrons/join" class="hidden-sm-and-down mr-4">
       <v-btn light color="warning">
-        {{ $t('becomeAPatron') }} 
+        {{ $t('becomeAPatron') }}
         <v-icon right color="primary">favorite</v-icon>
       </v-btn>
     </nuxt-link>
