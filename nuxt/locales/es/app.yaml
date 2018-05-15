@@ -139,6 +139,7 @@ pageNotFound: La página que buscas no se encuentra en ninguna parte.
 paperlessTheme: Tema sin papel
 password: Contraseña
 passwordUpdated: Password changed TODO
+patronText: '{username} is a {patronTier} since {daysAgo} TODO'
 patrons: Patrocinadores
 pattern: Patrón
 patternDesignTutorial: Tutorial de diseño de patrones
@@ -267,6 +268,7 @@ user: Usuario
 username: Nombre de usuario
 usernameUpdated: Nombre de usuario actualizado
 version: Versión
+visitPatronProfile: Visit the profile page of this patron TODO
 volunteerVerb: Voluntario
 weAreLoadingDataFromTheBackend: Estamos cargando datos desde el backend
 weAreValidatingYourConfirmationCode: Estamos validando tu código de confirmación

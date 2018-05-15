@@ -360,6 +360,16 @@ export default ({ app, store, route }, inject) => {
         })
       },
 
+      loadPatrons() {
+          return new Promise(function(resolve, reject) {
+              ax.data.get('/patrons/list', { headers: {'Authorization': 'Bearer '+token()} })
+                  .then((res) => {
+                      resolve(res.data.patrons)
+                  })
+                  .catch((error) => { reject(error.response.data) })
+          })
+      },
+
       get(url) {
         return new Promise(function(resolve, reject) {
           let conf = {
