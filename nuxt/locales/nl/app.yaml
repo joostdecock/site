@@ -5,7 +5,7 @@ alreadyHaveAnAccount: Ben je reeds ingeschreven?
 avatar: Profielfoto
 avatarUpdated: Avatar bijgewerkt
 basics: Basis
-becomeAPatron: Wordt sponsor
+becomeAPatron: Word sponsor
 blog: Blog DONE
 blogPost: Blog post
 breasts: Borsten
@@ -59,7 +59,7 @@ edit: Bewerken
 editOnGithub: Bewerken via GitHub
 email: E-mail DONE
 emailAddress: E-mail adres
-emailUpdated: E-mail wijziging is hangende. Controleer je inbox voor de bevestiging E-mail
+emailUpdated: E-mail wijziging is hangende. Controleer je inbox voor de bevestigings E-mail
 emails: E-mails DONE
 enterYourCurrentPassword: Voer je huidig wachtwoord in
 enterYourNewPassword: Voer je nieuw wachtwoord in
@@ -116,14 +116,14 @@ model: Model DONE
 modelIsModel: 'Model is {model} DONE'
 models: Modellen
 monthAgo: Een maand geleden
-monthsAgo: '{months} maand geleden'
+monthsAgo: '{months} maanden geleden'
 name: Naam
 nameOfTheModel: Naam van het model
 nameUpdated: Naam bijgewerkt
 newDraft: Nieuwe patroontekening
 newModel: Nieuw model
 newPassword: Nieuw wachtwoord
-newPatternDraft: 'Nieuew {pattern} patroontekening'
+newPatternDraft: 'Nieuwe {pattern} patroontekening'
 newTaskForUser: 'Nieuwe taak voor {user}'
 'no': Nee
 noChanges: Geen wijzigingen
@@ -139,7 +139,7 @@ pageNotFound: De pagina waar je naar op zoek bent is nergens te vinden.
 paperlessTheme: Papierloze layout
 password: Wachtwoord
 passwordUpdated: Wachtwoord gewijzigd
-patronText: '{username} is a {patronTier} since {daysAgo} TODO'
+patronText: '{username} is een {patronTier} sinds {daysAgo} '
 patrons: Sponsors
 pattern: Patroon
 patternDesignTutorial: Patroon ontwerp les
@@ -160,7 +160,7 @@ redraft: Herteken
 redraftDraftHandle: 'Herteken patroontekening {handle}'
 reference: Referentie
 removeAllMyData: Verwijder all mijn gegevens
-replay: Herdoe
+replay: Nog een keer
 requiredMeasurements: Vereiste maten
 retrievingDraftFromCore: Patroontekening ophalen van core
 rowsFromToOfTotal: 'Rij {from} tot {to} van {total}'
@@ -237,12 +237,12 @@ txt-contentLocaleFallback: Daarom tonen we je de Engelstalige versie.
 txt-contentNotTranslated: Helaas is deze pagina (nog) niet vertaald naar het Nederlands.
 txt-didYouSpotATypo: Foutje ontdekt? Of heb je het gevoel dat er wat ontbreekt of duidelijker kan?
 txt-editThisPageOnline: Je kan deze pagina online bewerken en je aanpassingen doorsturen.
-txt-email-sharing: We geven jouw email adres nooit door aan derden
+txt-email-sharing: We geven jouw e-mail adres nooit door aan derden
 txt-emailChangeConfirmationNotFound: Helaas kunnen we geen hangende E-mail wijzinging vinden voor deze bevestigingscode. Misschien is de termijn voor de wijziging verlopen. In dat geval kan U gewoon weer de aanpassing doorvoeren in uw instellingen.
 txt-emailNotFound: 'E-mail niet te vinden? Controleer je spam folder, of neem contact met ons op.'
 txt-gdprCompliant: Freesewing.org respecteert jouw privacy en rechten. We passen de Algememe Verordening Gegevensbescherming (AVG) van de Europese Unie (EU) toe.
 txt-joinTheTranslationTeam1: 'Zelfs al heb je nog nooit bijgedragen aan een open source project, vertalen is de makkelijkste manier om aan de slag te gaan als vrijwillige medewerker'
-txt-joinTheTranslationTeam2: 'Het maakt niet uit of je enkele woorden of zinnen vertaald, of een hele taal voor je rekening neemt. Elke bijdrage telt, en vele handen maken licht werk.'
+txt-joinTheTranslationTeam2: 'Het maakt niet uit of je enkele woorden of zinnen vertaalt, of een hele taal voor je rekening neemt. Elke bijdrage telt, en vele handen maken licht werk.'
 txt-joinTheTranslationTeam3: Lees de documentatie voor vertalers om aan de slag te gaan. Het is echt niet moeilijk.
 txt-modelsWithMissingMeasurements: 'Van deze modellen kennen we niet alle vereiste maten om dit patroon te tekenen:'
 txt-newModel: 'Eerst en vooral, geef je model een naam.'
@@ -270,7 +270,7 @@ username: Gebruikersnaam
 usernameUpdated: Gebruikersnaam bijgewerkt
 version: Versie
 visitPatronProfile: Visit the profile page of this patron TODO
-volunteerVerb: Wordt vrijwilliger
+volunteerVerb: Word vrijwilliger
 weAreLoadingDataFromTheBackend: We laden gegevens van de backend
 weAreValidatingYourConfirmationCode: We valideren je bevestigingscode
 welcomeAboard: Welkom aan boord
