@@ -27,10 +27,11 @@ export default ({ app, store, route }, inject) => {
               resolve(true)
           }
         })
-      .catch((res) => {
-        store.dispatch('ejectAccount', {})
-        reject(res)
-      })
+        .catch((res) => {
+          store.dispatch('ejectAccount', {})
+          console.log('Authentication failed | plugin')
+          resolve(false)
+        })
     })
   }
 

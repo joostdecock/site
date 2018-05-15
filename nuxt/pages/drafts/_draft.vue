@@ -1,5 +1,7 @@
 <template>
   <section>
+  <fs-wrapper-login-required :callback="loadDraft">
+    <div v-if="loaded">
     <fs-breadcrumbs :crumbs="crumbs">{{ $t('draft') }} {{ $route.params.draft }}</fs-breadcrumbs>
     <div v-if="draft">
       <h1 v-if="!updateTitle">{{ draft.name }}
@@ -37,7 +39,7 @@
             <v-tab-item id="notes" v-html="'<div class=\'fs-m800 fs-pad\'>'+$fs.md.render(draft.notes)+'</div>'" class="fs-pad">
             </v-tab-item>
             <v-tab-item id="gist" class="fs-pad">
-              <pre v-if="typeof draft.data.gist !== 'undefined'">{{ draft.data.gist }}</pre>
+              <pre v-if="gist">{{ draft.data.gist }}</pre>
               <blockquote v-else class="warning">
                 <h3>{{ $t('thisDraftPredatesThisFeature') }}</h3>
                 <p>{{ $t('pleaseUpgradeThisDraft') }}</p>
@@ -65,6 +67,11 @@
       <h5>{{ $t('somethingWentWrong') }}</h5>
       <p class="text-xs-center"><v-btn class="mt-5" large flat outline color="white"><v-icon class="mr-3">home</v-icon>{{ $t('home') }}</v-btn></p>
     </blockquote>
+    </div>
+    <div v-else class="text-xs-center">
+      <v-progress-circular v-if="upgrading" size="24" indeterminate color="primary"></v-progress-circular>
+    </div>
+  </fs-wrapper-login-required>
   </section>
 </template>
 
@@ -74,6 +81,7 @@ import FsTableModelInfo from '~/components/stateless/FsTableModelInfo'
 import FsTablePatternOptions from '~/components/stateless/FsTablePatternOptions'
 import FsTableDraftOptions from '~/components/stateless/FsTableDraftOptions'
 import FsPageNotFound from '~/components/stateless/FsPageNotFound'
+import FsWrapperLoginRequired from '~/components/stateless/FsWrapperLoginRequired'
 
 export default {
   components: {
@@ -81,7 +89,8 @@ export default {
     FsTableModelInfo,
     FsTablePatternOptions,
     FsTableDraftOptions,
-    FsPageNotFound
+    FsPageNotFound,
+    FsWrapperLoginRequired
   },
   data () {
     return {
@@ -91,7 +100,10 @@ export default {
       updateTitle: false,
       deleteDraft: false,
       error: false,
-      upgrading: false
+      upgrading: false,
+      draft: {},
+      loaded: false,
+      gist: false
     }
   },
   computed: {
@@ -128,31 +140,55 @@ export default {
       .catch((error) => {
         this.error = true
       })
+    },
+    loadDraft() {
+      this.$fs.loadDraft(this.$route.params.draft)
+      .then((data) => {
+        this.draft = data.draft
+        if(typeof data.draft.data.gist === 'object') this.gist = true
+        this.loaded = true
+        this.$store.commit('setDynamicComponent', {
+          region: 'rightColumn',
+          component: 'fs-dynamic-aside-draft'
+        })
+        this.$store.commit('setComponentData', {
+          source: 'draft',
+          data: this.draft
+        })
+      })
+      .catch((error) => {
+        console.log('Draft load failed')
+        if(error.reason === 'no_such_draft') {
+          return {notFound: true}
+        } else {
+          return {error: true}
+        }
+      })
     }
   },
-  asyncData: function ({ app, route }) {
-    return app.$fs.loadDraft(route.params.draft)
-    .then((data) => {
-      return data
-    })
-    .catch((error) => {
-      if(error.reason === 'no_such_draft') {
-        return {notFound: true}
-      } else {
-        return {error: true}
-      }
-    })
-  },
-  mounted: function() {
-    this.$store.commit('setDynamicComponent', {
-      region: 'rightColumn',
-      component: 'fs-dynamic-aside-draft'
-    })
-    this.$store.commit('setComponentData', {
-      source: 'draft',
-      data: this.draft
-    })
-  },
+  //asyncData: function ({ app, route }) {
+  //  return app.$fs.loadDraft(route.params.draft)
+  //  .then((data) => {
+  //    return data
+  //  })
+  //  .catch((error) => {
+  //    if(error.reason === 'no_such_draft') {
+  //      return {notFound: true}
+  //    } else {
+  //      return {error: true}
+  //    }
+  //  })
+  //},
+  //mounted: function() {
+  //  this.$store.commit('setDynamicComponent', {
+  //    region: 'rightColumn',
+  //    component: 'fs-dynamic-aside-draft'
+  //  })
+  //  this.$store.commit('setComponentData', {
+  //    source: 'draft',
+  //    data: this.draft
+  //  })
+  //},
   beforeDestroy: function() {
     this.$store.commit('setAction', {action: 'deleteDraft', value: false})
     this.$store.commit('setDynamicComponent', {

@@ -1,7 +1,7 @@
 <template>
   <div>
     <blockquote v-if="!$store.state.user.loggedIn">
-      <div v-if="!authCompleted">
+      <div v-if="!$store.state.user.isFresh">
         <h3>{{ $t('justAMoment') }}</h3>
         <p>{{ $t('weAreLoadingDataFromTheBackend') }}</p>
         <v-progress-circular indeterminate color="primary"></v-progress-circular>
@@ -38,9 +38,15 @@ export default {
       required: false
     }
   },
+  data () {
+    return {
+      callbackRan: false
+    }
+  },
   computed: {
     authCompleted () {
       if(typeof this.$store.state.user.account.id !== 'undefined') {
+        this.runCallback()
         return this.$store.state.user.isFresh
       } else {
         return false
@@ -49,11 +55,17 @@ export default {
   },
   watch: {
     authCompleted: function () {
-      if(typeof this.callback !== 'undefined') {
-        this.callback() // Account loaded, running callback
-      }
+      this.runCallback()
     }
   },
+  methods: {
+    runCallback: function() {
+      if(typeof this.callback !== 'undefined' && !this.callbackRan) {
+        this.callback()
+        this.callbackRan = true
+      }
+    }
+  }
 }
 </script>
 
