@@ -255,6 +255,7 @@ new Promise(function(resolve, reject) {
           }
         }
       }
+      fs.writeFileSync('./nuxt/static/i18n/email/'+locale+'.yaml', yaml.safeDump(email[locale], {sortKeys: true, lineWidth: 10000}), 'utf8')
       fs.writeFileSync('./nuxt/static/i18n/'+locale+'.email.json', JSON.stringify(email[locale], null, 0), 'utf8')
     }
   })

@@ -13,3 +13,6 @@ dist
 
 # Staging data
 deploy
+
+# Language files for data repo
+nuxt/static/i18n/email
