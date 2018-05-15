@@ -194,29 +194,29 @@ signup-user_exists-text: We already have a user with that email address. Perhaps
 signup-user_exists-title: That user exists TODO
 social: Social TODO
 somethingWentWrong: Something went wrong TODO
-startUpload: Start upload TODO
-status: Status TODO
+startUpload: Beginne Upload
+status: Status
 statusTranslationLanguage: 'Status translation {language} TODO'
-step1: Step 1 TODO
-step2: Step 2 TODO
-step3: Step 3 TODO
-step4: Step 4 TODO
-stopUpload: Stop upload TODO
+step1: Schritt 1
+step2: Schritt 2
+step3: Schritt 3
+step4: Schritt 4
+stopUpload: Upload stoppen
 storingDraftData: Storing draft data TODO
 svgSourceCode: SVG Source code TODO
 tabloidPdf: Tabloid PDF TODO
-taskCompleted: Task completed TODO
-theme: Theme TODO
+taskCompleted: Aufgabe abgeschlossen
+theme: Thema 
 themeUpdated: Layout preference set TODO
 thisContentIsNotAvailableInLanguage: This content is not available in English. TODO
 thisIsTheCurrentStatusOfOurTranslations: This is the current status of our translations. TODO
 thisPageIsNotIntendedForLoggedInUsers: This page is not intended for logged-in users TODO
 thisPageIsOnlyAvailableToFreesewingUsers: This page is only available to Freesewing users TODO
-title: Title TODO
-today: Today TODO
-translationTeam: Translation team TODO
-tryAgain: Try again TODO
-twitter: Twitter TODO
+title: Titel
+today: Heute
+translationTeam: Übersetzeungsteam TODO
+tryAgain: Versuch es erneut
+twitter: Twitter
 twitterUpdated: Twitter account set TODO
 txt-avatarDropzoneText: 'Drag and drop an image here, or click the button to pick one from your files. TODO'
 txt-avatarDropzoneTitle: Drop your image here TODO
@@ -261,24 +261,24 @@ txt-withOrWithoutBreasts-explainer: 'On other websites, this question may be phr
 type: Type TODO
 units: Units TODO
 unitsUpdated: Units set TODO
-update: Update TODO
-updates: Updates TODO
-useDecimalsOrFractions: Use decimals (1.25) or fractions (1 1/4) TODO
-user: User TODO
-username: Username TODO
-usernameUpdated: Username updated TODO
-version: Version TODO
-visitPatronProfile: Visit the profile page of this patron TODO
-volunteerVerb: Volunteer TODO
+update: Aktualisierung 
+updates: Aktualisierungen 
+useDecimalsOrFractions: Verwende Dezimalzahlen (1.25) oder Bruchzahlen (1 1/4)
+user: Benutzer
+username: Benutzername
+usernameUpdated: Benutzername aktualisiert
+version: Version 
+visitPatronProfile: Besuche die Profilseite dieses Patrons.
+volunteerVerb: Freiwilliger
 weAreLoadingDataFromTheBackend: We are loading data from the backend TODO
 weAreValidatingYourConfirmationCode: We are validating your confirmation code TODO
-welcomeAboard: Welcome aboard TODO
-withBreasts: With breasts TODO
-withOrWithoutBreasts: With or without breasts? TODO
-withoutBreasts: Without breasts TODO
-wouldYouLikeToLogOut: Would you like to log out? TODO
-'yes': Yes TODO
-yesIDo: 'Yes, I do TODO'
-yesterday: Yesterday TODO
-youAreCurrentlyLoggedIn: You are currently logged in. TODO
-youAreNotLoggedIn: You are not logged in. TODO
+welcomeAboard: Willkommen an Bord!
+withBreasts: Mit Brüsten TODO
+withOrWithoutBreasts: Mit oder ohne Brüste? TODO
+withoutBreasts: Ohne Brüste TODO
+wouldYouLikeToLogOut: Willst du dich ausloggen? 
+'yes': Ja
+yesIDo: 'Ja, ich will'
+yesterday: Gestern
+youAreCurrentlyLoggedIn: Du bist aktuell eingelogged.
+youAreNotLoggedIn: Du bist nicht eingelogged. 
