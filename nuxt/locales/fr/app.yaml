@@ -20,7 +20,7 @@ classicTheme: Thème classique
 close: Fermer
 community: Communauté
 compare: Comparer
-completePattern: Complete pattern TODO
+completePattern: Patron complet
 connectingToSomeApi: 'Connecting to {api} API TODO'
 contactUs: Nous contacter
 content: Contenu
@@ -29,7 +29,7 @@ coordinator: Coordinateur
 coreLink: Core link TODO
 countAvailable: '{count} available TODO'
 countTranslated: '{count} translated TODO'
-createIssueOnGithub: Create issue on GitHub TODO
+createIssueOnGithub: Créer une question sur GitHub
 createModel: Créer le modèle
 createMyAccount: Créer mon compte
 created: Créé
@@ -92,7 +92,7 @@ instagram: Instagram DONE
 instagramUpdated: Compte Instagram établi
 joinTheTranslationTeam: 'Even if you have never contributed to an open source project, translation is a smooth on-ramp towards contributor fame. TODO'
 justAMoment: Juste un instant
-key: Key TODO
+key: Légende
 language: Langue
 languageLanguageFiles: '{language} language files TODO'
 layout: Layout TODO
@@ -129,7 +129,7 @@ newTaskForUser: 'New task for {user} TODO'
 noChanges: No changes TODO
 noDraftsFound: No drafts found TODO
 noFilter: No filter TODO
-noIDoNot: 'No, I do not TODO'
+noIDoNot: 'Non, je ne donne pas mon accord'
 notShared: Not shared TODO
 notes: Notes TODO
 ohNo: Oh no! TODO
@@ -179,8 +179,8 @@ share: Share TODO
 shared: Shared TODO
 sharedUpdated: Shared setting updated TODO
 showHelp: Show help TODO
-showcase: Showcase TODO
-showcaseInfo: Showcase info TODO
+showcase: Galerie
+showcaseInfo: Info galerie
 signUp: Sign up TODO
 signUpForAFreeAccount: Sign up for a free account TODO
 signup--text: This should not happen. Please help us out by creating an issue on GitHub TODO
@@ -282,7 +282,7 @@ withOrWithoutBreasts: With or without breasts? TODO
 withoutBreasts: Without breasts TODO
 wouldYouLikeToLogOut: Would you like to log out? TODO
 'yes': Yes TODO
-yesIDo: 'Yes, I do TODO'
+yesIDo: 'Oui, je donne mon accord'
 yesterday: Yesterday TODO
 youAreCurrentlyLoggedIn: You are currently logged in. TODO
 youAreNotLoggedIn: You are not logged in. TODO
