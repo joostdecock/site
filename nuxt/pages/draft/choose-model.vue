@@ -1,5 +1,5 @@
 <template>
-  <fs-wrapper-login-required v-if="$route.params.pattern">
+  <fs-wrapper-login-required>
     <fs-breadcrumbs :crumbs="crumbs">{{ $t('chooseAModel') }}</fs-breadcrumbs>
     <h1 class="text-xs-center">{{ $t('step2') }}: {{ $t('chooseAModel') }}</h1>
     <v-stepper class="mb-5" value="2">
@@ -80,7 +80,7 @@ export default {
       return this.$fs.ucfirst(this.$route.params.pattern)
     },
     models: function() {
-      if(!this.$store.state.user.loggedIn) return false
+      if(!this.$store.state.user.loggedIn) return { valid: {}, invalid: {}}
       var valid = []
       var invalid = []
       for (let model of Object.keys(this.$store.state.user.models)) {

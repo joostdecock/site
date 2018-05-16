@@ -16,8 +16,8 @@
             <v-icon class="mr-3">vpn_key</v-icon>
             {{ $t('logIn') }}
           </v-btn>
-          <v-btn large class="mb-3" :to="$fs.path('/signup')">
-            <v-icon class="mr-3">undo</v-icon>
+          <v-btn large class="mb-3" :to="$fs.path('/signup')" color="success">
+            <v-icon class="mr-3">person_add</v-icon>
             {{ $t('signUp') }}
           </v-btn>
         </div>
