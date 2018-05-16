@@ -26,7 +26,7 @@ contactUs: Contactáctanos
 content: Contenido
 contents: Contenidos
 coordinator: Coordinador
-coreLink: Enlace principal TODO
+coreLink: Enlace principal
 countAvailable: '{count} disponible '
 countTranslated: '{count} traducido '
 createIssueOnGithub: Crear asunto en GitHub
@@ -148,7 +148,7 @@ patternIsPattern: 'El patrón es {pattern}'
 patternOptions: Opciones del patrón
 patternParts: Partes del patrón
 patterns: Patrones
-pleaseUpgradeThisDraft: Please upgrade this draft. TODO
+pleaseUpgradeThisDraft: Por favor, actualiza este boceto.
 postInfo: Información de la entrada
 preferences: Preferencias
 privacy: Privacidad
@@ -158,7 +158,7 @@ profile: Perfil
 quickPick: Vista rápida
 reSendActivationEmail: Reenviar email de activación
 redraft: Trazar de nuevo
-redraftDraftHandle: 'Redraft draft {handle} TODO'
+redraftDraftHandle: 'Trazar de nuevo el boceto {handle}'
 reference: Referencia
 removeAllMyData: Borrar todos mis datos
 replay: Ejecutar de nuevo
@@ -211,7 +211,7 @@ taskCompleted: Tarea completada
 theme: Tema
 themeUpdated: Preferencias de la plantilla establecidas
 thisContentIsNotAvailableInLanguage: Este contenido no está disponible en Español.
-thisDraftPredatesThisFeature: This draft predates this feature. TODO
+thisDraftPredatesThisFeature: Este boceto precede a esta característica
 thisIsTheCurrentStatusOfOurTranslations: Éste es el estado actual de nuestras traducciones.
 thisPageIsNotIntendedForLoggedInUsers: Esta página no está pensada para usuarios con una sesión abierta
 thisPageIsOnlyAvailableToFreesewingUsers: Espa página está sólo disponible para usuarios de Freesewing
@@ -265,14 +265,14 @@ type: Tipo
 units: Unidades
 unitsUpdated: Juego de unidades
 updates: Actualizaciones
-upgrade: Upgrade TODO
-upgradeRequired: Upgrade required TODO
+upgrade: Actualizar
+upgradeRequired: Actualización requerida
 useDecimalsOrFractions: Usar decimales (1.25) o fracciones (1 1/4)
 user: Usuario
 username: Nombre de usuario
 usernameUpdated: Nombre de usuario actualizado
 version: Versión
-visitPatronProfile: Visit the profile page of this patron TODO
+visitPatronProfile: Visita el perfil de este patrocinador
 volunteerVerb: Voluntario
 weAreLoadingDataFromTheBackend: Estamos cargando datos desde el backend
 weAreValidatingYourConfirmationCode: Estamos validando tu código de confirmación
