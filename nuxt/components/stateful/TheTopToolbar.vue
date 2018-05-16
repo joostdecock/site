@@ -2,9 +2,9 @@
   <v-container class="py-0">
     <v-layout row wrap>
       <v-flex xl10 offset-xl1 lg12 md12 sm12 xs12>
-        <v-toolbar color="transparent" flat class="fs-hr fs-ht--bottom">
+        <v-toolbar color="transparent" flat class="fs-hr fs-ht--bottom" :dark="dark">
           <v-btn :to="$fs.path('/')" flat class="fs-ucase fs-m0" active-class="default-class fs-active-btn">
-            <fs-logo color="#212121" size="42" class="mr-3"/>
+            <fs-logo :color="(dark) ? '#FFF' : '#212121'" size="42" class="mr-3"/>
             {{ $t('freesewing') }}
           </v-btn>
           <v-btn :to="$fs.path('/patterns')" flat class="fs-ucase fs-m0" active-class="default-class fs-active-btn">
@@ -61,6 +61,11 @@ export default {
     splash: {
       type: Boolean,
       default: false
+    }
+  },
+  data: function() {
+    return {
+      dark: this.$fs.conf.ui.darkToolbar
     }
   },
   computed: {

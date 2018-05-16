@@ -1,3 +1,5 @@
+ui:
+  darkToolbar: false
 content:
   - docs
   - blog
