@@ -1,33 +1,31 @@
 <template>
-  <div>
-    <v-toolbar :color="(splash) ? 'transparent' : 'white'" :class="(splash) ? '' : 'elevation-1'" :flat="splash">
-      <v-spacer></v-spacer>
-      <nuxt-link :to="$fs.path('/patterns')">
-        <v-btn flat large>
-          <fs-icon-tshirt class="mr-3" />
-          {{ $t('patterns') }}
-        </v-btn>
-      </nuxt-link>
-      <nuxt-link :to="$fs.path('/blog')">
-        <v-btn flat large>
-          <v-icon class="mr-3">rss_feed</v-icon>
-          {{ $t('blog') }}
-        </v-btn>
-      </nuxt-link>
-      <the-documentation-dropdown-menu />
-      <the-community-dropdown-menu />
-      <nuxt-link :to="$fs.path('/search')">
-        <v-btn flat large>
-          <v-icon class="mr-3">search</v-icon>
-          {{ $t('search') }}
-        </v-btn>
-      </nuxt-link>
-      <the-language-dropdown-menu />
-      <v-spacer></v-spacer>
-    </v-toolbar>
-    <the-user-toolbar v-if="$store.state.user.loggedIn" />
-    <the-visitor-toolbar  v-else-if="!splash" />
-  </div>
+  <v-container class="py-0">
+    <v-layout row wrap>
+      <v-flex xl10 offset-xl1 lg12 md12 sm12 xs12>
+        <v-toolbar color="transparent" flat class="fs-hr fs-ht--bottom">
+          <v-btn :to="$fs.path('/')" flat class="fs-ucase fs-m0" active-class="default-class fs-active-btn">
+            <fs-logo color="#212121" size="42" class="mr-3"/>
+            {{ $t('freesewing') }}
+          </v-btn>
+          <v-btn :to="$fs.path('/patterns')" flat class="fs-ucase fs-m0" active-class="default-class fs-active-btn">
+            {{ $t('patterns') }}
+          </v-btn>
+          <v-btn :to="$fs.path('/blog')" flat class="fs-ucase fs-m0" active-class="default-class fs-active-btn">
+            {{ $t('blog') }}
+          </v-btn>
+          <the-documentation-dropdown-menu />
+            <the-community-dropdown-menu />
+              <v-spacer></v-spacer>
+              <v-btn :to="$fs.path('/search')" active-class="default-class fs-active-btn" flat class="fs-m0">
+                <v-icon>search</v-icon>
+              </v-btn>
+              <the-language-dropdown-menu />
+        </v-toolbar>
+        <the-user-toolbar v-if="$store.state.user.loggedIn" />
+          <the-visitor-toolbar  v-else-if="!splash" />
+      </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>
@@ -38,6 +36,7 @@ import FsIconGitter      from '~/components/stateless/FsIconGitter'
 import FsIconTshirt      from '~/components/stateless/FsIconTshirt'
 import TheUserToolbar    from '~/components/stateless/TheUserToolbar'
 import TheVisitorToolbar from '~/components/stateless/TheVisitorToolbar'
+import FsLogo            from '~/components/stateless/FsLogo'
 
 import TheDocumentationDropdownMenu  from '~/components/stateless/TheDocumentationDropdownMenu'
 import TheCommunityDropdownMenu      from '~/components/stateless/TheCommunityDropdownMenu'
@@ -55,7 +54,8 @@ export default {
     TheVisitorToolbar,
     TheDocumentationDropdownMenu,
     TheCommunityDropdownMenu,
-    TheLanguageDropdownMenu
+    TheLanguageDropdownMenu,
+    FsLogo
   },
   props: {
     splash: {

@@ -1,9 +1,8 @@
 <template>
   <v-menu nudge-right>
     <v-toolbar-title slot="activator">
-      <v-btn large flat>
-        <img class="mr-3" :src="'/icons/flags/'+$i18n.locale+'.svg'" />
-        {{ localeName }}
+      <v-btn flat class="fs-m0">
+        <img :src="'/icons/flags/'+$i18n.locale+'.svg'" />
         <v-icon>arrow_drop_down</v-icon>
       </v-btn>
     </v-toolbar-title>
