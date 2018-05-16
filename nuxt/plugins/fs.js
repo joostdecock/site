@@ -161,6 +161,27 @@ export default ({ app, store, route }, inject) => {
         })
       },
 
+      recoverPassword(data) {
+        return new Promise(function(resolve, reject) {
+          ax.data.post('/recover', data)
+            .then((res) => {
+              resolve(res.data)
+            })
+          .catch(() => { reject(error.response.data) })
+        })
+      },
+
+      resetPassword(data) {
+        return new Promise(function(resolve, reject) {
+          ax.data.post('/reset/'+data.hash, {password: data.password})
+            .then((res) => {
+              setToken(res.data.token)
+              resolve(res.data)
+            })
+          .catch((error) => { reject(error.response.data) })
+        })
+      },
+
       auth() {
         return authMethod()
       },

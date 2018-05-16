@@ -1,5 +1,3 @@
-ui:
-  darkToolbar: false
 content:
   - docs
   - blog
@@ -25,7 +23,7 @@ defaults:
     - Paperless
 i18n:
   coordinators:
-    de: _vacant
+    de: manufaktur.edelweiss
     en: joost
     es: AlfaLyer
     fr: MrsMonkey
@@ -60,7 +58,7 @@ i18n:
       patterns: 36
       showcase: 0
     en:
-      app: 287
+      app: 300
       blog: 28
       docs: 9
       i18n: 6
@@ -70,7 +68,7 @@ i18n:
       patterns: 37
       showcase: 51
     es:
-      app: 280
+      app: 279
       blog: 0
       docs: 0
       i18n: 6
@@ -90,7 +88,7 @@ i18n:
       patterns: 4
       showcase: 0
     nl:
-      app: 286
+      app: 299
       blog: 2
       docs: 2
       i18n: 6
@@ -120,7 +118,7 @@ i18n:
       patterns: 0
       showcase: 0
   target:
-    app: 287
+    app: 300
     blog: 28
     docs: 9
     i18n: 6
@@ -130,3 +128,5 @@ i18n:
     patterns: 37
     showcase: 51
   template: xx
+ui:
+  darkToolbar: false

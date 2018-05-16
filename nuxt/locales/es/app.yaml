@@ -14,6 +14,7 @@ cancel: Cancelar
 chatOnGitter: Chatea en Gitter
 chatWithUs: Chatea con nosotros
 chooseAModel: Elige un modelo
+chooseANewPassword: Choose a new password TODO
 chooseAPattern: Elige un patrón
 chooseYourOptions: Elige tus opciones
 classicTheme: Tema clásico
@@ -59,7 +60,7 @@ edit: Editar
 editOnGithub: Editar en GitHub
 email: E-mail DONE
 emailAddress: Dirección de E-mail
-emailUpdated: Actualización de E-mail pendiente. Revisa tu bandeja de entrada para el E-mail de confirmación
+emailUpdatePending: E-mail update pending. TODO
 emails: E-mails DONE
 enterYourCurrentPassword: Introduce tu contraseña actual
 enterYourNewPassword: Introduce tu nueva contraseña
@@ -80,8 +81,11 @@ githubUpdated: Nombre de usuario de GitHub actualizado
 goodToKnow: Bueno saberlo
 hi: Hola
 home: Home DONE
+howCanWeHelpYou: How can we help you? TODO
 howToTakeMeasurements: Cómo tomar medidas
 i18n: Internacionalización (i18n)
+iForgotMyPassword: I forgot my password TODO
+iForgotMyUsername: I forgot my username TODO
 image: Imagen
 imperial: Imperial DONE
 imperialUnits: Unidades imperiales (pulgadas)
@@ -137,6 +141,7 @@ onlySelectedPatternParts: Sólo las partes seleccionadas del patrón
 pageNotFound: La página que buscas no se encuentra en ninguna parte
 paperlessTheme: Tema sin papel
 password: Contraseña
+passwordResetPending: Password reset pending. TODO
 passwordUpdated: Contraseña cambiada
 patronText: '{username} es un {patronTier} desde {daysAgo}'
 patrons: Patrocinadores
@@ -147,6 +152,7 @@ patternIsPattern: 'El patrón es {pattern}'
 patternOptions: Opciones del patrón
 patternParts: Partes del patrón
 patterns: Patrones
+pleaseCheckYourInbox: You will be receiving an E-mail with further instructions TODO
 pleaseUpgradeThisDraft: Please upgrade this draft. TODO
 postInfo: Información de la entrada
 preferences: Preferencias
@@ -162,6 +168,7 @@ reference: Referencia
 removeAllMyData: Borrar todos mis datos
 replay: Ejecutar de nuevo
 requiredMeasurements: Medidas requeridas
+resetPassword: Reset password TODO
 retrievingDraftFromCore: Recuperando el boceto desde el núcleo
 rowsFromToOfTotal: 'Filas {from} a la {to} de {total} '
 rowsPerPage: Filas por página
@@ -217,6 +224,7 @@ thisPageIsOnlyAvailableToFreesewingUsers: Espa página está sólo disponible pa
 title: Título
 today: Hoy
 translationTeam: Equipo de traducción
+troubleLoggingIn: Trouble logging in? TODO
 tryAgain: Prueba otra vez
 twitter: Twitter DONE
 twitterUpdated: Cuenta de Twitter establecida
@@ -241,6 +249,8 @@ txt-editThisPageOnline: Puedes editar esta página y luego enviar tus cambios.
 txt-email-sharing: Nunca compartiremos esto con nadie
 txt-emailChangeConfirmationNotFound: 'Lo sentimos, pero no tenemos ningún cambio de E-mail pendiente para este código de confirmación. Tal vez ha expirado, en cuyo caso puedes hacer el cambio de nuevo en tus ajustes. '
 txt-emailNotFound: 'Si no puedes encontrar el email mira en tu carpeta de SPAM, o contacta con nosotros. '
+txt-emailWillWorkToo: 'If you don''t know your @:username, your @:emailAddress will work too TODO'
+txt-forgot-login: 'Enter your username or E-mail address below and click the <b>@:resetPassword</b> button TODO'
 txt-gdprCompliant: Freesewing.org respeta tu privacidad y tus derechos. Aplicamos la Regulación General de Protección de Datos (RGPD) de la Unión Europea (UE).
 txt-joinTheTranslationTeam1: 'Incluso si nunca has contribuído a un proyecto open source, la traducción es una cuesta de poca pendiente hacia la fama de colaborador. '
 txt-joinTheTranslationTeam2: 'No importa si traduces unas pocas palabras o frases, o si te ocupas de un idioma entero. Cada contribución cuenta, y muchas manos hacen el trabajo fácil. '
@@ -248,6 +258,7 @@ txt-joinTheTranslationTeam3: 'Lee la documentación para traductores para empeza
 txt-modelsWithMissingMeasurements: 'A este modelo le faltan algunas de las medidas requeridas para dibujar este patrón: '
 txt-newModel: 'Para empezar, dale un nombre a este modelo. '
 txt-password-policy: No aplicamos una política de contraseña
+txt-passwordRecoverConfirmationNotFound: 'Sorry, but we have no pending password recovery for this confirmation code. Perhaps it expired, in which case you can simply make another request. TODO'
 txt-saOption-custom: Margen de costura personalizado
 txt-saOption-imperial: Margen de costura imperial estándar
 txt-saOption-metric: Margen de costura métrico estándar
@@ -269,12 +280,14 @@ upgradeRequired: Upgrade required TODO
 useDecimalsOrFractions: Usar decimales (1.25) o fracciones (1 1/4)
 user: Usuario
 username: Nombre de usuario
+usernameOrEmail: '@:username or @:emailAddress TODO'
 usernameUpdated: Nombre de usuario actualizado
 version: Versión
 visitPatronProfile: Visit the profile page of this patron TODO
 volunteerVerb: Voluntario
 weAreLoadingDataFromTheBackend: Estamos cargando datos desde el backend
 weAreValidatingYourConfirmationCode: Estamos validando tu código de confirmación
+weCantHelpYouWithThis: We can't help you with this TODO
 welcomeAboard: Bienvenido a bordo
 withBreasts: Con pechos
 withOrWithoutBreasts: ¿Con o sin pechos?

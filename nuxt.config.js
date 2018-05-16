@@ -97,6 +97,10 @@ module.exports = {
         component: 'nuxt/pages/account/confirm-email-change.vue'
       })
       routes.push({
+        path: '/account/recover/*',
+        component: 'nuxt/pages/account/recover-password.vue'
+      })
+      routes.push({
         path: '/patterns/*',
         component: 'nuxt/pages/patterns/_pattern.vue'
       })

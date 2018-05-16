@@ -14,6 +14,7 @@ cancel: Annuleren
 chatOnGitter: Chat via Gitter
 chatWithUs: Chat met ons
 chooseAModel: Kies een model
+chooseANewPassword: Kies een nieuw wachtwoord
 chooseAPattern: Kies een patroon
 chooseYourOptions: Kies je opties
 classicTheme: Klassieke layout
@@ -59,7 +60,7 @@ edit: Bewerken
 editOnGithub: Bewerken via GitHub
 email: E-mail DONE
 emailAddress: E-mail adres
-emailUpdated: E-mail wijziging is hangende. Controleer je inbox voor de bevestigings E-mail
+emailUpdatePending: E-mail wijzinging is hangende.
 emails: E-mails DONE
 enterYourCurrentPassword: Voer je huidig wachtwoord in
 enterYourNewPassword: Voer je nieuw wachtwoord in
@@ -80,8 +81,11 @@ githubUpdated: GitHub gebruikersnaam bijgewerkt
 goodToKnow: Goed om weten
 hi: Hoi
 home: Home pagina
+howCanWeHelpYou: Hoe kunnen we je helpen?
 howToTakeMeasurements: Leer hoe je maten neemt
 i18n: Internationalisatie (i18n)
+iForgotMyPassword: Ik ben mijn wachtwoord vergeten
+iForgotMyUsername: Ik ben mijn gebruikersnaam vergeten
 image: Afbeelding
 imperial: Imperiaal
 imperialUnits: Imperiale eenheden (duim)
@@ -137,6 +141,7 @@ onlySelectedPatternParts: Alleen de geselecteerde patroondelen
 pageNotFound: De pagina waar je naar op zoek bent is nergens te vinden.
 paperlessTheme: Papierloze layout
 password: Wachtwoord
+passwordResetPending: Wachtwoord herstel is hangende.
 passwordUpdated: Wachtwoord gewijzigd
 patronText: '{username} is een {patronTier} sinds {daysAgo} '
 patrons: Sponsors
@@ -147,6 +152,7 @@ patternIsPattern: 'Patroon is {pattern}'
 patternOptions: Patroon opties
 patternParts: Patroon delen
 patterns: Patronen
+pleaseCheckYourInbox: Je ontvangt van ons een E-mail met verdere instructies.
 pleaseUpgradeThisDraft: Gelieve deze patroontekening bij te werken.
 postInfo: Post gegevens
 preferences: Voorkeuren
@@ -162,6 +168,7 @@ reference: Referentie
 removeAllMyData: Verwijder all mijn gegevens
 replay: Nog een keer
 requiredMeasurements: Vereiste maten
+resetPassword: Herstel wachtwoord
 retrievingDraftFromCore: Patroontekening ophalen van core
 rowsFromToOfTotal: 'Rij {from} tot {to} van {total}'
 rowsPerPage: Rijen per pagina
@@ -217,6 +224,7 @@ thisPageIsOnlyAvailableToFreesewingUsers: Deze pagina is alleen beschikbaar voor
 title: Titel
 today: Vandaag
 translationTeam: Vertaalteam
+troubleLoggingIn: Problemen met aanmelden?
 tryAgain: Nogmaals proberen
 twitter: Twitter DONE
 twitterUpdated: Twitter gebruikersnaam bijgewerkt
@@ -241,6 +249,8 @@ txt-editThisPageOnline: Je kan deze pagina online bewerken en je aanpassingen do
 txt-email-sharing: We geven jouw e-mail adres nooit door aan derden
 txt-emailChangeConfirmationNotFound: Helaas kunnen we geen hangende E-mail wijzinging vinden voor deze bevestigingscode. Misschien is de termijn voor de wijziging verlopen. In dat geval kan U gewoon weer de aanpassing doorvoeren in uw instellingen.
 txt-emailNotFound: 'E-mail niet te vinden? Controleer je spam folder, of neem contact met ons op.'
+txt-emailWillWorkToo: 'Als je je @:username niet meer weet, vul dan je @:emailAddress in. Dat werkt ook'
+txt-forgot-login: 'Vul hieronder je gebruikersnaam of E-mail adres in, en klik op de <b>@:resetPassword</b> knop'
 txt-gdprCompliant: Freesewing.org respecteert jouw privacy en rechten. We passen de Algememe Verordening Gegevensbescherming (AVG) van de Europese Unie (EU) toe.
 txt-joinTheTranslationTeam1: 'Zelfs al heb je nog nooit bijgedragen aan een open source project, vertalen is de makkelijkste manier om aan de slag te gaan als vrijwillige medewerker'
 txt-joinTheTranslationTeam2: 'Het maakt niet uit of je enkele woorden of zinnen vertaalt, of een hele taal voor je rekening neemt. Elke bijdrage telt, en vele handen maken licht werk.'
@@ -248,6 +258,7 @@ txt-joinTheTranslationTeam3: Lees de documentatie voor vertalers om aan de slag 
 txt-modelsWithMissingMeasurements: 'Van deze modellen kennen we niet alle vereiste maten om dit patroon te tekenen:'
 txt-newModel: 'Eerst en vooral, geef je model een naam.'
 txt-password-policy: We handhaven geen wachtwoordbeleid
+txt-passwordRecoverConfirmationNotFound: Helaas kunnen we geen hangend verzoek tot wachtwoord herstel vinden voor deze bevestigingscode. Misschien is de termijn voor het herstel verlopen. In dat geval kan U gewoon een nieuwe aanvraag indienen.
 txt-saOption-custom: Aangepaste naadwaarde
 txt-saOption-imperial: Standaard imperiale naadwaarde
 txt-saOption-metric: Standaard metrische naadwaarde
@@ -269,12 +280,14 @@ upgradeRequired: Bijwerken vereist
 useDecimalsOrFractions: Gebruik decimalen (1.25) or breuken (1 1/4)
 user: Gebruiker
 username: Gebruikersnaam
+usernameOrEmail: '@:username of @:emailAddress'
 usernameUpdated: Gebruikersnaam bijgewerkt
 version: Versie
 visitPatronProfile: Visit the profile page of this patron TODO
 volunteerVerb: Word vrijwilliger
 weAreLoadingDataFromTheBackend: We laden gegevens van de backend
 weAreValidatingYourConfirmationCode: We valideren je bevestigingscode
+weCantHelpYouWithThis: Hiermee kunnen we je niet helpen
 welcomeAboard: Welkom aan boord
 withBreasts: Met borsten
 withOrWithoutBreasts: Met of zonder borsten?
