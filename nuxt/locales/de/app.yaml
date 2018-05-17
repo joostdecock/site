@@ -1,65 +1,65 @@
-aboutFreesewing: About Freesewing TODO
-add: Add TODO
-all: All TODO
-alreadyHaveAnAccount: Already have an account? TODO
+aboutFreesewing: Über Freesewing
+add: Hinzufügen
+all: Alles TODO
+alreadyHaveAnAccount: Du hast bereits ein Konto?
 avatar: Avatar TODO
-avatarUpdated: Avatar updated TODO
+avatarUpdated: Avatar aktualisieren
 basics: Basics TODO
-becomeAPatron: Become a patron TODO
+becomeAPatron: Werde ein Patron
 blog: Blog TODO
 blogPost: Blog posts TODO
 breasts: Breasts TODO
 breastsUpdated: Breasts setting updated TODO
-cancel: Cancel TODO
-chatOnGitter: Chat on Gitter TODO
-chatWithUs: Chat with us TODO
-chooseAModel: Choose a model TODO
+cancel: Abbrechen
+chatOnGitter: Chatte bei Gitter
+chatWithUs: Chatte mit uns
+chooseAModel: Wähle ein Modell TODO
 chooseANewPassword: Choose a new password TODO
-chooseAPattern: Choose a pattern TODO
-chooseYourOptions: Choose your options TODO
+chooseAPattern: Wähle ein Schnittmuster
+chooseYourOptions: Wähle deine Optionen
 classicTheme: Classic theme TODO
-close: Close TODO
+close: Schließen
 community: Community TODO
-compare: Compare TODO
-completePattern: Complete pattern TODO
+compare: Vergleichen
+completePattern: Komplettes Schnittmuster
 connectingToSomeApi: 'Connecting to {api} API TODO'
 consent: Consent TODO
 consentForModelData: Consent for model data TODO
 consentForProfileData: Consent for profile data TODO
-contactUs: Contact us TODO
-content: Content TODO
-contents: Contents TODO
-coordinator: Coordinator TODO
+contactUs: Kontaktiere uns
+content: Inhalt
+contents: Inhalte
+coordinator: Koordinator
 coreLink: Core link TODO
-countAvailable: '{count} available TODO'
-countTranslated: '{count} translated TODO'
-createIssueOnGithub: Create issue on GitHub TODO
-createModel: Create model TODO
-createMyAccount: Create my account TODO
-created: Created TODO
-currentPassword: Current password TODO
-data: Data TODO
-date: Date TODO
-daysAgo: '{days} days ago TODO'
-delete: Delete TODO
-deleteThisDraft: Delete this draft TODO
-description: Description TODO
+countAvailable: '{count} verfügbar'
+countTranslated: '{count} übersetzt'
+createIssueOnGithub: Ein Anliegen bei GitHub erstellen
+createModel: Modell erstellen
+createMyAccount: Meinen Account erstellen
+created: Angelegt
+currentPassword: Aktuelles Passwort
+data: Daten
+date: Datum
+daysAgo: 'Vor {days} Tagen'
+delete: Löschen
+deleteThisDraft: Lösche diesen Entwurf
+description: Beschreibung
 details: Details TODO
-difficulty: Difficulty TODO
+difficulty: Schwierigkeit
 docs: Documentation TODO
 documentation: Documentation TODO
 documentationForDevelopers: Documentation for developers TODO
 documentationForTranslators: Documentation for translators TODO
 documentationOverview: Documentation overview TODO
 download: Download TODO
-draft: Draft TODO
-draftOptions: Draft options TODO
-draftPattern: 'Draft {pattern} TODO'
-draftPatternForModel: 'Draft {pattern} for {model} TODO'
-draftThePattern: Draft the pattern TODO
+draft: Entwurf
+draftOptions: Entwurfoptionen
+draftPattern: 'Entwurf {pattern}'
+draftPatternForModel: 'Entwurf {pattern} für {model}'
+draftThePattern: Schnittmuster entwerfen TODO
 draftingPattern: 'Drafting {pattern} TODO'
-drafts: Drafts TODO
-edit: Edit TODO
+drafts: Entwürfe
+edit: Bearbeiten
 editOnGithub: Edit on GitHub TODO
 email: E-mail TODO
 emailAddress: E-mail address TODO

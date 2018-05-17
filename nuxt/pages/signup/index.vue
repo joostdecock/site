@@ -111,7 +111,7 @@ export default {
   components: {
     FsIconGithub,
     FsIconGitter,
-    FsMessageLogout,
+    FsMessageLogout
   },
   data () {
     return {
@@ -130,7 +130,7 @@ export default {
       this.loading = true;
       this.error = false;
       this.reason = '';
-      this.$fs.api.data.post('signup', {
+      this.$fs.signup({
         email: this.email,
         password: this.password,
         locale: this.$i18n.locale

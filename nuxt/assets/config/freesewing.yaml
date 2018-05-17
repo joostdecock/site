@@ -48,14 +48,14 @@ i18n:
   origin: en
   stats:
     de:
-      app: 0
+      app: 37
       blog: 0
       docs: 0
-      i18n: 0
-      measurements: 0
-      optiongroups: 0
+      i18n: 6
+      measurements: 19
+      optiongroups: 10
       options: 0
-      patterns: 36
+      patterns: 37
       showcase: 0
     en:
       app: 317
@@ -68,7 +68,7 @@ i18n:
       patterns: 37
       showcase: 51
     es:
-      app: 279
+      app: 286
       blog: 0
       docs: 0
       i18n: 6
@@ -78,7 +78,7 @@ i18n:
       patterns: 37
       showcase: 0
     fr:
-      app: 77
+      app: 176
       blog: 0
       docs: 0
       i18n: 0
