@@ -24,10 +24,8 @@
       </div>
     </blockquote>
     <div v-else>
-      <div v-if="$store.state.user.account.consent.profile == 1">
-        <h3>{{ $t('consentRequired') }}</h3>
-        <fs-message-consent-profile />
-no consent
+      <div v-if="$store.state.user.account.consent.profile != 1">
+        <fs-consent-gdpr :intro="(true)" :profile="(true)" :model="(true)" />
       </div>
       <div v-else>
         <slot></slot>
@@ -37,11 +35,11 @@ no consent
 </template>
 
 <script>
-import FsMessageConsentProfile from '~/components/stateless/FsMessageConsentProfile'
+import FsConsentGdpr from '~/components/stateless/FsConsentGdpr'
 export default {
   name: 'FsWrapperLoginRequired',
   components: {
-    FsMessageConsentProfile
+    FsConsentGdpr
   },
   props: {
     callback: {

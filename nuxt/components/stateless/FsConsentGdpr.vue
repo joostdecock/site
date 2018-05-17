@@ -1,57 +1,122 @@
 <template>
   <section class="on-splash fs-m800">
-    <div v-if="intro" class="mb-4">
-      <h2>{{ $t('weNeedYourConsent') }}</h2>
-      <p>{{ $t('txt-gdpr-1') }}</p>
-      <p>{{ $t('txt-gdpr-2') }}</p>
-      <p>{{ $t('txt-gdpr-3') }}</p>
-      <fs-link-learn-more to="/docs/privacy"> {{ $t('privacyInfo') }}</fs-link-learn-more>
-    </div>
-
-    <div v-if="profile">
-      <h3>{{ $t('consentForProfileData') }}</h3>
-      <fs-message-consent-profile />
-        <h4>{{ $t('txt-consentProfile') }}</h4>
-        <v-switch v-model="consentProfile" color="success" :label= "consent ? $t('yesIDo') : $t('noIDoNot')"></v-switch>
-        <v-btn color="success" class="mb-5" :disabled="!consentProfile" @click="createAccount">
-          <v-progress-circular indeterminate color="#fff" class="mr-3" v-if="loading" size="20" width="2"></v-progress-circular>
-          <v-icon class="mr-3" v-else>save</v-icon>
-          {{ $t('save') }}
+    <div v-if="deleteProfileConfirmation || deleteModelConfirmation">
+      <blockquote class="error">
+        <h4>Are you 100% sure about this?</h4>
+        <p v-if="deleteModelConfirmation">{{ $t('txt-warningModelData') }}</p>
+        <p v-if="deleteProfileConfirmation">{{ $t('txt-warningProfileData') }}</p>
+        <p>{{ $t('thereIsNoWayBackFromThis') }}</p>
+        <p class="text-xs-right">
+        <v-btn flat outline color="white"><v-icon class="mr-3">delete</v-icon>
+          <span v-if="deleteModelConfirmation">{{ $t('removeAllMyModelData') }}</span>
+          <span v-if="deleteProfileConfirmation">{{ $t('removeAllMyData') }}</span>
         </v-btn>
-        <v-btn color="error" class="mb-5" :disabled="consentProfile" @click="deleteConfirmation">
-          <v-progress-circular indeterminate color="#fff" class="mr-3" v-if="loading" size="20" width="2"></v-progress-circular>
-          <v-icon class="mr-3" v-else>cancel</v-icon>
-          {{ $t('removeAllMyData') }}
+        <v-btn flat outline color="white" @click="deleteProfileConfirmation=false; deleteModelConfirmation=false">
+          <v-icon class="mr-3">cancel</v-icon>{{ $t('cancel') }}
         </v-btn>
+        </p>
+      </blockquote>
     </div>
+    <div v-else>
+      <div v-if="profileConsentOnLoad" class="mb-4">
+        <blockquote class="success">
+          <h3 class="fs-white">{{ $t('consentForProfileData') }}</h3>
+          <ul><li>{{ $t('consentGiven') }}</li></ul>
+          <fs-message-consent-profile v-if="profileDetails" :dark="(true)" />
+          <p class="text-xs-right">
+          <v-btn color="white" class="mt-3" flat outline @click="profileDetails = !profileDetails">
+            <v-icon class="mr-3">info_outline</v-icon>
+            {{ (profileDetails) ? $t('hideDetails') : $t('showDetails') }}
+          </v-btn>
+          <v-btn color="error" class="mt-3" v-if="profileDetails" @click="deleteProfileConfirmation=true">
+            <v-progress-circular indeterminate color="#fff" class="mr-3" v-if="loading" size="20" width="2"></v-progress-circular>
+            <v-icon class="mr-3" v-else>error_outline</v-icon>
+            {{ $t('revokeConsent') }}
+          </v-btn>
+          </p>
+        </blockquote>
+      </div>
+      <div v-if="modelConsentOnLoad" class="mb-4">
+        <blockquote class="success">
+          <h3 class="fs-white">{{ $t('consentForModelData') }}</h3>
+          <ul>
+            <li>{{ $t('consentGiven') }}</li>
+            <li v-if="objectsToOpenData">{{ $t('youObjectToSharingAnonymizedDataForResearch') }}</li>
+            <li v-else>{{ $t('youDoNotObjectToSharingAnonymizedDataForResearch') }}</li>
+          </ul>
+          <fs-message-consent-model v-if="modelDetails" :dark="(true)" />
+          <p class="text-xs-right">
+          <v-btn color="white" class="mt-3" flat outline @click="modelDetails = !modelDetails">
+            <v-icon class="mr-3">info_outline</v-icon>
+            {{ (modelDetails) ? $t('hideDetails') : $t('showDetails') }}
+          </v-btn>
+          <v-btn color="white" class="mt-3" flat outline @click="save({objectsToOpenData: false}); objectsToOpenData=false; objectsToOpenDataOnLoad=false" v-if="modelDetails && objectsToOpenData">
+            <v-icon class="mr-3">thumb_up</v-icon>
+            {{ $t('stopObjecting') }}
+          </v-btn>
+          <v-btn color="warning" class="mt-3" @click="save({objectsToOpenData: true}); objectsToOpenData=true; objectsToOpenDataOnLoad=true" v-if="modelDetails && !objectsToOpenData">
+            <v-icon class="mr-3">pan_tool</v-icon>
+            {{ $t('object') }}
+          </v-btn>
+          <v-btn color="error" class="mt-3" v-if="modelDetails" @click="deleteModelConfirmation=true">
+            <v-progress-circular indeterminate color="#fff" class="mr-3" v-if="loading" size="20" width="2"></v-progress-circular>
+            <v-icon class="mr-3" v-else>error_outline</v-icon>
+            {{ $t('revokeConsent') }}
+          </v-btn>
+          </p>
+        </blockquote>
+      </div>
+      <div v-if="intro && (!profileConsentOnLoad || !modelConsentOnLoad)" class="mb-4">
+        <h2>{{ $t('weNeedYourConsent') }}</h2>
+        <p>{{ $t('txt-gdpr-1') }}</p>
+        <p>{{ $t('txt-gdpr-2') }}</p>
+        <p>{{ $t('txt-gdpr-3') }}</p>
+        <fs-link-learn-more to="/docs/privacy"> {{ $t('privacyInfo') }}</fs-link-learn-more>
+      </div>
 
-    <div v-if="model">
-      <h3>{{ $t('consentForModelData') }}</h3>
-      <fs-message-consent-model v-on:object="object=!object" />
-        <h4>{{ $t('txt-consentModel') }}</h4>
-          <v-switch v-model="consentModel" color="success" :label= "consent ? $t('yesIDo') : $t('noIDoNot')"></v-switch>
+      <div v-if="profile && !profileConsentOnLoad">
+        <h3>{{ $t('consentForProfileData') }}</h3>
+        <fs-message-consent-profile />
+          <h4>{{ $t('txt-consentProfile') }}</h4>
+          <v-switch v-model="profileConsent" color="success" :label= "profileConsent ? $t('yesIDo') : $t('noIDoNot')"></v-switch>
+          <v-btn color="success" class="mb-5" :disabled="!profileConsent" @click="save({profileConsent: true})">
+            <v-progress-circular indeterminate color="#fff" class="mr-3" v-if="loading" size="20" width="2"></v-progress-circular>
+            <v-icon class="mr-3" v-else>save</v-icon>
+            {{ $t('save') }}
+          </v-btn>
+          <v-btn color="error" class="mb-5" :disabled="profileConsent" @click="deleteProfileConfirmation=true">
+            <v-progress-circular indeterminate color="#fff" class="mr-3" v-if="loading" size="20" width="2"></v-progress-circular>
+            <v-icon class="mr-3" v-else>cancel</v-icon>
+            {{ $t('removeAllMyData') }}
+          </v-btn>
+      </div>
+      <div v-if="model && !modelConsentOnLoad">
+        <h3>{{ $t('consentForModelData') }}</h3>
+        <fs-message-consent-model v-on:object="object=!object" />
+          <h4>{{ $t('txt-consentModel') }}</h4>
+          <v-switch v-model="modelConsent" color="success" :label= "modelConsent ? $t('yesIDo') : $t('noIDoNot')"></v-switch>
           <div v-if="object">
-          <h6>{{ $t('txt-doYouObject') }}</h6>
-          <p>{{ $t('txt-consentModelWhy') }}</p>
-          <v-switch v-model="objectModel" color="success" :label= "consent ? $t('yesIDo') : $t('noIDoNot')"></v-switch>
-        </div>
-        <v-btn color="success" class="mb-5" :disabled="!consentModel" @click="createAccount">
-          <v-progress-circular indeterminate color="#fff" class="mr-3" v-if="loading" size="20" width="2"></v-progress-circular>
-          <v-icon class="mr-3" v-else>save</v-icon>
-          {{ $t('save') }}
-        </v-btn>
-        <v-btn color="error" class="mb-5" :disabled="consentModel" @click="deleteConfirmation">
-          <v-progress-circular indeterminate color="#fff" class="mr-3" v-if="loading" size="20" width="2"></v-progress-circular>
-          <v-icon class="mr-3" v-else>cancel</v-icon>
-          {{ $t('removeAllMyModelData') }}
-        </v-btn>
-        <span v-if="object">object</span>
-    </div>
-    <div v-if="(model || profile)">
-        <p class="body-1 mt-3">
+            <h5>{{ $t('txt-doYouObject') }}</h5>
+            <p>{{ $t('txt-consentModelObjectWhy') }}</p>
+            <v-switch v-model="objectsToOpenData" color="error" :label= "objectsToOpenData ? $t('yesIDoObject') : $t('noIDoNotObject')"></v-switch>
+          </div>
+          <v-btn color="success" class="mb-5" :disabled="!modelConsent" @click="save({modelConsent: true, objectsToOpenData: objectsToOpenData})">
+            <v-progress-circular indeterminate color="#fff" class="mr-3" v-if="loading" size="20" width="2"></v-progress-circular>
+            <v-icon class="mr-3" v-else>save</v-icon>
+            {{ $t('save') }}
+          </v-btn>
+          <v-btn color="error" class="mb-5" :disabled="modelConsent" @click="deleteModelConfirmation=true">
+            <v-progress-circular indeterminate color="#fff" class="mr-3" v-if="loading" size="20" width="2"></v-progress-circular>
+            <v-icon class="mr-3" v-else>cancel</v-icon>
+            {{ $t('removeAllMyModelData') }}
+          </v-btn>
+      </div>
+      <div v-if="(model || profile)">
+        <p class="body-1 mt-5 mb-4">
         {{ $t('txt-gdprCompliant') }}
         <nuxt-link :to="$fs.path('/docs/privacy')" class="ml-3">{{ $t('privacyInfo')}}</nuxt-link>
         </p>
+      </div>
     </div>
   </section>
 </template>
@@ -83,64 +148,59 @@ export default {
     }
   },
   data () {
-      let consentProfile = false
-      let consentModel = false
-      if(this.$store.state.user.account.consent.profile == '1') consentProfile = true
-      if(this.$store.state.user.account.consent.model == '1') consentModel = true
+    let profileConsent = false
+    let modelConsent = false
+    let objectsToOpenData = false
+    let profileConsentOnLoad = false
+    let modelConsentOnLoad = false
+    let objectsToOpenDataOnLoad = false
+    if(this.$store.state.user.account.consent.profile == '1') {
+      profileConsent = true
+      profileConsentOnLoad = true
+    }
+    if(this.$store.state.user.account.consent.model == '1') {
+      modelConsent = true
+      modelConsentOnLoad = true
+    }
+    if(this.$store.state.user.account.consent.objectsToOpenData == '1') {
+      objectsToOpenData = true
+      objectsToOpenDataOnLoad = true
+    }
     return {
       loading: false,
       error: false,
       success: false,
       reason: '',
-      consentProfile,
-      consentModel,
-      object: false
+      profileConsent,
+      modelConsent,
+      objectsToOpenData,
+      profileConsentOnLoad,
+      modelConsentOnLoad,
+      objectsToOpenDataOnLoad,
+      deleteModelConfirmation: false,
+      deleteProfileConfirmation: false,
+      object: false,
+      modelDetails: false,
+      profileDetails: false
     }
   },
   methods: {
-    getHash: function() {
-      let hashPosition
-      if (this.$i18n.locale === this.$i18n.fallbackLocale) {
-        hashPosition = 16
-      } else {
-        hashPosition = 19
-      }
-      return window.location.pathname.substr(hashPosition, 40)
-    },
-    deleteConfirmation: function() {
-      this.$fs.api.data.delete('confirm/'+this.getHash())
-      .catch((e) => {
-        this.loading = false;
-        this.error = true
-        this.reason = e.response.data.reason
-      })
-      .then((i) => {
-        if(!this.error) {
-          this.loading = false;
-          this.success = true;
-          this.$router.push(this.$fs.path('/'))
+    save: function(data) {
+      this.updating = true
+      this.error = false
+      this.$fs.updateAccount(data)
+      .then((res) => {
+        this.updating = false
+        if(res.reason !== 'no_changes_made') {
+          this.$emit('update')
         }
       })
-    },
-    createAccount: function() {
-      // fixme
-      //this.$auth.loginWith('signup', {
-        //  data: {
-          //    hash: this.getHash()
-        //  }
-      //})
-      //.catch((e) => {
-        //  this.loading = false;
-        //  this.error = true
-        //  this.reason = e.response.data.reason
-      //})
-      //.then((i) => {
-        //  if(!this.error) {
-          //    this.loading = false;
-          //    this.$router.push(this.$fs.path('/account/setup'))
-        //  }
-      //})
-    },
+      .catch((error) => {
+        this.error = true
+        this.updating = false
+        this.reason = error.reason
+      })
+    }
   }
 
 }

@@ -26,6 +26,7 @@ connectingToSomeApi: 'Connecting to {api} API TODO'
 consent: Consent TODO
 consentForModelData: Consent for model data TODO
 consentForProfileData: Consent for profile data TODO
+consentGiven: Consent given TODO
 contactUs: Contact us TODO
 content: Content TODO
 contents: Contents TODO
@@ -137,6 +138,7 @@ noChanges: No changes TODO
 noDraftsFound: No drafts found TODO
 noFilter: No filter TODO
 noIDoNot: 'No, I do not TODO'
+noIDoNotObject: 'No, I do not object TODO'
 notShared: Not shared TODO
 notes: Notes TODO
 ohNo: Oh no! TODO
@@ -175,6 +177,7 @@ replay: Replay TODO
 requiredMeasurements: Required measurements TODO
 resetPassword: Reset password TODO
 retrievingDraftFromCore: Retrieving draft from core TODO
+revokeConsent: Revoke consent TODO
 rowsFromToOfTotal: 'Rows {from} to {to} of {total} TODO'
 rowsPerPage: Rows per page TODO
 save: Save TODO
@@ -221,6 +224,7 @@ tabloidPdf: Tabloid PDF TODO
 taskCompleted: Task completed TODO
 theme: Theme TODO
 themeUpdated: Layout preference set TODO
+thereIsNoWayBackFromThis: There is no way back from this. TODO
 thisContentIsNotAvailableInLanguage: This content is not available in English. TODO
 thisDraftPredatesThisFeature: This draft predates this feature. TODO
 thisIsTheCurrentStatusOfOurTranslations: This is the current status of our translations. TODO
@@ -257,6 +261,7 @@ txt-consentProfileQuestionWhy: Why do we need it? TODO
 txt-contentLocaleFallback: That's why we're showing you the English version instead. TODO
 txt-contentNotTranslated: 'Unfortunately, this page has not (yet) been translated to {language}. TODO'
 txt-didYouSpotATypo: 'Did you spot a typo? Do you feel something is missing, or needs clarification? TODO'
+txt-doYouObject: Do you object to using your anonymized data for scientific research? TODO
 txt-editThisPageOnline: You can edit this page online and submit your changes. TODO
 txt-email-sharing: We'll never share your email with anyone else TODO
 txt-emailChangeConfirmationNotFound: 'Sorry, but we have no pending E-mail change for this confirmation code. Perhaps it expired, in which case you can simply make the change again in your settings. TODO'
@@ -284,6 +289,8 @@ txt-signup-step1: 'Enter your email address, and pick a password. TODO'
 txt-signup-step2: Confirm your email address. TODO
 txt-signup-step3: Give us permission to process your personal data. TODO
 txt-slogan: An open source platform for made-to-measure sewing patterns TODO
+txt-warningModelData: 'This will remove all of your models, and all of your drafts. TODO'
+txt-warningProfileData: 'This will remove all of your models, all of your drafts, all of your comments, and your account. Everything will be gone. TODO'
 txt-withOrWithoutBreasts: 'Fitting breasts requires a bunch of extra measurements that are not relevant if you don''t have breasts. If you indicate your model does not have breasts, we won''t show you these measurements as they are irrelevant. If you''re not sure what to pick, go for breasts. TODO'
 txt-withOrWithoutBreasts-explainer: 'On other websites, this question may be phrased as ''male or female?''. Here, we don''t like putting people in boxes. All we care about is fitting your chest. TODO'
 type: Type TODO
@@ -311,7 +318,10 @@ withoutBreasts: Without breasts TODO
 wouldYouLikeToLogOut: Would you like to log out? TODO
 'yes': Yes TODO
 yesIDo: 'Yes, I do TODO'
+yesIDoObject: 'Yes, I do object TODO'
 yesterday: Yesterday TODO
 youAreCurrentlyLoggedIn: You are currently logged in. TODO
 youAreNotLoggedIn: You are not logged in. TODO
+youDoNotObjectToSharingAnonymizedDataForResearch: You do not object to sharing anonymized data for research TODO
 youHaveTheRightToObjectToThis: You have the right to object to this TODO
+youObjectToSharingAnonymizedDataForResearch: You object to sharing anonymized data for research TODO

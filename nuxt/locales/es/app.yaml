@@ -26,6 +26,7 @@ connectingToSomeApi: 'Conectando a la API {api}'
 consent: Consent TODO
 consentForModelData: Consent for model data TODO
 consentForProfileData: Consent for profile data TODO
+consentGiven: Consent given TODO
 contactUs: Contactáctanos
 content: Contenido
 contents: Contenidos
@@ -137,6 +138,7 @@ noChanges: Sin cambios
 noDraftsFound: No se encontraron bocetos
 noFilter: Sin filtros
 noIDoNot: 'No'
+noIDoNotObject: 'No, I do not object TODO'
 notShared: No compartido
 notes: Notas
 ohNo: ¡Oh no!
@@ -175,6 +177,7 @@ replay: Ejecutar de nuevo
 requiredMeasurements: Medidas requeridas
 resetPassword: Reset password TODO
 retrievingDraftFromCore: Recuperando el boceto desde el núcleo
+revokeConsent: Revoke consent TODO
 rowsFromToOfTotal: 'Filas {from} a la {to} de {total} '
 rowsPerPage: Filas por página
 save: Guardar
@@ -221,6 +224,7 @@ tabloidPdf: PDF Tabloide
 taskCompleted: Tarea completada
 theme: Tema
 themeUpdated: Preferencias de la plantilla establecidas
+thereIsNoWayBackFromThis: There is no way back from this. TODO
 thisContentIsNotAvailableInLanguage: Este contenido no está disponible en Español.
 thisDraftPredatesThisFeature: Este boceto precede a esta característica
 thisIsTheCurrentStatusOfOurTranslations: Éste es el estado actual de nuestras traducciones.
@@ -257,6 +261,7 @@ txt-consentProfileQuestionWhy: ¿Por qué lo necesitamos?
 txt-contentLocaleFallback: Por eso te estamos enseñando la versión en inglés en su lugar.
 txt-contentNotTranslated: 'Lamentablemente, esta página no ha sido traducida al {language} (todavía). '
 txt-didYouSpotATypo: '¿Has encontrado un erro tipográfico? ¿Crees que algo falta, o necesita aclaración? '
+txt-doYouObject: Do you object to using your anonymized data for scientific research? TODO
 txt-editThisPageOnline: Puedes editar esta página y luego enviar tus cambios.
 txt-email-sharing: Nunca compartiremos esto con nadie
 txt-emailChangeConfirmationNotFound: 'Lo sentimos, pero no tenemos ningún cambio de E-mail pendiente para este código de confirmación. Tal vez ha expirado, en cuyo caso puedes hacer el cambio de nuevo en tus ajustes. '
@@ -284,6 +289,8 @@ txt-signup-step1: 'Introduce tu dirección de email y elige una contraseña. '
 txt-signup-step2: Confirma tu dirección de email.
 txt-signup-step3: Danos permiso para procesar tus datos personales.
 txt-slogan: Una plataforma open source para patrones de costura a medida
+txt-warningModelData: 'This will remove all of your models, and all of your drafts. TODO'
+txt-warningProfileData: 'This will remove all of your models, all of your drafts, all of your comments, and your account. Everything will be gone. TODO'
 txt-withOrWithoutBreasts: 'Ajustar pechos requiere una serie de medidas que no son relevantes si no tienes pechos. Si has elegido que tu modelo no tenga pechos, to te mostraremos estas medidas por ser irrelevantes. Si no sabes qué elegir, elige pechos. '
 txt-withOrWithoutBreasts-explainer: 'En otros sitios, esta pregunta se plantea como "¿hombre o mujer?". Aquí no nos gusta poner etiquetas a la gente. Sólo nos importa ajustar tu pecho. '
 type: Tipo
@@ -311,7 +318,10 @@ withoutBreasts: Sin pechos
 wouldYouLikeToLogOut: ¿Quieres cerrar la sesión
 'yes': Sí
 yesIDo: Sí
+yesIDoObject: 'Yes, I do object TODO'
 yesterday: Ayer
 youAreCurrentlyLoggedIn: Tienes una sesión abierta
 youAreNotLoggedIn: No tienes una sesión abierta
+youDoNotObjectToSharingAnonymizedDataForResearch: You do not object to sharing anonymized data for research TODO
 youHaveTheRightToObjectToThis: You have the right to object to this TODO
+youObjectToSharingAnonymizedDataForResearch: You object to sharing anonymized data for research TODO
