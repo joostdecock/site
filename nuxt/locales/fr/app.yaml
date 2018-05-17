@@ -21,14 +21,14 @@ close: Fermer
 community: Communauté
 compare: Comparer
 completePattern: Complete pattern TODO
-connectingToSomeApi: 'Connecting to {api} API TODO'
+connectingToSomeApi: 'Connexion à l'API {api}'
 contactUs: Nous contacter
 content: Contenu
 contents: Contenus
 coordinator: Coordinateur
-coreLink: Core link TODO
-countAvailable: '{count} available TODO'
-countTranslated: '{count} translated TODO'
+coreLink: Lien de base
+countAvailable: '{count} disponibles'
+countTranslated: '{count} traduits'
 createIssueOnGithub: Create issue on GitHub TODO
 createModel: Créer le modèle
 createMyAccount: Créer mon compte
@@ -36,11 +36,11 @@ created: Créé
 currentPassword: Mot de passe actuel
 data: Données
 date: Date DONE
-daysAgo: '{days} days ago TODO'
+daysAgo: 'Il y a {days} jours'
 delete: Supprimer
 deleteThisDraft: Supprimer ce brouillon
 description: Description DONE
-details: Details DONE
+details: Détails
 difficulty: Difficulté
 docs: Documentation DONE
 documentation: Documentation DONE
@@ -49,26 +49,26 @@ documentationForTranslators: Documentation pour les traducteurs
 documentationOverview: Vue d'ensemble de la documentation
 download: Télécharger
 draft: Brouillon
-draftOptions: Options du brouillon
-draftPattern: 'Draft {pattern} TODO'
-draftPatternForModel: 'Draft {pattern} for {model} TODO'
-draftThePattern: Draft the pattern TODO
-draftingPattern: 'Drafting {pattern} TODO'
-drafts: Brouillons
+draftOptions: Options de l'ébauche
+draftPattern: 'Ebauche de {pattern}'
+draftPatternForModel: 'Ebauche de {pattern} pour {model}'
+draftThePattern: Ebaucher le patron
+draftingPattern: 'Ebauche de {pattern} en cours'
+drafts: Ebauches
 edit: Editer
 editOnGithub: Editer avec GitHub
 email: E-mail DONE
 emailAddress: Adresse mail
-emailUpdated: E-mail update pending. Please check your inbox for a confirmation E-mail TODO
+emailUpdated: E-mail en attente. Verifier votre boite mail pour un message de confirmation.
 emails: E-mails DONE
 enterYourCurrentPassword: Composer votre mot de passe actuel
 enterYourNewPassword: Composer votre nouveau mot de passe
 error-unknown: Une erreur inconnue est survenue
 error-username_taken: Nom d'utilisateur déjà pris
-filterByPattern: Filter by pattern TODO
+filterByPattern: Filtrer par patron
 forContributors: Pour les contributeurs
-forMoreInfoRtfm: 'For more info, read the documentation: TODO'
-forUsername: 'For {username} TODO'
+forMoreInfoRtfm: 'Pour plus d'infos, lire la documentation:'
+forUsername: 'Pour {username} TODO'
 forUsers: Pour les utilisateurs
 fork: Fork TODO
 forkDraftHandle: 'Fork draft {handle} TODO'
@@ -80,113 +80,113 @@ github: GitHub DONE
 githubUpdated: Nom d'utilisateur GitHub mis à jour
 goodToKnow: Bon à savoir
 hi: Salut
-home: Home TODO
+home: Accueil
 howToTakeMeasurements: Comment prendre les mesures
 i18n: Internationalisation (i18n)
 image: Image DONE
 imperial: Imperial TODO
-imperialUnits: Unités impériales (pouces)
+imperialUnits: Unités de mesure impériales (pouces)
 inch: pouce
 info: Info DONE
 instagram: Instagram DONE
 instagramUpdated: Compte Instagram établi
-joinTheTranslationTeam: 'Even if you have never contributed to an open source project, translation is a smooth on-ramp towards contributor fame. TODO'
+joinTheTranslationTeam: 'Même si vous n'avez jamais contribué à un projet Open Source, la traduction est une douce montée vers la gloire du contributeur.'
 justAMoment: Juste un instant
 key: Key TODO
 language: Langue
-languageLanguageFiles: '{language} language files TODO'
-layout: Layout TODO
+languageLanguageFiles: 'Fichier langue {language}'
+layout: Agencement
 learnToDesignPatterns: Apprendre à concevoir des patrons
 letterPdf: PDF lettre
-loadingModelData: Loading model data TODO
-loadingResult: Loading result TODO
-locale: Language TODO
-localeUpdated: Language preference updated TODO
-logIn: Log in TODO
-logOut: Log out TODO
-loginFailed: Login failed TODO
-makeItBetter: Make it better TODO
-measurementUpdated: Measurement updated TODO
-measurements: Measurements TODO
-measurementsRequiredForPattern: 'Measurements required for {pattern} TODO'
-messages: Messages TODO
+loadingModelData: Chargement des données du modèle en cours
+loadingResult: Chargement du résultat en cours
+locale: Langue
+localeUpdated: Préférences langue mises à jour
+logIn: Connexion
+logOut: Deconnexion
+loginFailed: La connexion a échoué
+makeItBetter: Faire des améliorations
+measurementUpdated: Mensurations mises à jour
+measurements: Mensurations
+measurementsRequiredForPattern: 'Mensurations requises pour {pattern}'
+messages: Messages DONE
 metric: Metric TODO
-metricUnits: Metric units (cm) TODO
-model: Model TODO
-modelIsModel: 'Model is {model} TODO'
-models: Models TODO
-monthAgo: A month ago TODO
-monthsAgo: '{months} months ago TODO'
-name: Name TODO
-nameOfTheModel: Name of the model TODO
-nameUpdated: Name updated TODO
-newDraft: New draft TODO
-newModel: New model TODO
-newPassword: New password TODO
-newPatternDraft: 'New {pattern} draft TODO'
-newTaskForUser: 'New task for {user} TODO'
-'no': No TODO
-noChanges: No changes TODO
-noDraftsFound: No drafts found TODO
-noFilter: No filter TODO
+metricUnits: Unités de mesure métriques (cm)
+model: Modèle
+modelIsModel: 'Le modèle est {model}'
+models: Modèles
+monthAgo: Il y a un mois
+monthsAgo: 'Il y a {months} mois'
+name: Nom
+nameOfTheModel: Nom du modèle
+nameUpdated: Nom mis à jour
+newDraft: Nouvelle ébauche
+newModel: Nouveau modèle
+newPassword: Nouveau mot de passe
+newPatternDraft: 'Nouvelle ébauche de {pattern}'
+newTaskForUser: 'Nouvelle tâche pour {user}'
+'no': Non
+noChanges: Aucun changement
+noDraftsFound: Aucune ébauche trouvée
+noFilter: Aucun filtre
 noIDoNot: 'No, I do not TODO'
-notShared: Not shared TODO
-notes: Notes TODO
-ohNo: Oh no! TODO
-okThatsDone: 'OK, that''s done TODO'
-onlySelectedPatternParts: Only selected pattern parts TODO
-pageNotFound: The page you are looking for is nowhere to be found. TODO
-paperlessTheme: Paperless theme TODO
-password: Password TODO
-passwordUpdated: Password changed TODO
-patronText: '{username} is a {patronTier} since {daysAgo} TODO'
-patrons: Patrons TODO
-pattern: Pattern TODO
-patternDesignTutorial: Pattern design tutorial TODO
-patternDocumentation: Pattern instructions TODO
-patternIsPattern: 'Pattern is {pattern} TODO'
-patternOptions: Pattern options TODO
-patternParts: Pattern parts TODO
-patterns: Patterns TODO
-pleaseUpgradeThisDraft: Please upgrade this draft. TODO
-postInfo: Post info TODO
-preferences: Preferences TODO
-privacy: Privacy TODO
-privacyInfo: Privacy info TODO
-processingDraftOptions: Processing draft options TODO
-profile: Profile TODO
-quickPick: Quick pick TODO
-reSendActivationEmail: Re-send activation email TODO
-redraft: Redraft TODO
-redraftDraftHandle: 'Redraft draft {handle} TODO'
-reference: Reference TODO
-removeAllMyData: Remove all my data TODO
-replay: Replay TODO
-requiredMeasurements: Required measurements TODO
-retrievingDraftFromCore: Retrieving draft from core TODO
-rowsFromToOfTotal: 'Rows {from} to {to} of {total} TODO'
-rowsPerPage: Rows per page TODO
-save: Save TODO
-scope: Scope TODO
-seamAllowance: Seam allowance TODO
-search: Search TODO
-seeBelow: See below TODO
-selectADifferentImage: Select a different image TODO
-selectAnImage: Select an image TODO
-selectThePartsYouWantIncludedInYourDraft: Select the parts you want included in your draft TODO
-settings: Settings TODO
-share: Share TODO
-shared: Shared TODO
-sharedUpdated: Shared setting updated TODO
-showHelp: Show help TODO
+notShared: Pas partagé
+notes: Notes DONE
+ohNo: Oh non ! 
+okThatsDone: 'OK, c'est fait'
+onlySelectedPatternParts: Uniquement les pièces de patron selectionnées
+pageNotFound: La page que vous recherchez est introuvable
+paperlessTheme: Thème sans papier
+password: Mot de passe
+passwordUpdated: Mot de passe changé
+patronText: '{username} est un {patronTier} depuis {daysAgo}'
+patrons: Mécènes
+pattern: Patron
+patternDesignTutorial: Tutoriel de conception de patron
+patternDocumentation: Instructions du patron
+patternIsPattern: 'Le patron est {pattern}'
+patternOptions: Options du patron
+patternParts: Pièces du patron
+patterns: Patrons
+pleaseUpgradeThisDraft: Merci d'améliorer cette ébauche.
+postInfo: Info post
+preferences: Préférences
+privacy: Vie privée
+privacyInfo: Info vie privée
+processingDraftOptions: Traitement des options de l'ébauche en cours
+profile: Profil
+quickPick: Choix rapide
+reSendActivationEmail: Renvoyer l'e-mail d'activation
+redraft: Re-ébaucher
+redraftDraftHandle: 'Re-ébaucher l'ébauche {handle}'
+reference: Référence
+removeAllMyData: Enlever toutes mes données
+replay: Re-jouer
+requiredMeasurements: Mensurations requises
+retrievingDraftFromCore: Récupération de l'ébauche depuis la base en cours
+rowsFromToOfTotal: 'Rangs {from} à {to} de {total}'
+rowsPerPage: Rangs par page
+save: Sauvegarder
+scope: Portée
+seamAllowance: Valeur de couture
+search: Rechercher
+seeBelow: Voir ci-dessous
+selectADifferentImage: Choisir une image différente
+selectAnImage: Choisir une image
+selectThePartsYouWantIncludedInYourDraft: Choisir les pièces que vous souhaitez inclure dans votre ébauche
+settings: Paramètres
+share: Partager
+shared: Partagé
+sharedUpdated: Paramètre partagé mis à jour
+showHelp: Montrer l'aide
 showcase: Showcase TODO
 showcaseInfo: Showcase info TODO
-signUp: Sign up TODO
-signUpForAFreeAccount: Sign up for a free account TODO
+signUp: Créer un compte
+signUpForAFreeAccount: Créer un compte gratuit
 signup--text: This should not happen. Please help us out by creating an issue on GitHub TODO
-signup--title: An unknown error occured TODO
-signup-invalid_input-text: 'Please enter a valid email address, and a password TODO'
-signup-invalid_input-title: Invalid input TODO
+signup--title: Une erreur inconnue est survenue
+signup-invalid_input-text: 'Merci d'entrer une adresse mail valide, et un mot de passe'
+signup-invalid_input-title: Entrée invalide
 signup-no_such_pending_confirmation-text: 'Sorry, but that is not a confirmation code we have on record? Perhaps it expired, in which case you can just sign up again. TODO'
 signup-no_such_pending_confirmation-title: There's no such pending confirmation TODO
 signup-signup_pending-text: We already have a pending activation for this email address. We have sent you a fresh copy of the activation email in case you missed the original one. TODO
