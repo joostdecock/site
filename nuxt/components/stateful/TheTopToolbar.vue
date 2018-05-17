@@ -1,6 +1,6 @@
 <template>
   <v-container class="py-0">
-    <v-layout row wrap>
+    <v-layout row>
       <v-flex xl10 offset-xl1 lg12 md12 sm12 xs12>
         <v-toolbar color="transparent" flat class="fs-hr fs-ht--bottom" :dark="dark">
           <v-btn :to="$fs.path('/')" flat class="fs-ucase fs-m0" active-class="default-class fs-active-btn">

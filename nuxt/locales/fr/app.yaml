@@ -23,6 +23,9 @@ community: Communauté
 compare: Comparer
 completePattern: Complete pattern TODO
 connectingToSomeApi: 'Connecting to {api} API TODO'
+consent: Consent TODO
+consentForModelData: Consent for model data TODO
+consentForProfileData: Consent for profile data TODO
 contactUs: Nous contacter
 content: Contenu
 contents: Contenus
@@ -99,6 +102,7 @@ key: Key TODO
 language: Langue
 languageLanguageFiles: '{language} language files TODO'
 layout: Layout TODO
+learnMore: Learn more TODO
 learnToDesignPatterns: Apprendre à concevoir des patrons
 letterPdf: PDF lettre
 loadingModelData: Loading model data TODO
@@ -166,6 +170,7 @@ redraft: Redraft TODO
 redraftDraftHandle: 'Redraft draft {handle} TODO'
 reference: Reference TODO
 removeAllMyData: Remove all my data TODO
+removeAllMyModelData: Remove all my model data TODO
 replay: Replay TODO
 requiredMeasurements: Required measurements TODO
 resetPassword: Reset password TODO
@@ -232,6 +237,13 @@ txt-avatarDropzoneText: 'Drag and drop an image here, or click the button to pic
 txt-avatarDropzoneTitle: Drop your image here TODO
 txt-changeRequiresConfirmation: This change requires confirmation via E-mail TODO
 txt-clickEmailLink: Please click the link in the email to continue. TODO
+txt-consentModel: Do you give your consent to process your model data? TODO
+txt-consentModelAnswerWhat: 'For each model their <b>measurements</b>, <b>breasts settings</b>, and <b>password</b>. TODO'
+txt-consentModelAnswerWhatOptional: 'Optional: A model <b>picture</b> and the <b>name</b> that you give your model. TODO'
+txt-consentModelAnswerWhy: 'To <b>draft made-to-measure sewing patterns</b>, we need <b>body measurements</b>. TODO'
+txt-consentModelObjectNote: 'Note: Freesewing publishes anonymized measurements as open data for scientific research. TODO'
+txt-consentModelObjectWhy: 'This data is anonymous and used to study and understand the human form in all its shapes, so we can get better sewing patterns, and better fitting garments. TODO'
+txt-consentModelQuestionWhat: What is model data? TODO
 txt-consentProfile: Do you give your consent to process your profile data? TODO
 txt-consentProfileAnswerShare: '<b>No</b>, never. TODO'
 txt-consentProfileAnswerTiming: '<b>12 months</b> after your last login, or until you <b>remove</b> your account or <b>revoke</b> this consent. TODO'
@@ -251,6 +263,9 @@ txt-emailChangeConfirmationNotFound: 'Sorry, but we have no pending E-mail chang
 txt-emailNotFound: 'If you can''t find the email, check your spam folder, or contact us. TODO'
 txt-emailWillWorkToo: 'If you don''t know your @:username, your @:emailAddress will work too TODO'
 txt-forgot-login: 'Enter your username or E-mail address below and click the <b>@:resetPassword</b> button TODO'
+txt-gdpr-1: The General Data Protection Regulation (GDPR) of the European Union (EU) protects your personal data from unscrupulous data hoarders. That's a good thing. TODO
+txt-gdpr-2: 'One of the things it imposes is for us to get your consent — in other words, your permission — to process your personal data. TODO'
+txt-gdpr-3: 'Without your consent, we have no legal basis to process your data and have no choice but to remove it. TODO'
 txt-gdprCompliant: Freesewing.org respects your privacy and your rights. We apply the General Data Protection Regulation (GDPR) of the European Union (EU). TODO
 txt-joinTheTranslationTeam1: 'Even if you have never contributed to an open source project, translation is a smooth on-ramp towards contributor fame. TODO'
 txt-joinTheTranslationTeam2: 'It doesn''t matter whether you translate a few words or sentences, or tackle an entire language by yourself. Every contribution counts, and many hands make light work. TODO'
@@ -288,6 +303,7 @@ volunteerVerb: Volunteer TODO
 weAreLoadingDataFromTheBackend: We are loading data from the backend TODO
 weAreValidatingYourConfirmationCode: We are validating your confirmation code TODO
 weCantHelpYouWithThis: We can't help you with this TODO
+weNeedYourConsent: We need your consent TODO
 welcomeAboard: Welcome aboard TODO
 withBreasts: With breasts TODO
 withOrWithoutBreasts: With or without breasts? TODO
@@ -298,3 +314,4 @@ yesIDo: 'Yes, I do TODO'
 yesterday: Yesterday TODO
 youAreCurrentlyLoggedIn: You are currently logged in. TODO
 youAreNotLoggedIn: You are not logged in. TODO
+youHaveTheRightToObjectToThis: You have the right to object to this TODO

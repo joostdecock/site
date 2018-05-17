@@ -23,6 +23,9 @@ community: Comunidad
 compare: Comparar
 completePattern: Patrón completo
 connectingToSomeApi: 'Conectando a la API {api}'
+consent: Consent TODO
+consentForModelData: Consent for model data TODO
+consentForProfileData: Consent for profile data TODO
 contactUs: Contactáctanos
 content: Contenido
 contents: Contenidos
@@ -99,6 +102,7 @@ key: Clave
 language: Idioma
 languageLanguageFiles: 'Ficheros de idioma de {language}'
 layout: Plantilla
+learnMore: Learn more TODO
 learnToDesignPatterns: Aprende a diseñar patrones
 letterPdf: Letter PDF DONE
 loadingModelData: Cargardo información del modelo
@@ -166,6 +170,7 @@ redraft: Trazar de nuevo
 redraftDraftHandle: 'Redraft draft {handle} TODO'
 reference: Referencia
 removeAllMyData: Borrar todos mis datos
+removeAllMyModelData: Remove all my model data TODO
 replay: Ejecutar de nuevo
 requiredMeasurements: Medidas requeridas
 resetPassword: Reset password TODO
@@ -232,6 +237,13 @@ txt-avatarDropzoneText: 'Arrastra una imagen aquí, o haz clic en el botón para
 txt-avatarDropzoneTitle: Arrastra tu imagen aquí
 txt-changeRequiresConfirmation: Este cambio requiere confirmación vía E-mail
 txt-clickEmailLink: 'Por favor, sigue el enlace en el email para continuar. '
+txt-consentModel: Do you give your consent to process your model data? TODO
+txt-consentModelAnswerWhat: 'For each model their <b>measurements</b>, <b>breasts settings</b>, and <b>password</b>. TODO'
+txt-consentModelAnswerWhatOptional: 'Optional: A model <b>picture</b> and the <b>name</b> that you give your model. TODO'
+txt-consentModelAnswerWhy: 'To <b>draft made-to-measure sewing patterns</b>, we need <b>body measurements</b>. TODO'
+txt-consentModelObjectNote: 'Note: Freesewing publishes anonymized measurements as open data for scientific research. TODO'
+txt-consentModelObjectWhy: 'This data is anonymous and used to study and understand the human form in all its shapes, so we can get better sewing patterns, and better fitting garments. TODO'
+txt-consentModelQuestionWhat: What is model data? TODO
 txt-consentProfile: Das permiso para procesar tu información de usuario?
 txt-consentProfileAnswerShare: '<b>No</b>, nunca. '
 txt-consentProfileAnswerTiming: '<b>12 meses</b> desde tu última sesión, o hasta que <b>elimines</b> tu cuenta o <b>revoques</b> este consentimiento. '
@@ -251,6 +263,9 @@ txt-emailChangeConfirmationNotFound: 'Lo sentimos, pero no tenemos ningún cambi
 txt-emailNotFound: 'Si no puedes encontrar el email mira en tu carpeta de SPAM, o contacta con nosotros. '
 txt-emailWillWorkToo: 'If you don''t know your @:username, your @:emailAddress will work too TODO'
 txt-forgot-login: 'Enter your username or E-mail address below and click the <b>@:resetPassword</b> button TODO'
+txt-gdpr-1: The General Data Protection Regulation (GDPR) of the European Union (EU) protects your personal data from unscrupulous data hoarders. That's a good thing. TODO
+txt-gdpr-2: 'One of the things it imposes is for us to get your consent — in other words, your permission — to process your personal data. TODO'
+txt-gdpr-3: 'Without your consent, we have no legal basis to process your data and have no choice but to remove it. TODO'
 txt-gdprCompliant: Freesewing.org respeta tu privacidad y tus derechos. Aplicamos la Regulación General de Protección de Datos (RGPD) de la Unión Europea (UE).
 txt-joinTheTranslationTeam1: 'Incluso si nunca has contribuído a un proyecto open source, la traducción es una cuesta de poca pendiente hacia la fama de colaborador. '
 txt-joinTheTranslationTeam2: 'No importa si traduces unas pocas palabras o frases, o si te ocupas de un idioma entero. Cada contribución cuenta, y muchas manos hacen el trabajo fácil. '
@@ -288,6 +303,7 @@ volunteerVerb: Voluntario
 weAreLoadingDataFromTheBackend: Estamos cargando datos desde el backend
 weAreValidatingYourConfirmationCode: Estamos validando tu código de confirmación
 weCantHelpYouWithThis: We can't help you with this TODO
+weNeedYourConsent: We need your consent TODO
 welcomeAboard: Bienvenido a bordo
 withBreasts: Con pechos
 withOrWithoutBreasts: ¿Con o sin pechos?
@@ -298,3 +314,4 @@ yesIDo: Sí
 yesterday: Ayer
 youAreCurrentlyLoggedIn: Tienes una sesión abierta
 youAreNotLoggedIn: No tienes una sesión abierta
+youHaveTheRightToObjectToThis: You have the right to object to this TODO

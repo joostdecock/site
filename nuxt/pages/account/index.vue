@@ -6,15 +6,15 @@
     <v-tabs v-model="active" color="primary" dark centered>
       <v-tab href="#settings">{{ $t('basics') }}</v-tab>
       <v-tab href='#avatar'>{{ $t('avatar') }}</v-tab>
-      <v-tab href='#privacy'>{{ $t('privacy') }}</v-tab>
+      <v-tab href='#consent'>{{ $t('consent') }}</v-tab>
       <v-tab-item id="settings" class="fs-pad">
         <fs-table-account-settings />
       </v-tab-item>
       <v-tab-item id="avatar" class="fs-pad">
         <fs-avatar-uploader type="user" />
       </v-tab-item>
-      <v-tab-item id="privacy" class="fs-pad">
-        privacy here
+      <v-tab-item id="consent" class="fs-pad">
+        <fs-consent-gdpr intro="true" profile="true" model="true" />
       </v-tab-item>
     </v-tabs>
     </div>
@@ -26,12 +26,14 @@ import FsWrapperLoginRequired from '~/components/stateless/FsWrapperLoginRequire
 import FsBreadcrumbs from '~/components/stateless/FsBreadcrumbs'
 import FsTableAccountSettings from '~/components/stateful/FsTableAccountSettings'
 import FsAvatarUploader from '~/components/stateful/FsAvatarUploader'
+import FsConsentGdpr from '~/components/stateless/FsConsentGdpr'
 export default {
   components: {
     FsWrapperLoginRequired,
     FsBreadcrumbs,
     FsTableAccountSettings,
-    FsAvatarUploader
+    FsAvatarUploader,
+    FsConsentGdpr,
   },
   layout: 'wide',
   data: function() {
