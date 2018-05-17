@@ -161,6 +161,17 @@ export default ({ app, store, route }, inject) => {
         })
       },
 
+      signup(data) {
+          return new Promise(function(resolve, reject) {
+            ax.data.post('/signup', data)
+              .then((res) => {
+                setToken(res.data.token)
+                  resolve(res.data)
+              })
+              .catch((error) => { console.log(error); reject(error) })
+          })
+      },
+
       auth() {
         return authMethod()
       },
