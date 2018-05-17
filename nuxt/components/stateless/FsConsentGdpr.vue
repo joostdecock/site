@@ -7,9 +7,13 @@
         <p v-if="deleteProfileConfirmation">{{ $t('txt-warningProfileData') }}</p>
         <p>{{ $t('thereIsNoWayBackFromThis') }}</p>
         <p class="text-xs-right">
-        <v-btn flat outline color="white"><v-icon class="mr-3">delete</v-icon>
-          <span v-if="deleteModelConfirmation">{{ $t('removeAllMyModelData') }}</span>
-          <span v-if="deleteProfileConfirmation">{{ $t('removeAllMyData') }}</span>
+        <v-btn flat outline color="white" v-if="deleteProfileConfirmation" @click="save({profileConsent: false}); $fs.logout()">
+          <v-icon class="mr-3">delete</v-icon>
+          {{ $t('removeAllMyData') }}
+        </v-btn>
+        <v-btn flat outline color="white" v-if="deleteModelConfirmation" @click="save({modelConsent: false})">
+          <v-icon class="mr-3">delete</v-icon>
+          {{ $t('removeAllMyModelData') }}
         </v-btn>
         <v-btn flat outline color="white" @click="deleteProfileConfirmation=false; deleteModelConfirmation=false">
           <v-icon class="mr-3">cancel</v-icon>{{ $t('cancel') }}
@@ -18,7 +22,7 @@
       </blockquote>
     </div>
     <div v-else>
-      <div v-if="profileConsentOnLoad" class="mb-4">
+      <div v-if="profileConsentOnLoad && profile" class="mb-4">
         <blockquote class="success">
           <h3 class="fs-white">{{ $t('consentForProfileData') }}</h3>
           <ul><li>{{ $t('consentGiven') }}</li></ul>

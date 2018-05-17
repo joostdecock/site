@@ -1,5 +1,5 @@
 <template>
-  <fs-wrapper-login-required>
+  <fs-wrapper-login-required :needsmodel="(true)">
     <fs-breadcrumbs :crumbs="crumbs">{{ $t('chooseAModel') }}</fs-breadcrumbs>
     <h1 class="text-xs-center">{{ $t('step2') }}: {{ $t('chooseAModel') }}</h1>
     <v-stepper class="mb-5" value="2">

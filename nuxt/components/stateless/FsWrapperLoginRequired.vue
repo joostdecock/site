@@ -25,7 +25,10 @@
     </blockquote>
     <div v-else>
       <div v-if="$store.state.user.account.consent.profile != 1">
-        <fs-consent-gdpr :intro="(true)" :profile="(true)" :model="(true)" />
+        <fs-consent-gdpr :intro="(true)" :profile="(true)" :model="(false)" />
+      </div>
+      <div v-else-if="$store.state.user.account.consent.model != 1 && needsmodel">
+        <fs-consent-gdpr :intro="(true)" :profile="(false)" :model="(true)" />
       </div>
       <div v-else>
         <slot></slot>
@@ -45,6 +48,10 @@ export default {
     callback: {
       type: Function,
       required: false
+    },
+    needsmodel: {
+      type: Boolean,
+      default: false
     }
   },
   data () {
