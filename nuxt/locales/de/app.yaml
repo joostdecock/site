@@ -1,9 +1,14 @@
+100PercentCommunity: 100% community TODO
+100PercentFree: 100% free TODO
+100PercentOpenSource: 100% open source TODO
 aboutFreesewing: Über Freesewing
 add: Hinzufügen
+addAModel: Add a model TODO
 all: Alles TODO
 alreadyHaveAnAccount: Du hast bereits ein Konto?
 avatar: Avatar TODO
 avatarUpdated: Avatar aktualisieren
+averagePeopleDontExist: Average people don't exist TODO
 basics: Basics TODO
 becomeAPatron: Werde ein Patron
 blog: Blog TODO
@@ -34,6 +39,7 @@ coordinator: Koordinator
 coreLink: Core link TODO
 countAvailable: '{count} verfügbar'
 countTranslated: '{count} übersetzt'
+createAnAccount: Create an account TODO
 createIssueOnGithub: Ein Anliegen bei GitHub erstellen
 createModel: Modell erstellen
 createMyAccount: Meinen Account erstellen
@@ -54,6 +60,7 @@ documentationForTranslators: Documentation for translators TODO
 documentationOverview: Documentation overview TODO
 download: Download TODO
 draft: Entwurf
+draftAPattern: Draft a pattern TODO
 draftOptions: Entwurfoptionen
 draftPattern: 'Entwurf {pattern}'
 draftPatternForModel: 'Entwurf {pattern} für {model}'
@@ -78,6 +85,9 @@ forUsers: For users TODO
 fork: Fork TODO
 forkDraftHandle: 'Fork draft {handle} TODO'
 freesewing: Freesewing TODO
+freesewingContributors: Freesewing contributors TODO
+freesewingOnGithub: Freesewing on GitHub TODO
+freesewingPatrons: Freesewing patrons TODO
 fullSizePdf: Full size PDF TODO
 fundamentals: Fundamentals TODO
 github: GitHub TODO
@@ -168,6 +178,7 @@ processingDraftOptions: Processing draft options TODO
 profile: Profile TODO
 quickPick: Quick pick TODO
 reSendActivationEmail: Re-send activation email TODO
+readyToTryFreesewing: Ready to try Freesewing? TODO
 redraft: Redraft TODO
 redraftDraftHandle: 'Redraft draft {handle} TODO'
 reference: Reference TODO
@@ -189,6 +200,7 @@ selectADifferentImage: Select a different image TODO
 selectAnImage: Select an image TODO
 selectThePartsYouWantIncludedInYourDraft: Select the parts you want included in your draft TODO
 settings: Settings TODO
+sewingPatternsForNonAveragePeople: Sewing patterns for non-average people TODO
 share: Share TODO
 shared: Shared TODO
 sharedUpdated: Shared setting updated TODO
@@ -197,6 +209,7 @@ showcase: Showcase TODO
 showcaseInfo: Showcase info TODO
 signUp: Sign up TODO
 signUpForAFreeAccount: Sign up for a free account TODO
+signingUpOnlyTakesAMinute: Signing up only takes a minute TODO
 signup--text: This should not happen. Please help us out by creating an issue on GitHub TODO
 signup--title: An unknown error occured TODO
 signup-invalid_input-text: 'Please enter a valid email address, and a password TODO'
@@ -267,11 +280,21 @@ txt-email-sharing: We'll never share your email with anyone else TODO
 txt-emailChangeConfirmationNotFound: 'Sorry, but we have no pending E-mail change for this confirmation code. Perhaps it expired, in which case you can simply make the change again in your settings. TODO'
 txt-emailNotFound: 'If you can''t find the email, check your spam folder, or contact us. TODO'
 txt-emailWillWorkToo: 'If you don''t know your @:username, your @:emailAddress will work too TODO'
+txt-footer: Freesewing is made by Joost De Cock & contributors<br>with the financial support of our Patrons TODO
 txt-forgot-login: 'Enter your username or E-mail address below and click the <b>@:resetPassword</b> button TODO'
 txt-gdpr-1: The General Data Protection Regulation (GDPR) of the European Union (EU) protects your personal data from unscrupulous data hoarders. That's a good thing. TODO
 txt-gdpr-2: 'One of the things it imposes is for us to get your consent — in other words, your permission — to process your personal data. TODO'
 txt-gdpr-3: 'Without your consent, we have no legal basis to process your data and have no choice but to remove it. TODO'
 txt-gdprCompliant: Freesewing.org respects your privacy and your rights. We apply the General Data Protection Regulation (GDPR) of the European Union (EU). TODO
+txt-homepage-community: 'Everything is run by voluntary contributors. There is no commercial entity behind, or attached to, this project. TODO'
+txt-homepage-different: How we're different TODO
+txt-homepage-draft: 'Choose from one of your patterns, choose a model, and pick your options. We''ll do the rest. TODO'
+txt-homepage-how: How it works TODO
+txt-homepage-join: Join thousands of others and sign up for a free account on freesewing.org. TODO
+txt-homepage-model: All our patterns are made-to-measure. So first thing to do is grab your measuring tape. TODO
+txt-homepage-opensource: 'Our platform, our patterns, and even this website. All our code is available on GitHub. Pull requests welcome! TODO'
+txt-homepage-patrons: Freesewing is made possible by the financial support of our Patrons. They keep this ship afloat. TODO
+txt-homepage-quotes: What others are saying TODO
 txt-joinTheTranslationTeam1: 'Even if you have never contributed to an open source project, translation is a smooth on-ramp towards contributor fame. TODO'
 txt-joinTheTranslationTeam2: 'It doesn''t matter whether you translate a few words or sentences, or tackle an entire language by yourself. Every contribution counts, and many hands make light work. TODO'
 txt-joinTheTranslationTeam3: 'Read the documentation for translators to get started. Don''t worry, it''s easy. TODO'

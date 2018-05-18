@@ -6,7 +6,7 @@
           <img :src="$fs.avatar()" :alt="$fs.username()">
         </v-avatar>
         {{ '@'+$fs.username() }}
-        <v-icon color="primary">arrow_drop_down</v-icon>
+        <v-icon color="secondary">arrow_drop_down</v-icon>
       </v-btn>
     </v-toolbar-title>
     <fs-menu-user />

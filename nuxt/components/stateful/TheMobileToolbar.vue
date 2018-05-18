@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar dark color="primary" flat>
+  <v-toolbar dark color="primary" >
     <v-btn icon @click.stop="toggleDrawer('left')" class="hidden-lg-and-up ml-4">
       <v-icon large>menu</v-icon>
     </v-btn>

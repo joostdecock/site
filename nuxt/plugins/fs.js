@@ -397,6 +397,16 @@ export default ({ app, store, route }, inject) => {
           })
       },
 
+      loadPageComments() {
+          return new Promise(function(resolve, reject) {
+              ax.data.get('/comments/page'+route.path)
+                  .then((res) => {
+                      resolve(res.data.comments)
+                  })
+                  .catch((error) => { reject(error.response.data) })
+          })
+      },
+
       get(url) {
         return new Promise(function(resolve, reject) {
           let conf = {

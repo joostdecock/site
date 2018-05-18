@@ -4,7 +4,13 @@ export const state = () => ({
     isPatron: false,
     isAdmin: false,
     isFresh: false,
-    account: {},
+    account: {
+      consent: {
+        profile: 0,
+        model: 0,
+        objectsToOpenData: 0
+      }
+    },
     models: {},
     drafts: {}
   },

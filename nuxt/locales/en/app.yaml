@@ -1,9 +1,14 @@
+100PercentCommunity: 100% community
+100PercentFree: 100% free
+100PercentOpenSource: 100% open source
 aboutFreesewing: About Freesewing
 add: Add
+addAModel: Add a model
 all: All
 alreadyHaveAnAccount: Already have an account?
 avatar: Avatar
 avatarUpdated: Avatar updated
+averagePeopleDontExist: Average people don't exist
 basics: Basics
 becomeAPatron: Become a patron
 blog: Blog
@@ -34,6 +39,7 @@ coordinator: Coordinator
 coreLink: Core link
 countAvailable: '{count} available'
 countTranslated: '{count} translated'
+createAnAccount: Create an account
 createIssueOnGithub: Create issue on GitHub
 createModel: Create model
 createMyAccount: Create my account
@@ -54,6 +60,7 @@ documentationForTranslators: Documentation for translators
 documentationOverview: Documentation overview
 download: Download
 draft: Draft
+draftAPattern: Draft a pattern
 draftOptions: Draft options
 draftPattern: 'Draft {pattern}'
 draftPatternForModel: 'Draft {pattern} for {model}'
@@ -78,6 +85,9 @@ forUsers: For users
 fork: Fork
 forkDraftHandle: 'Fork draft {handle}'
 freesewing: Freesewing
+freesewingContributors: Freesewing contributors
+freesewingOnGithub: Freesewing on GitHub
+freesewingPatrons: Freesewing patrons
 fullSizePdf: Full size PDF
 fundamentals: Fundamentals
 github: GitHub
@@ -168,6 +178,7 @@ processingDraftOptions: Processing draft options
 profile: Profile
 quickPick: Quick pick
 reSendActivationEmail: Re-send activation email
+readyToTryFreesewing: Ready to try Freesewing?
 redraft: Redraft
 redraftDraftHandle: 'Redraft draft {handle}'
 reference: Reference
@@ -189,6 +200,7 @@ selectADifferentImage: Select a different image
 selectAnImage: Select an image
 selectThePartsYouWantIncludedInYourDraft: Select the parts you want included in your draft
 settings: Settings
+sewingPatternsForNonAveragePeople: Sewing patterns for non-average people
 share: Share
 shared: Shared
 sharedUpdated: Shared setting updated
@@ -197,6 +209,7 @@ showcase: Showcase
 showcaseInfo: Showcase info
 signUp: Sign up
 signUpForAFreeAccount: Sign up for a free account
+signingUpOnlyTakesAMinute: Signing up only takes a minute
 signup--text: This should not happen. Please help us out by creating an issue on GitHub
 signup--title: An unknown error occured
 signup-invalid_input-text: 'Please enter a valid email address, and a password'
@@ -267,11 +280,21 @@ txt-email-sharing: We'll never share your email with anyone else
 txt-emailChangeConfirmationNotFound: 'Sorry, but we have no pending E-mail change for this confirmation code. Perhaps it expired, in which case you can simply make the change again in your settings.'
 txt-emailNotFound: 'If you can''t find the email, check your spam folder, or contact us.'
 txt-emailWillWorkToo: 'If you don''t know your @:username, your @:emailAddress will work too'
+txt-footer: Freesewing is made by Joost De Cock & contributors<br>with the financial support of our Patrons
 txt-forgot-login: 'Enter your username or E-mail address below and click the <b>@:resetPassword</b> button'
 txt-gdpr-1: The General Data Protection Regulation (GDPR) of the European Union (EU) protects your personal data from unscrupulous data hoarders. That's a good thing.
 txt-gdpr-2: 'One of the things it imposes is for us to get your consent — in other words, your permission — to process your personal data.'
 txt-gdpr-3: 'Without your consent, we have no legal basis to process your data and have no choice but to remove it.'
 txt-gdprCompliant: Freesewing.org respects your privacy and your rights. We apply the General Data Protection Regulation (GDPR) of the European Union (EU).
+txt-homepage-community: 'Everything is run by voluntary contributors. There is no commercial entity behind, or attached to, this project.'
+txt-homepage-different: How we're different
+txt-homepage-draft: 'Choose from one of your patterns, choose a model, and pick your options. We''ll do the rest.'
+txt-homepage-how: How it works
+txt-homepage-join: Join thousands of others and sign up for a free account on freesewing.org.
+txt-homepage-model: All our patterns are made-to-measure. So first thing to do is grab your measuring tape.
+txt-homepage-opensource: 'Our platform, our patterns, and even this website. All our code is available on GitHub. Pull requests welcome!'
+txt-homepage-patrons: Freesewing is made possible by the financial support of our Patrons. They keep this ship afloat.
+txt-homepage-quotes: What others are saying
 txt-joinTheTranslationTeam1: 'Even if you have never contributed to an open source project, translation is a smooth on-ramp towards contributor fame.'
 txt-joinTheTranslationTeam2: 'It doesn''t matter whether you translate a few words or sentences, or tackle an entire language by yourself. Every contribution counts, and many hands make light work.'
 txt-joinTheTranslationTeam3: 'Read the documentation for translators to get started. Don''t worry, it''s easy.'
