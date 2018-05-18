@@ -2,11 +2,11 @@ aboutFreesewing: Acerca de Freesewing
 add: Añadir
 all: Todo
 alreadyHaveAnAccount: ¿Ya tienes una cuenta?
-avatar: Avatar 
+avatar: Avatar DONE
 avatarUpdated: Avatar actualizado
 basics: Bases
 becomeAPatron: Conviértete en patrocinador
-blog: Blog 
+blog: Blog DONE
 blogPost: Entradas del post
 breasts: Pechos
 breastsUpdated: Opción de pechos actualizada updated
@@ -25,7 +25,7 @@ completePattern: Patrón completo
 connectingToSomeApi: 'Conectando a la API {api}'
 consent: Consentimiento
 consentForModelData: Consentimiento para los datos de modelo
-consentForProfileData: Consentimiento para los datos de perfil 
+consentForProfileData: Consentimiento para los datos de perfil
 consentGiven: Consentimiento otorgado
 contactUs: Contactáctanos
 content: Contenido
@@ -64,7 +64,7 @@ edit: Editar
 editOnGithub: Editar en GitHub
 email: Correo electrónico
 emailAddress: Dirección de correo electrónico
-emailUpdatePending: Actualización de correo electrónico pendiente. 
+emailUpdatePending: Actualización de correo electrónico pendiente.
 emails: Correos electrónicos
 enterYourCurrentPassword: Introduce tu contraseña actual
 enterYourNewPassword: Introduce tu nueva contraseña
@@ -85,17 +85,17 @@ githubUpdated: Nombre de usuario de GitHub actualizado
 goodToKnow: Bueno saberlo
 hi: Hola
 home: Home DONE
-howCanWeHelpYou: ¿Cómo podemos ayudarte? 
+howCanWeHelpYou: ¿Cómo podemos ayudarte?
 howToTakeMeasurements: Cómo tomar medidas
 i18n: Internacionalización (i18n)
-iForgotMyPassword: Olvidé mi contraseña 
-iForgotMyUsername: Olvidé mi nombre de usuario 
+iForgotMyPassword: Olvidé mi contraseña
+iForgotMyUsername: Olvidé mi nombre de usuario
 image: Imagen
 imperial: Imperial DONE
 imperialUnits: Unidades imperiales (pulgadas)
 inch: pulgada
 info: Información
-instagram: Instagram 
+instagram: Instagram DONE
 instagramUpdated: Cuenta de Instagram establecida
 joinTheTranslationTeam: 'Incluso si nunca has contribuído a un proyecto open source, la traducción es una cuesta de poca pendiente hacia la fama de colaborador'
 justAMoment: Un momento
@@ -103,7 +103,7 @@ key: Clave
 language: Idioma
 languageLanguageFiles: 'Ficheros de idioma de {language}'
 layout: Plantilla
-learnMore: Saber más 
+learnMore: Saber más
 learnToDesignPatterns: Aprende a diseñar patrones
 letterPdf: Letter PDF DONE
 loadingModelData: Cargardo información del modelo
@@ -147,7 +147,7 @@ onlySelectedPatternParts: Sólo las partes seleccionadas del patrón
 pageNotFound: La página que buscas no se encuentra en ninguna parte
 paperlessTheme: Tema sin papel
 password: Contraseña
-passwordResetPending: Cambio de contraseña pendiente. 
+passwordResetPending: Cambio de contraseña pendiente.
 passwordUpdated: Contraseña cambiada
 patronText: '{username} es un {patronTier} desde {daysAgo}'
 patrons: Patrocinadores
@@ -172,7 +172,7 @@ redraft: Trazar de nuevo
 redraftDraftHandle: 'Trazar de nuevo el boceto {handle}'
 reference: Referencia
 removeAllMyData: Borrar todos mis datos
-removeAllMyModelData: Borrar todos mis datos de modelo 
+removeAllMyModelData: Borrar todos mis datos de modelo
 replay: Ejecutar de nuevo
 requiredMeasurements: Medidas requeridas
 resetPassword: Restablecer contraseña
@@ -208,7 +208,7 @@ signup-signup_pending-title: Tu cuenta está pendiente de activación
 signup-success-text: 'Te hemos enviado un email a {email}. '
 signup-user_exists-text: Ya tenemos un usuario con esa dirección de email. Tal vez quieras iniciar sesión
 signup-user_exists-title: Ese usuario existe
-social: Social 
+social: Social DONE
 somethingWentWrong: Algo ha ido mal
 startUpload: Empezar subida
 status: Estado
@@ -224,7 +224,7 @@ tabloidPdf: PDF Tabloide
 taskCompleted: Tarea completada
 theme: Tema
 themeUpdated: Preferencias de la plantilla establecidas
-thereIsNoWayBackFromThis: No hay vuelta atrás desde aquí 
+thereIsNoWayBackFromThis: No hay vuelta atrás desde aquí
 thisContentIsNotAvailableInLanguage: Este contenido no está disponible en Español.
 thisDraftPredatesThisFeature: Este boceto precede a esta característica
 thisIsTheCurrentStatusOfOurTranslations: Éste es el estado actual de nuestras traducciones.
@@ -233,9 +233,9 @@ thisPageIsOnlyAvailableToFreesewingUsers: Espa página está sólo disponible pa
 title: Título
 today: Hoy
 translationTeam: Equipo de traducción
-troubleLoggingIn: ¿Problemas para acceder? 
+troubleLoggingIn: ¿Problemas para acceder?
 tryAgain: Prueba otra vez
-twitter: Twitter 
+twitter: Twitter DONE
 twitterUpdated: Cuenta de Twitter establecida
 txt-avatarDropzoneText: 'Arrastra una imagen aquí, o haz clic en el botón para elegir una de entre tus archivos. '
 txt-avatarDropzoneTitle: Arrastra tu imagen aquí
@@ -247,7 +247,7 @@ txt-consentModelAnswerWhatOptional: 'Optional: Un modelo <b>picture</b> y el <b>
 txt-consentModelAnswerWhy: 'Para <b>diseñar patrones de costura a medida</b>, necesitamos <b>medidas corporales</b>. '
 txt-consentModelObjectNote: 'Nota: Freesewing publica medidas anónimas como datos abiertos para investigación científica'
 txt-consentModelObjectWhy: 'Estos datos son anónimos y se usan para estudiar y comprender la figura humana en todas sus formas, para que podamos obtener mejores patrones de costura y ropa que siente mejor'
-txt-consentModelQuestionWhat: ¿Qué son los datos de modelo? 
+txt-consentModelQuestionWhat: ¿Qué son los datos de modelo?
 txt-consentProfile: ¿Das permiso para procesar tu información de usuario?
 txt-consentProfileAnswerShare: '<b>No</b>, nunca. '
 txt-consentProfileAnswerTiming: '<b>12 meses</b> desde tu última sesión, o hasta que <b>elimines</b> tu cuenta o <b>revoques</b> este consentimiento. '
@@ -267,10 +267,10 @@ txt-email-sharing: Nunca compartiremos esto con nadie
 txt-emailChangeConfirmationNotFound: 'Lo sentimos, pero no tenemos ningún cambio de E-mail pendiente para este código de confirmación. Tal vez ha expirado, en cuyo caso puedes hacer el cambio de nuevo en tus ajustes. '
 txt-emailNotFound: 'Si no puedes encontrar el email mira en tu carpeta de SPAM, o contacta con nosotros. '
 txt-emailWillWorkToo: 'Si no conoces tu nombre de usuario, tu dirección de correo electrónico también funcionará'
-txt-forgot-login: 'Entra tu nombre de usuario o correo electrónico debajo y pulsa el botón de restablecer contraseña'
-txt-gdpr-1: La Regulación General de Protección de Datos (GDPR) de la Unión Europea(EU) protege tus datos personales de acaparadores de datos sin escrúpulos. Eso es bueno. 
+txt-forgot-login: Entra tu nombre de usuario o correo electrónico debajo y pulsa el botón de restablecer contraseña
+txt-gdpr-1: La Regulación General de Protección de Datos (GDPR) de la Unión Europea(EU) protege tus datos personales de acaparadores de datos sin escrúpulos. Eso es bueno.
 txt-gdpr-2: 'Una de las cosas que nos impone es obtener tu consentimiento — en otras palabras, tu permiso — para procesar tus datos personales'
-txt-gdpr-3: 'Sin tu consentimiento no tenemos base legal para procesar tus datos y no tenemos más elección que borrarlos'
+txt-gdpr-3: Sin tu consentimiento no tenemos base legal para procesar tus datos y no tenemos más elección que borrarlos
 txt-gdprCompliant: Freesewing.org respeta tu privacidad y tus derechos. Aplicamos la Regulación General de Protección de Datos (RGPD) de la Unión Europea (UE).
 txt-joinTheTranslationTeam1: 'Incluso si nunca has contribuído a un proyecto open source, la traducción es una cuesta de poca pendiente hacia la fama de colaborador. '
 txt-joinTheTranslationTeam2: 'No importa si traduces unas pocas palabras o frases, o si te ocupas de un idioma entero. Cada contribución cuenta, y muchas manos hacen el trabajo fácil. '
@@ -289,7 +289,7 @@ txt-signup-step1: 'Introduce tu dirección de email y elige una contraseña. '
 txt-signup-step2: Confirma tu dirección de email.
 txt-signup-step3: Danos permiso para procesar tus datos personales.
 txt-slogan: Una plataforma open source para patrones de costura a medida
-txt-warningModelData: 'Esto borarrá todos tus modelos y todos tus diseños.'
+txt-warningModelData: Esto borarrá todos tus modelos y todos tus diseños.
 txt-warningProfileData: 'Esto borrará todos tus modelos, todos tus patrones, todos tus comentarios y tu cuenta. Todo se irá.'
 txt-withOrWithoutBreasts: 'Ajustar pechos requiere una serie de medidas que no son relevantes si no tienes pechos. Si has elegido que tu modelo no tenga pechos, to te mostraremos estas medidas por ser irrelevantes. Si no sabes qué elegir, elige pechos. '
 txt-withOrWithoutBreasts-explainer: 'En otros sitios, esta pregunta se plantea como "¿hombre o mujer?". Aquí no nos gusta poner etiquetas a la gente. Sólo nos importa ajustar tu pecho. '
@@ -322,6 +322,6 @@ yesIDoObject: 'Sí, me opongo'
 yesterday: Ayer
 youAreCurrentlyLoggedIn: Tienes una sesión abierta
 youAreNotLoggedIn: No tienes una sesión abierta
-youDoNotObjectToSharingAnonymizedDataForResearch: No te opones a compartir datos anónimos para fines de investigación 
-youHaveTheRightToObjectToThis: Tienes derecho a oponerte a esto 
+youDoNotObjectToSharingAnonymizedDataForResearch: No te opones a compartir datos anónimos para fines de investigación
+youHaveTheRightToObjectToThis: Tienes derecho a oponerte a esto
 youObjectToSharingAnonymizedDataForResearch: Te opones a compartir datos anónimos para fines de investigación
