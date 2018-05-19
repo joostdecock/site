@@ -11,6 +11,7 @@
           </v-layout>
         </v-container>
       </v-content>
+      <the-footer />
       <v-footer fixed height="auto" class="hidden-lg-and-up">
         <the-mobile-toolbar color="primary" :right="(false)" />
       </v-footer>
@@ -21,12 +22,14 @@
 import TheLeftDrawer    from '~/components/stateless/TheLeftDrawer'
 import TheMobileToolbar from '~/components/stateful/TheMobileToolbar'
 import TheTopToolbar    from '~/components/stateful/TheTopToolbar'
+import TheFooter        from '~/components/stateless/TheFooter'
 
 export default {
   components: {
     TheLeftDrawer,
     TheMobileToolbar,
-    TheTopToolbar
+    TheTopToolbar,
+    TheFooter
   },
 }
 </script>

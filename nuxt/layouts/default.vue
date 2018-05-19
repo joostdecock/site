@@ -28,6 +28,7 @@
         </v-layout>
       </v-container>
     </v-content>
+    <the-footer />
     <v-footer fixed height="auto" class="hidden-lg-and-up">
       <the-mobile-toolbar color="primary" />
     </v-footer>
@@ -40,6 +41,7 @@ import TheLeftDrawer    from '~/components/stateless/TheLeftDrawer'
 import TheMobileToolbar from '~/components/stateful/TheMobileToolbar'
 import TheTopToolbar    from '~/components/stateful/TheTopToolbar'
 import FsComments       from '~/components/stateless/FsComments'
+import TheFooter        from '~/components/stateless/TheFooter'
 // Dynamic components
 import FsDynamicAsideBlogpost from '~/components/stateless/FsDynamicAsideBlogpost'
 import FsDynamicAsideShowcase from '~/components/stateless/FsDynamicAsideShowcase'
@@ -56,6 +58,7 @@ export default {
     FsDynamicAsidePage,
     FsDynamicAsideDraft,
     FsComments,
+    TheFooter
   },
   computed: {
     rightColumnComponent () {
