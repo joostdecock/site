@@ -1,30 +1,25 @@
 <template>
   <aside style="align-self: flex-end; width: 100%;">
-    <v-list>
-      <v-list-tile :to="$fs.path('/search')">
-        <v-list-tile-action>
-          <v-icon>search</v-icon>
-        </v-list-tile-action>
-        <v-list-tile-content>
-          <v-list-tile-title>{{ $t('search') }}</v-list-tile-title>
-        </v-list-tile-content>
-      </v-list-tile>
-    </v-list>
 
     <v-list>
-      <v-list-tile @click="toggleSub('cmty')">
+      <v-list-tile :to="$fs.path('/patterns')">
         <v-list-tile-action>
-          <v-icon color="info">extension</v-icon>
+          <fs-icon-tshirt :color="($fs.path('/patterns') === $route.path) ? '#212121' : 'rgba(0,0,0,0.54)'" />
         </v-list-tile-action>
         <v-list-tile-content>
-          <v-list-tile-title>{{ $t('community') }}
-            <v-icon color="secondary" class="ml-1" v-if="cmtySub">arrow_drop_up</v-icon>
-            <v-icon color="secondary" class="ml-1" v-else>arrow_drop_down</v-icon>
-          </v-list-tile-title>
+          <v-list-tile-title :class="($fs.path('/patterns') === $route.path) ? 'bold' : ''">{{ $t('patterns') }}</v-list-tile-title>
+        </v-list-tile-content>
+      </v-list-tile>
+
+      <v-list-tile :to="$fs.path('/blog')">
+        <v-list-tile-action>
+          <v-icon :color="($fs.path('/blog') === $route.path) ? '#212121' : 'rgba(0,0,0,0.54)'">rss_feed</v-icon>
+        </v-list-tile-action>
+        <v-list-tile-content>
+          <v-list-tile-title :class="($fs.path('/blog') === $route.path) ? 'bold' : ''">{{ $t('blog') }}</v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
     </v-list>
-    <fs-menu-community v-if="cmtySub" class="" dense />
 
     <v-list>
       <v-list-tile @click="toggleSub('docs')">
@@ -32,7 +27,7 @@
           <v-icon color="info">import_contacts</v-icon>
         </v-list-tile-action>
         <v-list-tile-content>
-          <v-list-tile-title>{{ $t('documentation') }}
+          <v-list-tile-title :class="($fs.path('/docs') === $route.path) ? 'bold' : ''">{{ $t('documentation') }}
             <v-icon color="secondary" class="ml-1" v-if="cmtySub">arrow_drop_up</v-icon>
             <v-icon color="secondary" class="ml-1" v-else>arrow_drop_down</v-icon>
           </v-list-tile-title>
@@ -42,24 +37,19 @@
     <fs-menu-documentation v-if="docsSub" dense />
 
     <v-list>
-      <v-list-tile :to="$fs.path('/blog')">
+      <v-list-tile @click="toggleSub('cmty')">
         <v-list-tile-action>
-          <v-icon>rss_feed</v-icon>
+          <v-icon color="info">extension</v-icon>
         </v-list-tile-action>
         <v-list-tile-content>
-          <v-list-tile-title>{{ $t('blog') }}</v-list-tile-title>
-        </v-list-tile-content>
-      </v-list-tile>
-
-      <v-list-tile :to="$fs.path('/patterns')">
-        <v-list-tile-action>
-          <fs-icon-tshirt :color="($fs.path('/patterns') === $route.path) ? '#212121' : 'rgba(0,0,0,0.54)'" />
-        </v-list-tile-action>
-        <v-list-tile-content>
-          <v-list-tile-title>{{ $t('patterns') }}</v-list-tile-title>
+          <v-list-tile-title :class="($fs.path('/showcase') === $route.path) ? 'bold' : ''">{{ $t('community') }}
+            <v-icon color="secondary" class="ml-1" v-if="cmtySub">arrow_drop_up</v-icon>
+            <v-icon color="secondary" class="ml-1" v-else>arrow_drop_down</v-icon>
+          </v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
     </v-list>
+    <fs-menu-community v-if="cmtySub" class="" dense />
 
     <v-list v-if="$store.state.user.loggedIn">
       <v-divider></v-divider>
@@ -75,11 +65,17 @@
         </v-list-tile-content>
       </v-list-tile>
     </v-list>
-    <p class="text-xs-center mt-2" v-else>
-      <fs-button-signup />
-      <br>
-      <fs-button-login />
-    </p>
+    <v-list v-else>
+      <v-divider></v-divider>
+      <v-list-tile :to="$fs.path('/signup')">
+        <v-list-tile-action>
+          <v-icon color="accent">person_add</v-icon>
+        </v-list-tile-action>
+        <v-list-tile-content>
+          <v-list-tile-title :class="($fs.path('/signup') === $route.path) ? 'bold' : ''">{{ $t('signUp') }}</v-list-tile-title>
+        </v-list-tile-content>
+      </v-list-tile>
+    </v-list>
     <fs-menu-user v-if="(userSub)" dense />
     <v-list v-if="$store.state.user.loggedIn">
       <v-list-tile :to="$fs.path('/model')">
@@ -99,30 +95,23 @@
         </v-list-tile-content>
       </v-list-tile>
     </v-list>
-    <p class="text-xs-center mt-3" v-if="!$store.state.user.isPatron">
-    <fs-button-patron />
-    </p>
   </aside>
 </template>
 
 <script>
-import FsMenuCommunity from '~/components/stateless/FsMenuCommunity'
+import FsMenuCommunity     from '~/components/stateless/FsMenuCommunity'
 import FsMenuDocumentation from '~/components/stateless/FsMenuDocumentation'
-import FsMenuUser from '~/components/stateful/FsMenuUser'
-import FsButtonPatron from '~/components/stateless/FsButtonPatron'
-import FsButtonSignup from '~/components/stateless/FsButtonSignup'
-import FsButtonLogin from '~/components/stateless/FsButtonLogin'
-import FsIconTshirt      from '~/components/stateless/FsIconTshirt'
+import FsMenuUser          from '~/components/stateful/FsMenuUser'
+import FsIconTshirt        from '~/components/stateless/FsIconTshirt'
+import FsLogo              from '~/components/stateless/FsLogo'
 
 export default {
   components: {
     FsMenuCommunity,
     FsMenuDocumentation,
     FsMenuUser,
-    FsButtonPatron,
-    FsButtonSignup,
-    FsButtonLogin,
-    FsIconTshirt
+    FsIconTshirt,
+    FsLogo
   },
   data: function() {
     return {
@@ -146,3 +135,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.bold {
+  font-weight: bold;
+}
+</style>

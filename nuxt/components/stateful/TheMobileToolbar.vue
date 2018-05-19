@@ -9,6 +9,7 @@
           <span class="ml-3">{{ $t('freesewing') }}</span>
       </v-btn>
     </nuxt-link>
+    <v-spacer class="text-xs-center"></v-spacer>
     <v-menu nudge-right>
       <v-toolbar-title slot="activator">
         <v-btn small flat>
@@ -28,13 +29,6 @@
         </v-list-tile>
       </v-list>
     </v-menu>
-    <v-spacer class="text-xs-center"></v-spacer>
-    <nuxt-link to="/patrons/join" class="hidden-sm-and-down mr-4">
-      <v-btn light color="warning">
-        {{ $t('becomeAPatron') }}
-        <v-icon right color="primary">favorite</v-icon>
-      </v-btn>
-    </nuxt-link>
     <v-btn v-if="right" icon @click.stop="toggleDrawer('right')" class="hidden-xl-only mr-4">
       <v-icon x-large>chevron_left</v-icon>
     </v-btn>
