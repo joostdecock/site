@@ -15,6 +15,7 @@ blog: Blog DONE
 blogPost: Messages de blog
 breasts: Poitrine
 breastsUpdated: Réglages poitrine mis à jour
+by: by TODO
 cancel: Annuler
 chatOnGitter: Chatter sur Gitter
 chatWithUs: Chatter avec nous
@@ -104,6 +105,7 @@ iForgotMyUsername: I forgot my username TODO
 image: Image DONE
 imperial: Imperial TODO
 imperialUnits: Unités de mesure impériales (pouces)
+in: in TODO
 inch: pouce
 info: Info DONE
 instagram: Instagram DONE
@@ -134,7 +136,6 @@ metricUnits: Unités de mesure métriques (cm)
 model: Modèle
 modelIsModel: 'Le modèle est {model}'
 models: Modèles
-monthAgo: Il y a un mois
 monthsAgo: 'Il y a {months} mois'
 name: Nom
 nameOfTheModel: Nom du modèle
@@ -301,6 +302,7 @@ txt-homepage-quotes: What others are saying TODO
 txt-joinTheTranslationTeam1: 'Even if you have never contributed to an open source project, translation is a smooth on-ramp towards contributor fame. TODO'
 txt-joinTheTranslationTeam2: 'It doesn''t matter whether you translate a few words or sentences, or tackle an entire language by yourself. Every contribution counts, and many hands make light work. TODO'
 txt-joinTheTranslationTeam3: 'Read the documentation for translators to get started. Don''t worry, it''s easy. TODO'
+txt-missingBlogPosts: Not all blog posts have been translated to English — but you could change that TODO
 txt-modelsWithMissingMeasurements: 'These models lack some of the required measurements to draft this pattern: TODO'
 txt-newModel: 'To get started, please give your model a name. TODO'
 txt-password-policy: We don't enforce a password policy TODO
@@ -315,6 +317,9 @@ txt-signup-step1: 'Enter your email address, and pick a password. TODO'
 txt-signup-step2: Confirm your email address. TODO
 txt-signup-step3: Give us permission to process your personal data. TODO
 txt-slogan: An open source platform for made-to-measure sewing patterns TODO
+txt-translators1: We are looking for people to help with our translation efforts. TODO
+txt-translators2: 'Many hands make light work, and it''s excellent karma to make a contribution this way. TODO'
+txt-translators3: 'To learn more about what you can do, and how to do it, click the link below. TODO'
 txt-warningModelData: 'This will remove all of your models, and all of your drafts. TODO'
 txt-warningProfileData: 'This will remove all of your models, all of your drafts, all of your comments, and your account. Everything will be gone. TODO'
 txt-withOrWithoutBreasts: 'Fitting breasts requires a bunch of extra measurements that are not relevant if you don''t have breasts. If you indicate your model does not have breasts, we won''t show you these measurements as they are irrelevant. If you''re not sure what to pick, go for breasts. TODO'

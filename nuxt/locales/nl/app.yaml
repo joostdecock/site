@@ -15,6 +15,7 @@ blog: Blog DONE
 blogPost: Blog post
 breasts: Borsten
 breastsUpdated: Borsten instelling bijgewerkt
+by: door
 cancel: Annuleren
 chatOnGitter: Chat via Gitter
 chatWithUs: Chat met ons
@@ -104,6 +105,7 @@ iForgotMyUsername: Ik ben mijn gebruikersnaam vergeten
 image: Afbeelding
 imperial: Imperiaal
 imperialUnits: Imperiale eenheden (duim)
+in: in DONE
 inch: duim
 info: Info DONE
 instagram: Instagram DONE
@@ -134,8 +136,7 @@ metricUnits: Metrische eenheden (cm)
 model: Model DONE
 modelIsModel: 'Model is {model} DONE'
 models: Modellen
-monthAgo: Een maand geleden
-monthsAgo: '{months} maanden geleden'
+monthsAgo: '{months} maand geleden | {months} maanden geleden'
 name: Naam
 nameOfTheModel: Naam van het model
 nameUpdated: Naam bijgewerkt
@@ -179,7 +180,7 @@ processingDraftOptions: Verwerken van patroontekening opties
 profile: Profiel
 quickPick: Snelle keuzes
 quote-jamie: Freesewing brengt naaien in de 21ste eeuw
-quote-jamie-about: Author of the popular sewing blog Male Devon Sewing and 2016 Great British Sewing Bee contestant. TODO
+quote-jamie-about: Auteur van de populaire naaiblog Male Devon Sewing en deelnemer aan de 2016 Great British Sewing Bee.
 reSendActivationEmail: Stuur een nieuwe activatie E-mail
 readyToTryFreesewing: Klaar om Freesewing uit te proberen?
 redraft: Herteken
@@ -301,6 +302,7 @@ txt-homepage-quotes: Wat anderen vertellen over ons
 txt-joinTheTranslationTeam1: 'Zelfs al heb je nog nooit bijgedragen aan een open source project, vertalen is de makkelijkste manier om aan de slag te gaan als vrijwillige medewerker'
 txt-joinTheTranslationTeam2: 'Het maakt niet uit of je enkele woorden of zinnen vertaalt, of een hele taal voor je rekening neemt. Elke bijdrage telt, en vele handen maken licht werk.'
 txt-joinTheTranslationTeam3: Lees de documentatie voor vertalers om aan de slag te gaan. Het is echt niet moeilijk.
+txt-missingBlogPosts: Niet alle blog posts zijn vertaald naar het Nederland — maar daar kan jij verandering in brengen
 txt-modelsWithMissingMeasurements: 'Van deze modellen kennen we niet alle vereiste maten om dit patroon te tekenen:'
 txt-newModel: 'Eerst en vooral, geef je model een naam.'
 txt-password-policy: We handhaven geen wachtwoordbeleid
@@ -315,6 +317,9 @@ txt-signup-step1: 'Voer je E-mail adres in, en kies een wachtwoord.'
 txt-signup-step2: Bevestig je email adres.
 txt-signup-step3: Geef ons de toestemming om je persoonlijke gegevens te verwerken.
 txt-slogan: Een open source platform voor naaipatronen op maat
+txt-translators1: We zijn op zoek naar mensen om ons te helpen met onze vertalingen.
+txt-translators2: 'Vele handen maken licht werk, en het is goed karma om op deze manier een bijdrage te leveren.'
+txt-translators3: 'Klik op onderstaande link om meer te weten te komen over wat je kan doen, en hoe je het doet.'
 txt-warningModelData: 'We verwijderen al je modellen, en al je patroontekeningen.'
 txt-warningProfileData: 'We verwijderen al je modellen, al je patroontekeningen, al je commentaren, en je profiel. Alles zal verdwijnen.'
 txt-withOrWithoutBreasts: 'Een patroon voor een model met borsten vereist een aantal extra maten die niet relevant zijn voor een model zonder borsten. Als je hier aangeeft dat je model geen borsten heeft, dan verbergen we die extra maten daar ze niet relevant zijn. Als je niet zeker weet wat te kiezen, kies dan voor borsten.'

@@ -55,6 +55,29 @@ module.exports = {
       data: { contentLocale: 'nl' },
       markdown: markdownConfig
     }],
+    // Spanish
+    ['es/blog', {
+      page: '/blog/_blogpost',
+      permalink: '/blog/:slug',
+      toc: 1,
+      data: { contentLocale: 'es' },
+      markdown: markdownConfig
+    }],
+    ['es/showcase', {
+      page: '/showcase/_showcase',
+      permalink: '/showcase/:slug',
+      data: { contentLocale: 'es' },
+      markdown: markdownConfig
+    }],
+    ['es/docs', {
+      page: '/docs/_page',
+      permalink: '/docs/:section*/:slug',
+      isPost: false,
+      toc: 1,
+      breadcrumbs: true,
+      data: { contentLocale: 'es' },
+      markdown: markdownConfig
+    }],
   ],
   api: {
     baseURL: 'http://localhost:3000',

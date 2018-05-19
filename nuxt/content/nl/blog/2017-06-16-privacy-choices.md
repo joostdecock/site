@@ -1,10 +1,11 @@
 ---
 layout: blog
-title: "De keuzes die ik gemaakt om je privacy te beschermen. Of waarom je geen cookies krijgt."
+title: "De keuzes die ik gemaakt heb om je privacy te beschermen. Of waarom je geen cookies krijgt."
 linktitle: "Keuzes aangaande privacy"
 img: fence.jpg
 caption: "Foto door [Herbert](https://pixabay.com/en/users/herbert2512-2929941/)"
-author: joostdecock
+author: joost
+category: site
 translators: joostdecock
 blurb: "Ik wou doen wat correct was. Dit zijn de keuzes die ik heb gemaakt."
 ---

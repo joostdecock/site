@@ -4,7 +4,7 @@ title: "Freesewing from scratch: Whether you're setting up a development environ
 linktitle: "Freesewing from scratch"
 img: coffee.jpg
 caption: "Grab a coffee and let's do this"
-author: joostdecock
+author: joost
 category: docs
 blurb: "Setting up a full freesewing instance, step by step."
 ---

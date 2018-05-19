@@ -1,33 +1,31 @@
 <template>
   <section>
-    <fs-breadcrumbs>{{ $t('blog') }}</fs-breadcrumbs> 
+    <fs-breadcrumbs>{{ $t('blog') }}</fs-breadcrumbs>
     <v-container fluid grid-list-lg>
       <v-layout row wrap>
-        <v-flex class="xs12 sm6 xl4" v-for="post in posts" :key="post.permalink" >
-          <v-card>
-            <v-card-media to="/" :src="imgSrc(post.permalink, post.img)" :height="imageHeight">
-              <nuxt-link :to="post.permalink" style="width: 100%; height: 100%" :title="post.title"></nuxt-link>	
-            </v-card-media>
-            <v-card-text>
-              <p class="mb-0 mt-0 thetitle">
-              <nuxt-link :to="post.permalink" :title="post.title">
-                {{ post.linktitle }}
-              </nuxt-link>	
-              </p>
-            </v-card-text>
-          </v-card>
+        <v-flex class="xs12 sm12 md6 xl6" v-for="post in posts" :key="post.permalink" >
+            <div class="preview">
+              <nuxt-link :to="post.permalink" :title="post.title"><span class="fs-block-link"></span></nuxt-link>
+              <img :src="imgSrc(post.permalink, post.img)" alt="post.tile" class="elevation-1"/>
+              <div class="title">
+                <p class="mb-0 mt-0 thetitle">
+                  {{post.title}}
+                  <span class="meta">{{ $fs.daysAgo(post.date) }} {{ $t('by') }} @{{post.author}} {{ $t('in') }} #{{ post.category}}</span>
+                </p>
+              </div>
+            </div>
         </v-flex>
       </v-layout>
     </v-container>
-    <blockquote class="i18n center mt-5" v-if="$i18n.locale != $i18n.fallbackLocale">
-      <h5>Not all blog posts have been translated to English — but you could change that</h5>
-      <p>We are looking for people to help with our translation efforts.</p>
-      <p>Many hands make light work, and it's excellent karma to make a contribution this way.</p>
-      <p>To learn more about what you can do, and how to do it, click the link below.</p>
+    <blockquote class="i18n mt-5 fs-m800" v-if="$i18n.locale != $i18n.fallbackLocale">
+      <h5>{{ $t('txt-missingBlogPosts') }}</h5>
+      <p>{{ $t('txt-translators1') }}</p>
+      <p>{{ $t('txt-translators2') }}</p>
+      <p>{{ $t('txt-translators3') }}</p>
       <p class="text-xs-right">
-        <v-btn color="primary" large>
-          <v-icon>translate</v-icon>FIXME
-        </v-btn>
+      <v-btn color="primary" large>
+        <v-icon class="mr-3">translate</v-icon>{{ $t('documentationForTranslators') }}
+      </v-btn>
       </p>
     </blockquote>
   </section>
@@ -56,38 +54,63 @@ export default {
   methods: {
     imgSrc: function (permalink, image) {
       if(permalink.substr(0, 5) === '/blog') {
-        return '/img'+permalink+'/low_'+image
+        return '/img'+permalink+'/med_'+image
       } else {
-        return '/img'+permalink.substr(3)+'/low_'+image
+        return '/img'+permalink.substr(3)+'/med_'+image
       }
     },
-  },
-  computed: {
-    imageHeight () {
-      switch (this.$vuetify.breakpoint.name) {
-        case 'xs': return '220px'
-        case 'sm': return '290px'
-        case 'md': return '350px'
-        case 'lg': return '340px'
-        case 'xl': return '350px'
-      }
-    }
   }
 }
 </script>
 
 <style scoped>
-p.thetitle {
-  font-size: 1rem;
-  font-weight: 400;
+div.preview {
+  position: relative;
+}
+div.preview img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+div.title {
+  position: absolute;
+  bottom: 30px;
+  right: 0px;
+}
+div.title p {
+  background: #0009;
+  font-size: 32px;
+  color: #fff;
+  padding: 8px 16px;
+  margin: 0;
+  text-align: right;
+  display: inline-block;
+  font-weight: 300;
   line-height: 1.1;
 }
-p.thetitle a {
-  text-decoration: none;
+.meta {
+  display: block;
+  font-size: 60%;
+  margin-top: 6px;
+  color: #FFFB;
 }
 @media (max-width: 600px) {
-  p.thetitle {
-    font-size: 0.6rem;
+  div.title p {
+    font-size: 22px;
+  }
+}
+@media (min-width: 601px) {
+  div.title p {
+    font-size: 26px;
+  }
+}
+@media (min-width: 960px) {
+  div.title p {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1264px) {
+  div.title p {
+    font-size: 26px;
   }
 }
 </style>

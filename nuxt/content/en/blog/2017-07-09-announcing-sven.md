@@ -4,7 +4,7 @@ title: "Announcing the Sven Sweater; A basic sweater based on the Brian body blo
 linktitle: "Announcing the Sven Sweater"
 img: showcase.jpg
 caption: "A Sven made for the office. As in, kinda boring"
-author: joostdecock
+author: joost
 category: core
 blurb: "A basic sweater pattern for men"
 ---

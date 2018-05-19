@@ -4,7 +4,7 @@ title: "The Benjamin Bow Tie pattern is now available in beta. And I didn't even
 linktitle: "The Benjamin Bow Tie is now available in beta"
 img: bowtie.jpg
 caption: "A collection of bow ties from Wouter, who designed and coded this pattern"
-author: joostdecock
+author: joost
 category: core
 blurb: "Announcing the Benjamin Bow Tie, our first ever community pattern."
 ---

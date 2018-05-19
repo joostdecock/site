@@ -4,7 +4,7 @@ title: "Introducing freesewing bail: A poor man's rollbar — because privacy"
 linktitle: "Introducing freesewing bail"
 img: hammer.jpg
 caption: "This blog post is not at all about hammers"
-author: joostdecock
+author: joost
 category: docs
 blurb: "Bail is a poor man's Rollbar, because privacy."
 ---

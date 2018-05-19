@@ -4,7 +4,7 @@ title: "Calling all Patrons; Join our bedrock of loyal supporters."
 linktitle: "Calling all Patrons"
 img: phone.jpg
 caption: "We are building a bedrock of loyal supporters to ensure a sustainable future for freesewing.org, our code, our patterns, and our community."
-author: joostdecock
+author: joost
 category: roundup
 blurb: "You can sign up for as little as 2€, and it only takes a minute"
 ---

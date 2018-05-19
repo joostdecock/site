@@ -15,6 +15,7 @@ blog: Blog
 blogPost: Blog posts
 breasts: Breasts
 breastsUpdated: Breasts setting updated
+by: by
 cancel: Cancel
 chatOnGitter: Chat on Gitter
 chatWithUs: Chat with us
@@ -104,6 +105,7 @@ iForgotMyUsername: I forgot my username
 image: Image
 imperial: Imperial
 imperialUnits: Imperial units (inch)
+in: in
 inch: inch
 info: Info
 instagram: Instagram
@@ -134,8 +136,7 @@ metricUnits: Metric units (cm)
 model: Model
 modelIsModel: 'Model is {model}'
 models: Models
-monthAgo: A month ago
-monthsAgo: '{months} months ago'
+monthsAgo: '{months} month ago | {months} months ago'
 name: Name
 nameOfTheModel: Name of the model
 nameUpdated: Name updated
@@ -301,6 +302,7 @@ txt-homepage-quotes: What others are saying
 txt-joinTheTranslationTeam1: 'Even if you have never contributed to an open source project, translation is a smooth on-ramp towards contributor fame.'
 txt-joinTheTranslationTeam2: 'It doesn''t matter whether you translate a few words or sentences, or tackle an entire language by yourself. Every contribution counts, and many hands make light work.'
 txt-joinTheTranslationTeam3: 'Read the documentation for translators to get started. Don''t worry, it''s easy.'
+txt-missingBlogPosts: Not all blog posts have been translated to English — but you could change that
 txt-modelsWithMissingMeasurements: 'These models lack some of the required measurements to draft this pattern:'
 txt-newModel: 'To get started, please give your model a name.'
 txt-password-policy: We don't enforce a password policy
@@ -315,6 +317,9 @@ txt-signup-step1: 'Enter your email address, and pick a password.'
 txt-signup-step2: Confirm your email address.
 txt-signup-step3: Give us permission to process your personal data.
 txt-slogan: An open source platform for made-to-measure sewing patterns
+txt-translators1: We are looking for people to help with our translation efforts.
+txt-translators2: 'Many hands make light work, and it''s excellent karma to make a contribution this way.'
+txt-translators3: 'To learn more about what you can do, and how to do it, click the link below.'
 txt-warningModelData: 'This will remove all of your models, and all of your drafts.'
 txt-warningProfileData: 'This will remove all of your models, all of your drafts, all of your comments, and your account. Everything will be gone.'
 txt-withOrWithoutBreasts: 'Fitting breasts requires a bunch of extra measurements that are not relevant if you don''t have breasts. If you indicate your model does not have breasts, we won''t show you these measurements as they are irrelevant. If you''re not sure what to pick, go for breasts.'

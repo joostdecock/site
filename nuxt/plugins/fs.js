@@ -582,7 +582,8 @@ export default ({ app, store, route }, inject) => {
           } else if (days < 30) {
             return app.i18n.t('daysAgo', {days: days})
           } else {
-            return app.i18n.t('monthsAgo', {months: differenceInMonths(now, input)})
+            let months = differenceInMonths(now, input)
+            return app.i18n.tc('monthsAgo', months, {months})
           }
       },
 
