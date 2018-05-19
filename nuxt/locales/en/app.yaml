@@ -90,6 +90,7 @@ freesewingOnGithub: Freesewing on GitHub
 freesewingPatrons: Freesewing patrons
 fullSizePdf: Full size PDF
 fundamentals: Fundamentals
+getHelp: Get help
 github: GitHub
 githubUpdated: GitHub username updated
 goodToKnow: Good to know
@@ -177,6 +178,8 @@ privacyInfo: Privacy info
 processingDraftOptions: Processing draft options
 profile: Profile
 quickPick: Quick pick
+quote-jamie: 'With Freesewing, sewing has moved into the 21st century'
+quote-jamie-about: Author of the popular sewing blog Male Devon Sewing and 2016 Great British Sewing Bee contestant.
 reSendActivationEmail: Re-send activation email
 readyToTryFreesewing: Ready to try Freesewing?
 redraft: Redraft
@@ -348,3 +351,5 @@ youAreNotLoggedIn: You are not logged in.
 youDoNotObjectToSharingAnonymizedDataForResearch: You do not object to sharing anonymized data for research
 youHaveTheRightToObjectToThis: You have the right to object to this
 youObjectToSharingAnonymizedDataForResearch: You object to sharing anonymized data for research
+yourPrivacy: Your privacy
+yourRights: Your rights

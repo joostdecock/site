@@ -1,27 +1,21 @@
 <template>
   <footer>
-  <v-footer height="auto" class="primary">
-    <v-layout row wrap justify-center class="mt-3 mb-5">
-      <v-flex xs12 py-3 text-xs-center class="mb-4">
-        <fs-logo size="100" color="#fff" />
-      </v-flex>
-      <v-flex xs-6>
-        <ul class="right">
-          <li><nuxt-link :to="$fs.path('/help')" class="fs-white">{{ $t('help') }}</nuxt-link></li>
-          <li><nuxt-link :to="$fs.path('/contact')" class="fs-white">{{ $t('contact') }}</nuxt-link></li>
-        </ul>
-      </v-flex>
-      <v-flex xs-6>
-        <ul class="left">
-          <li><nuxt-link :to="$fs.path('/privacyhelp')" class="fs-white">{{ $t('privacy') }}</nuxt-link></li>
-          <li><nuxt-link :to="$fs.path('/patrons/join')" class="fs-white">{{ $t('becomeAPatron') }}</nuxt-link></li>
-        </ul>
-      </v-flex>
-      <v-flex xs12 py-3 text-xs-center>
-        <p v-html="$t('txt-footer')"></p>
-      </v-flex>
-    </v-layout>
-  </v-footer>
+    <v-footer height="auto" class="primary">
+      <v-layout row wrap justify-center class="mt-3 mb-5">
+        <v-flex xs12 py-3 text-xs-center class="mb-4">
+          <nuxt-link :to="$fs.path('/')"><fs-logo size="100" color="#fff" /></nuxt-link>
+            <p class="mt-5 mb-5">
+              <nuxt-link :to="$fs.path('/support')" class="fs-white">{{ $t('getHelp') }}</nuxt-link> |
+              <nuxt-link :to="$fs.path('/contact')" class="fs-white">{{ $t('contactUs') }}</nuxt-link>
+              <br>
+              <nuxt-link :to="$fs.path('/privacy')" class="fs-white">{{ $t('yourPrivacy') }}</nuxt-link> |
+              <nuxt-link :to="$fs.path('/rights')" class="fs-white">{{ $t('yourRights') }}</nuxt-link>
+            </p>
+            <v-btn color="accent" :to="$fs.path('/patrons/join')" class="mt-1 mb-4"><v-icon class="mr-3">favorite</v-icon>{{ $t('becomeAPatron') }}</v-btn>
+            <p v-html="$t('txt-footer')"></p>
+        </v-flex>
+      </v-layout>
+    </v-footer>
   </footer>
 </template>
 
@@ -42,7 +36,7 @@ footer {
 }
 ul, p{
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.4;
   color: #fff6;
 }
 a {

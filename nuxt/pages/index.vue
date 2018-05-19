@@ -6,10 +6,10 @@
       </h1>
       <h5 class="mt-3">
         <v-btn class="hidden-sm-and-up" :to="$fs.path('/signup')" color="primary">
-          <v-icon class="mr-3">home</v-icon>{{ $t('signUpForAFreeAccount') }}
+          <v-icon class="mr-3">person_add</v-icon>{{ $t('signUpForAFreeAccount') }}
         </v-btn>
         <v-btn large class="hidden-xs-only" :to="$fs.path('/signup')" color="primary">
-          <v-icon class="mr-3">home</v-icon>{{ $t('signUpForAFreeAccount') }}
+          <v-icon class="mr-3">person_add</v-icon>{{ $t('signUpForAFreeAccount') }}
         </v-btn>
       </h5>
     </div>
@@ -17,110 +17,50 @@
       <h3>{{ $t('freesewing') }} </h3>
       <h5>{{ $t('txt-slogan') }} </h5>
     </blockquote>
-    <h2>{{ $t('txt-homepage-different')}}</h2>
+    <h2><a name="differences">{{ $t('txt-homepage-different')}}</a></h2>
     <v-layout row wrap class="mt-5">
-      <v-flex md4 xs12>
+      <v-flex md4 xs12 v-for="diff in differences" :key="diff.title">
         <v-card color="white">
           <v-card-text>
-            <h3 class="text-xs-center">{{ $t('100PercentOpenSource') }}</h3>
-            <p class="text-xs-center">{{ $t('txt-homepage-opensource') }}</p>
-            <p class="text-xs-center"><v-btn large href="https://github.com/freesewing" target="_BLANK" color="primary">{{ $t('freesewingOnGithub') }}</v-btn></p>
-          </v-card-text>
-        </v-card>
-      </v-flex>
-      <v-flex md4 xs12>
-        <v-card color="white">
-          <v-card-text>
-            <h3 class="text-xs-center">{{ $t('100PercentCommunity') }}</h3>
-            <p class="text-xs-center">{{ $t('txt-homepage-community') }}</p>
-            <p class="text-xs-center"><v-btn large href="https://github.com/orgs/freesewing/teams/contributors/members" target="_BLANK" color="primary">{{ $t('freesewingContributors') }}</v-btn></p>
-
-          </v-card-text>
-        </v-card>
-      </v-flex>
-      <v-flex md4 xs12>
-        <v-card color="white">
-          <v-card-text>
-            <h3 class="text-xs-center">{{ $t('100PercentFree') }}</h3>
-            <p class="text-xs-center">{{ $t('txt-homepage-patrons') }}</p>
-            <p class="text-xs-center"><v-btn large href="https://github.com/orgs/freesewing/teams/contributors/members" target="_BLANK" color="primary">{{ $t('freesewingPatrons') }}</v-btn></p>
+            <h3 class="text-xs-center">{{ $t(diff.title) }}</h3>
+            <p class="text-xs-center">{{ $t(diff.text) }}</p>
+            <p class="text-xs-center">
+              <v-btn large :href="diff.href" target="_BLANK" color="primary" v-if="diff.href">{{ $t(diff.button) }}</v-btn>
+              <v-btn large :to="$fs.path(diff.to)" color="primary" v-else>{{ $t(diff.button) }}</v-btn>
+            </p>
           </v-card-text>
         </v-card>
       </v-flex>
     </v-layout>
-    <h2>{{ $t('txt-homepage-how')}}</h2>
+    <h2><a name="how">{{ $t('txt-homepage-how')}}</a></h2>
     <v-layout row wrap class="mt-5">
-      <v-flex md4 xs12>
+      <v-flex md4 xs12 v-for="h in how" :key="h.to">
         <v-card color="primary" dark>
           <v-card-text>
             <h3 class="text-xs-center">
               <v-btn fab small color="white" outline><b><big>1</big></b></v-btn>
-              {{ $t('createAnAccount') }}
+              {{ $t(h.title) }}
             </h3>
-            <p class="text-xs-center">{{ $t('txt-homepage-join') }}</p>
-            <p class="text-xs-center"><v-btn large color="white" outline>{{ $t('signUpForAFreeAccount') }}</v-btn></p>
-          </v-card-text>
-        </v-card>
-      </v-flex>
-      <v-flex md4 xs12>
-        <v-card color="primary" dark>
-          <v-card-text>
-            <h3 class="text-xs-center">
-              <v-btn fab small color="white" outline><b><big>2</big></b></v-btn>
-              {{ $t('addAModel') }}
-            </h3>
-            <p class="text-xs-center">{{ $t('txt-homepage-model') }}</p>
-            <p class="text-xs-center"><v-btn large color="white" outline>{{ $t('newModel') }}</v-btn></p>
-          </v-card-text>
-        </v-card>
-      </v-flex>
-      <v-flex md4 xs12>
-        <v-card color="primary" dark>
-          <v-card-text>
-            <h3 class="text-xs-center">
-              <v-btn fab small color="white" outline><b><big>3</big></b></v-btn>
-              {{ $t('draftAPattern') }}
-            </h3>
-            <p class="text-xs-center">{{ $t('txt-homepage-draft') }}</p>
-            <p class="text-xs-center"><v-btn large color="white" outline>{{ $t('newDraft') }}</v-btn></p>
+            <p class="text-xs-center">{{ $t(h.text) }}</p>
+            <p class="text-xs-center">
+            <v-btn class="hidden-md-and-down" large color="white" outline :to="$fs.path(h.to)"><v-icon class="mr-3">{{ h.icon }}</v-icon>{{ $t(h.button) }}</v-btn>
+              <v-btn class="hidden-lg-and-up" color="white" outline :to="$fs.path(h.to)">{{ $t(h.buttonSmall) }}</v-btn>
+            </p>
           </v-card-text>
         </v-card>
       </v-flex>
     </v-layout>
     <h2>{{ $t('txt-homepage-quotes')}}</h2>
     <v-layout row wrap class="mt-5">
-      <v-flex md4 xs12>
+      <v-flex md4 xs12 v-for="quote in quotes" :key="quote.handle">
         <v-card color="white">
+          <a :href="quote.link" target="_BLANK" class="fs-block-link"></a>
           <div class="quote">
-            <p>Age doesn't matter. Unless you're a cheese.</p>
-            <div class="avatar"><v-avatar size="52px"><img src="http://i.pravatar.cc/104" alt="" class="elevation-1"/></v-avatar></div>
+            <p>{{ $t('quote-'+quote.handle) }}</p>
+            <div class="avatar"><v-avatar size="52px"><img :src="'/img/quotes/'+quote.handle+'.jpg'" alt="" class="elevation-1"/></v-avatar></div>
             <div class="author">
-              <p><b>Author Name</b></p>
-              <p>Author description</p>
-            </div>
-          </div>
-        </v-card>
-      </v-flex>
-      <v-flex md4 xs12>
-        <v-card color="white">
-          <div class="quote">
-            <p>Age doesn't matter. Unless you're a cheese.</p>
-            <div class="avatar"><v-avatar size="52px"><img src="http://i.pravatar.cc/104" alt="" class="elevation-1"/></v-avatar></div>
-            <div class="author">
-              <p><b>Author Name</b></p>
-              <p>Author description</p>
-            </div>
-          </div>
-        </v-card>
-      </v-flex>
-      <v-flex md4 xs12>
-        <v-card color="white">
-          <div class="quote">
-            <p>Age doesn't matter. Unless you're a cheese.</p>
-            <div class="avatar"><v-avatar size="52px"><img src="http://i.pravatar.cc/104" alt="" class="elevation-1"/></v-avatar></div>
-            <div class="author">
-              <p><b>Author Name</b></p>
-              <p>Author description</p>
+              <p><b>{{ quote.name }}</b></p>
+              <p>{{ $t('quote-'+quote.handle+'-about') }}</p>
             </div>
           </div>
         </v-card>
@@ -128,12 +68,70 @@
     </v-layout>
     <h2>{{ $t('readyToTryFreesewing') }}</h2>
     <p class="text-xs-center">{{ $t('signingUpOnlyTakesAMinute') }}</p>
-    <p class="text-xs-center"><v-btn large color="primary">{{ $t('signUpForAFreeAccount') }}</v-btn></p>
+    <p class="text-xs-center"><v-btn large color="primary"><v-icon class="mr-3">person_add</v-icon>{{ $t('signUpForAFreeAccount') }}</v-btn></p>
   </section>
 </template>
 
 <script>
-export default {layout: 'homepage'}
+export default {
+  layout: 'homepage',
+  data: () => {
+    return {
+      quotes: [
+        {name: 'Jamie Kemp', handle: 'jamie', link: 'http://maledevonsewing.co.uk/'},
+        {name: 'Jamie Kemp', handle: 'jamie', link: 'http://maledevonsewing.co.uk/'},
+        {name: 'Jamie Kemp', handle: 'jamie', link: 'http://maledevonsewing.co.uk/'},
+      ],
+      differences: [
+        {
+          title: '100PercentOpenSource',
+          text: 'txt-homepage-opensource',
+          button: 'freesewingOnGithub',
+          href: 'https://github.com/freesewing',
+        },
+        {
+          title: '100PercentCommunity',
+          text: 'txt-homepage-community',
+          button: 'freesewingContributors',
+          href: 'https://github.com/orgs/freesewing/teams/contributors/members'
+        },
+        {
+          title: '100PercentFree',
+          text: 'txt-homepage-patrons',
+          button: 'freesewingPatrons',
+          href: false,
+          to: '/patrons'
+        }
+      ],
+      how: [
+        {
+          title: 'createAnAccount',
+          text: 'txt-homepage-join',
+          button: 'signUpForAFreeAccount',
+          buttonSmall: 'signUp',
+          to: '/signup',
+          icon: 'person_add'
+        },
+        {
+          title: 'addAModel',
+          text: 'txt-homepage-model',
+          button: 'newModel',
+          buttonSmall: 'newModel',
+          to: '/model',
+          icon: 'perm_identity'
+        },
+        {
+          title: 'draftAPattern',
+          text: 'txt-homepage-draft',
+          button: 'newDraft',
+          buttonSmall: 'newDraft',
+          to: '/draft',
+          icon: 'insert_drive_file'
+        },
+      ]
+    }
+  }
+}
 </script>
 
 <style>
