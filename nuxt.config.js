@@ -1,3 +1,77 @@
+const topLevelDocRoutes = [
+  'contact',
+  'privacy',
+  'help',
+  'rights',
+  'about'
+]
+const dynamicRoutes = [
+  {
+    path: '/docs/*',
+    component: 'nuxt/pages/docs/_page.vue'
+  },
+  {
+    path: '/signup/confirm/*',
+    component: 'nuxt/pages/signup/confirm-email.vue'
+  },
+  {
+    path: '/signup/consent/*',
+    component: 'nuxt/pages/signup/consent-profile.vue'
+  },
+  {
+    path: '/email/confirm/*',
+    component: 'nuxt/pages/account/confirm-email-change.vue'
+  },
+  {
+    path: '/account/recover/*',
+    component: 'nuxt/pages/account/recover-password.vue'
+  },
+  {
+    path: '/patterns/*',
+    component: 'nuxt/pages/patterns/_pattern.vue'
+  },
+  {
+    path: '/draft/:pattern',
+    component: 'nuxt/pages/draft/choose-model.vue'
+  },
+  {
+    path: '/draft/:pattern/for/:model',
+    component: 'nuxt/pages/draft/choose-options.vue'
+  },
+  {
+    path: '/fork/:draft',
+    name: 'fork-1',
+    component: 'nuxt/pages/fork/choose-model.vue',
+  },
+  {
+    path: '/fork/:draft/for/:model',
+    name: 'fork-2',
+    component: 'nuxt/pages/fork/choose-options.vue',
+  },
+  {
+    path: '/redraft/:draft',
+    name: 'redraft-1',
+    component: 'nuxt/pages/fork/choose-model.vue',
+  },
+  {
+    path: '/redraft/:draft/for/:model',
+    name: 'redraft-2',
+    component: 'nuxt/pages/fork/choose-options.vue',
+  },
+  {
+    path: '/drafts/:draft',
+    component: 'nuxt/pages/drafts/_draft.vue'
+  },
+  {
+    path: '/models/:model',
+    component: 'nuxt/pages/models/_model.vue'
+  },
+  {
+    path: '/i18n/:locale',
+    component: 'nuxt/pages/i18n/status-locale.vue'
+  },
+]
+
 module.exports = {
   srcDir: 'nuxt/',
   mode: 'spa',
@@ -80,70 +154,15 @@ module.exports = {
   router: {
     middleware: 'auth',
     extendRoutes (routes, resolve) {
-      routes.push({
-        path: '/docs/*',
-        component: 'nuxt/pages/docs/_page.vue'
-      })
-      routes.push({
-        path: '/signup/confirm/*',
-        component: 'nuxt/pages/signup/confirm-email.vue'
-      })
-      routes.push({
-        path: '/signup/consent/*',
-        component: 'nuxt/pages/signup/consent-profile.vue'
-      })
-      routes.push({
-        path: '/email/confirm/*',
-        component: 'nuxt/pages/account/confirm-email-change.vue'
-      })
-      routes.push({
-        path: '/account/recover/*',
-        component: 'nuxt/pages/account/recover-password.vue'
-      })
-      routes.push({
-        path: '/patterns/*',
-        component: 'nuxt/pages/patterns/_pattern.vue'
-      })
-      routes.push({
-        path: '/draft/:pattern',
-        component: 'nuxt/pages/draft/choose-model.vue'
-      })
-      routes.push({
-        path: '/draft/:pattern/for/:model',
-        component: 'nuxt/pages/draft/choose-options.vue'
-      })
-      routes.push({
-        path: '/fork/:draft',
-        name: 'fork-1',
-        component: 'nuxt/pages/fork/choose-model.vue',
-      })
-      routes.push({
-        path: '/fork/:draft/for/:model',
-        name: 'fork-2',
-        component: 'nuxt/pages/fork/choose-options.vue',
-      })
-      routes.push({
-        path: '/redraft/:draft',
-        name: 'redraft-1',
-        component: 'nuxt/pages/fork/choose-model.vue',
-      })
-      routes.push({
-        path: '/redraft/:draft/for/:model',
-        name: 'redraft-2',
-        component: 'nuxt/pages/fork/choose-options.vue',
-      })
-      routes.push({
-        path: '/drafts/:draft',
-        component: 'nuxt/pages/drafts/_draft.vue'
-      })
-      routes.push({
-        path: '/models/:model',
-        component: 'nuxt/pages/models/_model.vue'
-      })
-      routes.push({
-        path: '/i18n/:locale',
-        component: 'nuxt/pages/i18n/status-locale.vue'
-      })
+      for(let i in topLevelDocRoutes) {
+        routes.push({
+          path: '/'+topLevelDocRoutes[i],
+          component: 'nuxt/pages/docs/_page.vue'
+        })
+      }
+      for(let i in dynamicRoutes) {
+        routes.push(dynamicRoutes[i])
+      }
     }
   },
   generate: {

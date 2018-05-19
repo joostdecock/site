@@ -20,7 +20,12 @@ export default {
   },
   asyncData: async function ({ app, route }) {
     const data = {}
-    data.page = await app.$content('/'+app.i18n.locale+'/docs').get(route.path)
+    let path = route.path
+    if(path.substr(0,6) !== '/docs/') {
+      path = '/docs'+path
+    }
+    console.log(path)
+    data.page = await app.$content('/'+app.i18n.locale+'/docs').get(path)
     .then(function (data) {
       return data
     })
@@ -38,20 +43,20 @@ export default {
   },
   mounted: function() {
     this.$store.commit('setDynamicComponent', {
-      region: 'rightColumn', 
+      region: 'rightColumn',
       component: 'fs-dynamic-aside-page'
     })
     this.$store.commit('setComponentData', {
       source: 'page',
-      data: { 
+      data: {
         toc: this.page.toc,
-        meta: this.page.meta 
+        meta: this.page.meta
       }
     })
   },
   beforeDestroy: function() {
     this.$store.commit('setDynamicComponent', {
-      region: 'rightColumn', 
+      region: 'rightColumn',
       component: ''
     })
   }
