@@ -1,6 +1,7 @@
 100PercentCommunity: 100% gemeenschap
 100PercentFree: 100% gratis
 100PercentOpenSource: 100% open source DONE
+aCodeBlock: Een code blok
 aboutFreesewing: Over Freesewing
 add: Toevoegen
 addAModel: Voeg een model toe
@@ -11,8 +12,12 @@ avatarUpdated: Avatar bijgewerkt
 averagePeopleDontExist: Gemiddelde mensen bestaan niet
 basics: Basis
 becomeAPatron: Word sponsor
+bio: Bio DONE
+bioUpdated: Bio bijgewerkt
+blockquote: Blok citaat
 blog: Blog DONE
 blogPost: Blog post
+bold: Vet
 breasts: Borsten
 breastsUpdated: Borsten instelling bijgewerkt
 by: door
@@ -25,6 +30,7 @@ chooseAPattern: Kies een patroon
 chooseYourOptions: Kies je opties
 classicTheme: Klassieke layout
 close: Sluiten
+code: Code DONE
 community: Gemeenschap
 compare: Vergelijk
 completePattern: Volledige patroon
@@ -110,6 +116,7 @@ inch: duim
 info: Info DONE
 instagram: Instagram DONE
 instagramUpdated: Instagram gebruikersnaam bijgewerkt
+italics: Cursief
 joinTheTranslationTeam: Kom bij het vertaalteam
 justAMoment: Een ogenblikje
 key: Sleutel
@@ -127,6 +134,7 @@ logIn: Aanmelden
 logOut: Afmelden
 loginFailed: Aanmelden mislukt
 makeItBetter: Alles kan beter
+markdownSyntax: MarkDown syntax DONE
 measurementUpdated: Maat bijgewerkt
 measurements: Maten
 measurementsRequiredForPattern: 'Maten die vereist zijn voor {pattern}'
@@ -189,8 +197,10 @@ reference: Referentie
 removeAllMyData: Verwijder all mijn gegevens
 removeAllMyModelData: Verwijder all mijn model gegevens
 replay: Nog een keer
+reply: Beantwoorden
 requiredMeasurements: Vereiste maten
 resetPassword: Herstel wachtwoord
+result: Resultaat
 retrievingDraftFromCore: Patroontekening ophalen van core
 revokeConsent: Toestemming intrekken
 rowsFromToOfTotal: 'Rij {from} tot {to} van {total}'
@@ -236,6 +246,7 @@ step3: Stap 3
 step4: Stap 4
 stopUpload: Upload stoppen
 storingDraftData: Gegevens patroontekening opslaan
+strikethrough: Doorstreept
 svgSourceCode: SVG Broncode
 tabloidPdf: Tabloid PDF DONE
 taskCompleted: Taak is afgerond
@@ -247,6 +258,7 @@ thisDraftPredatesThisFeature: Deze patroontekening is te oud voor deze functiona
 thisIsTheCurrentStatusOfOurTranslations: Dit is de huidige status van onze vertalingen.
 thisPageIsNotIntendedForLoggedInUsers: Deze pagina is niet bedoeld voor aangemelde gebruikers
 thisPageIsOnlyAvailableToFreesewingUsers: Deze pagina is alleen beschikbaar voor Freesewing gebruikers
+tip: Tip DONE
 title: Titel
 today: Vandaag
 translationTeam: Vertaalteam
@@ -332,9 +344,12 @@ upgrade: Bijwerken
 upgradeRequired: Bijwerken vereist
 useDecimalsOrFractions: Gebruik decimalen (1.25) or breuken (1 1/4)
 user: Gebruiker
+userHasBeenWithUsSince: '{user} hoort erbij sinds {since}'
+userIsAPatron: '{user} is een sponsor'
 username: Gebruikersnaam
 usernameOrEmail: '@:username of @:emailAddress'
 usernameUpdated: Gebruikersnaam bijgewerkt
+users: Gebruikers
 version: Versie
 visitPatronProfile: Bezoek de profielpagina van deze sponsor
 volunteerVerb: Word vrijwilliger
@@ -354,6 +369,7 @@ yesIDoObject: 'Ja, ik maak bezwaar'
 yesterday: Gisteren
 youAreCurrentlyLoggedIn: Je bent momenteel aangemeld.
 youAreNotLoggedIn: Je bent niet aangemeld
+youCanUseMarkdownFormatting: Je kan MarkDown opmaak gebruiken
 youDoNotObjectToSharingAnonymizedDataForResearch: Je maakt geen bezwaar tegen het delen van geanonimiseerde gegeven voor onderzoek
 youHaveTheRightToObjectToThis: Je hebt hiertegen het recht van bezwaar
 youObjectToSharingAnonymizedDataForResearch: Je maakt bezwaar tegen het delen van geanonimiseerde gegeven voor onderzoek

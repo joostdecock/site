@@ -1,6 +1,7 @@
 100PercentCommunity: 100% community TODO
 100PercentFree: 100% free TODO
 100PercentOpenSource: 100% open source TODO
+aCodeBlock: A code block TODO
 aboutFreesewing: Acerca de Freesewing
 add: Añadir
 addAModel: Add a model TODO
@@ -11,8 +12,12 @@ avatarUpdated: Avatar actualizado
 averagePeopleDontExist: Average people don't exist TODO
 basics: Bases
 becomeAPatron: Conviértete en patrocinador
+bio: Bio TODO
+bioUpdated: Bio updated TODO
+blockquote: Block quote TODO
 blog: Blog DONE
 blogPost: Entradas del post
+bold: Bold TODO
 breasts: Pechos
 breastsUpdated: Opción de pechos actualizada updated
 by: by TODO
@@ -25,6 +30,7 @@ chooseAPattern: Elige un patrón
 chooseYourOptions: Elige tus opciones
 classicTheme: Tema clásico
 close: Cerrar
+code: Code TODO
 community: Comunidad
 compare: Comparar
 completePattern: Patrón completo
@@ -110,6 +116,7 @@ inch: pulgada
 info: Información
 instagram: Instagram DONE
 instagramUpdated: Cuenta de Instagram establecida
+italics: Italics TODO
 joinTheTranslationTeam: 'Incluso si nunca has contribuído a un proyecto open source, la traducción es una cuesta de poca pendiente hacia la fama de colaborador'
 justAMoment: Un momento
 key: Clave
@@ -127,6 +134,7 @@ logIn: Iniciar sesión
 logOut: cerrar sesión
 loginFailed: Inicio de sesión fallido
 makeItBetter: Mejóralo
+markdownSyntax: MarkDown syntax TODO
 measurementUpdated: Medida actualizada
 measurements: Medidas
 measurementsRequiredForPattern: 'Medidas requeridas por {pattern} '
@@ -189,8 +197,10 @@ reference: Referencia
 removeAllMyData: Borrar todos mis datos
 removeAllMyModelData: Borrar todos mis datos de modelo
 replay: Ejecutar de nuevo
+reply: Reply TODO
 requiredMeasurements: Medidas requeridas
 resetPassword: Restablecer contraseña
+result: Result TODO
 retrievingDraftFromCore: Recuperando el boceto desde el núcleo
 revokeConsent: Revocar consentimiento
 rowsFromToOfTotal: 'Filas {from} a la {to} de {total} '
@@ -236,6 +246,7 @@ step3: Paso 3
 step4: Paso 4
 stopUpload: Detener subida
 storingDraftData: Guardando datos del boceto
+strikethrough: Strikethrough TODO
 svgSourceCode: Código fuente SVG
 tabloidPdf: PDF Tabloide
 taskCompleted: Tarea completada
@@ -247,6 +258,7 @@ thisDraftPredatesThisFeature: Este boceto precede a esta característica
 thisIsTheCurrentStatusOfOurTranslations: Éste es el estado actual de nuestras traducciones.
 thisPageIsNotIntendedForLoggedInUsers: Esta página no está pensada para usuarios con una sesión abierta
 thisPageIsOnlyAvailableToFreesewingUsers: Espa página está sólo disponible para usuarios de Freesewing
+tip: Tip TODO
 title: Título
 today: Hoy
 translationTeam: Equipo de traducción
@@ -332,9 +344,12 @@ upgrade: Actualizar
 upgradeRequired: Actualización requerida
 useDecimalsOrFractions: Usar decimales (1.25) o fracciones (1 1/4)
 user: Usuario
+userHasBeenWithUsSince: '{user} has been with us since {since} TODO'
+userIsAPatron: '{user} is a patron TODO'
 username: Nombre de usuario
 usernameOrEmail: '@:nombre de usuario or @:dirección de correo electrónico'
 usernameUpdated: Nombre de usuario actualizado
+users: Users TODO
 version: Versión
 visitPatronProfile: Visita el perfil de este patrocinador
 volunteerVerb: Voluntario
@@ -354,6 +369,7 @@ yesIDoObject: 'Sí, me opongo'
 yesterday: Ayer
 youAreCurrentlyLoggedIn: Tienes una sesión abierta
 youAreNotLoggedIn: No tienes una sesión abierta
+youCanUseMarkdownFormatting: You can use MarkDown formatting TODO
 youDoNotObjectToSharingAnonymizedDataForResearch: No te opones a compartir datos anónimos para fines de investigación
 youHaveTheRightToObjectToThis: Tienes derecho a oponerte a esto
 youObjectToSharingAnonymizedDataForResearch: Te opones a compartir datos anónimos para fines de investigación

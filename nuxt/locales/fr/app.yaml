@@ -1,6 +1,7 @@
 100PercentCommunity: 100% community TODO
 100PercentFree: 100% free TODO
 100PercentOpenSource: 100% open source TODO
+aCodeBlock: A code block TODO
 aboutFreesewing: A propos de Freesewing
 add: Ajouter
 addAModel: Add a model TODO
@@ -11,8 +12,12 @@ avatarUpdated: Avatar mis à jour
 averagePeopleDontExist: Average people don't exist TODO
 basics: Les bases
 becomeAPatron: Devenez mécène
+bio: Bio TODO
+bioUpdated: Bio updated TODO
+blockquote: Block quote TODO
 blog: Blog DONE
 blogPost: Messages de blog
+bold: Bold TODO
 breasts: Poitrine
 breastsUpdated: Réglages poitrine mis à jour
 by: by TODO
@@ -25,6 +30,7 @@ chooseAPattern: Choisir un patron
 chooseYourOptions: Choisir vos options
 classicTheme: Thème classique
 close: Fermer
+code: Code TODO
 community: Communauté
 compare: Comparer
 completePattern: Complete pattern TODO
@@ -110,6 +116,7 @@ inch: pouce
 info: Info DONE
 instagram: Instagram DONE
 instagramUpdated: Compte Instagram établi
+italics: Italics TODO
 joinTheTranslationTeam: 'Même si vous n''avez jamais contribué à un projet Open Source, la traduction est une douce montée vers la gloire du contributeur.'
 justAMoment: Juste un instant
 key: Key TODO
@@ -127,6 +134,7 @@ logIn: Connexion
 logOut: Deconnexion
 loginFailed: La connexion a échoué
 makeItBetter: Faire des améliorations
+markdownSyntax: MarkDown syntax TODO
 measurementUpdated: Mensurations mises à jour
 measurements: Mensurations
 measurementsRequiredForPattern: 'Mensurations requises pour {pattern}'
@@ -189,8 +197,10 @@ reference: Référence
 removeAllMyData: Enlever toutes mes données
 removeAllMyModelData: Remove all my model data TODO
 replay: Re-jouer
+reply: Reply TODO
 requiredMeasurements: Mensurations requises
 resetPassword: Reset password TODO
+result: Result TODO
 retrievingDraftFromCore: Récupération de l'ébauche depuis la base en cours
 revokeConsent: Revoke consent TODO
 rowsFromToOfTotal: 'Rangs {from} à {to} de {total}'
@@ -236,6 +246,7 @@ step3: Step 3 TODO
 step4: Step 4 TODO
 stopUpload: Stop upload TODO
 storingDraftData: Storing draft data TODO
+strikethrough: Strikethrough TODO
 svgSourceCode: SVG Source code TODO
 tabloidPdf: Tabloid PDF TODO
 taskCompleted: Task completed TODO
@@ -247,6 +258,7 @@ thisDraftPredatesThisFeature: This draft predates this feature. TODO
 thisIsTheCurrentStatusOfOurTranslations: This is the current status of our translations. TODO
 thisPageIsNotIntendedForLoggedInUsers: This page is not intended for logged-in users TODO
 thisPageIsOnlyAvailableToFreesewingUsers: This page is only available to Freesewing users TODO
+tip: Tip TODO
 title: Title TODO
 today: Today TODO
 translationTeam: Translation team TODO
@@ -332,9 +344,12 @@ upgrade: Upgrade TODO
 upgradeRequired: Upgrade required TODO
 useDecimalsOrFractions: Use decimals (1.25) or fractions (1 1/4) TODO
 user: User TODO
+userHasBeenWithUsSince: '{user} has been with us since {since} TODO'
+userIsAPatron: '{user} is a patron TODO'
 username: Username TODO
 usernameOrEmail: '@:username or @:emailAddress TODO'
 usernameUpdated: Username updated TODO
+users: Users TODO
 version: Version TODO
 visitPatronProfile: Visiter le profil de ce Patron
 volunteerVerb: Volunteer TODO
@@ -354,6 +369,7 @@ yesIDoObject: 'Yes, I do object TODO'
 yesterday: Yesterday TODO
 youAreCurrentlyLoggedIn: You are currently logged in. TODO
 youAreNotLoggedIn: You are not logged in. TODO
+youCanUseMarkdownFormatting: You can use MarkDown formatting TODO
 youDoNotObjectToSharingAnonymizedDataForResearch: You do not object to sharing anonymized data for research TODO
 youHaveTheRightToObjectToThis: You have the right to object to this TODO
 youObjectToSharingAnonymizedDataForResearch: You object to sharing anonymized data for research TODO

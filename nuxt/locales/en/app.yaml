@@ -1,6 +1,7 @@
 100PercentCommunity: 100% community
 100PercentFree: 100% free
 100PercentOpenSource: 100% open source
+aCodeBlock: A code block
 aboutFreesewing: About Freesewing
 add: Add
 addAModel: Add a model
@@ -11,8 +12,12 @@ avatarUpdated: Avatar updated
 averagePeopleDontExist: Average people don't exist
 basics: Basics
 becomeAPatron: Become a patron
+bio: Bio
+bioUpdated: Bio updated
+blockquote: Block quote
 blog: Blog
 blogPost: Blog posts
+bold: Bold
 breasts: Breasts
 breastsUpdated: Breasts setting updated
 by: by
@@ -25,6 +30,7 @@ chooseAPattern: Choose a pattern
 chooseYourOptions: Choose your options
 classicTheme: Classic theme
 close: Close
+code: Code
 community: Community
 compare: Compare
 completePattern: Complete pattern
@@ -110,6 +116,7 @@ inch: inch
 info: Info
 instagram: Instagram
 instagramUpdated: Instagram account set
+italics: Italics
 joinTheTranslationTeam: Join the translation team
 justAMoment: Just a moment
 key: Key
@@ -127,6 +134,7 @@ logIn: Log in
 logOut: Log out
 loginFailed: Login failed
 makeItBetter: Make it better
+markdownSyntax: MarkDown syntax
 measurementUpdated: Measurement updated
 measurements: Measurements
 measurementsRequiredForPattern: 'Measurements required for {pattern}'
@@ -189,8 +197,10 @@ reference: Reference
 removeAllMyData: Remove all my data
 removeAllMyModelData: Remove all my model data
 replay: Replay
+reply: Reply
 requiredMeasurements: Required measurements
 resetPassword: Reset password
+result: Result
 retrievingDraftFromCore: Retrieving draft from core
 revokeConsent: Revoke consent
 rowsFromToOfTotal: 'Rows {from} to {to} of {total}'
@@ -236,6 +246,7 @@ step3: Step 3
 step4: Step 4
 stopUpload: Stop upload
 storingDraftData: Storing draft data
+strikethrough: Strikethrough
 svgSourceCode: SVG Source code
 tabloidPdf: Tabloid PDF
 taskCompleted: Task completed
@@ -247,6 +258,7 @@ thisDraftPredatesThisFeature: This draft predates this feature.
 thisIsTheCurrentStatusOfOurTranslations: This is the current status of our translations.
 thisPageIsNotIntendedForLoggedInUsers: This page is not intended for logged-in users
 thisPageIsOnlyAvailableToFreesewingUsers: This page is only available to Freesewing users
+tip: Tip
 title: Title
 today: Today
 translationTeam: Translation team
@@ -332,9 +344,12 @@ upgrade: Upgrade
 upgradeRequired: Upgrade required
 useDecimalsOrFractions: Use decimals (1.25) or fractions (1 1/4)
 user: User
+userHasBeenWithUsSince: '{user} has been with us since {since}'
+userIsAPatron: '{user} is a patron'
 username: Username
 usernameOrEmail: '@:username or @:emailAddress'
 usernameUpdated: Username updated
+users: Users
 version: Version
 visitPatronProfile: Visit the profile page of this patron
 volunteerVerb: Volunteer
@@ -354,6 +369,7 @@ yesIDoObject: 'Yes, I do object'
 yesterday: Yesterday
 youAreCurrentlyLoggedIn: You are currently logged in.
 youAreNotLoggedIn: You are not logged in.
+youCanUseMarkdownFormatting: You can use MarkDown formatting
 youDoNotObjectToSharingAnonymizedDataForResearch: You do not object to sharing anonymized data for research
 youHaveTheRightToObjectToThis: You have the right to object to this
 youObjectToSharingAnonymizedDataForResearch: You object to sharing anonymized data for research

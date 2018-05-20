@@ -91,6 +91,11 @@ const dynamicRoutes = [
     name: 'showcase-category',
     component: 'nuxt/pages/showcase/_category.vue'
   },
+  {
+    path: '/users/:user',
+    name: 'user-page',
+    component: 'nuxt/pages/users/_user.vue'
+  },
 ]
 
 module.exports = {
@@ -104,10 +109,23 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+      { name: 'theme-color', content: '#212121'},
+      { name: 'msapplication-config', content: '/img/icons/browser/browserconfig.xml'},
+      { name: 'keywords', content: 'freesewing, sewing, patterns, opensource, free, sewing patterns, download, community'},
+      { name: 'description', content: 'Freesewing is an open source platform for made-to-measure sewing patterns'},
+      { name: 'subject', content: 'Freesewing'},
+      { name: 'copyright', content: 'Joost De Cock'},
+      { name: 'language', content: 'EN'},
+      { name: 'robots', content: 'index.follow'},
+      { name: 'author', content: 'Joost De Cock'},
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'manifest', href: '/img/icons/browser/manifest.json' },
+      { rel: 'shortcut icon', href: '/img/icons/browser/favicon.ico' },
+      { rel: 'apple-touch-icon', href: '/img/icons/browser/apple-icon.png' },
+      { rel: 'apple-touch-icon', sizes: '152x152', href: '/img/icons/browser/apple-icon-152x152.png' },
+      { rel: 'apple-touch-icon', sizes: '180x180', href: '/img/icons/browser/apple-icon-180x180.png' },
+      { rel: 'icon', sizes: '192x192', href: '/img/icons/browser/android-icon-192x192.png' }
     ]
   },
   /*

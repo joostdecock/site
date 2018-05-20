@@ -166,29 +166,6 @@ export default {
       })
     }
   },
-  //asyncData: function ({ app, route }) {
-  //  return app.$fs.loadDraft(route.params.draft)
-  //  .then((data) => {
-  //    return data
-  //  })
-  //  .catch((error) => {
-  //    if(error.reason === 'no_such_draft') {
-  //      return {notFound: true}
-  //    } else {
-  //      return {error: true}
-  //    }
-  //  })
-  //},
-  //mounted: function() {
-  //  this.$store.commit('setDynamicComponent', {
-  //    region: 'rightColumn',
-  //    component: 'fs-dynamic-aside-draft'
-  //  })
-  //  this.$store.commit('setComponentData', {
-  //    source: 'draft',
-  //    data: this.draft
-  //  })
-  //},
   beforeDestroy: function() {
     this.$store.commit('setAction', {action: 'deleteDraft', value: false})
     this.$store.commit('setDynamicComponent', {

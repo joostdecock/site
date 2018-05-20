@@ -56,6 +56,10 @@
           ></v-radio>
       </v-radio-group>
     </div>
+    <div v-else-if="field === 'bio'">
+      <h6>{{ title }}</h6>
+      <v-text-field :name="field" :id="field" v-model="val" :label="title" textarea autogrow></v-text-field>
+    </div>
     <div v-else>
       <h6>{{ title }}</h6>
       <v-text-field :name="field" :id="field" v-model="val" :label="title"></v-text-field>
@@ -71,12 +75,20 @@
       <v-icon class="mr-1" color="accent">error_outline</v-icon>
       {{ $t('txt-changeRequiresConfirmation') }}
     </p>
+    <div v-if="field === 'bio'" class="mt-3 text-xs-left">
+      <v-alert :value="true" color="info" icon="info"><b>{{ $t('tip')}}</b>: {{ $t('youCanUseMarkdownFormatting') }}</v-alert>
+    <fs-markdown-help />
+  </div>
   </div>
 </template>
 
 <script>
+import FsMarkdownHelp from '~/components/stateless/FsMarkdownHelp'
 export default {
   name: 'FsAccountFieldEdit',
+  components: {
+    FsMarkdownHelp
+  },
   props: {
     field: {
       type: String,

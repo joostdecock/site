@@ -21,7 +21,8 @@
       </tr>
       <tr v-else :key="'row2'+field">
         <th :key="'row2td1'+field">{{ $t(field) }}</th>
-        <td :key="'row2td2'+field">{{ getTitle(field, group) }}</td>
+        <td v-if="field === 'bio'" :key="'row2td2'+field" v-html="$fs.md.render(getTitle(field, group))"></td>
+        <td v-else :key="'row2td2'+field" v-html="getTitle(field, group)"></td>
         <td :key="'row2td3'+field"><v-btn flat round outline color="accent" @click="editing=field">{{ $t('edit') }}</v-btn></td>
       </tr>
       </template>
@@ -51,7 +52,7 @@ export default {
       notifyColor: 'success',
       snackbar: false,
       fields: {
-        data: ['username', 'email', 'password'],
+        data: ['username', 'email', 'password', 'bio'],
         preferences: ['units', 'theme', 'locale'],
         social: ['twitter', 'instagram', 'github'],
       }
@@ -75,7 +76,8 @@ export default {
       if(group === 'social') {
         return this.$store.state.user.account.social[field]
       } else {
-        return this.$store.state.user.account[field]
+        if(field === 'bio') return this.$store.state.user.account.data.bio
+        else return this.$store.state.user.account[field]
       }
     },
     getTitle: function(field, group) {

@@ -76,6 +76,16 @@ export default ({ app, store, route }, inject) => {
     })
   }
 
+  const loadUserMethod = (username) => {
+    return new Promise(function(resolve, reject) {
+    ax.data.get('/profile/'+username, { headers: {'Authorization': 'Bearer '+token()} })
+      .then((res) => {
+        resolve(res.data)
+      })
+    .catch((error) => { reject(error.response.data) })
+    })
+  }
+
   const asGist = (type, data) => {
     const gist = {
       type: type,
@@ -218,6 +228,10 @@ export default ({ app, store, route }, inject) => {
 
       loadDraft(handle) {
         return loadDraftMethod(handle)
+      },
+
+      loadUser(username) {
+        return loadUserMethod(username)
       },
 
       updateDraft(handle, data) {
