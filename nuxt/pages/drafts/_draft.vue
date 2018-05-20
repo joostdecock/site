@@ -36,7 +36,7 @@
                 <img :src="$fs.draftComparedLink(draft.handle, draft.userHandle, draft.cache)" />
               </a>
             </v-tab-item>
-            <v-tab-item id="notes" v-html="'<div class=\'fs-m800 fs-pad\'>'+$fs.md.render(draft.notes)+'</div>'" class="fs-pad">
+            <v-tab-item id="notes" v-html="'<div class=\'fs-m800 fs-pad\'>'+$fs.md.render(''+draft.notes)+'</div>'" class="fs-pad">
             </v-tab-item>
             <v-tab-item id="gist" class="fs-pad">
               <pre v-if="gist">{{ draft.data.gist }}</pre>

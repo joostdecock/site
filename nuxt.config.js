@@ -83,12 +83,12 @@ const dynamicRoutes = [
   },
   {
     path: '/blog/category/:category',
-    name: 'blog-category',
+    name: 'blog-cat',
     component: 'nuxt/pages/blog/_category.vue'
   },
   {
     path: '/showcase/category/:category',
-    name: 'showcase-category',
+    name: 'showcase-cat',
     component: 'nuxt/pages/showcase/_category.vue'
   },
   {
@@ -115,7 +115,7 @@ module.exports = {
       { name: 'description', content: 'Freesewing is an open source platform for made-to-measure sewing patterns'},
       { name: 'subject', content: 'Freesewing'},
       { name: 'copyright', content: 'Joost De Cock'},
-      { name: 'language', content: 'EN'},
+      { vmid: 'language', name: 'language', content: 'EN'},
       { name: 'robots', content: 'index.follow'},
       { name: 'author', content: 'Joost De Cock'},
     ],

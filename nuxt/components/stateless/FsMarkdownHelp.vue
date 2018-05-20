@@ -9,7 +9,7 @@
     <tbody>
       <tr v-for="s in snippets" :key="s">
         <td>{{s}}</td>
-        <td v-html="$fs.md.render(s)"></td>
+        <td v-html="$fs.md.render(''+s)"></td>
       </tr>
     </tbody>
   </table>

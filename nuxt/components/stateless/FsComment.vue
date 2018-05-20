@@ -9,7 +9,7 @@
           </small>
         </v-toolbar-title>
       </v-toolbar>
-      <v-card-text v-html="$fs.md.render(comment.comment)"></v-card-text>
+      <v-card-text v-html="$fs.md.render(''+comment.comment)"></v-card-text>
       <v-card-actions>
         <v-spacer></v-spacer>
         <v-btn flat color="primary">{{ $t('reply') }}</v-btn>

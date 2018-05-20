@@ -8,7 +8,7 @@
           <small class="ml-3">{{ $t('txt-homepage-patrons') }}</small>
         </v-alert>
 
-        <v-tabs v-model="active" color="primary" dark class="fs-content elevation-1" centered>
+        <v-tabs color="primary" dark class="fs-content elevation-1" centered>
           <v-tab>{{ $t('profile') }}</v-tab>
           <v-tab>{{ $t('drafts') }}</v-tab>
           <v-tab>{{ $t('comments') }}</v-tab>
@@ -41,7 +41,7 @@
                       <img :src="'/img/patrons/medals/medal-'+user.profile.patron+'.svg'" height="32" v-if="user.profile.patron"/>
                     </div>
                     <h1>@{{user.profile.username}}</h1>
-                    <div v-html="$fs.md.render(user.profile.bio)" v-if="user.profile.bio"></div>
+                    <div v-html="$fs.md.render(''+user.profile.bio)" v-if="user.profile.bio"></div>
                   </div>
                 </v-flex>
               </v-layout>
@@ -58,7 +58,7 @@
                     <div class="title">
                       <p class="mb-0 mt-0 thetitle">
                       {{draft.name}}
-                      <span class="meta" v-html="$fs.md.render(draft.notes)"></span>
+                      <span class="meta" v-html="$fs.md.render(''+draft.notes)"></span>
                       </p>
                     </div>
                   </div>
