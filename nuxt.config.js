@@ -8,34 +8,42 @@ const topLevelDocRoutes = [
 const dynamicRoutes = [
   {
     path: '/docs/*',
+    name: 'docs-route',
     component: 'nuxt/pages/docs/_page.vue'
   },
   {
     path: '/signup/confirm/*',
+    name: 'confirm-email',
     component: 'nuxt/pages/signup/confirm-email.vue'
   },
   {
     path: '/signup/consent/*',
+    name: 'consent-profile',
     component: 'nuxt/pages/signup/consent-profile.vue'
   },
   {
     path: '/email/confirm/*',
+    name: 'confirm-email-change',
     component: 'nuxt/pages/account/confirm-email-change.vue'
   },
   {
     path: '/account/recover/*',
+    name: 'recover-password',
     component: 'nuxt/pages/account/recover-password.vue'
   },
   {
     path: '/patterns/*',
+    name: 'pattern-page',
     component: 'nuxt/pages/patterns/_pattern.vue'
   },
   {
     path: '/draft/:pattern',
+    name: 'draft-step1',
     component: 'nuxt/pages/draft/choose-model.vue'
   },
   {
     path: '/draft/:pattern/for/:model',
+    name: 'draft-step2',
     component: 'nuxt/pages/draft/choose-options.vue'
   },
   {
@@ -60,14 +68,17 @@ const dynamicRoutes = [
   },
   {
     path: '/drafts/:draft',
+    name: 'draft-page',
     component: 'nuxt/pages/drafts/_draft.vue'
   },
   {
     path: '/models/:model',
+    name: 'model-page',
     component: 'nuxt/pages/models/_model.vue'
   },
   {
     path: '/i18n/:locale',
+    name: 'locale-page',
     component: 'nuxt/pages/i18n/status-locale.vue'
   },
 ]
@@ -157,6 +168,7 @@ module.exports = {
       for(let i in topLevelDocRoutes) {
         routes.push({
           path: '/'+topLevelDocRoutes[i],
+          name: 'toplevel-docs-'+i,
           component: 'nuxt/pages/docs/_page.vue'
         })
       }

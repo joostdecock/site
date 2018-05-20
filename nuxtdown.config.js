@@ -57,21 +57,21 @@ module.exports = {
     }],
     // Spanish
     ['es/blog', {
-      page: '/blog/_blogpost',
-      permalink: '/blog/:slug',
+      page: '/es/blog/_blogpost',
+      permalink: '/es/blog/:slug',
       toc: 1,
       data: { contentLocale: 'es' },
       markdown: markdownConfig
     }],
     ['es/showcase', {
-      page: '/showcase/_showcase',
-      permalink: '/showcase/:slug',
+      page: '/es/showcase/_showcase',
+      permalink: '/es/showcase/:slug',
       data: { contentLocale: 'es' },
       markdown: markdownConfig
     }],
     ['es/docs', {
-      page: '/docs/_page',
-      permalink: '/docs/:section*/:slug',
+      page: '/es/docs/_page',
+      permalink: '/es/docs/:section*/:slug',
       isPost: false,
       toc: 1,
       breadcrumbs: true,

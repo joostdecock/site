@@ -38,6 +38,7 @@ ul, p{
   font-size: 16px;
   line-height: 1.4;
   color: #fff6;
+  padding: 0 8px;
 }
 a {
   color: #fff9;
