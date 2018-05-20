@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import axios from 'axios'
 import MarkdownIt from 'markdown-it'
-import { format, differenceInCalendarDays, differenceInMonths } from 'date-fns'
+import { format, differenceInCalendarDays, differenceInMonths, differenceInYears } from 'date-fns'
 import Storage from './storage'
 import Utils from './utils'
 import Conf from './config'
@@ -586,16 +586,13 @@ export default ({ app, store, route }, inject) => {
       daysAgo(input) {
         let now = new Date()
           let days = differenceInCalendarDays(now, input)
-          if (days === 0) {
-            return app.i18n.t('today')
-          } else if (days === 1) {
-            return app.i18n.t('yesterday')
-          } else if (days < 30) {
-            return app.i18n.t('daysAgo', {days: days})
-          } else {
-            let months = differenceInMonths(now, input)
-            return app.i18n.tc('monthsAgo', months, {months})
-          }
+          let months = differenceInMonths(now, input)
+          let years = differenceInYears(now, input)
+          if (days === 0) return app.i18n.t('today')
+          if (days === 1) return app.i18n.t('yesterday')
+          if (days < 30)  return app.i18n.t('daysAgo', {days: days})
+          if (months < 12) return app.i18n.tc('monthsAgo', months, {months})
+          else return app.i18n.tc('yearsAgo', years, {years})
       },
 
       initializeDraft(pattern, model) {

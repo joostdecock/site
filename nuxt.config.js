@@ -81,6 +81,16 @@ const dynamicRoutes = [
     name: 'locale-page',
     component: 'nuxt/pages/i18n/status-locale.vue'
   },
+  {
+    path: '/blog/category/:category',
+    name: 'blog-category',
+    component: 'nuxt/pages/blog/_category.vue'
+  },
+  {
+    path: '/showcase/category/:category',
+    name: 'showcase-category',
+    component: 'nuxt/pages/showcase/_category.vue'
+  },
 ]
 
 module.exports = {

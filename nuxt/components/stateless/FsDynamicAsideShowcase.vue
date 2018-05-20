@@ -1,10 +1,8 @@
 <template>
   <div>
     <v-card>
-      <v-card-title class="fs-primary">
-        <div>
-          <div class="headline">{{ $t('showcaseInfo') }}</div>
-        </div>
+      <v-card-title class="fs-card-title">
+            {{ $t('showcaseInfo') }}
       </v-card-title>
       <v-divider></v-divider>
       <v-list>
@@ -14,24 +12,26 @@
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title>
-              {{ post.date }}
+              {{ $fs.daysAgo(post.date) }} ({{ post.date }})
             </v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
-        <v-list-tile :to="localePrefix+'/showcase/author/'+post.author">
+        <v-list-tile>
           <v-list-tile-action>
-            <v-icon color="primary">person</v-icon>
+            <v-icon color="secondary">face</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>{{ post.author }}</v-list-tile-title>
+            <v-list-tile-title><nuxt-link :to="$fs.userPath(post.author)">@{{ post.author }}</nuxt-link></v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
-        <v-list-tile :to="localePrefix+'/showcase/category/'+post.category">
+        <v-list-tile>
           <v-list-tile-action>
-            <v-icon color="primary">book</v-icon>
+            <fs-icon-tshirt color="#848484"/>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>{{ post.category }}</v-list-tile-title>
+            <v-list-tile-title>
+              <nuxt-link v-for="cat in post.category" :to="$fs.path('/showcase/category/'+cat)" :key="cat" class="mr-2">#{{cat}}</nuxt-link>
+            </v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
@@ -55,9 +55,13 @@
 </template>
 
 <script>
-export default { 
+import FsIconTshirt      from '~/components/stateless/FsIconTshirt'
+export default {
   name: 'FsDynamicAsideShowcase',
-  computed: { 
+  components: {
+    FsIconTshirt
+  },
+  computed: {
     post () {
       return this.$store.state.components.data['showcase']
     },

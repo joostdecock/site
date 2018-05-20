@@ -347,6 +347,7 @@ withBreasts: With breasts
 withOrWithoutBreasts: With or without breasts?
 withoutBreasts: Without breasts
 wouldYouLikeToLogOut: Would you like to log out?
+yearsAgo: '{years} year ago | {years} years ago'
 'yes': 'Yes'
 yesIDo: 'Yes, I do'
 yesIDoObject: 'Yes, I do object'

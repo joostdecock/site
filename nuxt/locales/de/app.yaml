@@ -347,6 +347,7 @@ withBreasts: With breasts TODO
 withOrWithoutBreasts: With or without breasts? TODO
 withoutBreasts: Without breasts TODO
 wouldYouLikeToLogOut: Would you like to log out? TODO
+yearsAgo: '{years} year ago | {years} years ago TODO'
 'yes': Yes TODO
 yesIDo: 'Yes, I do TODO'
 yesIDoObject: 'Yes, I do object TODO'

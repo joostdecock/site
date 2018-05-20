@@ -1,5 +1,41 @@
 <template>
   <div>
+    <v-card>
+      <v-card-title class="fs-card-title">
+            {{ $t('postInfo') }}
+      </v-card-title>
+      <v-divider></v-divider>
+      <v-list>
+        <v-list-tile>
+          <v-list-tile-action>
+            <v-icon color="secondary">date_range</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>
+              {{ $fs.daysAgo(post.date) }} ({{ post.date }})
+            </v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile>
+          <v-list-tile-action>
+            <v-icon color="secondary">face</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title><nuxt-link :to="$fs.userPath(post.author)">@{{ post.author }}</nuxt-link></v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile>
+          <v-list-tile-action>
+            <v-icon color="secondary">book</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>
+              <nuxt-link :to="$fs.path('/blog/category/'+post.category)">#{{post.category}}</nuxt-link>
+            </v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+      </v-list>
+    </v-card>
     <v-card class="mt-3">
       <v-card-title class="fs-card-title">
             {{ $t('contents') }}

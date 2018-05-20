@@ -18,12 +18,6 @@
         <figcaption v-html="post.caption"></figcaption>
       </figure>
       <div class="fs-xpad">
-        <fs-page-meta-data
-          :date="post.date"
-          :category="post.category"
-          :author="post.author"
-          :translation="post.translation"
-        />
         <h1>{{ post.title }} </h1>
         <nuxtdown-body :body="post.body" class="fs-content fs-text pb-3" />
       </div>
@@ -33,13 +27,11 @@
 
 <script>
 import FsBreadcrumbs from '~/components/stateless/FsBreadcrumbs'
-import FsPageMetaData from '~/components/stateless/FsPageMetaData'
 import FsMessageLocaleFallback from '~/components/stateless/FsMessageLocaleFallback'
 
 export default {
   components: {
     FsBreadcrumbs,
-    FsPageMetaData,
     FsMessageLocaleFallback,
   },
   data: function() {
@@ -47,7 +39,7 @@ export default {
       crumbs: [
         {
           to: this.$fs.path('/blog/'),
-          title: this.$t('Blog')
+          title: this.$t('blog')
         }
       ]
     }

@@ -1,17 +1,9 @@
 <template>
   <section>
-    <ul class="breadcrumbs">
-      <li>
-        <nuxt-link :to="$fs.path('/')">
-          <v-icon color="primary">home</v-icon>
-        </nuxt-link>
-      </li>
-      <li><v-icon small slot="divider">chevron_right</v-icon></li>
-      <li>{{ $t('showcase') }}</li>
-    </ul>
+    <fs-breadcrumbs :crumbs="crumbs">#{{$route.params.category }}</fs-breadcrumbs>
     <v-container fluid grid-list-lg>
       <v-layout row wrap>
-        <v-flex class="xs12 sm12 sm6 md6 xl4" v-for="post in posts" :key="post.permalink" >
+        <v-flex class="xs12 sm12 sm6 md6 xl4" v-for="post in posts" :key="post.permalink" v-if="categories(post.category).includes($route.params.category)">
             <div class="preview">
               <nuxt-link :to="post.permalink" :title="post.title"><span class="fs-block-link"></span></nuxt-link>
               <img :src="imgSrc(post.permalink, post.img)" alt="post.title" class="elevation-1"/>
@@ -34,8 +26,12 @@
 </template>
 
 <script>
+import FsBreadcrumbs from '~/components/stateless/FsBreadcrumbs'
 export default {
   layout: 'wide',
+  components: {
+    FsBreadcrumbs
+  },
   asyncData: async function ({ app, route }) {
     let locale = ''
     if(route.path.substr(0,9) === '/showcase') {
@@ -46,6 +42,16 @@ export default {
     }
     var list =  await app.$content('/'+locale+'/showcase').getAll();
     return { posts: list }
+  },
+  data: function() {
+    return {
+      crumbs: [
+        {
+          to: this.$fs.path('/showcase/'),
+          title: this.$t('showcase')
+        }
+      ]
+    }
   },
   methods: {
     imgSrc: function (permalink, image) {
@@ -58,17 +64,6 @@ export default {
     categories: function(cats) {
       if(typeof cats === 'string') return [cats]
       else return cats
-    }
-  },
-  computed: {
-    imageHeight () {
-      switch (this.$vuetify.breakpoint.name) {
-        case 'xs': return '220px'
-        case 'sm': return '290px'
-        case 'md': return '350px'
-        case 'lg': return '340px'
-        case 'xl': return '350px'
-      }
     }
   }
 }

@@ -1,75 +1,74 @@
 <template>
   <section>
-    <ul class="breadcrumbs">
-      <li>
-        <nuxt-link :to="$fs.path('/')">
-          <v-icon color="primary">home</v-icon>
-        </nuxt-link>
-      </li>
-      <li><v-icon small slot="divider">chevron_right</v-icon></li>
-      <li>{{ $t('showcase') }}</li>
-    </ul>
+    <fs-breadcrumbs :crumbs="crumbs">#{{$route.params.category }}</fs-breadcrumbs>
     <v-container fluid grid-list-lg>
       <v-layout row wrap>
-        <v-flex class="xs12 sm12 sm6 md6 xl4" v-for="post in posts" :key="post.permalink" >
+        <v-flex class="xs12 sm12 md6 xl6" v-for="post in posts" :key="post.permalink" v-if="post.category === $route.params.category">
             <div class="preview">
               <nuxt-link :to="post.permalink" :title="post.title"><span class="fs-block-link"></span></nuxt-link>
-              <img :src="imgSrc(post.permalink, post.img)" alt="post.title" class="elevation-1"/>
+              <img :src="imgSrc(post.permalink, post.img)" alt="post.tile" class="elevation-1"/>
               <div class="title">
                 <p class="mb-0 mt-0 thetitle">
                   {{post.title}}
-                  <span class="meta">{{ $fs.daysAgo(post.date) }} {{ $t('by') }} @{{post.author}}
-                    <br>
-                    <template v-for="cat in categories(post.category)">
-                      <span :key="cat" class="ml-2">#{{cat}}</span>
-                    </template>
-                  </span>
+                  <span class="meta">{{ $fs.daysAgo(post.date) }} {{ $t('by') }} @{{post.author}} {{ $t('in') }} #{{ post.category}}</span>
                 </p>
               </div>
             </div>
         </v-flex>
       </v-layout>
     </v-container>
+    <blockquote class="i18n mt-5 fs-m800" v-if="$i18n.locale != $i18n.fallbackLocale">
+      <h5>{{ $t('txt-missingBlogPosts') }}</h5>
+      <p>{{ $t('txt-translators1') }}</p>
+      <p>{{ $t('txt-translators2') }}</p>
+      <p>{{ $t('txt-translators3') }}</p>
+      <p class="text-xs-right">
+      <v-btn color="primary" large>
+        <v-icon class="mr-3">translate</v-icon>{{ $t('documentationForTranslators') }}
+      </v-btn>
+      </p>
+    </blockquote>
   </section>
 </template>
 
 <script>
+
+import FsBreadcrumbs from '~/components/stateless/FsBreadcrumbs'
+
 export default {
   layout: 'wide',
+  components: {
+    FsBreadcrumbs
+  },
   asyncData: async function ({ app, route }) {
     let locale = ''
-    if(route.path.substr(0,9) === '/showcase') {
+    if(route.path.substr(0,5) === '/blog') {
       locale = 'en'
     }
     else {
       locale = route.path.substr(1).split('/').shift()
     }
-    var list =  await app.$content('/'+locale+'/showcase').getAll();
+    var list =  await app.$content('/'+app.i18n.locale+'/blog').getAll();
     return { posts: list }
+  },
+  data: function() {
+    return {
+      crumbs: [
+        {
+          to: this.$fs.path('/blog/'),
+          title: this.$t('blog')
+        }
+      ]
+    }
   },
   methods: {
     imgSrc: function (permalink, image) {
-      if(permalink.substr(0, 9) === '/showcase') {
+      if(permalink.substr(0, 5) === '/blog') {
         return '/img'+permalink+'/med_'+image
       } else {
-        return '/img'+permalink.substr(3)+'/low_'+image
+        return '/img'+permalink.substr(3)+'/med_'+image
       }
     },
-    categories: function(cats) {
-      if(typeof cats === 'string') return [cats]
-      else return cats
-    }
-  },
-  computed: {
-    imageHeight () {
-      switch (this.$vuetify.breakpoint.name) {
-        case 'xs': return '220px'
-        case 'sm': return '290px'
-        case 'md': return '350px'
-        case 'lg': return '340px'
-        case 'xl': return '350px'
-      }
-    }
   }
 }
 </script>
