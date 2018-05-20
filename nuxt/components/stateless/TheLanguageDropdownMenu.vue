@@ -8,8 +8,8 @@
     </v-toolbar-title>
     <v-list>
       <v-list-tile
-        v-for="(locale, index) in $i18n.locales"
-        :key="index" :to="switchLocalePath(locale.code)">
+                  v-for="(locale, index) in $i18n.locales"
+                  :key="index" :to="switchLocalePath(locale.code)">
         <v-list-tile-action>
           <img :src="'/icons/flags/'+locale.code+'.svg'" />
         </v-list-tile-action>

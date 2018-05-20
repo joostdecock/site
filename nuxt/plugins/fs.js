@@ -143,6 +143,14 @@ export default ({ app, store, route }, inject) => {
     return gist
   }
 
+  const pathLocaleMethod = (path) => {
+    for(let i in Conf.i18n.locales.enabled) {
+      let loc = Conf.i18n.locales.enabled[i]
+      if ('/'+loc+'/' === path.substr(0,4)) return loc
+    }
+    return 'en'
+  }
+
   inject('fs', new Vue({
     data: () => ({
       md: new MarkdownIt(),
@@ -428,6 +436,9 @@ export default ({ app, store, route }, inject) => {
 
       // Sync methods
 
+      pathLocale(path) {
+        return pathLocaleMethod(path)
+      },
 
       // Translation pattern option title
       pot(option, pattern, locale) {

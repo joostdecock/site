@@ -20,11 +20,17 @@ export default {
   },
   asyncData: async function ({ app, route }) {
     const data = {}
+    let loc = app.$fs.pathLocale(route.path)
     let path = route.path
-    if(path.substr(0,6) !== '/docs/') {
-      path = '/docs'+path
+    if(loc === 'en') {
+      if(path.substr(0,6) !== '/docs/') {
+        path = '/docs'+path
+      }
+    } else {
+      if(path.substr(3,6) !== '/docs/') {
+        path = '/'+loc+'/docs'+path.substr(3)
+      }
     }
-    console.log(path)
     data.page = await app.$content('/'+app.i18n.locale+'/docs').get(path)
     .then(function (data) {
       return data

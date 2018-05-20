@@ -3,7 +3,7 @@
     <v-footer height="auto" class="primary">
       <v-layout row wrap justify-center class="mt-3 mb-5">
         <v-flex xs12 py-3 text-xs-center class="mb-4">
-          <nuxt-link :to="$fs.path('/')"><fs-logo size="100" color="#fff" /></nuxt-link>
+          <nuxt-link :to="$fs.path('/')"><fs-logo :size="(100)" color="#fff" /></nuxt-link>
             <p class="mt-5 mb-5">
               <nuxt-link :to="$fs.path('/support')" class="fs-white">{{ $t('getHelp') }}</nuxt-link> |
               <nuxt-link :to="$fs.path('/contact')" class="fs-white">{{ $t('contactUs') }}</nuxt-link>

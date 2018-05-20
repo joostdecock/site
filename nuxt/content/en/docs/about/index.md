@@ -1,64 +1,42 @@
 ---
 title: About freesewing
 ---
-> Freesewing is an open source platform for made-to-measure sewing patterns {.display-2}
- 
-## About freesewing.org - the site
-Freesewing.org generates sewing patterns based on your measurements.
+Freesewing is an open source platform for made-to-measure sewing patterns.
 
-To do so, you enter your measurements, pick your options, and your sewing pattern is drafted for you on the fly.
+What that means is that if you are here for sewing patterns, you came to the right place.
+However, this isn't your average sewing pattern site or company. 
+There's a few important differces, specifically:
 
-Once drafted, you can download your pattern as PDF in a variety of printable sizes.
-You can also download the source SVG file.
+## Freesewing is an open source project run by a community, not a company
+Freesewing is an open source project. 
+All of our patterns, but also our platform and even this website are freely 
+[available on GitHub](https://github.com/freesewing).
 
-## About freesewing - the project
+There is no company behind, or linked to, freesewing. 
+This is possible due to the hard work of our contributors, and the financial support of our patrons.
 
-Freesewing is an open source project entirely run by volunteers.
-All our code is freely available [on GitHub](https://github.org/freesewing). All are patterns are free too. 
+## We provide made-to-measure sewing patterns
 
-This is made possible by the hard work of our contributors, and the financial support of [our patrons](/patrons).
+All of our sewing patterns are made-to-measure. Which means that before you can download a pattern,
+you have to give us those measurements. For this, you create **a model**.
+It's a list of measurements for the person you're making your garment for (could be yourself, could be someone else).
 
-If you're interested in the origins of this project, you can read [the freesewing origin story](/docs/about/origin).
-## What's in it for me?
+We use the measurements of your model, and combine them with one of our patterns to create **a draft**.
 
-What's in it for you depends on what role you see yourself in.
+This draft is what you'll end up downloading. 
 
-### For makers
+## Freesewing is a platform
 
-All our patterns are free of charge. We provide detailed instructions to make them into garments,
-and can help when you get stuck.
+A platform is something on which you build things, and that's what we'd like to see.
 
-We like to [showcase](/showcase) makes from the community, and share your work on our 
-[Twitter](https://twitter.com/freesewing_org) and 
-[Instagram](https://www.instagram.com/freesewing_org/)
-accounts. Or checkout the **#freesewing** hashtag.
+You might be here for our patterns, but we also provid the tools and documentation for 
+designers to add their own patterns.
 
-### For designers
+Since our patterns are implemented in code, they require both coding and pattern design skills.
+Such diverse skillsets are not often found in the same person, which is why we recommend
+collaboration between a developer and a pattern designer.
 
-Our patterns are code. Which makes a lot of sense when you think about it.
+Stop by [our chatroom on Gitter](https://gitter.im/freesewing/freesewing) to find like-minded 
+people you can team up with to add some great new patterns to our growing library.
 
-If you want to design for the freesewing platform, that will involve writing code.
-But don't worry, it's not hard and we have excellent documenation.
-
-On the plus side, you have powerful tools at your disposal that take care of a lot
-of things for you (no more grading, ever).
-
-You can host your patterns at freesewing.org (for free) or run your own
-instance, and sell them. Custom pattern drafts provide your customers 
-with a better experience, but also protect you from people copying and passing your
-patterns around. Which means you can sell more patterns at a lower price point.
-
-### For developers
-
-All our code is open source, and available [on GitHub](https://github.com/freesewing).
-
-Your pull requests are welcome here, and [our chat room on Gitter](https://gitter.im/freesewing/freesewing) is the best place to ask questions.
-
-## How can I contribute to freesewing? {#contribute}
-
-We welcome all contributions, and you have more to offer than your realize.
-
-For all details, please refer to the [contributors documentation](/docs/contribute).
-
-Or you can support us by [becoming a Patron](/patrons/join).
-
+It's also the best place to turn to should you have any further questions.
