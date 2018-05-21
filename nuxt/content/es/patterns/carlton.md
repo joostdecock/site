@@ -1,7 +1,7 @@
 ---
 layout: pattern
-title: Carlton Coat
+title: Abrigo Carlton
 permalink: /patterns/carlton
-tagline: The iconic coat worn by benedict cumberbatch in the Sherlock Holmes series
-description: "<p>The iconic coat worn by benedict cumberbatch in the Sherlock Holmes series.</p>"
+tagline: El icónico abrigo de Benedict Cumberbatch en la serie Sherlock
+description: "<p>El icónico abrigo de Benedict Cumberbatch en la serie Sherlock.</p>"
 ---

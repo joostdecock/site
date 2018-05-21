@@ -1,15 +1,15 @@
 ---
 layout: pattern
-title: Theodore Trousers
+title: Pantalones Theodore
 permalink: /patterns/theodore
-tagline: These are classic menswear trousers by the (Aldrich) book
-description: "<p>Classic cut trousers based on the drafting method of Winifred Aldrich.</p><p>Also exists in a slimline version, called <a href='/patterns/theo'>Theo</a>.</p>"
+tagline: Éstos son lo cásicos pantalones de hombre de Aldrich
+description: "<p>Pantalones de corte clásico basados en el patrón de Winifred Aldrich.</p><p>También existe una versión ajustada, llamada <a href='/patterns/theo'>Theo</a>.</p>"
 ---
 {% include fork.html
     pattern="theodore"
     handle="amsvn"
-    title="No backrise Theodore"
-    description="Theodore is based on the Aldrich draft, which is notoriously low in the back. 
+    title="Theodore sin alza por detrás"
+    description="Theodore está basado en el patrón de Aldrich, que es particularmente bajo por detrás. 
         <br><br>
-        The default Theodore corrects for that, but if you want the original Aldrich low-back variety, fork this draft."
+        El Theodore por defecto corrige ésto, pero si quieres la versión original de Aldrich, con la partre de atrás baja, usa este boceto."
 %}

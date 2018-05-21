@@ -1,6 +1,6 @@
 ---
 layout: cards
-title: Patterns
+title: Patrones
 permalink: /patterns/
 nocomments: true
 ---

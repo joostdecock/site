@@ -1,16 +1,14 @@
 ---
 layout: pattern
-title: Brian Body Block
+title: Cuerpo Base Brian
 permalink: /patterns/brian
-tagline: This body block is the basis of many of our mens tops
-description: "<p>This block/sloper is focussed on fitting the shoulders and armhole. It does not feature shaping the waist.</p><p>Patterns based on this block include <a href='/patterns/aaron'>Aaron</a>, <a href='/patterns/hugo'>Hugo</a>, <a href='/patterns/simon'>Simon</a>, <a href='/patterns/sven'>Sven</a>, and <a href='/patterns/wahid'>Wahid</a>. See <a href='/docs/patterns/lineage'>pattern lineage</a> for an full list.</p>"
+tagline: Este patrón es la base de muchas de nuestras partes superiores para hombre
+description: "<p>Este patrón base se centra en ajustar los hombros y la sisa. No tiene forma en la cintura.</p><p>Algunos patrones basados en este básico incluyen <a href='/patterns/aaron'>Aaron</a>, <a href='/patterns/hugo'>Hugo</a>, <a href='/patterns/simon'>Simon</a>, <a href='/patterns/sven'>Sven</a>, y <a href='/patterns/wahid'>Wahid</a>. Visita <a href='/docs/patterns/lineage'>linaje de patrones</a> para la lista completa.</p>"
 ---
 {% include fork.html
     pattern="brian"
     handle="rbtxm"
-    title="Eased Brian"
+    title="Brian con holgura"
     description="
-    This Brian has added ease, and length to the body and sleeves, as well as a slightly wider sleeve.
-    <br><br>
-    Stritcly speaking, Brian is a sloper, not a block. This turns it into a block by adding wearing ease."
+    Este Braian añade holgura, y longitud al cuerpo y las manga, además de unas mangas ligeramente más anchas."
 %}
