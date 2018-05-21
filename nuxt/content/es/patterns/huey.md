@@ -2,14 +2,14 @@
 layout: pattern
 title: Huey Hoodie
 permalink: /patterns/huey
-tagline: This a zip-up hoodie with optional front pouch
-description: "<p>The uniform of code monkeys and superheros alike, this is the iconic zip-up hoodie.</p><p>Wear it with that vintage Nintendo T-shirt, or with a shirt, tie, and jacket for that <em>I am just casually badass</em> look.</p><p>It's also your perfect companion for sipping tea on the couch, and it's probably going to be worn by your significant other more than you intended.</p>"
+tagline: Ésta es una sudadera con capucha y cremallera con la opción de un bolsillo frontal
+description: "<p>El uniforme de los code monkeys y superhéroes del estilo, ésta es la icónica sudadera con capucha y cremallera.</p><p>Póntela con una camiseta vintage de Nintendo, o con camisa, corbata y chaqueta para ese look <em>No me comprometo con nada</em>.</p><p>Es también el compañero perfecto para un té en el sofá, y probablemente tu pareja se la pondrá más de lo que tenías previsto.</p>"
 ---
 {% include fork.html
     pattern="huey"
     handle="ypndr"
-    title="Pocket-less Huey"
+    title="Huey sin bolsillo"
     description="
-    This is the standard Huey with one change: It does not include a front pocket/pouch."
+    Ésta es la Huey estándar con un cambio: no incluye bolsillo frontal."
 %}
 
