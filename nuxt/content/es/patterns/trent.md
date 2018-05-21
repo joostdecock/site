@@ -1,8 +1,7 @@
 ---
 layout: pattern
-title: Trent Trouser Block
+title: Pantalones base Trent
 permalink: /patterns/trent
-tagline: A trouser block for menswear with a more modern cut than Theo(dore)
-description: "<p>This is a more modern trouser block for men that will serve as the basis of our future trouser patterns.</p><p>It is currently in beta. It should be fine, but is lacking documentation."
+tagline: Un patrón base de pantalones de hombre con un corte más moderno que Theo(dore)
+description: "<p>Éste es un patrón base de pantalones de hombre que servirá como base para futuros patrones de pantalón.</p><p>Actualmente está en beta. Debería estar bien, pero le falta documentación."
 ---
-
