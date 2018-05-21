@@ -1,7 +1,7 @@
 ---
 layout: pattern
-title: Benjamin Bow Tie
+title: Pajarita Benjamin
 permalink: /patterns/benjamin
-tagline: A simple bow tie pattern with all the options you will need
-description: "<p>The bow tie pattern that you can use for all occassions.</p><p>All the options you could ever need.</p>"
+tagline: Un patrón de pajarita sencillo con todas las opciones que puedas necesitar
+description: "<p>El patrón de pajarita que puedes usar para cualquier ocasión.</p><p>Todas las opciones que puedas necesitar.</p>"
 ---
