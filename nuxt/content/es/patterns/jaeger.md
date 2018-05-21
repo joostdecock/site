@@ -1,7 +1,7 @@
 ---
 layout: pattern
-title: Jaeger Jacket
+title: Chaqueta Jaeger
 permalink: /patterns/jaeger
-tagline: A sportcoat-style jacket with patch pockets
-description: "<p>A sportcoat-style jacket with patch pockets.</p>"
+tagline: Una americana con bolsillos de parche
+description: "<p>Una americana con bolsillos de parche.</p>"
 ---
