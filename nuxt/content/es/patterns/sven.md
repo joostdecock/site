@@ -1,14 +1,14 @@
 ---
 layout: pattern
-title: Sven Sweatshirt
+title: Sudadera Sven
 permalink: /patterns/sven
-tagline: A  simple sweater and an essential wardrobe ingredient
-description: "<p>Sven is a basic sweater with ribbing at the cuffs and neck opening.</p>"
+tagline: Una sudadera sencilla y un básico de cualquier armario
+description: "<p>Sven es una sudadera básica con puños y cuello acanalados.</p>"
 ---
 {% include fork.html
     pattern="sven"
     handle="txbse"
-    title="Loose Sven"
-    description="This Sven has extra ease at the chest for a looser fit."
+    title="Sven holgada"
+    description="Esta Sven tiene extra holgura en el pecho para un ajuste más suelto."
 %}
 
