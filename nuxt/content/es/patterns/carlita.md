@@ -1,7 +1,7 @@
 ---
 layout: pattern
-title: Carlita Coat
+title: Abrigo Carlita
 permalink: /patterns/carlita
-tagline: Our womenswear version of the iconic coat worn by benedict cumberbatch in the Sherlock Holmes series
-description: "<p>Our womenswear version of the iconic coat worn by benedict cumberbatch in the Sherlock Holmes series.</p>"
+tagline: Nuestra versión para mujer del icónico abrigo de Benedict Cumberbatch en la serie Sherlock
+description: "<p>Nuestra versión para mujer del icónico abrigo de Benedict Cumberbatch en la serie Sherlock.</p>"
 ---
