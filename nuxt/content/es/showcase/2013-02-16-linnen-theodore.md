@@ -1,7 +1,7 @@
 ---
-title: Brow greyish linnen Theodore trousers by joostdecock
+title: Pantalones Theodore de lino marrón grisáceo por joostdecock
 img: showcase.jpg
-caption: These are great in summer
+caption: Geniales en verano
 category: theodore
 layout: showcase
 author: Joost De Cock
