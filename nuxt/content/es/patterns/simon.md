@@ -1,44 +1,44 @@
 ---
 layout: pattern
-title: Simon Shirt
+title: Camisa Simon
 permalink: /patterns/simon
-tagline: This is my bid to create the last shirt pattern you'll ever need
-description: "<p>At its heart, this is a close-fitting button-up shirt for men.</p>Yet this shirt comes with so many options that you can make this into whatever shirt you want it to be.</p>"
+tagline: Ésta es mi apuesta para crear el último patrón de camisa que necesitarás
+description: "<p>En su esencia, ésta es una camisa ajustada y abotonada para hombre.</p>Pero viene con tantas opciones que puede ser la camisa que tú quieras que sea.</p>"
 ---
 {% include fork.html
     pattern="simon"
     handle="tnrdk"
-    title="Gala Simon"
-    description="This simon comes with French cuffs, seamless button and buttonhole plackets, and a cut-away collar that demands a tie.
+    title="Simon de gala"
+    description="Esta simon viene con puños franceses, tapetas de botones y ojales sin costuras y el cuello recortado que requiere una corbata.
         <br><br>
-        It is a very formal Simon."
+        Es una Simon muy formal."
 %}
 {% include fork.html
     pattern="simon"
     handle="bfytm"
-    title="Coloured button placket Simon"
-    description="This Simon has a seamless style at the front closure with a seperate button placket.
+    title="Simon con tapeta de botones coloreada"
+    description="Esta Simon tiene un tapeta de ojales sin costura y unatapeta de botones separada.
         <br><br>
-        This allows you to attach a different coloured button placket, which is a subtle yet nice detail."
+        Ésto permite añadir una tapeta de diferente color, lo que es un bonito detalle sutil."
 %}
 {% include fork.html
     pattern="simon"
     handle="zcvxs"
-    title="Separate plackets Simon"
-    description="This Simon has both the buttonhole as button placket separate.
+    title="Simon con tapetas separadas"
+    description="Esta Simon tiene las tapetas de botones y ojales separadas.
         <br><br>
-        This allows you to have an on-bias or differently coloured buttonhole placket, and button placket."
+        Ésto permite cortar las plaquetas al bies, o usar tela de diferente color."
 %}
 {% include fork.html
     pattern="simon"
     handle="pwrqy"
-    title="No-tuck Simon"
-    description="This is a casual and modern cut Simon, to be worn loose over your trousers."
+    title="Simon por fuera"
+    description="Ésta es una Simon casual y moderna, para llevar por fuera de los pantalones."
 %}
 {% include fork.html
     pattern="simon"
     handle="ahmrx"
-    title="Slashed Simon"
-    description="This is a extra long Simon with a deeply slashed hem."
+    title="Simon recortada"
+    description="Ésta es una Simon extra larga con el dobladillo recortado."
 %}
 
