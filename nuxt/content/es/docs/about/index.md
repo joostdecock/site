@@ -1,42 +1,35 @@
 ---
-title: About freesewing
+title: Acerca de freesewing
 ---
-Freesewing is an open source platform for made-to-measure sewing patterns.
+Freesewing es una plataforma open source para patrones de costura a medida.
 
-What that means is that if you are here for sewing patterns, you came to the right place.
-However, this isn't your average sewing pattern site or company. 
-There's a few important differces, specifically:
+Esto significa que si estás aquí buscando patrones has venido al lugar adecuado. Sin embargo, ésta no es la típica empresa o sitio web de patrones de costura. Hay diferencias importantes. Específicamente:
 
-## Freesewing is an open source project run by a community, not a company
-Freesewing is an open source project. 
-All of our patterns, but also our platform and even this website are freely 
-[available on GitHub](https://github.com/freesewing).
+## Freesewing es un proyecto open source llevado por una comunidad, no una empresa
 
-There is no company behind, or linked to, freesewing. 
-This is possible due to the hard work of our contributors, and the financial support of our patrons.
+Freesewing es un proyecto open source.
+Todos nuestros patrones, así como la plataforma e incluso este sitio web están gratuitamente [disponibles en GitHub](https://github.com/freesewing).
 
-## We provide made-to-measure sewing patterns
+No hay ninguna empresa detrás de, o vinculada a, freesewing.
+Esto es posible gracias al duro trabajo de nuestros colaboradores y el apoyo económico de nuestros patrocinadores.
 
-All of our sewing patterns are made-to-measure. Which means that before you can download a pattern,
-you have to give us those measurements. For this, you create **a model**.
-It's a list of measurements for the person you're making your garment for (could be yourself, could be someone else).
+## Ofrecemos patrones de costura a medida
 
-We use the measurements of your model, and combine them with one of our patterns to create **a draft**.
+Todos nuestros patrones son a medida. Esto significa que, antes de descargar un patrón, tienes que darnos esas medidas. Para ello, primero se crea **un modelo**. Es una lista de medidas de la persona para la que estás haciendo la prenda (puedes ser tú, puede ser otra persona).
 
-This draft is what you'll end up downloading. 
+Las medidas de tu modelo se combinan con uno de nuestros patrones para crear **un boceto**.
 
-## Freesewing is a platform
+Este boceto es lo que vas a descargar.
 
-A platform is something on which you build things, and that's what we'd like to see.
+## Freesewing es una plataforma
 
-You might be here for our patterns, but we also provid the tools and documentation for 
-designers to add their own patterns.
+Una plataforma es algo donde puedes construír cosas, y eso es lo que nos gustaría ver.
 
-Since our patterns are implemented in code, they require both coding and pattern design skills.
-Such diverse skillsets are not often found in the same person, which is why we recommend
-collaboration between a developer and a pattern designer.
+Puede que estés aquí por nuestros patrones, pero también ofrecemos herramientas y documentación para que diseñadores puedan añadir sus propios patrones.
 
-Stop by [our chatroom on Gitter](https://gitter.im/freesewing/freesewing) to find like-minded 
-people you can team up with to add some great new patterns to our growing library.
+Ya que nuestros patrones están implementados en código, crearlos requiere habilidades de diseño y programación.
+Habilidades tan variadas no se encuentran normalmente en la misma persona, por lo que recomendamos la colaboración entre un desarrollador de software y un diseñador de patrones.
 
-It's also the best place to turn to should you have any further questions.
+Pásate por [nuestro chat en Gitter] (https://gitter.im/freesewing/freesewing) para encontrar personas con las que hacer equipo y añadir nuevos y geniales patrones a nuestra creciente colección.
+
+También es el mejor lugar al que acudir si tienes cualquier otra pregunta.
