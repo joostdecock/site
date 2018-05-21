@@ -1,20 +1,19 @@
 ---
 layout: pattern
-title: Trayvon Tie
+title: Corbata Trayvon Tie
 permalink: /patterns/trayvon
-tagline: This tie pattern cuts no corners for a professional result
-description: "<p>There's many tie patterns on the internet, and they are typically no good.</p><p>Use this one, you can trust me on this.</p>"
+tagline: Ésta corbata no toma atajos para un resultado profesional
+description: "<p>Hay muchos patrones de corbata en internet, y no suelen ser buenos.</p><p>Usa éste. Confía en mí.</p>"
 ---
 {% include fork.html
     pattern="trayvon"
     handle="ybmqh"
-    title="Skinny Trayvon"
-    description="Want a skinny tie? Fork this draft."
+    title="Trayvon estrecha"
+    description="¿Quieres una corbata estrecha? Usa este boceto."
 %}
 {% include fork.html
     pattern="trayvon"
     handle="kcqse"
-    title="Old-school Trayvon"
-    description="Heading to a 70s themed party? This is the draft to fork."
+    title="Trayvon Old-school"
+    description="¿Tienes una fiesta de los 70? Éste es el boceto a usar."
 %}
-
