@@ -1,14 +1,14 @@
 ---
 layout: pattern
-title: Tamiko Top
+title: Top Tamiko
 permalink: /patterns/tamiko
-tagline: A zero-waste top for women and fashion-forward men
-description: "<p>This is a draped top that you can extend to dress length.</p><p>It's a zero waste top, and a very quick make.</p>"
+tagline: Un top sin desperdicio de tela para mujeres y hombres vanguardistas
+description: "<p>Éste es un top drapeado que puedes extender para hacer un vestido.</p><p>No desperdicia tela, y se hace muy rápido.</p>"
 ---
 {% include fork.html
     pattern="tamiko"
     handle="zgybs"
-    title="Extra-long Tamiko"
-    description="This is an extra long Tamiko. More dress than top."
+    title="Tamiko extra largo"
+    description="Éste es un Tamiko estra largo. Más vestido que top."
 %}
 
