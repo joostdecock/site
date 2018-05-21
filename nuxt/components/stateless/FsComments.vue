@@ -1,20 +1,18 @@
 <template>
   <section>
-    <v-card v-for="(c, i) in comments" :key="i">
-      <v-card-text>
-        {{ c.comment }}
-        <pre>{{ c }}</pre>
-      </v-card-text>
+    <v-card v-for="(comment, i) in comments" :key="i">
+      <fs-comment :comment="comment" />
     </v-card>
-    <pre>
-      {{ comments }}
-    </pre>
   </section>
 </template>
 
 <script>
+import FsComment from '~/components/stateless/FsComment'
 export default {
   name: 'FsComments',
+  components: {
+    FsComment
+  },
   data: () => {
     return {
       comments: {}

@@ -84,12 +84,12 @@ const dynamicRoutes = [
   {
     path: '/blog/category/:category',
     name: 'blog-cat',
-    component: 'nuxt/pages/blog/_category.vue'
+    component: 'nuxt/pages/blog/blog-category.vue'
   },
   {
     path: '/showcase/category/:category',
     name: 'showcase-cat',
-    component: 'nuxt/pages/showcase/_category.vue'
+    component: 'nuxt/pages/showcase/showcase-category.vue'
   },
   {
     path: '/users/:user',
