@@ -1,16 +1,16 @@
 ---
 layout: pattern
-title: Theo Trousers
+title: Pantalones Theo
 permalink: /patterns/theo
-tagline: Theo is the slimline variation of Theodore
-description: "<p>Slim cut trousers based on the drafting method of Winifred Aldrich.</p><p>Also exists in a classic version, called <a href='/patterns/theodore'>Theodore</a>.</p>"
+tagline: Theo es la variante ajustada de Theodore
+description: "<p>Pantalones ajustados basados en el método de Winifred Aldrich.</p><p>También existe la versión clásica, llamada <a href='/patterns/theodore'>Theodore</a>.</p>"
 ---
 {% include fork.html
     pattern="theo"
     handle="ghaus"
-    title="No backrise Theo"
-    description="Theo is based on the Aldrich draft, which is notoriously low in the back. 
+    title="Theo sin alza por detrás"
+    description="Theo está basado en el patrón de Aldrich, que es particularmente bajo por detrás. 
         <br><br>
-        The default Theo corrects for that, but if you want the original Aldrich low-back variety, fork this draft."
+        El Theo por defecto corrige ésto, pero si quieres la versión original de Aldrich, con la partre de atrás baja, usa este boceto."
 %}
 
