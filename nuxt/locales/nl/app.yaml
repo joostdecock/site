@@ -5,6 +5,7 @@ aCodeBlock: Een code blok
 aboutFreesewing: Over Freesewing
 add: Toevoegen
 addAModel: Voeg een model toe
+addComment: Commentaar toevoegen
 all: Alles
 alreadyHaveAnAccount: Ben je reeds ingeschreven?
 avatar: Profielfoto
@@ -181,7 +182,9 @@ patternParts: Patroon delen
 patterns: Patronen
 pleaseCheckYourInbox: Je ontvangt van ons een E-mail met verdere instructies.
 pleaseUpgradeThisDraft: Gelieve deze patroontekening bij te werken.
+postComment: Commentaar posten
 postInfo: Post gegevens
+postReply: Antwoord posten
 preferences: Voorkeuren
 privacy: Privacy DONE
 privacyInfo: Privacy info DONE

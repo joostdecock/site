@@ -5,6 +5,7 @@ aCodeBlock: A code block TODO
 aboutFreesewing: A propos de Freesewing
 add: Ajouter
 addAModel: Add a model TODO
+addComment: Add comment TODO
 all: Tout
 alreadyHaveAnAccount: Vous avez déjà un compte ?
 avatar: Avatar DONE
@@ -34,12 +35,12 @@ code: Code TODO
 comments: Comments TODO
 community: Communauté
 compare: Comparer
+completePattern: Patron complet
 connectingToSomeApi: 'Connexion à l''API {api}'
 consent: Consent TODO
 consentForModelData: Consent for model data TODO
 consentForProfileData: Consent for profile data TODO
 consentGiven: Consent given TODO
-completePattern: Patron complet
 contactUs: Nous contacter
 content: Contenu
 contents: Contenus
@@ -141,7 +142,6 @@ measurements: Mensurations
 measurementsRequiredForPattern: 'Mensurations requises pour {pattern}'
 messages: Messages DONE
 metric: Metric TODO
-<<<<<<< HEAD
 metricUnits: Unités de mesure métriques (cm)
 model: Modèle
 modelIsModel: 'Le modèle est {model}'
@@ -182,7 +182,9 @@ patternParts: Pièces du patron
 patterns: Patrons
 pleaseCheckYourInbox: You will be receiving an E-mail with further instructions TODO
 pleaseUpgradeThisDraft: Merci d'améliorer cette ébauche.
+postComment: Post comment TODO
 postInfo: Info post
+postReply: Post reply TODO
 preferences: Préférences
 privacy: Vie privée
 privacyInfo: Info vie privée
@@ -366,8 +368,8 @@ withoutBreasts: Without breasts TODO
 wouldYouLikeToLogOut: Would you like to log out? TODO
 yearsAgo: '{years} year ago | {years} years ago TODO'
 'yes': Yes TODO
-yesIDoObject: 'Yes, I do object TODO'
 yesIDo: 'Oui, je donne mon accord'
+yesIDoObject: 'Yes, I do object TODO'
 yesterday: Yesterday TODO
 youAreCurrentlyLoggedIn: You are currently logged in. TODO
 youAreNotLoggedIn: You are not logged in. TODO

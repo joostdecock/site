@@ -1,6 +1,6 @@
 <template>
-  <div class="comment">
-    <v-card>
+  <div>
+    <v-card class="comment">
       <v-toolbar flat card dense :class="'patron-'+comment.patron" :height="(32)">
         <v-toolbar-title>
           <small>
@@ -14,11 +14,20 @@
       </v-toolbar>
       <v-card-text v-html="$fs.md.render(comment.comment+' ')"></v-card-text>
       <v-card-actions>
-        <img :src="'/img/patrons/medals/medal-'+comment.patron+'.svg'" class="medal" v-if="comment.patron>1" />
         <v-spacer></v-spacer>
-        <v-btn flat color="primary">{{ $t('reply') }}</v-btn>
+        <v-btn v-if="!reply" flat color="primary" @click="reply=true">{{ $t('reply') }}</v-btn>
       </v-card-actions>
     </v-card>
+    <div v-if="reply" class="interact">
+      <v-text-field name="reply" id="reply" v-model="msg" autofocus textarea solo autoGrow></v-text-field>
+      <p class="text-xs-right mt-2 mb-5">
+        <v-btn color="primary" outline @click="reply=false"> {{ $t('cancel') }}</v-btn>
+        <v-btn color="primary" @click="postReply()">
+          <v-progress-circular indeterminate color="#fff" class="mr-3" v-if="loading" :size="(20)" :width="(2)"></v-progress-circular>
+          <span v-else>{{ $t('postReply') }}</span>
+        </v-btn>
+      </p>
+    </div>
   </div>
 </template>
 
@@ -30,16 +39,42 @@ export default {
       type: Object,
       required: true
     }
+  },
+  data: function() {
+    return {
+      loading: false,
+      reply: false,
+      msg: ''
+    }
+  },
+  methods: {
+    postReply: function() {
+      this.loading = true
+      this.error = false
+      const data = {
+        page: this.$route.path,
+        parent: this.comment.id,
+        comment: this.msg
+      }
+      this.$fs.postComment(data)
+      .then((res) => {
+        this.loading = false
+        if(res.result === 'ok') {
+          this.reply = false;
+          this.$emit('newComment')
+      }
+      })
+      .catch((error) => {
+        this.error = true
+        this.loading = false
+        this.reason = error.reason
+      })
+    }
   }
 }
 </script>
 
 <style scoped>
-img.medal {
-  height: 40px;
-  margin-top: -5px;
-
-}
 a.anchor {
   font-size: 90%;
   text-decoration: none;
@@ -72,5 +107,8 @@ a.anchor {
 }
 .patron-8 a {
   color: #fff;
+}
+div.interact {
+  margin: 1.5rem 4px 3rem;
 }
 </style>

@@ -10,7 +10,7 @@ export default ({ app, store, route }, inject) => {
 
   const storage = new Storage()
   const utils = new Utils()
-
+  const md = new MarkdownIt()
   const ax = {
     data: axios.create({
       baseURL: Conf.apis.data,
@@ -161,9 +161,16 @@ export default ({ app, store, route }, inject) => {
     return 'en'
   }
 
+  // From https://gist.github.com/CatTail/4174511
+  const decodeHtmlEntity = function(str) {
+    return str.replace(/&#(\d+);/g, function(match, dec) {
+      return String.fromCharCode(dec);
+    });
+  }
+
   inject('fs', new Vue({
     data: () => ({
-      md: new MarkdownIt(),
+      md: md,
       conf: Conf
     }),
     methods: {
@@ -419,14 +426,22 @@ export default ({ app, store, route }, inject) => {
           })
       },
 
-      loadPageComments() {
+      loadPageComments(path) {
           return new Promise(function(resolve, reject) {
-              ax.data.get('/comments/page'+route.path)
+              ax.data.get('/comments/page'+path)
                   .then((res) => {
                       resolve(res.data.comments)
                   })
                   .catch((error) => { reject(error.response.data) })
           })
+      },
+
+      postComment(data) {
+        return new Promise(function(resolve, reject) {
+          ax.data.post('/comment', data, { headers: {'Authorization': 'Bearer '+token()} })
+            .then((res) => { resolve(res.data)})
+            .catch((error) => { reject(error) })
+        })
       },
 
       get(url) {

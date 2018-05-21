@@ -5,6 +5,7 @@ aCodeBlock: A code block TODO
 aboutFreesewing: Acerca de Freesewing
 add: Añadir
 addAModel: Add a model TODO
+addComment: Add comment TODO
 all: Todo
 alreadyHaveAnAccount: ¿Ya tienes una cuenta?
 avatar: Avatar DONE
@@ -181,7 +182,9 @@ patternParts: Partes del patrón
 patterns: Patrones
 pleaseCheckYourInbox: You will be receiving an E-mail with further instructions TODO
 pleaseUpgradeThisDraft: 'Por favor, actualiza este boceto.'
+postComment: Post comment TODO
 postInfo: Información de la entrada
+postReply: Post reply TODO
 preferences: Preferencias
 privacy: Privacidad
 privacyInfo: Información de privacidad

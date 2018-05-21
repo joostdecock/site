@@ -5,6 +5,7 @@ aCodeBlock: A code block TODO
 aboutFreesewing: Über Freesewing
 add: Hinzufügen
 addAModel: Add a model TODO
+addComment: Add comment TODO
 all: Alles TODO
 alreadyHaveAnAccount: Du hast bereits ein Konto?
 avatar: Avatar TODO
@@ -181,7 +182,9 @@ patternParts: Pattern parts TODO
 patterns: Patterns TODO
 pleaseCheckYourInbox: You will be receiving an E-mail with further instructions TODO
 pleaseUpgradeThisDraft: Please upgrade this draft. TODO
+postComment: Post comment TODO
 postInfo: Post info TODO
+postReply: Post reply TODO
 preferences: Preferences TODO
 privacy: Privacy TODO
 privacyInfo: Privacy info TODO
@@ -239,7 +242,7 @@ signup-user_exists-title: That user exists TODO
 social: Social TODO
 somethingWentWrong: Something went wrong TODO
 startUpload: Beginne Upload
-status: Status
+status: Status TODO
 statusTranslationLanguage: 'Status translation {language} TODO'
 step1: Schritt 1
 step2: Schritt 2
@@ -260,10 +263,10 @@ thisIsTheCurrentStatusOfOurTranslations: This is the current status of our trans
 thisPageIsNotIntendedForLoggedInUsers: This page is not intended for logged-in users TODO
 thisPageIsOnlyAvailableToFreesewingUsers: This page is only available to Freesewing users TODO
 tip: Tip TODO
-troubleLoggingIn: Trouble logging in? TODO
 title: Titel
 today: Heute
 translationTeam: Übersetzeungsteam TODO
+troubleLoggingIn: Trouble logging in? TODO
 tryAgain: Versuch es erneut
 twitter: Twitter DONE
 twitterUpdated: Twitter account set TODO
@@ -340,41 +343,39 @@ txt-withOrWithoutBreasts-explainer: 'On other websites, this question may be phr
 type: Type TODO
 units: Units TODO
 unitsUpdated: Units set TODO
+updates: Aktualisierungen
 upgrade: Upgrade TODO
 upgradeRequired: Upgrade required TODO
+useDecimalsOrFractions: Verwende Dezimalzahlen (1.25) oder Bruchzahlen (1 1/4)
+user: Benutzer
 userHasBeenWithUsSince: '{user} has been with us since {since} TODO'
 userIsAPatron: '{user} is a patron TODO'
+username: Benutzername
 usernameOrEmail: '@:username or @:emailAddress TODO'
+usernameUpdated: Benutzername aktualisiert
 users: Users TODO
+version: Version TODO
+visitPatronProfile: Besuche die Profilseite dieses Patrons.
+volunteerVerb: Freiwilliger
+weAreLoadingDataFromTheBackend: We are loading data from the backend TODO
+weAreValidatingYourConfirmationCode: We are validating your confirmation code TODO
 weCantHelpYouWithThis: We can't help you with this TODO
 weNeedYourConsent: We need your consent TODO
+welcomeAboard: Willkommen an Bord!
+withBreasts: Mit Brüsten TODO
+withOrWithoutBreasts: Mit oder ohne Brüste? TODO
+withoutBreasts: Ohne Brüste TODO
+wouldYouLikeToLogOut: Willst du dich ausloggen?
 yearsAgo: '{years} year ago | {years} years ago TODO'
+'yes': Ja
+yesIDo: 'Ja, ich will'
 yesIDoObject: 'Yes, I do object TODO'
-yesterday: Yesterday TODO
+yesterday: Gestern
+youAreCurrentlyLoggedIn: Du bist aktuell eingelogged.
+youAreNotLoggedIn: Du bist nicht eingelogged.
 youCanUseMarkdownFormatting: You can use MarkDown formatting TODO
 youDoNotObjectToSharingAnonymizedDataForResearch: You do not object to sharing anonymized data for research TODO
 youHaveTheRightToObjectToThis: You have the right to object to this TODO
 youObjectToSharingAnonymizedDataForResearch: You object to sharing anonymized data for research TODO
 yourPrivacy: Your privacy TODO
 yourRights: Your rights TODO
-update: Aktualisierung
-updates: Aktualisierungen
-useDecimalsOrFractions: Verwende Dezimalzahlen (1.25) oder Bruchzahlen (1 1/4)
-user: Benutzer
-username: Benutzername
-usernameUpdated: Benutzername aktualisiert
-version: Version
-visitPatronProfile: Besuche die Profilseite dieses Patrons.
-volunteerVerb: Freiwilliger
-weAreLoadingDataFromTheBackend: We are loading data from the backend TODO
-weAreValidatingYourConfirmationCode: We are validating your confirmation code TODO
-welcomeAboard: Willkommen an Bord!
-withBreasts: Mit Brüsten TODO
-withOrWithoutBreasts: Mit oder ohne Brüste? TODO
-withoutBreasts: Ohne Brüste TODO
-wouldYouLikeToLogOut: Willst du dich ausloggen?
-'yes': Ja
-yesIDo: 'Ja, ich will'
-yesterday: Gestern
-youAreCurrentlyLoggedIn: Du bist aktuell eingelogged.
-youAreNotLoggedIn: Du bist nicht eingelogged.

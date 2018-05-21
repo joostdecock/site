@@ -23,7 +23,7 @@
         </v-layout>
         <v-layout row>
            <v-flex xl10 offset-xl1 lg12 md12 sm12 xs12 class="mt-5">
-             <fs-comments />
+             <fs-page-comments />
           </v-flex>
         </v-layout>
       </v-container>
@@ -40,7 +40,7 @@ import TheRightDrawer   from '~/components/stateless/TheRightDrawer'
 import TheLeftDrawer    from '~/components/stateless/TheLeftDrawer'
 import TheMobileToolbar from '~/components/stateful/TheMobileToolbar'
 import TheTopToolbar    from '~/components/stateful/TheTopToolbar'
-import FsComments       from '~/components/stateless/FsComments'
+import FsPageComments   from '~/components/stateless/FsPageComments'
 import TheFooter        from '~/components/stateless/TheFooter'
 // Dynamic components
 import FsDynamicAsideBlogpost from '~/components/stateless/FsDynamicAsideBlogpost'
@@ -57,7 +57,7 @@ export default {
     FsDynamicAsideShowcase,
     FsDynamicAsidePage,
     FsDynamicAsideDraft,
-    FsComments,
+    FsPageComments,
     TheFooter
   },
   computed: {

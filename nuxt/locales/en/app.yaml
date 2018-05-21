@@ -5,6 +5,7 @@ aCodeBlock: A code block
 aboutFreesewing: About Freesewing
 add: Add
 addAModel: Add a model
+addComment: Add comment
 all: All
 alreadyHaveAnAccount: Already have an account?
 avatar: Avatar
@@ -181,7 +182,9 @@ patternParts: Pattern parts
 patterns: Patterns
 pleaseCheckYourInbox: You will be receiving an E-mail with further instructions
 pleaseUpgradeThisDraft: Please upgrade this draft.
+postComment: Post comment
 postInfo: Post info
+postReply: Post reply
 preferences: Preferences
 privacy: Privacy
 privacyInfo: Privacy info

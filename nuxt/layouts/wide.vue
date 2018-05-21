@@ -9,6 +9,11 @@
               <nuxt />
             </v-flex>
           </v-layout>
+          <v-layout row>
+             <v-flex xl10 offset-xl1 lg12 md12 sm12 xs12 class="mt-5">
+               <fs-page-comments />
+            </v-flex>
+          </v-layout>
         </v-container>
       </v-content>
       <the-footer />
@@ -23,13 +28,15 @@ import TheLeftDrawer    from '~/components/stateless/TheLeftDrawer'
 import TheMobileToolbar from '~/components/stateful/TheMobileToolbar'
 import TheTopToolbar    from '~/components/stateful/TheTopToolbar'
 import TheFooter        from '~/components/stateless/TheFooter'
+import FsPageComments   from '~/components/stateless/FsPageComments'
 
 export default {
   components: {
     TheLeftDrawer,
     TheMobileToolbar,
     TheTopToolbar,
-    TheFooter
+    TheFooter,
+    FsPageComments
   },
 }
 </script>
