@@ -1,7 +1,7 @@
 ---
 layout: pattern
-title: Bent Body Block
+title: Cuerpo Base Bent
 permalink: /patterns/bent
-tagline: A two-part sleeve variation of the Brian Body block
-description: "<p>A two-part sleeve variation of the Brian Body block.</p>"
+tagline: Una variación con manga en dos partes del Cuerpo Base Brian
+description: "<p>Una variación con manga en dos partes del Cuerpo Base Brian.</p>"
 ---
