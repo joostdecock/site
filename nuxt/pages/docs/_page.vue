@@ -4,6 +4,13 @@
     <fs-message-locale-fallback v-if="$i18n.locale != page.contentLocale" />
     <article class="fs-content elevation-1 fs-pad">
       <h1>{{ page.title }} </h1>
+      <fs-docs-measurement-image
+        v-if="page.measurement"
+        :measurement="page.measurement"
+        :onlyforbreasts="(page.onlyForBreasts) ? true : false"
+        :seated="(page.seated) ? true : false"
+      />
+      <fs-docs-measurements v-if="page.allMeasurements" />
       <nuxtdown-body :body="page.body" class="fs-content fs-text" />
     </article>
   </section>
@@ -12,11 +19,15 @@
 <script>
 import FsBreadcrumbsPage from '~/components/stateless/FsBreadcrumbsPage'
 import FsMessageLocaleFallback from '~/components/stateless/FsMessageLocaleFallback'
+import FsDocsMeasurementImage from '~/components/stateless/FsDocsMeasurementImage'
+import FsDocsMeasurements from '~/components/stateless/FsDocsMeasurements'
 
 export default {
   components: {
     FsBreadcrumbsPage,
     FsMessageLocaleFallback,
+    FsDocsMeasurementImage,
+    FsDocsMeasurements
   },
   asyncData: async function ({ app, route }) {
     const data = {}

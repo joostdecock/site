@@ -171,7 +171,8 @@ export default ({ app, store, route }, inject) => {
   inject('fs', new Vue({
     data: () => ({
       md: md,
-      conf: Conf
+      conf: Conf,
+      content: app.$content
     }),
     methods: {
       // Async methods (thenable)

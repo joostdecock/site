@@ -272,6 +272,8 @@ twitter: Twitter
 twitterUpdated: Twitter account set
 txt-avatarDropzoneText: 'Drag and drop an image here, or click the button to pick one from your files.'
 txt-avatarDropzoneTitle: Drop your image here
+txt-breastMeasurement-text: This is one of those measurements that is only relevant if your model has breasts.
+txt-breastMeasurement-title: This measurement is only relevant for breasts
 txt-changeRequiresConfirmation: This change requires confirmation via E-mail
 txt-clickEmailLink: Please click the link in the email to continue.
 txt-consentModel: Do you give your consent to process your model data?

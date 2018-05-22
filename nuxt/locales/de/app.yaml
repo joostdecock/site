@@ -272,6 +272,8 @@ twitter: Twitter DONE
 twitterUpdated: Twitter account set TODO
 txt-avatarDropzoneText: 'Drag and drop an image here, or click the button to pick one from your files. TODO'
 txt-avatarDropzoneTitle: Drop your image here TODO
+txt-breastMeasurement-text: This is one of those measurements that is only relevant if your model has breasts. TODO
+txt-breastMeasurement-title: This measurement is only relevant for breasts TODO
 txt-changeRequiresConfirmation: This change requires confirmation via E-mail TODO
 txt-clickEmailLink: Please click the link in the email to continue. TODO
 txt-consentModel: Do you give your consent to process your model data? TODO
