@@ -1,7 +1,7 @@
 ---
-title: Making Aaron
+title: Making Florent
 patternIndex: true
-pattern: aaron
+pattern: florent
 ---
 
 > ##### Florent is currently in beta, documentation is missing
