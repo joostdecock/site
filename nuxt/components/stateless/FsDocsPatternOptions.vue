@@ -57,7 +57,7 @@ export default {
       })
       if((typeof content[o] === 'undefined' || typeof content[o].page === 'undefined') && this.$i18n.locale !== 'en') {
         console.log('Trying English version')
-        content[m] = await this.$fs.content('/en/docs').get(path.substr(3))
+        content[o] = await this.$fs.content('/en/docs').get(path.substr(3))
         .then(function (data) {
           return data
         })
