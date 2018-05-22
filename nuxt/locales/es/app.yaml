@@ -1,38 +1,38 @@
-100PercentCommunity: 100% community TODO
-100PercentFree: 100% free TODO
-100PercentOpenSource: 100% open source TODO
-aCodeBlock: A code block TODO
+100PercentCommunity: 100% comunidad
+100PercentFree: 100% gratis
+100PercentOpenSource: 100% código abierto
+aCodeBlock: Un bloque de código
 aboutFreesewing: Acerca de Freesewing
 add: Añadir
-addAModel: Add a model TODO
-addComment: Add comment TODO
+addAModel: Añade un modelo
+addComment: Añade un comentario
 all: Todo
 alreadyHaveAnAccount: ¿Ya tienes una cuenta?
 avatar: Avatar DONE
 avatarUpdated: Avatar actualizado
-averagePeopleDontExist: Average people don't exist TODO
+averagePeopleDontExist: Las persona promedio no existen
 basics: Bases
 becomeAPatron: Conviértete en patrocinador
-bio: Bio TODO
-bioUpdated: Bio updated TODO
-blockquote: Block quote TODO
+bio: Bio DONE
+bioUpdated: Bio tualizada
+blockquote: Cita en bloque
 blog: Blog DONE
 blogPost: Entradas del post
-bold: Bold TODO
+bold: Negrita
 breasts: Pechos
-breastsUpdated: Opción de pechos actualizada updated
-by: by TODO
+breastsUpdated: Opción de pechos actualizada
+by: por
 cancel: Cancelar
 chatOnGitter: Chatea en Gitter
 chatWithUs: Chatea con nosotros
 chooseAModel: Elige un modelo
-chooseANewPassword: Choose a new password TODO
+chooseANewPassword: CElige una contraseña
 chooseAPattern: Elige un patrón
 chooseYourOptions: Elige tus opciones
 classicTheme: Tema clásico
 close: Cerrar
-code: Code TODO
-comments: Comments TODO
+code: Código
+comments: Comentarios
 community: Comunidad
 compare: Comparar
 completePattern: Patrón completo
@@ -48,7 +48,7 @@ coordinator: Coordinador
 coreLink: Enlace principal
 countAvailable: '{count} disponible '
 countTranslated: '{count} traducido '
-createAnAccount: Create an account TODO
+createAnAccount: Crear una cuenta
 createIssueOnGithub: Crear asunto en GitHub
 createModel: Crear modelo
 createMyAccount: Crear mi cuenta
@@ -69,7 +69,7 @@ documentationForTranslators: Documentación para traductores
 documentationOverview: Documentation general
 download: Descargar
 draft: Boceto
-draftAPattern: Draft a pattern TODO
+draftAPattern: Trazar un boceto
 draftOptions: Opciones del boceto
 draftPattern: 'Trazar {pattern} '
 draftPatternForModel: 'Trazar {pattern} para {model} '
@@ -94,12 +94,12 @@ forUsers: Para usuarios
 fork: Bifurcar
 forkDraftHandle: 'Bifurcar boceto {handle} '
 freesewing: Freesewing DONE
-freesewingContributors: Freesewing contributors TODO
-freesewingOnGithub: Freesewing on GitHub TODO
-freesewingPatrons: Freesewing patrons TODO
+freesewingContributors: contribudores Freesewing
+freesewingOnGithub: Freesewing en GitHub
+freesewingPatrons: patrones de Freesewing
 fullSizePdf: PDF tamaño completo
 fundamentals: Fundamentos
-getHelp: Get help TODO
+getHelp: Obtén ayuda
 github: GitHub DONE
 githubUpdated: Nombre de usuario de GitHub actualizado
 goodToKnow: Bueno saberlo
@@ -113,12 +113,12 @@ iForgotMyUsername: Olvidé mi nombre de usuario
 image: Imagen
 imperial: Imperial DONE
 imperialUnits: Unidades imperiales (pulgadas)
-in: in TODO
+in: en
 inch: pulgada
 info: Información
 instagram: Instagram DONE
 instagramUpdated: Cuenta de Instagram establecida
-italics: Italics TODO
+italics: Itálicas
 joinTheTranslationTeam: 'Incluso si nunca has contribuído a un proyecto open source, la traducción es una cuesta de poca pendiente hacia la fama de colaborador'
 justAMoment: Un momento
 key: Clave
@@ -136,7 +136,7 @@ logIn: Iniciar sesión
 logOut: cerrar sesión
 loginFailed: Inicio de sesión fallido
 makeItBetter: Mejóralo
-markdownSyntax: MarkDown syntax TODO
+markdownSyntax: sintaxis de MarkDown
 measurementUpdated: Medida actualizada
 measurements: Medidas
 measurementsRequiredForPattern: 'Medidas requeridas por {pattern} '
@@ -180,31 +180,31 @@ patternIsPattern: 'El patrón es {pattern}'
 patternOptions: Opciones del patrón
 patternParts: Partes del patrón
 patterns: Patrones
-pleaseCheckYourInbox: You will be receiving an E-mail with further instructions TODO
+pleaseCheckYourInbox: Recibirás un E-mail con más instrucciones
 pleaseUpgradeThisDraft: 'Por favor, actualiza este boceto.'
-postComment: Post comment TODO
+postComment: Publica el comentario
 postInfo: Información de la entrada
-postReply: Post reply TODO
+postReply: Publica una respuesta
 preferences: Preferencias
 privacy: Privacidad
 privacyInfo: Información de privacidad
 processingDraftOptions: Procesando las opciones del boceto
 profile: Perfil
 quickPick: Vista rápida
-quote-jamie: 'With Freesewing, sewing has moved into the 21st century TODO'
-quote-jamie-about: Author of the popular sewing blog Male Devon Sewing and 2016 Great British Sewing Bee contestant. TODO
+quote-jamie: 'con Freesewing, coser ha entrado en el Siglo XXI'
+quote-jamie-about: Autor del popular blog de costura Male Devon Sewing y concursante Great British Sewing Bee 2016.
 reSendActivationEmail: Reenviar email de activación
-readyToTryFreesewing: Ready to try Freesewing? TODO
+readyToTryFreesewing: Listo para probar Freesewing?
 redraft: Trazar de nuevo
 redraftDraftHandle: 'Trazar de nuevo el boceto {handle}'
 reference: Referencia
 removeAllMyData: Borrar todos mis datos
 removeAllMyModelData: Borrar todos mis datos de modelo
 replay: Ejecutar de nuevo
-reply: Reply TODO
+reply: Responder
 requiredMeasurements: Medidas requeridas
 resetPassword: Restablecer contraseña
-result: Result TODO
+result: Resultado
 retrievingDraftFromCore: Recuperando el boceto desde el núcleo
 revokeConsent: Revocar consentimiento
 rowsFromToOfTotal: 'Filas {from} a la {to} de {total} '
@@ -218,7 +218,7 @@ selectADifferentImage: Selecciona otra imagen
 selectAnImage: Selecciona una imagen
 selectThePartsYouWantIncludedInYourDraft: Selecciona las partes que quieres incluír en tu boceto
 settings: Ajustes
-sewingPatternsForNonAveragePeople: Sewing patterns for non-average people TODO
+sewingPatternsForNonAveragePeople: Patrones de costura para personas no promedio
 share: Compartir
 shared: Compartido
 sharedUpdated: Opción de compartir actualizada
@@ -227,7 +227,7 @@ showcase: Escaparate
 showcaseInfo: Información de escaparate
 signUp: Registrarse
 signUpForAFreeAccount: Regístrate para una cuenta gratuíta
-signingUpOnlyTakesAMinute: Signing up only takes a minute TODO
+signingUpOnlyTakesAMinute: Registrarse sólo lleva un minuto
 signup--text: 'Esto no debería pasar. Por favor, ayúdanos creando un asunto en GitHub'
 signup--title: Ha ocurrido un error desconocido
 signup-invalid_input-text: 'Por favor, introduce una dirección de email válida y una contraseña '
@@ -250,7 +250,7 @@ step3: Paso 3
 step4: Paso 4
 stopUpload: Detener subida
 storingDraftData: Guardando datos del boceto
-strikethrough: Strikethrough TODO
+strikethrough: Tachado
 svgSourceCode: Código fuente SVG
 tabloidPdf: PDF Tabloide
 taskCompleted: Tarea completada
@@ -262,7 +262,7 @@ thisDraftPredatesThisFeature: Este boceto precede a esta característica
 thisIsTheCurrentStatusOfOurTranslations: Éste es el estado actual de nuestras traducciones.
 thisPageIsNotIntendedForLoggedInUsers: Esta página no está pensada para usuarios con una sesión abierta
 thisPageIsOnlyAvailableToFreesewingUsers: Espa página está sólo disponible para usuarios de Freesewing
-tip: Tip TODO
+tip: Consejo
 title: Título
 today: Hoy
 translationTeam: Equipo de traducción
@@ -294,31 +294,31 @@ txt-consentProfileQuestionWhy: ¿Por qué lo necesitamos?
 txt-contentLocaleFallback: Por eso te estamos enseñando la versión en inglés en su lugar.
 txt-contentNotTranslated: 'Lamentablemente, esta página no ha sido traducida al {language} (todavía). '
 txt-didYouSpotATypo: '¿Has encontrado un error tipográfico? ¿Crees que algo falta, o necesita aclaración? '
-txt-doYouObject: Do you object to using your anonymized data for scientific research? TODO
+txt-doYouObject: ¿Te opones a que usemos tus datos de manera anónima para investigación científica?
 txt-editThisPageOnline: Puedes editar esta página y luego enviar tus cambios.
 txt-email-sharing: Nunca compartiremos esto con nadie
 txt-emailChangeConfirmationNotFound: 'Lo sentimos, pero no tenemos ningún cambio de E-mail pendiente para este código de confirmación. Tal vez ha expirado, en cuyo caso puedes hacer el cambio de nuevo en tus ajustes. '
 txt-emailNotFound: 'Si no puedes encontrar el email mira en tu carpeta de SPAM, o contacta con nosotros. '
 txt-emailWillWorkToo: 'Si no conoces tu nombre de usuario, tu dirección de correo electrónico también funcionará'
-txt-footer: Freesewing is made by Joost De Cock & contributors<br>with the financial support of our Patrons TODO
+txt-footer: Freesewing está hecho por Joost De Cock & y colaboradores<br>con el apoyo económico de nuestros patrocinadores
 txt-forgot-login: Entra tu nombre de usuario o correo electrónico debajo y pulsa el botón de restablecer contraseña
 txt-gdpr-1: La Regulación General de Protección de Datos (GDPR) de la Unión Europea(EU) protege tus datos personales de acaparadores de datos sin escrúpulos. Eso es bueno.
 txt-gdpr-2: 'Una de las cosas que nos impone es obtener tu consentimiento — en otras palabras, tu permiso — para procesar tus datos personales'
 txt-gdpr-3: Sin tu consentimiento no tenemos base legal para procesar tus datos y no tenemos más elección que borrarlos
 txt-gdprCompliant: Freesewing.org respeta tu privacidad y tus derechos. Aplicamos la Regulación General de Protección de Datos (RGPD) de la Unión Europea (UE).
-txt-homepage-community: 'Everything is run by voluntary contributors. There is no commercial entity behind, or attached to, this project. TODO'
-txt-homepage-different: How we're different TODO
-txt-homepage-draft: 'Choose from one of your patterns, choose a model, and pick your options. We''ll do the rest. TODO'
-txt-homepage-how: How it works TODO
-txt-homepage-join: Join thousands of others and sign up for a free account on freesewing.org. TODO
-txt-homepage-model: All our patterns are made-to-measure. So first thing to do is grab your measuring tape. TODO
-txt-homepage-opensource: 'Our platform, our patterns, and even this website. All our code is available on GitHub. Pull requests welcome! TODO'
-txt-homepage-patrons: Freesewing is made possible by the financial support of our Patrons. They keep this ship afloat. TODO
-txt-homepage-quotes: What others are saying TODO
+txt-homepage-community: 'Todo es llevado por colaboradores voluntarios. TNo hay ninguna entidad comercial detrás de, o vinculada a, este proyecto.'
+txt-homepage-different: En qué somos diferentes
+txt-homepage-draft: 'Elige uno de los patrones, elige un model y elige tus opciones. Nosotros hacemos el resto'
+txt-homepage-how: Cómo funciona
+txt-homepage-join: Únete a miles de personas y regístrate en freesewing.org.
+txt-homepage-model: Todos nuestros patrones son a medida. Así que lo primero que necesitas es un metro.
+txt-homepage-opensource: 'Nuestra plataforma, nuestros patrones e incluso este sitio web. Todo nuestro código está disponible en GitHub. Modificaciones son bienvenidas!'
+txt-homepage-patrons: Freesewing es posible por el apoyo económico de nuestros patrocinadores. Ellos mantienen este barco a flote.
+txt-homepage-quotes: Qué dice la gente
 txt-joinTheTranslationTeam1: 'Incluso si nunca has contribuído a un proyecto open source, la traducción es una cuesta de poca pendiente hacia la fama de colaborador. '
 txt-joinTheTranslationTeam2: 'No importa si traduces unas pocas palabras o frases, o si te ocupas de un idioma entero. Cada contribución cuenta, y muchas manos hacen el trabajo fácil. '
 txt-joinTheTranslationTeam3: 'Lee la documentación para traductores para empezar. No te preocupes, es fácil. '
-txt-missingBlogPosts: Not all blog posts have been translated to English — but you could change that TODO
+txt-missingBlogPosts: No todas las entradas del blog están traducidas, pero tú puedes cambiar eso
 txt-modelsWithMissingMeasurements: 'A este modelo le faltan algunas de las medidas requeridas para dibujar este patrón: '
 txt-newModel: 'Para empezar, dale un nombre a este modelo. '
 txt-password-policy: No aplicamos una política de contraseña
@@ -333,9 +333,9 @@ txt-signup-step1: 'Introduce tu dirección de email y elige una contraseña. '
 txt-signup-step2: Confirma tu dirección de email.
 txt-signup-step3: Danos permiso para procesar tus datos personales.
 txt-slogan: Una plataforma open source para patrones de costura a medida
-txt-translators1: We are looking for people to help with our translation efforts. TODO
-txt-translators2: 'Many hands make light work, and it''s excellent karma to make a contribution this way. TODO'
-txt-translators3: 'To learn more about what you can do, and how to do it, click the link below. TODO'
+txt-translators1: Buscamos personas para ayudarnos en nuestro esfuerzo de traducir.
+txt-translators2: 'Muchas manos hacen el trabajo ligero, y contribuír así trae muy buen karma.'
+txt-translators3: 'Para aprender más acerca de lo que puedes hacer, y de cómo hacerlo, sigue el enlace de abajo.'
 txt-warningModelData: Esto borarrá todos tus modelos y todos tus diseños.
 txt-warningProfileData: 'Esto borrará todos tus modelos, todos tus patrones, todos tus comentarios y tu cuenta. Todo se irá.'
 txt-withOrWithoutBreasts: 'Ajustar pechos requiere una serie de medidas que no son relevantes si no tienes pechos. Si has elegido que tu modelo no tenga pechos, to te mostraremos estas medidas por ser irrelevantes. Si no sabes qué elegir, elige pechos. '
@@ -348,12 +348,12 @@ upgrade: Actualizar
 upgradeRequired: Actualización requerida
 useDecimalsOrFractions: Usar decimales (1.25) o fracciones (1 1/4)
 user: Usuario
-userHasBeenWithUsSince: '{user} has been with us since {since} TODO'
-userIsAPatron: '{user} is a patron TODO'
+userHasBeenWithUsSince: '{user} ha estado con nosotros desde {since}'
+userIsAPatron: '{user} es un patrocinador'
 username: Nombre de usuario
 usernameOrEmail: '@:nombre de usuario or @:dirección de correo electrónico'
 usernameUpdated: Nombre de usuario actualizado
-users: Users TODO
+users: Usuarios
 version: Versión
 visitPatronProfile: Visita el perfil de este patrocinador
 volunteerVerb: Voluntario
@@ -366,16 +366,16 @@ withBreasts: Con pechos
 withOrWithoutBreasts: ¿Con o sin pechos?
 withoutBreasts: Sin pechos
 wouldYouLikeToLogOut: ¿Quieres cerrar la sesión?
-yearsAgo: '{years} year ago | {years} years ago TODO'
+yearsAgo: 'hace {years} años | hace {years} años'
 'yes': Sí
 yesIDo: Sí
 yesIDoObject: 'Sí, me opongo'
 yesterday: Ayer
 youAreCurrentlyLoggedIn: Tienes una sesión abierta
 youAreNotLoggedIn: No tienes una sesión abierta
-youCanUseMarkdownFormatting: You can use MarkDown formatting TODO
+youCanUseMarkdownFormatting: Puedes usar formato MarkDown
 youDoNotObjectToSharingAnonymizedDataForResearch: No te opones a compartir datos anónimos para fines de investigación
 youHaveTheRightToObjectToThis: Tienes derecho a oponerte a esto
 youObjectToSharingAnonymizedDataForResearch: Te opones a compartir datos anónimos para fines de investigación
-yourPrivacy: Your privacy TODO
-yourRights: Your rights TODO
+yourPrivacy: Tu privacidad
+yourRights: Tus derechos
