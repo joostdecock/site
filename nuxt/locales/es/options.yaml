@@ -1,87 +1,87 @@
 acrossBackFactor:
-  description: Controls your across back width as a factor of your shoulder to shoulder measurement. TODO
-  title: Across back factor TODO
+  description: Controla el ancho de espalda como un factor de la medida de hombro a hombro.
+  title: Factor de ancho de espalda
 adjustmentRibbon:
-  description: Add a ribbon to make the tie adjustable. TODO
+  description: Añadir una banda para hacer la corbata ajustable.
   options:
-    - Do not include ribbon TODO TODO TODO
-    - Include ribbon TODO TODO TODO
-  title: Adjustment Ribbon TODO
+    - No incluír banda
+    - Incluír banda
+  title: Banda de ajuste
 armholeDepthFactor:
-  description: Controls the depth of the armhole. Higher values make a deeper armhole. TODO
-  title: Armhole depth factor TODO
+  description: Controla la profundidad de la sisa. Valores más altos producen sisas más profundas.
+  title: Factor de profundidad de la sisa
 armholeDrop:
-  description: Lower the armhole by this amount. Negative values will raise it. TODO
-  title: Armhole drop TODO
+  description: Baja la sisa esta cantidad. Valores negativos la elevan.
+  title: Caída de la sisa
 backDrop:
-  description: How much the back panels lower from your hips towards your center back. Negative values will raise the back. TODO
-  title: Back drop TODO
+  description: En qué medida los paneles posteriores se extienden bajo la cadera. Valores negativos los elevan sobre ella.
+  title: Caída de la espalda
 backInset:
-  description: Amount the back armhole is cut deeper into the back panel. TODO
-  title: Back inset TODO
+  description: Cantidad que la parte de atrás de la sisa se introduce en el panel trasero.
+  title: Inserción en la espalda
 backOpening:
-  description: Opening at the center back closure. TODO
-  title: Back opening TODO
+  description: Abertura en el centro del cierre de la espalda.
+  title: Abertura de la espalda
 backRise:
   description:
-    _default: The amount by which to raise the back. TODO
-    bruce: Percentage by which the waist will be raised at the back. TODO
-    cathrin: How much the back panels rise from your arms to your center back. TODO
-  title: Back rise TODO
+    _default: Cantidad en que se eleva la espalda.
+    bruce: Porcentage en el que la cintura se elevará en la espalda.
+    cathrin: Cantidad en que los paneles traseros se elevan sobre el centro de la espalda
+  title: Elevación de la espalda
 backScyeDart:
-  description: The amount to take out in a dart at the back of the armhole. TODO
-  title: Back scye dart TODO
+  description: La cantidad a reducir en una pinza en la parte posterior de la sisa.
+  title: Pinza posterior de la sisa
 backVent:
-  description: 'Do you want a central back vent, or none at all? TODO'
+  description: '¿Quieres una abertura posterior central, una doble o ninguna?'
   options:
-    - No back vent TODO TODO TODO
-    - Single back vent TODO TODO TODO
-    - Double back vent TODO TODO TODO
-  title: Back vent TODO
+    - Sin abertura posterior
+    - Abertura posterior central
+    - Abertura posterior doble
+  title: Abertura posterior
 backVentLength:
-  description: Controls the length of the back vent. Lower numbers result in a shorter vent. TODO
-  title: Back vent length TODO
+  description: Controla la longitud de la abertura posterior. Números bajos producen aberturas cortas.
+  title: Longitud de la abertura posterior
 backlineBend:
-  description: Determines the shape/bend of the back of the armholes. TODO
-  title: Back armhole shape TODO
+  description: Determina la forma/curva de la parte posterior de la sisa.
+  title: Forma posterior de la sisa
 barrelcuffNarrowButton:
-  description: Whether to include a button to tie the cuffs more narrow. This option is only relevant for barrel cuffs. TODO
+  description: Incluír o no un botón extra para ajustar más los puños. Esta opción sólo es relevante para puños de barril.
   options:
-    - No narrow button TODO TODO TODO
-    - Include narrow button TODO TODO TODO
-  title: Cuff narrow button TODO
+    - Sin botón de ajuste
+    - Incluír botón de ajuste
+  title: Botón de ajuste del puño
 bicepsEase:
-  description: 'The amount of ease at your upper arm. Note that while we try to respect this, fitting the sleeve to the armhole takes precedence over respecting the exact amount of ease. TODO'
-  title: Biceps ease TODO
+  description: 'La cantidad de holgura en la parte superior del brazo. Ten en cuenta que, aunque intentamos repetar esto, ajustar la manga a la sisa toma preferencia sobre respetar la cantidad exacta de holgura.'
+  title: Holgura del bíceps
 bowLength:
-  description: The length of the wings of the bow tie. TODO
-  title: Bow length TODO
+  description: La longitud de las alas de la pajarita.
+  title: Longitud de la pajarita
 bowStyle:
-  description: The style of the bow. TODO
+  description: El estilo del lazo
   options:
-    butterfly: Butterfly TODO TODO TODO
-    diamond: Diamond TODO TODO TODO
-    square: Square TODO TODO TODO
-    widesquare: Wide Square TODO TODO TODO
-  title: Bow style TODO
+    butterfly: Mariposa
+    diamond: Diamante
+    square: Cuadrado
+    widesquare: Cuadrado ancho
+  title: Estilo de la pajarita
 bulge:
-  description: Increase angle to create more room in the front pouch. TODO
-  title: Bulge TODO
+  description: Incrementar el ángulo para crear más espacio en el bolsillo delantero.
+  title: Bulto
 buttonPlacketStyle:
-  description: Style of the button placket. TODO
+  description: Estilo de la visto de los botones
   options:
-    '1': Classic style TODO TODO TODO
-    '2': French style (seamless) TODO TODO TODO
-  title: Button placket style TODO
+    '1': Estilo clásico
+    '2': Estilo francés (sin costuras)
+  title: Estilo de la vista de los botones
 buttonPlacketType:
-  description: Type of the button placket. TODO
+  description: Tipo de vista de los botones
   options:
-    '1': Cut-on TODO TODO TODO
-    '2': Separate TODO TODO TODO
-  title: Button placket type TODO
+    '1': Parte de la pieza delantera
+    '2': Separada
+  title: Tipo de vista de los botones
 buttonPlacketWidth:
-  description: Width of the button placket. TODO
-  title: Button placket width TODO
+  description: Anchura de la vista de los botones
+  title: Anchura de la vista de los botones
 buttonfreeLength:
   description: How much of the bottom of the front closure to keep button-free. TODO
   title: Button free length TODO
