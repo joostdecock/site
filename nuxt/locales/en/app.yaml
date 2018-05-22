@@ -176,7 +176,9 @@ patrons: Patrons
 pattern: Pattern
 patternDesignTutorial: Pattern design tutorial
 patternDocumentation: Pattern instructions
+patternInstructions: Pattern instructions
 patternIsPattern: 'Pattern is {pattern}'
+patternLineDrawing: '{pattern} line drawing'
 patternOptions: Pattern options
 patternParts: Pattern parts
 patterns: Patterns
@@ -213,6 +215,7 @@ save: Save
 scope: Scope
 seamAllowance: Seam allowance
 search: Search
+seeAlso: See also
 seeBelow: See below
 selectADifferentImage: Select a different image
 selectAnImage: Select an image

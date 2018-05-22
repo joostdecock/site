@@ -176,7 +176,9 @@ patrons: Patrocinadores
 pattern: Patrón
 patternDesignTutorial: Tutorial de diseño de patrones
 patternDocumentation: Instrucciones del patrón
+patternInstructions: Pattern instructions TODO
 patternIsPattern: 'El patrón es {pattern}'
+patternLineDrawing: '{pattern} line drawing TODO'
 patternOptions: Opciones del patrón
 patternParts: Partes del patrón
 patterns: Patrones
@@ -213,6 +215,7 @@ save: Guardar
 scope: Alcance
 seamAllowance: Margen de costura
 search: Buscar
+seeAlso: See also TODO
 seeBelow: Mira abajo
 selectADifferentImage: Selecciona otra imagen
 selectAnImage: Selecciona una imagen

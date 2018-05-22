@@ -176,7 +176,9 @@ patrons: Mécènes
 pattern: Patron
 patternDesignTutorial: Tutoriel de conception de patron
 patternDocumentation: Instructions du patron
+patternInstructions: Pattern instructions TODO
 patternIsPattern: 'Le patron est {pattern}'
+patternLineDrawing: '{pattern} line drawing TODO'
 patternOptions: Options du patron
 patternParts: Pièces du patron
 patterns: Patrons
@@ -213,6 +215,7 @@ save: Sauvegarder
 scope: Portée
 seamAllowance: Valeur de couture
 search: Rechercher
+seeAlso: See also TODO
 seeBelow: Voir ci-dessous
 selectADifferentImage: Choisir une image différente
 selectAnImage: Choisir une image

@@ -1,14 +1,8 @@
 <template>
   <section>
-    <div v-for="m in measurements" :key="m">
-      <h2>{{ $t(m) }}<a class="nuxtdown-toc" :href="'#'+m.toLowerCase()" aria-hidden="true" :id="m.toLowerCase()">🔗</a></h2>
-      <fs-docs-measurement-image
-        v-if="content[m] && content[m].body"
-        :measurement="m"
-        :onlyforbreasts="(content[m].onlyForBreasts) ? true : false"
-        :seated="(content[m].seated) ? true : false"
-        />
-      <div v-if="content[m] && content[m].body" v-html="content[m].body"></div>
+    <div v-for="(option, o) in $fs.conf.patterns[pattern].options" :key="o">
+      <h2>{{ $fs.pot(o, pattern, $i18n.locale) }}<a :href="'#'+o.toLowerCase()" :id="o.toLowerCase()" class="nuxtdown-toc" aria-hidden="true">🔗</a></h2>
+      <div v-html="content[o].body" v-if="content[o]"></div>
     </div>
   </section>
 </template>
@@ -39,32 +33,29 @@ export default {
   },
   mounted: async function () {
     const content = {}
-    let measurements = []
-    let allMeasurements = {}
+    let options = []
     const toc = {
       topLevel: 2,
       items: {}
     }
-    if(typeof this.pattern !== 'undefined') allMeasurements = this.$fs.conf.patterns[this.pattern].measurements
-    else allMeasurements = this.$fs.measurements.all
-    for (let m in allMeasurements) {
-      measurements.push(m)
-      toc.items[m.toLowerCase()] = {
+    for (let o in this.$fs.conf.patterns[this.pattern].options) {
+      options.push(o)
+      toc.items[o.toLowerCase()] = {
         level: 2,
-        title: this.$i18n.t(m),
-        link: '#'+m.toLowerCase()
+        title: this.$fs.pot(o, this.pattern, this.$i18n.locale),
+        link: '#'+o.toLowerCase()
       }
       let loc = this.$fs.pathLocale(this.$route.path)
       let locPath = (loc === 'en') ? '' : '/'+loc
-      let path = locPath+'/docs/measurements/'+m.toLowerCase()
-      content[m] = await this.$fs.content('/'+this.$i18n.locale+'/docs').get(path)
+      let path = locPath+'/docs/patterns/'+this.pattern+'/options/'+o.toLowerCase()
+      content[o] = await this.$fs.content('/'+this.$i18n.locale+'/docs').get(path)
       .then(function (data) {
         return data
       })
       .catch(function (res) {
         console.log('Content not found')
       })
-      if((typeof content[m] === 'undefined' || typeof content[m].page === 'undefined') && this.$i18n.locale !== 'en') {
+      if((typeof content[o] === 'undefined' || typeof content[o].page === 'undefined') && this.$i18n.locale !== 'en') {
         console.log('Trying English version')
         content[m] = await this.$fs.content('/en/docs').get(path.substr(3))
         .then(function (data) {
@@ -72,7 +63,7 @@ export default {
         })
       }
     }
-    this.measurements = measurements.sort()
+    this.options = options.sort()
     this.content = content
     this.$store.commit('setDynamicComponent', {
       region: 'rightColumn',

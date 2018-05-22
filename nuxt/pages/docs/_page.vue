@@ -10,7 +10,11 @@
         :onlyforbreasts="(page.onlyForBreasts) ? true : false"
         :seated="(page.seated) ? true : false"
       />
-      <fs-docs-measurements v-if="page.allMeasurements" />
+      <fs-docs-measurements v-if="page.measurementsIndex" />
+      <fs-docs-patterns v-if="page.patternsIndex" />
+      <fs-docs-pattern v-if="page.patternIndex" :page="page"/>
+      <fs-docs-measurements v-if="page.requiredMeasurements" :pattern="page.pattern" />
+      <fs-docs-pattern-options v-if="page.patternOptionsIndex" :pattern="page.pattern" />
       <nuxtdown-body :body="page.body" class="fs-content fs-text" />
     </article>
   </section>
@@ -21,13 +25,19 @@ import FsBreadcrumbsPage from '~/components/stateless/FsBreadcrumbsPage'
 import FsMessageLocaleFallback from '~/components/stateless/FsMessageLocaleFallback'
 import FsDocsMeasurementImage from '~/components/stateless/FsDocsMeasurementImage'
 import FsDocsMeasurements from '~/components/stateless/FsDocsMeasurements'
+import FsDocsPatterns from '~/components/stateless/FsDocsPatterns'
+import FsDocsPattern from '~/components/stateless/FsDocsPattern'
+import FsDocsPatternOptions from '~/components/stateless/FsDocsPatternOptions'
 
 export default {
   components: {
     FsBreadcrumbsPage,
     FsMessageLocaleFallback,
     FsDocsMeasurementImage,
-    FsDocsMeasurements
+    FsDocsMeasurements,
+    FsDocsPatterns,
+    FsDocsPattern,
+    FsDocsPatternOptions,
   },
   asyncData: async function ({ app, route }) {
     const data = {}
@@ -42,6 +52,8 @@ export default {
         path = '/'+loc+'/docs'+path.substr(3)
       }
     }
+    // Strip trailing slash
+    if(path.substr(-1) === '/') path = path.substr(0, path.length-1)
     data.page = await app.$content('/'+app.i18n.locale+'/docs').get(path)
     .then(function (data) {
       return data

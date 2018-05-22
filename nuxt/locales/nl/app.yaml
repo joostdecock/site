@@ -176,7 +176,9 @@ patrons: Sponsors
 pattern: Patroon
 patternDesignTutorial: Patroon ontwerp les
 patternDocumentation: Patroon instructies
+patternInstructions: Patroon instructies
 patternIsPattern: 'Patroon is {pattern}'
+patternLineDrawing: '{pattern} lijntekening'
 patternOptions: Patroon opties
 patternParts: Patroon delen
 patterns: Patronen
@@ -213,6 +215,7 @@ save: Opslaan
 scope: Scope DONE
 seamAllowance: Naadwaarde
 search: Zoeken
+seeAlso: Zie ook
 seeBelow: Zie hieronder
 selectADifferentImage: Kies een andere afbeelding
 selectAnImage: Kies een afbeelding

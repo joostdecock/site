@@ -1,4 +1,4 @@
 ---
 title: Measurements
-allMeasurements: true
+measurementsIndex: true
 ---

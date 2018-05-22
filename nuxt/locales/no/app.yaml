@@ -176,7 +176,9 @@ patrons: Patrons TODO
 pattern: Pattern TODO
 patternDesignTutorial: Pattern design tutorial TODO
 patternDocumentation: Pattern instructions TODO
+patternInstructions: Pattern instructions TODO
 patternIsPattern: 'Pattern is {pattern} TODO'
+patternLineDrawing: '{pattern} line drawing TODO'
 patternOptions: Pattern options TODO
 patternParts: Pattern parts TODO
 patterns: Patterns TODO
@@ -213,6 +215,7 @@ save: Save TODO
 scope: Scope TODO
 seamAllowance: Seam allowance TODO
 search: Search TODO
+seeAlso: See also TODO
 seeBelow: See below TODO
 selectADifferentImage: Select a different image TODO
 selectAnImage: Select an image TODO
