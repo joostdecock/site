@@ -147,6 +147,7 @@ module.exports = {
         },
         {
           code: 'es',
+          iso: 'es-ES',
           name: 'Español'
         },
         {
