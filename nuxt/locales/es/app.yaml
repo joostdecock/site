@@ -175,8 +175,8 @@ patronText: '{username} es un {patronTier} desde {daysAgo}'
 patrons: Patrocinadores
 pattern: Patrón
 patternDesignTutorial: Tutorial de diseño de patrones
-patternDocumentation: Instrucciones del patrón
-patternInstructions: Pattern instructions TODO
+patternDocumentation: Documentación de los patrones
+patternInstructions: Intrucciones de los patrones
 patternIsPattern: 'El patrón es {pattern}'
 patternLineDrawing: '{pattern} line drawing TODO'
 patternOptions: Opciones del patrón
@@ -215,7 +215,7 @@ save: Guardar
 scope: Alcance
 seamAllowance: Margen de costura
 search: Buscar
-seeAlso: See also TODO
+seeAlso: Mira también
 seeBelow: Mira abajo
 selectADifferentImage: Selecciona otra imagen
 selectAnImage: Selecciona una imagen
@@ -275,8 +275,8 @@ twitter: Twitter DONE
 twitterUpdated: Cuenta de Twitter establecida
 txt-avatarDropzoneText: 'Arrastra una imagen aquí, o haz clic en el botón para elegir una de entre tus archivos. '
 txt-avatarDropzoneTitle: Arrastra tu imagen aquí
-txt-breastMeasurement-text: This is one of those measurements that is only relevant if your model has breasts. TODO
-txt-breastMeasurement-title: This measurement is only relevant for breasts TODO
+txt-breastMeasurement-text: Esta en una de las medidas que sólo es relevante si el modelo tiene pechos
+txt-breastMeasurement-title: TEsta medida es sólo relevante para pechos
 txt-changeRequiresConfirmation: Este cambio requiere confirmación vía E-mail
 txt-clickEmailLink: 'Por favor, sigue el enlace en el email para continuar. '
 txt-consentModel: ¿Das permiso para procesar tus datos de modelo?
@@ -297,7 +297,7 @@ txt-consentProfileQuestionTiming: ¿Por cuánto tiempo lo guardamos?
 txt-consentProfileQuestionWhat: ¿Qué son los datos del perfil?
 txt-consentProfileQuestionWhy: ¿Por qué lo necesitamos?
 txt-contentLocaleFallback: Por eso te estamos enseñando la versión en inglés en su lugar.
-txt-contentNotTranslated: 'Lamentablemente, esta página no ha sido traducida al {language} (todavía). '
+txt-contentNotTranslated: 'Lamentablemente, esta página no ha sido traducida al español (todavía). '
 txt-didYouSpotATypo: '¿Has encontrado un error tipográfico? ¿Crees que algo falta, o necesita aclaración? '
 txt-doYouObject: ¿Te opones a que usemos tus datos de manera anónima para investigación científica?
 txt-editThisPageOnline: Puedes editar esta página y luego enviar tus cambios.
