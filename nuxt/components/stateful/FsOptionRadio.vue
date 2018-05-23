@@ -3,13 +3,15 @@
     <div slot="header">
       <div class="fs-state-icons mr-3">
         <v-icon v-if="computedDflt != value" @click.stop="resetDraftOption()" large color="accent">settings_backup_restore</v-icon>
-        <v-icon large class="ml-2" color="secondary">help_outline</v-icon>
+        <v-icon v-if="help" large class="ml-2" color="secondary" @click.stop="help=!help">cancel</v-icon>
+        <v-icon v-else large class="ml-2" color="secondary" @click.stop="help=!help">help_outline</v-icon>
       </div>
-      <h6>{{ option.title }}: 
+      <h6>{{ option.title }}:
         <span :class="(computedDflt != value) ? 'fs-option-custom' : ''">
           {{ option.options[value] }}
         </span>
       </h6>
+      <fs-option-help v-if="help" :option="name" :pattern="pattern" />
     </div>
     <v-card>
       <v-card-text>
@@ -17,7 +19,7 @@
 				  <v-radio
             @change="updateDraftOption(name, value)"
             v-for="(value, index) in option.options" :key="index"
-            :label="''+value" 
+            :label="''+value"
             :value="index"
             :color="(computedDflt != index) ? 'accent' : 'primary'"></v-radio>
         </v-radio-group>
@@ -27,8 +29,12 @@
 </template>
 
 <script>
+import FsOptionHelp from '~/components/stateless/FsOptionHelp'
 export default {
   name: 'FsOptionRadio',
+  components: {
+    FsOptionHelp,
+  },
   props: {
     pattern: {
       type: String,
@@ -48,9 +54,10 @@ export default {
     }
   },
   data: function() {
-    return { 
-      value: ''+this.dflt, 
-      computedDflt: ''+this.dflt 
+    return {
+      value: ''+this.dflt,
+      computedDflt: ''+this.dflt,
+      help: false
     }
   },
   methods: {

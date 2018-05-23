@@ -3,7 +3,8 @@
     <div slot="header">
       <div class="fs-state-icons mr-3">
         <v-icon v-if="(computedDflt != value || customSa != customSaDflt)" @click.stop="resetDraftSa()" large color="accent">settings_backup_restore</v-icon>
-        <v-icon large class="ml-2" color="secondary">help_outline</v-icon>
+        <v-icon v-if="help" large class="ml-2" color="secondary" @click.stop="help=!help">cancel</v-icon>
+        <v-icon v-else large class="ml-2" color="secondary" @click.stop="help=!help">help_outline</v-icon>
       </div>
       <h6>
         <span :class="(computedDflt != value || customSa != customSaDflt) ? 'fs-option-custom' : ''">
@@ -11,6 +12,7 @@
         </span>
         <span :class="(customSa === customSaDflt)? '' : 'fs-option-custom'" v-if="value === 'custom'">({{$fs.formatUnits(customSa, $store.state.user.account.units, 'measure')}})</span>
       </h6>
+      <fs-option-help v-if="help" option="sa" pattern="draft" />
     </div>
     <v-card>
       <v-card-text>
@@ -38,15 +40,20 @@
 </template>
 
 <script>
+import FsOptionHelp from '~/components/stateless/FsOptionHelp'
 export default {
   name: 'FsOptionSa',
+  components: {
+    FsOptionHelp,
+  },
   data: function() {
     let computedDflt = this.$store.state.user.account.units
     let options = {
       none: 0,
       metric: 1,
       imperial: 0,
-      custom: 1
+      custom: 1,
+      help: false
     }
     let pattern = this.$store.state.draft.defaults.pattern
     if (typeof this.$fs.conf.patterns[pattern].seamAllowance !== 'undefined') {
@@ -77,6 +84,7 @@ export default {
       customSa: customSaDflt,
       customSaMin: customSaMin,
       customSaMax: customSaMax,
+      help: false
     }
   },
   methods: {

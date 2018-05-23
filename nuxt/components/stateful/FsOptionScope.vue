@@ -3,11 +3,13 @@
     <div slot="header">
       <div class="fs-state-icons mr-3">
         <v-icon v-if="value != dfltValue" @click.stop="resetDraftScope()" large color="accent">settings_backup_restore</v-icon>
-        <v-icon large class="ml-2" color="secondary">help_outline</v-icon>
+        <v-icon v-if="help" large class="ml-2" color="secondary" @click.stop="help=!help">cancel</v-icon>
+        <v-icon v-else large class="ml-2" color="secondary" @click.stop="help=!help">help_outline</v-icon>
       </div>
       <h6><span :class="(value != dfltValue) ? 'fs-option-custom' : ''">
           {{ (value === 'pattern') ? $t('completePattern') : $t('onlySelectedPatternParts') }}
       </span></h6>
+      <fs-option-help v-if="help" option="scope" pattern="draft" />
     </div>
     <v-card>
       <v-card-text>
@@ -40,8 +42,12 @@
 </template>
 
 <script>
+import FsOptionHelp from '~/components/stateless/FsOptionHelp'
 export default {
   name: 'FsOptionScope',
+  components: {
+    FsOptionHelp,
+  },
   data: function() {
     let d = this.$fs.normalize(this.$store.state.draft.defaults)
     return {
@@ -49,7 +55,8 @@ export default {
       dfltValue: d.draftOptions.scope.type,
       included: d.draftOptions.scope.included,
       dfltIncluded: d.draftOptions.scope.included,
-      pattern: d.pattern
+      pattern: d.pattern,
+      help: false
     }
   },
   methods: {

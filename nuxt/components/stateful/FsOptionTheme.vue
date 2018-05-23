@@ -3,11 +3,13 @@
     <div slot="header">
       <div class="fs-state-icons mr-3">
         <v-icon v-if="value != dfltValue" @click.stop="resetDraftTheme()" large color="accent">settings_backup_restore</v-icon>
-        <v-icon large class="ml-2" color="secondary">help_outline</v-icon>
+        <v-icon v-if="help" large class="ml-2" color="secondary" @click.stop="help=!help">cancel</v-icon>
+        <v-icon v-else large class="ml-2" color="secondary" @click.stop="help=!help">help_outline</v-icon>
       </div>
       <h6><span :class="(value != dfltValue) ? 'fs-option-custom' : ''">
           {{ $t(value.toLowerCase()+'Theme') }}
       </span></h6>
+      <fs-option-help v-if="help" option="theme" pattern="draft" />
     </div>
     <v-card>
       <v-card-text>
@@ -26,13 +28,18 @@
 </template>
 
 <script>
+import FsOptionHelp from '~/components/stateless/FsOptionHelp'
 export default {
   name: 'FsOptionTheme',
+  components: {
+    FsOptionHelp,
+  },
   data: function() {
     let d = this.$fs.normalize(this.$store.state.draft.defaults)
     return {
       value: d.draftOptions.theme,
-      dfltValue: d.draftOptions.theme
+      dfltValue: d.draftOptions.theme,
+      help: false
     }
   },
   methods: {
