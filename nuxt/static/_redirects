@@ -70,11 +70,11 @@
 /:locale/showcase/category/:category  /:locale/showcase/showcase-category 200
 
 ## Draft view
-/drafts/:draft  /draft/show-draft  200
+/drafts/:draft  /drafts/show-draft  200
 /:locale/drafts/:draft  /:locale/drafts/show-draft  200
 
 ## Model view
-/models/:model  /model/show-model  200
+/models/:model  /models/show-model  200
 /:locale/models/:model  /:locale/models/show-model  200
 
 ## User view
