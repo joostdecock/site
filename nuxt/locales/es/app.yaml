@@ -193,6 +193,10 @@ privacyNotice: Aviso de privacidad
 processingDraftOptions: Procesando las opciones del boceto
 profile: Perfil
 quickPick: Vista rápida
+quote-allie: Have you heard of freesewing.org? It’s pretty much the greatest thing ever! TODO
+quote-allie-about: Author of sewing blog The Aspiring Seamstress. TODO
+quote-ivan: Kudos to @j__st for creating @freesewing_org an open source platform for made-to-measure sewing patterns and general awesomeness TODO
+quote-ivan-about: Kubernetes London Meetup co-organiser. Founder of Kube.camp TODO
 quote-jamie: 'con Freesewing, coser ha entrado en el Siglo XXI'
 quote-jamie-about: Autor del popular blog de costura Male Devon Sewing y concursante Great British Sewing Bee 2016.
 reSendActivationEmail: Reenviar email de activación
@@ -328,6 +332,7 @@ txt-modelsWithMissingMeasurements: 'A este modelo le faltan algunas de las medid
 txt-newModel: 'Para empezar, dale un nombre a este modelo. '
 txt-password-policy: No aplicamos una política de contraseña
 txt-passwordRecoverConfirmationNotFound: 'Lo sentimos, pero no tenemos pendiente ninguna recuperación de contraseña para este código de confirmación. Quizás ha caducado, en cuyo caso simplemente puedes hacer una nueva solicitud'
+txt-resend: 'You can sign up again with the same E-mail address, and we''ll send you a new confirmation message. TODO'
 txt-saOption-custom: Margen de costura personalizado
 txt-saOption-imperial: Margen de costura imperial estándar
 txt-saOption-metric: Margen de costura métrico estándar

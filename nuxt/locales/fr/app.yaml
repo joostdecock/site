@@ -193,6 +193,10 @@ privacyNotice: Privacy notice TODO
 processingDraftOptions: Traitement des options de l'ébauche en cours
 profile: Profil
 quickPick: Choix rapide
+quote-allie: Have you heard of freesewing.org? It’s pretty much the greatest thing ever! TODO
+quote-allie-about: Author of sewing blog The Aspiring Seamstress. TODO
+quote-ivan: Kudos to @j__st for creating @freesewing_org an open source platform for made-to-measure sewing patterns and general awesomeness TODO
+quote-ivan-about: Kubernetes London Meetup co-organiser. Founder of Kube.camp TODO
 quote-jamie: 'With Freesewing, sewing has moved into the 21st century TODO'
 quote-jamie-about: Author of the popular sewing blog Male Devon Sewing and 2016 Great British Sewing Bee contestant. TODO
 reSendActivationEmail: Renvoyer l'e-mail d'activation
@@ -328,6 +332,7 @@ txt-modelsWithMissingMeasurements: 'These models lack some of the required measu
 txt-newModel: 'To get started, please give your model a name. TODO'
 txt-password-policy: We don't enforce a password policy TODO
 txt-passwordRecoverConfirmationNotFound: 'Sorry, but we have no pending password recovery for this confirmation code. Perhaps it expired, in which case you can simply make another request. TODO'
+txt-resend: 'You can sign up again with the same E-mail address, and we''ll send you a new confirmation message. TODO'
 txt-saOption-custom: Custom seam allowance TODO
 txt-saOption-imperial: Standard imperial seam allowance TODO
 txt-saOption-metric: Standard metric seam allowance TODO

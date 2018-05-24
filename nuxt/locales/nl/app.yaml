@@ -193,8 +193,12 @@ privacyNotice: Privacy verklaring
 processingDraftOptions: Verwerken van patroontekening opties
 profile: Profiel
 quickPick: Snelle keuzes
+quote-allie: Heb je al gehoord van freesewing.org? Het is zowat de meest geweldige site ooit!
+quote-allie-about: Auteur van de naaiblog The Aspiring Seamstress.
+quote-ivan: Kudos aan @j__st voor het creëren van @freesewing_org een open source platform voor naaipatronen op maat en algemene geweldigheid
+quote-ivan-about: Kubernetes London Meetup co-organiser. Founder of Kube.camp TODO
 quote-jamie: Freesewing brengt naaien in de 21ste eeuw
-quote-jamie-about: Auteur van de populaire naaiblog Male Devon Sewing en deelnemer aan de 2016 Great British Sewing Bee.
+quote-jamie-about: Auteur van de naaiblog Male Devon Sewing en deelnemer aan de 2016 Great British Sewing Bee.
 reSendActivationEmail: Stuur een nieuwe activatie E-mail
 readyToTryFreesewing: Klaar om Freesewing uit te proberen?
 redraft: Herteken
@@ -328,6 +332,7 @@ txt-modelsWithMissingMeasurements: 'Van deze modellen kennen we niet alle vereis
 txt-newModel: 'Eerst en vooral, geef je model een naam.'
 txt-password-policy: We handhaven geen wachtwoordbeleid
 txt-passwordRecoverConfirmationNotFound: Helaas kunnen we geen hangend verzoek tot wachtwoord herstel vinden voor deze bevestigingscode. Misschien is de termijn voor het herstel verlopen. In dat geval kan U gewoon een nieuwe aanvraag indienen.
+txt-resend: 'Je kan je weer inschrijven met hetzelfde E-mail adres, en dan sturen we je een nieuwe activatie E-mail.'
 txt-saOption-custom: Aangepaste naadwaarde
 txt-saOption-imperial: Standaard imperiale naadwaarde
 txt-saOption-metric: Standaard metrische naadwaarde

@@ -90,10 +90,12 @@
           <v-icon class="mr-3">undo</v-icon>
           {{ $t('cancel') }}
         </v-btn>
+        <p class="body-1 mt-5" v-if="resend">{{ $t('txt-resend') }}</p>
         <p class="body-1 mt-5">
         <nuxt-link :to="$fs.path('/login')">{{ $t('logIn') }}</nuxt-link>
         &nbsp;|&nbsp;
-        <nuxt-link :to="$fs.path('/signup/resend')">{{ $t('reSendActivationEmail') }}</nuxt-link>
+        <a @click="resend=false" v-if="resend">{{ $t('cancel') }}</a>
+        <a @click="resend=true" v-else>{{ $t('reSendActivationEmail') }}</a>
         </p>
       </v-form>
     </div>
@@ -122,7 +124,8 @@ export default {
       error: false,
       success: false,
       hidePassword: true,
-      reason: ''
+      reason: '',
+      resend: false
     }
   },
   methods: {

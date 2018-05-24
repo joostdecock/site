@@ -79,8 +79,8 @@ export default {
     return {
       quotes: [
         {name: 'Jamie Kemp', handle: 'jamie', link: 'http://maledevonsewing.co.uk/'},
-        {name: 'Jamie Kemp', handle: 'jamie', link: 'http://maledevonsewing.co.uk/'},
-        {name: 'Jamie Kemp', handle: 'jamie', link: 'http://maledevonsewing.co.uk/'},
+        {name: 'Ivan Pedrazas', handle: 'ivan', link: 'https://twitter.com/ipedrazas/status/942004135372775429'},
+        {name: 'Allie', handle: 'allie', link: 'https://theaspiringseamstress.wordpress.com/2018/03/01/freesewing-org-simon/'},
       ],
       differences: [
         {
