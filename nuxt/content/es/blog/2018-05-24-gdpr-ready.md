@@ -17,7 +17,7 @@ La fecha marca nada menos que un momento decisivo para la privacidad online, ya 
 ## Ahora se requiere tu consentimiento
 
 Para freesewing, cumplir con RGPD no es un problema en sí mismo.
-Teníamos un plan sólido, y lo único que hemos tenido que añadir a la web es *consentimiento*.
+Teníamos [un plan sólido](/es/blog/gdpr-plan), y lo único que hemos tenido que añadir a la web es *consentimiento*.
 Ya no se nos permite procesar tus datos sin tu permiso.
 Un permiso que tenemos que pedir explícitamente y con detalle.
 
@@ -32,17 +32,17 @@ Los datos de los modelos se necesitan para generar patrones de costura a medida.
 
 Te haremos estas preguntas cuando sean relevantes
 (como cuando necesitemos acceso a esos datos específicos),
-y puedes verlas de nuevo en cualquier momento [en las opciones de tu cuenta](/account).
+y puedes verlas de nuevo en cualquier momento [en las opciones de tu cuenta](/es/account).
 
 ## Es nuestro deber informarte
 
 Bajo el RGPD, debemos informarte sobre cómo manejamos asuntos de privacidad.
-Hemos escrito acerca de [nuestro enfoque a la privacidad](/blog/privacy-choices) antes,
+Hemos escrito acerca de [nuestro enfoque a la privacidad](/es/blog/privacy-choices) antes,
 pero esto requiere algo (un poco) más formal.
 
-Así que hemos esbozado una [advertencia de privacidad](/privacy) que resume estas cosas.
+Así que hemos esbozado una [advertencia de privacidad](/es/privacy) que resume estas cosas.
 
-Además de la advertencia de privacidad, hemos preparado [una página que enumera todos tus derechos](/rights),
+Además de la advertencia de privacidad, hemos preparado [una página que enumera todos tus derechos](/es/rights),
 y que explica cómo ejercitarlos.
 
 Con estos cambios, cumplimos con tu derecho a ser informado.
@@ -88,9 +88,9 @@ La más obvia es que ahora damos soporte completo a i18n (internacionalización)
 Aunque la traducción es una tarea en progreso, lo tenemos todo listo para implementarla.
 Empezando hoy, freesewing no está disponible únicamente en inglés, sino también en Holandés y Español.
 
-Me gustaría agradecer a [@AnnekeCaramin](/users/annekecaramin) y a [@AlfaLyr](/users/alfalyr), nuestros cordinadores de idiomas para Holandés y Español respectivamente, así como a todas las demás personas que han colaborado en la traducción.
+Me gustaría agradecer a [@AnnekeCaramin](/es/users/annekecaramin) y a [@AlfaLyr](/es/users/alfalyr), nuestros cordinadores de idiomas para Holandés y Español respectivamente, así como a todas las demás personas que han colaborado en la traducción.
 
-Una vista general del estado de traducción a los diferentes idiomas está disponible [aquí](/i18n), 
+Una vista general del estado de traducción a los diferentes idiomas está disponible [aquí](/es/i18n), 
 y espero que pronto podamos añadir más idiomas.
 
 ## Cuidado con la pintura fresca
