@@ -80,7 +80,3 @@
 ## User view
 /users/:user  /users/show-user  200
 /:locale/users/:user  /:locale/users/show-user  200
-
-
-# Attempt to fix weird problem with double dots
-/:path..json  /:path.json 200
