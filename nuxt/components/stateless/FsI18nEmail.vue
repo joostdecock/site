@@ -22,9 +22,6 @@
     >
       <template slot="items" slot-scope="props">
         <td>
-            {{ props.item.key }}
-        </td>
-        <td>
             {{ props.item.en }}
         </td>
         <td>
@@ -73,7 +70,6 @@ export default {
   data () {
     return {
       headers: [
-        { text: ' '+this.$t('key'), value: 'key' },
         { text: ' '+this.$t('en'), value: 'en' },
         { text: ' '+this.$t(this.locale), value: this.locale },
         { text: ' '+this.$t('status'), value: 'missing' }

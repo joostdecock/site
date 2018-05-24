@@ -3,6 +3,10 @@
     <fs-breadcrumbs>{{ $t('i18n') }}</fs-breadcrumbs>
     <h1 class="text-xs-center mb-5">{{ $t('i18n') }}</h1>
     <div class="fs-content fs-pad elevation-1">
+      <pre>
+      {{ $fs.conf.i18n.coordinators }}
+
+      </pre>
     <table class="table fs-info-table">
       <thead>
         <tr class="fs-titlerow">
@@ -19,17 +23,15 @@
             <v-progress-linear height="4" :value="stats[loc].avg.score" :key="'bar-'+loc" :color="stats[loc].avg.color"></v-progress-linear>
           </td>
           <td :key="'col3-'+loc" class="text-xs-center">
-            <v-btn v-if="$fs.conf.i18n.coordinators[loc] === '_vacant'" block color="accent"
+            <a v-if="$fs.conf.i18n.coordinators[loc] === '_vacant'"
               :href="'mailto:joost@decock.org?Subject=I%20could%20be%20language%20coordinator%20for%20'+loc">
-              <v-icon class="mr-3">translate</v-icon>
-              {{ $t('volunteerVerb') }}
-            </v-btn>
-            <nuxt-link :to="$fs.userPath(stats[loc].coordinator)" v-else>@{{ $fs.conf.i18n.coordinators[loc]}}</nuxt-link>
+              😞
+            </a>
+            <nuxt-link :to="$fs.userPath($fs.conf.i18n.coordinators[loc])" v-else>@{{ $fs.conf.i18n.coordinators[loc]}}</nuxt-link>
           </td>
           <td :key="'col4-'+loc" class="text-xs-center">
-            <v-btn :to="$fs.path('/i18n/'+loc)" block color="primary">
-              <v-icon class="mr-3">insert_drive_file</v-icon>
-              {{ $t('languageLanguageFiles', {language: $t(loc)} ) }}
+            <v-btn fab small :color="stats[loc].avg.color" :to="$fs.path('/i18n/'+loc)" class="fs-nodeco">
+              <v-icon>folder_open</v-icon>
             </v-btn>
           </td>
         </tr>
