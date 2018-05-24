@@ -1,5 +1,6 @@
 <template>
   <section class="blogpost">
+    <div v-if="post">
     <fs-breadcrumbs :crumbs="crumbs">{{ post.linktitle }}</fs-breadcrumbs>
     <fs-message-locale-fallback v-if="$i18n.locale != post.contentLocale" />
     <article class="fs-content elevation-1">
@@ -22,6 +23,12 @@
         <nuxtdown-body :body="post.body" class="fs-content fs-text pb-3" />
       </div>
     </article>
+    </div>
+    <div v-else>
+      <p class="text-xs-center">
+        <v-progress-circular indeterminate color="#fff" class="mr-3" v-if="loading" size="20" width="2"></v-progress-circular>
+      </p>
+    </div>
   </section>
 </template>
 
