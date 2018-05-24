@@ -1,0 +1,6 @@
+development:
+  core: 'https://core.she.freesewing.org'
+  data: 'https://data.she.freesewing.org'
+production:
+  core: 'https://v3.core.freesewing.org'
+  data: 'https://v2.data.freesewing.org'

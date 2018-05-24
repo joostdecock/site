@@ -1,1 +1,1 @@
-Please see our contributing guidelines at [https://freesewing.org/contribute](https://freesewing.org/contribute)
+Please see our contributing guidelines at [https://freesewing.org/docs/contribute](https://freesewing.org/docs/contribute)
