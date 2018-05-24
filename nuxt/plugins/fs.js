@@ -183,7 +183,7 @@ export default ({ app, store, route }, inject) => {
               setToken(res.data.token)
                 resolve(res.data)
             })
-          .catch(() => { reject(error.response.data) })
+          .catch((error) => { reject(error.response.data) })
         })
       },
 
