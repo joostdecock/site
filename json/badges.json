@@ -1,7 +1,0 @@
----
----
-{
-{% for badge in site.data.badges %}
-    "{{badge[0]}}": "{{badge[1]}}"{% unless forloop.last == true %},{% endunless %}
-{% endfor %}
-}

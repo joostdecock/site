@@ -1,0 +1,41 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "Joost De Cock <joost@decock.org>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "cdev": "HOST=0.0.0.0 nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "configure": "node ./scripts/configure.js",
+    "locgen": "node ./scripts/locgen.js"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.1",
+    "@nuxtjs/vuetify": "^0.4.1",
+    "date-fns": "^1.29.0",
+    "markdown-it-attrs": "^1.2.1",
+    "markdown-it-implicit-figures": "^0.6.0",
+    "markdown-it-video": "^0.6.2",
+    "nuxt": "^1.0.0",
+    "nuxt-i18n": "^2.9.2",
+    "nuxtdown": "^2.0.3",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vue-upload-component": "^2.8.5",
+    "yaml-loader": "^0.5.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "js-yaml": "^3.11.0"
+  }
+}
