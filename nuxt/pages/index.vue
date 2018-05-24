@@ -134,7 +134,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 div.welcome {
   max-width: 600px;
   color: #f5f8f9;

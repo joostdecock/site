@@ -1,9 +1,9 @@
 <template>
   <section>
-    <router-link to="/">Home</router-link> / 
+    <router-link to="/">Home</router-link> /
     <ul>
       <li v-for="page in pages" :key="page.permalink">
-        <router-link :to="page.permalink">{{ page.title }} - {{ page.permalink }}</router-link>
+        <router-link :to="page.permalink">{{ page.title }}</router-link>
       </li>
     </ul>
   </section>

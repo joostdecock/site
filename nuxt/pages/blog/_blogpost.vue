@@ -58,6 +58,7 @@ export default {
   },
   asyncData: async function ({ app, route }) {
     const data = {}
+    console.log('path is ',route.path)
     data.post = await app.$content('/'+app.i18n.locale+'/blog').get(route.path)
     .then(function (data) {
       return data

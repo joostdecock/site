@@ -19,19 +19,19 @@
       <v-list-tile>
         <v-list-tile-content><b>{{ $t('forContributors') }}</b></v-list-tile-content>
       </v-list-tile>
-      <v-list-tile :to="$fs.path('/docs/fundamentals')">
+      <v-list-tile :to="$fs.path('/docs/missing')">
         <v-list-tile-action><v-icon>motorcycle</v-icon></v-list-tile-action>
         <v-list-tile-content>{{ $t('fundamentals') }}</v-list-tile-content>
       </v-list-tile>
-      <v-list-tile :to="$fs.path('/docs/designer/tutorial/part-1')">
+      <v-list-tile :to="$fs.path('/docs/missing')">
         <v-list-tile-action><v-icon>gesture</v-icon></v-list-tile-action>
         <v-list-tile-content>{{ $t('learnToDesignPatterns') }}</v-list-tile-content>
       </v-list-tile>
-      <v-list-tile :to="$fs.path('/docs/api')">
+      <v-list-tile :to="$fs.path('/docs/missing')">
         <v-list-tile-action><v-icon>code</v-icon></v-list-tile-action>
         <v-list-tile-content>{{ $t('documentationForDevelopers') }}</v-list-tile-content>
       </v-list-tile>
-      <v-list-tile :to="$fs.path('/docs/api')">
+      <v-list-tile :to="$fs.path('/docs/missing')">
         <v-list-tile-action><v-icon>translate</v-icon></v-list-tile-action>
         <v-list-tile-content>{{ $t('documentationForTranslators') }}</v-list-tile-content>
       </v-list-tile>
