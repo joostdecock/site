@@ -1,7 +1,7 @@
 <template>
   <section>
     <h2 class="mt-5">{{ $t('comments')}}<a id="comments"></a></h2>
-    <v-btn color="primary" @click="comment=true" v-if="!comment && $store.state.loggedIn">{{ $t('addComment') }}</v-btn>
+    <v-btn color="primary" @click="comment=true" v-if="!comment && $store.state.user.loggedIn">{{ $t('addComment') }}</v-btn>
     <v-btn color="primary" v-else :to="$fs.path('/login')"><v-icon class="mr-3">vpn_key</v-icon>{{ $t('logIn') }}</v-btn>
     <div v-if="comment" class="interact">
       <v-text-field name="comment" id="comment" v-model="msg" autofocus textarea solo autoGrow></v-text-field>

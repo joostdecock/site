@@ -13,7 +13,7 @@
   </v-app>
 </template>
 
-<style>
+<style scoped>
 #app.splash {
   background: #212121;
   background-size: cover;

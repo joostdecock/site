@@ -8,6 +8,7 @@ addAModel: Voeg een model toe
 addComment: Commentaar toevoegen
 all: Alles
 alreadyHaveAnAccount: Ben je reeds ingeschreven?
+areYouSureAboutThis: Ben je absoluut zeker dat dit is wat je wil?
 avatar: Profielfoto
 avatarUpdated: Avatar bijgewerkt
 averagePeopleDontExist: Gemiddelde mensen bestaan niet
@@ -86,6 +87,7 @@ enterYourCurrentPassword: Voer je huidig wachtwoord in
 enterYourNewPassword: Voer je nieuw wachtwoord in
 error-unknown: Onverwachte fout
 error-username_taken: Gebruikersnaam niet beschikbaar
+exportMyData: Exporteer mijn data
 filterByPattern: Filter op patroon
 forContributors: Voor vrijwillige medewerkers
 forMoreInfoRtfm: 'Raadpleeg de documentatie voor meer informatie:'
@@ -97,6 +99,7 @@ freesewing: Freesewing DONE
 freesewingContributors: Freesewing vrijwillige medewerkers
 freesewingOnGithub: Freesewing op GitHub
 freesewingPatrons: Freesewing sponsors
+freezeMyAccount: Bevries mijn account
 fullSizePdf: PDF full-size
 fundamentals: Basis principes
 getHelp: Hulp nodig?
@@ -255,6 +258,7 @@ step1: Stap 1
 step2: Stap 2
 step3: Stap 3
 step4: Stap 4
+stopProcessingMyData: Stop met het verwerken van mijn gegevens
 stopUpload: Upload stoppen
 storingDraftData: Gegevens patroontekening opslaan
 strikethrough: Doorstreept
@@ -302,6 +306,8 @@ txt-consentProfileQuestionWhat: Wat zijn profiel gegevens?
 txt-consentProfileQuestionWhy: Waarom hebben we ze nodig?
 txt-contentLocaleFallback: Daarom tonen we je de Engelstalige versie.
 txt-contentNotTranslated: Helaas is deze pagina (nog) niet vertaald naar het Nederlands.
+txt-dataExport: Als je dat wil kunnen we alle gegevens die we voor jou bijhouden exporteren.
+txt-dataExportQueued: Je data export is in de wachtrij geplaatst. Van zodra de export klaar is sturen we je een E-mail met een download link.
 txt-didYouSpotATypo: Foutje ontdekt? Of heb je het gevoel dat er wat ontbreekt of duidelijker kan?
 txt-doYouObject: Maak je bezwaar tegen het gebruik van je geanonimiseerde gegevens voor wetenschappelijk onderzoek?
 txt-editThisPageOnline: Je kan deze pagina online bewerken en je aanpassingen doorsturen.
@@ -346,6 +352,7 @@ txt-slogan: Een open source platform voor naaipatronen op maat
 txt-translators1: We zijn op zoek naar mensen om ons te helpen met onze vertalingen.
 txt-translators2: 'Vele handen maken licht werk, en het is goed karma om op deze manier een bijdrage te leveren.'
 txt-translators3: 'Klik op onderstaande link om meer te weten te komen over wat je kan doen, en hoe je het doet.'
+txt-warningDataRestriction: 'Je kan je account bevriezen, maar je kan dit niet zelf ongedaan maken. Om terug toegang te krijgen tot je account zal je ons moeten contacteren.'
 txt-warningModelData: 'We verwijderen al je modellen, en al je patroontekeningen.'
 txt-warningProfileData: 'We verwijderen al je modellen, al je patroontekeningen, al je commentaren, en je profiel. Alles zal verdwijnen.'
 txt-withOrWithoutBreasts: 'Een patroon voor een model met borsten vereist een aantal extra maten die niet relevant zijn voor een model zonder borsten. Als je hier aangeeft dat je model geen borsten heeft, dan verbergen we die extra maten daar ze niet relevant zijn. Als je niet zeker weet wat te kiezen, kies dan voor borsten.'

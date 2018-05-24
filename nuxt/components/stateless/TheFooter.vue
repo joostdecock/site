@@ -5,7 +5,7 @@
         <v-flex xs12 py-3 text-xs-center class="mb-4">
           <nuxt-link :to="$fs.path('/')"><fs-logo :size="(100)" color="#fff" /></nuxt-link>
             <p class="mt-5 mb-5">
-              <nuxt-link :to="$fs.path('/support')" class="fs-white">{{ $t('getHelp') }}</nuxt-link> |
+              <nuxt-link :to="$fs.path('/help')" class="fs-white">{{ $t('getHelp') }}</nuxt-link> |
               <nuxt-link :to="$fs.path('/contact')" class="fs-white">{{ $t('contactUs') }}</nuxt-link>
               <br>
               <nuxt-link :to="$fs.path('/privacy')" class="fs-white">{{ $t('yourPrivacy') }}</nuxt-link> |

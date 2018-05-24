@@ -476,6 +476,40 @@ export default ({ app, store, route }, inject) => {
         })
       },
 
+      deleteAccount() {
+        return new Promise(function(resolve, reject) {
+          ax.data.delete('/account', { headers: {'Authorization': 'Bearer '+token()} })
+            .then((res) => {
+              setToken('')
+              store.dispatch('ejectAccount')
+              resolve(true)
+            })
+          .catch((error) => { reject(false) })
+        })
+      },
+
+      freezeAccount() {
+        return new Promise(function(resolve, reject) {
+          ax.data.put('/account/freeze', {}, { headers: {'Authorization': 'Bearer '+token()} })
+            .then((res) => {
+              setToken('')
+              store.dispatch('ejectAccount')
+              resolve(true)
+            })
+          .catch((error) => { reject(false) })
+        })
+      },
+
+      exportData() {
+        return new Promise(function(resolve, reject) {
+          ax.data.get('/export', { headers: {'Authorization': 'Bearer '+token()} })
+            .then((res) => {
+              resolve(true)
+            })
+          .catch((error) => { reject(false) })
+        })
+      },
+
       get(url) {
         return new Promise(function(resolve, reject) {
           let conf = {
@@ -555,7 +589,7 @@ export default ({ app, store, route }, inject) => {
 
       logout() {
         setToken('')
-          store.dispatch('ejectAccount')
+        store.dispatch('ejectAccount')
       },
 
       draftSvgLink(draftHandle, userHandle, cachingToken) {

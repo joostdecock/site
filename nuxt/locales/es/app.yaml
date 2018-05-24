@@ -8,6 +8,7 @@ addAModel: Añade un modelo
 addComment: Añade un comentario
 all: Todo
 alreadyHaveAnAccount: ¿Ya tienes una cuenta?
+areYouSureAboutThis: Are you 100% sure about this? TODO
 avatar: Avatar DONE
 avatarUpdated: Avatar actualizado
 averagePeopleDontExist: Las persona promedio no existen
@@ -86,6 +87,7 @@ enterYourCurrentPassword: Introduce tu contraseña actual
 enterYourNewPassword: Introduce tu nueva contraseña
 error-unknown: Ha ocurrido un error inesperado
 error-username_taken: Nombre de usuario ya escogido
+exportMyData: Export my data TODO
 filterByPattern: Filtrar por patrón
 forContributors: Para colaboradores
 forMoreInfoRtfm: 'Para más información, lee la documentación: '
@@ -97,6 +99,7 @@ freesewing: Freesewing DONE
 freesewingContributors: contribudores Freesewing
 freesewingOnGithub: Freesewing en GitHub
 freesewingPatrons: patrones de Freesewing
+freezeMyAccount: Freeze my account TODO
 fullSizePdf: PDF tamaño completo
 fundamentals: Fundamentos
 getHelp: Obtén ayuda
@@ -255,6 +258,7 @@ step1: Paso 1
 step2: Paso 2
 step3: Paso 3
 step4: Paso 4
+stopProcessingMyData: Stop processing my data TODO
 stopUpload: Detener subida
 storingDraftData: Guardando datos del boceto
 strikethrough: Tachado
@@ -302,6 +306,8 @@ txt-consentProfileQuestionWhat: ¿Qué son los datos del perfil?
 txt-consentProfileQuestionWhy: ¿Por qué lo necesitamos?
 txt-contentLocaleFallback: Por eso te estamos enseñando la versión en inglés en su lugar.
 txt-contentNotTranslated: 'Lamentablemente, esta página no ha sido traducida al español (todavía). '
+txt-dataExport: 'If you like, we can export all the data we have stored for you. TODO'
+txt-dataExportQueued: You data export has been queued. We'll send you an E-mail once it's ready with a download link. TODO
 txt-didYouSpotATypo: '¿Has encontrado un error tipográfico? ¿Crees que algo falta, o necesita aclaración? '
 txt-doYouObject: ¿Te opones a que usemos tus datos de manera anónima para investigación científica?
 txt-editThisPageOnline: Puedes editar esta página y luego enviar tus cambios.
@@ -346,6 +352,7 @@ txt-slogan: Una plataforma open source para patrones de costura a medida
 txt-translators1: Buscamos personas para ayudarnos en nuestro esfuerzo de traducir.
 txt-translators2: 'Muchas manos hacen el trabajo ligero, y contribuír así trae muy buen karma.'
 txt-translators3: 'Para aprender más acerca de lo que puedes hacer, y de cómo hacerlo, sigue el enlace de abajo.'
+txt-warningDataRestriction: 'Once we restrict your account, you won''t be able to undo this yourself. To regain access to your account, you will have to contact us. TODO'
 txt-warningModelData: Esto borarrá todos tus modelos y todos tus diseños.
 txt-warningProfileData: 'Esto borrará todos tus modelos, todos tus patrones, todos tus comentarios y tu cuenta. Todo se irá.'
 txt-withOrWithoutBreasts: 'Ajustar pechos requiere una serie de medidas que no son relevantes si no tienes pechos. Si has elegido que tu modelo no tenga pechos, to te mostraremos estas medidas por ser irrelevantes. Si no sabes qué elegir, elige pechos. '

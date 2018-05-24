@@ -80,7 +80,7 @@ export default {
       .catch((error) => {
         this.loading = false;
         this.error = true
-        this.reason = e.response.data.reason
+        this.reason = error.response.data.reason
       })
   }
 }

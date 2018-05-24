@@ -8,6 +8,7 @@ addAModel: Add a model TODO
 addComment: Add comment TODO
 all: All TODO
 alreadyHaveAnAccount: Already have an account? TODO
+areYouSureAboutThis: Are you 100% sure about this? TODO
 avatar: Avatar TODO
 avatarUpdated: Avatar updated TODO
 averagePeopleDontExist: Average people don't exist TODO
@@ -86,6 +87,7 @@ enterYourCurrentPassword: Enter your current password TODO
 enterYourNewPassword: Enter your new password TODO
 error-unknown: An unknown error occured TODO
 error-username_taken: Username taken TODO
+exportMyData: Export my data TODO
 filterByPattern: Filter by pattern TODO
 forContributors: For contributors TODO
 forMoreInfoRtfm: 'For more info, read the documentation: TODO'
@@ -97,6 +99,7 @@ freesewing: Freesewing TODO
 freesewingContributors: Freesewing contributors TODO
 freesewingOnGithub: Freesewing on GitHub TODO
 freesewingPatrons: Freesewing patrons TODO
+freezeMyAccount: Freeze my account TODO
 fullSizePdf: Full size PDF TODO
 fundamentals: Fundamentals TODO
 getHelp: Get help TODO
@@ -255,6 +258,7 @@ step1: Step 1 TODO
 step2: Step 2 TODO
 step3: Step 3 TODO
 step4: Step 4 TODO
+stopProcessingMyData: Stop processing my data TODO
 stopUpload: Stop upload TODO
 storingDraftData: Storing draft data TODO
 strikethrough: Strikethrough TODO
@@ -302,6 +306,8 @@ txt-consentProfileQuestionWhat: What is profile data? TODO
 txt-consentProfileQuestionWhy: Why do we need it? TODO
 txt-contentLocaleFallback: That's why we're showing you the English version instead. TODO
 txt-contentNotTranslated: 'Unfortunately, this page has not (yet) been translated to {language}. TODO'
+txt-dataExport: 'If you like, we can export all the data we have stored for you. TODO'
+txt-dataExportQueued: You data export has been queued. We'll send you an E-mail once it's ready with a download link. TODO
 txt-didYouSpotATypo: 'Did you spot a typo? Do you feel something is missing, or needs clarification? TODO'
 txt-doYouObject: Do you object to using your anonymized data for scientific research? TODO
 txt-editThisPageOnline: You can edit this page online and submit your changes. TODO
@@ -346,6 +352,7 @@ txt-slogan: An open source platform for made-to-measure sewing patterns TODO
 txt-translators1: We are looking for people to help with our translation efforts. TODO
 txt-translators2: 'Many hands make light work, and it''s excellent karma to make a contribution this way. TODO'
 txt-translators3: 'To learn more about what you can do, and how to do it, click the link below. TODO'
+txt-warningDataRestriction: 'Once we restrict your account, you won''t be able to undo this yourself. To regain access to your account, you will have to contact us. TODO'
 txt-warningModelData: 'This will remove all of your models, and all of your drafts. TODO'
 txt-warningProfileData: 'This will remove all of your models, all of your drafts, all of your comments, and your account. Everything will be gone. TODO'
 txt-withOrWithoutBreasts: 'Fitting breasts requires a bunch of extra measurements that are not relevant if you don''t have breasts. If you indicate your model does not have breasts, we won''t show you these measurements as they are irrelevant. If you''re not sure what to pick, go for breasts. TODO'

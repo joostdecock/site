@@ -13,7 +13,7 @@
         <nuxt-link :to="comment.page+'#comment-'+comment.id" :id="'comment-'+comment.id" class="anchor">🔗</nuxt-link>
       </v-toolbar>
       <v-card-text v-html="$fs.md.render(comment.comment+' ')"></v-card-text>
-      <v-card-actions v-if="$store.state.loggedIn">
+      <v-card-actions v-if="$store.state.user.loggedIn">
         <v-spacer></v-spacer>
         <v-btn v-if="!reply" flat color="primary" @click="reply=true">{{ $t('reply') }}</v-btn>
       </v-card-actions>
