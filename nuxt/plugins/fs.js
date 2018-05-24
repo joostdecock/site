@@ -219,6 +219,37 @@ export default ({ app, store, route }, inject) => {
           })
       },
 
+      confirmEmail(hash) {
+          return new Promise(function(resolve, reject) {
+            ax.data.get('/confirm/'+hash)
+              .then((res) => {
+                resolve(res.data)
+              })
+              .catch((error) => { console.log(error); reject(error) })
+          })
+      },
+
+      deletePendingAccount(hash) {
+          return new Promise(function(resolve, reject) {
+            ax.data.delete('/confirm/'+hash)
+              .then((res) => {
+                resolve(res.data)
+              })
+              .catch((error) => { console.log(error); reject(error) })
+          })
+      },
+
+      createPendingAccount(data) {
+          return new Promise(function(resolve, reject) {
+            ax.data.post('/newuser', data)
+              .then((res) => {
+                setToken(res.data.token)
+                resolve(res.data)
+              })
+              .catch((error) => { console.log(error); reject(error) })
+          })
+      },
+
       auth() {
         return authMethod()
       },

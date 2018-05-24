@@ -69,19 +69,19 @@ export default {
       hashPosition = 19
     }
     const hash = window.location.pathname.substr(hashPosition, 40)
-    this.$fs.api.data.get('confirm/'+hash)
-    .catch((e) => {
-      this.loading = false;
-      this.error = true
-      this.reason = e.response.data.reason
-    })
-    .then((i) => {
-      if(!this.error) {
+    this.$fs.confirmEmail(hash)
+      .then((result) => {
+        if(!this.error) {
+          this.loading = false;
+          this.success = true;
+          this.$router.push(this.$fs.path('/signup/consent/'+hash))
+        }
+      })
+      .catch((error) => {
         this.loading = false;
-        this.success = true;
-        this.$router.push(this.$fs.path('/signup/consent/'+hash))
-      }
-    })
+        this.error = true
+        this.reason = e.response.data.reason
+      })
   }
 }
 </script>

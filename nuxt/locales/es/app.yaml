@@ -323,7 +323,7 @@ txt-homepage-quotes: Qué dice la gente
 txt-joinTheTranslationTeam1: 'Incluso si nunca has contribuído a un proyecto open source, la traducción es una cuesta de poca pendiente hacia la fama de colaborador. '
 txt-joinTheTranslationTeam2: 'No importa si traduces unas pocas palabras o frases, o si te ocupas de un idioma entero. Cada contribución cuenta, y muchas manos hacen el trabajo fácil. '
 txt-joinTheTranslationTeam3: 'Lee la documentación para traductores para empezar. No te preocupes, es fácil. '
-txt-missingBlogPosts: No todas las entradas del blog están traducidas, pero tú puedes cambiar eso
+txt-missingBlogPosts: 'No todas las entradas del blog están traducidas, pero tú puedes cambiar eso'
 txt-modelsWithMissingMeasurements: 'A este modelo le faltan algunas de las medidas requeridas para dibujar este patrón: '
 txt-newModel: 'Para empezar, dale un nombre a este modelo. '
 txt-password-policy: No aplicamos una política de contraseña

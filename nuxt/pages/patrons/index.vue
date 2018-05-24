@@ -69,7 +69,6 @@
         },
         computed: {
             imageHeight () {
-                console.log(this.$vuetify.breakpoint.name)
                 switch (this.$vuetify.breakpoint.name) {
                     case 'xs': return '220px'
                     case 'sm': return '270px'

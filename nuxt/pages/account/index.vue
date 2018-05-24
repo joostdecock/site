@@ -14,7 +14,7 @@
         <fs-avatar-uploader type="user" />
       </v-tab-item>
       <v-tab-item id="consent" class="fs-pad">
-        <fs-consent-gdpr intro="true" profile="true" model="true" />
+        <fs-consent-gdpr :intro="(true)" :profile="(true)" :model="(true)" />
       </v-tab-item>
     </v-tabs>
     </div>

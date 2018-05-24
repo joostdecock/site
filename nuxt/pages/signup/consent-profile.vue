@@ -46,24 +46,7 @@
         <v-progress-circular indeterminate color="#fff" class="mb-3 mt-3" :size="40" :width="2"></v-progress-circular>
       </div>
       <div v-else>
-        <h3>{{ $t('txt-consentProfile') }}</h3>
-        <v-switch v-model="consent" color="success" :label= "consent ? $t('yesIDo') : $t('noIDoNot')"></v-switch>
-        <v-btn color="success" class="mb-5" :disabled="!consent" @click="createAccount">
-          <v-progress-circular indeterminate color="#fff" class="mr-3" v-if="loading" size="20" width="2"></v-progress-circular>
-          <v-icon class="mr-3" v-else>check_circle</v-icon>
-          {{ $t('createMyAccount') }}
-        </v-btn>
-        <v-btn color="error" class="mb-5" :disabled="consent" @click="deleteConfirmation">
-          <v-progress-circular indeterminate color="#fff" class="mr-3" v-if="loading" size="20" width="2"></v-progress-circular>
-          <v-icon class="mr-3" v-else>cancel</v-icon>
-          {{ $t('removeAllMyData') }}
-        </v-btn>
-        <consent-profile />
-          <p class="body-1 mt-3">
-          {{ $t('txt-gdprCompliant') }}
-          <nuxt-link :to="$fs.path('/privacy')" class="ml-3">{{ $t('privacyInfo')}}</nuxt-link>
-          </p>
-
+        <fs-consent-gdpr :intro="(true)" :profile="(true)" :model="(false)" :signup="(true)" v-on:consent="createAccount()" v-on:noconsent="deleteConfirmation()" />
       </div>
     </div>
   </section>
@@ -71,15 +54,15 @@
 
 <script>
 import FsIconGithub from '~/components/stateless/FsIconGithub'
-import FsMessageConsentProfile from '~/components/stateless/FsMessageConsentProfile'
 import FsMessageLogout from '~/components/stateful/FsMessageLogout'
+import FsConsentGdpr from '~/components/stateless/FsConsentGdpr'
 export default {
   auth: false,
   layout: 'splash',
   components: {
     FsIconGithub,
-    FsMessageConsentProfile,
-    FsMessageLogout
+    FsMessageLogout,
+    FsConsentGdpr
   },
   data () {
     return {
@@ -101,39 +84,35 @@ export default {
       return window.location.pathname.substr(hashPosition, 40)
     },
     deleteConfirmation: function() {
-      this.$fs.api.data.delete('confirm/'+this.getHash())
-      .catch((e) => {
-        this.loading = false;
-        this.error = true
-        this.reason = e.response.data.reason
-      })
-      .then((i) => {
+      this.$fs.deletePendingAccount(this.getHash())
+      .then((res) => {
         if(!this.error) {
           this.loading = false;
           this.success = true;
           this.$router.push(this.$fs.path('/'))
         }
       })
+      .catch((e) => {
+        this.loading = false;
+        this.error = true
+        this.reason = e.response.data.reason
+      })
     },
     createAccount: function() {
-      // fixme
-      //this.$auth.loginWith('signup', {
-      //  data: {
-      //    hash: this.getHash()
-      //  }
-      //})
-      //.catch((e) => {
-      //  this.loading = false;
-      //  this.error = true
-      //  this.reason = e.response.data.reason
-      //})
-      //.then((i) => {
-      //  if(!this.error) {
-      //    this.loading = false;
-      //    this.$router.push(this.$fs.path('/account/setup'))
-      //  }
-      //})
-    },
+      this.$fs.createPendingAccount({ hash: this.getHash(), locale: this.$i18n.locale})
+      .then((res) => {
+        if(!this.error) {
+          this.loading = false;
+          this.success = true;
+          this.$router.push(this.$fs.path('/account'))
+        }
+      })
+      .catch((e) => {
+        this.loading = false;
+        this.error = true
+        this.reason = e.response.data.reason
+      })
+    }
   }
 
 }

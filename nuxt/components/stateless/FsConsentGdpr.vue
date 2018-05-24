@@ -1,5 +1,5 @@
 <template>
-  <section class="on-splash fs-m800">
+  <section :class="(signup) ? '' : 'on-splash fs-m800'">
     <div v-if="deleteProfileConfirmation || deleteModelConfirmation">
       <blockquote class="error">
         <h4>Are you 100% sure about this?</h4>
@@ -75,7 +75,7 @@
         <p>{{ $t('txt-gdpr-1') }}</p>
         <p>{{ $t('txt-gdpr-2') }}</p>
         <p>{{ $t('txt-gdpr-3') }}</p>
-        <fs-link-learn-more to="/docs/privacy"> {{ $t('privacyInfo') }}</fs-link-learn-more>
+        <fs-link-learn-more to="/privacy"> {{ $t('privacyNotice') }}</fs-link-learn-more>
       </div>
 
       <div v-if="profile && !profileConsentOnLoad">
@@ -83,12 +83,16 @@
         <fs-message-consent-profile />
           <h4>{{ $t('txt-consentProfile') }}</h4>
           <v-switch v-model="profileConsent" color="success" :label= "profileConsent ? $t('yesIDo') : $t('noIDoNot')"></v-switch>
-          <v-btn color="success" class="mb-5" :disabled="!profileConsent" @click="save({profileConsent: true})">
+          <v-btn color="success" class="mb-5" :disabled="!profileConsent" @click="(signup) ? $emit('consent') : save({profileConsent: true})">
             <v-progress-circular indeterminate color="#fff" class="mr-3" v-if="loading" size="20" width="2"></v-progress-circular>
-            <v-icon class="mr-3" v-else>save</v-icon>
-            {{ $t('save') }}
+            <div v-else>
+              <v-icon class="mr-3" v-if="signup">check_circle</v-icon>
+              <v-icon class="mr-3" v-else>save</v-icon>
+            </div>
+            <span v-if="signup">{{ $t('createMyAccount') }}</span>
+            <span v-else>{{ $t('save') }}</span>
           </v-btn>
-          <v-btn color="error" class="mb-5" :disabled="profileConsent" @click="deleteProfileConfirmation=true">
+          <v-btn color="error" class="mb-5" :disabled="profileConsent" @click="(signup) ? $emit('noconsent') : deleteProfileConfirmation=true">
             <v-progress-circular indeterminate color="#fff" class="mr-3" v-if="loading" size="20" width="2"></v-progress-circular>
             <v-icon class="mr-3" v-else>cancel</v-icon>
             {{ $t('removeAllMyData') }}
@@ -118,7 +122,7 @@
       <div v-if="(model || profile)">
         <p class="body-1 mt-5 mb-4">
         {{ $t('txt-gdprCompliant') }}
-        <nuxt-link :to="$fs.path('/docs/privacy')" class="ml-3">{{ $t('privacyInfo')}}</nuxt-link>
+        <nuxt-link :to="$fs.path('/privacy')" class="ml-3">{{ $t('privacyNotice')}}</nuxt-link>
         </p>
       </div>
     </div>
@@ -149,6 +153,10 @@ export default {
     model: {
       type: Boolean,
       default: true
+    },
+    signup: {
+      type: Boolean,
+      default: false
     }
   },
   data () {
@@ -158,18 +166,24 @@ export default {
     let profileConsentOnLoad = false
     let modelConsentOnLoad = false
     let objectsToOpenDataOnLoad = false
-    if(this.$store.state.user.account.consent.profile == '1') {
-      profileConsent = true
-      profileConsentOnLoad = true
-    }
-    if(this.$store.state.user.account.consent.model == '1') {
-      modelConsent = true
-      modelConsentOnLoad = true
-    }
-    if(this.$store.state.user.account.consent.objectsToOpenData == '1') {
-      objectsToOpenData = true
-      objectsToOpenDataOnLoad = true
-    }
+    try {
+      if(this.$store.state.user.account.consent.profile == '1') {
+        profileConsent = true
+        profileConsentOnLoad = true
+      }
+    } catch (e){}
+    try{
+      if(this.$store.state.user.account.consent.model == '1') {
+        modelConsent = true
+        modelConsentOnLoad = true
+      }
+    } catch (e){}
+    try {
+      if(this.$store.state.user.account.consent.objectsToOpenData == '1') {
+        objectsToOpenData = true
+        objectsToOpenDataOnLoad = true
+      }
+    } catch (e){}
     return {
       loading: false,
       error: false,
