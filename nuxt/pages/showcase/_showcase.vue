@@ -55,7 +55,7 @@ export default {
     let path = route.path
     // Strip trailing slash
     if(path.substr(-1) === '/') path = path.substr(0, path.length-1)
-    data.post = await app.$content('/'+app.i18n.locale+'/showcase').get(route.path)
+    data.post = await app.$content('/'+app.i18n.locale+'/showcase').get(path)
     .then(function (data) {
       return data
     })
