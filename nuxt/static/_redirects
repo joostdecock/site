@@ -1,13 +1,82 @@
-# Onboarding E-mail confirmation
-/signup/confirm/*  /signup/confirm-email    200
+# Top-level documentation
 
-# Onboarding consent for profile data
-/signup/consent/*   /signup/consent-profile 200
+/contact        /docs/contact
+/:locale/contact  /:locale/docs/contact
 
-# E-mail change confirmation
-/email/confirm/*  /account/confirm-email-change    200
+/privacy        /docs/privacy
+/:locale/privacy  /:locale/docs/privacy
 
-# i18n language status pages
-/i18n/*  /i18n/status-locale    200
+/help        /docs/help
+/:locale/help  /:locale/docs/help
 
+/rights        /docs/rights
+/:locale/rights  /:locale/docs/rights
 
+/about        /docs/about
+/:locale/about  /:locale/docs/about
+
+# Dynamic routes
+
+## Onboarding E-mail confirmation
+/signup/confirm/*        /signup/confirm-email    200
+/:locale/signup/confirm/*  /:locale/signup/confirm-email    200
+
+## Onboarding consent for profile data
+/signup/consent/*        /signup/consent-profile 200
+/:locale/signup/consent/*  /:locale/signup/consent-profile 200
+
+## E-mail change confirmation
+/email/confirm/*        /account/confirm-email-change    200
+/:locale/email/confirm/*  /:locale/account/confirm-email-change    200
+
+## Account recovery
+/account/recover/*        /account/recover-password 200
+/:locale/account/recover/*  /:locale/account/recover-password 200
+
+## Draft step 2
+/draft/:pattern/for/:model  /draft/choose-options 200
+/:locale/draft/:pattern/for/:model  /:locale/draft/choose-options 200
+
+## Draft step 1
+/draft/:pattern  /draft/choose-model 200
+/:locale/draft/:pattern  /:locale/draft/choose-model 200
+
+## Fork step 2
+/draft/:pattern/for/:model  /draft/choose-options 200
+/:locale/draft/:pattern/for/:model  /:locale/draft/choose-options 200
+
+## Fork step 1
+/fork/:pattern  /fork/choose-model 200
+/:locale/fork/:pattern  /:locale/fork/choose-model 200
+
+## Redraft step 2
+/redraft/:pattern/for/:model  /forkk/choose-options 200
+/:locale/redraft/:pattern/for/:model  /:locale/fork/choose-options 200
+
+## Redraft step 1
+/redraft/:pattern  /fork/choose-model 200
+/:locale/redraft/:pattern  /:locale/fork/choose-model 200
+
+## i18n language status pages
+/i18n/*        /i18n/status-locale    200
+/:locale/i18n/*  /:locale/i18n/status-locale    200
+
+## Blog category
+/blog/category/:category  /blog/blog-category 200
+/:locale/blog/category/:category  /:locale/blog/blog-category 200
+
+## Showcase category
+/showcase/category/:category  /showcase/showcase-category 200
+/:locale/showcase/category/:category  /:locale/showcase/showcase-category 200
+
+## Draft view
+/drafts/:draft  /draft/_draft  200
+/:locale/drafts/:draft  /:locale/drafts/_draft  200
+
+## Model view
+/models/:model  /model/_model  200
+/:locale/models/:model  /:locale/models/_model  200
+
+## User view
+/users/:user  /users/_user  200
+/:locale/users/:user  /:locale/users/_user  200
