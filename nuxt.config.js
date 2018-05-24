@@ -69,12 +69,12 @@ const dynamicRoutes = [
   {
     path: '/drafts/:draft',
     name: 'draft-page',
-    component: 'nuxt/pages/drafts/_draft.vue'
+    component: 'nuxt/pages/drafts/show-draft.vue'
   },
   {
     path: '/models/:model',
     name: 'model-page',
-    component: 'nuxt/pages/models/_model.vue'
+    component: 'nuxt/pages/models/show-model.vue'
   },
   {
     path: '/i18n/:locale',
@@ -94,7 +94,7 @@ const dynamicRoutes = [
   {
     path: '/users/:user',
     name: 'user-page',
-    component: 'nuxt/pages/users/_user.vue'
+    component: 'nuxt/pages/users/show-user.vue'
   },
 ]
 

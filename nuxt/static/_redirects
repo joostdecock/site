@@ -70,13 +70,13 @@
 /:locale/showcase/category/:category  /:locale/showcase/showcase-category 200
 
 ## Draft view
-/drafts/:draft  /draft/_draft  200
-/:locale/drafts/:draft  /:locale/drafts/_draft  200
+/drafts/:draft  /draft/show-draft  200
+/:locale/drafts/:draft  /:locale/drafts/show-draft  200
 
 ## Model view
-/models/:model  /model/_model  200
-/:locale/models/:model  /:locale/models/_model  200
+/models/:model  /model/show-model  200
+/:locale/models/:model  /:locale/models/show-model  200
 
 ## User view
-/users/:user  /users/_user  200
-/:locale/users/:user  /:locale/users/_user  200
+/users/:user  /users/show-user  200
+/:locale/users/:user  /:locale/users/show-user  200
