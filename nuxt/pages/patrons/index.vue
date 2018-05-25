@@ -17,7 +17,7 @@
                                     {
                                         username: patron.username,
                                         patronTier: patronGrade(patron),
-                                        daysAgo: patronSince(patron)
+                                        daysAgo: $fs.daysAgo(patron.since)
                                     })
                                 }}
                             </p>
@@ -51,10 +51,6 @@
             return { patrons: list }
         },
         methods: {
-            patronSince: function(patron) {
-                var date = new Date(patron.since*1000);
-                return this.$fs.daysAgo(date);
-            },
             patronGrade: function(patron) {
                 switch(patron.tier) {
                     case '2': return this.$t('Powder Monkey'); break;
