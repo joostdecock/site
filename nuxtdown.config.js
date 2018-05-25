@@ -1,8 +1,15 @@
+var Prism = require('prismjs');
 const markdownConfig = {
+  extend(config) {
+    config.highlight = (code, lang) => {
+      return `<pre class="language-${lang} fs-codeblock"><code class="language-${lang}">${Prism.highlight(code, Prism.languages[lang] || Prism.languages.markup)}</code></pre>`
+    }
+  },
   plugins: {
     attrs: require('markdown-it-attrs'),
     figures: [require('markdown-it-implicit-figures'), { figcaption: true }],
-    video: require('markdown-it-video')
+    video: require('markdown-it-video'),
+    footnote: require('markdown-it-footnote')
   }
 }
 

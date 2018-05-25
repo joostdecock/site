@@ -25,7 +25,7 @@ i18n:
   coordinators:
     de: manufaktur.edelweiss
     en: joost
-    es: AlfaLyer
+    es: AlfaLyr
     fr: MrsMonkey
     nl: AnnekeCaramin
     'no': _vacant
@@ -60,7 +60,7 @@ i18n:
     en:
       app: 398
       blog: 30
-      docs: 314
+      docs: 315
       i18n: 6
       measurements: 26
       optiongroups: 12
@@ -68,13 +68,13 @@ i18n:
       patterns: 37
       showcase: 51
     es:
-      app: 385
+      app: 396
       blog: 2
       docs: 1
       i18n: 6
       measurements: 26
       optiongroups: 12
-      options: 57
+      options: 101
       patterns: 37
       showcase: 1
     fr:
@@ -120,7 +120,7 @@ i18n:
   target:
     app: 398
     blog: 30
-    docs: 314
+    docs: 315
     i18n: 6
     measurements: 26
     optiongroups: 12

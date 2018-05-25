@@ -120,6 +120,7 @@ module.exports = {
       { name: 'author', content: 'Joost De Cock'},
     ],
     link: [
+      { rel: 'stylesheet', href: '/css/prism.css' },
       { rel: 'manifest', href: '/img/icons/browser/manifest.json' },
       { rel: 'shortcut icon', href: '/img/icons/browser/favicon.ico' },
       { rel: 'apple-touch-icon', href: '/img/icons/browser/apple-icon.png' },
