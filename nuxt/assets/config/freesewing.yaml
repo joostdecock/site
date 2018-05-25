@@ -19,7 +19,7 @@ defaults:
     imperial: 0.125
     metric: 0.1
   themes:
-    - Classic
+    - Basic
     - Paperless
 i18n:
   coordinators:
@@ -78,7 +78,7 @@ i18n:
       patterns: 37
       showcase: 1
     fr:
-      app: 178
+      app: 177
       blog: 0
       docs: 0
       i18n: 0

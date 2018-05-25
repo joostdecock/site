@@ -96,7 +96,7 @@ export default {
   },
   methods: {
     editLink(item) {
-      let link = 'https://github.com/freesewing/site/edit/v2/nuxt/content'
+      let link = 'https://github.com/freesewing/site/edit/develop/nuxt/content'
       link += item.item.meta.dirName+item.item.meta.section
       if(item.item.meta.section !== '/') link += '/'
       link += item.item.meta.fileName
