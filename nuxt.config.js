@@ -208,7 +208,7 @@ module.exports = {
     }
   },
   generate: {
-    interval: 1000,
+    interval: 500,
     routes: [
         '/patterns/aaron',
         '/patterns/brian',
