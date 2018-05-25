@@ -1,4 +1,4 @@
-<a href="https://freesewing.org/"><img src="https://freesewing.org/img/logo/logo-black.svg" align="right" width=200 style="max-width: 20%;" /></a>
+<a href="https://freesewing.org/"><img src="https://freesewing.org/img/logo/black.svg" align="right" width=200 style="max-width: 20%;" /></a>
 
 # Freesewing site
 [Freesewing](https://freesewing.org/) is an open source platform for made-to-measure sewing patterns.

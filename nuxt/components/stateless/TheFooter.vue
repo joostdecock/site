@@ -13,6 +13,11 @@
             </p>
             <v-btn color="accent" :to="$fs.path('/patrons/join')" class="mt-1 mb-4"><v-icon class="mr-3">favorite</v-icon>{{ $t('becomeAPatron') }}</v-btn>
             <p v-html="$t('txt-footer')"></p>
+            <p>
+              <a href="https://github.com/freesewing/site">site v{{ $fs.conf.versions.site}}</a> |
+              <a href="https://github.com/freesewing/site">data v{{ $fs.conf.versions.data }}</a> |
+              <a href="https://github.com/freesewing/site">core v{{ $fs.conf.versions.core}}</a>
+            </p>
         </v-flex>
       </v-layout>
     </v-footer>

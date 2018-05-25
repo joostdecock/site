@@ -5,7 +5,7 @@
     <div class="text-xs-center mt-3 mb-3">
       <v-progress-circular size="100" :value="score" :rotate="(-90)" :width="(12)" :color="$fs.percentColor(score)">{{score}}%</v-progress-circular>
       <p class="mt-3">
-        <v-btn color="primary" :href="'https://github.com/freesewing/site/edit/v2/nuxt/locales/'+locale+'/'+file+'.yaml'">
+        <v-btn color="primary" :href="'https://github.com/freesewing/site/edit/develop/nuxt/locales/'+locale+'/'+file+'.yaml'">
           <fs-icon-github color="#FFF" class="mr-3" />
           Edit {{ file+'.yaml' }} on GitHub
         </v-btn>

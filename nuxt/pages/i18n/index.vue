@@ -3,10 +3,6 @@
     <fs-breadcrumbs>{{ $t('i18n') }}</fs-breadcrumbs>
     <h1 class="text-xs-center mb-5">{{ $t('i18n') }}</h1>
     <div class="fs-content fs-pad elevation-1">
-      <pre>
-      {{ $fs.conf.i18n.coordinators }}
-
-      </pre>
     <table class="table fs-info-table">
       <thead>
         <tr class="fs-titlerow">
