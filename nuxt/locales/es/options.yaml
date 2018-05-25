@@ -83,65 +83,65 @@ buttonPlacketWidth:
   description: Anchura de la vista de los botones
   title: Anchura de la vista de los botones
 buttonfreeLength:
-  description: How much of the bottom of the front closure to keep button-free. TODO
-  title: Button free length TODO
+  description: Qué longitud se deja entre el último botón y el bajo.
+  title: Longitud sin botones
 buttonholePlacketFoldWidth:
-  description: Width of the buttonhole placket fold. TODO
-  title: Buttonhole placket fold width TODO
+  description: Anchura del pliegue de la vista de los ojales.
+  title: Anchura del pliegue de la vista de los ojales
 buttonholePlacketStyle:
-  description: Style of the buttonhole placket. TODO
+  description: Estilo de la vista de los ojales.
   options:
-    '1': Classic style TODO TODO TODO
-    '2': French style (seamless) TODO TODO TODO
-  title: Buttonhole placket style TODO
+    '1': Estilo clásico
+    '2': Estilo francés (sin costuras)
+  title: Estilo de la vista de los ojales
 buttonholePlacketType:
-  description: Type of the buttonhole placket. TODO
+  description: Tipo de vista de los ojales.
   options:
-    '1': Cut-on TODO TODO TODO
-    '2': Separate TODO TODO TODO
-  title: Buttonhole placket type TODO
+    '1': Parte de la pieza delantera
+    '2': Separada
+  title: Tipo de vista de lo ojales
 buttonholePlacketWidth:
-  description: Width of the butonhole placket. TODO
-  title: Buttonhole placket width TODO
+  description: Anchura de la vista de los ojales.
+  title: Anchura de la vista de los ojales
 buttons:
-  description: The number of buttons on the front closure. TODO
+  description: Número de botones delanteros
   options:
     simon:
-      '10': 10 buttons TODO TODO
-      '11': 11 buttons TODO TODO
-      '12': 12 buttons TODO TODO
-      '4': 4 buttons TODO TODO
-      '5': 5 buttons TODO TODO
-      '6': 6 buttons TODO TODO
-      '7': 7 buttons TODO TODO
-      '8': 8 buttons TODO TODO
-      '9': 9 buttons TODO TODO
+      '10': 10 botones
+      '11': 11 botones
+      '12': 12 botones
+      '4': 4 botones
+      '5': 5 botones
+      '6': 6 botones
+      '7': 7 botones
+      '8': 8 botones
+      '9': 9 botones
     wahid:
-      '10': 10 buttons TODO TODO
-      '11': 11 buttons TODO TODO
-      '12': 12 buttons TODO TODO
-      '4': 4 buttons TODO TODO
-      '5': 5 buttons TODO TODO
-      '6': 6 buttons TODO TODO
-      '7': 7 buttons TODO TODO
-      '8': 8 buttons TODO TODO
-      '9': 9 buttons TODO TODO
-  title: Number of buttons TODO
+      '10': 10 botones
+      '11': 11 botones
+      '12': 12 botones
+      '4': 4 botones
+      '5': 5 botones
+      '6': 6 botones
+      '7': 7 botones
+      '8': 8 botones
+      '9': 9 botones
+  title: Número de botones
 centerBackDart:
-  description: The amount to take out in a dart at the top of the center back. TODO
-  title: Center back dart TODO
+  description: La cantidad a reducir con una pinza en la parte superior de la espalda.
+  title: Pinza central trasera
 centerFrontHemDrop:
-  description: The hem at the front is lowered by this ratio of your neck to hips vertical measurements. TODO
-  title: Center front hem drop TODO
+  description: El dobladillo por delante se baja esta proporción de la medida de cuello a cadera
+  title: Caída del dobladillo por delante
 chestEase:
-  description: The amount of ease at your chest. TODO
-  title: Chest ease TODO
+  description: La cantidad de holgura en el pecho
+  title: Holgura de pecho
 chestPocketAngle:
-  description: The angle of the chest pocket. TODO
-  title: Chest pocket angle TODO
+  description: El ángulo del bolsillo del pecho
+  title: Ángulo del bolsillo del pecho
 chestPocketPlacement:
-  description: Location of the chest pocket as a proportion a quarter of your chest circumference. Higher numbers move it more to the side. TODO
-  title: Chest pocket placement TODO
+  description: El bolsillo del pecho se coloca como una proporcion de un cuarto de tu circunferencia de pecho. Valores mayores lo mueven hacia el lado.
+  title: Situación del bolsillo del pecho
 chestPocketWeltSize:
   description: The height of the chest pocket welt. TODO
   title: Chest pocket welt height TODO
