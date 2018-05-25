@@ -8,10 +8,10 @@ addAModel: Añade un modelo
 addComment: Añade un comentario
 all: Todo
 alreadyHaveAnAccount: ¿Ya tienes una cuenta?
-areYouSureAboutThis: Are you 100% sure about this? TODO
+areYouSureAboutThis: ¿Estás seguro al 100%?
 avatar: Avatar DONE
 avatarUpdated: Avatar actualizado
-averagePeopleDontExist: Las persona promedio no existen
+averagePeopleDontExist: Las personas promedio no existen
 basics: Bases
 becomeAPatron: Conviértete en patrocinador
 bio: Bio DONE
@@ -27,7 +27,7 @@ cancel: Cancelar
 chatOnGitter: Chatea en Gitter
 chatWithUs: Chatea con nosotros
 chooseAModel: Elige un modelo
-chooseANewPassword: CElige una contraseña
+chooseANewPassword: Elige una contraseña
 chooseAPattern: Elige un patrón
 chooseYourOptions: Elige tus opciones
 classicTheme: Tema clásico
@@ -99,7 +99,7 @@ freesewing: Freesewing DONE
 freesewingContributors: contribudores Freesewing
 freesewingOnGithub: Freesewing en GitHub
 freesewingPatrons: patrones de Freesewing
-freezeMyAccount: Freeze my account TODO
+freezeMyAccount: Congelar mi cuenta
 fullSizePdf: PDF tamaño completo
 fundamentals: Fundamentos
 getHelp: Obtén ayuda
@@ -196,10 +196,10 @@ privacyNotice: Aviso de privacidad
 processingDraftOptions: Procesando las opciones del boceto
 profile: Perfil
 quickPick: Vista rápida
-quote-allie: Have you heard of freesewing.org? It’s pretty much the greatest thing ever! TODO
-quote-allie-about: Author of sewing blog The Aspiring Seamstress. TODO
-quote-ivan: Kudos to @j__st for creating @freesewing_org an open source platform for made-to-measure sewing patterns and general awesomeness TODO
-quote-ivan-about: Kubernetes London Meetup co-organiser. Founder of Kube.camp TODO
+quote-allie: ¿Has oído hablar de freesewing.org? ¡Es lo mejor que hay!
+quote-allie-about: Oitero dul blog de costura The Aspiring Seamstress.
+quote-ivan: Gracias a j__st por crear @freesewing_org una plataforma open source para patrones de costura a medida y cosas geniales en general
+quote-ivan-about: Co-organizador de Kubernetes London Meetup. Fundador de Kube.camp
 quote-jamie: 'con Freesewing, coser ha entrado en el Siglo XXI'
 quote-jamie-about: Autor del popular blog de costura Male Devon Sewing y concursante Great British Sewing Bee 2016.
 reSendActivationEmail: Reenviar email de activación
@@ -258,7 +258,7 @@ step1: Paso 1
 step2: Paso 2
 step3: Paso 3
 step4: Paso 4
-stopProcessingMyData: Stop processing my data TODO
+stopProcessingMyData: Dejad de procesar mis datos
 stopUpload: Detener subida
 storingDraftData: Guardando datos del boceto
 strikethrough: Tachado
@@ -306,8 +306,8 @@ txt-consentProfileQuestionWhat: ¿Qué son los datos del perfil?
 txt-consentProfileQuestionWhy: ¿Por qué lo necesitamos?
 txt-contentLocaleFallback: Por eso te estamos enseñando la versión en inglés en su lugar.
 txt-contentNotTranslated: 'Lamentablemente, esta página no ha sido traducida al español (todavía). '
-txt-dataExport: 'If you like, we can export all the data we have stored for you. TODO'
-txt-dataExportQueued: You data export has been queued. We'll send you an E-mail once it's ready with a download link. TODO
+txt-dataExport: 'Si qieres, podemos exportar todos los datos que tenemos sobre ti.'
+txt-dataExportQueued: Tus datos están en cola para exportar. Te enviaremos un email cuando estén listos con un link de descarga.
 txt-didYouSpotATypo: '¿Has encontrado un error tipográfico? ¿Crees que algo falta, o necesita aclaración? '
 txt-doYouObject: ¿Te opones a que usemos tus datos de manera anónima para investigación científica?
 txt-editThisPageOnline: Puedes editar esta página y luego enviar tus cambios.
@@ -338,7 +338,7 @@ txt-modelsWithMissingMeasurements: 'A este modelo le faltan algunas de las medid
 txt-newModel: 'Para empezar, dale un nombre a este modelo. '
 txt-password-policy: No aplicamos una política de contraseña
 txt-passwordRecoverConfirmationNotFound: 'Lo sentimos, pero no tenemos pendiente ninguna recuperación de contraseña para este código de confirmación. Quizás ha caducado, en cuyo caso simplemente puedes hacer una nueva solicitud'
-txt-resend: 'You can sign up again with the same E-mail address, and we''ll send you a new confirmation message. TODO'
+txt-resend: 'Puedes iniciar sesión de nuevo con la misma dirección de E-mail, y te enviaremos un nuevo mensaje de confirmación.'
 txt-saOption-custom: Margen de costura personalizado
 txt-saOption-imperial: Margen de costura imperial estándar
 txt-saOption-metric: Margen de costura métrico estándar
@@ -352,7 +352,7 @@ txt-slogan: Una plataforma open source para patrones de costura a medida
 txt-translators1: Buscamos personas para ayudarnos en nuestro esfuerzo de traducir.
 txt-translators2: 'Muchas manos hacen el trabajo ligero, y contribuír así trae muy buen karma.'
 txt-translators3: 'Para aprender más acerca de lo que puedes hacer, y de cómo hacerlo, sigue el enlace de abajo.'
-txt-warningDataRestriction: 'Once we restrict your account, you won''t be able to undo this yourself. To regain access to your account, you will have to contact us. TODO'
+txt-warningDataRestriction: 'Una vez que restrinjamos tu cuenta, no podrás deshacerlo tú mismo. Para volver a tener acceso a tu cuenta tendrás que contactar con nosotros.'
 txt-warningModelData: Esto borarrá todos tus modelos y todos tus diseños.
 txt-warningProfileData: 'Esto borrará todos tus modelos, todos tus patrones, todos tus comentarios y tu cuenta. Todo se irá.'
 txt-withOrWithoutBreasts: 'Ajustar pechos requiere una serie de medidas que no son relevantes si no tienes pechos. Si has elegido que tu modelo no tenga pechos, to te mostraremos estas medidas por ser irrelevantes. Si no sabes qué elegir, elige pechos. '
