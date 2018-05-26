@@ -1,4 +1,7 @@
 var Prism = require('prismjs');
+var loadLanguages = require('prismjs/components/index.js');
+loadLanguages(['yaml', 'markdown', 'php']);
+
 const markdownConfig = {
   extend(config) {
     config.highlight = (code, lang) => {

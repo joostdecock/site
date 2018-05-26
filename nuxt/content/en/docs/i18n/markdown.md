@@ -1,6 +1,17 @@
 ---
 title: Translating MarkDown
 ---
+<blockquote class="warning">
+
+#### Don't translate content yet
+
+Our content is still being ported from our old site to the new site.
+(see [this open issue](https://github.com/freesewing/site/issues/384))
+
+This means that we first need to fix the original English content before you
+start translating. We'll do that ASAP, but until that time please refrain 
+from translating content and focus on strings.
+</blockquote>
 
 > To translate a MarkDown file, follow these steps:
 > 
@@ -42,7 +53,7 @@ Frontmatter is always a `key:value` pair, in which the `key` never is translated
 Translation of the `value` depends on the `key`. In the example above, you
 would translate the page title. But look at this frontmatter from a showcase:
 
-```markup
+```markdown
 ---
 title: A speckled simon by Allie for her husband
 caption: "That constrasting buttonhole packet is a great touch."
@@ -59,7 +70,7 @@ When you're not certain whether something needs translating or not,
 
 ## Syntax
 
-MarkDown is a very straigh-forward way to format text to turn it into HTML.
+MarkDown is a straigh-forward way to format text to turn it into HTML.
 You'll be familiar with it in no time.
 
 The [official MarkDown documentation](https://daringfireball.net/projects/markdown/syntax)
@@ -125,7 +136,7 @@ Apart from the standard MarkDown syntax, we've added extentions for:
 
 **Footnotes**
 
-```markup
+```markdown
 Make a footnote^[This is the footnote]
 ```
 

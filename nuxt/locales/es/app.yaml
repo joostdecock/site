@@ -368,7 +368,7 @@ user: Usuario
 userHasBeenWithUsSince: '{user} ha estado con nosotros desde {since}'
 userIsAPatron: '{user} es un patrocinador'
 username: Nombre de usuario
-usernameOrEmail: '@:nombre de usuario or @:dirección de correo electrónico'
+usernameOrEmail: '@:username or @:emailAddress DONE'
 usernameUpdated: Nombre de usuario actualizado
 users: Usuarios
 version: Versión

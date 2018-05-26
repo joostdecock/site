@@ -60,7 +60,7 @@ i18n:
     en:
       app: 398
       blog: 30
-      docs: 315
+      docs: 316
       i18n: 6
       measurements: 26
       optiongroups: 12
@@ -120,7 +120,7 @@ i18n:
   target:
     app: 398
     blog: 30
-    docs: 315
+    docs: 316
     i18n: 6
     measurements: 26
     optiongroups: 12

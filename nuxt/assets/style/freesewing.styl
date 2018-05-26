@@ -358,6 +358,9 @@ table.table tbody td
 .fs-ucase
   text-transform: uppercase
 
+.fs-locase
+  text-transform: lowercase
+
 .fs-m0
   margin: 0!important
 
@@ -401,6 +404,17 @@ pre.fs-codeblock
 
   code::before
     display: none
+
+  code::after
+    display: none
+
+  code
+    box-shadow: none
+    text-shadow: none
+
+  .list
+    background: inherit
+    color: inherit
 
 hr.footnotes-sep
   margin-top: 2rem
