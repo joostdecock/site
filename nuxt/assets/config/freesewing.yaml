@@ -29,6 +29,9 @@ i18n:
     fr: MrsMonkey
     nl: AnnekeCaramin
     'no': _vacant
+    sv: _vacant
+    pl: _vacant
+    pt: _vacant
   files:
     - app
     - i18n
@@ -41,6 +44,9 @@ i18n:
       - de
       - fr
       - 'no'
+      - sv
+      - pl
+      - pt
     enabled:
       - en
       - es
@@ -60,8 +66,8 @@ i18n:
     en:
       app: 398
       blog: 30
-      docs: 315
-      i18n: 6
+      docs: 316
+      i18n: 9
       measurements: 26
       optiongroups: 12
       options: 302
@@ -107,6 +113,36 @@ i18n:
       options: 0
       patterns: 0
       showcase: 0
+    pl:
+      app: 0
+      blog: 0
+      docs: 0
+      i18n: 0
+      measurements: 0
+      optiongroups: 0
+      options: 0
+      patterns: 0
+      showcase: 0
+    pt:
+      app: 0
+      blog: 0
+      docs: 0
+      i18n: 0
+      measurements: 0
+      optiongroups: 0
+      options: 0
+      patterns: 0
+      showcase: 0
+    sv:
+      app: 0
+      blog: 0
+      docs: 0
+      i18n: 0
+      measurements: 0
+      optiongroups: 0
+      options: 0
+      patterns: 0
+      showcase: 0
     xx:
       app: 0
       blog: 0
@@ -120,8 +156,8 @@ i18n:
   target:
     app: 398
     blog: 30
-    docs: 315
-    i18n: 6
+    docs: 316
+    i18n: 9
     measurements: 26
     optiongroups: 12
     options: 302

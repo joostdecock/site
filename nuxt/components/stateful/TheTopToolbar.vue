@@ -18,16 +18,20 @@
           <the-account-dropdown-menu v-if="$store.state.user.loggedIn" />
           <div v-else>
           <v-btn :to="$fs.path('/login')" flat class="fs-ucase fs-m0" active-class="default-class fs-active-btn">
+            <v-icon color="success" class="mr-2 fs-locase">vpn_key</v-icon>
             {{ $t('logIn') }}
           </v-btn>
           <v-btn :to="$fs.path('/signup')" flat class="fs-ucase fs-m0" active-class="default-class fs-active-btn">
+            <v-icon color="accent" class="mr-2 fs-locase">person_add</v-icon>
             {{ $t('signUp') }}
           </v-btn>
           </div>
           <v-spacer></v-spacer>
+          <!--
           <v-btn :to="$fs.path('/search')" active-class="default-class fs-active-btn" flat class="fs-m0">
             <v-icon>search</v-icon>
           </v-btn>
+          -->
           <the-language-dropdown-menu />
         </v-toolbar>
       </v-flex>
