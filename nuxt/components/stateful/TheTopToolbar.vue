@@ -16,10 +16,14 @@
           <the-documentation-dropdown-menu />
           <the-community-dropdown-menu />
           <the-account-dropdown-menu v-if="$store.state.user.loggedIn" />
-          <v-btn v-else :to="$fs.path('/signup')" flat class="fs-ucase fs-m0" active-class="default-class fs-active-btn">
-            <v-icon class="mr-3" color="accent" style="text-transform: none">person_add</v-icon>
+          <div v-else>
+          <v-btn :to="$fs.path('/login')" flat class="fs-ucase fs-m0" active-class="default-class fs-active-btn">
+            {{ $t('logIn') }}
+          </v-btn>
+          <v-btn :to="$fs.path('/signup')" flat class="fs-ucase fs-m0" active-class="default-class fs-active-btn">
             {{ $t('signUp') }}
           </v-btn>
+          </div>
           <v-spacer></v-spacer>
           <v-btn :to="$fs.path('/search')" active-class="default-class fs-active-btn" flat class="fs-m0">
             <v-icon>search</v-icon>
