@@ -3,12 +3,12 @@
     <fs-wrapper-login-required :callback="loadUser">
       <fs-breadcrumbs :crumbs="crumbs">{{ $route.params.user }}</fs-breadcrumbs>
       <div v-if="loaded">
-        <v-alert value="user.profile.patron" color="success" icon="favorite" v-if="user.profile.patron" class="mt-3 mb-3">
+        <v-alert value="1" color="success" icon="favorite" v-if="user.profile.patron > 0" class="mt-3 mb-3">
           <b>{{ $t('userIsAPatron', {user: user.profile.username}) }}</b>
           <small class="ml-3">{{ $t('txt-homepage-patrons') }}</small>
         </v-alert>
-
         <v-tabs color="primary" dark class="fs-content elevation-1" centered>
+
           <v-tab>{{ $t('profile') }}</v-tab>
           <v-tab>{{ $t('drafts') }}</v-tab>
           <v-tab>{{ $t('comments') }}</v-tab>
