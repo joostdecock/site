@@ -7,7 +7,7 @@
 
 ## About
 
-This site is build with [Vue.js](https://vuejs.org/) and [Nuxt](https://nuxtjs.org/).
+This website is build with [Vue.js](https://vuejs.org/) and [Nuxt](https://nuxtjs.org/).
 We use `nuxt generate` to build it into a static site that we deploy on [Netlify](https://netlify.com) 
 and hook up to our [data](https://github.com/freesewing/data) backend.
 
