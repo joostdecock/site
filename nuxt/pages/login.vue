@@ -9,7 +9,14 @@
           <h1 class="mt-5">{{ $t('iForgotMyPassword') }}</h1>
           <p class="mt-5" v-html="$t('txt-forgot-login')"></p>
           <v-form v-model="valid" class="mt-4">
-            <v-text-field :label="$t('usernameOrEmail')" v-model="username" required prepend-icon="perm_identity"></v-text-field>
+            <v-text-field
+              :label="$t('usernameOrEmail')"
+              v-model="username"
+              required
+              prepend-icon="perm_identity"
+              :autofocus="(true)"
+              @keyup.enter="recoverPassword"
+              ></v-text-field>
             <v-btn @click="recoverPassword" color="primary" large class="mt-3">
               <v-progress-circular indeterminate color="#fff" class="mr-3" v-if="loading" :size="20" :width="2"></v-progress-circular>
               <v-icon v-else class="mr-3">settings_backup_restore</v-icon>
@@ -55,6 +62,7 @@
                                 required
                                 prepend-icon="perm_identity"
                                 :hint="$t('txt-emailWillWorkToo')"
+                                :autofocus="(true)"
                                 >
           </v-text-field>
             <v-text-field
@@ -66,6 +74,7 @@
                                 required
                                 prepend-icon="lock"
                                 :hint="$t('weCantHelpYouWithThis')"
+                                @keyup.enter="submit"
                                 >
             </v-text-field>
             <v-btn @click="submit" color="primary" large class="mt-3">

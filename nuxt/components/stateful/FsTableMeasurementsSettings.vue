@@ -133,7 +133,8 @@ export default {
     },
     measurementList: function() {
       if(this.filter === 'none') {
-        return Object.keys(this.$fs.conf.measurements)
+        if(this.model.breasts) return Object.keys(this.$fs.conf.measurements.all)
+        else return Object.keys(this.$fs.conf.measurements.noBreasts)
       } else {
         let measurements = []
         for(let m in this.$fs.conf.patterns[this.filter].measurements) {
