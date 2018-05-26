@@ -87,7 +87,7 @@ enterYourCurrentPassword: Introduce tu contraseña actual
 enterYourNewPassword: Introduce tu nueva contraseña
 error-unknown: Ha ocurrido un error inesperado
 error-username_taken: Nombre de usuario ya escogido
-exportMyData: Export my data TODO
+exportMyData: Exportar mis datos
 filterByPattern: Filtrar por patrón
 forContributors: Para colaboradores
 forMoreInfoRtfm: 'Para más información, lee la documentación: '
@@ -181,7 +181,7 @@ patternDesignTutorial: Tutorial de diseño de patrones
 patternDocumentation: Documentación de los patrones
 patternInstructions: Intrucciones de los patrones
 patternIsPattern: 'El patrón es {pattern}'
-patternLineDrawing: '{pattern} line drawing TODO'
+patternLineDrawing: 'Dibujo de líneas de ''{pattern}'
 patternOptions: Opciones del patrón
 patternParts: Partes del patrón
 patterns: Patrones
@@ -197,7 +197,7 @@ processingDraftOptions: Procesando las opciones del boceto
 profile: Perfil
 quickPick: Vista rápida
 quote-allie: ¿Has oído hablar de freesewing.org? ¡Es lo mejor que hay!
-quote-allie-about: Oitero dul blog de costura The Aspiring Seamstress.
+quote-allie-about: Autora del blog de costura The Aspiring Seamstress.
 quote-ivan: Gracias a j__st por crear @freesewing_org una plataforma open source para patrones de costura a medida y cosas geniales en general
 quote-ivan-about: Co-organizador de Kubernetes London Meetup. Fundador de Kube.camp
 quote-jamie: 'con Freesewing, coser ha entrado en el Siglo XXI'
