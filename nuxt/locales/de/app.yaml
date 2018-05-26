@@ -1,43 +1,43 @@
-100PercentCommunity: 100% community TODO
-100PercentFree: 100% free TODO
-100PercentOpenSource: 100% open source TODO
+100PercentCommunity: 100% Community 
+100PercentFree: 100% Gratis TODO
+100PercentOpenSource: 100% Open Source TODO
 aCodeBlock: A code block TODO
 aboutFreesewing: Über Freesewing
 add: Hinzufügen
-addAModel: Add a model TODO
-addComment: Add comment TODO
-all: Alles TODO
+addAModel: Modell hinzufügen
+addComment: Kommentar hinzufügen
+all: Alles 
 alreadyHaveAnAccount: Du hast bereits ein Konto?
 areYouSureAboutThis: Are you 100% sure about this? TODO
 avatar: Avatar TODO
 avatarUpdated: Avatar aktualisieren
-averagePeopleDontExist: Average people don't exist TODO
-basicTheme: Classic theme TODO
-basics: Basics TODO
+averagePeopleDontExist: Durchschnittliche Menschen gibt es nicht
+basicTheme: Klassic Theme 
+basics: Grundlagen
 becomeAPatron: Werde ein Patron
-bio: Bio TODO
-bioUpdated: Bio updated TODO
+bio: Bio 
+bioUpdated: Bio aktualisiert
 blockquote: Block quote TODO
-blog: Blog TODO
-blogPost: Blog posts TODO
-bold: Bold TODO
-breasts: Breasts TODO
-breastsUpdated: Breasts setting updated TODO
-by: by TODO
+blog: Blog 
+blogPost: Blog Posts TODO
+bold: Fett
+breasts: Breasts Brüste
+breastsUpdated: Brüste Einstellung aktualiesiert
+by: von
 cancel: Abbrechen
 chatOnGitter: Chatte bei Gitter
 chatWithUs: Chatte mit uns
-chooseAModel: Wähle ein Modell TODO
-chooseANewPassword: Choose a new password TODO
+chooseAModel: Wähle ein Modell 
+chooseANewPassword: Wähle ein neues Passwort
 chooseAPattern: Wähle ein Schnittmuster
 chooseYourOptions: Wähle deine Optionen
 close: Schließen
 code: Code TODO
-comments: Comments TODO
-community: Community TODO
+comments: Kommentare
+community: Community 
 compare: Vergleichen
 completePattern: Komplettes Schnittmuster
-connectingToSomeApi: 'Connecting to {api} API TODO'
+connectingToSomeApi: 'Verbinde mit {api} API'
 consent: Consent TODO
 consentForModelData: Consent for model data TODO
 consentForProfileData: Consent for profile data TODO
@@ -49,7 +49,7 @@ coordinator: Koordinator
 coreLink: Core link TODO
 countAvailable: '{count} verfügbar'
 countTranslated: '{count} übersetzt'
-createAnAccount: Create an account TODO
+createAnAccount: Account erstellen
 createIssueOnGithub: Ein Anliegen bei GitHub erstellen
 createModel: Modell erstellen
 createMyAccount: Meinen Account erstellen
@@ -70,26 +70,26 @@ documentationForTranslators: Documentation for translators TODO
 documentationOverview: Documentation overview TODO
 download: Download TODO
 draft: Entwurf
-draftAPattern: Draft a pattern TODO
+draftAPattern: Ein Schnittmuster entwerfen
 draftOptions: Entwurfoptionen
 draftPattern: 'Entwurf {pattern}'
 draftPatternForModel: 'Entwurf {pattern} für {model}'
-draftThePattern: Schnittmuster entwerfen TODO
-draftingPattern: 'Drafting {pattern} TODO'
+draftThePattern: Schnittmuster entwerfen 
+draftingPattern: 'Entwerfe {pattern} '
 drafts: Entwürfe
 edit: Bearbeiten
-editOnGithub: Edit on GitHub TODO
-email: E-mail TODO
-emailAddress: E-mail address TODO
-emailUpdatePending: E-mail update pending. TODO
-emails: E-mails TODO
-enterYourCurrentPassword: Enter your current password TODO
-enterYourNewPassword: Enter your new password TODO
-error-unknown: An unknown error occured TODO
-error-username_taken: Username taken TODO
-exportMyData: Export my data TODO
-filterByPattern: Filter by pattern TODO
-forContributors: For contributors TODO
+editOnGithub: Auf GitHub bearbeiten
+email: E-Mail
+emailAddress: E-Mail Adresse
+emailUpdatePending: E-Mail aktualisierung ausstehend.
+emails: E-Mails
+enterYourCurrentPassword: Dein aktuelles Passwort eingeben
+enterYourNewPassword: Dein neues Passwort eingeben
+error-unknown: Ein unbekannter Fehler ist aufgetreten
+error-username_taken: Username bereits vergeben
+exportMyData: Meine Dateien exportieren
+filterByPattern: Nach Schnittmuster filtern
+forContributors: Für mitwirkende
 forMoreInfoRtfm: 'For more info, read the documentation: TODO'
 forUsername: 'For {username} TODO'
 forUsers: For users TODO
@@ -99,49 +99,49 @@ freesewing: Freesewing TODO
 freesewingContributors: Freesewing contributors TODO
 freesewingOnGithub: Freesewing on GitHub TODO
 freesewingPatrons: Freesewing patrons TODO
-freezeMyAccount: Freeze my account TODO
-fullSizePdf: Full size PDF TODO
-fundamentals: Fundamentals TODO
-getHelp: Get help TODO
-github: GitHub TODO
-githubUpdated: GitHub username updated TODO
-goodToKnow: Good to know TODO
-hi: Hi TODO
+freezeMyAccount: Meinen Account pausieren
+fullSizePdf: PDF in Originalgröße
+fundamentals: Grundlagen / Grundsätze TODO
+getHelp: Hilfe
+github: GitHub 
+githubUpdated: GitHub Benutzername aktualisiert 
+goodToKnow: Gut zu wissen
+hi: Hi 
 home: Home TODO
-howCanWeHelpYou: How can we help you? TODO
-howToTakeMeasurements: How to take measurements TODO
+howCanWeHelpYou: Wie können wir Dir helfen?
+howToTakeMeasurements: Richtiges Maß nehmen
 i18n: Internationalization (i18n) TODO
-iForgotMyPassword: I forgot my password TODO
-iForgotMyUsername: I forgot my username TODO
-image: Image TODO
+iForgotMyPassword: Ich habe mein Passwort vergessen
+iForgotMyUsername: Ich habe meinen Benutzernamen vergesen
+image: Bild
 imperial: Imperial TODO
 imperialUnits: Imperial units (inch) TODO
 in: in TODO
-inch: inch TODO
-info: Info TODO
-instagram: Instagram TODO
-instagramUpdated: Instagram account set TODO
-italics: Italics TODO
+inch: Inch 
+info: Info 
+instagram: Instagram 
+instagramUpdated: Instagram Account aktualisiert
+italics: Kursiv
 joinTheTranslationTeam: 'Even if you have never contributed to an open source project, translation is a smooth on-ramp towards contributor fame. TODO'
-justAMoment: Just a moment TODO
-key: Key TODO
-language: Language TODO
-languageLanguageFiles: '{language} language files TODO'
-layout: Layout TODO
-learnMore: Learn more TODO
-learnToDesignPatterns: Learn to design patterns TODO
+justAMoment: Nur ein Augenblick
+key: Schlüssel
+language: Sprache
+languageLanguageFiles: '{language} Sprach-Dateien'
+layout: Layout 
+learnMore: Erfahre mehr
+learnToDesignPatterns: Wie man Schnittmuster entwirft
 letterPdf: Letter PDF TODO
-loadingModelData: Loading model data TODO
-loadingResult: Loading result TODO
+loadingModelData: Modell Daten werden geladen
+loadingResult: Lade Ergebnisse
 locale: Language TODO
-localeUpdated: Language preference updated TODO
-logIn: Log in TODO
-logOut: Log out TODO
-loginFailed: Login failed TODO
-makeItBetter: Make it better TODO
+localeUpdated: Spracheinstellung aktualisiert
+logIn: Anmelden
+logOut: Abmelden
+loginFailed: Anmeldung fehlgeschlagen
+makeItBetter: Mach es besser
 markdownSyntax: MarkDown syntax TODO
-measurementUpdated: Measurement updated TODO
-measurements: Measurements TODO
+measurementUpdated: Maße aktualisiert
+measurements: Maße
 measurementsRequiredForPattern: 'Measurements required for {pattern} TODO'
 messages: Messages TODO
 metric: Metric TODO
@@ -345,8 +345,8 @@ txt-saOption-metric: Standard metric seam allowance TODO
 txt-saOption-none: Don't include seam allowance TODO
 txt-saOption-patternImperial: Pattern default imperial seam allowance TODO
 txt-saOption-patternMetric: Pattern default metric seam allowance TODO
-txt-signup-step1: 'Enter your email address, and pick a password. TODO'
-txt-signup-step2: Confirm your email address. TODO
+txt-signup-step1: 'Gib deine E-mail-Adresse ein und wähle ein Passwort'
+txt-signup-step2: Bestätige deine E-mail-Adresse
 txt-signup-step3: Give us permission to process your personal data. TODO
 txt-slogan: An open source platform for made-to-measure sewing patterns TODO
 txt-translators1: We are looking for people to help with our translation efforts. TODO
@@ -356,7 +356,7 @@ txt-warningDataRestriction: 'Once we restrict your account, you won''t be able t
 txt-warningModelData: 'This will remove all of your models, and all of your drafts. TODO'
 txt-warningProfileData: 'This will remove all of your models, all of your drafts, all of your comments, and your account. Everything will be gone. TODO'
 txt-withOrWithoutBreasts: 'Fitting breasts requires a bunch of extra measurements that are not relevant if you don''t have breasts. If you indicate your model does not have breasts, we won''t show you these measurements as they are irrelevant. If you''re not sure what to pick, go for breasts. TODO'
-txt-withOrWithoutBreasts-explainer: 'On other websites, this question may be phrased as ''male or female?''. Here, we don''t like putting people in boxes. All we care about is fitting your chest. TODO'
+txt-withOrWithoutBreasts-explainer: 'Auf anderen Webseiten, wird die Frage mit ''männlich oder weiblich?'' formuliert. Wir wollen Menschen nicht in diese Schubladen stecken. Uns interessiert nur, dass das Kleidungsstück gut am Oberkörper anliegt.'
 type: Type TODO
 units: Units TODO
 unitsUpdated: Units set TODO
