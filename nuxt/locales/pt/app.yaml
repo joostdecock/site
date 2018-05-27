@@ -1,5 +1,5 @@
-100PercentCommunity: 100% comunidade
-100PercentFree: 100% livre
+100PercentCommunity: 100% comunitário
+100PercentFree: 100% gratuito
 100PercentOpenSource: 100% código aberto
 aCodeBlock: Um bloco de código
 aboutFreesewing: Sobre o Freesewing
@@ -102,104 +102,104 @@ freesewingPatrons: Patronos do Freesewing
 freezeMyAccount: Congelar minha conta
 fullSizePdf: Full size PDF TODO
 fundamentals: Fundamentals TODO
-getHelp: Get help TODO
+getHelp: Conseguir ajuda
 github: GitHub
 githubUpdated: GitHub username updated TODO
-goodToKnow: Good to know TODO
+goodToKnow: Bom saber
 hi: Oi
 home: Início
-howCanWeHelpYou: How can we help you? TODO
-howToTakeMeasurements: How to take measurements TODO
+howCanWeHelpYou: Como podemos ajudar você?
+howToTakeMeasurements: Como tirar medidas
 i18n: Internacionalização(i18n)
 iForgotMyPassword: Esqueci minha senha
 iForgotMyUsername: I forgot my username TODO
 image: Imagem
-imperial: Imperial TODO
-imperialUnits: Imperial units (inch) TODO
-in: in TODO
-inch: inch TODO
-info: Info TODO
-instagram: Instagram TODO
+imperial: Sistema imperial
+imperialUnits: Unidade imperial (polegada)
+in: em
+inch: polegada
+info: Info
+instagram: Instagram
 instagramUpdated: Instagram account set TODO
-italics: Italics TODO
+italics: Itálico
 joinTheTranslationTeam: 'Even if you have never contributed to an open source project, translation is a smooth on-ramp towards contributor fame. TODO'
-justAMoment: Just a moment TODO
-key: Key TODO
-language: Language TODO
-languageLanguageFiles: '{language} language files TODO'
-layout: Layout TODO
-learnMore: Learn more TODO
+justAMoment: Aguarde um momento
+key: Chave
+language: Linguagem
+languageLanguageFiles: 'arquivos de linguagem {language}'
+layout: Layout
+learnMore: Aprenda mais
 learnToDesignPatterns: Learn to design patterns TODO
-letterPdf: Letter PDF TODO
-loadingModelData: Loading model data TODO
-loadingResult: Loading result TODO
-locale: Language TODO
-localeUpdated: Language preference updated TODO
-logIn: Log in TODO
-logOut: Log out TODO
-loginFailed: Login failed TODO
-makeItBetter: Make it better TODO
-markdownSyntax: MarkDown syntax TODO
-measurementUpdated: Measurement updated TODO
-measurements: Measurements TODO
-measurementsRequiredForPattern: 'Measurements required for {pattern} TODO'
-messages: Messages TODO
-metric: Metric TODO
-metricUnits: Metric units (cm) TODO
-model: Model TODO
-modelIsModel: 'Model is {model} TODO'
-models: Models TODO
-monthsAgo: '{months} months ago TODO'
-name: Name TODO
-nameOfTheModel: Name of the model TODO
-nameUpdated: Name updated TODO
-newDraft: New draft TODO
-newModel: New model TODO
-newPassword: New password TODO
-newPatternDraft: 'New {pattern} draft TODO'
-newTaskForUser: 'New task for {user} TODO'
-'no': No TODO
-noChanges: No changes TODO
-noDraftsFound: No drafts found TODO
-noFilter: No filter TODO
-noIDoNot: 'No, I do not TODO'
-noIDoNotObject: 'No, I do not object TODO'
-notShared: Not shared TODO
-notes: Notes TODO
-ohNo: Oh no! TODO
-okThatsDone: 'OK, that''s done TODO'
-onlySelectedPatternParts: Only selected pattern parts TODO
-pageNotFound: The page you are looking for is nowhere to be found. TODO
-paperlessTheme: Paperless theme TODO
-password: Password TODO
-passwordResetPending: Password reset pending. TODO
-passwordUpdated: Password changed TODO
-patronText: '{username} is a {patronTier} since {daysAgo} TODO'
+letterPdf: PDF tamanho Letter
+loadingModelData: Carregando dados do modelo
+loadingResult: Carregando resultado
+locale: Linguagem
+localeUpdated: Preferências de linguagem atualizadas
+logIn: Entrar/Login
+logOut: Desconectar
+loginFailed: Login falhou
+makeItBetter: Faça ficar melhor
+markdownSyntax: sintaxe MarkDown
+measurementUpdated: Medida atualizada
+measurements: Medidas
+measurementsRequiredForPattern: 'Medidas requeridas para {pattern}'
+messages: Mensagens
+metric: Sistema métrico
+metricUnits: Unidade métrica (cm)
+model: Modelo
+modelIsModel: 'Modelo é {model}'
+models: Modelos
+monthsAgo: '{months} meses atrás'
+name: Nome
+nameOfTheModel: Nome do modelo
+nameUpdated: Nome atualizado
+newDraft: Novo esboço
+newModel: Novo modelo
+newPassword: Nova senha
+newPatternDraft: 'Novo esboço de {pattern}'
+newTaskForUser: 'Nova tarefa para {user}'
+'no': Não
+noChanges: Nenhuma mudança
+noDraftsFound: Nenhum esboço encontrado
+noFilter: Nenhum filtro
+noIDoNot: 'Não, eu não'
+noIDoNotObject: 'Não, eu não me oponho'
+notShared: Não compartilhado
+notes: Notas
+ohNo: Ah, não!
+okThatsDone: 'OK, '' está pronto'
+onlySelectedPatternParts: Apenas partes selecionadas do molde
+pageNotFound: A página que você está procurando não foi encontrada.
+paperlessTheme: Tema sem papel
+password: Senha
+passwordResetPending: Reestabelecimento de senha pendente.
+passwordUpdated: Senha alterada.
+patronText: '{username} é um {patronTier} desde {daysAgo}'
 patrons: Patronos
 pattern: Molde
 patternDesignTutorial: Pattern design tutorial TODO
-patternDocumentation: Pattern instructions TODO
-patternInstructions: Pattern instructions TODO
-patternIsPattern: 'Pattern is {pattern} TODO'
-patternLineDrawing: '{pattern} line drawing TODO'
+patternDocumentation: Instruções do molde
+patternInstructions: Instruções do molde
+patternIsPattern: 'O molde é {pattern}'
+patternLineDrawing: 'Desenho de linha de {pattern}'
 patternOptions: Opções do molde
 patternParts: Partes do molde
 patterns: Moldes
-pleaseCheckYourInbox: You will be receiving an E-mail with further instructions TODO
-pleaseUpgradeThisDraft: Please upgrade this draft. TODO
-postComment: Post comment TODO
-postInfo: Post info TODO
-postReply: Post reply TODO
-preferences: Preferences TODO
-privacy: Privacy TODO
-privacyNotice: Privacy notice TODO
-processingDraftOptions: Processing draft options TODO
-profile: Profile TODO
-quickPick: Quick pick TODO
-quote-allie: Have you heard of freesewing.org? It’s pretty much the greatest thing ever! TODO
-quote-allie-about: Author of sewing blog The Aspiring Seamstress. TODO
-quote-ivan: Kudos to @j__st for creating @freesewing_org an open source platform for made-to-measure sewing patterns and general awesomeness TODO
-quote-ivan-about: Kubernetes London Meetup co-organiser. Founder of Kube.camp TODO
+pleaseCheckYourInbox: Você receberá um E-mail com mais instruções
+pleaseUpgradeThisDraft: Por favor, atualize esse esboço.
+postComment: Poste um comentário
+postInfo: Poste informações
+postReply: Poste resposta
+preferences: Preferências
+privacy: Privacidade
+privacyNotice: Aviso de privacidade
+processingDraftOptions: Processando opções do esboço
+profile: Perfil
+quickPick: Escolha rápida
+quote-allie: Você já ouviu falar do freesewing.org? É basicamente a coisa mais legal do mundo!
+quote-allie-about: Autora do blog de costura The Aspiring Seamstress.
+quote-ivan: Aplausos para @j__st por criar @freesewing_org uma plataforma em código aberto para moldes de costura sob medida e toda sua grandiosidade
+quote-ivan-about: Co-organizador do Kubernetes London Meetup. Fundador de Kube.camp
 quote-jamie: 'With Freesewing, sewing has moved into the 21st century TODO'
 quote-jamie-about: Author of the popular sewing blog Male Devon Sewing and 2016 Great British Sewing Bee contestant. TODO
 reSendActivationEmail: Re-send activation email TODO
