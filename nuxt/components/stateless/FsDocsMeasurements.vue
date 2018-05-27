@@ -46,7 +46,7 @@ export default {
       items: {}
     }
     if(typeof this.pattern !== 'undefined') allMeasurements = this.$fs.conf.patterns[this.pattern].measurements
-    else allMeasurements = this.$fs.measurements.all
+    else allMeasurements = this.$fs.conf.measurements.all
     for (let m in allMeasurements) {
       measurements.push(m)
       toc.items[m.toLowerCase()] = {

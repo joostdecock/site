@@ -26,9 +26,10 @@ You can also reach us on social media, not to mention follow or like us.
 [@freesewing_org on Instagram](https://www.instagram.com/freesewing_org/){.btn .px-4 .primary}  
 [Freesewing page on Facebook](https://facebook.com/freesewing.org){.btn .px-4 .primary}  
 
-## Send an email to Joost
+## E-mail
 
-> This one does not scale very well, so you might want to consider the options above first.
+> This option does not scale very well, so you might want to consider the options above first.
+> That being said, click below to send an E-mail to [@joost](/users/joost)
 
 [Send an email](mailto:joost@decock.org?subject=Freesewing){.btn .px-4 .primary}
 

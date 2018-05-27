@@ -23,7 +23,6 @@ These roles are cumulative. If you are a user, you are also a visitor.
 And if you are a user with one or more models, you are also a user, and also a visitor.
 
 > #### Visitor data
-> <small>This data is stored for anybody who visits our website or connects to our backend APIs.</small>
 > 
 >  - **What personal data do we store?**
 >    - Your IP address
@@ -33,11 +32,11 @@ And if you are a user with one or more models, you are also a user, and also a v
 >    - We keep these logs for 6 months.
 >  - **Do we share it?**
 >    - No, never.
-{.privacy}
+>
+> This data is stored for anybody who visits our website or connects to our backend APIs.
+{.privacy .fs-bq}
 
 > #### Profile data
->
-> <small>This data is stored for anybody with an account on our website.</small>
 > 
 >  - **What personal data do we store?**
 >    - Your E-mail address
@@ -51,12 +50,12 @@ And if you are a user with one or more models, you are also a user, and also a v
 >    - We keep profile data up to 12 months after your last login, or until you remove it.
 >  - **Do we share it?**
 >    - No, never.
-{.privacy}
+>
+> This data is stored for anybody with an account on our website.
+{.privacy .fs-bq}
 
 > #### Model data
 >
-> <small>This data is stored for anybody with an account on our website which contains one or more models.</small>
-> 
 >  - **What personal data do we store?**
 >    - Body measurements
 >    - Whether the model has breasts or not
@@ -70,6 +69,9 @@ And if you are a user with one or more models, you are also a user, and also a v
 >  - **Do we share it?**
 >    - We never share personal model data
 >    - We publish an open data set of measurements, containing fully anonymized data.
+> 
+> This data is stored for anybody with an account on our website which contains one or more models.
+{.privacy .fs-bq}
 
 ## Part 2: Other topics
 
@@ -108,7 +110,8 @@ For questions about this privacy notice, you can contact Joost De Cock at joost@
 
 This policy may be updated occasionally. We will indicate this in the **Last update** data at the top of this document.
 
-A more comprehensive overview of this document's history is available on GitHub.
+A more comprehensive overview of this document's history is 
+[available on GitHub](https://github.com/freesewing/site/commits/develop/nuxt/content/en/docs/privacy/index.md).
 
 ## See also
 
