@@ -53,17 +53,15 @@ translating an entire documentation page.
 
 So, focus on strings, and turn your attention to content when you've done all of those.
 
-<blockquote class="warning">
-
-#### Don't translate content yet
-
-Our content is still being ported from our old site to the new site.
-(see [this open issue](https://github.com/freesewing/site/issues/384))
-
-This means that we first need to fix the original English content before you
-start translating. We'll do that ASAP, but until that time please refrain 
-from translating content and focus on strings.
-</blockquote>
+> #### Don't translate content yet
+> 
+> Our content is still being ported from our old site to the new site.
+> (see [this open issue](https://github.com/freesewing/site/issues/384))
+> 
+> This means that we first need to fix the original English content before you
+> start translating. We'll do that ASAP, but until that time please refrain 
+> from translating content and focus on strings.
+{.fs-bq .warning}
 
 ## How we work
 
