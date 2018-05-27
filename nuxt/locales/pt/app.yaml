@@ -1,41 +1,41 @@
-100PercentCommunity: 100% community TODO
-100PercentFree: 100% free TODO
-100PercentOpenSource: 100% open source TODO
-aCodeBlock: A code block TODO
-aboutFreesewing: About Freesewing TODO
-add: Add TODO
-addAModel: Add a model TODO
-addComment: Add comment TODO
-all: All TODO
-alreadyHaveAnAccount: Already have an account? TODO
-areYouSureAboutThis: Are you 100% sure about this? TODO
-avatar: Avatar TODO
-avatarUpdated: Avatar updated TODO
-averagePeopleDontExist: Average people don't exist TODO
-basicTheme: Classic theme TODO
-basics: Basics TODO
-becomeAPatron: Become a patron TODO
-bio: Bio TODO
-bioUpdated: Bio updated TODO
-blockquote: Block quote TODO
-blog: Blog TODO
+100PercentCommunity: 100% comunidade
+100PercentFree: 100% livre
+100PercentOpenSource: 100% código aberto
+aCodeBlock: Um bloco de código
+aboutFreesewing: Sobre o Freesewing
+add: Adicionar
+addAModel: Adicionar um modelo
+addComment: Adicionar comentário
+all: Tudo
+alreadyHaveAnAccount: Já tem uma conta?
+areYouSureAboutThis: Você tem certeza absoluta disso?
+avatar: Avatar
+avatarUpdated: Avatar atualizado
+averagePeopleDontExist: Pessoas medianas não existem
+basicTheme: Tema clássico
+basics: Noções básicas
+becomeAPatron: Se torne um patrono
+bio: Bio
+bioUpdated: Bio atualizada
+blockquote: Bloco de citação
+blog: Blog
 blogPost: Blog posts TODO
 bold: Bold TODO
-breasts: Breasts TODO
+breasts: Seios
 breastsUpdated: Breasts setting updated TODO
-by: by TODO
-cancel: Cancel TODO
+by: por
+cancel: Cancelar
 chatOnGitter: Chat on Gitter TODO
 chatWithUs: Chat with us TODO
 chooseAModel: Escolha um modelo
 chooseANewPassword: Escolha uma nova senha
 chooseAPattern: Escolha um molde
 chooseYourOptions: Escolha suas opções
-close: Close TODO
-code: Code TODO
-comments: Comments TODO
-community: Community TODO
-compare: Compare TODO
+close: Fechar
+code: Código
+comments: Comentários
+community: Comunidade
+compare: Comparar
 completePattern: Complete pattern TODO
 connectingToSomeApi: 'Connecting to {api} API TODO'
 consent: Consent TODO
@@ -45,7 +45,7 @@ consentGiven: Consent given TODO
 contactUs: Contact us TODO
 content: Content TODO
 contents: Contents TODO
-coordinator: Coordinator TODO
+coordinator: Coordenador
 coreLink: Core link TODO
 countAvailable: '{count} available TODO'
 countTranslated: '{count} translated TODO'
@@ -56,7 +56,7 @@ createMyAccount: Create my account TODO
 created: Created TODO
 currentPassword: Current password TODO
 data: Data TODO
-date: Date TODO
+date: Data
 daysAgo: '{days} days ago TODO'
 delete: Delete TODO
 deleteThisDraft: Delete this draft TODO
