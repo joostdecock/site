@@ -78,7 +78,7 @@ In practice, all donations received in the previous 12 months will be transfered
 
 ## Donations history
 
-![Donations overview](/img/donations.svg)
+![Donations overview](/img/donations.svg){.elevation-1}
 
 > ##### Notes
 > - For freesewing, the (book)year starts/ends on December 10th.

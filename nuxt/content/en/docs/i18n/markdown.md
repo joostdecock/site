@@ -1,17 +1,16 @@
 ---
 title: Translating MarkDown
 ---
-<blockquote class="warning">
 
-#### Don't translate content yet
-
-Our content is still being ported from our old site to the new site.
-(see [this open issue](https://github.com/freesewing/site/issues/384))
-
-This means that we first need to fix the original English content before you
-start translating. We'll do that ASAP, but until that time please refrain 
-from translating content and focus on strings.
-</blockquote>
+> #### Don't translate content yet
+> 
+> Our content is still being ported from our old site to the new site.
+> (see [this open issue](https://github.com/freesewing/site/issues/384))
+> 
+> This means that we first need to fix the original English content before you
+> start translating. We'll do that ASAP, but until that time please refrain 
+> from translating content and focus on strings.
+{.fs-bq .warning}
 
 > To translate a MarkDown file, follow these steps:
 > 
@@ -145,10 +144,10 @@ Make a footnote^[This is the footnote]
 **Attributes**
 
 ```markdown
-[This link is a button](/docs/i18n/markdown){.btn .primary .px-4}
+![The picture of the month with shadow](/img/potm/potm.jpg){.elevation-1}
 ```
 
-[This link is a button](/docs/i18n/markdown){.btn .primary .px-4}
+![The picture of the month with shadow](/img/potm/potm.jpg){.elevation-1}
 
 ### Updating links to point to the correct language
 

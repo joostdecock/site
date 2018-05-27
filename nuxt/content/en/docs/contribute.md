@@ -35,29 +35,24 @@ There's may ways to contribute to freesewing. Here are some of the more common o
 Tell your friends about freesewing, or spread awareness on social media. 
 If you have a blog, perhaps you can write about us, or review one of our patterns.
 
-It may seem simple, but it's probably how you head about us in the first place. So pay it forward. 
+It may seem simple, but it's probably how you heard about us in the first place. So pay it forward. 
 
 ### Improve our content
 
-On every (static) page, there's a button in the right colum that allows you to submit suggestions for improvements to that page.
+On every page, there's a button in the right column that allows you to submit improvements.
 You'll need a GitHub account for this, but they are free.
 
 Use that button. Don't be shy. If you see a typo, or something that needs clarification or more detail, please suggest your improvements.
 
-Our content is written in Markdown, which is trivial to edit. Here's how to do it:
+Our content is written in Markdown, which is trivial to edit. 
 
-1. Click the **Edit on GitHub** button to go to GitHub to edit the page
-2. Make your proposed changes
-3. Click _Propose file change_.
-4. Click _Create pull request_.
-5. Add a descriptive title and detailed description for your proposed change. The more information the better.
-6. Click _Create pull request_.
-
-That's it 😊
+> Our [documentation for translating MarkDown](/docs/i18n/markdown) has an overview of MarkDown syntax.
 
 ### Help with translating the site
 
-The [freesewing translators team](/docs/translation) can always use a helping hand. Maybe we can even add a new language thanks to you.
+The [freesewing translators team](/i18n/) can always use a helping hand. Maybe we can even add a new language thanks to you.
+
+> See our [documentation for translators](/docs/i18n/) for mode details.
 
 ### Test, make, or showcase our patterns
 

@@ -1,4 +1,19 @@
 blockquote
+  padding: 5px 0 5px 10px
+  margin: 0.5rem 0 0.5rem 10px
+  font-size: 90%
+  border-left: 3px solid $accent
+  & p:last-child
+    margin-bottom: 0
+
+  & h4:first-child,
+  & h5:first-child
+    margin-top: 0
+    padding-top: 0
+
+
+blockquote.fs-bq
+  border: none
   padding: 1rem 2rem
   margin: 1.5rem 0.5rem
   box-shadow: $shadow
@@ -54,12 +69,17 @@ blockquote
 
   &.comment
     &:before
-      content: "mode_comment"
-      color: $info
+      content: "comment"
+      color: $secondary
 
   &.link
     &:before
       content: "link"
+      color: $info
+
+  &.privacy
+    &:before
+      content: "fingerprint"
       color: $info
 
   &.warning
