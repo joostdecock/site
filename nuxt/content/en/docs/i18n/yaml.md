@@ -220,5 +220,5 @@ imperial: Imperial DONE
 The `DONE` will be filtered out, and won't show up on the website. It's just a way to keep track of the 
 work that's been done, and what's stil to do. Or rather, `TODO`.
 
-Note that you don't need to add `DONE` to every translation, only when they are identical to the 
-original English string.
+> You don't need to add `DONE` to every translation, 
+> only when they are identical to the original English string.

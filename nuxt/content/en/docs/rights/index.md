@@ -31,7 +31,7 @@ Go to [/account/remove](/account/remove) to remove all your data.
 You have the right to request a restriction on the processing of your personal data;
 Go to [/account/restrict](/account/restrict) to request we restrict processing of your personal data.  
 
-<small><b>Note:</b> Your request will be granted immediately, and can only be undone by [contacting us](/contact) to lift the restriction.</small>
+> Your request will be granted immediately, and can only be undone by [contacting us](/contact) to lift the restriction.
 
 ## The right to data portability
 
@@ -43,7 +43,7 @@ Go to [/account/export](/account/export) to export your data.
 You have the right to object to your personal data being used for scientific research;
 Go to [/account/consent](/account/consent) and object in the **model data** section to do so.
 
-<small><b>Note:</b> The right to object is broader, but this is how it applies to freesewing.</small>
+> The right to object is broader, but this is how it applies to freesewing.
 
 ## Rights in relation to automated decision making and profiling.
 
