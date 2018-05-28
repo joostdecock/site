@@ -50,6 +50,22 @@
       </v-list-tile-content>
     </v-list-tile>
     <v-divider></v-divider>
+    <v-list-tile v-if="$store.state.loggedInAs.active" @click="$fs.logoutAs()">
+      <v-list-tile-action>
+        <v-icon>face</v-icon>
+      </v-list-tile-action>
+      <v-list-tile-content>
+        <v-list-tile-title>{{ $t('logOutAs', {user: $store.state.loggedInAs.user}) }}</v-list-tile-title>
+      </v-list-tile-content>
+    </v-list-tile>
+    <v-list-tile :to="$fs.path('/login/as')" v-if="$store.state.user.isAdmin">
+      <v-list-tile-action>
+        <v-icon>face</v-icon>
+      </v-list-tile-action>
+      <v-list-tile-content>
+        <v-list-tile-title>{{ $t('logInAs') }}</v-list-tile-title>
+      </v-list-tile-content>
+    </v-list-tile>
     <v-list-tile @click="$fs.logout()">
       <v-list-tile-action>
         <v-icon>power_settings_new</v-icon>

@@ -161,6 +161,5 @@ export default {
   padding: 0 40px 5px;
   text-align: center;
   border-radius: 5px;
-  margin-top: -50px
 }
 </style>
