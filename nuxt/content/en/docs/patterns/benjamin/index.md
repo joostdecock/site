@@ -145,7 +145,7 @@ Apply interfacing to all parts where you feel it's needed.
 Put the collar band part on the bow tie knot part, right sides together. 
 Allign the ends of both parts. Now sew across the end to join the parts.
 
-![Sew the collar band to the knot](/img/patterns/benjamin/step12.png)
+![Sew the collar band to the knot](/img/patterns/benjamin/instructions/step12.png)
 
 Do this for each end on both collar bands.
 
@@ -155,7 +155,7 @@ You now have two identical single sided bow ties.
 
 #### Step 3: Join both sides
 
-![Sew both sides together](/img/patterns/benjamin/step13.png)
+![Sew both sides together](/img/patterns/benjamin/instructions/step13.png)
 
 Lay both the sides you made on top of each other, right sides together. Sew all 
 along, but leaving an area of 5cm open in the middle of the collar band. Through
@@ -163,7 +163,7 @@ this opening we will turn the bow tie right side out.
 
 #### Step 4: Turning
 
-![Clip seam allowance](/img/patterns/benjamin/step14.png)
+![Clip seam allowance](/img/patterns/benjamin/instructions/step14.png)
 
 Clip the seam allowance back in the usual spots and make little cuts to allow for
 a smooth curves. 
@@ -180,7 +180,7 @@ out before giving it a good press.
 
 #### Step 5: Closing
 
-![Closing the bow tie](/img/patterns/benjamin/step15.png)
+![Closing the bow tie](/img/patterns/benjamin/instructions/step15.png)
 
 Now all that is left is closing the litle hole we used to turn the bow tie 
 right side out. You can do this by hand with a slip stitch, or a ladder stitch.
@@ -193,7 +193,7 @@ Now give it one last press and admire your work.
 
 #### Step 2: Attaching the ribbon
 
-![Sew the ribbon to part 1](/img/patterns/benjamin/step22.png)
+![Sew the ribbon to part 1](/img/patterns/benjamin/instructions/step22.png)
 
 The first thing to do is to sew the adjustment ribbon to the shortest of the bow
 parts. The ribbon should be 290mm long. If it is different, you have to make sure
@@ -206,7 +206,7 @@ Now sew across the end to join the parts.
 
 #### Step 3: Join both sides
 
-![Sew both sides together](/img/patterns/benjamin/step23.png)
+![Sew both sides together](/img/patterns/benjamin/instructions/step23.png)
 
 Lay both the parts of the medium bow on top of each other, right sides together. 
 And lay the long bow on top of the ribbon and short bow part, also rights sides 
@@ -217,7 +217,7 @@ the bow tie parts right side out.
 
 #### Step 4: Turning
 
-![Clip seam allowance](/img/patterns/benjamin/step14.png)
+![Clip seam allowance](/img/patterns/benjamin/instructions/step14.png)
 
 Clip the seam allowance back in the usual spots and make little cuts to allow for
 a smooth curves. 
@@ -246,7 +246,7 @@ If you would do it in the other sequence, you may not be able to feed it through
 
 To finish the ends, we're going to fold the fabric in three steps:
 
-![Three steps to fold, one step to sew](/img/patterns/benjamin/step25.png)
+![Three steps to fold, one step to sew](/img/patterns/benjamin/instructions/step25.png)
 
 First we fold the side in under an angle. Then we fold the end over by just a small
 seam allowance, something like 5mm. Then we fold it over again, for about 1cm. 
@@ -256,4 +256,4 @@ Now feed the ribbon piece through the oval part and we finish it the same way.
 
 Hook the T in one of the adjustment holes and your bow tie is done!
 
-![Good job!](/img/patterns/benjamin/finished.gif)
+![Good job!](/img/patterns/benjamin/instructions/finished.gif)

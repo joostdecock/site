@@ -1,7 +1,7 @@
 <template>
   <section>
     <figure>
-      <img :src="'/img/patterns/'+page.pattern+'/'+page.pattern+'.svg'" class="elevation-0 mt-3"/>
+      <img :src="'/img/patterns/'+page.pattern+'/linedrawing.svg'" class="elevation-0 mt-3"/>
       <figcaption>{{ $t('patternLineDrawing', {pattern: $fs.ucfirst(page.pattern)}) }}</figcaption>
     </figure>
     <blockquote>

@@ -8,26 +8,16 @@ pattern: hugo
 > First the good news: There's a video series that shows how to make Hugo from start to finish.
 > Scroll down, it's embedded in this page.
 >
-> Now the bad news: The written instructions for Hugo are not complete.
-> There's a brief bullet point list of the different steps, but it's not up to the standard I strive towards.
->
-> At least yet, I hope to complete this at a later date.
-{:.error}
+> Now the bad news: The written instructions for Hugo are not complete yet.
 
-### Video
+## Video
 Text a bit dry for you? I try to make videos available as part of the pattern documentation.
 
 This 6-episode series shows you how to make your hoodie start to finish:
 
-{% include embed.html src='//www.youtube.com/embed/videoseries?list=PL1gv5yv3DoZOHLjisuD1JcUPTkFy_IGGO' %}
+@[youtube](https://www.youtube.com/playlist?list=PL1gv5yv3DoZOHLjisuD1JcUPTkFy_IGGO)
 
-## Before you start
-{% include figure.html
-    url='/img/patterns/hugo/hugo.svg'
-    description='Your end goal'
-%}
-
-### What you need
+## What you need
 
 To make Hugo, you will need the following:
 
@@ -35,7 +25,7 @@ To make Hugo, you will need the following:
 - About 2 meter of a suitable fabric ([see Fabric options](#fabric-options))
 - Ribbing fabric for the hem and cuffs
 
-### Fabric options
+## Fabric options
 
 You may find a dedicated sweatshirt/tracksuit fabric section in your fabric store of choice. If you don't, just head for the knitwear section and look for a thicker comfortable knit fabric.
 
@@ -46,47 +36,37 @@ Make sure to pay attention to the inside of the fabric. Sweatshirt fabrics come 
 > You don't have to use sweatshirt fabric. Other options are available, from fashion-forward neoprene (aka scuba) to a more eyebrow-rising choice like crushed velour (aka velvet).
 > 
 > Or if you have given up on class, you could go for fleece.
-{:.comment}
 
 ## Cutting
 
-> - {:.title} Main fabric
->   - Cut **1 front** on the fold
->   - Cut **1 back** on the fold
->   - Cut **2 sleeves**, good sides together
->   - Cut **1 pocket** on the fold
->   - Cut **2 pocket facing(s)**, good sides together
->   - Cut **4 Hood side(s)**, 2x2 good sides together
->   - Cut **2 hood center(s)**, good sides together
->   - Cut **1 neck binding**
-> - {:.title} Ribbing
->   - Cut **2 cuff(s)**
->   - Cut **1 waistband**
-> {:.cuts}
-{:.cuts}
+ - **Main fabric**
+   - Cut **1 front** on the fold
+   - Cut **1 back** on the fold
+   - Cut **2 sleeves**, good sides together
+   - Cut **1 pocket** on the fold
+   - Cut **2 pocket facing(s)**, good sides together
+   - Cut **4 Hood side(s)**, 2x2 good sides together
+   - Cut **2 hood center(s)**, good sides together
+   - Cut **1 neck binding**
+ - **Ribbing**
+   - Cut **2 cuff(s)**
+   - Cut **1 waistband**
 
-> <h5>Caveats</h5>
-> - **sleeve** 
->   - There's a single notch at the front, and a double notch at the back. These notches match on the front and back parts respectively.
-> - **pocket facing** and **hood**
->   - Watch out for the grainlines on these parts
-{:.warning}
+### Caveats
+
+**sleeve** 
+  - There's a single notch at the front, and a double notch at the back. These notches match on the front and back parts respectively.
+**pocket facing** and **hood**
+  - Watch out for the grainlines on these parts
 
 Because Hugo's raglan sleeve also covers a portion of the back and front,
 the sleeve is the dominant feature of your draft.
 
 Below is a typical draft layout:
 
-{% include figure.html
-    url='/img/patterns/hugo/layout.svg'
-    description='A typical Hugo draft'
-%}
-{% include scalebox.html %}
+![A typical Hugo draft](/img/patterns/hugo/layout.svg)
 
-> <h5>Notation legend</h5>
->
 > The [notation legend](/docs/patterns/notation) explains all the different markings and lines on your draft.
-{:.tip}
 
 ## Construction
 
@@ -142,7 +122,6 @@ Below is a typical draft layout:
 ### Step 6: Prepare Inside and Outside Hood
 
 > Follow this set of steps twice, once for the outer hood and again for the inside hood.
-{:.comment}
 
  - Run a Center Panel piece around one outer edge of the Hood Side, good sides together, and pin in place.  Stitch.
  - Pin the Center Panel piece around the remaining outer edge of the hood, good sides together. Stitch.
@@ -182,9 +161,3 @@ Below is a typical draft layout:
  - Ensure the ribbing is gathered as uniformly as possible around the waistband.
  - Serge or zig-zag the waistband, again gently stretching untill the ribbing and waistband are the same length.  Stitch with the hoodie on top so you can see it gets caught in the seam.
  - Topstitch the lower pocket edges to the body of the shirt to anchor the bottom of the pocket.
-
-{% include completed.html %}
-
-* TOC - Do not remove this line
-{:toc}
-

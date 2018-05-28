@@ -1,5 +1,6 @@
 ---
 title: Making Bent
+patternIndex: true
 pattern: bent
 ---
 
