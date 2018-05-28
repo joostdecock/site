@@ -136,7 +136,9 @@ loadingResult: Resultaat laden
 locale: Taal
 localeUpdated: Voorkeur taal bijgewerkt
 logIn: Aanmelden
+logInAs: Log in als
 logOut: Afmelden
+logOutAs: 'Afmelden als {user}'
 loginFailed: Aanmelden mislukt
 makeItBetter: Alles kan beter
 markdownSyntax: MarkDown syntax DONE
@@ -389,6 +391,7 @@ yesIDo: 'Ja, dat doe ik'
 yesIDoObject: 'Ja, ik maak bezwaar'
 yesterday: Gisteren
 youAreCurrentlyLoggedIn: Je bent momenteel aangemeld.
+youAreNotAnAdmin: Je bent geen beheerder
 youAreNotLoggedIn: Je bent niet aangemeld
 youCanUseMarkdownFormatting: Je kan MarkDown opmaak gebruiken
 youDoNotObjectToSharingAnonymizedDataForResearch: Je maakt geen bezwaar tegen het delen van geanonimiseerde gegeven voor onderzoek

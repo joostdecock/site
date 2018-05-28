@@ -9,16 +9,16 @@ addComment: Adicionar comentário
 all: Tudo
 alreadyHaveAnAccount: Já tem uma conta?
 areYouSureAboutThis: Você tem certeza absoluta disso?
-avatar: Avatar
+avatar: Avatar TODO
 avatarUpdated: Avatar atualizado
 averagePeopleDontExist: Pessoas medianas não existem
 basicTheme: Tema clássico
 basics: Noções básicas
 becomeAPatron: Se torne um patrono
-bio: Bio
+bio: Bio TODO
 bioUpdated: Bio atualizada
 blockquote: Bloco de citação
-blog: Blog
+blog: Blog TODO
 blogPost: posts do Blog
 bold: Negrito
 breasts: Seios
@@ -68,7 +68,7 @@ documentation: Documentação
 documentationForDevelopers: Documentação para desenvolvedores
 documentationForTranslators: Documentação para tradutores
 documentationOverview: Visão geral da Documentação
-download: Download
+download: Download TODO
 draft: Esboço
 draftAPattern: Esboce um molde
 draftOptions: Opções de esboço
@@ -79,10 +79,10 @@ draftingPattern: 'Esboçando {pattern}'
 drafts: Esboços
 edit: Editar
 editOnGithub: Editar no GitHub
-email: E-mail
+email: E-mail TODO
 emailAddress: endereço de E-mail
 emailUpdatePending: atualização de E-mail pendente
-emails: E-mails
+emails: E-mails TODO
 enterYourCurrentPassword: Escreva sua senha atual
 enterYourNewPassword: Escreva sua nova senha
 error-unknown: Um erro deseconhecido ocorreu
@@ -95,7 +95,7 @@ forUsername: 'Para {username}'
 forUsers: Para usuários
 fork: Fork TODO
 forkDraftHandle: 'Fork draft {handle} TODO'
-freesewing: Freesewing
+freesewing: Freesewing TODO
 freesewingContributors: Contrubuidores do Freesewing
 freesewingOnGithub: Freesewing no GitHub
 freesewingPatrons: Patronos do Freesewing
@@ -103,7 +103,7 @@ freezeMyAccount: Congelar minha conta
 fullSizePdf: Full size PDF TODO
 fundamentals: Fundamentals TODO
 getHelp: Get help TODO
-github: GitHub
+github: GitHub TODO
 githubUpdated: GitHub username updated TODO
 goodToKnow: Good to know TODO
 hi: Oi
@@ -136,7 +136,9 @@ loadingResult: Loading result TODO
 locale: Language TODO
 localeUpdated: Language preference updated TODO
 logIn: Log in TODO
+logInAs: Log in as TODO
 logOut: Log out TODO
+logOutAs: 'Log out as {user} TODO'
 loginFailed: Login failed TODO
 makeItBetter: Make it better TODO
 markdownSyntax: MarkDown syntax TODO
@@ -254,10 +256,10 @@ somethingWentWrong: Something went wrong TODO
 startUpload: Start upload TODO
 status: Status TODO
 statusTranslationLanguage: 'Status translation {language} TODO'
-step1: Passo 1 
-step2: Passo 2 
-step3: Passo 3 
-step4: Passo 4 
+step1: Passo 1
+step2: Passo 2
+step3: Passo 3
+step4: Passo 4
 stopProcessingMyData: Stop processing my data TODO
 stopUpload: Stop upload TODO
 storingDraftData: Storing draft data TODO
@@ -389,6 +391,7 @@ yesIDo: 'Yes, I do TODO'
 yesIDoObject: 'Yes, I do object TODO'
 yesterday: Ontem
 youAreCurrentlyLoggedIn: Vocês está logado.
+youAreNotAnAdmin: You are not an admin TODO
 youAreNotLoggedIn: Você não está logado.
 youCanUseMarkdownFormatting: You can use MarkDown formatting TODO
 youDoNotObjectToSharingAnonymizedDataForResearch: You do not object to sharing anonymized data for research TODO

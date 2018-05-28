@@ -8,7 +8,7 @@ addAModel: Modell hinzufügen
 addComment: Kommentar hinzufügen
 all: Alles TODO
 alreadyHaveAnAccount: Du hast bereits ein Konto?
-areYouSureAboutThis: Bist du 100% sicher? 
+areYouSureAboutThis: Bist du 100% sicher?
 avatar: Avatar DONE
 avatarUpdated: Avatar aktualisieren
 averagePeopleDontExist: Durchschnittliche Menschen existieren nicht.
@@ -20,7 +20,7 @@ bioUpdated: Bio updated TODO
 blockquote: Block quote TODO
 blog: Blog DONE
 blogPost: Blog posts TODO
-bold: fettgedruckt 
+bold: fettgedruckt
 breasts: Brüste
 breastsUpdated: Brust Option eingestellt.
 by: von
@@ -136,7 +136,9 @@ loadingResult: Loading result TODO
 locale: Language TODO
 localeUpdated: Language preference updated TODO
 logIn: Log in TODO
+logInAs: Log in as TODO
 logOut: Log out TODO
+logOutAs: 'Log out as {user} TODO'
 loginFailed: Login failed TODO
 makeItBetter: Make it better TODO
 markdownSyntax: MarkDown syntax TODO
@@ -145,7 +147,7 @@ measurements: Maße
 measurementsRequiredForPattern: 'Maße benötigt für {pattern}'
 messages: Nachrichten
 metric: metrisch
-metricUnits: metrische Einheiten (cm) 
+metricUnits: metrische Einheiten (cm)
 model: Modell (Person)
 modelIsModel: 'Model is {model} TODO'
 models: Modelle (Personen)
@@ -169,7 +171,7 @@ notes: Notes TODO
 ohNo: Oh Nein!
 okThatsDone: 'OK, das ist erledigt'
 onlySelectedPatternParts: Nur ausgewählte Schnittmusterteile
-pageNotFound: Die Seite, die Du gesucht hast, ist nicht auffindbar. 
+pageNotFound: 'Die Seite, die Du gesucht hast, ist nicht auffindbar.'
 paperlessTheme: Paperless theme TODO
 password: Passwort
 passwordResetPending: Password reset pending. TODO
@@ -203,7 +205,7 @@ quote-ivan-about: Kubernetes London Meetup co-organiser. Founder of Kube.camp TO
 quote-jamie: 'With Freesewing, sewing has moved into the 21st century TODO'
 quote-jamie-about: Author of the popular sewing blog Male Devon Sewing and 2016 Great British Sewing Bee contestant. TODO
 reSendActivationEmail: Aktivierungs E-Mail erneut versenden
-readyToTryFreesewing: Bereit, Freesewing auszuprobieren?
+readyToTryFreesewing: 'Bereit, Freesewing auszuprobieren?'
 redraft: Redraft TODO
 redraftDraftHandle: 'Redraft draft {handle} TODO'
 reference: Reference TODO
@@ -238,16 +240,16 @@ showcaseInfo: Showcase info TODO
 signUp: Registrieren
 signUpForAFreeAccount: Registriere Dich für einen kostenlosen Account.
 signingUpOnlyTakesAMinute: Die Registrierung dauert nur eine Minute.
-signup--text: Das hätte nicht passieren dürfen. Bitte hilf uns, indem Du ein Anliegen bei GitHub erstellst.
+signup--text: 'Das hätte nicht passieren dürfen. Bitte hilf uns, indem Du ein Anliegen bei GitHub erstellst.'
 signup--title: Ein unbekannter Fehler ist aufgetreten
-signup-invalid_input-text: 'Bitte gib eine gültige E-Mail Adresse und ein Passwort an'
+signup-invalid_input-text: Bitte gib eine gültige E-Mail Adresse und ein Passwort an
 signup-invalid_input-title: Ungültige Eingabe
 signup-no_such_pending_confirmation-text: 'Entschuldigung, dies ist kein Bestätigungscode, den wir identifizieren können. Vielleicht ist der Code abgelaufen? Dann kannst Du dich einfach erneut registrieren.'
 signup-no_such_pending_confirmation-title: Dieser Bestätigungscode existiert nicht.
-signup-signup_pending-text: Zur Aktivierung dieses Accounts muss noch ein Bestätigungscode eingegeben werden. Eine neue E-Mail mit Bestätigungscode haben wir soeeben an Deine E-Mail Adresse gesendet, falls Du unsere ursprüngliche E-Mail übersehen hast. 
+signup-signup_pending-text: 'Zur Aktivierung dieses Accounts muss noch ein Bestätigungscode eingegeben werden. Eine neue E-Mail mit Bestätigungscode haben wir soeeben an Deine E-Mail Adresse gesendet, falls Du unsere ursprüngliche E-Mail übersehen hast.'
 signup-signup_pending-title: Deine E-Mail Adresse muss noch bestätigt werden.
 signup-success-text: 'Wir haben eine E-Mail an {email} gesendet.'
-signup-user_exists-text: Es existiert bereits ein Nutzer mit dieser E-Mail Adresse. Möchtest Du dich einloggen? 
+signup-user_exists-text: Es existiert bereits ein Nutzer mit dieser E-Mail Adresse. Möchtest Du dich einloggen?
 signup-user_exists-title: Dieser Nutzer existiert bereits.
 social: Social TODO
 somethingWentWrong: Something went wrong TODO
@@ -283,20 +285,20 @@ twitter: Twitter DONE
 twitterUpdated: Twitter account set TODO
 txt-avatarDropzoneText: 'Ziehe ein Bild mit Drag and Drop in die Box oder klicke auf die Schaltfläche, um ein Bild aus Deinen Dateien auszuwählen.'
 txt-avatarDropzoneTitle: Ziehe Dein Bild in diese Box
-txt-breastMeasurement-text: Dies ist ein Maß, das nur von Bedeutung ist, wenn Dein Modell Brüste besitzt. 
+txt-breastMeasurement-text: 'Dies ist ein Maß, das nur von Bedeutung ist, wenn Dein Modell Brüste besitzt.'
 txt-breastMeasurement-title: Dieses Maß ist nur für Brüste relevant
-txt-changeRequiresConfirmation: Diese Änderung erfordert eine Bestätigung per E-Mail 
-txt-clickEmailLink: Bitte klicke zum Fortfahren den Link in der E-Mail an. 
-txt-consentModel: Stimmst Du der Verarbeitung der Daten deines Modells zu? 
+txt-changeRequiresConfirmation: Diese Änderung erfordert eine Bestätigung per E-Mail
+txt-clickEmailLink: Bitte klicke zum Fortfahren den Link in der E-Mail an.
+txt-consentModel: Stimmst Du der Verarbeitung der Daten deines Modells zu?
 txt-consentModelAnswerWhat: 'Für jedes Modell die <b>Maße</b>, <b>Brust-Einstellung</b>, und das <b>Passwort</b>.'
 txt-consentModelAnswerWhatOptional: 'Optional: Ein Modell <b>Bild</b> und der <b>Name</b>, der für das Modell vergeben wurde'
 txt-consentModelAnswerWhy: 'Um <b>nach Maß gezeichnete Schnittmuster zu entwerfen</b>, benötigen wir <b>Körpermaße</b>.'
 txt-consentModelObjectNote: 'Anmerkung: Freesewing veröffentlicht anonymisierte Maße als offene Daten für wissenschaftliche Recherchen.'
 txt-consentModelObjectWhy: 'Diese Daten sind anonymisiert und werden verwednet, um die menschliche Form in allen Facetten zu verstehen und zu studieren. Dadurch können wir bessere Schnittmuster und besser passende Kleidung erstellen.'
 txt-consentModelQuestionWhat: Was sind Modell-bezogene Daten?
-txt-consentProfile: Gibtst Du Dein Einverständnis, dass deine Profildaten verarbeitet werden? 
+txt-consentProfile: 'Gibtst Du Dein Einverständnis, dass deine Profildaten verarbeitet werden?'
 txt-consentProfileAnswerShare: '<b>Nein</b>, niemals.'
-txt-consentProfileAnswerTiming: '<b>12 Monate</b> nach Deinem letzten Loginzeitpunkt oder bis Du Deinen Account <b>entfernst<\b> oder diese Zustimmung <b>widerrufst<\b>.'
+txt-consentProfileAnswerTiming: <b>12 Monate</b> nach Deinem letzten Loginzeitpunkt oder bis Du Deinen Account <b>entfernst<\b> oder diese Zustimmung <b>widerrufst<\b>.
 txt-consentProfileAnswerWhat: 'Deine <b>E-Mail Adresse</b>, <b>Nutzernamen</b>, und <b>Passwort</b>.'
 txt-consentProfileAnswerWhatOptional: 'Optional: Ein <b>Profilbild</b>, und <b>Accounts in den sozialen Netzwerken</b>'
 txt-consentProfileAnswerWhy: 'Um Dich zu <b>authentifizieren</b>, bei Bedarf zu <b>kontaktieren</b> und eine <b>Community</b> aufzubauen.'
@@ -309,9 +311,9 @@ txt-contentNotTranslated: 'Leider wurde diese Seite (noch) nicht auf {language} 
 txt-dataExport: 'Wenn Du möchtest, können wir alle Daten, die wir für Dich gespeichert haben, exportieren.'
 txt-dataExportQueued: You data export has been queued. We'll send you an E-mail once it's ready with a download link. TODO
 txt-didYouSpotATypo: 'Did you spot a typo? Do you feel something is missing, or needs clarification? TODO'
-txt-doYouObject: Widersprichst Du, Deine anonymisierten Daten für wissenschaftliche Recherche weiterzugeben? 
+txt-doYouObject: 'Widersprichst Du, Deine anonymisierten Daten für wissenschaftliche Recherche weiterzugeben?'
 txt-editThisPageOnline: You can edit this page online and submit your changes. TODO
-txt-email-sharing: Wir werden Deine E-Mail Adresse niemals weitergeben. 
+txt-email-sharing: Wir werden Deine E-Mail Adresse niemals weitergeben.
 txt-emailChangeConfirmationNotFound: 'Sorry, but we have no pending E-mail change for this confirmation code. Perhaps it expired, in which case you can simply make the change again in your settings. TODO'
 txt-emailNotFound: 'Wenn Du die E-Mail nicht finden kannst, überprüfe den Spam-Ordner oder kontaktiere uns.'
 txt-emailWillWorkToo: 'Wenn Du Deinen @:username nicht weißt: Deine @:emailAddress funktioniert auch'
@@ -326,7 +328,7 @@ txt-homepage-different: Was uns unterscheidet
 txt-homepage-draft: 'Wähle eines Deiner Schnittmuster, wähle ein Modell und entscheide dich für die Optionen. Den Rest erledigen wir.'
 txt-homepage-how: So funktioniert es
 txt-homepage-join: Mach es wie tausende andere und erstelle einen kostenlosen Account auf freesewing.org.
-txt-homepage-model: Alle unsere Schnittmuster werden nach individuellen Maßen gefertigt. Also nimm zuallererst Dein Maßband zur Hand. 
+txt-homepage-model: Alle unsere Schnittmuster werden nach individuellen Maßen gefertigt. Also nimm zuallererst Dein Maßband zur Hand.
 txt-homepage-opensource: 'Our platform, our patterns, and even this website. All our code is available on GitHub. Pull requests welcome! TODO'
 txt-homepage-patrons: Freesewing is made possible by the financial support of our Patrons. They keep this ship afloat. TODO
 txt-homepage-quotes: What others are saying TODO
@@ -345,9 +347,9 @@ txt-saOption-metric: Standard metric seam allowance TODO
 txt-saOption-none: Keine Nahtzugabe hinzufügen
 txt-saOption-patternImperial: Pattern default imperial seam allowance TODO
 txt-saOption-patternMetric: Pattern default metric seam allowance TODO
-txt-signup-step1: 'Gib Deine E-Mail Adresse ein und wähle ein Passwort'
+txt-signup-step1: Gib Deine E-Mail Adresse ein und wähle ein Passwort
 txt-signup-step2: Bestätige deine E-Mail Adresse
-txt-signup-step3: Erlaube uns, Deine persönlichen Daten zu verarbeiten.
+txt-signup-step3: 'Erlaube uns, Deine persönlichen Daten zu verarbeiten.'
 txt-slogan: Eine Open Source Plattform für Schnittmuster nach Maß
 txt-translators1: We are looking for people to help with our translation efforts. TODO
 txt-translators2: 'Many hands make light work, and it''s excellent karma to make a contribution this way. TODO'
@@ -389,10 +391,11 @@ yesIDo: 'Ja, ich will'
 yesIDoObject: 'Yes, I do object TODO'
 yesterday: Gestern
 youAreCurrentlyLoggedIn: Du bist aktuell eingelogged.
+youAreNotAnAdmin: You are not an admin TODO
 youAreNotLoggedIn: Du bist nicht eingelogged.
 youCanUseMarkdownFormatting: You can use MarkDown formatting TODO
-youDoNotObjectToSharingAnonymizedDataForResearch: Du bist einverstanden, anonymisierte Daten für Forschungszwecke zur Verfügung zu stellen. 
-youHaveTheRightToObjectToThis: Du hast das Recht, dem zu widersprechen
-youObjectToSharingAnonymizedDataForResearch: Du widersprichst, anonymisierte Daten für Forschungszwecke zur Verfügung zu stellen. 
+youDoNotObjectToSharingAnonymizedDataForResearch: 'Du bist einverstanden, anonymisierte Daten für Forschungszwecke zur Verfügung zu stellen.'
+youHaveTheRightToObjectToThis: 'Du hast das Recht, dem zu widersprechen'
+youObjectToSharingAnonymizedDataForResearch: 'Du widersprichst, anonymisierte Daten für Forschungszwecke zur Verfügung zu stellen.'
 yourPrivacy: Your privacy TODO
 yourRights: Your rights TODO
