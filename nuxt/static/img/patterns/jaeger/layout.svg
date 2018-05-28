@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+
+      __                           _           
+     / _|_ _ ___ ___ ________ __ _(_)_ _  __ _ 
+    |  _| '_/ -_) -_|_-< -_) V  V / | ' \/ _` |
+    |_| |_| \___\___/__|___|\_/\_/|_|_||_\__, |
+                  freesewing.org         |___/ 
+     
+    An open source platform 
+            for made-to-measure sewing patterns 
+
+  -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" viewBox="0 0 1780 824" width="1780mm" height="824mm" freesewing:version="1.8.0" freesewing:origin="core.she.freesewing.org">
+
+<style type="text/css">
+    <![CDATA[
+    path,circle,rect{fill:none;stroke:none}path{fill:none;stroke:#000;stroke-opacity:1;stroke-width:.3;stroke-linecap:round;stroke-linejoin:round}path.fabric{stroke-width:.6;stroke:#653f95}path.lining{stroke-width:.6;stroke:#0275d8}path.interfacing{stroke-width:.6;stroke:#d9534f}path.canvas{stroke-width:.6;stroke:#5cb85c}path.various{stroke-width:.6;stroke:#5bc0de}path.sa{stroke-dasharray:0.4,0.8}path.help{stroke-width:.2;stroke-dasharray:15,1.5,1,1.5}path.hint{stroke-width:.2;stroke-dasharray:0.4,0.8}path.note{stroke:#0275d8;stroke-width:.6;marker-start:url(#noteArrow)}text{font-size:5px;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;fill:#000;text-anchor:start;font-weight:200}text.center{text-anchor:middle}text.part-nr{font-size:28px;text-anchor:middle;fill:#000;font-weight:100}text.part-nr.horizontal{text-anchor:start}text.part-title{font-size:18px;text-anchor:middle;fill:#000}text.part-title.horizontal{text-anchor:start}text.pattern-title{font-size:8px;font-weight:bold;text-anchor:middle;fill:#000}text.pattern-title.horizontal{text-anchor:start}text.part-msg{font-size:10px;text-anchor:middle}text.part-meta{font-size:7px;text-anchor:middle}text.part-msg.horizontal,text.part-meta.horizontal,text.part-title.vertical,text.part-msg.vertical{text-anchor:start}text.part-nr.small{font-size:14px}text.part-title.small{font-size:9px}text.pattern-title.small{font-size:4px}text.part-msg.small{font-size:5px}text.part-meta.small{font-size:5px}text.part-nr.extrasmall{font-size:7px}text.part-title.extrasmall{font-size:5px}text.pattern-title.extrasmall{font-size:3px}text.part-msg.extrasmall{font-size:4px}text.part-meta.extrasmall{font-size:3px}text.note,text.dimension-label{fill:#0275d8}text.note tspan{alignment-baseline:middle}text.note-5,text.note-6,text.note-7,text.note-11,text.note-12,text.note-0,text.note-1,text.dimension-label{text-anchor:middle}text.note-8,text.note-9,text.note-10{text-anchor:end}text.dimension-label{font-size:7px}text.grainline{fill:#999}path.arrow{stroke:#0275d8}path.grainline{stroke:#999;stroke-width:.6;marker-start:url(#grainlineStart);marker-end:url(#grainlineEnd)}path.dimension{stroke:#0275d8;stroke-width:.6;marker-start:url(#dimensionStart);marker-end:url(#dimensionEnd)}path.dimension.dimension-sm{stroke-width:.3}path.dimension-leader{stroke:#0275d8;stroke-width:.3}path.single-arrow{marker-start:url(#dimensionStart)}path.double-arrow{marker-start:url(#dimensionStart);marker-end:url(#dimensionEnd)}.text-xs{font-size:3px}.text-sm{font-size:4px}.text-lg{font-size:7px}.text-xl{font-size:9px}.text-center{text-anchor:middle}.stroke-xs{stroke-width:.1}.stroke-sm{stroke-width:.2}.stroke-lg{stroke-width:.6}.stroke-xl{stroke-width:1}.stroke-xxl{stroke-width:2}.dashed{stroke-dasharray:1,1.5}.lashed{stroke-dasharray:6,6}.dotted{stroke-dasharray:0.4,0.8}.hidden{stroke:none;file:none}.stroke-fabric{stroke:#653f95}.stroke-lining{stroke:#0275d8}.stroke-interfacing{stroke:#d9534f}.stroke-canvas{stroke:#5cb85c}.stroke-note{stroke:#0275d8}.stroke-mark{stroke:#f0ad4e}.stroke-hint{stroke:#86739c}.stroke-gray{stroke:#999}.fill-fabric{fill:#653f95}.fill-lining{fill:#0275d8}.fill-interfacing{fill:#d9534f}.fill-canvas{fill:#5cb85c}.fill-note{fill:#0275d8}.fill-mark{fill:#f0ad4e}.fill-hint{fill:#86739c}.fill-gray{fill:#999}]]>
+</style>
+
+<defs id="defs">
+    <marker orient="auto" refY="0.0" refX="0.0" id="noteArrow" style="overflow:visible;"> <path style="stroke: #0275d8; fill: #0275d8;" d="M 0,0 L 9,-3 C 8,-2 8,2  9, 3 z"/> </marker>
+    <marker orient="auto" refY="0.0" refX="0.0" id="dimensionStart" style="overflow:visible;"> <path style="stroke: #0275d8; fill: #0275d8;" d="M 0,0 L 12,-4 C 10,-2 10,2  12, 4 z"/> </marker>
+    <marker orient="auto" refY="0.0" refX="0.0" id="dimensionEnd" style="overflow:visible;"> <path style="stroke: #0275d8; fill: #0275d8;" d="M 0,0 L -12,-4 C -10,-2 -10,2  -12, 4 z"/> </marker>
+    <marker orient="auto" refY="0.0" refX="0.0" id="grainlineStart" style="overflow:visible;"> <path style="stroke: #999999; fill: #999999;" d="M 0,0 L 12,-4 C 10,-2 10,2  12, 4 z"/> </marker>
+    <marker orient="auto" refY="0.0" refX="0.0" id="grainlineEnd" style="overflow:visible;"> <path style="stroke: #999999; fill: #999999;" d="M 0,0 L -12,-4 C -10,-2 -10,2  -12, 4 z"/> </marker>
+    <g id="notch"> <circle cy="0" cx="0" r="1.4" class="fill-mark"/> <circle cy="0" cx="0" r="2.8" class="stroke-mark stroke-xl"/> </g>
+    <g id="scalebox"> <rect y="0" x="-50.8" height="50.8" width="101.6" style="fill:#333333;fill-opacity:1;stroke:none"/> <rect style="fill:#ffffff;fill-opacity:1;stroke:none" width="100" height="50" x="-49.6" y="0.4"/> <text x="-40" y="10" class="text-sm"> <tspan x="-40" dy="4" class="text-xs">freesewing core v1.8.0</tspan> <tspan x="-40" dy="8" class="text-xl">Jaeger Jacket </tspan> <tspan x="-40" dy="8" class="fill-brand">freesewing.org/drafts/__DRAFTHANDLE__</tspan> </text> <text y="0" x="0" class="text-xs text-center"> <tspan x="0" y="42">The (white) inside of this box should measure 10 by 5 cm</tspan> <tspan x="0" dy="5">The (black) outside of this box should measure 4 by 2 inch</tspan> </text> </g>
+    <g id="logo-sm" transform="scale(0.4)"> <use xlink:href="#logo"/> </g>
+    <g id="logo-lg" transform="scale(2)"> <use xlink:href="#logo"/> </g>
+    <g id="logo" transform="translate(-23 -36)"> 
+    <path style="fill:#000;fill-opacity:1;stroke:none;" d="M 35.222,0 C 34.233,0.703 34.284,0.613 33.485,0.874 31.653,1.473 29.896,1.144 27.811,0.97 27.184,0.9 26.562,0.859 25.955,0.855 22.89,0.834 20.287,1.733 19.794,4.243 18.885,4.794 18.049,5.461 17.221,6.129 15.453,7.524 14.122,9.229 13.214,11.284 11.974,14.319 13.094,17.576 13.649,20.652 13.781,21.372 13.919,22.058 13.993,22.323 14.098,22.696 14.283,23.052 14.484,23.372 14.531,23.38 14.779,22.998 14.838,22.829 14.924,22.583 14.915,22.188 14.821,21.848 14.613,21.083 14.415,20.462 14.398,20.15 14.368,19.564 14.482,19.023 14.696,18.755 14.772,18.66 14.946,19.15 14.901,19.332 14.848,19.551 14.808,19.926 14.825,20.099 14.872,20.685 14.958,21.312 15.065,21.86 15.202,22.567 15.261,23.021 15.236,23.197 15.218,23.325 15.158,23.454 14.928,23.85 14.728,24.197 14.624,24.478 14.608,24.726 14.591,24.968 14.664,25.573 14.732,25.721 14.831,25.952 15.129,26.195 15.389,26.255 15.638,26.35 15.763,26.547 15.891,26.768 16.202,27.361 16.442,28.083 16.68,29.171 16.796,29.692 16.893,30.157 16.924,30.401 15.004,30.403 12.545,30.404 10.305,30.404 9.551,30.416 8.189,30.062 6.94,29.98 6.759,28.026 5.901,25.756 4.433,25.624 3.431,25.533 2.6,25.914 1.897,27.497 L 1.917,27.582 C 2.332,27.235 2.77,26.174 4.348,26.247 5.56,26.302 5.964,28.596 6.084,29.976 5.346,30.03 4.718,30.257 4.39,30.824 L 4.383,30.824 C 4.383,30.825 4.383,30.827 4.386,30.829 4.383,30.831 4.383,30.833 4.383,30.835 L 4.39,30.835 C 4.728,31.416 5.379,31.641 6.144,31.686 6.655,46.136 20.238,48 23.95,48 37.798,48 42.646,38.59 43.375,34.863 43.716,36.451 42.642,38.474 42.385,39.967 45.306,36.59 44.778,33.343 44.244,30.077 44.688,30.605 45.289,30.932 46.104,30.751 45.523,30.363 44.735,30.635 44.263,28.998 44.057,28.291 43.879,27.761 43.702,27.316 43.32,25.883 42.778,24.514 42.112,23.18 41.55,21.733 41.921,20.795 41.865,19.553 42.876,22.887 43.508,23.774 44.688,24.123 41.72,20.547 42.736,15.01 41.059,10.068 41.818,10.514 42.684,10.648 43.606,10.103 42.714,9.849 41.824,10.52 40.544,8.639 39.463,6.536 37.897,4.983 35.997,3.613 34.979,2.949 33.849,2.503 32.713,2.089 33.87,1.799 35.162,0.769 35.222,0 z M 33.281,11.107 C 34.805,11.663 36.485,13.775 36.466,15.847 L 36.466,15.933 36.466,15.963 C 36.425,18.777 35.146,20.29 35.2,22.164 35.269,24.371 36.219,25.141 36.408,25.509 36.084,24.148 35.894,22.436 36.322,21.08 36.872,19.336 37.427,17.892 37.387,16.526 37.367,16.206 37.231,15.009 37.14,14.479 38.774,16.837 36.786,20.266 37.358,22.51 38.352,26.419 42.807,26.913 41.481,34.789 40.314,41.713 32.318,46.968 24.122,46.968 18.046,46.968 7.517,43.605 6.997,31.676 8.232,31.588 9.56,31.244 10.305,31.256 12.557,31.256 15.129,31.257 17.067,31.258 17.431,32.9 17.704,33.296 19.085,34.39 20.621,35.598 20.979,35.745 23.251,35.767 25.524,35.79 26.198,35.303 28.403,33.217 28.879,32.659 29.085,31.928 29.316,31.241 31.584,31.22 33.238,31.18 34.865,31.104 36.522,31.029 36.756,31.104 39.426,30.829 36.756,30.554 36.522,30.629 34.865,30.553 33.281,30.481 31.677,30.44 29.508,30.42 29.69,29.603 29.95,28.805 30.227,28.016 30.398,27.551 30.599,27.098 30.805,26.647 L 31.03,26.577 C 31.464,26.423 31.848,26.093 32.001,25.647 32.198,25.056 32.058,24.392 31.677,23.909 31.546,23.728 31.383,23.497 31.316,23.395 31.115,23.077 31.11,22.9 31.28,21.718 31.423,20.728 31.439,20.21 31.34,19.708 31.32,19.421 31.318,18.831 31.309,18.672 31.385,18.714 31.55,19.09 31.717,19.599 31.883,20.11 31.91,20.216 31.948,20.651 31.99,21.145 31.805,21.511 31.653,22.248 31.577,22.628 31.51,22.981 31.51,23.029 31.51,23.08 31.546,23.188 31.584,23.272 31.673,23.46 31.84,23.724 31.871,23.724 32.416,23.123 32.736,22.381 33.021,21.628 33.321,20.776 33.409,19.872 33.619,18.995 33.789,18.231 33.985,17.466 34.046,16.682 34.169,15.152 34.097,14.072 33.759,12.478 33.678,12.118 33.444,11.431 33.281,11.107 z M 27.921,18.644 C 28.506,18.637 29.085,18.708 29.636,18.867 30.385,19.154 30.49,19.823 30.628,20.574 30.705,21.054 30.702,21.399 30.615,21.963 30.554,22.781 30.229,23.414 29.519,23.859 28.448,24.057 27.303,24.248 26.395,23.539 25.633,22.489 25.174,21.162 25.349,19.868 25.46,19.337 25.707,19.061 26.215,18.896 26.762,18.739 27.341,18.653 27.921,18.644 z M 19.038,18.739 C 19.585,18.734 20.138,18.792 20.442,18.986 21.747,19.869 21.328,21.306 20.812,22.567 20.061,24.218 18.437,24.157 16.863,24.144 15.992,23.889 15.912,23.175 15.786,22.412 15.678,21.675 15.448,20.885 15.64,20.144 16.133,18.952 17.935,18.815 19.038,18.739 z M 38.941,18.945 C 38.948,22.118 39.49,23.677 40.578,25.924 39.937,24.701 39.021,24.005 38.68,22.543 38.028,19.72 38.731,19.878 38.941,18.945 z M 23.128,21.243 C 23.3,21.417 23.383,21.657 23.532,21.848 23.647,21.651 23.765,21.455 23.913,21.28 23.99,21.282 24.084,21.434 24.169,21.706 24.533,22.712 24.604,23.819 25.076,24.786 25.517,25.486 24.915,25.894 24.254,25.926 23.772,25.925 23.568,25.596 23.285,25.27 23.212,25.483 23.073,25.62 22.907,25.764 22.485,26.118 21.658,25.987 21.53,25.429 21.7,24.363 22.243,23.384 22.599,22.362 22.776,21.989 22.778,21.703 23.128,21.243 z M 16.936,26.628 C 17.149,26.628 17.734,27.025 17.853,27.249 17.935,27.398 18.122,27.978 18.135,28.119 18.156,28.287 18.105,28.685 18.053,28.793 18.015,28.87 17.986,28.881 17.942,28.831 17.905,28.789 17.415,27.849 17.102,27.227 16.856,26.729 16.83,26.628 16.936,26.628 z M 29.158,26.939 C 29.166,26.94 29.178,26.943 29.189,26.946 29.255,26.973 29.209,27.207 28.961,28.057 28.914,28.313 28.8,28.515 28.633,28.683 28.578,28.683 28.553,28.619 28.467,28.264 28.394,27.961 28.386,27.691 28.437,27.449 28.525,27.146 28.881,27.053 29.158,26.939 z M 27.675,28.792 C 27.696,28.788 27.716,28.799 27.742,28.82 27.832,28.883 27.845,29.049 27.785,29.374 27.712,29.792 27.696,29.838 27.588,29.881 27.541,29.902 27.457,29.917 27.401,29.917 27.3,29.899 27.274,29.817 27.298,29.693 27.298,29.433 27.374,29.207 27.546,28.94 27.611,28.84 27.644,28.797 27.675,28.792 z M 19.042,28.811 C 19.111,28.811 19.319,28.961 19.396,29.065 19.482,29.175 19.58,29.83 19.525,29.943 19.462,30.085 19.154,30.014 19.069,29.837 19.017,29.731 18.894,29.159 18.894,29.023 18.894,28.897 18.955,28.811 19.042,28.811 z M 26.933,28.984 C 27.017,29.104 27.039,29.258 27.021,29.596 L 27.004,29.904 26.916,29.992 C 26.863,30.041 26.773,30.101 26.719,30.126 26.6,30.182 26.509,30.187 26.492,30.142 26.472,30.082 26.506,29.7 26.543,29.571 26.586,29.438 26.779,29.041 26.843,28.957 26.872,28.88 26.906,28.976 26.933,28.984 z M 21.912,28.966 C 22.093,29.012 22.173,29.175 22.272,29.323 L 22.339,29.455 22.245,29.782 C 22.195,29.962 22.142,30.124 22.126,30.142 22.108,30.162 22.041,30.172 21.942,30.171 21.678,30.164 21.648,30.153 21.577,30.045 L 21.511,29.947 21.567,29.672 C 21.648,29.276 21.687,29.157 21.777,29.055 21.824,29 21.871,28.97 21.912,28.966 z M 20.241,29.249 20.39,29.398 20.415,29.735 C 20.428,29.919 20.434,30.09 20.424,30.111 20.415,30.14 20.361,30.148 20.194,30.148 L 19.977,30.148 C 19.861,30.021 19.825,29.866 19.776,29.706 19.662,29.225 19.662,29.006 19.78,28.977 19.973,28.989 20.1,29.129 20.241,29.249 z M 26.041,29.018 C 26.277,29.081 26.23,29.456 26.229,29.724 26.211,30.158 26.194,30.248 26.138,30.304 26.041,30.401 25.771,30.347 25.64,30.203 25.597,30.151 25.593,30.135 25.627,29.924 25.666,29.667 25.716,29.507 25.827,29.287 25.908,29.129 25.984,29.03 26.041,29.018 z M 20.715,29.038 C 20.728,29.037 20.749,29.038 20.769,29.04 20.919,29.052 21.059,29.15 21.183,29.33 L 21.283,29.477 C 21.292,29.718 21.283,29.972 21.24,30.196 21.214,30.209 21.106,30.229 21,30.239 20.816,30.256 20.799,30.252 20.735,30.196 20.646,30.12 20.621,29.979 20.599,29.511 20.586,29.129 20.595,29.044 20.715,29.038 z M 22.984,29.118 C 23.145,29.152 23.247,29.238 23.292,29.379 23.328,29.5 23.35,30.177 23.315,30.224 23.303,30.244 23.227,30.269 23.14,30.28 22.816,30.321 22.53,30.29 22.502,30.213 22.466,30.125 22.707,29.253 22.796,29.145 22.834,29.061 22.926,29.126 22.984,29.118 z M 25.082,29.124 C 25.153,29.117 25.229,29.185 25.303,29.33 25.363,29.451 25.372,29.493 25.372,29.764 25.372,29.98 25.359,30.073 25.336,30.093 25.316,30.109 25.235,30.138 25.149,30.16 24.999,30.199 24.966,30.203 24.919,30.187 L 24.694,30.146 24.711,30.012 C 24.727,29.837 24.842,29.449 24.923,29.281 24.971,29.181 25.026,29.131 25.082,29.124 z M 24.104,29.127 C 24.151,29.125 24.173,29.136 24.203,29.169 24.274,29.253 24.364,29.501 24.421,29.766 24.497,30.139 24.497,30.138 24.334,30.187 24.263,30.209 24.113,30.232 24.006,30.238 23.653,30.256 23.626,30.235 23.669,29.923 23.703,29.645 23.84,29.207 23.899,29.175 23.963,29.141 24.037,29.142 24.104,29.127 z M 6.111,30.536 C 6.114,30.535 6.118,30.536 6.118,30.536 6.127,30.731 6.127,30.928 6.131,31.124 5.636,31.086 5.272,30.968 5.272,30.829 5.272,30.692 5.623,30.575 6.111,30.536 z M 6.976,30.553 C 7.377,30.603 7.654,30.708 7.649,30.829 7.649,30.951 7.381,31.055 6.983,31.104 6.979,30.921 6.979,30.737 6.976,30.553 z M 25.702,31.086 C 25.736,31.083 25.751,31.08 25.803,31.085 26.011,31.106 26.041,31.119 26.041,31.189 26.041,31.281 25.883,31.558 25.776,31.654 25.726,31.702 25.657,31.742 25.633,31.742 25.513,31.742 25.443,31.489 25.499,31.256 25.533,31.13 25.595,31.091 25.702,31.086 z M 24.947,31.169 C 25.04,31.161 25.13,31.186 25.22,31.198 25.194,31.461 25.076,31.676 24.857,31.819 24.803,31.819 24.776,31.716 24.776,31.491 24.776,31.223 24.79,31.172 24.947,31.169 z M 24.119,31.266 C 24.312,31.266 24.482,31.275 24.49,31.286 24.526,31.32 24.422,31.578 24.269,31.84 24.138,32.073 24.119,32.09 24.038,32.096 23.72,32.06 23.729,31.687 23.68,31.431 23.68,31.279 23.714,31.266 24.119,31.266 z M 21.11,31.295 C 21.331,31.299 21.417,31.332 21.417,31.417 21.417,31.525 21.335,31.74 21.288,31.767 21.217,31.806 21.211,31.804 21.071,31.658 20.85,31.41 20.825,31.364 21.11,31.295 z M 22.174,31.306 C 22.178,31.312 22.221,31.39 22.264,31.478 22.358,31.661 22.365,31.741 22.298,31.802 22.14,31.892 22.107,31.841 21.964,31.75 21.798,31.593 21.667,31.382 21.71,31.338 21.858,31.285 22.021,31.305 22.174,31.306 z M 22.596,31.311 22.991,31.318 C 23.145,31.318 23.278,31.326 23.285,31.338 23.312,31.362 23.225,31.876 23.178,31.992 23.124,32.122 22.935,32.123 22.837,31.969 22.697,31.748 22.605,31.562 22.602,31.434 L 22.596,31.311 z"/>
+    </g>
+    <g id="button"> <circle id="button-circle-edge" cx="0" cy="0" r="3.4" style="stroke:#000000;fill:none;stroke-width:1;"/> <circle id="button-circle-hole1" cx="-1" cy="-1" r="0.5" style="stroke:none;fill:#000000;"/> <circle id="button-circle-hole2" cx="1" cy="-1" r="0.5" style="stroke:none;fill:#000000;"/> <circle id="button-circle-hole3" cx="1" cy="1" r="0.5" style="stroke:none;fill:#000000;"/> <circle id="button-circle-hole4" cx="-1" cy="1" r="0.5" style="stroke:none;fill:#000000;"/> </g>
+    <g id="button-lg"> 
+    <circle id="button-lg-circle-edge" cx="0" cy="0" r="7.5" style="stroke:#000000;fill:#000; fill-opacity:0.3;stroke-width:1;"/> <circle id="button-lg-circle-hole1" cx="-1.2" cy="-1.2" r="0.7" style="stroke:none;fill:#000000;"/> <circle id="button-lg-circle-hole2" cx="1.2" cy="-1.2" r="0.7" style="stroke:none;fill:#000000;"/> <circle id="button-lg-circle-hole3" cx="1.2" cy="1.2" r="0.7" style="stroke:none;fill:#000000;"/> <circle id="button-lg-circle-hole4" cx="-1.2" cy="1.2" r="0.7" style="stroke:none;fill:#000000;"/> </g>
+    <g id="buttonhole"> <path style="fill:none;stroke:#000000;" d="M -1,-5 L 1,-5 L 1,5 L -1,5 z" id="buttonhole-outer"/> <path style="fill:#000000;stroke:none;" d="M -1,-5 L 1,-5 L 1,-4 L -1,-4 z M -1,5 L 1,5 L 1,4 L -1,4 z" id="buttonhole-bartack"/> </g>
+    <radialGradient id="snap-male-grad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%"> <stop offset="30%" style="stop-color:rgb(235,235,235); stop-opacity:1"/> <stop offset="80%" style="stop-color:rgb(100,100,100);stop-opacity:1"/> </radialGradient>
+    <g id="snap-male"> <circle id="snap-male-circle-edge" cx="0" cy="0" r="3.4" style="stroke:#666;fill:#dddddd;stroke-width:0.3;"/> <circle id="snap-male-circle-middle" cx="0" cy="0" r="1.8" style="stroke:none;fill:url(#snap-male-grad);"/> <path style="fill:none;stroke:#666; stroke-width:0.2;" d="M -2,0 L -3,0 M 2,0 L 3,0 M 0,2 L 0,3 M 0,-2 L 0,-3 M 1.5,1.5 L 2.1,2.1 M -1.5,1.5 L -2.1,2.1 M -1.5,-1.5 L -2.1,-2.1 M 1.5,-1.5 L 2.1,-2.1" id="snap-male-lines"/> </g>
+    <g id="snap-female"> <circle id="snap-female-circle-edge" cx="0" cy="0" r="3.4" style="stroke:#666;fill:#bbbbbb;stroke-width:0.3;"/> <circle id="snap-female-circle-middle" cx="0" cy="0" r="2" style="stroke:#666;fill:#dddddd; stroke-width:0.4;"/> <path style="fill:none;stroke:#666; stroke-width:0.5;" d="M -1.7,-1 L -1.7,1 M 1.7,-1 L 1.7,1" id="snap-female-lines"/> </g> 
+</defs>
+
+
+<!-- Start of group #patternContainer -->
+<g id="patternContainer">
+    
+    <!-- Start of group #back -->
+    <g id="back" transform=" translate(15 14.907)  translate(332.073 0) ">
+        <path class="hint" id="2" d=" M  221.933,751.85  L  221.933,635  C  213.308,509.333  214.688,528.667  216.344,548 "/>
+        <path class="fabric" id="3" d=" M  5.4,20  C  5.4,20  84.058,19.814  86.777,0  L  232.5,20  C  231.14,29.907  223.2,110.083  223.2,155.125  C  223.2,200.167  230.371,248.453  247.684,265.766  C  230.371,283.079  213.308,415.255  213.308,490  C  213.308,509.333  214.688,528.667  216.344,548  L  256.217,557.683  C  259.539,582.212  261.933,609.051  261.933,635  L  261.933,751.85  L  11.25,751.85  L  11.25,635  C  11.25,586.667  14.625,538.333  14.625,490  C  14.625,393.389  -0,296.778  0,200.167  C  0,110.083  5.4,20  5.4,20  z "/>
+        <path class="fabric sa" id="4" d=" M  5.321,10  C  5.321,10  36.524,9.927  59.384,4.908  L  59.384,4.907  C  65.002,3.674  69.367,2.365  72.992,0.65  L  72.99,0.651  C  77.083,-1.288  76.829,-1.062  76.87,-1.36  L  88.137,-9.907  L  233.86,10.093  L  242.407,21.36  C  241.072,31.085  233.2,110.574  233.2,155.125  L  233.2,155.125  C  233.2,183.466  235.998,212.188  242.38,233.788  L  242.38,233.789  C  243.951,239.107  245.578,243.527  247.532,247.666  L  247.532,247.666  C  249.918,252.72  252.033,255.973  254.755,258.695  L  254.755,272.837  C  249.71,277.882  243.641,300.186  237.951,332.389  L  237.952,332.389  C  229.368,380.981  223.308,445.617  223.308,490  L  223.308,490  C  223.308,506.694  224.353,523.341  225.729,540.226  L  225.709,539.983  L  258.577,547.965  L  266.127,556.341  C  269.477,581.076  271.933,608.611  271.933,635  L  271.933,635  L  271.933,751.85  L  271.933,781.85  L  1.25,781.85  L  1.25,751.85  L  1.25,635  L  1.25,635  C  1.25,586.314  4.625,537.98  4.625,490  L  4.625,490  C  4.625,394.14  -10,297.529  -10,200.167  L  -10,200.167  C  -10,109.785  -4.583,19.419  -4.583,19.411  L  5.321,10  z "/>
+        <path class="help" id="5" d=" M  14.625,490  L  213.308,490 "/>
+        <path class="hidden" id="6" d=" M  14.625,490  L  213.308,490 "/>
+        <text id="7"><textPath xlink:href="#6" startOffset="50%"><tspan>Waistline</tspan></textPath></text>
+        <path class="note" id="8" d=" M  225.109,52.423  L  212.118,59.923 "/>
+        <text x="207.788" y="62.423" id="9" class="note note-8"><tspan>Fold back seam allowance</tspan><tspan x="207.788" dy="6">from here to shoulder seam</tspan></text>
+        <path class="note" id="10" d=" M  218.87,152.625  L  205.879,145.125 "/>
+        <text x="201.549" y="142.625" id="11" class="note note-10"><tspan>Work in sleevecap ease</tspan><tspan x="201.549" dy="6">from this point onwards</tspan></text>
+        <path class="note" id="12" d=" M  218.878,155.02  L  205.887,162.52 "/>
+        <text x="201.557" y="165.02" id="13" class="note note-8"><tspan>Topsleeve/Undersleeve joint point</tspan></text>
+        <path class="note" id="14" d=" M  224.531,585.167  L  204.612,596.667 "/>
+        <text x="200.282" y="599.167" id="15" class="note note-8"><tspan>Standard seam allowance</tspan><tspan x="200.282" dy="6">(1cm)</tspan></text>
+        <path class="note" id="16" d=" M  98.277,761.769  L  76.777,724.529 "/>
+        <text x="74.277" y="720.199" id="17" class="note note-11"><tspan>Extra hem allowance</tspan><tspan x="74.277" dy="6">(3cm)</tspan></text>
+        <path class="grainline" id="18" d=" M  86.777,741.85  L  86.777,10 "/>
+        <text id="19" class="text-lg text-center grainline" dy="-2"><textPath xlink:href="#18" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2">Grainline</tspan></textPath></text>
+        <text x="148.61" y="265.766" id="20" class="pattern-title default" style="font-size: 6px; text-anchor: middle; fill: #666; font-weight: 700 " transform="rotate(0, 148.61, 265.766) translate(0, -24) "><tspan>Jaeger Jacket</tspan></text>
+        <text x="148.61" y="265.766" id="21" class="part-nr default" style="font-size: 24px; text-anchor: middle; font-weight: 400; " transform="rotate(0, 148.61, 265.766) translate(0, -0) "><tspan>2</tspan></text>
+        <text x="148.61" y="265.766" id="22" class="part-title default" style="font-size: 12px; text-anchor: middle; font-weight: 300; " transform="rotate(0, 148.61, 265.766) translate(0, 12)"><tspan>Back</tspan></text>
+        <text x="148.61" y="265.766" id="23" class="part-msg default" style="font-size: 8px; text-anchor: middle; fill: #666; font-weight: 300; " transform="rotate(0, 148.61, 265.766) translate(0, 24)"><tspan>2x from main fabric</tspan><tspan x="148.61" dy="8">2x from lining</tspan></text>
+        <use x="223.2" y="155.125" xlink:href="#notch" id="24"/>
+        <use x="0" y="200.167" xlink:href="#notch" id="25"/>
+        <use x="14.625" y="490" xlink:href="#notch" id="26"/>
+        <use x="213.308" y="490" xlink:href="#notch" id="27"/>
+        <use x="223.208" y="152.52" xlink:href="#notch" id="28"/>
+        <use x="229.439" y="49.923" xlink:href="#notch" id="29"/>
+        <use x="148.61" y="365.766" xlink:href="#logo" id="30"/>
+    </g>
+    <!-- End of group #back -->
+    
+    <!-- Start of group #front -->
+    <g id="front" transform=" translate(36.6 20.941)  translate(0 0) ">
+        <path class="help" id="31" d=" M  150.916,500.875  L  247.111,500.875  M  255.598,697.263  L  113.4,697.263  L  113.4,500.875  L  137.012,500.875 "/>
+        <path class="debug" id="32" d=" M  238.573,20.28  C  235.86,35.033  221.2,110.083  221.2,155.125  C  221.2,200.167  230.371,248.453  247.684,265.766 "/>
+        <path class="debug" id="33" d=" M  -21.6,420.088  L  -21.6,518.572 "/>
+        <path class="fabric" id="34" d=" M  -21.6,420.088  C  -21.6,287.438  -18.483,92.302  -18.483,92.302  L  11.497,91.213  L  65.927,67.354  L  95.1,-6.106  L  238.573,20.28  C  235.86,35.033  221.2,110.083  221.2,155.125  C  221.2,200.167  230.371,248.453  247.684,265.766  C  258.937,277.019  269.553,283.988  280.8,287.463  C  280.8,287.463  246.973,415.255  246.973,490  C  246.973,538.333  255.598,586.667  255.598,635  L  255.598,757.837  L  76.68,767.982  C  12.779,771.605  -11.996,738.535  -19.743,603.618  C  -21.6,571.278  -21.6,544.925  -21.6,518.572  L  -21.6,420.088  z  M  143.964,562.5  C  143.964,562.5  151.277,514.167  151.277,490  C  151.277,445.611  143.964,356.833  143.964,356.833  C  143.964,356.833  136.651,445.611  136.651,490  C  136.651,514.167  143.964,562.5  143.964,562.5  z "/>
+        <path class="help" id="35" d=" M  0,99  L  0,772.33 "/>
+        <path class="help" id="36" d=" M  82.5,290.25  L  82.5,275.12  L  186.602,261.415  L  186.602,276.545  L  82.5,290.25  z "/>
+        <path class="help" id="37" d=" M  -21.6,420.088  L  51.484,73.685 "/>
+        <path class="fabric" id="38" d=" M  123.795,-0.829  L  105.244,301.87  C  104.569,312.895  112.975,321.833  124.021,321.833  L  185.987,321.833  C  197.033,321.833  205.987,330.787  205.987,341.833  C  205.987,352.879  197.033,361.833  185.987,361.833  L  121.57,361.833  C  110.524,361.833  101.022,370.771  100.347,381.796  L  76.68,767.982 "/>
+        <path class="lining" stroke-dasharray="10,10" id="39" d=" M  123.795,-0.829  L  105.244,301.87  M  100.347,381.796  L  76.68,767.982 "/>
+        <path class="lining" id="40" d=" M  105.244,301.87  L  100.347,381.796 "/>
+        <path class="help" id="41" d=" M  60.987,336.833  L  185.987,336.833  L  185.987,346.833  L  60.987,346.833  z  M  60.987,341.833  L  185.987,341.833 "/>
+        <path class="fabric sa" id="42" d=" M  77.246,777.966  C  63.853,778.726  50.994,777.873  40.179,774.866  L  40.179,774.866  C  -3.897,762.612  -23.436,713.75  -29.727,604.191  L  -29.742,603.719  L  -31.599,420.189  L  -31.6,420.088  C  -31.6,287.341  -28.482,92.142  -28.482,92.144  L  -18.846,82.309  L  9.227,81.289  L  9.227,81.289  L  58.15,59.844  L  58.15,59.844  L  85.806,-9.797  L  96.909,-15.941  L  240.382,10.445  L  248.408,22.089  C  245.677,36.938  231.2,111.053  231.2,155.125  L  231.2,155.125  C  231.2,183.334  234.762,211.936  241.719,233.56  L  241.718,233.559  C  243.43,238.881  245.187,243.341  247.245,247.502  L  247.244,247.501  C  249.759,252.587  251.991,255.931  254.755,258.695  L  254.755,258.695  C  265.281,269.221  273.86,274.853  283.752,277.909  L  290.473,289.998  C  290.473,289.999  256.973,416.556  256.973,490  L  256.973,490  C  256.973,537.45  265.598,585.784  265.598,635  L  265.598,635  L  265.598,757.837 "/>
+        <path class="fabric sa" id="43" d=" M  77.246,777.966  L  76.68,797.982  L  255.598,787.837  L  265.598,787.837  L  265.598,757.837 "/>
+        <path class="help" id="44" d=" M  0,490  L  246.973,490 "/>
+        <path class="hidden" id="45" d=" M  76.68,767.982  L  123.795,-0.829 "/>
+        <text id="46" dy="-3" class="fill-fabric"><textPath xlink:href="#45" startOffset="50%"><tspan dy="-3" class="fill-fabric">Facing/Lining boundary, facing side</tspan></textPath></text>
+        <path class="hidden" id="47" d=" M  76.68,767.982  L  123.795,-0.829 "/>
+        <text id="48" dy="6" class="fill-lining"><textPath xlink:href="#47" startOffset="50%"><tspan dy="6" class="fill-lining">Facing/Lining boundary, lining side</tspan></textPath></text>
+        <path class="hidden" id="49" d=" M  0,490  L  246.973,490 "/>
+        <text id="50"><textPath xlink:href="#49" startOffset="50%"><tspan>Waistline</tspan></textPath></text>
+        <path class="hidden" id="51" d=" M  0,772.33  L  0,110.083 "/>
+        <text id="52"><textPath xlink:href="#51" startOffset="50%"><tspan>Center front - Grainline</tspan></textPath></text>
+        <path class="hidden" id="53" d=" M  -21.6,420.088  L  51.484,73.685 "/>
+        <text id="54"><textPath xlink:href="#53" startOffset="50%"><tspan>Roll line</tspan></textPath></text>
+        <path class="note" id="55" d=" M  228.863,52.375  L  215.872,59.875 "/>
+        <text x="211.542" y="62.375" id="56" class="note note-8"><tspan>Fold back seam allowance</tspan><tspan x="211.542" dy="6">from here to shoulder seam</tspan></text>
+        <path class="note" id="57" d=" M  216.87,152.625  L  203.879,145.125 "/>
+        <text x="199.549" y="142.625" id="58" class="note note-10"><tspan>Work in sleevecap ease</tspan><tspan x="199.549" dy="6">from this point onwards</tspan></text>
+        <path class="note" id="59" d=" M  247.513,272.256  L  234.522,279.756 "/>
+        <text x="230.192" y="282.256" id="60" class="note note-8"><tspan>Topsleeve/Undersleeve joint point</tspan></text>
+        <path class="note" id="61" d=" M  258.196,585.167  L  238.277,596.667 "/>
+        <text x="233.947" y="599.167" id="62" class="note note-8"><tspan>Standard seam allowance</tspan><tspan x="233.947" dy="6">(1cm)</tspan></text>
+        <path class="note" id="63" d=" M  244.098,767.918  L  230.598,744.536 "/>
+        <text x="228.098" y="740.206" id="64" class="note note-11"><tspan>Extra hem allowance</tspan><tspan x="228.098" dy="6">(3cm)</tspan></text>
+        <path class="grainline" id="65" d=" M  166.837,741.85  L  166.837,7.087 "/>
+        <text id="66" class="text-lg text-center grainline" dy="-2"><textPath xlink:href="#65" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2">Grainline</tspan></textPath></text>
+        <text x="89.666" y="428.51" id="67" class="pattern-title default" style="font-size: 6px; text-anchor: middle; fill: #666; font-weight: 700 " transform="rotate(0, 89.666, 428.51) translate(0, -24) "><tspan>Jaeger Jacket</tspan></text>
+        <text x="89.666" y="428.51" id="68" class="part-nr default" style="font-size: 24px; text-anchor: middle; font-weight: 400; " transform="rotate(0, 89.666, 428.51) translate(0, -0) "><tspan>1</tspan></text>
+        <text x="89.666" y="428.51" id="69" class="part-title default" style="font-size: 12px; text-anchor: middle; font-weight: 300; " transform="rotate(0, 89.666, 428.51) translate(0, 12)"><tspan>Front</tspan></text>
+        <text x="89.666" y="428.51" id="70" class="part-msg default" style="font-size: 8px; text-anchor: middle; fill: #666; font-weight: 300; " transform="rotate(0, 89.666, 428.51) translate(0, 24)"><tspan>2x from main fabric</tspan><tspan x="89.666" dy="8">Lining part 2x from lining</tspan><tspan x="89.666" dy="8">Facing part 2x from main fabric</tspan></text>
+        <use x="221.2" y="155.125" xlink:href="#notch" id="71"/>
+        <use x="251.843" y="269.756" xlink:href="#notch" id="72"/>
+        <use x="143.964" y="612.5" xlink:href="#logo" id="73"/>
+        <use x="233.193" y="49.875" xlink:href="#notch" id="74"/>
+        <use x="246.973" y="490" xlink:href="#notch" id="75"/>
+        <use x="0" y="490" xlink:href="#notch" id="76"/>
+        <use x="185.987" y="341.833" xlink:href="#notch" id="77"/>
+        <use x="60.987" y="341.833" xlink:href="#notch" id="78"/>
+        <use x="0" y="420.088" xlink:href="#button-lg" id="79"/>
+        <use x="0" y="518.572" xlink:href="#button-lg" id="80"/>
+    </g>
+    <!-- End of group #front -->
+    
+    <!-- Start of group #side -->
+    <g id="side" transform=" translate(-257.474 -253.695)  translate(1163.35 0) ">
+        <path class="hint" id="81" d=" M  361.191,751.85  L  361.191,635  C  361.191,606  358.086,577  355.614,548.145 "/>
+        <path class="help" id="82" d=" M  280.961,500.875  L  323.154,500.875  L  292.276,697.263  L  272.474,697.263 "/>
+        <path class="fabric" id="83" d=" M  272.474,757.837  L  272.474,635  C  272.474,586.667  281.099,538.333  281.099,490  C  281.099,415.255  280.8,287.463  280.8,287.463  C  286.976,289.372  293.28,290.25  300,290.25  C  319.2,290.25  335.003,283.079  352.316,265.766  C  369.629,283.079  352.566,415.255  352.566,490  C  352.566,509.333  353.946,528.667  355.614,548.145  L  396.776,559.576  C  398.495,578.83  401.191,609.051  401.191,635  L  401.191,754.543  L  361.191,751.85  L  272.474,757.837  z "/>
+        <path class="fabric sa" id="84" d=" M  262.474,757.837  L  262.474,635  L  262.474,635  C  262.474,585.784  271.099,537.45  271.099,490  L  271.099,490  C  271.099,415.278  270.8,287.486  270.8,287.483  L  283.753,277.909  C  289.159,279.58  293.97,280.25  300,280.25  L  300,280.25  C  317.038,280.25  329.216,274.724  345.245,258.695  L  359.387,258.695  C  363.833,263.141  366.733,271.903  368.081,280.673  L  368.081,280.673  C  370.013,293.25  370.355,311.081  369.88,330.889  L  369.88,330.889  C  368.698,380.215  362.566,445.617  362.566,490  L  362.566,490  C  362.566,506.694  363.611,523.341  364.995,540.324  L  364.999,540.373  L  399.452,549.941  L  406.736,558.687  C  408.455,577.941  411.191,608.61  411.191,635  L  411.191,635  L  411.191,784.543  L  401.191,784.543  L  361.864,781.827  L  361.864,781.827  L  262.474,787.837  L  262.474,757.837  z "/>
+        <path class="help" id="85" d=" M  352.566,490  L  281.099,490 "/>
+        <path class="hidden" id="86" d=" M  281.099,490  L  352.566,490 "/>
+        <text id="87"><textPath xlink:href="#86" startOffset="50%"><tspan>Waistline</tspan></textPath></text>
+        <path class="note" id="88" d=" M  357.566,415.255  L  342.566,415.255 "/>
+        <text x="337.566" y="415.255" id="89" class="note note-9"><tspan>Standard seam allowance</tspan><tspan x="337.566" dy="6">(1cm)</tspan></text>
+        <path class="note" id="90" d=" M  328.332,764.763  L  301.832,718.863 "/>
+        <text x="299.332" y="714.533" id="91" class="note note-11"><tspan>Extra hem allowance</tspan><tspan x="299.332" dy="6">(3cm)</tspan></text>
+        <path class="grainline" id="92" d=" M  316.832,744.844  L  316.832,300.25 "/>
+        <text id="93" class="text-lg text-center grainline" dy="-2"><textPath xlink:href="#92" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2">Grainline</tspan></textPath></text>
+        <text x="316.832" y="655.925" id="94" class="pattern-title default" style="font-size: 4.5px; text-anchor: middle; fill: #666; font-weight: 700 " transform="rotate(0, 316.832, 655.925) translate(0, -18) "><tspan>Jaeger Jacket</tspan></text>
+        <text x="316.832" y="655.925" id="95" class="part-nr default" style="font-size: 18px; text-anchor: middle; font-weight: 400; " transform="rotate(0, 316.832, 655.925) translate(0, -0) "><tspan>3</tspan></text>
+        <text x="316.832" y="655.925" id="96" class="part-title default" style="font-size: 9px; text-anchor: middle; font-weight: 300; " transform="rotate(0, 316.832, 655.925) translate(0, 9)"><tspan>Side</tspan></text>
+        <text x="316.832" y="655.925" id="97" class="part-msg default" style="font-size: 6px; text-anchor: middle; fill: #666; font-weight: 300; " transform="rotate(0, 316.832, 655.925) translate(0, 18)"><tspan>2x from main fabric</tspan><tspan x="316.832" dy="6"> 2x from lining</tspan></text>
+        <use x="316.832" y="389.169" xlink:href="#logo" id="98"/>
+        <use x="352.566" y="490" xlink:href="#notch" id="99"/>
+        <use x="281.099" y="490" xlink:href="#notch" id="100"/>
+    </g>
+    <!-- End of group #side -->
+    
+    <!-- Start of group #collar -->
+    <g id="collar" transform=" translate(154.737 130.885)  translate(1322.067 0) ">
+        <path class="fabric" id="101" d=" M  -139.889,-55.578  L  -90.28,-22.855  C  -90.28,-22.855  -80.93,-27.942  -58.782,-33.232  C  -58.782,-33.232  -47.951,-65.885  74.053,-65.885  C  196.057,-65.885  206.888,-33.232  206.888,-33.232  C  229.036,-27.942  238.386,-22.855  238.386,-22.855  L  287.995,-55.578  L  282.786,-85.122  C  230.603,-92.813  208.257,-115.885  74.053,-115.885  C  -60.151,-115.885  -82.497,-92.813  -134.68,-85.122  L  -139.889,-55.578  z "/>
+        <path class="fabric sa" id="102" d=" M  -145.395,-47.23  L  -95.786,-14.507  L  -85.792,-13.919  C  -85.792,-13.913  -77.315,-18.524  -56.459,-23.506  L  -49.712,-29.022  C  -49.712,-28.812  -46.994,-37.007  -22.371,-44.864  L  -22.371,-44.864  C  -3.398,-50.919  26.087,-55.885  74.053,-55.885  L  74.053,-55.885  C  117.259,-55.885  145.453,-51.842  164.635,-46.591  L  164.635,-46.591  C  177.005,-43.205  184.524,-39.698  189.911,-36.281  L  189.912,-36.281  C  196.787,-31.921  197.818,-28.814  197.818,-29.022  L  204.565,-23.506  C  225.421,-18.524  233.898,-13.913  233.898,-13.919  L  243.892,-14.507  L  293.501,-47.23  L  297.843,-57.314  L  292.634,-86.858  L  284.244,-95.015  C  254.491,-99.401  234.08,-109.474  192.27,-117.108  L  192.27,-117.108  C  164.93,-122.1  128.247,-125.885  74.053,-125.885  L  74.053,-125.885  C  19.859,-125.885  -16.824,-122.1  -44.164,-117.108  L  -44.164,-117.108  C  -85.974,-109.474  -106.385,-99.401  -136.138,-95.015  L  -144.528,-86.858  L  -149.737,-57.314  L  -145.395,-47.23  z "/>
+        <path class="grainline" id="103" d=" M  74.053,-65.885  L  74.053,-115.885 "/>
+        <text id="104" class="text-lg text-center grainline" dy="-2"><textPath xlink:href="#103" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2">Grainline</tspan></textPath></text>
+        <text x="123.352" y="-87.976" id="105" class="pattern-title default" style="font-size: 3px; text-anchor: middle; fill: #666; font-weight: 700 " transform="rotate(0, 123.352, -87.976) translate(0, -12) "><tspan>Jaeger Jacket</tspan></text>
+        <text x="123.352" y="-87.976" id="106" class="part-nr default" style="font-size: 12px; text-anchor: middle; font-weight: 400; " transform="rotate(0, 123.352, -87.976) translate(0, -0) "><tspan>7</tspan></text>
+        <text x="123.352" y="-87.976" id="107" class="part-title default" style="font-size: 6px; text-anchor: middle; font-weight: 300; " transform="rotate(0, 123.352, -87.976) translate(0, 6)"><tspan>Collar</tspan></text>
+        <text x="123.352" y="-87.976" id="108" class="part-msg default" style="font-size: 4px; text-anchor: middle; fill: #666; font-weight: 300; " transform="rotate(0, 123.352, -87.976) translate(0, 12)"><tspan>1x from main fabric</tspan></text>
+    </g>
+    <!-- End of group #collar -->
+    
+    <!-- Start of group #collarstand -->
+    <g id="collarstand" transform=" translate(72.852 80.885)  translate(1322.067 233.344) ">
+        <path class="fabric" id="109" d=" M  -58.782,-33.232  C  -58.782,-33.232  -47.951,-65.885  74.053,-65.885  C  196.057,-65.885  206.888,-33.232  206.888,-33.232  C  180.997,-39.416  138.715,-45.885  74.053,-45.885  C  9.391,-45.885  -32.891,-39.416  -58.782,-33.232  z "/>
+        <path class="fabric sa" id="110" d=" M  -67.852,-37.442  C  -67.852,-37.652  -62.772,-52.967  -28.451,-63.918  L  -28.451,-63.918  C  -8.128,-70.403  24.415,-75.885  74.053,-75.885  L  74.053,-75.885  C  118.689,-75.885  149.523,-71.464  169.915,-65.881  L  169.915,-65.881  C  183.927,-62.045  194.146,-57.278  200.623,-53.171  L  200.622,-53.171  C  213.523,-44.991  215.958,-37.65  215.958,-37.442  L  204.565,-23.506  C  179.081,-29.593  137.955,-35.885  74.053,-35.885  L  74.053,-35.885  C  10.151,-35.885  -30.975,-29.593  -56.459,-23.506  L  -67.852,-37.442  z "/>
+        <path class="grainline" id="111" d=" M  74.053,-45.885  L  74.053,-65.885 "/>
+        <text id="112" class="text-lg text-center grainline" dy="-2"><textPath xlink:href="#111" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2">Grainline</tspan></textPath></text>
+        <text x="112.851" y="-53.885" id="113" class="pattern-title default" style="font-size: 1.8px; text-anchor: middle; fill: #666; font-weight: 700 " transform="rotate(0, 112.851, -53.885) translate(0, -7.2) "><tspan>Jaeger Jacket</tspan></text>
+        <text x="112.851" y="-53.885" id="114" class="part-nr default" style="font-size: 7.2px; text-anchor: middle; font-weight: 400; " transform="rotate(0, 112.851, -53.885) translate(0, -0) "><tspan>8</tspan></text>
+        <text x="112.851" y="-53.885" id="115" class="part-title default" style="font-size: 3.6px; text-anchor: middle; font-weight: 300; " transform="rotate(0, 112.851, -53.885) translate(0, 3.6)"><tspan>Collarstand</tspan></text>
+        <text x="112.851" y="-53.885" id="116" class="part-msg default" style="font-size: 2.4px; text-anchor: middle; fill: #666; font-weight: 300; " transform="rotate(0, 112.851, -53.885) translate(0, 7.2)"><tspan>1x from main fabric</tspan></text>
+    </g>
+    <!-- End of group #collarstand -->
+    
+    <!-- Start of group #undercollar -->
+    <g id="undercollar" transform=" translate(154.737 120.885)  translate(1322.067 121.966) ">
+        <path class="various" id="117" d=" M  -139.889,-55.578  L  -90.28,-22.855  C  -90.28,-22.855  -47.951,-45.885  74.053,-45.885  C  196.057,-45.885  238.386,-22.855  238.386,-22.855  L  287.995,-55.578  L  282.786,-85.122  C  230.603,-92.813  208.257,-115.885  74.053,-115.885  C  -60.151,-115.885  -82.497,-92.813  -134.68,-85.122  L  -139.889,-55.578  z "/>
+        <path class="hint" id="118" d=" M  -58.782,-33.232  C  -58.782,-33.232  -47.951,-65.885  74.053,-65.885  C  196.057,-65.885  206.888,-33.232  206.888,-33.232 "/>
+        <path class="various sa" id="119" d=" M  -95.786,-14.507  L  -145.395,-47.23  L  -149.737,-57.314  L  -144.528,-86.858 "/>
+        <path class="various sa" id="120" d=" M  243.892,-14.507  L  293.501,-47.23  L  297.843,-57.314  L  292.634,-86.858 "/>
+        <path class="various sa" id="121" d=" M  -134.68,-85.122  L  -144.528,-86.858  M  -90.28,-22.855  L  -95.786,-14.507  M  238.386,-22.855  L  243.892,-14.507  M  282.786,-85.122  L  292.634,-86.858 "/>
+        <path class="grainline" id="122" d=" M  74.053,-45.885  L  74.053,-115.885 "/>
+        <text id="123" class="text-lg text-center grainline" dy="-2"><textPath xlink:href="#122" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2">Grainline</tspan></textPath></text>
+        <text x="135.055" y="-80.885" id="124" class="pattern-title default" style="font-size: 4.5px; text-anchor: middle; fill: #666; font-weight: 700 " transform="rotate(0, 135.055, -80.885) translate(0, -18) "><tspan>Jaeger Jacket</tspan></text>
+        <text x="135.055" y="-80.885" id="125" class="part-nr default" style="font-size: 18px; text-anchor: middle; font-weight: 400; " transform="rotate(0, 135.055, -80.885) translate(0, -0) "><tspan>6</tspan></text>
+        <text x="135.055" y="-80.885" id="126" class="part-title default" style="font-size: 9px; text-anchor: middle; font-weight: 300; " transform="rotate(0, 135.055, -80.885) translate(0, 9)"><tspan>Undercollar</tspan></text>
+        <text x="135.055" y="-80.885" id="127" class="part-msg default" style="font-size: 6px; text-anchor: middle; fill: #666; font-weight: 300; " transform="rotate(0, 135.055, -80.885) translate(0, 18)"><tspan>1x from fixme</tspan></text>
+    </g>
+    <!-- End of group #undercollar -->
+    
+    <!-- Start of group #topsleeve -->
+    <g id="topsleeve" transform=" translate(160.082 15)  translate(624.006 0) ">
+        <path class="fabric" id="128" d=" M  116.083,410  C  124.018,365  128.981,258.604  128.981,193.953  C  128.981,129.302  116.083,64.651  116.083,64.651  C  116.083,64.651  72.552,0  0,0  C  -72.552,0  -106.409,64.651  -116.083,116.372  C  -125.757,168.093  -130.594,193.953  -145.104,193.953  C  -145.104,193.953  -134.797,351.301  -128.981,410  L  -99.902,703.491  L  103.153,711.595  L  116.394,638.148  L  80.55,611.519  L  116.083,410  z "/>
+        <path class="help" id="129" d=" M  80.55,611.519  L  63.185,710 "/>
+        <path class="fabric sa" id="130" d=" M  125.931,411.737  C  133.977,366.107  138.981,258.834  138.981,193.953  L  138.981,193.953  C  138.981,128.313  125.899,62.74  125.899,62.742  L  124.279,58.922  C  124.279,58.919  94.642,14.903  43.175,-2.736  L  43.175,-2.736  C  30.442,-7.1  15.472,-10  -0,-10  L  0,-10  C  -15.499,-10  -30.31,-7.045  -42.675,-2.165  L  -42.676,-2.165  C  -92.5,17.502  -117.94,71.908  -125.913,114.534  L  -125.913,114.534  C  -127.151,121.154  -128.31,127.35  -129.411,133.072  L  -129.411,133.074  C  -131.073,141.716  -132.582,149.197  -134.107,155.844  L  -134.107,155.846  C  -137.111,168.949  -139.641,176.943  -142.744,181.666  L  -142.746,181.668  C  -143.412,182.682  -143.648,182.969  -144.222,183.498  L  -144.222,183.498  C  -145.148,184.352  -144.178,183.953  -145.104,183.953  L  -155.082,194.611  C  -155.082,194.622  -144.766,352.101  -138.932,410.986  L  -138.932,410.986  L  -109.991,703.088  L  -109.991,703.088  L  -116.915,741.461  L  -107.473,753.229  L  106.729,761.778  L  117.079,750.802  L  113.241,711.998  L  113.241,711.998  L  126.235,639.922  L  122.358,630.121  L  91.47,607.174  L  91.47,607.174  L  125.931,411.736  L  125.931,411.737  z "/>
+        <path class="hint" id="131" d=" M  -99.902,703.491  L  -107.074,743.237  L  107.128,751.786  L  103.153,711.595 "/>
+        <path class="note" id="132" d=" M  -101.193,82.398  L  -88.202,89.898 "/>
+        <text x="-83.872" y="92.398" id="133" class="note note-4"><tspan>Work in sleevecap ease</tspan><tspan x="-83.872" dy="6">from this point onwards</tspan></text>
+        <path class="note" id="134" d=" M  111.753,67.151  L  98.762,74.651 "/>
+        <text x="94.432" y="77.151" id="135" class="note note-8"><tspan>Work in sleevecap ease</tspan><tspan x="94.432" dy="6">from this point onwards</tspan></text>
+        <path class="note" id="136" d=" M  131.579,257.104  L  111.66,268.604 "/>
+        <text x="107.33" y="271.104" id="137" class="note note-8"><tspan>Standard seam allowance</tspan><tspan x="107.33" dy="6">(1cm)</tspan></text>
+        <path class="note" id="138" d=" M  -18.423,730  L  -18.423,670 "/>
+        <text x="-18.423" y="665" id="139" class="note note-12"><tspan>Extra hem allowance</tspan><tspan x="-18.423" dy="6">(5cm)</tspan></text>
+        <path class="grainline" id="140" d=" M  0,703.491  L  0,0 "/>
+        <text id="141" class="text-lg text-center grainline" dy="-2"><textPath xlink:href="#140" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2">Grainline</tspan></textPath></text>
+        <text x="0" y="193.953" id="142" class="pattern-title default" style="font-size: 6px; text-anchor: middle; fill: #666; font-weight: 700 " transform="rotate(0, 0, 193.953) translate(0, -24) "><tspan>Jaeger Jacket</tspan></text>
+        <text x="0" y="193.953" id="143" class="part-nr default" style="font-size: 24px; text-anchor: middle; font-weight: 400; " transform="rotate(0, 0, 193.953) translate(0, -0) "><tspan>4</tspan></text>
+        <text x="0" y="193.953" id="144" class="part-title default" style="font-size: 12px; text-anchor: middle; font-weight: 300; " transform="rotate(0, 0, 193.953) translate(0, 12)"><tspan>Topsleeve</tspan></text>
+        <text x="0" y="193.953" id="145" class="part-msg default" style="font-size: 8px; text-anchor: middle; fill: #666; font-weight: 300; " transform="rotate(0, 0, 193.953) translate(0, 24)"><tspan>2x from main fabric</tspan><tspan x="0" dy="8"> 2x from lining</tspan></text>
+        <use x="-105.523" y="79.898" xlink:href="#notch" id="146"/>
+        <use x="0" y="410" xlink:href="#logo" id="147"/>
+    </g>
+    <!-- End of group #topsleeve -->
+    
+    <!-- Start of group #undersleeve -->
+    <g id="undersleeve" transform=" translate(102.008 -56.835)  translate(928.069 0) ">
+        <path class="fabric" id="148" d=" M  63.185,710  L  103.101,712.58  L  116.42,638.152  L  80.55,611.519  L  116.083,410  C  124.018,365  108.599,258.377  103.185,193.953  C  97.771,129.529  87.062,64.651  87.062,64.651  C  68.548,127.747  -14.51,193.953  -58.041,193.953  L  -87.062,193.953  C  -87.062,193.953  -70.587,351.507  -67.715,410  L  -53.355,702.467  L  63.185,710  z "/>
+        <path class="help" id="149" d=" M  80.55,611.519  L  63.185,710 "/>
+        <path class="fabric sa" id="150" d=" M  125.931,411.737  C  134.145,365.157  118.539,257.245  113.15,193.116  L  113.15,193.116  C  107.703,128.3  96.932,63.046  96.932,63.042  L  77.467,61.835  C  66.274,99.98  30.39,139.022  -6.031,163.105  L  -6.031,163.105  C  -15.054,169.071  -23.582,173.775  -31.96,177.375  L  -31.96,177.375  C  -42.291,181.814  -50.6,183.953  -58.041,183.953  L  -58.041,183.953  L  -87.062,183.953  L  -97.008,194.99  C  -97.008,194.993  -80.561,352.277  -77.703,410.49  L  -77.703,410.49  L  -63.399,701.817  L  -63.399,701.817  L  -70.331,740.317  L  -61.134,752.068  L  104.387,762.767  L  115.02,752.308  L  113.143,713.233  L  113.143,713.233  L  126.264,639.914  L  122.381,630.123  L  91.471,607.172  L  91.471,607.172  L  125.931,411.736  L  125.931,411.737  z "/>
+        <path class="hint" id="151" d=" M  -53.355,702.467  L  -60.489,742.089  L  105.032,752.788  L  103.101,712.58 "/>
+        <path class="note" id="152" d=" M  118.681,408.5  L  98.762,420 "/>
+        <text x="94.432" y="422.5" id="153" class="note note-8"><tspan>Standard seam allowance</tspan><tspan x="94.432" dy="6">(1cm)</tspan></text>
+        <path class="note" id="154" d=" M  -24.51,719.788  L  5.49,667.826 "/>
+        <text x="7.99" y="663.496" id="155" class="note note-1"><tspan>Extra hem allowance</tspan><tspan x="7.99" dy="6">(5cm)</tspan></text>
+        <path class="grainline" id="156" d=" M  -14.51,702.467  L  -14.51,193.953 "/>
+        <text id="157" class="text-lg text-center grainline" dy="-2"><textPath xlink:href="#156" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2">Grainline</tspan></textPath></text>
+        <text x="-14.51" y="295.656" id="158" class="pattern-title default" style="font-size: 6px; text-anchor: middle; fill: #666; font-weight: 700 " transform="rotate(0, -14.51, 295.656) translate(0, -24) "><tspan>Jaeger Jacket</tspan></text>
+        <text x="-14.51" y="295.656" id="159" class="part-nr default" style="font-size: 24px; text-anchor: middle; font-weight: 400; " transform="rotate(0, -14.51, 295.656) translate(0, -0) "><tspan>5</tspan></text>
+        <text x="-14.51" y="295.656" id="160" class="part-title default" style="font-size: 12px; text-anchor: middle; font-weight: 300; " transform="rotate(0, -14.51, 295.656) translate(0, 12)"><tspan>Undersleeve</tspan></text>
+        <text x="-14.51" y="295.656" id="161" class="part-msg default" style="font-size: 8px; text-anchor: middle; fill: #666; font-weight: 300; " transform="rotate(0, -14.51, 295.656) translate(0, 24)"><tspan>2x from main fabric</tspan><tspan x="-14.51" dy="8"> 2x from lining</tspan></text>
+        <use x="86.247" y="67.303" xlink:href="#notch" id="162"/>
+        <use x="-14.51" y="549.913" xlink:href="#logo" id="163"/>
+    </g>
+    <!-- End of group #undersleeve -->
+    
+    <!-- Start of group #pocket -->
+    <g id="pocket" transform=" translate(15 55)  translate(1322.067 295.723) ">
+        <path class="fabric" id="164" d=" M  0,-40  L  0,163.988  C  -0,181.882  14.506,196.388  32.4,196.388  L  129.6,196.388  C  147.494,196.388  162,181.882  162,163.988  L  162,-40  z "/>
+        <path class="help" id="165" d=" M  0,0  L  162,0 "/>
+        <path class="fabric sa" id="166" d=" M  -10,-40  L  -10,163.988  L  -10,163.988  C  -10,173.065  -6.461,182.894  -1.441,189.536  L  -1.44,189.538  C  -0.174,191.212  1.463,193.056  2.976,194.515  L  2.973,194.513  C  4.854,196.327  7.291,198.258  9.503,199.679  L  9.508,199.682  C  12.267,201.453  15.814,203.163  19.001,204.224  L  18.999,204.224  C  22.95,205.54  27.985,206.388  32.4,206.388  L  32.4,206.388  L  129.6,206.388  L  129.6,206.388  C  138.677,206.388  148.506,202.849  155.148,197.829  L  155.15,197.828  C  156.824,196.562  158.668,194.925  160.127,193.412  L  160.125,193.415  C  161.939,191.534  163.87,189.097  165.291,186.885  L  165.294,186.88  C  167.065,184.121  168.775,180.574  169.836,177.387  L  169.836,177.389  C  171.152,173.438  172,168.403  172,163.988  L  172,163.988  L  172,-40  L  162,-50  L  0,-50  L  -10,-40  z "/>
+        <path class="hidden" id="167" d=" M  0,0  L  162,0 "/>
+        <text id="168" text-anchor="middle" dy="-2"><textPath xlink:href="#167" startOffset="50%"><tspan text-anchor="middle" dy="-2">Fold over along this line</tspan></textPath></text>
+        <path class="grainline" id="169" d=" M  42.4,196.388  L  42.4,-40 "/>
+        <text id="170" class="text-lg text-center grainline" dy="-2"><textPath xlink:href="#169" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2">Grainline</tspan></textPath></text>
+        <text x="81" y="98.194" id="171" class="pattern-title default" style="font-size: 6px; text-anchor: middle; fill: #666; font-weight: 700 " transform="rotate(0, 81, 98.194) translate(0, -24) "><tspan>Jaeger Jacket</tspan></text>
+        <text x="81" y="98.194" id="172" class="part-nr default" style="font-size: 24px; text-anchor: middle; font-weight: 400; " transform="rotate(0, 81, 98.194) translate(0, -0) "><tspan>9</tspan></text>
+        <text x="81" y="98.194" id="173" class="part-title default" style="font-size: 12px; text-anchor: middle; font-weight: 300; " transform="rotate(0, 81, 98.194) translate(0, 12)"><tspan>Pocket</tspan></text>
+        <text x="81" y="98.194" id="174" class="part-msg default" style="font-size: 8px; text-anchor: middle; fill: #666; font-weight: 300; " transform="rotate(0, 81, 98.194) translate(0, 24)"><tspan>2x from main fabric</tspan></text>
+    </g>
+    <!-- End of group #pocket -->
+    
+    <!-- Start of group #chestPocketWelt -->
+    <g id="chestPocketWelt" transform=" translate(16.889 30)  translate(1615.877 233.344) ">
+        <path class="fabric" id="175" d=" M  -1.975,15  L  103.025,15  L  105,0  L  103.025,-15  L  -1.975,-15  L  0,0  z "/>
+        <path class="fabric help" id="176" d=" M  0,0  L  105,0 "/>
+        <path class="fabric sa" id="177" d=" M  -1.975,25  L  103.025,25  L  112.939,16.305  L  114.914,1.305  L  114.914,-1.305  L  112.939,-16.305  L  103.025,-25  L  -1.975,-25  L  -11.889,-13.695  L  -10.086,0  L  -10.086,0  L  -11.889,13.695  L  -1.975,25  z "/>
+        <path class="grainline" id="178" d=" M  13.025,15  L  16.975,-15 "/>
+        <text id="179" class="text-lg text-center grainline" dy="-2"><textPath xlink:href="#178" startOffset="50%"><tspan class="text-lg text-center grainline" dy="-2">Grainline</tspan></textPath></text>
+        <text x="50.525" y="0" id="180" class="pattern-title default" style="font-size: 3px; text-anchor: middle; fill: #666; font-weight: 700 " transform="rotate(0, 50.525, 0) translate(0, -12) "><tspan>Jaeger Jacket</tspan></text>
+        <text x="50.525" y="0" id="181" class="part-nr default" style="font-size: 12px; text-anchor: middle; font-weight: 400; " transform="rotate(0, 50.525, 0) translate(0, -0) "><tspan>10</tspan></text>
+        <text x="50.525" y="0" id="182" class="part-title default" style="font-size: 6px; text-anchor: middle; font-weight: 300; " transform="rotate(0, 50.525, 0) translate(0, 6)"><tspan>Chest pocket welt</tspan></text>
+        <text x="50.525" y="0" id="183" class="part-msg default" style="font-size: 4px; text-anchor: middle; fill: #666; font-weight: 300; " transform="rotate(0, 50.525, 0) translate(0, 12)"><tspan>2x from main fabric</tspan></text>
+    </g>
+    <!-- End of group #chestPocketWelt -->
+    
+    <!-- Start of group #chestPocketBag -->
+    <g id="chestPocketBag" transform=" translate(15 32.687)  translate(1322.067 562.111) ">
+        <path class="lining" id="184" d=" M  0,40  L  0,0  L  135,-17.773  L  135,40  M  135,60  L  135,117.773  L  0,100  L  0,60 "/>
+        <path class="lining hint" id="185" d=" M  0,40  L  0,60  M  135,40  L  135,60 "/>
+        <path class="lining sa" id="186" d=" M  -1.305,-9.914  L  133.695,-27.687  L  145,-17.773  L  145,117.773  L  133.695,127.687  L  -1.305,109.914  L  -10,100  L  -10,-0  L  -1.305,-9.914  z "/>
+        <path class="dimension" id="187" d=" M  20,100  L  20,0 "/>
+        <text id="188" class="dimension-label" dy="-2"><textPath xlink:href="#187" startOffset="50%"><tspan class="dimension-label" dy="-2">24cm</tspan></textPath></text>
+        <path class="dimension-leader" id="189" d=" M  0,100  L  20,100 "/>
+        <path class="dimension-leader" id="190" d=" M  0,0  L  20,0 "/>
+        <text x="67.5" y="58.886" id="191" class="pattern-title default" style="font-size: 4.5px; text-anchor: middle; fill: #666; font-weight: 700 " transform="rotate(0, 67.5, 58.886) translate(0, -18) "><tspan>Jaeger Jacket</tspan></text>
+        <text x="67.5" y="58.886" id="192" class="part-nr default" style="font-size: 18px; text-anchor: middle; font-weight: 400; " transform="rotate(0, 67.5, 58.886) translate(0, -0) "><tspan>11</tspan></text>
+        <text x="67.5" y="58.886" id="193" class="part-title default" style="font-size: 9px; text-anchor: middle; font-weight: 300; " transform="rotate(0, 67.5, 58.886) translate(0, 9)"><tspan>Chest pocket bag</tspan></text>
+        <text x="67.5" y="58.886" id="194" class="part-msg default" style="font-size: 6px; text-anchor: middle; fill: #666; font-weight: 300; " transform="rotate(0, 67.5, 58.886) translate(0, 18)"><tspan>2x from lining</tspan></text>
+    </g>
+    <!-- End of group #chestPocketBag -->
+    
+    <!-- Start of group #innerPocketWelt -->
+    <g id="innerPocketWelt" transform=" translate(15 15)  translate(1514.067 295.723) ">
+        <path class="lining" id="195" d=" M  0,0  L  155,0  L  155,10  L  0,10  z "/>
+        <path class="fabric help" id="196" d=" M  0,5  L  155,5 "/>
+        <path class="lining sa" id="197" d=" M  -10,-10  L  165,-10  L  165,0  L  165,10  L  165,20  L  -10,20  L  -10,10  L  -10,-0  L  -10,-10  z "/>
+        <text x="77.5" y="5" id="198" class="pattern-title default" style="font-size: 2.4px; text-anchor: middle; fill: #666; font-weight: 700 " transform="rotate(0, 77.5, 5) translate(0, -9.6) "><tspan>Jaeger Jacket</tspan></text>
+        <text x="77.5" y="5" id="199" class="part-nr default" style="font-size: 9.6px; text-anchor: middle; font-weight: 400; " transform="rotate(0, 77.5, 5) translate(0, -0) "><tspan>12</tspan></text>
+        <text x="77.5" y="5" id="200" class="part-title default" style="font-size: 4.8px; text-anchor: middle; font-weight: 300; " transform="rotate(0, 77.5, 5) translate(0, 4.8)"><tspan>Inner pocket welt</tspan></text>
+        <text x="77.5" y="5" id="201" class="part-msg default" style="font-size: 3.2px; text-anchor: middle; fill: #666; font-weight: 300; " transform="rotate(0, 77.5, 5) translate(0, 9.6)"><tspan>2x from lining</tspan></text>
+    </g>
+    <!-- End of group #innerPocketWelt -->
+    
+    <!-- Start of group #innerPocketBag -->
+    <g id="innerPocketBag" transform=" translate(15 15)  translate(1514.067 335.723) ">
+        <path class="lining" id="202" d=" M  0,40  L  0,0  L  155,0  L  155,40  M  155,60  L  155,100  L  0,100  L  0,60 "/>
+        <path class="lining hint" id="203" d=" M  0,40  L  0,60  M  155,40  L  155,60 "/>
+        <path class="lining sa" id="204" d=" M  0,-10  L  155,-10  L  165,0  L  165,100  L  155,110  L  -0,110  L  -10,100  L  -10,-0  L  0,-10  z "/>
+        <path class="dimension" id="205" d=" M  30,100  L  30,0 "/>
+        <text id="206" class="dimension-label" dy="-2"><textPath xlink:href="#205" startOffset="50%"><tspan class="dimension-label" dy="-2">33.5cm</tspan></textPath></text>
+        <path class="dimension-leader" id="207" d=" M  0,100  L  30,100 "/>
+        <path class="dimension-leader" id="208" d=" M  0,0  L  30,0 "/>
+        <text x="77.5" y="50" id="209" class="pattern-title default" style="font-size: 4.5px; text-anchor: middle; fill: #666; font-weight: 700 " transform="rotate(0, 77.5, 50) translate(0, -18) "><tspan>Jaeger Jacket</tspan></text>
+        <text x="77.5" y="50" id="210" class="part-nr default" style="font-size: 18px; text-anchor: middle; font-weight: 400; " transform="rotate(0, 77.5, 50) translate(0, -0) "><tspan>13</tspan></text>
+        <text x="77.5" y="50" id="211" class="part-title default" style="font-size: 9px; text-anchor: middle; font-weight: 300; " transform="rotate(0, 77.5, 50) translate(0, 9)"><tspan>Inner pocket bag</tspan></text>
+        <text x="77.5" y="50" id="212" class="part-msg default" style="font-size: 6px; text-anchor: middle; fill: #666; font-weight: 300; " transform="rotate(0, 77.5, 50) translate(0, 18)"><tspan>2x from lining</tspan></text>
+    </g>
+    <!-- End of group #innerPocketBag -->
+    
+    <!-- Start of group #innerPocketFacingExtension -->
+    <g id="innerPocketFacingExtension" transform=" translate(-84.754 -286.277)  translate(1487.067 562.111) ">
+        <path class="fabric" id="213" d=" M  105.244,301.87  C  104.569,312.895  112.975,321.833  124.021,321.833  L  185.987,321.833  C  197.033,321.833  205.987,330.787  205.987,341.833  C  205.987,352.879  197.033,361.833  185.987,361.833  L  121.57,361.833  C  110.524,361.833  101.022,370.771  100.347,381.796  z "/>
+        <path class="hint" id="214" d=" M  103.102,336.833  L  185.987,336.833  L  185.987,346.833  L  102.489,346.833  M  102.796,341.833  L  185.987,341.833 "/>
+        <path class="fabric sa" id="215" d=" M  115.837,292.5  C  114.965,306.727  115.753,308.212  118.97,310.36  L  118.971,310.36  C  119.77,310.893  120.047,311.031  120.974,311.345  L  120.974,311.345  C  122.17,311.751  122.654,311.833  124.021,311.833  L  124.021,311.833  L  185.987,311.833  L  185.987,311.833  C  193.832,311.833  202.64,315.883  207.587,321.013  L  207.588,321.014  C  208.835,322.308  210.26,324.107  211.24,325.633  L  211.24,325.632  C  212.457,327.526  213.725,330.159  214.455,332.352  L  214.454,332.35  C  215.361,335.074  215.987,338.788  215.987,341.833  L  215.987,341.833  C  215.987,349.678  211.937,358.486  206.807,363.433  L  206.806,363.434  C  205.512,364.681  203.713,366.106  202.187,367.086  L  202.188,367.086  C  200.294,368.303  197.661,369.571  195.468,370.301  L  195.47,370.3  C  192.746,371.207  189.032,371.833  185.987,371.833  L  185.987,371.833  L  121.57,371.833  L  121.57,371.833  C  118.044,371.833  116.365,372.582  113.771,375.108  L  113.769,375.11  C  113.126,375.735  112.855,376.053  112.341,376.782  L  112.34,376.784  C  111.699,377.693  111.454,378.142  111.055,379.155  L  111.054,379.159  C  110.548,380.44  110.412,381.031  109.716,392.388  L  89.754,391.165  L  95.875,291.277  L  115.837,292.5  z "/>
+        <text x="144.545" y="336.833" id="216" class="part-nr default" style="font-size: 15.6px; text-anchor: middle; font-weight: 400; " transform="rotate(0, 144.545, 336.833) translate(0, -0) "><tspan/></text>
+        <text x="144.545" y="336.833" id="217" class="part-title default" style="font-size: 7.8px; text-anchor: middle; font-weight: 300; " transform="rotate(0, 144.545, 336.833) translate(0, 7.8)"><tspan>Inner pocket facing extension</tspan></text>
+        <text x="144.545" y="336.833" id="218" class="part-msg default" style="font-size: 5.2px; text-anchor: middle; fill: #666; font-weight: 300; " transform="rotate(0, 144.545, 336.833) translate(0, 15.6)"><tspan>Attach to front facing prior to cutting</tspan></text>
+    </g>
+    <!-- End of group #innerPocketFacingExtension -->
+</g>
+<!-- End of group #patternContainer -->
+
+</svg>
+<!--
+
+    After 0 attemps, the collar length is 0mm off.
+    After 18 attemps, the sleeve head is -0.9mm off.
+    	DEBUG OUTPUT
+    Sleeve tweak run 1. Sleeve head is 3.5779123481161mm off
+    Sleeve tweak run 2. Sleeve head is -2.4021695707916mm off
+    Sleeve tweak run 3. Sleeve head is 15.714007488755mm off
+    Sleeve tweak run 4. Sleeve head is 9.8559932082018mm off
+    Sleeve tweak run 5. Sleeve head is 3.9397876573959mm off
+    Sleeve tweak run 6. Sleeve head is -2.0364672880622mm off
+    Sleeve tweak run 7. Sleeve head is 16.071035334188mm off
+    Sleeve tweak run 8. Sleeve head is 10.21786101967mm off
+    Sleeve tweak run 9. Sleeve head is 4.3030865009539mm off
+    Sleeve tweak run 10. Sleeve head is -1.6692182414677mm off
+    Sleeve tweak run 11. Sleeve head is 16.425957709337mm off
+    Sleeve tweak run 12. Sleeve head is 10.575398225335mm off
+    Sleeve tweak run 13. Sleeve head is 4.6663884524211mm off
+    Sleeve tweak run 14. Sleeve head is -1.3003894677743mm off
+    Sleeve tweak run 15. Sleeve head is 16.784065957561mm off
+    Sleeve tweak run 16. Sleeve head is 10.93467743799mm off
+    Sleeve tweak run 17. Sleeve head is 5.0289652279569mm off 
+
+  -->

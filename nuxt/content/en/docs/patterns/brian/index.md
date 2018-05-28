@@ -1,5 +1,6 @@
 ---
 title: Making Brian
+patternIndex: true
 pattern: brian
 ---
 
