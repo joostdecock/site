@@ -68,6 +68,7 @@
               type="email"
               prepend-icon="email"
               :hint="$t('txt-email-sharing')"
+              :autofocus="(true)"
               >
         </v-text-field>
         <v-text-field
@@ -79,6 +80,7 @@
               required
               prepend-icon="vpn_key"
               :hint="$t('txt-password-policy')"
+              @keyup.enter="submit"
               >
         </v-text-field>
         <v-btn @click="submit" color="primary" large class="mt-3">

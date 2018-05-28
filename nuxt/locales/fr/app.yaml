@@ -136,7 +136,9 @@ loadingResult: Chargement du résultat en cours
 locale: Langue
 localeUpdated: Préférences langue mises à jour
 logIn: Connexion
+logInAs: Log in as TODO
 logOut: Deconnexion
+logOutAs: 'Log out as {user} TODO'
 loginFailed: La connexion a échoué
 makeItBetter: Faire des améliorations
 markdownSyntax: MarkDown syntax TODO
@@ -389,6 +391,7 @@ yesIDo: 'Oui, je donne mon accord'
 yesIDoObject: 'Yes, I do object TODO'
 yesterday: Yesterday TODO
 youAreCurrentlyLoggedIn: You are currently logged in. TODO
+youAreNotAnAdmin: You are not an admin TODO
 youAreNotLoggedIn: You are not logged in. TODO
 youCanUseMarkdownFormatting: You can use MarkDown formatting TODO
 youDoNotObjectToSharingAnonymizedDataForResearch: You do not object to sharing anonymized data for research TODO

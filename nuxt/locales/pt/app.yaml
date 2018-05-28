@@ -1,205 +1,205 @@
-100PercentCommunity: 100% comunidade
-100PercentFree: 100% livre
+100PercentCommunity: 100% comunitário
+100PercentFree: 100% gratuito
 100PercentOpenSource: 100% código aberto
-aCodeBlock: A code block TODO
-aboutFreesewing: About Freesewing TODO
-add: Add TODO
-addAModel: Add a model TODO
-addComment: Add comment TODO
-all: All TODO
-alreadyHaveAnAccount: Already have an account? TODO
-areYouSureAboutThis: Are you 100% sure about this? TODO
+aCodeBlock: Um bloco de código
+aboutFreesewing: Sobre o Freesewing
+add: Adicionar
+addAModel: Adicionar um modelo
+addComment: Adicionar comentário
+all: Tudo
+alreadyHaveAnAccount: Já tem uma conta?
+areYouSureAboutThis: Você tem certeza absoluta disso?
 avatar: Avatar TODO
-avatarUpdated: Avatar updated TODO
-averagePeopleDontExist: Average people don't exist TODO
-basicTheme: Classic theme TODO
-basics: Basics TODO
-becomeAPatron: Become a patron TODO
+avatarUpdated: Avatar atualizado
+averagePeopleDontExist: Pessoas medianas não existem
+basicTheme: Tema clássico
+basics: Noções básicas
+becomeAPatron: Se torne um patrono
 bio: Bio TODO
-bioUpdated: Bio updated TODO
-blockquote: Block quote TODO
+bioUpdated: Bio atualizada
+blockquote: Bloco de citação
 blog: Blog TODO
-blogPost: Blog posts TODO
-bold: Bold TODO
-breasts: Breasts TODO
-breastsUpdated: Breasts setting updated TODO
-by: by TODO
-cancel: Cancel TODO
-chatOnGitter: Chat on Gitter TODO
-chatWithUs: Chat with us TODO
-chooseAModel: Choose a model TODO
-chooseANewPassword: Choose a new password TODO
-chooseAPattern: Choose a pattern TODO
-chooseYourOptions: Choose your options TODO
-close: Close TODO
-code: Code TODO
-comments: Comments TODO
-community: Community TODO
-compare: Compare TODO
-completePattern: Complete pattern TODO
-connectingToSomeApi: 'Connecting to {api} API TODO'
-consent: Consent TODO
-consentForModelData: Consent for model data TODO
-consentForProfileData: Consent for profile data TODO
-consentGiven: Consent given TODO
-contactUs: Contact us TODO
-content: Content TODO
-contents: Contents TODO
-coordinator: Coordinator TODO
+blogPost: posts do Blog
+bold: Negrito
+breasts: Seios
+breastsUpdated: Configuração de seios atualizada
+by: por
+cancel: Cancelar
+chatOnGitter: Bate-pato no Gitter
+chatWithUs: Converse conosco
+chooseAModel: Escolha um modelo
+chooseANewPassword: Escolha uma nova senha
+chooseAPattern: Escolha um molde
+chooseYourOptions: Escolha suas opções
+close: Fechar
+code: Código
+comments: Comentários
+community: Comunidade
+compare: Comparar
+completePattern: Molde completo
+connectingToSomeApi: 'Conectanto ao {api} API'
+consent: Consentimento
+consentForModelData: Consentimento para dados do modelo
+consentForProfileData: Consentimento para dados do perfil
+consentGiven: Consentimento dado
+contactUs: Entre em contato
+content: Conteúdo
+contents: Conteúdos
+coordinator: Coordenador
 coreLink: Core link TODO
-countAvailable: '{count} available TODO'
-countTranslated: '{count} translated TODO'
-createAnAccount: Create an account TODO
-createIssueOnGithub: Create issue on GitHub TODO
-createModel: Create model TODO
-createMyAccount: Create my account TODO
-created: Created TODO
-currentPassword: Current password TODO
-data: Data TODO
-date: Date TODO
-daysAgo: '{days} days ago TODO'
-delete: Delete TODO
-deleteThisDraft: Delete this draft TODO
-description: Description TODO
-details: Details TODO
-difficulty: Difficulty TODO
-docs: Documentation TODO
-documentation: Documentation TODO
-documentationForDevelopers: Documentation for developers TODO
-documentationForTranslators: Documentation for translators TODO
-documentationOverview: Documentation overview TODO
+countAvailable: '{count} disponível'
+countTranslated: '{count} traduzido'
+createAnAccount: Criar uma conta
+createIssueOnGithub: Criar um issue no GitHub
+createModel: Criar modelo
+createMyAccount: Criar minha conta
+created: Criado
+currentPassword: Senha atual
+data: Dados
+date: Data
+daysAgo: '{days} dias atrás'
+delete: Deletar
+deleteThisDraft: Deletar esse esboço
+description: Descrição
+details: Detalhes
+difficulty: Dificuldade
+docs: Documentação
+documentation: Documentação
+documentationForDevelopers: Documentação para desenvolvedores
+documentationForTranslators: Documentação para tradutores
+documentationOverview: Visão geral da Documentação
 download: Download TODO
-draft: Draft TODO
-draftAPattern: Draft a pattern TODO
-draftOptions: Draft options TODO
-draftPattern: 'Draft {pattern} TODO'
-draftPatternForModel: 'Draft {pattern} for {model} TODO'
-draftThePattern: Draft the pattern TODO
-draftingPattern: 'Drafting {pattern} TODO'
-drafts: Drafts TODO
-edit: Edit TODO
-editOnGithub: Edit on GitHub TODO
+draft: Esboço
+draftAPattern: Esboce um molde
+draftOptions: Opções de esboço
+draftPattern: 'Esboçar {pattern}'
+draftPatternForModel: 'Esboce {pattern} para {model}'
+draftThePattern: Esboce o molde
+draftingPattern: 'Esboçando {pattern}'
+drafts: Esboços
+edit: Editar
+editOnGithub: Editar no GitHub
 email: E-mail TODO
-emailAddress: E-mail address TODO
-emailUpdatePending: E-mail update pending. TODO
+emailAddress: endereço de E-mail
+emailUpdatePending: atualização de E-mail pendente
 emails: E-mails TODO
-enterYourCurrentPassword: Enter your current password TODO
-enterYourNewPassword: Enter your new password TODO
-error-unknown: An unknown error occured TODO
+enterYourCurrentPassword: Escreva sua senha atual
+enterYourNewPassword: Escreva sua nova senha
+error-unknown: Um erro deseconhecido ocorreu
 error-username_taken: Username taken TODO
-exportMyData: Export my data TODO
-filterByPattern: Filter by pattern TODO
-forContributors: For contributors TODO
-forMoreInfoRtfm: 'For more info, read the documentation: TODO'
-forUsername: 'For {username} TODO'
-forUsers: For users TODO
+exportMyData: Exportar meus dados
+filterByPattern: Filtrar por molde
+forContributors: Para contribuidores
+forMoreInfoRtfm: 'Para mais informações, leia a documentação:'
+forUsername: 'Para {username}'
+forUsers: Para usuários
 fork: Fork TODO
 forkDraftHandle: 'Fork draft {handle} TODO'
 freesewing: Freesewing TODO
-freesewingContributors: Freesewing contributors TODO
-freesewingOnGithub: Freesewing on GitHub TODO
-freesewingPatrons: Freesewing patrons TODO
-freezeMyAccount: Freeze my account TODO
+freesewingContributors: Contrubuidores do Freesewing
+freesewingOnGithub: Freesewing no GitHub
+freesewingPatrons: Patronos do Freesewing
+freezeMyAccount: Congelar minha conta
 fullSizePdf: Full size PDF TODO
 fundamentals: Fundamentals TODO
-getHelp: Get help TODO
-github: GitHub TODO
+getHelp: Conseguir ajuda
+github: GitHub
 githubUpdated: GitHub username updated TODO
-goodToKnow: Good to know TODO
-hi: Hi TODO
-home: Home TODO
-howCanWeHelpYou: How can we help you? TODO
-howToTakeMeasurements: How to take measurements TODO
-i18n: Internationalization (i18n) TODO
-iForgotMyPassword: I forgot my password TODO
+goodToKnow: Bom saber
+hi: Oi
+home: Início
+howCanWeHelpYou: Como podemos ajudar você?
+howToTakeMeasurements: Como tirar medidas
+i18n: Internacionalização(i18n)
+iForgotMyPassword: Esqueci minha senha
 iForgotMyUsername: I forgot my username TODO
-image: Image TODO
-imperial: Imperial TODO
-imperialUnits: Imperial units (inch) TODO
-in: in TODO
-inch: inch TODO
-info: Info TODO
-instagram: Instagram TODO
+image: Imagem
+imperial: Sistema imperial
+imperialUnits: Unidade imperial (polegada)
+in: em
+inch: polegada
+info: Info
+instagram: Instagram
 instagramUpdated: Instagram account set TODO
-italics: Italics TODO
+italics: Itálico
 joinTheTranslationTeam: 'Even if you have never contributed to an open source project, translation is a smooth on-ramp towards contributor fame. TODO'
-justAMoment: Just a moment TODO
-key: Key TODO
-language: Language TODO
-languageLanguageFiles: '{language} language files TODO'
-layout: Layout TODO
-learnMore: Learn more TODO
+justAMoment: Aguarde um momento
+key: Chave
+language: Linguagem
+languageLanguageFiles: 'arquivos de linguagem {language}'
+layout: Layout
+learnMore: Aprenda mais
 learnToDesignPatterns: Learn to design patterns TODO
-letterPdf: Letter PDF TODO
-loadingModelData: Loading model data TODO
-loadingResult: Loading result TODO
-locale: Language TODO
-localeUpdated: Language preference updated TODO
-logIn: Log in TODO
-logOut: Log out TODO
-loginFailed: Login failed TODO
-makeItBetter: Make it better TODO
-markdownSyntax: MarkDown syntax TODO
-measurementUpdated: Measurement updated TODO
-measurements: Measurements TODO
-measurementsRequiredForPattern: 'Measurements required for {pattern} TODO'
-messages: Messages TODO
-metric: Metric TODO
-metricUnits: Metric units (cm) TODO
-model: Model TODO
-modelIsModel: 'Model is {model} TODO'
-models: Models TODO
-monthsAgo: '{months} months ago TODO'
-name: Name TODO
-nameOfTheModel: Name of the model TODO
-nameUpdated: Name updated TODO
-newDraft: New draft TODO
-newModel: New model TODO
-newPassword: New password TODO
-newPatternDraft: 'New {pattern} draft TODO'
-newTaskForUser: 'New task for {user} TODO'
-'no': No TODO
-noChanges: No changes TODO
-noDraftsFound: No drafts found TODO
-noFilter: No filter TODO
-noIDoNot: 'No, I do not TODO'
-noIDoNotObject: 'No, I do not object TODO'
-notShared: Not shared TODO
-notes: Notes TODO
-ohNo: Oh no! TODO
-okThatsDone: 'OK, that''s done TODO'
-onlySelectedPatternParts: Only selected pattern parts TODO
-pageNotFound: The page you are looking for is nowhere to be found. TODO
-paperlessTheme: Paperless theme TODO
-password: Password TODO
-passwordResetPending: Password reset pending. TODO
-passwordUpdated: Password changed TODO
-patronText: '{username} is a {patronTier} since {daysAgo} TODO'
-patrons: Patrons TODO
-pattern: Pattern TODO
+letterPdf: PDF tamanho Letter
+loadingModelData: Carregando dados do modelo
+loadingResult: Carregando resultado
+locale: Linguagem
+localeUpdated: Preferências de linguagem atualizadas
+logIn: Entrar/Login
+logOut: Desconectar
+loginFailed: Login falhou
+makeItBetter: Faça ficar melhor
+markdownSyntax: sintaxe MarkDown
+measurementUpdated: Medida atualizada
+measurements: Medidas
+measurementsRequiredForPattern: 'Medidas requeridas para {pattern}'
+messages: Mensagens
+metric: Sistema métrico
+metricUnits: Unidade métrica (cm)
+model: Modelo
+modelIsModel: 'Modelo é {model}'
+models: Modelos
+monthsAgo: '{months} meses atrás'
+name: Nome
+nameOfTheModel: Nome do modelo
+nameUpdated: Nome atualizado
+newDraft: Novo esboço
+newModel: Novo modelo
+newPassword: Nova senha
+newPatternDraft: 'Novo esboço de {pattern}'
+newTaskForUser: 'Nova tarefa para {user}'
+'no': Não
+noChanges: Nenhuma mudança
+noDraftsFound: Nenhum esboço encontrado
+noFilter: Nenhum filtro
+noIDoNot: 'Não, eu não'
+noIDoNotObject: 'Não, eu não me oponho'
+notShared: Não compartilhado
+notes: Notas
+ohNo: Ah, não!
+okThatsDone: 'OK, '' está pronto'
+onlySelectedPatternParts: Apenas partes selecionadas do molde
+pageNotFound: A página que você está procurando não foi encontrada.
+paperlessTheme: Tema sem papel
+password: Senha
+passwordResetPending: Reestabelecimento de senha pendente.
+passwordUpdated: Senha alterada.
+patronText: '{username} é um {patronTier} desde {daysAgo}'
+patrons: Patronos
+pattern: Molde
 patternDesignTutorial: Pattern design tutorial TODO
-patternDocumentation: Pattern instructions TODO
-patternInstructions: Pattern instructions TODO
-patternIsPattern: 'Pattern is {pattern} TODO'
-patternLineDrawing: '{pattern} line drawing TODO'
-patternOptions: Pattern options TODO
-patternParts: Pattern parts TODO
-patterns: Patterns TODO
-pleaseCheckYourInbox: You will be receiving an E-mail with further instructions TODO
-pleaseUpgradeThisDraft: Please upgrade this draft. TODO
-postComment: Post comment TODO
-postInfo: Post info TODO
-postReply: Post reply TODO
-preferences: Preferences TODO
-privacy: Privacy TODO
-privacyNotice: Privacy notice TODO
-processingDraftOptions: Processing draft options TODO
-profile: Profile TODO
-quickPick: Quick pick TODO
-quote-allie: Have you heard of freesewing.org? It’s pretty much the greatest thing ever! TODO
-quote-allie-about: Author of sewing blog The Aspiring Seamstress. TODO
-quote-ivan: Kudos to @j__st for creating @freesewing_org an open source platform for made-to-measure sewing patterns and general awesomeness TODO
-quote-ivan-about: Kubernetes London Meetup co-organiser. Founder of Kube.camp TODO
+patternDocumentation: Instruções do molde
+patternInstructions: Instruções do molde
+patternIsPattern: 'O molde é {pattern}'
+patternLineDrawing: 'Desenho de linha de {pattern}'
+patternOptions: Opções do molde
+patternParts: Partes do molde
+patterns: Moldes
+pleaseCheckYourInbox: Você receberá um E-mail com mais instruções
+pleaseUpgradeThisDraft: Por favor, atualize esse esboço.
+postComment: Poste um comentário
+postInfo: Poste informações
+postReply: Poste resposta
+preferences: Preferências
+privacy: Privacidade
+privacyNotice: Aviso de privacidade
+processingDraftOptions: Processando opções do esboço
+profile: Perfil
+quickPick: Escolha rápida
+quote-allie: Você já ouviu falar do freesewing.org? É basicamente a coisa mais legal do mundo!
+quote-allie-about: Autora do blog de costura The Aspiring Seamstress.
+quote-ivan: Aplausos para @j__st por criar @freesewing_org uma plataforma em código aberto para moldes de costura sob medida e toda sua grandiosidade
+quote-ivan-about: Co-organizador do Kubernetes London Meetup. Fundador de Kube.camp
 quote-jamie: 'With Freesewing, sewing has moved into the 21st century TODO'
 quote-jamie-about: Author of the popular sewing blog Male Devon Sewing and 2016 Great British Sewing Bee contestant. TODO
 reSendActivationEmail: Re-send activation email TODO
@@ -254,10 +254,10 @@ somethingWentWrong: Something went wrong TODO
 startUpload: Start upload TODO
 status: Status TODO
 statusTranslationLanguage: 'Status translation {language} TODO'
-step1: Step 1 TODO
-step2: Step 2 TODO
-step3: Step 3 TODO
-step4: Step 4 TODO
+step1: Passo 1
+step2: Passo 2
+step3: Passo 3
+step4: Passo 4
 stopProcessingMyData: Stop processing my data TODO
 stopUpload: Stop upload TODO
 storingDraftData: Storing draft data TODO
@@ -273,9 +273,9 @@ thisDraftPredatesThisFeature: This draft predates this feature. TODO
 thisIsTheCurrentStatusOfOurTranslations: This is the current status of our translations. TODO
 thisPageIsNotIntendedForLoggedInUsers: This page is not intended for logged-in users TODO
 thisPageIsOnlyAvailableToFreesewingUsers: This page is only available to Freesewing users TODO
-tip: Tip TODO
-title: Title TODO
-today: Today TODO
+tip: Dica
+title: Título
+today: Hoje
 translationTeam: Translation team TODO
 troubleLoggingIn: Trouble logging in? TODO
 tryAgain: Try again TODO
@@ -358,7 +358,7 @@ txt-warningProfileData: 'This will remove all of your models, all of your drafts
 txt-withOrWithoutBreasts: 'Fitting breasts requires a bunch of extra measurements that are not relevant if you don''t have breasts. If you indicate your model does not have breasts, we won''t show you these measurements as they are irrelevant. If you''re not sure what to pick, go for breasts. TODO'
 txt-withOrWithoutBreasts-explainer: 'On other websites, this question may be phrased as ''male or female?''. Here, we don''t like putting people in boxes. All we care about is fitting your chest. TODO'
 type: Type TODO
-units: Units TODO
+units: Unidades
 unitsUpdated: Units set TODO
 updates: Updates TODO
 upgrade: Upgrade TODO
@@ -370,8 +370,8 @@ userIsAPatron: '{user} is a patron TODO'
 username: Username TODO
 usernameOrEmail: '@:username or @:emailAddress TODO'
 usernameUpdated: Username updated TODO
-users: Users TODO
-version: Version TODO
+users: Usuários
+version: Versão
 visitPatronProfile: Visit the profile page of this patron TODO
 volunteerVerb: Volunteer TODO
 weAreLoadingDataFromTheBackend: We are loading data from the backend TODO
@@ -379,20 +379,21 @@ weAreValidatingYourConfirmationCode: We are validating your confirmation code TO
 weCantHelpYouWithThis: We can't help you with this TODO
 weNeedYourConsent: We need your consent TODO
 welcomeAboard: Welcome aboard TODO
-withBreasts: With breasts TODO
-withOrWithoutBreasts: With or without breasts? TODO
-withoutBreasts: Without breasts TODO
+withBreasts: Com seios
+withOrWithoutBreasts: Com ou sem seios?
+withoutBreasts: Sem seios
 wouldYouLikeToLogOut: Would you like to log out? TODO
 yearsAgo: '{years} year ago | {years} years ago TODO'
-'yes': Yes TODO
+'yes': Sim
 yesIDo: 'Yes, I do TODO'
 yesIDoObject: 'Yes, I do object TODO'
-yesterday: Yesterday TODO
-youAreCurrentlyLoggedIn: You are currently logged in. TODO
-youAreNotLoggedIn: You are not logged in. TODO
+yesterday: Ontem
+youAreCurrentlyLoggedIn: Vocês está logado.
+youAreNotAnAdmin: You are not an admin TODO
+youAreNotLoggedIn: Você não está logado.
 youCanUseMarkdownFormatting: You can use MarkDown formatting TODO
 youDoNotObjectToSharingAnonymizedDataForResearch: You do not object to sharing anonymized data for research TODO
 youHaveTheRightToObjectToThis: You have the right to object to this TODO
 youObjectToSharingAnonymizedDataForResearch: You object to sharing anonymized data for research TODO
-yourPrivacy: Your privacy TODO
-yourRights: Your rights TODO
+yourPrivacy: Sua privacidade
+yourRights: Seus direitos

@@ -14,6 +14,10 @@ export const state = () => ({
     models: {},
     drafts: {}
   },
+  loggedInAs: {
+    active: false,
+    user: ''
+  },
   locales: ['en', 'nl'],
   defaultLocale: 'en',
   locale: 'en',
@@ -129,6 +133,9 @@ export const mutations = {
   setAction(state, payload) {
     state.actions[payload.action] = payload.value
   },
+  setLoggedInAs(state, payload) {
+    state.loggedInAs = payload
+  },
 }
 
 export const actions = {
@@ -155,6 +162,38 @@ export const actions = {
   },
   draftOptionUpdate( { commit, dispatch }, payload) {
     commit('setDraftOption', payload)
+  },
+  loggedInAs( { commit }, payload) {
+    // Eject account
+    commit('setAccount', {
+      loggedIn: false,
+      isPatron: false,
+      isAdmin: false,
+      isFresh: true,
+      account: {},
+      models: {},
+      drafts: {}
+    })
+    commit('setLoggedInAs',{
+      active: true,
+      user: payload
+    })
+  },
+  loggedOutAs( { commit }) {
+    // Eject account
+    commit('setAccount', {
+      loggedIn: false,
+      isPatron: false,
+      isAdmin: false,
+      isFresh: true,
+      account: {},
+      models: {},
+      drafts: {}
+    })
+    commit('setLoggedInAs',{
+      active: false,
+      user: ''
+    })
   }
 }
 

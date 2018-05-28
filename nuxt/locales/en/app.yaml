@@ -136,7 +136,9 @@ loadingResult: Loading result
 locale: Language
 localeUpdated: Language preference updated
 logIn: Log in
+logInAs: Log in as
 logOut: Log out
+logOutAs: 'Log out as {user}'
 loginFailed: Login failed
 makeItBetter: Make it better
 markdownSyntax: MarkDown syntax
@@ -389,6 +391,7 @@ yesIDo: 'Yes, I do'
 yesIDoObject: 'Yes, I do object'
 yesterday: Yesterday
 youAreCurrentlyLoggedIn: You are currently logged in.
+youAreNotAnAdmin: You are not an admin
 youAreNotLoggedIn: You are not logged in.
 youCanUseMarkdownFormatting: You can use MarkDown formatting
 youDoNotObjectToSharingAnonymizedDataForResearch: You do not object to sharing anonymized data for research
