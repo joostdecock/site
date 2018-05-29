@@ -4,16 +4,27 @@
       <h1>{{ $t('sewingPatternsForNonAveragePeople') }} *
         <span class="byline">* {{ $t('averagePeopleDontExist') }}</span>
       </h1>
-      <h5 class="mt-3">
+      <div class="mt-4" v-if="$store.state.user.loggedIn && $store.state.user.isPatron">
+        <!-- Not sure what to show patrons -->
+      </div>
+      <div class="mt-4" v-else-if="$store.state.user.loggedIn">
+        <v-btn class="hidden-sm-and-up" :to="$fs.path('/patrons/join')" color="primary">
+          <v-icon class="mr-3" color="accent">favorite</v-icon>{{ $t('becomeAPatron') }}
+        </v-btn>
+        <v-btn large class="hidden-xs-only" :to="$fs.path('/patrons/join')" color="primary">
+          <v-icon class="mr-3" color="accent">favorite</v-icon>{{ $t('becomeAPatron') }}
+        </v-btn>
+      </div>
+      <div class="mt-4" v-else>
         <v-btn class="hidden-sm-and-up" :to="$fs.path('/signup')" color="primary">
           <v-icon class="mr-3">person_add</v-icon>{{ $t('signUpForAFreeAccount') }}
         </v-btn>
         <v-btn large class="hidden-xs-only" :to="$fs.path('/signup')" color="primary">
           <v-icon class="mr-3">person_add</v-icon>{{ $t('signUpForAFreeAccount') }}
         </v-btn>
-      </h5>
+      </div>
     </div>
-    <blockquote class="skully fs-m800 mt-5 mb-5">
+    <blockquote class="skully fs-bq fs-m800 mt-5 mb-5">
       <h3>{{ $t('freesewing') }} </h3>
       <h5>{{ $t('txt-slogan') }} </h5>
     </blockquote>
@@ -34,11 +45,11 @@
     </v-layout>
     <h2><a name="how">{{ $t('txt-homepage-how')}}</a></h2>
     <v-layout row wrap class="mt-5">
-      <v-flex md4 xs12 v-for="h in how" :key="h.to">
+      <v-flex md4 xs12 v-for="(h, i) in how" :key="h.to">
         <v-card color="primary" dark>
           <v-card-text>
             <h3 class="text-xs-center">
-              <v-btn fab small color="white" outline><b><big>1</big></b></v-btn>
+              <v-btn fab small color="white" outline><b><big>{{ i+1}}</big></b></v-btn>
               {{ $t(h.title) }}
             </h3>
             <p class="text-xs-center">{{ $t(h.text) }}</p>
@@ -66,9 +77,11 @@
         </v-card>
       </v-flex>
     </v-layout>
+    <div v-if="!$store.state.user.loggedIn">
     <h2>{{ $t('readyToTryFreesewing') }}</h2>
     <p class="text-xs-center">{{ $t('signingUpOnlyTakesAMinute') }}</p>
     <p class="text-xs-center"><v-btn large color="primary"><v-icon class="mr-3">person_add</v-icon>{{ $t('signUpForAFreeAccount') }}</v-btn></p>
+    </div>
   </section>
 </template>
 
