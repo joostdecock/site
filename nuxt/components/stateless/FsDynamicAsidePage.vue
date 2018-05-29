@@ -18,7 +18,7 @@
         <p class="text-xs-right mb-0">
         <v-btn
           color="primary"
-          :href="'https://github.com/freesewing/site/edit/develop/app/content/'+page.meta.dirName+page.meta.section+'/'+page.meta.fileName"
+          :href="'https://github.com/freesewing/site/edit/develop/nuxt/content/'+page.meta.dirName+page.meta.section+'/'+page.meta.fileName"
           ><v-icon class="mr-3">edit</v-icon>{{ $t('editOnGithub') }}</v-btn>
         </p>
       </v-card-text>
