@@ -136,9 +136,9 @@ loadingResult: Cargando resultado
 locale: Idioma
 localeUpdated: Preferencia de idioma actualizada
 logIn: Iniciar sesión
-logInAs: Log in as TODO
+logInAs: Iniciar sesión como
 logOut: cerrar sesión
-logOutAs: 'Log out as {user} TODO'
+logOutAs: 'Cerrar sesión como {user}'
 loginFailed: Inicio de sesión fallido
 makeItBetter: Mejóralo
 markdownSyntax: sintaxis de MarkDown
@@ -391,7 +391,7 @@ yesIDo: Sí
 yesIDoObject: 'Sí, me opongo'
 yesterday: Ayer
 youAreCurrentlyLoggedIn: Tienes una sesión abierta
-youAreNotAnAdmin: You are not an admin TODO
+youAreNotAnAdmin: No eres administrador
 youAreNotLoggedIn: No tienes una sesión abierta
 youCanUseMarkdownFormatting: Puedes usar formato MarkDown
 youDoNotObjectToSharingAnonymizedDataForResearch: No te opones a compartir datos anónimos para fines de investigación
