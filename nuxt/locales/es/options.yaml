@@ -167,7 +167,7 @@ collarGap:
   description: La separación entre los dos extremos del cuello
   title: Espaciado del cuello
 collarHeight:
-  description: La altura del cuello en la partre de atrás del cuello, que no puede ser menor de dos veces que la altura de la linea por donde el cuello se dobla.
+  description: 'La altura del cuello en la partre de atrás del cuello, que no puede ser menor de dos veces que la altura de la linea por donde el cuello se dobla.'
   title: Altura del cuello
 collarNotchAngle:
   description: El ángulo de las muescas de las solapas

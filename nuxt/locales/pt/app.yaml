@@ -103,7 +103,7 @@ freezeMyAccount: Congelar minha conta
 fullSizePdf: Full size PDF TODO
 fundamentals: Fundamentals TODO
 getHelp: Conseguir ajuda
-github: GitHub
+github: GitHub TODO
 githubUpdated: GitHub username updated TODO
 goodToKnow: Bom saber
 hi: Oi
@@ -118,8 +118,8 @@ imperial: Sistema imperial
 imperialUnits: Unidade imperial (polegada)
 in: em
 inch: polegada
-info: Info
-instagram: Instagram
+info: Info TODO
+instagram: Instagram TODO
 instagramUpdated: Instagram account set TODO
 italics: Itálico
 joinTheTranslationTeam: 'Even if you have never contributed to an open source project, translation is a smooth on-ramp towards contributor fame. TODO'
@@ -127,7 +127,7 @@ justAMoment: Aguarde um momento
 key: Chave
 language: Linguagem
 languageLanguageFiles: 'arquivos de linguagem {language}'
-layout: Layout
+layout: Layout TODO
 learnMore: Aprenda mais
 learnToDesignPatterns: Learn to design patterns TODO
 letterPdf: PDF tamanho Letter
@@ -136,7 +136,9 @@ loadingResult: Carregando resultado
 locale: Linguagem
 localeUpdated: Preferências de linguagem atualizadas
 logIn: Entrar/Login
+logInAs: Log in as TODO
 logOut: Desconectar
+logOutAs: 'Log out as {user} TODO'
 loginFailed: Login falhou
 makeItBetter: Faça ficar melhor
 markdownSyntax: sintaxe MarkDown
@@ -166,7 +168,7 @@ noIDoNot: 'Não, eu não'
 noIDoNotObject: 'Não, eu não me oponho'
 notShared: Não compartilhado
 notes: Notas
-ohNo: Ah, não!
+ohNo: 'Ah, não!'
 okThatsDone: 'OK, '' está pronto'
 onlySelectedPatternParts: Apenas partes selecionadas do molde
 pageNotFound: A página que você está procurando não foi encontrada.
@@ -186,7 +188,7 @@ patternOptions: Opções do molde
 patternParts: Partes do molde
 patterns: Moldes
 pleaseCheckYourInbox: Você receberá um E-mail com mais instruções
-pleaseUpgradeThisDraft: Por favor, atualize esse esboço.
+pleaseUpgradeThisDraft: 'Por favor, atualize esse esboço.'
 postComment: Poste um comentário
 postInfo: Poste informações
 postReply: Poste resposta
