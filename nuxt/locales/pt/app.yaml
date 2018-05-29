@@ -1,4 +1,4 @@
-100PercentCommunity: 100% comunitário
+100PercentCommunity: 100% comunidade
 100PercentFree: 100% gratuito
 100PercentOpenSource: 100% código aberto
 aCodeBlock: Um bloco de código
@@ -46,7 +46,7 @@ contactUs: Entre em contato
 content: Conteúdo
 contents: Conteúdos
 coordinator: Coordenador
-coreLink: Link do core
+coreLink: Link principal
 countAvailable: '{count} disponível'
 countTranslated: '{count} traduzido'
 createAnAccount: Criar uma conta
@@ -214,7 +214,7 @@ reply: Responder
 requiredMeasurements: Medidas necessárias 
 resetPassword: Resetar senha
 result: Resultado
-retrievingDraftFromCore: Recuperando esboço do core
+retrievingDraftFromCore: Recuperando esboço do principal
 revokeConsent: Revogar consentimento 
 rowsFromToOfTotal: 'Linhas {from} a {to} de {total}' 
 rowsPerPage: Linhas por página
@@ -231,35 +231,35 @@ settings: Configurações
 sewingPatternsForNonAveragePeople: Moldes de costura para pessoas não medianas
 share: Compartilhar
 shared: Compartilhado
-sharedUpdated: Shared setting updated TODO
+sharedUpdated: Opção de compartilhamento atualizada
 showHelp: Mostrar ajuda
-showcase: Showcase TODO
-showcaseInfo: Showcase info TODO
-signUp: Sign up TODO
-signUpForAFreeAccount: Sign up for a free account TODO
-signingUpOnlyTakesAMinute: Signing up only takes a minute TODO
-signup--text: This should not happen. Please help us out by creating an issue on GitHub TODO
-signup--title: An unknown error occured TODO
-signup-invalid_input-text: 'Please enter a valid email address, and a password TODO'
-signup-invalid_input-title: Invalid input TODO
-signup-no_such_pending_confirmation-text: 'Sorry, but that is not a confirmation code we have on record? Perhaps it expired, in which case you can just sign up again. TODO'
+showcase: Mostruário
+showcaseInfo: Informações do mostruário
+signUp: Cadastre-se
+signUpForAFreeAccount: Cadastre-se para uma conta gratuita
+signingUpOnlyTakesAMinute: Fazer o cadastro leva só um minuto
+signup--text: Isso não deveria acontecer. Nos ajude criando um issue (problema) no GitHub.
+signup--title: Um erro desconhecido ocorreu
+signup-invalid_input-text: 'Por favor escreva um endereço de email válido e uma senha'
+signup-invalid_input-title: Entrada inválida
+signup-no_such_pending_confirmation-text: 'Desculpe, mas não temos registrado esse código de confirmação. Talvez ele tenha expirado, nesse caso você pode simplesmente se cadastrar outra vez'
 signup-no_such_pending_confirmation-title: There's no such pending confirmation TODO
-signup-signup_pending-text: We already have a pending activation for this email address. We have sent you a fresh copy of the activation email in case you missed the original one. TODO
-signup-signup_pending-title: Your signup is pending activation TODO
-signup-success-text: 'We''ve sent you an email at {email}. TODO'
-signup-user_exists-text: We already have a user with that email address. Perhaps you'd like to login instead? TODO
+signup-signup_pending-text: Você já possui uma ativação pendente para esse endereço de email. Para o caso de você não ter visto o origianal, nós enviamos uma nova cópia do email de ativiação.
+signup-signup_pending-title: Seu cadastro está com a ativação pendente
+signup-success-text: 'Nós lhe enviamos um email para {email}.'
+signup-user_exists-text: Nós já temos um usuário com esse endereço de email. Será que você gostaria de fazer login?
 signup-user_exists-title: Esse usuário já existe
 social: Social
 somethingWentWrong: Alguma coisa deu errado
-startUpload: Start upload TODO
-status: Status TODO
-statusTranslationLanguage: 'Status translation {language} TODO'
+startUpload: Começar upload
+status: Status
+statusTranslationLanguage: 'Status da tradução {language}'
 step1: Passo 1 
 step2: Passo 2 
 step3: Passo 3 
 step4: Passo 4 
-stopProcessingMyData: Stop processing my data TODO
-stopUpload: Stop upload TODO
+stopProcessingMyData: Parar de processar meus dados
+stopUpload: Parar o upload
 storingDraftData: Storing draft data TODO
 strikethrough: Strikethrough TODO
 svgSourceCode: SVG Source code TODO
