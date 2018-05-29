@@ -143,44 +143,44 @@ chestPocketPlacement:
   description: El bolsillo del pecho se coloca como una proporcion de un cuarto de tu circunferencia de pecho. Valores mayores lo mueven hacia el lado.
   title: Situación del bolsillo del pecho
 chestPocketWeltSize:
-  description: The height of the chest pocket welt. TODO
-  title: Chest pocket welt height TODO
+  description: La altura de la solapa del bolsillo.
+  title: Altura de la solapa del bolsillo
 chestPocketWidth:
-  description: 'The width of the chest pocket, as a factor of your chest circumference. TODO'
-  title: Chest pocket width TODO
+  description: 'La anchura de la solapa del bolsillo, como factor de tu circunferencia de pecho.'
+  title: Anchura de la solapa del bolsillo
 chestShaping:
-  description: 'The vertical amount to slash & spread the upper front panel to shape the chest, as a factor of your chest circumference. TODO'
-  title: Chest shaping TODO
+  description: 'la cantidad vertical a esparcir en el panel frontal para dar forma al pecho, como factor de tu circunferencia de pecho.'
+  title: Forma del pecho
 collarAngle:
-  description: The angle of the collar tips. TODO
-  title: Collar angle TODO
+  description: El ángulo de los picos del cuello
+  title: Ángulo del pico del cuello
 collarBend:
-  description: The bend of the collar. TODO
-  title: Collar bend TODO
+  description: La inclinación del cuello hacia atrás.
+  title: Inclinación del cuello
 collarEase:
-  description: The amount of ease around your neck. TODO
-  title: Collar ease TODO
+  description: La cantidad de holgura alrededor del cuello.
+  title: Holgura del cuello
 collarFlare:
-  description: The flare of the collar tips. TODO
-  title: Collar flare TODO
+  description: Cuánto más ancho es el cuello en los picos con respecto al centro.
+  title: Forma de los picos del cuello
 collarGap:
-  description: The gap between the the two collar ends. TODO
-  title: Collar gap TODO
+  description: La separación entre los dos extremos del cuello
+  title: Espaciado del cuello
 collarHeight:
-  description: This is the collar height at the back of the neck and can never be less than twice the roll line collar height. TODO
-  title: Collar height TODO
+  description: La altura del cuello en la partre de atrás del cuello, que no puede ser menor de dos veces que la altura de la linea por donde el cuello se dobla.
+  title: Altura del cuello
 collarNotchAngle:
-  description: Angle of the collar notch. TODO
-  title: Collar notch angle TODO
+  description: El ángulo de las muescas de las solapas
+  title: Ángulo de la muesca de la solapa
 collarNotchDepth:
-  description: Depth of the collar notch. TODO
-  title: Collar notch depth TODO
+  description: La profundidad de las muescas de las solapas
+  title: Profundidad de la muesca de la solapa
 collarNotchReturn:
-  description: Controls the length of the upper notch side. 100% = same as notch depth. TODO
-  title: Collar notch return TODO
+  description: Controla la longitud de la parte superior de las muescas de las solapas. 100% = igual que la profundidad de las muescas.
+  title: Retorno de la muesca de la solapa
 collarRoll:
-  description: The amount by which the top collar is larger than the undercollar. TODO
-  title: Collar roll TODO
+  description: La cantidad en la que el cuello superior es mayor que el inferior.
+  title: Vuelta del cuello
 collarStandBend:
   description: The bend of the collar stand. TODO
   title: Collar stand bend TODO
