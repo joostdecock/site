@@ -11,7 +11,7 @@
               <nuxt-link :to="$fs.path('/privacy')" class="fs-white">{{ $t('yourPrivacy') }}</nuxt-link> |
               <nuxt-link :to="$fs.path('/rights')" class="fs-white">{{ $t('yourRights') }}</nuxt-link>
             </p>
-            <v-btn color="accent" :to="$fs.path('/patrons/join')" class="mt-1 mb-4"><v-icon class="mr-3">favorite</v-icon>{{ $t('becomeAPatron') }}</v-btn>
+            <v-btn v-if="!$store.state.user.isPatron" color="accent" :to="$fs.path('/patrons/join')" class="mt-1 mb-4"><v-icon class="mr-3">favorite</v-icon>{{ $t('becomeAPatron') }}</v-btn>
             <p v-html="$t('txt-footer')"></p>
             <p>
               <a href="https://github.com/freesewing/site">site v{{ $fs.conf.versions.site}}</a> |

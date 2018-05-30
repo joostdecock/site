@@ -39,6 +39,14 @@ export default ({ app, store, route }, inject) => {
     return storage.set('token', token)
   }
 
+  const saveAdminToken = () => {
+    return storage.set('adminToken', storage.get('token'))
+  }
+
+  const restoreAdminToken = () => {
+    return storage.set('token', storage.get('adminToken'))
+  }
+
   const token = () => {
     return storage.get('token')
   }
@@ -182,6 +190,19 @@ export default ({ app, store, route }, inject) => {
             .then((res) => {
               setToken(res.data.token)
                 resolve(res.data)
+            })
+          .catch((error) => { reject(error.response.data) })
+        })
+      },
+
+      loginAs(username) {
+        return new Promise(function(resolve, reject) {
+          ax.data.post('/admin/login/as', {user: username}, { headers: {'Authorization': 'Bearer '+token()} })
+            .then((res) => {
+              saveAdminToken()
+              setToken(res.data.token)
+              store.dispatch('loggedInAs', username)
+              resolve(res.data)
             })
           .catch((error) => { reject(error.response.data) })
         })
@@ -590,6 +611,13 @@ export default ({ app, store, route }, inject) => {
       logout() {
         setToken('')
         store.dispatch('ejectAccount')
+      },
+
+      logoutAs() {
+        setToken('')
+        restoreAdminToken()
+        store.dispatch('loggedOutAs')
+        authMethod()
       },
 
       draftSvgLink(draftHandle, userHandle, cachingToken) {

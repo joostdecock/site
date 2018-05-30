@@ -54,7 +54,7 @@ i18n:
   origin: en
   stats:
     de:
-      app: 63
+      app: 213
       blog: 0
       docs: 0
       i18n: 6
@@ -64,7 +64,7 @@ i18n:
       patterns: 37
       showcase: 0
     en:
-      app: 398
+      app: 401
       blog: 30
       docs: 316
       i18n: 9
@@ -74,13 +74,13 @@ i18n:
       patterns: 37
       showcase: 51
     es:
-      app: 398
+      app: 401
       blog: 2
       docs: 1
-      i18n: 6
+      i18n: 9
       measurements: 26
       optiongroups: 12
-      options: 101
+      options: 127
       patterns: 37
       showcase: 1
     fr:
@@ -94,7 +94,7 @@ i18n:
       patterns: 4
       showcase: 0
     nl:
-      app: 397
+      app: 400
       blog: 3
       docs: 2
       i18n: 6
@@ -124,7 +124,7 @@ i18n:
       patterns: 0
       showcase: 0
     pt:
-      app: 3
+      app: 198
       blog: 0
       docs: 0
       i18n: 0
@@ -154,7 +154,7 @@ i18n:
       patterns: 0
       showcase: 0
   target:
-    app: 398
+    app: 401
     blog: 30
     docs: 316
     i18n: 9

@@ -1,5 +1,5 @@
 <template>
-  <blockquote class="i18n warning">
+  <blockquote class="i18n warning fs-bq">
     <h3>
       {{ $t('thisContentIsNotAvailableInLanguage') }}
    </h3>

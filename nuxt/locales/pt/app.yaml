@@ -9,16 +9,16 @@ addComment: Adicionar comentário
 all: Tudo
 alreadyHaveAnAccount: Já tem uma conta?
 areYouSureAboutThis: Você tem certeza absoluta disso?
-avatar: Avatar
+avatar: Avatar TODO
 avatarUpdated: Avatar atualizado
 averagePeopleDontExist: Pessoas medianas não existem
 basicTheme: Tema clássico
 basics: Noções básicas
 becomeAPatron: Se torne um patrono
-bio: Bio
+bio: Bio TODO
 bioUpdated: Bio atualizada
 blockquote: Bloco de citação
-blog: Blog
+blog: Blog TODO
 blogPost: posts do Blog
 bold: Negrito
 breasts: Seios
@@ -68,7 +68,7 @@ documentation: Documentação
 documentationForDevelopers: Documentação para desenvolvedores
 documentationForTranslators: Documentação para tradutores
 documentationOverview: Visão geral da Documentação
-download: Download
+download: Download TODO
 draft: Esboço
 draftAPattern: Esboce um molde
 draftOptions: Opções de esboço
@@ -79,10 +79,10 @@ draftingPattern: 'Esboçando {pattern}'
 drafts: Esboços
 edit: Editar
 editOnGithub: Editar no GitHub
-email: E-mail
+email: E-mail TODO
 emailAddress: endereço de E-mail
 emailUpdatePending: atualização de E-mail pendente
-emails: E-mails
+emails: E-mails TODO
 enterYourCurrentPassword: Escreva sua senha atual
 enterYourNewPassword: Escreva sua nova senha
 error-unknown: Um erro deseconhecido ocorreu
@@ -95,7 +95,7 @@ forUsername: 'Para {username}'
 forUsers: Para usuários
 fork: Fork
 forkDraftHandle: 'Fazer um fork deste esboço {handle}'
-freesewing: Freesewing
+freesewing: Freesewing DONE
 freesewingContributors: Contrubuidores do Freesewing
 freesewingOnGithub: Freesewing no GitHub
 freesewingPatrons: Patronos do Freesewing
@@ -103,7 +103,7 @@ freezeMyAccount: Congelar minha conta
 fullSizePdf: PDF do tamanho original
 fundamentals: Fundamentos
 getHelp: Conseguir ajuda
-github: GitHub
+github: GitHub DONE
 githubUpdated: nome do usuário do GitHub atualizado
 goodToKnow: Bom saber
 hi: Oi
@@ -118,8 +118,8 @@ imperial: Sistema imperial
 imperialUnits: Unidade imperial (polegada)
 in: em
 inch: polegada
-info: Info
-instagram: Instagram
+info: Info DONE
+instagram: Instagram DONE
 instagramUpdated: Conta do Instagram configurada
 italics: Itálico
 joinTheTranslationTeam: 'Mesmo que você nunca tenha contribuido com um projeto de código aberto, a tradução é um caminho suave para se tornar um contribuidor de renome.'
@@ -127,7 +127,7 @@ justAMoment: Aguarde um momento
 key: Chave
 language: Linguagem
 languageLanguageFiles: 'arquivos de linguagem {language}'
-layout: Layout
+layout: Layout TODO
 learnMore: Aprenda mais
 learnToDesignPatterns: Aprenda a desenhar moldes
 letterPdf: PDF tamanho Letter
@@ -136,7 +136,9 @@ loadingResult: Carregando resultado
 locale: Linguagem
 localeUpdated: Preferências de linguagem atualizadas
 logIn: Entrar/Login
+logInAs: Log in as TODO
 logOut: Desconectar
+logOutAs: 'Log out as {user} TODO'
 loginFailed: Login falhou
 makeItBetter: Faça ficar melhor
 markdownSyntax: sintaxe MarkDown
@@ -166,7 +168,7 @@ noIDoNot: 'Não, eu não'
 noIDoNotObject: 'Não, eu não me oponho'
 notShared: Não compartilhado
 notes: Notas
-ohNo: Ah, não!
+ohNo: 'Ah, não!'
 okThatsDone: 'OK, '' está pronto'
 onlySelectedPatternParts: Apenas partes selecionadas do molde
 pageNotFound: A página que você está procurando não foi encontrada.
@@ -186,7 +188,7 @@ patternOptions: Opções do molde
 patternParts: Partes do molde
 patterns: Moldes
 pleaseCheckYourInbox: Você receberá um E-mail com mais instruções
-pleaseUpgradeThisDraft: Por favor, atualize esse esboço.
+pleaseUpgradeThisDraft: 'Por favor, atualize esse esboço.'
 postComment: Poste um comentário
 postInfo: Poste informações
 postReply: Poste resposta
@@ -389,6 +391,7 @@ yesIDo: 'Yes, I do TODO'
 yesIDoObject: 'Yes, I do object TODO'
 yesterday: Ontem
 youAreCurrentlyLoggedIn: Vocês está logado.
+youAreNotAnAdmin: You are not an admin TODO
 youAreNotLoggedIn: Você não está logado.
 youCanUseMarkdownFormatting: You can use MarkDown formatting TODO
 youDoNotObjectToSharingAnonymizedDataForResearch: You do not object to sharing anonymized data for research TODO

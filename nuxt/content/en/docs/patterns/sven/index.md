@@ -4,7 +4,7 @@ patternIndex: true
 pattern: sven
 ---
 
-### What you need
+## What you need
 
 To make Sven, you will need the following:
 
@@ -12,7 +12,13 @@ To make Sven, you will need the following:
 - About 1.75 meter of a suitable fabric ([see Fabric options](#fabric-options))
 - Ribbing fabric for the cuffs and neck opening
 
-### Fabric options
+> **A serger/overlock is nice, but optional**
+>
+> As with all knitwear and stretch fabrics, a serger/overlock will make your life easier.
+>
+> If you do not have one of those, don't despair. You don't really need it. Because these side seams and shoulder seams won't get stretched out, you can just sew them with a regular straight stitch.
+
+## Fabric options
 
 Sven can be any sweatshirt you want it to be. From wovens to knit or even scuba, you can't really go wrong as long as you stick with something that has a bit of weight to it.
 
@@ -20,35 +26,28 @@ Have a look at [the Sven showcases](/showcase/pattern/sven) for inspiration.
 
 ## Cutting
 
-> - {:.title} Main fabric
->   - Cut **1 back** on the fold
->   - Cut **1 front** on the fold
->   - Cut **2 sleeves** with good sides together
-> - {:.title} Ribbing fabric
->   - Cut **1 strip** for the neck opening binding
->   - Cut **2 strips**  for the cuffs
->   - Cut **1 strip**  for the hem
-{:.cut}
+ - **Main fabric**
+   - Cut **1 back** on the fold
+   - Cut **1 front** on the fold
+   - Cut **2 sleeves** with good sides together
+ - **Ribbing fabric**
+   - Cut **1 strip** for the neck opening binding
+   - Cut **2 strips**  for the cuffs
+   - Cut **1 strip**  for the hem
 
-> <h5>Caveats</h5>
-> The ribbing parts are not included on the pattern because they're just rectangular.
-> We'll figure it out as we go along.
-{:.warning}
+###  Caveats
 
-Aaron is a very simply pattern, and consists of two main parts plus some strips for the neck and armhole binding.
+The ribbing parts are not included on the pattern because they're just rectangular.
+We'll figure it out as we go along.
+
+Sven is a very simply pattern, and consists of two main parts plus some strips for the neck and armhole binding.
 
 Below is a typical draft layout:
 
-{% include  coreClassdocsFigure.html
-    params='?service=draft&pattern=SvenSweatshirt'
-    description='A typical Sven draft'
-%}
-{% include scalebox.html %}
+![A typical Sven draft](/img/patterns/sven/layout.svg)
+% include scalebox.html %}
 
-> <h5>Notation legend</h5>
->
 > The [notation legend](/docs/patterns/notation) explains all the different markings and lines on your draft.
-{:.tip}
 
 ## Construction
 
@@ -58,11 +57,6 @@ Below is a typical draft layout:
  - Align the shoulder seam, and sew/serge it at the standard seam allowance.
  - Repeat for the other shoulder seam.
 
-> <h5>A serger/overlock is nice, but optional</h5>
-> As with all knitwear and stretch fabrics, a serger/overlock will make your life easier.
->
-> If you do not have one of those, don't despair. You don't really need it. Because these side seams and shoulder seams won't get stretched out, you can just sew them with a regular straight stitch.
-{:.comment}
 
 ### Step 2: Set in the sleeves
 
@@ -113,8 +107,4 @@ Below is a typical draft layout:
  - Align the cut off side of the ribbing with the edge of the body and pin it in place. The ribbing is a bit shorter, so stretch it a bit while pinning to work this into the body.
  - Now, sew/serge the ribbing to the body
 
-{% include completed.html %}
-
-* TOC - Do not remove this line
-{:toc}
 

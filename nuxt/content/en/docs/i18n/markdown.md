@@ -2,16 +2,6 @@
 title: Translating MarkDown
 ---
 
-> #### Don't translate content yet
-> 
-> Our content is still being ported from our old site to the new site.
-> (see [this open issue](https://github.com/freesewing/site/issues/384))
-> 
-> This means that we first need to fix the original English content before you
-> start translating. We'll do that ASAP, but until that time please refrain 
-> from translating content and focus on strings.
-{.fs-bq .warning}
-
 > To translate a MarkDown file, follow these steps:
 > 
 >  - Copy the English version of the file to the same location in your language folder
