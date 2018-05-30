@@ -94,7 +94,7 @@ forContributors: Para contribuidores
 forMoreInfoRtfm: 'Para mais informações, leia a documentação:'
 forUsername: 'Para {username}'
 forUsers: Para usuários
-fork: Fork
+fork: Fork TODO
 forkDraftHandle: 'Fazer um fork deste esboço {handle}'
 freesewing: Freesewing DONE
 freesewingContributors: Contrubuidores do Freesewing
@@ -113,7 +113,7 @@ howCanWeHelpYou: Como podemos ajudar você?
 howToTakeMeasurements: Como tirar medidas
 i18n: Internacionalização(i18n)
 iForgotMyPassword: Esqueci minha senha
-iForgotMyUsername: Esqueci meu nome de usuário 
+iForgotMyUsername: Esqueci meu nome de usuário
 image: Imagem
 imperial: Sistema imperial
 imperialUnits: Unidade imperial (polegada)
@@ -214,12 +214,12 @@ removeAllMyData: Remover todos meus dados
 removeAllMyModelData: Remover todos meus dados de modelos
 replay: Repetir
 reply: Responder
-requiredMeasurements: Medidas necessárias 
+requiredMeasurements: Medidas necessárias
 resetPassword: Resetar senha
 result: Resultado
 retrievingDraftFromCore: Recuperando esboço do principal
-revokeConsent: Revogar consentimento 
-rowsFromToOfTotal: 'Linhas {from} a {to} de {total}' 
+revokeConsent: Revogar consentimento
+rowsFromToOfTotal: 'Linhas {from} a {to} de {total}'
 rowsPerPage: Linhas por página
 save: Salvar
 scope: Escopo
@@ -243,24 +243,24 @@ signUpForAFreeAccount: Cadastre-se para uma conta gratuita
 signingUpOnlyTakesAMinute: Fazer o cadastro leva só um minuto
 signup--text: Isso não deveria acontecer. Nos ajude criando um issue (problema) no GitHub.
 signup--title: Um erro desconhecido ocorreu
-signup-invalid_input-text: 'Por favor escreva um endereço de email válido e uma senha'
+signup-invalid_input-text: Por favor escreva um endereço de email válido e uma senha
 signup-invalid_input-title: Entrada inválida
 signup-no_such_pending_confirmation-text: 'Desculpe, mas não temos registrado esse código de confirmação. Talvez ele tenha expirado, nesse caso você pode simplesmente se cadastrar outra vez'
 signup-no_such_pending_confirmation-title: There's no such pending confirmation TODO
-signup-signup_pending-text: Você já possui uma ativação pendente para esse endereço de email. Para o caso de você não ter visto o origianal, nós enviamos uma nova cópia do email de ativiação.
+signup-signup_pending-text: 'Você já possui uma ativação pendente para esse endereço de email. Para o caso de você não ter visto o origianal, nós enviamos uma nova cópia do email de ativiação.'
 signup-signup_pending-title: Seu cadastro está com a ativação pendente
 signup-success-text: 'Nós lhe enviamos um email para {email}.'
 signup-user_exists-text: Nós já temos um usuário com esse endereço de email. Será que você gostaria de fazer login?
 signup-user_exists-title: Esse usuário já existe
-social: Social
+social: Social TODO
 somethingWentWrong: Alguma coisa deu errado
 startUpload: Começar upload
-status: Status
+status: Status TODO
 statusTranslationLanguage: 'Status da tradução {language}'
-step1: Passo 1 
-step2: Passo 2 
-step3: Passo 3 
-step4: Passo 4 
+step1: Passo 1
+step2: Passo 2
+step3: Passo 3
+step4: Passo 4
 stopProcessingMyData: Parar de processar meus dados
 stopUpload: Parar o upload
 storingDraftData: Storing draft data TODO
