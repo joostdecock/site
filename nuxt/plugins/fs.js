@@ -654,6 +654,9 @@ export default ({ app, store, route }, inject) => {
         return Conf.apis.data+path
       },
       modelIsValid(model, patternHandle) {
+        if(typeof model.data.measurements === 'undefined') {
+          return false
+        }
         var valid = true
           Object.entries(Conf.patterns[patternHandle].measurements).forEach(
               ([key, value]) => {
