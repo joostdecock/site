@@ -318,7 +318,7 @@ txt-emailNotFound: 'Om du inte kan hitta mejlet, titta i din spam-folder, eller 
 txt-emailWillWorkToo: 'Om du inte kommer ihåg ditt @:username, så fungerar din @:emailAddress också TODO'
 txt-footer: Freesewing har skapats av Joost De Cock & medverkande<br>med finansiell hjälp från våra stödmedlemmar TODO
 txt-forgot-login: 'Ange ditt användarnamn eller din e-postadress nedan och klicka på <b>@:resetPassword</b> knappen TODO'
-txt-gdpr-1: Europeiska unionens (EU:s) General Data Protection Regulation (GDPR) protects your personal data from unscrupulous data hoardersskyddar dina personuppgifter från samvetslösa datasamlare. Det är en bra sak. TODO
+txt-gdpr-1: Europeiska unionens (EU:s) General Data Protection Regulation (GDPR) skyddar dina personuppgifter från samvetslösa datasamlare. Det är en bra sak. TODO
 txt-gdpr-2: 'En av de saker det innebär är att vi behöver få ditt medgivande — med andra ord ditt tillstånd — för att behandla dina personuppgifter. TODO'
 txt-gdpr-3: 'utan ditt medgivande har vi ingen laglig rätt att behandla dina uppgifter och har inget annat val än att radera uppgifterna. TODO'
 txt-gdprCompliant: Freesewing.org respekterar din integritet och dina rättigheter. Vi tillämpar Europeiska unionens (EU:s) General Data Protection Regulation (GDPR). TODO
