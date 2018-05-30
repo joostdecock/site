@@ -160,7 +160,7 @@ export default {
 .on-splash {
   max-width: 600px;
   margin: auto;
-  background: #ffffffdd;
+  background: rgba(255, 255, 255, 0.9);
   padding: 10px 40px 5px;
   margin-top: 50px;
   text-align: center;
