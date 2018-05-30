@@ -1,4 +1,4 @@
-100PercentCommunity: 100% comunitário
+100PercentCommunity: 100% comunidade
 100PercentFree: 100% gratuito
 100PercentOpenSource: 100% código aberto
 aCodeBlock: Um bloco de código
@@ -47,7 +47,7 @@ content: Conteúdo
 contents: Conteúdos
 contributeToFreesewing: Contribute to freesewing TODO
 coordinator: Coordenador
-coreLink: Core link TODO
+coreLink: Link principal
 countAvailable: '{count} disponível'
 countTranslated: '{count} traduzido'
 createAnAccount: Criar uma conta
@@ -87,25 +87,25 @@ emails: E-mails TODO
 enterYourCurrentPassword: Escreva sua senha atual
 enterYourNewPassword: Escreva sua nova senha
 error-unknown: Um erro deseconhecido ocorreu
-error-username_taken: Username taken TODO
+error-username_taken: Nome de usuário já em uso
 exportMyData: Exportar meus dados
 filterByPattern: Filtrar por molde
 forContributors: Para contribuidores
 forMoreInfoRtfm: 'Para mais informações, leia a documentação:'
 forUsername: 'Para {username}'
 forUsers: Para usuários
-fork: Fork TODO
-forkDraftHandle: 'Fork draft {handle} TODO'
-freesewing: Freesewing TODO
+fork: Fork
+forkDraftHandle: 'Fazer um fork deste esboço {handle}'
+freesewing: Freesewing DONE
 freesewingContributors: Contrubuidores do Freesewing
 freesewingOnGithub: Freesewing no GitHub
 freesewingPatrons: Patronos do Freesewing
 freezeMyAccount: Congelar minha conta
-fullSizePdf: Full size PDF TODO
-fundamentals: Fundamentals TODO
+fullSizePdf: PDF do tamanho original
+fundamentals: Fundamentos
 getHelp: Conseguir ajuda
-github: GitHub TODO
-githubUpdated: GitHub username updated TODO
+github: GitHub DONE
+githubUpdated: nome do usuário do GitHub atualizado
 goodToKnow: Bom saber
 hi: Oi
 home: Início
@@ -113,24 +113,24 @@ howCanWeHelpYou: Como podemos ajudar você?
 howToTakeMeasurements: Como tirar medidas
 i18n: Internacionalização(i18n)
 iForgotMyPassword: Esqueci minha senha
-iForgotMyUsername: I forgot my username TODO
+iForgotMyUsername: Esqueci meu nome de usuário 
 image: Imagem
 imperial: Sistema imperial
 imperialUnits: Unidade imperial (polegada)
 in: em
 inch: polegada
-info: Info TODO
-instagram: Instagram TODO
-instagramUpdated: Instagram account set TODO
+info: Info DONE
+instagram: Instagram DONE
+instagramUpdated: Conta do Instagram configurada
 italics: Itálico
-joinTheTranslationTeam: 'Even if you have never contributed to an open source project, translation is a smooth on-ramp towards contributor fame. TODO'
+joinTheTranslationTeam: 'Mesmo que você nunca tenha contribuido com um projeto de código aberto, a tradução é um caminho suave para se tornar um contribuidor de renome.'
 justAMoment: Aguarde um momento
 key: Chave
 language: Linguagem
 languageLanguageFiles: 'arquivos de linguagem {language}'
 layout: Layout TODO
 learnMore: Aprenda mais
-learnToDesignPatterns: Learn to design patterns TODO
+learnToDesignPatterns: Aprenda a desenhar moldes
 letterPdf: PDF tamanho Letter
 loadingModelData: Carregando dados do modelo
 loadingResult: Carregando resultado
@@ -180,7 +180,7 @@ passwordUpdated: Senha alterada.
 patronText: '{username} é um {patronTier} desde {daysAgo}'
 patrons: Patronos
 pattern: Molde
-patternDesignTutorial: Pattern design tutorial TODO
+patternDesignTutorial: Tutorial de modelagem
 patternDocumentation: Instruções do molde
 patternInstructions: Instruções do molde
 patternIsPattern: 'O molde é {pattern}'
@@ -203,66 +203,66 @@ quote-allie: Você já ouviu falar do freesewing.org? É basicamente a coisa mai
 quote-allie-about: Autora do blog de costura The Aspiring Seamstress.
 quote-ivan: Aplausos para @j__st por criar @freesewing_org uma plataforma em código aberto para moldes de costura sob medida e toda sua grandiosidade
 quote-ivan-about: Co-organizador do Kubernetes London Meetup. Fundador de Kube.camp
-quote-jamie: 'With Freesewing, sewing has moved into the 21st century TODO'
-quote-jamie-about: Author of the popular sewing blog Male Devon Sewing and 2016 Great British Sewing Bee contestant. TODO
-reSendActivationEmail: Re-send activation email TODO
-readyToTryFreesewing: Ready to try Freesewing? TODO
-redraft: Redraft TODO
-redraftDraftHandle: 'Redraft draft {handle} TODO'
-reference: Reference TODO
-removeAllMyData: Remove all my data TODO
-removeAllMyModelData: Remove all my model data TODO
-replay: Replay TODO
-reply: Reply TODO
-requiredMeasurements: Required measurements TODO
-resetPassword: Reset password TODO
-result: Result TODO
-retrievingDraftFromCore: Retrieving draft from core TODO
-revokeConsent: Revoke consent TODO
-rowsFromToOfTotal: 'Rows {from} to {to} of {total} TODO'
-rowsPerPage: Rows per page TODO
-save: Save TODO
-scope: Scope TODO
-seamAllowance: Seam allowance TODO
-search: Search TODO
-seeAlso: See also TODO
-seeBelow: See below TODO
-selectADifferentImage: Select a different image TODO
-selectAnImage: Select an image TODO
-selectThePartsYouWantIncludedInYourDraft: Select the parts you want included in your draft TODO
-settings: Settings TODO
-sewingPatternsForNonAveragePeople: Sewing patterns for non-average people TODO
-share: Share TODO
-shared: Shared TODO
-sharedUpdated: Shared setting updated TODO
-showHelp: Show help TODO
-showcase: Showcase TODO
-showcaseInfo: Showcase info TODO
-signUp: Sign up TODO
-signUpForAFreeAccount: Sign up for a free account TODO
-signingUpOnlyTakesAMinute: Signing up only takes a minute TODO
-signup--text: This should not happen. Please help us out by creating an issue on GitHub TODO
-signup--title: An unknown error occured TODO
-signup-invalid_input-text: 'Please enter a valid email address, and a password TODO'
-signup-invalid_input-title: Invalid input TODO
-signup-no_such_pending_confirmation-text: 'Sorry, but that is not a confirmation code we have on record? Perhaps it expired, in which case you can just sign up again. TODO'
+quote-jamie: 'Com Freesewing, a costura entrou para o século 21'
+quote-jamie-about: Autor do popular blog de costura Male Devon Sewing e concorrente do concurso Great British Sewing Bee de 2016.
+reSendActivationEmail: Enviar novamente o email de ativação
+readyToTryFreesewing: Preparado para testar o Freesewing?
+redraft: Refazer o esboço
+redraftDraftHandle: 'Refazer o esboço {handle}'
+reference: Referência
+removeAllMyData: Remover todos meus dados
+removeAllMyModelData: Remover todos meus dados de modelos
+replay: Repetir
+reply: Responder
+requiredMeasurements: Medidas necessárias 
+resetPassword: Resetar senha
+result: Resultado
+retrievingDraftFromCore: Recuperando esboço do principal
+revokeConsent: Revogar consentimento 
+rowsFromToOfTotal: 'Linhas {from} a {to} de {total}' 
+rowsPerPage: Linhas por página
+save: Salvar
+scope: Escopo
+seamAllowance: Margem de costura
+search: Procurar
+seeAlso: Veja também
+seeBelow: Veja abaixo
+selectADifferentImage: Selecione uma imagem diferente
+selectAnImage: Selecione uma imagem
+selectThePartsYouWantIncludedInYourDraft: Selecione as partes que você quer que sejam incluidas no seu esboço
+settings: Configurações
+sewingPatternsForNonAveragePeople: Moldes de costura para pessoas não medianas
+share: Compartilhar
+shared: Compartilhado
+sharedUpdated: Opção de compartilhamento atualizada
+showHelp: Mostrar ajuda
+showcase: Mostruário
+showcaseInfo: Informações do mostruário
+signUp: Cadastre-se
+signUpForAFreeAccount: Cadastre-se para uma conta gratuita
+signingUpOnlyTakesAMinute: Fazer o cadastro leva só um minuto
+signup--text: Isso não deveria acontecer. Nos ajude criando um issue (problema) no GitHub.
+signup--title: Um erro desconhecido ocorreu
+signup-invalid_input-text: 'Por favor escreva um endereço de email válido e uma senha'
+signup-invalid_input-title: Entrada inválida
+signup-no_such_pending_confirmation-text: 'Desculpe, mas não temos registrado esse código de confirmação. Talvez ele tenha expirado, nesse caso você pode simplesmente se cadastrar outra vez'
 signup-no_such_pending_confirmation-title: There's no such pending confirmation TODO
-signup-signup_pending-text: We already have a pending activation for this email address. We have sent you a fresh copy of the activation email in case you missed the original one. TODO
-signup-signup_pending-title: Your signup is pending activation TODO
-signup-success-text: 'We''ve sent you an email at {email}. TODO'
-signup-user_exists-text: We already have a user with that email address. Perhaps you'd like to login instead? TODO
-signup-user_exists-title: That user exists TODO
-social: Social TODO
-somethingWentWrong: Something went wrong TODO
-startUpload: Start upload TODO
-status: Status TODO
-statusTranslationLanguage: 'Status translation {language} TODO'
-step1: Passo 1
-step2: Passo 2
-step3: Passo 3
-step4: Passo 4
-stopProcessingMyData: Stop processing my data TODO
-stopUpload: Stop upload TODO
+signup-signup_pending-text: Você já possui uma ativação pendente para esse endereço de email. Para o caso de você não ter visto o origianal, nós enviamos uma nova cópia do email de ativiação.
+signup-signup_pending-title: Seu cadastro está com a ativação pendente
+signup-success-text: 'Nós lhe enviamos um email para {email}.'
+signup-user_exists-text: Nós já temos um usuário com esse endereço de email. Será que você gostaria de fazer login?
+signup-user_exists-title: Esse usuário já existe
+social: Social
+somethingWentWrong: Alguma coisa deu errado
+startUpload: Começar upload
+status: Status
+statusTranslationLanguage: 'Status da tradução {language}'
+step1: Passo 1 
+step2: Passo 2 
+step3: Passo 3 
+step4: Passo 4 
+stopProcessingMyData: Parar de processar meus dados
+stopUpload: Parar o upload
 storingDraftData: Storing draft data TODO
 strikethrough: Strikethrough TODO
 svgSourceCode: SVG Source code TODO
