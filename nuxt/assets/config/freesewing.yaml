@@ -64,7 +64,7 @@ i18n:
       patterns: 37
       showcase: 0
     en:
-      app: 402
+      app: 401
       blog: 30
       docs: 316
       i18n: 9
@@ -74,7 +74,7 @@ i18n:
       patterns: 37
       showcase: 51
     es:
-      app: 401
+      app: 400
       blog: 2
       docs: 1
       i18n: 9
@@ -84,7 +84,7 @@ i18n:
       patterns: 37
       showcase: 1
     fr:
-      app: 177
+      app: 176
       blog: 0
       docs: 0
       i18n: 0
@@ -94,7 +94,7 @@ i18n:
       patterns: 4
       showcase: 0
     nl:
-      app: 401
+      app: 400
       blog: 3
       docs: 2
       i18n: 6
@@ -124,7 +124,7 @@ i18n:
       patterns: 0
       showcase: 0
     pt:
-      app: 266
+      app: 265
       blog: 0
       docs: 0
       i18n: 0
@@ -154,7 +154,7 @@ i18n:
       patterns: 0
       showcase: 0
   target:
-    app: 402
+    app: 401
     blog: 30
     docs: 316
     i18n: 9

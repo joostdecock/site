@@ -181,7 +181,6 @@ patronText: '{username} is a {patronTier} since {daysAgo}'
 patrons: Patrons
 pattern: Pattern
 patternDesignTutorial: Pattern design tutorial
-patternDocumentation: Pattern instructions
 patternInstructions: Pattern instructions
 patternIsPattern: 'Pattern is {pattern}'
 patternLineDrawing: '{pattern} line drawing'

@@ -181,7 +181,6 @@ patronText: '{username} est un {patronTier} depuis {daysAgo}'
 patrons: Mécènes
 pattern: Patron
 patternDesignTutorial: Tutoriel de conception de patron
-patternDocumentation: Instructions du patron
 patternInstructions: Pattern instructions TODO
 patternIsPattern: 'Le patron est {pattern}'
 patternLineDrawing: '{pattern} line drawing TODO'
