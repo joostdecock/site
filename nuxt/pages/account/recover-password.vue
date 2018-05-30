@@ -97,7 +97,7 @@ export default {
 
 <style scoped>
 .on-splash {
-  background: #ffffffdd;
+  background: rgba(255, 255, 255, 0.9);
   padding: 5px 40px 5px;
   margin-top: -50px;
   text-align: center;
