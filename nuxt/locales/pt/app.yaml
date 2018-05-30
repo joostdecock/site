@@ -181,7 +181,6 @@ patronText: '{username} é um {patronTier} desde {daysAgo}'
 patrons: Patronos
 pattern: Molde
 patternDesignTutorial: Tutorial de modelagem
-patternDocumentation: Instruções do molde
 patternInstructions: Instruções do molde
 patternIsPattern: 'O molde é {pattern}'
 patternLineDrawing: 'Desenho de linha de {pattern}'

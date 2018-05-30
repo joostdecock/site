@@ -181,7 +181,6 @@ patronText: '{username} is een {patronTier} sinds {daysAgo} '
 patrons: Sponsors
 pattern: Patroon
 patternDesignTutorial: Patroon ontwerp les
-patternDocumentation: Patroon instructies
 patternInstructions: Patroon instructies
 patternIsPattern: 'Patroon is {pattern}'
 patternLineDrawing: '{pattern} lijntekening'

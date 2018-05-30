@@ -9,7 +9,7 @@
       </v-list-tile>
       <v-list-tile :to="$fs.path('/docs/patterns')">
         <v-list-tile-action><v-icon>content_cut</v-icon></v-list-tile-action>
-        <v-list-tile-content>{{ $t('patternDocumentation') }}</v-list-tile-content>
+        <v-list-tile-content>{{ $t('patternInstructions') }}</v-list-tile-content>
       </v-list-tile>
       <v-list-tile :to="$fs.path('/docs/measurements')">
         <v-list-tile-action><v-icon>accessibility</v-icon></v-list-tile-action>
