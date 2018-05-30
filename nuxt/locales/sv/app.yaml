@@ -163,7 +163,7 @@ newTaskForUser: 'Ny uppgift för {user} TODO'
 noChanges: Inga ändringar TODO
 noDraftsFound: Inga skisser hittades TODO
 noFilter: Inga filter TODO
-noIDoNot: 'Nej, jag gör inte TODO'
+noIDoNot: 'Nej, det gör jag inte TODO'
 noIDoNotObject: 'Nej, jag har inga invändningar TODO'
 notShared: Inte delad TODO
 notes: Anteckningar TODO
@@ -320,7 +320,7 @@ txt-footer: Freesewing har skapats av Joost De Cock & medverkande<br>med finansi
 txt-forgot-login: 'Ange ditt användarnamn eller din e-postadress nedan och klicka på <b>@:resetPassword</b> knappen TODO'
 txt-gdpr-1: Europeiska unionens (EU:s) General Data Protection Regulation (GDPR) skyddar dina personuppgifter från samvetslösa datasamlare. Det är en bra sak. TODO
 txt-gdpr-2: 'En av de saker det innebär är att vi behöver få ditt medgivande — med andra ord ditt tillstånd — för att behandla dina personuppgifter. TODO'
-txt-gdpr-3: 'utan ditt medgivande har vi ingen laglig rätt att behandla dina uppgifter och har inget annat val än att radera uppgifterna. TODO'
+txt-gdpr-3: 'Utan ditt medgivande har vi ingen laglig rätt att behandla dina uppgifter och har inget annat val än att radera uppgifterna. TODO'
 txt-gdprCompliant: Freesewing.org respekterar din integritet och dina rättigheter. Vi tillämpar Europeiska unionens (EU:s) General Data Protection Regulation (GDPR). TODO
 txt-homepage-community: 'Allt drivs av frivilliga medverkande. Det finns ingen kommersiell aktör bakom, eller kopplad till, det här projektet. TODO'
 txt-homepage-different: Hur vi är annorlunda TODO
@@ -348,16 +348,16 @@ txt-saOption-patternImperial: Mönsterstandard tum-sömsmån TODO
 txt-saOption-patternMetric: Mönsterstandard cm-sömsmån TODO
 txt-signup-step1: 'Ange din e-postadress och välj ett lösenord. TODO'
 txt-signup-step2: Bekräfta din e-postadress. TODO
-txt-signup-step3: ge oss tillstånd att behandla dina personliga uppgifter. TODO
+txt-signup-step3: Ge oss tillstånd att behandla dina personliga uppgifter. TODO
 txt-slogan: En open source-plattform för måttanpassade sömnadsmönster TODO
-txt-translators1: vi letar efter människor som kan hjälpa oss att översätta. TODO
+txt-translators1: Vi letar efter människor som kan hjälpa oss att översätta. TODO
 txt-translators2: 'När många gör en insats bli arbetet lätt, och det är utmärkt karma att bidra på det här sättet. TODO'
 txt-translators3: 'För att lära dig mer om vad du kan göra, och hur du kan göra det, klicka på länken här nedan. TODO'
 txt-warningDataRestriction: 'När vi väl begränsar ditt konto kan du inte ångra det själv. För att återfå tillgången till ditt konto måste du kontakta oss. TODO'
 txt-warningModelData: 'Det här kommer att radera alla dina modeller, och alla dina skisser. TODO'
 txt-warningProfileData: 'Det här kommer att radera alla dina modeller, alla dina skisser, alla dina kommentarer, och ditt konto. Allt kommer att försvinna. TODO'
 txt-withOrWithoutBreasts: 'För passform till bröst behövs en rad extra mått som inte är relevanta om du inte har bröst. Om du anger att din modell inte har bröst, kommer vi inte att visa dessa mått eftersom de är irrelevanta för dig. Om du är osäker på vad du ska välja, välj bröst. TODO'
-txt-withOrWithoutBreasts-explainer: 'På andra webbplatser kan den här frågan vara formulerad som ''man ellr kvinna?''. här gillar vi inte att placera människor i fack. Allt vi bryr oss om är passformen till din bröstkorg. TODO'
+txt-withOrWithoutBreasts-explainer: 'På andra webbplatser kan den här frågan vara formulerad som ''man eller kvinna?''. Här gillar vi inte att placera människor i fack. Allt vi bryr oss om är passformen till din bröstkorg. TODO'
 type: Skriv TODO
 units: Enheter TODO
 unitsUpdated: Enheter angivna TODO
