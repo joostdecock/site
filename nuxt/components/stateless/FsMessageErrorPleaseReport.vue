@@ -1,5 +1,5 @@
 <template>
-  <blockquote class="error text-xs-left fs-m800 mt-5">
+  <blockquote class="error text-xs-left fs-m800 mt-5 fs-bq">
     <h3>{{ $t('ohNo') }}</h3>
     <h5>{{ $t('somethingWentWrong') }}</h5>
     <p>{{ $t('txt-errorPleaseReportIssue') }}</p>
