@@ -45,7 +45,7 @@ consentGiven: Consentimiento otorgado
 contactUs: Contactáctanos
 content: Contenido
 contents: Contenidos
-contributeToFreesewing: Contribute to freesewing TODO
+contributeToFreesewing: Contribuye con freesewing
 coordinator: Coordinador
 coreLink: Enlace principal
 countAvailable: '{count} disponible '
@@ -213,7 +213,7 @@ removeAllMyData: Borrar todos mis datos
 removeAllMyModelData: Borrar todos mis datos de modelo
 replay: Ejecutar de nuevo
 reply: Responder
-reportThisOnGitHub: Report this on GitHub TODO
+reportThisOnGitHub: Notifícalo en GitHub
 requiredMeasurements: Medidas requeridas
 resetPassword: Restablecer contraseña
 result: Resultado
@@ -318,7 +318,7 @@ txt-email-sharing: Nunca compartiremos esto con nadie
 txt-emailChangeConfirmationNotFound: 'Lo sentimos, pero no tenemos ningún cambio de E-mail pendiente para este código de confirmación. Tal vez ha expirado, en cuyo caso puedes hacer el cambio de nuevo en tus ajustes. '
 txt-emailNotFound: 'Si no puedes encontrar el email mira en tu carpeta de SPAM, o contacta con nosotros. '
 txt-emailWillWorkToo: 'Si no conoces tu nombre de usuario, tu dirección de correo electrónico también funcionará'
-txt-errorPleaseReportIssue: Please report this issue on GitHub so we can fix it TODO
+txt-errorPleaseReportIssue: Por favor, notifica este problema en GitHub para que podamos resolverlo
 txt-footer: Freesewing está hecho por Joost De Cock & y colaboradores<br>con el apoyo económico de nuestros patrocinadores
 txt-forgot-login: Entra tu nombre de usuario o correo electrónico debajo y pulsa el botón de restablecer contraseña
 txt-gdpr-1: La Regulación General de Protección de Datos (GDPR) de la Unión Europea(EU) protege tus datos personales de acaparadores de datos sin escrúpulos. Eso es bueno.
