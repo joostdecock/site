@@ -1,10 +1,18 @@
 <template>
-  <div class="py-5" v-html="content.body"></div>
+  <div class="py-5">
+    <fs-docs-pattern-option-image :pattern="pattern" :option="option" />
+    <div v-html="content.body"></div>
+  </div>
 </template>
 
 <script>
+import FsDocsPatternOptionImage from '~/components/stateless/FsDocsPatternOptionImage'
+
 export default {
   name: 'FsOptionHelp',
+  components: {
+    FsDocsPatternOptionImage
+  },
   props: {
     pattern: {
       type: String,

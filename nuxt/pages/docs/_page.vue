@@ -14,6 +14,7 @@
       <fs-docs-patterns v-if="page.patternsIndex" />
       <fs-docs-pattern v-if="page.patternIndex" :page="page"/>
       <fs-docs-measurements v-if="page.requiredMeasurements" :pattern="page.pattern" />
+      <fs-docs-pattern-option-image v-if="page.pattern && page.option" :pattern="page.pattern" :option="page.option" />
       <fs-docs-pattern-options v-if="page.patternOptionsIndex" :pattern="page.pattern" />
       <nuxtdown-body :body="page.body" class="fs-content fs-text" />
     </article>
@@ -28,6 +29,7 @@ import FsDocsMeasurements from '~/components/stateless/FsDocsMeasurements'
 import FsDocsPatterns from '~/components/stateless/FsDocsPatterns'
 import FsDocsPattern from '~/components/stateless/FsDocsPattern'
 import FsDocsPatternOptions from '~/components/stateless/FsDocsPatternOptions'
+import FsDocsPatternOptionImage from '~/components/stateless/FsDocsPatternOptionImage'
 
 export default {
   components: {
@@ -38,6 +40,7 @@ export default {
     FsDocsPatterns,
     FsDocsPattern,
     FsDocsPatternOptions,
+    FsDocsPatternOptionImage,
   },
   asyncData: async function ({ app, route }) {
     const data = {}
