@@ -213,6 +213,7 @@ removeAllMyData: Verwijder all mijn gegevens
 removeAllMyModelData: Verwijder all mijn model gegevens
 replay: Nog een keer
 reply: Beantwoorden
+reportThisOnGitHub: Melden via GitHub
 requiredMeasurements: Vereiste maten
 resetPassword: Herstel wachtwoord
 result: Resultaat
@@ -317,6 +318,7 @@ txt-email-sharing: We geven jouw e-mail adres nooit door aan derden
 txt-emailChangeConfirmationNotFound: Helaas kunnen we geen hangende E-mail wijzinging vinden voor deze bevestigingscode. Misschien is de termijn voor de wijziging verlopen. In dat geval kan U gewoon weer de aanpassing doorvoeren in uw instellingen.
 txt-emailNotFound: 'E-mail niet te vinden? Controleer je spam folder, of neem contact met ons op.'
 txt-emailWillWorkToo: 'Als je je @:username niet meer weet, vul dan je @:emailAddress in. Dat werkt ook'
+txt-errorPleaseReportIssue: Gelieve dit te melden via GitHub zodat we dit probleem kunnen oplossen
 txt-footer: Freesewing is een project van Joost De Cock & vrijwillige medewerkers<br>met de financiële steun van onze sponsors
 txt-forgot-login: 'Vul hieronder je gebruikersnaam of E-mail adres in, en klik op de <b>@:resetPassword</b> knop'
 txt-gdpr-1: De Algemene Verordening Gegevensbescherming (AVG) van de Europese Unie (EU) beschermd jouw persoonlijke gegevens van data hamsteraars zonder scrupules. Dat is een goede zaak.

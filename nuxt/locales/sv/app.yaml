@@ -1,400 +1,403 @@
-100PercentCommunity: 100 % gemenskap TODO
-gratis100PercentOpenSource: 100 % öppen kod TODO
-aCodeBlock: Ett kodblock TODO
-aboutFreesewing: Om Freesewing TODO
-add: Lägg till TODO
-addAModel: Lägg till en modell TODO
-addComment: Lägg till en kommentar TODO
-all: Alla TODO
-alreadyHaveAnAccount: Har du redan ett konto? TODO
-areYouSureAboutThis: Är du 100 % säker på det här? TODO
-avatar: Avatar DONE TODO
-avatarUpdated: Avatar uppdaterad TODO
-averagePeopleDontExist: Genomsnittliga människor existerar inte TODO
-basicTheme: Grundläggande tema TODO
-basics: Grundläggande TODO
-becomeAPatron: Bli stödmedlem TODO
-bio: Biografi TODO
-bioUpdated: Biografi uppdaterad TODO
-blockquote: Blockcitat/Block quote TODO
-blog: Blogg TODO
-blogPost: Blogginlägg TODO
-bold: Fetstil TODO
-breasts: Bröst TODO
-breastsUpdated: Inställning för bröst uppdaterad TODO
-by: av TODO
-cancel: Avbryt TODO
-chatOnGitter: Chatta på Gitter TODO
-chatWithUs: Chatta med oss TODO
-chooseAModel: Välj en modell TODO
-chooseANewPassword: Välj ett nytt lösenord TODO
-chooseAPattern: Välj ett mönster TODO
-chooseYourOptions: Välj dina alternativ TODO
-close: Stäng TODO
-code: Kod TODO
-comments: Kommentarer TODO
-community: Gemenskap TODO
-compare: Jämför TODO
-completePattern: Komplett mönster TODO
-connectingToSomeApi: 'Ansluter till {api} API TODO'
-consent: Samtycke TODO
-consentForModelData: Samtycke för modell-uppgifter TODO
-consentForProfileData: Samtycke för profiluppgifter TODO
-consentGiven: Samtycke ges TODO
-contactUs: Kontakta oss TODO
-content: Innehåll TODO
-contents: Innehåll TODO
-coordinator: Samordnare TODO
-coreLink: Kärnlänk/Core link TODO
-countAvailable: '{count} tillgänglig TODO'
-countTranslated: '{count} översatt TODO'
-createAnAccount: Skapa ett konto TODO
-createIssueOnGithub: Skapa ett inlägg på GitHub TODO
-createModel: Skapa modell TODO
-createMyAccount: Skapa mitt konto TODO
-created: Skapat TODO
-currentPassword: Nuvarande lösenord TODO
-data: Data DONE TODO
-date: Datum TODO
-daysAgo: '{days} dagar sedan TODO'
-delete: Radera TODO
-deleteThisDraft: Radera den här skissen TODO
-description: Beskrivning TODO
-details: Detaljer TODO
-difficulty: Svårighet TODO
-docs: Dokument TODO
-documentation: Dokumentation TODO
-documentationForDevelopers: Dokumentation för utvecklare TODO
-documentationForTranslators: Dokumentation för översättare TODO
-documentationOverview: Dokumentationsöversikt TODO
-download: Ladda ner TODO
-draft: Skiss TODO
-draftAPattern: Rita ett mönster TODO
-draftOptions: Rita alternativ TODO
-draftPattern: 'Rita {pattern} TODO'
-draftPatternForModel: 'Rita {pattern} för {model} TODO'
-draftThePattern: Rita mönstret TODO
-draftingPattern: 'Ritar {pattern} TODO'
-drafts: Skisser TODO
-edit: Redigera TODO
-editOnGithub: Redigera på GitHub TODO
-email: E-posta TODO
-emailAddress: E-postadress TODO
-emailUpdatePending: E-postuppdatering väntar. TODO
-emails: E-postmeddelanden TODO
-enterYourCurrentPassword: Ange ditt nuvarande lösenord TODO
-enterYourNewPassword: Ange ditt nya lösenord TODO
-error-unknown: Ett okänt fel inträffade TODO
-error-username_taken: Användarnamn upptaget TODO
-exportMyData: Exportera mina uppgifter TODO
-filterByPattern: Filtrera efter mönster TODO
-forContributors: För medverkande TODO
-forMoreInfoRtfm: 'För mer information, läs dokumentationen: TODO'
-forUsername: 'För {username} TODO'
-forUsers: För användare TODO
-fork: Förgrening/variant/fork TODO
-forkDraftHandle: 'Förgreningsutkast/Fork draft {handle} TODO'
-freesewing: Freesewing DONE TODO
-freesewingContributors: Medverkande till Freesewing TODO
-freesewingOnGithub: Freesewing på GitHub TODO
-freesewingPatrons: Freesewing-stödmedlemmar TODO
-freezeMyAccount: Frys mitt konto TODO
-fullSizePdf: PDF i full storlek TODO
-fundamentals: Grundläggande TODO
-getHelp: Få hjälp TODO
-github: GitHub DONE TODO
-githubUpdated: Användarnamn för GitHub uppdaterat TODO
-goodToKnow: Bra att veta TODO
-hi: Hej TODO
-home: Hem TODO
-howCanWeHelpYou: Hur kan vi hjälpa dig? TODO
-howToTakeMeasurements: Hur du tar mått TODO
-i18n: Internationalisering (i18n) TODO
-iForgotMyPassword: Jag har glömt mitt lösenord TODO
-iForgotMyUsername: Jag har glömt mitt användarnamn TODO
-image: Bild TODO
-imperial: Imperialmått TODO
-imperialUnits: Imperialmått (tum) TODO
-in: I TODO
-inch: Tum TODO
-info: Information TODO
-instagram: Instagram DONE TODO
-instagramUpdated: Instagramkonto uppdaterat TODO
-italics: Kursivt TODO
-joinTheTranslationTeam: 'Även om du aldrig har bidragit till ett open source-projekt, är översättning en smidig ingång till medverkarberömmelse. TODO'
-justAMoment: Bara ett ögonblick TODO
-key: Nyckel TODO
-language: Språk TODO
-languageLanguageFiles: '{language} språkfiler TODO'
-layout: Layout DONE TODO
-learnMore: Lär dig mer TODO
-learnToDesignPatterns: Lär dig att designa mönster TODO
-letterPdf: PDF i letter-format TODO
-loadingModelData: Laddar modelldata TODO
-loadingResult: Laddar resultat TODO
-locale: Språk TODO
-localeUpdated: Språkval uppdaterat TODO
-logIn: Logga in TODO
-logInAs: Logga in som TODO
-logOut: Logga ut TODO
-logOutAs: 'Logga ut som {user} TODO'
-loginFailed: Inloggning misslyckades TODO
-makeItBetter: Förbättra TODO
-markdownSyntax: MarkDown-syntax TODO
-measurementUpdated: Mått uppdaterade TODO
-measurements: Mått TODO
-measurementsRequiredForPattern: 'Mått som behövs för {pattern} TODO'
-messages: Meddelanden TODO
-metric: Metrisk TODO
-metricUnits: Metriska mått (cm) TODO
-model: Modell TODO
-modelIsModel: 'Modellen är {model} TODO'
-models: Modeller TODO
-monthsAgo: '{months} månader sedan TODO'
-name: Namn TODO
-nameOfTheModel: Modellens namn TODO
-nameUpdated: Namn uppdaterat TODO
-newDraft: Ny skiss TODO
-newModel: Ny modell TODO
-newPassword: Nytt lösenord TODO
-newPatternDraft: 'Ny {pattern} -skiss TODO'
-newTaskForUser: 'Ny uppgift för {user} TODO'
-'no': Inga TODO
-noChanges: Inga ändringar TODO
-noDraftsFound: Inga skisser hittades TODO
-noFilter: Inga filter TODO
-noIDoNot: 'Nej, det gör jag inte TODO'
-noIDoNotObject: 'Nej, jag har inga invändningar TODO'
-notShared: Inte delad TODO
-notes: Anteckningar TODO
-ohNo: Åh nej! TODO
-okThatsDone: 'Ok, det är klart TODO'
-onlySelectedPatternParts: bara valda mönsterdelar TODO
-pageNotFound: Sidan du letar efter kan inte hittas. TODO
-paperlessTheme: Papperslöst tema TODO
-password: Lösenord TODO
-passwordResetPending: Lösenordsåterställning väntar. TODO
-passwordUpdated: Lösenord uppdaterat TODO
-patronText: '{username} är en {patronTier} sedan {daysAgo} TODO'
-patrons: Srödmedlemmar TODO
-pattern: Mönster TODO
-patternDesignTutorial: Mönsterdesign, handledning TODO
-patternDocumentation: Mönsterdokumentation TODO
-patternInstructions: Mönsterinstruktioner TODO
-patternIsPattern: 'Mönstret är {pattern} TODO'
-patternLineDrawing: '{pattern} streckteckning TODO'
-patternOptions: Mönsteralternativ TODO
-patternParts: Mönsterdelar TODO
-patterns: Mönster TODO
-pleaseCheckYourInbox: Du kommer att få e-post med vidare instruktioner TODO
-pleaseUpgradeThisDraft: Vänligen uppgradera denna skiss. TODO
-postComment: Publicera kommentar TODO
-postInfo: Publicera information TODO
-postReply: Publicera svar TODO
-preferences: Inställningar TODO
-privacy: Integritet TODO
-privacyNotice: Integritetsmeddelande TODO
-processingDraftOptions: Bearbetar skiss-alternativ TODO
-profile: Profil TODO
-quickPick: Snabb bild TODO
-quote-allie: Har du hört talas om freesewing.org? Det är i princip det bästa som har hänt! TODO
-quote-allie-about: Författare till sömnadsbloggen The Aspiring Seamstress. TODO
-quote-ivan: Heder till @j__st för att ha skapat @freesewing_org, en open source-plattform för måttanpassade sömnadsmönster, och för allmän förträfflighet TODO
-quote-ivan-about: Medarrangör till Kubernetes London Meetup. Grundare av Kube.camp TODO
-quote-jamie: 'Med Freesewing, har sömnad förflyttats till 2000-talet TODO'
-quote-jamie-about: Författare till den populära sömnadsbloggen Male Devon Sewing och tävlande i Great British Sewing Bee 2016. TODO
-reSendActivationEmail: Skicka aktiverings-e-post igen TODO
-readyToTryFreesewing: Redo att testa Freesewing? TODO
-redraft: Eita om TODO
-redraftDraftHandle: 'Rita om skiss {handle} TODO'
-reference: Referens TODO
-removeAllMyData: Radera alla mina uppgifter TODO
-removeAllMyModelData: Radera alla mina modell-uppgifter TODO
-replay: Repris TODO
-reply: Svara TODO
-requiredMeasurements: Mått som behövs TODO
-resetPassword: återställ lösenord TODO
-result: Resultat TODO
-retrievingDraftFromCore: Hämtar skiss från grunden TODO
-revokeConsent: Återkalla samtycke TODO
-rowsFromToOfTotal: 'Rader {from} till {to} av {total} TODO'
-rowsPerPage: Rader per sida TODO
-save: Spara TODO
-scope: Omfattning TODO
-seamAllowance: Sömsmån TODO
-search: Sök TODO
-seeAlso: Se också TODO
-seeBelow: Se nedan TODO
-selectADifferentImage: Välj en annan bild TODO
-selectAnImage: Välj en bild TODO
-selectThePartsYouWantIncludedInYourDraft: Välj de delar du vill ha med i din skiss TODO
-settings: Inställningar TODO
-sewingPatternsForNonAveragePeople: Sömnadsmönster för icke genomsnittliga personer TODO
-share: Dela TODO
-shared: Delad TODO
-sharedUpdated: Delad inställning uppdaterad TODO
-showHelp: Visa hjälp TODO
-showcase: Visa upp TODO
-showcaseInfo: Information om att visa upp TODO
-signUp: Registrera dig TODO
-signUpForAFreeAccount: Registrera dig för ett gratis konto TODO
-signingUpOnlyTakesAMinute: Registreringen tar bara en minut TODO
-signup--text: Det här borde inte hända. Hjälp oss gärna att rätta till det genom att skapa ett inlägg på GitHub TODO
-signup--title: Ett okänt fel inträffade TODO
-signup-invalid_input-text: 'Vänligen ange en giltig e-postadress och ett lösenord TODO'
-signup-invalid_input-title: Ogiltig inmatning TODO
-signup-no_such_pending_confirmation-text: 'Tyvärr, vi har ingen sådan bekräftelsekod registrerad. Kanske har den gått ut, i så fall kan du bara regitrera dig igen. TODO'
-signup-no_such_pending_confirmation-title: Det finns ingen sådan bekräftelse som väntar TODO
-signup-signup_pending-text: Vi väntar redan på aktivering av den här e-postadressen. Vi har skickat dig en ny kopia av aktiveringsmeddelandet om du inte hittar originalet. TODO
-signup-signup_pending-title: Din registrering väntar på att aktiveras TODO
-signup-success-text: 'Vi har skickat e-post till dig på {email}. TODO'
-signup-user_exists-text: Vi har redan en användare med den här e-postadressen. Kanske vill du logga in istället? TODO
-signup-user_exists-title: Den användaren existerar TODO
-social: Social DONE TODO
-somethingWentWrong: Någonting gick fel TODO
-startUpload: Börja ladda upp TODO
-status: Status DONE TODO
-statusTranslationLanguage: 'Status översättning {language} TODO'
-step1: Steg 1 TODO
-step2: Steg 2 TODO
-step3: Steg 3 TODO
-step4: Steg 4 TODO
-stopProcessingMyData: Sluta bearbeta mina data TODO
-stopUpload: Avbryt uppladdning TODO
-storingDraftData: Sparar skiss-data TODO
-strikethrough: Genomstruken TODO
-svgSourceCode: SVG-källkod TODO
-tabloidPdf: Tabloid-PDF TODO
-taskCompleted: Uppgift slutförd TODO
-theme: Tema TODO
-themeUpdated: Layout-inställningar TODO
-thereIsNoWayBackFromThis: Det finns ingen väg tillbaka från det här. TODO
-thisContentIsNotAvailableInLanguage: Det här innehållet finns inte tillgängligt på engelska. TODO
-thisDraftPredatesThisFeature: Den här skissen föregår den här funktionen. TODO
-thisIsTheCurrentStatusOfOurTranslations: Det här är nuvarande status för våra översättningar. TODO
-thisPageIsNotIntendedForLoggedInUsers: Den här sidan är inte avsedd för inloggade användare TODO
-thisPageIsOnlyAvailableToFreesewingUsers: Den här sidan är bara tillgänglig för Freesewing-användar TODO
-tip: Tips TODO
-title: Titel TODO
-today: I dag TODO
-translationTeam: Översättningsteam TODO
-troubleLoggingIn: Problem med att logga in? TODO
-tryAgain: Försök igen TODO
-twitter: Twitter DONE TODO
-twitterUpdated: Twitter-konto uppdaterat TODO
-txt-avatarDropzoneText: 'Dra och släpp en bild här, eller klicka på knappen för att välja en bland dina filer. TODO'
-txt-avatarDropzoneTitle: Släpp din bild här TODO
-txt-breastMeasurement-text: Det här är ett mått som bara är relevant om din modell har bröst. TODO
-txt-breastMeasurement-title: Detta mått är bara relevant för bröst TODO
-txt-changeRequiresConfirmation: Den här förändringen kräver bekräftelse via E-post TODO
-txt-clickEmailLink: Vänligen klicka på länken i e-postmeddelandet för att fortsätta. TODO
-txt-consentModel: Ger du medgivande till att behandla dina modelluppgifter? TODO
-txt-consentModelAnswerWhat: 'För varje modell dess <b>measurements</b>, <b>breasts settings</b>, och <b>password</b>. TODO'
-txt-consentModelAnswerWhatOptional: 'Valfritt: En modell <b>picture</b> och det <b>name</b> du ger din modell. TODO'
-txt-consentModelAnswerWhy: 'För att <b>draft made-to-measure sewing patterns</b>, behöver vi <b>body measurements</b>. TODO'
-txt-consentModelObjectNote: 'Note: Freesewing publicerar anonymiserade mått som öppna data för vetenskaplig forskning. TODO'
-txt-consentModelObjectWhy: 'Dessa uppgifter är anonyma och används för att studera och förstå människans form i alla dess skepnader, så att vi kan få bättre sömnadsmönster och kläder som sitter bättre. TODO'
-txt-consentModelQuestionWhat: Vad är modelluppgifter? TODO
-txt-consentProfile: Ger du medgivande till att behandla dina profiluppgifter? TODO
-txt-consentProfileAnswerShare: '<b>No</b>, aldrig. TODO'
-txt-consentProfileAnswerTiming: '<b>12 months</b> efter din senaste inloggning, eller tills du <b>remove</b> ditt konto eller <b>revoke</b> detta medgivande. TODO'
-txt-consentProfileAnswerWhat: 'Din <b>email address</b>, <b>username</b>, och <b>password</b>. TODO'
-txt-consentProfileAnswerWhatOptional: 'Valfritt: A <b>profile picture</b>, och <b>social media accounts</b> TODO'
-txt-consentProfileAnswerWhy: 'För att <b>authenticate</b> dig, <b>contact</b> när du behövde, och bygga en <b>community</b>. TODO'
-txt-consentProfileQuestionShare: Delar vi det med andra? TODO
-txt-consentProfileQuestionTiming: Hur länge behåller vi det? TODO
-txt-consentProfileQuestionWhat: Vad är profiluppgifter? TODO
-txt-consentProfileQuestionWhy: Varför behöver vi det? TODO
-txt-contentLocaleFallback: Därför visar vi dig den engelska versionen istället. TODO
-txt-contentNotTranslated: 'Tyvärr, den här sidan har inte (ännu) blivit översatt till {language}. TODO'
-txt-dataExport: 'Om du vill kan vi exportera alla uppgifter vi har lagrat för dig. TODO'
-txt-dataExportQueued: Exporten av dina uppgifter har satts i kö. Vi skickar et e-postmeddelande när det är klart, med en nedladdningslänk. TODO
-txt-didYouSpotATypo: 'Har du hittat ett fel? Känner du att något saknas, eller behöver förtydligas? TODO'
-txt-doYouObject: Invänder du mot att dina anonymiserade uppgifter används för vetenskaplig forskning? TODO
-txt-editThisPageOnline: Du kan redigera den här sidan online och skicka in dina ändringar. TODO
-txt-email-sharing:Vi kommer aldrig att dela din e-postadress med någon annan TODO
-txt-emailChangeConfirmationNotFound: 'Tyvärr, men vi har ingen pågående e-poständring för denna bekräftelsekod. Kanske har den blivit för gammal, i så fall kan du helt enkelt göra om ändringen i dina inställningar. TODO'
-txt-emailNotFound: 'Om du inte kan hitta mejlet, titta i din spam-folder, eller kontakta oss. TODO'
-txt-emailWillWorkToo: 'Om du inte kommer ihåg ditt @:username, så fungerar din @:emailAddress också TODO'
-txt-footer: Freesewing har skapats av Joost De Cock & medverkande<br>med finansiell hjälp från våra stödmedlemmar TODO
-txt-forgot-login: 'Ange ditt användarnamn eller din e-postadress nedan och klicka på <b>@:resetPassword</b> knappen TODO'
-txt-gdpr-1: Europeiska unionens (EU:s) General Data Protection Regulation (GDPR) skyddar dina personuppgifter från samvetslösa datasamlare. Det är en bra sak. TODO
-txt-gdpr-2: 'En av de saker det innebär är att vi behöver få ditt medgivande — med andra ord ditt tillstånd — för att behandla dina personuppgifter. TODO'
-txt-gdpr-3: 'Utan ditt medgivande har vi ingen laglig rätt att behandla dina uppgifter och har inget annat val än att radera uppgifterna. TODO'
-txt-gdprCompliant: Freesewing.org respekterar din integritet och dina rättigheter. Vi tillämpar Europeiska unionens (EU:s) General Data Protection Regulation (GDPR). TODO
-txt-homepage-community: 'Allt drivs av frivilliga medverkande. Det finns ingen kommersiell aktör bakom, eller kopplad till, det här projektet. TODO'
-txt-homepage-different: Hur vi är annorlunda TODO
-txt-homepage-draft: 'Välj ett av dina mönster, välj en modell, och välj dina alternativ. Vi gör resten. TODO'
-txt-homepage-how: Hur det fungerar TODO
-txt-homepage-join: Gör som tusentals andra och registrera dig för ett gratis konto på freesewing.org. TODO
-txt-homepage-model: Alla våra mönster är skapas efter dina mått. Så det första du ska göra är att ta fram ditt måttband. TODO
-txt-homepage-opensource: 'Vår plattform, våra mönster, och till och med den här webbplatsen. All vår kod finns tillgänglig på GitHub. Du får gärna skicka in förslag på ändringar, så kallade pull requests! TODO'
-txt-homepage-patrons: Freesewing möjliggörs genom den finansiella hjälpen från våra stödmedlemmar. De håller det här skeppet flytande. TODO
-txt-homepage-quotes: Vad säger andra TODO
-txt-joinTheTranslationTeam1: 'Även om du aldrig har bidragit till ett open source-projekt, är översättning en smidig ingång till medverkarberömmelse. TODO'
-txt-joinTheTranslationTeam2: 'Det spelar ingen roll om du översätter några få ord eller meningar, eller tar dig an ett helt språk själv. Varje bidrag räknas, och om många bidrar blir arbetet lätt. TODO'
-txt-joinTheTranslationTeam3: 'Läs dokumentationen för översättare för att komma igång. Oroa dig inte, det är enkelt. TODO'
-txt-missingBlogPosts: Alla blogginlägg har inte översatts till engelska — men du kan ändra på det TODO
-txt-modelsWithMissingMeasurements: 'Dessa modeller saknar några av de mått som behövs för att kunna rita det här mönstret: TODO'
-txt-newModel: 'För att komma igång, ge din modell ett namn. TODO'
-txt-password-policy: Vi framtvingar ingen lösenordspolicy TODO
-txt-passwordRecoverConfirmationNotFound: 'Tyvärr, men vi har ingen pågående lösenordsändring för denna bekräftelsekod. Kanske har den blivit för gammal, i så fall kan du helt enkelt göra en ny förfrågan. TODO'
-txt-resend: 'Du kan registrera dig igen med samma e-postadress, så skickar vi ett nytt bekräftelsemeddelande. TODO'
-txt-saOption-custom: Anpassa sömsmån TODO
-txt-saOption-imperial: Standard-sömsmån, tum TODO
-txt-saOption-metric: Standard-sömsmån, cm TODO
-txt-saOption-none: Inkludera inte sömsmån TODO
-txt-saOption-patternImperial: Mönsterstandard tum-sömsmån TODO
-txt-saOption-patternMetric: Mönsterstandard cm-sömsmån TODO
-txt-signup-step1: 'Ange din e-postadress och välj ett lösenord. TODO'
-txt-signup-step2: Bekräfta din e-postadress. TODO
-txt-signup-step3: Ge oss tillstånd att behandla dina personliga uppgifter. TODO
-txt-slogan: En open source-plattform för måttanpassade sömnadsmönster TODO
-txt-translators1: Vi letar efter människor som kan hjälpa oss att översätta. TODO
-txt-translators2: 'När många gör en insats bli arbetet lätt, och det är utmärkt karma att bidra på det här sättet. TODO'
-txt-translators3: 'För att lära dig mer om vad du kan göra, och hur du kan göra det, klicka på länken här nedan. TODO'
-txt-warningDataRestriction: 'När vi väl begränsar ditt konto kan du inte ångra det själv. För att återfå tillgången till ditt konto måste du kontakta oss. TODO'
-txt-warningModelData: 'Det här kommer att radera alla dina modeller, och alla dina skisser. TODO'
-txt-warningProfileData: 'Det här kommer att radera alla dina modeller, alla dina skisser, alla dina kommentarer, och ditt konto. Allt kommer att försvinna. TODO'
-txt-withOrWithoutBreasts: 'För passform till bröst behövs en rad extra mått som inte är relevanta om du inte har bröst. Om du anger att din modell inte har bröst, kommer vi inte att visa dessa mått eftersom de är irrelevanta för dig. Om du är osäker på vad du ska välja, välj bröst. TODO'
-txt-withOrWithoutBreasts-explainer: 'På andra webbplatser kan den här frågan vara formulerad som ''man eller kvinna?''. Här gillar vi inte att placera människor i fack. Allt vi bryr oss om är passformen till din bröstkorg. TODO'
-type: Skriv TODO
-units: Enheter TODO
-unitsUpdated: Enheter angivna TODO
-updates: Uppdaterar TODO
-upgrade: Uppgradera TODO
-upgradeRequired: Uppgradering krävs TODO
-useDecimalsOrFractions: Använd decimaler (1.25) eller bråktal (1 1/4) TODO
-user: Användare TODO
-userHasBeenWithUsSince: '{user} har varit med oss {since} TODO'
-userIsAPatron: '{user} är en stödmedlem TODO'
-username: Användarnamn TODO
-usernameOrEmail: '@:username eller @:emailAddress TODO'
-usernameUpdated: Användarnamn uppdaterat TODO
-users: Användare TODO
-version: Versioner TODO
-visitPatronProfile: Besök den här stödmedlemmens profilsida TODO
-volunteerVerb: Anmäl dig som frivillig TODO
-weAreLoadingDataFromTheBackend: vi laddar data från systemet TODO
-weAreValidatingYourConfirmationCode: Vi validerar din bekräftelsekod TODO
-weCantHelpYouWithThis: Vi kan inte hjälpa dig med det här TODO
-weNeedYourConsent: Vi behöver ditt medgivande TODO
-welcomeAboard: Välkommen ombord TODO
-withBreasts: Med bröst TODO
-withOrWithoutBreasts: Med eller utan bröst? TODO
-withoutBreasts: Utan bröst TODO
-wouldYouLikeToLogOut: Vill du logga ut? TODO
-yearsAgo: '{years} år sedan | {years} år sedan TODO'
-'yes': Ja TODO
-yesIDo: 'Ja, det gör jag TODO'
-yesIDoObject: 'Ja, jag motsätter mig TODO'
-yesterday: I går TODO
-youAreCurrentlyLoggedIn: Du är inloggad. TODO
-youAreNotAnAdmin: Du är inte en administratör TODO
-youAreNotLoggedIn: Du är inte inloggad. TODO
-youCanUseMarkdownFormatting: Du kan använda MarkDown-formatering TODO
-youDoNotObjectToSharingAnonymizedDataForResearch: Du motsätter dig inte att dela anonymiserad data för forskningsändamål TODO
-youHaveTheRightToObjectToThis: Du har rätt att neka till detta TODO
-youObjectToSharingAnonymizedDataForResearch: Du motsätter dig att dela anonymiserad data för forskningsändamål TODO
-yourPrivacy: Din integritet TODO
-yourRights: Dina rättigheter TODO
+100PercentCommunity: 100 % gemenskap
+100PercentFree: 100% free TODO
+100PercentOpenSource: 100% open source TODO
+aCodeBlock: Ett kodblock
+aboutFreesewing: Om Freesewing
+add: Lägg till
+addAModel: Lägg till en modell
+addComment: Lägg till en kommentar
+all: Alla
+alreadyHaveAnAccount: Har du redan ett konto?
+areYouSureAboutThis: Är du 100 % säker på det här?
+avatar: Avatar DONE
+avatarUpdated: Avatar uppdaterad
+averagePeopleDontExist: Genomsnittliga människor existerar inte
+basicTheme: Grundläggande tema
+basics: Grundläggande
+becomeAPatron: Bli stödmedlem
+bio: Biografi
+bioUpdated: Biografi uppdaterad
+blockquote: Blockcitat/Block quote
+blog: Blogg
+blogPost: Blogginlägg
+bold: Fetstil
+breasts: Bröst
+breastsUpdated: Inställning för bröst uppdaterad
+by: av
+cancel: Avbryt
+chatOnGitter: Chatta på Gitter
+chatWithUs: Chatta med oss
+chooseAModel: Välj en modell
+chooseANewPassword: Välj ett nytt lösenord
+chooseAPattern: Välj ett mönster
+chooseYourOptions: Välj dina alternativ
+close: Stäng
+code: Kod
+comments: Kommentarer
+community: Gemenskap
+compare: Jämför
+completePattern: Komplett mönster
+connectingToSomeApi: 'Ansluter till {api} API '
+consent: Samtycke
+consentForModelData: Samtycke för modell-uppgifter
+consentForProfileData: Samtycke för profiluppgifter
+consentGiven: Samtycke ges
+contactUs: Kontakta oss
+content: Innehåll
+contents: Innehåll
+contributeToFreesewing: Contribute to freesewing TODO
+coordinator: Samordnare
+coreLink: Kärnlänk/Core link
+countAvailable: '{count} tillgänglig '
+countTranslated: '{count} översatt '
+createAnAccount: Skapa ett konto
+createIssueOnGithub: Skapa ett inlägg på GitHub
+createModel: Skapa modell
+createMyAccount: Skapa mitt konto
+created: Skapat
+currentPassword: Nuvarande lösenord
+data: Data DONE
+date: Datum
+daysAgo: '{days} dagar sedan '
+delete: Radera
+deleteThisDraft: Radera den här skissen
+description: Beskrivning
+details: Detaljer
+difficulty: Svårighet
+docs: Dokument
+documentation: Dokumentation
+documentationForDevelopers: Dokumentation för utvecklare
+documentationForTranslators: Dokumentation för översättare
+documentationOverview: Dokumentationsöversikt
+download: Ladda ner
+draft: Skiss
+draftAPattern: Rita ett mönster
+draftOptions: Rita alternativ
+draftPattern: 'Rita {pattern} '
+draftPatternForModel: 'Rita {pattern} för {model} '
+draftThePattern: Rita mönstret
+draftingPattern: 'Ritar {pattern} '
+drafts: Skisser
+edit: Redigera
+editOnGithub: Redigera på GitHub
+email: E-posta
+emailAddress: E-postadress
+emailUpdatePending: E-postuppdatering väntar.
+emails: E-postmeddelanden
+enterYourCurrentPassword: Ange ditt nuvarande lösenord
+enterYourNewPassword: Ange ditt nya lösenord
+error-unknown: Ett okänt fel inträffade
+error-username_taken: Användarnamn upptaget
+exportMyData: Exportera mina uppgifter
+filterByPattern: Filtrera efter mönster
+forContributors: För medverkande
+forMoreInfoRtfm: 'För mer information, läs dokumentationen: '
+forUsername: 'För {username} '
+forUsers: För användare
+fork: Förgrening/variant/fork
+forkDraftHandle: 'Förgreningsutkast/Fork draft {handle} '
+freesewing: Freesewing DONE
+freesewingContributors: Medverkande till Freesewing
+freesewingOnGithub: Freesewing på GitHub
+freesewingPatrons: Freesewing-stödmedlemmar
+freezeMyAccount: Frys mitt konto
+fullSizePdf: PDF i full storlek
+fundamentals: Grundläggande
+getHelp: Få hjälp
+github: GitHub DONE
+githubUpdated: Användarnamn för GitHub uppdaterat
+goodToKnow: Bra att veta
+hi: Hej
+home: Hem
+howCanWeHelpYou: Hur kan vi hjälpa dig?
+howToTakeMeasurements: Hur du tar mått
+i18n: Internationalisering (i18n)
+iForgotMyPassword: Jag har glömt mitt lösenord
+iForgotMyUsername: Jag har glömt mitt användarnamn
+image: Bild
+imperial: Imperialmått
+imperialUnits: Imperialmått (tum)
+in: I
+inch: Tum
+info: Information
+instagram: Instagram DONE
+instagramUpdated: Instagramkonto uppdaterat
+italics: Kursivt
+joinTheTranslationTeam: 'Även om du aldrig har bidragit till ett open source-projekt, är översättning en smidig ingång till medverkarberömmelse. '
+justAMoment: Bara ett ögonblick
+key: Nyckel
+language: Språk
+languageLanguageFiles: '{language} språkfiler '
+layout: Layout DONE
+learnMore: Lär dig mer
+learnToDesignPatterns: Lär dig att designa mönster
+letterPdf: PDF i letter-format
+loadingModelData: Laddar modelldata
+loadingResult: Laddar resultat
+locale: Språk
+localeUpdated: Språkval uppdaterat
+logIn: Logga in
+logInAs: Logga in som
+logOut: Logga ut
+logOutAs: 'Logga ut som {user} '
+loginFailed: Inloggning misslyckades
+makeItBetter: Förbättra
+markdownSyntax: MarkDown-syntax
+measurementUpdated: Mått uppdaterade
+measurements: Mått
+measurementsRequiredForPattern: 'Mått som behövs för {pattern} '
+messages: Meddelanden
+metric: Metrisk
+metricUnits: Metriska mått (cm)
+model: Modell
+modelIsModel: 'Modellen är {model} '
+models: Modeller
+monthsAgo: '{months} månader sedan '
+name: Namn
+nameOfTheModel: Modellens namn
+nameUpdated: Namn uppdaterat
+newDraft: Ny skiss
+newModel: Ny modell
+newPassword: Nytt lösenord
+newPatternDraft: 'Ny {pattern} -skiss '
+newTaskForUser: 'Ny uppgift för {user} '
+'no': Inga
+noChanges: Inga ändringar
+noDraftsFound: Inga skisser hittades
+noFilter: Inga filter
+noIDoNot: 'Nej, det gör jag inte '
+noIDoNotObject: 'Nej, jag har inga invändningar '
+notShared: Inte delad
+notes: Anteckningar
+ohNo: Åh nej!
+okThatsDone: 'Ok, det är klart '
+onlySelectedPatternParts: bara valda mönsterdelar
+pageNotFound: Sidan du letar efter kan inte hittas.
+paperlessTheme: Papperslöst tema
+password: Lösenord
+passwordResetPending: Lösenordsåterställning väntar.
+passwordUpdated: Lösenord uppdaterat
+patronText: '{username} är en {patronTier} sedan {daysAgo} '
+patrons: Srödmedlemmar
+pattern: Mönster
+patternDesignTutorial: 'Mönsterdesign, handledning '
+patternInstructions: Mönsterinstruktioner
+patternIsPattern: 'Mönstret är {pattern} '
+patternLineDrawing: '{pattern} streckteckning '
+patternOptions: Mönsteralternativ
+patternParts: Mönsterdelar
+patterns: Mönster
+pleaseCheckYourInbox: Du kommer att få e-post med vidare instruktioner
+pleaseUpgradeThisDraft: Vänligen uppgradera denna skiss.
+postComment: Publicera kommentar
+postInfo: Publicera information
+postReply: Publicera svar
+preferences: Inställningar
+privacy: Integritet
+privacyNotice: Integritetsmeddelande
+processingDraftOptions: Bearbetar skiss-alternativ
+profile: Profil
+quickPick: Snabb bild
+quote-allie: Har du hört talas om freesewing.org? Det är i princip det bästa som har hänt!
+quote-allie-about: Författare till sömnadsbloggen The Aspiring Seamstress.
+quote-ivan: 'Heder till @j__st för att ha skapat @freesewing_org, en open source-plattform för måttanpassade sömnadsmönster, och för allmän förträfflighet '
+quote-ivan-about: Medarrangör till Kubernetes London Meetup. Grundare av Kube.camp
+quote-jamie: 'Med Freesewing, har sömnad förflyttats till 2000-talet '
+quote-jamie-about: Författare till den populära sömnadsbloggen Male Devon Sewing och tävlande i Great British Sewing Bee 2016.
+reSendActivationEmail: Skicka aktiverings-e-post igen
+readyToTryFreesewing: Redo att testa Freesewing?
+redraft: Eita om
+redraftDraftHandle: 'Rita om skiss {handle} '
+reference: Referens
+removeAllMyData: Radera alla mina uppgifter
+removeAllMyModelData: Radera alla mina modell-uppgifter
+replay: Repris
+reply: Svara
+reportThisOnGitHub: Report this on GitHub TODO
+requiredMeasurements: Mått som behövs
+resetPassword: återställ lösenord
+result: Resultat
+retrievingDraftFromCore: Hämtar skiss från grunden
+revokeConsent: Återkalla samtycke
+rowsFromToOfTotal: 'Rader {from} till {to} av {total} '
+rowsPerPage: Rader per sida
+save: Spara
+scope: Omfattning
+seamAllowance: Sömsmån
+search: Sök
+seeAlso: Se också
+seeBelow: Se nedan
+selectADifferentImage: Välj en annan bild
+selectAnImage: Välj en bild
+selectThePartsYouWantIncludedInYourDraft: Välj de delar du vill ha med i din skiss
+settings: Inställningar
+sewingPatternsForNonAveragePeople: Sömnadsmönster för icke genomsnittliga personer
+share: Dela
+shared: Delad
+sharedUpdated: Delad inställning uppdaterad
+showHelp: Visa hjälp
+showcase: Visa upp
+showcaseInfo: Information om att visa upp
+signUp: Registrera dig
+signUpForAFreeAccount: Registrera dig för ett gratis konto
+signingUpOnlyTakesAMinute: Registreringen tar bara en minut
+signup--text: Det här borde inte hända. Hjälp oss gärna att rätta till det genom att skapa ett inlägg på GitHub
+signup--title: Ett okänt fel inträffade
+signup-invalid_input-text: Vänligen ange en giltig e-postadress och ett lösenord
+signup-invalid_input-title: Ogiltig inmatning
+signup-no_such_pending_confirmation-text: 'Tyvärr, vi har ingen sådan bekräftelsekod registrerad. Kanske har den gått ut, i så fall kan du bara regitrera dig igen. '
+signup-no_such_pending_confirmation-title: Det finns ingen sådan bekräftelse som väntar
+signup-signup_pending-text: Vi väntar redan på aktivering av den här e-postadressen. Vi har skickat dig en ny kopia av aktiveringsmeddelandet om du inte hittar originalet.
+signup-signup_pending-title: Din registrering väntar på att aktiveras
+signup-success-text: 'Vi har skickat e-post till dig på {email}. '
+signup-user_exists-text: Vi har redan en användare med den här e-postadressen. Kanske vill du logga in istället?
+signup-user_exists-title: Den användaren existerar
+social: Social DONE
+somethingWentWrong: Någonting gick fel
+startUpload: Börja ladda upp
+status: Status DONE
+statusTranslationLanguage: 'Status översättning {language} '
+step1: Steg 1
+step2: Steg 2
+step3: Steg 3
+step4: Steg 4
+stopProcessingMyData: Sluta bearbeta mina data
+stopUpload: Avbryt uppladdning
+storingDraftData: Sparar skiss-data
+strikethrough: Genomstruken
+svgSourceCode: SVG-källkod
+tabloidPdf: Tabloid-PDF
+taskCompleted: Uppgift slutförd
+theme: Tema
+themeUpdated: Layout-inställningar
+thereIsNoWayBackFromThis: Det finns ingen väg tillbaka från det här.
+thisContentIsNotAvailableInLanguage: Det här innehållet finns inte tillgängligt på engelska.
+thisDraftPredatesThisFeature: Den här skissen föregår den här funktionen.
+thisIsTheCurrentStatusOfOurTranslations: Det här är nuvarande status för våra översättningar.
+thisPageIsNotIntendedForLoggedInUsers: Den här sidan är inte avsedd för inloggade användare
+thisPageIsOnlyAvailableToFreesewingUsers: Den här sidan är bara tillgänglig för Freesewing-användar
+tip: Tips
+title: Titel
+today: I dag
+translationTeam: Översättningsteam
+troubleLoggingIn: Problem med att logga in?
+tryAgain: Försök igen
+twitter: Twitter DONE
+twitterUpdated: Twitter-konto uppdaterat
+txt-avatarDropzoneText: 'Dra och släpp en bild här, eller klicka på knappen för att välja en bland dina filer. '
+txt-avatarDropzoneTitle: Släpp din bild här
+txt-breastMeasurement-text: Det här är ett mått som bara är relevant om din modell har bröst.
+txt-breastMeasurement-title: Detta mått är bara relevant för bröst
+txt-changeRequiresConfirmation: Den här förändringen kräver bekräftelse via E-post
+txt-clickEmailLink: Vänligen klicka på länken i e-postmeddelandet för att fortsätta.
+txt-consentModel: Ger du medgivande till att behandla dina modelluppgifter?
+txt-consentModelAnswerWhat: 'För varje modell dess <b>measurements</b>, <b>breasts settings</b>, och <b>password</b>. '
+txt-consentModelAnswerWhatOptional: 'Valfritt: En modell <b>picture</b> och det <b>name</b> du ger din modell. '
+txt-consentModelAnswerWhy: 'För att <b>draft made-to-measure sewing patterns</b>, behöver vi <b>body measurements</b>. '
+txt-consentModelObjectNote: 'Note: Freesewing publicerar anonymiserade mått som öppna data för vetenskaplig forskning. '
+txt-consentModelObjectWhy: 'Dessa uppgifter är anonyma och används för att studera och förstå människans form i alla dess skepnader, så att vi kan få bättre sömnadsmönster och kläder som sitter bättre. '
+txt-consentModelQuestionWhat: Vad är modelluppgifter?
+txt-consentProfile: Ger du medgivande till att behandla dina profiluppgifter?
+txt-consentProfileAnswerShare: '<b>No</b>, aldrig. '
+txt-consentProfileAnswerTiming: '<b>12 months</b> efter din senaste inloggning, eller tills du <b>remove</b> ditt konto eller <b>revoke</b> detta medgivande. '
+txt-consentProfileAnswerWhat: 'Din <b>email address</b>, <b>username</b>, och <b>password</b>. '
+txt-consentProfileAnswerWhatOptional: 'Valfritt: A <b>profile picture</b>, och <b>social media accounts</b> '
+txt-consentProfileAnswerWhy: 'För att <b>authenticate</b> dig, <b>contact</b> när du behövde, och bygga en <b>community</b>. '
+txt-consentProfileQuestionShare: Delar vi det med andra?
+txt-consentProfileQuestionTiming: Hur länge behåller vi det?
+txt-consentProfileQuestionWhat: Vad är profiluppgifter?
+txt-consentProfileQuestionWhy: Varför behöver vi det?
+txt-contentLocaleFallback: Därför visar vi dig den engelska versionen istället.
+txt-contentNotTranslated: 'Tyvärr, den här sidan har inte (ännu) blivit översatt till {language}. '
+txt-dataExport: Om du vill kan vi exportera alla uppgifter vi har lagrat för dig.
+txt-dataExportQueued: 'Exporten av dina uppgifter har satts i kö. Vi skickar et e-postmeddelande när det är klart, med en nedladdningslänk. '
+txt-didYouSpotATypo: 'Har du hittat ett fel? Känner du att något saknas, eller behöver förtydligas? '
+txt-doYouObject: Invänder du mot att dina anonymiserade uppgifter används för vetenskaplig forskning?
+txt-editThisPageOnline: Du kan redigera den här sidan online och skicka in dina ändringar.
+txt-email-sharing: Vi kommer aldrig att dela din e-postadress med någon annan
+txt-emailChangeConfirmationNotFound: 'Tyvärr, men vi har ingen pågående e-poständring för denna bekräftelsekod. Kanske har den blivit för gammal, i så fall kan du helt enkelt göra om ändringen i dina inställningar. '
+txt-emailNotFound: 'Om du inte kan hitta mejlet, titta i din spam-folder, eller kontakta oss. '
+txt-emailWillWorkToo: 'Om du inte kommer ihåg ditt @:username, så fungerar din @:emailAddress också '
+txt-errorPleaseReportIssue: Please report this issue on GitHub so we can fix it TODO
+txt-footer: Freesewing har skapats av Joost De Cock & medverkande<br>med finansiell hjälp från våra stödmedlemmar
+txt-forgot-login: 'Ange ditt användarnamn eller din e-postadress nedan och klicka på <b>@:resetPassword</b> knappen '
+txt-gdpr-1: 'Europeiska unionens (EU:s) General Data Protection Regulation (GDPR) skyddar dina personuppgifter från samvetslösa datasamlare. Det är en bra sak. '
+txt-gdpr-2: En av de saker det innebär är att vi behöver få ditt medgivande — med andra ord ditt tillstånd — för att behandla dina personuppgifter.
+txt-gdpr-3: Utan ditt medgivande har vi ingen laglig rätt att behandla dina uppgifter och har inget annat val än att radera uppgifterna.
+txt-gdprCompliant: 'Freesewing.org respekterar din integritet och dina rättigheter. Vi tillämpar Europeiska unionens (EU:s) General Data Protection Regulation (GDPR). '
+txt-homepage-community: 'Allt drivs av frivilliga medverkande. Det finns ingen kommersiell aktör bakom, eller kopplad till, det här projektet. '
+txt-homepage-different: Hur vi är annorlunda
+txt-homepage-draft: 'Välj ett av dina mönster, välj en modell, och välj dina alternativ. Vi gör resten. '
+txt-homepage-how: Hur det fungerar
+txt-homepage-join: Gör som tusentals andra och registrera dig för ett gratis konto på freesewing.org.
+txt-homepage-model: Alla våra mönster är skapas efter dina mått. Så det första du ska göra är att ta fram ditt måttband.
+txt-homepage-opensource: 'Vår plattform, våra mönster, och till och med den här webbplatsen. All vår kod finns tillgänglig på GitHub. Du får gärna skicka in förslag på ändringar, så kallade pull requests! '
+txt-homepage-patrons: Freesewing möjliggörs genom den finansiella hjälpen från våra stödmedlemmar. De håller det här skeppet flytande.
+txt-homepage-quotes: Vad säger andra
+txt-joinTheTranslationTeam1: 'Även om du aldrig har bidragit till ett open source-projekt, är översättning en smidig ingång till medverkarberömmelse. '
+txt-joinTheTranslationTeam2: 'Det spelar ingen roll om du översätter några få ord eller meningar, eller tar dig an ett helt språk själv. Varje bidrag räknas, och om många bidrar blir arbetet lätt. '
+txt-joinTheTranslationTeam3: 'Läs dokumentationen för översättare för att komma igång. Oroa dig inte, det är enkelt. '
+txt-missingBlogPosts: Alla blogginlägg har inte översatts till engelska — men du kan ändra på det
+txt-modelsWithMissingMeasurements: 'Dessa modeller saknar några av de mått som behövs för att kunna rita det här mönstret: '
+txt-newModel: 'För att komma igång, ge din modell ett namn. '
+txt-password-policy: Vi framtvingar ingen lösenordspolicy
+txt-passwordRecoverConfirmationNotFound: 'Tyvärr, men vi har ingen pågående lösenordsändring för denna bekräftelsekod. Kanske har den blivit för gammal, i så fall kan du helt enkelt göra en ny förfrågan. '
+txt-resend: 'Du kan registrera dig igen med samma e-postadress, så skickar vi ett nytt bekräftelsemeddelande. '
+txt-saOption-custom: Anpassa sömsmån
+txt-saOption-imperial: 'Standard-sömsmån, tum '
+txt-saOption-metric: 'Standard-sömsmån, cm '
+txt-saOption-none: Inkludera inte sömsmån
+txt-saOption-patternImperial: Mönsterstandard tum-sömsmån
+txt-saOption-patternMetric: Mönsterstandard cm-sömsmån
+txt-signup-step1: Ange din e-postadress och välj ett lösenord.
+txt-signup-step2: Bekräfta din e-postadress.
+txt-signup-step3: Ge oss tillstånd att behandla dina personliga uppgifter.
+txt-slogan: En open source-plattform för måttanpassade sömnadsmönster
+txt-translators1: Vi letar efter människor som kan hjälpa oss att översätta.
+txt-translators2: 'När många gör en insats bli arbetet lätt, och det är utmärkt karma att bidra på det här sättet. '
+txt-translators3: 'För att lära dig mer om vad du kan göra, och hur du kan göra det, klicka på länken här nedan. '
+txt-warningDataRestriction: När vi väl begränsar ditt konto kan du inte ångra det själv. För att återfå tillgången till ditt konto måste du kontakta oss.
+txt-warningModelData: 'Det här kommer att radera alla dina modeller, och alla dina skisser. '
+txt-warningProfileData: 'Det här kommer att radera alla dina modeller, alla dina skisser, alla dina kommentarer, och ditt konto. Allt kommer att försvinna. '
+txt-withOrWithoutBreasts: 'För passform till bröst behövs en rad extra mått som inte är relevanta om du inte har bröst. Om du anger att din modell inte har bröst, kommer vi inte att visa dessa mått eftersom de är irrelevanta för dig. Om du är osäker på vad du ska välja, välj bröst. '
+txt-withOrWithoutBreasts-explainer: På andra webbplatser kan den här frågan vara formulerad som 'man eller kvinna?'. Här gillar vi inte att placera människor i fack. Allt vi bryr oss om är passformen till din bröstkorg.
+type: Skriv
+units: Enheter
+unitsUpdated: Enheter angivna
+updates: Uppdaterar
+upgrade: Uppgradera
+upgradeRequired: Uppgradering krävs
+useDecimalsOrFractions: Använd decimaler (1.25) eller bråktal (1 1/4)
+user: Användare
+userHasBeenWithUsSince: '{user} har varit med oss {since} '
+userIsAPatron: '{user} är en stödmedlem '
+username: Användarnamn
+usernameOrEmail: '@:username eller @:emailAddress '
+usernameUpdated: Användarnamn uppdaterat
+users: Användare
+version: Versioner
+visitPatronProfile: Besök den här stödmedlemmens profilsida
+volunteerVerb: Anmäl dig som frivillig
+weAreLoadingDataFromTheBackend: vi laddar data från systemet
+weAreValidatingYourConfirmationCode: Vi validerar din bekräftelsekod
+weCantHelpYouWithThis: Vi kan inte hjälpa dig med det här
+weNeedYourConsent: Vi behöver ditt medgivande
+welcomeAboard: Välkommen ombord
+withBreasts: Med bröst
+withOrWithoutBreasts: Med eller utan bröst?
+withoutBreasts: Utan bröst
+wouldYouLikeToLogOut: Vill du logga ut?
+yearsAgo: '{years} år sedan | {years} år sedan '
+'yes': Ja
+yesIDo: 'Ja, det gör jag '
+yesIDoObject: 'Ja, jag motsätter mig '
+yesterday: I går
+youAreCurrentlyLoggedIn: Du är inloggad.
+youAreNotAnAdmin: Du är inte en administratör
+youAreNotLoggedIn: Du är inte inloggad.
+youCanUseMarkdownFormatting: Du kan använda MarkDown-formatering
+youDoNotObjectToSharingAnonymizedDataForResearch: Du motsätter dig inte att dela anonymiserad data för forskningsändamål
+youHaveTheRightToObjectToThis: Du har rätt att neka till detta
+youObjectToSharingAnonymizedDataForResearch: Du motsätter dig att dela anonymiserad data för forskningsändamål
+yourPrivacy: Din integritet
+yourRights: Dina rättigheter
