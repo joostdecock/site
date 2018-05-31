@@ -179,72 +179,72 @@ collarNotchReturn:
   description: Controla la longitud de la parte superior de las muescas de las solapas. 100% = igual que la profundidad de las muescas.
   title: Retorno de la muesca de la solapa
 collarRoll:
-  description: La cantidad en la que el cuello superior es mayor que el inferior.
+  description: La cantidad en la que el cuello es más alto que la base del cuello en el centro por detrás.
   title: Vuelta del cuello
 collarStandBend:
-  description: The bend of the collar stand. TODO
-  title: Collar stand bend TODO
+  description: La cantidad en la que el cuello superior es mayor que el inferior.
+  title: Doblado del cuello
 collarStandCurve:
-  description: The curve of the collar stand. TODO
-  title: Collar stand curve TODO
+  description: La curvatura de la base del cuello.
+  title: Curvatura de la base del cuello
 collarStandWidth:
-  description: Widht of the collar stand. TODO
-  title: Collar stand width TODO
+  description: La anchura de la base del cuello.
+  title: Anchura de la base del cuello
 cuffButtonRows:
-  description: Whether to draft a single or double row of cuff buttons. This option is only relevant for barrel cuffs. TODO
+  description: Trazar una o dos hileras de botones en los puños. Esta opción es relevante sólo para puños de barril.
   options:
-    '1': Single cuff button row TODO TODO TODO
-    '2': Double cuff button row TODO TODO TODO
-  title: Cuff button rows TODO
+    '1': Hilera de botones sencilla
+    '2': Hilera de botones doble
+  title: Hileras de botones en los puños
 cuffDrape:
-  description: The amount by which the sleeve is wider than the cuff where the are joined. TODO
-  title: Cuff drape TODO
+  description: La cantidad en la que la manga es más ancha que el puño en el lugar donde se unen.
+  title: Plisado del puño
 cuffEase:
-  description: The amount of ease at your wrist. TODO
-  title: Cuff ease TODO
+  description: La cantidad de holgura en la muñeca.
+  title: Holgura de muñeca
 cuffLength:
-  description: The length of the cuffs. TODO
-  title: Cuff length TODO
+  description: La longitud de los puños.
+  title: Longitud del puño
 cuffStyle:
-  description: The style of the cuffs. TODO
+  description: El estilo de los puños.
   options:
-    '1': Rounded barrel cuff TODO TODO TODO
-    '2': Angled barrel cuff TODO TODO TODO
-    '3': Straight barrel cuff TODO TODO TODO
-    '4': Rounded French cuff TODO TODO TODO
-    '5': Angled French cuff TODO TODO TODO
-    '6': Straight French cuff TODO TODO TODO
-  title: Cuff style TODO
+    '1': Puño de barril redondeado
+    '2': Puño de barril en ángulo
+    '3': Puño de barril recto
+    '4': Puño francés redondeado
+    '5': Puño francés en ángulo
+    '6': Puño francés recto
+  title: Estilo del puño
 elasticWidth:
-  description: Width of the elastic band you intend to use. TODO
-  title: Elastic width TODO
+  description: La anchura del elástico que piensas usar.
+  title: Anchura del elástico
 endStyle:
-  description: The style of the end of the tie. TODO
+  description: El estilo de la punta de la corbata
   options:
-    pointed: Pointed end TODO TODO TODO
-    rounded: Rounded end TODO TODO TODO
-    straight: Straight end TODO TODO TODO
-  title: End style TODO
+    pointed: Punta en ángulo
+    rounded: Punta redondeada
+    straight: Punta recta
+  title: Estilo de la punta
 extraTopButton:
-  description: Whether or not to include an extra top button on the front closure. TODO
+  description: Incluír o no un botón extra en el cierre frontal.
   options:
-    - No extra top button TODO TODO TODO
-    - Extra top button TODO TODO TODO
-  title: Extra top button TODO
+    - Sin botón extra
+    - Con botón extra
+  title: Botón extra superior
 frontCutawayAngle:
-  description: How much do you want the front to open up below the lower button. TODO
-  title: Front opening bottom cutaway angle TODO
+  description: El ángulo de la apertura bajo el último botón.
+  title: Ángulo de la apertura inferior por delante
 frontCutawayStart:
-  description: How much do you want the front to open up below the lower button. TODO
-  title: Front opening bottom cutaway start TODO
+  description: La apertura del cierre delantero bajo el último botón.
+  title: Apertura inferior por delante
 frontDartPlacement:
-  description: Location of the front dart as a proportion of your chest circumference. Higher numbers move it more to the side. TODO
-  title: Front dart placement TODO
+  description: La posición de la pinza frontal como fracción de tu circunferencia de pecho. Números más alto la mueven hacia el lado.
+  title: Posición de la pinza frontal
 frontDrop:
   description:
-    _default: The amount the front neckline is lowered. Negative values raise the neckline. TODO
-    cathrin: How much the front panels lower from your hips towards your center front. TODO
-  title: Neckline drop TODO
+    _default: La cantidad en la que se baja el escote. Valores negativos lo elevan.
+    cathrin: Cuánto los paneles frontales caen bajo la cadera en el centro por delate.
+  title: Caída delantera
 frontInset:
   description: Amount the front armhole is cut deeper into the front panel. TODO
   title: Front inset TODO

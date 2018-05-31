@@ -17,7 +17,7 @@
       <v-card-text>
         <v-radio-group v-model="value">
 				  <v-radio
-            @change="updateDraftOption(name, value)"
+            @change="updateDraftOption(name, index)"
             v-for="(value, index) in option.options" :key="index"
             :label="''+value"
             :value="index"
@@ -49,7 +49,7 @@ export default {
       required: true
     },
     dflt: {
-      type: String,
+      type: [String, Number],
       required: true
     }
   },
