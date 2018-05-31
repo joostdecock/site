@@ -83,8 +83,7 @@ export default {
       customSaDflt: customSaDflt,
       customSa: customSaDflt,
       customSaMin: customSaMin,
-      customSaMax: customSaMax,
-      help: false
+      customSaMax: customSaMax
     }
   },
   methods: {
