@@ -550,6 +550,16 @@ export default ({ app, store, route }, inject) => {
         })
       },
 
+      adminFindUsers(input) {
+        return new Promise(function(resolve, reject) {
+          ax.data.get('/admin/find/users/'+input, { headers: {'Authorization': 'Bearer '+token()} })
+            .then((res) => {
+              resolve(res.data)
+            })
+          .catch((error) => { reject(false) })
+        })
+      },
+
       // Sync methods
 
       pathLocale(path) {
