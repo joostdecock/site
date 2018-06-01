@@ -128,6 +128,7 @@ justAMoment: Just a moment
 key: Key
 language: Language
 languageLanguageFiles: '{language} language files'
+lastLogin: Last login
 layout: Layout
 learnMore: Learn more
 learnToDesignPatterns: Learn to design patterns
@@ -177,6 +178,9 @@ paperlessTheme: Paperless theme
 password: Password
 passwordResetPending: Password reset pending.
 passwordUpdated: Password changed
+patron-2: Powder monkey
+patron-4: First mate
+patron-8: Captain
 patronText: '{username} is a {patronTier} since {daysAgo}'
 patrons: Patrons
 pattern: Pattern

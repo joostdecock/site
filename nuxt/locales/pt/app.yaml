@@ -128,6 +128,7 @@ justAMoment: Aguarde um momento
 key: Chave
 language: Linguagem
 languageLanguageFiles: 'arquivos de linguagem {language}'
+lastLogin: Last login TODO
 layout: Layout TODO
 learnMore: Aprenda mais
 learnToDesignPatterns: Aprenda a desenhar moldes
@@ -177,6 +178,9 @@ paperlessTheme: Tema sem papel
 password: Senha
 passwordResetPending: Reestabelecimento de senha pendente.
 passwordUpdated: Senha alterada.
+patron-2: Powder monkey TODO
+patron-4: First mate TODO
+patron-8: Captain TODO
 patronText: '{username} é um {patronTier} desde {daysAgo}'
 patrons: Patronos
 pattern: Molde

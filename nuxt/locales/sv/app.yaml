@@ -128,6 +128,7 @@ justAMoment: Bara ett ögonblick
 key: Nyckel
 language: Språk
 languageLanguageFiles: '{language} språkfiler '
+lastLogin: Last login TODO
 layout: Layout DONE
 learnMore: Lär dig mer
 learnToDesignPatterns: Lär dig att designa mönster
@@ -177,6 +178,9 @@ paperlessTheme: Papperslöst tema
 password: Lösenord
 passwordResetPending: Lösenordsåterställning väntar.
 passwordUpdated: Lösenord uppdaterat
+patron-2: Powder monkey TODO
+patron-4: First mate TODO
+patron-8: Captain TODO
 patronText: '{username} är en {patronTier} sedan {daysAgo} '
 patrons: Srödmedlemmar
 pattern: Mönster

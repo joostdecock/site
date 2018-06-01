@@ -1,7 +1,7 @@
 <template>
   <section :class="(signup) ? '' : 'on-splash fs-m800'">
     <div v-if="deleteProfileConfirmation || deleteModelConfirmation">
-      <blockquote class="error">
+      <blockquote class="error fs-bq">
         <h4>Are you 100% sure about this?</h4>
         <p v-if="deleteModelConfirmation">{{ $t('txt-warningModelData') }}</p>
         <p v-if="deleteProfileConfirmation">{{ $t('txt-warningProfileData') }}</p>
@@ -23,7 +23,7 @@
     </div>
     <div v-else>
       <div v-if="profileConsentOnLoad && profile" class="mb-4">
-        <blockquote class="success">
+        <blockquote class="success fs-bq">
           <h3 class="fs-white">{{ $t('consentForProfileData') }}</h3>
           <ul><li>{{ $t('consentGiven') }}</li></ul>
           <fs-message-consent-profile v-if="profileDetails" :dark="(true)" />
@@ -41,7 +41,7 @@
         </blockquote>
       </div>
       <div v-if="modelConsentOnLoad" class="mb-4">
-        <blockquote class="success">
+        <blockquote class="success fs-bq">
           <h3 class="fs-white">{{ $t('consentForModelData') }}</h3>
           <ul>
             <li>{{ $t('consentGiven') }}</li>

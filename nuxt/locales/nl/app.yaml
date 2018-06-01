@@ -128,6 +128,7 @@ justAMoment: Een ogenblikje
 key: Sleutel
 language: Taal
 languageLanguageFiles: 'Taal bestanden {language}'
+lastLogin: Meest recente aanmelding
 layout: Layout DONE
 learnMore: Meer weten
 learnToDesignPatterns: Leer patronen ontwerpen
@@ -177,6 +178,9 @@ paperlessTheme: Papierloze layout
 password: Wachtwoord
 passwordResetPending: Wachtwoord herstel is hangende.
 passwordUpdated: Wachtwoord gewijzigd
+patron-2: Powder monkey DONE
+patron-4: First mate DONE
+patron-8: Captain DONE
 patronText: '{username} is een {patronTier} sinds {daysAgo} '
 patrons: Sponsors
 pattern: Patroon
