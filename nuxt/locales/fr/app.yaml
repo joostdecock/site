@@ -128,6 +128,7 @@ justAMoment: Juste un instant
 key: Légende
 language: Langue
 languageLanguageFiles: 'Fichier langue {language}'
+lastLogin: Last login TODO
 layout: Agencement
 learnMore: Learn more TODO
 learnToDesignPatterns: Apprendre à concevoir des patrons
@@ -177,6 +178,9 @@ paperlessTheme: Thème sans papier
 password: Mot de passe
 passwordResetPending: Password reset pending. TODO
 passwordUpdated: Mot de passe changé
+patron-2: Powder monkey TODO
+patron-4: First mate TODO
+patron-8: Captain TODO
 patronText: '{username} est un {patronTier} depuis {daysAgo}'
 patrons: Mécènes
 pattern: Patron

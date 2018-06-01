@@ -128,6 +128,7 @@ justAMoment: Just a moment TODO
 key: Key TODO
 language: Language TODO
 languageLanguageFiles: '{language} language files TODO'
+lastLogin: Last login TODO
 layout: Layout TODO
 learnMore: Learn more TODO
 learnToDesignPatterns: Learn to design patterns TODO
@@ -177,6 +178,9 @@ paperlessTheme: Paperless theme TODO
 password: Password TODO
 passwordResetPending: Password reset pending. TODO
 passwordUpdated: Password changed TODO
+patron-2: Powder monkey TODO
+patron-4: First mate TODO
+patron-8: Captain TODO
 patronText: '{username} is a {patronTier} since {daysAgo} TODO'
 patrons: Patrons TODO
 pattern: Pattern TODO
