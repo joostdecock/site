@@ -96,6 +96,11 @@ const dynamicRoutes = [
     name: 'user-page',
     component: 'nuxt/pages/users/show-user.vue'
   },
+  {
+    path: '/admin/users/:user',
+    name: 'admin-user-page',
+    component: 'nuxt/pages/admin/users/admin-user.vue'
+  },
 ]
 
 module.exports = {
