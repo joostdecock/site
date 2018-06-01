@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="mb-3" v-if="onlyforbreasts==true">
-      <blockquote class="tip">
+      <blockquote class="tip fs-bq">
         <h4>{{ $t('txt-breastMeasurement-title') }}</h4>
         <p>{{ $t('txt-breastMeasurement-text') }}</p>
       </blockquote>

@@ -39,7 +39,7 @@
       {{ $t('rowsFromToOfTotal', {from: props.pageStart, to: props.pageStop, total: props.itemsLength}) }}
     </template>
     <template slot="no-data">
-      <blockquote class="warning fs-m800 mt-5 mb-5">
+      <blockquote class="warning fs-m800 mt-5 mb-5 fs-bq">
         <h3>{{ $t('noDraftsFound') }}</h3>
         <v-btn large color="primary">
           <v-icon class="mr-3">insert_drive_file</v-icon>

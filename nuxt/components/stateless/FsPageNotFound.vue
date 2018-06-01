@@ -1,5 +1,5 @@
 <template>
-  <blockquote class="fs-m800 mt-5 mb-5 warning">
+  <blockquote class="fs-m800 mt-5 mb-5 warning fs-bq">
     <h1>404</h1>
     <h5>{{ $t('pageNotFound') }}</h5>
     <p class="text-xs-center">
