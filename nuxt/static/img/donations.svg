@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 -200 500 100">
+    <style type="text/css">
+    <![CDATA[
+        rect.don {fill: #663f95; stroke:none}
+        rect {fill: #ff5b77; stroke:none}
+        text.fs{font-size:25px;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;fill:#000;text-anchor:middle;font-weight:600}
+        text.sm{font-size:15px;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;fill:#000;text-anchor:middle;font-weight:400}
+        text.legend{font-size:15px;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;fill:#000;text-anchor:start;font-weight:400}
+    ]]>
+    </style>
+
+    <!-- 2015 -->
+    <text class="fs" x="75" y="25" >2015</text>
+    <text class="sm" x="75" y="45" >256.65 euro</text>
+    <rect height="128.325" width="50" x="50" y="0" transform="translate(0,-128.325)" />
+
+    <!-- 2016 -->
+    <text class="fs" x="225" y="25" >2016</text>
+    <text class="sm" x="225" y="45" >473.5 euro</text>
+    <rect height="236.75" width="50" x="200" y="0" transform="translate(0,-236.75)" />
+
+    <!-- 2017 -->
+    <text class="fs" x="375" y="25" >2017</text>
+    <text class="sm" x="375" y="45" >673.14 euro</text>
+    <rect height="336.57" width="50" x="350" y="0" transform="translate(0,-336.57)" />
+
+</svg>

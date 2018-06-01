@@ -1,0 +1,118 @@
+blockquote
+  padding: 5px 0 5px 10px
+  margin: 0.5rem 0 0.5rem 10px
+  font-size: 90%
+  border-left: 3px solid $accent
+  & p:last-child
+    margin-bottom: 0
+
+  & h4:first-child,
+  & h5:first-child
+    margin-top: 0
+    padding-top: 0
+
+
+blockquote.fs-bq
+  border: none
+  padding: 1rem 2rem
+  margin: 1.5rem auto
+  box-shadow: $shadow
+  background: #64B5F61a
+  @media screen and (max-width: 767px)
+    padding: 1rem
+
+  & p:last-child
+    margin-bottom: 0
+
+  & p:first-child
+  & h2:first-child
+  & h3:first-child
+  & h4:first-child
+  & h5:first-child
+  & h6:first-child
+    margin-top: 0
+
+  &:before
+    content: "info"
+    font-family: "Material Icons" !important
+    font-style: normal !important
+    font-weight: normal !important
+    font-variant: normal !important
+    text-transform: none !important
+    speak: none
+    line-height: 1
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    font-size: 4em
+    float: right
+    margin-top: -10px
+    color: #64B5F6
+
+  &.center
+    max-width: 400px
+    margin: auto
+
+  &.quote
+    max-width: 50%
+    float: right
+    font-style: italic
+    @media screen and (max-width: 767px)
+      max-width: 100%
+      float: none
+      clear: both
+    &.full
+      max-width: 100%
+      float: none
+      clear: both
+    &:before
+      content: "format_quote"
+
+  &.comment
+    &:before
+      content: "comment"
+      color: $secondary
+
+  &.link
+    &:before
+      content: "link"
+      color: $info
+
+  &.privacy
+    &:before
+      content: "fingerprint"
+      color: $info
+
+  &.warning
+    &:before
+      content: "warning"
+      color: #212121
+
+  &.skully
+    color: #FFF
+    background-color: #212121
+    background-image: url('/img/logo/white.svg')
+    background-position: 95% 20%
+    background-size: 100px 100px
+    background-repeat: no-repeat
+    &:before
+      content: ""
+
+  &.error
+    color: #fff
+    &:before
+      content: "error_outline"
+      color: #fff
+
+  &.tip
+    &:before
+      content: "info"
+
+  &.i18n
+    &:before
+      content: "translate"
+
+  &.success
+    color: #FFF
+    &:before
+      content: "check_circle"
+      color: #FFF

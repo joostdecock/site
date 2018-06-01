@@ -1,5 +1,15 @@
-_site
-.jekyll-metadata
-.jekyll-cache
-.sass-cache
-.asset-cache
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+yarn-error.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+
+# Staging data
+deploy

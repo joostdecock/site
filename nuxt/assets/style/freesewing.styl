@@ -1,0 +1,437 @@
+/*
+ *
+ * Color overrides
+ * Note that $primary (and other theme colors) are set in nuxt.conf.js
+ *
+ */
+// Disable the color pack to avoid bloat
+$color-pack = false
+
+// Then again, we do need to refer to them
+$primary   = #212121
+$secondary = #848484
+$warning   = #FF9900
+$error     = #D32F2F
+$info      = #64B5F6
+$accent    = #FF5B77
+$success   = #4caf50
+$shadow = 0px 2px 1px -1px rgba(0, 0, 0, .2), 0px 1px 1px 0px rgba(0, 0, 0, .14), 0px 1px 3px 0px rgba(0, 0, 0, .12)!important;
+$linkline =rgba(0,0,0,0.2)
+$linkshadow = 0px -1px 0px $linkline inset
+
+// Who would thing having a white background would be such as hassle
+@import './material-light'
+
+/*
+ *
+ * Vuetify's typography is below our standards
+ * So here's a bunch of overrides to fix that
+ *
+ */
+// Native font stack to avoid loading external font
+$body-font-family = -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+
+// Set generous font size and line height
+$font-size-root = 18px
+$line-height-root = 1.4
+$breadcrumbs-item-font-size = 0.7 * $font-size-root
+$breadcrumbs-item-large-font-size = 0.9 * $font-size-root
+
+// Helper var for bottom margins
+$text-margin-bottom =  $font-size-root * 0.7272
+
+// Set heading styles
+h1
+  font-size: 2.5rem
+  font-weight: 500
+  line-height: 1.1
+  letter-spacing: -.03rem
+  margin: 0 0 1rem 0
+  padding: 1rem 0 0 0
+h2
+  font-size: 2.1rem
+  font-weight: 500
+  line-height: 1.1
+  letter-spacing: -.03rem
+  margin: 0 0 1.5rem 0
+  padding: 1rem 0 0 0
+h3
+  font-size: 1.8rem
+  font-weight: 500
+  line-height: 1.1
+  letter-spacing: -.02rem
+  margin: 0 0 1rem 0
+  padding: 1rem 0 0 0
+h4
+  font-size: 1.5rem
+  font-weight: 500
+  line-height: 1.1
+  letter-spacing: -0.01rem
+  margin: 0 0 0.75rem 0
+  padding: 1rem 0 0 0
+h5
+  font-size: 1.3rem
+  font-weight: 500
+  line-height: 32px
+  letter-spacing: normal
+  margin: 0 0 0.5rem 0
+  padding: 1rem 0 0 0
+h6
+  font-size: 1.1rem
+  font-weight: 500
+  line-height: 1
+  letter-spacing: .02em
+  margin: 0 0 0.5rem 0
+  padding: 1rem 0 0 0
+
+// Tone it down a bit on smaller screens
+
+
+@media (max-width: 600px)
+  h1
+    font-size: 1.9rem
+  h2
+    font-size: 1.7rem
+  h3
+    font-size: 1.5rem
+  h4
+    font-size: 1.3rem
+  h5
+    font-size: 1.1rem
+  h6
+    font-size: 0.9rem
+
+// Bump the navigation drawer font size
+$navigation-drawer-item-font-size = 24px
+
+// Use local icon font rather than fetch from Google
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(/fonts/MaterialIcons-Regular.woff2) format('woff2'),
+    url(/fonts/MaterialIcons-Regular.woff) format('woff'),
+    url(/fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+// Links
+p a, td a
+  text-decoration: none
+  box-shadow: $linkshadow
+  border-bottom: 2px solid $linkline
+  padding-right: 2px
+  padding-left: 2px
+p a:hover, td a:hover
+  color: $accent
+  border-bottom: 0
+  box-shadow: none
+
+
+// Lists
+ul, ol
+  margin-left: 2*$text-margin-bottom
+  margin-bottom: $text-margin-bottom
+
+// Prevent footer from sticking to page
+.fs-vertical-container
+  margin-bottom: 100px
+
+// Prevent columns from scrolling
+.fs-sticky-column
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+.fs-scroll-column
+  overflow-y: auto
+  height: 100vh
+  padding: 8px
+
+// Images
+img
+  max-width: 100%
+
+figure
+  margin: auto
+  text-align: center
+
+  figcaption
+    margin-bottom: $text-margin-bottom
+    font-size: 75%
+
+.fs-docs figure img
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)
+
+// TOC
+a.nuxtdown-toc
+  position: absolute
+  box-shadow: none
+  font-size: 50%
+  margin: 0 0 0 10px
+  text-decoration: none
+a.nuxtdown-toc:hover
+  box-shadow: none
+  border: none
+
+/* side menu */
+.fs-side-sub
+  box-shadow: rgba(0, 0, 0, 0.4) 0px -20px 6px -20px inset, rgba(0, 0, 0, 0.4) 0px 20px 6px -20px inset
+  background: rgba(0,0,0,0.03)!important
+
+/*
+ *
+ * Blog post specifics
+ *
+ */
+
+/*
+ *
+ * All done with Freesewing specific settings
+ *
+ */
+@import '~vuetify/src/stylus/main'
+
+
+/*
+ *
+ * Global freesewing styles
+ *
+ */
+
+@import 'cards'
+@import 'lists'
+@import 'blockquotes'
+@import 'responsive-embed'
+
+.icon
+  font-family: 'Material icons'
+  font-style: normal
+  vertical-align: text-top
+
+.btn
+  text-transform: none
+
+.btn--large
+  font-size: 18px
+
+/* draft form */
+
+span.fs-option-custom
+  color: #FF5B77
+
+ul.expansion-panel
+  margin-left: 0
+
+.fs-m1200
+  max-width: 1200px
+  margin: auto
+
+.fs-m800
+  max-width: 800px
+  margin: auto
+
+.fs-m600
+  max-width: 600px
+  margin: auto
+
+.fs-m400
+  max-width: 400px
+  margin: auto
+
+.fs-state-icons {
+  float: right;
+  display: inline-block;
+}
+
+
+/* New look */
+.fs-pad
+  padding: 1rem 2rem
+.fs-xpad
+  padding: 0 2rem
+
+.fs-ypad
+  padding: 1rem 0
+
+@media (max-width: 599px)
+  .fs-pad
+    padding: 1rem 8px
+  .container
+    padding: 8px
+  .fs-xpad
+    padding: 0 8px
+
+
+.fs-content
+  background: #fff
+.fs-card-title
+  font-weight: 500
+  text-transform: uppercase
+  margin-left: 1rem
+
+ul.fs-metadata
+  margin: 0
+
+  li
+    list-style-type: none
+    margin-right: 1rem
+    display: inline-block
+
+.fs-muted
+  color: $secondary
+
+.fs-muted-dark
+  color: #FFF9
+
+.fs-success
+  color: $success
+
+.fs-info
+  color: $info
+
+.fs-warning
+  color: $warning
+
+.fs-accent
+  color: $accent
+
+.fs-emoji
+  width: 20px
+  display: inline-block
+  text-align: center
+  margin-right: 6px
+
+.navigation-drawer
+  padding: 25px 0
+
+table.fs-info-table
+  th.fs-titlerow
+    width: 100%
+    text-align: center
+    padding: 10px
+    text-transform: uppercase
+    font-size: 110%
+    color: $secondary
+  th
+    max-width: 300px
+    text-align: right
+    padding-right: 15px
+
+  td
+    max-width: 300px
+  tr.fs-titlerow
+    text-align: center
+    padding: 10px
+    text-transform: uppercase
+    font-size: 18px
+    color: $secondary
+  tr.fs-titlerow th
+    font-size: 16px
+
+.fs-edit-inline
+  max-width: 500px
+  margin: 1rem auto
+  text-align: center
+  background: #FFF
+
+td.fs-edit-inline:hover
+  background: #FFF
+
+
+.fs-bg-white
+  background: #FFF
+
+.fs-wp20
+  width: 20%
+
+.fs-wp30
+  width: 30%
+
+.fs-wp50
+  width: 50%
+
+.fs-row2
+  max-width: 47%
+  margin-right: 1%
+  margin-left: 1%
+
+.fs-row3
+  max-width: 30%
+  margin-right: 1%
+  margin-left: 1%
+
+
+table.fs-info-table tbody td
+  font-size: 18px
+
+table.table tbody td
+  font-size: 15px
+
+.fs-ucase
+  text-transform: uppercase
+
+.fs-locase
+  text-transform: lowercase
+
+.fs-m0
+  margin: 0!important
+
+.fs-hr
+  position: relative;
+
+.fs-hr--bottom::after
+  bottom: 0
+
+.fs-hr::after
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(-90deg,rgba(14,30,37,0) 0,#0e1e25 5%,#0e1e25 90%,rgba(14,30,37,0) 100%);
+  opacity: .08;
+
+.fs-active-btn
+  font-weight: 700
+
+.fs-white
+  color: white
+
+.fs-block-link
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  z-index: 1
+
+.comment
+  margin: 16px 0
+
+pre.fs-codeblock
+  margin: 10px 0
+  background: #212121
+  border: none
+  border-radius: 4px
+
+  code::before
+    display: none
+
+  code::after
+    display: none
+
+  code
+    box-shadow: none
+    text-shadow: none
+
+  .list
+    background: inherit
+    color: inherit
+
+hr.footnotes-sep
+  margin-top: 2rem
+  margin-bottom: 10px
+
+.footnotes
+  font-size: 80%

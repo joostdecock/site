@@ -1,0 +1,166 @@
+content:
+  - docs
+  - blog
+  - showcase
+defaults:
+  repos:
+    core: 'https://github.com/freesewing/core'
+    data: 'https://github.com/freesewing/data'
+    site: 'https://github.com/freesewing/site'
+    tile: 'https://github.com/freesewing/tile'
+  sa:
+    custom: 1
+    imperial: 0.625
+    metric: 1
+  scale:
+    imperial: 25.4
+    metric: 10
+  step:
+    imperial: 0.125
+    metric: 0.1
+  themes:
+    - Basic
+    - Paperless
+i18n:
+  coordinators:
+    de: manufaktur.edelweiss
+    en: joost
+    es: AlfaLyr
+    fr: MrsMonkey
+    nl: AnnekeCaramin
+    'no': _vacant
+    pl: _vacant
+    pt: _vacant
+    sv: _vacant
+  files:
+    - app
+    - i18n
+    - measurements
+    - options
+    - optiongroups
+    - patterns
+  locales:
+    disabled:
+      - de
+      - fr
+      - 'no'
+      - sv
+      - pl
+      - pt
+    enabled:
+      - en
+      - es
+      - nl
+  origin: en
+  stats:
+    de:
+      app: 213
+      blog: 0
+      docs: 0
+      i18n: 6
+      measurements: 19
+      optiongroups: 10
+      options: 0
+      patterns: 37
+      showcase: 0
+    en:
+      app: 403
+      blog: 31
+      docs: 316
+      i18n: 9
+      measurements: 26
+      optiongroups: 12
+      options: 302
+      patterns: 37
+      showcase: 51
+    es:
+      app: 403
+      blog: 2
+      docs: 1
+      i18n: 9
+      measurements: 26
+      optiongroups: 12
+      options: 171
+      patterns: 37
+      showcase: 1
+    fr:
+      app: 176
+      blog: 0
+      docs: 0
+      i18n: 0
+      measurements: 25
+      optiongroups: 11
+      options: 0
+      patterns: 4
+      showcase: 0
+    nl:
+      app: 402
+      blog: 3
+      docs: 2
+      i18n: 6
+      measurements: 26
+      optiongroups: 12
+      options: 302
+      patterns: 37
+      showcase: 1
+    'no':
+      app: 0
+      blog: 0
+      docs: 0
+      i18n: 0
+      measurements: 25
+      optiongroups: 0
+      options: 0
+      patterns: 0
+      showcase: 0
+    pl:
+      app: 0
+      blog: 0
+      docs: 0
+      i18n: 0
+      measurements: 0
+      optiongroups: 0
+      options: 0
+      patterns: 0
+      showcase: 0
+    pt:
+      app: 265
+      blog: 0
+      docs: 0
+      i18n: 0
+      measurements: 0
+      optiongroups: 0
+      options: 0
+      patterns: 0
+      showcase: 0
+    sv:
+      app: 398
+      blog: 0
+      docs: 0
+      i18n: 0
+      measurements: 0
+      optiongroups: 0
+      options: 0
+      patterns: 0
+      showcase: 0
+    xx:
+      app: 0
+      blog: 0
+      docs: 0
+      i18n: 0
+      measurements: 0
+      optiongroups: 0
+      options: 0
+      patterns: 0
+      showcase: 0
+  target:
+    app: 403
+    blog: 31
+    docs: 316
+    i18n: 9
+    measurements: 26
+    optiongroups: 12
+    options: 302
+    patterns: 37
+    showcase: 51
+  template: xx
