@@ -15,7 +15,7 @@
    height="753.441"
    id="svg15277"
    inkscape:version="0.47 r22583"
-   sodipodi:docname="frontstyle.svg">
+   sodipodi:docname="frontdrop.svg">
   <metadata
      id="metadata3045">
     <rdf:RDF>
@@ -24,7 +24,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -41,13 +41,13 @@
      inkscape:window-height="1057"
      id="namedview3043"
      showgrid="false"
-     inkscape:zoom="2.02718"
-     inkscape:cx="702.277"
-     inkscape:cy="14.7675"
+     inkscape:zoom="0.506795"
+     inkscape:cx="-66.391"
+     inkscape:cy="392.29"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="g44532" />
   <defs
      id="defs15279">
     <inkscape:perspective
@@ -153,7 +153,7 @@
               <path
                  style="fill:#212121;fill-opacity:1;stroke:#545454;stroke-width:13.427434;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
                  id="path44572"
-                 d="M 2391.73,2283.15 C 2391.73,2410.02 2320.76,2450.99 2195.99,2450.99 2084.57,2450.99 1997.85,2457.7 1590.48,2457.7 L 1523.72,2444.54 C 1523.72,2373.68 1614.41,2133.84 1614.41,1823.8 1614.41,1458.63 1553.29,1178.01 1553.29,872.858 1615.93,810.221 1718.5,679.429 1718.5,537.697 1718.5,395.965 1659.79,163.117 1652.29,128.486 L 2035.6,65.0102 C 2035.6,65.0102 2030.86,393.307 2391.73,951.378 L 2391.73,2283.15 z"
+                 d="M 2391.73,2320.87 2195.99,2568.9 C 2175.02,2552.33 1997.78,2484.97 1590.48,2457.7 L 1523.72,2444.54 C 1523.72,2373.68 1614.41,2133.84 1614.41,1823.8 1614.41,1458.63 1553.29,1178.01 1553.29,872.858 1615.93,810.221 1718.5,679.429 1718.5,537.697 1718.5,395.965 1659.79,163.117 1652.29,128.486 L 2035.6,65.0102 C 2035.6,65.0102 1951.35,934.594 2391.73,934.594 L 2391.73,2320.87 z"
                  sodipodi:nodetypes="ccccscscccc" />
             </g>
             <g
@@ -243,7 +243,7 @@
               <path
                  style="fill:#212121;fill-opacity:1;stroke:#545454;stroke-width:13.427434;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
                  id="path44604"
-                 d="M 2391.73,2283.15 C 2391.73,2385.98 2324.03,2450.99 2195.99,2450.99 2111.83,2450.99 1984.65,2450.99 1593.83,2450.99 L 1527.07,2437.83 C 1527.07,2366.97 1611.05,2127.13 1611.05,1817.09 1611.05,1451.92 1563.35,1184.72 1563.35,879.568 1625.99,816.93 1718.5,679.429 1718.5,537.697 1718.5,395.965 1659.79,163.117 1652.29,128.486 L 2035.6,65.0102 C 2035.6,65.0102 2030.86,393.307 2391.73,951.378 L 2391.73,2283.15 z"
+                 d="M 2391.73,2320.87 2195.99,2568.9 C 2175.02,2552.33 2001.14,2478.26 1593.83,2450.99 L 1527.07,2437.83 C 1527.07,2366.97 1611.05,2127.13 1611.05,1817.09 1611.05,1451.92 1563.35,1184.72 1563.35,879.568 1625.99,816.93 1718.5,679.429 1718.5,537.697 1718.5,395.965 1659.79,163.117 1652.29,128.486 L 2035.6,65.0102 C 2035.6,65.0102 1941.01,934.594 2391.73,934.594 L 2391.73,2320.87 z"
                  sodipodi:nodetypes="ccccscscccc" />
             </g>
             <g
@@ -332,13 +332,11 @@
         <path
            style="fill:#212121;stroke:#545454;stroke-width:1.090053;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
            id="path44634"
-           d="M -18407.8,-4017.77 C -18400.2,-4087.53 -18393.1,-4156.42 -18396.9,-4237.57"
-           sodipodi:nodetypes="cc" />
+           d="M -18407.8,-4016.43 C -18400.2,-4086.19 -18393.1,-4156.42 -18396.9,-4237.57" />
         <path
            style="fill:#212121;stroke:#545454;stroke-width:1.090053;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
            id="path44636"
-           d="M -18245,-4018.49 C -18252.4,-4086.51 -18259,-4155.22 -18255.3,-4234.3"
-           sodipodi:nodetypes="cc" />
+           d="M -18244.4,-4013.16 C -18252,-4082.92 -18259.1,-4153.15 -18255.3,-4234.3" />
       </g>
       <g
          style="fill:#212121;stroke:#545454;stroke-width:2.180105;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
