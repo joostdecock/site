@@ -46,7 +46,7 @@
                 </v-flex>
               </v-layout>
             </v-container>
-            <img v-for="(active, badge) in user.profile.badges" :src="'/img/badges/badge-'+badge+'.svg'" :key="badge" class="badge elevation-1"/>
+            <img v-for="(active, badge) in user.profile.badges" :src="'/img/badges/badge-'+badge+'.svg'" :key="badge" :title="badge" class="badge elevation-1"/>
           </v-tab-item>
           <v-tab-item>
             <v-container fluid grid-list-lg>
