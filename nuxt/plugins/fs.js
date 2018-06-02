@@ -594,6 +594,20 @@ export default ({ app, store, route }, inject) => {
         })
       },
 
+      logReferral(url) {
+        return new Promise(function(resolve, reject) {
+          ax.data.post('/referral', {
+              host: url.hostname,
+              path: url.pathname,
+              url: url.href
+          })
+            .then((res) => {
+              resolve(res.data)
+            })
+            .catch((error) => { console.log(error); reject(error) })
+        })
+      },
+
       // Sync methods
 
       pathLocale(path) {
