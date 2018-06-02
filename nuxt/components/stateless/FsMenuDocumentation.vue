@@ -23,7 +23,7 @@
         <v-list-tile-action><v-icon>motorcycle</v-icon></v-list-tile-action>
         <v-list-tile-content>{{ $t('contributeToFreesewing') }}</v-list-tile-content>
       </v-list-tile>
-      <v-list-tile :to="$fs.path('/docs/missing')">
+      <v-list-tile :to="$fs.path('/docs/tutorial')">
         <v-list-tile-action><v-icon>gesture</v-icon></v-list-tile-action>
         <v-list-tile-content>{{ $t('learnToDesignPatterns') }}</v-list-tile-content>
       </v-list-tile>
