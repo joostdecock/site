@@ -241,10 +241,8 @@ frontDartPlacement:
   description: La posición de la pinza frontal como fracción de tu circunferencia de pecho. Números más alto la mueven hacia el lado.
   title: Posición de la pinza frontal
 frontDrop:
-  description:
-    _default: La cantidad en la que se baja el escote. Valores negativos lo elevan.
-    cathrin: Cuánto los paneles frontales caen bajo la cadera en el centro por delate.
-  title: Caída delantera
+  description: Cuánto los paneles frontales caen bajo la cadera en el centro por delate.
+  title: Front drop TODO
 frontInset:
   description: Amount the front armhole is cut deeper into the front panel. TODO
   title: Front inset TODO

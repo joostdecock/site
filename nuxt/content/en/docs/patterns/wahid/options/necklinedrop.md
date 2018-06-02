@@ -1,7 +1,7 @@
 ---
-title: Front drop
+title: Neckline drop
 pattern: wahid
-option: frontDrop
+option: necklineDrop
 ---
 
 This options allows you to lower your neckline below the defalt.

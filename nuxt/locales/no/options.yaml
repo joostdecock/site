@@ -241,10 +241,8 @@ frontDartPlacement:
   description: Location of the front dart as a proportion of your chest circumference. Higher numbers move it more to the side. TODO
   title: Front dart placement TODO
 frontDrop:
-  description:
-    _default: The amount the front neckline is lowered. Negative values raise the neckline. TODO
-    cathrin: How much the front panels lower from your hips towards your center front. TODO
-  title: Neckline drop TODO
+  description: How much the front panels lower from your hips towards your center front. TODO
+  title: Front drop TODO
 frontInset:
   description: Amount the front armhole is cut deeper into the front panel. TODO
   title: Front inset TODO
