@@ -70,7 +70,7 @@ i18n:
       i18n: 9
       measurements: 26
       optiongroups: 12
-      options: 302
+      options: 301
       patterns: 37
       showcase: 51
     es:
@@ -80,7 +80,7 @@ i18n:
       i18n: 9
       measurements: 26
       optiongroups: 12
-      options: 171
+      options: 169
       patterns: 37
       showcase: 1
     fr:
@@ -100,7 +100,7 @@ i18n:
       i18n: 6
       measurements: 26
       optiongroups: 12
-      options: 302
+      options: 301
       patterns: 37
       showcase: 1
     'no':
@@ -160,7 +160,7 @@ i18n:
     i18n: 9
     measurements: 26
     optiongroups: 12
-    options: 302
+    options: 301
     patterns: 37
     showcase: 51
   template: xx

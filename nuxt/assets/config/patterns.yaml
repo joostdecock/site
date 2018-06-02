@@ -1431,7 +1431,7 @@ wahid:
             min: 0
             max: 20
             default: 5
-        frontDrop:
+        necklineDrop:
             title: 'Neckline drop'
             description: 'The amount the front neckline is lowered. Negative values raise the neckline.'
             group: style
@@ -1515,14 +1515,6 @@ wahid:
             min: 15
             max: 45
             default: 30
-        acrossBackFactor:
-            title: 'Across back factor'
-            description: 'Controls your across back width as a factor of your shoulder to shoulder measurement.'
-            group: advanced
-            type: percent
-            min: 93
-            max: 99
-            default: 96
     optiongroups:
         ease:
             - chestEase
@@ -1534,7 +1526,7 @@ wahid:
             - frontScyeDart
             - centerBackDart
         style:
-            - frontDrop
+            - necklineDrop
             - frontStyle
             - hemStyle
             - hemRadius
@@ -1544,8 +1536,6 @@ wahid:
             - shoulderInset
             - backInset
             - frontInset
-        advanced:
-            - acrossBackFactor
 benjamin:
     info:
         name: 'Benjamin Bow Tie'
