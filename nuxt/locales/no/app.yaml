@@ -8,6 +8,7 @@ addAModel: Add a model TODO
 addComment: Add comment TODO
 all: All TODO
 alreadyHaveAnAccount: Already have an account? TODO
+apiCheatSheet: API cheat sheet TODO
 areYouSureAboutThis: Are you 100% sure about this? TODO
 avatar: Avatar TODO
 avatarUpdated: Avatar updated TODO
@@ -33,6 +34,7 @@ chooseAPattern: Choose a pattern TODO
 chooseYourOptions: Choose your options TODO
 close: Close TODO
 code: Code TODO
+codeOfConduct: Code of conduct TODO
 comments: Comments TODO
 community: Community TODO
 compare: Compare TODO
@@ -69,6 +71,7 @@ documentation: Documentation TODO
 documentationForDevelopers: Documentation for developers TODO
 documentationForTranslators: Documentation for translators TODO
 documentationOverview: Documentation overview TODO
+donationsPledge: Donations pledge TODO
 download: Download TODO
 draft: Draft TODO
 draftAPattern: Draft a pattern TODO
@@ -153,6 +156,7 @@ metricUnits: Metric units (cm) TODO
 model: Model TODO
 modelIsModel: 'Model is {model} TODO'
 models: Models TODO
+moderationPolicy: Moderation policy TODO
 monthsAgo: '{months} months ago TODO'
 name: Name TODO
 nameOfTheModel: Name of the model TODO
@@ -173,6 +177,7 @@ notes: Notes TODO
 ohNo: Oh no! TODO
 okThatsDone: 'OK, that''s done TODO'
 onlySelectedPatternParts: Only selected pattern parts TODO
+originStory: Origin story TODO
 pageNotFound: The page you are looking for is nowhere to be found. TODO
 paperlessTheme: Paperless theme TODO
 password: Password TODO

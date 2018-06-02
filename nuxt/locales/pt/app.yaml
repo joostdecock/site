@@ -8,6 +8,7 @@ addAModel: Adicionar um modelo
 addComment: Adicionar comentário
 all: Tudo
 alreadyHaveAnAccount: Já tem uma conta?
+apiCheatSheet: API cheat sheet TODO
 areYouSureAboutThis: Você tem certeza absoluta disso?
 avatar: Avatar TODO
 avatarUpdated: Avatar atualizado
@@ -33,6 +34,7 @@ chooseAPattern: Escolha um molde
 chooseYourOptions: Escolha suas opções
 close: Fechar
 code: Código
+codeOfConduct: Code of conduct TODO
 comments: Comentários
 community: Comunidade
 compare: Comparar
@@ -69,6 +71,7 @@ documentation: Documentação
 documentationForDevelopers: Documentação para desenvolvedores
 documentationForTranslators: Documentação para tradutores
 documentationOverview: Visão geral da Documentação
+donationsPledge: Donations pledge TODO
 download: Download TODO
 draft: Esboço
 draftAPattern: Esboce um molde
@@ -153,6 +156,7 @@ metricUnits: Unidade métrica (cm)
 model: Modelo
 modelIsModel: 'Modelo é {model}'
 models: Modelos
+moderationPolicy: Moderation policy TODO
 monthsAgo: '{months} meses atrás'
 name: Nome
 nameOfTheModel: Nome do modelo
@@ -173,6 +177,7 @@ notes: Notas
 ohNo: 'Ah, não!'
 okThatsDone: 'OK, '' está pronto'
 onlySelectedPatternParts: Apenas partes selecionadas do molde
+originStory: Origin story TODO
 pageNotFound: A página que você está procurando não foi encontrada.
 paperlessTheme: Tema sem papel
 password: Senha
