@@ -198,7 +198,7 @@ module.exports = {
     browserBaseURL: 'https://joost.data.freesewing.org'
   },
   router: {
-    middleware: 'auth',
+    middleware: ['auth','log'],
     extendRoutes (routes, resolve) {
       for(let i in topLevelDocRoutes) {
         routes.push({
