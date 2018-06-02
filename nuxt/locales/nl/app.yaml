@@ -8,6 +8,7 @@ addAModel: Voeg een model toe
 addComment: Commentaar toevoegen
 all: Alles
 alreadyHaveAnAccount: Ben je reeds ingeschreven?
+apiCheatSheet: API spiekbrief
 areYouSureAboutThis: Ben je absoluut zeker dat dit is wat je wil?
 avatar: Profielfoto
 avatarUpdated: Avatar bijgewerkt
@@ -33,6 +34,7 @@ chooseAPattern: Kies een patroon
 chooseYourOptions: Kies je opties
 close: Sluiten
 code: Code DONE
+codeOfConduct: Gedragscode
 comments: Commentaar
 community: Gemeenschap
 compare: Vergelijk
@@ -69,6 +71,7 @@ documentation: Documentatie
 documentationForDevelopers: Documentatie voor ontwikkelaars
 documentationForTranslators: Documentatie voor vertalers
 documentationOverview: Overzicht documentatie
+donationsPledge: Giften belofte
 download: Download DONE
 draft: Patroontekening
 draftAPattern: Laat je patroon tekenen
@@ -153,6 +156,7 @@ metricUnits: Metrische eenheden (cm)
 model: Model DONE
 modelIsModel: 'Model is {model} DONE'
 models: Modellen
+moderationPolicy: Moderatie beleid
 monthsAgo: '{months} maand geleden | {months} maanden geleden'
 name: Naam
 nameOfTheModel: Naam van het model
@@ -173,6 +177,7 @@ notes: Notities
 ohNo: Oh nee!
 okThatsDone: 'OK, dat is ook weer gebeurd'
 onlySelectedPatternParts: Alleen de geselecteerde patroondelen
+originStory: Oorsprongsverhaal
 pageNotFound: De pagina waar je naar op zoek bent is nergens te vinden.
 paperlessTheme: Papierloze layout
 password: Wachtwoord

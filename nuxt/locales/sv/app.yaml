@@ -8,6 +8,7 @@ addAModel: Lägg till en modell
 addComment: Lägg till en kommentar
 all: Alla
 alreadyHaveAnAccount: Har du redan ett konto?
+apiCheatSheet: API cheat sheet TODO
 areYouSureAboutThis: Är du 100 % säker på det här?
 avatar: Avatar DONE
 avatarUpdated: Avatar uppdaterad
@@ -33,6 +34,7 @@ chooseAPattern: Välj ett mönster
 chooseYourOptions: Välj dina alternativ
 close: Stäng
 code: Kod
+codeOfConduct: Code of conduct TODO
 comments: Kommentarer
 community: Gemenskap
 compare: Jämför
@@ -69,6 +71,7 @@ documentation: Dokumentation
 documentationForDevelopers: Dokumentation för utvecklare
 documentationForTranslators: Dokumentation för översättare
 documentationOverview: Dokumentationsöversikt
+donationsPledge: Donations pledge TODO
 download: Ladda ner
 draft: Skiss
 draftAPattern: Rita ett mönster
@@ -153,6 +156,7 @@ metricUnits: Metriska mått (cm)
 model: Modell
 modelIsModel: 'Modellen är {model} '
 models: Modeller
+moderationPolicy: Moderation policy TODO
 monthsAgo: '{months} månader sedan '
 name: Namn
 nameOfTheModel: Modellens namn
@@ -173,6 +177,7 @@ notes: Anteckningar
 ohNo: Åh nej!
 okThatsDone: 'Ok, det är klart '
 onlySelectedPatternParts: bara valda mönsterdelar
+originStory: Origin story TODO
 pageNotFound: Sidan du letar efter kan inte hittas.
 paperlessTheme: Papperslöst tema
 password: Lösenord

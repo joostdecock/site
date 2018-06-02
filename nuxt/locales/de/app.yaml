@@ -8,6 +8,7 @@ addAModel: Modell hinzufügen
 addComment: Kommentar hinzufügen
 all: Alles TODO
 alreadyHaveAnAccount: Du hast bereits ein Konto?
+apiCheatSheet: API cheat sheet TODO
 areYouSureAboutThis: Bist du 100% sicher?
 avatar: Avatar DONE
 avatarUpdated: Avatar aktualisieren
@@ -33,6 +34,7 @@ chooseAPattern: Wähle ein Schnittmuster
 chooseYourOptions: Wähle deine Optionen
 close: Schließen
 code: Code TODO
+codeOfConduct: Code of conduct TODO
 comments: Kommentare
 community: Community DONE
 compare: Vergleichen
@@ -69,6 +71,7 @@ documentation: Documentation TODO
 documentationForDevelopers: Documentation for developers TODO
 documentationForTranslators: Documentation for translators TODO
 documentationOverview: Documentation overview TODO
+donationsPledge: Donations pledge TODO
 download: Download DONE
 draft: Entwurf
 draftAPattern: Schnittmuster entwerfen
@@ -153,6 +156,7 @@ metricUnits: metrische Einheiten (cm)
 model: Modell (Person)
 modelIsModel: 'Model is {model} TODO'
 models: Modelle (Personen)
+moderationPolicy: Moderation policy TODO
 monthsAgo: '{months} months ago TODO'
 name: Name DONE
 nameOfTheModel: Name des Modells
@@ -173,6 +177,7 @@ notes: Notes TODO
 ohNo: Oh Nein!
 okThatsDone: 'OK, das ist erledigt'
 onlySelectedPatternParts: Nur ausgewählte Schnittmusterteile
+originStory: Origin story TODO
 pageNotFound: 'Die Seite, die Du gesucht hast, ist nicht auffindbar.'
 paperlessTheme: Paperless theme TODO
 password: Passwort

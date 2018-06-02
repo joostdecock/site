@@ -27,7 +27,7 @@
         <v-list-tile-action><v-icon>gesture</v-icon></v-list-tile-action>
         <v-list-tile-content>{{ $t('learnToDesignPatterns') }}</v-list-tile-content>
       </v-list-tile>
-      <v-list-tile :to="$fs.path('/docs/missing')">
+      <v-list-tile :to="$fs.path('/docs/core')">
         <v-list-tile-action><v-icon>code</v-icon></v-list-tile-action>
         <v-list-tile-content>{{ $t('documentationForDevelopers') }}</v-list-tile-content>
       </v-list-tile>
