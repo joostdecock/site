@@ -22,7 +22,7 @@ export default {
     return {
       snippets: [
       '*'+this.$i18n.t('italics')+'*',
-      '*'+this.$i18n.t('bold')+'*',
+      '**'+this.$i18n.t('bold')+'**',
       '~~'+this.$i18n.t('strikethrough')+'~~',
       '> '+this.$i18n.t('blockquote'),
       '['+this.$i18n.t('freesewing')+'](https://freesewing.org)',
