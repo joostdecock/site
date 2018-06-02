@@ -1,26 +1,26 @@
-acrossBack: Across back (deprecated) TODO
-bicepsCircumference: Biceps circumference TODO
-bustSpan: Bust span TODO
-centerBackNeckToWaist: Centerback neck to waist TODO
-chestCircumference: Chest circumference TODO
-headCircumference: Head circumference TODO
-highBust: High bust TODO
-highPointShoulderToBust: High point shoulder to bust TODO
-hipsCircumference: Hips circumference TODO
-hipsToUpperLeg: Hips to upper leg TODO
-inseam: Inseam TODO
-naturalWaist: Natural waist TODO
-naturalWaistToFloor: Natural waist to floor TODO
-naturalWaistToHip: Natural waist to hip TODO
-naturalWaistToSeat: Natural waist to seat TODO
-naturalWaistToUnderbust: Natural waist to underbust TODO
-neckCircumference: Neck circumference TODO
-seatCircumference: Seat circumference TODO
-seatDepth: Seat depth TODO
-shoulderSlope: Shoulder slope TODO
-shoulderToElbow: Shoulder to elbow TODO
-shoulderToShoulder: Shoulder to shoulder TODO
-shoulderToWrist: Shoulder to wrist TODO
-underBust: Underbust TODO
-upperLegCircumference: Upper leg circumference TODO
-wristCircumference: Wrist circumference TODO
+acrossBack: Över ryggen (används inte längre, men begreppet kan finnas kvar i äldre versioner) TODO
+bicepsCircumference: Omkrets överarm TODO
+bustSpan: Vidd mellan bröst TODO
+centerBackNeckToWaist: Rygglängd mitt bak, nacke till midja TODO
+chestCircumference: Bystvidd TODO
+headCircumference: Huvudomfång TODO
+highBust: Överbystvidd TODO
+highPointShoulderToBust: Axel till byst TODO
+hipsCircumference: Höftvidd TODO
+hipsToUpperLeg: Höft till lår TODO
+inseam: Innerbenlängd TODO
+naturalWaist: Naturlig midja TODO
+naturalWaistToFloor: Naturlig midja till golv TODO
+naturalWaistToHip: Naturlig midja till höft TODO
+naturalWaistToSeat: Naturlig midja till stuss TODO
+naturalWaistToUnderbust: Naturlig midja till under bysten TODO
+neckCircumference: Halsvidd TODO
+seatCircumference: Stussvidd TODO
+seatDepth: Sätesdjup TODO
+shoulderSlope: Axellutning TODO
+shoulderToElbow: Axel till armbåge TODO
+shoulderToShoulder: Axel till axel TODO
+shoulderToWrist: Axel till handled TODO
+underBust: Under bysten TODO
+upperLegCircumference: Lårvidd TODO
+wristCircumference: Handledsvidd TODO
