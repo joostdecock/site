@@ -8,7 +8,7 @@ addAModel: Añade un modelo
 addComment: Añade un comentario
 all: Todo
 alreadyHaveAnAccount: ¿Ya tienes una cuenta?
-apiCheatSheet: API cheat sheet TODO
+apiCheatSheet: Chuleta de la API
 areYouSureAboutThis: ¿Estás seguro al 100%?
 avatar: Avatar DONE
 avatarUpdated: Avatar actualizado
@@ -34,7 +34,7 @@ chooseAPattern: Elige un patrón
 chooseYourOptions: Elige tus opciones
 close: Cerrar
 code: Código
-codeOfConduct: Code of conduct TODO
+codeOfConduct: Código de conducta
 comments: Comentarios
 community: Comunidad
 compare: Comparar
@@ -71,7 +71,7 @@ documentation: Documentación
 documentationForDevelopers: Documentación para desarrolladores
 documentationForTranslators: Documentación para traductores
 documentationOverview: Documentation general
-donationsPledge: Donations pledge TODO
+donationsPledge: Compromiso de donaciones
 download: Descargar
 draft: Boceto
 draftAPattern: Trazar un boceto
@@ -131,7 +131,7 @@ justAMoment: Un momento
 key: Clave
 language: Idioma
 languageLanguageFiles: 'Ficheros de idioma de {language}'
-lastLogin: Last login TODO
+lastLogin: Último inicio de sesión
 layout: Plantilla
 learnMore: Saber más
 learnToDesignPatterns: Aprende a diseñar patrones
@@ -156,7 +156,7 @@ metricUnits: Unidades métricas (cm)
 model: Modelo
 modelIsModel: 'El modelo es {model} '
 models: Modelos
-moderationPolicy: Moderation policy TODO
+moderationPolicy: Político de moderación
 monthsAgo: 'Hace {months} meses '
 name: Nombre
 nameOfTheModel: Nombre del modelo
@@ -177,15 +177,15 @@ notes: Notas
 ohNo: ¡Oh no!
 okThatsDone: 'OK, eso está hecho '
 onlySelectedPatternParts: Sólo las partes seleccionadas del patrón
-originStory: Origin story TODO
+originStory: Historia del origen
 pageNotFound: La página que buscas no se encuentra en ninguna parte
 paperlessTheme: Tema sin papel
 password: Contraseña
 passwordResetPending: Cambio de contraseña pendiente.
 passwordUpdated: Contraseña cambiada
-patron-2: Powder monkey TODO
-patron-4: First mate TODO
-patron-8: Captain TODO
+patron-2: Grumete de la pólvora
+patron-4: Primer oficial
+patron-8: Captán
 patronText: '{username} es un {patronTier} desde {daysAgo}'
 patrons: Patrocinadores
 pattern: Patrón
