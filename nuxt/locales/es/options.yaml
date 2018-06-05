@@ -242,56 +242,56 @@ frontDartPlacement:
   title: Posición de la pinza frontal
 frontDrop:
   description: Cuánto los paneles frontales caen bajo la cadera en el centro por delate.
-  title: Front drop TODO
+  title: Caída frontal
 frontInset:
-  description: Amount the front armhole is cut deeper into the front panel. TODO
-  title: Front inset TODO
+  description: Cantidad de la sisa delantera que se introduce en el panel frontal
+  title: Inserción frontal
 frontPocketDepth:
-  description: 'The depth of the front pockets, as a factor of the space between your waist and hem. TODO'
-  title: Front pocket depth TODO
+  description: 'La profundidad del bolsillo frontal, como factor del espacio entre tu cintura y el bajo.'
+  title: Profundidad del bolsillo frontal
 frontPocketHeight:
-  description: 'The height where the front pocket starts, as a factor of your natural waist to hip measurement. TODO'
-  title: Front pocket height TODO
+  description: 'La altura a la que el bolsillo frontal empieza, como factor de tu medida de cintura a cadera. TODO'
+  title: Altura del bolsillo frontal
 frontPocketPlacement:
-  description: Location of the front pockets as a proportion of your chest circumference. Higher numbers move it more to the side. TODO
-  title: Front pocket placement TODO
+  description: Posición de los bolsillos frontales como proporción de tu circunferencia de pecho. Números mayores los mueven hacia los lados.
+  title: Posición del bolsillo frontal
 frontPocketWidth:
-  description: 'The width of the front pocket, as a factor of your chest circumference. TODO'
-  title: Front pocket width TODO
+  description: 'La anchura del bolsillo frontal, como factor de tu circunferencia de pecho.'
+  title: Anchura del bolsillo frontal
 frontRise:
-  description: 'Rise of the front panels at center front, between your breasts. Negative values will lower them. TODO'
-  title: Front rise TODO
+  description: Cuánto se eleva el panel frontal entre tus pechos. Valores negativos lo bajan.
+  title: Elevación frontal
 frontScyeDart:
-  description: The amount to take out in a dart at the front of the armhole. TODO
-  title: Front scye dart TODO
+  description: La cantidad a reducir en una pinza en el frente de la sisa.
+  title: Pinza frontal de la sisa
 frontStyle:
-  description: Whether you want a rounded or classic necline. TODO
+  description: Para elegir un escote clásico o redondeado.
   options:
-    '1': Classic TODO TODO TODO
-    '2': Rounded TODO TODO TODO
-  title: Neckline style TODO
+    '1': Clásico
+    '2': Redondeado
+  title: Estilo del escote
 headEase:
-  description: The amount of ease to fit the cap on your head. TODO
-  title: Head ease TODO
+  description: La holgura en la cabeza.
+  title: Holgura de cabeza
 hemCurve:
-  description: The height of the curve on a curved hem. TODO
-  title: Hem curve TODO
+  description: La altura de la curva en un dobladillo redondeado.
+  title: Curva del dobladillo
 hemRadius:
-  description: Radius of the rounded hem. Not relevant if you chose a classic hem. TODO
-  title: Hem radius TODO
+  description: Radio del dobladillo redondeado. No es relevante si eliges un dobladillo clásico.
+  title: Radio del dobladillo
 hemStyle:
   description:
-    _default: Whether you want a rounded or classic hem. TODO
-    simon: The style of the shirt hem. TODO
+    _default: Para elegir un dobladillo clásico o redondeado.
+    simon: El estilo del dobladillo.
   options:
     simon:
-      '1': Straight hem TODO TODO TODO
-      '2': Baseball hem TODO TODO TODO
-      '3': Slashed hem TODO TODO TODO
+      '1': Recto
+      '2': Baseball DONE
+      '3': Recortado
     wahid:
-      '1': Classic TODO TODO TODO
-      '2': Rounded TODO TODO TODO
-  title: Hem style TODO
+      '1': Clásico
+      '2': Redondeado
+  title: Estilo del dobladillo
 hipFlare:
   description: The amount to widen the shirt below the waist. TODO
   title: Hip flare TODO
