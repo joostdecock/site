@@ -30,7 +30,7 @@
       </v-tabs>
     </div>
     <div class="fs-pad">
-      <blockquote class="fs-m800 mt-5 mb-5 i18n">
+      <blockquote class="fs-m800 mt-5 mb-5 i18n fs-bq">
         <h3>{{ $t('joinTheTranslationTeam') }}</h3>
         <p>{{ $t('txt-joinTheTranslationTeam1')}}</p>
         <p>{{ $t('txt-joinTheTranslationTeam2')}}</p>
