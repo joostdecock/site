@@ -64,7 +64,7 @@ i18n:
       patterns: 37
       showcase: 0
     en:
-      app: 412
+      app: 413
       blog: 31
       docs: 348
       i18n: 9
@@ -80,7 +80,7 @@ i18n:
       i18n: 9
       measurements: 26
       optiongroups: 12
-      options: 201
+      options: 253
       patterns: 37
       showcase: 1
     fr:
@@ -94,10 +94,10 @@ i18n:
       patterns: 4
       showcase: 0
     nl:
-      app: 411
+      app: 412
       blog: 3
       docs: 2
-      i18n: 6
+      i18n: 9
       measurements: 26
       optiongroups: 12
       options: 301
@@ -154,7 +154,7 @@ i18n:
       patterns: 0
       showcase: 0
   target:
-    app: 412
+    app: 413
     blog: 31
     docs: 348
     i18n: 9

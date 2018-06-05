@@ -113,10 +113,10 @@ function loadTranslationFile(locale, file) {
 function writeJsonFile(locale, translation) {
   let json = {
     ...translation.app,
-    ...translation.i18n,
     ...translation.measurements,
     ...translation.optiongroups
   }
+  json.locales = translation.i18n
   json._patterns = translation.patterns
   json._options = translation.options
   fs.writeFileSync('./nuxt/locales/'+locale+'/'+locale+'.json', JSON.stringify(json, null, 0), 'utf8')

@@ -14,7 +14,7 @@
       </thead>
       <tbody>
         <tr v-for="(loc) in sort" :key="'tr-'+loc">
-          <td :key="'col1-'+loc" v-html="$t(loc)" class="text-xs-right"></td>
+          <td :key="'col1-'+loc" v-html="$t('locales.'+loc)" class="text-xs-right"></td>
           <td :key="'col2-'+loc">
             <v-progress-linear height="4" :value="stats[loc].avg.score" :key="'bar-'+loc" :color="stats[loc].avg.color"></v-progress-linear>
           </td>

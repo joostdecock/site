@@ -280,6 +280,7 @@ taskCompleted: Uppgift slutförd
 theme: Tema
 themeUpdated: Layout-inställningar
 thereIsNoWayBackFromThis: Det finns ingen väg tillbaka från det här.
+thisActionCannotBeUndone: This action cannot be undone TODO
 thisContentIsNotAvailableInLanguage: Det här innehållet finns inte tillgängligt på engelska.
 thisDraftPredatesThisFeature: Den här skissen föregår den här funktionen.
 thisIsTheCurrentStatusOfOurTranslations: Det här är nuvarande status för våra översättningar.

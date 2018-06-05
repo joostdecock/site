@@ -280,6 +280,7 @@ taskCompleted: Tarea completada
 theme: Tema
 themeUpdated: Preferencias de la plantilla establecidas
 thereIsNoWayBackFromThis: No hay vuelta atrás desde aquí
+thisActionCannotBeUndone: This action cannot be undone TODO
 thisContentIsNotAvailableInLanguage: Este contenido no está disponible en Español.
 thisDraftPredatesThisFeature: Este boceto precede a esta característica
 thisIsTheCurrentStatusOfOurTranslations: Éste es el estado actual de nuestras traducciones.
