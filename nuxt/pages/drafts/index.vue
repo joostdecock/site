@@ -2,7 +2,7 @@
   <fs-wrapper-login-required>
     <fs-breadcrumbs>{{ $t('drafts') }}</fs-breadcrumbs>
     <h1 class="mb-5 text-xs-center">{{ $t('drafts') }}</h1>
-    <fs-table-drafts :items="loadDrafts()" />
+    <fs-table-drafts :items="loadDrafts()" ref="draftsTable" />
     <div class="text-xs-left mt-5" v-if="$store.state.selected.drafts.length > 0">
       <v-btn color="primary" @click="bulkUpgrade()" :disabled="(upgrading || deleting)">
         <v-progress-circular indeterminate color="#fff" class="mr-3" :size="24" :width="2" v-if="upgrading"></v-progress-circular>
@@ -48,6 +48,7 @@ export default {
       this.$fs.bulkDeleteDrafts()
       .then((result) => {
         (result) ? this.deleting = false : this.error = true
+        this.$refs.draftsTable.clearSelection()
       })
       .catch((error) => { this.error = true })
     },
@@ -56,6 +57,7 @@ export default {
       this.$fs.bulkUpgradeDrafts()
       .then((result) => {
         (result) ? this.upgrading = false : this.error = true
+        this.$refs.draftsTable.clearSelection()
       })
       .catch((error) => { this.error = true })
     },
