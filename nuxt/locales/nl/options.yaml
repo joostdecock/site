@@ -241,10 +241,8 @@ frontDartPlacement:
   description: De plaatsing van de neep vooraan als een evenredigheid met je borstomtrek. Een hoger cijfer verplaatst de zak meer naar de zijnaad.
   title: Plaatsing nepen vooraan
 frontDrop:
-  description:
-    _default: De hoeveelheid waarmee de halslijn verlaagd wordt. Een negatieve waarde verhoogt de halslijn.
-    cathrin: Hoeveel de voorpanden verlagen van je heupen tot middenvoor.
-  title: Verlagen halslijn
+  description: Hoeveel de voorpanden verlagen van je heupen tot middenvoor.
+  title: Verlaging voorpand
 frontInset:
   description: De hoeveelheid waarmee het armsgat dieper in het voorpand gezet wordt.
   title: Inzet voor

@@ -94,6 +94,16 @@ export default ({ app, store, route }, inject) => {
     })
   }
 
+  const adminLoadUserMethod = (username) => {
+    return new Promise(function(resolve, reject) {
+    ax.data.get('/admin/user/'+username, { headers: {'Authorization': 'Bearer '+token()} })
+      .then((res) => {
+        resolve(res.data)
+      })
+    .catch((error) => { reject(error.response.data) })
+    })
+  }
+
   const asGist = (type, data) => {
     const gist = {
       type: type,
@@ -292,6 +302,10 @@ export default ({ app, store, route }, inject) => {
 
       loadUser(username) {
         return loadUserMethod(username)
+      },
+
+      adminLoadUser(username) {
+        return adminLoadUserMethod(username)
       },
 
       updateDraft(handle, data) {
@@ -550,6 +564,50 @@ export default ({ app, store, route }, inject) => {
         })
       },
 
+      adminFindUsers(input) {
+        return new Promise(function(resolve, reject) {
+          ax.data.get('/admin/find/users/'+input, { headers: {'Authorization': 'Bearer '+token()} })
+            .then((res) => {
+              resolve(res.data)
+            })
+          .catch((error) => { reject(false) })
+        })
+      },
+
+      adminRemoveBadge(badge, username) {
+        return new Promise(function(resolve, reject) {
+          ax.data.delete('/admin/user/'+username+'/badge/'+badge, { headers: {'Authorization': 'Bearer '+token()} })
+            .then((res) => {
+              resolve(res.data)
+            })
+          .catch((error) => { reject(false) })
+        })
+      },
+
+      adminAddBadge(badge, username) {
+        return new Promise(function(resolve, reject) {
+          ax.data.post('/admin/user/'+username+'/badge/'+badge, {}, { headers: {'Authorization': 'Bearer '+token()} })
+            .then((res) => {
+              resolve(res.data)
+            })
+          .catch((error) => { reject(false) })
+        })
+      },
+
+      logReferral(url) {
+        return new Promise(function(resolve, reject) {
+          ax.data.post('/referral', {
+              host: url.hostname,
+              path: url.pathname,
+              url: url.href
+          })
+            .then((res) => {
+              resolve(res.data)
+            })
+            .catch((error) => { console.log(error); reject(error) })
+        })
+      },
+
       // Sync methods
 
       pathLocale(path) {
@@ -654,6 +712,9 @@ export default ({ app, store, route }, inject) => {
         return Conf.apis.data+path
       },
       modelIsValid(model, patternHandle) {
+        if(typeof model.data.measurements === 'undefined') {
+          return false
+        }
         var valid = true
           Object.entries(Conf.patterns[patternHandle].measurements).forEach(
               ([key, value]) => {

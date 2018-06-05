@@ -8,6 +8,7 @@ addAModel: Modell hinzufügen
 addComment: Kommentar hinzufügen
 all: Alles TODO
 alreadyHaveAnAccount: Du hast bereits ein Konto?
+apiCheatSheet: API cheat sheet TODO
 areYouSureAboutThis: Bist du 100% sicher?
 avatar: Avatar DONE
 avatarUpdated: Avatar aktualisieren
@@ -33,6 +34,7 @@ chooseAPattern: Wähle ein Schnittmuster
 chooseYourOptions: Wähle deine Optionen
 close: Schließen
 code: Code TODO
+codeOfConduct: Code of conduct TODO
 comments: Kommentare
 community: Community DONE
 compare: Vergleichen
@@ -45,6 +47,7 @@ consentGiven: Einverständnis erteilt
 contactUs: Kontaktiere uns
 content: Inhalt
 contents: Inhalte
+contributeToFreesewing: Contribute to freesewing TODO
 coordinator: Koordinator
 coreLink: Core link TODO
 countAvailable: '{count} verfügbar'
@@ -68,6 +71,7 @@ documentation: Documentation TODO
 documentationForDevelopers: Documentation for developers TODO
 documentationForTranslators: Documentation for translators TODO
 documentationOverview: Documentation overview TODO
+donationsPledge: Donations pledge TODO
 download: Download DONE
 draft: Entwurf
 draftAPattern: Schnittmuster entwerfen
@@ -127,6 +131,7 @@ justAMoment: Einen Moment bitte
 key: Key TODO
 language: Sprache
 languageLanguageFiles: '{language} language files TODO'
+lastLogin: Last login TODO
 layout: Layout TODO
 learnMore: Learn more TODO
 learnToDesignPatterns: Learn to design patterns TODO
@@ -151,6 +156,7 @@ metricUnits: metrische Einheiten (cm)
 model: Modell (Person)
 modelIsModel: 'Model is {model} TODO'
 models: Modelle (Personen)
+moderationPolicy: Moderation policy TODO
 monthsAgo: '{months} months ago TODO'
 name: Name DONE
 nameOfTheModel: Name des Modells
@@ -171,16 +177,19 @@ notes: Notes TODO
 ohNo: Oh Nein!
 okThatsDone: 'OK, das ist erledigt'
 onlySelectedPatternParts: Nur ausgewählte Schnittmusterteile
+originStory: Origin story TODO
 pageNotFound: 'Die Seite, die Du gesucht hast, ist nicht auffindbar.'
 paperlessTheme: Paperless theme TODO
 password: Passwort
 passwordResetPending: Password reset pending. TODO
 passwordUpdated: Passwort geändert.
+patron-2: Powder monkey TODO
+patron-4: First mate TODO
+patron-8: Captain TODO
 patronText: '{username} is a {patronTier} since {daysAgo} TODO'
 patrons: Patrons TODO
 pattern: Schnittmuster
 patternDesignTutorial: Pattern design tutorial TODO
-patternDocumentation: Pattern instructions TODO
 patternInstructions: Pattern instructions TODO
 patternIsPattern: 'Pattern is {pattern} TODO'
 patternLineDrawing: '{pattern} technische Zeichnung'
@@ -213,6 +222,7 @@ removeAllMyData: Alle meine Daten löschen
 removeAllMyModelData: Alle Daten meiner Modelle löschen
 replay: Replay TODO
 reply: Reply TODO
+reportThisOnGitHub: Report this on GitHub TODO
 requiredMeasurements: Erforderliche Maße
 resetPassword: Passwort zurücksetzen
 result: Ergebnis
@@ -317,6 +327,7 @@ txt-email-sharing: Wir werden Deine E-Mail Adresse niemals weitergeben.
 txt-emailChangeConfirmationNotFound: 'Sorry, but we have no pending E-mail change for this confirmation code. Perhaps it expired, in which case you can simply make the change again in your settings. TODO'
 txt-emailNotFound: 'Wenn Du die E-Mail nicht finden kannst, überprüfe den Spam-Ordner oder kontaktiere uns.'
 txt-emailWillWorkToo: 'Wenn Du Deinen @:username nicht weißt: Deine @:emailAddress funktioniert auch'
+txt-errorPleaseReportIssue: Please report this issue on GitHub so we can fix it TODO
 txt-footer: Freesewing is made by Joost De Cock & contributors<br>with the financial support of our Patrons TODO
 txt-forgot-login: 'Enter your username or E-mail address below and click the <b>@:resetPassword</b> button TODO'
 txt-gdpr-1: The General Data Protection Regulation (GDPR) of the European Union (EU) protects your personal data from unscrupulous data hoarders. That's a good thing. TODO

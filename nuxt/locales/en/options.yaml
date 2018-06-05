@@ -241,10 +241,8 @@ frontDartPlacement:
   description: Location of the front dart as a proportion of your chest circumference. Higher numbers move it more to the side.
   title: Front dart placement
 frontDrop:
-  description:
-    _default: The amount the front neckline is lowered. Negative values raise the neckline.
-    cathrin: How much the front panels lower from your hips towards your center front.
-  title: Neckline drop
+  description: How much the front panels lower from your hips towards your center front.
+  title: Front drop
 frontInset:
   description: Amount the front armhole is cut deeper into the front panel.
   title: Front inset

@@ -52,8 +52,7 @@ export default {
       none: 0,
       metric: 1,
       imperial: 0,
-      custom: 1,
-      help: false
+      custom: 1
     }
     let pattern = this.$store.state.draft.defaults.pattern
     if (typeof this.$fs.conf.patterns[pattern].seamAllowance !== 'undefined') {

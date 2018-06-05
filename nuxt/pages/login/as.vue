@@ -60,7 +60,7 @@ export default {
 
 <style scoped>
 .on-splash {
-  background: #ffffffdd;
+  background: rgba(255,255,255, 0.9);
   padding: 0 40px 5px;
   text-align: center;
   border-radius: 5px;

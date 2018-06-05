@@ -1,6 +1,6 @@
 <template>
   <div>
-    <blockquote>
+    <blockquote class="fs-bq">
     <h3>{{ $t('youAreNotLoggedIn') }}</h3>
     <p>
       {{ $t('thisPageIsOnlyAvailableToFreesewingUsers') }}

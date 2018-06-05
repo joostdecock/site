@@ -8,6 +8,7 @@ addAModel: Adicionar um modelo
 addComment: Adicionar comentário
 all: Tudo
 alreadyHaveAnAccount: Já tem uma conta?
+apiCheatSheet: API cheat sheet TODO
 areYouSureAboutThis: Você tem certeza absoluta disso?
 avatar: Avatar DONE
 avatarUpdated: Avatar atualizado
@@ -33,6 +34,7 @@ chooseAPattern: Escolha um molde
 chooseYourOptions: Escolha suas opções
 close: Fechar
 code: Código
+codeOfConduct: Code of conduct TODO
 comments: Comentários
 community: Comunidade
 compare: Comparar
@@ -45,6 +47,7 @@ consentGiven: Consentimento dado
 contactUs: Entre em contato
 content: Conteúdo
 contents: Conteúdos
+contributeToFreesewing: Contribute to freesewing TODO
 coordinator: Coordenador
 coreLink: Link principal
 countAvailable: '{count} disponível'
@@ -69,6 +72,7 @@ documentationForDevelopers: Documentação para desenvolvedores
 documentationForTranslators: Documentação para tradutores
 documentationOverview: Visão geral da Documentação
 download: Download DONE
+donationsPledge: Donations pledge TODO
 draft: Esboço
 draftAPattern: Esboce um molde
 draftOptions: Opções de esboço
@@ -93,7 +97,7 @@ forContributors: Para contribuidores
 forMoreInfoRtfm: 'Para mais informações, leia a documentação:'
 forUsername: 'Para {username}'
 forUsers: Para usuários
-fork: Fork
+fork: Fork TODO
 forkDraftHandle: 'Fazer um fork deste esboço {handle}'
 freesewing: Freesewing DONE
 freesewingContributors: Contrubuidores do Freesewing
@@ -112,7 +116,7 @@ howCanWeHelpYou: Como podemos ajudar você?
 howToTakeMeasurements: Como tirar medidas
 i18n: Internacionalização(i18n)
 iForgotMyPassword: Esqueci minha senha
-iForgotMyUsername: Esqueci meu nome de usuário 
+iForgotMyUsername: Esqueci meu nome de usuário
 image: Imagem
 imperial: Sistema imperial
 imperialUnits: Unidade imperial (polegada)
@@ -128,6 +132,7 @@ key: Chave
 language: Linguagem
 languageLanguageFiles: 'arquivos de linguagem {language}'
 layout: Layout DONE
+lastLogin: Last login TODO
 learnMore: Aprenda mais
 learnToDesignPatterns: Aprenda a desenhar moldes
 letterPdf: PDF tamanho Letter
@@ -151,6 +156,7 @@ metricUnits: Unidade métrica (cm)
 model: Modelo
 modelIsModel: 'Modelo é {model}'
 models: Modelos
+moderationPolicy: Moderation policy TODO
 monthsAgo: '{months} meses atrás'
 name: Nome
 nameOfTheModel: Nome do modelo
@@ -171,16 +177,19 @@ notes: Notas
 ohNo: 'Ah, não!'
 okThatsDone: 'OK, '' está pronto'
 onlySelectedPatternParts: Apenas partes selecionadas do molde
+originStory: Origin story TODO
 pageNotFound: A página que você está procurando não foi encontrada.
 paperlessTheme: Tema sem papel
 password: Senha
 passwordResetPending: Reestabelecimento de senha pendente.
 passwordUpdated: Senha alterada.
+patron-2: Powder monkey TODO
+patron-4: First mate TODO
+patron-8: Captain TODO
 patronText: '{username} é um {patronTier} desde {daysAgo}'
 patrons: Patronos
 pattern: Molde
 patternDesignTutorial: Tutorial de modelagem
-patternDocumentation: Instruções do molde
 patternInstructions: Instruções do molde
 patternIsPattern: 'O molde é {pattern}'
 patternLineDrawing: 'Desenho de linha de {pattern}'
@@ -213,12 +222,13 @@ removeAllMyData: Remover todos meus dados
 removeAllMyModelData: Remover todos meus dados de modelos
 replay: Repetir
 reply: Responder
-requiredMeasurements: Medidas necessárias 
+reportThisOnGitHub: Report this on GitHub TODO
+requiredMeasurements: Medidas necessárias
 resetPassword: Resetar senha
 result: Resultado
 retrievingDraftFromCore: Recuperando esboço do principal
-revokeConsent: Revogar consentimento 
-rowsFromToOfTotal: 'Linhas {from} a {to} de {total}' 
+revokeConsent: Revogar consentimento
+rowsFromToOfTotal: 'Linhas {from} a {to} de {total}'
 rowsPerPage: Linhas por página
 save: Salvar
 scope: Escopo
@@ -242,7 +252,7 @@ signUpForAFreeAccount: Cadastre-se para uma conta gratuita
 signingUpOnlyTakesAMinute: Fazer o cadastro leva só um minuto
 signup--text: Isso não deveria acontecer. Nos ajude criando um issue (problema) no GitHub.
 signup--title: Um erro desconhecido ocorreu
-signup-invalid_input-text: 'Por favor escreva um endereço de email válido e uma senha'
+signup-invalid_input-text: Por favor escreva um endereço de email válido e uma senha
 signup-invalid_input-title: Entrada inválida
 signup-no_such_pending_confirmation-text: 'Desculpe, mas não temos registrado esse código de confirmação. Talvez ele tenha expirado, nesse caso você pode simplesmente se cadastrar outra vez'
 signup-no_such_pending_confirmation-title: Essa confirmação pendente não existe.
@@ -251,15 +261,15 @@ signup-signup_pending-title: Seu cadastro está com a ativação pendente
 signup-success-text: 'Nós lhe enviamos um email para {email}.'
 signup-user_exists-text: Nós já temos um usuário com esse endereço de email. Será que você gostaria de fazer login?
 signup-user_exists-title: Esse usuário já existe
-social: Social
+social: Social TODO
 somethingWentWrong: Alguma coisa deu errado
 startUpload: Começar upload
-status: Status
+status: Status TODO
 statusTranslationLanguage: 'Status da tradução {language}'
-step1: Passo 1 
-step2: Passo 2 
-step3: Passo 3 
-step4: Passo 4 
+step1: Passo 1
+step2: Passo 2
+step3: Passo 3
+step4: Passo 4
 stopProcessingMyData: Parar de processar meus dados
 stopUpload: Parar o upload
 storingDraftData: Armazenando dados do esboço
@@ -317,6 +327,7 @@ txt-email-sharing: We'll never share your email with anyone else TODO
 txt-emailChangeConfirmationNotFound: 'Sorry, but we have no pending E-mail change for this confirmation code. Perhaps it expired, in which case you can simply make the change again in your settings. TODO'
 txt-emailNotFound: 'If you can''t find the email, check your spam folder, or contact us. TODO'
 txt-emailWillWorkToo: 'If you don''t know your @:username, your @:emailAddress will work too TODO'
+txt-errorPleaseReportIssue: Please report this issue on GitHub so we can fix it TODO
 txt-footer: Freesewing is made by Joost De Cock & contributors<br>with the financial support of our Patrons TODO
 txt-forgot-login: 'Enter your username or E-mail address below and click the <b>@:resetPassword</b> button TODO'
 txt-gdpr-1: The General Data Protection Regulation (GDPR) of the European Union (EU) protects your personal data from unscrupulous data hoarders. That's a good thing. TODO

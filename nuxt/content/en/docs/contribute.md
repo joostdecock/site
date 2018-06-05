@@ -7,8 +7,8 @@ title: Contribute to freesewing
 ## Code of conduct
 
 Freesewing strives to be an open and inclusive community.
-To keep the trolls at bay, there's a [code of conduct](/docs/about/code-of-conduct). 
-and contributors are expected to uphold it.
+To keep the trolls at bay, we have a [code of conduct](/docs/about/code-of-conduct).  
+As a contributor, you are expected to uphold it.
 
 ## Where to get help or report a problem
 
@@ -22,22 +22,17 @@ You'll need a GitHub account, but they are free.
 
 ## Ways to contribute
 
-There's may ways to contribute to freesewing. Here are some of the more common ones, from easy to more involved:
+There's may ways to contribute to freesewing. 
+Here are some of the more common ones, from easy to more involved:
 
- - Help spread the word
- - Improve our content
- - Help with translating the site
- - Test, make, or showcase our patterns
- - Contribute to our code
+**Help spread the word**
 
-### Help spread the word
-
-Tell your friends about freesewing, or spread awareness on social media. 
+Tell your friends about freesewing, or [spread awareness on social media](/share). 
 If you have a blog, perhaps you can write about us, or review one of our patterns.
 
 It may seem simple, but it's probably how you heard about us in the first place. So pay it forward. 
 
-### Improve our content
+**Improve our content**
 
 On every page, there's a button in the right column that allows you to submit improvements.
 You'll need a GitHub account for this, but they are free.
@@ -48,19 +43,19 @@ Our content is written in Markdown, which is trivial to edit.
 
 > Our [documentation for translating MarkDown](/docs/i18n/markdown) has an overview of MarkDown syntax.
 
-### Help with translating the site
+**Help with translating the site**
 
 The [freesewing translators team](/i18n/) can always use a helping hand. Maybe we can even add a new language thanks to you.
 
 > See our [documentation for translators](/docs/i18n/) for mode details.
 
-### Test, make, or showcase our patterns
+**Test, make, or showcase our patterns**
 
 Go ahead and make [our patterns](/patterns), share your experience, and provide us your feedback.
 
 We'd love to get pictures to [showcase](/showcase) on the site too.
 
-### Conrtibute to our code
+**Conrtibute to our code**
 
 Interesting in submitting a pull request for our code? Awesome. All our code is [on GitHub](https://github.com/freesewing). 
 

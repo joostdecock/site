@@ -8,6 +8,7 @@ addAModel: Añade un modelo
 addComment: Añade un comentario
 all: Todo
 alreadyHaveAnAccount: ¿Ya tienes una cuenta?
+apiCheatSheet: API cheat sheet TODO
 areYouSureAboutThis: ¿Estás seguro al 100%?
 avatar: Avatar DONE
 avatarUpdated: Avatar actualizado
@@ -33,6 +34,7 @@ chooseAPattern: Elige un patrón
 chooseYourOptions: Elige tus opciones
 close: Cerrar
 code: Código
+codeOfConduct: Code of conduct TODO
 comments: Comentarios
 community: Comunidad
 compare: Comparar
@@ -45,6 +47,7 @@ consentGiven: Consentimiento otorgado
 contactUs: Contactáctanos
 content: Contenido
 contents: Contenidos
+contributeToFreesewing: Contribuye con freesewing
 coordinator: Coordinador
 coreLink: Enlace principal
 countAvailable: '{count} disponible '
@@ -68,6 +71,7 @@ documentation: Documentación
 documentationForDevelopers: Documentación para desarrolladores
 documentationForTranslators: Documentación para traductores
 documentationOverview: Documentation general
+donationsPledge: Donations pledge TODO
 download: Descargar
 draft: Boceto
 draftAPattern: Trazar un boceto
@@ -127,6 +131,7 @@ justAMoment: Un momento
 key: Clave
 language: Idioma
 languageLanguageFiles: 'Ficheros de idioma de {language}'
+lastLogin: Last login TODO
 layout: Plantilla
 learnMore: Saber más
 learnToDesignPatterns: Aprende a diseñar patrones
@@ -151,6 +156,7 @@ metricUnits: Unidades métricas (cm)
 model: Modelo
 modelIsModel: 'El modelo es {model} '
 models: Modelos
+moderationPolicy: Moderation policy TODO
 monthsAgo: 'Hace {months} meses '
 name: Nombre
 nameOfTheModel: Nombre del modelo
@@ -171,16 +177,19 @@ notes: Notas
 ohNo: ¡Oh no!
 okThatsDone: 'OK, eso está hecho '
 onlySelectedPatternParts: Sólo las partes seleccionadas del patrón
+originStory: Origin story TODO
 pageNotFound: La página que buscas no se encuentra en ninguna parte
 paperlessTheme: Tema sin papel
 password: Contraseña
 passwordResetPending: Cambio de contraseña pendiente.
 passwordUpdated: Contraseña cambiada
+patron-2: Powder monkey TODO
+patron-4: First mate TODO
+patron-8: Captain TODO
 patronText: '{username} es un {patronTier} desde {daysAgo}'
 patrons: Patrocinadores
 pattern: Patrón
 patternDesignTutorial: Tutorial de diseño de patrones
-patternDocumentation: Documentación de los patrones
 patternInstructions: Intrucciones de los patrones
 patternIsPattern: 'El patrón es {pattern}'
 patternLineDrawing: 'Dibujo de líneas de ''{pattern}'
@@ -213,6 +222,7 @@ removeAllMyData: Borrar todos mis datos
 removeAllMyModelData: Borrar todos mis datos de modelo
 replay: Ejecutar de nuevo
 reply: Responder
+reportThisOnGitHub: Notifícalo en GitHub
 requiredMeasurements: Medidas requeridas
 resetPassword: Restablecer contraseña
 result: Resultado
@@ -317,6 +327,7 @@ txt-email-sharing: Nunca compartiremos esto con nadie
 txt-emailChangeConfirmationNotFound: 'Lo sentimos, pero no tenemos ningún cambio de E-mail pendiente para este código de confirmación. Tal vez ha expirado, en cuyo caso puedes hacer el cambio de nuevo en tus ajustes. '
 txt-emailNotFound: 'Si no puedes encontrar el email mira en tu carpeta de SPAM, o contacta con nosotros. '
 txt-emailWillWorkToo: 'Si no conoces tu nombre de usuario, tu dirección de correo electrónico también funcionará'
+txt-errorPleaseReportIssue: 'Por favor, notifica este problema en GitHub para que podamos resolverlo'
 txt-footer: Freesewing está hecho por Joost De Cock & y colaboradores<br>con el apoyo económico de nuestros patrocinadores
 txt-forgot-login: Entra tu nombre de usuario o correo electrónico debajo y pulsa el botón de restablecer contraseña
 txt-gdpr-1: La Regulación General de Protección de Datos (GDPR) de la Unión Europea(EU) protege tus datos personales de acaparadores de datos sin escrúpulos. Eso es bueno.

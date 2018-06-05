@@ -8,6 +8,7 @@ addAModel: Add a model TODO
 addComment: Add comment TODO
 all: Tout
 alreadyHaveAnAccount: Vous avez déjà un compte ?
+apiCheatSheet: API cheat sheet TODO
 areYouSureAboutThis: Are you 100% sure about this? TODO
 avatar: Avatar DONE
 avatarUpdated: Avatar mis à jour
@@ -33,6 +34,7 @@ chooseAPattern: Choisir un patron
 chooseYourOptions: Choisir vos options
 close: Fermer
 code: Code TODO
+codeOfConduct: Code of conduct TODO
 comments: Comments TODO
 community: Communauté
 compare: Comparer
@@ -45,6 +47,7 @@ consentGiven: Consent given TODO
 contactUs: Nous contacter
 content: Contenu
 contents: Contenus
+contributeToFreesewing: Contribute to freesewing TODO
 coordinator: Coordinateur
 coreLink: Lien de base
 countAvailable: '{count} disponibles'
@@ -68,6 +71,7 @@ documentation: Documentation DONE
 documentationForDevelopers: Documentation pour les développeurs
 documentationForTranslators: Documentation pour les traducteurs
 documentationOverview: Vue d'ensemble de la documentation
+donationsPledge: Donations pledge TODO
 download: Télécharger
 draft: Brouillon
 draftAPattern: Draft a pattern TODO
@@ -127,6 +131,7 @@ justAMoment: Juste un instant
 key: Légende
 language: Langue
 languageLanguageFiles: 'Fichier langue {language}'
+lastLogin: Last login TODO
 layout: Agencement
 learnMore: Learn more TODO
 learnToDesignPatterns: Apprendre à concevoir des patrons
@@ -151,6 +156,7 @@ metricUnits: Unités de mesure métriques (cm)
 model: Modèle
 modelIsModel: 'Le modèle est {model}'
 models: Modèles
+moderationPolicy: Moderation policy TODO
 monthsAgo: 'Il y a {months} mois'
 name: Nom
 nameOfTheModel: Nom du modèle
@@ -171,16 +177,19 @@ notes: Notes DONE
 ohNo: Oh non !
 okThatsDone: 'OK, c''est fait'
 onlySelectedPatternParts: Uniquement les pièces de patron selectionnées
+originStory: Origin story TODO
 pageNotFound: La page que vous recherchez est introuvable
 paperlessTheme: Thème sans papier
 password: Mot de passe
 passwordResetPending: Password reset pending. TODO
 passwordUpdated: Mot de passe changé
+patron-2: Powder monkey TODO
+patron-4: First mate TODO
+patron-8: Captain TODO
 patronText: '{username} est un {patronTier} depuis {daysAgo}'
 patrons: Mécènes
 pattern: Patron
 patternDesignTutorial: Tutoriel de conception de patron
-patternDocumentation: Instructions du patron
 patternInstructions: Pattern instructions TODO
 patternIsPattern: 'Le patron est {pattern}'
 patternLineDrawing: '{pattern} line drawing TODO'
@@ -213,6 +222,7 @@ removeAllMyData: Enlever toutes mes données
 removeAllMyModelData: Remove all my model data TODO
 replay: Re-jouer
 reply: Reply TODO
+reportThisOnGitHub: Report this on GitHub TODO
 requiredMeasurements: Mensurations requises
 resetPassword: Reset password TODO
 result: Result TODO
@@ -317,6 +327,7 @@ txt-email-sharing: We'll never share your email with anyone else TODO
 txt-emailChangeConfirmationNotFound: 'Sorry, but we have no pending E-mail change for this confirmation code. Perhaps it expired, in which case you can simply make the change again in your settings. TODO'
 txt-emailNotFound: 'If you can''t find the email, check your spam folder, or contact us. TODO'
 txt-emailWillWorkToo: 'If you don''t know your @:username, your @:emailAddress will work too TODO'
+txt-errorPleaseReportIssue: Please report this issue on GitHub so we can fix it TODO
 txt-footer: Freesewing is made by Joost De Cock & contributors<br>with the financial support of our Patrons TODO
 txt-forgot-login: 'Enter your username or E-mail address below and click the <b>@:resetPassword</b> button TODO'
 txt-gdpr-1: The General Data Protection Regulation (GDPR) of the European Union (EU) protects your personal data from unscrupulous data hoarders. That's a good thing. TODO

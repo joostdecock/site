@@ -76,15 +76,4 @@ So I am happy to make this pledge:
 
 In practice, all donations received in the previous 12 months will be transfered to MSF once per year, on the 10th of December.
 
-## Donations history
-
-![Donations overview](/img/donations.svg){.elevation-1}
-
-> ##### Notes
-> - For freesewing, the (book)year starts/ends on December 10th.
-> - Donations prior to September 2017 were made on makemypattern.com.
-> - I started accepting donations in November 2014. Donations of those
-> first couple of weeks are lumped in with the 2015 donations.
-{.tip}
-
-If you'd like to, you can [donate here](/patrons/join)
+> If you'd like to, you can [donate here](/patrons/join)
