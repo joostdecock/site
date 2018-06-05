@@ -35,7 +35,7 @@
     <tbody>
     <tr v-for="(val, key) in draft.data.measurements" :key="key">
       <th>{{ $t(key) }}</th>
-      <td>{{ $fs.formatUnits(val, $store.state.user.units, 'measure') }}</td>
+      <td v-html="$fs.formatUnits(val, draft.model.units, 'measure')"></td>
     </tr>
     </tbody>
   </table>
