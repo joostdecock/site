@@ -280,6 +280,7 @@ taskCompleted: Taak is afgerond
 theme: Layout
 themeUpdated: Voorkeur layout bijgewerkt
 thereIsNoWayBackFromThis: Na dit is er geen weg terug.
+thisActionCannotBeUndone: Deze actie kan niet ongedaan gemaakt worden
 thisContentIsNotAvailableInLanguage: Deze inhoud is niet beschikbaar in het Nederlands.
 thisDraftPredatesThisFeature: Deze patroontekening is te oud voor deze functionaliteit.
 thisIsTheCurrentStatusOfOurTranslations: Dit is de huidige status van onze vertalingen.
