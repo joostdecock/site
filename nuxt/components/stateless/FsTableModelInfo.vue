@@ -20,7 +20,7 @@
     </tr>
     <tr>
       <th>{{ $t('breasts') }}</th>
-      <td>{{ (draft.model.body === 'male') ? $t('no') : $t('yes')  }}</td>
+      <td>{{ (draft.model.breasts === 0) ? $t('no') : $t('yes')  }}</td>
     </tr>
     <tr>
       <th>{{ $t('units') }}</th>
