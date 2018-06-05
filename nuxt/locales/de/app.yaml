@@ -110,6 +110,7 @@ getHelp: Get help TODO
 github: GitHub TODO
 githubUpdated: GitHub username updated TODO
 goodToKnow: Good to know TODO
+grabYourMeasuringTape: Grab your measuring tape TODO
 hi: Hi DONE
 home: Home DONE
 howCanWeHelpYou: Wie können wir Dir helfen
@@ -350,6 +351,8 @@ txt-joinTheTranslationTeam3: 'Read the documentation for translators to get star
 txt-missingBlogPosts: Not all blog posts have been translated to English — but you could change that TODO
 txt-modelsWithMissingMeasurements: 'These models lack some of the required measurements to draft this pattern: TODO'
 txt-newModel: 'To get started, please give your model a name. TODO'
+txt-noModels: 'Without a model, there''s not much you can do here TODO'
+txt-noValidModels: None of your models have all the required measurements for this pattern TODO
 txt-password-policy: We don't enforce a password policy TODO
 txt-passwordRecoverConfirmationNotFound: 'Sorry, but we have no pending password recovery for this confirmation code. Perhaps it expired, in which case you can simply make another request. TODO'
 txt-resend: 'You can sign up again with the same E-mail address, and we''ll send you a new confirmation message. TODO'

@@ -26,7 +26,14 @@
        :to="$fs.path('/draft/'+pattern+'/for/'+model)"
        >{{ $store.state.user.models[model].name }}</v-btn>
     </p>
-    <v-container fluid grid-list-lg>
+    <blockquote class="warning fs-m800 mt-5 mb-5 fs-bq" v-if="models.valid.length === 0">
+      <h3>{{ $t('grabYourMeasuringTape') }}</h3>
+      <p>{{ $t('txt-noValidModels') }}</p>
+      <v-btn large color="primary" :to="$fs.path('/model')">
+        <v-icon class="mr-3">perm_identity</v-icon>
+        {{ $t('newModel') }}</v-btn>
+    </blockquote>
+    <v-container fluid grid-list-lg v-else>
       <v-layout row wrap>
         <v-flex class="xs4 sm3 xl2" v-for="model in models.valid" :key="model">
           <v-card>

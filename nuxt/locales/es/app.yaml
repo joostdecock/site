@@ -110,6 +110,7 @@ getHelp: Obtén ayuda
 github: GitHub DONE
 githubUpdated: Nombre de usuario de GitHub actualizado
 goodToKnow: Bueno saberlo
+grabYourMeasuringTape: Grab your measuring tape TODO
 hi: Hola
 home: Home DONE
 howCanWeHelpYou: ¿Cómo podemos ayudarte?
@@ -350,6 +351,8 @@ txt-joinTheTranslationTeam3: 'Lee la documentación para traductores para empeza
 txt-missingBlogPosts: 'No todas las entradas del blog están traducidas, pero tú puedes cambiar eso'
 txt-modelsWithMissingMeasurements: 'A este modelo le faltan algunas de las medidas requeridas para dibujar este patrón: '
 txt-newModel: 'Para empezar, dale un nombre a este modelo. '
+txt-noModels: 'Without a model, there''s not much you can do here TODO'
+txt-noValidModels: None of your models have all the required measurements for this pattern TODO
 txt-password-policy: No aplicamos una política de contraseña
 txt-passwordRecoverConfirmationNotFound: 'Lo sentimos, pero no tenemos pendiente ninguna recuperación de contraseña para este código de confirmación. Quizás ha caducado, en cuyo caso simplemente puedes hacer una nueva solicitud'
 txt-resend: 'Puedes iniciar sesión de nuevo con la misma dirección de E-mail, y te enviaremos un nuevo mensaje de confirmación.'

@@ -1,5 +1,5 @@
 <template>
-  <v-data-table
+    <v-data-table
     :headers="headers"
     :items="items"
     :pagination.sync="pagination"
@@ -82,6 +82,10 @@ export default {
   methods: {
     updateSelectedDrafts(name, value) {
       this.$store.commit('setSelectedDrafts', this.selected )
+    },
+    clearSelection() {
+      this.selected = []
+      this.$store.commit(this.selected )
     }
   }
 }
