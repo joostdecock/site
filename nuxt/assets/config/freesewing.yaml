@@ -44,7 +44,7 @@ i18n:
   origin: en
   stats:
     de:
-      app: 212
+      app: 243
       blog: 0
       docs: 0
       i18n: 6
@@ -74,7 +74,7 @@ i18n:
       patterns: 37
       showcase: 1
     fr:
-      app: 175
+      app: 326
       blog: 0
       docs: 0
       i18n: 0

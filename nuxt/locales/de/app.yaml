@@ -16,7 +16,7 @@ averagePeopleDontExist: Durchschnittliche Menschen gibt es nicht
 basicTheme: Klassic Theme
 basics: Grundlagen
 becomeAPatron: Werde ein Patron
-bio: Bio
+bio: Bio TODO
 bioUpdated: Bio aktualisiert
 blockquote: Block quote TODO
 blog: Blog DONE
@@ -35,12 +35,12 @@ chooseYourOptions: Wähle deine Optionen
 close: Schließen
 code: Code TODO
 codeOfConduct: Code of conduct TODO
+comments: Kommentare
 community: Community DONE
 compare: Vergleichen
 completePattern: Komplettes Schnittmuster
-consent: Einverstanden
-comments: Kommentare
 connectingToSomeApi: 'Verbinde mit {api} API'
+consent: Einverstanden
 consentForModelData: Consent for model data TODO
 consentForProfileData: Consent for profile data TODO
 consentGiven: Einverständnis erteilt
@@ -77,20 +77,18 @@ draftAPattern: Schnittmuster entwerfen
 draftOptions: Entwurfoptionen
 draftPattern: 'Entwurf {pattern}'
 draftPatternForModel: 'Entwurf {pattern} für {model}'
+draftThePattern: Schnittmuster entwerfen
 draftingPattern: 'Entwerfe {pattern}'
 drafts: Entwürfe
 edit: Bearbeiten
+editOnGithub: Auf GitHub bearbeiten
 email: E-Mail DONE
 emailAddress: E-mail Addresse
+emailUpdatePending: E-Mail aktualisierung ausstehend.
 emails: E-Mails DONE
 enterYourCurrentPassword: Aktuelles Passwort eingeben
 enterYourNewPassword: Neues Passwort eingeben
 error-unknown: Ein unbekannter Fehler ist aufgetreteten
-filterByPattern: Nach Schnittmuster filtern
-draftThePattern: Schnittmuster entwerfen
-editOnGithub: Auf GitHub bearbeiten
-email: E-Mail
-emailUpdatePending: E-Mail aktualisierung ausstehend.
 error-username_taken: Username bereits vergeben
 exportMyData: Meine Dateien exportieren
 filterByPattern: Nach Schnittmuster filtern
@@ -104,64 +102,58 @@ freesewing: Freesewing DONE
 freesewingContributors: Freesewing contributors TODO
 freesewingOnGithub: Freesewing on GitHub TODO
 freesewingPatrons: Freesewing patrons TODO
-<<<<<<< HEAD
-fundamentals: Grundlagen
-githubUpdated: GitHub username updated TODO
-grabYourMeasuringTape: Grab your measuring tape TODO
-hi: Hi DONE
-home: Home DONE
-howCanWeHelpYou: Wie können wir Dir helfen
-i18n: Internationalization (i18n) TODO
-iForgotMyPassword: Ich habe mein Passwort vergessen
-iForgotMyUsername: Ich habe meinen Benutzernamen vergessen
-imperial: Imperial TODO
-imperialUnits: Imperial units (inch) TODO
-in: in TODO
-inch: Zoll
-instagram: Instagram DONE
-justAMoment: Einen Moment bitte
-lastLogin: Last login TODO
 freezeMyAccount: Meinen Account pausieren
 fullSizePdf: PDF in Originalgröße
+fundamentals: Grundlagen
 getHelp: Hilfe
 github: GitHub DONE
 githubUpdated: GitHub Benutzername aktualisiert
 goodToKnow: Gut zu wissen
+grabYourMeasuringTape: Grab your measuring tape TODO
+hi: Hi DONE
+home: Home DONE
+howCanWeHelpYou: Wie können wir Dir helfen
 howToTakeMeasurements: Richtiges Maß nehmen
+i18n: Internationalization (i18n) TODO
+iForgotMyPassword: Ich habe mein Passwort vergessen
+iForgotMyUsername: Ich habe meinen Benutzernamen vergessen
 image: Bild
 imperial: Imperial TODO
 imperialUnits: Imperial units (inch) TODO
 in: in TODO
-info: Info
+inch: Zoll
+info: Info TODO
+instagram: Instagram DONE
 instagramUpdated: Instagram Account aktualisiert
 italics: Kursiv
 joinTheTranslationTeam: 'Even if you have never contributed to an open source project, translation is a smooth on-ramp towards contributor fame. TODO'
+justAMoment: Einen Moment bitte
 key: Schlüssel
 language: Sprache
 languageLanguageFiles: '{language} Sprach-Dateien'
-layout: Layout
+lastLogin: Last login TODO
+layout: Layout TODO
 learnMore: Erfahre mehr
 learnToDesignPatterns: Wie man Schnittmuster entwirft
 letterPdf: Letter PDF TODO
 loadingModelData: Modell Daten werden geladen
 loadingResult: Lade Ergebnisse
 locale: Language TODO
-logInAs: Log in as TODO
-logOutAs: 'Log out as {user} TODO'
-markdownSyntax: MarkDown syntax TODO
-measurementsRequiredForPattern: 'Maße benötigt für {pattern}'
-messages: Nachrichten
-metric: metrisch
-metricUnits: metrische Einheiten (cm)
-model: Modell (Person)
 localeUpdated: Spracheinstellung aktualisiert
 logIn: Anmelden
+logInAs: Log in as TODO
 logOut: Abmelden
+logOutAs: 'Log out as {user} TODO'
 loginFailed: Anmeldung fehlgeschlagen
 makeItBetter: Mach es besser
 markdownSyntax: MarkDown syntax TODO
 measurementUpdated: Maße aktualisiert
 measurements: Maße
+measurementsRequiredForPattern: 'Maße benötigt für {pattern}'
+messages: Nachrichten
+metric: metrisch
+metricUnits: metrische Einheiten (cm)
+model: Modell (Person)
 modelIsModel: 'Model is {model} TODO'
 models: Modelle (Personen)
 moderationPolicy: Moderation policy TODO
