@@ -48,7 +48,6 @@ contactUs: Nous contacter
 content: Contenu
 contents: Contenus
 contributeToFreesewing: Contribute to freesewing TODO
-coordinator: Coordinateur
 coreLink: Lien de base
 countAvailable: '{count} disponibles'
 countTranslated: '{count} traduits'
@@ -291,6 +290,7 @@ tip: Tip TODO
 title: Title TODO
 today: Today TODO
 translationTeam: Translation team TODO
+translators: Translators TODO
 troubleLoggingIn: Trouble logging in? TODO
 tryAgain: Try again TODO
 twitter: Twitter TODO

@@ -48,7 +48,6 @@ contactUs: Kontakta oss
 content: Innehåll
 contents: Innehåll
 contributeToFreesewing: Contribute to freesewing TODO
-coordinator: Samordnare
 coreLink: Kärnlänk/Core link
 countAvailable: '{count} tillgänglig '
 countTranslated: '{count} översatt '
@@ -291,6 +290,7 @@ tip: Tips
 title: Titel
 today: I dag
 translationTeam: Översättningsteam
+translators: Translators TODO
 troubleLoggingIn: Problem med att logga in?
 tryAgain: Försök igen
 twitter: Twitter DONE

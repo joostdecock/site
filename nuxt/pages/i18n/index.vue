@@ -8,7 +8,7 @@
         <tr class="fs-titlerow">
           <th v-html="$t('language')" class="text-xs-right fs-wp20"></th>
           <th v-html="$t('status')" class="text-xs-center fs-wp30"></th>
-          <th v-html="$t('coordinator')" class="text-xs-left fs-wp20"></th>
+          <th v-html="$t('translators')" class="text-xs-center fs-wp30"></th>
           <th v-html="$t('details')" class="text-xs-center"></th>
         </tr>
       </thead>
@@ -19,11 +19,19 @@
             <v-progress-linear height="4" :value="stats[loc].avg.score" :key="'bar-'+loc" :color="stats[loc].avg.color"></v-progress-linear>
           </td>
           <td :key="'col3-'+loc" class="text-xs-center">
-            <a v-if="$fs.conf.i18n.coordinators[loc] === '_vacant'"
-              :href="'mailto:joost@decock.org?Subject=I%20could%20be%20language%20coordinator%20for%20'+loc">
-              😞
-            </a>
-            <nuxt-link :to="$fs.userPath($fs.conf.i18n.coordinators[loc])" v-else>@{{ $fs.conf.i18n.coordinators[loc]}}</nuxt-link>
+            <div v-if="$fs.conf.i18n.translators[loc] === '_vacant'">
+              <v-btn :href="'mailto:joost@decock.org?Subject=I%20could%20help%20translate%20'+loc" fat small color="success">{{ $t('volunteerVerb') }}</v-btn>
+            </div>
+            <div v-else>
+              <nuxt-link
+                v-for="translator in $fs.conf.i18n.translators[loc]"
+                :key="translator"
+                :to="$fs.userPath(translator)"
+                class="mr-3"
+              >
+                @{{ translator}}
+              </nuxt-link>
+            </div>
           </td>
           <td :key="'col4-'+loc" class="text-xs-center">
             <v-btn fab small :color="stats[loc].avg.color" :to="$fs.path('/i18n/'+loc)" class="fs-nodeco">

@@ -48,7 +48,6 @@ contactUs: Contactáctanos
 content: Contenido
 contents: Contenidos
 contributeToFreesewing: Contribuye con freesewing
-coordinator: Coordinador
 coreLink: Enlace principal
 countAvailable: '{count} disponible '
 countTranslated: '{count} traducido '
@@ -291,6 +290,7 @@ tip: Consejo
 title: Título
 today: Hoy
 translationTeam: Equipo de traducción
+translators: Translators TODO
 troubleLoggingIn: ¿Problemas para acceder?
 tryAgain: Prueba otra vez
 twitter: Twitter DONE
