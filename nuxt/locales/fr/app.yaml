@@ -5,7 +5,7 @@ aCodeBlock: A code block TODO
 aboutFreesewing: A propos de Freesewing
 add: Ajouter
 addAModel: Add a model TODO
-addComment: Add comment TODO
+addComment: Ajouter un commentaire
 all: Tout
 alreadyHaveAnAccount: Vous avez déjà un compte ?
 apiCheatSheet: API cheat sheet TODO
@@ -16,7 +16,7 @@ averagePeopleDontExist: Average people don't exist TODO
 basicTheme: Classic theme TODO
 basics: Les bases
 becomeAPatron: Devenez mécène
-bio: Bio TODO
+bio: Bio DONE
 bioUpdated: Bio updated TODO
 blockquote: Block quote TODO
 blog: Blog DONE
@@ -24,7 +24,7 @@ blogPost: Messages de blog
 bold: Bold TODO
 breasts: Poitrine
 breastsUpdated: Réglages poitrine mis à jour
-by: by TODO
+by: Par
 cancel: Annuler
 chatOnGitter: Chatter sur Gitter
 chatWithUs: Chatter avec nous
@@ -80,7 +80,7 @@ draftPatternForModel: 'Ebauche de {pattern} pour {model}'
 draftThePattern: Ebaucher le patron
 draftingPattern: 'Ebauche de {pattern} en cours'
 drafts: Ebauches
-edit: Editer
+edit: Éditer
 editOnGithub: Editer avec GitHub
 email: E-mail DONE
 emailAddress: Adresse mail
@@ -89,8 +89,8 @@ emails: E-mails DONE
 enterYourCurrentPassword: Composer votre mot de passe actuel
 enterYourNewPassword: Composer votre nouveau mot de passe
 error-unknown: Une erreur inconnue est survenue
-error-username_taken: Nom d'utilisateur déjà pris
-exportMyData: Export my data TODO
+error-username_taken: Nom d'utilisateur déjà utilisé
+exportMyData: Exporter mes données
 filterByPattern: Filtrer par patron
 forContributors: Pour les contributeurs
 forMoreInfoRtfm: 'Pour plus d''infos, lire la documentation:'
@@ -100,7 +100,7 @@ fork: Fork TODO
 forkDraftHandle: 'Fork draft {handle} TODO'
 freesewing: Freesewing DONE
 freesewingContributors: Freesewing contributors TODO
-freesewingOnGithub: Freesewing on GitHub TODO
+freesewingOnGithub: Freesewing sur GitHub
 freesewingPatrons: Freesewing patrons TODO
 freezeMyAccount: Freeze my account TODO
 fullSizePdf: PDF à l'échelle
@@ -115,8 +115,8 @@ home: Accueil
 howCanWeHelpYou: How can we help you? TODO
 howToTakeMeasurements: Comment prendre les mesures
 i18n: Internationalisation (i18n)
-iForgotMyPassword: I forgot my password TODO
-iForgotMyUsername: I forgot my username TODO
+iForgotMyPassword: J'ai oublié mon mot de passe
+iForgotMyUsername: J'ai oublié mon nom d'utilisateur
 image: Image DONE
 imperial: Imperial TODO
 imperialUnits: Unités de mesure impériales (pouces)
@@ -344,7 +344,7 @@ txt-homepage-join: Join thousands of others and sign up for a free account on fr
 txt-homepage-model: All our patterns are made-to-measure. So first thing to do is grab your measuring tape. TODO
 txt-homepage-opensource: 'Our platform, our patterns, and even this website. All our code is available on GitHub. Pull requests welcome! TODO'
 txt-homepage-patrons: Freesewing is made possible by the financial support of our Patrons. They keep this ship afloat. TODO
-txt-homepage-quotes: What others are saying TODO
+txt-homepage-quotes: Ce qu'en disent les autres
 txt-joinTheTranslationTeam1: 'Even if you have never contributed to an open source project, translation is a smooth on-ramp towards contributor fame. TODO'
 txt-joinTheTranslationTeam2: 'It doesn''t matter whether you translate a few words or sentences, or tackle an entire language by yourself. Every contribution counts, and many hands make light work. TODO'
 txt-joinTheTranslationTeam3: 'Read the documentation for translators to get started. Don''t worry, it''s easy. TODO'
@@ -381,33 +381,33 @@ updates: Updates TODO
 upgrade: Upgrade TODO
 upgradeRequired: Upgrade required TODO
 useDecimalsOrFractions: Use decimals (1.25) or fractions (1 1/4) TODO
-user: User TODO
-userHasBeenWithUsSince: '{user} has been with us since {since} TODO'
+user: utilisateur
+userHasBeenWithUsSince: '{user} est parmi nous depuis {since} TODO'
 userIsAPatron: '{user} is a patron TODO'
 username: Username TODO
 usernameOrEmail: '@:username or @:emailAddress TODO'
 usernameUpdated: Username updated TODO
 users: Users TODO
-version: Version TODO
+version: Version DONE
 visitPatronProfile: Visiter le profil de ce Patron
 volunteerVerb: Volunteer TODO
 weAreLoadingDataFromTheBackend: We are loading data from the backend TODO
 weAreValidatingYourConfirmationCode: We are validating your confirmation code TODO
 weCantHelpYouWithThis: We can't help you with this TODO
-weNeedYourConsent: We need your consent TODO
+weNeedYourConsent: Nous avons besoin de votre accord
 welcomeAboard: Welcome aboard TODO
 withBreasts: With breasts TODO
 withOrWithoutBreasts: With or without breasts? TODO
 withoutBreasts: Without breasts TODO
-wouldYouLikeToLogOut: Would you like to log out? TODO
+wouldYouLikeToLogOut: Souhaitez-vous vous déconnecter ?
 yearsAgo: '{years} year ago | {years} years ago TODO'
-'yes': Yes TODO
+'yes': Oui
 yesIDo: 'Oui, je donne mon accord'
 yesIDoObject: 'Yes, I do object TODO'
-yesterday: Yesterday TODO
-youAreCurrentlyLoggedIn: You are currently logged in. TODO
+yesterday: Hier
+youAreCurrentlyLoggedIn: Vous être connecté(e)
 youAreNotAnAdmin: You are not an admin TODO
-youAreNotLoggedIn: You are not logged in. TODO
+youAreNotLoggedIn: Vous n'êtes pas connecté(e)
 youCanUseMarkdownFormatting: You can use MarkDown formatting TODO
 youDoNotObjectToSharingAnonymizedDataForResearch: You do not object to sharing anonymized data for research TODO
 youHaveTheRightToObjectToThis: You have the right to object to this TODO
