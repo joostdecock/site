@@ -1,19 +1,18 @@
 100PercentCommunity: 100% communauté
-100PercentFree: Entièrement gratuit
+100PercentFree: 100% gratuit
 100PercentOpenSource: 100% open source TODO
 aCodeBlock: A code block TODO
 aboutFreesewing: A propos de Freesewing
 add: Ajouter
-apiCheatSheet: API cheat sheet TODO
-addAModel: Ajouter un modèle
-addComment: Ajouter un commentaire
+addAModel: Ajoutez un modèle
+addComment: Ajoutez un commentaire
 all: Tout
-alreadyHaveAnAccount: Vous avez déjà un compte
-areYouSureAboutThis: Êtes-vous sûr?
+alreadyHaveAnAccount: Vous avez déjà un compte ?
+areYouSureAboutThis: Êtes-vous sûr à 100% ?
 avatar: Avatar DONE
 avatarUpdated: Avatar mis à jour
-averagePeopleDontExist: La normalité n'existe pas
-basicTheme: Classic theme TODO
+averagePeopleDontExist: Les gens "normaux" n'existent pas
+basicTheme: Thème classique
 basics: Les bases
 becomeAPatron: Devenez mécène
 bio: Bio DONE
@@ -33,17 +32,17 @@ chooseANewPassword: Choisir un nouveau mot de passe
 chooseAPattern: Choisir un patron
 chooseYourOptions: Choisir vos options
 close: Fermer
-code: Code TODO
 codeOfConduct: Code of conduct TODO
-comments: Comments TODO
+code: Code
+comments: Commentaires
 community: Communauté
 compare: Comparer
 completePattern: Patron complet
 connectingToSomeApi: 'Connexion à l''API {api}'
-consent: Consentir
-consentForModelData: Consent for model data TODO
-consentForProfileData: Consent for profile data TODO
-consentGiven: Consent given TODO
+consent: Autorisation
+consentForModelData: Autoriser l'enregistrement des données du modèle
+consentForProfileData: Autoriser l'enregistrement des données du profil
+consentGiven: Autorisation accordée
 contactUs: Nous contacter
 content: Contenu
 contents: Contenus
@@ -73,11 +72,11 @@ documentationOverview: Vue d'ensemble de la documentation
 donationsPledge: Donations pledge TODO
 download: Télécharger
 draft: Brouillon
-draftAPattern: Draft a pattern TODO
+draftAPattern: Dessiner un patron
 draftOptions: Options de l'ébauche
 draftPattern: 'Ebauche de {pattern}'
 draftPatternForModel: 'Ebauche de {pattern} pour {model}'
-draftThePattern: Ebaucher le patron
+draftThePattern: Dessiner le patron
 draftingPattern: 'Ebauche de {pattern} en cours'
 drafts: Ebauches
 edit: Éditer
@@ -94,7 +93,7 @@ exportMyData: Exporter mes données
 filterByPattern: Filtrer par patron
 forContributors: Pour les contributeurs
 forMoreInfoRtfm: 'Pour plus d''infos, lire la documentation:'
-forUsername: 'Pour {username} TODO'
+forUsername: 'Pour {username} '
 forUsers: Pour les utilisateurs
 fork: Fork TODO
 forkDraftHandle: 'Fork draft {handle} TODO'
@@ -105,19 +104,19 @@ freesewingPatrons: Freesewing patrons TODO
 freezeMyAccount: Freeze my account TODO
 fullSizePdf: PDF à l'échelle
 fundamentals: Fondamentaux
-getHelp: Get help TODO
-github: GitHub
+getHelp: Obtenir de l'aide
+github: GitHub DONE
 githubUpdated: Nom d'utilisateur GitHub mis à jour
 goodToKnow: Bon à savoir
 grabYourMeasuringTape: Grab your measuring tape TODO
 hi: Salut
 home: Accueil
-howCanWeHelpYou: How can we help you? TODO
+howCanWeHelpYou: Comment pouvons-nous vous aider ?
 howToTakeMeasurements: Comment prendre les mesures
 i18n: Internationalisation (i18n)
 iForgotMyPassword: J'ai oublié mon mot de passe
 iForgotMyUsername: J'ai oublié mon nom d'utilisateur
-image: Image
+image: Image DONE
 imperial: Imperial TODO
 imperialUnits: Unités de mesure impériales (pouces)
 in: in TODO
@@ -125,7 +124,7 @@ inch: pouce
 info: Info
 instagram: Instagram DONE
 instagramUpdated: Compte Instagram établi
-italics: Italics TODO
+italics: Italique
 joinTheTranslationTeam: 'Même si vous n''avez jamais contribué à un projet Open Source, la traduction est une douce montée vers la gloire du contributeur.'
 justAMoment: Juste un instant
 key: Légende
@@ -133,7 +132,7 @@ language: Langue
 languageLanguageFiles: 'Fichier langue {language}'
 lastLogin: Last login TODO
 layout: Agencement
-learnMore: Learn more TODO
+learnMore: En savoir plus
 learnToDesignPatterns: Apprendre à concevoir des patrons
 letterPdf: PDF lettre
 loadingModelData: Chargement des données du modèle en cours
@@ -141,17 +140,17 @@ loadingResult: Chargement du résultat en cours
 locale: Langue
 localeUpdated: Préférences langue mises à jour
 logIn: Connexion
-logInAs: Log in as TODO
+logInAs: S'identifier en tant que
 logOut: Deconnexion
-logOutAs: 'Log out as {user} TODO'
+logOutAs: 'Se déconnecter en tant que {user} TODO'
 loginFailed: La connexion a échoué
 makeItBetter: Faire des améliorations
 markdownSyntax: MarkDown syntax TODO
 measurementUpdated: Mensurations mises à jour
 measurements: Mensurations
 measurementsRequiredForPattern: 'Mensurations requises pour {pattern}'
-messages: Messages
-metric: Metric TODO
+messages: Messages DONE
+metric: Métrique
 metricUnits: Unités de mesure métriques (cm)
 model: Modèle
 modelIsModel: 'Le modèle est {model}'
@@ -170,8 +169,8 @@ newTaskForUser: 'Nouvelle tâche pour {user}'
 noChanges: Aucun changement
 noDraftsFound: Aucune ébauche trouvée
 noFilter: Aucun filtre
-noIDoNot: 'No, I do not TODO'
-noIDoNotObject: 'No, I do not object TODO'
+noIDoNot: 'Non'
+noIDoNotObject: 'Non, je ne m'y oppose pas'
 notShared: Pas partagé
 notes: Notes
 ohNo: Oh non !
@@ -190,7 +189,7 @@ patronText: '{username} est un {patronTier} depuis {daysAgo}'
 patrons: Mécènes
 pattern: Patron
 patternDesignTutorial: Tutoriel de conception de patron
-patternInstructions: Pattern instructions TODO
+patternInstructions: Explications pour le patron
 patternIsPattern: 'Le patron est {pattern}'
 patternLineDrawing: '{pattern} line drawing TODO'
 patternOptions: Options du patron
@@ -198,36 +197,36 @@ patternParts: Pièces du patron
 patterns: Patrons
 pleaseCheckYourInbox: You will be receiving an E-mail with further instructions TODO
 pleaseUpgradeThisDraft: Merci d'améliorer cette ébauche.
-postComment: Post comment TODO
+postComment: Poster un commentaire
 postInfo: Info post
-postReply: Post reply TODO
+postReply: Répondre
 preferences: Préférences
 privacy: Vie privée
 privacyNotice: Privacy notice TODO
 processingDraftOptions: Traitement des options de l'ébauche en cours
 profile: Profil
 quickPick: Choix rapide
-quote-allie: Have you heard of freesewing.org? It’s pretty much the greatest thing ever! TODO
+quote-allie: Avez-vous entendu parler de freesewing.org ? C'est, en gros, la meilleure chose qui ait jamais existé !
 quote-allie-about: Author of sewing blog The Aspiring Seamstress. TODO
 quote-ivan: Kudos to @j__st for creating @freesewing_org an open source platform for made-to-measure sewing patterns and general awesomeness TODO
 quote-ivan-about: Kubernetes London Meetup co-organiser. Founder of Kube.camp TODO
-quote-jamie: 'With Freesewing, sewing has moved into the 21st century TODO'
+quote-jamie: 'Avec Freesewing, la couture entre dans le XXIème siècle'
 quote-jamie-about: Author of the popular sewing blog Male Devon Sewing and 2016 Great British Sewing Bee contestant. TODO
 reSendActivationEmail: Renvoyer l'e-mail d'activation
-readyToTryFreesewing: Ready to try Freesewing? TODO
+readyToTryFreesewing: Prêt à essayer Freesewing?
 redraft: Re-ébaucher
 redraftDraftHandle: 'Re-ébaucher l''ébauche {handle}'
 reference: Référence
 removeAllMyData: Enlever toutes mes données
-removeAllMyModelData: Remove all my model data TODO
+removeAllMyModelData: Effacer toutes les données de mes modèles
 replay: Re-jouer
-reply: Reply TODO
+reply: Répondre
 reportThisOnGitHub: Report this on GitHub TODO
 requiredMeasurements: Mensurations requises
-resetPassword: Reset password TODO
+resetPassword: Réintialiser le mot de passe
 result: Result TODO
 retrievingDraftFromCore: Récupération de l'ébauche depuis la base en cours
-revokeConsent: Revoke consent TODO
+revokeConsent: Annuler le consentement
 rowsFromToOfTotal: 'Rangs {from} à {to} de {total}'
 rowsPerPage: Rangs par page
 save: Sauvegarder
@@ -249,17 +248,17 @@ showcase: Showcase TODO
 showcaseInfo: Showcase info TODO
 signUp: Créer un compte
 signUpForAFreeAccount: Créer un compte gratuit
-signingUpOnlyTakesAMinute: Signing up only takes a minute TODO
+signingUpOnlyTakesAMinute: Il ne faut qu'une minute pour s'inscrire
 signup--text: This should not happen. Please help us out by creating an issue on GitHub TODO
 signup--title: Une erreur inconnue est survenue
 signup-invalid_input-text: 'Merci d''entrer une adresse mail valide, et un mot de passe'
 signup-invalid_input-title: Entrée invalide
-signup-no_such_pending_confirmation-text: 'Sorry, but that is not a confirmation code we have on record? Perhaps it expired, in which case you can just sign up again. TODO'
+signup-no_such_pending_confirmation-text: 'Désolé, nous n'avons pas ce code dans notre base de données. Peut-être qu'il a expiré ; dans ce cas il suffit de vous réinscrire.
 signup-no_such_pending_confirmation-title: There's no such pending confirmation TODO
 signup-signup_pending-text: We already have a pending activation for this email address. We have sent you a fresh copy of the activation email in case you missed the original one. TODO
 signup-signup_pending-title: Your signup is pending activation TODO
 signup-success-text: 'We''ve sent you an email at {email}. TODO'
-signup-user_exists-text: We already have a user with that email address. Perhaps you'd like to login instead? TODO
+signup-user_exists-text: Nous avons déjà un compte d'utilisateur associé à cette adresse e-mail. Peut-être voulez-vous plutôt vous connecter?
 signup-user_exists-title: That user exists TODO
 social: Social TODO
 somethingWentWrong: Something went wrong TODO
