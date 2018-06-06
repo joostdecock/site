@@ -13,7 +13,7 @@ meet other freesewers, or just hang out and share a laugh.
 
 ## Create an issue on GitHub
 
-Did you spot a mistake? Have a suggestion for an improvement?
+Did you spot a mistake? Did something go wrong, or do you have a suggestion for an improvement?
 Please file an issue on GitHub. You'll need a GitHub account, but they are free.
 
 [Create an issue on GitHub](https://github.com/freesewing/site/issues/new){.btn .px-4 .primary}
