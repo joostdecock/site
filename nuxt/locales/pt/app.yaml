@@ -71,8 +71,8 @@ documentation: Documentação
 documentationForDevelopers: Documentação para desenvolvedores
 documentationForTranslators: Documentação para tradutores
 documentationOverview: Visão geral da Documentação
-download: Download DONE
 donationsPledge: Donations pledge TODO
+download: Download DONE
 draft: Esboço
 draftAPattern: Esboce um molde
 draftOptions: Opções de esboço
@@ -110,6 +110,7 @@ getHelp: Conseguir ajuda
 github: GitHub DONE
 githubUpdated: nome do usuário do GitHub atualizado
 goodToKnow: Bom saber
+grabYourMeasuringTape: Grab your measuring tape TODO
 hi: Oi
 home: Início
 howCanWeHelpYou: Como podemos ajudar você?
@@ -256,7 +257,7 @@ signup-invalid_input-text: Por favor escreva um endereço de email válido e uma
 signup-invalid_input-title: Entrada inválida
 signup-no_such_pending_confirmation-text: 'Desculpe, mas não temos registrado esse código de confirmação. Talvez ele tenha expirado, nesse caso você pode simplesmente se cadastrar outra vez'
 signup-no_such_pending_confirmation-title: Essa confirmação pendente não existe.
-signup-signup_pending-text: Você já possui uma ativação pendente para esse endereço de email. Para o caso de você não ter visto o original, nós lhe enviamos uma nova cópia do email de ativiação.
+signup-signup_pending-text: 'Você já possui uma ativação pendente para esse endereço de email. Para o caso de você não ter visto o original, nós lhe enviamos uma nova cópia do email de ativiação.'
 signup-signup_pending-title: Seu cadastro está com a ativação pendente
 signup-success-text: 'Nós lhe enviamos um email para {email}.'
 signup-user_exists-text: Nós já temos um usuário com esse endereço de email. Será que você gostaria de fazer login?
@@ -280,7 +281,8 @@ taskCompleted: Tarefa completa
 theme: Tema
 themeUpdated: Prederências de layout configuradas
 thereIsNoWayBackFromThis: Não há como voltar atrás.
-thisContentIsNotAvailableInLanguage: Este conteúdo não está disponível em inglês. 
+thisActionCannotBeUndone: This action cannot be undone TODO
+thisContentIsNotAvailableInLanguage: Este conteúdo não está disponível em inglês.
 thisDraftPredatesThisFeature: Esse esboço é anterior a esse recurso.
 thisIsTheCurrentStatusOfOurTranslations: Este é o status atual das nossas traduções.
 thisPageIsNotIntendedForLoggedInUsers: Esta página não é destinada a usuários logados
@@ -291,9 +293,9 @@ today: Hoje
 translationTeam: Equipe de tradução
 troubleLoggingIn: Problemas ao fazer o login?
 tryAgain: Tente novamente
-twitter: Twitter
+twitter: Twitter TODO
 twitterUpdated: Conta do Twitter configurada
-txt-avatarDropzoneText: 'Arraste e solte uma imagem aqui ou clique no botão para escolher um dos seus arquivos.'
+txt-avatarDropzoneText: Arraste e solte uma imagem aqui ou clique no botão para escolher um dos seus arquivos.
 txt-avatarDropzoneTitle: Solte sua imagem nesse lugar
 txt-breastMeasurement-text: Esta é uma daquelas medidas que só é relevante se o seu modelo tiver seios.
 txt-breastMeasurement-title: Esta medida é relevante apenas para seios
@@ -349,6 +351,8 @@ txt-joinTheTranslationTeam3: 'Read the documentation for translators to get star
 txt-missingBlogPosts: Not all blog posts have been translated to English — but you could change that TODO
 txt-modelsWithMissingMeasurements: 'These models lack some of the required measurements to draft this pattern: TODO'
 txt-newModel: 'To get started, please give your model a name. TODO'
+txt-noModels: 'Without a model, there''s not much you can do here TODO'
+txt-noValidModels: None of your models have all the required measurements for this pattern TODO
 txt-password-policy: We don't enforce a password policy TODO
 txt-passwordRecoverConfirmationNotFound: 'Sorry, but we have no pending password recovery for this confirmation code. Perhaps it expired, in which case you can simply make another request. TODO'
 txt-resend: 'You can sign up again with the same E-mail address, and we''ll send you a new confirmation message. TODO'
@@ -376,13 +380,14 @@ unitsUpdated: Unidades configuradas
 updates: Atualizações
 upgrade: Atualizar
 upgradeRequired: Atualização requeridaO
-useDecimalsOrFractions: Use decimals (1.25) or fractions (1 1/4)
+useDecimalsOrFractions: Use decimals (1.25) or fractions (1 1/4) TODO
 user: Usuário
 userHasBeenWithUsSince: '{user} está conosco desde {since}'
 userIsAPatron: '{user} é um patrono'
 username: Nome de usuário
 usernameOrEmail: '@:username ou @:emailAddress'
 usernameUpdated: Nome de usuário atualizado
+users: Users TODO
 version: Versão
 visitPatronProfile: Visite a página de perfil deste patrono
 volunteerVerb: Voluntário

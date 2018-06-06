@@ -110,6 +110,7 @@ getHelp: Hulp nodig?
 github: GitHub DONE
 githubUpdated: GitHub gebruikersnaam bijgewerkt
 goodToKnow: Goed om weten
+grabYourMeasuringTape: Grijp naar je lintmeter
 hi: Hoi
 home: Home pagina
 howCanWeHelpYou: Hoe kunnen we je helpen?
@@ -280,6 +281,7 @@ taskCompleted: Taak is afgerond
 theme: Layout
 themeUpdated: Voorkeur layout bijgewerkt
 thereIsNoWayBackFromThis: Na dit is er geen weg terug.
+thisActionCannotBeUndone: Deze actie kan niet ongedaan gemaakt worden
 thisContentIsNotAvailableInLanguage: Deze inhoud is niet beschikbaar in het Nederlands.
 thisDraftPredatesThisFeature: Deze patroontekening is te oud voor deze functionaliteit.
 thisIsTheCurrentStatusOfOurTranslations: Dit is de huidige status van onze vertalingen.
@@ -349,6 +351,8 @@ txt-joinTheTranslationTeam3: Lees de documentatie voor vertalers om aan de slag 
 txt-missingBlogPosts: Niet alle blog posts zijn vertaald naar het Nederland — maar daar kan jij verandering in brengen
 txt-modelsWithMissingMeasurements: 'Van deze modellen kennen we niet alle vereiste maten om dit patroon te tekenen:'
 txt-newModel: 'Eerst en vooral, geef je model een naam.'
+txt-noModels: Zonder een model kan je hier niet zo veel aanvangen
+txt-noValidModels: Geen enkele van je modellen hebben alle vereiste maten voor dit patroon
 txt-password-policy: We handhaven geen wachtwoordbeleid
 txt-passwordRecoverConfirmationNotFound: Helaas kunnen we geen hangend verzoek tot wachtwoord herstel vinden voor deze bevestigingscode. Misschien is de termijn voor het herstel verlopen. In dat geval kan U gewoon een nieuwe aanvraag indienen.
 txt-resend: 'Je kan je weer inschrijven met hetzelfde E-mail adres, en dan sturen we je een nieuwe activatie E-mail.'

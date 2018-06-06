@@ -63,8 +63,8 @@ export default {
       step = this.$fs.conf.defaults.step[units]
       scale = this.$fs.conf.defaults.scale[units]
       computedDflt =  this.$fs.sliderRound(this.dflt, units)
-      min = this.$fs.sliderRound(this.option.min)
-      max = this.$fs.sliderRound(this.option.max)
+      min = this.$fs.sliderRound(this.option.min, units)
+      max = this.$fs.sliderRound(this.option.max, units)
     }
     return {
       value: computedDflt,

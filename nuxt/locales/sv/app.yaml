@@ -110,6 +110,7 @@ getHelp: Få hjälp
 github: GitHub DONE
 githubUpdated: Användarnamn för GitHub uppdaterat
 goodToKnow: Bra att veta
+grabYourMeasuringTape: Grab your measuring tape TODO
 hi: Hej
 home: Hem
 howCanWeHelpYou: Hur kan vi hjälpa dig?
@@ -280,6 +281,7 @@ taskCompleted: Uppgift slutförd
 theme: Tema
 themeUpdated: Layout-inställningar
 thereIsNoWayBackFromThis: Det finns ingen väg tillbaka från det här.
+thisActionCannotBeUndone: This action cannot be undone TODO
 thisContentIsNotAvailableInLanguage: Det här innehållet finns inte tillgängligt på engelska.
 thisDraftPredatesThisFeature: Den här skissen föregår den här funktionen.
 thisIsTheCurrentStatusOfOurTranslations: Det här är nuvarande status för våra översättningar.
@@ -349,6 +351,8 @@ txt-joinTheTranslationTeam3: 'Läs dokumentationen för översättare för att k
 txt-missingBlogPosts: Alla blogginlägg har inte översatts till engelska — men du kan ändra på det
 txt-modelsWithMissingMeasurements: 'Dessa modeller saknar några av de mått som behövs för att kunna rita det här mönstret: '
 txt-newModel: 'För att komma igång, ge din modell ett namn. '
+txt-noModels: 'Without a model, there''s not much you can do here TODO'
+txt-noValidModels: None of your models have all the required measurements for this pattern TODO
 txt-password-policy: Vi framtvingar ingen lösenordspolicy
 txt-passwordRecoverConfirmationNotFound: 'Tyvärr, men vi har ingen pågående lösenordsändring för denna bekräftelsekod. Kanske har den blivit för gammal, i så fall kan du helt enkelt göra en ny förfrågan. '
 txt-resend: 'Du kan registrera dig igen med samma e-postadress, så skickar vi ett nytt bekräftelsemeddelande. '
