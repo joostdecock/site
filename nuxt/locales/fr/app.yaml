@@ -1,11 +1,11 @@
 100PercentCommunity: 100% communauté
 100PercentFree: 100% gratuit
 100PercentOpenSource: 100% open source TODO
-aCodeBlock: A code block TODO
-aboutFreesewing: A propos de Freesewing
 add: Ajouter
 addAModel: Ajoutez un modèle
 addComment: Ajoutez un commentaire
+aCodeBlock: Un bloc de code
+aboutFreesewing: A propos de Freesewing
 all: Tout
 alreadyHaveAnAccount: Vous avez déjà un compte ?
 areYouSureAboutThis: Êtes-vous sûr à 100% ?
@@ -17,10 +17,10 @@ basics: Les bases
 becomeAPatron: Devenez mécène
 bio: Bio DONE
 bioUpdated: Bio mise à jour
-blockquote: Block quote TODO
+blockquote: Block quote DONE
 blog: Blogue
 blogPost: Messages de blogue
-bold: Bold TODO
+bold: En gras
 breasts: Poitrine
 breastsUpdated: Réglages poitrine mis à jour
 by: par
@@ -33,7 +33,7 @@ chooseAPattern: Choisir un patron
 chooseYourOptions: Choisir vos options
 close: Fermer
 codeOfConduct: Code of conduct TODO
-code: Code
+code: Code DONE
 comments: Commentaires
 community: Communauté
 compare: Comparer
@@ -52,6 +52,7 @@ countAvailable: '{count} disponibles'
 countTranslated: '{count} traduits'
 createAnAccount: Créer un compte
 createIssueOnGithub: Créer une question sur GitHub
+coordinator: Coordinateur
 createModel: Créer le modèle
 createMyAccount: Créer mon compte
 created: Créé
@@ -65,7 +66,7 @@ description: Description
 details: Détails
 difficulty: Difficulté
 docs: Documentation
-documentation: Documentation
+documentation: Documentation DONE
 documentationForDevelopers: Documentation pour les développeurs
 documentationForTranslators: Documentation pour les traducteurs
 documentationOverview: Vue d'ensemble de la documentation
@@ -83,8 +84,8 @@ edit: Éditer
 editOnGithub: Editer avec GitHub
 email: E-mail
 emailAddress: Adresse mail
-emailUpdatePending: E-mail update pending. TODO
-emails: E-mails
+emailUpdatePending: Mise à jour par e-mail en cours.
+emails: E-mails DONE
 enterYourCurrentPassword: Composer votre mot de passe actuel
 enterYourNewPassword: Composer votre nouveau mot de passe
 error-unknown: Une erreur inconnue est survenue
@@ -95,13 +96,13 @@ forContributors: Pour les contributeurs
 forMoreInfoRtfm: 'Pour plus d''infos, lire la documentation:'
 forUsername: 'Pour {username} '
 forUsers: Pour les utilisateurs
-fork: Fork TODO
-forkDraftHandle: 'Fork draft {handle} TODO'
-freesewing: Freesewing
-freesewingContributors: Freesewing contributors TODO
-freesewingOnGithub: Freesewing sur GitHub
-freesewingPatrons: Freesewing patrons TODO
 freezeMyAccount: Freeze my account TODO
+fork: Fourche
+forkDraftHandle: 'Ebauche fourche {handle}'
+freesewing: Freesewing DONE
+freesewingContributors: Contributeurs Freesewing
+freesewingOnGithub: Freesewing sur GitHub
+freesewingPatrons: Mécènes Freesewing
 fullSizePdf: PDF à l'échelle
 fundamentals: Fondamentaux
 getHelp: Obtenir de l'aide
@@ -117,15 +118,15 @@ i18n: Internationalisation (i18n)
 iForgotMyPassword: J'ai oublié mon mot de passe
 iForgotMyUsername: J'ai oublié mon nom d'utilisateur
 image: Image DONE
-imperial: Imperial TODO
+imperial: Impérial
 imperialUnits: Unités de mesure impériales (pouces)
-in: in TODO
+in: dans
 inch: pouce
 info: Info
 instagram: Instagram DONE
-instagramUpdated: Compte Instagram établi
-italics: Italique
 joinTheTranslationTeam: 'Même si vous n''avez jamais contribué à un projet Open Source, la traduction est une douce montée vers la gloire du contributeur.'
+instagramUpdated: Compte Instagram mis à jour
+italics: En italique
 justAMoment: Juste un instant
 key: Légende
 language: Langue
@@ -145,7 +146,7 @@ logOut: Deconnexion
 logOutAs: 'Se déconnecter en tant que {user} TODO'
 loginFailed: La connexion a échoué
 makeItBetter: Faire des améliorations
-markdownSyntax: MarkDown syntax TODO
+markdownSyntax: Syntaxe MarkDown
 measurementUpdated: Mensurations mises à jour
 measurements: Mensurations
 measurementsRequiredForPattern: 'Mensurations requises pour {pattern}'
@@ -169,18 +170,18 @@ newTaskForUser: 'Nouvelle tâche pour {user}'
 noChanges: Aucun changement
 noDraftsFound: Aucune ébauche trouvée
 noFilter: Aucun filtre
-noIDoNot: 'Non'
+noIDoNot: 'Non, je ne donne pas mon accord'
 noIDoNotObject: 'Non, je ne m'y oppose pas'
 notShared: Pas partagé
 notes: Notes
 ohNo: Oh non !
-okThatsDone: 'OK, c''est fait'
+okThatsDone: 'OK, c'est fait'
 onlySelectedPatternParts: Uniquement les pièces de patron selectionnées
 originStory: Origin story TODO
 pageNotFound: La page que vous recherchez est introuvable
 paperlessTheme: Thème sans papier
 password: Mot de passe
-passwordResetPending: Password reset pending. TODO
+passwordResetPending: Réinitialisation du mot de passe en cours.
 passwordUpdated: Mot de passe changé
 patron-2: Powder monkey TODO
 patron-4: First mate TODO
@@ -195,7 +196,7 @@ patternLineDrawing: '{pattern} line drawing TODO'
 patternOptions: Options du patron
 patternParts: Pièces du patron
 patterns: Patrons
-pleaseCheckYourInbox: You will be receiving an E-mail with further instructions TODO
+pleaseCheckYourInbox: Vous allez recevoir un e-mail avec la suite des instructions
 pleaseUpgradeThisDraft: Merci d'améliorer cette ébauche.
 postComment: Poster un commentaire
 postInfo: Info post
@@ -210,12 +211,12 @@ quote-allie: Avez-vous entendu parler de freesewing.org ? C'est, en gros, la mei
 quote-allie-about: Author of sewing blog The Aspiring Seamstress. TODO
 quote-ivan: Kudos to @j__st for creating @freesewing_org an open source platform for made-to-measure sewing patterns and general awesomeness TODO
 quote-ivan-about: Kubernetes London Meetup co-organiser. Founder of Kube.camp TODO
-quote-jamie: 'Avec Freesewing, la couture entre dans le XXIème siècle'
-quote-jamie-about: Author of the popular sewing blog Male Devon Sewing and 2016 Great British Sewing Bee contestant. TODO
 reSendActivationEmail: Renvoyer l'e-mail d'activation
 readyToTryFreesewing: Prêt à essayer Freesewing?
+quote-jamie: 'Avec Freesewing, la couture est entrée dans le 21ème siècle'
+quote-jamie-about: Auteur du populaire blog couture Male Devon Sewing et candidat 2016 de l'émission TV Great British Sewing Bee (version britannique de Cousu Main).
 redraft: Re-ébaucher
-redraftDraftHandle: 'Re-ébaucher l''ébauche {handle}'
+redraftDraftHandle: "Re-ébaucher l'ébauche {handle}"
 reference: Référence
 removeAllMyData: Enlever toutes mes données
 removeAllMyModelData: Effacer toutes les données de mes modèles
@@ -225,8 +226,11 @@ reportThisOnGitHub: Report this on GitHub TODO
 requiredMeasurements: Mensurations requises
 resetPassword: Réintialiser le mot de passe
 result: Result TODO
+requiredMeasurements: Mensurations requises
+resetPassword: Réinitialiser le mot de passe
+result: Résultat
 retrievingDraftFromCore: Récupération de l'ébauche depuis la base en cours
-revokeConsent: Annuler le consentement
+revokeConsent: Retirer mon accord
 rowsFromToOfTotal: 'Rangs {from} à {to} de {total}'
 rowsPerPage: Rangs par page
 save: Sauvegarder
@@ -239,51 +243,30 @@ selectADifferentImage: Choisir une image différente
 selectAnImage: Choisir une image
 selectThePartsYouWantIncludedInYourDraft: Choisir les pièces que vous souhaitez inclure dans votre ébauche
 settings: Paramètres
-sewingPatternsForNonAveragePeople: Sewing patterns for non-average people TODO
+sewingPatternsForNonAveragePeople: Patrons de couture pour personnes hors-normes.
 share: Partager
 shared: Partagé
 sharedUpdated: Paramètre partagé mis à jour
 showHelp: Montrer l'aide
-showcase: Showcase TODO
-showcaseInfo: Showcase info TODO
+showcase: Galerie
+showcaseInfo: Infos galerie
 signUp: Créer un compte
 signUpForAFreeAccount: Créer un compte gratuit
 signingUpOnlyTakesAMinute: Il ne faut qu'une minute pour s'inscrire
-signup--text: This should not happen. Please help us out by creating an issue on GitHub TODO
+signup--text: Ceci ne devrait pas arriver. Merci de nous aider en créant une publication sur GitHub
 signup--title: Une erreur inconnue est survenue
-signup-invalid_input-text: 'Merci d''entrer une adresse mail valide, et un mot de passe'
+signup-invalid_input-text: 'Merci d'entrer une adresse mail valide, et un mot de passe'
 signup-invalid_input-title: Entrée invalide
 signup-no_such_pending_confirmation-text: 'Désolé, nous n'avons pas ce code dans notre base de données. Peut-être qu'il a expiré ; dans ce cas il suffit de vous réinscrire.
-signup-no_such_pending_confirmation-title: There's no such pending confirmation TODO
-signup-signup_pending-text: We already have a pending activation for this email address. We have sent you a fresh copy of the activation email in case you missed the original one. TODO
-signup-signup_pending-title: Your signup is pending activation TODO
-signup-success-text: 'We''ve sent you an email at {email}. TODO'
 signup-user_exists-text: Nous avons déjà un compte d'utilisateur associé à cette adresse e-mail. Peut-être voulez-vous plutôt vous connecter?
-signup-user_exists-title: That user exists TODO
-social: Social TODO
-somethingWentWrong: Something went wrong TODO
-startUpload: Start upload TODO
-status: Status TODO
-statusTranslationLanguage: 'Status translation {language} TODO'
-step1: 1ère étape
-step2: 2e étape
-step3: 3e étape
-step4: 4e étape
 stopProcessingMyData: Cesser de traiter mes données
-stopUpload: Arrêter le téléchargement
-storingDraftData: Storing draft data TODO
-strikethrough: Biffer
 svgSourceCode: Code source SVG
 tabloidPdf: Format pdf tabloid (11 X 17 pouces )
 taskCompleted: Tâche complétée
 theme: Thème
 themeUpdated: Préférence de mise en page enregistrée
-thereIsNoWayBackFromThis: Vous avez atteint le point de non retour.
-thisContentIsNotAvailableInLanguage: Ce contenu n'est pas disponible en anglais.
-thisDraftPredatesThisFeature: Cette ébauche est antérieure à cette option.
-thisIsTheCurrentStatusOfOurTranslations: Voici le statut actuel des traductions.
-thisPageIsNotIntendedForLoggedInUsers: This page is not intended for logged-in users TODO
-thisPageIsOnlyAvailableToFreesewingUsers: Cette page est disponible seulement pour les utilisateurs de FreeFreesewing.
+thisContentIsNotAvailableInLanguage: Ce contenu n'est pas disponible en français.
+thisPageIsOnlyAvailableToFreesewingUsers: Cette page est disponible seulement pour les utilisateurs de Freesewing.
 tip: Astuce
 title: Titre
 today: Aujourd'hui
@@ -291,17 +274,40 @@ translationTeam: Équipe de traduction
 troubleLoggingIn: Vous avez des problèmes de connexion?
 tryAgain: Essayez de nouveau
 twitter: Twitter DONE
-twitterUpdated: Compte Twitter enregistré
-txt-avatarDropzoneText: 'Déposer et glisser une image ici, ou cliquer le bouton pour sélectionner un de vos fichiers. '
-txt-avatarDropzoneTitle: Déposer votre image ici
 txt-breastMeasurement-text: Cette mesure est seulement pertinente si votre modèle a une poitrine.
 txt-breastMeasurement-title: Cette mesure est pertinente seulement pour la poitrine
 txt-changeRequiresConfirmation: Ce changement requiert une confirmation par courriel
 txt-clickEmailLink: Pour continuer, veuillez cliquer le clien dans courriel.
-txt-consentModel: Donnez-vous votre approbation pour traiter les données de votre modèle?
-txt-consentModelAnswerWhat: 'Pour chaque modèle, leur <b>mensuration</b>, <b>réglage poitrine</b>, et <b>mot de passe</b>. '
 txt-consentModelAnswerWhatOptional: 'Facultatif: Une <b>photo</b> et le <b>nom</b> que vous donnez à votre modèle. '
 txt-consentModelAnswerWhy: 'Pour <b>dessiner un patron de couture fait sur mesure</b>, nous avons besoin des <b>mesures corporelles</b>. '
+signup-no_such_pending_confirmation-title: Aucune confirmation de ce type n'est en attente
+signup-signup_pending-text: Nous avons déjà une activation en attente pour cette adresse mail. Nous vous avons envoyé une nouvelle copie de l'e-mail d'activation au cas où vous auriez râté le premier.
+signup-signup_pending-title: Votre création de compte est en attente d'activation.
+signup-success-text: 'Nous vous avons envoyé un e-mail à {email}.'
+signup-user_exists-title: Cet utilisateur existe.
+social: Social DONE
+somethingWentWrong: Quelque chose a mal tourné
+startUpload: Commencer le téléchargement
+status: Etat d'avancement
+statusTranslationLanguage: "Etat d'avancement de la langue {language}"
+step1: Etape 1
+step2: Etape 2
+step3: Etape 3
+step4: Etape 4
+stopUpload: Arrêter le téléchargement
+storingDraftData: Enregistrement des données de l'ébauche en cours
+strikethrough: Barrer
+thereIsNoWayBackFromThis: Ceci est le point de non-retour.
+thisDraftPredatesThisFeature: Cette ébauche date d'avant cette fonctionnalité.
+thisIsTheCurrentStatusOfOurTranslations: Voici l'état d'avancement actuel de nos traductions.
+thisPageIsNotIntendedForLoggedInUsers: Cette page n'est pas à l'attention des usagers connectés.
+twitterUpdated: Compte Twitter mis à jour
+txt-avatarDropzoneText: 'Glisser et déposer une image ici, ou cliquer sur le bouton pour en choisir une dans vos fichiers.'
+txt-avatarDropzoneTitle: Déposer votre image ici
+txt-changeRequiresConfirmation: Ce changement nécessite une confirmation par e-mail
+txt-clickEmailLink: Merci de cliquer le lien dans l'e-mail pour continuer.
+txt-consentModel: Donnez-vous votre accord pour le traitement des données de votre modèle?
+txt-consentModelAnswerWhat: 'Pour chaque modèle leur <b>mensurations</b>, <b>réglages poitrine</b>, et <b>mot de passe</b>.'
 txt-consentModelObjectNote: 'Note: Freesewing publishes anonymized measurements as open data for scientific research. TODO'
 txt-consentModelObjectWhy: 'This data is anonymous and used to study and understand the human form in all its shapes, so we can get better sewing patterns, and better fitting garments. TODO'
 txt-consentModelQuestionWhat: Qu'est-ce que les données du modèle?
