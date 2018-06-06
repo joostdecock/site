@@ -371,35 +371,35 @@ seatEase:
   description: La cantidad de holgura en el trasero.
   title: Holgura de trasero.
 shoulderEase:
-  description: The amount of ease at your shoulder. This increases the shoulder to shoulder distance to accomodate what you're wearing under your coat. TODO
-  title: Shoulder ease TODO
+  description: La cantidad de holgura en los hombros. Esto incrementa la distancia de hombro a hombro para dejar espacio para la ropa que lleves debajo.
+  title: Holgura de hombro
 shoulderInset:
-  description: Distance from the shoulder point to the waistcoat armhole at the shoulder seam. TODO
-  title: Shoulder inset TODO
+  description: La distancia entre el hombro y la sisa en el la costura del hombro.
+  title: Inserción de hombro
 shoulderSlopeReduction:
-  description: The amount by which the shoulder slope is reduced to allow for shoulder padding. TODO
-  title: Shoulder slope reduction TODO
+  description: La cantidad en la que la caída del hombro se reduce para añadir hombreras.
+  title: Reducción de caída del hombro
 shoulderStrapPlacement:
-  description: Determines whether the shoulder strap is placed closer to the neck (lower numbers) or the shoulder (higher numbers). TODO
-  title: Shoulderstrap placement TODO
+  description: Determina si los tirantes se colocan cerca del cuello (números más bajos) o del hombro (números más altos).
+  title: Posición de los tirantes
 shoulderStrapWidth:
-  description: The width of the shoulder straps. TODO
-  title: Shoulderstrap width TODO
+  description: La anchura de los tirantes.
+  title: Anchura de los tirantes
 sideFrontPlacement:
-  description: Location of the front/side boundary as a proportion of your chest circumference. Higher numbers make a wider side panel. TODO
-  title: Front side boundary placement TODO
+  description: Posición de la frontera entre frente y lateral como proporción de la circunferencia de pecho. Números más altos producen un panel lateral más ancho.
+  title: Posición de la frontera entre frente y lateral
 sleeveBend:
-  description: How much do you want the sleeve to be bent at the elbow. TODO
-  title: Sleeve bend TODO
+  description: Cuánto quieres que la manga se doble en el codo.
+  title: Ángulo de la manga
 sleeveLengthBonus:
-  description: The amount to lengthen the sleeve. A negative value will shorten it. TODO
-  title: Sleeve length bonus TODO
+  description: La cantidad a alargar la manga. Un valor negativo la acorta.
+  title: Longitud extra de manga
 sleevePlacketLength:
-  description: The length of the sleeve placket. TODO
-  title: Sleeve placket length TODO
+  description: La longitud de la vista de la manga.
+  title: Longitud de la vista de la manga
 sleevePlacketWidth:
-  description: The width of the sleeve placket. TODO
-  title: Sleeve placket width TODO
+  description: La anchura de la vista de la manga.
+  title: Anchura de la vista de la manga
 sleevecapEase:
   description: The amount by which the sleevecap seam is longer than the armhole seam. TODO
   title: Sleevecap ease TODO
