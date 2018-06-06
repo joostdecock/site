@@ -8,7 +8,7 @@ addAModel: Adicionar um modelo
 addComment: Adicionar comentário
 all: Tudo
 alreadyHaveAnAccount: Já tem uma conta?
-apiCheatSheet: API cheat sheet TODO
+apiCheatSheet: Folha de consulta rápida do API
 areYouSureAboutThis: Você tem certeza absoluta disso?
 avatar: Avatar DONE
 avatarUpdated: Avatar atualizado
@@ -34,7 +34,7 @@ chooseAPattern: Escolha um molde
 chooseYourOptions: Escolha suas opções
 close: Fechar
 code: Código
-codeOfConduct: Code of conduct TODO
+codeOfConduct: Código de conduta
 comments: Comentários
 community: Comunidade
 compare: Comparar
@@ -47,7 +47,7 @@ consentGiven: Consentimento dado
 contactUs: Entre em contato
 content: Conteúdo
 contents: Conteúdos
-contributeToFreesewing: Contribute to freesewing TODO
+contributeToFreesewing: Contribua com o freesewing
 coordinator: Coordenador
 coreLink: Link principal
 countAvailable: '{count} disponível'
@@ -97,7 +97,7 @@ forContributors: Para contribuidores
 forMoreInfoRtfm: 'Para mais informações, leia a documentação:'
 forUsername: 'Para {username}'
 forUsers: Para usuários
-fork: Fork TODO
+fork: Fork DONE
 forkDraftHandle: 'Fazer um fork deste esboço {handle}'
 freesewing: Freesewing DONE
 freesewingContributors: Contrubuidores do Freesewing
@@ -132,7 +132,7 @@ key: Chave
 language: Linguagem
 languageLanguageFiles: 'arquivos de linguagem {language}'
 layout: Layout DONE
-lastLogin: Last login TODO
+lastLogin: Último login
 learnMore: Aprenda mais
 learnToDesignPatterns: Aprenda a desenhar moldes
 letterPdf: PDF tamanho Letter
@@ -156,7 +156,7 @@ metricUnits: Unidade métrica (cm)
 model: Modelo
 modelIsModel: 'Modelo é {model}'
 models: Modelos
-moderationPolicy: Moderation policy TODO
+moderationPolicy: Política de moderação
 monthsAgo: '{months} meses atrás'
 name: Nome
 nameOfTheModel: Nome do modelo
@@ -177,15 +177,15 @@ notes: Notas
 ohNo: 'Ah, não!'
 okThatsDone: 'OK, '' está pronto'
 onlySelectedPatternParts: Apenas partes selecionadas do molde
-originStory: Origin story TODO
+originStory: História de origem
 pageNotFound: A página que você está procurando não foi encontrada.
 paperlessTheme: Tema sem papel
 password: Senha
 passwordResetPending: Reestabelecimento de senha pendente.
 passwordUpdated: Senha alterada.
-patron-2: Powder monkey TODO
-patron-4: First mate TODO
-patron-8: Captain TODO
+patron-2: Rapaz da pólvora
+patron-4: Primeiro companheiro
+patron-8: Capitão
 patronText: '{username} é um {patronTier} desde {daysAgo}'
 patrons: Patronos
 pattern: Molde
@@ -222,7 +222,7 @@ removeAllMyData: Remover todos meus dados
 removeAllMyModelData: Remover todos meus dados de modelos
 replay: Repetir
 reply: Responder
-reportThisOnGitHub: Report this on GitHub TODO
+reportThisOnGitHub: Relatar isso no GitHub
 requiredMeasurements: Medidas necessárias
 resetPassword: Resetar senha
 result: Resultado
@@ -261,10 +261,10 @@ signup-signup_pending-title: Seu cadastro está com a ativação pendente
 signup-success-text: 'Nós lhe enviamos um email para {email}.'
 signup-user_exists-text: Nós já temos um usuário com esse endereço de email. Será que você gostaria de fazer login?
 signup-user_exists-title: Esse usuário já existe
-social: Social TODO
+social: Social DONE
 somethingWentWrong: Alguma coisa deu errado
 startUpload: Começar upload
-status: Status TODO
+status: Status DONE
 statusTranslationLanguage: 'Status da tradução {language}'
 step1: Passo 1
 step2: Passo 2
@@ -295,13 +295,13 @@ twitter: Twitter
 twitterUpdated: Conta do Twitter configurada
 txt-avatarDropzoneText: 'Arraste e solte uma imagem aqui ou clique no botão para escolher um dos seus arquivos.'
 txt-avatarDropzoneTitle: Solte sua imagem nesse lugar
-txt-breastMeasurement-text: This is one of those measurements that is only relevant if your model has breasts. TODO
-txt-breastMeasurement-title: This measurement is only relevant for breasts TODO
-txt-changeRequiresConfirmation: This change requires confirmation via E-mail TODO
-txt-clickEmailLink: Please click the link in the email to continue. TODO
-txt-consentModel: Do you give your consent to process your model data? TODO
-txt-consentModelAnswerWhat: 'For each model their <b>measurements</b>, <b>breasts settings</b>, and <b>password</b>. TODO'
-txt-consentModelAnswerWhatOptional: 'Optional: A model <b>picture</b> and the <b>name</b> that you give your model. TODO'
+txt-breastMeasurement-text: Esta é uma daquelas medidas que só é relevante se o seu modelo tiver seios.
+txt-breastMeasurement-title: Esta medida é relevante apenas para seios
+txt-changeRequiresConfirmation: Esta alteração requer confirmação via e-mail
+txt-clickEmailLink: Por favor, clique no link no email para continuar.
+txt-consentModel: Você dá o seu consentimento para processar os dados do seu modelo?
+txt-consentModelAnswerWhat: 'Para cada modelo, suas <b>medidas</b>, suas <b>configurações de seios</b>, e <b>senha</b>.'
+txt-consentModelAnswerWhatOptional: 'Opcional: Uma <b>foto</b> do modelo e o <b>nome</b> que você dá para ele. TODO'
 txt-consentModelAnswerWhy: 'To <b>draft made-to-measure sewing patterns</b>, we need <b>body measurements</b>. TODO'
 txt-consentModelObjectNote: 'Note: Freesewing publishes anonymized measurements as open data for scientific research. TODO'
 txt-consentModelObjectWhy: 'This data is anonymous and used to study and understand the human form in all its shapes, so we can get better sewing patterns, and better fitting garments. TODO'
