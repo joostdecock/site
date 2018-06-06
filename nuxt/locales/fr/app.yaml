@@ -265,19 +265,14 @@ tabloidPdf: Format pdf tabloid (11 X 17 pouces )
 taskCompleted: Tâche complétée
 theme: Thème
 themeUpdated: Préférence de mise en page enregistrée
-thisContentIsNotAvailableInLanguage: Ce contenu n'est pas disponible en français.
-thisPageIsOnlyAvailableToFreesewingUsers: Cette page est disponible seulement pour les utilisateurs de Freesewing.
 tip: Astuce
 title: Titre
 today: Aujourd'hui
 translationTeam: Équipe de traduction
-troubleLoggingIn: Vous avez des problèmes de connexion?
 tryAgain: Essayez de nouveau
 twitter: Twitter DONE
 txt-breastMeasurement-text: Cette mesure est seulement pertinente si votre modèle a une poitrine.
 txt-breastMeasurement-title: Cette mesure est pertinente seulement pour la poitrine
-txt-changeRequiresConfirmation: Ce changement requiert une confirmation par courriel
-txt-clickEmailLink: Pour continuer, veuillez cliquer le clien dans courriel.
 txt-consentModelAnswerWhatOptional: 'Facultatif: Une <b>photo</b> et le <b>nom</b> que vous donnez à votre modèle. '
 txt-consentModelAnswerWhy: 'Pour <b>dessiner un patron de couture fait sur mesure</b>, nous avons besoin des <b>mesures corporelles</b>. '
 signup-no_such_pending_confirmation-title: Aucune confirmation de ce type n'est en attente
@@ -286,14 +281,9 @@ signup-signup_pending-title: Votre création de compte est en attente d'activati
 signup-success-text: 'Nous vous avons envoyé un e-mail à {email}.'
 signup-user_exists-title: Cet utilisateur existe.
 social: Social DONE
-somethingWentWrong: Quelque chose a mal tourné
 startUpload: Commencer le téléchargement
 status: Etat d'avancement
 statusTranslationLanguage: "Etat d'avancement de la langue {language}"
-step1: Etape 1
-step2: Etape 2
-step3: Etape 3
-step4: Etape 4
 stopUpload: Arrêter le téléchargement
 storingDraftData: Enregistrement des données de l'ébauche en cours
 strikethrough: Barrer
@@ -308,43 +298,53 @@ txt-changeRequiresConfirmation: Ce changement nécessite une confirmation par e-
 txt-clickEmailLink: Merci de cliquer le lien dans l'e-mail pour continuer.
 txt-consentModel: Donnez-vous votre accord pour le traitement des données de votre modèle?
 txt-consentModelAnswerWhat: 'Pour chaque modèle leur <b>mensurations</b>, <b>réglages poitrine</b>, et <b>mot de passe</b>.'
-txt-consentModelObjectNote: 'Note: Freesewing publishes anonymized measurements as open data for scientific research. TODO'
-txt-consentModelObjectWhy: 'This data is anonymous and used to study and understand the human form in all its shapes, so we can get better sewing patterns, and better fitting garments. TODO'
 txt-consentModelQuestionWhat: Qu'est-ce que les données du modèle?
 txt-consentProfile: Do you give your consent to process your profile data? TODO
 txt-consentProfileAnswerShare: '<b>Non</b>, jamais. '
+somethingWentWrong: Une erreur s'est produite
+step1: Etape 1
+step2: Etape 2
+step3: Etape 3
+step4: Etape 4
+thisContentIsNotAvailableInLanguage: Ce contenu n'est pas disponible en Français.
+thisPageIsOnlyAvailableToFreesewingUsers: Cette page est uniquement disponible pour utilisateurs de Freesewing
+troubleLoggingIn: Un problème de connexion ?
+txt-changeRequiresConfirmation: Cette modification requiert une confirmation par e-mail
+txt-clickEmailLink: Merci de cliquer sur le lien contenu dans le mail afin de poursuivre.
+txt-consentModelObjectNote: 'Note: Freesewing transmet des mensurations de façon anonyme et gratuite pour la recherche scientifique.'
+txt-consentModelObjectWhy: 'Ces données sont anonymes et utilisées pour étudier et comprendre le corps humain sous toutes ses formes, afin d'améliorer les patrons de couture, et des vêtements mieux ajustés. '
 txt-consentProfileAnswerTiming: '<b>12 months</b> after your last login, or until you <b>remove</b> your account or <b>revoke</b> this consent. TODO'
-txt-consentProfileAnswerWhat: 'Your <b>email address</b>, <b>username</b>, and <b>password</b>. TODO'
-txt-consentProfileAnswerWhatOptional: 'Optional: A <b>profile picture</b>, and <b>social media accounts</b> TODO'
+txt-consentProfileAnswerWhat: 'Votre <b>email address</b>, <b>username</b>, et <b>password</b>.'
+txt-consentProfileAnswerWhatOptional: 'Optionnel: Un <b>profile picture</b>, et <b>social media accounts</b>'
 txt-consentProfileAnswerWhy: 'To <b>authenticate</b> you, <b>contact</b> you when needed, and build a <b>community</b>. TODO'
-txt-consentProfileQuestionShare: Est-ce qu'on le partage avec d'autres? O
+txt-consentProfileQuestionShare: Est-ce qu'on le partage avec d'autres?
 txt-consentProfileQuestionTiming: Pour combien de temps le gardons nous?
 txt-consentProfileQuestionWhat: Qu'est-ce que sont les données de profil?
 txt-consentProfileQuestionWhy: Pourquoi en avons nous besoin?
-txt-contentLocaleFallback: C'est pour cela que nous vous montrons plutôt la version française.
-txt-contentNotTranslated: 'Malheureusement, cette page n'a pas encore été traduire vers le français. '
-txt-dataExport: 'If you like, we can export all the data we have stored for you. TODO'
-txt-dataExportQueued: You data export has been queued. We'll send you an E-mail once it's ready with a download link. TODO
+txt-contentLocaleFallback: C'est pour cela que nous vous montrons plutôt la version anglaise.
 txt-didYouSpotATypo: 'Avez-vous remarqué une coquille? Est-ce qu'il manque quelque chose? Est-ce que les explications sont claires? '
 txt-doYouObject: Vous objectez-vous à l'utilisation de vos données anonymes pour la recherche scientifique?
 txt-editThisPageOnline: Vous pouvez modifier cette page en ligne et soumettre vos changements.
-txt-email-sharing: Nous ne partagerons jamais votre adresse courriel avec d'autres.
 txt-emailChangeConfirmationNotFound: 'Désolé, mais nous n'avons pas de demande changement de courriel en attente pour ce code de confirmation. Votre code est peut-être expiré. Si tel est le cas, vous pouvez faire le changement à nouveau dans vos réglages. '
-txt-emailNotFound: 'Si vous ne pouvez pas trouver le courriel, vérifiez dans votre dossier pourriel, ou communiquez avec nous.
-txt-emailWillWorkToo: 'If you don''t know your @:username, your @:emailAddress will work too TODO'
-txt-errorPleaseReportIssue: Please report this issue on GitHub so we can fix it TODO
 txt-footer: Freesewing est la création de Joost De Cock et ses contributeurs<br>avec le soutien financier de mécènes
-txt-forgot-login: 'Enter your username or E-mail address below and click the <b>@:resetPassword</b> button TODO'
-txt-gdpr-1: The General Data Protection Regulation (GDPR) of the European Union (EU) protects your personal data from unscrupulous data hoarders. That's a good thing. TODO
-txt-gdpr-2: 'One of the things it imposes is for us to get your consent — in other words, your permission — to process your personal data. TODO'
-txt-gdpr-3: 'Without your consent, we have no legal basis to process your data and have no choice but to remove it. TODO'
-txt-gdprCompliant: Freesewing.org respects your privacy and your rights. We apply the General Data Protection Regulation (GDPR) of the European Union (EU). TODO
+txt-contentNotTranslated: 'Malheureusement, cette page n'a pas (encore) été traduite en {language}.'
+txt-dataExport: 'If you like, we can export all the data we have stored for you. TODO'
+txt-dataExportQueued: You data export has been queued. We'll send you an E-mail once it's ready with a download link. TODO
+txt-email-sharing: Nous ne partagerons jamais votre e-mail avec personne.
+txt-emailNotFound: 'Si vous ne trouvez pas ce mail, vérifiez dans votre courrier indésirable (spam), ou contactez-nous. '
+txt-emailWillWorkToo: 'Si vous ne connaissez pas votre @:username, votre @:emailAddress fonctionne également'
+txt-errorPleaseReportIssue: Merci de signaler ce problème sur GitHub afin que nous puissions y remédier.
+txt-forgot-login: 'Entrez votre nom d'utilisateur ou votre adresse e-mail ci-dessous et cliquez sur le bouton <b>@:resetPassword</b>.'
+txt-gdpr-1: La réglementation générale sur la protection des données (RGPD) de l'Union Européenne (UE) protège vos données personnelles des accumulateurs de données peu scrupuleux. C'est une bonne chose.
+txt-gdpr-2: 'L'une de ces mesures nous impose d'obtenir votre consentement, — en d'autres termes, votre permission — pour traiter vos données personnelleses.'
+txt-gdpr-3: 'Sans votre consentement, nous n'avons pas le droit d'utiliser vos données et nous n'avons pas d'autre choix que de les supprimer.'
+txt-gdprCompliant: Freesewing.org respecte votre vie privée et vos droits. Nous appliquons la réglementation générale sur la protection des données (RGPD) de l'Union Européenne (EU).
 txt-homepage-community: 'Everything is run by voluntary contributors. There is no commercial entity behind, or attached to, this project. TODO'
-txt-homepage-different: How we're different TODO
-txt-homepage-draft: 'Choose from one of your patterns, choose a model, and pick your options. We''ll do the rest. TODO'
-txt-homepage-how: How it works TODO
-txt-homepage-join: Join thousands of others and sign up for a free account on freesewing.org. TODO
-txt-homepage-model: All our patterns are made-to-measure. So first thing to do is grab your measuring tape. TODO
+txt-homepage-different: Ce en quoi nous sommes différents
+txt-homepage-draft: 'Choisissez parmi l'un de vos patrons, choisissez un modèle, et sélectionnez vos options. Nous ferons le reste.'
+txt-homepage-how: Comment ça marche
+txt-homepage-join: Rejoignez des milliers d'autres personnes en vous inscrivant gratuitement sur freesewing.org.
+txt-homepage-model: Tous nos patrons sont faits sur mesure, donc la première chose à faire est de vous munir de votre mètre-ruban.
 txt-homepage-opensource: 'Our platform, our patterns, and even this website. All our code is available on GitHub. Pull requests welcome! TODO'
 txt-homepage-patrons: Freesewing is made possible by the financial support of our Patrons. They keep this ship afloat. TODO
 txt-homepage-quotes: Ce qu'en disent les autres
