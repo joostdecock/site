@@ -80,7 +80,7 @@ i18n:
       i18n: 9
       measurements: 26
       optiongroups: 12
-      options: 253
+      options: 273
       patterns: 37
       showcase: 1
     fr:
@@ -124,7 +124,7 @@ i18n:
       patterns: 0
       showcase: 0
     pt:
-      app: 320
+      app: 339
       blog: 0
       docs: 0
       i18n: 0
