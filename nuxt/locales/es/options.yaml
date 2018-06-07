@@ -401,43 +401,43 @@ sleevePlacketWidth:
   description: La anchura de la vista de la manga.
   title: Anchura de la vista de la manga
 sleevecapEase:
-  description: The amount by which the sleevecap seam is longer than the armhole seam. TODO
-  title: Sleevecap ease TODO
+  description: La cantidad en la que la parte superior de la manga es más larga que la sisa
+  title: Holgura de la parte superior de la manga
 sleevecapHeightFactor:
-  description: Controls the height of the sleevecap. A higher value results in a higher and more narrow sleevecap. TODO
-  title: Sleevecap height factor TODO
+  description: Controla la altura de la manga. Un valor más alto hace que la parte superior de la manga sea más alta y estrecha.
+  title: Factor de altura de la manga
 splitYoke:
-  description: Whether to draft a split or regular yoke. TODO
+  description: Si se traza el canesú normal o partido.
   options:
-    - Regular yoke TODO TODO TODO
-    - Split yoke TODO TODO TODO
-  title: Split yoke TODO
+    - Canesú normal
+    - Canesú partido
+  title: Canesú partido
 stretch:
-  description: The amount of negative ease. TODO
-  title: Stretch TODO
+  description: La cantidad de holgura negativa.
+  title: Extensión
 stretchFactor:
-  description: Determines the horizontal negative ease. TODO
-  title: Stretch TODO
+  description: Determina la holgura negativa horizontal.
+  title: Extensión
 tipWidth:
   description:
-    _default: The width of the wings of the bow tie at the tip. TODO
-    trayvon: The width of the tie at the tip. TODO
-  title: Tip width TODO
+    _default: La anchura de las alas de la corbata en la punta.
+    trayvon: La anchura de la corbata en la punta.
+  title: Anchura de la punta
 waistEase:
-  description: The amount of ease at your (natural) waist. TODO
-  title: Waist ease TODO
+  description: La cantidad de holgura en la cintura.
+  title: Holgura de cintura
 waistReduction:
-  description: The amount by which you want the corset to pinch your waist. TODO
-  title: Waist reduction TODO
+  description: La cantidad en la que quieres que el corset reduzca la cintura.
+  title: Reducción de cintura
 waistReductionRatioBack:
-  description: Proportion of the waist to be reduced in back panel shaping. Will also impact side panel shaping. TODO
-  title: 'Waist reduction: back ratio TODO'
+  description: Proporción de la reducción de cintura que se hace con el panel trasero. También influenciará la forma del panel lateral.
+  title: 'Reducción de cintura: proporción del panel trasero'
 waistReductionRatioFront:
-  description: Proportion of the waist to be reduced in the front dart. Will also impact side panel shaping. TODO
-  title: 'Waist reduction: front ratio TODO'
+  description: Proporción de la reducción de cintura que se hace con el panel delantero. También influenciará la forma del panel lateral.
+  title: 'Reducción de cintura: proporcion del panel delantero
 waistbandWidth:
-  description: The width of the waistband. TODO
-  title: Waistband width TODO
+  description: La anchura de la cinturilla.
+  title: Anchura de la cinturilla
 yokeDart:
-  description: Whether to include a dart at the sides of the yoke to fit a rounder back. TODO
-  title: Yoke dart TODO
+  description: Si se incluye una pinza en los lados del canesú para ajustar una espalda más redondeada.
+  title: Pinza del canesú
