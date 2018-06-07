@@ -48,7 +48,6 @@ contactUs: Neem contact op
 content: Inhoud
 contents: Inhoud
 contributeToFreesewing: Werk mee aan freesewing
-coordinator: Coördinator
 coreLink: Core link DONE
 countAvailable: '{count} beschikbaar'
 countTranslated: '{count} vertaald'
@@ -198,6 +197,7 @@ patternOptions: Patroon opties
 patternParts: Patroon delen
 patterns: Patronen
 pleaseCheckYourInbox: Je ontvangt van ons een E-mail met verdere instructies.
+pleaseEnterAValidEmailAddress: Gelieve een geldig E-mail adres in te voeren
 pleaseUpgradeThisDraft: Gelieve deze patroontekening bij te werken.
 postComment: Commentaar posten
 postInfo: Post gegevens
@@ -291,6 +291,7 @@ tip: Tip DONE
 title: Titel
 today: Vandaag
 translationTeam: Vertaalteam
+translators: Vertalers
 troubleLoggingIn: Problemen met aanmelden?
 tryAgain: Nogmaals proberen
 twitter: Twitter DONE

@@ -48,7 +48,6 @@ contactUs: Contactáctanos
 content: Contenido
 contents: Contenidos
 contributeToFreesewing: Contribuye con freesewing
-coordinator: Coordinador
 coreLink: Enlace principal
 countAvailable: '{count} disponible '
 countTranslated: '{count} traducido '
@@ -110,7 +109,7 @@ getHelp: Obtén ayuda
 github: GitHub DONE
 githubUpdated: Nombre de usuario de GitHub actualizado
 goodToKnow: Bueno saberlo
-grabYourMeasuringTape: Grab your measuring tape TODO
+grabYourMeasuringTape: Coge tu metro
 hi: Hola
 home: Home DONE
 howCanWeHelpYou: ¿Cómo podemos ayudarte?
@@ -198,6 +197,7 @@ patternOptions: Opciones del patrón
 patternParts: Partes del patrón
 patterns: Patrones
 pleaseCheckYourInbox: Recibirás un E-mail con más instrucciones
+pleaseEnterAValidEmailAddress: Por favor, entra una dirección de E-mail válida
 pleaseUpgradeThisDraft: 'Por favor, actualiza este boceto.'
 postComment: Publica el comentario
 postInfo: Información de la entrada
@@ -281,7 +281,7 @@ taskCompleted: Tarea completada
 theme: Tema
 themeUpdated: Preferencias de la plantilla establecidas
 thereIsNoWayBackFromThis: No hay vuelta atrás desde aquí
-thisActionCannotBeUndone: This action cannot be undone TODO
+thisActionCannotBeUndone: Esta acción no puede ser deshecha
 thisContentIsNotAvailableInLanguage: Este contenido no está disponible en Español.
 thisDraftPredatesThisFeature: Este boceto precede a esta característica
 thisIsTheCurrentStatusOfOurTranslations: Éste es el estado actual de nuestras traducciones.
@@ -291,6 +291,7 @@ tip: Consejo
 title: Título
 today: Hoy
 translationTeam: Equipo de traducción
+translators: Traductores
 troubleLoggingIn: ¿Problemas para acceder?
 tryAgain: Prueba otra vez
 twitter: Twitter DONE
@@ -351,8 +352,8 @@ txt-joinTheTranslationTeam3: 'Lee la documentación para traductores para empeza
 txt-missingBlogPosts: 'No todas las entradas del blog están traducidas, pero tú puedes cambiar eso'
 txt-modelsWithMissingMeasurements: 'A este modelo le faltan algunas de las medidas requeridas para dibujar este patrón: '
 txt-newModel: 'Para empezar, dale un nombre a este modelo. '
-txt-noModels: 'Without a model, there''s not much you can do here TODO'
-txt-noValidModels: None of your models have all the required measurements for this pattern TODO
+txt-noModels: 'Sin un modelo, no hay mucho que puedas hacer aquí'
+txt-noValidModels: Ninguno de tus modelos tiene todas las medidas que requiere este patrón
 txt-password-policy: No aplicamos una política de contraseña
 txt-passwordRecoverConfirmationNotFound: 'Lo sentimos, pero no tenemos pendiente ninguna recuperación de contraseña para este código de confirmación. Quizás ha caducado, en cuyo caso simplemente puedes hacer una nueva solicitud'
 txt-resend: 'Puedes iniciar sesión de nuevo con la misma dirección de E-mail, y te enviaremos un nuevo mensaje de confirmación.'

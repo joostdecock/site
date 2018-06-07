@@ -1,25 +1,25 @@
-ahoyPatron: Ahoy Patron! TODO
-allTheBest: 'All the best, TODO'
-authorCommentedOnYourProfilePage: '{author} commented on your profile page. TODO'
-authorPostedAReply: '{author} posted a reply to your comment: TODO'
-betterToAsk: It's always better to ask than to assume. TODO
-canWeRemainFriends: Can we remain friends? TODO
-chatOnGitter: Chat on Gitter TODO
-confirmEmailAddress: Confirm E-mail address TODO
-consentGiven: Thanks for giving your consent TODO
-consentReminder: 'This is merely a reminder. You can revoke your consent at any time <a href=''https://freesewing.org/account/consent''>in your account settings</a>. TODO'
-credits: Made by Joost De Cock & contributors with the financial support of our patrons ❤️ TODO
+ahoyPatron: Yoho patrocinador!
+allTheBest: 'Saludos, '
+authorCommentedOnYourProfilePage: '{author} ha comentado en tu perfil.'
+authorPostedAReply: '{author} ha publicado una respuesta a tu comentario: '
+betterToAsk: Siempre es mejor preguntar que asumir.
+canWeRemainFriends: ¿Podemos seguir siendo amigos?
+chatOnGitter: Chatea en Gitter
+confirmEmailAddress: Confirma dirección de E-mail
+consentGiven: Gracias por dar tu consentimiento
+consentReminder: 'Ésto es sólo un recordatorio. Puedes revocar tu consentimiento en cualquier momento <a href=''https://freesewing.org/account/consent''>en la configuración de tu cuenta</a>. TODO'
+credits: Hecho por Joost De Cock & colaboradores con el apoyo financiero de nuestros patrocinadores ❤️
 deliveryFromFreesewing: Delivery from freesewing TODO
 downloadArchive: Download archive TODO
 exportReadyNowDownload: We have created an archive of all your data. You can download it by clicking the button below. TODO
-founderAndMaintainer: Founder and maintainer of the freesewing project TODO
-freesewing: Freesewing TODO
-github: GitHub TODO
-goodbye: Goodbye TODO
-happyNewUser: We're so happy you decided to join the freesewing community. TODO
-helloUsername: 'Hello {username} TODO'
+founderAndMaintainer: Fundador y mantenedor del proyecto freesewing
+freesewing: Freesewing DONE
+github: GitHub DONE
+goodbye: Adiós
+happyNewUser: Estamos tan contentos de que hayas decidido a la comunidad freesewing.
+helloUsername: 'Hola {username}'
 hereIsYourData: Here is your data TODO
-iRespectYourDecisionToLeave: 'I respect your decision to leave, and won''t bother you again. TODO'
+iRespectYourDecisionToLeave: 'Respeto tu decisión de irte, y no te molestaré más.'
 ifThatDoesntWorkCopyPaste: 'If that doesn''t work, you can copy and paste the link in your browser. TODO'
 instagram: Instagram TODO
 itSeemsYouForgotYourPassword: It seems your forgot your password. TODO

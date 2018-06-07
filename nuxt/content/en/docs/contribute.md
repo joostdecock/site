@@ -39,7 +39,7 @@ You'll need a GitHub account for this, but they are free.
 
 Use that button. Don't be shy. If you see a typo, or something that needs clarification or more detail, please suggest your improvements.
 
-Our content is written in Markdown, which is trivial to edit. 
+Our content is formatted in Markdown, which is trivial to edit. 
 
 > Our [documentation for translating MarkDown](/docs/i18n/markdown) has an overview of MarkDown syntax.
 
@@ -55,7 +55,7 @@ Go ahead and make [our patterns](/patterns), share your experience, and provide 
 
 We'd love to get pictures to [showcase](/showcase) on the site too.
 
-**Conrtibute to our code**
+**Contribute to our code**
 
 Interesting in submitting a pull request for our code? Awesome. All our code is [on GitHub](https://github.com/freesewing). 
 

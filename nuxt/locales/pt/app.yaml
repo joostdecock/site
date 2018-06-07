@@ -48,7 +48,6 @@ contactUs: Entre em contato
 content: Conteúdo
 contents: Conteúdos
 contributeToFreesewing: Contribua com o freesewing
-coordinator: Coordenador
 coreLink: Link principal
 countAvailable: '{count} disponível'
 countTranslated: '{count} traduzido'
@@ -198,6 +197,7 @@ patternOptions: Opções do molde
 patternParts: Partes do molde
 patterns: Moldes
 pleaseCheckYourInbox: Você receberá um E-mail com mais instruções
+pleaseEnterAValidEmailAddress: Please enter a valid E-mail address TODO
 pleaseUpgradeThisDraft: 'Por favor, atualize esse esboço.'
 postComment: Poste um comentário
 postInfo: Poste informações
@@ -291,6 +291,7 @@ tip: Dica
 title: Título
 today: Hoje
 translationTeam: Equipe de tradução
+translators: Translators TODO
 troubleLoggingIn: Problemas ao fazer o login?
 tryAgain: Tente novamente
 twitter: Twitter TODO
