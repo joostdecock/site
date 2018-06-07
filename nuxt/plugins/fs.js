@@ -194,6 +194,12 @@ export default ({ app, store, route }, inject) => {
     }),
     methods: {
       // Async methods (thenable)
+
+      isValidEmail(input) {
+        let emailValidationRegex = RegExp("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")
+        return emailValidationRegex.test(input)
+      },
+
       login(data) {
         return new Promise(function(resolve, reject) {
           ax.data.post('/login', data)
