@@ -23,14 +23,19 @@
               <v-btn :href="'mailto:joost@decock.org?Subject=I%20could%20help%20translate%20'+loc" fat small color="success">{{ $t('volunteerVerb') }}</v-btn>
             </div>
             <div v-else>
-              <nuxt-link
+              <div
                 v-for="translator in $fs.conf.i18n.translators[loc]"
                 :key="translator"
-                :to="$fs.userPath(translator)"
-                class="mr-3"
               >
-                @{{ translator}}
-              </nuxt-link>
+                <a v-if="translator.substr(0,7) === 'github|'" :href="'https://github.com/'+translator.substr(7)">@{{translator.substr(7)}}</a>
+                <nuxt-link
+                  v-else
+                  :to="$fs.userPath(translator)"
+                  class="mr-3"
+                >
+                  @{{ translator}}
+                </nuxt-link>
+              </div>
             </div>
           </td>
           <td :key="'col4-'+loc" class="text-xs-center">

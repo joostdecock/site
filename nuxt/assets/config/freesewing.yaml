@@ -55,24 +55,24 @@ i18n:
       showcase: 0
     en:
       app: 417
-      blog: 0
-      docs: 0
+      blog: 31
+      docs: 347
       i18n: 9
       measurements: 26
       optiongroups: 12
       options: 301
       patterns: 37
-      showcase: 0
+      showcase: 51
     es:
       app: 411
-      blog: 0
-      docs: 0
+      blog: 2
+      docs: 1
       i18n: 9
       measurements: 26
       optiongroups: 12
       options: 273
       patterns: 37
-      showcase: 0
+      showcase: 1
     fr:
       app: 326
       blog: 0
@@ -85,14 +85,14 @@ i18n:
       showcase: 0
     nl:
       app: 416
-      blog: 0
-      docs: 0
+      blog: 3
+      docs: 7
       i18n: 9
       measurements: 26
       optiongroups: 12
       options: 301
       patterns: 37
-      showcase: 0
+      showcase: 1
     'no':
       app: 0
       blog: 0
@@ -145,27 +145,31 @@ i18n:
       showcase: 0
   target:
     app: 417
-    blog: 0
-    docs: 0
+    blog: 31
+    docs: 347
     i18n: 9
     measurements: 26
     optiongroups: 12
     options: 301
     patterns: 37
-    showcase: 0
+    showcase: 51
   template: xx
   translators:
     de:
       - manufaktur.edelweiss
       - sew.malina
+      - marckiesel
     en:
       - joost
     es:
       - AlfaLyr
-      - github__Loudepeuter
+      - github|Loudepeuter
     fr:
       - Fantastik-Maman
       - MrsMonkey
+      - github|Chantalbijoux
+      - github|dingcycle
+      - joebidido
     nl:
       - AnnekeCaramin
       - joost
