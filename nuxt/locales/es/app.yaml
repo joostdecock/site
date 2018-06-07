@@ -197,6 +197,7 @@ patternOptions: Opciones del patrón
 patternParts: Partes del patrón
 patterns: Patrones
 pleaseCheckYourInbox: Recibirás un E-mail con más instrucciones
+pleaseEnterAValidEmailAddress: Please enter a valid E-mail address TODO
 pleaseUpgradeThisDraft: 'Por favor, actualiza este boceto.'
 postComment: Publica el comentario
 postInfo: Información de la entrada

@@ -197,6 +197,7 @@ patternOptions: Pattern options
 patternParts: Pattern parts
 patterns: Patterns
 pleaseCheckYourInbox: You will be receiving an E-mail with further instructions
+pleaseEnterAValidEmailAddress: Please enter a valid E-mail address
 pleaseUpgradeThisDraft: Please upgrade this draft.
 postComment: Post comment
 postInfo: Post info

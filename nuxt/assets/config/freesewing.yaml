@@ -54,25 +54,25 @@ i18n:
       patterns: 37
       showcase: 0
     en:
-      app: 416
-      blog: 31
-      docs: 348
+      app: 417
+      blog: 0
+      docs: 0
       i18n: 9
       measurements: 26
       optiongroups: 12
       options: 301
       patterns: 37
-      showcase: 51
+      showcase: 0
     es:
       app: 411
-      blog: 2
-      docs: 1
+      blog: 0
+      docs: 0
       i18n: 9
       measurements: 26
       optiongroups: 12
       options: 273
       patterns: 37
-      showcase: 1
+      showcase: 0
     fr:
       app: 326
       blog: 0
@@ -84,15 +84,15 @@ i18n:
       patterns: 4
       showcase: 0
     nl:
-      app: 415
-      blog: 3
-      docs: 2
+      app: 416
+      blog: 0
+      docs: 0
       i18n: 9
       measurements: 26
       optiongroups: 12
       options: 301
       patterns: 37
-      showcase: 1
+      showcase: 0
     'no':
       app: 0
       blog: 0
@@ -144,15 +144,15 @@ i18n:
       patterns: 0
       showcase: 0
   target:
-    app: 416
-    blog: 31
-    docs: 348
+    app: 417
+    blog: 0
+    docs: 0
     i18n: 9
     measurements: 26
     optiongroups: 12
     options: 301
     patterns: 37
-    showcase: 51
+    showcase: 0
   template: xx
   translators:
     de:
