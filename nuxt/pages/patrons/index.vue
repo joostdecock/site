@@ -8,7 +8,7 @@
                 <v-flex class="xs3" v-for="(patron, index) in patrons" :key="index" >
                     <v-card>
                         <v-card-media :src="patron.picture" :height="imageHeight">
-                            <nuxt-link to="/" style="width: 100%; height: 100%" :title="$t('visitPatronProfile')"></nuxt-link>
+                            <nuxt-link :to="$fs.userPath(patron.username)" style="width: 100%; height: 100%" :title="$t('visitPatronProfile')"></nuxt-link>
                         </v-card-media>
                         <v-card-text>
                             <p class="mb-0 mt-0 thetitle">

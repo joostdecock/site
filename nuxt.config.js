@@ -96,6 +96,11 @@ const dynamicRoutes = [
     name: 'user-page',
     component: 'nuxt/pages/users/show-user.vue'
   },
+  {
+    path: '/admin/users/:user',
+    name: 'admin-user-page',
+    component: 'nuxt/pages/admin/users/admin-user.vue'
+  },
 ]
 
 module.exports = {
@@ -193,7 +198,7 @@ module.exports = {
     browserBaseURL: 'https://joost.data.freesewing.org'
   },
   router: {
-    middleware: 'auth',
+    middleware: ['auth','log'],
     extendRoutes (routes, resolve) {
       for(let i in topLevelDocRoutes) {
         routes.push({

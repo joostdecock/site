@@ -80,3 +80,7 @@
 ## User view
 /users/:user  /users/show-user  200
 /:locale/users/:user  /:locale/users/show-user  200
+
+## Admin user view
+/admin/users/:user  /admin/users/admin-user  200
+/:locale/admin/users/:user  /:locale/admin/users/admin-user  200

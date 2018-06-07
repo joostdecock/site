@@ -11,7 +11,7 @@
         <v-text-field name="draftTitle" :label="$t('title')" id="draftTitle" v-model="draft.name" box></v-text-field>
         <v-btn @click="saveTitle" color="primary"><v-icon class="mr-3">save</v-icon>Save</v-btn>
       </div>
-      <blockquote class="error fs-m800 mt-5" v-if="deleteThisDraft">
+      <blockquote class="error fs-m800 mt-5 fs-bq" v-if="deleteThisDraft">
       <h3>Are you certain you want to delete draft {{ draft.handle }}?</h3>
       <h5>{{ $t('thisActionCannotBeUndone') }}</h5>
       <p class="text-xs-right mt-3">

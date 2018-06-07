@@ -8,6 +8,7 @@ addAModel: Voeg een model toe
 addComment: Commentaar toevoegen
 all: Alles
 alreadyHaveAnAccount: Ben je reeds ingeschreven?
+apiCheatSheet: API spiekbrief
 areYouSureAboutThis: Ben je absoluut zeker dat dit is wat je wil?
 avatar: Profielfoto
 avatarUpdated: Avatar bijgewerkt
@@ -33,6 +34,7 @@ chooseAPattern: Kies een patroon
 chooseYourOptions: Kies je opties
 close: Sluiten
 code: Code DONE
+codeOfConduct: Gedragscode
 comments: Commentaar
 community: Gemeenschap
 compare: Vergelijk
@@ -46,7 +48,6 @@ contactUs: Neem contact op
 content: Inhoud
 contents: Inhoud
 contributeToFreesewing: Werk mee aan freesewing
-coordinator: Coördinator
 coreLink: Core link DONE
 countAvailable: '{count} beschikbaar'
 countTranslated: '{count} vertaald'
@@ -69,6 +70,7 @@ documentation: Documentatie
 documentationForDevelopers: Documentatie voor ontwikkelaars
 documentationForTranslators: Documentatie voor vertalers
 documentationOverview: Overzicht documentatie
+donationsPledge: Giften belofte
 download: Download DONE
 draft: Patroontekening
 draftAPattern: Laat je patroon tekenen
@@ -107,6 +109,7 @@ getHelp: Hulp nodig?
 github: GitHub DONE
 githubUpdated: GitHub gebruikersnaam bijgewerkt
 goodToKnow: Goed om weten
+grabYourMeasuringTape: Grijp naar je lintmeter
 hi: Hoi
 home: Home pagina
 howCanWeHelpYou: Hoe kunnen we je helpen?
@@ -128,6 +131,7 @@ justAMoment: Een ogenblikje
 key: Sleutel
 language: Taal
 languageLanguageFiles: 'Taal bestanden {language}'
+lastLogin: Meest recente aanmelding
 layout: Layout DONE
 learnMore: Meer weten
 learnToDesignPatterns: Leer patronen ontwerpen
@@ -152,6 +156,7 @@ metricUnits: Metrische eenheden (cm)
 model: Model DONE
 modelIsModel: 'Model is {model} DONE'
 models: Modellen
+moderationPolicy: Moderatie beleid
 monthsAgo: '{months} maand geleden | {months} maanden geleden'
 name: Naam
 nameOfTheModel: Naam van het model
@@ -172,11 +177,15 @@ notes: Notities
 ohNo: Oh nee!
 okThatsDone: 'OK, dat is ook weer gebeurd'
 onlySelectedPatternParts: Alleen de geselecteerde patroondelen
+originStory: Oorsprongsverhaal
 pageNotFound: De pagina waar je naar op zoek bent is nergens te vinden.
 paperlessTheme: Papierloze layout
 password: Wachtwoord
 passwordResetPending: Wachtwoord herstel is hangende.
 passwordUpdated: Wachtwoord gewijzigd
+patron-2: Powder monkey DONE
+patron-4: First mate DONE
+patron-8: Captain DONE
 patronText: '{username} is een {patronTier} sinds {daysAgo} '
 patrons: Sponsors
 pattern: Patroon
@@ -271,6 +280,7 @@ taskCompleted: Taak is afgerond
 theme: Layout
 themeUpdated: Voorkeur layout bijgewerkt
 thereIsNoWayBackFromThis: Na dit is er geen weg terug.
+thisActionCannotBeUndone: Deze actie kan niet ongedaan gemaakt worden
 thisContentIsNotAvailableInLanguage: Deze inhoud is niet beschikbaar in het Nederlands.
 thisDraftPredatesThisFeature: Deze patroontekening is te oud voor deze functionaliteit.
 thisIsTheCurrentStatusOfOurTranslations: Dit is de huidige status van onze vertalingen.
@@ -280,6 +290,7 @@ tip: Tip DONE
 title: Titel
 today: Vandaag
 translationTeam: Vertaalteam
+translators: Vertalers
 troubleLoggingIn: Problemen met aanmelden?
 tryAgain: Nogmaals proberen
 twitter: Twitter DONE
@@ -340,6 +351,8 @@ txt-joinTheTranslationTeam3: Lees de documentatie voor vertalers om aan de slag 
 txt-missingBlogPosts: Niet alle blog posts zijn vertaald naar het Nederland — maar daar kan jij verandering in brengen
 txt-modelsWithMissingMeasurements: 'Van deze modellen kennen we niet alle vereiste maten om dit patroon te tekenen:'
 txt-newModel: 'Eerst en vooral, geef je model een naam.'
+txt-noModels: Zonder een model kan je hier niet zo veel aanvangen
+txt-noValidModels: Geen enkele van je modellen hebben alle vereiste maten voor dit patroon
 txt-password-policy: We handhaven geen wachtwoordbeleid
 txt-passwordRecoverConfirmationNotFound: Helaas kunnen we geen hangend verzoek tot wachtwoord herstel vinden voor deze bevestigingscode. Misschien is de termijn voor het herstel verlopen. In dat geval kan U gewoon een nieuwe aanvraag indienen.
 txt-resend: 'Je kan je weer inschrijven met hetzelfde E-mail adres, en dan sturen we je een nieuwe activatie E-mail.'

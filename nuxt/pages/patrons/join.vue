@@ -7,7 +7,7 @@
             <img src="/img/patrons/medals/medal-2.svg" alt="The Powder Monkey medal" class="medal">
           </v-card-title>
           <v-card-text>
-            <p class="tier"><b>Powder Monkey</b></p>
+            <p class="tier"><b>{{ $t('patron-2') }}</b></p>
             <p class="price">2€<span class="fine-print">per month</span></p>
             <ul class="perks">
               <li>Free for all:</li>
@@ -72,7 +72,7 @@
             <img src="/img/patrons/medals/medal-4.svg" alt="The First Mate medal" class="medal">
           </v-card-title>
           <v-card-text>
-            <p class="tier"><b>First Mate</b></p>
+            <p class="tier"><b>{{ $t('patron-4') }}</b></p>
             <p class="price">4€<span class="fine-print">per month</span></p>
             <ul class="perks">
               <li>Free for all:</li>
@@ -137,7 +137,7 @@
             <img src="/img/patrons/medals/medal-8.svg" alt="The Captain medal" class="medal">
           </v-card-title>
           <v-card-text>
-            <p class="tier"><b>Captain</b></p>
+            <p class="tier"><b>{{ $t('patron-8') }}</b></p>
             <p class="price">8€<span class="fine-print">per month</span></p>
             <ul class="perks">
               <li>Free for all:</li>

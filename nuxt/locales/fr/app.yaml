@@ -1,135 +1,139 @@
-100PercentCommunity: 100% community TODO
-100PercentFree: 100% free TODO
+100PercentCommunity: 100% communauté
+100PercentFree: 100% gratuit
 100PercentOpenSource: 100% open source TODO
-aCodeBlock: A code block TODO
+aCodeBlock: Un bloc de code
 aboutFreesewing: A propos de Freesewing
 add: Ajouter
-addAModel: Add a model TODO
-addComment: Add comment TODO
+addAModel: Ajoutez un modèle
+addComment: Ajoutez un commentaire
 all: Tout
 alreadyHaveAnAccount: Vous avez déjà un compte ?
-areYouSureAboutThis: Are you 100% sure about this? TODO
+apiCheatSheet: API cheat sheet TODO
+areYouSureAboutThis: Êtes-vous sûr à 100% ?
 avatar: Avatar DONE
 avatarUpdated: Avatar mis à jour
-averagePeopleDontExist: Average people don't exist TODO
-basicTheme: Classic theme TODO
+averagePeopleDontExist: Les gens "normaux" n'existent pas
+basicTheme: Thème classique
 basics: Les bases
 becomeAPatron: Devenez mécène
-bio: Bio TODO
-bioUpdated: Bio updated TODO
-blockquote: Block quote TODO
-blog: Blog DONE
-blogPost: Messages de blog
-bold: Bold TODO
+bio: Bio DONE
+bioUpdated: Bio mise à jour
+blockquote: Block quote DONE
+blog: Blogue
+blogPost: Messages de blogue
+bold: En gras
 breasts: Poitrine
 breastsUpdated: Réglages poitrine mis à jour
-by: by TODO
+by: par
 cancel: Annuler
-chatOnGitter: Chatter sur Gitter
-chatWithUs: Chatter avec nous
+chatOnGitter: Clavarder sur Gitter
+chatWithUs: Clavarder avec nous
 chooseAModel: Choisir un modèle
-chooseANewPassword: Choose a new password TODO
+chooseANewPassword: Choisir un nouveau mot de passe
 chooseAPattern: Choisir un patron
 chooseYourOptions: Choisir vos options
 close: Fermer
-code: Code TODO
-comments: Comments TODO
+code: Code DONE
+codeOfConduct: Code of conduct TODO
+comments: Commentaires
 community: Communauté
 compare: Comparer
 completePattern: Patron complet
 connectingToSomeApi: 'Connexion à l''API {api}'
-consent: Consent TODO
-consentForModelData: Consent for model data TODO
-consentForProfileData: Consent for profile data TODO
-consentGiven: Consent given TODO
+consent: Autorisation
+consentForModelData: Autoriser l'enregistrement des données du modèle
+consentForProfileData: Autoriser l'enregistrement des données du profil
+consentGiven: Autorisation accordée
 contactUs: Nous contacter
 content: Contenu
 contents: Contenus
 contributeToFreesewing: Contribute to freesewing TODO
-coordinator: Coordinateur
 coreLink: Lien de base
 countAvailable: '{count} disponibles'
 countTranslated: '{count} traduits'
-createAnAccount: Create an account TODO
+createAnAccount: Créer un compte
 createIssueOnGithub: Créer une question sur GitHub
 createModel: Créer le modèle
 createMyAccount: Créer mon compte
 created: Créé
 currentPassword: Mot de passe actuel
 data: Données
-date: Date DONE
+date: Date TODO
 daysAgo: 'Il y a {days} jours'
 delete: Supprimer
 deleteThisDraft: Supprimer ce brouillon
-description: Description DONE
+description: Description TODO
 details: Détails
 difficulty: Difficulté
-docs: Documentation DONE
+docs: Documentation TODO
 documentation: Documentation DONE
 documentationForDevelopers: Documentation pour les développeurs
 documentationForTranslators: Documentation pour les traducteurs
 documentationOverview: Vue d'ensemble de la documentation
+donationsPledge: Donations pledge TODO
 download: Télécharger
 draft: Brouillon
-draftAPattern: Draft a pattern TODO
+draftAPattern: Dessiner un patron
 draftOptions: Options de l'ébauche
 draftPattern: 'Ebauche de {pattern}'
 draftPatternForModel: 'Ebauche de {pattern} pour {model}'
-draftThePattern: Ebaucher le patron
+draftThePattern: Dessiner le patron
 draftingPattern: 'Ebauche de {pattern} en cours'
 drafts: Ebauches
-edit: Editer
+edit: Éditer
 editOnGithub: Editer avec GitHub
-email: E-mail DONE
+email: E-mail TODO
 emailAddress: Adresse mail
-emailUpdatePending: E-mail update pending. TODO
+emailUpdatePending: Mise à jour par e-mail en cours.
 emails: E-mails DONE
 enterYourCurrentPassword: Composer votre mot de passe actuel
 enterYourNewPassword: Composer votre nouveau mot de passe
 error-unknown: Une erreur inconnue est survenue
-error-username_taken: Nom d'utilisateur déjà pris
-exportMyData: Export my data TODO
+error-username_taken: Nom d'utilisateur déjà utilisé
+exportMyData: Exporter mes données
 filterByPattern: Filtrer par patron
 forContributors: Pour les contributeurs
 forMoreInfoRtfm: 'Pour plus d''infos, lire la documentation:'
-forUsername: 'Pour {username} TODO'
+forUsername: 'Pour {username} '
 forUsers: Pour les utilisateurs
-fork: Fork TODO
-forkDraftHandle: 'Fork draft {handle} TODO'
+fork: Fourche
+forkDraftHandle: 'Ebauche fourche {handle}'
 freesewing: Freesewing DONE
-freesewingContributors: Freesewing contributors TODO
-freesewingOnGithub: Freesewing on GitHub TODO
-freesewingPatrons: Freesewing patrons TODO
+freesewingContributors: Contributeurs Freesewing
+freesewingOnGithub: Freesewing sur GitHub
+freesewingPatrons: Mécènes Freesewing
 freezeMyAccount: Freeze my account TODO
 fullSizePdf: PDF à l'échelle
 fundamentals: Fondamentaux
-getHelp: Get help TODO
+getHelp: Obtenir de l'aide
 github: GitHub DONE
 githubUpdated: Nom d'utilisateur GitHub mis à jour
 goodToKnow: Bon à savoir
+grabYourMeasuringTape: Grab your measuring tape TODO
 hi: Salut
 home: Accueil
-howCanWeHelpYou: How can we help you? TODO
+howCanWeHelpYou: Comment pouvons-nous vous aider ?
 howToTakeMeasurements: Comment prendre les mesures
 i18n: Internationalisation (i18n)
-iForgotMyPassword: I forgot my password TODO
-iForgotMyUsername: I forgot my username TODO
+iForgotMyPassword: J'ai oublié mon mot de passe
+iForgotMyUsername: J'ai oublié mon nom d'utilisateur
 image: Image DONE
-imperial: Imperial TODO
+imperial: Impérial
 imperialUnits: Unités de mesure impériales (pouces)
-in: in TODO
+in: dans
 inch: pouce
-info: Info DONE
+info: Info TODO
 instagram: Instagram DONE
-instagramUpdated: Compte Instagram établi
-italics: Italics TODO
+instagramUpdated: Compte Instagram mis à jour
+italics: En italique
 joinTheTranslationTeam: 'Même si vous n''avez jamais contribué à un projet Open Source, la traduction est une douce montée vers la gloire du contributeur.'
 justAMoment: Juste un instant
 key: Légende
 language: Langue
 languageLanguageFiles: 'Fichier langue {language}'
+lastLogin: Last login TODO
 layout: Agencement
-learnMore: Learn more TODO
+learnMore: En savoir plus
 learnToDesignPatterns: Apprendre à concevoir des patrons
 letterPdf: PDF lettre
 loadingModelData: Chargement des données du modèle en cours
@@ -137,21 +141,22 @@ loadingResult: Chargement du résultat en cours
 locale: Langue
 localeUpdated: Préférences langue mises à jour
 logIn: Connexion
-logInAs: Log in as TODO
+logInAs: S'identifier en tant que
 logOut: Deconnexion
-logOutAs: 'Log out as {user} TODO'
+logOutAs: 'Se déconnecter en tant que {user} TODO'
 loginFailed: La connexion a échoué
 makeItBetter: Faire des améliorations
-markdownSyntax: MarkDown syntax TODO
+markdownSyntax: Syntaxe MarkDown
 measurementUpdated: Mensurations mises à jour
 measurements: Mensurations
 measurementsRequiredForPattern: 'Mensurations requises pour {pattern}'
 messages: Messages DONE
-metric: Metric TODO
+metric: Métrique
 metricUnits: Unités de mesure métriques (cm)
 model: Modèle
 modelIsModel: 'Le modèle est {model}'
 models: Modèles
+moderationPolicy: Moderation policy TODO
 monthsAgo: 'Il y a {months} mois'
 name: Nom
 nameOfTheModel: Nom du modèle
@@ -165,60 +170,64 @@ newTaskForUser: 'Nouvelle tâche pour {user}'
 noChanges: Aucun changement
 noDraftsFound: Aucune ébauche trouvée
 noFilter: Aucun filtre
-noIDoNot: 'No, I do not TODO'
-noIDoNotObject: 'No, I do not object TODO'
+noIDoNot: 'Non, je ne donne pas mon accord'
+noIDoNotObject: 'Non, je ne m''y oppose pas'
 notShared: Pas partagé
-notes: Notes DONE
+notes: Notes TODO
 ohNo: Oh non !
 okThatsDone: 'OK, c''est fait'
 onlySelectedPatternParts: Uniquement les pièces de patron selectionnées
+originStory: Origin story TODO
 pageNotFound: La page que vous recherchez est introuvable
 paperlessTheme: Thème sans papier
 password: Mot de passe
-passwordResetPending: Password reset pending. TODO
+passwordResetPending: Réinitialisation du mot de passe en cours.
 passwordUpdated: Mot de passe changé
+patron-2: Powder monkey TODO
+patron-4: First mate TODO
+patron-8: Captain TODO
 patronText: '{username} est un {patronTier} depuis {daysAgo}'
 patrons: Mécènes
 pattern: Patron
 patternDesignTutorial: Tutoriel de conception de patron
-patternInstructions: Pattern instructions TODO
+patternInstructions: Explications pour le patron
 patternIsPattern: 'Le patron est {pattern}'
 patternLineDrawing: '{pattern} line drawing TODO'
 patternOptions: Options du patron
 patternParts: Pièces du patron
 patterns: Patrons
-pleaseCheckYourInbox: You will be receiving an E-mail with further instructions TODO
+pleaseCheckYourInbox: Vous allez recevoir un e-mail avec la suite des instructions
 pleaseUpgradeThisDraft: Merci d'améliorer cette ébauche.
-postComment: Post comment TODO
+postComment: Poster un commentaire
 postInfo: Info post
-postReply: Post reply TODO
+postReply: Répondre
 preferences: Préférences
 privacy: Vie privée
 privacyNotice: Privacy notice TODO
 processingDraftOptions: Traitement des options de l'ébauche en cours
 profile: Profil
 quickPick: Choix rapide
-quote-allie: Have you heard of freesewing.org? It’s pretty much the greatest thing ever! TODO
+quote-allie: 'Avez-vous entendu parler de freesewing.org ? C''est, en gros, la meilleure chose qui ait jamais existé !'
 quote-allie-about: Author of sewing blog The Aspiring Seamstress. TODO
 quote-ivan: Kudos to @j__st for creating @freesewing_org an open source platform for made-to-measure sewing patterns and general awesomeness TODO
 quote-ivan-about: Kubernetes London Meetup co-organiser. Founder of Kube.camp TODO
-quote-jamie: 'With Freesewing, sewing has moved into the 21st century TODO'
-quote-jamie-about: Author of the popular sewing blog Male Devon Sewing and 2016 Great British Sewing Bee contestant. TODO
+quote-jamie: 'Avec Freesewing, la couture est entrée dans le 21ème siècle'
+quote-jamie-about: Auteur du populaire blog couture Male Devon Sewing et candidat 2016 de l'émission TV Great British Sewing Bee (version britannique de Cousu Main).
 reSendActivationEmail: Renvoyer l'e-mail d'activation
-readyToTryFreesewing: Ready to try Freesewing? TODO
+readyToTryFreesewing: Prêt à essayer Freesewing?
 redraft: Re-ébaucher
 redraftDraftHandle: 'Re-ébaucher l''ébauche {handle}'
 reference: Référence
 removeAllMyData: Enlever toutes mes données
-removeAllMyModelData: Remove all my model data TODO
+removeAllMyModelData: Effacer toutes les données de mes modèles
 replay: Re-jouer
-reply: Reply TODO
+reply: Répondre
 reportThisOnGitHub: Report this on GitHub TODO
 requiredMeasurements: Mensurations requises
-resetPassword: Reset password TODO
-result: Result TODO
+resetPassword: Réintialiser le mot de passe
+result: Résultat
 retrievingDraftFromCore: Récupération de l'ébauche depuis la base en cours
-revokeConsent: Revoke consent TODO
+revokeConsent: Retirer mon accord
 rowsFromToOfTotal: 'Rangs {from} à {to} de {total}'
 rowsPerPage: Rangs par page
 save: Sauvegarder
@@ -231,122 +240,126 @@ selectADifferentImage: Choisir une image différente
 selectAnImage: Choisir une image
 selectThePartsYouWantIncludedInYourDraft: Choisir les pièces que vous souhaitez inclure dans votre ébauche
 settings: Paramètres
-sewingPatternsForNonAveragePeople: Sewing patterns for non-average people TODO
+sewingPatternsForNonAveragePeople: Patrons de couture pour personnes hors-normes.
 share: Partager
 shared: Partagé
 sharedUpdated: Paramètre partagé mis à jour
 showHelp: Montrer l'aide
-showcase: Showcase TODO
-showcaseInfo: Showcase info TODO
+showcase: Galerie
+showcaseInfo: Infos galerie
 signUp: Créer un compte
 signUpForAFreeAccount: Créer un compte gratuit
-signingUpOnlyTakesAMinute: Signing up only takes a minute TODO
-signup--text: This should not happen. Please help us out by creating an issue on GitHub TODO
+signingUpOnlyTakesAMinute: Il ne faut qu'une minute pour s'inscrire
+signup--text: Ceci ne devrait pas arriver. Merci de nous aider en créant une publication sur GitHub
 signup--title: Une erreur inconnue est survenue
 signup-invalid_input-text: 'Merci d''entrer une adresse mail valide, et un mot de passe'
 signup-invalid_input-title: Entrée invalide
-signup-no_such_pending_confirmation-text: 'Sorry, but that is not a confirmation code we have on record? Perhaps it expired, in which case you can just sign up again. TODO'
-signup-no_such_pending_confirmation-title: There's no such pending confirmation TODO
-signup-signup_pending-text: We already have a pending activation for this email address. We have sent you a fresh copy of the activation email in case you missed the original one. TODO
-signup-signup_pending-title: Your signup is pending activation TODO
-signup-success-text: 'We''ve sent you an email at {email}. TODO'
-signup-user_exists-text: We already have a user with that email address. Perhaps you'd like to login instead? TODO
-signup-user_exists-title: That user exists TODO
-social: Social TODO
-somethingWentWrong: Something went wrong TODO
-startUpload: Start upload TODO
-status: Status TODO
-statusTranslationLanguage: 'Status translation {language} TODO'
-step1: Step 1 TODO
-step2: Step 2 TODO
-step3: Step 3 TODO
-step4: Step 4 TODO
-stopProcessingMyData: Stop processing my data TODO
-stopUpload: Stop upload TODO
-storingDraftData: Storing draft data TODO
-strikethrough: Strikethrough TODO
-svgSourceCode: SVG Source code TODO
-tabloidPdf: Tabloid PDF TODO
-taskCompleted: Task completed TODO
-theme: Theme TODO
-themeUpdated: Layout preference set TODO
-thereIsNoWayBackFromThis: There is no way back from this. TODO
-thisContentIsNotAvailableInLanguage: This content is not available in English. TODO
-thisDraftPredatesThisFeature: This draft predates this feature. TODO
-thisIsTheCurrentStatusOfOurTranslations: This is the current status of our translations. TODO
-thisPageIsNotIntendedForLoggedInUsers: This page is not intended for logged-in users TODO
-thisPageIsOnlyAvailableToFreesewingUsers: This page is only available to Freesewing users TODO
-tip: Tip TODO
-title: Title TODO
-today: Today TODO
-translationTeam: Translation team TODO
-troubleLoggingIn: Trouble logging in? TODO
-tryAgain: Try again TODO
-twitter: Twitter TODO
-twitterUpdated: Twitter account set TODO
-txt-avatarDropzoneText: 'Drag and drop an image here, or click the button to pick one from your files. TODO'
-txt-avatarDropzoneTitle: Drop your image here TODO
-txt-breastMeasurement-text: This is one of those measurements that is only relevant if your model has breasts. TODO
-txt-breastMeasurement-title: This measurement is only relevant for breasts TODO
-txt-changeRequiresConfirmation: This change requires confirmation via E-mail TODO
-txt-clickEmailLink: Please click the link in the email to continue. TODO
-txt-consentModel: Do you give your consent to process your model data? TODO
-txt-consentModelAnswerWhat: 'For each model their <b>measurements</b>, <b>breasts settings</b>, and <b>password</b>. TODO'
-txt-consentModelAnswerWhatOptional: 'Optional: A model <b>picture</b> and the <b>name</b> that you give your model. TODO'
-txt-consentModelAnswerWhy: 'To <b>draft made-to-measure sewing patterns</b>, we need <b>body measurements</b>. TODO'
-txt-consentModelObjectNote: 'Note: Freesewing publishes anonymized measurements as open data for scientific research. TODO'
-txt-consentModelObjectWhy: 'This data is anonymous and used to study and understand the human form in all its shapes, so we can get better sewing patterns, and better fitting garments. TODO'
-txt-consentModelQuestionWhat: What is model data? TODO
+signup-no_such_pending_confirmation-text: 'Désolé, nous n''avons pas ce code dans notre base de données. Peut-être qu''il a expiré ; dans ce cas il suffit de vous réinscrire.'
+signup-no_such_pending_confirmation-title: Aucune confirmation de ce type n'est en attente
+signup-signup_pending-text: Nous avons déjà une activation en attente pour cette adresse mail. Nous vous avons envoyé une nouvelle copie de l'e-mail d'activation au cas où vous auriez râté le premier.
+signup-signup_pending-title: Votre création de compte est en attente d'activation.
+signup-success-text: 'Nous vous avons envoyé un e-mail à {email}.'
+signup-user_exists-text: Nous avons déjà un compte d'utilisateur associé à cette adresse e-mail. Peut-être voulez-vous plutôt vous connecter?
+signup-user_exists-title: Cet utilisateur existe.
+social: Social DONE
+somethingWentWrong: Une erreur s'est produite
+startUpload: Commencer le téléchargement
+status: Etat d'avancement
+statusTranslationLanguage: 'Etat d''avancement de la langue {language}'
+step1: Etape 1
+step2: Etape 2
+step3: Etape 3
+step4: Etape 4
+stopProcessingMyData: Cesser de traiter mes données
+stopUpload: Arrêter le téléchargement
+storingDraftData: Enregistrement des données de l'ébauche en cours
+strikethrough: Barrer
+svgSourceCode: Code source SVG
+tabloidPdf: Format pdf tabloid (11 X 17 pouces )
+taskCompleted: Tâche complétée
+theme: Thème
+themeUpdated: Préférence de mise en page enregistrée
+thereIsNoWayBackFromThis: Ceci est le point de non-retour.
+thisActionCannotBeUndone: This action cannot be undone TODO
+thisContentIsNotAvailableInLanguage: Ce contenu n'est pas disponible en Français.
+thisDraftPredatesThisFeature: Cette ébauche date d'avant cette fonctionnalité.
+thisIsTheCurrentStatusOfOurTranslations: Voici l'état d'avancement actuel de nos traductions.
+thisPageIsNotIntendedForLoggedInUsers: Cette page n'est pas à l'attention des usagers connectés.
+thisPageIsOnlyAvailableToFreesewingUsers: Cette page est uniquement disponible pour utilisateurs de Freesewing
+tip: Astuce
+title: Titre
+today: Aujourd'hui
+translationTeam: Équipe de traduction
+translators: Translators TODO
+troubleLoggingIn: Un problème de connexion ?
+tryAgain: Essayez de nouveau
+twitter: Twitter DONE
+twitterUpdated: Compte Twitter mis à jour
+txt-avatarDropzoneText: 'Glisser et déposer une image ici, ou cliquer sur le bouton pour en choisir une dans vos fichiers.'
+txt-avatarDropzoneTitle: Déposer votre image ici
+txt-breastMeasurement-text: Cette mesure est seulement pertinente si votre modèle a une poitrine.
+txt-breastMeasurement-title: Cette mesure est pertinente seulement pour la poitrine
+txt-changeRequiresConfirmation: Ce changement nécessite une confirmation par e-mail
+txt-clickEmailLink: Merci de cliquer le lien dans l'e-mail pour continuer.
+txt-consentModel: Donnez-vous votre accord pour le traitement des données de votre modèle?
+txt-consentModelAnswerWhat: 'Pour chaque modèle leur <b>mensurations</b>, <b>réglages poitrine</b>, et <b>mot de passe</b>.'
+txt-consentModelAnswerWhatOptional: 'Facultatif: Une <b>photo</b> et le <b>nom</b> que vous donnez à votre modèle. '
+txt-consentModelAnswerWhy: 'Pour <b>dessiner un patron de couture fait sur mesure</b>, nous avons besoin des <b>mesures corporelles</b>. '
+txt-consentModelObjectNote: 'Note: Freesewing transmet des mensurations de façon anonyme et gratuite pour la recherche scientifique.'
+txt-consentModelObjectWhy: 'Ces données sont anonymes et utilisées pour étudier et comprendre le corps humain sous toutes ses formes, afin d''améliorer les patrons de couture, et des vêtements mieux ajustés.'
+txt-consentModelQuestionWhat: Qu'est-ce que les données du modèle?
 txt-consentProfile: Do you give your consent to process your profile data? TODO
-txt-consentProfileAnswerShare: '<b>No</b>, never. TODO'
+txt-consentProfileAnswerShare: '<b>Non</b>, jamais. '
 txt-consentProfileAnswerTiming: '<b>12 months</b> after your last login, or until you <b>remove</b> your account or <b>revoke</b> this consent. TODO'
-txt-consentProfileAnswerWhat: 'Your <b>email address</b>, <b>username</b>, and <b>password</b>. TODO'
-txt-consentProfileAnswerWhatOptional: 'Optional: A <b>profile picture</b>, and <b>social media accounts</b> TODO'
+txt-consentProfileAnswerWhat: 'Votre <b>email address</b>, <b>username</b>, et <b>password</b>.'
+txt-consentProfileAnswerWhatOptional: 'Optionnel: Un <b>profile picture</b>, et <b>social media accounts</b>'
 txt-consentProfileAnswerWhy: 'To <b>authenticate</b> you, <b>contact</b> you when needed, and build a <b>community</b>. TODO'
-txt-consentProfileQuestionShare: Do we share it with others? TODO
-txt-consentProfileQuestionTiming: How long do we keep it? TODO
-txt-consentProfileQuestionWhat: What is profile data? TODO
-txt-consentProfileQuestionWhy: Why do we need it? TODO
-txt-contentLocaleFallback: That's why we're showing you the English version instead. TODO
-txt-contentNotTranslated: 'Unfortunately, this page has not (yet) been translated to {language}. TODO'
+txt-consentProfileQuestionShare: Est-ce qu'on le partage avec d'autres?
+txt-consentProfileQuestionTiming: Pour combien de temps le gardons nous?
+txt-consentProfileQuestionWhat: Qu'est-ce que sont les données de profil?
+txt-consentProfileQuestionWhy: Pourquoi en avons nous besoin?
+txt-contentLocaleFallback: C'est pour cela que nous vous montrons plutôt la version anglaise.
+txt-contentNotTranslated: 'Malheureusement, cette page n''a pas (encore) été traduite en {language}.'
 txt-dataExport: 'If you like, we can export all the data we have stored for you. TODO'
 txt-dataExportQueued: You data export has been queued. We'll send you an E-mail once it's ready with a download link. TODO
-txt-didYouSpotATypo: 'Did you spot a typo? Do you feel something is missing, or needs clarification? TODO'
-txt-doYouObject: Do you object to using your anonymized data for scientific research? TODO
-txt-editThisPageOnline: You can edit this page online and submit your changes. TODO
-txt-email-sharing: We'll never share your email with anyone else TODO
-txt-emailChangeConfirmationNotFound: 'Sorry, but we have no pending E-mail change for this confirmation code. Perhaps it expired, in which case you can simply make the change again in your settings. TODO'
-txt-emailNotFound: 'If you can''t find the email, check your spam folder, or contact us. TODO'
-txt-emailWillWorkToo: 'If you don''t know your @:username, your @:emailAddress will work too TODO'
-txt-errorPleaseReportIssue: Please report this issue on GitHub so we can fix it TODO
-txt-footer: Freesewing is made by Joost De Cock & contributors<br>with the financial support of our Patrons TODO
-txt-forgot-login: 'Enter your username or E-mail address below and click the <b>@:resetPassword</b> button TODO'
-txt-gdpr-1: The General Data Protection Regulation (GDPR) of the European Union (EU) protects your personal data from unscrupulous data hoarders. That's a good thing. TODO
-txt-gdpr-2: 'One of the things it imposes is for us to get your consent — in other words, your permission — to process your personal data. TODO'
-txt-gdpr-3: 'Without your consent, we have no legal basis to process your data and have no choice but to remove it. TODO'
-txt-gdprCompliant: Freesewing.org respects your privacy and your rights. We apply the General Data Protection Regulation (GDPR) of the European Union (EU). TODO
+txt-didYouSpotATypo: Avez-vous remarqué une coquille? Est-ce qu'il manque quelque chose? Est-ce que les explications sont claires?
+txt-doYouObject: Vous objectez-vous à l'utilisation de vos données anonymes pour la recherche scientifique?
+txt-editThisPageOnline: Vous pouvez modifier cette page en ligne et soumettre vos changements.
+txt-email-sharing: Nous ne partagerons jamais votre e-mail avec personne.
+txt-emailChangeConfirmationNotFound: 'Désolé, mais nous n''avons pas de demande changement de courriel en attente pour ce code de confirmation. Votre code est peut-être expiré. Si tel est le cas, vous pouvez faire le changement à nouveau dans vos réglages.'
+txt-emailNotFound: 'Si vous ne trouvez pas ce mail, vérifiez dans votre courrier indésirable (spam), ou contactez-nous. '
+txt-emailWillWorkToo: 'Si vous ne connaissez pas votre @:username, votre @:emailAddress fonctionne également'
+txt-errorPleaseReportIssue: Merci de signaler ce problème sur GitHub afin que nous puissions y remédier.
+txt-footer: Freesewing est la création de Joost De Cock et ses contributeurs<br>avec le soutien financier de mécènes
+txt-forgot-login: 'Entrez votre nom d''utilisateur ou votre adresse e-mail ci-dessous et cliquez sur le bouton <b>@:resetPassword</b>.'
+txt-gdpr-1: La réglementation générale sur la protection des données (RGPD) de l'Union Européenne (UE) protège vos données personnelles des accumulateurs de données peu scrupuleux. C'est une bonne chose.
+txt-gdpr-2: 'L''une de ces mesures nous impose d''obtenir votre consentement, — en d''autres termes, votre permission — pour traiter vos données personnelleses.'
+txt-gdpr-3: 'Sans votre consentement, nous n''avons pas le droit d''utiliser vos données et nous n''avons pas d''autre choix que de les supprimer.'
+txt-gdprCompliant: Freesewing.org respecte votre vie privée et vos droits. Nous appliquons la réglementation générale sur la protection des données (RGPD) de l'Union Européenne (EU).
 txt-homepage-community: 'Everything is run by voluntary contributors. There is no commercial entity behind, or attached to, this project. TODO'
-txt-homepage-different: How we're different TODO
-txt-homepage-draft: 'Choose from one of your patterns, choose a model, and pick your options. We''ll do the rest. TODO'
-txt-homepage-how: How it works TODO
-txt-homepage-join: Join thousands of others and sign up for a free account on freesewing.org. TODO
-txt-homepage-model: All our patterns are made-to-measure. So first thing to do is grab your measuring tape. TODO
+txt-homepage-different: Ce en quoi nous sommes différents
+txt-homepage-draft: 'Choisissez parmi l''un de vos patrons, choisissez un modèle, et sélectionnez vos options. Nous ferons le reste.'
+txt-homepage-how: Comment ça marche
+txt-homepage-join: Rejoignez des milliers d'autres personnes en vous inscrivant gratuitement sur freesewing.org.
+txt-homepage-model: 'Tous nos patrons sont faits sur mesure, donc la première chose à faire est de vous munir de votre mètre-ruban.'
 txt-homepage-opensource: 'Our platform, our patterns, and even this website. All our code is available on GitHub. Pull requests welcome! TODO'
 txt-homepage-patrons: Freesewing is made possible by the financial support of our Patrons. They keep this ship afloat. TODO
-txt-homepage-quotes: What others are saying TODO
+txt-homepage-quotes: Ce qu'en disent les autres
 txt-joinTheTranslationTeam1: 'Even if you have never contributed to an open source project, translation is a smooth on-ramp towards contributor fame. TODO'
 txt-joinTheTranslationTeam2: 'It doesn''t matter whether you translate a few words or sentences, or tackle an entire language by yourself. Every contribution counts, and many hands make light work. TODO'
-txt-joinTheTranslationTeam3: 'Read the documentation for translators to get started. Don''t worry, it''s easy. TODO'
+txt-joinTheTranslationTeam3: 'Pour débuter, veuillez lire la documentation pour les traducteurs. Ne vous inquiétez pas, c''est facile. '
 txt-missingBlogPosts: Not all blog posts have been translated to English — but you could change that TODO
 txt-modelsWithMissingMeasurements: 'These models lack some of the required measurements to draft this pattern: TODO'
-txt-newModel: 'To get started, please give your model a name. TODO'
-txt-password-policy: We don't enforce a password policy TODO
+txt-newModel: 'Pour débuter, veuillez donner un nom à votre modèle. '
+txt-noModels: 'Without a model, there''s not much you can do here TODO'
+txt-noValidModels: None of your models have all the required measurements for this pattern TODO
+txt-password-policy: Nous n'appliquons pas de politique sur les mots de passe
 txt-passwordRecoverConfirmationNotFound: 'Sorry, but we have no pending password recovery for this confirmation code. Perhaps it expired, in which case you can simply make another request. TODO'
 txt-resend: 'You can sign up again with the same E-mail address, and we''ll send you a new confirmation message. TODO'
-txt-saOption-custom: Custom seam allowance TODO
-txt-saOption-imperial: Standard imperial seam allowance TODO
-txt-saOption-metric: Standard metric seam allowance TODO
-txt-saOption-none: Don't include seam allowance TODO
+txt-saOption-custom: Marge de couture personnalisée
+txt-saOption-imperial: Marge de couture impériale standard
+txt-saOption-metric: Marge de couture métrique standard
+txt-saOption-none: N'inclue pas les marges de couture
 txt-saOption-patternImperial: Pattern default imperial seam allowance TODO
 txt-saOption-patternMetric: Pattern default metric seam allowance TODO
 txt-signup-step1: 'Enter your email address, and pick a password. TODO'
@@ -368,8 +381,8 @@ updates: Updates TODO
 upgrade: Upgrade TODO
 upgradeRequired: Upgrade required TODO
 useDecimalsOrFractions: Use decimals (1.25) or fractions (1 1/4) TODO
-user: User TODO
-userHasBeenWithUsSince: '{user} has been with us since {since} TODO'
+user: utilisateur
+userHasBeenWithUsSince: '{user} est parmi nous depuis {since} TODO'
 userIsAPatron: '{user} is a patron TODO'
 username: Username TODO
 usernameOrEmail: '@:username or @:emailAddress TODO'
@@ -381,20 +394,20 @@ volunteerVerb: Volunteer TODO
 weAreLoadingDataFromTheBackend: We are loading data from the backend TODO
 weAreValidatingYourConfirmationCode: We are validating your confirmation code TODO
 weCantHelpYouWithThis: We can't help you with this TODO
-weNeedYourConsent: We need your consent TODO
+weNeedYourConsent: Nous avons besoin de votre accord
 welcomeAboard: Welcome aboard TODO
 withBreasts: With breasts TODO
 withOrWithoutBreasts: With or without breasts? TODO
 withoutBreasts: Without breasts TODO
-wouldYouLikeToLogOut: Would you like to log out? TODO
+wouldYouLikeToLogOut: Souhaitez-vous vous déconnecter ?
 yearsAgo: '{years} year ago | {years} years ago TODO'
-'yes': Yes TODO
+'yes': Oui
 yesIDo: 'Oui, je donne mon accord'
 yesIDoObject: 'Yes, I do object TODO'
-yesterday: Yesterday TODO
-youAreCurrentlyLoggedIn: You are currently logged in. TODO
+yesterday: Hier
+youAreCurrentlyLoggedIn: Vous être connecté(e)
 youAreNotAnAdmin: You are not an admin TODO
-youAreNotLoggedIn: You are not logged in. TODO
+youAreNotLoggedIn: Vous n'êtes pas connecté(e)
 youCanUseMarkdownFormatting: You can use MarkDown formatting TODO
 youDoNotObjectToSharingAnonymizedDataForResearch: You do not object to sharing anonymized data for research TODO
 youHaveTheRightToObjectToThis: You have the right to object to this TODO

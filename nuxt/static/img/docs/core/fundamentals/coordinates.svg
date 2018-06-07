@@ -1,0 +1,8 @@
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="800" height="400" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 400">
+
+    <!-- content -->
+    <path d="M 10 10 L 790 10 l -12 3 l 0,-6 l 12 3" style="fill: none; stroke: #292b2c; stroke-width: 3px; stroke-linecap: round;"/>
+    <text x="740" y="45" style="font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; fill: #292b2c; font-size: 36px; font-weight: bold;">X</text>
+    <path d="M 10 10 L 10 390 l -3 -12 l 6,0 l -3 12" style="fill: none; stroke: #292b2c; stroke-width: 3px; stroke-linecap: round;"/>
+    <text x="20" y="365" style="font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; fill: #292b2c; font-size: 36px; font-weight: bold;">Y</text>
+</svg>

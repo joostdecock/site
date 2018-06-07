@@ -8,17 +8,18 @@ addAModel: Adicionar um modelo
 addComment: Adicionar comentário
 all: Tudo
 alreadyHaveAnAccount: Já tem uma conta?
+apiCheatSheet: Folha de consulta rápida do API
 areYouSureAboutThis: Você tem certeza absoluta disso?
-avatar: Avatar TODO
+avatar: Avatar DONE
 avatarUpdated: Avatar atualizado
 averagePeopleDontExist: Pessoas medianas não existem
 basicTheme: Tema clássico
 basics: Noções básicas
 becomeAPatron: Se torne um patrono
-bio: Bio TODO
+bio: Bio DONE
 bioUpdated: Bio atualizada
 blockquote: Bloco de citação
-blog: Blog TODO
+blog: Blog DONE
 blogPost: posts do Blog
 bold: Negrito
 breasts: Seios
@@ -33,6 +34,7 @@ chooseAPattern: Escolha um molde
 chooseYourOptions: Escolha suas opções
 close: Fechar
 code: Código
+codeOfConduct: Código de conduta
 comments: Comentários
 community: Comunidade
 compare: Comparar
@@ -45,8 +47,7 @@ consentGiven: Consentimento dado
 contactUs: Entre em contato
 content: Conteúdo
 contents: Conteúdos
-contributeToFreesewing: Contribute to freesewing TODO
-coordinator: Coordenador
+contributeToFreesewing: Contribua com o freesewing
 coreLink: Link principal
 countAvailable: '{count} disponível'
 countTranslated: '{count} traduzido'
@@ -69,7 +70,8 @@ documentation: Documentação
 documentationForDevelopers: Documentação para desenvolvedores
 documentationForTranslators: Documentação para tradutores
 documentationOverview: Visão geral da Documentação
-download: Download TODO
+donationsPledge: Donations pledge TODO
+download: Download DONE
 draft: Esboço
 draftAPattern: Esboce um molde
 draftOptions: Opções de esboço
@@ -80,10 +82,10 @@ draftingPattern: 'Esboçando {pattern}'
 drafts: Esboços
 edit: Editar
 editOnGithub: Editar no GitHub
-email: E-mail TODO
+email: E-mail DONE
 emailAddress: endereço de E-mail
 emailUpdatePending: atualização de E-mail pendente
-emails: E-mails TODO
+emails: E-mails DONE
 enterYourCurrentPassword: Escreva sua senha atual
 enterYourNewPassword: Escreva sua nova senha
 error-unknown: Um erro deseconhecido ocorreu
@@ -94,7 +96,7 @@ forContributors: Para contribuidores
 forMoreInfoRtfm: 'Para mais informações, leia a documentação:'
 forUsername: 'Para {username}'
 forUsers: Para usuários
-fork: Fork TODO
+fork: Fork DONE
 forkDraftHandle: 'Fazer um fork deste esboço {handle}'
 freesewing: Freesewing DONE
 freesewingContributors: Contrubuidores do Freesewing
@@ -107,6 +109,7 @@ getHelp: Conseguir ajuda
 github: GitHub DONE
 githubUpdated: nome do usuário do GitHub atualizado
 goodToKnow: Bom saber
+grabYourMeasuringTape: Grab your measuring tape TODO
 hi: Oi
 home: Início
 howCanWeHelpYou: Como podemos ajudar você?
@@ -128,7 +131,8 @@ justAMoment: Aguarde um momento
 key: Chave
 language: Linguagem
 languageLanguageFiles: 'arquivos de linguagem {language}'
-layout: Layout TODO
+lastLogin: Último login
+layout: Layout DONE
 learnMore: Aprenda mais
 learnToDesignPatterns: Aprenda a desenhar moldes
 letterPdf: PDF tamanho Letter
@@ -137,10 +141,10 @@ loadingResult: Carregando resultado
 locale: Linguagem
 localeUpdated: Preferências de linguagem atualizadas
 logIn: Entrar/Login
-logInAs: Log in as TODO
+logInAs: Fazer o login como
 logOut: Desconectar
-logOutAs: 'Log out as {user} TODO'
-loginFailed: Login falhou
+logOutAs: 'Desconectar como {user}'
+loginFailed: O login falhou
 makeItBetter: Faça ficar melhor
 markdownSyntax: sintaxe MarkDown
 measurementUpdated: Medida atualizada
@@ -152,6 +156,7 @@ metricUnits: Unidade métrica (cm)
 model: Modelo
 modelIsModel: 'Modelo é {model}'
 models: Modelos
+moderationPolicy: Política de moderação
 monthsAgo: '{months} meses atrás'
 name: Nome
 nameOfTheModel: Nome do modelo
@@ -172,11 +177,15 @@ notes: Notas
 ohNo: 'Ah, não!'
 okThatsDone: 'OK, '' está pronto'
 onlySelectedPatternParts: Apenas partes selecionadas do molde
+originStory: História de origem
 pageNotFound: A página que você está procurando não foi encontrada.
 paperlessTheme: Tema sem papel
 password: Senha
 passwordResetPending: Reestabelecimento de senha pendente.
 passwordUpdated: Senha alterada.
+patron-2: Rapaz da pólvora
+patron-4: Primeiro companheiro
+patron-8: Capitão
 patronText: '{username} é um {patronTier} desde {daysAgo}'
 patrons: Patronos
 pattern: Molde
@@ -213,7 +222,7 @@ removeAllMyData: Remover todos meus dados
 removeAllMyModelData: Remover todos meus dados de modelos
 replay: Repetir
 reply: Responder
-reportThisOnGitHub: Report this on GitHub TODO
+reportThisOnGitHub: Relatar isso no GitHub
 requiredMeasurements: Medidas necessárias
 resetPassword: Resetar senha
 result: Resultado
@@ -246,16 +255,16 @@ signup--title: Um erro desconhecido ocorreu
 signup-invalid_input-text: Por favor escreva um endereço de email válido e uma senha
 signup-invalid_input-title: Entrada inválida
 signup-no_such_pending_confirmation-text: 'Desculpe, mas não temos registrado esse código de confirmação. Talvez ele tenha expirado, nesse caso você pode simplesmente se cadastrar outra vez'
-signup-no_such_pending_confirmation-title: There's no such pending confirmation TODO
-signup-signup_pending-text: 'Você já possui uma ativação pendente para esse endereço de email. Para o caso de você não ter visto o origianal, nós enviamos uma nova cópia do email de ativiação.'
+signup-no_such_pending_confirmation-title: Essa confirmação pendente não existe.
+signup-signup_pending-text: 'Você já possui uma ativação pendente para esse endereço de email. Para o caso de você não ter visto o original, nós lhe enviamos uma nova cópia do email de ativiação.'
 signup-signup_pending-title: Seu cadastro está com a ativação pendente
 signup-success-text: 'Nós lhe enviamos um email para {email}.'
 signup-user_exists-text: Nós já temos um usuário com esse endereço de email. Será que você gostaria de fazer login?
 signup-user_exists-title: Esse usuário já existe
-social: Social TODO
+social: Social DONE
 somethingWentWrong: Alguma coisa deu errado
 startUpload: Começar upload
-status: Status TODO
+status: Status DONE
 statusTranslationLanguage: 'Status da tradução {language}'
 step1: Passo 1
 step2: Passo 2
@@ -263,36 +272,38 @@ step3: Passo 3
 step4: Passo 4
 stopProcessingMyData: Parar de processar meus dados
 stopUpload: Parar o upload
-storingDraftData: Storing draft data TODO
-strikethrough: Strikethrough TODO
-svgSourceCode: SVG Source code TODO
-tabloidPdf: Tabloid PDF TODO
-taskCompleted: Task completed TODO
-theme: Theme TODO
-themeUpdated: Layout preference set TODO
-thereIsNoWayBackFromThis: There is no way back from this. TODO
-thisContentIsNotAvailableInLanguage: This content is not available in English. TODO
-thisDraftPredatesThisFeature: This draft predates this feature. TODO
-thisIsTheCurrentStatusOfOurTranslations: This is the current status of our translations. TODO
-thisPageIsNotIntendedForLoggedInUsers: This page is not intended for logged-in users TODO
-thisPageIsOnlyAvailableToFreesewingUsers: This page is only available to Freesewing users TODO
+storingDraftData: Armazenando dados do esboço
+strikethrough: Tachar
+svgSourceCode: Código fonte SVG
+tabloidPdf: PDF tamanho tabloide
+taskCompleted: Tarefa completa
+theme: Tema
+themeUpdated: Prederências de layout configuradas
+thereIsNoWayBackFromThis: Não há como voltar atrás.
+thisActionCannotBeUndone: This action cannot be undone TODO
+thisContentIsNotAvailableInLanguage: Este conteúdo não está disponível em inglês.
+thisDraftPredatesThisFeature: Esse esboço é anterior a esse recurso.
+thisIsTheCurrentStatusOfOurTranslations: Este é o status atual das nossas traduções.
+thisPageIsNotIntendedForLoggedInUsers: Esta página não é destinada a usuários logados
+thisPageIsOnlyAvailableToFreesewingUsers: Esta página só está disponível para usuários do Freesewing
 tip: Dica
 title: Título
 today: Hoje
-translationTeam: Translation team TODO
-troubleLoggingIn: Trouble logging in? TODO
-tryAgain: Try again TODO
+translationTeam: Equipe de tradução
+translators: Translators TODO
+troubleLoggingIn: Problemas ao fazer o login?
+tryAgain: Tente novamente
 twitter: Twitter TODO
-twitterUpdated: Twitter account set TODO
-txt-avatarDropzoneText: 'Drag and drop an image here, or click the button to pick one from your files. TODO'
-txt-avatarDropzoneTitle: Drop your image here TODO
-txt-breastMeasurement-text: This is one of those measurements that is only relevant if your model has breasts. TODO
-txt-breastMeasurement-title: This measurement is only relevant for breasts TODO
-txt-changeRequiresConfirmation: This change requires confirmation via E-mail TODO
-txt-clickEmailLink: Please click the link in the email to continue. TODO
-txt-consentModel: Do you give your consent to process your model data? TODO
-txt-consentModelAnswerWhat: 'For each model their <b>measurements</b>, <b>breasts settings</b>, and <b>password</b>. TODO'
-txt-consentModelAnswerWhatOptional: 'Optional: A model <b>picture</b> and the <b>name</b> that you give your model. TODO'
+twitterUpdated: Conta do Twitter configurada
+txt-avatarDropzoneText: Arraste e solte uma imagem aqui ou clique no botão para escolher um dos seus arquivos.
+txt-avatarDropzoneTitle: Solte sua imagem nesse lugar
+txt-breastMeasurement-text: Esta é uma daquelas medidas que só é relevante se o seu modelo tiver seios.
+txt-breastMeasurement-title: Esta medida é relevante apenas para seios
+txt-changeRequiresConfirmation: Esta alteração requer confirmação via e-mail
+txt-clickEmailLink: 'Por favor, clique no link no email para continuar.'
+txt-consentModel: Você dá o seu consentimento para processar os dados do seu modelo?
+txt-consentModelAnswerWhat: 'Para cada modelo, suas <b>medidas</b>, suas <b>configurações de seios</b>, e <b>senha</b>.'
+txt-consentModelAnswerWhatOptional: 'Opcional: Uma <b>foto</b> do modelo e o <b>nome</b> que você dá para ele. TODO'
 txt-consentModelAnswerWhy: 'To <b>draft made-to-measure sewing patterns</b>, we need <b>body measurements</b>. TODO'
 txt-consentModelObjectNote: 'Note: Freesewing publishes anonymized measurements as open data for scientific research. TODO'
 txt-consentModelObjectWhy: 'This data is anonymous and used to study and understand the human form in all its shapes, so we can get better sewing patterns, and better fitting garments. TODO'
@@ -340,6 +351,8 @@ txt-joinTheTranslationTeam3: 'Read the documentation for translators to get star
 txt-missingBlogPosts: Not all blog posts have been translated to English — but you could change that TODO
 txt-modelsWithMissingMeasurements: 'These models lack some of the required measurements to draft this pattern: TODO'
 txt-newModel: 'To get started, please give your model a name. TODO'
+txt-noModels: 'Without a model, there''s not much you can do here TODO'
+txt-noValidModels: None of your models have all the required measurements for this pattern TODO
 txt-password-policy: We don't enforce a password policy TODO
 txt-passwordRecoverConfirmationNotFound: 'Sorry, but we have no pending password recovery for this confirmation code. Perhaps it expired, in which case you can simply make another request. TODO'
 txt-resend: 'You can sign up again with the same E-mail address, and we''ll send you a new confirmation message. TODO'
@@ -361,43 +374,43 @@ txt-warningModelData: 'This will remove all of your models, and all of your draf
 txt-warningProfileData: 'This will remove all of your models, all of your drafts, all of your comments, and your account. Everything will be gone. TODO'
 txt-withOrWithoutBreasts: 'Fitting breasts requires a bunch of extra measurements that are not relevant if you don''t have breasts. If you indicate your model does not have breasts, we won''t show you these measurements as they are irrelevant. If you''re not sure what to pick, go for breasts. TODO'
 txt-withOrWithoutBreasts-explainer: 'On other websites, this question may be phrased as ''male or female?''. Here, we don''t like putting people in boxes. All we care about is fitting your chest. TODO'
-type: Type TODO
+type: Tipo
 units: Unidades
-unitsUpdated: Units set TODO
-updates: Updates TODO
-upgrade: Upgrade TODO
-upgradeRequired: Upgrade required TODO
+unitsUpdated: Unidades configuradas
+updates: Atualizações
+upgrade: Atualizar
+upgradeRequired: Atualização requeridaO
 useDecimalsOrFractions: Use decimals (1.25) or fractions (1 1/4) TODO
-user: User TODO
-userHasBeenWithUsSince: '{user} has been with us since {since} TODO'
-userIsAPatron: '{user} is a patron TODO'
-username: Username TODO
-usernameOrEmail: '@:username or @:emailAddress TODO'
-usernameUpdated: Username updated TODO
-users: Usuários
+user: Usuário
+userHasBeenWithUsSince: '{user} está conosco desde {since}'
+userIsAPatron: '{user} é um patrono'
+username: Nome de usuário
+usernameOrEmail: '@:username ou @:emailAddress'
+usernameUpdated: Nome de usuário atualizado
+users: Users TODO
 version: Versão
-visitPatronProfile: Visit the profile page of this patron TODO
-volunteerVerb: Volunteer TODO
-weAreLoadingDataFromTheBackend: We are loading data from the backend TODO
-weAreValidatingYourConfirmationCode: We are validating your confirmation code TODO
-weCantHelpYouWithThis: We can't help you with this TODO
-weNeedYourConsent: We need your consent TODO
-welcomeAboard: Welcome aboard TODO
+visitPatronProfile: Visite a página de perfil deste patrono
+volunteerVerb: Voluntário
+weAreLoadingDataFromTheBackend: Estamos carregando dados do backend
+weAreValidatingYourConfirmationCode: Estamos validando seu código de confirmação
+weCantHelpYouWithThis: Nós não podemos lhe ajudar com isso
+weNeedYourConsent: Nós precisamos seu consentimento
+welcomeAboard: Bem-vindo a bordo
 withBreasts: Com seios
 withOrWithoutBreasts: Com ou sem seios?
 withoutBreasts: Sem seios
-wouldYouLikeToLogOut: Would you like to log out? TODO
-yearsAgo: '{years} year ago | {years} years ago TODO'
+wouldYouLikeToLogOut: Você gostaria de desconectar?
+yearsAgo: '{years} ano atrás | {years} anos atrás'
 'yes': Sim
-yesIDo: 'Yes, I do TODO'
-yesIDoObject: 'Yes, I do object TODO'
+yesIDo: 'Sim, eu aceito'
+yesIDoObject: 'Sim, eu me oponho'
 yesterday: Ontem
 youAreCurrentlyLoggedIn: Vocês está logado.
-youAreNotAnAdmin: You are not an admin TODO
+youAreNotAnAdmin: Você não é um administrador
 youAreNotLoggedIn: Você não está logado.
-youCanUseMarkdownFormatting: You can use MarkDown formatting TODO
-youDoNotObjectToSharingAnonymizedDataForResearch: You do not object to sharing anonymized data for research TODO
-youHaveTheRightToObjectToThis: You have the right to object to this TODO
-youObjectToSharingAnonymizedDataForResearch: You object to sharing anonymized data for research TODO
+youCanUseMarkdownFormatting: Você pode usar a formatação MarkDown
+youDoNotObjectToSharingAnonymizedDataForResearch: Você não se opõe a compartilhar dados anônimos para pesquisas
+youHaveTheRightToObjectToThis: Você tem o direito de se opor a isso
+youObjectToSharingAnonymizedDataForResearch: Você se opõe a compartilhar dados anônimos para pesquisas
 yourPrivacy: Sua privacidade
 yourRights: Seus direitos

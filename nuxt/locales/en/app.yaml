@@ -8,6 +8,7 @@ addAModel: Add a model
 addComment: Add comment
 all: All
 alreadyHaveAnAccount: Already have an account?
+apiCheatSheet: API cheat sheet
 areYouSureAboutThis: Are you 100% sure about this?
 avatar: Avatar
 avatarUpdated: Avatar updated
@@ -33,6 +34,7 @@ chooseAPattern: Choose a pattern
 chooseYourOptions: Choose your options
 close: Close
 code: Code
+codeOfConduct: Code of conduct
 comments: Comments
 community: Community
 compare: Compare
@@ -46,7 +48,6 @@ contactUs: Contact us
 content: Content
 contents: Contents
 contributeToFreesewing: Contribute to freesewing
-coordinator: Coordinator
 coreLink: Core link
 countAvailable: '{count} available'
 countTranslated: '{count} translated'
@@ -69,6 +70,7 @@ documentation: Documentation
 documentationForDevelopers: Documentation for developers
 documentationForTranslators: Documentation for translators
 documentationOverview: Documentation overview
+donationsPledge: Donations pledge
 download: Download
 draft: Draft
 draftAPattern: Draft a pattern
@@ -107,6 +109,7 @@ getHelp: Get help
 github: GitHub
 githubUpdated: GitHub username updated
 goodToKnow: Good to know
+grabYourMeasuringTape: Grab your measuring tape
 hi: Hi
 home: Home
 howCanWeHelpYou: How can we help you?
@@ -128,6 +131,7 @@ justAMoment: Just a moment
 key: Key
 language: Language
 languageLanguageFiles: '{language} language files'
+lastLogin: Last login
 layout: Layout
 learnMore: Learn more
 learnToDesignPatterns: Learn to design patterns
@@ -152,6 +156,7 @@ metricUnits: Metric units (cm)
 model: Model
 modelIsModel: 'Model is {model}'
 models: Models
+moderationPolicy: Moderation policy
 monthsAgo: '{months} month ago | {months} months ago'
 name: Name
 nameOfTheModel: Name of the model
@@ -172,11 +177,15 @@ notes: Notes
 ohNo: Oh no!
 okThatsDone: 'OK, that''s done'
 onlySelectedPatternParts: Only selected pattern parts
+originStory: Origin story
 pageNotFound: The page you are looking for is nowhere to be found.
 paperlessTheme: Paperless theme
 password: Password
 passwordResetPending: Password reset pending.
 passwordUpdated: Password changed
+patron-2: Powder monkey
+patron-4: First mate
+patron-8: Captain
 patronText: '{username} is a {patronTier} since {daysAgo}'
 patrons: Patrons
 pattern: Pattern
@@ -271,6 +280,7 @@ taskCompleted: Task completed
 theme: Theme
 themeUpdated: Layout preference set
 thereIsNoWayBackFromThis: There is no way back from this.
+thisActionCannotBeUndone: This action cannot be undone
 thisContentIsNotAvailableInLanguage: This content is not available in English.
 thisDraftPredatesThisFeature: This draft predates this feature.
 thisIsTheCurrentStatusOfOurTranslations: This is the current status of our translations.
@@ -280,6 +290,7 @@ tip: Tip
 title: Title
 today: Today
 translationTeam: Translation team
+translators: Translators
 troubleLoggingIn: Trouble logging in?
 tryAgain: Try again
 twitter: Twitter
@@ -340,6 +351,8 @@ txt-joinTheTranslationTeam3: 'Read the documentation for translators to get star
 txt-missingBlogPosts: Not all blog posts have been translated to English — but you could change that
 txt-modelsWithMissingMeasurements: 'These models lack some of the required measurements to draft this pattern:'
 txt-newModel: 'To get started, please give your model a name.'
+txt-noModels: 'Without a model, there''s not much you can do here'
+txt-noValidModels: None of your models have all the required measurements for this pattern
 txt-password-policy: We don't enforce a password policy
 txt-passwordRecoverConfirmationNotFound: 'Sorry, but we have no pending password recovery for this confirmation code. Perhaps it expired, in which case you can simply make another request.'
 txt-resend: 'You can sign up again with the same E-mail address, and we''ll send you a new confirmation message.'

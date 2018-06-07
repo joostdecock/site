@@ -8,6 +8,7 @@ addAModel: Add a model TODO
 addComment: Add comment TODO
 all: All TODO
 alreadyHaveAnAccount: Already have an account? TODO
+apiCheatSheet: API cheat sheet TODO
 areYouSureAboutThis: Are you 100% sure about this? TODO
 avatar: Avatar TODO
 avatarUpdated: Avatar updated TODO
@@ -33,6 +34,7 @@ chooseAPattern: Choose a pattern TODO
 chooseYourOptions: Choose your options TODO
 close: Close TODO
 code: Code TODO
+codeOfConduct: Code of conduct TODO
 comments: Comments TODO
 community: Community TODO
 compare: Compare TODO
@@ -46,7 +48,6 @@ contactUs: Contact us TODO
 content: Content TODO
 contents: Contents TODO
 contributeToFreesewing: Contribute to freesewing TODO
-coordinator: Coordinator TODO
 coreLink: Core link TODO
 countAvailable: '{count} available TODO'
 countTranslated: '{count} translated TODO'
@@ -69,6 +70,7 @@ documentation: Documentation TODO
 documentationForDevelopers: Documentation for developers TODO
 documentationForTranslators: Documentation for translators TODO
 documentationOverview: Documentation overview TODO
+donationsPledge: Donations pledge TODO
 download: Download TODO
 draft: Draft TODO
 draftAPattern: Draft a pattern TODO
@@ -107,6 +109,7 @@ getHelp: Get help TODO
 github: GitHub TODO
 githubUpdated: GitHub username updated TODO
 goodToKnow: Good to know TODO
+grabYourMeasuringTape: Grab your measuring tape TODO
 hi: Hi TODO
 home: Home TODO
 howCanWeHelpYou: How can we help you? TODO
@@ -128,6 +131,7 @@ justAMoment: Just a moment TODO
 key: Key TODO
 language: Language TODO
 languageLanguageFiles: '{language} language files TODO'
+lastLogin: Last login TODO
 layout: Layout TODO
 learnMore: Learn more TODO
 learnToDesignPatterns: Learn to design patterns TODO
@@ -152,6 +156,7 @@ metricUnits: Metric units (cm) TODO
 model: Model TODO
 modelIsModel: 'Model is {model} TODO'
 models: Models TODO
+moderationPolicy: Moderation policy TODO
 monthsAgo: '{months} months ago TODO'
 name: Name TODO
 nameOfTheModel: Name of the model TODO
@@ -172,11 +177,15 @@ notes: Notes TODO
 ohNo: Oh no! TODO
 okThatsDone: 'OK, that''s done TODO'
 onlySelectedPatternParts: Only selected pattern parts TODO
+originStory: Origin story TODO
 pageNotFound: The page you are looking for is nowhere to be found. TODO
 paperlessTheme: Paperless theme TODO
 password: Password TODO
 passwordResetPending: Password reset pending. TODO
 passwordUpdated: Password changed TODO
+patron-2: Powder monkey TODO
+patron-4: First mate TODO
+patron-8: Captain TODO
 patronText: '{username} is a {patronTier} since {daysAgo} TODO'
 patrons: Patrons TODO
 pattern: Pattern TODO
@@ -271,6 +280,7 @@ taskCompleted: Task completed TODO
 theme: Theme TODO
 themeUpdated: Layout preference set TODO
 thereIsNoWayBackFromThis: There is no way back from this. TODO
+thisActionCannotBeUndone: This action cannot be undone TODO
 thisContentIsNotAvailableInLanguage: This content is not available in English. TODO
 thisDraftPredatesThisFeature: This draft predates this feature. TODO
 thisIsTheCurrentStatusOfOurTranslations: This is the current status of our translations. TODO
@@ -280,6 +290,7 @@ tip: Tip TODO
 title: Title TODO
 today: Today TODO
 translationTeam: Translation team TODO
+translators: Translators TODO
 troubleLoggingIn: Trouble logging in? TODO
 tryAgain: Try again TODO
 twitter: Twitter TODO
@@ -340,6 +351,8 @@ txt-joinTheTranslationTeam3: 'Read the documentation for translators to get star
 txt-missingBlogPosts: Not all blog posts have been translated to English — but you could change that TODO
 txt-modelsWithMissingMeasurements: 'These models lack some of the required measurements to draft this pattern: TODO'
 txt-newModel: 'To get started, please give your model a name. TODO'
+txt-noModels: 'Without a model, there''s not much you can do here TODO'
+txt-noValidModels: None of your models have all the required measurements for this pattern TODO
 txt-password-policy: We don't enforce a password policy TODO
 txt-passwordRecoverConfirmationNotFound: 'Sorry, but we have no pending password recovery for this confirmation code. Perhaps it expired, in which case you can simply make another request. TODO'
 txt-resend: 'You can sign up again with the same E-mail address, and we''ll send you a new confirmation message. TODO'

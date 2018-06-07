@@ -1,7 +1,7 @@
 <template>
   <section>
-    <fs-breadcrumbs :crumbs="crumbs">{{ $t($route.params.locale) }}</fs-breadcrumbs>
-    <h1 class="text-xs-center">{{ $t('statusTranslationLanguage', {language: $t($route.params.locale)}) }}</h1>
+    <fs-breadcrumbs :crumbs="crumbs">{{ $t('locales.'+$route.params.locale) }}</fs-breadcrumbs>
+    <h1 class="text-xs-center">{{ $t('statusTranslationLanguage', {language: $t('locales.'+$route.params.locale)}) }}</h1>
     <div class="fs-content elevation-1 mt-5">
       <v-tabs v-model="active" color="primary" dark centered icons-and-text>
         <v-tab key="0">{{ $t('messages') }}<v-icon style="text-transform: none">chat_bubble</v-icon></v-tab>
@@ -30,7 +30,7 @@
       </v-tabs>
     </div>
     <div class="fs-pad">
-      <blockquote class="fs-m800 mt-5 mb-5 i18n">
+      <blockquote class="fs-m800 mt-5 mb-5 i18n fs-bq">
         <h3>{{ $t('joinTheTranslationTeam') }}</h3>
         <p>{{ $t('txt-joinTheTranslationTeam1')}}</p>
         <p>{{ $t('txt-joinTheTranslationTeam2')}}</p>

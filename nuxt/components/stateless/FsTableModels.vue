@@ -39,11 +39,12 @@
       {{ $t('rowsFromToOfTotal', {from: props.pageStart, to: props.pageStop, total: props.itemsLength}) }}
     </template>
     <template slot="no-data">
-      <blockquote class="warning fs-m800 mt-5 mb-5">
-        <h3>{{ $t('noDraftsFound') }}</h3>
-        <v-btn large color="primary">
-          <v-icon class="mr-3">insert_drive_file</v-icon>
-          {{ $t('newDraft') }}</v-btn>
+      <blockquote class="warning fs-m800 mt-5 mb-5 fs-bq">
+        <h3>{{ $t('grabYourMeasuringTape') }}</h3>
+        <p>{{ $t('txt-noModels') }}</p>
+        <v-btn large color="primary" :to="$fs.path('/model')">
+          <v-icon class="mr-3">perm_identity</v-icon>
+          {{ $t('newModel') }}</v-btn>
       </blockquote>
     </template>
   </v-data-table>

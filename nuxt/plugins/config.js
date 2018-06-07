@@ -5,6 +5,7 @@ import measurements from 'json-loader!~/assets/config/measurements.yaml'
 import namespaces from 'json-loader!~/assets/config/namespaces.yaml'
 import patterns from 'json-loader!~/assets/config/patterns.yaml'
 import versions from 'json-loader!~/assets/config/versions.yaml'
+import badges from 'json-loader!~/assets/config/badges.yaml'
 
 export default {
   ...freesewing,
@@ -14,5 +15,6 @@ export default {
   namespaces,
   patterns,
   versions,
+  badges,
 }
 

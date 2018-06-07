@@ -46,7 +46,7 @@
         {{ $t('rowsFromToOfTotal', {from: props.pageStart, to: props.pageStop, total: props.itemsLength}) }}
       </template>
       <template slot="no-data">
-      <blockquote class="mt-5 mb-5 text-xs-center">
+      <blockquote class="mt-5 mb-5 text-xs-center fs-bq">
           <h3>{{ $t('justAMoment') }}</h3>
           <p>{{ $t('weAreLoadingDataFromTheBackend') }}</p>
           <v-progress-circular indeterminate color="primary"></v-progress-circular>
