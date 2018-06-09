@@ -24,6 +24,7 @@ blogPost: posts do Blog
 bold: Negrito
 breasts: Seios
 breastsUpdated: Configuração de seios atualizada
+brokenLink-msg: 'If you came here through a link, please report that broken link. TODO'
 by: por
 cancel: Cancelar
 chatOnGitter: Bate-pato no Gitter
@@ -378,6 +379,8 @@ txt-withOrWithoutBreasts-explainer: 'On other websites, this question may be phr
 type: Tipo
 units: Unidades
 unitsUpdated: Unidades configuradas
+unknownUser-msg: 'This should be the profile page of @{user}, but we don''t have a user by that name. TODO'
+unknownUser-title: 'Do you know who @{user} is? Because we don''t. TODO'
 updates: Atualizações
 upgrade: Atualizar
 upgradeRequired: Atualização requeridaO

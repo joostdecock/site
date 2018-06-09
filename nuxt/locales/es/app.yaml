@@ -24,6 +24,7 @@ blogPost: Entradas del post
 bold: Negrita
 breasts: Pechos
 breastsUpdated: Opción de pechos actualizada
+brokenLink-msg: 'If you came here through a link, please report that broken link. TODO'
 by: por
 cancel: Cancelar
 chatOnGitter: Chatea en Gitter
@@ -197,7 +198,7 @@ patternOptions: Opciones del patrón
 patternParts: Partes del patrón
 patterns: Patrones
 pleaseCheckYourInbox: Recibirás un E-mail con más instrucciones
-pleaseEnterAValidEmailAddress: Por favor, entra una dirección de E-mail válida
+pleaseEnterAValidEmailAddress: 'Por favor, entra una dirección de E-mail válida'
 pleaseUpgradeThisDraft: 'Por favor, actualiza este boceto.'
 postComment: Publica el comentario
 postInfo: Información de la entrada
@@ -378,6 +379,8 @@ txt-withOrWithoutBreasts-explainer: 'En otros sitios, esta pregunta se plantea c
 type: Tipo
 units: Unidades
 unitsUpdated: Juego de unidades
+unknownUser-msg: 'This should be the profile page of @{user}, but we don''t have a user by that name. TODO'
+unknownUser-title: 'Do you know who @{user} is? Because we don''t. TODO'
 updates: Actualizaciones
 upgrade: Actualizar
 upgradeRequired: Actualización requerida

@@ -24,6 +24,7 @@ blogPost: Blog post
 bold: Vet
 breasts: Borsten
 breastsUpdated: Borsten instelling bijgewerkt
+brokenLink-msg: 'Als je hier terecht kwam via een link, gelieve dan die foutieve link to melden.'
 by: door
 cancel: Annuleren
 chatOnGitter: Chat via Gitter
@@ -378,6 +379,8 @@ txt-withOrWithoutBreasts-explainer: 'Op andere websites zou men misschien vragen
 type: Type DONE
 units: Eenheden
 unitsUpdated: Voorkeur eenheden bijgewerlkt
+unknownUser-msg: 'Dit zou de profielpagina van @{user} moeten zijn, maar we hebben geen gebruiker met die naam.'
+unknownUser-title: 'Weet jij wie @{user} is? Want wij hebben geen idee.'
 updates: Updates DONE
 upgrade: Bijwerken
 upgradeRequired: Bijwerken vereist

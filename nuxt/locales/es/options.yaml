@@ -434,7 +434,7 @@ waistReductionRatioBack:
   title: 'Reducción de cintura: proporción del panel trasero'
 waistReductionRatioFront:
   description: Proporción de la reducción de cintura que se hace con el panel delantero. También influenciará la forma del panel lateral.
-  title: 'Reducción de cintura: proporcion del panel delantero
+  title: 'Reducción de cintura: proporcion del panel delantero'
 waistbandWidth:
   description: La anchura de la cinturilla.
   title: Anchura de la cinturilla

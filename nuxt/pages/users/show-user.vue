@@ -2,7 +2,15 @@
   <section>
     <fs-wrapper-login-required :callback="loadUser">
       <fs-breadcrumbs :crumbs="crumbs">{{ $route.params.user }}</fs-breadcrumbs>
-      <div v-if="loaded">
+      <blockquote v-if="unknownUser" class="m800 fs-bq warning text-xs-left">
+        <h3>{{ $t('unknownUser-title', {user: $route.params.user}) }}</h3>
+        <h6>{{ $t('unknownUser-msg', {user: $route.params.user}) }}</h6>
+        <p>{{ $t('brokenLink-msg') }}</p>
+        <p class="text-xs-right">
+          <v-btn color="primary" href="https://github.com/freesewing/site/issues/new">{{ $t('createIssueOnGithub') }}</v-btn>
+        </p>
+      </blockquote>
+      <div v-else-if="loaded">
         <v-alert value="1" color="success" icon="favorite" v-if="user.profile.patron > 0" class="mt-3 mb-3">
           <b>{{ $t('userIsAPatron', {user: user.profile.username}) }}</b>
           <small class="ml-3">{{ $t('txt-homepage-patrons') }}</small>
@@ -73,7 +81,7 @@
           </v-tab-item>
         </v-tabs>
       </div>
-              </fs-wrapper-login-required>
+    </fs-wrapper-login-required>
   </section>
 </template>
 
@@ -104,6 +112,7 @@ export default {
       user: {},
       commentKeys: [],
       loaded: false,
+      unknownUser: false
     }
   },
   methods: {
@@ -116,6 +125,7 @@ export default {
       })
       .catch((error) => {
         console.log('Loading user failed')
+        this.unknownUser = true
         return {error: true}
       })
     }
