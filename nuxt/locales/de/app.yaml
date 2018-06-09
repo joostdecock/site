@@ -24,6 +24,7 @@ blogPost: Blog posts TODO
 bold: fettgedruckt
 breasts: Brüste
 breastsUpdated: Brüste Einstellung aktualiesiert
+brokenLink-msg: 'If you came here through a link, please report that broken link. TODO'
 by: von
 cancel: Abbrechen
 chatOnGitter: Chatte bei Gitter
@@ -378,6 +379,8 @@ txt-withOrWithoutBreasts-explainer: 'Auf anderen Webseiten, wird die Frage mit '
 type: Type TODO
 units: Einheiten
 unitsUpdated: Units set TODO
+unknownUser-msg: 'This should be the profile page of @{user}, but we don''t have a user by that name. TODO'
+unknownUser-title: 'Do you know who @{user} is? Because we don''t. TODO'
 updates: Aktualisierungen
 upgrade: Upgrade TODO
 upgradeRequired: Upgrade required TODO

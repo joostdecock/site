@@ -24,6 +24,7 @@ blogPost: Blogginlägg
 bold: Fetstil
 breasts: Bröst
 breastsUpdated: Inställning för bröst uppdaterad
+brokenLink-msg: 'If you came here through a link, please report that broken link. TODO'
 by: av
 cancel: Avbryt
 chatOnGitter: Chatta på Gitter
@@ -378,6 +379,8 @@ txt-withOrWithoutBreasts-explainer: På andra webbplatser kan den här frågan v
 type: Skriv
 units: Enheter
 unitsUpdated: Enheter angivna
+unknownUser-msg: 'This should be the profile page of @{user}, but we don''t have a user by that name. TODO'
+unknownUser-title: 'Do you know who @{user} is? Because we don''t. TODO'
 updates: Uppdaterar
 upgrade: Uppgradera
 upgradeRequired: Uppgradering krävs

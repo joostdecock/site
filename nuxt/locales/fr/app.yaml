@@ -24,6 +24,7 @@ blogPost: Messages de blogue
 bold: En gras
 breasts: Poitrine
 breastsUpdated: Réglages poitrine mis à jour
+brokenLink-msg: 'If you came here through a link, please report that broken link. TODO'
 by: par
 cancel: Annuler
 chatOnGitter: Clavarder sur Gitter
@@ -378,6 +379,8 @@ txt-withOrWithoutBreasts-explainer: 'On other websites, this question may be phr
 type: Type TODO
 units: Units TODO
 unitsUpdated: Units set TODO
+unknownUser-msg: 'This should be the profile page of @{user}, but we don''t have a user by that name. TODO'
+unknownUser-title: 'Do you know who @{user} is? Because we don''t. TODO'
 updates: Updates TODO
 upgrade: Upgrade TODO
 upgradeRequired: Upgrade required TODO
