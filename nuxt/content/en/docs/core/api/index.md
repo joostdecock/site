@@ -1813,7 +1813,7 @@ The possibilities are:
 - `string` `$nr`: The part number.
 - `string` `$title`: The part title.
 - `string` `$message`: An optional message. 
-- `string` `$mode`: One of `default`, `vertical`, `horizontal`, `small`, `vertical-small`, or `horizontal-small`. Defaults to `default`.
+- `string` `$options`: An array with optional `scale`, `align`, and `rotate` keys to control how the title is rendered.
 
 ### Methods for Path offset
 
