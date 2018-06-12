@@ -71,7 +71,7 @@ documentation: Documentação
 documentationForDevelopers: Documentação para desenvolvedores
 documentationForTranslators: Documentação para tradutores
 documentationOverview: Visão geral da Documentação
-donationsPledge: Donations pledge TODO
+donationsPledge: Promessa de doação
 download: Download DONE
 draft: Esboço
 draftAPattern: Esboce um molde
@@ -110,7 +110,7 @@ getHelp: Conseguir ajuda
 github: GitHub DONE
 githubUpdated: nome do usuário do GitHub atualizado
 goodToKnow: Bom saber
-grabYourMeasuringTape: Grab your measuring tape TODO
+grabYourMeasuringTape: Pegue sua fita métrica
 hi: Oi
 home: Início
 howCanWeHelpYou: Como podemos ajudar você?
@@ -282,9 +282,9 @@ taskCompleted: Tarefa completa
 theme: Tema
 themeUpdated: Prederências de layout configuradas
 thereIsNoWayBackFromThis: Não há como voltar atrás.
-thisActionCannotBeUndone: This action cannot be undone TODO
+thisActionCannotBeUndone: Esta ação não pode ser desfeita
 thisContentIsNotAvailableInLanguage: Este conteúdo não está disponível em inglês.
-thisDraftPredatesThisFeature: Esse esboço é anterior a esse recurso.
+thisDraftPredatesThisFeature: Este esboço é anterior a esse recurso.
 thisIsTheCurrentStatusOfOurTranslations: Este é o status atual das nossas traduções.
 thisPageIsNotIntendedForLoggedInUsers: Esta página não é destinada a usuários logados
 thisPageIsOnlyAvailableToFreesewingUsers: Esta página só está disponível para usuários do Freesewing
@@ -295,7 +295,7 @@ translationTeam: Equipe de tradução
 translators: Translators TODO
 troubleLoggingIn: Problemas ao fazer o login?
 tryAgain: Tente novamente
-twitter: Twitter TODO
+twitter: Twitter DONE
 twitterUpdated: Conta do Twitter configurada
 txt-avatarDropzoneText: Arraste e solte uma imagem aqui ou clique no botão para escolher um dos seus arquivos.
 txt-avatarDropzoneTitle: Solte sua imagem nesse lugar
@@ -305,7 +305,7 @@ txt-changeRequiresConfirmation: Esta alteração requer confirmação via e-mail
 txt-clickEmailLink: 'Por favor, clique no link no email para continuar.'
 txt-consentModel: Você dá o seu consentimento para processar os dados do seu modelo?
 txt-consentModelAnswerWhat: 'Para cada modelo, suas <b>medidas</b>, suas <b>configurações de seios</b>, e <b>senha</b>.'
-txt-consentModelAnswerWhatOptional: 'Opcional: Uma <b>foto</b> do modelo e o <b>nome</b> que você dá para ele. TODO'
+txt-consentModelAnswerWhatOptional: 'Opcional: Uma <b>foto</b> do modelo e o <b>nome</b> que você quer dar para ele.'
 txt-consentModelAnswerWhy: 'To <b>draft made-to-measure sewing patterns</b>, we need <b>body measurements</b>. TODO'
 txt-consentModelObjectNote: 'Note: Freesewing publishes anonymized measurements as open data for scientific research. TODO'
 txt-consentModelObjectWhy: 'This data is anonymous and used to study and understand the human form in all its shapes, so we can get better sewing patterns, and better fitting garments. TODO'
@@ -384,14 +384,14 @@ unknownUser-title: 'Do you know who @{user} is? Because we don''t. TODO'
 updates: Atualizações
 upgrade: Atualizar
 upgradeRequired: Atualização requeridaO
-useDecimalsOrFractions: Use decimals (1.25) or fractions (1 1/4) TODO
+useDecimalsOrFractions: Use números decimais (1.25) or frações (1 1/4)
 user: Usuário
 userHasBeenWithUsSince: '{user} está conosco desde {since}'
 userIsAPatron: '{user} é um patrono'
 username: Nome de usuário
 usernameOrEmail: '@:username ou @:emailAddress'
 usernameUpdated: Nome de usuário atualizado
-users: Users TODO
+users: Usuários
 version: Versão
 visitPatronProfile: Visite a página de perfil deste patrono
 volunteerVerb: Voluntário

@@ -106,7 +106,11 @@ function scrubEntry(translation) {
 
 /* Loads a YAML translation file from disk */
 function loadTranslationFile(locale, file) {
-  return yaml.safeLoad(fs.readFileSync('./nuxt/locales/'+locale+'/'+file+'.yaml', 'utf8'));
+  try {
+    return yaml.safeLoad(fs.readFileSync('./nuxt/locales/'+locale+'/'+file+'.yaml', 'utf8'));
+  } catch(error) {
+    console.log('Could not load file: ', file, locale)
+  }
 }
 
 /* Bundles a translation into JSON file and writes it to disk */
