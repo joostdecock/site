@@ -23,8 +23,8 @@ blog: Blog DONE
 blogPost: Blog Einträge
 bold: fettgedruckt
 breasts: Brüste
-brokenLink-msg: 'If you came here through a link, please report that broken link. TODO'
 breastsUpdated: Brüste Einstellung aktualisiert
+brokenLink-msg: 'If you came here through a link, please report that broken link. TODO'
 by: von
 cancel: Abbrechen
 chatOnGitter: Chatte bei Gitter
@@ -211,9 +211,9 @@ profile: Profile TODO
 quickPick: Quick pick TODO
 quote-allie: Hast du schon von freesewing.org gehört? Das ist so ziemlich die genialste Sache überhaupt!
 quote-allie-about: Autor des Nähblogs The Aspiring Seamstress.
-quote-ivan: Ein dickes Lob an @j__st, dass er @freesewing_org, eine Open-Source Plattform für Maßschnitte und allgemeine Genialität, kreiert hat
+quote-ivan: 'Ein dickes Lob an @j__st, dass er @freesewing_org, eine Open-Source Plattform für Maßschnitte und allgemeine Genialität, kreiert hat'
 quote-ivan-about: Kubernetes London Meetup Co-Organisator. Gründer von Kube.camp
-quote-jamie: 'Mit Freesewing ist das Nähen in das 21.Jahrhundert eingetreten'
+quote-jamie: Mit Freesewing ist das Nähen in das 21.Jahrhundert eingetreten
 quote-jamie-about: Autor des beliebten Nähblogs Male Devon Sewing und 2016 Teilnehmer des Great British Sewing Bee.
 reSendActivationEmail: Aktivierungs E-Mail erneut versenden
 readyToTryFreesewing: 'Bereit, Freesewing auszuprobieren?'
@@ -240,7 +240,7 @@ seeAlso: Siehe auch
 seeBelow: Siehe unten
 selectADifferentImage: Anderes Bild auswählen
 selectAnImage: Bild auswählen
-selectThePartsYouWantIncludedInYourDraft: Markiere die Teile, die du in dein Entwurf miteinbeziehen willst
+selectThePartsYouWantIncludedInYourDraft: 'Markiere die Teile, die du in dein Entwurf miteinbeziehen willst'
 settings: Einstellungen
 sewingPatternsForNonAveragePeople: Schnittmuster für nicht-durchschnittliche Menschen
 share: Teilen
@@ -324,28 +324,28 @@ txt-contentLocaleFallback: Deshalb wird Dir stattdessen die englische Version an
 txt-contentNotTranslated: 'Leider wurde diese Seite (noch) nicht auf {language} übersetzt.'
 txt-dataExport: 'Wenn Du möchtest, können wir alle Daten, die wir für Dich gespeichert haben, exportieren.'
 txt-dataExportQueued: You data export has been queued. We'll send you an E-mail once it's ready with a download link. TODO
-txt-didYouSpotATypo: 'Hast du ein Schreibfehler entdeckt? Hast du das Gefühl etwas fehle oder bedarf weiterer Klärung?'
+txt-didYouSpotATypo: Hast du ein Schreibfehler entdeckt? Hast du das Gefühl etwas fehle oder bedarf weiterer Klärung?
 txt-doYouObject: 'Widersprichst Du, Deine anonymisierten Daten für wissenschaftliche Recherche weiterzugeben?'
 txt-editThisPageOnline: Du kannst diese Seite online anpassen und deine Änderungen einreichen.
 txt-email-sharing: Wir werden Deine E-Mail Adresse niemals weitergeben.
 txt-emailChangeConfirmationNotFound: 'Entschuldige, wir haben keine hängige E-Mail-Adressänderung für diesen Bestätigungs-Code. Falls er vielleicht schon abgelaufen ist, kannst du die Änderung einfach nochmal in deinen Einstellungen machen.'
 txt-emailNotFound: 'Wenn Du die E-Mail nicht finden kannst, überprüfe den Spam-Ordner oder kontaktiere uns.'
 txt-emailWillWorkToo: 'Wenn Du Deinen @:username nicht weißt: Deine @:emailAddress funktioniert auch'
-txt-errorPleaseReportIssue: Bitte melde dieses Problem auf GitHub, damit wir es lösen können.
-txt-footer: Freesewing wurde von Joost De Cock & den Mitwirkenden<br> kreiert, mit der finanziellen Unterstützung unserer Gönner
+txt-errorPleaseReportIssue: 'Bitte melde dieses Problem auf GitHub, damit wir es lösen können.'
+txt-footer: 'Freesewing wurde von Joost De Cock & den Mitwirkenden<br> kreiert, mit der finanziellen Unterstützung unserer Gönner'
 txt-forgot-login: 'Enter your username or E-mail address below and click the <b>@:resetPassword</b> button TODO'
 txt-gdpr-1: The General Data Protection Regulation (GDPR) of the European Union (EU) protects your personal data from unscrupulous data hoarders. That's a good thing. TODO
 txt-gdpr-2: 'One of the things it imposes is for us to get your consent — in other words, your permission — to process your personal data. TODO'
 txt-gdpr-3: 'Without your consent, we have no legal basis to process your data and have no choice but to remove it. TODO'
 txt-gdprCompliant: Freesewing.org respects your privacy and your rights. We apply the General Data Protection Regulation (GDPR) of the European Union (EU). TODO
-txt-homepage-community: 'Alles wird von freiwilligen Mitwirkenden am Leben erhalten. Es existieren keine kommerziellen Absichten im Zusammenhang mit diesem Projekt.'
+txt-homepage-community: Alles wird von freiwilligen Mitwirkenden am Leben erhalten. Es existieren keine kommerziellen Absichten im Zusammenhang mit diesem Projekt.
 txt-homepage-different: Was uns unterscheidet
 txt-homepage-draft: 'Wähle eines Deiner Schnittmuster, wähle ein Modell und entscheide dich für die Optionen. Den Rest erledigen wir.'
 txt-homepage-how: So funktioniert es
 txt-homepage-join: Mach es wie tausende andere und erstelle einen kostenlosen Account auf freesewing.org.
 txt-homepage-model: Alle unsere Schnittmuster werden nach individuellen Maßen gefertigt. Also nimm zuallererst Dein Maßband zur Hand.
 txt-homepage-opensource: 'Diese Plattform, unsere Schnittmuster und sogar diese Website: Alle unsere Entwicklungen sind auf GitHub zugänglich. Dein Beitrag ist herzlich willkommen!'
-txt-homepage-patrons: Freesewing wird durch die finanzielle Unterstützung unserer Gönner überhaupt erst möglich gemacht. Sie sorgen dafür, dass es weiter geht.
+txt-homepage-patrons: 'Freesewing wird durch die finanzielle Unterstützung unserer Gönner überhaupt erst möglich gemacht. Sie sorgen dafür, dass es weiter geht.'
 txt-homepage-quotes: Was andere darüber sagen
 txt-joinTheTranslationTeam1: 'Even if you have never contributed to an open source project, translation is a smooth on-ramp towards contributor fame. TODO'
 txt-joinTheTranslationTeam2: 'It doesn''t matter whether you translate a few words or sentences, or tackle an entire language by yourself. Every contribution counts, and many hands make light work. TODO'

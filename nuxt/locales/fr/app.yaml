@@ -274,7 +274,7 @@ step3: Étape 3
 step4: Étape 4
 stopProcessingMyData: Arrêter d'utiliser mes données.
 stopUpload: Arrêter le chargement
-storingDraftData: 'Sauvegarder les données de l''ébauche'
+storingDraftData: Sauvegarder les données de l'ébauche
 strikethrough: Barré
 svgSourceCode: Code source SVG
 tabloidPdf: Format pdf tabloid (11 X 17 pouces )
@@ -324,7 +324,7 @@ txt-contentLocaleFallback: C'est pour cela que nous vous montrons plutôt la ver
 txt-contentNotTranslated: 'Malheureusement, cette page n''a pas encore été traduite en {language}'
 txt-dataExport: 'Si vous le souhaitez, nous pouvons exporter les données que nous avons stockées pour vous'
 txt-dataExportQueued: 'L''export de vos données a été mis en file d''attente. Dès qu''il sera prêt, vous recevrez un email contenant un lien de téléchargement'
-txt-didYouSpotATypo: 'Avez-vous repéré une faute ? Manque-t-il manque quelque chose ? Les explications sont-elles claires ?'
+txt-didYouSpotATypo: Avez-vous repéré une faute ? Manque-t-il manque quelque chose ? Les explications sont-elles claires ?
 txt-doYouObject: Refusez-vous de mettre à disposition vos données anonymisées à destination de la recherche scientifique ?
 txt-editThisPageOnline: Vous pouvez éditer cette page en ligne et soumettre vos modifications.
 txt-email-sharing: Nous ne partagerons jamais votre adresse email avec quiconque.
@@ -344,43 +344,43 @@ txt-homepage-draft: 'Choisissez parmi l''un de vos patrons, choisissez un modèl
 txt-homepage-how: Comment ça marche
 txt-homepage-join: Rejoignez des milliers d'autres personnes en vous inscrivant gratuitement sur freesewing.org.
 txt-homepage-model: 'Tous nos patrons sont faits sur mesure, donc la première chose à faire est de vous munir de votre mètre-ruban.'
-txt-homepage-opensource: 'Notre plateforme, nos patrons, et même ce site web. Tout notre code est disponible sur GitHub. Les pull-requests sont les bienvenues !
+txt-homepage-opensource: 'Notre plateforme, nos patrons, et même ce site web. Tout notre code est disponible sur GitHub. Les pull-requests sont les bienvenues !'
 txt-homepage-patrons: Freesewing is made possible by the financial support of our Patrons. They keep this ship afloat. TODO
 txt-homepage-quotes: Ce qu'en disent les autres
 txt-joinTheTranslationTeam1: 'Even if you have never contributed to an open source project, translation is a smooth on-ramp towards contributor fame. TODO'
 txt-joinTheTranslationTeam2: 'Peu importe que vous ne traduisiez que quelques mots ou phrases, ou bien que vous ne vous preniez en charge l''intégralité d''une langue à vous seul(e). Chaque contribution compte, et plus il y a de mains pour travailler et plus la tâche est aisée.'
 txt-joinTheTranslationTeam3: 'Pour débuter, veuillez lire la documentation pour les traducteurs. Ne vous inquiétez pas, c''est facile.'
-txt-missingBlogPosts: Tous les billets de blog n'ont pas été traduits en anglais - mais grâce à vous, cela pourrait changer.
-txt-modelsWithMissingMeasurements:  'Ces modèles n''ont pas toutes les mesures requises pour générer ce patron'
+txt-missingBlogPosts: 'Tous les billets de blog n''ont pas été traduits en anglais - mais grâce à vous, cela pourrait changer.'
+txt-modelsWithMissingMeasurements: Ces modèles n'ont pas toutes les mesures requises pour générer ce patron
 txt-newModel: 'Pour débuter, veuillez donner un nom à votre modèle.'
 txt-noModels: 'Sans un modèle, vous ne pourrez pas aller bien loin.'
 txt-noValidModels: Aucun de vos modèles ne possède les mensurations requises pour utiliser ce patron.
 txt-password-policy: Nous n'appliquons pas de politique sur les mots de passe
 txt-passwordRecoverConfirmationNotFound: 'Désolé, il n''y a actuellement aucune demande de récupération de mot de passe en cours pour ce code. Peut-être ce dernier a-t-il expiré, auquel cas, il vous suffit de renouveler la demande.'
-txt-resend: 'Enregistrez-vous de nouveau avec la même adresse email et nous vous enverrons un nouveau message de confirmation'
+txt-resend: Enregistrez-vous de nouveau avec la même adresse email et nous vous enverrons un nouveau message de confirmation
 txt-saOption-custom: Marge de couture personnalisée
 txt-saOption-imperial: Marge de couture impériale standard
 txt-saOption-metric: Marge de couture métrique standard
 txt-saOption-none: N'inclue pas les marges de couture
 txt-saOption-patternImperial: Pattern default imperial seam allowance TODO
 txt-saOption-patternMetric: Pattern default metric seam allowance TODO
-txt-signup-step1: 'Saisissez votre adresse email et choisissez un mot de passe'
-txt-signup-step2: 'Confirmez votre adresse email'
-txt-signup-step3: 'Autorisez-nous à utiliser vos données personnelles'
+txt-signup-step1: Saisissez votre adresse email et choisissez un mot de passe
+txt-signup-step2: Confirmez votre adresse email
+txt-signup-step3: Autorisez-nous à utiliser vos données personnelles
 txt-slogan: Une plateforme opensource pour des patrons de couture sur mesure
 txt-translators1: Nous recherchons des volontaires prêts à partager nos efforts de traduction'
 txt-translators2: 'Many hands make light work, and it''s excellent karma to make a contribution this way. TODO'
 txt-translators3: 'Pour découvrir en quoi vous pouvez nous aider, et comment procéder, cliquez sur le lien ci-dessous.'
 txt-warningDataRestriction: 'Une fois que nous restreint l''accès à votre compte, vous ne serez plus en mesure de revenir en arrière vous-même. Pour avoir de nouveau accès à votre compte, vous devrez nous contacter.'
-txt-warningModelData: 'Cela supprimera l''ensemble de vos modèles et ébauches'
+txt-warningModelData: Cela supprimera l'ensemble de vos modèles et ébauches
 txt-warningProfileData: 'Cela supprimer l''ensemble de vos modèles et ébauches, vos commentaires ainsi que votre compte. Tout sera supprimé.'
 txt-withOrWithoutBreasts: 'Fitting breasts requires a bunch of extra measurements that are not relevant if you don''t have breasts. If you indicate your model does not have breasts, we won''t show you these measurements as they are irrelevant. If you''re not sure what to pick, go for breasts. TODO'
-unknownUser-msg: 'This should be the profile page of @{user}, but we don''t have a user by that name. TODO'
-unknownUser-title: 'Do you know who @{user} is? Because we don''t. TODO'
 txt-withOrWithoutBreasts-explainer: 'Sur d''autres sites, la question serait probalement formulée ''homme ou femme ?''. Ici, nous n''aimons pas mettre les gens dans des cases. Ce qui compte, c''est adapter le modèle à votre poitrine.'
 type: Type DONE
 units: Unités
 unitsUpdated: Unités enregistrées
+unknownUser-msg: 'This should be the profile page of @{user}, but we don''t have a user by that name. TODO'
+unknownUser-title: 'Do you know who @{user} is? Because we don''t. TODO'
 updates: Updates TODO
 upgrade: Upgrade TODO
 upgradeRequired: Upgrade required TODO
@@ -410,7 +410,7 @@ yesIDo: 'Oui, je donne mon accord'
 yesIDoObject: 'Oui, je refuse.'
 yesterday: Hier
 youAreCurrentlyLoggedIn: Vous êtes connecté(e)
-youAreNotAnAdmin: 'Vous n''êtes pas administrateur'
+youAreNotAnAdmin: Vous n'êtes pas administrateur
 youAreNotLoggedIn: Vous n'êtes pas connecté(e)
 youCanUseMarkdownFormatting: Vous pouvez utiliser le formattage Markdown
 youDoNotObjectToSharingAnonymizedDataForResearch: You do not object to sharing anonymized data for research TODO
