@@ -84,8 +84,8 @@ drafts: Esboços
 edit: Editar
 editOnGithub: Editar no GitHub
 email: E-mail DONE
-emailAddress: endereço de E-mail
-emailUpdatePending: atualização de E-mail pendente
+emailAddress: endereço de e-mail
+emailUpdatePending: atualização de e-mail pendente
 emails: E-mails DONE
 enterYourCurrentPassword: Escreva sua senha atual
 enterYourNewPassword: Escreva sua nova senha
@@ -214,7 +214,7 @@ quote-ivan: Aplausos para @j__st por criar @freesewing_org uma plataforma em có
 quote-ivan-about: Co-organizador do Kubernetes London Meetup. Fundador de Kube.camp
 quote-jamie: 'Com Freesewing, a costura entrou para o século 21'
 quote-jamie-about: Autor do popular blog de costura Male Devon Sewing e concorrente do concurso Great British Sewing Bee de 2016.
-reSendActivationEmail: Enviar novamente o email de ativação
+reSendActivationEmail: Enviar novamente o e-mail de ativação
 readyToTryFreesewing: Preparado para testar o Freesewing?
 redraft: Refazer o esboço
 redraftDraftHandle: 'Refazer o esboço {handle}'
@@ -253,14 +253,14 @@ signUpForAFreeAccount: Cadastre-se para uma conta gratuita
 signingUpOnlyTakesAMinute: Fazer o cadastro leva só um minuto
 signup--text: Isso não deveria acontecer. Nos ajude criando um issue (problema) no GitHub.
 signup--title: Um erro desconhecido ocorreu
-signup-invalid_input-text: Por favor escreva um endereço de email válido e uma senha
+signup-invalid_input-text: Por favor escreva um endereço de e-mail válido e uma senha
 signup-invalid_input-title: Entrada inválida
 signup-no_such_pending_confirmation-text: 'Desculpe, mas não temos registrado esse código de confirmação. Talvez ele tenha expirado, nesse caso você pode simplesmente se cadastrar outra vez'
 signup-no_such_pending_confirmation-title: Essa confirmação pendente não existe.
-signup-signup_pending-text: 'Você já possui uma ativação pendente para esse endereço de email. Para o caso de você não ter visto o original, nós lhe enviamos uma nova cópia do email de ativiação.'
+signup-signup_pending-text: 'Você já possui uma ativação pendente para esse endereço de e-mail. Para o caso de você não ter visto o original, nós lhe enviamos uma nova cópia do e-mail de ativiação.'
 signup-signup_pending-title: Seu cadastro está com a ativação pendente
-signup-success-text: 'Nós lhe enviamos um email para {email}.'
-signup-user_exists-text: Nós já temos um usuário com esse endereço de email. Será que você gostaria de fazer login?
+signup-success-text: 'Nós lhe enviamos um e-mail para {email}.'
+signup-user_exists-text: Nós já temos um usuário com esse endereço de e-mail. Será que você gostaria de fazer login?
 signup-user_exists-title: Esse usuário já existe
 social: Social DONE
 somethingWentWrong: Alguma coisa deu errado
@@ -300,24 +300,24 @@ txt-avatarDropzoneTitle: Solte sua imagem nesse lugar
 txt-breastMeasurement-text: Esta é uma daquelas medidas que só é relevante se o seu modelo tiver seios.
 txt-breastMeasurement-title: Esta medida é relevante apenas para seios
 txt-changeRequiresConfirmation: Esta alteração requer confirmação via e-mail
-txt-clickEmailLink: Por favor, clique no link no email para continuar.
+txt-clickEmailLink: Por favor, clique no link no e-mail para continuar.
 txt-consentModel: Você dá o seu consentimento para processar os dados do seu modelo?
 txt-consentModelAnswerWhat: 'Para cada modelo, suas <b>medidas</b>, suas <b>configurações de seios</b>, e <b>senha</b>.'
 txt-consentModelAnswerWhatOptional: 'Opcional: Uma <b>foto</b> do modelo e o <b>nome</b> que você quer dar para ele.'
-txt-consentModelAnswerWhy: 'To <b>draft made-to-measure sewing patterns</b>, we need <b>body measurements</b>. TODO'
-txt-consentModelObjectNote: 'Note: Freesewing publishes anonymized measurements as open data for scientific research. TODO'
-txt-consentModelObjectWhy: 'This data is anonymous and used to study and understand the human form in all its shapes, so we can get better sewing patterns, and better fitting garments. TODO'
-txt-consentModelQuestionWhat: What is model data? TODO
-txt-consentProfile: Do you give your consent to process your profile data? TODO
-txt-consentProfileAnswerShare: '<b>No</b>, never. TODO'
-txt-consentProfileAnswerTiming: '<b>12 months</b> after your last login, or until you <b>remove</b> your account or <b>revoke</b> this consent. TODO'
-txt-consentProfileAnswerWhat: 'Your <b>email address</b>, <b>username</b>, and <b>password</b>. TODO'
-txt-consentProfileAnswerWhatOptional: 'Optional: A <b>profile picture</b>, and <b>social media accounts</b> TODO'
-txt-consentProfileAnswerWhy: 'To <b>authenticate</b> you, <b>contact</b> you when needed, and build a <b>community</b>. TODO'
-txt-consentProfileQuestionShare: Do we share it with others? TODO
-txt-consentProfileQuestionTiming: How long do we keep it? TODO
-txt-consentProfileQuestionWhat: What is profile data? TODO
-txt-consentProfileQuestionWhy: Why do we need it? TODO
+txt-consentModelAnswerWhy: 'Para <b>esboçar moldes de costura sob medida</b>, nós precisamos de <b>medidas corporais</b>.'
+txt-consentModelObjectNote: 'Nota: O Freesewing publica medidas anonimizadas como dados abertos para pesquisa científica'
+txt-consentModelObjectWhy: 'Esses dados são anônimos e usados para estudar e entender o corpo humano em todas suas formas, para que possamos obter melhores moldes de costura e roupas com melhor ajuste.'
+txt-consentModelQuestionWhat: O que são dados do modelo?
+txt-consentProfile: Você dá seu consentimento para processar seus dados de perfil?
+txt-consentProfileAnswerShare: '<b>Não</b>, nunca.'
+txt-consentProfileAnswerTiming: '<b>12 meses</b> depois do seu último login, ou até você <b>remover</b> sua conta ou <b>revogar</b> esse consentimento.'
+txt-consentProfileAnswerWhat: 'Seu <b>endereço de e-mail</b>, <b>nome do usuário</b>, e <b>senha</b>.'
+txt-consentProfileAnswerWhatOptional: 'Opcional: Uma <b>foto de perfil</b>, e <b>contas de redes sociais</b>'
+txt-consentProfileAnswerWhy: 'Para <b>autenticar</b> vocês, entrar em <b>contato</b> quanto necessário e, construir uma <b>comunidade</b>.'
+txt-consentProfileQuestionShare: Compartilhamos com os outros?
+txt-consentProfileQuestionTiming: Quanto tempo nós mantemos eles?
+txt-consentProfileQuestionWhat: O que são dados de perfil?
+txt-consentProfileQuestionWhy: Por que precisamos deles?
 txt-contentLocaleFallback: That's why we're showing you the English version instead. TODO
 txt-contentNotTranslated: 'Unfortunately, this page has not (yet) been translated to {language}. TODO'
 txt-dataExport: 'If you like, we can export all the data we have stored for you. TODO'
@@ -363,7 +363,7 @@ txt-saOption-none: Don't include seam allowance TODO
 txt-saOption-patternImperial: Pattern default imperial seam allowance TODO
 txt-saOption-patternMetric: Pattern default metric seam allowance TODO
 txt-signup-step1: 'Enter your email address, and pick a password. TODO'
-txt-signup-step2: Confirm your email address. TODO
+txt-signup-step2: Confirme seu endereço de e-mail. TODO
 txt-signup-step3: Give us permission to process your personal data. TODO
 txt-slogan: An open source platform for made-to-measure sewing patterns TODO
 txt-translators1: We are looking for people to help with our translation efforts. TODO
