@@ -5,10 +5,10 @@ title: Gedragscode
 ## Onze belofte
 
 In het belang van het bevorderen van een open en welkomende omgeving, beloven wij,
-de bijdragers en onderhouders, om het deelnemen in ons project en onze gemeenschap
+de bijdragers en onderhouders, om het deelnemen aan ons project en onze gemeenschap
 een intimidatie-vrije ervaring te maken voor iedereen. Dit onafhankelijk van leeftijd,
 lichaam, handicap, etniciteit, gender identiteit en uiting, ervaringsniveau, nationaliteit,
-persoonlijk voorkomen, ras, religie of seksuele indentiteit en orientatie.
+persoonlijk voorkomen, ras, religie of seksuele indentiteit en oriëntatie.
 
 ## Onze standaarden
 
@@ -26,8 +26,8 @@ Voorbeelden van niet acceptabel gedrag bij deelnemers omvat:
 * Het gebruik van seksueel geladen taal of prenten, alsook ongewenst seksuele aandacht
 of avances
 * Trollen, beledigend/denigrerend commentaar en persoonlijke of politieke aanvallen
-* Publiek of privaat lastig vallen
-* Het publiceren van prive informatie zoals een fysiek of electronisch adres zonder
+* Publiek of privaat lastigvallen
+* Het publiceren van privé-informatie zoals een fysiek of elektronisch adres zonder
 expliciete toestemming
 * Ander gedrag dat redelijkerwijs zou kunnen worden beschouwd als ongepast in een
 professionele omgeving
@@ -35,7 +35,7 @@ professionele omgeving
 ## Onze verantwoordelijkheden
 
 Projectonderhouders zijn verantwoordelijk om klaarheid te scheppen met betrekking
-tot de standaarden van acceptabel gedrag en worden verwacht de passende en bilijke
+tot de standaarden van acceptabel gedrag en worden verwacht de passende en billijke
 corrigerende maatregelen te treffen als antwoord op vertoningen van niet acceptabel
 gedrag.
 
@@ -55,12 +55,12 @@ van een project mag verder worden gedefinieerd door de projectonderhouders.
 
 ## Handhaving
 
-Instanties van beledigend, storend of anders niet aanvaardbaar gedrag mag worden
+Instanties van beledigend, storend of anders niet aanvaardbaar gedrag mogen worden
 gerapporteerd. Alle klachten zullen
 besproken en onderzocht worden en zullen resulteren in een antwoord dat nodig en
 passend wordt geacht al naargelang de situatie. Het project team is verplicht om
 vertrouwelijkheid te garanderen met betrekking tot de klager. Verdere details van
-specifiek handhavingsbeleid kan apart worden gepost.
+specifiek handhavingsbeleid kunnen apart worden gepost.
 
 Projectonderhouders die de Gedragscode niet volgen of ter goeder trouw handhaven,
 kunnen tijdelijke of permanente repercussies opgelegd krijgen door overige leden van
@@ -72,7 +72,7 @@ Alle klachten mogen gemeld worden aan joost@decock.org.
 
 ## Attributie
 
-Deze Gedragscode is een bijna identieke kopij van de [Contributor Covenant][homepage],
+Deze Gedragscode is een bijna identieke kopie van de [Contributor Covenant][homepage],
 versie 1.4, beschikbaar op https://www.contributor-covenant.org/nl/version/1/4/code-of-conduct.html
 
 [homepage]: https://www.contributor-covenant.org
