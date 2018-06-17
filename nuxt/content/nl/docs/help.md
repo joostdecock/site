@@ -22,7 +22,7 @@ Je kan ons ook volgen voor nieuws en updates over freesewing.
 ## Maak een issue aan op GitHub
 
 Foutje gevonden? Ging er iets verkeerd of heb je een suggestie voor verbetering?
-Maak dan een issue aan op GitHub. Je hebt er een GitHub account voor nodig, maar die zijn gratis.
+Maak dan een issue aan op GitHub. Je hebt er een GitHub account voor nodig, maar dat is gratis.
 
 [Maak een issue aan op GitHub](https://github.com/freesewing/site/issues/new){.btn .px-4 .primary}
 
