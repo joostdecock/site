@@ -18,12 +18,12 @@ andere freesewers te ontmoeten, of gewoon langs te komen voor een babbel.
 Twitter account wellicht je beste optie.
 - Foutje gevonden? Loopt er iets mis of heb je een suggestie voor verbetering?
 Maak dan [een issue aan op GitHub](https://github.com/freesewing/site/issues/new). 
-Je hebt er een GitHub account voor nodig, maar die zijn gratis.
+Je hebt er een GitHub account voor nodig, maar dat is gratis.
 
 ## Manieren om mee te werken
 
 Je kan op verschillende manieren meewerken.
-Hier zijn een aantal manieren waarop dat kan, van makkelijk tot (een beetje) minder makkelijk:
+Hier zijn een aantal opties, van makkelijk tot (een beetje) minder makkelijk:
 
 **Doe aan mond-aan-mond reclame**
 
@@ -36,9 +36,9 @@ Dus geef het door.
 **Verbeter onze inhoud**
 
 Op elke pagina kan je in de rechtse kolom een knop vinden die je toelaat om verbeteringen in te sturen.
-Je hebt er een GitHub account voor nodig, maar die zijn gratis.
+Je hebt er een GitHub account voor nodig, maar dat is gratis.
 
-Gebruik die knop. Wees niet verlegen. Zie je een tikfout of iets wat duidelijke of gedetailleerder kan, 
+Gebruik die knop. Wees niet verlegen. Zie je een tikfout of iets wat duidelijker of gedetailleerder kan, 
 stuur dan gerust je suggesties in.
 
 Onze inhoud is opgemaakt in MarkDown, wat erg makkelijk is om te bewerken. 
@@ -51,18 +51,18 @@ Onze inhoud is opgemaakt in MarkDown, wat erg makkelijk is om te bewerken.
 Het [freesewing vertalers team](/nl/i18n/) kan steeds een helpende hand gebruiken. 
 Misschien kunnen we dankzij jou zelfs een nieuwe taal toevoegen.
 
-> Ga naar onze [documentatie voor vertalers](/nl/docs/i18n/) for mode informatie.
+> Ga naar onze [documentatie voor vertalers](/nl/docs/i18n/) voor meer informatie.
 
 **Test, maak, of show onze patronen**
 
-Maak een van [onze patronenen](/nl/patterns), en deel je ervaring. Bezorg ons ook zeker je feedback.
+Maak een van [onze patronen](/nl/patterns), en deel je ervaring. Bezorg ons ook zeker je feedback.
 
-We vinden het ook super leuk om foto's te krijgen die we dan kunnen toevoegen als [showcase](/nl/showcase).
+We vinden het ook superleuk om foto's te krijgen die we dan kunnen toevoegen als [showcase](/nl/showcase).
 
 **Schrijf mee aan onze code**
 
 Heb je interesse om mee te schrijven aan onze code? Super!
 Je kan al onze code vinden [op GitHub](https://github.com/freesewing). 
 
-Onze [chat op Gitter](https://gitter.im/freesewing/freesewing) is de beste plek om je idee bespreken en van gedachten te wisselen.
+Onze [chat op Gitter](https://gitter.im/freesewing/freesewing) is de beste plek om je idee bespreken en gedachten uit te wisselen.
 

@@ -12,8 +12,8 @@ blurb: "Hier is onze nieuwe website. Ze is AVG compatibel, beschikbaar in drie t
 Morgen, op 25 mei, gaat de Algemene Verordering Gegevensbescherming (AVG) van de Europese Unie (EU) van kracht.
 Vanaf dan riskeren bedrijven die de rechten van EU inwoners niet respecteren een fikse boete, tot 4% van hun jaarlijks zakencijfer.
 
-Morgen is dus een belangrijk moment voor privacy online, want plots zijn 's werelds meest strengste
-regels terzake van toepassing op een half miliard mensen.
+Morgen is dus een belangrijk moment voor privacy online, want plots zijn 's werelds strengste
+regels terzake van toepassing op een half miljard mensen.
 
 ## Je toestemming is nu een voorwaarde
 
@@ -22,19 +22,19 @@ Niet alleen [hadden we een prima plan gemaakt](/nl/blog/gdpr-plan),
 het enige wat we absoluut moesten toevoegen was het vragen om *toestemming*.
 
 Het is niet langer toegestaan om je gegevens te verwerken zonder je toestemming.
-Die toestemming moeten specifiek en gedetailleerd vragen.
+Die toestemming moeten we specifiek en gedetailleerd vragen.
 
 Dus, we hebben nu twee vragen voor je:
 
- - Geef je ons de toestemming om je profiel gegevens te verwerken?
- - Geef je ons de toestemming om je model gegevens te verwerken?
+ - Geef je ons de toestemming om je profielgegevens te verwerken?
+ - Geef je ons de toestemming om je modelgegevens te verwerken?
 
 We maken een onderscheid omdat het om verschillende zaken gaat.
 Een profiel/account is noodzakelijk om je aan te melden op de site, commentaar te posten enzoverder.
-Model gegevens zijn nodig om naaipatronen op maat te genereren.
+Modelgegevens zijn nodig om naaipatronen op maat te genereren.
 
 Je zal door deze vragen begroet worden op het ogenblik dat ze relevant worden
-(maw, wanneer we toegang moeten hebben tot de gegevens in kwestie)
+(maw, wanneer we toegang nodig hebben tot de gegevens in kwestie)
 en je kan je beslissing op elk ogenblik herzien [in je account instellingen](/nl/account).
 
 ## Het is onze plicht om je te informeren
@@ -48,7 +48,7 @@ Dus, we hebben een [privacy beleid](/nl/privacy) opgesteld dat al deze zaken uit
 Naast ons privacy beleid hebben we ook [een pagina opgezet die al je rechten op een rijtje zet](/nl/rights), 
 met instructies hoe je van elk van die rechten gebruik kan maken.
 
-Met deze wijzigingen hebben we onze plicht om je te informeren vervult.
+Met deze wijzigingen hebben we onze plicht om je te informeren vervuld.
 
 ## Privacy by design
 
@@ -77,7 +77,7 @@ Onze vorige website maakte gebruik van [Jekyll](https://jekyllrb.com/) om een st
 We hadden daar dan een hoop javascript code bij om de dynamische elementen te verzorgen.
 Die aanpak deed wat het moest doen, maar had twee belangrijke nadelen:
 
- - Jekyll maakt gebruik van de Ruby programeertaal. Dat is alweer een andere taal, een andere paketbeheerder, en een ander ecosysteem dat potentiële vrijwillige medewerkers in hun hoofd moeten prenten. Dat wilden we graag vermijden. 
+ - Jekyll maakt gebruik van de Ruby programeertaal. Dat is alweer een andere taal, een andere pakketbeheerder, en een ander ecosysteem dat potentiële vrijwillige medewerkers in hun hoofd moeten prenten. Dat wilden we graag vermijden. 
  - Die *hoop* JavaScript code mag je ook nogal letterlijk nemen. Onderhoudbaarheid van de code werd stilaan een probleem, en bovendien was het ook moeilijk voor nieuwe medewerkers om het allemaal te begrijpen.
 
 Dus, om twee vliegen in één klap te slaan, hebben we de hele boel herschreven door gebruik te maken van [Vue.js](https://vuejs.org/) en [Nuxt](https://nuxtjs.org/). 
@@ -93,7 +93,7 @@ Vanaf vandaag is freesewing trouwens niet langer alleen beschikbaar [in het Enge
 maar ook [in het Spaans](/es/blog/gdpr-ready), en [in het Nederlands](/nl/blog/gdpr-ready).
 
 Ik wil graag [@AnnekeCaramin](/users/annekecaramin) 
-en [@AlfaLyr](/users/alfalyr) bedanken, die onze taal coordinatoren zijn voor respectievelijk Nederlands en Spaans,
+en [@AlfaLyr](/users/alfalyr) bedanken, die onze taal coördinatoren zijn voor respectievelijk Nederlands en Spaans,
 maar ook alle andere mensen die geholpen hebben met de vertaling.
 
 Een overzicht van de status van de verschillende talen is [hier beschikbaar](/nl/i18n), 

@@ -7,7 +7,7 @@ caption: "Het freesewing logo"
 author: joost
 translation: joost
 category: docs
-blurb: "Met enige trots mag ik freesewing core v1.0.0 aankondigen, met bijhorende documentatie die het project in detail beschrijft."
+blurb: "Met enige trots mag ik freesewing core v1.0.0 aankondigen, met bijbehorende documentatie die het project in detail beschrijft."
 updates:
  1:
    date: 2018-04-17 18:20
@@ -16,7 +16,7 @@ updates:
    by: joost
 ---
 Met enige trots mag ik [freesewing core v1.0.0](https://github.com/freesewing/core) 
-aankondigen, met bijhorende [documentatie](/docs) die het project in detail beschrijft.
+aankondigen, met bijbehorende [documentatie](/docs) die het project in detail beschrijft.
 
 Maar ik ben ook realistisch, en begrijp dat je niet de tijd hebt om je door pagina's documentatie heen te worstelen.
 
@@ -26,7 +26,7 @@ Dus is hier een verhaal dat de essentie van Freesewing samenvat:
 Kleren maken is makkelijk, echt wel.
 Wat moeilijk is om die kleren mooi te laten passen.
 Daarom gebruik je een naaipatroon.
-Dat dient als blauwdruk voor datgene wat je aan het maken bent.
+Dat dient als blauwdruk voor hetgene dat je aan het maken bent.
 Een goed patroon geeft je een goeie pasvorm. De meeste patronen doen dat niet.
 
 Dat is omdat — net zoals de kleren die je koopt in de winkel — naaipatronen in verschillende maten worden gemaakt.
@@ -52,9 +52,9 @@ Maar wat ik wel kan doen is naaipatronen naar de wereld van open source brengen.
 [Freesewing.org](https://freesewing.org/) zal blijven aanbieden wat 
 [Makemypattern.com](https://makemypattern.com/) reeds aanbood: 
 vrije (en gratis) naaipatronen op maat.
-Maar daarenboven kan iedereen nu zijn steentje bijdragen.
+Maar daarbij kan iedereen nu zijn steentje bijdragen.
 
-Ik hoop dat ik niet de enige ben die het Venn-diagrama van de hobby kleermakers en techneuten pal in het midden zit.
+Ik hoop dat ik niet de enige ben die het Venndiagram van de hobby kleermakers en techneuten pal in het midden zit.
 
 joost
 

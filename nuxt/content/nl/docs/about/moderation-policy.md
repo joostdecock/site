@@ -14,7 +14,7 @@ We vragen je om af te zien van beledigende uitspraken en grof taalgebruik,
 respect te tonen voor anderen, publieke figuren, en de fundamentele principes
 die we allemaal gemeen hebben.
 
-Zonder exhaustief te willen zijn; Dit betekent geen raciscme of xenofobie,
+Zonder exhaustief te willen zijn; dit betekent geen raciscme of xenofobie,
 geen oproepen tot geweld, en geen discriminatie op basis van religie, etnische origine, geslacht,
 leeftijd, lichaamsbouw, taal, &hellip;. 
 
