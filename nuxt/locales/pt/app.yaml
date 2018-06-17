@@ -302,7 +302,7 @@ txt-avatarDropzoneTitle: Solte sua imagem nesse lugar
 txt-breastMeasurement-text: Esta é uma daquelas medidas que só é relevante se o seu modelo tiver seios.
 txt-breastMeasurement-title: Esta medida é relevante apenas para seios
 txt-changeRequiresConfirmation: Esta alteração requer confirmação via e-mail
-txt-clickEmailLink: Por favor, clique no link no e-mail para continuar.
+txt-clickEmailLink: 'Por favor, clique no link no e-mail para continuar.'
 txt-consentModel: Você dá o seu consentimento para processar os dados do seu modelo?
 txt-consentModelAnswerWhat: 'Para cada modelo, suas <b>medidas</b>, suas <b>configurações de seios</b>, e <b>senha</b>.'
 txt-consentModelAnswerWhatOptional: 'Opcional: Uma <b>foto</b> do modelo e o <b>nome</b> que você quer dar para ele.'
