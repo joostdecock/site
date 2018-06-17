@@ -6,7 +6,7 @@ Je kan ons op verschillende manieren bereiken.
 Hier zijn de mogelijkheden, gerangschikt op hoe goed ze schalen:
 
 ## Chat met ons op Gitter
-De freesewing gemeenschap op Gitter is de beste plek om vragen te stellen.
+De freesewing gemeenschap op Gitter is de beste plek om vragen te stellen,
 andere freesewers te ontmoeten, of gewoon langs te komen voor een babbel.
 
 [Chat met ons op Gitter](https://gitter.im/freesewing/freesewing){.btn .primary .px-4}
@@ -15,7 +15,7 @@ andere freesewers te ontmoeten, of gewoon langs te komen voor een babbel.
 
 Foutje gezien? Liep er iets fout of heb je een suggestie voor verbetering?
 Gelieve een *issue* aan te maken op GitHub. 
-Je hebt daar een GitHub account voor nodig, maar die zijn gratis.
+Je hebt daar een GitHub account voor nodig, maar dat is gratis.
 
 [Een issue aanmaken op GitHub](https://github.com/freesewing/site/issues/new){.btn .px-4 .primary}
 
@@ -30,7 +30,7 @@ Je kan ons ook bereiken op sociale media. En uiteraard kan je ons ook volgen of 
 ## E-mail
 
 > Deze optie schaalt niet zo goed, dus overweeg misschien eerst de opties hierboven.
-> Maar, als je wil kan je een E-mail sturen naar [@joost](/users/joost)
+> Maar als je wil kan je een E-mail sturen naar [@joost](/users/joost)
 
 [Stuur een E-mail](mailto:joost@decock.org?subject=Freesewing){.btn .px-4 .primary}
 
