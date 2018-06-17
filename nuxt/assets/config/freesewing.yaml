@@ -22,16 +22,6 @@ defaults:
     - Basic
     - Paperless
 i18n:
-  coordinators:
-    de: manufaktur.edelweiss
-    en: joost
-    es: AlfaLyr
-    fr: MrsMonkey
-    nl: AnnekeCaramin
-    'no': _vacant
-    pl: _vacant
-    pt: _vacant
-    sv: _vacant
   files:
     - app
     - i18n
@@ -54,7 +44,7 @@ i18n:
   origin: en
   stats:
     de:
-      app: 213
+      app: 323
       blog: 0
       docs: 0
       i18n: 6
@@ -64,9 +54,9 @@ i18n:
       patterns: 37
       showcase: 0
     en:
-      app: 416
+      app: 420
       blog: 31
-      docs: 348
+      docs: 347
       i18n: 9
       measurements: 26
       optiongroups: 12
@@ -74,29 +64,29 @@ i18n:
       patterns: 37
       showcase: 51
     es:
-      app: 412
+      app: 420
       blog: 2
       docs: 1
       i18n: 9
       measurements: 26
       optiongroups: 12
-      options: 253
+      options: 300
       patterns: 37
       showcase: 1
     fr:
-      app: 176
+      app: 395
       blog: 0
       docs: 0
-      i18n: 0
+      i18n: 9
       measurements: 26
       optiongroups: 11
       options: 0
       patterns: 4
       showcase: 0
     nl:
-      app: 415
+      app: 419
       blog: 3
-      docs: 2
+      docs: 7
       i18n: 9
       measurements: 26
       optiongroups: 12
@@ -124,7 +114,7 @@ i18n:
       patterns: 0
       showcase: 0
     pt:
-      app: 320
+      app: 345
       blog: 0
       docs: 0
       i18n: 0
@@ -134,7 +124,7 @@ i18n:
       patterns: 0
       showcase: 0
     sv:
-      app: 398
+      app: 397
       blog: 0
       docs: 0
       i18n: 0
@@ -154,9 +144,9 @@ i18n:
       patterns: 0
       showcase: 0
   target:
-    app: 416
+    app: 420
     blog: 31
-    docs: 348
+    docs: 347
     i18n: 9
     measurements: 26
     optiongroups: 12
@@ -164,3 +154,29 @@ i18n:
     patterns: 37
     showcase: 51
   template: xx
+  translators:
+    de:
+      - manufaktur.edelweiss
+      - sew.malina
+      - marckiesel
+    en:
+      - joost
+    es:
+      - AlfaLyr
+      - ldepeuter
+    fr:
+      - Fantastik-Maman
+      - MrsMonkey
+      - github|Chantalbijoux
+      - github|dingcycle
+      - joebidido
+    nl:
+      - AnnekeCaramin
+      - joost
+    'no':
+      - Quidditch
+    pl: _vacant
+    pt:
+      - ericamattos
+    sv:
+      - Polanka

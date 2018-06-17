@@ -1813,7 +1813,7 @@ The possibilities are:
 - `string` `$nr`: The part number.
 - `string` `$title`: The part title.
 - `string` `$message`: An optional message. 
-- `string` `$mode`: One of `default`, `vertical`, `horizontal`, `small`, `vertical-small`, or `horizontal-small`. Defaults to `default`.
+- `string` `$options`: An array with optional `scale`, `align`, and `rotate` keys to control how the title is rendered.
 
 ### Methods for Path offset
 
@@ -2073,21 +2073,26 @@ which is commonly called from a `Pattern`.
 
 ```php
 float bezierCircle( 
-    float $radius 
+    float $radius
+    float $angle
 )
 ```
 
-Returns `$radius * 4 * (sqrt(2) - 1) / 3` which is the radius that mimics a quarter circle
-segment in a Bezier Curve.
+Returns `$radius * 4 * (1 - cos($argument)) / sin($argument) / 3` with `$argument = deg2rad($angle/2)`,
+which is the radius that mimics a circle arc of angle `$angle` in a Bezier curve.
 
 You can't make a perfect circle with a cubic Bezier curve, but you can come close by
-using by using the value returned by this method to offset your control points.
+using the value returned by this method to offset your control points.
+The approximation is better the smaller the angle of the arc, so if the angle is
+larger than 90º it's recommended to do as many quarters of circle as necessary and
+then the remaining arc of an agle smaller than 90º.
 
 #### Parameters
 
-This expects a float, which is the radius of the circle you want to mimic.
+`$radius`: This expects a float, which is the radius of the circle you want to mimic.
+`$angle`: This expects another float, which is the angle of the arc you want to mimic.
 
 #### Return value
 
-Returns a float that indicates how far the offset your control points to mimic a circular
-bend over 90 degrees.
+Returns a float that indicates how far from a point you need to place the control point to mimic a circular
+arc of `$angle` degrees. The direction to place the control point is the tangent to the circle.

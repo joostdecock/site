@@ -60,6 +60,9 @@
       <div v-else>
       <h1 class="mt-5">{{ $t('signUp') }}</h1>
       <h5>{{ $t('txt-signup-step1') }}</h5>
+      <v-alert value="1" color="warning" icon="warning" class="mt-3 mb-3" v-if="invalidEmail">
+        Please enter a valid E-mail address
+      </v-alert>
       <v-form v-model="valid" class="mt-4">
         <v-text-field
               :label="$t('emailAddress')"
@@ -127,11 +130,16 @@ export default {
       success: false,
       hidePassword: true,
       reason: '',
-      resend: false
+      resend: false,
+      invalidEmail: false
     }
   },
   methods: {
     submit: function() {
+      if(!this.$fs.isValidEmail(this.email)) {
+        this.invalidEmail = true;
+        return
+      }
       this.loading = true;
       this.error = false;
       this.reason = '';

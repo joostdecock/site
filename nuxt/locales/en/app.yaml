@@ -24,6 +24,7 @@ blogPost: Blog posts
 bold: Bold
 breasts: Breasts
 breastsUpdated: Breasts setting updated
+brokenLink-msg: 'If you came here through a link, please report that broken link.'
 by: by
 cancel: Cancel
 chatOnGitter: Chat on Gitter
@@ -48,7 +49,6 @@ contactUs: Contact us
 content: Content
 contents: Contents
 contributeToFreesewing: Contribute to freesewing
-coordinator: Coordinator
 coreLink: Core link
 countAvailable: '{count} available'
 countTranslated: '{count} translated'
@@ -198,6 +198,7 @@ patternOptions: Pattern options
 patternParts: Pattern parts
 patterns: Patterns
 pleaseCheckYourInbox: You will be receiving an E-mail with further instructions
+pleaseEnterAValidEmailAddress: Please enter a valid E-mail address
 pleaseUpgradeThisDraft: Please upgrade this draft.
 postComment: Post comment
 postInfo: Post info
@@ -291,6 +292,7 @@ tip: Tip
 title: Title
 today: Today
 translationTeam: Translation team
+translators: Translators
 troubleLoggingIn: Trouble logging in?
 tryAgain: Try again
 twitter: Twitter
@@ -377,6 +379,8 @@ txt-withOrWithoutBreasts-explainer: 'On other websites, this question may be phr
 type: Type
 units: Units
 unitsUpdated: Units set
+unknownUser-msg: 'This should be the profile page of @{user}, but we don''t have a user by that name.'
+unknownUser-title: 'Do you know who @{user} is? Because we don''t.'
 updates: Updates
 upgrade: Upgrade
 upgradeRequired: Upgrade required

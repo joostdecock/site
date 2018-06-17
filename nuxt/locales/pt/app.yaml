@@ -24,6 +24,7 @@ blogPost: posts do Blog
 bold: Negrito
 breasts: Seios
 breastsUpdated: Configuração de seios atualizada
+brokenLink-msg: 'If you came here through a link, please report that broken link. TODO'
 by: por
 cancel: Cancelar
 chatOnGitter: Bate-pato no Gitter
@@ -48,7 +49,6 @@ contactUs: Entre em contato
 content: Conteúdo
 contents: Conteúdos
 contributeToFreesewing: Contribua com o freesewing
-coordinator: Coordenador
 coreLink: Link principal
 countAvailable: '{count} disponível'
 countTranslated: '{count} traduzido'
@@ -132,8 +132,8 @@ justAMoment: Aguarde um momento
 key: Chave
 language: Linguagem
 languageLanguageFiles: 'arquivos de linguagem {language}'
-layout: Layout DONE
 lastLogin: Último login
+layout: Layout DONE
 learnMore: Aprenda mais
 learnToDesignPatterns: Aprenda a desenhar moldes
 letterPdf: PDF tamanho Letter
@@ -198,6 +198,7 @@ patternOptions: Opções do molde
 patternParts: Partes do molde
 patterns: Moldes
 pleaseCheckYourInbox: Você receberá um E-mail com mais instruções
+pleaseEnterAValidEmailAddress: Please enter a valid E-mail address TODO
 pleaseUpgradeThisDraft: 'Por favor, atualize esse esboço.'
 postComment: Poste um comentário
 postInfo: Poste informações
@@ -291,6 +292,7 @@ tip: Dica
 title: Título
 today: Hoje
 translationTeam: Equipe de tradução
+translators: Translators TODO
 troubleLoggingIn: Problemas ao fazer o login?
 tryAgain: Tente novamente
 twitter: Twitter DONE
@@ -377,6 +379,8 @@ txt-withOrWithoutBreasts-explainer: 'On other websites, this question may be phr
 type: Tipo
 units: Unidades
 unitsUpdated: Unidades configuradas
+unknownUser-msg: 'This should be the profile page of @{user}, but we don''t have a user by that name. TODO'
+unknownUser-title: 'Do you know who @{user} is? Because we don''t. TODO'
 updates: Atualizações
 upgrade: Atualizar
 upgradeRequired: Atualização requeridaO

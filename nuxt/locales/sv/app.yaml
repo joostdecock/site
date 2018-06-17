@@ -24,6 +24,7 @@ blogPost: Blogginlägg
 bold: Fetstil
 breasts: Bröst
 breastsUpdated: Inställning för bröst uppdaterad
+brokenLink-msg: 'If you came here through a link, please report that broken link. TODO'
 by: av
 cancel: Avbryt
 chatOnGitter: Chatta på Gitter
@@ -48,7 +49,6 @@ contactUs: Kontakta oss
 content: Innehåll
 contents: Innehåll
 contributeToFreesewing: Contribute to freesewing TODO
-coordinator: Samordnare
 coreLink: Kärnlänk/Core link
 countAvailable: '{count} tillgänglig '
 countTranslated: '{count} översatt '
@@ -198,6 +198,7 @@ patternOptions: Mönsteralternativ
 patternParts: Mönsterdelar
 patterns: Mönster
 pleaseCheckYourInbox: Du kommer att få e-post med vidare instruktioner
+pleaseEnterAValidEmailAddress: Please enter a valid E-mail address TODO
 pleaseUpgradeThisDraft: Vänligen uppgradera denna skiss.
 postComment: Publicera kommentar
 postInfo: Publicera information
@@ -291,6 +292,7 @@ tip: Tips
 title: Titel
 today: I dag
 translationTeam: Översättningsteam
+translators: Translators TODO
 troubleLoggingIn: Problem med att logga in?
 tryAgain: Försök igen
 twitter: Twitter DONE
@@ -377,6 +379,8 @@ txt-withOrWithoutBreasts-explainer: På andra webbplatser kan den här frågan v
 type: Skriv
 units: Enheter
 unitsUpdated: Enheter angivna
+unknownUser-msg: 'This should be the profile page of @{user}, but we don''t have a user by that name. TODO'
+unknownUser-title: 'Do you know who @{user} is? Because we don''t. TODO'
 updates: Uppdaterar
 upgrade: Uppgradera
 upgradeRequired: Uppgradering krävs
