@@ -18,13 +18,13 @@ basics: Grundlagen
 becomeAPatron: Werde ein Patron
 bio: Bio TODO
 bioUpdated: Bio aktualisiert
-blockquote: Block quote TODO
+blockquote: Block quote DONE
 blog: Blog DONE
 blogPost: Blog Einträge
 bold: fettgedruckt
 breasts: Brüste
 breastsUpdated: Brüste Einstellung aktualisiert
-brokenLink-msg: 'If you came here through a link, please report that broken link. TODO'
+brokenLink-msg: 'Wenn Du ueber einen link hier angekommen bist, bitte melde uns den kaputten link. TODO'
 by: von
 cancel: Abbrechen
 chatOnGitter: Chatte bei Gitter
@@ -66,7 +66,7 @@ deleteThisDraft: Lösche diesen Entwurf
 description: Beschreibung
 details: Details DONE
 difficulty: Schwierigkeit
-docs: Dokumentation
+docs: Dokumente
 documentation: Dokumentation
 documentationForDevelopers: Dokumentation für Entwickler
 documentationForTranslators: Dokumentation für Übersetzer
@@ -94,7 +94,7 @@ error-username_taken: Username bereits vergeben
 exportMyData: Meine Dateien exportieren
 filterByPattern: Nach Schnittmuster filtern
 forContributors: Für mitwirkende
-forMoreInfoRtfm: 'For more info, read the documentation: TODO'
+forMoreInfoRtfm: 'Fuer mehr Infos, lese die Dokumentation'
 forUsername: 'Für {username}'
 forUsers: Für Anwender
 fork: Fork TODO
@@ -229,7 +229,7 @@ requiredMeasurements: Erforderliche Maße
 resetPassword: Passwort zurücksetzen
 result: Ergebnis
 retrievingDraftFromCore: Retrieving draft from core TODO
-revokeConsent: Revoke consent TODO
+revokeConsent: Konsens zuruecknehemen 
 rowsFromToOfTotal: 'Reihe {from} bis {to} von {total}'
 rowsPerPage: Reihen per Seite
 save: Speichern
