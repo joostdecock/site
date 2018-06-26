@@ -13,6 +13,9 @@ armholeDepthFactor:
 armholeDrop:
   description: Verlaag het armsgat met deze hoeveelheid. Een negatieve waarde maakt het hoger.
   title: Armsgat verlagen/verhogen
+backDartDepthFactor:
+  description: The Depth of the back dart as a percentage of the Waist to Hip measurement TODO TODO
+  title: Back Dart Depth Factor TODO TODO
 backDrop:
   description: Hoeveel lager de rugpanden worden vanaf de heupen tot de middenrug. Een negatieve waarde maakt ze hoger.
   title: Verlaging rug
@@ -151,6 +154,9 @@ chestPocketWidth:
 chestShaping:
   description: 'De hoeveelheid waarmee het bovenste voorpand opengespreid wordt om de borstkas vorm te geven, als een factor van je borstomtrek.'
   title: Vormgeving borst
+circlePercent:
+  description: 'The percent of a circle skirt. 100% makes a full circle skirt, 50% makes a half circle skirt TODO TODO'
+  title: Circle percent TODO TODO
 collarAngle:
   description: 'De hoek van de punten van de kraag. '
   title: Hoekjes kraag
@@ -215,6 +221,9 @@ cuffStyle:
     '5': Afgesneden Franse manchet
     '6': Rechte Franse manchet
   title: Stijl manchet
+dartToSideSeamFactor:
+  description: Shifts the intake from the darts to the side seam and visa versa TODO TODO
+  title: Dart to Side Seam Factor TODO TODO
 elasticWidth:
   description: De breedte van het elastiek dat je van plan bent te gebruiken.
   title: Breedte elastiek
@@ -231,12 +240,18 @@ extraTopButton:
     - Geen extra bovenste knoop
     - Extra bovenste knoop
   title: Extra knoop bovenaan
+extraWaist:
+  description: The percent by which the top of the skirt is longer than the bottom of the waistband. Give a value higher than 0 to pleat the skirt TODO TODO
+  title: Extra waist TODO TODO
 frontCutawayAngle:
   description: In welke hoek wil je dat de voorpanden openen vanaf de onderste knoop.
   title: Hoek weggeknipte opening onder
 frontCutawayStart:
   description: Hoe ver onder de onderste knoop mogen de voorpanden beginnen openen.
   title: Start weggeknipte opening onder
+frontDartDepthFactor:
+  description: The Depth of the front dart as a percentage of the Waist to Hip measurement TODO TODO
+  title: Front Dart Depth Factor TODO TODO
 frontDartPlacement:
   description: De plaatsing van de neep vooraan als een evenredigheid met je borstomtrek. Een hoger cijfer verplaatst de zak meer naar de zijnaad.
   title: Plaatsing nepen vooraan
@@ -273,6 +288,9 @@ frontStyle:
 headEase:
   description: De hoeveelheid overwijdte om de pet op je hoofd te laten passen.
   title: Overwijdte hoofd
+hemBonus:
+  description: Additional width at the hem TODO TODO
+  title: Hem bonus TODO TODO
 hemCurve:
   description: De hoogte van de curve op een afgeronde zoom.
   title: Curve zoom
@@ -292,6 +310,9 @@ hemStyle:
       '1': Klassiek
       '2': Afgerond
   title: Vorm zoom
+hemWidth:
+  description: The width of the hem TODO TODO
+  title: Hem width TODO TODO
 hipFlare:
   description: Hoeveel wijder het hemd wordt onder de taille.
   title: Wijdte heup
@@ -316,6 +337,9 @@ legBonus:
 legStretch:
   description: Voor het beste resultaat wil je de pijp wat strakker om je been. Zeg nee tegen geflodder!
   title: Stretch pijp
+length:
+  description: The length of the skirt TODO TODO
+  title: Skirt length TODO TODO
 lengthBonus:
   description: De hoeveelheid waarmee het kledingstuk verlengd wordt. Een negatieve waarde maakte het korter.
   title: Bonus lengte
@@ -331,6 +355,12 @@ necklineBend:
 necklineDrop:
   description: De hoeveelheid waarmee de halslijn vooraan weggesneden wordt.
   title: Hoogte halslijn
+nrOfDarts:
+  description: Number of darts on each part TODO TODO
+  options:
+    '1': 1
+    '2': 2
+  title: Number of darts TODO TODO
 panels:
   description: Het aantal panelen. Meer panelen passen beter bij een ronder figuur.
   options:
@@ -367,6 +397,12 @@ rise:
 rollLineCollarHeight:
   description: Hoe dicht de breuklijn van de kraag tegen je nek aan ligt.
   title: Hoogte breuklijn kraag
+seamlessFullCircle:
+  description: 'Select ''yes'' for a seamless circle, which is cut on a double fold. Since it has no openings, you''ll need an elastic waistband. This produces a full circle ignoring the ''circle percent'' option TODO TODO'
+  options:
+    - No TODO TODO
+    - Yes TODO TODO
+  title: Seamless full circle TODO TODO
 seatEase:
   description: De hoeveelheid overwijdte aan je kont.
   title: Overwijdte zitvlak
@@ -423,6 +459,15 @@ tipWidth:
     _default: De breedte van de puntjes van de vlinderdas.
     trayvon: De breedte van de punt van de das.
   title: Breedte punt
+waistBand:
+  description: Waist Band TODO TODO
+  options:
+    'no': No TODO TODO
+    'yes': Yes TODO TODO
+  title: Waist band TODO TODO
+waistBandWidth:
+  description: Waist Band height TODO TODO
+  title: Waist band height TODO TODO
 waistEase:
   description: De hoeveelheid extra ruimte aan je (natuurlijke) taille.
   title: Overwijdte taille
@@ -435,9 +480,30 @@ waistReductionRatioBack:
 waistReductionRatioFront:
   description: Hoeveel de taille ingenomen wordt door de neep in het voorpand. Heeft impact op de vorm van het zijpand.
   title: 'Reductie taille: ratio voor'
+waistSideSeamRaise:
+  description: Raise of the waist at the side seam TODO TODO
+  title: Waist Side Seam Raise TODO TODO
+waistbandOverlap:
+  description: 'The length of the overlap between the ends of the waistband, to allow a button. 0 means no overlap, for example to place a zipper that goes all the way to the top of the waistband TODO TODO'
+  title: Waistband overlap TODO TODO
+waistbandPosition:
+  description: 'Where the waistband sits. 0% makes it sit on the natural waist, 100% makes it sit on the hips TODO TODO'
+  title: Waistband position TODO TODO
+waistbandShape:
+  description: 'The shape of the waistband. Straight makes things easier, but a rounded waistband adapts to your body if you have a fair difference between waist and hips circumferences TODO TODO'
+  options:
+    - Straight TODO TODO
+    - Curved TODO TODO
+  title: Waistband shape TODO TODO
 waistbandWidth:
   description: De breedte van de tailleband.
   title: Breedte tailleband
 yokeDart:
   description: Of je een neep aan de zijkanten van de schouderpas wil om beter te passen voor een ronde rug.
   title: Neep schouderpas
+zipperLocation:
+  description: Zipper placement TODO TODO
+  options:
+    back: Back seam TODO TODO
+    side: Side seam TODO TODO
+  title: Zipper placement TODO TODO

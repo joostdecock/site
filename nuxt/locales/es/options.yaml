@@ -13,6 +13,9 @@ armholeDepthFactor:
 armholeDrop:
   description: Baja la sisa esta cantidad. Valores negativos la elevan.
   title: Caída de la sisa
+backDartDepthFactor:
+  description: The Depth of the back dart as a percentage of the Waist to Hip measurement TODO
+  title: Back Dart Depth Factor TODO
 backDrop:
   description: En qué medida los paneles posteriores se extienden bajo la cadera. Valores negativos los elevan sobre ella.
   title: Caída de la espalda
@@ -151,6 +154,9 @@ chestPocketWidth:
 chestShaping:
   description: 'la cantidad vertical a esparcir en el panel frontal para dar forma al pecho, como factor de tu circunferencia de pecho.'
   title: Forma del pecho
+circlePercent:
+  description: 'The percent of a circle skirt. 100% makes a full circle skirt, 50% makes a half circle skirt TODO'
+  title: Circle percent TODO
 collarAngle:
   description: El ángulo de los picos del cuello
   title: Ángulo del pico del cuello
@@ -215,6 +221,9 @@ cuffStyle:
     '5': Puño francés en ángulo
     '6': Puño francés recto
   title: Estilo del puño
+dartToSideSeamFactor:
+  description: Shifts the intake from the darts to the side seam and visa versa TODO
+  title: Dart to Side Seam Factor TODO
 elasticWidth:
   description: La anchura del elástico que piensas usar.
   title: Anchura del elástico
@@ -231,12 +240,18 @@ extraTopButton:
     - Sin botón extra
     - Con botón extra
   title: Botón extra superior
+extraWaist:
+  description: The percent by which the top of the skirt is longer than the bottom of the waistband. Give a value higher than 0 to pleat the skirt TODO
+  title: Extra waist TODO
 frontCutawayAngle:
   description: El ángulo de la apertura bajo el último botón.
   title: Ángulo de la apertura inferior por delante
 frontCutawayStart:
   description: La apertura del cierre delantero bajo el último botón.
   title: Apertura inferior por delante
+frontDartDepthFactor:
+  description: The Depth of the front dart as a percentage of the Waist to Hip measurement TODO
+  title: Front Dart Depth Factor TODO
 frontDartPlacement:
   description: La posición de la pinza frontal como fracción de tu circunferencia de pecho. Números más alto la mueven hacia el lado.
   title: Posición de la pinza frontal
@@ -273,6 +288,9 @@ frontStyle:
 headEase:
   description: La holgura en la cabeza.
   title: Holgura de cabeza
+hemBonus:
+  description: Additional width at the hem TODO
+  title: Hem bonus TODO
 hemCurve:
   description: La altura de la curva en un dobladillo redondeado.
   title: Curva del dobladillo
@@ -292,6 +310,9 @@ hemStyle:
       '1': Clásico
       '2': Redondeado
   title: Estilo del dobladillo
+hemWidth:
+  description: The width of the hem TODO
+  title: Hem width TODO
 hipFlare:
   description: La cantidad a ensanchar la camisa bajo la cintura.
   title: Extra holgura en la cadera
@@ -316,6 +337,9 @@ legBonus:
 legStretch:
   description: 'Para mejores resultados, tus piernas deben ajustarse cómodamente.'
   title: Estiramiento de la pernera
+length:
+  description: The length of the skirt TODO
+  title: Skirt length TODO
 lengthBonus:
   description: La cantidad a elongar. Valores negativos lo acortan.
   title: Extra de longitud
@@ -331,6 +355,12 @@ necklineBend:
 necklineDrop:
   description: La cantidad de cuello que se corta en el frente.
   title: Caída del cuello
+nrOfDarts:
+  description: Number of darts on each part TODO
+  options:
+    '1': 1
+    '2': 2
+  title: Number of darts TODO
 panels:
   description: La cantidad de paneles a trazar. Más paneles permiten un mejor ajuste para cuerpos con más curvas.
   options:
@@ -367,6 +397,12 @@ rise:
 rollLineCollarHeight:
   description: La cantidad en la que la línea de doblado del cuello se acerca al cuello.
   title: Altura del doblado del cuello
+seamlessFullCircle:
+  description: 'Select ''yes'' for a seamless circle, which is cut on a double fold. Since it has no openings, you''ll need an elastic waistband. This produces a full circle ignoring the ''circle percent'' option TODO'
+  options:
+    - No TODO
+    - Yes TODO
+  title: Seamless full circle TODO
 seatEase:
   description: La cantidad de holgura en el trasero.
   title: Holgura de trasero.
@@ -423,6 +459,15 @@ tipWidth:
     _default: La anchura de las alas de la corbata en la punta.
     trayvon: La anchura de la corbata en la punta.
   title: Anchura de la punta
+waistBand:
+  description: Waist Band TODO
+  options:
+    'no': No TODO
+    'yes': Yes TODO
+  title: Waist band TODO
+waistBandWidth:
+  description: Waist Band height TODO
+  title: Waist band height TODO
 waistEase:
   description: La cantidad de holgura en la cintura.
   title: Holgura de cintura
@@ -435,9 +480,30 @@ waistReductionRatioBack:
 waistReductionRatioFront:
   description: Proporción de la reducción de cintura que se hace con el panel delantero. También influenciará la forma del panel lateral.
   title: 'Reducción de cintura: proporcion del panel delantero'
+waistSideSeamRaise:
+  description: Raise of the waist at the side seam TODO
+  title: Waist Side Seam Raise TODO
+waistbandOverlap:
+  description: 'The length of the overlap between the ends of the waistband, to allow a button. 0 means no overlap, for example to place a zipper that goes all the way to the top of the waistband TODO'
+  title: Waistband overlap TODO
+waistbandPosition:
+  description: 'Where the waistband sits. 0% makes it sit on the natural waist, 100% makes it sit on the hips TODO'
+  title: Waistband position TODO
+waistbandShape:
+  description: 'The shape of the waistband. Straight makes things easier, but a rounded waistband adapts to your body if you have a fair difference between waist and hips circumferences TODO'
+  options:
+    - Straight TODO
+    - Curved TODO
+  title: Waistband shape TODO
 waistbandWidth:
   description: La anchura de la cinturilla.
   title: Anchura de la cinturilla
 yokeDart:
   description: Si se incluye una pinza en los lados del canesú para ajustar una espalda más redondeada.
   title: Pinza del canesú
+zipperLocation:
+  description: Zipper placement TODO
+  options:
+    back: Back seam TODO
+    side: Side seam TODO
+  title: Zipper placement TODO

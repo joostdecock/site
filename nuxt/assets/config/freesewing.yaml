@@ -43,7 +43,7 @@ i18n:
   origin: en
   stats:
     de:
-      app: 323
+      app: 326
       blog: 0
       docs: 0
       i18n: 6
@@ -57,9 +57,9 @@ i18n:
       blog: 31
       docs: 347
       i18n: 9
-      measurements: 26
+      measurements: 27
       optiongroups: 12
-      options: 301
+      options: 348
       patterns: 37
       showcase: 51
     es:
@@ -87,7 +87,7 @@ i18n:
       blog: 3
       docs: 7
       i18n: 9
-      measurements: 26
+      measurements: 27
       optiongroups: 12
       options: 301
       patterns: 37
@@ -137,9 +137,9 @@ i18n:
     blog: 31
     docs: 347
     i18n: 9
-    measurements: 26
+    measurements: 27
     optiongroups: 12
-    options: 301
+    options: 348
     patterns: 37
     showcase: 51
   template: xx

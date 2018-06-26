@@ -25,6 +25,7 @@ all:
     highBust: highBust
     bustSpan: bustSpan
     highPointShoulderToBust: highPointShoulderToBust
+    naturalWaistToKnee: naturalWaistToKnee
 breasts:
     underBust: underBust
     highBust: highBust
@@ -52,3 +53,4 @@ noBreasts:
     seatDepth: seatDepth
     naturalWaistToFloor: naturalWaistToFloor
     naturalWaistToSeat: naturalWaistToSeat
+    naturalWaistToKnee: naturalWaistToKnee
