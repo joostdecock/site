@@ -355,7 +355,7 @@ txt-modelsWithMissingMeasurements: 'Diese Modelle benoetigen noch Masse um diese
 txt-newModel: 'Um zu beginnen gebe bitte deinem Modell einen Namen.'
 txt-noModels: 'Ohne ein Modell kannst du hier nicht viel anstellen.'
 txt-noValidModels: Keine deiner Modelle haben die noetigen Masse fuer dieses Schnittmuster
-txt-password-policy: We don't enforce a password policy TODO
+txt-password-policy: Wir haben keine strikten Passwort-Rictlinien
 txt-passwordRecoverConfirmationNotFound: 'Sorry aber wir haben keine ausstehende Passwortwiederherstellung fuer diesen Bestaetigungscode. Vielleicht ist es verfallen, in welchem Fall du einfach ein neues beantragen kannst.'
 txt-resend: 'Du kannst Dich nochmals mit der selben Emailadresse anmelden und wir senden dir eine neue Bestaetigung.'
 txt-saOption-custom: Benutzerdefinierte Nahtzugabe
@@ -389,7 +389,7 @@ user: Benutzer
 userHasBeenWithUsSince: '{user} ist seit {since} bei uns'
 userIsAPatron: '{user} ist ein Patron'
 username: Benutzername
-usernameOrEmail: '@:username or @:emailAddress DONE'
+usernameOrEmail: '@:username oder @:emailAddress'
 usernameUpdated: Benutzername aktualisiert
 users: Benutzer
 version: Version DONE
