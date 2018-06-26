@@ -152,6 +152,11 @@ module.exports = {
           name: 'English'
         },
         {
+          code: 'de',
+          iso: 'de-DE',
+          name: 'Deutsch'
+        },
+        {
           code: 'es',
           iso: 'es-ES',
           name: 'Español'
@@ -167,6 +172,7 @@ module.exports = {
       vueI18n: {
         messages: {
           en: require('./nuxt/locales/en/en.json'),
+          de: require('./nuxt/locales/de/de.json'),
           es: require('./nuxt/locales/es/es.json'),
           nl: require('./nuxt/locales/nl/nl.json'),
         },

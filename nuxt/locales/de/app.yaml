@@ -323,7 +323,7 @@ txt-consentProfileQuestionWhy: Warum brauchen wir sie?
 txt-contentLocaleFallback: Deshalb wird Dir stattdessen die englische Version angezeigt.
 txt-contentNotTranslated: 'Leider wurde diese Seite (noch) nicht auf {language} übersetzt.'
 txt-dataExport: 'Wenn Du möchtest, können wir alle Daten, die wir für Dich gespeichert haben, exportieren.'
-txt-dataExportQueued: Dein Datenexport ist in der Warteschleife. Wenn es bereit ist, bekommst du eine Email mit dem Download-Link zugesandt.
+txt-dataExportQueued: 'Dein Datenexport ist in der Warteschleife. Wenn es bereit ist, bekommst du eine Email mit dem Download-Link zugesandt.'
 txt-didYouSpotATypo: Hast du ein Schreibfehler entdeckt? Hast du das Gefühl etwas fehle oder bedarf weiterer Klärung?
 txt-doYouObject: 'Widersprichst Du, Deine anonymisierten Daten für wissenschaftliche Recherche weiterzugeben?'
 txt-editThisPageOnline: Du kannst diese Seite online anpassen und deine Änderungen einreichen.
@@ -336,8 +336,8 @@ txt-footer: 'Freesewing wurde von Joost De Cock & den Mitwirkenden<br> kreiert, 
 txt-forgot-login: 'Benutzername oder Emailadresse eingeben und den <b>@:resetPassword</b> Knopf druecken'
 txt-gdpr-1: Die Datenschutz-Grundverordnung (DSGVO) der Europaeischen Union (EU) beschuetzt deine Daten vor skrupellosen Dantensammler. Das ist etwas gutes!
 txt-gdpr-2: 'Eine der Dinge die es vorrausetzt, ist das wir deine Zustimmung erfragen muessen damit wir deine persoehnlichen Daten bearbeiten duerfen.'
-txt-gdpr-3: 'Ohne deine Zustimmung haben wir keine rechtliche Grundlage dafuer deine Daten zu bearbeiten und es bleibt uns nichts anderes uebrig als diese zu loeschen.'
-txt-gdprCompliant: 'Freesewing.org respektiert deine Privatsphaere und Rechte. Deshalb folden wir der Datenschutz-Grundverordnung (DSGVO) der Europaeischen Union (EU).'
+txt-gdpr-3: Ohne deine Zustimmung haben wir keine rechtliche Grundlage dafuer deine Daten zu bearbeiten und es bleibt uns nichts anderes uebrig als diese zu loeschen.
+txt-gdprCompliant: Freesewing.org respektiert deine Privatsphaere und Rechte. Deshalb folden wir der Datenschutz-Grundverordnung (DSGVO) der Europaeischen Union (EU).
 txt-homepage-community: Alles wird von freiwilligen Mitwirkenden am Leben erhalten. Es existieren keine kommerziellen Absichten im Zusammenhang mit diesem Projekt.
 txt-homepage-different: Was uns unterscheidet
 txt-homepage-draft: 'Wähle eines Deiner Schnittmuster, wähle ein Modell und entscheide dich für die Optionen. Den Rest erledigen wir.'
@@ -347,17 +347,17 @@ txt-homepage-model: Alle unsere Schnittmuster werden nach individuellen Maßen g
 txt-homepage-opensource: 'Diese Plattform, unsere Schnittmuster und sogar diese Website: Alle unsere Entwicklungen sind auf GitHub zugänglich. Dein Beitrag ist herzlich willkommen!'
 txt-homepage-patrons: 'Freesewing wird durch die finanzielle Unterstützung unserer Gönner überhaupt erst möglich gemacht. Sie sorgen dafür, dass es weiter geht.'
 txt-homepage-quotes: Was andere darüber sagen
-txt-joinTheTranslationTeam1: 'Auch wenn du noch nie zu einem OpenSource Projekt begetragen hast ist Uebersetzung ein glatter Einstig in Richtung Beitragsruhm.'
-txt-joinTheTranslationTeam2: 'Es ist egal ob du nur ein paar Worte  oder eine ganze Sprache uebersetzt. Jeder Beiotrag zaehlt und viele Haende machen bald ein Ende.'
+txt-joinTheTranslationTeam1: Auch wenn du noch nie zu einem OpenSource Projekt begetragen hast ist Uebersetzung ein glatter Einstig in Richtung Beitragsruhm.
+txt-joinTheTranslationTeam2: Es ist egal ob du nur ein paar Worte  oder eine ganze Sprache uebersetzt. Jeder Beiotrag zaehlt und viele Haende machen bald ein Ende.
 txt-joinTheTranslationTeam3: 'Lese die Dokumentation fuer Uebersetzer um zu beginnen. Keine Sorge, es ist ganz einfach!'
 txt-missingBlogPosts: Nicht alle Blog-Eintrage sind auf English uebersetzt - abe rdu koenntest das aendern.
 txt-modelsWithMissingMeasurements: 'Diese Modelle benoetigen noch Masse um dieses Schnittmuster herzustellen:'
-txt-newModel: 'Um zu beginnen gebe bitte deinem Modell einen Namen.'
-txt-noModels: 'Ohne ein Modell kannst du hier nicht viel anstellen.'
+txt-newModel: Um zu beginnen gebe bitte deinem Modell einen Namen.
+txt-noModels: Ohne ein Modell kannst du hier nicht viel anstellen.
 txt-noValidModels: Keine deiner Modelle haben die noetigen Masse fuer dieses Schnittmuster
 txt-password-policy: Wir haben keine strikten Passwort-Rictlinien
 txt-passwordRecoverConfirmationNotFound: 'Sorry aber wir haben keine ausstehende Passwortwiederherstellung fuer diesen Bestaetigungscode. Vielleicht ist es verfallen, in welchem Fall du einfach ein neues beantragen kannst.'
-txt-resend: 'Du kannst Dich nochmals mit der selben Emailadresse anmelden und wir senden dir eine neue Bestaetigung.'
+txt-resend: Du kannst Dich nochmals mit der selben Emailadresse anmelden und wir senden dir eine neue Bestaetigung.
 txt-saOption-custom: Benutzerdefinierte Nahtzugabe
 txt-saOption-imperial: Standard Angloamerikanishe Masszugabe
 txt-saOption-metric: Standart metrische Masszugabe
@@ -369,10 +369,10 @@ txt-signup-step2: Bestätige deine E-Mail Adresse
 txt-signup-step3: 'Erlaube uns, Deine persönlichen Daten zu verarbeiten.'
 txt-slogan: Eine Open Source Plattform für Schnittmuster nach Maß
 txt-translators1: Wir suchen Leute die uns mit unserer Uebersetzungsinitiative aushelfen koennen.
-txt-translators2: 'Viele Haende machen bald eine Ende und auf dieser Art beizutragen macht exzellentes Karma.'
+txt-translators2: Viele Haende machen bald eine Ende und auf dieser Art beizutragen macht exzellentes Karma.
 txt-translators3: 'Um mehr darueber zu erfahren was du tun und wie du es tun kannst, klick den untenstehenden Link'
 txt-warningDataRestriction: 'Sollten wir dein Konto einschraenken, kannst du es nicht selbst reaktivieren. Um erneut Zugriff zu bekommen, must du uns kontaktieren.'
-txt-warningModelData: 'Dies loescht all deine Modelle und all deine Entwuerfe.'
+txt-warningModelData: Dies loescht all deine Modelle und all deine Entwuerfe.
 txt-warningProfileData: 'Dies loescht all deine Modelle, all deine Entwuerfe, deine Kommentare und dein Konto. Alles ist dann weg.'
 txt-withOrWithoutBreasts: 'Um weibliche Oberweite anzupassen werden viele extra Masse benotigt die unnotig sind wenn das Modell keine Brueste hat. Wenn du angibst das dein Model keine Brueste hat werden wir dir nicht die Masse angeben da sie nicht gebraucht werden. Wenn du unsicher bist was du ausswaehlen sollst, wahle Brueste aus.'
 txt-withOrWithoutBreasts-explainer: 'Auf anderen Webseiten, wird die Frage mit ''männlich oder weiblich?'' formuliert. Wir wollen Menschen nicht in diese Schubladen stecken. Uns interessiert nur, dass das Kleidungsstück gut am Oberkörper anliegt.'
@@ -407,7 +407,7 @@ wouldYouLikeToLogOut: Willst Du Dich ausloggen?
 yearsAgo: 'Vor {years} Jahren'
 'yes': Ja
 yesIDo: 'Ja, ich will'
-yesIDoObject: 'Ja ich erhebe Einspruch'
+yesIDoObject: Ja ich erhebe Einspruch
 yesterday: Gestern
 youAreCurrentlyLoggedIn: Du bist aktuell eingelogged.
 youAreNotAnAdmin: Du bist kein Administrator.
