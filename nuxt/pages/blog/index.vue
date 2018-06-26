@@ -17,7 +17,7 @@
         </v-flex>
       </v-layout>
     </v-container>
-    <blockquote class="i18n mt-5 fs-m800" v-if="$i18n.locale != $i18n.fallbackLocale">
+    <blockquote class="i18n mt-5 fs-m800 fs-bq" v-if="$i18n.locale != $i18n.fallbackLocale">
       <h5>{{ $t('txt-missingBlogPosts') }}</h5>
       <p>{{ $t('txt-translators1') }}</p>
       <p>{{ $t('txt-translators2') }}</p>
