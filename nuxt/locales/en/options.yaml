@@ -490,9 +490,9 @@ waistReductionRatioBack:
 waistReductionRatioFront:
   description: Proportion of the waist to be reduced in the front dart. Will also impact side panel shaping.
   title: 'Waist reduction: front ratio'
-waistSideSeamRaise:
-  description: Raise of the waist at the side seam
-  title: Waist Side Seam Raise
+waistSideSeamRise:
+  description: Rise of the waist at the side seam
+  title: Waist Side Seam Rise
 waistbandOverlap:
   description: 'The length of the overlap between the ends of the waistband, to allow a button. 0 means no overlap, for example to place a zipper that goes all the way to the top of the waistband'
   title: Waistband overlap

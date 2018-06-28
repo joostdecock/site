@@ -480,7 +480,7 @@ waistReductionRatioBack:
 waistReductionRatioFront:
   description: Proportion of the waist to be reduced in the front dart. Will also impact side panel shaping. TODO
   title: 'Waist reduction: front ratio TODO'
-waistSideSeamRaise:
+waistSideSeamRise:
   description: Raise of the waist at the side seam TODO TODO TODO TODO TODO
   title: Waist Side Seam Raise TODO TODO TODO TODO TODO
 waistbandOverlap:

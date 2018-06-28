@@ -2754,9 +2754,9 @@ penelope:
             min: 0
             max: 60
             default: 10
-        waistSideSeamRaise:
-            title: 'Waist Side Seam Raise'
-            description: 'Raise of the waist at the side seam'
+        waistSideSeamRise:
+            title: 'Waist Side Seam Rise'
+            description: 'Rise of the waist at the side seam'
             group: fit
             type: measure
             min: 0
@@ -2800,7 +2800,7 @@ penelope:
             - seatEase
             - waistEase
         fit:
-            - waistSideSeamRaise
+            - waistSideSeamRise
             - backDartDepthFactor
             - frontDartDepthFactor
             - dartToSideSeamFactor

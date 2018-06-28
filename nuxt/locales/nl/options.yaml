@@ -480,9 +480,9 @@ waistReductionRatioBack:
 waistReductionRatioFront:
   description: Hoeveel de taille ingenomen wordt door de neep in het voorpand. Heeft impact op de vorm van het zijpand.
   title: 'Reductie taille: ratio voor'
-waistSideSeamRaise:
-  description: Raise of the waist at the side seam TODO TODO
-  title: Waist Side Seam Raise TODO TODO
+waistSideSeamRise:
+  description: Raise of the waist at the side seam TODO TODO TODO
+  title: Waist Side Seam Raise TODO TODO TODO
 waistbandOverlap:
   description: 'The length of the overlap between the ends of the waistband, to allow a button. 0 means no overlap, for example to place a zipper that goes all the way to the top of the waistband TODO TODO'
   title: Waistband overlap TODO TODO

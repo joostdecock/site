@@ -480,9 +480,9 @@ waistReductionRatioBack:
 waistReductionRatioFront:
   description: Proporción de la reducción de cintura que se hace con el panel delantero. También influenciará la forma del panel lateral.
   title: 'Reducción de cintura: proporcion del panel delantero'
-waistSideSeamRaise:
-  description: Raise of the waist at the side seam TODO
-  title: Waist Side Seam Raise TODO
+waistSideSeamRise:
+  description: Raise of the waist at the side seam TODO TODO
+  title: Waist Side Seam Raise TODO TODO
 waistbandOverlap:
   description: 'The length of the overlap between the ends of the waistband, to allow a button. 0 means no overlap, for example to place a zipper that goes all the way to the top of the waistband TODO'
   title: Waistband overlap TODO

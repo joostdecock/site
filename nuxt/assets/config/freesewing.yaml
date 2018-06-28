@@ -55,7 +55,7 @@ i18n:
     en:
       app: 420
       blog: 31
-      docs: 347
+      docs: 365
       i18n: 8
       measurements: 27
       optiongroups: 12
@@ -135,7 +135,7 @@ i18n:
   target:
     app: 420
     blog: 31
-    docs: 347
+    docs: 365
     i18n: 8
     measurements: 27
     optiongroups: 12
