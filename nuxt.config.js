@@ -239,6 +239,7 @@ module.exports = {
         '/patterns/carlton',
         '/patterns/florent',
         '/patterns/jaeger',
+        '/patterns/penelope',
 
         '/draft/aaron',
         '/draft/brian',
@@ -258,6 +259,7 @@ module.exports = {
         '/draft/carlton',
         '/draft/florent',
         '/draft/jaeger',
+        '/draft/penelope',
     ]
   },
   build: {
