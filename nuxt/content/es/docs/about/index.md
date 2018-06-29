@@ -30,6 +30,6 @@ Puede que estés aquí por nuestros patrones, pero también ofrecemos herramient
 Ya que nuestros patrones están implementados en código, crearlos requiere habilidades de diseño y programación.
 Habilidades tan variadas no se encuentran normalmente en la misma persona, por lo que recomendamos la colaboración entre un desarrollador de software y un diseñador de patrones.
 
-Pásate por [nuestro chat en Gitter] (https://gitter.im/freesewing/freesewing) para encontrar personas con las que hacer equipo y añadir nuevos y geniales patrones a nuestra creciente colección.
+Pásate por [nuestro chat en Gitter](https://gitter.im/freesewing/freesewing) para encontrar personas con las que hacer equipo y añadir nuevos y geniales patrones a nuestra creciente colección.
 
 También es el mejor lugar al que acudir si tienes cualquier otra pregunta.

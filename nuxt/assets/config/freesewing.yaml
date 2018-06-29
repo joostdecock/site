@@ -31,42 +31,42 @@ i18n:
     - patterns
   locales:
     disabled:
-      - de
       - fr
       - 'no'
       - sv
       - pt
     enabled:
       - en
+      - de
       - es
       - nl
   origin: en
   stats:
     de:
-      app: 323
+      app: 420
       blog: 0
       docs: 0
-      i18n: 6
-      measurements: 19
-      optiongroups: 10
+      i18n: 8
+      measurements: 27
+      optiongroups: 12
       options: 0
       patterns: 37
       showcase: 0
     en:
       app: 420
       blog: 31
-      docs: 347
-      i18n: 9
-      measurements: 26
+      docs: 365
+      i18n: 8
+      measurements: 27
       optiongroups: 12
-      options: 301
+      options: 348
       patterns: 37
       showcase: 51
     es:
       app: 420
       blog: 2
       docs: 1
-      i18n: 9
+      i18n: 8
       measurements: 26
       optiongroups: 12
       options: 300
@@ -76,7 +76,7 @@ i18n:
       app: 395
       blog: 0
       docs: 0
-      i18n: 9
+      i18n: 8
       measurements: 26
       optiongroups: 11
       options: 0
@@ -86,8 +86,8 @@ i18n:
       app: 419
       blog: 3
       docs: 7
-      i18n: 9
-      measurements: 26
+      i18n: 8
+      measurements: 27
       optiongroups: 12
       options: 301
       patterns: 37
@@ -135,11 +135,11 @@ i18n:
   target:
     app: 420
     blog: 31
-    docs: 347
-    i18n: 9
-    measurements: 26
+    docs: 365
+    i18n: 8
+    measurements: 27
     optiongroups: 12
-    options: 301
+    options: 348
     patterns: 37
     showcase: 51
   template: xx

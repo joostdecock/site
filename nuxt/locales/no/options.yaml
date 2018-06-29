@@ -13,6 +13,9 @@ armholeDepthFactor:
 armholeDrop:
   description: Lower the armhole by this amount. Negative values will raise it. TODO
   title: Armhole drop TODO
+backDartDepthFactor:
+  description: The Depth of the back dart as a percentage of the Waist to Hip measurement TODO TODO TODO TODO TODO
+  title: Back Dart Depth Factor TODO TODO TODO TODO TODO
 backDrop:
   description: How much the back panels lower from your hips towards your center back. Negative values will raise the back. TODO
   title: Back drop TODO
@@ -151,6 +154,9 @@ chestPocketWidth:
 chestShaping:
   description: 'The vertical amount to slash & spread the upper front panel to shape the chest, as a factor of your chest circumference. TODO'
   title: Chest shaping TODO
+circlePercent:
+  description: 'The percent of a circle skirt. 100% makes a full circle skirt, 50% makes a half circle skirt TODO TODO TODO TODO TODO'
+  title: Circle percent TODO TODO TODO TODO TODO
 collarAngle:
   description: The angle of the collar tips. TODO
   title: Collar angle TODO
@@ -215,6 +221,9 @@ cuffStyle:
     '5': Angled French cuff TODO TODO TODO TODO TODO
     '6': Straight French cuff TODO TODO TODO TODO TODO
   title: Cuff style TODO
+dartToSideSeamFactor:
+  description: Shifts the intake from the darts to the side seam and visa versa TODO TODO TODO TODO TODO
+  title: Dart to Side Seam Factor TODO TODO TODO TODO TODO
 elasticWidth:
   description: Width of the elastic band you intend to use. TODO
   title: Elastic width TODO
@@ -231,12 +240,18 @@ extraTopButton:
     - No extra top button TODO TODO TODO TODO TODO
     - Extra top button TODO TODO TODO TODO TODO
   title: Extra top button TODO
+extraWaist:
+  description: The percent by which the top of the skirt is longer than the bottom of the waistband. Give a value higher than 0 to pleat the skirt TODO TODO TODO TODO TODO
+  title: Extra waist TODO TODO TODO TODO TODO
 frontCutawayAngle:
   description: How much do you want the front to open up below the lower button. TODO
   title: Front opening bottom cutaway angle TODO
 frontCutawayStart:
   description: How much do you want the front to open up below the lower button. TODO
   title: Front opening bottom cutaway start TODO
+frontDartDepthFactor:
+  description: The Depth of the front dart as a percentage of the Waist to Hip measurement TODO TODO TODO TODO TODO
+  title: Front Dart Depth Factor TODO TODO TODO TODO TODO
 frontDartPlacement:
   description: Location of the front dart as a proportion of your chest circumference. Higher numbers move it more to the side. TODO
   title: Front dart placement TODO
@@ -273,6 +288,9 @@ frontStyle:
 headEase:
   description: The amount of ease to fit the cap on your head. TODO
   title: Head ease TODO
+hemBonus:
+  description: Additional width at the hem TODO TODO TODO TODO TODO
+  title: Hem bonus TODO TODO TODO TODO TODO
 hemCurve:
   description: The height of the curve on a curved hem. TODO
   title: Hem curve TODO
@@ -292,6 +310,9 @@ hemStyle:
       '1': Classic TODO TODO TODO TODO TODO
       '2': Rounded TODO TODO TODO TODO TODO
   title: Hem style TODO
+hemWidth:
+  description: The width of the hem TODO TODO TODO TODO TODO
+  title: Hem width TODO TODO TODO TODO TODO
 hipFlare:
   description: The amount to widen the shirt below the waist. TODO
   title: Hip flare TODO
@@ -316,6 +337,9 @@ legBonus:
 legStretch:
   description: 'For best results, you want to fit your legs a but more snugly — say no to gaping. TODO'
   title: Leg stretch TODO
+length:
+  description: The length of the skirt TODO TODO TODO TODO TODO
+  title: Skirt length TODO TODO TODO TODO TODO
 lengthBonus:
   description: The amount to lengthen the garment. A negative value will shorten it. TODO
   title: Length bonus TODO
@@ -331,6 +355,12 @@ necklineBend:
 necklineDrop:
   description: The amount the neck is cutout at the front. TODO
   title: Neckline drop TODO
+nrOfDarts:
+  description: Number of darts on each part TODO TODO TODO TODO TODO
+  options:
+    '1': 1
+    '2': 2
+  title: Number of darts TODO TODO TODO TODO TODO
 panels:
   description: The number of panels to draft. More panels are better to fit a curvier model. TODO
   options:
@@ -367,6 +397,12 @@ rise:
 rollLineCollarHeight:
   description: The amount by which the roll line hugs the neck. TODO
   title: Roll line collar height TODO
+seamlessFullCircle:
+  description: 'Select ''yes'' for a seamless circle, which is cut on a double fold. Since it has no openings, you''ll need an elastic waistband. This produces a full circle ignoring the ''circle percent'' option TODO TODO TODO TODO TODO'
+  options:
+    - No TODO TODO TODO TODO TODO
+    - Yes TODO TODO TODO TODO TODO
+  title: Seamless full circle TODO TODO TODO TODO TODO
 seatEase:
   description: The amount of ease at your butt. TODO
   title: Seat ease TODO
@@ -423,6 +459,15 @@ tipWidth:
     _default: The width of the wings of the bow tie at the tip. TODO
     trayvon: The width of the tie at the tip. TODO
   title: Tip width TODO
+waistBand:
+  description: Waist Band TODO TODO TODO TODO TODO
+  options:
+    'no': No TODO TODO TODO TODO TODO
+    'yes': Yes TODO TODO TODO TODO TODO
+  title: Waist band TODO TODO TODO TODO TODO
+waistBandWidth:
+  description: Waist Band height TODO TODO TODO TODO TODO
+  title: Waist band height TODO TODO TODO TODO TODO
 waistEase:
   description: The amount of ease at your (natural) waist. TODO
   title: Waist ease TODO
@@ -435,9 +480,30 @@ waistReductionRatioBack:
 waistReductionRatioFront:
   description: Proportion of the waist to be reduced in the front dart. Will also impact side panel shaping. TODO
   title: 'Waist reduction: front ratio TODO'
+waistSideSeamRise:
+  description: Raise of the waist at the side seam TODO TODO TODO TODO TODO
+  title: Waist Side Seam Raise TODO TODO TODO TODO TODO
+waistbandOverlap:
+  description: 'The length of the overlap between the ends of the waistband, to allow a button. 0 means no overlap, for example to place a zipper that goes all the way to the top of the waistband TODO TODO TODO TODO TODO'
+  title: Waistband overlap TODO TODO TODO TODO TODO
+waistbandPosition:
+  description: 'Where the waistband sits. 0% makes it sit on the natural waist, 100% makes it sit on the hips TODO TODO TODO TODO TODO'
+  title: Waistband position TODO TODO TODO TODO TODO
+waistbandShape:
+  description: 'The shape of the waistband. Straight makes things easier, but a rounded waistband adapts to your body if you have a fair difference between waist and hips circumferences TODO TODO TODO TODO TODO'
+  options:
+    - Straight TODO TODO TODO TODO TODO
+    - Curved TODO TODO TODO TODO TODO
+  title: Waistband shape TODO TODO TODO TODO TODO
 waistbandWidth:
   description: The width of the waistband. TODO
   title: Waistband width TODO
 yokeDart:
   description: Whether to include a dart at the sides of the yoke to fit a rounder back. TODO
   title: Yoke dart TODO
+zipperLocation:
+  description: Zipper placement TODO TODO TODO TODO TODO
+  options:
+    back: Back seam TODO TODO TODO TODO TODO
+    side: Side seam TODO TODO TODO TODO TODO
+  title: Zipper placement TODO TODO TODO TODO TODO

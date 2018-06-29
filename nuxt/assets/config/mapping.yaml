@@ -19,6 +19,7 @@ handleToPatternTitle:
     florent: 'Florent Flat Cap'
     huey: 'Huey Hoodie'
     jaeger: 'Jaeger Jacket'
+    penelope: 'Penelope Pencil Skirt'
 handleToPattern:
     aaron: AaronAshirt
     brian: BrianBodyBlock
@@ -39,6 +40,7 @@ handleToPattern:
     florent: FlorentFlatCap
     huey: HueyHoodie
     jaeger: JaegerJacket
+    penelope: PenelopePencilSkirt
 patternToHandle:
     AaronAshirt: aaron
     BrianBodyBlock: brian
@@ -59,6 +61,7 @@ patternToHandle:
     FlorentFlatCap: florent
     HueyHoodie: huey
     JaegerJacket: jaeger
+    PenelopePencilSkirt: penelope
 handleToNamespace:
     aaron: Core
     brian: Core
@@ -79,3 +82,4 @@ handleToNamespace:
     florent: Beta
     huey: Beta
     jaeger: Beta
+    penelope: Beta
