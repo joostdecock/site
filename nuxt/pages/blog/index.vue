@@ -6,7 +6,7 @@
         <v-flex class="xs12 sm12 md6 xl6" v-for="post in posts" :key="post.permalink" >
             <div class="preview">
               <nuxt-link :to="post.permalink" :title="post.title"><span class="fs-block-link"></span></nuxt-link>
-              <img :src="imgSrc(post.permalink, post.img)" alt="post.tile" class="elevation-1"/>
+              <img :src="imgSrc(post.permalink, post.img)" :alt="post.title" class="elevation-1"/>
               <div class="title">
                 <p class="mb-0 mt-0 thetitle">
                   {{post.title}}
