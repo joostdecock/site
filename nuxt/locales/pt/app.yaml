@@ -232,6 +232,7 @@ retrievingDraftFromCore: Recuperando esboço do principal
 revokeConsent: Revogar consentimento
 rowsFromToOfTotal: 'Linhas {from} a {to} de {total}'
 rowsPerPage: Linhas por página
+sa: Seam allowance TODO
 save: Salvar
 scope: Escopo
 seamAllowance: Margem de costura

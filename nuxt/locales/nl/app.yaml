@@ -232,6 +232,7 @@ retrievingDraftFromCore: Patroontekening ophalen van core
 revokeConsent: Toestemming intrekken
 rowsFromToOfTotal: 'Rij {from} tot {to} van {total}'
 rowsPerPage: Rijen per pagina
+sa: Naadwaarde
 save: Opslaan
 scope: Scope DONE
 seamAllowance: Naadwaarde

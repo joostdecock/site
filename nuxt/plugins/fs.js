@@ -622,6 +622,7 @@ export default ({ app, store, route }, inject) => {
 
       // Translation pattern option title
       pot(option, pattern, locale) {
+        if(pattern === 'draft') return app.i18n.messages[locale][option]
         return app.i18n.messages[locale]._options[option].title
       },
 

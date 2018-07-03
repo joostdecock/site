@@ -232,6 +232,7 @@ retrievingDraftFromCore: Entwurf wird vom Kern abgerufen
 revokeConsent: Zustimmung zuruecknehemen
 rowsFromToOfTotal: 'Reihe {from} bis {to} von {total}'
 rowsPerPage: Reihen per Seite
+sa: Seam allowance TODO
 save: Speichern
 scope: Geltungsbereich
 seamAllowance: Nahtzugabe

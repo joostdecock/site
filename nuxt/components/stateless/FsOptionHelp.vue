@@ -1,6 +1,6 @@
 <template>
-  <div class="py-5">
-    <fs-docs-pattern-option-image :pattern="pattern" :option="option" />
+  <div class="py-5 fs-help">
+    <fs-docs-pattern-option-image :pattern="pattern" :option="option" v-if="pattern !== 'draft'"/>
     <div v-html="content.body"></div>
   </div>
 </template>
