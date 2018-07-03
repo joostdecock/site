@@ -50,8 +50,8 @@ export default {
     let computedDflt = this.$store.state.user.account.units
     let options = {
       none: 0,
-      metric: 1,
-      imperial: 0.625,
+      metric: (this.$store.state.user.account.units === 'imperial') ? 0.394 : 1,
+      imperial: (this.$store.state.user.account.units === 'imperial') ? 0.625 : 1.59,
       custom: 1
     }
     let pattern = this.$store.state.draft.defaults.pattern
