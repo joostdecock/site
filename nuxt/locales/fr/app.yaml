@@ -232,6 +232,7 @@ retrievingDraftFromCore: Récupération de l'ébauche depuis la base en cours
 revokeConsent: Retirer mon accord
 rowsFromToOfTotal: 'Rangs {from} à {to} de {total}'
 rowsPerPage: Rangs par page
+sa: Seam allowance TODO
 save: Sauvegarder
 scope: Portée
 seamAllowance: Valeur de couture

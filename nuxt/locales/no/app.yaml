@@ -232,6 +232,7 @@ retrievingDraftFromCore: Retrieving draft from core TODO
 revokeConsent: Revoke consent TODO
 rowsFromToOfTotal: 'Rows {from} to {to} of {total} TODO'
 rowsPerPage: Rows per page TODO
+sa: Seam allowance TODO
 save: Save TODO
 scope: Scope TODO
 seamAllowance: Seam allowance TODO

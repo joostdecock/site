@@ -232,6 +232,7 @@ retrievingDraftFromCore: Recuperando el boceto desde el núcleo
 revokeConsent: Revocar consentimiento
 rowsFromToOfTotal: 'Filas {from} a la {to} de {total} '
 rowsPerPage: Filas por página
+sa: Seam allowance TODO
 save: Guardar
 scope: Alcance
 seamAllowance: Margen de costura
