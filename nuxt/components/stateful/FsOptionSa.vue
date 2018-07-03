@@ -51,7 +51,7 @@ export default {
     let options = {
       none: 0,
       metric: 1,
-      imperial: 0,
+      imperial: 0.625,
       custom: 1
     }
     let pattern = this.$store.state.draft.defaults.pattern
