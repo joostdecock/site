@@ -84,3 +84,6 @@
 ## Admin user view
 /admin/users/:user  /admin/users/admin-user  200
 /:locale/admin/users/:user  /:locale/admin/users/admin-user  200
+
+## Cath-all route
+/*    /index.html   200
