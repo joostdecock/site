@@ -232,6 +232,7 @@ retrievingDraftFromCore: Hämtar skiss från grunden
 revokeConsent: Återkalla samtycke
 rowsFromToOfTotal: 'Rader {from} till {to} av {total} '
 rowsPerPage: Rader per sida
+sa: Seam allowance TODO
 save: Spara
 scope: Omfattning
 seamAllowance: Sömsmån

@@ -44,17 +44,17 @@ i18n:
   stats:
     de:
       app: 420
-      blog: 0
-      docs: 0
+      blog: 1
+      docs: 1
       i18n: 8
       measurements: 27
       optiongroups: 12
       options: 0
       patterns: 37
-      showcase: 0
+      showcase: 1
     en:
-      app: 420
-      blog: 31
+      app: 421
+      blog: 33
       docs: 365
       i18n: 8
       measurements: 27
@@ -83,7 +83,7 @@ i18n:
       patterns: 4
       showcase: 0
     nl:
-      app: 419
+      app: 420
       blog: 3
       docs: 7
       i18n: 8
@@ -133,8 +133,8 @@ i18n:
       patterns: 0
       showcase: 0
   target:
-    app: 420
-    blog: 31
+    app: 421
+    blog: 33
     docs: 365
     i18n: 8
     measurements: 27

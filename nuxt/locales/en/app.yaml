@@ -232,6 +232,7 @@ retrievingDraftFromCore: Retrieving draft from core
 revokeConsent: Revoke consent
 rowsFromToOfTotal: 'Rows {from} to {to} of {total}'
 rowsPerPage: Rows per page
+sa: Seam allowance
 save: Save
 scope: Scope
 seamAllowance: Seam allowance
