@@ -185,7 +185,7 @@ module.exports = {
     '~/plugins/fs'
   ],
   vuetify: {
-    materialIcons: false,
+    materialIcons: true,
     css: false,
     theme: {
       // This is Freesewing's signature purple
@@ -264,6 +264,7 @@ module.exports = {
   },
   build: {
     postcss: false,
+    extractCSS: true,
     /*
      ** Run ESLint on save
      */
