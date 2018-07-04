@@ -577,7 +577,7 @@ class BabyBib extends \Freesewing\Patterns\Core\Pattern
 Our `BabyBib` class _extends_ the `\Freesewing\Patterns\Core\Pattern` class. 
 `Pattern` in the `Core` pattern namespace is our so-called _parent class_.
 
-As a child of the `Pattern` class, we inherit (like, get for free) a bunch of it's functionality.
+As a child of the `Pattern` class, we inherit (like, get for free) a bunch of its functionality.
 
 > <h5 class='notoc'>Class inheritance is crucial in pattern design</h5>
 >
@@ -588,7 +588,7 @@ As a child of the `Pattern` class, we inherit (like, get for free) a bunch of it
 > Because this system of inheritance is built right into the code, we can leverage it
 > to easily extend one pattern into another.
 
-Because the `Pattern` class has a `setValue` method, we can just use it as it its part of our class
+Because the `Pattern` class has a `setValue` method, we can just use it as it is part of our class
 and behind the scenes, the `setValue` method of the `Pattern` class will be called.
 
 Until we decide that we want to implement our own `setValue` method. What we define ourselves
@@ -703,7 +703,7 @@ Then, we'll call the `draftBib` method that we'll get to in a moment, and pass i
 
 ### Creating the draftBib method
 
-Before we get to the real pattern drafting, we have to create the `draftBib`, because we just called in 
+Before we get to the real pattern drafting, we have to create the `draftBib`, because we just called it 
 in our `initialize` method, but it doesn't exist yet.
 
 We are going to replace the `draftExamplePart` method from the template with our own `draftBib` method.
