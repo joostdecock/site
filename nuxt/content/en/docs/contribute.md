@@ -57,7 +57,7 @@ We'd love to get pictures to [showcase](/showcase) on the site too.
 
 **Contribute to our code**
 
-Interesting in submitting a pull request for our code? Awesome. All our code is [on GitHub](https://github.com/freesewing). 
+Interested in submitting a pull request for our code? Awesome. All our code is [on GitHub](https://github.com/freesewing). 
 
 Our [chat room on Gitter](https://gitter.im/freesewing/freesewing) is the best place to discuss ideas or ask questions. 
 
