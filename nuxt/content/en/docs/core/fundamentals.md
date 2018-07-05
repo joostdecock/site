@@ -138,4 +138,4 @@ return the standard SVG, but turns that automatically in a PDF.
 ### Channels
 
 Channels currently handle unit conversions and access control.
-The will be removed in future versions of core, and you can largely ignore them.
+They will be removed in future versions of core, and you can largely ignore them.
