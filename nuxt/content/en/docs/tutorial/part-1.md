@@ -577,7 +577,7 @@ class BabyBib extends \Freesewing\Patterns\Core\Pattern
 Our `BabyBib` class _extends_ the `\Freesewing\Patterns\Core\Pattern` class. 
 `Pattern` in the `Core` pattern namespace is our so-called _parent class_.
 
-As a child of the `Pattern` class, we inherit (like, get for free) a bunch of it's functionality.
+As a child of the `Pattern` class, we inherit (like, get for free) a bunch of its functionality.
 
 > <h5 class='notoc'>Class inheritance is crucial in pattern design</h5>
 >
@@ -588,7 +588,7 @@ As a child of the `Pattern` class, we inherit (like, get for free) a bunch of it
 > Because this system of inheritance is built right into the code, we can leverage it
 > to easily extend one pattern into another.
 
-Because the `Pattern` class has a `setValue` method, we can just use it as it its part of our class
+Because the `Pattern` class has a `setValue` method, we can just use it as it is part of our class
 and behind the scenes, the `setValue` method of the `Pattern` class will be called.
 
 Until we decide that we want to implement our own `setValue` method. What we define ourselves
@@ -627,7 +627,7 @@ We'll start with the `Pattern->sample` method.
 >
 > Every pattern **must** have a `sample` method, because it will be called by the sample service.
 
-Look for this section in yuor BabyBib.php class file:
+Look for this section in your BabyBib.php class file:
 
 ```php
     /*
@@ -703,7 +703,7 @@ Then, we'll call the `draftBib` method that we'll get to in a moment, and pass i
 
 ### Creating the draftBib method
 
-Before we get to the real pattern drafting, we have to create the `draftBib`, because we just called in 
+Before we get to the real pattern drafting, we have to create the `draftBib`, because we just called it 
 in our `initialize` method, but it doesn't exist yet.
 
 We are going to replace the `draftExamplePart` method from the template with our own `draftBib` method.
@@ -952,7 +952,7 @@ and tweak it until we're happy.
 Since our neck opening is symmetric both vertical and horizontal, we only need to draw a quarter of it.
 We can just measure how long this curve is, multiply it by four, and we have our neck opening.
 
-Calculating the length of our neck opening, in done in
+Calculating the length of our neck opening, is done in
 a little helper method we created called `neckOpeningDelta`:
 
 ```php
@@ -1268,7 +1268,7 @@ so we have to call the method with this `::` syntax.
 > those two `use` lines at the top of your class file.
 
 Apart from that, all you need to know is that you can't draw a perfect
-(quarter) circle with Bezier curves. But you can get really close is you
+(quarter) circle with Bezier curves. But you can get really close if you
 offset the control points at just the right distance.
 
 `BezierToolbox::bezierCircle` gives you that distance for a radius you feed it.
@@ -1276,7 +1276,7 @@ offset the control points at just the right distance.
 #### Rotating points
 
 The other thing that is new is the call to `Part::rotate`.
-It's one the many helper functions in the `Part` class that
+It's one of the many helper functions in the `Part` class that
 you can use to create points.
 
 In this case, you guessed it, the method rotates one point around another
@@ -1284,7 +1284,7 @@ over a given number of degrees.
 
 #### Keeping pathstrings readable
 
-Next up, we're going to shape the top. Below is the code to give round the 
+Next up, we're going to shape the top. Below is the code to round the 
 top right of our bib along the neck opening.
 
 ```php
@@ -1449,9 +1449,9 @@ $p->paths['box']->setRender(false);
 We also want to avoid our neckopening and box being drawn.
 
 The fastest and most efficient way to do that is to just comment them out,
-like with did for the neck opening.
+like we did for the neck opening.
 
-But, you can also leave keep them from showing up by using the `path::setRender` 
+But, you can also keep them from showing up by using the `path::setRender` 
 method. Setting it to `false` will keep the path from being rendered.
 
 To call this on the `Path` object, you need to know they are stored in the `paths` attribute of the
