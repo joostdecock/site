@@ -42,8 +42,8 @@ backVent:
     - Un double évent dorsal
   title: évent dorsal
 backVentLength:
-  description: Controls the length of the back vent. Lower numbers result in a shorter vent. TODO
-  title: Back vent length TODO
+  description: Contrôle la longueur de l'évent dorsal. Les nombres plus petits entraînent un évent plus court.
+  title: Longueur de l'évent dorsal
 backlineBend:
   description: Determines the shape/bend of the back of the armholes. TODO
   title: Back armhole shape TODO
