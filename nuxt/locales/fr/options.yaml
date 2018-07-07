@@ -23,24 +23,24 @@ backInset:
   description: Quantité d'emmanchure arrière qui est coupée plus profondément dans le pan arrière.
   title: Encart arrière
 backOpening:
-  description: Opening at the center back closure. TODO
-  title: Back opening TODO
+  description: Ouverture au centre de la fermeture arrière.
+  title: Ouverture arrière
 backRise:
   description:
-    _default: The amount by which to raise the back. TODO
-    bruce: Percentage by which the waist will be raised at the back. TODO
-    cathrin: How much the back panels rise from your arms to your center back. TODO
-  title: Back rise TODO
+    _default: La quantité par laquelle augmenter le dos.
+    bruce: Pourcentage par lequel la taille sera augmentée à l'arrière.
+    cathrin: De combien les pans arrières réhaussent vos bras jusqu'au centre de votre dos.
+  title: hausse du dos
 backScyeDart:
-  description: The amount to take out in a dart at the back of the armhole. TODO
-  title: Back scye dart TODO
+  description: La quantité à retirer dans une pince à l'arrière de l'emmanchure.
+  title: Pince arrière sans gêne
 backVent:
-  description: 'Do you want a central back vent, or none at all? TODO'
+  description: 'Voulez-vous un évent dorsal central, ou pas du tout?'
   options:
-    - No back vent TODO TODO TODO TODO
-    - Single back vent TODO TODO TODO TODO
-    - Double back vent TODO TODO TODO TODO
-  title: Back vent TODO
+    - Pas d'évent dorsal
+    - Un seul évent dorsal
+    - Un double évent dorsal
+  title: évent dorsal
 backVentLength:
   description: Controls the length of the back vent. Lower numbers result in a shorter vent. TODO
   title: Back vent length TODO
