@@ -1,15 +1,15 @@
 acrossBackFactor:
-  description: Controls your across back width as a factor of your shoulder to shoulder measurement. TODO
-  title: Across back factor TODO
+  description: Contrôle la largeur de votre dos en tant que facteur de mesure d'une épaule à l'autre.
+  title: Facteur largeur du dos
 adjustmentRibbon:
-  description: Add a ribbon to make the tie adjustable. TODO
+  description: Ajouter un ruban pour rendre la cravate réglable.
   options:
-    - Do not include ribbon TODO TODO TODO TODO
-    - Include ribbon TODO TODO TODO TODO
-  title: Adjustment Ribbon TODO
+    - Ne pas inclure le ruban
+    - Inclure le ruban
+  title: Ajustement du ruban
 armholeDepthFactor:
-  description: Controls the depth of the armhole. Higher values make a deeper armhole. TODO
-  title: Armhole depth factor TODO
+  description: Contrôle la profondeur de l'emmanchure. Des valeurs plus élevées font une emmanchure plus profonde.
+  title: Facteur de profondeur de l'emmanchure
 armholeDrop:
   description: Lower the armhole by this amount. Negative values will raise it. TODO
   title: Armhole drop TODO
