@@ -11,17 +11,17 @@ armholeDepthFactor:
   description: Contrôle la profondeur de l'emmanchure. Des valeurs plus élevées font une emmanchure plus profonde.
   title: Facteur de profondeur de l'emmanchure
 armholeDrop:
-  description: Lower the armhole by this amount. Negative values will raise it. TODO
-  title: Armhole drop TODO
+  description: Abaisser l'emmanchure de cette quantité. Les valeurs négatives l'augmenteront.
+  title: Abaissement d'emmanchure
 backDartDepthFactor:
-  description: The Depth of the back dart as a percentage of the Waist to Hip measurement TODO TODO TODO TODO
-  title: Back Dart Depth Factor TODO TODO TODO TODO
+  description: La profondeur de la pince dos en pourcentage de la mesure de la taille à la hanche.
+  title: Facteur de la profondeur de la pince dos
 backDrop:
-  description: How much the back panels lower from your hips towards your center back. Negative values will raise the back. TODO
-  title: Back drop TODO
+  description: Combien les pans arrière s'abaissent de vos hanches vers votre milieu de dos. Les valeurs négatives augmenteront la longueur du dos.
+  title: Abaissement du dos
 backInset:
-  description: Amount the back armhole is cut deeper into the back panel. TODO
-  title: Back inset TODO
+  description: Quantité d'emmanchure arrière qui est coupée plus profondément dans le pan arrière.
+  title: Encart arrière
 backOpening:
   description: Opening at the center back closure. TODO
   title: Back opening TODO
