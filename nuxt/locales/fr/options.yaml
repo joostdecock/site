@@ -11,7 +11,7 @@ armholeDepthFactor:
   description: Contrôle la profondeur de l'emmanchure. Des valeurs plus élevées font une emmanchure plus profonde.
   title: Facteur de profondeur de l'emmanchure
 armholeDrop:
-  description: Abaisser l'emmanchure de cette quantité. Les valeurs négatives l'augmenteront.
+  description: Abaisser l'emmanchure de cette valeur. Les valeurs négatives l'augmenteront.
   title: Abaissement d'emmanchure
 backDartDepthFactor:
   description: La profondeur de la pince dos en pourcentage de la mesure de la taille à la hanche.
@@ -20,19 +20,19 @@ backDrop:
   description: Combien les pans arrière s'abaissent de vos hanches vers votre milieu de dos. Les valeurs négatives augmenteront la longueur du dos.
   title: Abaissement du dos
 backInset:
-  description: Quantité d'emmanchure arrière qui est coupée plus profondément dans le pan arrière.
+  description: Valeur d'emmanchure arrière qui est coupée plus profondément dans le pan arrière.
   title: Encart arrière
 backOpening:
   description: Ouverture au centre de la fermeture arrière.
   title: Ouverture arrière
 backRise:
   description:
-    _default: La quantité par laquelle augmenter le dos.
+    _default: La valeur par laquelle augmenter le dos.
     bruce: Pourcentage par lequel la taille sera augmentée à l'arrière.
     cathrin: De combien les pans arrières réhaussent vos bras jusqu'au centre de votre dos.
   title: hausse du dos
 backScyeDart:
-  description: La quantité à retirer dans une pince à l'arrière de l'emmanchure.
+  description: La valeur à retirer dans une pince à l'arrière de l'emmanchure.
   title: Pince arrière sans gêne
 backVent:
   description: 'Voulez-vous un évent dorsal central, ou pas du tout?'
@@ -54,7 +54,7 @@ barrelcuffNarrowButton:
     - Inclure un bouton étroit
   title: Bouton de manche étroit
 bicepsEase:
-  description: 'La quantité d'aisance au niveau de votre bras supérieur. Veuillez noter que bien que nous essayons de respecter ce critère, l'ajustement de la manche jusqu'à l'emmanchure est prioritaire sur le respect de la quantité exacte d'aisance.'
+  description: 'L'ampleur d'aisance au niveau de votre bras supérieur. Veuillez noter que bien que nous essayons de respecter ce critère, l'ajustement de la manche jusqu'à l'emmanchure est prioritaire sur le respect de la quantité exacte d'aisance.'
   title: Aisance au niveau des biceps
 bowLength:
   description: La longueur des ailes du noeud papillon.
@@ -79,66 +79,66 @@ buttonPlacketStyle:
 buttonPlacketType:
   description: Type de la patte de boutonnage.
   options:
-    '1': Cut-on TODO TODO TODO TODO
-    '2': Separate TODO TODO TODO TODO
+    '1': Cousue
+    '2': Séparée
   title: Type de patte de boutonnage
 buttonPlacketWidth:
-  description: Width of the button placket. TODO
-  title: Button placket width TODO
+  description: Largeur de la patte de boutonnage.
+  title: Largeur de patte de boutonnage
 buttonfreeLength:
-  description: How much of the bottom of the front closure to keep button-free. TODO
-  title: Button free length TODO
+  description: Longueur du bas de la fermeture avant pour rester sans bouton.
+  title: Longueur sans bouton
 buttonholePlacketFoldWidth:
-  description: Width of the buttonhole placket fold. TODO
-  title: Buttonhole placket fold width TODO
+  description: Largeur du pli de la boutonnière.
+  title: Largeur de pli de boutonnière
 buttonholePlacketStyle:
-  description: Style of the buttonhole placket. TODO
+  description: Style de la patte de boutonnière.
   options:
-    '1': Classic style TODO TODO TODO TODO
-    '2': French style (seamless) TODO TODO TODO TODO
-  title: Buttonhole placket style TODO
+    '1': Style classique
+    '2': Style français (sans couture)
+  title: Style de patte de boutonnière
 buttonholePlacketType:
-  description: Type of the buttonhole placket. TODO
+  description: Type de la patte de boutonnière.
   options:
-    '1': Cut-on TODO TODO TODO TODO
-    '2': Separate TODO TODO TODO TODO
-  title: Buttonhole placket type TODO
+    '1': Cousue
+    '2': Séparée
+  title: Type de patte de boutonnière.
 buttonholePlacketWidth:
-  description: Width of the butonhole placket. TODO
-  title: Buttonhole placket width TODO
+  description: Largeur de la patte de boutonnière.
+  title: Largeur de patte de boutonnière
 buttons:
-  description: The number of buttons on the front closure. TODO
+  description: Le nombre de boutons sur la fermeture avant.
   options:
     simon:
-      '10': 10 buttons TODO TODO TODO
-      '11': 11 buttons TODO TODO TODO
-      '12': 12 buttons TODO TODO TODO
-      '4': 4 buttons TODO TODO TODO
-      '5': 5 buttons TODO TODO TODO
-      '6': 6 buttons TODO TODO TODO
-      '7': 7 buttons TODO TODO TODO
-      '8': 8 buttons TODO TODO TODO
-      '9': 9 buttons TODO TODO TODO
+      '10': 10 boutons
+      '11': 11 boutons
+      '12': 12 boutons
+      '4': 4 boutons
+      '5': 5 boutons
+      '6': 6 boutons
+      '7': 7 boutons
+      '8': 8 boutons
+      '9': 9 boutons
     wahid:
-      '10': 10 buttons TODO TODO TODO
-      '11': 11 buttons TODO TODO TODO
-      '12': 12 buttons TODO TODO TODO
-      '4': 4 buttons TODO TODO TODO
-      '5': 5 buttons TODO TODO TODO
-      '6': 6 buttons TODO TODO TODO
-      '7': 7 buttons TODO TODO TODO
-      '8': 8 buttons TODO TODO TODO
-      '9': 9 buttons TODO TODO TODO
-  title: Number of buttons TODO
+      '10': 10 boutons
+      '11': 11 boutons
+      '12': 12 boutons
+      '4': 4 boutons
+      '5': 5 boutons
+      '6': 6 boutons
+      '7': 7 boutons
+      '8': 8 boutons
+      '9': 9 boutons
+  title: Nombre de boutons
 centerBackDart:
-  description: The amount to take out in a dart at the top of the center back. TODO
-  title: Center back dart TODO
+  description: La valeur à retirer dans une pince en haut du milieu du dos.
+  title: Pince du milieu du dos
 centerFrontHemDrop:
-  description: The hem at the front is lowered by this ratio of your neck to hips vertical measurements. TODO
-  title: Center front hem drop TODO
+  description: L'ourlet à l'avant est abaissé par ce rapport de mesures verticales de votre cou jusqu'à vos hanches.
+  title: Ourlet avant central
 chestEase:
-  description: The amount of ease at your chest. TODO
-  title: Chest ease TODO
+  description: L'ampleur d'aisance au niveau de votre poitrine.
+  title: Aisance de poitrine
 chestPocketAngle:
   description: The angle of the chest pocket. TODO
   title: Chest pocket angle TODO
