@@ -45,43 +45,43 @@ backVentLength:
   description: Contrôle la longueur de l'évent dorsal. Les nombres plus petits entraînent un évent plus court.
   title: Longueur de l'évent dorsal
 backlineBend:
-  description: Determines the shape/bend of the back of the armholes. TODO
-  title: Back armhole shape TODO
+  description: Détermine la forme/courbure de l'arrière des emmanchures.
+  title: Forme de l'arrière des emmanchures
 barrelcuffNarrowButton:
-  description: Whether to include a button to tie the cuffs more narrow. This option is only relevant for barrel cuffs. TODO
+  description: Sert à inclure un bouton pour rendre les revers de manche plus étroits. Cette option n'est pertinente que pour les revers de manche classiques.
   options:
-    - No narrow button TODO TODO TODO TODO
-    - Include narrow button TODO TODO TODO TODO
-  title: Cuff narrow button TODO
+    - Pas de bouton étroit
+    - Inclure un bouton étroit
+  title: Bouton de manche étroit
 bicepsEase:
-  description: 'The amount of ease at your upper arm. Note that while we try to respect this, fitting the sleeve to the armhole takes precedence over respecting the exact amount of ease. TODO'
-  title: Biceps ease TODO
+  description: 'La quantité d'aisance au niveau de votre bras supérieur. Veuillez noter que bien que nous essayons de respecter ce critère, l'ajustement de la manche jusqu'à l'emmanchure est prioritaire sur le respect de la quantité exacte d'aisance.'
+  title: Aisance au niveau des biceps
 bowLength:
-  description: The length of the wings of the bow tie. TODO
-  title: Bow length TODO
+  description: La longueur des ailes du noeud papillon.
+  title: Longueur du noeud
 bowStyle:
-  description: The style of the bow. TODO
+  description: Le style du noeud.
   options:
-    butterfly: Butterfly TODO TODO TODO TODO
-    diamond: Diamond TODO TODO TODO TODO
-    square: Square TODO TODO TODO TODO
-    widesquare: Wide Square TODO TODO TODO TODO
-  title: Bow style TODO
+    butterfly: Papillon
+    diamond: Diamant
+    square: Carré
+    widesquare: Carré large
+  title: Style du noeud
 bulge:
-  description: Increase angle to create more room in the front pouch. TODO
-  title: Bulge TODO
+  description: Augmentez l'angle pour créer plus d'espace dans la poche avant.
+  title: Renflement
 buttonPlacketStyle:
-  description: Style of the button placket. TODO
+  description: Style de la patte de boutonnage
   options:
-    '1': Classic style TODO TODO TODO TODO
-    '2': French style (seamless) TODO TODO TODO TODO
-  title: Button placket style TODO
+    '1': Style classique
+    '2': Style français (sans couture)
+  title: Style de patte de boutonnage
 buttonPlacketType:
-  description: Type of the button placket. TODO
+  description: Type de la patte de boutonnage.
   options:
     '1': Cut-on TODO TODO TODO TODO
     '2': Separate TODO TODO TODO TODO
-  title: Button placket type TODO
+  title: Type de patte de boutonnage
 buttonPlacketWidth:
   description: Width of the button placket. TODO
   title: Button placket width TODO
