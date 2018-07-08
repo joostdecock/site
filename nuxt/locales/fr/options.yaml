@@ -1,168 +1,168 @@
 acrossBackFactor:
-  description: Controls your across back width as a factor of your shoulder to shoulder measurement. TODO
-  title: Across back factor TODO
+  description: Contrôle la largeur de votre dos en tant que facteur de mesure d'une épaule à l'autre.
+  title: Facteur largeur du dos
 adjustmentRibbon:
-  description: Add a ribbon to make the tie adjustable. TODO
+  description: Ajouter un ruban pour rendre la cravate réglable.
   options:
-    - Do not include ribbon TODO TODO TODO TODO
-    - Include ribbon TODO TODO TODO TODO
-  title: Adjustment Ribbon TODO
+    - Ne pas inclure le ruban
+    - Inclure le ruban
+  title: Ajustement du ruban
 armholeDepthFactor:
-  description: Controls the depth of the armhole. Higher values make a deeper armhole. TODO
-  title: Armhole depth factor TODO
+  description: Contrôle la profondeur de l'emmanchure. Des valeurs plus élevées font une emmanchure plus profonde.
+  title: Facteur de profondeur de l'emmanchure
 armholeDrop:
-  description: Lower the armhole by this amount. Negative values will raise it. TODO
-  title: Armhole drop TODO
+  description: Abaisser l'emmanchure de cette valeur. Les valeurs négatives l'augmenteront.
+  title: Abaissement d'emmanchure
 backDartDepthFactor:
-  description: The Depth of the back dart as a percentage of the Waist to Hip measurement TODO TODO TODO TODO
-  title: Back Dart Depth Factor TODO TODO TODO TODO
+  description: La profondeur de la pince dos en pourcentage de la mesure de la taille à la hanche.
+  title: Facteur de la profondeur de la pince dos
 backDrop:
-  description: How much the back panels lower from your hips towards your center back. Negative values will raise the back. TODO
-  title: Back drop TODO
+  description: Combien les pans arrière s'abaissent de vos hanches vers votre milieu de dos. Les valeurs négatives augmenteront la longueur du dos.
+  title: Abaissement du dos
 backInset:
-  description: Amount the back armhole is cut deeper into the back panel. TODO
-  title: Back inset TODO
+  description: Valeur d'emmanchure arrière qui est coupée plus profondément dans le pan arrière.
+  title: Encart arrière
 backOpening:
-  description: Opening at the center back closure. TODO
-  title: Back opening TODO
+  description: Ouverture au centre de la fermeture arrière.
+  title: Ouverture arrière
 backRise:
   description:
-    _default: The amount by which to raise the back. TODO
-    bruce: Percentage by which the waist will be raised at the back. TODO
-    cathrin: How much the back panels rise from your arms to your center back. TODO
-  title: Back rise TODO
+    _default: La valeur par laquelle augmenter le dos.
+    bruce: Pourcentage par lequel la taille sera augmentée à l'arrière.
+    cathrin: De combien les pans arrières réhaussent vos bras jusqu'au centre de votre dos.
+  title: hausse du dos
 backScyeDart:
-  description: The amount to take out in a dart at the back of the armhole. TODO
-  title: Back scye dart TODO
+  description: La valeur à retirer dans une pince à l'arrière de l'emmanchure.
+  title: Pince arrière sans gêne
 backVent:
-  description: 'Do you want a central back vent, or none at all? TODO'
+  description: 'Voulez-vous un évent dorsal central, ou pas du tout?'
   options:
-    - No back vent TODO TODO TODO TODO
-    - Single back vent TODO TODO TODO TODO
-    - Double back vent TODO TODO TODO TODO
-  title: Back vent TODO
+    - Pas d'évent dorsal
+    - Un seul évent dorsal
+    - Un double évent dorsal
+  title: évent dorsal
 backVentLength:
-  description: Controls the length of the back vent. Lower numbers result in a shorter vent. TODO
-  title: Back vent length TODO
+  description: Contrôle la longueur de l'évent dorsal. Les nombres plus petits entraînent un évent plus court.
+  title: Longueur de l'évent dorsal
 backlineBend:
-  description: Determines the shape/bend of the back of the armholes. TODO
-  title: Back armhole shape TODO
+  description: Détermine la forme/courbure de l'arrière des emmanchures.
+  title: Forme de l'arrière des emmanchures
 barrelcuffNarrowButton:
-  description: Whether to include a button to tie the cuffs more narrow. This option is only relevant for barrel cuffs. TODO
+  description: Sert à inclure un bouton pour rendre les revers de manche plus étroits. Cette option n'est pertinente que pour les revers de manche classiques.
   options:
-    - No narrow button TODO TODO TODO TODO
-    - Include narrow button TODO TODO TODO TODO
-  title: Cuff narrow button TODO
+    - Pas de bouton étroit
+    - Inclure un bouton étroit
+  title: Bouton de manche étroit
 bicepsEase:
-  description: 'The amount of ease at your upper arm. Note that while we try to respect this, fitting the sleeve to the armhole takes precedence over respecting the exact amount of ease. TODO'
-  title: Biceps ease TODO
+  description: 'L'ampleur d'aisance au niveau de votre bras supérieur. Veuillez noter que bien que nous essayons de respecter ce critère, l'ajustement de la manche jusqu'à l'emmanchure est prioritaire sur le respect de la quantité exacte d'aisance.'
+  title: Aisance au niveau des biceps
 bowLength:
-  description: The length of the wings of the bow tie. TODO
-  title: Bow length TODO
+  description: La longueur des ailes du noeud papillon.
+  title: Longueur du noeud
 bowStyle:
-  description: The style of the bow. TODO
+  description: Le style du noeud.
   options:
-    butterfly: Butterfly TODO TODO TODO TODO
-    diamond: Diamond TODO TODO TODO TODO
-    square: Square TODO TODO TODO TODO
-    widesquare: Wide Square TODO TODO TODO TODO
-  title: Bow style TODO
+    butterfly: Papillon
+    diamond: Diamant
+    square: Carré
+    widesquare: Carré large
+  title: Style du noeud
 bulge:
-  description: Increase angle to create more room in the front pouch. TODO
-  title: Bulge TODO
+  description: Augmentez l'angle pour créer plus d'espace dans la poche avant.
+  title: Renflement
 buttonPlacketStyle:
-  description: Style of the button placket. TODO
+  description: Style de la patte de boutonnage
   options:
-    '1': Classic style TODO TODO TODO TODO
-    '2': French style (seamless) TODO TODO TODO TODO
-  title: Button placket style TODO
+    '1': Style classique
+    '2': Style français (sans couture)
+  title: Style de patte de boutonnage
 buttonPlacketType:
-  description: Type of the button placket. TODO
+  description: Type de la patte de boutonnage.
   options:
-    '1': Cut-on TODO TODO TODO TODO
-    '2': Separate TODO TODO TODO TODO
-  title: Button placket type TODO
+    '1': Cousue
+    '2': Séparée
+  title: Type de patte de boutonnage
 buttonPlacketWidth:
-  description: Width of the button placket. TODO
-  title: Button placket width TODO
+  description: Largeur de la patte de boutonnage.
+  title: Largeur de patte de boutonnage
 buttonfreeLength:
-  description: How much of the bottom of the front closure to keep button-free. TODO
-  title: Button free length TODO
+  description: Longueur du bas de la fermeture avant pour rester sans bouton.
+  title: Longueur sans bouton
 buttonholePlacketFoldWidth:
-  description: Width of the buttonhole placket fold. TODO
-  title: Buttonhole placket fold width TODO
+  description: Largeur du pli de la boutonnière.
+  title: Largeur de pli de boutonnière
 buttonholePlacketStyle:
-  description: Style of the buttonhole placket. TODO
+  description: Style de la patte de boutonnière.
   options:
-    '1': Classic style TODO TODO TODO TODO
-    '2': French style (seamless) TODO TODO TODO TODO
-  title: Buttonhole placket style TODO
+    '1': Style classique
+    '2': Style français (sans couture)
+  title: Style de patte de boutonnière
 buttonholePlacketType:
-  description: Type of the buttonhole placket. TODO
+  description: Type de la patte de boutonnière.
   options:
-    '1': Cut-on TODO TODO TODO TODO
-    '2': Separate TODO TODO TODO TODO
-  title: Buttonhole placket type TODO
+    '1': Cousue
+    '2': Séparée
+  title: Type de patte de boutonnière.
 buttonholePlacketWidth:
-  description: Width of the butonhole placket. TODO
-  title: Buttonhole placket width TODO
+  description: Largeur de la patte de boutonnière.
+  title: Largeur de patte de boutonnière
 buttons:
-  description: The number of buttons on the front closure. TODO
+  description: Le nombre de boutons sur la fermeture avant.
   options:
     simon:
-      '10': 10 buttons TODO TODO TODO
-      '11': 11 buttons TODO TODO TODO
-      '12': 12 buttons TODO TODO TODO
-      '4': 4 buttons TODO TODO TODO
-      '5': 5 buttons TODO TODO TODO
-      '6': 6 buttons TODO TODO TODO
-      '7': 7 buttons TODO TODO TODO
-      '8': 8 buttons TODO TODO TODO
-      '9': 9 buttons TODO TODO TODO
+      '10': 10 boutons
+      '11': 11 boutons
+      '12': 12 boutons
+      '4': 4 boutons
+      '5': 5 boutons
+      '6': 6 boutons
+      '7': 7 boutons
+      '8': 8 boutons
+      '9': 9 boutons
     wahid:
-      '10': 10 buttons TODO TODO TODO
-      '11': 11 buttons TODO TODO TODO
-      '12': 12 buttons TODO TODO TODO
-      '4': 4 buttons TODO TODO TODO
-      '5': 5 buttons TODO TODO TODO
-      '6': 6 buttons TODO TODO TODO
-      '7': 7 buttons TODO TODO TODO
-      '8': 8 buttons TODO TODO TODO
-      '9': 9 buttons TODO TODO TODO
-  title: Number of buttons TODO
+      '10': 10 boutons
+      '11': 11 boutons
+      '12': 12 boutons
+      '4': 4 boutons
+      '5': 5 boutons
+      '6': 6 boutons
+      '7': 7 boutons
+      '8': 8 boutons
+      '9': 9 boutons
+  title: Nombre de boutons
 centerBackDart:
-  description: The amount to take out in a dart at the top of the center back. TODO
-  title: Center back dart TODO
+  description: La valeur à retirer dans une pince en haut du milieu du dos.
+  title: Pince du milieu du dos
 centerFrontHemDrop:
-  description: The hem at the front is lowered by this ratio of your neck to hips vertical measurements. TODO
-  title: Center front hem drop TODO
+  description: L'ourlet à l'avant est abaissé par ce rapport de mesures verticales de votre cou jusqu'à vos hanches.
+  title: Ourlet avant central
 chestEase:
-  description: The amount of ease at your chest. TODO
-  title: Chest ease TODO
+  description: L'ampleur d'aisance au niveau de votre poitrine.
+  title: Aisance de poitrine
 chestPocketAngle:
-  description: The angle of the chest pocket. TODO
-  title: Chest pocket angle TODO
+  description: L'angle de la poche de poitrine.
+  title: L'angle de poche de poitrine
 chestPocketPlacement:
-  description: Location of the chest pocket as a proportion a quarter of your chest circumference. Higher numbers move it more to the side. TODO
-  title: Chest pocket placement TODO
+  description: Emplacement de la poche de poitrine en proportion du quart de votre tour de poitrine. Plus la valeur est élevée, plu la poche se déplace vers le bord.
+  title: Emplacement de la poche de poitrine
 chestPocketWeltSize:
-  description: The height of the chest pocket welt. TODO
-  title: Chest pocket welt height TODO
+  description: La hauteur de la poche de poitrine trépointe.
+  title: Hauteur de la poche de poitrine trépointe
 chestPocketWidth:
-  description: 'The width of the chest pocket, as a factor of your chest circumference. TODO'
-  title: Chest pocket width TODO
+  description: 'La largeur de la poche de poitrine, en tant que facteur de votre tour de poitrine.'
+  title: Largeur de la poche de poitrine
 chestShaping:
-  description: 'The vertical amount to slash & spread the upper front panel to shape the chest, as a factor of your chest circumference. TODO'
-  title: Chest shaping TODO
+  description: 'La valeur à utiliser pour couper verticalement et étaler le pan avant supérieur afin de façonner la poitrine, en tant que facteur de votre tour de poitrine.'
+  title: Façonnage de poitrine
 circlePercent:
-  description: 'The percent of a circle skirt. 100% makes a full circle skirt, 50% makes a half circle skirt TODO TODO TODO TODO'
-  title: Circle percent TODO TODO TODO TODO
+  description: 'Le pourcentage d'une jupe en cercle. 100% fait une jupe cercle complet, 50% fait une jupe demi-cercle'
+  title: Pourcentage de cercle
 collarAngle:
-  description: The angle of the collar tips. TODO
-  title: Collar angle TODO
+  description: L'angle des pointes de col.
+  title: Angle du col
 collarBend:
-  description: The bend of the collar. TODO
-  title: Collar bend TODO
+  description: La courbure du col.
+  title: Courbure du col
 collarEase:
   description: The amount of ease around your neck. TODO
   title: Collar ease TODO
