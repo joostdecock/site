@@ -79,7 +79,7 @@ i18n:
       i18n: 8
       measurements: 26
       optiongroups: 11
-      options: 0
+      options: 115
       patterns: 4
       showcase: 0
     nl:
@@ -159,6 +159,7 @@ i18n:
       - github|Chantalbijoux
       - github|dingcycle
       - joebidido
+      - SoaZillon
     nl:
       - AnnekeCaramin
       - joost

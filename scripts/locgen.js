@@ -110,6 +110,7 @@ function loadTranslationFile(locale, file) {
     return yaml.safeLoad(fs.readFileSync('./nuxt/locales/'+locale+'/'+file+'.yaml', 'utf8'));
   } catch(error) {
     console.log('Could not load file: ', file, locale)
+    console.log(error)
   }
 }
 

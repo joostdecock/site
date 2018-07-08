@@ -54,7 +54,7 @@ barrelcuffNarrowButton:
     - Inclure un bouton étroit
   title: Bouton de manche étroit
 bicepsEase:
-  description: 'L'ampleur d'aisance au niveau de votre bras supérieur. Veuillez noter que bien que nous essayons de respecter ce critère, l'ajustement de la manche jusqu'à l'emmanchure est prioritaire sur le respect de la quantité exacte d'aisance.'
+  description: 'L''ampleur d''aisance au niveau de votre bras supérieur. Veuillez noter que bien que nous essayons de respecter ce critère, l''ajustement de la manche jusqu''à l''emmanchure est prioritaire sur le respect de la quantité exacte d''aisance.'
   title: Aisance au niveau des biceps
 bowLength:
   description: La longueur des ailes du noeud papillon.
@@ -143,7 +143,7 @@ chestPocketAngle:
   description: L'angle de la poche de poitrine.
   title: L'angle de poche de poitrine
 chestPocketPlacement:
-  description: Emplacement de la poche de poitrine en proportion du quart de votre tour de poitrine. Plus la valeur est élevée, plu la poche se déplace vers le bord.
+  description: 'Emplacement de la poche de poitrine en proportion du quart de votre tour de poitrine. Plus la valeur est élevée, plu la poche se déplace vers le bord.'
   title: Emplacement de la poche de poitrine
 chestPocketWeltSize:
   description: La hauteur de la poche de poitrine trépointe.
@@ -155,7 +155,7 @@ chestShaping:
   description: 'La valeur à utiliser pour couper verticalement et étaler le pan avant supérieur afin de façonner la poitrine, en tant que facteur de votre tour de poitrine.'
   title: Façonnage de poitrine
 circlePercent:
-  description: 'Le pourcentage d'une jupe en cercle. 100% fait une jupe cercle complet, 50% fait une jupe demi-cercle'
+  description: 'Le pourcentage d''une jupe en cercle. 100% fait une jupe cercle complet, 50% fait une jupe demi-cercle'
   title: Pourcentage de cercle
 collarAngle:
   description: L'angle des pointes de col.
