@@ -164,29 +164,29 @@ collarBend:
   description: La courbure du col.
   title: Courbure du col
 collarEase:
-  description: The amount of ease around your neck. TODO
-  title: Collar ease TODO
+  description: L'ampleur d'aisance au niveau du cou.
+  title: Aisance du cou
 collarFlare:
-  description: The flare of the collar tips. TODO
-  title: Collar flare TODO
+  description: L'évasement des pointes du col.
+  title: Évasement du col
 collarGap:
-  description: The gap between the the two collar ends. TODO
-  title: Collar gap TODO
+  description: L'écart entre les deux extrémités du col.
+  title: Écart du col
 collarHeight:
-  description: This is the collar height at the back of the neck and can never be less than twice the roll line collar height. TODO
-  title: Collar height TODO
+  description: Ceci est la hauteur du col à l'arrière du cou et ne peut jamais être inférieure à deux fois la hauteur de la ligne de pliure du col.
+  title: Hauteur du col
 collarNotchAngle:
-  description: Angle of the collar notch. TODO
-  title: Collar notch angle TODO
+  description: Angle de l'encoche du col.
+  title: Angle d'encoche du col
 collarNotchDepth:
-  description: Depth of the collar notch. TODO
-  title: Collar notch depth TODO
+  description: Profondeur de l'encoche du col.
+  title: Profondeur d'encoche du col
 collarNotchReturn:
-  description: Controls the length of the upper notch side. 100% = same as notch depth. TODO
-  title: Collar notch return TODO
+  description: Contrôle la longueur du bord de l'encoche supérieure. 100% = identique à la profondeur de l'encoche.
+  title: Envers d'encoche du col
 collarRoll:
-  description: The amount by which the top collar is larger than the undercollar. TODO
-  title: Collar roll TODO
+  description: La valeur rendant le tombant du col plus large que le pied de col.
+  title: Pliure du col
 collarStandBend:
   description: The bend of the collar stand. TODO
   title: Collar stand bend TODO
