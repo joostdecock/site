@@ -11,17 +11,17 @@ hipsToUpperLeg: Hauteur des hanches à l'entrejambe
 inseam: Longueur d'entrejambe
 naturalWaist: Tour de taille
 naturalWaistToFloor: Hauteur de taille
-naturalWaistToHip: Longueur de la taille aux petites hanches
-naturalWaistToKnee: Natural waist to knee TODO
-naturalWaistToSeat: Longueur de la taille aux hanches
-naturalWaistToUnderbust: Longueur de la taille et à dessous la poitrine
+naturalWaistToHip: Longueur de la taille jusqu'aux petites hanches
+naturalWaistToKnee: Longueur de la taille naturelle jusqu'au genou
+naturalWaistToSeat: Longueur de la taille jusqu'aux hanches
+naturalWaistToUnderbust: Longueur de la taille jusqu'au dessous de la poitrine
 neckCircumference: Tour de cou
 seatCircumference: Tour des hanches
 seatDepth: Profondeur d'entrejambe
 shoulderSlope: Pente d'épaule
-shoulderToElbow: Longueur de l'épaule au coude
+shoulderToElbow: Longueur de l'épaule jusqu'au coude
 shoulderToShoulder: Largeur d'épaule
 shoulderToWrist: Longueur de bras
-underBust: Tour sous-poitine
+underBust: Tour sous la poitrine
 upperLegCircumference: Tour de cuisse
 wristCircumference: Tour de poignet
