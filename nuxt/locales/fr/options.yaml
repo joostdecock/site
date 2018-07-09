@@ -215,11 +215,11 @@ cuffStyle:
   description: Style d'emmanchure.
   options:
     '1': Emmanchure classique arrondie
-    '2': Emmanchure classique coudée
-    '3': Emmanchure classique droite
-    '4': Emmanchure française arrondie
-    '5': Emmanchure française coudée
-    '6': Emmanchure française droite
+    '2': Angled barrel cuff TODO
+    '3': Straight barrel cuff TODO
+    '4': Rounded French cuff TODO
+    '5': Angled French cuff TODO
+    '6': Straight French cuff TODO
   title: Style d'emmanchure
 dartToSideSeamFactor:
   description: Déplace l'ouverture des pinces vers la couture latérale et vice versa.
@@ -262,7 +262,7 @@ frontInset:
   description: La taille de l'emmanchure avant est coupée plus profondément dans le pan avant.
   title: Encart frontal
 frontPocketDepth:
-  description: 'La profondeur des poches avant, en tant que facteur de l'espace entre la taille et l'ourlet.'
+  description: 'La profondeur des poches avant, en tant que facteur de l''espace entre la taille et l''ourlet.'
   title: profondeur des poches avant
 frontPocketHeight:
   description: 'The height where the front pocket starts, as a factor of your natural waist to hip measurement. TODO'
