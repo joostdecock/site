@@ -262,8 +262,8 @@ frontInset:
   description: La taille de l'emmanchure avant est coupée plus profondément dans le pan avant.
   title: Encart frontal
 frontPocketDepth:
-  description: 'The depth of the front pockets, as a factor of the space between your waist and hem. TODO'
-  title: Front pocket depth TODO
+  description: 'La profondeur des poches avant, en tant que facteur de l'espace entre la taille et l'ourlet.'
+  title: profondeur des poches avant
 frontPocketHeight:
   description: 'The height where the front pocket starts, as a factor of your natural waist to hip measurement. TODO'
   title: Front pocket height TODO
