@@ -110,7 +110,7 @@ getHelp: Obtenir de l'aide
 github: GitHub 
 githubUpdated: Nom d'utilisateur GitHub mis à jour
 goodToKnow: Bon à savoir
-grabYourMeasuringTape: Grab your measuring tape TODO
+grabYourMeasuringTape: Prenez votre mètre ruban
 hi: Salut
 home: Accueil
 howCanWeHelpYou: Comment pouvons-nous vous aider ?
@@ -178,7 +178,7 @@ notes: Notes
 ohNo: Oh non !
 okThatsDone: 'OK, c''est fait'
 onlySelectedPatternParts: Uniquement les pièces de patron selectionnées
-originStory: Origin story TODO
+originStory:  Histoire originelle
 pageNotFound: La page que vous recherchez est introuvable
 paperlessTheme: Thème sans papier
 password: Mot de passe
@@ -193,7 +193,7 @@ pattern: Patron
 patternDesignTutorial: Tutoriel de conception de patron
 patternInstructions: Documentation du patron
 patternIsPattern: 'Le patron est {pattern}'
-patternLineDrawing: '{pattern} line drawing TODO'
+patternLineDrawing: 'Tracé de ligne du patron {pattern}'
 patternOptions: Options du patron
 patternParts: Pièces du patron
 patterns: Patrons
@@ -211,7 +211,7 @@ profile: Profil
 quickPick: Choix rapide
 quote-allie: 'Avez-vous entendu parler de freesewing.org ? C''est, en gros, la meilleure chose qui ait jamais existé !'
 quote-allie-about: Auteur du blog de couture The Aspiring Seamstress
-quote-ivan: Kudos to @j__st for creating @freesewing_org an open source platform for made-to-measure sewing patterns and general awesomeness TODO
+quote-ivan: Bravo à @j__st pour la création de @freesewing_org, une plate-forme open source pour des modèles de couture sur mesure et une expérience géniale
 quote-ivan-about: Co-organisateur du Kubernetes London Meetup. Fondateur de Kube.camp
 quote-jamie: 'Avec Freesewing, la couture est entrée dans le 21ème siècle'
 quote-jamie-about: Auteur du populaire blog couture Male Devon Sewing et candidat 2016 de l'émission TV Great British Sewing Bee (version britannique de Cousu Main).
@@ -232,7 +232,7 @@ retrievingDraftFromCore: Récupération de l'ébauche depuis la base en cours
 revokeConsent: Retirer mon accord
 rowsFromToOfTotal: 'Rangs {from} à {to} de {total}'
 rowsPerPage: Rangs par page
-sa: Seam allowance TODO
+sa: Marge de couture
 save: Sauvegarder
 scope: Portée
 seamAllowance: Valeur de couture
@@ -283,7 +283,7 @@ taskCompleted: Tâche complétée
 theme: Thème
 themeUpdated: Préférence de mise en page enregistrée
 thereIsNoWayBackFromThis: Ceci est le point de non-retour.
-thisActionCannotBeUndone: This action cannot be undone TODO
+thisActionCannotBeUndone: Cette action ne peut pas être annulée
 thisContentIsNotAvailableInLanguage: Ce contenu n'est pas disponible en français.
 thisDraftPredatesThisFeature: Cette ébauche date d'avant cette fonctionnalité.
 thisIsTheCurrentStatusOfOurTranslations: Voici l'état d'avancement actuel de nos traductions.
@@ -363,28 +363,28 @@ txt-saOption-custom: Marge de couture personnalisée
 txt-saOption-imperial: Marge de couture impériale standard
 txt-saOption-metric: Marge de couture métrique standard
 txt-saOption-none: N'inclue pas les marges de couture
-txt-saOption-patternImperial: Pattern default imperial seam allowance TODO
-txt-saOption-patternMetric: Pattern default metric seam allowance TODO
+txt-saOption-patternImperial: Marge de couture impériale par défaut
+txt-saOption-patternMetric: Marge de couture métrique par défaut
 txt-signup-step1: Saisissez votre adresse email et choisissez un mot de passe
 txt-signup-step2: Confirmez votre adresse email
 txt-signup-step3: Autorisez-nous à utiliser vos données personnelles
 txt-slogan: Une plateforme opensource pour des patrons de couture sur mesure
 txt-translators1: Nous recherchons des volontaires prêts à partager nos efforts de traduction'
-txt-translators2: 'Many hands make light work, and it''s excellent karma to make a contribution this way. TODO'
+txt-translators2: 'Plus on est nombreux, plus le travail est léger, et c'est un excellent karma que d'apporter une contribution de cette façon.'
 txt-translators3: 'Pour découvrir en quoi vous pouvez nous aider, et comment procéder, cliquez sur le lien ci-dessous.'
 txt-warningDataRestriction: 'Une fois que nous restreint l''accès à votre compte, vous ne serez plus en mesure de revenir en arrière vous-même. Pour avoir de nouveau accès à votre compte, vous devrez nous contacter.'
 txt-warningModelData: Cela supprimera l'ensemble de vos modèles et ébauches
 txt-warningProfileData: 'Cela supprimer l''ensemble de vos modèles et ébauches, vos commentaires ainsi que votre compte. Tout sera supprimé.'
-txt-withOrWithoutBreasts: 'Fitting breasts requires a bunch of extra measurements that are not relevant if you don''t have breasts. If you indicate your model does not have breasts, we won''t show you these measurements as they are irrelevant. If you''re not sure what to pick, go for breasts. TODO'
+txt-withOrWithoutBreasts: 'L'ajustement au niveau des seins nécessite un tas de mesures supplémentaires qui ne sont pas pertinentes si vous n'avez pas de poitrine. Si vous indiquez que votre modèle n'a pas de poitrine, nous ne vous montrerons pas ces mesures non pertinentes. Si vous ne savez pas quoi choisir, optez pour la présence d'une poitrine.'
 txt-withOrWithoutBreasts-explainer: 'Sur d''autres sites, la question serait probalement formulée ''homme ou femme ?''. Ici, nous n''aimons pas mettre les gens dans des cases. Ce qui compte, c''est adapter le modèle à votre poitrine.'
 type: Type 
 units: Unités
 unitsUpdated: Unités enregistrées
-unknownUser-msg: 'This should be the profile page of @{user}, but we don''t have a user by that name. TODO'
-unknownUser-title: 'Do you know who @{user} is? Because we don''t. TODO'
-updates: Updates TODO
-upgrade: Upgrade TODO
-upgradeRequired: Upgrade required TODO
+unknownUser-msg: 'Cela devrait être la page de profil de @{user}, mais nous n'avons pas d'utilisateur à ce nom.'
+unknownUser-title: 'Connaissez-vous @{user} ? Parce que nous non.'
+updates: Mises à jour
+upgrade: Mises à niveau
+upgradeRequired: Mise à niveau requise
 useDecimalsOrFractions: Utilisez la forme décimale (1.25) ou fractionnée (1 1/4)
 user: utilisateur
 userHasBeenWithUsSince: '{user} est parmi nous depuis {since}'
@@ -395,15 +395,15 @@ usernameUpdated: Nom d'utilisateur mis à jour
 users: Utilisateurs
 version: Version 
 visitPatronProfile: Visiter le profil de ce mécène
-volunteerVerb: Volunteer TODO
+volunteerVerb: Bénévole
 weAreLoadingDataFromTheBackend: Nous chargeons les données du backend
 weAreValidatingYourConfirmationCode: Nous sommes en train de valider votre code de confirmation
 weCantHelpYouWithThis: Vous seul le connaissez
 weNeedYourConsent: Nous avons besoin de votre accord
 welcomeAboard: Bienvenue à bord
-withBreasts: With breasts TODO
-withOrWithoutBreasts: With or without breasts? TODO
-withoutBreasts: Without breasts TODO
+withBreasts: Avec seins
+withOrWithoutBreasts: Avec ou sans seins ?
+withoutBreasts: Sans seins
 wouldYouLikeToLogOut: Souhaitez-vous vous déconnecter ?
 yearsAgo: 'Il y a {years} an | Il y a {years} ans'
 'yes': Oui
@@ -414,8 +414,8 @@ youAreCurrentlyLoggedIn: Vous êtes connecté(e)
 youAreNotAnAdmin: Vous n'êtes pas administrateur
 youAreNotLoggedIn: Vous n'êtes pas connecté(e)
 youCanUseMarkdownFormatting: Vous pouvez utiliser le formattage Markdown
-youDoNotObjectToSharingAnonymizedDataForResearch: You do not object to sharing anonymized data for research TODO
-youHaveTheRightToObjectToThis: You have the right to object to this TODO
+youDoNotObjectToSharingAnonymizedDataForResearch: Vous ne vous opposez pas au partage de données anonymisées pour la recherche
+youHaveTheRightToObjectToThis: Vous avez le droit de vous opposer à cela
 youObjectToSharingAnonymizedDataForResearch: Vous refusez de partager des données anonymisées à des fins de recherche.
 yourPrivacy: Votre vie privée
 yourRights: Vos droits
