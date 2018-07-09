@@ -1,6 +1,6 @@
 100PercentCommunity: 100 % communautaire
 100PercentFree: 100 % gratuit
-100PercentOpenSource: 100 % open source DONE
+100PercentOpenSource: 100 % open source
 aCodeBlock: Bloc de code
 aboutFreesewing: À propos de Freesewing
 add: Ajouter
@@ -8,23 +8,23 @@ addAModel: Ajouter un modèle
 addComment: Ajouter un commentaire
 all: Tout
 alreadyHaveAnAccount: Vous avez déjà un compte ?
-apiCheatSheet: API cheat sheet TODO
+apiCheatSheet: Feuille de code API
 areYouSureAboutThis: Êtes-vous sûr à 100 % ?
-avatar: Avatar DONE
+avatar: Avatar
 avatarUpdated: Avatar mis à jour
 averagePeopleDontExist: Les gens "normaux" n'existent pas
 basicTheme: Thème classique
 basics: Les bases
 becomeAPatron: Devenez mécène
-bio: Bio DONE
+bio: Bio
 bioUpdated: Bio mise à jour
 blockquote: Bloc de citation
-blog: Blog DONE
+blog: Blog
 blogPost: Messages de blog
 bold: Gras
 breasts: Poitrine
 breastsUpdated: Réglages poitrine mis à jour
-brokenLink-msg: 'If you came here through a link, please report that broken link. TODO'
+brokenLink-msg: 'Si vous êtes arrivé ici via un lien, veuillez signaler ce lien mort.'
 by: par
 cancel: Annuler
 chatOnGitter: Chatter sur Gitter
@@ -34,7 +34,7 @@ chooseANewPassword: Choisir un nouveau mot de passe
 chooseAPattern: Choisir un patron
 chooseYourOptions: Choisir vos options
 close: Fermer
-code: Code DONE
+code: Code
 codeOfConduct: Code de conduite
 comments: Commentaires
 community: Communauté
@@ -59,15 +59,15 @@ createMyAccount: Créer mon compte
 created: Créé
 currentPassword: Mot de passe actuel
 data: Données
-date: Date DONE
+date: Date
 daysAgo: 'Il y a {days} jours'
 delete: Supprimer
 deleteThisDraft: Supprimer ce brouillon
-description: Description DONE
+description: Description
 details: Détails
 difficulty: Difficulté
-docs: Documentation DONE
-documentation: Documentation DONE
+docs: Documentation
+documentation: Documentation
 documentationForDevelopers: Documentation pour les développeurs
 documentationForTranslators: Documentation pour les traducteurs
 documentationOverview: Vue d'ensemble de la documentation
@@ -83,10 +83,10 @@ draftingPattern: 'Ébauche de {pattern} en cours'
 drafts: Ébauches
 edit: Editer
 editOnGithub: Editer avec GitHub
-email: E-mail DONE
+email: E-mail
 emailAddress: Adresse mail
 emailUpdatePending: Mise à jour de l'adresse e-mail en cours.
-emails: E-mails DONE
+emails: E-mails
 enterYourCurrentPassword: Composer votre mot de passe actuel
 enterYourNewPassword: Composer votre nouveau mot de passe
 error-unknown: Une erreur inconnue est survenue
@@ -99,7 +99,7 @@ forUsername: 'Pour {username}'
 forUsers: Pour les utilisateurs
 fork: Fourche
 forkDraftHandle: 'Ebauche fourche {handle}'
-freesewing: Freesewing DONE
+freesewing: Freesewing
 freesewingContributors: Contributeurs de Freesewing
 freesewingOnGithub: Freesewing sur GitHub
 freesewingPatrons: Mécènes de Freesewing
@@ -107,7 +107,7 @@ freezeMyAccount: Geler mon compte
 fullSizePdf: PDF à l'échelle
 fundamentals: Fondamentaux
 getHelp: Obtenir de l'aide
-github: GitHub DONE
+github: GitHub 
 githubUpdated: Nom d'utilisateur GitHub mis à jour
 goodToKnow: Bon à savoir
 grabYourMeasuringTape: Grab your measuring tape TODO
@@ -118,13 +118,13 @@ howToTakeMeasurements: Comment prendre les mesures
 i18n: Internationalisation (i18n)
 iForgotMyPassword: J'ai oublié mon mot de passe
 iForgotMyUsername: J'ai oublié mon nom d'utilisateur
-image: Image DONE
+image: Image 
 imperial: Impérial
 imperialUnits: Unités de mesure impériales (pouces)
 in: dans
 inch: pouce
-info: Info DONE
-instagram: Instagram DONE
+info: Info 
+instagram: Instagram 
 instagramUpdated: Compte Instagram mis à jour
 italics: Italique
 joinTheTranslationTeam: 'Même si vous n''avez jamais contribué à un projet Open Source, la traduction est une douce montée vers la gloire du contributeur.'
@@ -144,14 +144,14 @@ localeUpdated: Préférences langue mises à jour
 logIn: Connexion
 logInAs: S'identifier en tant que
 logOut: Déconnexion
-logOutAs: 'Se déconnecter en tant que {user} DONE'
+logOutAs: 'Se déconnecter en tant que {user} '
 loginFailed: La connexion a échoué
 makeItBetter: Faire des améliorations
 markdownSyntax: Syntaxe Markdown
 measurementUpdated: Mensurations mises à jour
 measurements: Mensurations
 measurementsRequiredForPattern: 'Mensurations requises pour {pattern}'
-messages: Messages DONE
+messages: Messages 
 metric: Métrique
 metricUnits: Unités de mesure métriques (cm)
 model: Modèle
@@ -174,7 +174,7 @@ noFilter: Aucun filtre
 noIDoNot: 'Non, je ne donne pas mon accord'
 noIDoNotObject: 'Non, je ne m''y oppose pas'
 notShared: Pas partagé
-notes: Notes DONE
+notes: Notes 
 ohNo: Oh non !
 okThatsDone: 'OK, c''est fait'
 onlySelectedPatternParts: Uniquement les pièces de patron selectionnées
@@ -264,7 +264,7 @@ signup-signup_pending-title: Votre création de compte est en attente d'activati
 signup-success-text: 'Nous vous avons envoyé un e-mail à {email}.'
 signup-user_exists-text: Nous avons déjà un compte d'utilisateur associé à cette adresse e-mail. Peut-être voulez-vous plutôt vous connecter?
 signup-user_exists-title: Cet utilisateur existe.
-social: Social DONE
+social: Social
 somethingWentWrong: Une erreur s'est produite
 startUpload: Commencer le téléchargement
 status: État d'avancement
@@ -296,7 +296,7 @@ translationTeam: Équipe de traduction
 translators: Traducteurs
 troubleLoggingIn: Un problème de connexion ?
 tryAgain: Essayez de nouveau
-twitter: Twitter DONE
+twitter: Twitter
 twitterUpdated: Compte Twitter mis à jour
 txt-avatarDropzoneText: 'Glisser et déposer une image ici, ou cliquer sur le bouton pour en choisir une dans vos fichiers.'
 txt-avatarDropzoneTitle: Déposer votre image ici
@@ -377,7 +377,7 @@ txt-warningModelData: Cela supprimera l'ensemble de vos modèles et ébauches
 txt-warningProfileData: 'Cela supprimer l''ensemble de vos modèles et ébauches, vos commentaires ainsi que votre compte. Tout sera supprimé.'
 txt-withOrWithoutBreasts: 'Fitting breasts requires a bunch of extra measurements that are not relevant if you don''t have breasts. If you indicate your model does not have breasts, we won''t show you these measurements as they are irrelevant. If you''re not sure what to pick, go for breasts. TODO'
 txt-withOrWithoutBreasts-explainer: 'Sur d''autres sites, la question serait probalement formulée ''homme ou femme ?''. Ici, nous n''aimons pas mettre les gens dans des cases. Ce qui compte, c''est adapter le modèle à votre poitrine.'
-type: Type DONE
+type: Type 
 units: Unités
 unitsUpdated: Unités enregistrées
 unknownUser-msg: 'This should be the profile page of @{user}, but we don''t have a user by that name. TODO'
@@ -393,7 +393,7 @@ username: nom d'utilisateur
 usernameOrEmail: '@:username ou @:emailAddress'
 usernameUpdated: Nom d'utilisateur mis à jour
 users: Utilisateurs
-version: Version DONE
+version: Version 
 visitPatronProfile: Visiter le profil de ce mécène
 volunteerVerb: Volunteer TODO
 weAreLoadingDataFromTheBackend: Nous chargeons les données du backend
