@@ -197,43 +197,43 @@ collarStandWidth:
   description: Widht of the collar stand. TODO
   title: Collar stand width TODO
 cuffButtonRows:
-  description: Whether to draft a single or double row of cuff buttons. This option is only relevant for barrel cuffs. TODO
+  description: Soit pour dessiner une rangée de boutons de manchette simple ou double. Cette option n'est pertinente que pour les emmanchures classiques.
   options:
-    '1': Single cuff button row TODO TODO TODO TODO
-    '2': Double cuff button row TODO TODO TODO TODO
-  title: Cuff button rows TODO
+    '1': rangée de boutons de manchette simple
+    '2': rangée de boutons de manchette double
+  title: Rangée de boutons de manchette
 cuffDrape:
-  description: The amount by which the sleeve is wider than the cuff where the are joined. TODO
-  title: Cuff drape TODO
+  description: La valeur par laquelle la manche est plus large que l'emmanchure à laquelle elle est jointe.
+  title: Drapé d'emmanchure
 cuffEase:
-  description: The amount of ease at your wrist. TODO
-  title: Cuff ease TODO
+  description: L'ampleur d'aisance à votre poignet.
+  title: Aisance d'emmanchure
 cuffLength:
-  description: The length of the cuffs. TODO
-  title: Cuff length TODO
+  description: La longueur d'emmanchure.
+  title: Longueur d'emmanchure
 cuffStyle:
-  description: The style of the cuffs. TODO
+  description: Style d'emmanchure.
   options:
-    '1': Rounded barrel cuff TODO TODO TODO TODO
-    '2': Angled barrel cuff TODO TODO TODO TODO
-    '3': Straight barrel cuff TODO TODO TODO TODO
-    '4': Rounded French cuff TODO TODO TODO TODO
-    '5': Angled French cuff TODO TODO TODO TODO
-    '6': Straight French cuff TODO TODO TODO TODO
-  title: Cuff style TODO
+    '1': Emmanchure classique arrondie
+    '2': Emmanchure classique coudée
+    '3': Emmanchure classique droite
+    '4': Emmanchure française arrondie
+    '5': Emmanchure française coudée
+    '6': Emmanchure française droite
+  title: Style d'emmanchure
 dartToSideSeamFactor:
-  description: Shifts the intake from the darts to the side seam and visa versa TODO TODO TODO TODO
-  title: Dart to Side Seam Factor TODO TODO TODO TODO
+  description: Déplace l'ouverture des pinces vers la couture latérale et vice versa.
+  title: Facteur pince vers couture latérale
 elasticWidth:
-  description: Width of the elastic band you intend to use. TODO
-  title: Elastic width TODO
+  description: Largeur de la bande élastique que vous souhaitez utiliser.
+  title: Largeur de la bande élastique
 endStyle:
-  description: The style of the end of the tie. TODO
+  description: Le style de l'extrémité de la cravate.
   options:
-    pointed: Pointed end TODO TODO TODO TODO
-    rounded: Rounded end TODO TODO TODO TODO
-    straight: Straight end TODO TODO TODO TODO
-  title: End style TODO
+    pointed: Extrémité pointue
+    rounded: Extrémité arrondie
+    straight: Extrémité droite
+  title: Style de l'extrémité
 extraTopButton:
   description: Whether or not to include an extra top button on the front closure. TODO
   options:
