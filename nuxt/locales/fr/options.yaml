@@ -235,32 +235,32 @@ endStyle:
     straight: Extrémité droite
   title: Style de l'extrémité
 extraTopButton:
-  description: Whether or not to include an extra top button on the front closure. TODO
+  description: Pour inclure ou non un bouton supérieur supplémentaire sur la fermeture avant.
   options:
-    - No extra top button TODO TODO TODO TODO
-    - Extra top button TODO TODO TODO TODO
-  title: Extra top button TODO
+    - Pas de bouton supérieur supplémentaire
+    - Bouton supérieur supplémentaire
+  title: Bouton supérieur supplémentaire
 extraWaist:
-  description: The percent by which the top of the skirt is longer than the bottom of the waistband. Give a value higher than 0 to pleat the skirt TODO TODO TODO TODO
-  title: Extra waist TODO TODO TODO TODO
+  description: Le pourcentage déterminant si le haut de la jupe est plus long que le bas de la ceinture. Donner une valeur supérieure à 0 pour plisser la jupe.
+  title: Plissement de jupe
 frontCutawayAngle:
-  description: How much do you want the front to open up below the lower button. TODO
-  title: Front opening bottom cutaway angle TODO
+  description: Combien voulez-vous que l'avant s'ouvre en dessous du bouton inférieur.
+  title: Angle de coupe inférieur d'ouverture avant
 frontCutawayStart:
-  description: How much do you want the front to open up below the lower button. TODO
-  title: Front opening bottom cutaway start TODO
+  description: Combien voulez-vous que l'avant s'ouvre en dessous du bouton inférieur.
+  title: Début d'ouverture avant en coupe
 frontDartDepthFactor:
-  description: The Depth of the front dart as a percentage of the Waist to Hip measurement TODO TODO TODO TODO
-  title: Front Dart Depth Factor TODO TODO TODO TODO
+  description: La profondeur de la pince frontale en pourcentage de la mesure de la taille à la hanche
+  title: Facteur de profondeur de la pince avant
 frontDartPlacement:
-  description: Location of the front dart as a proportion of your chest circumference. Higher numbers move it more to the side. TODO
-  title: Front dart placement TODO
+  description: Emplacement de la pince avant en proportion de la circonférence de votre poitrine. Des nombres plus élevés déplacent la pince vers le bord.
+  title: Position de pince avant
 frontDrop:
-  description: How much the front panels lower from your hips towards your center front. TODO
-  title: Front drop TODO
+  description: Combien les pans avant s'abaissent de vos hanches vers votre milieu avant.
+  title: Chute avant
 frontInset:
-  description: Amount the front armhole is cut deeper into the front panel. TODO
-  title: Front inset TODO
+  description: La taille de l'emmanchure avant est coupée plus profondément dans le pan avant.
+  title: Encart frontal
 frontPocketDepth:
   description: 'The depth of the front pockets, as a factor of the space between your waist and hem. TODO'
   title: Front pocket depth TODO
