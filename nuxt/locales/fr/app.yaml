@@ -10,16 +10,16 @@ all: Tout
 alreadyHaveAnAccount: Vous avez déjà un compte ?
 apiCheatSheet: Feuille de code API
 areYouSureAboutThis: Êtes-vous sûr à 100 % ?
-avatar: Avatar TODO
+avatar: Avatar DONE
 avatarUpdated: Avatar mis à jour
 averagePeopleDontExist: Les gens "normaux" n'existent pas
 basicTheme: Thème classique
 basics: Les bases
 becomeAPatron: Devenez mécène
-bio: Bio TODO
+bio: Bio DONE
 bioUpdated: Bio mise à jour
 blockquote: Bloc de citation
-blog: Blog TODO
+blog: Blog DONE
 blogPost: Messages de blog
 bold: Gras
 breasts: Poitrine
@@ -34,7 +34,7 @@ chooseANewPassword: Choisir un nouveau mot de passe
 chooseAPattern: Choisir un patron
 chooseYourOptions: Choisir vos options
 close: Fermer
-code: Code TODO
+code: Code DONE
 codeOfConduct: Code de conduite
 comments: Commentaires
 community: Communauté
@@ -59,15 +59,15 @@ createMyAccount: Créer mon compte
 created: Créé
 currentPassword: Mot de passe actuel
 data: Données
-date: Date TODO
+date: Date DONE
 daysAgo: 'Il y a {days} jours'
 delete: Supprimer
 deleteThisDraft: Supprimer ce brouillon
-description: Description TODO
+description: Description DONE
 details: Détails
 difficulty: Difficulté
-docs: Documentation TODO
-documentation: Documentation TODO
+docs: Documentation DONE
+documentation: Documentation DONE
 documentationForDevelopers: Documentation pour les développeurs
 documentationForTranslators: Documentation pour les traducteurs
 documentationOverview: Vue d'ensemble de la documentation
@@ -83,10 +83,10 @@ draftingPattern: 'Ébauche de {pattern} en cours'
 drafts: Ébauches
 edit: Editer
 editOnGithub: Editer avec GitHub
-email: E-mail TODO
+email: E-mail DONE
 emailAddress: Adresse mail
 emailUpdatePending: Mise à jour de l'adresse e-mail en cours.
-emails: E-mails TODO
+emails: E-mails DONE
 enterYourCurrentPassword: Composer votre mot de passe actuel
 enterYourNewPassword: Composer votre nouveau mot de passe
 error-unknown: Une erreur inconnue est survenue
@@ -99,7 +99,7 @@ forUsername: 'Pour {username}'
 forUsers: Pour les utilisateurs
 fork: Fourche
 forkDraftHandle: 'Ebauche fourche {handle}'
-freesewing: Freesewing TODO
+freesewing: Freesewing DONE
 freesewingContributors: Contributeurs de Freesewing
 freesewingOnGithub: Freesewing sur GitHub
 freesewingPatrons: Mécènes de Freesewing
@@ -107,7 +107,7 @@ freezeMyAccount: Geler mon compte
 fullSizePdf: PDF à l'échelle
 fundamentals: Fondamentaux
 getHelp: Obtenir de l'aide
-github: GitHub TODO
+github: GitHub DONE
 githubUpdated: Nom d'utilisateur GitHub mis à jour
 goodToKnow: Bon à savoir
 grabYourMeasuringTape: Prenez votre mètre ruban
@@ -118,13 +118,13 @@ howToTakeMeasurements: Comment prendre les mesures
 i18n: Internationalisation (i18n)
 iForgotMyPassword: J'ai oublié mon mot de passe
 iForgotMyUsername: J'ai oublié mon nom d'utilisateur
-image: Image TODO
+image: Image DONE
 imperial: Impérial
 imperialUnits: Unités de mesure impériales (pouces)
 in: dans
 inch: pouce
-info: Info TODO
-instagram: Instagram TODO
+info: Info DONE
+instagram: Instagram DONE
 instagramUpdated: Compte Instagram mis à jour
 italics: Italique
 joinTheTranslationTeam: 'Même si vous n''avez jamais contribué à un projet Open Source, la traduction est une douce montée vers la gloire du contributeur.'
@@ -151,7 +151,7 @@ markdownSyntax: Syntaxe Markdown
 measurementUpdated: Mensurations mises à jour
 measurements: Mensurations
 measurementsRequiredForPattern: 'Mensurations requises pour {pattern}'
-messages: Messages TODO
+messages: Messages DONE
 metric: Métrique
 metricUnits: Unités de mesure métriques (cm)
 model: Modèle
@@ -174,7 +174,7 @@ noFilter: Aucun filtre
 noIDoNot: 'Non, je ne donne pas mon accord'
 noIDoNotObject: 'Non, je ne m''y oppose pas'
 notShared: Pas partagé
-notes: Notes TODO
+notes: Notes DONE
 ohNo: Oh non !
 okThatsDone: 'OK, c''est fait'
 onlySelectedPatternParts: Uniquement les pièces de patron selectionnées
@@ -264,7 +264,7 @@ signup-signup_pending-title: Votre création de compte est en attente d'activati
 signup-success-text: 'Nous vous avons envoyé un e-mail à {email}.'
 signup-user_exists-text: Nous avons déjà un compte d'utilisateur associé à cette adresse e-mail. Peut-être voulez-vous plutôt vous connecter?
 signup-user_exists-title: Cet utilisateur existe.
-social: Social TODO
+social: Social DONE
 somethingWentWrong: Une erreur s'est produite
 startUpload: Commencer le téléchargement
 status: État d'avancement
@@ -296,7 +296,7 @@ translationTeam: Équipe de traduction
 translators: Traducteurs
 troubleLoggingIn: Un problème de connexion ?
 tryAgain: Essayez de nouveau
-twitter: Twitter TODO
+twitter: Twitter DONE
 twitterUpdated: Compte Twitter mis à jour
 txt-avatarDropzoneText: 'Glisser et déposer une image ici, ou cliquer sur le bouton pour en choisir une dans vos fichiers.'
 txt-avatarDropzoneTitle: Déposer votre image ici
@@ -377,7 +377,7 @@ txt-warningModelData: Cela supprimera l'ensemble de vos modèles et ébauches
 txt-warningProfileData: 'Cela supprimer l''ensemble de vos modèles et ébauches, vos commentaires ainsi que votre compte. Tout sera supprimé.'
 txt-withOrWithoutBreasts: 'L''ajustement au niveau des seins nécessite un tas de mesures supplémentaires qui ne sont pas pertinentes si vous n''avez pas de poitrine. Si vous indiquez que votre modèle n''a pas de poitrine, nous ne vous montrerons pas ces mesures non pertinentes. Si vous ne savez pas quoi choisir, optez pour la présence d''une poitrine.'
 txt-withOrWithoutBreasts-explainer: 'Sur d''autres sites, la question serait probalement formulée ''homme ou femme ?''. Ici, nous n''aimons pas mettre les gens dans des cases. Ce qui compte, c''est adapter le modèle à votre poitrine.'
-type: Type TODO
+type: Type DONE
 units: Unités
 unitsUpdated: Unités enregistrées
 unknownUser-msg: 'Cela devrait être la page de profil de @{user}, mais nous n''avons pas d''utilisateur à ce nom.'
@@ -393,7 +393,7 @@ username: nom d'utilisateur
 usernameOrEmail: '@:username ou @:emailAddress'
 usernameUpdated: Nom d'utilisateur mis à jour
 users: Utilisateurs
-version: Version TODO
+version: Version DONE
 visitPatronProfile: Visiter le profil de ce mécène
 volunteerVerb: Bénévole
 weAreLoadingDataFromTheBackend: Nous chargeons les données du backend

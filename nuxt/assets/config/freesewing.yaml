@@ -31,7 +31,6 @@ i18n:
     - patterns
   locales:
     disabled:
-      - fr
       - 'no'
       - sv
       - pt
@@ -39,6 +38,7 @@ i18n:
       - en
       - de
       - es
+      - fr
       - nl
   origin: en
   stats:
@@ -73,15 +73,15 @@ i18n:
       patterns: 37
       showcase: 1
     fr:
-      app: 397
-      blog: 0
-      docs: 0
+      app: 418
+      blog: 1
+      docs: 1
       i18n: 8
       measurements: 27
-      optiongroups: 11
+      optiongroups: 12
       options: 173
       patterns: 4
-      showcase: 0
+      showcase: 1
     nl:
       app: 420
       blog: 3
