@@ -73,11 +73,11 @@ i18n:
       patterns: 37
       showcase: 1
     fr:
-      app: 395
+      app: 397
       blog: 0
       docs: 0
       i18n: 8
-      measurements: 26
+      measurements: 27
       optiongroups: 11
       options: 173
       patterns: 4
