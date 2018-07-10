@@ -1,5 +1,5 @@
 ---
-title: Brow greyish linnen Theodore trousers by joostdecock
+title: Brown greyish linnen Theodore trousers by joostdecock
 img: showcase.jpg
 caption: These are great in summer
 category: theodore
