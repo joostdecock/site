@@ -162,6 +162,11 @@ module.exports = {
           name: 'Español'
         },
         {
+          code: 'fr',
+          iso: 'fr-FR',
+          name: 'Français'
+        },
+        {
           code: 'nl',
           iso: 'nl-NL',
           name: 'Nederlands'
@@ -173,6 +178,7 @@ module.exports = {
         messages: {
           en: require('./nuxt/locales/en/en.json'),
           de: require('./nuxt/locales/de/de.json'),
+          fr: require('./nuxt/locales/fr/fr.json'),
           es: require('./nuxt/locales/es/es.json'),
           nl: require('./nuxt/locales/nl/nl.json'),
         },

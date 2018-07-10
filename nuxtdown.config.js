@@ -65,6 +65,30 @@ module.exports = {
       data: { contentLocale: 'de' },
       markdown: markdownConfig
     }],
+    // French (Français)
+    ['fr/blog', {
+      page: '/fr/blog/_blogpost',
+      permalink: '/fr/blog/:slug',
+      toc: 1,
+      data: { contentLocale: 'fr' },
+      markdown: markdownConfig
+    }],
+    ['fr/showcase', {
+      page: '/fr/showcase/_showcase',
+      permalink: '/fr/showcase/:slug',
+      isPost: true,
+      data: { contentLocale: 'fr' },
+      markdown: markdownConfig
+    }],
+    ['fr/docs', {
+      page: '/fr/docs/_page',
+      permalink: '/fr/docs/:section*/:slug',
+      isPost: false,
+      toc: 1,
+      breadcrumbs: true,
+      data: { contentLocale: 'fr' },
+      markdown: markdownConfig
+    }],
     // Dutch (Nederlands)
     ['nl/blog', {
       page: '/nl/blog/_blogpost',
