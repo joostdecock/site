@@ -339,7 +339,7 @@ txt-gdpr-1: Le Règlement Général de Protection des Données (RGPD) de l'Union
 txt-gdpr-2: 'L''une de ces mesures nous impose d''obtenir votre consentement, — en d''autres termes, votre permission — pour traiter vos données personnelleses.'
 txt-gdpr-3: 'Sans votre consentement, nous n''avons pas le droit d''utiliser vos données et nous n''avons pas d''autre choix que de les supprimer.'
 txt-gdprCompliant: Freesewing.org respecte votre vie privée et vos droits. Nous appliquons le Règlement Général de Protection des Données (RGPD) de l'Union Européenne (UE).
-txt-homepage-community: 'Tout est géré par des contributeurs bénévoles. Il n'y a pas d'entité commerciale derrière ou rattachée à ce projet.'
+txt-homepage-community: Tout est géré par des contributeurs bénévoles. Il n'y a pas d'entité commerciale derrière ou rattachée à ce projet.
 txt-homepage-different: Ce en quoi nous sommes différents
 txt-homepage-draft: 'Choisissez parmi l''un de vos patrons, choisissez un modèle, et sélectionnez vos options. Nous ferons le reste.'
 txt-homepage-how: Comment ça marche
@@ -348,7 +348,7 @@ txt-homepage-model: 'Tous nos patrons sont faits sur mesure, donc la première c
 txt-homepage-opensource: 'Notre plateforme, nos patrons, et même ce site web. Tout notre code est disponible sur GitHub. Les pull-requests sont les bienvenues !'
 txt-homepage-patrons: Freesewing existe grâce au soutien financier de nos Patrons. Ils gardent ce navire à flot.
 txt-homepage-quotes: Ce qu'en disent les autres
-txt-joinTheTranslationTeam1: 'Même si vous n'avez jamais contribué à un projet open source, la traduction est un bon point de départ vers la renommée des contributeurs.'
+txt-joinTheTranslationTeam1: 'Même si vous n''avez jamais contribué à un projet open source, la traduction est un bon point de départ vers la renommée des contributeurs.'
 txt-joinTheTranslationTeam2: 'Peu importe que vous ne traduisiez que quelques mots ou phrases, ou bien que vous ne vous preniez en charge l''intégralité d''une langue à vous seul(e). Chaque contribution compte, et plus il y a de mains pour travailler et plus la tâche est aisée.'
 txt-joinTheTranslationTeam3: 'Pour débuter, veuillez lire la documentation pour les traducteurs. Ne vous inquiétez pas, c''est facile.'
 txt-missingBlogPosts: 'Tous les billets de blog n''ont pas été traduits en anglais - mais grâce à vous, cela pourrait changer.'

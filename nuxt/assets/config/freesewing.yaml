@@ -67,20 +67,20 @@ i18n:
       blog: 2
       docs: 1
       i18n: 8
-      measurements: 26
+      measurements: 27
       optiongroups: 12
       options: 300
       patterns: 37
       showcase: 1
     fr:
-      app: 418
+      app: 421
       blog: 1
       docs: 1
       i18n: 8
       measurements: 27
       optiongroups: 12
       options: 173
-      patterns: 4
+      patterns: 37
       showcase: 1
     nl:
       app: 420
