@@ -188,14 +188,14 @@ collarRoll:
   description: La valeur rendant le tombant du col plus large que le pied de col.
   title: Pliure du col
 collarStandBend:
-  description: The bend of the collar stand. TODO
-  title: Collar stand bend TODO
+  description: La courbure du col.
+  title: Courbure du col
 collarStandCurve:
-  description: The curve of the collar stand. TODO
-  title: Collar stand curve TODO
+  description: La courbe du col.
+  title: Courbe du col
 collarStandWidth:
-  description: Widht of the collar stand. TODO
-  title: Collar stand width TODO
+  description: Largeur du col.
+  title: Largeur du col
 cuffButtonRows:
   description: Soit pour dessiner une rangée de boutons de manchette simple ou double. Cette option n'est pertinente que pour les emmanchures classiques.
   options:
@@ -215,11 +215,11 @@ cuffStyle:
   description: Style d'emmanchure.
   options:
     '1': Emmanchure classique arrondie
-    '2': Angled barrel cuff TODO
-    '3': Straight barrel cuff TODO
-    '4': Rounded French cuff TODO
-    '5': Angled French cuff TODO
-    '6': Straight French cuff TODO
+    '2': Emmanchure classique angulaire
+    '3': Emmanchure classique droite
+    '4': Emmanchure française arrondie
+    '5': Emmanchure française angulaire
+    '6': Emmanchure française droite
   title: Style d'emmanchure
 dartToSideSeamFactor:
   description: Déplace l'ouverture des pinces vers la couture latérale et vice versa.
@@ -265,17 +265,17 @@ frontPocketDepth:
   description: 'La profondeur des poches avant, en tant que facteur de l''espace entre la taille et l''ourlet.'
   title: profondeur des poches avant
 frontPocketHeight:
-  description: 'The height where the front pocket starts, as a factor of your natural waist to hip measurement. TODO'
-  title: Front pocket height TODO
+  description: 'La hauteur à partir de laquelle la poche avant commence, en tant que facteur de mesure du niveau de votre taille naturelle au niveau de la hanche.'
+  title: Hauteur de la poche avant
 frontPocketPlacement:
-  description: Location of the front pockets as a proportion of your chest circumference. Higher numbers move it more to the side. TODO
-  title: Front pocket placement TODO
+  description: Emplacement des poches avant en proportion de la circonférence de votre poitrine. Des nombres plus élevés le déplacent plus vers le bord.
+  title: Emplacement de la poche avant
 frontPocketWidth:
-  description: 'The width of the front pocket, as a factor of your chest circumference. TODO'
-  title: Front pocket width TODO
+  description: 'La largeur de la poche avant, en tant que facteur de votre tour de poitrine.'
+  title: Largeur de la poche avant
 frontRise:
-  description: 'Rise of the front panels at center front, between your breasts. Negative values will lower them. TODO'
-  title: Front rise TODO
+  description: 'Augmentation des pans avant au centre devant, entre vos seins. Les valeurs négatives les abaisseront.'
+  title: Augmentation des pans avant
 frontScyeDart:
   description: The amount to take out in a dart at the front of the armhole. TODO
   title: Front scye dart TODO
