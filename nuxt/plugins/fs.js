@@ -14,7 +14,7 @@ export default ({ app, store, route }, inject) => {
   const ax = {
     data: axios.create({
       baseURL: Conf.apis.data,
-      timeout: 15000
+      timeout: 30000
     })
   }
 
