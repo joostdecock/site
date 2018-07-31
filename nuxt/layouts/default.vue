@@ -9,6 +9,7 @@
     <the-top-toolbar color="white" light class="hidden-md-and-down"/>
     <v-content class="fs-vertical-container">
       <v-container>
+        <fs-nag />
         <v-layout row>
           <v-flex xl5 offset-xl2 lg7 offset-lg0 md10 offset-md1 sm12 xs12>
             <nuxt />
@@ -42,6 +43,7 @@ import TheMobileToolbar from '~/components/stateful/TheMobileToolbar'
 import TheTopToolbar    from '~/components/stateful/TheTopToolbar'
 import FsPageComments   from '~/components/stateless/FsPageComments'
 import TheFooter        from '~/components/stateless/TheFooter'
+import FsNag            from '~/components/stateless/FsNag'
 // Dynamic components
 import FsDynamicAsideBlogpost from '~/components/stateless/FsDynamicAsideBlogpost'
 import FsDynamicAsideShowcase from '~/components/stateless/FsDynamicAsideShowcase'
@@ -58,7 +60,8 @@ export default {
     FsDynamicAsidePage,
     FsDynamicAsideDraft,
     FsPageComments,
-    TheFooter
+    TheFooter,
+    FsNag
   },
   computed: {
     rightColumnComponent () {
