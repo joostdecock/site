@@ -225,6 +225,26 @@ module.exports = {
     }
   },
   generate: {
+    minify: {
+  	  collapseBooleanAttributes: true,
+  	  collapseWhitespace: false,
+  	  decodeEntities: true,
+  	  minifyCSS: true,
+  	  minifyJS: true,
+  	  processConditionalComments: true,
+  	  removeAttributeQuotes: false,
+  	  removeComments: false,
+  	  removeEmptyAttributes: true,
+  	  removeOptionalTags: true,
+  	  removeRedundantAttributes: true,
+  	  removeScriptTypeAttributes: false,
+  	  removeStyleLinkTypeAttributes: false,
+  	  removeTagWhitespace: false,
+  	  sortAttributes: true,
+  	  sortClassName: false,
+  	  trimCustomFragments: true,
+  	  useShortDoctype: true
+	  },
     interval: 500,
     routes: [
         '/patterns/aaron',
