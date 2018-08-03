@@ -6,8 +6,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
-   width="6174.05"
-   height="3402.2"
+   width="3515.33"
+   height="3321.39"
    id="svg24449">
   <defs
      id="defs24451">
@@ -148,19 +148,19 @@
        color-interpolation-filters="sRGB"
        id="filter16325">
       <feGaussianBlur
-         stdDeviation="7.62292"
-         id="feGaussianBlur16327" />
+         id="feGaussianBlur16327"
+         stdDeviation="7.62292" />
     </filter>
     <filter
        color-interpolation-filters="sRGB"
        id="filter28857">
       <feGaussianBlur
-         stdDeviation="7.62292"
-         id="feGaussianBlur28859" />
+         id="feGaussianBlur28859"
+         stdDeviation="7.62292" />
     </filter>
   </defs>
   <g
-     transform="translate(800.041,1145.73)"
+     transform="translate(-1228.35,1194.22)"
      id="layer1">
     <rect
        width="3515.33"
