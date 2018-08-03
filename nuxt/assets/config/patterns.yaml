@@ -2455,7 +2455,7 @@ jaeger:
             type: measure
             min: 10
             max: 25
-            default: 15
+            default: 17.5
         lapelStart:
             title: 'Lapel break point'
             description: 'Location of the lapel break point (where the front opening starts). Lower values are closer to the waistline, higher values closer to the chestline.'
