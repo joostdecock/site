@@ -476,7 +476,7 @@ Now, you can flip the inner yoke over your rolled sausage to align the shoulder 
 
 Pin them in place, and then sew the shoulder seams, making sure to keep your sausage (or burrito stuffing) out of the way so it doesn't get caught in the seam.
 
-![Math the notches](/img/patterns/simon/instructions/11e.png)
+![Match the notches](/img/patterns/simon/instructions/11e.png)
 
 > Made sure to align the actual seam line.
 > Due to the uneven angles at the neck opening, the fabric edge is often longer on one side than on the other.
