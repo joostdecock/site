@@ -30,7 +30,7 @@ pattern: jaeger
 > I have no afiliation with these guys, but it's the only place I know of that will sell you a kit of
 > professional trimmings to make a jacket.
 >
-> If you know of any other place that carries this stuff, please let us know about it.
+> If you know of any other place that carries this stuff, please let us know.
 {.fs-bq}
 
 To make Jaeger, you will need the following:
@@ -96,9 +96,12 @@ However, making Jaeger is going to take some time. Do yourself a favour and get 
 
 ### Cutting caveats
 
- - The front facing and lining is marked on the front piece. For the facing, you'll have to attach the extension.
- - The chest piece is also marked on the front.
+ - The chest piece is marked on the front.
  - Don't include seam allowance when cutting out canvas, and cut it on bias.
+ - The front facing and lining is marked on the front piece. They split the front part in two along the boundary line. You can cut the front part along that line after cutting out the front from the main fabric. The inner pocket extension for the facing is printed separately, and you can tape it back in its place after cutting the patern piece. **Do not forget to add seam allowance to both the facing and the lining for this boundary seam**.
+
+![Trace the front facing and lining from the front part](/img/patterns/jaeger/instructions/cuttingCaveat.svg)
+
 
 ## Construction
 
@@ -112,9 +115,9 @@ Fold the front double with the good sides together and pin it down so the fold i
 
 #### Sew darts
 
-Sew the front dart close taking care to have the dart stop at the correct height. 
+Sew the front dart close, taking care to have the dart stop at the correct top end. 
 The bottom is not that important as it will be covered by the pockets. 
-But the top end of the dart will be on show, so please make sure to have it end at the same height at both sides.
+But the top end of the dart will be clearly visible, so please make sure to have it end at the same height at both sides.
 
 #### Cut open and press
 
@@ -144,8 +147,9 @@ Apply a rectangular piece of light fusible interfacing around the chest pocket a
 With the fusible in place, thread a needle and baste around the chest pocket to
 transfer the markings to the good side of the fabric.
 
-Unlike a classic welt pocket, we want the top seam line of our welt to be shorter. 
-So on the top line of your basted welt pocket, mark 0.5cm inwards from the corners of the top line.
+This pocket differs from a traditional welt pocket. The welt extends above the pocket opening. This hides the pocket bag without the need for facings. The top part of the opening is also smaller than the welt, allowing you to slip-stitch it closed.
+
+On the top line of your basted welt pocket, mark 0.5cm inwards from the corners of the top line. 
 
 > These points are notches on the front part of your pattern.
 
@@ -156,7 +160,7 @@ So on the top line of your basted welt pocket, mark 0.5cm inwards from the corne
 Fold the welt double with the good sides together, and close the sides (sew the side seams). 
 
 #### Trim seam allowance, turn and press
-Trim the seam allowances on the sides and especially limt the seam allowance towards the corner to avoid bulk.
+Trim the seam allowances on the sides and especially limit the seam allowance towards the corner to avoid bulk.
 
 Turn inside out so the good side is out and press.
 
@@ -171,7 +175,7 @@ This will be the line to sew on later.
 
 ![Attach the chest pocket welt to the front](/img/patterns/jaeger/instructions/attachChestPocketWelt.svg)
 
-Place welt down on good side of front and sew to bottom line. 
+Place welt down on good side of front with the folded side downwards, and sew to bottom line. 
 Make sure to stop and start exactly at the edge of the line you basted.
 
 #### Sew the chest pocket bag to the front
@@ -197,7 +201,7 @@ Don't cut to the edge, but create a trianngular shape there.
 
 Flip the pocket bag and welt to the backside by passing both of them through the opening you just created.
 
-Get everything to lay nice and flat and press.
+Get everything to lay nice and flat, and press.
 
 Now, bring the welt only to the front and get it to lie nice and flat. 
 Press again from the back.
@@ -211,12 +215,10 @@ Press again from the back.
 On the backside, fold the pocket bag double and sew it to the pocket 
 welt below the existing seamline of the welt.
 
-Thread a needle and hand-finish the chest pocket by sewing down the sides 
-(to the front panel, but don't let your stitches show on the front) 
-and reinforcing the back by sewing down those triangular little pieces.
+Thread a needle and hand-finish the chest pocket by sewing down the sides of the welt to the front panel (don't let your stitches show on the front). 
 
 Finally, close the pocket bag by sewing the sides. 
-Do this by placing the front down with the good side up. Than, fold over each side and sew the pocket bag.
+Do this by placing the front down with the good side up. Then fold over each side and sew the pocket bag. While sewing these sides, make sure to catch those triangular little pieces of the opening. This will reinforce the pocket opening.
 
 Baste the chest pocket closed while we contruct the jacket.
 
@@ -259,7 +261,8 @@ This will also secure the canvas to the front here and there.
 
 Keep in mind that:
 
- - The tape along the roll line should be places inside the roll line.
+ - The tape along the roll line should be placed inside the roll line.
+ - The tape along the roll line should be about half a centimeter shorter than the distance it spans. The slight tension this creates helps the lapel roll nicely and contour to your body.
  - The tape along the lapel edge should be placed inside the seam line
 
 > ##### Don't sew through your fabric
@@ -322,7 +325,7 @@ Align the shoulder seams with good sides together, and sew them together.
 > 
 > Make sure to carefully align the shoulders based on the notches.
 > Because of the different shape of the back and front panels on the neck side, 
-> the fabric edge looks different. So aligning those edges will nog give you 
+> the fabric edge looks different. So aligning those edges will not give you 
 > what you need.
 >
 > So make sure to align the notches. It's what they're there for.
