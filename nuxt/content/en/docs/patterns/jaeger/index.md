@@ -96,9 +96,12 @@ However, making Jaeger is going to take some time. Do yourself a favour and get 
 
 ### Cutting caveats
 
- - The front facing and lining is marked on the front piece. For the facing, you'll have to attach the extension.
- - The chest piece is also marked on the front.
+ - The chest piece is marked on the front.
  - Don't include seam allowance when cutting out canvas, and cut it on bias.
+ - The front facing and lining is marked on the front piece to save you from printing them all. You'll need to seperate them add the facing\lining boundary, and add seam allowance to that boundary. In addition, you should have to attach the extension to the facing as shown below:
+
+![Trace the front facing and lining from the front part](/img/patterns/jaeger/instructions/cuttingCaveat.svg)
+
 
 ## Construction
 
