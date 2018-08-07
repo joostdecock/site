@@ -200,7 +200,7 @@ patternOptions: Opções do molde
 patternParts: Partes do molde
 patterns: Moldes
 pleaseCheckYourInbox: Você receberá um E-mail com mais instruções
-pleaseEnterAValidEmailAddress: Por favor, insira um endereço de E-mail válido
+pleaseEnterAValidEmailAddress: 'Por favor, insira um endereço de E-mail válido'
 pleaseUpgradeThisDraft: 'Por favor, atualize esse esboço.'
 postComment: Poste um comentário
 postInfo: Poste informações
