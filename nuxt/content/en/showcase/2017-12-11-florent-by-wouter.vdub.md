@@ -6,8 +6,8 @@ category: florent
 layout: showcase
 author: wouter.vdub
 ---
-{% include blogfigure.html img="back.jpg" caption="View of the back" %}
-{% include blogfigure.html img="front.jpg" caption="View of the front" %}
+![View of the back ](/img/showcase/florent-by-wouter-vdub/high_back.jpg) 
+![View of the front](/img/showcase/florent-by-wouter-vdub/high_front.jpg)
 
 > ##### Not bad for a muslin
 > This was made as a toile, and although precision was used, some aspects could
@@ -15,5 +15,5 @@ author: wouter.vdub
 >
 > Also, the pattern was printed with the standard `ease` of 1cm, and that 
 > was taken in at the back seam after the pieces were cut out.
-{:.comment}
+{.fs-bq}
 

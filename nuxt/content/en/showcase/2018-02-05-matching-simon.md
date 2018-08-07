@@ -6,31 +6,20 @@ category: simon
 layout: showcase
 author: ecmtts
 ---
-<div class="row">
-<div class="col-6">
-{% include figure.html url='/img/showcase/matching-simon/view2.jpg' description='Model + tapemeasure' %}
-</div>
-<div class="col-6">
-{% include figure.html url='/img/showcase/matching-simon/view3.jpg' description='That fabric is gorgeous' %}
-</div>
-</div>
-<div class="row">
-<div class="col-6">
-{% include figure.html url='/img/showcase/matching-simon/view4.jpg' description='Shoulder slope' %}
-</div>
-<div class="col-6">
-{% include figure.html url='/img/showcase/matching-simon/view5.jpg' description='View from the back' %}
-</div>
-</div>
-<div class="row">
-<div class="col">
-{% include figure.html url='/img/showcase/matching-simon/view6.jpg' description='Hi camera' %}
-</div>
-</div>
+![Model + tapemeasure](/img/showcase/matching-simon/view2.jpg)
+
+![That fabric is gorgeous](img/showcase/matching-simon/view3.jpg)
+
+![Shoulder slope](/img/showcase/matching-simon/view4.jpg)
+
+![View from the back](/img/showcase/matching-simon/view5.jpg)
+
+![Hi camera](/img/showcase/matching-simon/view6.jpg)
 
 > ##### See the originals on the Instragram feed of ecmtts
 >
-> [These images](https://www.instagram.com/p/BendNe7AD2o/?taken-by=ecmtts)
-> is from [the Instagram feed of ecmtts](https://www.instagram.com/ecmtts/).
-> It is published here with permission.
-{:.link}
+> These images are from 
+> [the Instagram feed](https://www.instagram.com/ecmtts/)
+> of [@ericamattos](/users/ericamattos).
+> They are published here with permission.
+{.fs-bq}
