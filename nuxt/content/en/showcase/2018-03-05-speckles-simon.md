@@ -3,7 +3,6 @@ title: A speckled simon by Allie for her husband
 img: showcase.jpg
 caption: "That constrasting buttonhole packet is a great touch."
 category: simon
-layout: showcase
 author: Allie
 ---
 > Have you heard of freesewing.org? It’s pretty much the greatest thing ever!

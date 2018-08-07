@@ -24,7 +24,7 @@ blogPost: posts do Blog
 bold: Negrito
 breasts: Seios
 breastsUpdated: Configuração de seios atualizada
-brokenLink-msg: 'If you came here through a link, please report that broken link. TODO'
+brokenLink-msg: 'Se você chegou aqui por um link, por favor informe esse link quebrado.'
 by: por
 cancel: Cancelar
 chatOnGitter: Bate-pato no Gitter
@@ -200,7 +200,7 @@ patternOptions: Opções do molde
 patternParts: Partes do molde
 patterns: Moldes
 pleaseCheckYourInbox: Você receberá um E-mail com mais instruções
-pleaseEnterAValidEmailAddress: Please enter a valid E-mail address TODO
+pleaseEnterAValidEmailAddress: 'Por favor, insira um endereço de E-mail válido'
 pleaseUpgradeThisDraft: 'Por favor, atualize esse esboço.'
 postComment: Poste um comentário
 postInfo: Poste informações
@@ -295,7 +295,7 @@ tip: Dica
 title: Título
 today: Hoje
 translationTeam: Equipe de tradução
-translators: Translators TODO
+translators: Tradutores
 troubleLoggingIn: Problemas ao fazer o login?
 tryAgain: Tente novamente
 twitter: Twitter DONE
@@ -323,8 +323,8 @@ txt-consentProfileQuestionShare: Compartilhamos com os outros?
 txt-consentProfileQuestionTiming: Quanto tempo nós mantemos eles?
 txt-consentProfileQuestionWhat: O que são dados de perfil?
 txt-consentProfileQuestionWhy: Por que precisamos deles?
-txt-contentLocaleFallback: That's why we're showing you the English version instead. TODO
-txt-contentNotTranslated: 'Unfortunately, this page has not (yet) been translated to {language}. TODO'
+txt-contentLocaleFallback: É por isso que estamos mostrando a versão em inglês.
+txt-contentNotTranslated: 'Infelizmente, essa página (ainda) não foi traduzida para {language}.'
 txt-dataExport: 'If you like, we can export all the data we have stored for you. TODO'
 txt-dataExportQueued: You data export has been queued. We'll send you an E-mail once it's ready with a download link. TODO
 txt-didYouSpotATypo: 'Did you spot a typo? Do you feel something is missing, or needs clarification? TODO'
@@ -368,7 +368,7 @@ txt-saOption-none: Don't include seam allowance TODO
 txt-saOption-patternImperial: Pattern default imperial seam allowance TODO
 txt-saOption-patternMetric: Pattern default metric seam allowance TODO
 txt-signup-step1: 'Enter your email address, and pick a password. TODO'
-txt-signup-step2: Confirme seu endereço de e-mail. TODO
+txt-signup-step2: Confirme seu endereço de e-mail.
 txt-signup-step3: Give us permission to process your personal data. TODO
 txt-slogan: An open source platform for made-to-measure sewing patterns TODO
 txt-translators1: We are looking for people to help with our translation efforts. TODO
@@ -382,8 +382,8 @@ txt-withOrWithoutBreasts-explainer: 'On other websites, this question may be phr
 type: Tipo
 units: Unidades
 unitsUpdated: Unidades configuradas
-unknownUser-msg: 'This should be the profile page of @{user}, but we don''t have a user by that name. TODO'
-unknownUser-title: 'Do you know who @{user} is? Because we don''t. TODO'
+unknownUser-msg: 'Esse deveria ser a página de perfil do @{user}, mas nós não temos um usuário com esse nome.'
+unknownUser-title: 'Você sabe quem é @{user}? Porque nós não sabemos.'
 updates: Atualizações
 upgrade: Atualizar
 upgradeRequired: Atualização requeridaO
