@@ -327,26 +327,26 @@ txt-contentLocaleFallback: É por isso que estamos mostrando a versão em inglê
 txt-contentNotTranslated: 'Infelizmente, essa página (ainda) não foi traduzida para {language}.'
 txt-dataExport: 'Se você quiser, podemos exportar para você todos os dados que armazenamos'
 txt-dataExportQueued: Sua exportação de dados foi enfileirada. Enviaremos um e-mail com um link para download assim que estiver pronto
-txt-didYouSpotATypo: 'Você encontrou um erro de digitação? Você sente que algo está faltando ou precisa de esclarecimento?'
+txt-didYouSpotATypo: Você encontrou um erro de digitação? Você sente que algo está faltando ou precisa de esclarecimento?
 txt-doYouObject: Você se opõe a ter seus dados usados anonimamente para pesquisa científica?
 txt-editThisPageOnline: Você pode editar esta página on-line e enviar suas alterações.
 txt-email-sharing: Nós nunca vamos compartilhar seu e-mail com mais ninguém
 txt-emailChangeConfirmationNotFound: 'Desculpe, mas não temos nenhuma mudança de e-mail pendente para esse código de confirmação. Talvez tenha expirado e, nesse caso, você pode simplesmente fazer a alteração novamente nas suas configurações.'
 txt-emailNotFound: 'Se não conseguir encontrar o email, verifique a sua pasta de spam ou entre em contato conosco.'
 txt-emailWillWorkToo: 'Se você não souber ser @:username, seu @:emailAddress também poderá ser usado'
-txt-errorPleaseReportIssue: Por favor, informe este problema no GitHub para que possamos corrigi-lo
+txt-errorPleaseReportIssue: 'Por favor, informe este problema no GitHub para que possamos corrigi-lo'
 txt-footer: Freesewing é feito por Joost De Cock & colaboradores <br> com o apoio financeiro dos nossos Patronos
 txt-forgot-login: 'Digite seu nome de usuário ou endereço de e-mail abaixo e clique no botão <b>@:resetPassword</b>'
 txt-gdpr-1: O Regulamento Geral de Proteção de Dados (GDPR) da União Européia (UE) protege seus dados pessoais contra acumuladores de dados inescrupulosos. Isso é uma coisa boa.
 txt-gdpr-2: 'Uma das coisas que esse regulamento impõe é que obtenham seu consentimento - em outras palavras, sua permissão - para processar seus dados pessoais.'
 txt-gdpr-3: 'Sem o seu consentimento, não temos base legal para processar seus dados e não temos outra escolha a não ser removê-los.'
 txt-gdprCompliant: Freesewing.org respeita sua privacidade e seus direitos. Aplicamos o Regulamento Geral de Proteção de Dados (GDPR) da União Européia (UE).
-txt-homepage-community: 'Tudo é executado por colaboradores voluntários. Não existe nenhuma entidade comercial por trás ou anexada a este projeto.'
+txt-homepage-community: Tudo é executado por colaboradores voluntários. Não existe nenhuma entidade comercial por trás ou anexada a este projeto.
 txt-homepage-different: Como nós somos diferentes
 txt-homepage-draft: 'Escolha um entre nossos moldes, escolha um modelo, escolha suas opções. Nós faremos o restante.'
 txt-homepage-how: Como funciona
 txt-homepage-join: Junte-se a milhares de pessoas e inscreva-se em uma conta gratuita no freesewing.org.
-txt-homepage-model: Todos os nossos moldes são feitos sob medida. Então, a primeira coisa a fazer é pegar sua fita métrica.
+txt-homepage-model: 'Todos os nossos moldes são feitos sob medida. Então, a primeira coisa a fazer é pegar sua fita métrica.'
 txt-homepage-opensource: 'Nossa plataforma, nossos moldes e até mesmo este site. Todo o nosso código está disponível no GitHub. Pull-requests são benvindos!'
 txt-homepage-patrons: Freesewing é possível graças ao apoio financeiro de nossos Patronos. Eles mantêm esse navio à tona.
 txt-homepage-quotes: O que os outros estão dizendo
@@ -360,14 +360,14 @@ txt-noModels: 'Sem um modelo, não há muito que você possa fazer aqui'
 txt-noValidModels: Nenhum de seus modelos tem todas as medidas necessárias para esse molde.
 txt-password-policy: Nós não impomos uma política de senha
 txt-passwordRecoverConfirmationNotFound: 'Desculpe, mas não temos recuperação de senha pendente para este código de confirmação. Talvez tenha expirado. Se este for o caso, você pode simplesmente fazer outra solicitação.'
-txt-resend: 'Você pode se inscrever novamente com o mesmo endereço de e-mail e enviaremos uma nova mensagem de confirmação.'
+txt-resend: Você pode se inscrever novamente com o mesmo endereço de e-mail e enviaremos uma nova mensagem de confirmação.
 txt-saOption-custom: Margem de costura personalizada
 txt-saOption-imperial: Margem de costura padrão (Imperial)
 txt-saOption-metric: Margem de costura métrica padrão
 txt-saOption-none: Não inclua margem de costura
 txt-saOption-patternImperial: Margem de costura (imperial) padrão do molde
 txt-saOption-patternMetric: Margem de costura métrica padrão do molde
-txt-signup-step1: 'Digite seu endereço de e-mail e escolha uma senha.'
+txt-signup-step1: Digite seu endereço de e-mail e escolha uma senha.
 txt-signup-step2: Confirme seu endereço de e-mail.
 txt-signup-step3: Dê-nos permissão para processar seus dados pessoais.
 txt-slogan: Uma plataforma em código aberto para moldes de costura feitos sob medida.
@@ -375,7 +375,7 @@ txt-translators1: Procuramos pessoas para ajudar nos nossos esforços de traduç
 txt-translators2: 'Muitas mãos tornam o trabalho leve, e é um excelente karma fazer uma contribuição dessa maneira.'
 txt-translators3: 'Para saber mais sobre o que você pode fazer e como fazê-lo, clique no link abaixo.'
 txt-warningDataRestriction: 'Depois de restringir sua conta, você não poderá desfazer isso sozinho. Para recuperar o acesso à sua conta, você deverá entrar em contato conosco.'
-txt-warningModelData: 'Isso removerá todos os seus modelos e todos os seus esboços.'
+txt-warningModelData: Isso removerá todos os seus modelos e todos os seus esboços.
 txt-warningProfileData: 'Isso removerá todos os seus modelos, todos os seus esboços, todos os seus comentários e sua conta. Tudo irá desaparecer. FAÇAM'
 txt-withOrWithoutBreasts: 'Ajustar seios ao molde requer um monte de medidas extras que não são relevantes se você não tiver seios. Se você indicar que seu modelo não tem seios, não mostraremos essas medidas por serem irrelevantes. Se você não tem certeza do que escolher, escolha seios.'
 txt-withOrWithoutBreasts-explainer: 'Em outros sites, essa questão pode ser expressa como "homem ou mulher". Aqui, não gostamos de colocar pessoas em caixas. Tudo o que nos interessa é ajustar o molde ao seu busto.'
