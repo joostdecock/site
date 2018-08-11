@@ -1,21 +1,21 @@
 acrossBackFactor:
-  description: Controls your across back width as a factor of your shoulder to shoulder measurement. TODO
-  title: Across back factor TODO
+  description: Controla sua largura das costas como um fator de sua medida ombro-a-ombro.
+  title: Fator de largura das costas
 adjustmentRibbon:
-  description: Add a ribbon to make the tie adjustable. TODO
+  description: Adicione uma fita de tecido para tornar a gravata ajustável.
   options:
-    - Do not include ribbon TODO TODO TODO TODO TODO TODO
-    - Include ribbon TODO TODO TODO TODO TODO TODO
-  title: Adjustment Ribbon TODO
+    - Não inclua a fita de tecido
+    - Inclua a fita de tecido
+  title: Fita para ajuste
 armholeDepthFactor:
-  description: Controls the depth of the armhole. Higher values make a deeper armhole. TODO
-  title: Armhole depth factor TODO
+  description: Controla a altura da cava da manga. Valores altos tornam a cava da manga mais profunda.
+  title: Fator de profundidade da cava da manga
 armholeDrop:
-  description: Lower the armhole by this amount. Negative values will raise it. TODO
-  title: Armhole drop TODO
+  description: Abaixe a cava da manga por essa quantidade. Valores negativos a tornarão mais alta.
+  title: Queda da cava da manga
 backDartDepthFactor:
-  description: The Depth of the back dart as a percentage of the Waist to Hip measurement TODO TODO TODO TODO TODO TODO TODO
-  title: Back Dart Depth Factor TODO TODO TODO TODO TODO TODO TODO
+  description: Profundidade da pence das costas como porcentagem da medida da Cintura até a bacia
+  title: Fator de profundidade da pence das costas
 backDrop:
   description: How much the back panels lower from your hips towards your center back. Negative values will raise the back. TODO
   title: Back drop TODO
@@ -35,46 +35,46 @@ backScyeDart:
   description: The amount to take out in a dart at the back of the armhole. TODO
   title: Back scye dart TODO
 backVent:
-  description: 'Do you want a central back vent, or none at all? TODO'
+  description: 'Você quer uma abertura central nas costas, ou nenhuma?'
   options:
-    - No back vent TODO TODO TODO TODO TODO TODO
-    - Single back vent TODO TODO TODO TODO TODO TODO
-    - Double back vent TODO TODO TODO TODO TODO TODO
-  title: Back vent TODO
+    - Sem abertura nas costas
+    - Abertura traseira única
+    - Abertura traseira dupla
+  title: Abertura traseira
 backVentLength:
-  description: Controls the length of the back vent. Lower numbers result in a shorter vent. TODO
-  title: Back vent length TODO
+  description: Controla o comprimento da abertura traseira. Números pequenos resultam em aberturar mais curtas.
+  title: Comprimento da abertura traseira
 backlineBend:
   description: Determines the shape/bend of the back of the armholes. TODO
   title: Back armhole shape TODO
 barrelcuffNarrowButton:
-  description: Whether to include a button to tie the cuffs more narrow. This option is only relevant for barrel cuffs. TODO
+  description: Para incluir um botão extra para apertar ainda mais os punhos. Essa opção só é relevante para punhos tipo "barril" (que não usam abotoaduras). TODO
   options:
-    - No narrow button TODO TODO TODO TODO TODO TODO
-    - Include narrow button TODO TODO TODO TODO TODO TODO
-  title: Cuff narrow button TODO
+    - Sem botão extra no punho
+    - Inclua botão extra no punho
+  title: Botão estreito para o punho
 bicepsEase:
-  description: 'The amount of ease at your upper arm. Note that while we try to respect this, fitting the sleeve to the armhole takes precedence over respecting the exact amount of ease. TODO'
-  title: Biceps ease TODO
+  description: 'A folga na porção superior do braço. Note que, enquanto tentamos respeitar isso, o ajuste da manga na cava tem precedência sobre a quantidade exata de folga.'
+  title: Folga no bíceps
 bowLength:
-  description: The length of the wings of the bow tie. TODO
-  title: Bow length TODO
+  description: O comprimento das asas da gravata borboleta.
+  title: Comprimento da gravata borboleta
 bowStyle:
-  description: The style of the bow. TODO
+  description: O estilo da laço gravata borboleta.
   options:
-    butterfly: Butterfly TODO TODO TODO TODO TODO TODO
-    diamond: Diamond TODO TODO TODO TODO TODO TODO
-    square: Square TODO TODO TODO TODO TODO TODO
-    widesquare: Wide Square TODO TODO TODO TODO TODO TODO
-  title: Bow style TODO
+    butterfly: Borboleta
+    diamond: Diamante
+    square: Quadrada
+    widesquare: Quadrada larga
+  title: Estilo do laço
 bulge:
   description: Increase angle to create more room in the front pouch. TODO
   title: Bulge TODO
 buttonPlacketStyle:
   description: Style of the button placket. TODO
   options:
-    '1': Classic style TODO TODO TODO TODO TODO TODO
-    '2': French style (seamless) TODO TODO TODO TODO TODO TODO
+    '1': Estilo clássico
+    '2': Estilo francês (sem costura)
   title: Button placket style TODO
 buttonPlacketType:
   description: Type of the button placket. TODO
@@ -107,29 +107,29 @@ buttonholePlacketWidth:
   description: Width of the butonhole placket. TODO
   title: Buttonhole placket width TODO
 buttons:
-  description: The number of buttons on the front closure. TODO
+  description: A quantidade de botões no fechamento frontal.
   options:
     simon:
-      '10': 10 buttons TODO TODO TODO TODO TODO
-      '11': 11 buttons TODO TODO TODO TODO TODO
-      '12': 12 buttons TODO TODO TODO TODO TODO
-      '4': 4 buttons TODO TODO TODO TODO TODO
-      '5': 5 buttons TODO TODO TODO TODO TODO
-      '6': 6 buttons TODO TODO TODO TODO TODO
-      '7': 7 buttons TODO TODO TODO TODO TODO
-      '8': 8 buttons TODO TODO TODO TODO TODO
-      '9': 9 buttons TODO TODO TODO TODO TODO
+      '10': 10 botões
+      '11': 11 botões
+      '12': 12 botões
+      '4': 4 botões
+      '5': 5 botões
+      '6': 6 botões
+      '7': 7 botões
+      '8': 8 botões
+      '9': 9 botões
     wahid:
-      '10': 10 buttons TODO TODO TODO TODO TODO
-      '11': 11 buttons TODO TODO TODO TODO TODO
-      '12': 12 buttons TODO TODO TODO TODO TODO
-      '4': 4 buttons TODO TODO TODO TODO TODO
-      '5': 5 buttons TODO TODO TODO TODO TODO
-      '6': 6 buttons TODO TODO TODO TODO TODO
-      '7': 7 buttons TODO TODO TODO TODO TODO
-      '8': 8 buttons TODO TODO TODO TODO TODO
-      '9': 9 buttons TODO TODO TODO TODO TODO
-  title: Number of buttons TODO
+      '10': 10 botões
+      '11': 11 botões
+      '12': 12 botões
+      '4': 4 botões
+      '5': 5 botões
+      '6': 6 botões
+      '7': 7 botões
+      '8': 8 botões
+      '9': 9 botões
+  title: Número de botões
 centerBackDart:
   description: The amount to take out in a dart at the top of the center back. TODO
   title: Center back dart TODO
