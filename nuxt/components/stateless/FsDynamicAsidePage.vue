@@ -12,7 +12,7 @@
        {{ $t('makeItBetter') }}
       </v-card-title>
       <v-divider></v-divider>
-      <v-card-text class="fs-pad">
+      <v-card-text class="fs-pad" v-if="page.meta">
         <p>{{ $t('txt-didYouSpotATypo') }}</p>
         <p>{{ $t('txt-editThisPageOnline') }}</p>
         <p class="text-xs-right mb-0">
