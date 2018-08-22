@@ -1,5 +1,5 @@
 ---
-title: A sloppy Theodore trousers
+title: Sloppy Theodore trousers
 img: showcase.jpg
 caption: "Theodore Trousers"
 category: theodore
