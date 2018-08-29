@@ -61,6 +61,22 @@
         </v-card-title>
       </div>
     </v-card>
+    <v-card class="mt-3">
+      <v-card-title class="fs-card-title">
+       {{ $t('makeItBetter') }}
+      </v-card-title>
+      <v-divider></v-divider>
+      <v-card-text class="fs-pad">
+        <p>{{ $t('txt-didYouSpotATypo') }}</p>
+        <p>{{ $t('txt-editThisPageOnline') }}</p>
+        <p class="text-xs-right mb-0">
+        <v-btn
+          color="primary"
+          :href="'https://github.com/freesewing/site/edit/develop/nuxt/content'+post.dirName+'/'+post.fileName"
+          ><v-icon class="mr-3">edit</v-icon>{{ $t('editOnGithub') }}</v-btn>
+        </p>
+      </v-card-text>
+    </v-card>
   </div>
 </template>
 

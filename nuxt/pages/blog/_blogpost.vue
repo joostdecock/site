@@ -103,7 +103,9 @@ export default {
         date: this.post.date,
         category: this.post.category,
         updates: this.post.updates,
-        toc: this.post.toc
+        toc: this.post.toc,
+        dirName: this.post.meta.dirName,
+        fileName: this.post.meta.fileName
       }
     })
   },
