@@ -5,7 +5,7 @@ const yamlDir = './nuxt/assets/config/'
 
 const ax = axios.create({
   baseURL: process.env.FS_DATA,
-  timeout: 1500
+  timeout: 5000
 })
 
 const version = fs.readFileSync('./version', "utf8").trim();
