@@ -104,6 +104,6 @@ And my work on other aspects of the project keeps me from adding them.
 
 But I believe that investing now in a streamlined developer experience will have a knock-on effect in the long term. 
 
-If we want a few extra patterns, this is not the right approach. But if we want a lot more pattern, I believe it is.
+If we want a few extra patterns, this is not the right approach. But if we want a lot more patterns, I believe it is.
 
 And I want a lot more patterns.
