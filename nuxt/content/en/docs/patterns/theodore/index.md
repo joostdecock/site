@@ -13,12 +13,12 @@ In this particular case, there's a lot of video material available, but it was o
 
 ## What you need
 
-To make Theodoredore, you will need the following:
+To make Theodore, you will need the following:
 
  - Basic sewing supplies
  - About 2 meter of a suitable fabric ([see Fabric options](#fabric-options))
  - About a meter of lining fabric
- - Fusable interfacing for back pockets and waistband
+ - Fusible interfacing for back pockets and waistband
  - A zipper, button and hook for the fly
 
 ## Fabric options
@@ -63,7 +63,7 @@ Nothing beats **linen** on a hot summer day. It's fun to work with too, but it d
     - Cut two with only extending up to the dashed line at the left
  - The **back inner pocket bag** and **back outer pocket bag** are very similar. Make sure to mark them correctly so you don't confuse them.
 
-Below is a typical draft layout of Theodoredore:
+Below is a typical draft layout of Theodore:
 
 ![A typical Theodore draft](/img/patterns/theodore/layout.svg)
 
@@ -99,13 +99,13 @@ Use a small stitch length, and let your stitch run completely to the end (and of
 
 Press your back darts flat, folding the seam allowance to the side of your trousers.
 
-### Step 3: Contruct the back pockets
+### Step 3: Construct the back pockets
 
-Contruct the double welt pockets at the back of your trousers, including the pocket bag.
+Construct the double welt pockets at the back of your trousers, including the pocket bag.
 
 > **Double welt pockets**
 >
-> Contructing a double welt pocket is a technique that is used is different garments. 
+> Constructing a double welt pocket is a technique that is used is different garments. 
 > That is why I have branched it off into its own documentation page.
 >
 > There's both written documentation and a video series that shows you how to do it, so even if you've never made welt pockets before, you'll be fine.
@@ -120,13 +120,13 @@ If you are going to line your trousers (it's optional), you'll need to finish th
 
 Note that you only need to do this for those edges of your lining that are not caught in a seam. In other words, only the bottom edge of your lining.
 
-> If you don't have pinking shears, you can apply another finish like a zig-zag stitch, or use a serger. However, pinking shears are best for this scenario because they don't add any bulk, whih is important because we want to avoind the edge of the lining making a bumb in your trousers.
+> If you don't have pinking shears, you can apply another finish like a zig-zag stitch, or use a serger. However, pinking shears are best for this scenario because they don't add any bulk, which is important because we want to avoid the edge of the lining making a bump in your trousers.
 
 ### Step 5: Trim pieces for front pocket slant
 
 ![Trim pieces for front pocket slant](/img/patterns/theodore/instructions/step05.png)
 
-Align your front, lining and pocket bag on top of each other. Front and pocket back with their good side down, linig with the good side up.
+Align your front, lining and pocket bag on top of each other. Front and pocket back with their good side down, lining with the good side up.
 
 Pin them together to make sure they don't move. Do so away from the pocket slant to not hinder yourself later.
 
@@ -142,9 +142,9 @@ Finally, trim back your lining so that it stops 0.5 cm short of reaching the edg
 
 ![Fold back and sew front pocket slant](/img/patterns/theodore/instructions/step06.png)
 
-Fold back your lining and front piece along the poclet slant line (and thus along the trimmed edge of the pocket bag. Pin this down and press.
+Fold back your lining and front piece along the pocket slant line (and thus along the trimmed edge of the pocket bag. Pin this down and press.
 
-You are going to sew along the pocket slant, but make sure to flip your everything over first so you can sew from the good side.
+You are going to sew along the pocket slant, but make sure to flip everything over first so you can sew from the good side.
 
 Topstitch a 0.5 cm from the fold, making sure to keep it parallel and not stretch your fabric.
 
@@ -156,7 +156,7 @@ Topstitch a 0.5 cm from the fold, making sure to keep it parallel and not stretc
 
 ![Finish the edge inside the front pocket](/img/patterns/theodore/instructions/step07.png)
 
-Fold away the main part of the your front piece, so you can place the lining, pocket bag and folded edge of the front piece flat.
+Fold away the main part of the front piece, so you can place the lining, pocket bag and folded edge of the front piece flat.
 
 Zig-zag the edge of the folded-back front piece to finish it and secure it to the pocket back and lining.
 
@@ -164,7 +164,7 @@ Zig-zag the edge of the folded-back front piece to finish it and secure it to th
 
 ![Press side pocket](/img/patterns/theodore/instructions/step08.png)
 
-When your done, place front piece, lining and pocket bag flat, and give it a good press.
+When you're done, place front piece, lining and pocket bag flat, and give it a good press.
 
 > This might be a good time to remind you that every step up to this point had to be done for both legs.
 >
@@ -206,14 +206,14 @@ Put everything flat with the front piece at the bottom, and give it a good press
 
 ### Step 12: Pin front pocket in place
 
-![Pin the front poacket in place](/img/patterns/theodore/instructions/step12.png)
+![Pin the front pocket in place](/img/patterns/theodore/instructions/step12.png)
 
 Pin the pocket down to the front piece along the slant and the edges of the pocket bag. 
 This will prevent it from shifting around while we continue to work on our trousers.
 
 ### Step 13: Finish the side edges
 
-![Finish teh side edges](/img/patterns/theodore/instructions/step13.png)
+![Finish the side edges](/img/patterns/theodore/instructions/step13.png)
 
 Before we are going to sew the side seams, finish the side edges by serging or running a zig-zag stitch along the sides of your front and back pieces, making sure to stay within the foreseen seam allowance.
 
@@ -253,9 +253,9 @@ Sew along the curved edge, taking account the standard 1cm seam allowance, to jo
 
 ### Step 17: Press the fly shield
 
-![Press teh fly shield](/img/patterns/theodore/instructions/step17.png)
+![Press the fly shield](/img/patterns/theodore/instructions/step17.png)
 
-> Before pressing down your fly piece, make sure to roll the seam a little bit so that your trouser linig fabric sits a bit further, and your lining starts only about 2mm from the edge. This will prevent the lining from peeking out at the edge.
+> Before pressing down your fly piece, make sure to roll the seam a little bit so that your trouser lining fabric sits a bit further, and the lining starts only about 2mm from the edge. This will prevent the lining from peeking out at the edge.
 
 After you have sewed fly piece and fly shield together, turn them inside out and press the seam you just made.
 
@@ -286,11 +286,11 @@ Pin the zip in place with a few pins perpendicular to your zip (as shown). In ot
 
 Take the fly shield/fly piece that you assembled in step 16 & 17, and place it with the fabric facing downward, and the lining upward.
 
-Flip aside the top lining layer, and align the slightly curved edge of the fabric (where it is not sewn to the linign) with the edge of the fabric of your front piece.
+Flip aside the top lining layer, and align the slightly curved edge of the fabric (where it is not sewn to the lining) with the edge of the fabric of your front piece.
 
 > For clarity, what side of the fly shield that should be facing up is shown in the top part of the illustration, at a smaller scale.
 
-Pin this layer in place place with a few pins perpendicular to your zip (as shown in red). Make sure you catch all layers underneath, including the zip. This way, you can remove your pins from the step before (shown in green) when done.
+Pin this layer in place with a few pins perpendicular to your zip (as shown in red). Make sure you catch all layers underneath, including the zip. This way, you can remove your pins from the step before (shown in green) when done.
 
 > If you're comfortable holding all this in place, you can let the lining fall back and pin everything together as shown in the next step. That's somewhat faster, but more prone to errors as things can shift around easier.
 
@@ -325,7 +325,7 @@ Now you can sew along the double folded fly piece. This will fix the front, zip,
 
 ![Fold back fly and press](/img/patterns/theodore/instructions/step23.png)
 
-When you're done, fold back the fly so that it extends from the front piece, and give it a thorough press fromt the back. And a gentle press from the front.
+When you're done, fold back the fly so that it extends from the front piece, and give it a thorough press from the back. And a gentle press from the front.
 
 ### Step 24: Apply bias tape to second fly piece and press
 
@@ -365,7 +365,7 @@ Give it a good press from the back.
 ![Pin the zip along the edge](/img/patterns/theodore/instructions/step27b.png){.fs-row3}
 ![Sew in place](/img/patterns/theodore/instructions/step27c.png){.fs-row3}
 
-Place the right leg down with the good side up. Place the leg leg on top of it with the good side down.
+Place the right leg down with the good side up. Place the leg on top of it with the good side down.
 
 With the crotch seams aligned, pin the zip along the edge of the fly piece with the good side of the zip down.
 
@@ -385,7 +385,7 @@ Last but not least, sew along the zip with your zipper foot to attach it to the 
 
 ![Zig-zag the zip edge to the fly piece](/img/patterns/theodore/instructions/step28.png)
 
-With the flace in place, run a zig-zag stitch along the edge of the zip to secure it to the fly piece.
+With the fly in place, run a zig-zag stitch along the edge of the zip to secure it to the fly piece.
 
 ### Step 29: Bar-tack both fly pieces together
 
@@ -462,7 +462,7 @@ We are now going to close the cross-seam, from the bottom of your fly between yo
 
 To do so, turn on of the legs inside out, so that that good side of the fabric is turned inside, and the bad side and lining sits on the outside.
 
-The other leg should not be turned inside-out, but should just have it's good side on the outside.
+The other leg should not be turned inside-out, but should just have its good side on the outside.
 
 Now, put the leg that has the good side out (the normal leg) into the leg that has the bad side out (the inside-out leg).
 
@@ -484,7 +484,7 @@ When it's looking good, press the crease lines in your leg, front a back. Repeat
 
 Give it a firm press because you want the pleats to still be there after you wash your trousers (so you can see where to press them again).
 
->In the industry, chemicals are applied along the creaseline before it is pressed together. Some tailors use some sort of wooden hammer and anvil to bang the fibers in a permanent crease.
+>In the industry, chemicals are applied along the crease line before it is pressed together. Some tailors use some sort of wooden hammer and anvil to bang the fibers in a permanent crease.
 
 Depending on your fabric, your crease might last longer, but ultimately, you can't expect to have a crease that can withstand a few washes without being reapplied.
 
@@ -510,17 +510,17 @@ Join the waistband lining (Pieces 5a and 5b) by sewing both pieces good sides to
 
 ![Sew waistband to waistband lining](/img/patterns/theodore/instructions/step40.png)
 
-Place your wasitband on the waistband lining, good sides together, so that the waistband interfacing is facing upwards.
+Place your waistband on the waistband lining, good sides together, so that the waistband interfacing is facing upwards.
 
 Align the edge, and pin them together.
 
 > We are going to sew along the edge of the interfacing, but we will sew about 3mm or 1/8 inch from the actual interfacing edge. This will prevent the lining from being visible from the front later.
 
-One one side of the waistband, end with a curve and then go down vertically along the edge of the waistband interfacing. Check the illustration to make sure you do it on the correct side.
+On one side of the waistband, end with a curve and then go down vertically along the edge of the waistband interfacing. Check the illustration to make sure you do it on the correct side.
 
 ### Step 41: Roll fabric around interfacing edge and press waistband
 
-![Roll fabric around intergfacing edge and press waistband](/img/patterns/theodore/instructions/step41.png)
+![Roll fabric around interfacing edge and press waistband](/img/patterns/theodore/instructions/step41.png)
 
 Before pressing the waistband, make sure to roll over the fabric around the edge of the interfacing.
 
@@ -552,11 +552,11 @@ On the side with the curved corner, get as close to the edge as possible. On the
 
 Give your newly sewn seam a good press. Do not press the seam open, instead press it towards the top (put both trousers and waistband seam allowance in the waistband).
 
-### Step 45: Prepare the beltloops
+### Step 45: Prepare the belt loops
 
-![Prepare the beltloops](/img/patterns/theodore/instructions/step45.png)
+![Prepare the belt loops](/img/patterns/theodore/instructions/step45.png)
 
-The beltloops are a part of your trousers where you can let your creativity run free. There's load of different ways to make and shape belt loops, not to mention that where you place them is also up to you.
+The belt loops are a part of your trousers where you can let your creativity run free. There's load of different ways to make and shape belt loops, not to mention that where you place them is also up to you.
 
 That being said, here's what to do to make a standard belt loop:
 
@@ -568,25 +568,25 @@ Find the belt loop pattern part, a small rectangular piece of fabric. There shou
  - Hand sew along the back of the belt loop so that the folded sides stay in place, but the stitches do not show at the front
  - Give it a final good press when you're done
 
-> While the width of your beltloops is not all that important, it does matter to make sure they are all the same width.
+> While the width of your belt loops is not all that important, it does matter to make sure they are all the same width.
 >
-> To make it easier to have a consistent width, you can fold your beltloops around a strip of cardboard, thick paper, or plastic of the desired beltloop width.
+> To make it easier to have a consistent width, you can fold your belt loops around a strip of cardboard, thick paper, or plastic of the desired belt loop width.
 >
-> This strip can also help you with the hand sewing. Keep it in your beltloop and it will prevent your needle from piercing through all layers and your thread won't show at the front.
+> This strip can also help you with the hand sewing. Keep it in your belt loop and it will prevent your needle from piercing through all layers and your thread won't show at the front.
 
-### Step 46: Attach the beltloops: Bottom
+### Step 46: Attach the belt loops: Bottom
 
-![Attach the bottom of the beltloops](/img/patterns/theodore/instructions/step46.png)
+![Attach the bottom of the belt loops](/img/patterns/theodore/instructions/step46.png)
 
-Attach the bottom of the beltloops to your trousers. Place them about 1.5 cm below your waistband, depending on your waistband width.
+Attach the bottom of the belt loops to your trousers. Place them about 1.5 cm below your waistband, depending on your waistband width.
 
-Place the good side of the belt loop down on the good side of the trousers (good sides together) and secure with a bartack or narrow zig-zag.
+Place the good side of the belt loop down on the good side of the trousers (good sides together) and secure with a bar tack or narrow zig-zag.
 
-Then, zig zag the edge of the beltloop to the trousers.
+Then, zig zag the edge of the belt loop to the trousers.
 
 > It is important to get the waistband lining out of the way while doing this. Make sure to attach the belt loops only to your trousers, and not to the waistband lining.
 
-> You have 8 beltloops, so you need to distribute them around your waistband. Have a look at an existing pair if you are uncertain how to do this.
+> You have 8 belt loops, so you need to distribute them around your waistband. Have a look at an existing pair if you are uncertain how to do this.
 >
 > Make sure to place belt hoops close to the center back, and not too close to each other at the front (for belt buckles).
 
@@ -637,17 +637,17 @@ When you're happy with how it looks, baste the lining in place just next to the 
 
 After you basted the waistband lining, sew it in place from the good side, exactly in the seam between the waistband and trousers.
 
-### Step 51: Attach the beltloops: Top
+### Step 51: Attach the belt loops: Top
 
-![Attach the top of the beltloops](/img/patterns/theodore/instructions/step51.png)
+![Attach the top of the belt loops](/img/patterns/theodore/instructions/step51.png)
 
 With your waistband and lining properly secured, it's time to attach the top of the belt loops.
 
-Sew them in place just as you did at the bottom. That is, use a bartack or close zig-zag to attach them, then zig-zag over the end to secure it.
+Sew them in place just as you did at the bottom. That is, use a bar tack or close zig-zag to attach them, then zig-zag over the end to secure it.
 
 > Don't sew through the top of the belt loops. You'll have to work the foot of your sewing machine under the belt loop so you only sew the piece that is folded back.
 
-> Feel free to trim back the length of your beltloops after you bartack and before you zig-zag the end of them, as they might be too long.
+> Feel free to trim back the length of your belt loops after you bar tack and before you zig-zag the end of them, as they might be too long.
 
 ### Step 52: Finish the edge of the legs
 
@@ -663,11 +663,11 @@ Before we hem the trousers, finish the raw edge of the legs with a zig-zag stitc
 
 > The hem ribbon is a ribbon that sits on the inside of your trouser hem. At the place your hem folds back, the fabric has to take a lot of abuse from bumping into shoes and other things.
 >
-> Placing a ribbon inside the hem protects your fabric to some extend, is is a neat finish.
+> Placing a ribbon inside the hem protects your fabric to some extent, and it is a neat finish.
 
 Mark the hemline on your trousers (good side out).
 
-Place the ribbon as shown in the illustration making sure that it extends a few mm abvove the hemline. Sew it in place all the way around the leg, making sure to sew close but not on the hemline.
+Place the ribbon as shown in the illustration making sure that it extends a few mm above the hemline. Sew it in place all the way around the leg, making sure to sew close but not on the hemline.
 
 ### Step 54: Press the hem
 
@@ -675,7 +675,7 @@ Place the ribbon as shown in the illustration making sure that it extends a few 
 
 Fold back the trouser legs at the hemline, and press the hem.
 
-> If you've sewn in a hem ribbon, the ribbom will extend a few mm below the hem line, thereby protecting the fabric at the hem.
+> If you've sewn in a hem ribbon, the ribbon will extend a few mm below the hem line, thereby protecting the fabric at the hem.
 
 ### Step 55: Hem the legs
 
