@@ -20,9 +20,10 @@ permalink: /docs/sewing/double-welt-pockets
 ## Video
 > Text a bit dry for you? I try to make videos available as part of the pattern documentation.
 
-The embedded playlist below contains both parts in the How to: Double welt pockets series.
+The embedded playlist below contains both parts in the 
+[How to: Double welt pockets](https://www.youtube.com/watch?v=u1iNrVtPbco&list=PL1gv5yv3DoZOFSXz7yydeV1H8m6pfwstn) series.
 
-@[youtube](https://www.youtube.com/embed/u1iNrVtPbco?list=PL1gv5yv3DoZOFSXz7yydeV1H8m6pfwstn&amp;controls=0&amp;showinfo=0?ecver=1)
+@[youtube](https://www.youtube.com/embed/videoseries?list=PL1gv5yv3DoZOFSXz7yydeV1H8m6pfwstn)
 
 ## Before you start
 
