@@ -117,7 +117,7 @@ export default {
   },
   methods: {
     saveTitle() {
-      this.$fs.upgradeDraft(this.draft.handle, {name: this.draft.name})
+      this.$fs.updateDraft(this.draft.handle, {name: this.draft.name})
       .then((result) => { this.updateTitle = false })
     },
     upgradeDraft() {
