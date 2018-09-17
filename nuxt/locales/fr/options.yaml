@@ -326,8 +326,8 @@ hipsReductionRatioBack:
   description: Proportion of the hips to be reduced in back panel shaping. Will also impact side panel shaping. TODO
   title: 'Hips reduction: back ratio TODO'
 knotWidth:
-  description: The width of the tie at the knot/middle. TODO
-  title: Knot width TODO
+  description: La largeur de la cravate au noeud/au milieu.
+  title: Largeur du noeud
 lapelStart:
   description: 'Location of the lapel break point (where the front opening starts). Lower values are closer to the waistline, higher values closer to the chestline. TODO'
   title: Lapel break point TODO
