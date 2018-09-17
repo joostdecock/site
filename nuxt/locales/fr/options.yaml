@@ -299,17 +299,17 @@ hemRadius:
   title: Rayon de l'ourlet
 hemStyle:
   description:
-    _default: Whether you want a rounded or classic hem. TODO
-    simon: The style of the shirt hem. TODO
+    _default: Choix d'un ourlet arrondi ou classique.
+    simon: Le style de l'ourlet de la chemise.
   options:
     simon:
-      '1': Straight hem TODO TODO TODO TODO
-      '2': Baseball hem TODO TODO TODO TODO
-      '3': Slashed hem TODO TODO TODO TODO
+      '1': Ourlet droit
+      '2': Ourlet baseball
+      '3': Ourlet taillé
     wahid:
-      '1': Classic TODO TODO TODO TODO
-      '2': Rounded TODO TODO TODO TODO
-  title: Hem style TODO
+      '1': Classique
+      '2': Arrondi
+  title: Type d'ourlet
 hemWidth:
   description: La largeur de l'ourlet
   title: Largeur d'ourlet
