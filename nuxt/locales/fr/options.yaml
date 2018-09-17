@@ -280,23 +280,23 @@ frontScyeDart:
   description: The amount to take out in a dart at the front of the armhole. TODO
   title: Front scye dart TODO
 frontStyle:
-  description: Whether you want a rounded or classic necline. TODO
+  description: Choisir une encolure ronde ou classique.
   options:
-    '1': Classic TODO TODO TODO TODO
-    '2': Rounded TODO TODO TODO TODO
-  title: Neckline style TODO
+    '1': Classique
+    '2': Ronde
+  title: Type d'encolure
 headEase:
-  description: The amount of ease to fit the cap on your head. TODO
-  title: Head ease TODO
+  description: La quantité d'aisance requise pour porter votre casquette sur la tête.
+  title: Aisance tête
 hemBonus:
-  description: Additional width at the hem TODO TODO TODO TODO
-  title: Hem bonus TODO TODO TODO TODO
+  description: Largeur supplémentaire à l'ourlet
+  title: Ourlet supplémentaire
 hemCurve:
-  description: The height of the curve on a curved hem. TODO
-  title: Hem curve TODO
-hemRadius:
-  description: Radius of the rounded hem. Not relevant if you chose a classic hem. TODO
-  title: Hem radius TODO
+  description: La hauteur de l'arrondi sur un ourlet arrondi.
+  title: Courbe de l'ourlet
+hemRadius
+  description: Rayon de l'ourlet arrondi. Pas pertinent si vous choisissez un ourlet classique.
+  title: Rayon de l'ourlet
 hemStyle:
   description:
     _default: Whether you want a rounded or classic hem. TODO
@@ -311,8 +311,8 @@ hemStyle:
       '2': Rounded TODO TODO TODO TODO
   title: Hem style TODO
 hemWidth:
-  description: The width of the hem TODO TODO TODO TODO
-  title: Hem width TODO TODO TODO TODO
+  description: La largeur de l'ourlet
+  title: Largeur d'ourlet
 hipFlare:
   description: The amount to widen the shirt below the waist. TODO
   title: Hip flare TODO
@@ -341,8 +341,8 @@ length:
   description: The length of the skirt TODO TODO TODO TODO
   title: Skirt length TODO TODO TODO TODO
 lengthBonus:
-  description: The amount to lengthen the garment. A negative value will shorten it. TODO
-  title: Length bonus TODO
+  description: La quantité à ajouter pour rallonger le vêtement. Une valeur négative le raccourcira.
+  title: Ajout de longueur
 neckInset:
   description: Distance from the neck to the waistcoat neckline at the shoulder seam. TODO
   title: Neck inset TODO
