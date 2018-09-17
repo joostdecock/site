@@ -277,8 +277,8 @@ frontRise:
   description: 'Augmentation des pans avant au centre devant, entre vos seins. Les valeurs négatives les abaisseront.'
   title: Augmentation des pans avant
 frontScyeDart:
-  description: The amount to take out in a dart at the front of the armhole. TODO
-  title: Front scye dart TODO
+  description: La quantité à retirer de la pince à l'avant de l'emmanchure.
+  title: Pince avant de l'emmanchure
 frontStyle:
   description: Choisir une encolure ronde ou classique.
   options:
