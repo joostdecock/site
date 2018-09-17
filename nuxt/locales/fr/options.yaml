@@ -320,8 +320,8 @@ hipRise:
   description: How much the side panels rise on your hips. TODO
   title: Hip rise TODO
 hipsEase:
-  description: The amount of ease at your hips. TODO
-  title: Hips ease TODO
+  description: La quantité d'aisance aux hanches.
+  title: Aisance des hanches
 hipsReductionRatioBack:
   description: Proportion of the hips to be reduced in back panel shaping. Will also impact side panel shaping. TODO
   title: 'Hips reduction: back ratio TODO'
@@ -332,8 +332,8 @@ lapelStart:
   description: 'Location of the lapel break point (where the front opening starts). Lower values are closer to the waistline, higher values closer to the chestline. TODO'
   title: Lapel break point TODO
 legBonus:
-  description: Extra length to add to the legs. TODO
-  title: Leg length bonus TODO
+  description: Longueur supplémentaire à ajouter aux jambes.
+  title: Longueur supplémentaire jambes
 legStretch:
   description: 'For best results, you want to fit your legs a but more snugly — say no to gaping. TODO'
   title: Leg stretch TODO
@@ -350,17 +350,17 @@ neckReduction:
   description: Neck shaping at center back as percent of chest circumference. TODO
   title: Center back neck dart TODO
 necklineBend:
-  description: Determines the shape/bend of the neckline at the front. TODO
-  title: Neckline shape TODO
+  description: Détermine la forme/courbure du devant de l'encolure.
+  title: Forme de l'encolure
 necklineDrop:
   description: The amount the neck is cutout at the front. TODO
   title: Neckline drop TODO
 nrOfDarts:
-  description: Number of darts on each part TODO TODO TODO TODO
+  description: Nombre de pinces sur chaque partie
   options:
     '1': 1
     '2': 2
-  title: Number of darts TODO TODO TODO TODO
+  title: Nombre de pinces
 panels:
   description: The number of panels to draft. More panels are better to fit a curvier model. TODO
   options:
@@ -368,20 +368,21 @@ panels:
     '13': 13 panels TODO TODO TODO TODO
   title: Number of panels TODO
 pouch:
-  description: Would you like a pouch/pocket on your hoodie? TODO
+  description: Voudriez vous une poche sur votre sweat à capuche ?
   options:
-    - Do not include pouch TODO TODO TODO TODO
-    - Include pouch TODO TODO TODO TODO
-  title: Front pouch TODO
+    - Ne pas inclure de poche
+    - Inclure une poche
+  title: Poche avant
 princessSeamSmoothFactor:
   description: 'Controls how sharply the princess seam will correct once it''s passed the fullness of your breasts. A high factor will smooth the curve, resulting in a less fitted coat that''s easier to sew. A low factor will sharpen the curve, resulting in a harder to sew seam, and a more fitted coat. TODO'
-  title: Princess seam smooth factor TODO
+  description: 'Contrôle la netteté de la découpe princess une fois passée sur la poitrine. Un facteur élevé va applatir la courbe, resultant end un manteau moins ajusté qui va être plus simple à coudre. Un facteur bas va souligner la courbe, resultant en une couture plus compliquée, et un manteau plus ajusté.'
+  title: Facteur de lissage de la découpe princess
 ribbing:
-  description: 'Do you want to include ribbing at the arms and hem, or will you apply a classic hem? TODO'
+  description: 'Voulez vous appliquer des côtes sur les bras et les ourlets, ou voulez vous appliquer un ourlet classique ?'
   options:
-    - Classic hem (No ribbing) TODO TODO TODO TODO
-    - Ribbing hem TODO TODO TODO TODO
-  title: Ribbing TODO
+    - Ourlet classique (pas de côtes) TODO TODO TODO TODO
+    - Côtes
+  title: Côtes
 ribbingHeight:
   description: The height of the ribbing band at the hem and wrists. TODO
   title: Ribbing height TODO
