@@ -294,7 +294,7 @@ hemBonus:
 hemCurve:
   description: La hauteur de l'arrondi sur un ourlet arrondi.
   title: Courbe de l'ourlet
-hemRadius
+hemRadius:
   description: Rayon de l'ourlet arrondi. Pas pertinent si vous choisissez un ourlet classique.
   title: Rayon de l'ourlet
 hemStyle:
