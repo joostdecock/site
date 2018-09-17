@@ -54,14 +54,14 @@ i18n:
       showcase: 1
     en:
       app: 423
-      blog: 35
+      blog: 36
       docs: 378
       i18n: 8
       measurements: 27
       optiongroups: 12
       options: 348
       patterns: 37
-      showcase: 51
+      showcase: 52
     es:
       app: 420
       blog: 3
@@ -79,7 +79,7 @@ i18n:
       i18n: 8
       measurements: 27
       optiongroups: 12
-      options: 192
+      options: 208
       patterns: 37
       showcase: 1
     nl:
@@ -134,14 +134,14 @@ i18n:
       showcase: 0
   target:
     app: 423
-    blog: 35
+    blog: 36
     docs: 378
     i18n: 8
     measurements: 27
     optiongroups: 12
     options: 348
     patterns: 37
-    showcase: 51
+    showcase: 52
   template: xx
   translators:
     de:
@@ -160,6 +160,7 @@ i18n:
       - github|dingcycle
       - joebidido
       - SoaZillon
+      - bankair
     nl:
       - AnnekeCaramin
       - joost
