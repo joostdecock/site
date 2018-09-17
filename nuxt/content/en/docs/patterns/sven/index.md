@@ -62,7 +62,7 @@ Below is a typical draft layout:
 
  - Place your now attached front and back with the good side up. 
  - Place a sleeve on top if it with the good side down
- - Aling the top of the sleevecap with the shoulder seam, your sleeve should lie over your front/back extending to the other shoulder seam
+ - Align the top of the sleevecap with the shoulder seam, your sleeve should lie over your front/back extending to the other shoulder seam
  - Pin sleeve in place along the entire armhole. There's a bit of sleevecap ease, which means that the sleevehead is slightly longer than the armhole. Ease this in the top part of the sleeve head while pinning.
  - Sew/serge your pinned sleeve in place
  - Repeat for the other sleeve
