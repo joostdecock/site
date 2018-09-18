@@ -374,9 +374,8 @@ pouch:
     - Inclure une poche
   title: Poche avant
 princessSeamSmoothFactor:
-  description: 'Controls how sharply the princess seam will correct once it''s passed the fullness of your breasts. A high factor will smooth the curve, resulting in a less fitted coat that''s easier to sew. A low factor will sharpen the curve, resulting in a harder to sew seam, and a more fitted coat. TODO'
-  description: 'Contrôle la netteté de la découpe princess une fois passée sur la poitrine. Un facteur élevé va applatir la courbe, resultant end un manteau moins ajusté qui va être plus simple à coudre. Un facteur bas va souligner la courbe, resultant en une couture plus compliquée, et un manteau plus ajusté.'
-  title: Facteur de lissage de la découpe princess
+  description: 'Contrôle la netteté de la découpe princesse une fois passée sur la poitrine. Un facteur élevé va applatir la courbe, resultant end un manteau moins ajusté qui va être plus simple à coudre. Un facteur bas va souligner la courbe, resultant en une couture plus compliquée, et un manteau plus ajusté.'
+  title: Facteur de lissage de la découpe princesse
 ribbing:
   description: 'Voulez vous appliquer des côtes sur les bras et les ourlets, ou voulez vous appliquer un ourlet classique ?'
   options:
