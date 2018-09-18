@@ -286,7 +286,7 @@ frontStyle:
     '2': Ronde
   title: Type d'encolure
 headEase:
-  description: La quantité d'aisance requise pour porter votre casquette sur la tête.
+  description: La marge d'aisance requise pour porter votre casquette sur la tête.
   title: Aisance tête
 hemBonus:
   description: Largeur supplémentaire à l'ourlet
@@ -320,7 +320,7 @@ hipRise:
   description: How much the side panels rise on your hips. TODO
   title: Hip rise TODO
 hipsEase:
-  description: La quantité d'aisance aux hanches.
+  description: La marge d'aisance aux hanches.
   title: Aisance des hanches
 hipsReductionRatioBack:
   description: Proportion of the hips to be reduced in back panel shaping. Will also impact side panel shaping. TODO
