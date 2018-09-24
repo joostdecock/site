@@ -127,8 +127,8 @@ info: Información
 instagram: Instagram DONE
 instagramUpdated: Cuenta de Instagram establecida
 italics: Itálicas
-joinTheFreesewingPatrons: Join the freesewing patrons TODO
-joinTheFreesewingPatrons-txt: 'We are building a bedrock of loyal supporters to ensure a sustainable future for freesewing.org, our code, our patterns, and our community. TODO'
+joinTheFreesewingPatrons: Únete a los patrocinadores de feesewing
+joinTheFreesewingPatrons-txt: 'Estamos construyendo una base de seguidores leales para asegurar un futuro sostenible para freesewing.com, nuestro código, nuestros patrones y nuestra comunidad.'
 joinTheTranslationTeam: 'Incluso si nunca has contribuído a un proyecto open source, la traducción es una cuesta de poca pendiente hacia la fama de colaborador'
 justAMoment: Un momento
 key: Clave
@@ -234,7 +234,7 @@ retrievingDraftFromCore: Recuperando el boceto desde el núcleo
 revokeConsent: Revocar consentimiento
 rowsFromToOfTotal: 'Filas {from} a la {to} de {total} '
 rowsPerPage: Filas por página
-sa: Seam allowance TODO
+sa: Margen de costura
 save: Guardar
 scope: Alcance
 seamAllowance: Margen de costura
