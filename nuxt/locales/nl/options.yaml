@@ -334,6 +334,9 @@ lapelStart:
 legBonus:
   description: Extra lengte om aan de benen toe te voegen.
   title: Bonus beenlengte
+legReduction:
+  description: 'For best results, you want to fit your legs a but more snugly — say no to gaping. TODO TODO TODO TODO'
+  title: Leg reduction TODO TODO TODO TODO
 legStretch:
   description: Voor het beste resultaat wil je de pijp wat strakker om je been. Zeg nee tegen geflodder!
   title: Stretch pijp
