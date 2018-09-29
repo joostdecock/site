@@ -61,9 +61,9 @@ i18n:
       optiongroups: 12
       options: 348
       patterns: 37
-      showcase: 52
+      showcase: 53
     es:
-      app: 420
+      app: 423
       blog: 3
       docs: 1
       i18n: 8
@@ -141,7 +141,7 @@ i18n:
     optiongroups: 12
     options: 348
     patterns: 37
-    showcase: 52
+    showcase: 53
   template: xx
   translators:
     de:
