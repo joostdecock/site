@@ -55,11 +55,11 @@ i18n:
     en:
       app: 423
       blog: 36
-      docs: 378
+      docs: 388
       i18n: 8
       measurements: 27
       optiongroups: 12
-      options: 348
+      options: 350
       patterns: 37
       showcase: 53
     es:
@@ -135,11 +135,11 @@ i18n:
   target:
     app: 423
     blog: 36
-    docs: 378
+    docs: 388
     i18n: 8
     measurements: 27
     optiongroups: 12
-    options: 348
+    options: 350
     patterns: 37
     showcase: 53
   template: xx

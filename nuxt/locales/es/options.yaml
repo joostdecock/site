@@ -334,6 +334,9 @@ lapelStart:
 legBonus:
   description: La longitud extra a añadir a las perneras.
   title: Extra de longitud de pierna
+legReduction:
+  description: 'For best results, you want to fit your legs a but more snugly — say no to gaping. TODO TODO'
+  title: Leg reduction TODO TODO
 legStretch:
   description: 'Para mejores resultados, tus piernas deben ajustarse cómodamente.'
   title: Estiramiento de la pernera

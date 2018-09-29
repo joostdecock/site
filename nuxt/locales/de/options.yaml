@@ -334,6 +334,9 @@ lapelStart:
 legBonus:
   description: Extra length to add to the legs. TODO
   title: Leg length bonus TODO
+legReduction:
+  description: 'For best results, you want to fit your legs a but more snugly — say no to gaping. TODO'
+  title: Leg reduction TODO
 legStretch:
   description: 'For best results, you want to fit your legs a but more snugly — say no to gaping. TODO'
   title: Leg stretch TODO
