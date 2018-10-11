@@ -14,7 +14,7 @@ Sandy was designed by [@AlfaLyr](/users/alfalyr) who really did a stellar job. T
 
 ## All the options
 
-As many patterns here at freesewing, Sandy comes with a bunch of options to allow you to customize your shirt to your wishes.
+As many patterns here at freesewing, Sandy comes with a bunch of options to allow you to customize your skirt to your wishes.
 
 There's options for how much of circle you want (half? full? Something else?), how long you want it, the shape and overlap of the waistband, whether you want pleats, how much hem, and so on.
 
