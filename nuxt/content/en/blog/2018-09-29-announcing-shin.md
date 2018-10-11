@@ -17,7 +17,7 @@ I asked if people would be interested in a pattern like this, and turns out that
 So, after some more tweaking, I think this is ready for you guys, and meanwhile Romy
 has already provided an illustration for it too.
 
-![I'll be the first to admit that this guys wears it better than me](/img/patterns/shin/cover.jpg)
+![I'll be the first to admit that this guy wears it better than me](/img/patterns/shin/cover.jpg)
 
 ## Options and documentation available
 
