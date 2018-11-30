@@ -1,18 +1,18 @@
 acrossBackFactor:
-  description: Controls your across back width as a factor of your shoulder to shoulder measurement. TODO
-  title: Across back factor TODO
+  description: Beeinflusst das Verhältnis zwischen Rücken- und Schulterweite measurement. TODO
+  title: Rückenweitenverhältnis
 adjustmentRibbon:
-  description: Add a ribbon to make the tie adjustable. TODO
+  description: Bündchen hinzufügen um es anzupassen.
   options:
-    - Do not include ribbon TODO TODO
-    - Include ribbon TODO TODO
-  title: Adjustment Ribbon TODO
+    - Ohne Bündchen
+    - Mit Bündchen
+  title: Bündchen anpassen
 armholeDepthFactor:
-  description: Controls the depth of the armhole. Higher values make a deeper armhole. TODO
-  title: Armhole depth factor TODO
+  description: Beeinflusst die Tiefe des Ärmelansatze nach innen zur Brust.
+  title: Tiefenfaktor des Ärmelansatze
 armholeDrop:
-  description: Lower the armhole by this amount. Negative values will raise it. TODO
-  title: Armhole drop TODO
+  description: Senkt den  Ärmelansatz und diesen Wert. Negative Werte erhöhen ihn.
+  title: Armlochabsenkung
 backDartDepthFactor:
   description: The Depth of the back dart as a percentage of the Waist to Hip measurement TODO TODO TODO
   title: Back Dart Depth Factor TODO TODO TODO
@@ -73,8 +73,8 @@ bulge:
 buttonPlacketStyle:
   description: Style of the button placket. TODO
   options:
-    '1': Classic style TODO TODO
-    '2': French style (seamless) TODO TODO
+    '1': Klassischer Stil
+    '2': Französischer Stil (nahtlos)
   title: Button placket style TODO
 buttonPlacketType:
   description: Type of the button placket. TODO
@@ -94,8 +94,8 @@ buttonholePlacketFoldWidth:
 buttonholePlacketStyle:
   description: Style of the buttonhole placket. TODO
   options:
-    '1': Classic style TODO TODO
-    '2': French style (seamless) TODO TODO
+    '1': Klassischer Stil
+    '2': Französischer Stil (nahtlos)
   title: Buttonhole placket style TODO
 buttonholePlacketType:
   description: Type of the buttonhole placket. TODO
@@ -290,17 +290,17 @@ headEase:
   title: Head ease TODO
 hemBonus:
   description: Additional width at the hem TODO TODO TODO
-  title: Hem bonus TODO TODO TODO
+  title: Saumzugabe
 hemCurve:
   description: The height of the curve on a curved hem. TODO
   title: Hem curve TODO
 hemRadius:
   description: Radius of the rounded hem. Not relevant if you chose a classic hem. TODO
-  title: Hem radius TODO
+  title: Saumradius
 hemStyle:
   description:
     _default: Whether you want a rounded or classic hem. TODO
-    simon: The style of the shirt hem. TODO
+    simon: Der Stil des Hemdsaumes.
   options:
     simon:
       '1': Straight hem TODO TODO
@@ -312,7 +312,7 @@ hemStyle:
   title: Hem style TODO
 hemWidth:
   description: The width of the hem TODO TODO TODO
-  title: Hem width TODO TODO TODO
+  title: Saumbreite
 hipFlare:
   description: The amount to widen the shirt below the waist. TODO
   title: Hip flare TODO
