@@ -342,6 +342,9 @@ lapelStart:
 legBonus:
   description: Extra length to add to the legs.
   title: Leg length bonus
+legReduction:
+  description: 'The amount to further reduce the stretch at the (upper) legs. For best results, you want to fit your legs a but more snugly — say no to gaping.'
+  title: Leg reduction
 legStretch:
   description: 'For best results, you want to fit your legs a but more snugly — say no to gaping.'
   title: Leg stretch

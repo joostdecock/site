@@ -55,15 +55,15 @@ i18n:
     en:
       app: 423
       blog: 36
-      docs: 378
+      docs: 388
       i18n: 8
       measurements: 27
       optiongroups: 12
-      options: 348
+      options: 350
       patterns: 37
-      showcase: 52
+      showcase: 53
     es:
-      app: 420
+      app: 423
       blog: 3
       docs: 1
       i18n: 8
@@ -135,13 +135,13 @@ i18n:
   target:
     app: 423
     blog: 36
-    docs: 378
+    docs: 388
     i18n: 8
     measurements: 27
     optiongroups: 12
-    options: 348
+    options: 350
     patterns: 37
-    showcase: 52
+    showcase: 53
   template: xx
   translators:
     de:
