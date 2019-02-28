@@ -25,7 +25,7 @@
       </td>
       <td class="text-xs-center">
         <nuxt-link :to="$fs.path('/models/'+props.item.model)">
-          {{ $store.state.user.models[props.item.model].name }}
+          {{ $store.state.user.models[props.item.model] ? $store.state.user.models[props.item.model].name :  'Deleted'}}
         </nuxt-link>
       </td>
       <td class="text-xs-center">{{ props.item.name }}</td>
