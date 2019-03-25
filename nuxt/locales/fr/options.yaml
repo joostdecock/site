@@ -17,7 +17,7 @@ backDartDepthFactor:
   description: La profondeur de la pince dos en pourcentage de la mesure de la taille à la hanche.
   title: Facteur de la profondeur de la pince dos
 backDrop:
-  description: Combien les pans arrière s'abaissent de vos hanches vers votre milieu de dos. Les valeurs négatives augmenteront la longueur du dos.
+  description: Combien les pans arrières s'abaissent de vos hanches vers votre milieu de dos. Les valeurs négatives augmenteront la longueur du dos.
   title: Abaissement du dos
 backInset:
   description: Valeur d'emmanchure arrière qui est coupée plus profondément dans le pan arrière.
@@ -35,15 +35,15 @@ backScyeDart:
   description: La valeur à retirer dans une pince à l'arrière de l'emmanchure.
   title: Pince arrière sans gêne
 backVent:
-  description: 'Voulez-vous un évent dorsal central, ou pas du tout?'
+  description: 'Voulez-vous une fente au niveau du milieu dos ou pas ?'
   options:
-    - Pas d'évent dorsal
-    - Un seul évent dorsal
-    - Un double évent dorsal
-  title: évent dorsal
+    - Pas de fente au dos
+    - Une fente simple au dos 
+    - Une fente double au dos
+  title: Fente au dos
 backVentLength:
-  description: Contrôle la longueur de l'évent dorsal. Les nombres plus petits entraînent un évent plus court.
-  title: Longueur de l'évent dorsal
+  description: Contrôle la longueur de la fente au niveau du dos. Les nombres faibles raccourcissent la fente.
+  title: Longueur de la fente dos
 backlineBend:
   description: Détermine la forme/courbure de l'arrière des emmanchures.
   title: Forme de l'arrière des emmanchures
@@ -257,7 +257,7 @@ frontDartPlacement:
   title: Position de pince avant
 frontDrop:
   description: Combien les pans avant s'abaissent de vos hanches vers votre milieu avant.
-  title: Chute avant
+  title: Abaissement avant
 frontInset:
   description: La taille de l'emmanchure avant est coupée plus profondément dans le pan avant.
   title: Encart frontal
@@ -314,50 +314,50 @@ hemWidth:
   description: La largeur de l'ourlet
   title: Largeur d'ourlet
 hipFlare:
-  description: The amount to widen the shirt below the waist. TODO
-  title: Hip flare TODO
+  description: La quantité pour évaser la jupe sous la taille
+  title: Evasement au niveau des hanches
 hipRise:
-  description: How much the side panels rise on your hips. TODO
-  title: Hip rise TODO
+  description: De combien les pans des côtés s'élèvent sur vos hanches
+  title: Elevation au niveau des hanches
 hipsEase:
   description: La marge d'aisance aux hanches.
   title: Aisance des hanches
 hipsReductionRatioBack:
-  description: Proportion of the hips to be reduced in back panel shaping. Will also impact side panel shaping. TODO
-  title: 'Hips reduction: back ratio TODO'
+  description: Proportion de réduction des hanches pour la forme des pans arrières. Cela impactera également la forme des pans latéraux.
+  title: 'Réduction des hanches : ratio dos'
 knotWidth:
   description: La largeur de la cravate au noeud/au milieu.
   title: Largeur du noeud
 lapelStart:
-  description: 'Location of the lapel break point (where the front opening starts). Lower values are closer to the waistline, higher values closer to the chestline. TODO'
-  title: Lapel break point TODO
+  description: 'Postion du point de rupture du revers (là ou l'ouverture devant commence). Les valeurs basses sont plus proches de la ligne de taille, les valeurs hautes plus près de la ligne de poitrine.'
+  title: Point de rupture du revers
 legBonus:
   description: Longueur supplémentaire à ajouter aux jambes.
   title: Longueur supplémentaire jambes
 legReduction:
-  description: 'For best results, you want to fit your legs a but more snugly — say no to gaping. TODO TODO TODO'
-  title: Leg reduction TODO TODO TODO
+  description: 'Pour de meilleurs résultats, vous voulez ajuster davantage vos jambes — dites non au tissu qui baille.'
+  title: Réduction des jambes
 legStretch:
-  description: 'For best results, you want to fit your legs a but more snugly — say no to gaping. TODO'
-  title: Leg stretch TODO
+  description: 'Pour de meilleurs résultats, vous voulez ajuster davantage vos jambes — dites non au tissu qui baille.'
+  title: Elasticité des jambes
 length:
-  description: The length of the skirt TODO TODO TODO TODO
-  title: Skirt length TODO TODO TODO TODO
+  description: La longueur de la jupe
+  title: Longueur de jupe
 lengthBonus:
   description: La quantité à ajouter pour rallonger le vêtement. Une valeur négative le raccourcira.
   title: Ajout de longueur
 neckInset:
-  description: Distance from the neck to the waistcoat neckline at the shoulder seam. TODO
-  title: Neck inset TODO
+  description: Distance à partir du cou jusqu'à l'encolure de la veste au niveau de la couture d'épaule.
+  title: Encart de cou
 neckReduction:
-  description: Neck shaping at center back as percent of chest circumference. TODO
-  title: Center back neck dart TODO
+  description: Mise en forme du cou au milieu dos en tant que pourcentage du tour de poitrine.
+  title: Pince cou miieu dos
 necklineBend:
   description: Détermine la forme/courbure du devant de l'encolure.
   title: Forme de l'encolure
 necklineDrop:
-  description: The amount the neck is cutout at the front. TODO
-  title: Neckline drop TODO
+  description: La quantité d'abaissement de l'encolure sur le devant.
+  title: Profondeur d'encolure
 nrOfDarts:
   description: Nombre de pinces sur chaque partie
   options:
@@ -365,11 +365,11 @@ nrOfDarts:
     '2': 2
   title: Nombre de pinces
 panels:
-  description: The number of panels to draft. More panels are better to fit a curvier model. TODO
+  description: Le nombre de pans à tracer. Un nombre plus élevé de pans est plus adapté pour les modèles avec des courbes marquées.
   options:
-    '11': 11 panels TODO TODO TODO TODO
-    '13': 13 panels TODO TODO TODO TODO
-  title: Number of panels TODO
+    '11': 11 pans
+    '13': 13 pans
+  title: Nombre de pans
 pouch:
   description: Voudriez vous une poche sur votre sweat à capuche ?
   options:
@@ -380,133 +380,133 @@ princessSeamSmoothFactor:
   description: 'Contrôle la netteté de la découpe princesse une fois passée sur la poitrine. Un facteur élevé va applatir la courbe, resultant end un manteau moins ajusté qui va être plus simple à coudre. Un facteur bas va souligner la courbe, resultant en une couture plus compliquée, et un manteau plus ajusté.'
   title: Facteur de lissage de la découpe princesse
 ribbing:
-  description: 'Voulez vous appliquer des côtes sur les bras et les ourlets, ou voulez vous appliquer un ourlet classique ?'
+  description: 'Voulez vous appliquer des bords côtes sur les bras et les ourlets, ou voulez vous appliquer un ourlet classique ?'
   options:
-    - Ourlet classique (pas de côtes) TODO TODO TODO TODO
-    - Côtes
-  title: Côtes
+    - Ourlet classique (pas de bords côtes)
+    - Bords côtes
+  title: Bords côtes
 ribbingHeight:
-  description: The height of the ribbing band at the hem and wrists. TODO
-  title: Ribbing height TODO
+  description: La hauteur du bord côte au niveau de l'ourlet et des poignets.
+  title: Hauteur du bord côte
 ribbingStretchFactor:
-  description: Determines the negative ease for the ribbing. TODO
-  title: Ribbing stretch factor TODO
+  description: Détermine l'aisance négative pour le bord côte.
+  title: Facteur d'élasticité du bord côte
 ribbingWidth:
-  description: The width of the ribbing you want to use. TODO
-  title: Ribbing width TODO
+  description: La largeur du bord côte que vous voulez employer.
+  title: Largeur du bord côte
 rise:
-  description: Amount to raise the waist. A negative value will lower it. TODO
-  title: Rise TODO
+  description: Quantité pour élever la taille. Une valeur négative l'abaissera.
+  title: Elevation
 rollLineCollarHeight:
-  description: The amount by which the roll line hugs the neck. TODO
-  title: Roll line collar height TODO
+  description: La quantité avec laquelle la ligne de roulement enserre le cou.
+  title: Hauteur de ligne de roulement du col
 seamlessFullCircle:
-  description: 'Select ''yes'' for a seamless circle, which is cut on a double fold. Since it has no openings, you''ll need an elastic waistband. This produces a full circle ignoring the ''circle percent'' option TODO TODO TODO TODO'
+  description: 'Sélectionnez ''oui'' pour une un cercle sans couture, qui est découpé au double pli. Etant donné qu'il n'a pas d'ouverture, vous aurez besoin d'une ceinture élastiquée. Cela produit un cercle complet en ignorant l'option ''Pourcentage de cercle'''
   options:
-    - No TODO TODO TODO TODO
-    - Yes TODO TODO TODO TODO
-  title: Seamless full circle TODO TODO TODO TODO
+    - Non
+    - Oui
+  title: Cercle complet sans couture
 seatEase:
-  description: The amount of ease at your butt. TODO
-  title: Seat ease TODO
+  description: La quantité d'aisance au niveau de vos fessiers.
+  title: Aisance d'assise
 shoulderEase:
-  description: The amount of ease at your shoulder. This increases the shoulder to shoulder distance to accomodate what you're wearing under your coat. TODO
-  title: Shoulder ease TODO
+  description: La quantité d'aisance au niveau de votre épaule. Cela augmente la distance épaule à épaule pour s'adapter à ce que vous portez en dessous de votre manteau.
+  title: Aisance d'épaule
 shoulderInset:
-  description: Distance from the shoulder point to the waistcoat armhole at the shoulder seam. TODO
-  title: Shoulder inset TODO
+  description: Distance depuis le point d'épaule jusqu'à l'emmanchure de la veste au niveau de la couture d'épaule.
+  title: Encart d'épaule
 shoulderSlopeReduction:
-  description: The amount by which the shoulder slope is reduced to allow for shoulder padding. TODO
-  title: Shoulder slope reduction TODO
+  description: La quantité de laquelle la pente d'épaule est réduite pour prendre en compte des épaulettes.
+  title: Réduction de la pente d'épaule
 shoulderStrapPlacement:
-  description: Determines whether the shoulder strap is placed closer to the neck (lower numbers) or the shoulder (higher numbers). TODO
-  title: Shoulderstrap placement TODO
+  description: Détermine si la bretelle est placée plus près du cou (nombres bas) ou de l'épaule (nombres hauts). 
+  title: Emplacement de bretelle
 shoulderStrapWidth:
-  description: The width of the shoulder straps. TODO
-  title: Shoulderstrap width TODO
+  description: La largeur de la bretelle.
+  title: Largeur de bretelle.
 sideFrontPlacement:
-  description: Location of the front/side boundary as a proportion of your chest circumference. Higher numbers make a wider side panel. TODO
-  title: Front side boundary placement TODO
+  description: Position de la limite devant/côté en tant que proportion de votre tour de poitrine. Les nombres élevés donnent un pan côté plus large.
+  title: Emplacement de la limite devant côté
 sleeveBend:
-  description: How much do you want the sleeve to be bent at the elbow. TODO
-  title: Sleeve bend TODO
+  description: A quel point voulez-vous que votre manche soit courbée au niveau du coude ?
+  title: Courbure coude
 sleeveLengthBonus:
-  description: The amount to lengthen the sleeve. A negative value will shorten it. TODO
-  title: Sleeve length bonus TODO
+  description: La quantité pour allonger votre manche. Une valeur négative la raccourcira.
+  title: Longueur de manche bonus
 sleevePlacketLength:
-  description: The length of the sleeve placket. TODO
-  title: Sleeve placket length TODO
+  description: La longueur de la patte de boutonnage de la manche.
+  title: Longueur de la patte manche
 sleevePlacketWidth:
-  description: The width of the sleeve placket. TODO
-  title: Sleeve placket width TODO
+  description: La largeur de la patte de boutonnage de la manche.
+  title: Largeur de la patte manche
 sleevecapEase:
-  description: The amount by which the sleevecap seam is longer than the armhole seam. TODO
-  title: Sleevecap ease TODO
+  description: La quantité de laquelle la tête de manche est plus élevée que la longueur de l'emmanchure.
+  title: Embu de tête de manche
 sleevecapHeightFactor:
-  description: Controls the height of the sleevecap. A higher value results in a higher and more narrow sleevecap. TODO
-  title: Sleevecap height factor TODO
+  description: Contrôle la hauteur de la tête de manche. Une valeur élevé résultera en une tête de manche plus haute et étroite.
+  title: Facteur hauteur de tête de manche
 splitYoke:
-  description: Whether to draft a split or regular yoke. TODO
+  description: Pour ébaucher un empiècement simple ou séparé en deux.
   options:
-    - Regular yoke TODO TODO TODO TODO
-    - Split yoke TODO TODO TODO TODO
-  title: Split yoke TODO
+    - Empiècement standard
+    - Empiècement divisé en deux
+  title: Empiècement divisé
 stretch:
-  description: The amount of negative ease. TODO
-  title: Stretch TODO
+  description: La quantité d'aisance négative
+  title: Elasticité
 stretchFactor:
-  description: Determines the horizontal negative ease. TODO
-  title: Stretch TODO
+  description: Détermine l'aisance négative horizontale.
+  title: Facteur d'élasticité
 tipWidth:
   description:
-    _default: The width of the wings of the bow tie at the tip. TODO
-    trayvon: The width of the tie at the tip. TODO
-  title: Tip width TODO
+    _default: La  largeur des ailes du noeud papillon à la pointe.
+    trayvon: La largeur de la cravate à la pointe
+  title: Largeur de pointe
 waistBand:
-  description: Waist Band TODO TODO TODO TODO
+  description: Ceinture
   options:
-    'no': No TODO TODO TODO TODO
-    'yes': Yes TODO TODO TODO TODO
-  title: Waist band TODO TODO TODO TODO
+    'no': Non
+    'yes': Oui
+  title: Ceinture
 waistBandWidth:
-  description: Waist Band height TODO TODO TODO TODO
-  title: Waist band height TODO TODO TODO TODO
+  description: Hauteur de ceinture
+  title: Hauteur de ceinture
 waistEase:
-  description: The amount of ease at your (natural) waist. TODO
-  title: Waist ease TODO
+  description: La quantité d'aisance au niveau de votre taille (naturelle)
+  title: Aisance de taille
 waistReduction:
-  description: The amount by which you want the corset to pinch your waist. TODO
-  title: Waist reduction TODO
+  description: La quantité avec laquelle vous voulez que votre corset pince votre taille.
+  title: Réduction de taille
 waistReductionRatioBack:
-  description: Proportion of the waist to be reduced in back panel shaping. Will also impact side panel shaping. TODO
-  title: 'Waist reduction: back ratio TODO'
+  description: Proportion de la taille à réduire dans la forme du pan arrière. Cela impactera aussi la forme du pan latéral.
+  title: 'Réduction de taille : ratio dos'
 waistReductionRatioFront:
-  description: Proportion of the waist to be reduced in the front dart. Will also impact side panel shaping. TODO
-  title: 'Waist reduction: front ratio TODO'
+  description: Proportion de la taille à réduire dans la pince devant. Cela impactera aussi la forme du pan latéral.
+  title: 'Réduction de taille : ratio devant'
 waistSideSeamRise:
-  description: Raise of the waist at the side seam TODO TODO TODO TODO
-  title: Waist Side Seam Raise TODO TODO TODO TODO
+  description: Elévation de la taille au niveau de la couture côté
+  title: Elévation taille couture côté
 waistbandOverlap:
-  description: 'The length of the overlap between the ends of the waistband, to allow a button. 0 means no overlap, for example to place a zipper that goes all the way to the top of the waistband TODO TODO TODO TODO'
-  title: Waistband overlap TODO TODO TODO TODO
+  description: 'La longueur du chevauchement entre les extrémités de la ceinture, pour permettre la mise en place d'un bouton. 0 signifie aucun chevauchement, par exemple pour placer un zip qui va tout le long de la ceinture'
+  title: Chevauchement de la ceinture
 waistbandPosition:
-  description: 'Where the waistband sits. 0% makes it sit on the natural waist, 100% makes it sit on the hips TODO TODO TODO TODO'
-  title: Waistband position TODO TODO TODO TODO
+  description: 'Où la ceinture se situe. 0 % la place sur la taille naturelle, 100 % la place au niveau des hanches'
+  title: Position de la ceinture
 waistbandShape:
-  description: 'The shape of the waistband. Straight makes things easier, but a rounded waistband adapts to your body if you have a fair difference between waist and hips circumferences TODO TODO TODO TODO'
+  description: 'La forme de la ceinture. Une forme droite simplifie les choses, mais une ceinture courbée s'adapte à votre corps s'il y a une différence sensible entre vos tours de taille et de hanches'
   options:
-    - Straight TODO TODO TODO TODO
-    - Curved TODO TODO TODO TODO
-  title: Waistband shape TODO TODO TODO TODO
+    - Droite
+    - Courbée
+  title: Forme de la ceinture
 waistbandWidth:
-  description: The width of the waistband. TODO
-  title: Waistband width TODO
+  description: La largeur de la ceinture
+  title: Largeur de ceinture
 yokeDart:
-  description: Whether to include a dart at the sides of the yoke to fit a rounder back. TODO
-  title: Yoke dart TODO
+  description: Inclure ou non une pince sur les côtés de l'empiècement pour s'adapter à un dos plus arrondi
+  title: Pinces d'empiècement
 zipperLocation:
-  description: Zipper placement TODO TODO TODO TODO
+  description: Emplacement du zip
   options:
-    back: Back seam TODO TODO TODO TODO
-    side: Side seam TODO TODO TODO TODO
-  title: Zipper placement TODO TODO TODO TODO
+    back: Couture dos
+    side: Couture côté
+  title: Emplacement de zip
