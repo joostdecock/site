@@ -8,7 +8,7 @@ pattern: simon
 
 To make Simon, you will need the following:
 
- - About two meters of a suitable fabric (see [Fabric options](#fabric-options)
+ - About two meters of a suitable fabric (see [Fabric options](#fabric-options))
  - Buttons
  - Fusible interfacing for collar and cuffs (and possibly for the front placket)
 
@@ -32,7 +32,7 @@ The weave is how the fabric was woven, and this determines not only how the fabr
 >
 > Broadcloth (frequently referred to as poplin) is a simple weave and results in a flat plain fabric that will give you that crisp formal look.
 >
-> It's typically a lighter fabric and in light colours can tend to be a bit transparent.
+> It's typically a lighter fabric and can tend to be a bit transparent in light colours.
 >
 >
 > **Twill**
@@ -46,7 +46,7 @@ The weave is how the fabric was woven, and this determines not only how the fabr
 >
 > **Pinpoint**
 >
-> Pinpoint is the work horse of shirt fabrics. Typically they produce a heavier and thicker . and thus more durable . fabric.
+> Pinpoint is the work horse of shirt fabrics. Typically they produce a heavier and thicker, and thus more durable, fabric.
 >
 > Pinpoint is a less formal look than broadcloth or twill, but more formal than oxford. This, combined with its durability, make it a great choice for your everyday work shirt.
 >
@@ -55,7 +55,7 @@ The weave is how the fabric was woven, and this determines not only how the fabr
 >
 > Chambray is simple weave, similar to broadcloth. It is different because it uses a much heavier yarn, and typically different colours for the weft and width.
 >
-> The result is a much more textured fabric, both in touch as appearance where the different colours create a densely speckled two-coloured fabric.
+> The result is a much more textured fabric, both in touch and appearance where the different colours create a densely speckled two-coloured fabric.
 >
 >
 > **Denim**
@@ -76,7 +76,7 @@ The weave is how the fabric was woven, and this determines not only how the fabr
 >
 > Linen wrinkles like a mofo, but you can't beat it for safari looks.
 >
-> The reason you associate it with adventures in tropical climates is that linen breaths like nothing else and will keep you coolest of all.
+> The reason you associate it with adventures in tropical climates is that linen breathes like nothing else and will keep you coolest of all.
 >
 >
 > **Thread count**
@@ -85,7 +85,7 @@ The weave is how the fabric was woven, and this determines not only how the fabr
 >
 > Thread count is expressed in numbers, like 60s, 80s, 100s and so on to 300s and more.
 >
-> There's a catch though. Numbers above 100s are typically made my twisting two yarns together. Like a 160s thread count means that two 80s yarns were twisted together for the thread.
+> There's a catch though. Numbers above 100s are typically made my twisting two yarns together. For example, a 160s thread count means that two 80s yarns were twisted together to form the thread.
 >
 >
 > **Single ply or Two ply**
@@ -94,7 +94,7 @@ The weave is how the fabric was woven, and this determines not only how the fabr
 >
 > If the yarn is made up of a single thread, it's call Single ply.
 >
-> You can expect two ply to last longer, and be more expensive.
+> You can expect Two ply to last longer, and be more expensive.
 {:.tip}
 
 ## Cutting
@@ -107,17 +107,17 @@ The weave is how the fabric was woven, and this determines not only how the fabr
    - Cut **1 back**
    - Cut **1 collar**
    - Cut **1 undercollar**
-   - Cut **2 yoke(s)** or **4 yokes** if you've chosen a split yoke
-   - Cut **2 sleeve(s)**
-   - Cut **2 collar stand(s)**
-   - Cut **2 sleeve placket underlap(s)**
-   - Cut **2 sleeve placket overlap(s)**
-   - Cut **4 cuff(s)**
+   - Cut **2 yokes** or **4 yokes** if you've chosen a split yoke
+   - Cut **2 sleeves**
+   - Cut **2 collar stands**
+   - Cut **2 sleeve placket underlaps**
+   - Cut **2 sleeve placket overlaps**
+   - Cut **4 cuffs**
  - **Fusible interfacing**
    - Cut **1 collar**
    - Cut **1 undercollar**
-   - Cut **2 collar stand(s)**
-   - Cut **2 cuff(s)**
+   - Cut **2 collar stands**
+   - Cut **2 cuffs**
 
 > When cutting out two, you can cut them [good sides together](/docs/sewing/good-sides-together).
 > However, when working with fabric with a pattern, I prefer to cut them individually to finely control the pattern matching.
@@ -145,7 +145,7 @@ Simon is a very versatile pattern, so your draft may differ from the example lay
 #### Press interfacing to cuffs
 To make two cuffs, you have cut out your cuff piece four times in fabric, and twice in interfacing.
 
-For each cuff, press the interfacing piece to the bad side of the cuff piece.
+For two cuff pieces, press an interfacing piece to the bad side of the cuff piece.
 
 > If the inside and outside of your cuff are the same fabric, it does not matter what cuff piece you press it to.
 >
@@ -153,7 +153,7 @@ For each cuff, press the interfacing piece to the bad side of the cuff piece.
 
 > Depending on what cuff you have chosen, the shape of the cuff will be different.
 >
-> In the first illustration, you can see both a round barrel cuff and a French cuff as example.
+> In the first illustration, you can see both a round barrel cuff and a French cuff as examples.
 >
 > Going forward, the round barrel cuff will be used in the illustrations, but the process is the same for the other cuffs.
 
@@ -172,14 +172,14 @@ Place both parts of your cuff (one with interfacing, one without) together with 
 
 > **Make sure to**
 >
-> - Do not sew together the side that we will attach to the sleeve later
+> - Not sew together the side that we will attach to the sleeve later
 > - Stop at the seam allowance distance from the edge on the sleeve side
 
 #### Trim seam allowance
 
 ![Trim the seam allowance](/img/patterns/simon/instructions/2b.png)
 
-Before we are going to flip your cuff over, we need to trim back the seam allowance to remove bulk.
+Before you flip your cuff over, we need to trim back the seam allowance to remove bulk.
 
 #### Press back seam allowance
 
@@ -195,7 +195,7 @@ Fold back the seam allowance on the sleeve side, and press it down.
 
 Flip your cuff with the good sides out, and give it a good press.
 
-> When pressing your cuffs, make sure to role the seam a bit to the backside of the cuff to guarantee that the inner fabric of the cuff is not visible.
+> When pressing your cuffs, make sure to roll the seam a bit to the backside of the cuff to guarantee that the inner fabric of the cuff is not visible.
 
 You can now put your cuffs aside, we'll attach them later.
 
@@ -253,7 +253,7 @@ Now, start basting from this pin and work your way to the corner of the collar, 
 
 When you reach the corner of your collar, keep going and baste the end of both collar stands together.
 
-When you've done one side, start from your pin in the middle again and do this other side. When you're done basting, you can take out the pin.
+When you've done one side, start from your pin in the middle again and baste the other side. When you're done basting, you can take out the pin.
 
 #### Sew your collar to the collar stands
 
@@ -269,7 +269,7 @@ Fold back the seam allowance of your collar stand on the non-sewn side and press
 
 > In the center part, pressing down the seam allowance will be easy. But towards the tips of your collar, doing so will be tricky without pressing folds in your collar.
 >
-> Press is as best as you can without making folds in your collar. We'll press this again after flipping the collar out.
+> Press it as best as you can without making folds in your collar. We'll press this again after flipping the collar out.
 
 #### Turn collar stand and press
 
@@ -310,7 +310,7 @@ When you're done, don't forget to give it a good press to make the seam lie flat
 
 With your yokes attached to the back, we are going to edge-stitch along the seam we just made, on the yoke side.
 
-> Fold the inner yoke out of the way. Our edge stitching will catch outer yoke, back and all the seam allowances, but not the inner yoke.
+> Fold the inner yoke out of the way. Our edge stitching will catch outer yoke, back, and all the seam allowances, but not the inner yoke.
 
 Just sew right next to the seam joining the outer yoke to the back.
 
@@ -324,7 +324,7 @@ Just sew right next to the seam joining the outer yoke to the back.
 
 > Depending on your measurements, your pattern might not have back darts at all. In that case, proceed to the next step.
 
-Your pattern may or may not have back darts. If it has them, you should close them now.
+If your pattern has back darts, you should close them now.
 
 Place your back down with the good side up, and fold it back from the side seam so the fold runs from the top to the bottom of your dart.
 
