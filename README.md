@@ -1,3 +1,9 @@
+# DEPRECATED: This is the old website repo
+
+Freesewing has a new website. Please check the [freesewing.org](https://github.com/freesewing/freesewing.org) repository instead.
+
+
+
 <a href="https://freesewing.org/"><img src="https://freesewing.org/img/logo/black.svg" align="right" width=200 style="max-width: 20%;" /></a>
 
 # Freesewing site
